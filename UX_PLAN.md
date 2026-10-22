@@ -35,7 +35,7 @@ What the existing metrics mean (useful for labelling them in plain words):
   copy. One shared computation first makes every later phase smaller.
 - **Decide the architecture once, early.** Static JSON vs. live backend
   changes *how* Phases 2–3 get their data. Deciding later means building the
-  data layer twice.
+  data layer twice. (Decided: static JSON, see 1.3.)
 - **Mobile and plain language are built into each feature**, not a separate
   pass at the end. New views are designed phone-first from the start.
 - **Pick one chart library before building new charts** (Phase 3), so new
@@ -51,6 +51,20 @@ What the existing metrics mean (useful for labelling them in plain words):
 - Verify UI changes in the browser in **light and dark mode** and at
   **phone width**.
 - Update the changelog at the bottom of this file when a phase or item lands.
+- The hourly refresh commits to `main`, so a branch that changes the JSON
+  format will conflict on `stats-app/public/data/`. Resolve by re-running
+  `build_data.py` on the branch after merging `main` in.
+
+## Open questions (decide before 1.4 and Phase 3)
+
+- **Season rollover.** The live sheet holds 32 finished periods (480 games,
+  all `FINAL`), so last season looks complete. What happens when the new
+  season starts: a new sheet/tab, or rows appended to this one? Should past
+  seasons stay viewable? This decides whether `league.json` needs a
+  `season` field and whether the CSV URL becomes a list.
+- **Recap unit.** Phase 3 recaps per scoring period (what the data has, and
+  what the matchups are) or per calendar week (two periods). Recommendation:
+  per period, labelled with its week, e.g. "Week 7, Fri–Sun".
 
 ---
 
@@ -114,7 +128,9 @@ static export. No backend server, cache layers or rate limits.
       keys everywhere in the frontend) and keep `PERIOD`.
       Matrix rows now use `Team`; `PERIOD` is kept as `Period` in the
       dataframe but not yet in any output (`Match` is the numeric form of it).
-- [ ] Add actual W-L-T and per-week numbers (score, all-play wins, result).
+- [ ] Add actual W-L-T and per-period numbers (score, all-play wins, result).
+      Ties do happen (1 so far, scored 0.5 in all-play), so the record needs
+      the T.
 - [ ] Single `league.json` payload in the shape Phases 2–3 need. Keep the
       current files until the old widgets are retired.
 
@@ -165,16 +181,18 @@ Biggest new-feature opportunity and the most shareable content.
 
 - **Chart library decision first:** standardize on one library (Recharts
   or nivo; both are already installed) for all new charts.
-- **Weekly recap** for the latest week (with a week picker):
-  - Top and lowest score of the week.
+- **Recap** for the latest scoring period (with a picker; see the open
+  question on period vs. week):
+  - Top and lowest score of the period.
   - "Unluckiest loss": lost, but would have beaten N teams that period.
   - "Luckiest win": won, but would have lost to N teams.
   - Biggest blowout, closest game.
-- **Rank over the season**: bump chart (all-play rank by week), selected team
+- **Rank over the season**: bump chart (all-play rank by period), selected team
   highlighted, others faded.
 - **Luck over the season**: cumulative luck line per team.
-- **Sparklines** in the standings table (last 5 weeks all-play %).
-- Header shows "Data through Week N".
+- **Sparklines** in the standings table (last 5 periods all-play %).
+- Header shows "Data through Period N" (`metadata.json` already has
+  `latest_match`).
 
 ---
 
@@ -203,6 +221,8 @@ Biggest new-feature opportunity and the most shareable content.
   (chart.js, plus whichever of Recharts/nivo lost) and possibly framer-motion.
 - Next.js 16, Tailwind 4 and the ESLint 9 flat config (`next lint` is
   deprecated). Clears the remaining `npm audit` findings, all in build tooling.
+- Delete `ROADMAP.md` (pre-monorepo; describes the cache layers and backend
+  that no longer exist). This plan replaces it.
 - [x] ~~Remove the legacy endpoints and the cache layers~~ Done with the
   move to static data (Phase 1.3).
 
@@ -221,6 +241,8 @@ Biggest new-feature opportunity and the most shareable content.
   against the previous files). 2 new tests.
 - Checked in the browser: all five tabs, heatmap tooltips, light and dark,
   phone width. No console errors.
+- Docs: `Match` is the scoring period (two per week), not the matchweek.
+- Merged as PR #4.
 
 ### 2026-10-22: Points chart logos fix (branch `fix/points-chart-logos`)
 - Live site: most team logos were missing from the Points scatter. chart.js
