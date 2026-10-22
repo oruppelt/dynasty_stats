@@ -32,6 +32,10 @@ jobs:
 
       - name: Build data from the sheet
         run: python pipeline/build_data.py
+        env:
+          # New season: set the repository variable LEAGUE_SHEET to the new sheet's link
+          # (Settings → Secrets and variables → Actions → Variables). Unset = the sheet in league_data.py.
+          LEAGUE_SHEET: ${{ vars.LEAGUE_SHEET }}
 
       - name: Commit if anything changed
         run: |

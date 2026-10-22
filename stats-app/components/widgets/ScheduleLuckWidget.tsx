@@ -1,57 +1,23 @@
-import { useQuery } from '@tanstack/react-query'
-import { useLogger } from '@/lib/logger'
-import { useEffect } from 'react'
 import { ModernRankingCard } from './ModernRankingCard'
 import { BidirectionalBar } from './BidirectionalBar'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { WidgetSkeleton } from './WidgetSkeleton'
-
-interface StrengthData {
-  matrix: {
-    Team: string;
-    Strength: number;
-    Rank: number;
-    [key: string]: number | string;
-  }[];
-}
+import { useLeagueData } from '@/lib/league-data'
 
 interface ScheduleLuckWidgetProps {
   selectedTeam: string;
 }
 
 export function ScheduleLuckWidget({ selectedTeam }: ScheduleLuckWidgetProps) {
-  const logger = useLogger('ScheduleLuckWidget');
   
-  useEffect(() => {
-    logger.info('ScheduleLuckWidget mounted', { selectedTeam });
-    return () => logger.info('ScheduleLuckWidget unmounted');
-  }, [logger, selectedTeam]);
-
-  const { data, isLoading, error } = useQuery<StrengthData>({
-    queryKey: ['schedule_strength'],
-    queryFn: async () => {
-      logger.info('Fetching schedule luck data');
-      const response = await fetch('/data/schedule_strength.json');
-      if (!response.ok) {
-        const errorMsg = `HTTP ${response.status}: ${response.statusText}`;
-        logger.error('Failed to fetch schedule luck data', { status: response.status, statusText: response.statusText });
-        throw new Error(errorMsg);
-      }
-      const data = await response.json();
-      logger.info('Schedule luck data received', { 
-        teamsCount: data?.matrix?.length 
-      });
-      return data;
-    }
-  });
+  const { data: league, isLoading, error } = useLeagueData();
+  const data = league?.schedule_strength;
 
   if (isLoading) {
-    logger.info('Loading schedule luck data');
     return <WidgetSkeleton variant="list" />;
   }
 
   if (error) {
-    logger.error('Error loading schedule luck data', undefined, error as Error);
     return (
       <Card className="w-full">
         <CardContent className="flex justify-center items-center p-8">
@@ -64,7 +30,6 @@ export function ScheduleLuckWidget({ selectedTeam }: ScheduleLuckWidgetProps) {
   }
 
   if (!data?.matrix) {
-    logger.warn('No schedule luck matrix data available');
     return (
       <Card className="w-full">
         <CardContent className="flex justify-center items-center p-8">
@@ -143,14 +108,6 @@ export function ScheduleLuckWidget({ selectedTeam }: ScheduleLuckWidgetProps) {
                   value={team.Strength}
                   label="Schedule Luck"
                   isSelected={isSelected}
-                  onClick={() => {
-                    logger.userAction('schedule_luck_card_clicked', {
-                      team: team.Team,
-                      rank: team.Rank,
-                      luck: team.Strength,
-                      selectedTeam
-                    });
-                  }}
                 >
                   {/* Bidirectional Bar */}
                   <BidirectionalBar

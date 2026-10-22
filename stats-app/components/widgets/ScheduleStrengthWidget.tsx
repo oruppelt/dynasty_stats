@@ -1,66 +1,21 @@
-import { useQuery } from '@tanstack/react-query'
-import { useLogger } from '@/lib/logger'
-import { useEffect } from 'react'
 import { NivoScheduleHeatMap } from './NivoScheduleHeatMap'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { WidgetSkeleton } from './WidgetSkeleton'
-
-interface StrengthData {
-  teams: string[];
-  matrix: {
-    Team: string;
-    Strength: number;
-    Rank: number;
-    [key: string]: number | string;
-  }[];
-  matrix_wins: {
-    Team: string;
-    [key: string]: number | string;
-  }[];
-}
+import { useLeagueData } from '@/lib/league-data'
 
 interface ScheduleStrengthWidgetProps {
   selectedTeam: string;
 }
 
 export function ScheduleStrengthWidget({ selectedTeam }: ScheduleStrengthWidgetProps) {
-  const logger = useLogger('ScheduleStrengthWidget');
-  
-  useEffect(() => {
-    logger.info('ScheduleStrengthWidget mounted', { selectedTeam });
-    return () => logger.info('ScheduleStrengthWidget unmounted');
-  }, [logger, selectedTeam]);
-
-  const { data, isLoading, error } = useQuery<StrengthData>({
-    queryKey: ['schedule_strength'],
-    queryFn: async () => {
-      logger.info('Fetching schedule strength data');
-      const response = await fetch('/data/schedule_strength.json')
-      if (!response.ok) {
-        const errorMsg = `HTTP ${response.status}: ${response.statusText}`;
-        logger.error('Failed to fetch schedule strength data', { status: response.status, statusText: response.statusText });
-        throw new Error(errorMsg);
-      }
-      const data = await response.json()
-      if (!data.matrix) {
-        logger.error('No matrix data in schedule strength response');
-        throw new Error('No matrix data in response')
-      }
-      logger.info('Schedule strength data received', { 
-        teamsCount: data?.teams?.length, 
-        matrixCount: data?.matrix?.length 
-      });
-      return data
-    }
-  })
+  const { data: league, isLoading, error } = useLeagueData()
+  const data = league?.schedule_strength
 
   if (isLoading) {
-    logger.info('Loading schedule strength data');
     return <WidgetSkeleton variant="heatmap" />;
   }
 
   if (error) {
-    logger.error('Error loading schedule strength data', undefined, error as Error);
     return (
       <Card className="w-full">
         <CardContent className="flex justify-center items-center p-8">
@@ -73,7 +28,6 @@ export function ScheduleStrengthWidget({ selectedTeam }: ScheduleStrengthWidgetP
   }
 
   if (!data?.matrix) {
-    logger.warn('No schedule strength matrix data available');
     return (
       <Card className="w-full">
         <CardContent className="flex justify-center items-center p-8">

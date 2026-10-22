@@ -1,60 +1,27 @@
-import { useQuery } from '@tanstack/react-query'
-import { useLogger } from '@/lib/logger'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { ModernRankingCard } from './ModernRankingCard'
 import { TeamStrengthTable } from './TeamStrengthTable'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { WidgetSkeleton } from './WidgetSkeleton'
+import { useLeagueData } from '@/lib/league-data'
 import { Button } from '@/components/ui/button'
 import { LayoutGrid, Table } from 'lucide-react'
-
-interface StrengthData {
-  matrix: {
-    Team: string;
-    Strength: number;
-    Rank: number;
-    [key: string]: number | string;
-  }[];
-}
 
 interface TeamStrengthWidgetProps {
   selectedTeam: string;
 }
 
 export function TeamStrengthWidget({ selectedTeam }: TeamStrengthWidgetProps) {
-  const logger = useLogger('TeamStrengthWidget');
   const [viewMode, setViewMode] = useState<'cards' | 'table'>('cards');
 
-  useEffect(() => {
-    logger.info('TeamStrengthWidget mounted', { selectedTeam });
-    return () => logger.info('TeamStrengthWidget unmounted');
-  }, [logger, selectedTeam]);
-
-  const { data, isLoading, error } = useQuery<StrengthData>({
-    queryKey: ['strength'],
-    queryFn: async () => {
-      logger.info('Fetching team strength data');
-      const response = await fetch('/data/strength.json');
-      if (!response.ok) {
-        const errorMsg = `HTTP ${response.status}: ${response.statusText}`;
-        logger.error('Failed to fetch team strength data', { status: response.status, statusText: response.statusText });
-        throw new Error(errorMsg);
-      }
-      const data = await response.json();
-      logger.info('Team strength data received', { 
-        teamsCount: data?.matrix?.length 
-      });
-      return data;
-    }
-  });
+  const { data: league, isLoading, error } = useLeagueData();
+  const data = league?.strength;
 
   if (isLoading) {
-    logger.info('Loading team strength data');
     return <WidgetSkeleton variant="list" />;
   }
 
   if (error) {
-    logger.error('Error loading team strength data', undefined, error as Error);
     return (
       <Card className="w-full">
         <CardContent className="flex justify-center items-center p-8">
@@ -67,7 +34,6 @@ export function TeamStrengthWidget({ selectedTeam }: TeamStrengthWidgetProps) {
   }
 
   if (!data?.matrix) {
-    logger.warn('No team strength matrix data available');
     return (
       <Card className="w-full">
         <CardContent className="flex justify-center items-center p-8">
@@ -107,10 +73,7 @@ export function TeamStrengthWidget({ selectedTeam }: TeamStrengthWidgetProps) {
               <Button
                 variant={viewMode === 'cards' ? 'default' : 'outline'}
                 size="sm"
-                onClick={() => {
-                  setViewMode('cards');
-                  logger.userAction('view_mode_changed', { mode: 'cards' });
-                }}
+                onClick={() => setViewMode('cards')}
               >
                 <LayoutGrid className="h-4 w-4 mr-2" />
                 Cards
@@ -118,10 +81,7 @@ export function TeamStrengthWidget({ selectedTeam }: TeamStrengthWidgetProps) {
               <Button
                 variant={viewMode === 'table' ? 'default' : 'outline'}
                 size="sm"
-                onClick={() => {
-                  setViewMode('table');
-                  logger.userAction('view_mode_changed', { mode: 'table' });
-                }}
+                onClick={() => setViewMode('table')}
               >
                 <Table className="h-4 w-4 mr-2" />
                 Table
@@ -173,14 +133,6 @@ export function TeamStrengthWidget({ selectedTeam }: TeamStrengthWidgetProps) {
                   value={team.Strength}
                   label="Win Rate Strength"
                   isSelected={isSelected}
-                  onClick={() => {
-                    logger.userAction('team_strength_card_clicked', {
-                      team: team.Team,
-                      rank: team.Rank,
-                      strength: team.Strength,
-                      selectedTeam
-                    });
-                  }}
                 >
                   {/* Progress Bar */}
                   <div className="flex items-center gap-3">

@@ -1,21 +1,28 @@
 """
-Build the static league data files that the site serves.
+Build the static league data file that the site serves.
 
 Usage (from the repo root):
-    python pipeline/build_data.py                    # read the live Google Sheet
-    python pipeline/build_data.py --source games.csv # read a local CSV instead
+    python pipeline/build_data.py                     # read the league Google Sheet
+    python pipeline/build_data.py --source <sheet>    # another sheet (link or ID)
+    python pipeline/build_data.py --source games.csv  # or a local CSV
 
-Writes one JSON file per dataset to stats-app/public/data/. Files are only
-rewritten when their content changes, and metadata.json (the "Updated ..."
-time shown in the header) is only bumped when some data changed. That keeps
-the scheduled GitHub Action from committing when nothing is new.
+The sheet defaults to the LEAGUE_SHEET environment variable (a sheet link or
+ID; the GitHub Action sets it from a repository variable), else the sheet in
+league_data.py. That way a new season's sheet needs no code change.
+
+Writes stats-app/public/data/league.json. The file is only rewritten when the
+data changes, and its `updated_at` (the "Updated ..." time in the header) only
+moves then. That keeps the scheduled GitHub Action from committing when
+nothing is new. A sheet without any played games (e.g. a new season's sheet
+before the first period) leaves the existing data in place.
 """
 import argparse
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 
-from league_data import SHEET_CSV_URL, compute_all, load_games
+from league_data import SHEET_ID, compute_league, load_games, sheet_csv_url
 
 DEFAULT_OUT = Path(__file__).resolve().parent.parent / 'stats-app' / 'public' / 'data'
 
@@ -25,38 +32,33 @@ def to_json(data) -> str:
     return json.dumps(data, indent=2, allow_nan=False) + '\n'
 
 
-def write_if_changed(path: Path, text: str) -> bool:
-    if path.exists() and path.read_text() == text:
-        return False
-    path.write_text(text)
-    return True
+def build(source: str, out: Path) -> str:
+    """Write league.json from the sheet if its data changed. Returns what happened, for the log."""
+    games = load_games(sheet_csv_url(str(source)))
+    if games.empty:
+        return 'No played games in the sheet yet; data left as it was.'
+
+    league = compute_league(games)
+    path = out / 'league.json'
+    if path.exists():
+        previous = json.loads(path.read_text())
+        previous['meta'].pop('updated_at', None)
+        if to_json(previous) == to_json(league):
+            return 'No changes; league.json left as it was.'
+
+    league['meta'] = {'updated_at': datetime.now(timezone.utc).isoformat(timespec='seconds'), **league['meta']}
+    out.mkdir(parents=True, exist_ok=True)
+    path.write_text(to_json(league))
+    return f'Updated league.json: {len(games)} games, {len(league["teams"])} teams, through period {league["meta"]["latest_period"]}.'
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--source', default=SHEET_CSV_URL, help='CSV URL or file path (default: the league Google Sheet)')
+    parser.add_argument('--source', default=os.environ.get('LEAGUE_SHEET') or SHEET_ID,
+                        help='sheet link, sheet ID, CSV URL or CSV file (default: $LEAGUE_SHEET, else the league sheet)')
     parser.add_argument('--out', type=Path, default=DEFAULT_OUT, help=f'output directory (default: {DEFAULT_OUT})')
     args = parser.parse_args()
-
-    games = load_games(args.source)
-    datasets = compute_all(games)
-
-    args.out.mkdir(parents=True, exist_ok=True)
-    changed = [name for name, data in datasets.items()
-               if write_if_changed(args.out / f'{name}.json', to_json(data))]
-
-    metadata_path = args.out / 'metadata.json'
-    if changed or not metadata_path.exists():
-        metadata = {
-            'updated_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
-            'games': len(games),
-            'latest_match': int(games['Match'].max()),
-        }
-        metadata_path.write_text(to_json(metadata))
-
-    teams = len(datasets['strength']['teams'])
-    print(f'Read {len(games)} games for {teams} teams.')
-    print(f'Updated: {", ".join(changed)}' if changed else 'No changes; data files left as they were.')
+    print(build(args.source, args.out))
 
 
 if __name__ == '__main__':

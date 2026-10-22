@@ -1,14 +1,11 @@
 import { ResponsiveHeatMap } from '@nivo/heatmap'
-import { useLogger } from '@/lib/logger'
-import { useEffect, useMemo } from 'react'
+import { useMemo } from 'react'
 import { useChartTheme } from '@/lib/chart-theme'
+import type { MatrixRow } from '@/lib/league-data'
 
 interface NivoScheduleHeatMapProps {
   teams: string[];
-  matrix: Array<{
-    Team: string;
-    [key: string]: number | string;
-  }>;
+  matrix: MatrixRow[];
   maxValue: number;
   minValue: number;
   selectedTeam?: string;
@@ -30,19 +27,11 @@ export function NivoScheduleHeatMap({
   minValue, 
   selectedTeam 
 }: NivoScheduleHeatMapProps) {
-  const logger = useLogger('NivoScheduleHeatMap');
   const { colors: chartColors, nivoTheme } = useChartTheme();
-
-  useEffect(() => {
-    logger.info('NivoScheduleHeatMap mounted', { selectedTeam, teamsCount: teams?.length });
-    return () => logger.info('NivoScheduleHeatMap unmounted');
-  }, [logger, selectedTeam, teams]);
 
   // Transform data for Nivo format
   const heatmapData: HeatMapData[] = useMemo(() => {
     if (!matrix || !teams) return [];
-    
-    logger.dataTransform('transforming_schedule_matrix_to_nivo_format', matrix.length, teams.length);
     
     return matrix.map((row) => {
       const teamName = row.Team;
@@ -62,7 +51,7 @@ export function NivoScheduleHeatMap({
         data: rowData
       };
     });
-  }, [matrix, teams, logger]);
+  }, [matrix, teams]);
 
   // Get strength category for interpretation (negative = harder, positive = easier)
   const getStrengthCategory = (value: number | null) => {
@@ -73,12 +62,6 @@ export function NivoScheduleHeatMap({
     if (value <= 1.0) return { label: 'Easy', emoji: '🟢', desc: 'Easier than average' };
     return { label: 'Very Easy', emoji: '🟢', desc: 'Much easier than average' };
   };
-
-  useEffect(() => {
-    if (matrix && teams) {
-      logger.chartRender('nivo_schedule_heatmap', matrix.length * teams.length);
-    }
-  }, [matrix, teams, logger]);
 
   if (!matrix || !teams) {
     return (
@@ -142,14 +125,6 @@ export function NivoScheduleHeatMap({
         
         // Interactive features
         isInteractive={true}
-        onClick={(cell) => {
-          logger.userAction('schedule_heatmap_cell_clicked', {
-            team1: cell.serieId,
-            team2: cell.data.x,
-            strengthValue: cell.data.y,
-            selectedTeam
-          });
-        }}
         
         // Custom tooltip
         tooltip={({ cell }) => {

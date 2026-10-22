@@ -1,23 +1,14 @@
 import { ResponsiveHeatMap } from '@nivo/heatmap'
-import { useLogger } from '@/lib/logger'
-import { useEffect, useMemo } from 'react'
+import { useMemo } from 'react'
 import { DESIGN_TOKENS } from '@/lib/design-tokens'
 import { useChartTheme } from '@/lib/chart-theme'
+import type { MatrixRow } from '@/lib/league-data'
 
 interface NivoHeatMapProps {
   teams: string[];
-  matrix: Array<{
-    Team: string;
-    [key: string]: number | string;
-  }>;
-  matrix_wins?: Array<{
-    Team: string;
-    [key: string]: number | string;
-  }>;
-  matrix_games?: Array<{
-    Team: string;
-    [key: string]: number | string;
-  }>;
+  matrix: MatrixRow[];
+  matrix_wins?: MatrixRow[];
+  matrix_games?: MatrixRow[];
   maxValue: number;
   minValue: number;
   selectedTeam?: string;
@@ -43,7 +34,6 @@ export function NivoHeatMap({
   minValue, 
   selectedTeam 
 }: NivoHeatMapProps) {
-  const logger = useLogger('NivoHeatMap');
   const { colors: chartColors, nivoTheme } = useChartTheme();
 
   // Transform data for Nivo format
@@ -77,12 +67,6 @@ export function NivoHeatMap({
       };
     });
   }, [matrix, matrix_wins, matrix_games, teams]);
-
-  useEffect(() => {
-    logger.dataTransform('transforming_matrix_to_nivo_format', matrix.length, teams.length);
-    logger.chartRender('nivo_heatmap', matrix.length * teams.length);
-  }, [matrix, teams, logger]);
-
 
   // Get win rate category for interpretation
   const getWinRateCategory = (value: number | null) => {
@@ -134,12 +118,6 @@ export function NivoHeatMap({
         animate={true}
         motionConfig="gentle"
         isInteractive={true}
-        onClick={(cell) => {
-          logger.userAction('heatmap_cell_clicked', {
-            cellData: cell,
-            selectedTeam
-          });
-        }}
         tooltip={({ cell }) => {
           const team1 = cell.serieId;
           const team2 = cell.data.x;

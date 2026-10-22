@@ -38,11 +38,18 @@ cd stats-app && npm run build    # static export to out/ (what Render serves)
 ## Architecture
 
 ### Data flow
-Google Sheet (CSV export URL in `pipeline/league_data.py`) → `load_games()` →
-`compute_all()` → `build_data.py` writes `strength.json`,
-`schedule_strength.json`, `for_against.json` and `metadata.json`. Files are
-only rewritten when their content changes, so the hourly workflow commits only
-real updates. The site fetches these with React Query (`app/providers.tsx`).
+Google Sheet (`SHEET_ID` in `pipeline/league_data.py`, or the `LEAGUE_SHEET`
+env var / GitHub repository variable for a new season) → `load_games()` →
+`compute_league()` → `build_data.py` writes `stats-app/public/data/league.json`.
+It is only rewritten (and `meta.updated_at` only moves) when the data changes,
+so the hourly workflow commits only real updates. A sheet with no played games
+leaves the data in place.
+
+`league.json`: `meta`, `teams` (season totals: W-L, all-play W-L, points,
+luck), `results` (one row per team per scoring period), and the older
+`strength`, `schedule_strength`, `for_against` datasets the current widgets use.
+The site reads it through `useLeagueData()` in `lib/league-data.ts` (one
+request, shared types); components never fetch on their own.
 
 ### Metrics (`pipeline/league_data.py`)
 - **All-play strength**: in each scoring period (`Match` column; two per
@@ -53,6 +60,8 @@ real updates. The site fetches these with React Query (`app/providers.tsx`).
   summed over opponents played. Units are wins.
 - **Head-to-head**: `matrix_wins` (wins, -1 = never played) and `matrix_games`.
 - **Points for/against**: totals per team plus medians.
+- **Records**: a tie counts as half a win and half a loss, in both the actual
+  and the all-play W-L.
 
 `load_games()` renames the sheet's columns by position (its headers have
 trailing spaces, e.g. `'Team1 '`) and strips team names. Matrix rows in the

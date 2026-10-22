@@ -1,11 +1,10 @@
 import { Scatter } from 'react-chartjs-2'
-import { useQuery } from '@tanstack/react-query'
-import { useLogger } from '@/lib/logger'
 import { useEffect, useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { DESIGN_TOKENS } from '@/lib/design-tokens'
 import { useChartTheme } from '@/lib/chart-theme'
+import { useLeagueData } from '@/lib/league-data'
 import {
   Chart as ChartJS,
   LinearScale,
@@ -27,17 +26,6 @@ ChartJS.register(
   Tooltip,
   Legend
 )
-
-// Define the data structure from the API
-interface TeamScore {
-  Team: string;
-  'Scored For': number;
-  'Scored Against': number;
-}
-
-interface PointsData {
-  df_scores: TeamScore[];
-}
 
 interface PointsWidgetProps {
   selectedTeam?: string;
@@ -70,30 +58,10 @@ const getPointStyle = (team: string) => {
 };
 
 export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
-  const logger = useLogger('PointsWidget');
   const { colors: chartColors } = useChartTheme();
-  useEffect(() => {
-    logger.info('PointsWidget mounted', { selectedTeam });
-    return () => logger.info('PointsWidget unmounted');
-  }, [logger, selectedTeam]);
 
-  const { data, isLoading, error } = useQuery<PointsData>({
-    queryKey: ['points'],
-    queryFn: async () => {
-      logger.info('Fetching points data');
-      const response = await fetch('/data/for_against.json');
-      if (!response.ok) {
-        const errorMsg = `HTTP ${response.status}: ${response.statusText}`;
-        logger.error('Failed to fetch points data', { status: response.status, statusText: response.statusText });
-        throw new Error(errorMsg);
-      }
-      const data = await response.json();
-      logger.info('Points data received', { 
-        teamsCount: data?.df_scores?.length 
-      });
-      return data;
-    }
-  })
+  const { data: league, isLoading, error } = useLeagueData()
+  const data = league?.for_against
 
   // chart.js draws a logo only if it has already loaded and never repaints when it
   // arrives later, so on a slow connection most logos were missing. Re-render as each
@@ -130,12 +98,10 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
   };
 
   if (isLoading) {
-    logger.info('Loading points data');
     return <WidgetSkeleton variant="scatter" />;
   }
 
   if (error) {
-    logger.error('Error loading points data', undefined, error as Error);
     return (
       <Card className="w-full">
         <CardContent className="flex justify-center items-center p-8">
@@ -148,7 +114,6 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
   }
 
   if (!data?.df_scores) {
-    logger.warn('No points data available');
     return (
       <Card className="w-full">
         <CardContent className="flex justify-center items-center p-8">

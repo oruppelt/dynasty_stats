@@ -8,7 +8,7 @@ How the app runs now, and the one-time steps to set it up.
 Google Sheet ──(hourly GitHub Action)──▶ pipeline/build_data.py
                                               │ writes JSON, commits only if data changed
                                               ▼
-                              stats-app/public/data/*.json on main
+                              stats-app/public/data/league.json on main
                                               │ push triggers Render
                                               ▼
                          Render Static Site builds stats-app → out/
@@ -129,6 +129,14 @@ Auto-deploy is on by default, so every commit to `main` that touches
 - **Change the refresh frequency:** edit the `cron` line in
   `.github/workflows/refresh-data.yml` (e.g. `"17 */3 * * *"` for every
   3 hours).
+- **New season's sheet:** GitHub → repo **Settings** → **Secrets and
+  variables** → **Actions** → **Variables** → **New repository variable**:
+  name `LEAGUE_SHEET`, value the new sheet's link as copied from the browser.
+  The sheet needs the same 12 columns and a `DATA` tab, and must be viewable
+  by anyone with the link. Until its first period has scores, the site keeps
+  showing the previous data. To go back to the old sheet, delete the variable.
+  Test a sheet locally first with
+  `.venv/bin/python pipeline/build_data.py --source "<sheet link>"`.
 - **Off-season (public repos):** GitHub disables scheduled workflows after
   60 days without commits. Before the new season, go to Actions →
   Refresh league data and click **Enable workflow**.
