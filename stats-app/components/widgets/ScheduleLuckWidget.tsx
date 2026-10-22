@@ -31,7 +31,7 @@ export function ScheduleLuckWidget({ selectedTeam }: ScheduleLuckWidgetProps) {
     queryKey: ['schedule_strength'],
     queryFn: async () => {
       logger.info('Fetching schedule luck data');
-      const response = await fetch('/api/schedule_strength');
+      const response = await fetch('/data/schedule_strength.json');
       if (!response.ok) {
         const errorMsg = `HTTP ${response.status}: ${response.statusText}`;
         logger.error('Failed to fetch schedule luck data', { status: response.status, statusText: response.statusText });
