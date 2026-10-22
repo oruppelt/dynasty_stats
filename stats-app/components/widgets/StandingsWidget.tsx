@@ -11,6 +11,7 @@ import { ArrowDown, ArrowUp } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
+import { ErrorState } from './ErrorState'
 import { useLeagueData } from '@/lib/league-data'
 import {
   Standing,
@@ -115,17 +116,7 @@ export function StandingsWidget({ selectedTeam }: StandingsWidgetProps) {
     return <WidgetSkeleton variant="list" />;
   }
 
-  if (error || !league) {
-    return (
-      <Card className="w-full">
-        <CardContent className="flex justify-center items-center p-8">
-          <div className="text-destructive bg-destructive/10 p-4 rounded-lg">
-            Error loading standings: {String(error)}
-          </div>
-        </CardContent>
-      </Card>
-    );
-  }
+  if (error || !league) return <ErrorState />
 
   return (
     <Card className="w-full">

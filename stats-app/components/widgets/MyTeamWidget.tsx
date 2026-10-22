@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
+import { ErrorState } from './ErrorState'
 import { LeagueData, useLeagueData } from '@/lib/league-data'
 import { useSelectedTeam } from '@/lib/selected-team'
 import {
@@ -90,17 +91,7 @@ export function MyTeamWidget({ selectedTeam }: { selectedTeam: string }) {
     return <WidgetSkeleton variant="list" />;
   }
 
-  if (error || !league) {
-    return (
-      <Card className="w-full">
-        <CardContent className="flex justify-center items-center p-8">
-          <div className="text-destructive bg-destructive/10 p-4 rounded-lg">
-            Error loading team data: {String(error)}
-          </div>
-        </CardContent>
-      </Card>
-    );
-  }
+  if (error || !league) return <ErrorState />
 
   const standing = standings.find(s => s.team === selectedTeam)
   if (!standing) {
@@ -117,7 +108,7 @@ export function MyTeamWidget({ selectedTeam }: { selectedTeam: string }) {
   const toughest = opponents.slice(-OPPONENTS_SHOWN).reverse()
 
   return (
-    <div className="mx-auto w-full max-w-4xl space-y-4">
+    <div className="w-full space-y-4">
       {/* Hero */}
       <Card>
         <CardContent className="flex items-center gap-4 p-4 sm:p-6">
@@ -135,11 +126,11 @@ export function MyTeamWidget({ selectedTeam }: { selectedTeam: string }) {
       </Card>
 
       {/* Stat tiles */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <StatTile
           label="All-play record"
-          value={`${formatRecord(standing.all_play_wins, standing.all_play_losses)} (${formatPct(standing.all_play_pct)})`}
-          detail={`${ordinal(standing.all_play_rank)} of ${teamCount}, as if playing every team every period`}
+          value={formatRecord(standing.all_play_wins, standing.all_play_losses)}
+          detail={`${formatPct(standing.all_play_pct)}, ${ordinal(standing.all_play_rank)} of ${teamCount}, as if playing every team every period`}
         />
         <StatTile
           label="Luck"
@@ -159,6 +150,7 @@ export function MyTeamWidget({ selectedTeam }: { selectedTeam: string }) {
         />
       </div>
 
+      <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-2">
       {/* Recent periods */}
       <Card>
         <CardHeader>
@@ -199,7 +191,7 @@ export function MyTeamWidget({ selectedTeam }: { selectedTeam: string }) {
 
       {/* Opponents */}
       {opponents.length > 0 && (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1">
           {[
             { title: 'Easiest opponents', list: easiest },
             { title: 'Toughest opponents', list: toughest },
@@ -224,6 +216,7 @@ export function MyTeamWidget({ selectedTeam }: { selectedTeam: string }) {
           ))}
         </div>
       )}
+      </div>
     </div>
   )
 }
