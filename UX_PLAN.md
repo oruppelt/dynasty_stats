@@ -173,7 +173,7 @@ little of Phase 3 (recent periods) comes almost free.
 - No team selected: a grid of team logos to pick from.
 
 ### 2.3 Standings table (default when no team is selected)
-`# | Team | W-L | All-play | All-play % | Luck | PF | PA`, sorted by wins,
+`# | Team | W-L | All-play | All-play % | Luck | PF | PA`, sorted by win rate,
 then points for; every column sortable.
 - Selected team's row highlighted.
 - On phones: sticky team column, horizontal scroll for the rest.
@@ -189,12 +189,67 @@ Schedule.
 
 ---
 
+## Phase 2.5: Visual pass ✅ (done 2026-10-22)
+
+Review on 2026-10-22 (all tabs, light and dark, 390px phone width). The two
+new tabs read well; the three older chart tabs are the weak spots. Doing
+this before Phase 3 sets the chart style (palette, logos, team labels,
+card layout, one library) that the new charts then follow. It absorbs
+the old Phase 4.
+
+### Points scatter (worst)
+- [x] Axis ticks: odd values (`13,648.10`, `6,879.8`), a tick every 250,
+      labels rotated. Use round ticks (every 1,000) with no rotation.
+- [x] The selected team isn't visibly highlighted, and the quadrant colors
+      never render (chart.js ignores borders on image points). Shade the
+      quadrants, label the corners ("Scores a lot, allows little", ...),
+      and fade the other teams when one is selected.
+- [x] Remove the "📊 Viewing: …" panel; it only restates the picker.
+- [x] Rebuild it in nivo (`@nivo/scatterplot`, logos as custom nodes).
+      That leaves one chart library and drops chart.js before Phase 3.
+
+### Heatmaps (All vs All, Schedule)
+- [x] 900 two-decimal numbers in tiny cells read as noise. Show color only,
+      with the value in the tooltip (or numbers only at large widths).
+      Numbers stay where they fit (cells of 22px+ for %, 30px+ for luck),
+      shortened to "66" / "+0.7". Smaller screens rely on seven stepped
+      colors with a legend, a row/column highlight on hover, and tooltips;
+      below 640px the default is a list of the selected team's opponents.
+- [x] Column labels are clipped ("Minnesota Timberwolv"). Use 3-letter
+      team codes (MEM, OKC) on the axes and full names in tooltips.
+- [x] Highlight the selected team's row and column.
+- [x] Schedule uses saturated red–green (hard for colorblind viewers, and
+      it has no legend). Use a single diverging palette for both heatmaps
+      (e.g. orange–white–blue), with a legend.
+- [x] Dark mode: black cell labels on dark cells.
+- [x] Schedule tab is mislabeled (was Phase 4): it shows luck per opponent,
+      not schedule difficulty. Rename it ("Luck by opponent") and reword.
+- [x] Phones (was Phase 4): the matrix is unusable at 390px. Below `md:`,
+      show the selected team's row as a list ("vs BOS: 93%").
+
+### Across the site
+- [x] Team logos with dark ink (Nets, Spurs, ...) vanish in dark mode. Put
+      logos on a light disc in `TeamLogo` and in charts.
+- [x] Card titles in the old tabs are dashboard-speak ("Points For vs Points
+      Against Analysis", "Schedule Strength Analysis"). Use plain titles and
+      one-line explanations like the new tabs, with a collapsible "What does
+      this mean?" (was Phase 4).
+- [x] Emoji in the UI (📊, 🟢, 🔴) next to lucide icons elsewhere. Use icons
+      or color only.
+- [x] Content widths differ per tab (My Team `max-w-4xl`, the rest 7xl).
+      Pick one reading width for text views; charts may go wider.
+- [x] Every tab switch fades content in (framer-motion), so the page looks
+      washed out for ~0.3s. Drop the animation (and probably the dependency).
+- [x] Friendly error state with a "Retry" button instead of raw
+      `HTTP 500: ...` (was Phase 4).
+
+---
+
 ## Phase 3: Time dimension (scoring periods, `Match`)
 
 Biggest new-feature opportunity and the most shareable content.
 
-- **Chart library decision first:** nivo or chart.js (Recharts was removed
-  in 1.1). Recommendation: nivo. The heatmaps already use it, and
+- **Chart library:** nivo (decided in 2.5, when the scatter moves to it).
   `@nivo/bump` and `@nivo/line` cover the two charts below.
 - **Recap** for the latest scoring period, "Period N" (with a picker):
   - Top and lowest score of the period.
@@ -210,29 +265,10 @@ Biggest new-feature opportunity and the most shareable content.
 
 ## Phase 4: Polish the existing analysis views
 
-- **Heatmaps on phones** (`NivoHeatMap`, `NivoScheduleHeatMap`): 160px left
-  margin and 650px height make them unusable. On small screens show the
-  selected team's row as a list ("vs Boston: 93%"); keep the full matrix
-  from `md:` up.
-- **Scatter plot:**
-  - Quadrant-colored borders never render around logo points (chart.js
-    ignores `pointBorderColor` for image `pointStyle`). Shade the quadrant
-    backgrounds and label the corners instead.
-  - Axis ticks are cluttered (`13,648.10`, step 50 across a ~10k range).
-  - 30 overlapping 40px logos: smaller logos, and fade non-selected teams.
-- **Plain language** in the remaining views: replace "Win Rate Strength
-  0.653" and "Schedule Strength ±1.5" with records and wins. Add a collapsible
-  "What does this mean?" to each view.
-- **Schedule tab is mislabeled.** Its matrix is luck per opponent (actual
-  minus all-play expected wins), but the card, tooltip and legend call it
-  schedule difficulty ("Positive = Easier schedule"). Rename it (e.g. "Luck
-  by opponent") and reword.
-- Friendly error states with a "Retry" button instead of raw `HTTP 500: ...`.
+Merged into Phase 2.5 (2026-10-22).
 
 ## Phase 5: Cleanup
 
-- Move remaining charts to the chosen library and remove the other one
-  (probably chart.js), and possibly framer-motion.
 - Next.js 16, Tailwind 4 and the ESLint 9 flat config (`next lint` is
   deprecated). Clears the remaining `npm audit` findings, all in build tooling.
 - Delete `ROADMAP.md` (pre-monorepo; describes the cache layers and backend
@@ -243,6 +279,27 @@ Biggest new-feature opportunity and the most shareable content.
 ---
 
 ## Changelog
+
+### 2026-10-22: Luck fix and Phase 2.5 visual pass (branch `ux/visual-review`)
+- **Luck was wrong.** Expected wins were counted once per opponent, actual
+  wins once per game, so the 45 rematches inflated luck: it summed to +45
+  across the league. Expected wins are now win rate x games played; luck
+  sums to zero (test added). Strength is now the exact all-play win %.
+- Matrices use `null` for never-played pairs: -1 was a real luck value
+  (Hawks-Pelicans and Pistons-Bucks showed as blank).
+- Standings ordered by win rate, then points for. Phone header title
+  "Fantasy Stats".
+- Heatmaps: one shared component, colorblind-safe orange-blue scale with a
+  legend, team codes, selected team outlined, hover crosshair, plain
+  tooltips, numbers when they fit, a list view on phones. Schedule tab is
+  now Luck ("Luck by opponent").
+- Points scatter rebuilt on nivo: round ticks, quadrants shaded and
+  captioned (top right = best), selected team highlighted. chart.js,
+  react-chartjs-2 and framer-motion removed (first-load JS 336 -> 270 kB).
+- Logos on white discs, explainers, Retry error state, one content width,
+  no fade-in on tab switch.
+- Checked in the browser: all tabs in light and dark, 390px phone width
+  (list and grid), tooltips. Lint, build, 20 pytest tests pass.
 
 ### 2026-10-22: Phase 2 My Team and standings (branch `ux/phase-2-my-team`)
 - Plan reviewed first: recent periods pulled in from Phase 3, the Strength

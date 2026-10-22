@@ -1,301 +1,183 @@
-import { Scatter } from 'react-chartjs-2'
-import { useEffect, useState } from 'react'
+import { useMemo } from 'react'
+import { ScatterPlot, ScatterPlotLayerProps, ScatterPlotNodeProps } from '@nivo/scatterplot'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { WidgetSkeleton } from './WidgetSkeleton'
-import { DESIGN_TOKENS } from '@/lib/design-tokens'
+import { ErrorState } from './ErrorState'
+import { Explainer } from './Explainer'
 import { useChartTheme } from '@/lib/chart-theme'
 import { useLeagueData } from '@/lib/league-data'
-import {
-  Chart as ChartJS,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Tooltip,
-  Legend,
-  ScatterDataPoint,
-  ChartOptions,
-  TooltipModel,
-  TooltipItem,
-  ChartData
-} from 'chart.js'
+import { computeStandings, formatPoints, ordinal } from '@/lib/standings'
+import { useElementWidth } from '@/lib/use-element-width'
 
-ChartJS.register(
-  LinearScale,
-  PointElement,
-  LineElement,
-  Tooltip,
-  Legend
-)
-
-interface PointsWidgetProps {
-  selectedTeam?: string;
+interface Point {
+  x: number;
+  y: number;
+  team: string;
+  pfRank: number;
+  paRank: number;
 }
 
-// Define custom types for the chart
-interface CustomDataPoint extends ScatterDataPoint {
-  team?: string;
+const MARGIN = { top: 16, right: 16, bottom: 48, left: 56 }
+
+const QUADRANTS = {
+  topRight: ['Scores a lot', 'faced low scores'],
+  topLeft: ['Scores little', 'faced low scores'],
+  bottomRight: ['Scores a lot', 'faced high scores'],
+  bottomLeft: ['Scores little', 'faced high scores'],
 }
 
-// Create a specific type for the scatter dataset
-type ScatterChartData = ChartData<'scatter', CustomDataPoint[], unknown>;
+/** Domain padded to whole thousands, and a tick every `step`. */
+function axisRange(values: number[], step: number) {
+  const min = Math.floor((Math.min(...values) - step / 4) / 1000) * 1000
+  const max = Math.ceil((Math.max(...values) + step / 4) / 1000) * 1000
+  const ticks: number[] = []
+  for (let v = Math.ceil(min / step) * step; v <= max; v += step) ticks.push(v)
+  return { min, max, ticks }
+}
 
-// Logo images are reused across renders instead of re-created each time
-const logoCache = new Map<string, HTMLImageElement>();
-const getLogoImage = (team: string) => {
-  let img = logoCache.get(team);
-  if (!img) {
-    img = new Image(40, 40);
-    img.src = `/logos/${team}.png`;
-    logoCache.set(team, img);
-  }
-  return img;
-};
+const thousands = (v: number) => `${v / 1000}k`
 
-// A logo that failed to load (e.g. a team name without a matching file) is drawn as a plain dot
-const getPointStyle = (team: string) => {
-  const img = getLogoImage(team);
-  return img.complete && img.naturalWidth === 0 ? 'circle' as const : img;
-};
-
-export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
-  const { colors: chartColors } = useChartTheme();
-
+export function PointsWidget({ selectedTeam }: { selectedTeam: string }) {
   const { data: league, isLoading, error } = useLeagueData()
-  const data = league?.for_against
+  const [ref, width] = useElementWidth<HTMLDivElement>()
+  const { colors, nivoTheme, diverging } = useChartTheme()
 
-  // chart.js draws a logo only if it has already loaded and never repaints when it
-  // arrives later, so on a slow connection most logos were missing. Re-render as each
-  // logo loads (or fails), which makes the chart redraw with it.
-  const [, setSettledLogos] = useState(0);
-  useEffect(() => {
-    if (!data?.df_scores) return;
-    let cancelled = false;
-    const pending = data.df_scores.map(team => getLogoImage(team.Team)).filter(img => !img.complete);
-    pending.forEach(img => img.decode().catch(() => undefined).then(() => {
-      if (!cancelled) setSettledLogos(count => count + 1);
-    }));
-    return () => { cancelled = true; };
-  }, [data]);
+  const points = useMemo<Point[]>(() => {
+    if (!league) return []
+    const all = computeStandings(league.teams).map(s => ({
+      x: s.points_for, y: s.points_against, team: s.team, pfRank: s.points_for_rank, paRank: s.points_against_rank,
+    }))
+    // The selected team is drawn last, on top of any logo it overlaps
+    return [...all.filter(p => p.team !== selectedTeam), ...all.filter(p => p.team === selectedTeam)]
+  }, [league, selectedTeam])
 
-  const calculateMedian = (arr: number[]): number => {
-    const sorted = [...arr].sort((a, b) => a - b)
-    const mid = Math.floor(sorted.length / 2)
-    return sorted.length % 2 === 0
-      ? (sorted[mid - 1] + sorted[mid]) / 2
-      : sorted[mid]
-  }
+  if (isLoading) return <WidgetSkeleton variant="scatter" />
+  if (error || !league) return <ErrorState />
 
-  const getQuadrant = (pointsFor: number, pointsAgainst: number, midFor: number, midAgainst: number) => {
-    if (pointsFor >= midFor && pointsAgainst <= midAgainst) return 'excellent'; // High scoring, low points against
-    if (pointsFor >= midFor && pointsAgainst > midAgainst) return 'volatile';   // High scoring, high points against
-    if (pointsFor < midFor && pointsAgainst <= midAgainst) return 'defensive';  // Low scoring, low points against
-    if (pointsFor < midFor && pointsAgainst > midAgainst) return 'concerning';  // Low scoring, high points against
-    return 'unknown';
-  };
+  const { median_scored_for: medianFor, median_scored_against: medianAgainst } = league.for_against
+  const narrow = width < 640
+  const step = narrow ? 2000 : 1000
+  const xRange = axisRange(points.map(p => p.x), step)
+  const yRange = axisRange(points.map(p => p.y), step)
+  const height = Math.round(Math.min(Math.max(width * 0.7, 360), 600))
+  const logoSize = narrow ? 24 : 34
 
-  const getQuadrantColor = (quadrant: string) => {
-    return DESIGN_TOKENS.quadrants[quadrant as keyof typeof DESIGN_TOKENS.quadrants]?.hex || DESIGN_TOKENS.quadrants.unknown.hex;
-  };
+  const quadrantOf = (p: Point) =>
+    `${p.x >= medianFor ? 'Scores a lot' : 'Scores little'}, ${p.y <= medianAgainst ? 'faced low scores' : 'faced high scores'}`
 
-  if (isLoading) {
-    return <WidgetSkeleton variant="scatter" />;
-  }
-
-  if (error) {
+  // Shaded best and worst corners, median lines, and a caption in each corner
+  const QuadrantLayer = ({ xScale, yScale, innerWidth, innerHeight }: ScatterPlotLayerProps<Point>) => {
+    const mx = (xScale as unknown as (v: number) => number)(medianFor)
+    const my = (yScale as unknown as (v: number) => number)(medianAgainst)
+    const caption = (lines: string[], x: number, y: number, anchor: 'start' | 'end') => (
+      <text x={x} y={y} textAnchor={anchor} fontSize={narrow ? 10 : 11} fill={colors.mutedText}>
+        {lines.map((line, i) => (
+          <tspan key={line} x={x} dy={i === 0 ? 0 : 13}>{line}</tspan>
+        ))}
+      </text>
+    )
     return (
-      <Card className="w-full">
-        <CardContent className="flex justify-center items-center p-8">
-          <div className="text-destructive bg-destructive/10 p-4 rounded-lg">
-            Error loading points data: {String(error)}
-          </div>
-        </CardContent>
-      </Card>
-    );
+      <g pointerEvents="none">
+        {/* y is reversed: fewer points against is higher up */}
+        <rect x={mx} y={0} width={innerWidth - mx} height={my} fill={diverging[5]} opacity={0.15} />
+        <rect x={0} y={my} width={mx} height={innerHeight - my} fill={diverging[1]} opacity={0.15} />
+        <line x1={mx} x2={mx} y1={0} y2={innerHeight} stroke={colors.referenceLine} strokeDasharray="4 4" />
+        <line x1={0} x2={innerWidth} y1={my} y2={my} stroke={colors.referenceLine} strokeDasharray="4 4" />
+        {caption(QUADRANTS.topLeft, 6, 14, 'start')}
+        {caption(QUADRANTS.topRight, innerWidth - 6, 14, 'end')}
+        {caption(QUADRANTS.bottomLeft, 6, innerHeight - 19, 'start')}
+        {caption(QUADRANTS.bottomRight, innerWidth - 6, innerHeight - 19, 'end')}
+      </g>
+    )
   }
 
-  if (!data?.df_scores) {
+  // Team logo on a white disc; others fade when a team is selected
+  const LogoNode = ({ node }: ScatterPlotNodeProps<Point>) => {
+    const isSelected = node.data.team === selectedTeam
+    const size = isSelected ? logoSize + 10 : logoSize
+    const faded = selectedTeam && !isSelected
     return (
-      <Card className="w-full">
-        <CardContent className="flex justify-center items-center p-8">
-          <div className="text-muted-foreground">No points data available</div>
-        </CardContent>
-      </Card>
-    );
-  }
-
-  const scores = data.df_scores
-  const medianScoredFor = calculateMedian(scores.map(d => d['Scored For']))
-  const medianScoredAgainst = calculateMedian(scores.map(d => d['Scored Against']))
-
-  const chartData: ScatterChartData = {
-    datasets: [
-      {
-        type: 'scatter',
-        label: 'Teams',
-        data: scores.map(team => ({
-          x: team['Scored For'],
-          y: team['Scored Against'],
-          team: team.Team
-        })),
-        pointStyle: scores.map(team => getPointStyle(team.Team)),
-        pointRadius: selectedTeam ? scores.map(team => team.Team === selectedTeam ? 25 : 20) : 20,
-        pointBorderColor: scores.map(team => {
-          const quadrant = getQuadrant(team['Scored For'], team['Scored Against'], medianScoredFor, medianScoredAgainst);
-          return getQuadrantColor(quadrant);
-        }),
-        pointBorderWidth: selectedTeam ? scores.map(team => team.Team === selectedTeam ? 4 : 2) : 2,
-      },
-      {
-        type: 'scatter',
-        label: 'Median Points For',
-        data: [
-          { x: medianScoredFor, y: Math.min(...scores.map(d => d['Scored Against'])) * 0.9 },
-          { x: medianScoredFor, y: Math.max(...scores.map(d => d['Scored Against'])) * 1.1 }
-        ],
-        borderColor: chartColors.referenceLine,
-        borderWidth: 2,
-        borderDash: [5, 5],
-        pointRadius: 0,
-        showLine: true,
-      },
-      {
-        type: 'scatter',
-        label: 'Median Points Against',
-        data: [
-          { x: Math.min(...scores.map(d => d['Scored For'])) * 0.9, y: medianScoredAgainst },
-          { x: Math.max(...scores.map(d => d['Scored For'])) * 1.1, y: medianScoredAgainst }
-        ],
-        borderColor: chartColors.referenceLine,
-        borderWidth: 2,
-        borderDash: [5, 5],
-        pointRadius: 0,
-        showLine: true,
-      }
-    ]
-  }
-
-  // Calculate bounds for each axis
-  const minX = Math.min(...scores.map(d => d['Scored For'])) * 0.9
-  const maxX = Math.max(...scores.map(d => d['Scored For'])) * 1.1
-  const minY = Math.min(...scores.map(d => d['Scored Against'])) * 0.9
-  const maxY = Math.max(...scores.map(d => d['Scored Against'])) * 1.1
-
-  const options: ChartOptions<'scatter'> = {
-    maintainAspectRatio: false,
-    scales: {
-      x: {
-        title: {
-          display: true,
-          text: 'Points For',
-          font: {
-            size: 14,
-            weight: 'bold'
-          },
-          color: chartColors.text,
-        },
-        min: minX,
-        max: maxX,
-        grid: {
-          display: true,
-          drawTicks: true,
-          color: chartColors.grid,
-        },
-        ticks: {
-          stepSize: 50,
-          color: chartColors.mutedText,
-        }
-      },
-      y: {
-        title: {
-          display: true,
-          text: 'Points Against',
-          font: {
-            size: 14,
-            weight: 'bold'
-          },
-          color: chartColors.text,
-        },
-        min: minY,
-        max: maxY,
-        grid: {
-          display: true,
-          drawTicks: true,
-          color: chartColors.grid,
-        },
-        ticks: {
-          stepSize: 50,
-          color: chartColors.mutedText,
-        }
-      }
-    },
-    plugins: {
-      legend: {
-        display: false
-      },
-      tooltip: {
-        enabled: true,
-        position: 'nearest',
-        callbacks: {
-          label: function(this: TooltipModel<'scatter'>, context: TooltipItem<'scatter'>): string {
-            const dataPoint = context.raw as CustomDataPoint;
-            if (dataPoint.team) {
-              const quadrant = getQuadrant(dataPoint.x as number, dataPoint.y as number, medianScoredFor, medianScoredAgainst);
-              const quadrantLabels = {
-                excellent: '🟢 Excellent',
-                volatile: '🟡 Volatile',
-                defensive: '🟡 Defensive',
-                concerning: '🔴 Concerning',
-                unknown: '⚪ Unknown'
-              };
-              const quadrantLabel = quadrantLabels[quadrant as keyof typeof quadrantLabels] || quadrantLabels.unknown;
-              return `${dataPoint.team} | For: ${dataPoint.x} | Against: ${dataPoint.y} | ${quadrantLabel}`;
-            }
-            return '';
-          }
-        }
-      },
-      title: {
-        display: true,
-        text: 'Points For vs Points Against Analysis',
-        color: chartColors.text,
-        font: {
-          size: 18,
-          weight: 'bold'
-        }
-      }
-    }
+      <g transform={`translate(${node.x},${node.y})`} opacity={faded ? 0.5 : 1}>
+        <circle
+          r={size / 2}
+          fill="#ffffff"
+          stroke={isSelected ? colors.selection : colors.mutedText}
+          strokeWidth={isSelected ? 2.5 : 0.5}
+        />
+        <image
+          href={`/logos/${node.data.team}.png`}
+          x={-size * 0.4}
+          y={-size * 0.4}
+          width={size * 0.8}
+          height={size * 0.8}
+        />
+      </g>
+    )
   }
 
   return (
-    <div className="w-full space-y-4">
-      <Card className="w-full">
-        <CardHeader>
-          <CardTitle>Points For vs Points Against Analysis</CardTitle>
-          <CardDescription>
-            Scatter plot showing offensive output vs defensive performance. Green quadrant is ideal (high scoring, low points against).
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="w-full h-[600px]">
-            <Scatter data={chartData} options={options} />
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Selected team info panel */}
-      {selectedTeam && (
-        <Card className="border-primary">
-          <CardContent className="p-4">
-            <h3 className="font-semibold text-primary mb-2">
-              📊 Viewing: {selectedTeam}
-            </h3>
-            <p className="text-sm text-muted-foreground">
-              {selectedTeam} is highlighted with a larger logo and colored border. Hover over any team to see detailed performance analysis.
-            </p>
-          </CardContent>
-        </Card>
-      )}
-    </div>
-  );
+    <Card className="w-full">
+      <CardHeader className="space-y-2">
+        <CardTitle>Points for and against</CardTitle>
+        <CardDescription>
+          Each logo is a team&apos;s season total. Right: scored more. Up: its opponents scored less.
+        </CardDescription>
+        <Explainer>
+          <p>
+            Points for is the team&apos;s own scoring. Points against is what its opponents happened to
+            score: in fantasy there&apos;s no defense, so that part is mostly the schedule.
+          </p>
+          <p>
+            The dashed lines are the league medians. Top right (blue) is the best place to be: scoring
+            a lot and meeting opponents in their quiet periods. Bottom left (orange) is the opposite.
+          </p>
+        </Explainer>
+      </CardHeader>
+      <CardContent className="px-2 sm:px-6">
+        <div ref={ref} className="w-full">
+          {width > 0 && (
+            <ScatterPlot<Point>
+              data={[{ id: 'teams', data: points }]}
+              width={width}
+              height={height}
+              margin={MARGIN}
+              xScale={{ type: 'linear', min: xRange.min, max: xRange.max }}
+              yScale={{ type: 'linear', min: yRange.min, max: yRange.max, reverse: true }}
+              theme={nivoTheme}
+              gridXValues={xRange.ticks}
+              gridYValues={yRange.ticks}
+              axisBottom={{
+                tickValues: xRange.ticks, format: thousands, tickSize: 0, tickPadding: 8,
+                legend: 'Points for', legendPosition: 'middle', legendOffset: 36,
+              }}
+              axisLeft={{
+                tickValues: yRange.ticks, format: thousands, tickSize: 0, tickPadding: 8,
+                legend: 'Points against', legendPosition: 'middle', legendOffset: -44,
+              }}
+              nodeSize={logoSize}
+              nodeComponent={LogoNode}
+              layers={['grid', QuadrantLayer, 'axes', 'nodes', 'mesh']}
+              animate={false}
+              tooltip={({ node }) => (
+                <div className="w-60 rounded-lg border bg-card p-3 text-sm text-card-foreground shadow-lg">
+                  <div className="font-semibold">{node.data.team}</div>
+                  <dl className="mt-1 grid grid-cols-[1fr_auto] gap-x-3 text-muted-foreground">
+                    <dt>Points for</dt>
+                    <dd className="text-right tabular-nums">
+                      <span className="font-semibold text-foreground">{formatPoints(node.data.x)}</span> ({ordinal(node.data.pfRank)})
+                    </dd>
+                    <dt>Points against</dt>
+                    <dd className="text-right tabular-nums">
+                      <span className="font-semibold text-foreground">{formatPoints(node.data.y)}</span> ({ordinal(node.data.paRank)})
+                    </dd>
+                  </dl>
+                  <div className="mt-2 border-t pt-2 text-xs text-muted-foreground">{quadrantOf(node.data)}</div>
+                </div>
+              )}
+            />
+          )}
+        </div>
+      </CardContent>
+    </Card>
+  )
 }
-

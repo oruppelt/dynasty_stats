@@ -19,11 +19,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b gradient-header backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4">
         <div className="flex min-w-0 items-center gap-2">
           <BarChart3 className="hidden h-6 w-6 shrink-0 text-primary sm:block" />
           <div className="min-w-0">
-            <div className="truncate text-base font-bold sm:text-xl">NBA Fantasy Stats</div>
+            <div className="truncate text-base font-bold sm:text-xl">
+              <span className="sm:hidden">Fantasy Stats</span>
+              <span className="hidden sm:inline">NBA Fantasy Stats</span>
+            </div>
             {league && (
               <p className="truncate text-xs text-muted-foreground" title="When the league data last changed">
                 Through period {league.meta.latest_period}

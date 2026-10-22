@@ -5,13 +5,12 @@ import { MyTeamWidget } from "./widgets/MyTeamWidget"
 import { StandingsWidget } from "./widgets/StandingsWidget"
 import { PointsWidget } from "./widgets/PointsWidget"
 import { AllVsAllWidget } from "./widgets/AllVsAllWidget"
-import { ScheduleStrengthWidget } from "./widgets/ScheduleStrengthWidget"
+import { LuckWidget } from "./widgets/LuckWidget"
 import { WidgetSkeleton } from "./widgets/WidgetSkeleton"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useLeagueData } from '@/lib/league-data'
 import { useInitSelectedTeam, useSelectedTeam } from '@/lib/selected-team'
-import { Calendar, ListOrdered, Shuffle, Target, User } from "lucide-react"
-import { motion } from "framer-motion"
+import { Clover, ListOrdered, Shuffle, Target, User } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 interface TabDef {
@@ -26,7 +25,7 @@ const TABS: TabDef[] = [
   { value: "standings", label: "Standings", icon: ListOrdered, render: team => <StandingsWidget selectedTeam={team} /> },
   { value: "points", label: "Points", icon: Target, render: team => <PointsWidget selectedTeam={team} /> },
   { value: "allvsall", label: "All vs All", icon: Shuffle, render: team => <AllVsAllWidget selectedTeam={team} /> },
-  { value: "schedule", label: "Schedule", icon: Calendar, render: team => <ScheduleStrengthWidget selectedTeam={team} /> },
+  { value: "luck", label: "Luck", icon: Clover, render: team => <LuckWidget selectedTeam={team} /> },
 ]
 
 export function Dashboard() {
@@ -38,14 +37,14 @@ export function Dashboard() {
 
   if (!ready && !error) {
     return (
-      <div className="w-full max-w-7xl mx-auto px-4 py-6">
+      <div className="w-full max-w-6xl mx-auto px-4 py-6">
         <WidgetSkeleton variant="list" />
       </div>
     )
   }
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-6">
+    <div className="w-full max-w-6xl mx-auto px-4 py-6">
       <Tabs
         value={tab ?? (selectedTeam ? "myteam" : "standings")}
         onValueChange={setTab}
@@ -66,13 +65,7 @@ export function Dashboard() {
 
         {TABS.map(({ value, render }) => (
           <TabsContent key={value} value={value} className="mt-0">
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              {render(selectedTeam)}
-            </motion.div>
+            {render(selectedTeam)}
           </TabsContent>
         ))}
       </Tabs>

@@ -10,16 +10,6 @@ interface TeamLogoProps {
 
 export function TeamLogo({ teamName, size = 32, className = "" }: TeamLogoProps) {
   const [imageError, setImageError] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleImageError = () => {
-    setImageError(true);
-    setIsLoading(false);
-  };
-
-  const handleImageLoad = () => {
-    setIsLoading(false);
-  };
 
   if (imageError) {
     // Fallback to team initials with colored background
@@ -49,23 +39,20 @@ export function TeamLogo({ teamName, size = 32, className = "" }: TeamLogoProps)
     );
   }
 
+  // Logos sit on a white disc: several have dark ink (Nets, Spurs) that would
+  // vanish on the dark theme's background
   return (
-    <div className={`relative ${className}`} style={{ width: size, height: size }}>
-      {isLoading && (
-        <div 
-          className="absolute inset-0 bg-muted rounded-full animate-pulse"
-          style={{ width: size, height: size }}
-        />
-      )}
+    <div
+      className={`flex items-center justify-center rounded-full bg-white ring-1 ring-border ${className}`}
+      style={{ width: size, height: size, padding: Math.round(size * 0.1) }}
+    >
       <Image
         src={`/logos/${teamName}.png`}
         alt={teamName}
         width={size}
         height={size}
-        className={`object-contain rounded-full ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity`}
-        onError={handleImageError}
-        onLoad={handleImageLoad}
-        priority={false}
+        className="h-full w-full object-contain"
+        onError={() => setImageError(true)}
       />
     </div>
   );

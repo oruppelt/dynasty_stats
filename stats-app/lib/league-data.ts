@@ -2,10 +2,10 @@ import { useQuery } from '@tanstack/react-query'
 
 // Shapes of /data/league.json, written by pipeline/build_data.py.
 
-/** A matrix row: the team under `Team`, then one value per opponent (-1 = no data). */
+/** A matrix row: the team under `Team`, then one value per opponent (null = never played, or the team itself). */
 export interface MatrixRow {
   Team: string;
-  [opponent: string]: number | string;
+  [opponent: string]: number | string | null;
 }
 
 export interface RankedMatrixRow extends MatrixRow {
@@ -17,7 +17,7 @@ export interface StrengthData {
   teams: string[];
   /** All-play win rate against each opponent; Strength = row mean */
   matrix: RankedMatrixRow[];
-  /** Actual head-to-head wins (-1 = never played) */
+  /** Actual head-to-head wins */
   matrix_wins: MatrixRow[];
   /** Head-to-head games played */
   matrix_games: MatrixRow[];

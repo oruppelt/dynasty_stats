@@ -59,7 +59,7 @@ def test_all_play_win_rates(data):
     assert matrix['Bravo']['Delta'] == 0.75     # beat 70, tied 85
     assert matrix['Charlie']['Delta'] == 1.0
     assert matrix['Delta']['Charlie'] == 0.0
-    assert matrix['Alpha']['Alpha'] == -1       # no self-comparison
+    assert matrix['Alpha']['Alpha'] is None     # no self-comparison
 
 
 def test_strength_and_rank(data):
@@ -77,7 +77,7 @@ def test_head_to_head(data):
     assert wins['Alpha']['Bravo'] == 1 and games['Alpha']['Bravo'] == 1
     assert wins['Alpha']['Charlie'] == 0 and games['Alpha']['Charlie'] == 1
     assert wins['Bravo']['Delta'] == 0.5                                  # tie
-    assert wins['Alpha']['Delta'] == -1 and games['Alpha']['Delta'] == 0  # never played
+    assert wins['Alpha']['Delta'] is None and games['Alpha']['Delta'] == 0  # never played
 
 
 def test_schedule_luck(data):
@@ -88,6 +88,37 @@ def test_schedule_luck(data):
     assert matrix['Charlie']['Strength'] == pytest.approx(0.5)
     assert matrix['Delta']['Strength'] == pytest.approx(0.25)
     assert matrix['Charlie']['Rank'] == 1 and matrix['Bravo']['Rank'] == 4
+
+
+def test_schedule_luck_counts_rematches(tmp_path):
+    # Period 3 adds rematches: Alpha 50 - 40 Bravo, Charlie 30 - 20 Delta
+    rematch = tmp_path / 'rematch.csv'
+    rematch.write_text(FIXTURE.read_text().replace(
+        ',,,,,,,,,,,', 'Alpha,50,Bravo,40,Scoring Period 3,3,W,Alpha,Bravo,,,\n'
+                       'Charlie,30,Delta,20,Scoring Period 3,3,W,Charlie,Delta,,,'))
+    luck = {row['Team']: row['Strength'] for row in compute_league(load_games(rematch))['schedule_strength']['matrix']}
+    # Bravo vs Alpha: all-play 1/3, lost both games: 0 - 2 x 1/3.
+    # Bravo vs Delta: all-play 2.5/3, tied once: 0.5 - 2.5/3. Total -1.
+    assert luck['Bravo'] == pytest.approx(-1, abs=0.01)
+    assert luck['Charlie'] == pytest.approx(2 / 3, abs=0.01)
+    assert sum(luck.values()) == pytest.approx(0, abs=0.02)
+
+
+def test_matrix_gaps_are_null(data):
+    # Only pairs that never played (and a team against itself) are null; a real
+    # value such as a luck of exactly -1.0 must never be mistaken for a gap
+    games = by_team(data['strength']['matrix_games'])
+    for name in ['matrix', 'matrix_wins']:
+        for row in data['schedule_strength'][name]:
+            for opponent, value in row.items():
+                if opponent in ('Team', 'Strength', 'Rank'):
+                    continue
+                played = opponent != row['Team'] and games[row['Team']][opponent] > 0
+                assert (value is not None) == played, (name, row['Team'], opponent)
+
+
+def test_luck_sums_to_zero(data):
+    assert sum(team['luck'] for team in data['teams']) == pytest.approx(0)
 
 
 def test_points_for_against(data):
