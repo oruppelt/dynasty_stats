@@ -3,27 +3,16 @@
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { useLayoutStore } from "@/lib/layout-store"
-import { useQuery } from "@tanstack/react-query"
+import { useLeagueData } from "@/lib/league-data"
 import { BarChart3, Menu } from "lucide-react"
-
-interface DataMetadata {
-  updated_at: string
-}
 
 export function Header() {
   const { toggleSidebar } = useLayoutStore()
 
-  // Written by pipeline/build_data.py whenever the league data changes
-  const { data: metadata } = useQuery<DataMetadata>({
-    queryKey: ['metadata'],
-    queryFn: async () => {
-      const response = await fetch('/data/metadata.json')
-      if (!response.ok) throw new Error(`HTTP ${response.status}`)
-      return response.json()
-    },
-  })
-  const updatedAt = metadata?.updated_at
-    ? new Date(metadata.updated_at).toLocaleString(undefined, {
+  // Set by pipeline/build_data.py whenever the league data changes
+  const updatedAtIso = useLeagueData().data?.meta.updated_at
+  const updatedAt = updatedAtIso
+    ? new Date(updatedAtIso).toLocaleString(undefined, {
         day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit',
       })
     : null

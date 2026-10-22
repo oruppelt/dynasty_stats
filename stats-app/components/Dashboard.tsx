@@ -1,59 +1,24 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { PointsWidget } from "./widgets/PointsWidget"
 import { AllVsAllWidget } from "./widgets/AllVsAllWidget"
 import { ScheduleStrengthWidget } from "./widgets/ScheduleStrengthWidget"
 import { TeamStrengthWidget } from "./widgets/TeamStrengthWidget"
 import { ScheduleLuckWidget } from "./widgets/ScheduleLuckWidget"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { useQuery } from '@tanstack/react-query'
-import { useLogger } from '@/lib/logger'
-import { handleQueryError, handleQuerySuccess, statsApi } from '@/lib/api-client'
+import { useLeagueData } from '@/lib/league-data'
 import { Target, TrendingUp, Calendar, Shuffle, Zap } from "lucide-react"
 import { motion } from "framer-motion"
 
-interface TeamsData {
-  teams: string[];
-  // ... other fields
-}
-
 export function Dashboard() {
-  const logger = useLogger('Dashboard');
   const [selectedTeam, setSelectedTeam] = useState<string>("")
-
-  useEffect(() => {
-    logger.info('Dashboard mounted');
-    return () => logger.info('Dashboard unmounted');
-  }, [logger]);
-
-  const handleTabChange = (newTab: string) => {
-    logger.userAction('widget_changed', {
-      newWidget: newTab
-    });
-  };
-
-  // Fetch teams list from any of the endpoints that provide it
-  const { data } = useQuery<TeamsData>({
-    queryKey: ['strength'],
-    queryFn: async () => {
-      try {
-        logger.info('Fetching teams data for dashboard');
-        const response = await statsApi.getStrength();
-        handleQuerySuccess(response.data, 'strength');
-        return response.data as TeamsData;
-      } catch (err) {
-        logger.error('Failed to fetch teams data', undefined, err as Error);
-        handleQueryError(err, 'strength');
-        throw err;
-      }
-    }
-  })
+  const teams = useLeagueData().data?.strength.teams
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-8">
       {/* Team Filter */}
-      {data?.teams && (
+      {teams && (
         <motion.div
           className="mb-6 flex justify-center"
           initial={{ opacity: 0, y: -10 }}
@@ -66,19 +31,11 @@ export function Dashboard() {
             </label>
             <select
               value={selectedTeam}
-              onChange={(e) => {
-                const newTeam = e.target.value;
-                logger.userAction('team_selection_changed', {
-                  previousTeam: selectedTeam,
-                  newTeam,
-                  availableTeams: data?.teams?.length
-                });
-                setSelectedTeam(newTeam);
-              }}
+              onChange={(e) => setSelectedTeam(e.target.value)}
               className="px-4 py-2 border rounded-lg bg-background focus:outline-none focus:ring-2 focus:ring-ring min-w-[250px] transition-all"
             >
               <option value="">All Teams</option>
-              {data.teams.map(team => (
+              {teams.map(team => (
                 <option key={team} value={team}>
                   {team}
                 </option>
@@ -89,7 +46,7 @@ export function Dashboard() {
       )}
 
       {/* Tabs Navigation */}
-      <Tabs defaultValue="points" className="w-full" onValueChange={handleTabChange}>
+      <Tabs defaultValue="points" className="w-full">
         <TabsList className="grid w-full grid-cols-5 mb-8">
           <TabsTrigger value="points" className="flex items-center gap-2">
             <Target className="h-4 w-4" />
