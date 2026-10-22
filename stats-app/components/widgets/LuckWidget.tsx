@@ -26,10 +26,10 @@ export function LuckWidget({ selectedTeam }: LuckWidgetProps) {
   if (isLoading) return <WidgetSkeleton variant="heatmap" />
   if (error || !league) return <ErrorState />
 
-  const { teams, matrix, matrix_wins } = league.schedule_strength
-  const winsBy = new Map(matrix_wins.map(r => [r.Team, r]))
-  const gamesBy = new Map(league.strength.matrix_games.map(r => [r.Team, r]))
-  const rateBy = new Map(league.strength.matrix.map(r => [r.Team, r]))
+  const { teams, luck: matrix, wins, games, all_play } = league.matchups
+  const winsBy = new Map(wins.map(r => [r.Team, r]))
+  const gamesBy = new Map(games.map(r => [r.Team, r]))
+  const rateBy = new Map(all_play.map(r => [r.Team, r]))
 
   const meeting = (team: string, opponent: string) => {
     const wins = (winsBy.get(team)?.[opponent] as number | null) ?? 0

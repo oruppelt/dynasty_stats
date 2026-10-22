@@ -37,6 +37,12 @@ function axisRange(values: number[], step: number) {
 
 const thousands = (v: number) => `${v / 1000}k`
 
+function median(values: number[]): number {
+  const sorted = [...values].sort((a, b) => a - b)
+  const mid = Math.floor(sorted.length / 2)
+  return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2
+}
+
 export function PointsWidget({ selectedTeam }: { selectedTeam: string }) {
   const { data: league, isLoading, error } = useLeagueData()
   const [ref, width] = useElementWidth<HTMLDivElement>()
@@ -54,7 +60,8 @@ export function PointsWidget({ selectedTeam }: { selectedTeam: string }) {
   if (isLoading) return <WidgetSkeleton variant="scatter" />
   if (error || !league) return <ErrorState />
 
-  const { median_scored_for: medianFor, median_scored_against: medianAgainst } = league.for_against
+  const medianFor = median(points.map(p => p.x))
+  const medianAgainst = median(points.map(p => p.y))
   const narrow = width < 640
   const step = narrow ? 2000 : 1000
   const xRange = axisRange(points.map(p => p.x), step)

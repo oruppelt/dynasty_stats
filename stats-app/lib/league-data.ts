@@ -8,40 +8,17 @@ export interface MatrixRow {
   [opponent: string]: number | string | null;
 }
 
-export interface RankedMatrixRow extends MatrixRow {
-  Strength: number;
-  Rank: number;
-}
-
-export interface StrengthData {
+/** Team-vs-team matrices; rows in `teams` order. */
+export interface Matchups {
   teams: string[];
-  /** All-play win rate against each opponent; Strength = row mean */
-  matrix: RankedMatrixRow[];
-  /** Actual head-to-head wins */
-  matrix_wins: MatrixRow[];
+  /** Share of periods the row team outscored the opponent */
+  all_play: MatrixRow[];
+  /** Actual head-to-head wins (a tie counts half) */
+  wins: MatrixRow[];
   /** Head-to-head games played */
-  matrix_games: MatrixRow[];
-  metadata: {
-    maxWinRate: number;
-    minWinRate: number;
-  };
-}
-
-export interface ScheduleStrengthData {
-  teams: string[];
-  /** Actual minus all-play expected wins against each opponent; Strength = total luck */
-  matrix: RankedMatrixRow[];
-  matrix_wins: MatrixRow[];
-}
-
-export interface ForAgainstData {
-  df_scores: {
-    Team: string;
-    'Scored For': number;
-    'Scored Against': number;
-  }[];
-  median_scored_for: number;
-  median_scored_against: number;
+  games: MatrixRow[];
+  /** Head-to-head wins minus expected wins (all_play x games); a row sums to the team's luck */
+  luck: MatrixRow[];
 }
 
 /** Season totals. A tie counts as half a win and half a loss. */
@@ -83,9 +60,7 @@ export interface LeagueData {
   };
   teams: TeamSummary[];
   results: PeriodResult[];
-  strength: StrengthData;
-  schedule_strength: ScheduleStrengthData;
-  for_against: ForAgainstData;
+  matchups: Matchups;
 }
 
 async function fetchLeagueData(): Promise<LeagueData> {

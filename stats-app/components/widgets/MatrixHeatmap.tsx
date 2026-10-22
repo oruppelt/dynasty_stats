@@ -165,8 +165,7 @@ function TeamList({ matrix, selectedTeam, scale, formatValue, detail, listTitle 
   }
 
   const items = Object.entries(row)
-    .filter((entry): entry is [string, number] => entry[0] !== 'Team' && entry[0] !== 'Strength'
-      && entry[0] !== 'Rank' && typeof entry[1] === 'number')
+    .filter((entry): entry is [string, number] => entry[0] !== 'Team' && typeof entry[1] === 'number')
     .sort((a, b) => b[1] - a[1])
 
   return (

@@ -34,7 +34,7 @@ const TABS: TabDef[] = [
 
 export function Dashboard() {
   const { data: league, error } = useLeagueData()
-  useInitSelectedTeam(league?.strength.teams)
+  useInitSelectedTeam(league?.matchups.teams)
   const { team: selectedTeam, ready } = useSelectedTeam()
   // Until the viewer picks a tab: their team if they have one, else the league
   const [tab, setTab] = useState<string | null>(null)

@@ -46,7 +46,7 @@ export function Header() {
                 className="w-36 truncate rounded-lg border bg-background px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring sm:w-56"
               >
                 <option value="">Pick your team</option>
-                {league.strength.teams.map(t => (
+                {league.matchups.teams.map(t => (
                   <option key={t} value={t}>{t}</option>
                 ))}
               </select>
