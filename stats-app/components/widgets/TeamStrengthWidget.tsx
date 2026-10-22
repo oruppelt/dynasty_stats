@@ -10,7 +10,7 @@ import { LayoutGrid, Table } from 'lucide-react'
 
 interface StrengthData {
   matrix: {
-    'Team1 ': string;
+    Team: string;
     Strength: number;
     Rank: number;
     [key: string]: number | string;
@@ -161,21 +161,21 @@ export function TeamStrengthWidget({ selectedTeam }: TeamStrengthWidgetProps) {
               {/* Rankings Cards */}
               <div className="space-y-3">
             {rankingsData.map((team) => {
-              const isSelected = team['Team1 '] === selectedTeam;
+              const isSelected = team.Team === selectedTeam;
               const category = getStrengthCategory(team.Strength);
               const percentile = getPercentile(team.Rank, rankingsData.length);
 
               return (
                 <ModernRankingCard
-                  key={team['Team1 ']}
+                  key={team.Team}
                   rank={team.Rank}
-                  teamName={team['Team1 ']}
+                  teamName={team.Team}
                   value={team.Strength}
                   label="Win Rate Strength"
                   isSelected={isSelected}
                   onClick={() => {
                     logger.userAction('team_strength_card_clicked', {
-                      team: team['Team1 '],
+                      team: team.Team,
                       rank: team.Rank,
                       strength: team.Strength,
                       selectedTeam

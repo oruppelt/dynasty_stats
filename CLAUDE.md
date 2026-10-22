@@ -45,16 +45,18 @@ only rewritten when their content changes, so the hourly workflow commits only
 real updates. The site fetches these with React Query (`app/providers.tsx`).
 
 ### Metrics (`pipeline/league_data.py`)
-- **All-play strength**: in each matchweek (`Match` column), a team's score is
-  compared with every other team's score that week. Win rate per opponent;
+- **All-play strength**: in each scoring period (`Match` column; two per
+  week, Mon–Thu and Fri–Sun; `PERIOD` is the same as text), a team's score is
+  compared with every other team's score that period. Win rate per opponent;
   `Strength` = row mean.
 - **Schedule luck**: actual head-to-head wins minus all-play expected wins,
   summed over opponents played. Units are wins.
 - **Head-to-head**: `matrix_wins` (wins, -1 = never played) and `matrix_games`.
 - **Points for/against**: totals per team plus medians.
 
-Output keys keep the sheet's trailing-space column names (`'Team1 '`) because
-the frontend depends on them; cleaning this up is planned in `UX_PLAN.md`.
+`load_games()` renames the sheet's columns by position (its headers have
+trailing spaces, e.g. `'Team1 '`) and strips team names. Matrix rows in the
+JSON name their team under `Team`; every other key is a team name.
 
 ### Frontend
 - `app/page.tsx` → `components/Dashboard.tsx` (tabs, team filter) →

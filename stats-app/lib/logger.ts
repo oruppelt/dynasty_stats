@@ -225,11 +225,3 @@ export function useLogger(componentName: string) {
   };
 }
 
-// Error boundary logging
-export function logErrorBoundary(error: Error, errorInfo: unknown, componentStack: string) {
-  logger.error('Error Boundary caught an error', {
-    errorInfo,
-    componentStack,
-    stack: error.stack
-  }, 'ErrorBoundary', error);
-}

@@ -58,7 +58,7 @@ export function TeamLogo({ teamName, size = 32, className = "" }: TeamLogoProps)
         />
       )}
       <Image
-        src={`/logos/${teamName.trim()}.png`}
+        src={`/logos/${teamName}.png`}
         alt={teamName}
         width={size}
         height={size}

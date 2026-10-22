@@ -8,18 +8,18 @@ import { WidgetSkeleton } from './WidgetSkeleton'
 interface StrengthData {
   teams: string[];
   matrix: {
-    'Team1 ': string;
+    Team: string;
     Strength: number;
     Rank: number;
     [key: string]: number | string;
   }[];
   matrix_wins: {
-    'Team1 ': string;
+    Team: string;
     [key: string]: number | string;
   }[];
   // Number of head-to-head games per pair (absent in older snapshots)
   matrix_games?: {
-    'Team1 ': string;
+    Team: string;
     [key: string]: number | string;
   }[];
   metadata?: {
