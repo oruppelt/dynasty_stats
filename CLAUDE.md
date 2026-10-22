@@ -47,23 +47,25 @@ leaves the data in place.
 
 `league.json`: `meta`, `teams` (season totals: W-L, all-play W-L, points,
 luck), `results` (one row per team per scoring period, with `luck_to_date`:
-the team's luck through that period, from the games played so far), and the older
-`strength`, `schedule_strength`, `for_against` datasets the current widgets use.
+the team's luck through that period, from the games played so far), and
+`matchups`: the team list and four team-vs-team matrices (`all_play`, `wins`,
+`games`, `luck`).
 The site reads it through `useLeagueData()` in `lib/league-data.ts` (one
 request, shared types); components never fetch on their own.
 
 ### Metrics (`pipeline/league_data.py`)
 - **All-play strength**: in each scoring period (`Match` column; two per
   week, Mon–Thu and Fri–Sun; `PERIOD` is the same as text), a team's score is
-  compared with every other team's score that period. Win rate per opponent;
-  `Strength` = row mean.
+  compared with every other team's score that period. Win rate per opponent
+  (`matchups.all_play`); the season record is in `teams`.
 - **Schedule luck**: actual head-to-head wins minus all-play expected wins
   (all-play win rate x games played against that opponent, so rematches
   count twice). Units are wins; it sums to zero across the league.
-- **Head-to-head**: `matrix_wins` and `matrix_games`.
+  Per opponent in `matchups.luck`, totals in `teams`.
+- **Head-to-head**: `matchups.wins` and `matchups.games`.
 - In every matrix, `null` means never played (or the team itself). Don't use
   a number as a gap marker: -1 is a real luck value.
-- **Points for/against**: totals per team plus medians.
+- **Points for/against**: totals per team (medians are worked out on the site).
 - **Records**: a tie counts as half a win and half a loss, in both the actual
   and the all-play W-L.
 
@@ -80,7 +82,8 @@ JSON name their team under `Team`; every other key is a team name.
   view); axes use 3-letter codes from `lib/teams.ts`. Views share
   `ErrorState` and `Explainer` ("What does this mean?").
 - `lib/selected-team.ts`: the viewer's team (zustand), kept in localStorage
-  and the `?team=` URL parameter. `lib/standings.ts`: ranks and number
+  and the `?team=` URL parameter (`lib/url.ts`; the recap's `?period=` works
+  the same way). `lib/standings.ts`: ranks and number
   formatting (records, luck, points) shared by the views. `lib/season.ts`:
   results by period, standings after each period, a period's recap.
 - Season charts go through `SeasonLines` (nivo line: every team faded, the
