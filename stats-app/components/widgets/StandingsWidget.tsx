@@ -49,7 +49,7 @@ const columns: ColumnDef<Standing>[] = [
   },
   {
     id: 'record',
-    accessorKey: 'wins',
+    accessorKey: 'win_pct',
     header: 'W-L',
     sortDescFirst: true,
     cell: ({ row }) => formatRecord(row.original.wins, row.original.losses),

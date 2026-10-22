@@ -1,8 +1,10 @@
 import type { TeamSummary } from './league-data'
 
 export interface Standing extends TeamSummary {
-  /** Standings position: most wins, then most points for */
+  /** Standings position: best win rate, then most points for */
   rank: number
+  /** Wins per game played (a tie counts half) */
+  win_pct: number
   all_play_pct: number
   all_play_rank: number
   points_for_rank: number
@@ -15,7 +17,8 @@ function rankDescending(values: number[]): number[] {
 }
 
 export function computeStandings(teams: TeamSummary[]): Standing[] {
-  const sorted = [...teams].sort((a, b) => b.wins - a.wins || b.points_for - a.points_for)
+  const winPct = (t: TeamSummary) => t.games ? t.wins / t.games : 0
+  const sorted = [...teams].sort((a, b) => winPct(b) - winPct(a) || b.points_for - a.points_for)
   const allPlayPct = sorted.map(t => t.all_play_wins / (t.all_play_wins + t.all_play_losses))
   const allPlayRank = rankDescending(allPlayPct)
   const pfRank = rankDescending(sorted.map(t => t.points_for))
@@ -24,6 +27,7 @@ export function computeStandings(teams: TeamSummary[]): Standing[] {
   return sorted.map((t, i) => ({
     ...t,
     rank: i + 1,
+    win_pct: winPct(t),
     all_play_pct: allPlayPct[i],
     all_play_rank: allPlayRank[i],
     points_for_rank: pfRank[i],
