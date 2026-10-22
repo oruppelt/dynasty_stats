@@ -1,9 +1,9 @@
 """
 Tests for league_data on a tiny hand-checked league.
 
-Fixture (tests/fixtures/games.csv), 4 teams over 2 matchweeks:
-    Week 1: Alpha 100 - 90 Bravo,   Charlie 80 - 70 Delta
-    Week 2: Alpha  60 - 95 Charlie, Bravo   85 - 85 Delta (tie)
+Fixture (tests/fixtures/games.csv), 4 teams over 2 scoring periods:
+    Period 1: Alpha 100 - 90 Bravo,   Charlie 80 - 70 Delta
+    Period 2: Alpha  60 - 95 Charlie, Bravo   85 - 85 Delta (tie)
 The last row is blank, like trailing empty rows in the Google Sheet.
 """
 import json

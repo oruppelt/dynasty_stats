@@ -19,11 +19,13 @@ luck) is buried in the last tab as an unlabeled number like `-2.950`.
 What the existing metrics mean (useful for labelling them in plain words):
 
 - **Strength** (`/strength`, `matrix[].Strength`) = all-play win %: in each
-  matchweek, how often the team's score beat every other team's score.
+  scoring period, how often the team's score beat every other team's score.
 - **Schedule luck** (`/schedule_strength`, `matrix[].Strength`) = actual wins
   minus all-play expected wins, summed over opponents. Units are "wins".
-- **`PERIOD`** column in the sheet = matchweek. It is read by the backend but
-  then dropped, so no time dimension reaches the UI today.
+- **Scoring periods**: two matchups per week (Mon–Thu and Fri–Sun). `Match`
+  is the period number (1, 2, ...) and `PERIOD` the same as text ("Scoring
+  Period 14"). A calendar week is two consecutive periods. No time dimension
+  reaches the UI today.
 
 ## Why this order
 
@@ -111,7 +113,7 @@ static export. No backend server, cache layers or rate limits.
 - [x] Clean column names (trailing spaces leak into the JSON as `'Team1 '`
       keys everywhere in the frontend) and keep `PERIOD`.
       Matrix rows now use `Team`; `PERIOD` is kept as `Period` in the
-      dataframe but not yet in any output.
+      dataframe but not yet in any output (`Match` is the numeric form of it).
 - [ ] Add actual W-L-T and per-week numbers (score, all-play wins, result).
 - [ ] Single `league.json` payload in the shape Phases 2–3 need. Keep the
       current files until the old widgets are retired.
@@ -157,7 +159,7 @@ One sortable table replacing the 30 tall ranking cards as the default:
 
 ---
 
-## Phase 3: Weekly dimension (`PERIOD`)
+## Phase 3: Time dimension (scoring periods, `Match`)
 
 Biggest new-feature opportunity and the most shareable content.
 
@@ -165,7 +167,7 @@ Biggest new-feature opportunity and the most shareable content.
   or nivo; both are already installed) for all new charts.
 - **Weekly recap** for the latest week (with a week picker):
   - Top and lowest score of the week.
-  - "Unluckiest loss": lost, but would have beaten N teams that week.
+  - "Unluckiest loss": lost, but would have beaten N teams that period.
   - "Luckiest win": won, but would have lost to N teams.
   - Biggest blowout, closest game.
 - **Rank over the season**: bump chart (all-play rank by week), selected team

@@ -22,6 +22,6 @@ cd pipeline && ../.venv/bin/python -m pytest
 
 The sheet must have these 12 columns in order:
 `Team1, Score1, Team2, Score2, PERIOD, Match, Result, WINNER, LOSER, H1, H2, Color`.
-`Match` is the matchweek number; rows without it are skipped. If the
+`Match` is the scoring period number (two per week: Mon–Thu, Fri–Sun); rows without it are skipped. If the
 column count changes, the build fails with a clear error (and GitHub emails
 you that the workflow failed) instead of publishing broken data.

@@ -45,8 +45,9 @@ only rewritten when their content changes, so the hourly workflow commits only
 real updates. The site fetches these with React Query (`app/providers.tsx`).
 
 ### Metrics (`pipeline/league_data.py`)
-- **All-play strength**: in each matchweek (`Match` column), a team's score is
-  compared with every other team's score that week. Win rate per opponent;
+- **All-play strength**: in each scoring period (`Match` column; two per
+  week, Mon–Thu and Fri–Sun; `PERIOD` is the same as text), a team's score is
+  compared with every other team's score that period. Win rate per opponent;
   `Strength` = row mean.
 - **Schedule luck**: actual head-to-head wins minus all-play expected wins,
   summed over opponents played. Units are wins.

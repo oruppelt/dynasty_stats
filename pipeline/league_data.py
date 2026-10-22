@@ -52,7 +52,7 @@ def _head_to_head_wins(full: pd.DataFrame) -> pd.DataFrame:
 
 
 def _all_play_win_rates(full: pd.DataFrame) -> pd.DataFrame:
-    """Share of matchweeks in which a team outscored each other team, rounded to 2 decimals."""
+    """Share of scoring periods in which a team outscored each other team, rounded to 2 decimals."""
     alt = full[['Match', 'Team', 'Score']].copy()
     alt.columns = ['Match', 'Alt_Team', 'Alt_Score']
     merged = full.merge(alt, on='Match', how='inner')
