@@ -1,0 +1,27 @@
+# Data pipeline
+
+Turns the league Google Sheet into the static JSON files the site serves.
+There is no server: a scheduled GitHub Action runs this and commits the
+results to `stats-app/public/data/`, and Render redeploys the site.
+
+- `league_data.py`: all the calculations (all-play strength, schedule luck,
+  points for/against, head-to-head). Pure functions.
+- `build_data.py`: fetches the sheet once, runs the calculations, writes the JSON.
+- `tests/`: pytest tests on a small hand-checked league.
+- `test.ipynb`: older exploration notebook (not used by the pipeline).
+
+## Run locally (from the repo root)
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r pipeline/requirements-dev.txt
+
+.venv/bin/python pipeline/build_data.py   # refresh stats-app/public/data/ from the sheet
+cd pipeline && ../.venv/bin/python -m pytest
+```
+
+The sheet must have these 12 columns in order:
+`Team1, Score1, Team2, Score2, PERIOD, Match, Result, WINNER, LOSER, H1, H2, Color`.
+`Match` is the matchweek number; rows without it are skipped. If the
+column count changes, the build fails with a clear error (and GitHub emails
+you that the workflow failed) instead of publishing broken data.

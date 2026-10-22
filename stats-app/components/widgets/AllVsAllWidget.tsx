@@ -44,7 +44,7 @@ export function AllVsAllWidget({ selectedTeam }: AllVsAllWidgetProps) {
     queryKey: ['strength'],
     queryFn: async () => {
       logger.info('Fetching strength data for heatmap');
-      const response = await fetch('/api/strength');
+      const response = await fetch('/data/strength.json');
       if (!response.ok) {
         const errorMsg = `HTTP ${response.status}: ${response.statusText}`;
         logger.error('Failed to fetch strength data', { status: response.status, statusText: response.statusText });

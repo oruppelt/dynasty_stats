@@ -76,7 +76,7 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
     queryKey: ['points'],
     queryFn: async () => {
       logger.info('Fetching points data');
-      const response = await fetch('/api/for_against');
+      const response = await fetch('/data/for_against.json');
       if (!response.ok) {
         const errorMsg = `HTTP ${response.status}: ${response.statusText}`;
         logger.error('Failed to fetch points data', { status: response.status, statusText: response.statusText });

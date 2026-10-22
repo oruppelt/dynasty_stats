@@ -34,7 +34,7 @@ export function TeamStrengthWidget({ selectedTeam }: TeamStrengthWidgetProps) {
     queryKey: ['strength'],
     queryFn: async () => {
       logger.info('Fetching team strength data');
-      const response = await fetch('/api/strength');
+      const response = await fetch('/data/strength.json');
       if (!response.ok) {
         const errorMsg = `HTTP ${response.status}: ${response.statusText}`;
         logger.error('Failed to fetch team strength data', { status: response.status, statusText: response.statusText });

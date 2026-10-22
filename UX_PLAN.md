@@ -41,12 +41,11 @@ What the existing metrics mean (useful for labelling them in plain words):
 
 ## Working practices
 
-- Each phase (or a meaningful chunk of one) gets its own branch in each
-  affected repo, e.g. `ux/phase-1-foundations`. Commit in small, logical
+- Each phase (or a meaningful chunk of one) gets its own branch, e.g.
+  `ux/phase-2-my-team`. Commit in small, logical
   steps; merge to `main` when it is verified. `main` is what gets deployed.
-- Before each commit: `npm run lint` and `tsc --noEmit` in `stats-app/`;
-  for backend changes, run the computation once against the live sheet (or
-  the tests from Phase 1.4).
+- Before each commit: `npm run lint` and `npm run build` in `stats-app/`;
+  `pytest` in `pipeline/` for calculation changes.
 - Verify UI changes in the browser in **light and dark mode** and at
   **phone width**.
 - Update the changelog at the bottom of this file when a phase or item lands.
@@ -55,7 +54,7 @@ What the existing metrics mean (useful for labelling them in plain words):
 
 ## Phase 0: Bug fixes ✅ (done 2026-10-22)
 
-Branch `ux/phase-0-bugfixes` in both repos (not merged yet).
+Merged into the monorepo's `main` with the old histories.
 
 - [x] Luck tab "Best Luck" tile showed the *worst* luck value.
 - [x] All-vs-All tooltip "Record" was `{wins}-{100 - wins}` (nonsense like 1-99).
@@ -74,55 +73,42 @@ Branch `ux/phase-0-bugfixes` in both repos (not merged yet).
 ## Phase 1: Foundations (small, unblocks everything else)
 
 ### 1.1 Quick follow-ups from Phase 0 testing
-- [ ] Re-run `backend/snapshot_data.py`. The static snapshot is from
-      2025-12-11 (last season), while the live sheet has new-season data.
-- [ ] Remove `Cache-Control: max-age=300` from the Next API routes. Browsers
-      currently keep data 5 more minutes on top of the other 3 cache layers.
+- [x] ~~Re-run the snapshot~~ No longer needed: data is rebuilt hourly.
+- [x] ~~Remove `Cache-Control` from the Next API routes~~ The API routes are gone.
 - [ ] Fix the nivo version mismatch (`@nivo/heatmap` 0.88 vs
       `@nivo/scatterplot` 0.99, which appears unused). It causes 2 React
       errors inside `@nivo/legends` in the dev console.
-- [ ] Delete dead code: `components/Auth.tsx`, `components/widgets/HeatMap.tsx`,
-      and the stray root-level `app/`, `package.json`, `node_modules/`,
-      `next.config.js`.
-- [ ] Fix doc drift: `CLAUDE.md` says 5-minute caches; code uses 2 minutes.
+- [ ] Delete dead code: `components/Auth.tsx`, `components/widgets/HeatMap.tsx`.
+      (The stray root-level Next.js files stayed behind in the old folder.)
+- [x] Fix doc drift in `CLAUDE.md` (rewritten for the new architecture).
 
-### 1.2 Repository layout — ⚠️ decision needed
-Today: two separate GitHub repos (`stats-app`, `stats-app-backend`) and an
-unversioned root folder holding `CLAUDE.md`, `ROADMAP.md` and this plan.
-- **Recommended:** one repo (merge with `git subtree` to keep history), so
-  a feature that touches both sides is one branch and one PR.
-- Requires updating the Render services to point at subfolders.
-- Until then, this plan lives unversioned at the root.
+### 1.2 Repository layout ✅ (done 2026-10-22)
+One repo, `dynasty-stats`, with `pipeline/` and `stats-app/`. Both old
+histories were merged with `git subtree`. Setup steps are in `DEPLOYMENT.md`.
 
-### 1.3 Architecture — ⚠️ decision needed
-Context: ~30 users, data changes roughly weekly. The current stack (FastAPI
-+ 3 cache layers + request coalescing + JSON snapshots + background refresh)
-exists mostly to protect Google Sheets from on-demand recompute.
+### 1.3 Architecture ✅ (done 2026-10-22): static data
+An hourly GitHub Action runs `pipeline/build_data.py`, which commits
+`stats-app/public/data/*.json` when the data changed. Render serves the
+static export. No backend server, cache layers or rate limits.
 
-- **Option A (recommended): static data.** Scheduled GitHub Action (hourly
-  or daily, plus a manual "refresh now" button) → fetch the CSV → run the
-  Python computation → write `league.json` → deploy the static Next.js site.
-  No backend server, no 429s, no cold starts, instant loads. Data is at most
-  one schedule interval old.
-- **Option B: keep the FastAPI backend**, but with the consolidation below.
-
-### 1.4 One computation, one payload (needed for either option)
-- [ ] New `backend/league.py`: fetch the CSV **once**, clean column names
-      (the sheet's trailing spaces currently leak into the API as
-      `'Team1 '` keys everywhere in the frontend), keep `PERIOD`.
-- [ ] Compute everything from that one dataframe: all-play matrix, head-to-head
-      wins/games, luck, points for/against, actual W-L-T, and per-week
-      numbers (score, all-play wins, result).
-- [ ] Output a single `league` payload (the shape Phases 2–3 need). Keep the
-      old endpoints as thin wrappers until the old widgets are retired.
-- [ ] Add a few `pytest` tests on a small fixture CSV. The math is the core of
-      the app and currently has no tests.
+### 1.4 One computation, one payload
+- [x] `pipeline/league_data.py`: the CSV is fetched **once**, and every
+      dataset is computed from that one dataframe as pure functions. Output
+      is identical to the old endpoints (verified on the live sheet).
+- [x] `pytest` tests on a small hand-checked fixture league.
+- [ ] Clean column names (trailing spaces leak into the JSON as `'Team1 '`
+      keys everywhere in the frontend) and keep `PERIOD`.
+- [ ] Add actual W-L-T and per-week numbers (score, all-play wins, result).
+- [ ] Single `league.json` payload in the shape Phases 2–3 need. Keep the
+      current files until the old widgets are retired.
 
 ### 1.5 Frontend data layer
 - [ ] One `useLeagueData()` hook plus shared types in `lib/`. This replaces the
       five copy-pasted fetch blocks. The `['strength']` query key is currently
       registered with two different fetchers.
 - [ ] Remove `logger.info` calls from render paths.
+- [ ] `api-client.ts` retry/timeout/request-ID machinery is overkill for
+      static files; simplify it as part of the hook.
 
 ---
 
@@ -199,12 +185,25 @@ Biggest new-feature opportunity and the most shareable content.
   the separate Strength and Luck tabs once the standings table covers them).
 - Move remaining charts to the chosen library; remove the unused ones
   (chart.js, plus whichever of Recharts/nivo lost) and possibly framer-motion.
-- Remove the legacy endpoints and the extra cache layers that are no longer
-  needed (all of them under Option A).
+- [x] ~~Remove the legacy endpoints and the cache layers~~ Done with the
+  move to static data (Phase 1.3).
 
 ---
 
 ## Changelog
+
+### 2026-10-22: Phase 1.2–1.4 monorepo and static data (branch `ux/phase-1-static-data`)
+- New repo `dynasty-stats` combining `stats-app` and `stats-app-backend` with
+  history. The old folder `dynasty_stats/` is kept as a backup.
+- `backend/` → `pipeline/`. FastAPI server, cache, logging and snapshot code
+  removed. `league_data.py` holds pure calculations (identical output,
+  verified on the live sheet), `build_data.py` writes the JSON, plus 8
+  pytest tests.
+- `stats-app`: static export (`output: "export"`), API routes removed, data
+  read from `/data/*.json`, and the header shows "Updated <date>".
+- GitHub Actions: `refresh-data.yml` (hourly and manual) and `ci.yml`.
+- `DEPLOYMENT.md`: one-time GitHub/Render setup and day-to-day operations.
+  `CLAUDE.md` rewritten; `README.md` added.
 
 ### 2026-10-22: Phase 0 bug fixes (branch `ux/phase-0-bugfixes`)
 - `ScheduleLuckWidget.tsx`: "Best Luck" uses rank 1 (was the last item, i.e.

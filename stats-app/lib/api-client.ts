@@ -224,9 +224,9 @@ export default apiClient;
 
 // Specific API functions for the dynasty stats app
 export const statsApi = {
-  getStrength: () => apiClient.get('/api/strength'),
-  getForAgainst: () => apiClient.get('/api/for_against'),
-  getScheduleStrength: () => apiClient.get('/api/schedule_strength'),
+  getStrength: () => apiClient.get('/data/strength.json'),
+  getForAgainst: () => apiClient.get('/data/for_against.json'),
+  getScheduleStrength: () => apiClient.get('/data/schedule_strength.json'),
 };
 
 // React Query error handler with logging

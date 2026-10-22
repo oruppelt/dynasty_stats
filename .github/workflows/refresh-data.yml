@@ -1,0 +1,46 @@
+# Rebuilds the league data from the Google Sheet and commits it when it changed.
+# The commit to main triggers Render to redeploy the static site.
+#
+# Run it by hand from GitHub: Actions → "Refresh league data" → "Run workflow".
+name: Refresh league data
+
+on:
+  schedule:
+    - cron: "17 * * * *" # hourly (off the top of the hour, when GitHub is busiest)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - run: pip install -r pipeline/requirements.txt
+
+      - name: Build data from the sheet
+        run: python pipeline/build_data.py
+
+      - name: Commit if anything changed
+        run: |
+          if [ -z "$(git status --porcelain -- stats-app/public/data)" ]; then
+            echo "Data unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats-app/public/data
+          git commit -m "Update league data"
+          git push
