@@ -56,9 +56,12 @@ request, shared types); components never fetch on their own.
   week, Mon–Thu and Fri–Sun; `PERIOD` is the same as text), a team's score is
   compared with every other team's score that period. Win rate per opponent;
   `Strength` = row mean.
-- **Schedule luck**: actual head-to-head wins minus all-play expected wins,
-  summed over opponents played. Units are wins.
-- **Head-to-head**: `matrix_wins` (wins, -1 = never played) and `matrix_games`.
+- **Schedule luck**: actual head-to-head wins minus all-play expected wins
+  (all-play win rate x games played against that opponent, so rematches
+  count twice). Units are wins; it sums to zero across the league.
+- **Head-to-head**: `matrix_wins` and `matrix_games`.
+- In every matrix, `null` means never played (or the team itself). Don't use
+  a number as a gap marker: -1 is a real luck value.
 - **Points for/against**: totals per team plus medians.
 - **Records**: a tie counts as half a win and half a loss, in both the actual
   and the all-play W-L.

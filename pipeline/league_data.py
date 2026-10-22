@@ -94,10 +94,15 @@ def _all_play_win_rates(full: pd.DataFrame) -> pd.DataFrame:
     return wins.div(counts, axis=1)
 
 
+def _matrix_records(df: pd.DataFrame) -> list[dict]:
+    """Matrix rows as dicts; a gap (never played, or the team itself) becomes None, i.e. null in JSON."""
+    return [{key: None if isinstance(value, float) and np.isnan(value) else value for key, value in row.items()}
+            for row in df.reset_index().to_dict('records')]
+
+
 def _with_rank(df: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
-    """Add Rank by Strength (1 = highest), fill gaps with -1, sort team columns."""
+    """Add Rank by Strength (1 = highest) and sort team columns."""
     df['Rank'] = df['Strength'].rank(ascending=False).astype(int)
-    df = df.fillna(-1)
     teams = sorted(col for col in df.columns if col not in ['Strength', 'Rank'])
     return df[teams + ['Strength', 'Rank']], teams
 
@@ -118,8 +123,8 @@ def compute_strength(games: pd.DataFrame) -> dict:
 
     return {
         "teams": teams,
-        "matrix": all_play.reset_index().to_dict('records'),
-        "matrix_wins": h2h_wins.fillna(-1).reset_index().to_dict('records'),
+        "matrix": _matrix_records(all_play),
+        "matrix_wins": _matrix_records(h2h_wins),
         "matrix_games": h2h_games.fillna(0).astype(float).reset_index().to_dict('records'),
         "metadata": {
             "maxWinRate": float(max_win_rate),
@@ -146,8 +151,8 @@ def compute_schedule_strength(games: pd.DataFrame) -> dict:
 
     return {
         "teams": teams,
-        "matrix": luck.reset_index().to_dict('records'),
-        "matrix_wins": h2h_wins.fillna(-1).reset_index().to_dict('records'),
+        "matrix": _matrix_records(luck),
+        "matrix_wins": _matrix_records(h2h_wins),
     }
 
 

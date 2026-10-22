@@ -31,7 +31,7 @@ function opponentsByWinRate(league: LeagueData, team: string) {
   const row = league.strength.matrix.find(r => r.Team === team)
   if (!row) return []
   return league.strength.teams
-    .filter(opponent => opponent !== team && typeof row[opponent] === 'number' && row[opponent] !== -1)
+    .filter(opponent => opponent !== team && typeof row[opponent] === 'number')
     .map(opponent => ({ opponent, rate: row[opponent] as number }))
     .sort((a, b) => b.rate - a.rate)
 }

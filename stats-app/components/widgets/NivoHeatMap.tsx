@@ -48,16 +48,14 @@ export function NivoHeatMap({
       const gamesRow = gamesByTeam.get(row.Team);
 
       const rowData = teams.map(team => {
-        const value = row[team] as number;
-        const winValue = (winsRow?.[team] as number | undefined) ?? -1;
-        const gameValue = gamesRow?.[team] as number | undefined;
+        const value = row[team] as number | null;
 
         return {
           x: team,
-          y: value === -1 ? null : value, // Nivo handles null values gracefully
-          winCount: winValue === -1 ? null : winValue,
-          gameCount: gameValue ?? null,
-          isNoData: value === -1
+          y: value, // null = no data; nivo draws it with emptyColor
+          winCount: (winsRow?.[team] as number | null | undefined) ?? null,
+          gameCount: (gamesRow?.[team] as number | undefined) ?? null,
+          isNoData: value === null
         };
       });
 

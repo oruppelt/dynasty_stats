@@ -37,12 +37,12 @@ export function NivoScheduleHeatMap({
       const teamName = row.Team;
       
       const rowData = teams.map(team => {
-        const value = row[team] as number;
-        
+        const value = row[team] as number | null;
+
         return {
           x: team,
-          y: value === -1 ? null : Number(value.toFixed(2)), // Round at source and convert back to number
-          isNoData: value === -1
+          y: value, // null = never played; nivo draws it with emptyColor
+          isNoData: value === null
         };
       });
 

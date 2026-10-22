@@ -59,7 +59,7 @@ def test_all_play_win_rates(data):
     assert matrix['Bravo']['Delta'] == 0.75     # beat 70, tied 85
     assert matrix['Charlie']['Delta'] == 1.0
     assert matrix['Delta']['Charlie'] == 0.0
-    assert matrix['Alpha']['Alpha'] == -1       # no self-comparison
+    assert matrix['Alpha']['Alpha'] is None     # no self-comparison
 
 
 def test_strength_and_rank(data):
@@ -77,7 +77,7 @@ def test_head_to_head(data):
     assert wins['Alpha']['Bravo'] == 1 and games['Alpha']['Bravo'] == 1
     assert wins['Alpha']['Charlie'] == 0 and games['Alpha']['Charlie'] == 1
     assert wins['Bravo']['Delta'] == 0.5                                  # tie
-    assert wins['Alpha']['Delta'] == -1 and games['Alpha']['Delta'] == 0  # never played
+    assert wins['Alpha']['Delta'] is None and games['Alpha']['Delta'] == 0  # never played
 
 
 def test_schedule_luck(data):
@@ -102,6 +102,19 @@ def test_schedule_luck_counts_rematches(tmp_path):
     assert luck['Bravo'] == pytest.approx(-1, abs=0.01)
     assert luck['Charlie'] == pytest.approx(2 / 3, abs=0.01)
     assert sum(luck.values()) == pytest.approx(0, abs=0.02)
+
+
+def test_matrix_gaps_are_null(data):
+    # Only pairs that never played (and a team against itself) are null; a real
+    # value such as a luck of exactly -1.0 must never be mistaken for a gap
+    games = by_team(data['strength']['matrix_games'])
+    for name in ['matrix', 'matrix_wins']:
+        for row in data['schedule_strength'][name]:
+            for opponent, value in row.items():
+                if opponent in ('Team', 'Strength', 'Rank'):
+                    continue
+                played = opponent != row['Team'] and games[row['Team']][opponent] > 0
+                assert (value is not None) == played, (name, row['Team'], opponent)
 
 
 def test_luck_sums_to_zero(data):
