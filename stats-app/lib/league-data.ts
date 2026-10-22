@@ -70,6 +70,8 @@ export interface PeriodResult {
   /** Teams outscored that period (ties count half) */
   all_play_wins: number;
   all_play_losses: number;
+  /** The team's total luck through this period, from the games played so far */
+  luck_to_date: number;
 }
 
 export interface LeagueData {

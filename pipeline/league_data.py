@@ -94,6 +94,24 @@ def _all_play_win_rates(full: pd.DataFrame) -> pd.DataFrame:
     return wins.div(counts, axis=1)
 
 
+def _luck_matrix(full: pd.DataFrame) -> pd.DataFrame:
+    """Head-to-head wins minus expected wins (all-play win rate x games played)."""
+    return _head_to_head_wins(full) - _all_play_win_rates(full) * _head_to_head_games(full)
+
+
+def compute_luck_to_date(games: pd.DataFrame) -> pd.DataFrame:
+    """Each team's total luck through each scoring period (columns Match, Team, LuckToDate).
+
+    Uses only the games played so far, so the last period matches the season luck.
+    """
+    full = _both_sides(games)
+    rows = []
+    for period in sorted(full['Match'].unique()):
+        luck = _luck_matrix(full[full['Match'] <= period]).sum(axis=1)
+        rows += [{'Match': period, 'Team': team, 'LuckToDate': value} for team, value in luck.items()]
+    return pd.DataFrame(rows)
+
+
 def _matrix_records(df: pd.DataFrame) -> list[dict]:
     """Matrix rows as dicts; a gap (never played, or the team itself) becomes None, i.e. null in JSON."""
     return [{key: None if isinstance(value, float) and np.isnan(value) else value for key, value in row.items()}
@@ -142,9 +160,7 @@ def compute_schedule_strength(games: pd.DataFrame) -> dict:
     """
     full = _both_sides(games)
     h2h_wins = _head_to_head_wins(full)
-    expected = _all_play_win_rates(full) * _head_to_head_games(full)
-
-    luck = h2h_wins - expected
+    luck = _luck_matrix(full)
     luck['Strength'] = luck.sum(axis=1)
     luck, teams = _with_rank(luck)
     luck[teams + ['Strength']] = luck[teams + ['Strength']].round(2)
@@ -209,7 +225,7 @@ def compute_league(games: pd.DataFrame) -> dict:
     """The site's whole payload (league.json), apart from the update time."""
     strength = compute_strength(games)
     schedule_strength = compute_schedule_strength(games)
-    results = compute_results(games)
+    results = compute_results(games).merge(compute_luck_to_date(games), on=['Match', 'Team'], how='left')
     luck = {row['Team']: row['Strength'] for row in schedule_strength['matrix']}
 
     return {
@@ -227,6 +243,7 @@ def compute_league(games: pd.DataFrame) -> dict:
             "win": float(row.WIN),
             "all_play_wins": float(row.AllPlayWins),
             "all_play_losses": float(row.AllPlayLosses),
+            "luck_to_date": round(float(row.LuckToDate), 2),
         } for row in results.itertuples()],
         "strength": strength,
         "schedule_strength": schedule_strength,

@@ -121,6 +121,17 @@ def test_luck_sums_to_zero(data):
     assert sum(team['luck'] for team in data['teams']) == pytest.approx(0)
 
 
+def test_luck_to_date(data):
+    luck = {(r['period'], r['team']): r['luck_to_date'] for r in data['results']}
+    # Period 1: both winners had the higher score, so nobody was lucky yet
+    assert [luck[(1, team)] for team in ['Alpha', 'Bravo', 'Charlie', 'Delta']] == [0, 0, 0, 0]
+    # The last period is the season luck, and every period sums to zero
+    for team in data['teams']:
+        assert luck[(2, team['team'])] == pytest.approx(team['luck'])
+    for period in [1, 2]:
+        assert sum(v for (p, _), v in luck.items() if p == period) == pytest.approx(0)
+
+
 def test_points_for_against(data):
     scores = by_team(data['for_against']['df_scores'], key='Team')
     assert scores['Alpha']['Scored For'] == 160 and scores['Alpha']['Scored Against'] == 185

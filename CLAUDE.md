@@ -46,7 +46,8 @@ so the hourly workflow commits only real updates. A sheet with no played games
 leaves the data in place.
 
 `league.json`: `meta`, `teams` (season totals: W-L, all-play W-L, points,
-luck), `results` (one row per team per scoring period), and the older
+luck), `results` (one row per team per scoring period, with `luck_to_date`:
+the team's luck through that period, from the games played so far), and the older
 `strength`, `schedule_strength`, `for_against` datasets the current widgets use.
 The site reads it through `useLeagueData()` in `lib/league-data.ts` (one
 request, shared types); components never fetch on their own.
@@ -72,15 +73,18 @@ JSON name their team under `Team`; every other key is a team name.
 
 ### Frontend
 - `app/page.tsx` → `components/layout/Header.tsx` (team picker) and
-  `components/Dashboard.tsx` (tabs: My Team, Standings, Points, All vs All,
-  Luck) → `components/widgets/*`, each reading `useLeagueData()`.
+  `components/Dashboard.tsx` (tabs: My Team, Recap, Standings, Season,
+  Points, All vs All, Luck) → `components/widgets/*`, each reading `useLeagueData()`.
 - Charts are nivo only. Both heatmaps go through `MatrixHeatmap` (stepped
   orange-blue scale from `useChartTheme().diverging`, legend, phone list
   view); axes use 3-letter codes from `lib/teams.ts`. Views share
   `ErrorState` and `Explainer` ("What does this mean?").
 - `lib/selected-team.ts`: the viewer's team (zustand), kept in localStorage
   and the `?team=` URL parameter. `lib/standings.ts`: ranks and number
-  formatting (records, luck, points) shared by the views.
+  formatting (records, luck, points) shared by the views. `lib/season.ts`:
+  results by period, standings after each period, a period's recap.
+- Season charts go through `SeasonLines` (nivo line: every team faded, the
+  viewer's and the hovered team drawn on top).
 - Tailwind scans `lib/` too, so helpers there may return class names.
 - `lib/chart-theme.ts`: `useChartTheme()`. Chart libraries can't read CSS
   variables, so charts take light/dark colors from this hook. Use it for any

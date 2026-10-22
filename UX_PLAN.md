@@ -245,21 +245,31 @@ the old Phase 4.
 
 ---
 
-## Phase 3: Time dimension (scoring periods, `Match`)
+## Phase 3: Time dimension (scoring periods, `Match`) ✅ (done 2026-10-22)
 
 Biggest new-feature opportunity and the most shareable content.
 
-- **Chart library:** nivo (decided in 2.5, when the scatter moves to it).
-  `@nivo/bump` and `@nivo/line` cover the two charts below.
-- **Recap** for the latest scoring period, "Period N" (with a picker):
+- [x] **Chart library:** nivo. Both season charts use `@nivo/line` (one
+  shared `SeasonLines`); `@nivo/bump` wasn't needed.
+- [x] **Recap** tab for a scoring period, "Period N", latest by default, with
+  a picker (previous/next and a list):
   - Top and lowest score of the period.
   - "Unluckiest loss": lost, but would have beaten N teams that period.
-  - "Luckiest win": won, but would have lost to N teams.
+  - "Luckiest win": won, but would have beaten only N teams.
   - Biggest blowout, closest game.
-- **Rank over the season**: bump chart (all-play rank by period), selected team
-  highlighted, others faded.
-- **Luck over the season**: cumulative luck line per team.
-- **Sparklines** in the standings table (last 5 periods all-play %).
+  - All games, the viewer's first, each score with how many teams it beat.
+- [x] **Rank over the season** (Season tab): rank after each period,
+  standings or all-play (toggle). Selected team highlighted, others faded,
+  hover highlights any team.
+- [x] **Luck over the season** (Season tab): luck to date per team. The
+  pipeline computes it (`luck_to_date` in `results`) with the same formula
+  as the season luck, on the games played so far, so the last point is the
+  standings number.
+- [x] **Last 5** in the standings table: one bar per period, height = share
+  of teams the score beat, dark = won.
+
+Ideas for later: a `?period=` link to share a recap; a recap card on
+My Team.
 
 ---
 
@@ -279,6 +289,16 @@ Merged into Phase 2.5 (2026-10-22).
 ---
 
 ## Changelog
+
+### 2026-10-22: Phase 3 season views (branch `ux/phase-3-season`)
+- Pipeline: `luck_to_date` per team per period (test: zero after period 1,
+  equals season luck at the end, sums to zero every period).
+- New tabs Recap and Season (seven tabs: two rows of four/three on phones,
+  one row from `md:`). Standings get a Last 5 column.
+- `@nivo/line` added (first-load JS 270 -> 286 kB).
+- Checked in the browser: dark and light, desktop and 390px, hover
+  tooltips, period picker, rank toggle, no-team state. Lint, build, 21
+  pytest tests pass.
 
 ### 2026-10-22: Luck fix and Phase 2.5 visual pass (branch `ux/visual-review`)
 - **Luck was wrong.** Expected wins were counted once per opponent, actual

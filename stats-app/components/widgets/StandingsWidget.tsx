@@ -12,10 +12,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
 import { ErrorState } from './ErrorState'
-import { useLeagueData } from '@/lib/league-data'
+import { PeriodResult, useLeagueData } from '@/lib/league-data'
+import { allPlayPct } from '@/lib/season'
 import {
   Standing,
   computeStandings,
+  formatCount,
   formatLuck,
   formatPct,
   formatPoints,
@@ -30,7 +32,49 @@ const STICKY: Record<string, string> = {
   team: 'sticky left-9 z-10 text-left',
 }
 
-const columns: ColumnDef<Standing>[] = [
+const RECENT_PERIODS = 5
+
+interface Row extends Standing {
+  /** The last few periods, oldest first */
+  recent: PeriodResult[];
+  /** Mean all-play % over them, for sorting */
+  recent_pct: number;
+}
+
+/** One bar per recent period: height = share of teams the score beat, dark = won. */
+function RecentBars({ recent }: { recent: PeriodResult[] }) {
+  const barWidth = 6
+  const gap = 3
+  const height = 20
+  return (
+    <svg
+      width={recent.length * (barWidth + gap) - gap}
+      height={height}
+      className="inline-block align-middle"
+      role="img"
+      aria-label={recent.map(r => `Period ${r.period}: ${r.win === 1 ? 'won' : r.win === 0 ? 'lost' : 'tied'}, beat ${formatCount(r.all_play_wins)}`).join('; ')}
+    >
+      {recent.map((r, i) => {
+        const h = Math.max(2, allPlayPct(r) * height)
+        return (
+          <rect
+            key={r.period}
+            x={i * (barWidth + gap)}
+            y={height - h}
+            width={barWidth}
+            height={h}
+            rx={1}
+            className={r.win === 1 ? 'fill-foreground' : r.win === 0 ? 'fill-muted-foreground/40' : 'fill-muted-foreground'}
+          >
+            <title>{`Period ${r.period}: ${r.win === 1 ? 'won' : r.win === 0 ? 'lost' : 'tied'}, beat ${formatCount(r.all_play_wins)} of ${r.all_play_wins + r.all_play_losses} teams`}</title>
+          </rect>
+        )
+      })}
+    </svg>
+  )
+}
+
+const columns: ColumnDef<Row>[] = [
   {
     id: 'rank',
     accessorKey: 'rank',
@@ -92,6 +136,13 @@ const columns: ColumnDef<Standing>[] = [
     sortDescFirst: true,
     cell: ({ row }) => formatPoints(row.original.points_against),
   },
+  {
+    id: 'recent',
+    accessorKey: 'recent_pct',
+    header: 'Last 5',
+    sortDescFirst: true,
+    cell: ({ row }) => <RecentBars recent={row.original.recent} />,
+  },
 ]
 
 interface StandingsWidgetProps {
@@ -100,7 +151,17 @@ interface StandingsWidgetProps {
 
 export function StandingsWidget({ selectedTeam }: StandingsWidgetProps) {
   const { data: league, isLoading, error } = useLeagueData()
-  const standings = useMemo(() => league ? computeStandings(league.teams) : [], [league])
+  const standings = useMemo<Row[]>(() => {
+    if (!league) return []
+    return computeStandings(league.teams).map(s => {
+      const recent = league.results
+        .filter(r => r.team === s.team)
+        .sort((a, b) => a.period - b.period)
+        .slice(-RECENT_PERIODS)
+      const recent_pct = recent.reduce((sum, r) => sum + allPlayPct(r), 0) / (recent.length || 1)
+      return { ...s, recent, recent_pct }
+    })
+  }, [league])
   const [sorting, setSorting] = useState<SortingState>([])
 
   const table = useReactTable({
@@ -124,8 +185,9 @@ export function StandingsWidget({ selectedTeam }: StandingsWidgetProps) {
         <CardTitle>Standings</CardTitle>
         <CardDescription>
           <strong>All-play</strong>: the record a team would have if it played every other team every
-          period. <strong>Luck</strong>: wins above (or below) what its scores earned. A tie counts as
-          half a win and half a loss.
+          period. <strong>Luck</strong>: wins above (or below) what its scores earned. <strong>Last 5</strong>:
+          one bar per period, as tall as the share of teams its score beat; dark bars are wins. A tie
+          counts as half a win and half a loss.
         </CardDescription>
       </CardHeader>
       <CardContent className="px-0 sm:px-6">
