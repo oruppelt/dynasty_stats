@@ -6,11 +6,13 @@ import { StandingsWidget } from "./widgets/StandingsWidget"
 import { PointsWidget } from "./widgets/PointsWidget"
 import { AllVsAllWidget } from "./widgets/AllVsAllWidget"
 import { LuckWidget } from "./widgets/LuckWidget"
+import { RecapWidget } from "./widgets/RecapWidget"
+import { SeasonWidget } from "./widgets/SeasonWidget"
 import { WidgetSkeleton } from "./widgets/WidgetSkeleton"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useLeagueData } from '@/lib/league-data'
 import { useInitSelectedTeam, useSelectedTeam } from '@/lib/selected-team'
-import { Clover, ListOrdered, Shuffle, Target, User } from "lucide-react"
+import { CalendarDays, Clover, ListOrdered, Shuffle, Target, TrendingUp, User } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 interface TabDef {
@@ -22,7 +24,9 @@ interface TabDef {
 
 const TABS: TabDef[] = [
   { value: "myteam", label: "My Team", icon: User, render: team => <MyTeamWidget selectedTeam={team} /> },
+  { value: "recap", label: "Recap", icon: CalendarDays, render: team => <RecapWidget selectedTeam={team} /> },
   { value: "standings", label: "Standings", icon: ListOrdered, render: team => <StandingsWidget selectedTeam={team} /> },
+  { value: "season", label: "Season", icon: TrendingUp, render: team => <SeasonWidget selectedTeam={team} /> },
   { value: "points", label: "Points", icon: Target, render: team => <PointsWidget selectedTeam={team} /> },
   { value: "allvsall", label: "All vs All", icon: Shuffle, render: team => <AllVsAllWidget selectedTeam={team} /> },
   { value: "luck", label: "Luck", icon: Clover, render: team => <LuckWidget selectedTeam={team} /> },
@@ -50,12 +54,12 @@ export function Dashboard() {
         onValueChange={setTab}
         className="w-full"
       >
-        <TabsList className="grid h-auto w-full grid-cols-5 mb-6">
+        <TabsList className="grid h-auto w-full grid-cols-4 gap-1 md:grid-cols-7 mb-6">
           {TABS.map(({ value, label, icon: Icon }) => (
             <TabsTrigger
               key={value}
               value={value}
-              className="flex flex-col gap-1 px-1 text-[11px] sm:flex-row sm:gap-2 sm:px-3 sm:text-sm"
+              className="flex flex-col gap-1 px-1 text-[11px] sm:flex-row sm:gap-2 sm:px-2 sm:text-sm"
             >
               <Icon className="h-4 w-4" />
               <span>{label}</span>
