@@ -8,13 +8,13 @@ import { WidgetSkeleton } from './WidgetSkeleton'
 interface StrengthData {
   teams: string[];
   matrix: {
-    'Team1 ': string;
+    Team: string;
     Strength: number;
     Rank: number;
     [key: string]: number | string;
   }[];
   matrix_wins: {
-    'Team1 ': string;
+    Team: string;
     [key: string]: number | string;
   }[];
 }

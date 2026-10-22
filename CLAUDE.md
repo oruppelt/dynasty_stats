@@ -53,8 +53,9 @@ real updates. The site fetches these with React Query (`app/providers.tsx`).
 - **Head-to-head**: `matrix_wins` (wins, -1 = never played) and `matrix_games`.
 - **Points for/against**: totals per team plus medians.
 
-Output keys keep the sheet's trailing-space column names (`'Team1 '`) because
-the frontend depends on them; cleaning this up is planned in `UX_PLAN.md`.
+`load_games()` renames the sheet's columns by position (its headers have
+trailing spaces, e.g. `'Team1 '`) and strips team names. Matrix rows in the
+JSON name their team under `Team`; every other key is a team name.
 
 ### Frontend
 - `app/page.tsx` → `components/Dashboard.tsx` (tabs, team filter) →

@@ -6,7 +6,7 @@ import { useChartTheme } from '@/lib/chart-theme'
 interface NivoScheduleHeatMapProps {
   teams: string[];
   matrix: Array<{
-    'Team1 ': string;
+    Team: string;
     [key: string]: number | string;
   }>;
   maxValue: number;
@@ -45,13 +45,13 @@ export function NivoScheduleHeatMap({
     logger.dataTransform('transforming_schedule_matrix_to_nivo_format', matrix.length, teams.length);
     
     return matrix.map((row) => {
-      const teamName = row['Team1 '].trim();
+      const teamName = row.Team;
       
       const rowData = teams.map(team => {
         const value = row[team] as number;
         
         return {
-          x: team.trim(),
+          x: team,
           y: value === -1 ? null : Number(value.toFixed(2)), // Round at source and convert back to number
           isNoData: value === -1
         };
@@ -163,7 +163,7 @@ export function NivoScheduleHeatMap({
           
           if (roundedValue === null) {
             return (
-              <div className="bg-card border border-border p-3 rounded-lg shadow-lg">
+              <div className="bg-card border border-border p-3 rounded-lg shadow-lg w-max max-w-xs">
                 <div className="font-semibold text-card-foreground">{team1} vs {team2}</div>
                 <div className="text-muted-foreground text-sm">No schedule data</div>
               </div>
@@ -171,7 +171,7 @@ export function NivoScheduleHeatMap({
           }
 
           return (
-            <div className="bg-card border border-border p-4 rounded-lg shadow-lg max-w-xs">
+            <div className="bg-card border border-border p-4 rounded-lg shadow-lg w-72">
               <div className="font-bold text-lg mb-2 text-card-foreground">
                 {team1} vs {team2}
               </div>

@@ -7,15 +7,15 @@ import { useChartTheme } from '@/lib/chart-theme'
 interface NivoHeatMapProps {
   teams: string[];
   matrix: Array<{
-    'Team1 ': string;
+    Team: string;
     [key: string]: number | string;
   }>;
   matrix_wins?: Array<{
-    'Team1 ': string;
+    Team: string;
     [key: string]: number | string;
   }>;
   matrix_games?: Array<{
-    'Team1 ': string;
+    Team: string;
     [key: string]: number | string;
   }>;
   maxValue: number;
@@ -49,13 +49,13 @@ export function NivoHeatMap({
   // Transform data for Nivo format
   const heatmapData: HeatMapData[] = useMemo(() => {
     // Look up head-to-head rows by team name rather than relying on row order
-    const winsByTeam = new Map(matrix_wins?.map(r => [r['Team1 '], r]));
-    const gamesByTeam = new Map(matrix_games?.map(r => [r['Team1 '], r]));
+    const winsByTeam = new Map(matrix_wins?.map(r => [r.Team, r]));
+    const gamesByTeam = new Map(matrix_games?.map(r => [r.Team, r]));
 
     return matrix.map((row) => {
-      const teamName = row['Team1 '].trim();
-      const winsRow = winsByTeam.get(row['Team1 ']);
-      const gamesRow = gamesByTeam.get(row['Team1 ']);
+      const teamName = row.Team;
+      const winsRow = winsByTeam.get(row.Team);
+      const gamesRow = gamesByTeam.get(row.Team);
 
       const rowData = teams.map(team => {
         const value = row[team] as number;
@@ -63,7 +63,7 @@ export function NivoHeatMap({
         const gameValue = gamesRow?.[team] as number | undefined;
 
         return {
-          x: team.trim(),
+          x: team,
           y: value === -1 ? null : value, // Nivo handles null values gracefully
           winCount: winValue === -1 ? null : winValue,
           gameCount: gameValue ?? null,
@@ -149,7 +149,7 @@ export function NivoHeatMap({
 
           if (winRate === null) {
             return (
-              <div className="bg-card border border-border p-3 rounded-lg shadow-lg">
+              <div className="bg-card border border-border p-3 rounded-lg shadow-lg w-max max-w-xs">
                 <div className="font-semibold text-card-foreground">{team1} vs {team2}</div>
                 <div className="text-muted-foreground text-sm">No matchup data</div>
               </div>
@@ -157,7 +157,7 @@ export function NivoHeatMap({
           }
 
           return (
-            <div className="bg-card border border-border p-4 rounded-lg shadow-lg max-w-xs">
+            <div className="bg-card border border-border p-4 rounded-lg shadow-lg w-72">
               <div className="font-bold text-lg mb-2 text-card-foreground">
                 {team1} vs {team2}
               </div>

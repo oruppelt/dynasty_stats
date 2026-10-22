@@ -22,12 +22,18 @@ def data():
     return compute_all(load_games(FIXTURE))
 
 
-def by_team(rows, key='Team1 '):
+def by_team(rows, key='Team'):
     return {row[key]: row for row in rows}
 
 
 def test_load_games_skips_blank_rows():
     assert len(load_games(FIXTURE)) == 4
+
+
+def test_load_games_strips_team_names(tmp_path):
+    padded = tmp_path / 'padded.csv'
+    padded.write_text(FIXTURE.read_text().replace('Alpha,60', 'Alpha ,60'))
+    assert set(load_games(padded)['Team']) == {'Alpha', 'Bravo', 'Charlie'}
 
 
 def test_all_play_win_rates(data):
@@ -73,6 +79,22 @@ def test_points_for_against(data):
     assert scores['Alpha']['Scored For'] == 160 and scores['Alpha']['Scored Against'] == 185
     assert scores['Delta']['Scored For'] == 155 and scores['Delta']['Scored Against'] == 165
     assert data['for_against']['median_scored_for'] == 167.5
+
+
+def test_output_keys_are_clean(data):
+    # The sheet's headers have trailing spaces ('Team1 '); none may leak into the JSON
+    def keys(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                yield key
+                yield from keys(child)
+        elif isinstance(value, list):
+            for child in value:
+                yield from keys(child)
+
+    assert all(key == key.strip() for key in keys(data))
+    for name in ['matrix', 'matrix_wins', 'matrix_games']:
+        assert {row['Team'] for row in data['strength'][name]} == {'Alpha', 'Bravo', 'Charlie', 'Delta'}
 
 
 def test_output_is_valid_json(data):

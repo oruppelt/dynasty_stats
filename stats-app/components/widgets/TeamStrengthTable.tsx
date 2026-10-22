@@ -80,7 +80,7 @@ const columns: ColumnDef<TeamStrengthRow>[] = [
 
 interface TeamStrengthTableProps {
   data: Array<{
-    'Team1 ': string
+    Team: string
     Strength: number
     Rank: number
   }>
@@ -95,7 +95,7 @@ export function TeamStrengthTable({ data }: TeamStrengthTableProps) {
 
     return {
       rank: team.Rank,
-      team: team['Team1 '],
+      team: team.Team,
       strength: team.Strength,
       category: category.label,
       percentile,

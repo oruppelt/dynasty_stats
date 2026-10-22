@@ -50,7 +50,7 @@ def main() -> None:
         metadata = {
             'updated_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
             'games': len(games),
-            'latest_match': int(games['Match '].max()),
+            'latest_match': int(games['Match'].max()),
         }
         metadata_path.write_text(to_json(metadata))
 

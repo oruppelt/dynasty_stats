@@ -54,12 +54,11 @@ type ScatterChartData = ChartData<'scatter', CustomDataPoint[], unknown>;
 // Logo images are reused across renders instead of re-created each time
 const logoCache = new Map<string, HTMLImageElement>();
 const getLogoImage = (team: string) => {
-  const name = team.trim();
-  let img = logoCache.get(name);
+  let img = logoCache.get(team);
   if (!img) {
     img = new Image(40, 40);
-    img.src = `/logos/${name}.png`;
-    logoCache.set(name, img);
+    img.src = `/logos/${team}.png`;
+    logoCache.set(team, img);
   }
   return img;
 };
