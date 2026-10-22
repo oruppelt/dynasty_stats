@@ -75,8 +75,13 @@ def _head_to_head_wins(full: pd.DataFrame) -> pd.DataFrame:
     return pd.pivot_table(full, values='WIN', index=['Team'], columns=['Opponent'], aggfunc='sum')
 
 
+def _head_to_head_games(full: pd.DataFrame) -> pd.DataFrame:
+    """Games each team played against each opponent (NaN = never played)."""
+    return pd.pivot_table(full, values='WIN', index=['Team'], columns=['Opponent'], aggfunc='count')
+
+
 def _all_play_win_rates(full: pd.DataFrame) -> pd.DataFrame:
-    """Share of scoring periods in which a team outscored each other team, rounded to 2 decimals."""
+    """Share of scoring periods in which a team outscored each other team."""
     alt = full[['Match', 'Team', 'Score']].copy()
     alt.columns = ['Match', 'Alt_Team', 'Alt_Score']
     merged = full.merge(alt, on='Match', how='inner')
@@ -86,7 +91,7 @@ def _all_play_win_rates(full: pd.DataFrame) -> pd.DataFrame:
 
     wins = pd.pivot_table(merged, values='Alt_WIN', index=['Team'], columns=['Alt_Team'], aggfunc='sum')
     counts = pd.pivot_table(merged, values='Alt_WIN', index=['Team'], columns=['Alt_Team'], aggfunc='count')
-    return wins.div(counts, axis=1).round(2)
+    return wins.div(counts, axis=1)
 
 
 def _with_rank(df: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
@@ -101,11 +106,12 @@ def compute_strength(games: pd.DataFrame) -> dict:
     """All-play strength: matrix of all-play win rates and each team's average."""
     full = _both_sides(games)
     h2h_wins = _head_to_head_wins(full)
-    h2h_games = pd.pivot_table(full, values='WIN', index=['Team'], columns=['Opponent'], aggfunc='count')
+    h2h_games = _head_to_head_games(full)
 
     all_play = _all_play_win_rates(full)
     all_play['Strength'] = all_play.mean(axis=1)
     all_play, teams = _with_rank(all_play)
+    all_play[teams] = all_play[teams].round(2)  # matrix cells are for display; Strength stays exact
 
     max_win_rate = all_play[teams].max().max()
     min_win_rate = all_play[teams].min().min()
@@ -123,14 +129,20 @@ def compute_strength(games: pd.DataFrame) -> dict:
 
 
 def compute_schedule_strength(games: pd.DataFrame) -> dict:
-    """Schedule luck: actual head-to-head wins minus all-play expected wins."""
+    """Schedule luck: actual head-to-head wins minus all-play expected wins.
+
+    Expected wins against an opponent = all-play win rate against them x games
+    played against them, so a rematch counts twice. Every game hands out one
+    win and one expected win in total, so luck sums to zero across the league.
+    """
     full = _both_sides(games)
     h2h_wins = _head_to_head_wins(full)
-    all_play = _all_play_win_rates(full)
+    expected = _all_play_win_rates(full) * _head_to_head_games(full)
 
-    luck = h2h_wins - all_play
+    luck = h2h_wins - expected
     luck['Strength'] = luck.sum(axis=1)
     luck, teams = _with_rank(luck)
+    luck[teams + ['Strength']] = luck[teams + ['Strength']].round(2)
 
     return {
         "teams": teams,

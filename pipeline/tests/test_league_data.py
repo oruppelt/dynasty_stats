@@ -90,6 +90,24 @@ def test_schedule_luck(data):
     assert matrix['Charlie']['Rank'] == 1 and matrix['Bravo']['Rank'] == 4
 
 
+def test_schedule_luck_counts_rematches(tmp_path):
+    # Period 3 adds rematches: Alpha 50 - 40 Bravo, Charlie 30 - 20 Delta
+    rematch = tmp_path / 'rematch.csv'
+    rematch.write_text(FIXTURE.read_text().replace(
+        ',,,,,,,,,,,', 'Alpha,50,Bravo,40,Scoring Period 3,3,W,Alpha,Bravo,,,\n'
+                       'Charlie,30,Delta,20,Scoring Period 3,3,W,Charlie,Delta,,,'))
+    luck = {row['Team']: row['Strength'] for row in compute_league(load_games(rematch))['schedule_strength']['matrix']}
+    # Bravo vs Alpha: all-play 1/3, lost both games: 0 - 2 x 1/3.
+    # Bravo vs Delta: all-play 2.5/3, tied once: 0.5 - 2.5/3. Total -1.
+    assert luck['Bravo'] == pytest.approx(-1, abs=0.01)
+    assert luck['Charlie'] == pytest.approx(2 / 3, abs=0.01)
+    assert sum(luck.values()) == pytest.approx(0, abs=0.02)
+
+
+def test_luck_sums_to_zero(data):
+    assert sum(team['luck'] for team in data['teams']) == pytest.approx(0)
+
+
 def test_points_for_against(data):
     scores = by_team(data['for_against']['df_scores'], key='Team')
     assert scores['Alpha']['Scored For'] == 160 and scores['Alpha']['Scored Against'] == 185
