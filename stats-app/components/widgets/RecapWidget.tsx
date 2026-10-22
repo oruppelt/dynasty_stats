@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { Check, ChevronLeft, ChevronRight, Share2 } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { WidgetSkeleton } from './WidgetSkeleton'
@@ -8,6 +8,7 @@ import { ErrorState } from './ErrorState'
 import { PeriodResult, useLeagueData } from '@/lib/league-data'
 import { Game, formatScore, periodRecap, resultsByPeriod } from '@/lib/season'
 import { formatCount } from '@/lib/standings'
+import { getUrlParam, setUrlParam } from '@/lib/url'
 import { cn } from '@/lib/utils'
 
 const others = (r: PeriodResult) => r.all_play_wins + r.all_play_losses
@@ -85,11 +86,43 @@ function PeriodPicker({ period, periods, onChange }: {
   )
 }
 
+/** Shares a link to this period's recap: the share sheet on phones, else the clipboard. */
+function ShareButton({ period }: { period: number }) {
+  const [copied, setCopied] = useState(false)
+
+  const share = async () => {
+    const url = `${window.location.origin}${window.location.pathname}?period=${period}`
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: `Period ${period} recap`, url })
+      } else {
+        await navigator.clipboard.writeText(url)
+        setCopied(true)
+        setTimeout(() => setCopied(false), 2000)
+      }
+    } catch {
+      // Share sheet closed, or clipboard blocked: nothing to do
+    }
+  }
+
+  return (
+    <Button variant="outline" size="sm" className="h-9 gap-1.5" onClick={share}>
+      {copied ? <Check className="h-4 w-4" /> : <Share2 className="h-4 w-4" />}
+      {copied ? 'Link copied' : 'Share'}
+    </Button>
+  )
+}
+
 export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
   const { data: league, isLoading, error } = useLeagueData()
   const byPeriod = useMemo(() => league ? resultsByPeriod(league.results) : new Map<number, PeriodResult[]>(), [league])
-  // null: follow the latest period, also after the data refreshes
-  const [picked, setPicked] = useState<number | null>(null)
+  // null: follow the latest period, also after the data refreshes. A ?period= link picks one.
+  const [picked, setPicked] = useState<number | null>(() => Number(getUrlParam('period')) || null)
+
+  const pick = (period: number) => {
+    setPicked(period)
+    setUrlParam('period', String(period))
+  }
 
   if (isLoading) return <WidgetSkeleton variant="list" />
   if (error || !league) return <ErrorState />
@@ -115,7 +148,10 @@ export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
               &ldquo;Beat&rdquo; counts the teams (of {rows.length - 1}) a score would have beaten that period.
             </CardDescription>
           </div>
-          <PeriodPicker period={period} periods={periods} onChange={setPicked} />
+          <div className="flex items-center gap-2">
+            <PeriodPicker period={period} periods={periods} onChange={pick} />
+            <ShareButton period={period} />
+          </div>
         </CardHeader>
       </Card>
 

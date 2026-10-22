@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { MyTeamWidget } from "./widgets/MyTeamWidget"
 import { StandingsWidget } from "./widgets/StandingsWidget"
 import { PointsWidget } from "./widgets/PointsWidget"
@@ -12,6 +12,7 @@ import { WidgetSkeleton } from "./widgets/WidgetSkeleton"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useLeagueData } from '@/lib/league-data'
 import { useInitSelectedTeam, useSelectedTeam } from '@/lib/selected-team'
+import { getUrlParam, setUrlParam } from '@/lib/url'
 import { CalendarDays, Clover, ListOrdered, Shuffle, Target, TrendingUp, User } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
@@ -38,6 +39,10 @@ export function Dashboard() {
   const { team: selectedTeam, ready } = useSelectedTeam()
   // Until the viewer picks a tab: their team if they have one, else the league
   const [tab, setTab] = useState<string | null>(null)
+  // A shared recap link (?period=) opens on the recap
+  useEffect(() => {
+    if (getUrlParam('period')) setTab("recap")
+  }, [])
 
   if (!ready && !error) {
     return (
@@ -51,7 +56,11 @@ export function Dashboard() {
     <div className="w-full max-w-6xl mx-auto px-4 py-6">
       <Tabs
         value={tab ?? (selectedTeam ? "myteam" : "standings")}
-        onValueChange={setTab}
+        onValueChange={value => {
+          setTab(value)
+          // The link names a period only while the recap is open
+          if (value !== "recap") setUrlParam("period", "")
+        }}
         className="w-full"
       >
         <TabsList className="grid h-auto w-full grid-cols-4 gap-1 md:grid-cols-7 mb-6">

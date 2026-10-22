@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import { create } from 'zustand'
+import { getUrlParam, setUrlParam } from './url'
 
 // The viewer's team, kept in localStorage (remembered) and in the URL as
 // ?team=... (so a link shared in the group chat opens on that team).
@@ -26,10 +27,7 @@ function writeStorage(team: string) {
 }
 
 function writeUrl(team: string) {
-  const url = new URL(window.location.href)
-  if (team) url.searchParams.set('team', team)
-  else url.searchParams.delete('team')
-  window.history.replaceState(null, '', url)
+  setUrlParam('team', team)
 }
 
 interface SelectedTeamState {
@@ -57,7 +55,7 @@ export const useSelectedTeam = create<SelectedTeamState>()((set) => ({
 export function useInitSelectedTeam(teams: string[] | undefined) {
   useEffect(() => {
     if (!teams || useSelectedTeam.getState().ready) return
-    const linked = new URL(window.location.href).searchParams.get('team')
+    const linked = getUrlParam('team')
     const stored = readStorage()
     const team = [linked, stored].find((t): t is string => !!t && teams.includes(t)) ?? ''
     useSelectedTeam.setState({ team, ready: true })
