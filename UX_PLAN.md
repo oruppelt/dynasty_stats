@@ -1,7 +1,7 @@
 # UX/UI Improvement Plan
 
 Started 2026-10-22 after a full review of `stats-app/` and `backend/`.
-Supersedes the generic parts of `ROADMAP.md`. Focused on what the ~30 league
+Replaces the old `ROADMAP.md` (deleted). Focused on what the ~30 league
 members actually use the app for.
 
 ## Guiding idea
@@ -268,8 +268,10 @@ Biggest new-feature opportunity and the most shareable content.
 - [x] **Last 5** in the standings table: one bar per period, height = share
   of teams the score beat, dark = won.
 
-Ideas for later: a `?period=` link to share a recap; a recap card on
-My Team.
+- [x] **Share a recap** (2026-10-22): `?period=N` opens that period's recap;
+  a Share button uses the phone's share sheet or copies the link.
+
+Idea for later: a recap card on My Team.
 
 ---
 
@@ -281,14 +283,28 @@ Merged into Phase 2.5 (2026-10-22).
 
 - Next.js 16, Tailwind 4 and the ESLint 9 flat config (`next lint` is
   deprecated). Clears the remaining `npm audit` findings, all in build tooling.
-- Delete `ROADMAP.md` (pre-monorepo; describes the cache layers and backend
-  that no longer exist). This plan replaces it.
+- [x] Delete `ROADMAP.md` (pre-monorepo; described the cache layers and
+  backend that no longer exist).
+- [x] One `matchups` block in `league.json` replaces the older `strength`,
+  `schedule_strength` and `for_against` datasets (and their duplicated
+  totals and ranks).
 - [x] ~~Remove the legacy endpoints and the cache layers~~ Done with the
   move to static data (Phase 1.3).
 
 ---
 
 ## Changelog
+
+### 2026-10-22: Recap links and cleanup (branch `ux/cleanup-period-link`)
+- `?period=` recap links and a Share button.
+- `league.json`: `matchups` (all-play, head-to-head wins and games, luck
+  matrices) replaces `strength`, `schedule_strength`, `for_against`; never
+  played is `null` in every matrix. ~10% smaller; tests updated.
+- Loading placeholder uses fixed bar heights (random ones differed between
+  server and client). `ROADMAP.md` deleted.
+- Checked in the browser: a period link, picker updates the URL, leaving
+  the tab clears it, heatmap tooltips and Points on the new data, phone
+  width. Lint, build, 20 pytest tests pass.
 
 ### 2026-10-22: Phase 3 season views (branch `ux/phase-3-season`)
 - Pipeline: `luck_to_date` per team per period (test: zero after period 1,
