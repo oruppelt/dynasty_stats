@@ -81,6 +81,13 @@ Merged into the monorepo's `main` with the old histories.
 - [ ] Delete dead code: `components/Auth.tsx`, `components/widgets/HeatMap.tsx`.
       (The stray root-level Next.js files stayed behind in the old folder.)
 - [x] Fix doc drift in `CLAUDE.md` (rewritten for the new architecture).
+- [ ] Upgrade Next.js 15.0.3 to the latest 15.x and run `npm audit fix`.
+      Render's build log reports 31 vulnerabilities (1 critical). Most of
+      them affect a running Next.js server or dev tooling, so a static site is
+      barely exposed, but they shouldn't stay.
+- [ ] Render build command: change `npm ci && npm run build` to
+      `npm run build`. Render already installs dependencies before the build
+      command, so they currently install twice (~15s wasted per deploy).
 
 ### 1.2 Repository layout ✅ (done 2026-10-22)
 One repo, `oruppelt/dynasty_stats` on GitHub (local folder `dynasty-stats`), with `pipeline/` and `stats-app/`. Both old
@@ -191,6 +198,16 @@ Biggest new-feature opportunity and the most shareable content.
 ---
 
 ## Changelog
+
+### 2026-10-22: Points chart logos fix (branch `fix/points-chart-logos`)
+- Live site: most team logos were missing from the Points scatter. chart.js
+  draws an image point only if it has already loaded, and never repaints when
+  it arrives later. Locally logos load instantly, so this only showed on Render.
+  `PointsWidget` now re-renders as each logo loads; a logo that fails to load
+  falls back to a plain dot. Reproduced and verified with a local server
+  delaying logos by 1.5s.
+- Team logos resized from 400px to 128px (1.1 MB → ~0.6 MB); they are shown
+  at 40–48px.
 
 ### 2026-10-22: Phase 1.2–1.4 monorepo and static data (branch `ux/phase-1-static-data`)
 - New repo `oruppelt/dynasty_stats` combining `stats-app` and `stats-app-backend` with

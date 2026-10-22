@@ -1,7 +1,7 @@
 import { Scatter } from 'react-chartjs-2'
 import { useQuery } from '@tanstack/react-query'
 import { useLogger } from '@/lib/logger'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { DESIGN_TOKENS } from '@/lib/design-tokens'
@@ -64,6 +64,12 @@ const getLogoImage = (team: string) => {
   return img;
 };
 
+// A logo that failed to load (e.g. a team name without a matching file) is drawn as a plain dot
+const getPointStyle = (team: string) => {
+  const img = getLogoImage(team);
+  return img.complete && img.naturalWidth === 0 ? 'circle' as const : img;
+};
+
 export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
   const logger = useLogger('PointsWidget');
   const { colors: chartColors } = useChartTheme();
@@ -89,6 +95,20 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
       return data;
     }
   })
+
+  // chart.js draws a logo only if it has already loaded and never repaints when it
+  // arrives later, so on a slow connection most logos were missing. Re-render as each
+  // logo loads (or fails), which makes the chart redraw with it.
+  const [, setSettledLogos] = useState(0);
+  useEffect(() => {
+    if (!data?.df_scores) return;
+    let cancelled = false;
+    const pending = data.df_scores.map(team => getLogoImage(team.Team)).filter(img => !img.complete);
+    pending.forEach(img => img.decode().catch(() => undefined).then(() => {
+      if (!cancelled) setSettledLogos(count => count + 1);
+    }));
+    return () => { cancelled = true; };
+  }, [data]);
 
   const calculateMedian = (arr: number[]): number => {
     const sorted = [...arr].sort((a, b) => a - b)
@@ -153,7 +173,7 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
           y: team['Scored Against'],
           team: team.Team
         })),
-        pointStyle: scores.map(team => getLogoImage(team.Team)),
+        pointStyle: scores.map(team => getPointStyle(team.Team)),
         pointRadius: selectedTeam ? scores.map(team => team.Team === selectedTeam ? 25 : 20) : 20,
         pointBorderColor: scores.map(team => {
           const quadrant = getQuadrant(team['Scored For'], team['Scored Against'], medianScoredFor, medianScoredAgainst);
