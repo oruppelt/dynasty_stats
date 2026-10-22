@@ -94,7 +94,7 @@ write permissions** → **Save**, then run it again.
 5. Click **Create Static Site** and wait for the first deploy (~2–4 min).
 6. Open the `.onrender.com` URL and check:
    - The header shows **"Updated <date>"**.
-   - All five tabs load (Points, All vs All, Strength, Schedule, Luck).
+   - All five tabs load (My Team, Standings, Points, All vs All, Luck).
 
 Auto-deploy is on by default, so every commit to `main` that touches
 `stats-app/` (including the hourly data commits) redeploys the site.

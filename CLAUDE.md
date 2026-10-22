@@ -13,7 +13,7 @@ Monorepo:
 - **`pipeline/`**: Python (pandas). Reads the Google Sheet once, computes all
   datasets, writes static JSON to `stats-app/public/data/`. No server.
 - **`stats-app/`**: Next.js 15 static export (TypeScript, Tailwind, React Query,
-  nivo + chart.js). Reads `/data/*.json` at runtime.
+  nivo). Reads `/data/league.json` at runtime.
 - **`.github/workflows/`**: `refresh-data.yml` (hourly: build data, commit if
   changed, which makes Render redeploy) and `ci.yml` (pytest + lint + build on
   PRs and main).
@@ -73,7 +73,11 @@ JSON name their team under `Team`; every other key is a team name.
 ### Frontend
 - `app/page.tsx` → `components/layout/Header.tsx` (team picker) and
   `components/Dashboard.tsx` (tabs: My Team, Standings, Points, All vs All,
-  Schedule) → `components/widgets/*`, each reading `useLeagueData()`.
+  Luck) → `components/widgets/*`, each reading `useLeagueData()`.
+- Charts are nivo only. Both heatmaps go through `MatrixHeatmap` (stepped
+  orange-blue scale from `useChartTheme().diverging`, legend, phone list
+  view); axes use 3-letter codes from `lib/teams.ts`. Views share
+  `ErrorState` and `Explainer` ("What does this mean?").
 - `lib/selected-team.ts`: the viewer's team (zustand), kept in localStorage
   and the `?team=` URL parameter. `lib/standings.ts`: ranks and number
   formatting (records, luck, points) shared by the views.
