@@ -44,12 +44,12 @@ export function BidirectionalBar({
       {/* Bar container */}
       <div className="flex-grow relative">
         <div 
-          className="rounded-full bg-gray-200 relative overflow-hidden"
+          className="rounded-full bg-muted relative overflow-hidden"
           style={{ height }}
         >
           {/* Center line */}
           <div 
-            className="absolute top-0 w-0.5 bg-gray-400 z-10"
+            className="absolute top-0 w-0.5 bg-muted-foreground z-10"
             style={{ 
               height: '100%',
               left: '50%',
@@ -71,7 +71,7 @@ export function BidirectionalBar({
       {/* Category indicator */}
       <div className="flex items-center gap-1 min-w-0">
         <span className="text-lg">{category.emoji}</span>
-        <span className="text-sm font-medium text-gray-700 truncate">
+        <span className="text-sm font-medium text-foreground truncate">
           {category.label}
         </span>
       </div>

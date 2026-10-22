@@ -1,6 +1,7 @@
 import { ResponsiveHeatMap } from '@nivo/heatmap'
 import { useLogger } from '@/lib/logger'
 import { useEffect, useMemo } from 'react'
+import { useChartTheme } from '@/lib/chart-theme'
 
 interface NivoScheduleHeatMapProps {
   teams: string[];
@@ -30,6 +31,7 @@ export function NivoScheduleHeatMap({
   selectedTeam 
 }: NivoScheduleHeatMapProps) {
   const logger = useLogger('NivoScheduleHeatMap');
+  const { colors: chartColors, nivoTheme } = useChartTheme();
 
   useEffect(() => {
     logger.info('NivoScheduleHeatMap mounted', { selectedTeam, teamsCount: teams?.length });
@@ -81,7 +83,7 @@ export function NivoScheduleHeatMap({
   if (!matrix || !teams) {
     return (
       <div className="flex items-center justify-center p-8">
-        <div className="text-gray-600">No schedule strength data available</div>
+        <div className="text-muted-foreground">No schedule strength data available</div>
       </div>
     );
   }
@@ -95,7 +97,7 @@ export function NivoScheduleHeatMap({
         // Red-to-green color scheme for schedule strength (red = harder, green = easier)
         colors={(cell) => {
           const value = cell.data.y as number | null;
-          if (value === null) return '#f3f4f6';
+          if (value === null) return chartColors.emptyCell;
           
           // Map value from -1.5 to +1.5 range to 0-1 scale
           const normalized = (value - minValue) / (maxValue - minValue);
@@ -115,10 +117,11 @@ export function NivoScheduleHeatMap({
             return `rgb(${red}, ${green}, 0)`;
           }
         }}
-        emptyColor="#f3f4f6"
+        emptyColor={chartColors.emptyCell}
+        theme={nivoTheme}
         
         // Cell styling
-        borderColor="#ffffff"
+        borderColor={chartColors.cellBorder}
         borderWidth={1}
         
         // Vertical column headers

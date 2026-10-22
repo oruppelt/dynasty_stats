@@ -121,7 +121,7 @@ export function ScheduleLuckWidget({ selectedTeam }: ScheduleLuckWidgetProps) {
             <Card>
               <CardContent className="p-4 text-center">
                 <div className="text-2xl font-bold text-primary">
-                  {rankingsData[rankingsData.length - 1]?.Strength.toFixed(3) || 'N/A'}
+                  {rankingsData[0]?.Strength.toFixed(3) || 'N/A'}
                 </div>
                 <div className="text-sm text-muted-foreground">Best Luck</div>
               </CardContent>

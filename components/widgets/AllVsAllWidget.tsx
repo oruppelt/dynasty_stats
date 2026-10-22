@@ -17,6 +17,11 @@ interface StrengthData {
     'Team1 ': string;
     [key: string]: number | string;
   }[];
+  // Number of head-to-head games per pair (absent in older snapshots)
+  matrix_games?: {
+    'Team1 ': string;
+    [key: string]: number | string;
+  }[];
   metadata?: {
     maxWinRate: number;
     minWinRate: number;
@@ -100,6 +105,7 @@ export function AllVsAllWidget({ selectedTeam }: AllVsAllWidgetProps) {
           teams={data.teams}
           matrix={data.matrix}
           matrix_wins={data.matrix_wins}
+          matrix_games={data.matrix_games}
           maxValue={maxWinRate}
           minValue={minWinRate}
           selectedTeam={selectedTeam}

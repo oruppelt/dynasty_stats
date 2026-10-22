@@ -7,8 +7,6 @@ import { ScheduleStrengthWidget } from "./widgets/ScheduleStrengthWidget"
 import { TeamStrengthWidget } from "./widgets/TeamStrengthWidget"
 import { ScheduleLuckWidget } from "./widgets/ScheduleLuckWidget"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Badge } from "@/components/ui/badge"
-import { useLayoutStore } from "@/lib/layout-store"
 import { useQuery } from '@tanstack/react-query'
 import { useLogger } from '@/lib/logger'
 import { handleQueryError, handleQuerySuccess, statsApi } from '@/lib/api-client'
@@ -22,20 +20,12 @@ interface TeamsData {
 
 export function Dashboard() {
   const logger = useLogger('Dashboard');
-  const { lastUpdated } = useLayoutStore()
   const [selectedTeam, setSelectedTeam] = useState<string>("")
 
   useEffect(() => {
     logger.info('Dashboard mounted');
     return () => logger.info('Dashboard unmounted');
   }, [logger]);
-
-  const getTimeAgo = (timestamp: number) => {
-    const seconds = Math.floor((Date.now() - timestamp) / 1000)
-    if (seconds < 60) return 'Just now'
-    if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`
-    return `${Math.floor(seconds / 3600)}h ago`
-  }
 
   const handleTabChange = (newTab: string) => {
     logger.userAction('widget_changed', {
@@ -104,47 +94,22 @@ export function Dashboard() {
           <TabsTrigger value="points" className="flex items-center gap-2">
             <Target className="h-4 w-4" />
             <span className="hidden sm:inline">Points</span>
-            {lastUpdated['points'] && (
-              <Badge variant="secondary" className="ml-1 text-xs">
-                {getTimeAgo(lastUpdated['points'])}
-              </Badge>
-            )}
           </TabsTrigger>
           <TabsTrigger value="allvsall" className="flex items-center gap-2">
             <Shuffle className="h-4 w-4" />
             <span className="hidden sm:inline">All vs All</span>
-            {lastUpdated['allvsall'] && (
-              <Badge variant="secondary" className="ml-1 text-xs">
-                {getTimeAgo(lastUpdated['allvsall'])}
-              </Badge>
-            )}
           </TabsTrigger>
           <TabsTrigger value="teamstrength" className="flex items-center gap-2">
             <TrendingUp className="h-4 w-4" />
             <span className="hidden sm:inline">Strength</span>
-            {lastUpdated['strength'] && (
-              <Badge variant="secondary" className="ml-1 text-xs">
-                {getTimeAgo(lastUpdated['strength'])}
-              </Badge>
-            )}
           </TabsTrigger>
           <TabsTrigger value="schedule" className="flex items-center gap-2">
             <Calendar className="h-4 w-4" />
             <span className="hidden sm:inline">Schedule</span>
-            {lastUpdated['schedule'] && (
-              <Badge variant="secondary" className="ml-1 text-xs">
-                {getTimeAgo(lastUpdated['schedule'])}
-              </Badge>
-            )}
           </TabsTrigger>
           <TabsTrigger value="scheduleluck" className="flex items-center gap-2">
             <Zap className="h-4 w-4" />
             <span className="hidden sm:inline">Luck</span>
-            {lastUpdated['luck'] && (
-              <Badge variant="secondary" className="ml-1 text-xs">
-                {getTimeAgo(lastUpdated['luck'])}
-              </Badge>
-            )}
           </TabsTrigger>
         </TabsList>
 

@@ -2,6 +2,7 @@ import { ResponsiveHeatMap } from '@nivo/heatmap'
 import { useLogger } from '@/lib/logger'
 import { useEffect, useMemo } from 'react'
 import { DESIGN_TOKENS } from '@/lib/design-tokens'
+import { useChartTheme } from '@/lib/chart-theme'
 
 interface NivoHeatMapProps {
   teams: string[];
@@ -10,6 +11,10 @@ interface NivoHeatMapProps {
     [key: string]: number | string;
   }>;
   matrix_wins?: Array<{
+    'Team1 ': string;
+    [key: string]: number | string;
+  }>;
+  matrix_games?: Array<{
     'Team1 ': string;
     [key: string]: number | string;
   }>;
@@ -24,6 +29,7 @@ interface HeatMapData {
     x: string;
     y: number | null;
     winCount?: number | null;
+    gameCount?: number | null;
     isNoData?: boolean;
   }>;
 }
@@ -32,25 +38,35 @@ export function NivoHeatMap({
   teams, 
   matrix, 
   matrix_wins, 
+  matrix_games,
   maxValue, 
   minValue, 
   selectedTeam 
 }: NivoHeatMapProps) {
   const logger = useLogger('NivoHeatMap');
+  const { colors: chartColors, nivoTheme } = useChartTheme();
 
   // Transform data for Nivo format
   const heatmapData: HeatMapData[] = useMemo(() => {
-    return matrix.map((row, rowIndex) => {
+    // Look up head-to-head rows by team name rather than relying on row order
+    const winsByTeam = new Map(matrix_wins?.map(r => [r['Team1 '], r]));
+    const gamesByTeam = new Map(matrix_games?.map(r => [r['Team1 '], r]));
+
+    return matrix.map((row) => {
       const teamName = row['Team1 '].trim();
+      const winsRow = winsByTeam.get(row['Team1 ']);
+      const gamesRow = gamesByTeam.get(row['Team1 ']);
 
       const rowData = teams.map(team => {
         const value = row[team] as number;
-        const winValue = matrix_wins?.[rowIndex]?.[team] as number ?? -1;
+        const winValue = (winsRow?.[team] as number | undefined) ?? -1;
+        const gameValue = gamesRow?.[team] as number | undefined;
 
         return {
           x: team.trim(),
           y: value === -1 ? null : value, // Nivo handles null values gracefully
           winCount: winValue === -1 ? null : winValue,
+          gameCount: gameValue ?? null,
           isNoData: value === -1
         };
       });
@@ -60,7 +76,7 @@ export function NivoHeatMap({
         data: rowData
       };
     });
-  }, [matrix, matrix_wins, teams]);
+  }, [matrix, matrix_wins, matrix_games, teams]);
 
   useEffect(() => {
     logger.dataTransform('transforming_matrix_to_nivo_format', matrix.length, teams.length);
@@ -78,6 +94,14 @@ export function NivoHeatMap({
     return { label: 'Difficult', emoji: '🔴', desc: 'Very tough matchup' };
   };
 
+  // Actual games played between the two teams (win rate above is all-play)
+  const formatHeadToHead = (wins: number | null | undefined, games: number | null | undefined) => {
+    if (wins === null || wins === undefined || games === 0) return 'Not played yet';
+    const fmt = (n: number) => Number.isInteger(n) ? String(n) : n.toFixed(1);
+    if (games === null || games === undefined) return `${fmt(wins)} ${wins === 1 ? 'win' : 'wins'}`;
+    return `${fmt(wins)}-${fmt(games - wins)}`;
+  };
+
   return (
     <div className="w-full h-[650px]">
       <ResponsiveHeatMap
@@ -87,9 +111,11 @@ export function NivoHeatMap({
           type: 'quantize',
           colors: [...DESIGN_TOKENS.heatmap.colors] // Win rate gradient: red → yellow → green
         }}
-        emptyColor="#f3f4f6"
+        emptyColor={chartColors.emptyCell}
+        // Cell colors are light pastels in both themes, so labels stay dark
         labelTextColor="#000000"
-        borderColor="#ffffff"
+        borderColor={chartColors.cellBorder}
+        theme={nivoTheme}
         borderWidth={1}
         axisTop={{
           tickSize: 5,
@@ -118,7 +144,7 @@ export function NivoHeatMap({
           const team1 = cell.serieId;
           const team2 = cell.data.x;
           const winRate = cell.data.y as number | null;
-          const winCount = (cell.data as { winCount?: number | null }).winCount;
+          const { winCount, gameCount } = cell.data as { winCount?: number | null; gameCount?: number | null };
           const category = getWinRateCategory(winRate);
 
           if (winRate === null) {
@@ -140,12 +166,10 @@ export function NivoHeatMap({
                   <span className="text-muted-foreground">Win Rate:</span>
                   <span className="font-semibold text-primary">{(winRate * 100).toFixed(1)}%</span>
                 </div>
-                {winCount !== null && winCount !== undefined && (
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Record:</span>
-                    <span className="font-semibold">{winCount}-{100 - winCount}</span>
-                  </div>
-                )}
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Head-to-head:</span>
+                  <span className="font-semibold">{formatHeadToHead(winCount, gameCount)}</span>
+                </div>
                 <div className="flex items-center gap-2 mt-3 p-2 bg-muted rounded">
                   <span className="text-lg">{category.emoji}</span>
                   <div>

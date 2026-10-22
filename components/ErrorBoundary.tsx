@@ -145,12 +145,12 @@ export const WidgetErrorBoundary: React.FC<{ children: ReactNode; widgetName: st
   <ErrorBoundary 
     name={`${widgetName}Widget`}
     fallback={
-      <div className="min-h-[400px] flex items-center justify-center bg-gray-50 border border-gray-200 rounded-lg">
+      <div className="min-h-[400px] flex items-center justify-center bg-muted border border-border rounded-lg">
         <div className="text-center">
-          <div className="text-gray-600 text-lg font-medium mb-2">
+          <div className="text-foreground text-lg font-medium mb-2">
             Widget Error
           </div>
-          <div className="text-gray-500">
+          <div className="text-muted-foreground">
             The {widgetName} widget encountered an error and couldn&apos;t load.
           </div>
           <button
@@ -174,10 +174,10 @@ export const ChartErrorBoundary: React.FC<{ children: ReactNode; chartType: stri
   <ErrorBoundary 
     name={`${chartType}Chart`}
     fallback={
-      <div className="min-h-[300px] flex items-center justify-center bg-gray-50 border border-gray-200 rounded">
+      <div className="min-h-[300px] flex items-center justify-center bg-muted border border-border rounded">
         <div className="text-center">
-          <div className="text-gray-600 font-medium mb-1">Chart Error</div>
-          <div className="text-gray-500 text-sm">
+          <div className="text-foreground font-medium mb-1">Chart Error</div>
+          <div className="text-muted-foreground text-sm">
             The {chartType} chart couldn&apos;t be rendered.
           </div>
         </div>

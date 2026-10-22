@@ -53,7 +53,7 @@ export function TeamLogo({ teamName, size = 32, className = "" }: TeamLogoProps)
     <div className={`relative ${className}`} style={{ width: size, height: size }}>
       {isLoading && (
         <div 
-          className="absolute inset-0 bg-gray-200 rounded-full animate-pulse"
+          className="absolute inset-0 bg-muted rounded-full animate-pulse"
           style={{ width: size, height: size }}
         />
       )}

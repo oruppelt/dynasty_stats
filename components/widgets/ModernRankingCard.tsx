@@ -24,7 +24,7 @@ export function ModernRankingCard({
     if (rank === 1) return { emoji: '🥇', bgColor: 'gradient-gold', textColor: 'text-white', borderColor: 'border-yellow-400' };
     if (rank === 2) return { emoji: '🥈', bgColor: 'gradient-silver', textColor: 'text-white', borderColor: 'border-gray-400' };
     if (rank === 3) return { emoji: '🥉', bgColor: 'gradient-bronze', textColor: 'text-white', borderColor: 'border-orange-400' };
-    return { emoji: '', bgColor: 'bg-gray-50', textColor: 'text-gray-600', borderColor: 'border-gray-200' };
+    return { emoji: '', bgColor: 'bg-muted', textColor: 'text-muted-foreground', borderColor: 'border-border' };
   };
 
   const badge = getRankingBadge(rank);
@@ -60,18 +60,18 @@ export function ModernRankingCard({
         {/* Team Info */}
         <div className="flex-grow min-w-0">
           <h3 className={`font-semibold text-lg truncate ${
-            isSelected ? 'text-blue-900' : 'text-gray-900'
+            isSelected ? 'text-primary' : 'text-foreground'
           }`}>
             {teamName}
           </h3>
           <div className="flex items-center gap-2 mt-1">
             <span className={`text-sm font-medium ${
-              isSelected ? 'text-blue-700' : 'text-gray-600'
+              isSelected ? 'text-primary/80' : 'text-muted-foreground'
             }`}>
               {label}:
             </span>
             <span className={`text-lg font-bold ${
-              isSelected ? 'text-blue-800' : 'text-gray-800'
+              isSelected ? 'text-primary' : 'text-foreground'
             }`}>
               {typeof value === 'number' ? value.toFixed(3) : value}
             </span>
@@ -87,7 +87,7 @@ export function ModernRankingCard({
 
         {/* Rank Display */}
         <div className={`text-right flex-shrink-0 ${
-          isSelected ? 'text-blue-600' : 'text-gray-500'
+          isSelected ? 'text-primary' : 'text-muted-foreground'
         }`}>
           <div className="text-2xl font-bold">
             #{rank}

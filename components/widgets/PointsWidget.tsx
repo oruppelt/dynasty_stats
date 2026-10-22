@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { DESIGN_TOKENS } from '@/lib/design-tokens'
+import { useChartTheme } from '@/lib/chart-theme'
 import {
   Chart as ChartJS,
   LinearScale,
@@ -50,8 +51,22 @@ interface CustomDataPoint extends ScatterDataPoint {
 // Create a specific type for the scatter dataset
 type ScatterChartData = ChartData<'scatter', CustomDataPoint[], unknown>;
 
+// Logo images are reused across renders instead of re-created each time
+const logoCache = new Map<string, HTMLImageElement>();
+const getLogoImage = (team: string) => {
+  const name = team.trim();
+  let img = logoCache.get(name);
+  if (!img) {
+    img = new Image(40, 40);
+    img.src = `/logos/${name}.png`;
+    logoCache.set(name, img);
+  }
+  return img;
+};
+
 export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
   const logger = useLogger('PointsWidget');
+  const { colors: chartColors } = useChartTheme();
   useEffect(() => {
     logger.info('PointsWidget mounted', { selectedTeam });
     return () => logger.info('PointsWidget unmounted');
@@ -83,11 +98,11 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
       : sorted[mid]
   }
 
-  const getQuadrant = (pointsFor: number, pointsAgainst: number, avgFor: number, avgAgainst: number) => {
-    if (pointsFor >= avgFor && pointsAgainst <= avgAgainst) return 'excellent'; // High scoring, low points against
-    if (pointsFor >= avgFor && pointsAgainst > avgAgainst) return 'volatile';   // High scoring, high points against
-    if (pointsFor < avgFor && pointsAgainst <= avgAgainst) return 'defensive';  // Low scoring, low points against
-    if (pointsFor < avgFor && pointsAgainst > avgAgainst) return 'concerning';  // Low scoring, high points against
+  const getQuadrant = (pointsFor: number, pointsAgainst: number, midFor: number, midAgainst: number) => {
+    if (pointsFor >= midFor && pointsAgainst <= midAgainst) return 'excellent'; // High scoring, low points against
+    if (pointsFor >= midFor && pointsAgainst > midAgainst) return 'volatile';   // High scoring, high points against
+    if (pointsFor < midFor && pointsAgainst <= midAgainst) return 'defensive';  // Low scoring, low points against
+    if (pointsFor < midFor && pointsAgainst > midAgainst) return 'concerning';  // Low scoring, high points against
     return 'unknown';
   };
 
@@ -128,10 +143,6 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
   const medianScoredFor = calculateMedian(scores.map(d => d['Scored For']))
   const medianScoredAgainst = calculateMedian(scores.map(d => d['Scored Against']))
 
-  // Calculate averages for quadrant analysis
-  const avgScoredFor = scores.reduce((sum, d) => sum + d['Scored For'], 0) / scores.length
-  const avgScoredAgainst = scores.reduce((sum, d) => sum + d['Scored Against'], 0) / scores.length
-
   const chartData: ScatterChartData = {
     datasets: [
       {
@@ -142,14 +153,10 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
           y: team['Scored Against'],
           team: team.Team
         })),
-        pointStyle: scores.map(team => {
-          const img = new Image(40, 40);
-          img.src = `/logos/${team.Team.trim()}.png`;
-          return img;
-        }),
+        pointStyle: scores.map(team => getLogoImage(team.Team)),
         pointRadius: selectedTeam ? scores.map(team => team.Team === selectedTeam ? 25 : 20) : 20,
         pointBorderColor: scores.map(team => {
-          const quadrant = getQuadrant(team['Scored For'], team['Scored Against'], avgScoredFor, avgScoredAgainst);
+          const quadrant = getQuadrant(team['Scored For'], team['Scored Against'], medianScoredFor, medianScoredAgainst);
           return getQuadrantColor(quadrant);
         }),
         pointBorderWidth: selectedTeam ? scores.map(team => team.Team === selectedTeam ? 4 : 2) : 2,
@@ -161,7 +168,7 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
           { x: medianScoredFor, y: Math.min(...scores.map(d => d['Scored Against'])) * 0.9 },
           { x: medianScoredFor, y: Math.max(...scores.map(d => d['Scored Against'])) * 1.1 }
         ],
-        borderColor: 'rgba(0, 0, 0, 1)',
+        borderColor: chartColors.referenceLine,
         borderWidth: 2,
         borderDash: [5, 5],
         pointRadius: 0,
@@ -174,7 +181,7 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
           { x: Math.min(...scores.map(d => d['Scored For'])) * 0.9, y: medianScoredAgainst },
           { x: Math.max(...scores.map(d => d['Scored For'])) * 1.1, y: medianScoredAgainst }
         ],
-        borderColor: 'rgba(0, 0, 0, 1)',
+        borderColor: chartColors.referenceLine,
         borderWidth: 2,
         borderDash: [5, 5],
         pointRadius: 0,
@@ -199,16 +206,19 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
           font: {
             size: 14,
             weight: 'bold'
-          }
+          },
+          color: chartColors.text,
         },
         min: minX,
         max: maxX,
         grid: {
           display: true,
           drawTicks: true,
+          color: chartColors.grid,
         },
         ticks: {
-          stepSize: 50
+          stepSize: 50,
+          color: chartColors.mutedText,
         }
       },
       y: {
@@ -218,16 +228,19 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
           font: {
             size: 14,
             weight: 'bold'
-          }
+          },
+          color: chartColors.text,
         },
         min: minY,
         max: maxY,
         grid: {
           display: true,
           drawTicks: true,
+          color: chartColors.grid,
         },
         ticks: {
-          stepSize: 50
+          stepSize: 50,
+          color: chartColors.mutedText,
         }
       }
     },
@@ -242,7 +255,7 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
           label: function(this: TooltipModel<'scatter'>, context: TooltipItem<'scatter'>): string {
             const dataPoint = context.raw as CustomDataPoint;
             if (dataPoint.team) {
-              const quadrant = getQuadrant(dataPoint.x as number, dataPoint.y as number, avgScoredFor, avgScoredAgainst);
+              const quadrant = getQuadrant(dataPoint.x as number, dataPoint.y as number, medianScoredFor, medianScoredAgainst);
               const quadrantLabels = {
                 excellent: '🟢 Excellent',
                 volatile: '🟡 Volatile',
@@ -260,6 +273,7 @@ export function PointsWidget({ selectedTeam }: PointsWidgetProps = {}) {
       title: {
         display: true,
         text: 'Points For vs Points Against Analysis',
+        color: chartColors.text,
         font: {
           size: 18,
           weight: 'bold'
