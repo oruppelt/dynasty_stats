@@ -92,7 +92,7 @@ Merged into the monorepo's `main` with the old histories.
       barely exposed, but they shouldn't stay.
       Now 15.5.28; audit 30 → 12. The remaining 12 are all build tooling
       and need Next 16 / Tailwind 4 / ESLint 9 (see Phase 5).
-- [ ] Render build command: change `npm ci && npm run build` to
+- [x] Render build command: change `npm ci && npm run build` to
       `npm run build`. Render already installs dependencies before the build
       command, so they currently install twice (~15s wasted per deploy).
 
