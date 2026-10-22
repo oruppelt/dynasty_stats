@@ -29,7 +29,7 @@ Google Sheet ──(hourly GitHub Action)──▶ pipeline/build_data.py
 ### Step 1: Create the GitHub repository
 
 1. Go to <https://github.com/new>.
-2. Owner: `Blindshooter`. Name: `dynasty-stats`.
+2. Owner: `oruppelt`. Name: `dynasty_stats`. (Done: <https://github.com/oruppelt/dynasty_stats>.)
 3. Public or private:
    - **Public:** unlimited free Actions minutes. GitHub pauses scheduled
      workflows after 60 days without commits (see "Off-season" below).
@@ -45,7 +45,7 @@ In Terminal:
 
 ```bash
 cd ~/Documents/Projects/dynasty-stats
-git remote add origin https://github.com/Blindshooter/dynasty-stats.git
+git remote add origin https://github.com/oruppelt/dynasty_stats.git
 git push -u origin main
 git push -u origin ux/phase-1-static-data
 ```
@@ -74,8 +74,11 @@ write permissions** → **Save**, then run it again.
 ### Step 5: Create the Render static site
 
 1. <https://dashboard.render.com> → **New** → **Static Site**.
-2. Connect the `dynasty-stats` repo. If it isn't listed, click **Configure
-   account** (or "Configure GitHub") and give Render access to the new repo.
+2. Connect the `oruppelt/dynasty_stats` repo. If it isn't listed, click
+   **Configure account** (or "Configure GitHub") and give Render access to it.
+   The old repos were under the `Blindshooter` account, so Render may only be
+   connected to that account so far. In that case, connect the `oruppelt`
+   account as well.
 3. Fill in:
 
    | Field | Value |

@@ -83,7 +83,7 @@ Merged into the monorepo's `main` with the old histories.
 - [x] Fix doc drift in `CLAUDE.md` (rewritten for the new architecture).
 
 ### 1.2 Repository layout ✅ (done 2026-10-22)
-One repo, `dynasty-stats`, with `pipeline/` and `stats-app/`. Both old
+One repo, `oruppelt/dynasty_stats` on GitHub (local folder `dynasty-stats`), with `pipeline/` and `stats-app/`. Both old
 histories were merged with `git subtree`. Setup steps are in `DEPLOYMENT.md`.
 
 ### 1.3 Architecture ✅ (done 2026-10-22): static data
@@ -193,7 +193,7 @@ Biggest new-feature opportunity and the most shareable content.
 ## Changelog
 
 ### 2026-10-22: Phase 1.2–1.4 monorepo and static data (branch `ux/phase-1-static-data`)
-- New repo `dynasty-stats` combining `stats-app` and `stats-app-backend` with
+- New repo `oruppelt/dynasty_stats` combining `stats-app` and `stats-app-backend` with
   history. The old folder `dynasty_stats/` is kept as a backup.
 - `backend/` → `pipeline/`. FastAPI server, cache, logging and snapshot code
   removed. `league_data.py` holds pure calculations (identical output,
