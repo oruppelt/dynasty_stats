@@ -144,32 +144,48 @@ static export. No backend server, cache layers or rate limits.
 
 ## Phase 2: "My Team" home + standings (highest user impact)
 
+Reviewed 2026-10-22 after 1.4 landed: `league.json` now has W-L, all-play
+W-L, luck and per-period results, so Phase 2 needs no pipeline work, and a
+little of Phase 3 (recent periods) comes almost free.
+
 ### 2.1 Persistent team selection
-- Move the team picker into the `Header` (searchable, with team logo).
-- Persist in `localStorage` (`lib/layout-store.ts`) **and** sync to the URL
-  (`?team=Dallas+Mavericks`) so links can be shared in the group chat.
-- Remove the centered native `<select>` from `Dashboard.tsx`.
-- Remove the sidebar (`components/layout/Sidebar.tsx`): it only holds
-  non-functional Settings/Help buttons and takes 280px.
+- Team picker in the `Header`, with the team's logo. A native `<select>`:
+  on phones it opens the system picker, and typing jumps to a team. A custom
+  searchable combobox isn't worth the code for 30 teams.
+- Persist in `localStorage` **and** sync to the URL
+  (`?team=Dallas+Mavericks`) so links can be shared in the group chat. A
+  `?team=` link wins over the stored team.
+- Remove the centered `<select>` from `Dashboard.tsx`.
+- Remove the sidebar (`components/layout/Sidebar.tsx`, `lib/layout-store.ts`):
+  it only holds non-functional Settings/Help buttons and takes 280px.
+- Header shows "Through period N" next to the update time (was Phase 3).
 
-### 2.2 New default tab: "My Team"
-Hero card for the selected team (prompt to pick one if none is selected):
-- Actual record (W-L-T) and league rank.
-- All-play record, e.g. "152–80 (.653), 7th".
-- Luck in plain language: "+2.3 wins luckier than expected", with a
-  lucky/unlucky color and a one-line explanation.
+### 2.2 New tab: "My Team" (default when a team is selected)
+- Record (W-L) and standings rank.
+- All-play record, e.g. "770–158 (.830)", and its rank.
+- Luck in plain language: "Won 5.9 more games than their scores earned",
+  with a lucky/unlucky color.
 - Points for / against, each with league rank.
-- Best and worst matchups from the all-play matrix.
-- Phone-first layout: a single column of stat tiles.
+- Recent periods (last 5): result, score, opponent, and how many teams the
+  score would have beaten. (From Phase 3; the data is in `results`.)
+- Easiest and toughest opponents from the all-play matrix.
+- Phone-first: a single column, tiles in a grid from `sm:` up.
+- No team selected: a grid of team logos to pick from.
 
-### 2.3 Standings table (league view)
-One sortable table replacing the 30 tall ranking cards as the default:
-`Rank | Team | W-L | All-play W-L | Win % | Luck (± wins) | PF | PA`.
-- Selected team's row highlighted and scrolled into view.
+### 2.3 Standings table (default when no team is selected)
+`# | Team | W-L | All-play | All-play % | Luck | PF | PA`, sorted by wins,
+then points for; every column sortable.
+- Selected team's row highlighted.
 - On phones: sticky team column, horizontal scroll for the rest.
-- Reuse `components/ui/data-table.tsx` (TanStack Table is already installed).
-- Drop redundant summary tiles ("Total Teams: 30") and the doubled rank
-  display (medal badge + `#rank`).
+- Its own small table on TanStack Table: all 30 rows, no pagination or
+  search (`data-table.tsx` pages by 10).
+
+### 2.4 Retire the Strength and Luck tabs (was Phase 5)
+The standings table shows both numbers (all-play % and luck) side by side
+with the record, so the 30 tall ranking cards go: `TeamStrengthWidget`,
+`ScheduleLuckWidget`, `ModernRankingCard`, `BidirectionalBar`,
+`TeamStrengthTable`. Tabs become My Team, Standings, Points, All vs All,
+Schedule.
 
 ---
 
@@ -177,8 +193,9 @@ One sortable table replacing the 30 tall ranking cards as the default:
 
 Biggest new-feature opportunity and the most shareable content.
 
-- **Chart library decision first:** standardize on one library (Recharts
-  or nivo; both are already installed) for all new charts.
+- **Chart library decision first:** nivo or chart.js (Recharts was removed
+  in 1.1). Recommendation: nivo. The heatmaps already use it, and
+  `@nivo/bump` and `@nivo/line` cover the two charts below.
 - **Recap** for the latest scoring period, "Period N" (with a picker):
   - Top and lowest score of the period.
   - "Unluckiest loss": lost, but would have beaten N teams that period.
@@ -188,7 +205,6 @@ Biggest new-feature opportunity and the most shareable content.
   highlighted, others faded.
 - **Luck over the season**: cumulative luck line per team.
 - **Sparklines** in the standings table (last 5 periods all-play %).
-- Header shows "Data through Period N" (`meta.latest_period`).
 
 ---
 
@@ -207,14 +223,16 @@ Biggest new-feature opportunity and the most shareable content.
 - **Plain language** in the remaining views: replace "Win Rate Strength
   0.653" and "Schedule Strength ±1.5" with records and wins. Add a collapsible
   "What does this mean?" to each view.
+- **Schedule tab is mislabeled.** Its matrix is luck per opponent (actual
+  minus all-play expected wins), but the card, tooltip and legend call it
+  schedule difficulty ("Positive = Easier schedule"). Rename it (e.g. "Luck
+  by opponent") and reword.
 - Friendly error states with a "Retry" button instead of raw `HTTP 500: ...`.
 
 ## Phase 5: Cleanup
 
-- Retire widgets that are replaced by Phases 2–3 (ranking cards, and probably
-  the separate Strength and Luck tabs once the standings table covers them).
-- Move remaining charts to the chosen library; remove the unused ones
-  (chart.js, plus whichever of Recharts/nivo lost) and possibly framer-motion.
+- Move remaining charts to the chosen library and remove the other one
+  (probably chart.js), and possibly framer-motion.
 - Next.js 16, Tailwind 4 and the ESLint 9 flat config (`next lint` is
   deprecated). Clears the remaining `npm audit` findings, all in build tooling.
 - Delete `ROADMAP.md` (pre-monorepo; describes the cache layers and backend
