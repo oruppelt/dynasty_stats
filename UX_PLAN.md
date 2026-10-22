@@ -142,7 +142,7 @@ static export. No backend server, cache layers or rate limits.
 
 ---
 
-## Phase 2: "My Team" home + standings (highest user impact)
+## Phase 2: "My Team" home + standings ✅ (done 2026-10-22)
 
 Reviewed 2026-10-22 after 1.4 landed: `league.json` now has W-L, all-play
 W-L, luck and per-period results, so Phase 2 needs no pipeline work, and a
@@ -243,6 +243,27 @@ Biggest new-feature opportunity and the most shareable content.
 ---
 
 ## Changelog
+
+### 2026-10-22: Phase 2 My Team and standings (branch `ux/phase-2-my-team`)
+- Plan reviewed first: recent periods pulled in from Phase 3, the Strength
+  and Luck tabs retired now instead of in Phase 5, a mislabeled Schedule
+  tab noted for Phase 4, and the chart-library choice narrowed to nivo vs
+  chart.js.
+- Header: team picker (logo + native select), "Through period N", update
+  time. The team is remembered in localStorage and put in the URL
+  (`?team=...`); a shared link shows its team without replacing yours.
+  Sidebar removed.
+- New My Team tab: record and rank, all-play record, luck in words, points
+  for/against with ranks, last 5 periods, easiest/toughest opponents; a
+  grid of teams to pick from when none is selected.
+- New Standings tab: sortable table with W-L, all-play, all-play %, luck,
+  PF, PA; selected team highlighted; rank and team columns pinned on phones.
+- Default tab is My Team with a team picked, else Standings. Tabs show
+  labels on phones.
+- Removed: Strength and Luck tabs, ranking cards, `data-table.tsx` and the
+  other UI pieces only they used, `@radix-ui/react-progress`.
+- Checked in the browser: light and dark, 390px phone width (no sideways
+  page scroll), `?team=` link vs stored team. Lint and build pass.
 
 ### 2026-10-22: Phase 1.4–1.5 league.json and data hook (branch `ux/phase-1-league-data`)
 - Pipeline writes one `league.json`: the three existing datasets (unchanged,
