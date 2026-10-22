@@ -68,8 +68,13 @@ trailing spaces, e.g. `'Team1 '`) and strips team names. Matrix rows in the
 JSON name their team under `Team`; every other key is a team name.
 
 ### Frontend
-- `app/page.tsx` → `components/Dashboard.tsx` (tabs, team filter) →
-  `components/widgets/*` (one per tab; each fetches its JSON file).
+- `app/page.tsx` → `components/layout/Header.tsx` (team picker) and
+  `components/Dashboard.tsx` (tabs: My Team, Standings, Points, All vs All,
+  Schedule) → `components/widgets/*`, each reading `useLeagueData()`.
+- `lib/selected-team.ts`: the viewer's team (zustand), kept in localStorage
+  and the `?team=` URL parameter. `lib/standings.ts`: ranks and number
+  formatting (records, luck, points) shared by the views.
+- Tailwind scans `lib/` too, so helpers there may return class names.
 - `lib/chart-theme.ts`: `useChartTheme()`. Chart libraries can't read CSS
   variables, so charts take light/dark colors from this hook. Use it for any
   new chart; use Tailwind theme tokens (`text-foreground`, `bg-muted`, ...)
