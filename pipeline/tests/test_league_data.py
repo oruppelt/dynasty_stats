@@ -54,7 +54,7 @@ def test_sheet_csv_url():
 
 def test_all_play_win_rates(data):
     # Share of periods a team outscored each other team (ties count half)
-    matrix = by_team(data['strength']['matrix'])
+    matrix = by_team(data['matchups']['all_play'])
     assert matrix['Alpha']['Bravo'] == 0.5      # beat 90, lost to 85
     assert matrix['Bravo']['Delta'] == 0.75     # beat 70, tied 85
     assert matrix['Charlie']['Delta'] == 1.0
@@ -62,32 +62,22 @@ def test_all_play_win_rates(data):
     assert matrix['Alpha']['Alpha'] is None     # no self-comparison
 
 
-def test_strength_and_rank(data):
-    matrix = by_team(data['strength']['matrix'])
-    assert matrix['Charlie']['Strength'] == pytest.approx(2 / 3)
-    assert matrix['Bravo']['Strength'] == pytest.approx(1.75 / 3)
-    assert matrix['Alpha']['Strength'] == pytest.approx(0.5)
-    assert matrix['Delta']['Strength'] == pytest.approx(0.25)
-    assert [matrix[t]['Rank'] for t in ['Charlie', 'Bravo', 'Alpha', 'Delta']] == [1, 2, 3, 4]
-
-
 def test_head_to_head(data):
-    wins = by_team(data['strength']['matrix_wins'])
-    games = by_team(data['strength']['matrix_games'])
+    wins = by_team(data['matchups']['wins'])
+    games = by_team(data['matchups']['games'])
     assert wins['Alpha']['Bravo'] == 1 and games['Alpha']['Bravo'] == 1
     assert wins['Alpha']['Charlie'] == 0 and games['Alpha']['Charlie'] == 1
     assert wins['Bravo']['Delta'] == 0.5                                  # tie
-    assert wins['Alpha']['Delta'] is None and games['Alpha']['Delta'] == 0  # never played
+    assert wins['Alpha']['Delta'] is None and games['Alpha']['Delta'] is None  # never played
 
 
 def test_schedule_luck(data):
     # Actual head-to-head wins minus all-play expected wins, over opponents played
-    matrix = by_team(data['schedule_strength']['matrix'])
-    assert matrix['Alpha']['Strength'] == pytest.approx(0.0)    # +0.5 vs Bravo, -0.5 vs Charlie
-    assert matrix['Bravo']['Strength'] == pytest.approx(-0.75)  # -0.5 vs Alpha, -0.25 vs Delta
-    assert matrix['Charlie']['Strength'] == pytest.approx(0.5)
-    assert matrix['Delta']['Strength'] == pytest.approx(0.25)
-    assert matrix['Charlie']['Rank'] == 1 and matrix['Bravo']['Rank'] == 4
+    matrix = by_team(data['matchups']['luck'])
+    assert matrix['Alpha']['Bravo'] == 0.5 and matrix['Alpha']['Charlie'] == -0.5
+    assert matrix['Bravo']['Alpha'] == -0.5 and matrix['Bravo']['Delta'] == -0.25
+    luck = {team['team']: team['luck'] for team in data['teams']}
+    assert luck == pytest.approx({'Alpha': 0, 'Bravo': -0.75, 'Charlie': 0.5, 'Delta': 0.25})
 
 
 def test_schedule_luck_counts_rematches(tmp_path):
@@ -96,7 +86,7 @@ def test_schedule_luck_counts_rematches(tmp_path):
     rematch.write_text(FIXTURE.read_text().replace(
         ',,,,,,,,,,,', 'Alpha,50,Bravo,40,Scoring Period 3,3,W,Alpha,Bravo,,,\n'
                        'Charlie,30,Delta,20,Scoring Period 3,3,W,Charlie,Delta,,,'))
-    luck = {row['Team']: row['Strength'] for row in compute_league(load_games(rematch))['schedule_strength']['matrix']}
+    luck = {team['team']: team['luck'] for team in compute_league(load_games(rematch))['teams']}
     # Bravo vs Alpha: all-play 1/3, lost both games: 0 - 2 x 1/3.
     # Bravo vs Delta: all-play 2.5/3, tied once: 0.5 - 2.5/3. Total -1.
     assert luck['Bravo'] == pytest.approx(-1, abs=0.01)
@@ -107,13 +97,13 @@ def test_schedule_luck_counts_rematches(tmp_path):
 def test_matrix_gaps_are_null(data):
     # Only pairs that never played (and a team against itself) are null; a real
     # value such as a luck of exactly -1.0 must never be mistaken for a gap
-    games = by_team(data['strength']['matrix_games'])
-    for name in ['matrix', 'matrix_wins']:
-        for row in data['schedule_strength'][name]:
+    games = by_team(data['matchups']['games'])
+    for name in ['luck', 'wins', 'games']:
+        for row in data['matchups'][name]:
             for opponent, value in row.items():
-                if opponent in ('Team', 'Strength', 'Rank'):
+                if opponent == 'Team':
                     continue
-                played = opponent != row['Team'] and games[row['Team']][opponent] > 0
+                played = opponent != row['Team'] and (games[row['Team']][opponent] or 0) > 0
                 assert (value is not None) == played, (name, row['Team'], opponent)
 
 
@@ -133,10 +123,9 @@ def test_luck_to_date(data):
 
 
 def test_points_for_against(data):
-    scores = by_team(data['for_against']['df_scores'], key='Team')
-    assert scores['Alpha']['Scored For'] == 160 and scores['Alpha']['Scored Against'] == 185
-    assert scores['Delta']['Scored For'] == 155 and scores['Delta']['Scored Against'] == 165
-    assert data['for_against']['median_scored_for'] == 167.5
+    teams = by_team(data['teams'], key='team')
+    assert teams['Alpha']['points_for'] == 160 and teams['Alpha']['points_against'] == 185
+    assert teams['Delta']['points_for'] == 155 and teams['Delta']['points_against'] == 165
 
 
 def test_team_records(data):
@@ -152,12 +141,13 @@ def test_team_records(data):
     assert teams['Bravo']['luck'] == pytest.approx(-0.75)
 
 
-def test_all_play_record_matches_strength(data):
-    # Every team plays every period, so all-play win % equals Strength
-    strength = by_team(data['strength']['matrix'])
+def test_all_play_record_matches_matrix(data):
+    # Every team plays every period, so all-play win % is the mean of its matrix row
+    matrix = by_team(data['matchups']['all_play'])
     for team in data['teams']:
+        row = [v for k, v in matrix[team['team']].items() if k != 'Team' and v is not None]
         win_pct = team['all_play_wins'] / (team['all_play_wins'] + team['all_play_losses'])
-        assert win_pct == pytest.approx(strength[team['team']]['Strength'])
+        assert win_pct == pytest.approx(sum(row) / len(row), abs=0.01)
 
 
 def test_period_results(data):
@@ -185,8 +175,9 @@ def test_output_keys_are_clean(data):
                 yield from keys(child)
 
     assert all(key == key.strip() for key in keys(data))
-    for name in ['matrix', 'matrix_wins', 'matrix_games']:
-        assert {row['Team'] for row in data['strength'][name]} == {'Alpha', 'Bravo', 'Charlie', 'Delta'}
+    assert data['matchups']['teams'] == ['Alpha', 'Bravo', 'Charlie', 'Delta']
+    for name in ['all_play', 'wins', 'games', 'luck']:
+        assert [row['Team'] for row in data['matchups'][name]] == data['matchups']['teams']
 
 
 def test_output_is_valid_json(data):

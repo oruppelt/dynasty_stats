@@ -5,10 +5,9 @@ Reads the games sheet once and computes every dataset the frontend needs.
 Pure functions only: no web server, no caching. `build_data.py` runs this
 and writes the results as static JSON for the site.
 
-Everything is published as one payload (`compute_league`). Its `strength`,
-`schedule_strength` and `for_against` parts keep the shapes of the former
-FastAPI endpoints, except that matrix rows name their team under 'Team' (the
-sheet's own headers, such as 'Team1 ', have trailing spaces).
+Everything is published as one payload (`compute_league`): season totals per
+team, one row per team per period, and the team-vs-team matrices. Matrix rows
+name their team under 'Team'; every other key is an opponent.
 """
 import re
 
@@ -118,70 +117,31 @@ def _matrix_records(df: pd.DataFrame) -> list[dict]:
             for row in df.reset_index().to_dict('records')]
 
 
-def _with_rank(df: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
-    """Add Rank by Strength (1 = highest) and sort team columns."""
-    df['Rank'] = df['Strength'].rank(ascending=False).astype(int)
-    teams = sorted(col for col in df.columns if col not in ['Strength', 'Rank'])
-    return df[teams + ['Strength', 'Rank']], teams
+def compute_matchups(games: pd.DataFrame) -> dict:
+    """Team-vs-team matrices, each a row per team with one value per opponent.
 
-
-def compute_strength(games: pd.DataFrame) -> dict:
-    """All-play strength: matrix of all-play win rates and each team's average."""
-    full = _both_sides(games)
-    h2h_wins = _head_to_head_wins(full)
-    h2h_games = _head_to_head_games(full)
-
-    all_play = _all_play_win_rates(full)
-    all_play['Strength'] = all_play.mean(axis=1)
-    all_play, teams = _with_rank(all_play)
-    all_play[teams] = all_play[teams].round(2)  # matrix cells are for display; Strength stays exact
-
-    max_win_rate = all_play[teams].max().max()
-    min_win_rate = all_play[teams].min().min()
-
-    return {
-        "teams": teams,
-        "matrix": _matrix_records(all_play),
-        "matrix_wins": _matrix_records(h2h_wins),
-        "matrix_games": h2h_games.fillna(0).astype(float).reset_index().to_dict('records'),
-        "metadata": {
-            "maxWinRate": float(max_win_rate),
-            "minWinRate": float(min_win_rate),
-        },
-    }
-
-
-def compute_schedule_strength(games: pd.DataFrame) -> dict:
-    """Schedule luck: actual head-to-head wins minus all-play expected wins.
-
-    Expected wins against an opponent = all-play win rate against them x games
-    played against them, so a rematch counts twice. Every game hands out one
-    win and one expected win in total, so luck sums to zero across the league.
+    - all_play: share of periods the row team outscored that opponent
+    - wins / games: actual head-to-head wins (a tie counts half) and games
+    - luck: head-to-head wins minus expected wins (all_play x games), so a
+      rematch counts twice. Every game hands out one win and one expected win
+      in total, so luck sums to zero across the league.
+    A team against itself, or a pair that never played (for wins, games and
+    luck), is null.
     """
     full = _both_sides(games)
-    h2h_wins = _head_to_head_wins(full)
-    luck = _luck_matrix(full)
-    luck['Strength'] = luck.sum(axis=1)
-    luck, teams = _with_rank(luck)
-    luck[teams + ['Strength']] = luck[teams + ['Strength']].round(2)
+    teams = sorted(full['Team'].unique())
+
+    def rows(df: pd.DataFrame, decimals: int | None = None) -> list[dict]:
+        df = df.reindex(index=teams, columns=teams)
+        df.index.name = 'Team'
+        return _matrix_records(df if decimals is None else df.round(decimals))
 
     return {
         "teams": teams,
-        "matrix": _matrix_records(luck),
-        "matrix_wins": _matrix_records(h2h_wins),
-    }
-
-
-def compute_for_against(games: pd.DataFrame) -> dict:
-    """Total points scored and conceded per team."""
-    full = _both_sides(games)
-    scores = full.groupby(['Team'])[['Score', 'OppScore']].sum().reset_index()
-    scores.columns = ['Team', 'Scored For', 'Scored Against']
-
-    return {
-        "df_scores": scores.to_dict('records'),
-        "median_scored_for": float(np.median(scores['Scored For'])),
-        "median_scored_against": float(np.median(scores['Scored Against'])),
+        "all_play": rows(_all_play_win_rates(full), 2),
+        "wins": rows(_head_to_head_wins(full)),
+        "games": rows(_head_to_head_games(full)),
+        "luck": rows(_luck_matrix(full), 2),
     }
 
 
@@ -223,10 +183,9 @@ def compute_teams(results: pd.DataFrame, luck: dict[str, float]) -> list[dict]:
 
 def compute_league(games: pd.DataFrame) -> dict:
     """The site's whole payload (league.json), apart from the update time."""
-    strength = compute_strength(games)
-    schedule_strength = compute_schedule_strength(games)
     results = compute_results(games).merge(compute_luck_to_date(games), on=['Match', 'Team'], how='left')
-    luck = {row['Team']: row['Strength'] for row in schedule_strength['matrix']}
+    full = _both_sides(games)
+    luck = _luck_matrix(full).sum(axis=1).to_dict()
 
     return {
         "meta": {
@@ -245,7 +204,5 @@ def compute_league(games: pd.DataFrame) -> dict:
             "all_play_losses": float(row.AllPlayLosses),
             "luck_to_date": round(float(row.LuckToDate), 2),
         } for row in results.itertuples()],
-        "strength": strength,
-        "schedule_strength": schedule_strength,
-        "for_against": compute_for_against(games),
+        "matchups": compute_matchups(games),
     }

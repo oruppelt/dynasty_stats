@@ -29,9 +29,9 @@ function luckSentence(luck: number): string {
 
 /** Share of periods the team outscored each opponent (all-play), best first. */
 function opponentsByWinRate(league: LeagueData, team: string) {
-  const row = league.strength.matrix.find(r => r.Team === team)
+  const row = league.matchups.all_play.find(r => r.Team === team)
   if (!row) return []
-  return league.strength.teams
+  return league.matchups.teams
     .filter(opponent => opponent !== team && typeof row[opponent] === 'number')
     .map(opponent => ({ opponent, rate: row[opponent] as number }))
     .sort((a, b) => b.rate - a.rate)
@@ -95,7 +95,7 @@ export function MyTeamWidget({ selectedTeam }: { selectedTeam: string }) {
 
   const standing = standings.find(s => s.team === selectedTeam)
   if (!standing) {
-    return <TeamChooser teams={league.strength.teams} />
+    return <TeamChooser teams={league.matchups.teams} />
   }
 
   const teamCount = standings.length

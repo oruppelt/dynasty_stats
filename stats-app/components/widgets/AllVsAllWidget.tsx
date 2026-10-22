@@ -33,7 +33,7 @@ export function AllVsAllWidget({ selectedTeam }: AllVsAllWidgetProps) {
   if (isLoading) return <WidgetSkeleton variant="heatmap" />
   if (error || !league) return <ErrorState />
 
-  const { teams, matrix, matrix_wins, matrix_games } = league.strength
+  const { teams, all_play, wins, games } = league.matchups
 
   return (
     <Card className="w-full">
@@ -56,14 +56,14 @@ export function AllVsAllWidget({ selectedTeam }: AllVsAllWidgetProps) {
       <CardContent>
         <MatrixHeatmap
           teams={teams}
-          matrix={matrix}
+          matrix={all_play}
           selectedTeam={selectedTeam}
           scale={SCALE}
           formatCell={rate => String(Math.round(rate * 100))}
           formatValue={percent}
           minLabelWidth={22}
           listTitle={team => `How often ${team} outscored each team`}
-          detail={(team, opponent) => `Head-to-head: ${headToHead(matrix_wins, matrix_games, team, opponent)}`}
+          detail={(team, opponent) => `Head-to-head: ${headToHead(wins, games, team, opponent)}`}
           tooltip={(team, opponent, rate) => (
             <>
               <div className="font-semibold">{team} vs {opponent}</div>
@@ -71,7 +71,7 @@ export function AllVsAllWidget({ selectedTeam }: AllVsAllWidgetProps) {
                 Outscored them in <span className="font-semibold text-foreground">{percent(rate)}</span> of periods
               </div>
               <div className="text-muted-foreground">
-                Head-to-head: <span className="font-semibold text-foreground">{headToHead(matrix_wins, matrix_games, team, opponent)}</span>
+                Head-to-head: <span className="font-semibold text-foreground">{headToHead(wins, games, team, opponent)}</span>
               </div>
             </>
           )}

@@ -1,6 +1,9 @@
 import { Skeleton } from "@/components/ui/skeleton"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
+// Fixed heights: random ones would differ between the server render and the client
+const BAR_HEIGHTS = [45, 70, 55, 90, 35, 80, 60, 50]
+
 interface WidgetSkeletonProps {
   variant?: 'chart' | 'heatmap' | 'list' | 'scatter'
 }
@@ -21,8 +24,8 @@ export function WidgetSkeleton({ variant = 'chart' }: WidgetSkeletonProps) {
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="flex justify-around items-end h-[400px]">
-            {[...Array(8)].map((_, i) => (
-              <div key={i} className="relative overflow-hidden w-12" style={{ height: `${Math.random() * 80 + 20}%` }}>
+            {BAR_HEIGHTS.map((height, i) => (
+              <div key={i} className="relative overflow-hidden w-12" style={{ height: `${height}%` }}>
                 <Skeleton className="w-full h-full" />
                 <div className="absolute inset-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-white/20 to-transparent" />
               </div>
