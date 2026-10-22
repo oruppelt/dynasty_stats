@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Response
+from fastapi import APIRouter, HTTPException, Response
 import pandas as pd
 import numpy as np
 from constants import SHEET_ID, DATA_TAB
@@ -95,6 +95,9 @@ async def _compute_strength():
             df_wins = pd.pivot_table(df_full, values='WIN', index=['Team1 '], columns=['Team2 '], aggfunc='sum')
             logger.info("Successfully created wins pivot table")
             logger.info(f"Wins pivot table shape: {df_wins.shape}")
+            # Head-to-head games played per pair, so the UI can show a real W-L record
+            df_games = pd.pivot_table(df_full, values='WIN', index=['Team1 '], columns=['Team2 '], aggfunc='count')
+            df_games = df_games.fillna(0).astype(float)
             df_wins = df_wins.fillna(-1)
             logger.info("Filled NaN values in wins pivot table with -1")
         except Exception as pivot_error:
@@ -193,6 +196,7 @@ async def _compute_strength():
         try:
             matrix_data = df_alt_wins.reset_index().to_dict('records')
             matrix_data_wins = df_wins.reset_index().to_dict('records')
+            matrix_data_games = df_games.reset_index().to_dict('records')
             
             # Calculate metadata
             team_columns = [col for col in df_alt_wins.columns if col not in ['Strength', 'Rank']]
@@ -206,6 +210,7 @@ async def _compute_strength():
                 "teams": teams,
                 "matrix": matrix_data,
                 "matrix_wins": matrix_data_wins,
+                "matrix_games": matrix_data_games,
                 "metadata": {
                     "maxWinRate": max_win_rate,
                     "minWinRate": min_win_rate,
@@ -258,4 +263,4 @@ async def strength(response: Response):
     except Exception as e:
         duration = (datetime.now() - start_time).total_seconds()
         logger.error(f"Strength endpoint failed after {duration:.3f}s: {str(e)}")
-        return {"error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))

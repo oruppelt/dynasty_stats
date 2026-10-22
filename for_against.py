@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Response
+from fastapi import APIRouter, HTTPException, Response
 import pandas as pd
 import numpy as np
 from constants import SHEET_ID, DATA_TAB
@@ -153,4 +153,4 @@ async def for_against(response: Response):
             "error_type": type(e).__name__
         })
         logger.error(f"For/Against calculation failed after {duration:.3f}s")
-        return {"error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))

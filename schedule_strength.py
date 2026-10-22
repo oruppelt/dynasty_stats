@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Response
+from fastapi import APIRouter, HTTPException, Response
 import pandas as pd
 import numpy as np
 from constants import SHEET_ID, DATA_TAB
@@ -256,4 +256,4 @@ async def strength(response: Response):
         return result
     except Exception as e:
         logger.error(f"Error in schedule_strength endpoint: {str(e)}")
-        return {"error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))
