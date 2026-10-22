@@ -55,16 +55,15 @@ What the existing metrics mean (useful for labelling them in plain words):
   format will conflict on `stats-app/public/data/`. Resolve by re-running
   `build_data.py` on the branch after merging `main` in.
 
-## Open questions (decide before 1.4 and Phase 3)
+## Decisions
 
-- **Season rollover.** The live sheet holds 32 finished periods (480 games,
-  all `FINAL`), so last season looks complete. What happens when the new
-  season starts: a new sheet/tab, or rows appended to this one? Should past
-  seasons stay viewable? This decides whether `league.json` needs a
-  `season` field and whether the CSV URL becomes a list.
-- **Recap unit.** Phase 3 recaps per scoring period (what the data has, and
-  what the matchups are) or per calendar week (two periods). Recommendation:
-  per period, labelled with its week, e.g. "Week 7, Fri–Sun".
+- **Season rollover** (2026-10-22): each season gets a new sheet. Its link
+  goes in the `LEAGUE_SHEET` repository variable (see `DEPLOYMENT.md`); the
+  old sheet keeps working. Viewing past seasons is far-off roadmap, so
+  `league.json` has no season field yet.
+- **Recap unit** (2026-10-22): one scoring period, labelled "Period N".
+- **Ties** (2026-10-22): rare; records are W-L with a tie as half a win and
+  half a loss (no T column).
 
 ---
 
@@ -128,19 +127,18 @@ static export. No backend server, cache layers or rate limits.
       keys everywhere in the frontend) and keep `PERIOD`.
       Matrix rows now use `Team`; `PERIOD` is kept as `Period` in the
       dataframe but not yet in any output (`Match` is the numeric form of it).
-- [ ] Add actual W-L-T and per-period numbers (score, all-play wins, result).
-      Ties do happen (1 so far, scored 0.5 in all-play), so the record needs
-      the T.
-- [ ] Single `league.json` payload in the shape Phases 2–3 need. Keep the
-      current files until the old widgets are retired.
+- [x] Add actual W-L and per-period numbers (score, all-play wins, result).
+      `teams` and `results` in `league.json`.
+- [x] Single `league.json` payload in the shape Phases 2–3 need.
+      The old datasets live inside it until their widgets are retired; the
+      separate files are gone.
 
 ### 1.5 Frontend data layer
-- [ ] One `useLeagueData()` hook plus shared types in `lib/`. This replaces the
-      five copy-pasted fetch blocks. The `['strength']` query key is currently
-      registered with two different fetchers.
-- [ ] Remove `logger.info` calls from render paths.
-- [ ] `api-client.ts` retry/timeout/request-ID machinery is overkill for
-      static files; simplify it as part of the hook.
+- [x] One `useLeagueData()` hook plus shared types in `lib/league-data.ts`.
+      This replaces the five copy-pasted fetch blocks.
+- [x] Remove `logger.info` calls from render paths. (`lib/logger.ts` deleted.)
+- [x] `api-client.ts` retry/timeout/request-ID machinery is overkill for
+      static files. (Deleted; React Query's retry covers it.)
 
 ---
 
@@ -181,8 +179,7 @@ Biggest new-feature opportunity and the most shareable content.
 
 - **Chart library decision first:** standardize on one library (Recharts
   or nivo; both are already installed) for all new charts.
-- **Recap** for the latest scoring period (with a picker; see the open
-  question on period vs. week):
+- **Recap** for the latest scoring period, "Period N" (with a picker):
   - Top and lowest score of the period.
   - "Unluckiest loss": lost, but would have beaten N teams that period.
   - "Luckiest win": won, but would have lost to N teams.
@@ -191,8 +188,7 @@ Biggest new-feature opportunity and the most shareable content.
   highlighted, others faded.
 - **Luck over the season**: cumulative luck line per team.
 - **Sparklines** in the standings table (last 5 periods all-play %).
-- Header shows "Data through Period N" (`metadata.json` already has
-  `latest_match`).
+- Header shows "Data through Period N" (`meta.latest_period`).
 
 ---
 
@@ -229,6 +225,20 @@ Biggest new-feature opportunity and the most shareable content.
 ---
 
 ## Changelog
+
+### 2026-10-22: Phase 1.4–1.5 league.json and data hook (branch `ux/phase-1-league-data`)
+- Pipeline writes one `league.json`: the three existing datasets (unchanged,
+  verified against the old files), plus `teams` (actual and all-play W-L,
+  points, luck) and `results` (one row per team per period). A tie counts
+  half a win and half a loss. 7 new tests (17 total).
+- New season: the sheet comes from the `LEAGUE_SHEET` repository variable
+  (a browser link works); unset means the current sheet. A sheet with no
+  played games keeps the old data; scheduled games without scores are skipped.
+- Site: `useLeagueData()` in `lib/league-data.ts` with shared types, one
+  request for everything. Deleted `lib/logger.ts` and `lib/api-client.ts`
+  and all logging calls.
+- Checked in the browser: all five tabs and the header from a single
+  `league.json` request, no console errors.
 
 ### 2026-10-22: Phase 1.1 cleanup and clean data keys (branch `ux/phase-1-cleanup`)
 - Removed dead code (`Auth.tsx`, old `HeatMap.tsx`, `ErrorBoundary.tsx`,
