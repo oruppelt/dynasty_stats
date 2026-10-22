@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71% 4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 9% 46%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 221 83% 53%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+
+    --chart-1: 221 83% 53%;
+    --chart-2: 142 71% 45%;
+    --chart-3: 262 83% 58%;
+    --chart-4: 32 95% 44%;
+    --chart-5: 340 82% 52%;
+
+    /* Semantic Data Colors - Performance Tiers */
+    --elite: 142 71% 45%;        /* Green */
+    --strong: 221 83% 53%;       /* Blue */
+    --average: 45 93% 47%;       /* Yellow */
+    --below-average: 25 95% 53%; /* Orange */
+    --weak: 0 72% 51%;           /* Red */
+
+    /* Luck/Schedule Colors */
+    --very-lucky: 142 71% 45%;
+    --lucky: 142 76% 36%;
+    --neutral: 220 9% 46%;
+    --unlucky: 0 91% 71%;
+    --very-unlucky: 0 72% 51%;
+
+    /* Ranking Medal Colors */
+    --rank-gold: 45 93% 47%;
+    --rank-silver: 220 9% 46%;
+    --rank-bronze: 25 95% 53%;
+
+    /* Success/Warning/Danger/Info */
+    --success: 142 71% 45%;
+    --warning: 45 93% 47%;
+    --danger: 0 72% 51%;
+    --info: 221 83% 53%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 222 47% 11%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 221 83% 53%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 221 83% 53%;
+
+    --chart-1: 221 83% 53%;
+    --chart-2: 142 71% 45%;
+    --chart-3: 262 83% 58%;
+    --chart-4: 32 95% 44%;
+    --chart-5: 340 82% 52%;
+
+    /* Dark mode adjustments (lighter for better contrast) */
+    --elite: 142 71% 55%;
+    --strong: 221 83% 63%;
+    --average: 45 93% 57%;
+    --below-average: 25 95% 63%;
+    --weak: 0 72% 61%;
+
+    --very-lucky: 142 71% 55%;
+    --lucky: 142 76% 46%;
+    --neutral: 220 9% 56%;
+    --unlucky: 0 91% 81%;
+    --very-unlucky: 0 72% 61%;
+
+    --rank-gold: 45 93% 57%;
+    --rank-silver: 220 9% 56%;
+    --rank-bronze: 25 95% 63%;
+
+    --success: 142 71% 55%;
+    --warning: 45 93% 57%;
+    --danger: 0 72% 61%;
+    --info: 221 83% 63%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1 {
+    @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+  }
+
+  h2 {
+    @apply scroll-m-20 text-3xl font-semibold tracking-tight;
+  }
+
+  h3 {
+    @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  }
+
+  h4 {
+    @apply scroll-m-20 text-xl font-semibold tracking-tight;
+  }
+
+  h5 {
+    @apply scroll-m-20 text-lg font-semibold tracking-tight;
+  }
+
+  h6 {
+    @apply scroll-m-20 text-base font-semibold tracking-tight;
+  }
+
+  p {
+    @apply leading-7;
+  }
+
+  /* Display text (hero sections) */
+  .text-display {
+    @apply text-5xl lg:text-6xl font-extrabold tracking-tight;
+    line-height: 1;
+    font-family: var(--font-geist-sans), var(--font-sans);
+  }
+
+  /* Numeric/stat display */
+  .text-stat {
+    @apply text-2xl lg:text-3xl font-bold tabular-nums;
+  }
+
+  /* Caption/metadata */
+  .text-caption {
+    @apply text-xs leading-5 text-muted-foreground;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Better focus styles */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+/* Gradient Utilities */
+@layer utilities {
+  /* Header gradient - subtle background gradient */
+  .gradient-header {
+    background: linear-gradient(135deg,
+      hsl(var(--background)) 0%,
+      hsl(var(--muted)) 100%);
+  }
+
+  /* Medal gradients for ranking badges */
+  .gradient-gold {
+    background: linear-gradient(135deg,
+      #fbbf24 0%,
+      #f59e0b 50%,
+      #d97706 100%);
+  }
+
+  .gradient-silver {
+    background: linear-gradient(135deg,
+      #e5e7eb 0%,
+      #9ca3af 50%,
+      #6b7280 100%);
+  }
+
+  .gradient-bronze {
+    background: linear-gradient(135deg,
+      #fed7aa 0%,
+      #fb923c 50%,
+      #f97316 100%);
+  }
+
+  /* Shimmer animation for loading skeletons */
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
+}
