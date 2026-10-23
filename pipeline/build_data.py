@@ -1,25 +1,23 @@
 """
-Build the static league data file that the site serves.
+Build the static league data files that the site serves.
 
 Usage (from the repo root):
-    python pipeline/build_data.py                     # read the league Google Sheet
-    python pipeline/build_data.py --source <sheet>    # another sheet (link or ID)
-    python pipeline/build_data.py --source games.csv  # or a local CSV
-    python pipeline/build_data.py --fantrax <league_id>  # a Fantrax league instead of the sheet
+    python pipeline/build_data.py                    # every season still in progress, from Fantrax
+    python pipeline/build_data.py --season 2025-26   # one season (a finished one too)
+    python pipeline/build_data.py --season test --source games.csv  # a CSV or Google Sheet instead
 
-Fantrax is used when --fantrax or the FANTRAX_LEAGUE_ID environment variable
-(a GitHub repository variable in the Action) names a league. It needs
+The seasons, their Fantrax league IDs and the season the site opens on are in
+pipeline/seasons.json. A season marked "final" is over: its data file is kept
+as it is, and only rebuilt when it is named with --season. Fantrax needs
 FANTRAX_COOKIE, a logged-in browser's cookie (see fantrax.fetch_scores).
 
-The sheet defaults to the LEAGUE_SHEET environment variable (a sheet link or
-ID; the GitHub Action sets it from a repository variable), else the sheet in
-league_data.py. That way a new season's sheet needs no code change.
-
-Writes stats-app/public/data/league.json. The file is only rewritten when the
-data changes, and its `updated_at` (the "Updated ..." time in the header) only
-moves then. That keeps the scheduled GitHub Action from committing when
-nothing is new. A source without any played games (e.g. a new season's sheet
-before the first period) leaves the existing data in place.
+Writes stats-app/public/data/seasons/<season>.json, and data/seasons.json, the
+season list the site reads. The list only has the seasons with data, so a new
+season appears on the site once its first period is played. A season's file
+is only rewritten when the data changes, and its `updated_at` (the "Updated
+..." time in the header) only moves then. That keeps the scheduled GitHub
+Action from committing when nothing is new. A source without any played games
+leaves the existing data in place.
 """
 import argparse
 import json
@@ -30,8 +28,9 @@ from pathlib import Path
 import pandas as pd
 
 import fantrax
-from league_data import SHEET_ID, compute_league, load_games, sheet_csv_url
+from league_data import compute_league, load_games, sheet_csv_url
 
+SEASONS_CONFIG = Path(__file__).resolve().parent / 'seasons.json'
 DEFAULT_OUT = Path(__file__).resolve().parent.parent / 'stats-app' / 'public' / 'data'
 
 
@@ -40,42 +39,67 @@ def to_json(data) -> str:
     return json.dumps(data, indent=2, allow_nan=False) + '\n'
 
 
-def build(games: pd.DataFrame, out: Path, playoff_games: pd.DataFrame | None = None) -> str:
-    """Write league.json from the played games if the data changed. Returns what happened, for the log."""
+def season_path(out: Path, season: str) -> Path:
+    return out / 'seasons' / f'{season}.json'
+
+
+def build(games: pd.DataFrame, path: Path, season: str, playoff_games: pd.DataFrame | None = None) -> str:
+    """Write a season's data file from the played games if the data changed. Returns what happened, for the log."""
     if games.empty:
-        return 'No played games yet; data left as it was.'
+        return f'{season}: no played games yet; data left as it was.'
 
     league = compute_league(games, playoff_games)
-    path = out / 'league.json'
+    league['meta'] = {'season': season, **league['meta']}
     if path.exists():
         previous = json.loads(path.read_text())
         previous['meta'].pop('updated_at', None)
         if to_json(previous) == to_json(league):
-            return 'No changes; league.json left as it was.'
+            return f'{season}: no changes; data left as it was.'
 
     league['meta'] = {'updated_at': datetime.now(timezone.utc).isoformat(timespec='seconds'), **league['meta']}
-    out.mkdir(parents=True, exist_ok=True)
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(to_json(league))
-    return f'Updated league.json: {len(games)} games, {len(league["teams"])} teams, through period {league["meta"]["latest_period"]}.'
+    return (f'{season}: updated, {len(games)} games, {len(league["teams"])} teams, '
+            f'through period {league["meta"]["latest_period"]}.')
+
+
+def write_index(config: dict, out: Path) -> None:
+    """The site's season list: the seasons that have data, in seasons.json order, and the one it opens on."""
+    available = [s['id'] for s in config['seasons'] if season_path(out, s['id']).exists()]
+    if not available:
+        return
+    default = config['default'] if config['default'] in available else available[0]
+    path = out / 'seasons.json'
+    index = to_json({'default': default, 'seasons': [{'id': s} for s in available]})
+    if not path.exists() or path.read_text() != index:
+        path.write_text(index)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--source', default=os.environ.get('LEAGUE_SHEET') or SHEET_ID,
-                        help='sheet link, sheet ID, CSV URL or CSV file (default: $LEAGUE_SHEET, else the league sheet)')
-    parser.add_argument('--fantrax', metavar='LEAGUE_ID', default=os.environ.get('FANTRAX_LEAGUE_ID'),
-                        help='read this Fantrax league instead of the sheet (default: $FANTRAX_LEAGUE_ID; '
-                             'needs $FANTRAX_COOKIE)')
+    parser.add_argument('--season', help='build only this season (default: every season not marked final)')
+    parser.add_argument('--source', help='read the games from this sheet link, sheet ID, CSV URL or CSV file '
+                                         'instead of Fantrax (needs --season)')
     parser.add_argument('--out', type=Path, default=DEFAULT_OUT, help=f'output directory (default: {DEFAULT_OUT})')
     args = parser.parse_args()
-    if args.fantrax:
-        cookie = os.environ.get('FANTRAX_COOKIE')
-        if not cookie:
-            parser.error('--fantrax needs FANTRAX_COOKIE (see fantrax.fetch_scores)')
-        games, playoff_games = fantrax.load_season(args.fantrax, cookie)
+
+    config = json.loads(SEASONS_CONFIG.read_text())
+    league_ids = {s['id']: s['fantrax_league_id'] for s in config['seasons']}
+    if args.source:
+        if not args.season:
+            parser.error('--source needs --season')
+        print(build(load_games(sheet_csv_url(args.source)), season_path(args.out, args.season), args.season))
     else:
-        games, playoff_games = load_games(sheet_csv_url(str(args.source))), None
-    print(build(games, args.out, playoff_games))
+        if args.season and args.season not in league_ids:
+            parser.error(f'{args.season} is not in {SEASONS_CONFIG.name}')
+        seasons = [args.season] if args.season else [s['id'] for s in config['seasons'] if not s.get('final')]
+        cookie = os.environ.get('FANTRAX_COOKIE')
+        if seasons and not cookie:
+            parser.error('Fantrax needs FANTRAX_COOKIE (see fantrax.fetch_scores)')
+        for season in seasons:
+            games, playoff_games = fantrax.load_season(league_ids[season], cookie)
+            print(build(games, season_path(args.out, season), season, playoff_games))
+    write_index(config, args.out)
 
 
 if __name__ == '__main__':

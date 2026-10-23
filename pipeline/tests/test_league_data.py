@@ -11,7 +11,7 @@ from pathlib import Path
 
 import pytest
 
-from build_data import build, to_json
+from build_data import SEASONS_CONFIG, build, season_path, to_json, write_index
 from league_data import compute_league, load_games, sheet_csv_url
 
 FIXTURE = Path(__file__).parent / 'fixtures' / 'games.csv'
@@ -192,23 +192,51 @@ def test_wrong_column_count_fails_clearly(tmp_path):
 
 
 def test_build_writes_only_when_data_changes(tmp_path):
-    assert build(load_games(FIXTURE), tmp_path).startswith('Updated')
-    first = (tmp_path / 'league.json').read_text()
+    path = tmp_path / 'seasons' / 'test.json'
+    assert build(load_games(FIXTURE), path, 'test').startswith('test: updated')
+    first = path.read_text()
+    assert json.loads(first)['meta']['season'] == 'test'
     assert 'updated_at' in json.loads(first)['meta']
 
-    assert build(load_games(FIXTURE), tmp_path).startswith('No changes')
-    assert (tmp_path / 'league.json').read_text() == first  # same update time
+    assert build(load_games(FIXTURE), path, 'test').startswith('test: no changes')
+    assert path.read_text() == first  # same update time
 
     changed = tmp_path / 'changed.csv'
     changed.write_text(FIXTURE.read_text().replace('Alpha,60', 'Alpha,61'))
-    assert build(load_games(changed), tmp_path).startswith('Updated')
+    assert build(load_games(changed), path, 'test').startswith('test: updated')
 
 
 def test_build_keeps_data_when_sheet_has_no_games(tmp_path):
-    # e.g. a new season's sheet before the first period is played
-    build(load_games(FIXTURE), tmp_path)
-    before = (tmp_path / 'league.json').read_text()
+    # e.g. a new season before the first period is played
+    path = tmp_path / 'test.json'
+    build(load_games(FIXTURE), path, 'test')
+    before = path.read_text()
     empty = tmp_path / 'empty.csv'
     empty.write_text(FIXTURE.read_text().splitlines()[0] + '\n')
-    assert build(load_games(empty), tmp_path).startswith('No played games')
-    assert (tmp_path / 'league.json').read_text() == before
+    assert build(load_games(empty), path, 'test').startswith('test: no played games')
+    assert path.read_text() == before
+
+
+def test_season_index_lists_seasons_with_data(tmp_path):
+    config = {'default': '2026-27', 'seasons': [{'id': '2026-27'}, {'id': '2025-26'}, {'id': '2024-25'}]}
+    write_index(config, tmp_path)
+    assert not (tmp_path / 'seasons.json').exists()  # no data at all yet
+
+    build(load_games(FIXTURE), season_path(tmp_path, '2024-25'), '2024-25')
+    build(load_games(FIXTURE), season_path(tmp_path, '2025-26'), '2025-26')
+    write_index(config, tmp_path)
+    # 2026-27 has no played games yet, so the site opens on the newest season with data
+    assert json.loads((tmp_path / 'seasons.json').read_text()) == {
+        'default': '2025-26', 'seasons': [{'id': '2025-26'}, {'id': '2024-25'}]}
+
+    build(load_games(FIXTURE), season_path(tmp_path, '2026-27'), '2026-27')
+    write_index(config, tmp_path)
+    assert json.loads((tmp_path / 'seasons.json').read_text())['default'] == '2026-27'
+
+
+def test_seasons_config():
+    config = json.loads(SEASONS_CONFIG.read_text())
+    ids = [s['id'] for s in config['seasons']]
+    assert config['default'] in ids
+    assert ids == sorted(ids, reverse=True)  # newest first: the order of the site's season picker
+    assert all(s['fantrax_league_id'] for s in config['seasons'])
