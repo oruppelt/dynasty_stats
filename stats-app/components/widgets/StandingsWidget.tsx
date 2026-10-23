@@ -12,6 +12,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
 import { ErrorState } from './ErrorState'
+import { Explainer } from './Explainer'
 import { PeriodResult, useLeagueData } from '@/lib/league-data'
 import { allPlayPct } from '@/lib/season'
 import {
@@ -183,14 +184,24 @@ export function StandingsWidget({ selectedTeam }: StandingsWidgetProps) {
 
   return (
     <Card className="w-full">
-      <CardHeader>
+      <CardHeader className="space-y-2">
         <CardTitle>Standings</CardTitle>
-        <CardDescription>
-          <strong>All-play</strong>: the record a team would have if it played every other team every
-          period. <strong>Luck</strong>: wins above (or below) what its scores earned. <strong>Last 5</strong>:
-          one bar per period, as tall as the share of teams its score beat; dark bars are wins. A tie
-          counts as half a win and half a loss.
-        </CardDescription>
+        <CardDescription>Ranked by win rate, then points for. Sort by any column heading.</CardDescription>
+        <Explainer>
+          <p>
+            <strong>All-play</strong>: the record a team would have if it played every other team every
+            period. It leaves the schedule out, so it shows who is really strongest.
+          </p>
+          <p>
+            <strong>Luck</strong>: wins above (or below) what the team&apos;s scores earned; see the Luck tab.
+            {' '}<strong>PF / PA</strong>: points for (the team&apos;s own scoring) and against (its
+            opponents&apos;).
+          </p>
+          <p>
+            <strong>Last 5</strong>: one bar per period, as tall as the share of teams the score beat; dark
+            bars are wins. A tie counts as half a win and half a loss.
+          </p>
+        </Explainer>
       </CardHeader>
       <CardContent className="px-0 sm:px-6">
         <div className="w-full overflow-x-auto">

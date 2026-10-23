@@ -28,7 +28,7 @@ function HighlightTile({ label, team, value, detail }: {
           <TeamLogo teamName={team} size={28} className="shrink-0" />
           <span className="min-w-0 truncate font-semibold">{team}</span>
         </div>
-        <div className="mt-2 text-2xl font-bold tabular-nums">{value}</div>
+        <div className="mt-2 text-3xl font-bold tabular-nums">{value}</div>
         <div className="mt-1 text-sm text-muted-foreground">{detail}</div>
       </CardContent>
     </Card>
@@ -145,7 +145,7 @@ export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
             <CardTitle>Period {period} recap</CardTitle>
             <CardDescription>
               {period === league.meta.latest_period ? 'The latest scoring period. ' : ''}
-              &ldquo;Beat&rdquo; counts the teams (of {rows.length - 1}) a score would have beaten that period.
+              &ldquo;Beat 12&rdquo; next to a score: it beat 12 of the other {rows.length - 1} teams&apos; scores that period.
             </CardDescription>
           </div>
           <div className="flex items-center gap-2">
@@ -173,7 +173,7 @@ export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
             label="Unluckiest loss"
             team={recap.unluckiestLoss.team}
             value={score(recap.unluckiestLoss)}
-            detail={`Lost to ${recap.unluckiestLoss.opponent}, but would have beaten ${formatCount(recap.unluckiestLoss.all_play_wins)} of ${others(recap.unluckiestLoss)} teams`}
+            detail={`Lost to ${recap.unluckiestLoss.opponent} with a score that beat ${formatCount(recap.unluckiestLoss.all_play_wins)} of the other ${others(recap.unluckiestLoss)} teams`}
           />
         )}
         {recap.luckiestWin && (
@@ -181,7 +181,7 @@ export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
             label="Luckiest win"
             team={recap.luckiestWin.team}
             value={score(recap.luckiestWin)}
-            detail={`Beat ${recap.luckiestWin.opponent}, though it would have beaten only ${formatCount(recap.luckiestWin.all_play_wins)} of ${others(recap.luckiestWin)} teams`}
+            detail={`Beat ${recap.luckiestWin.opponent} with a score that beat only ${formatCount(recap.luckiestWin.all_play_wins)} of the other ${others(recap.luckiestWin)} teams`}
           />
         )}
         <HighlightTile

@@ -127,7 +127,7 @@ export function PointsWidget({ selectedTeam }: { selectedTeam: string }) {
       <CardHeader className="space-y-2">
         <CardTitle>Points for and against</CardTitle>
         <CardDescription>
-          Each logo is a team&apos;s season total. Right: scored more. Up: its opponents scored less.
+          Each logo is a team&apos;s season totals. Further right: it scored more. Higher up: its opponents scored less.
         </CardDescription>
         <Explainer>
           <p>

@@ -48,8 +48,8 @@ export function FormWidget({ selectedTeam }: { selectedTeam: string }) {
       <CardHeader className="space-y-2">
         <CardTitle>Form</CardTitle>
         <CardDescription>
-          Who has been scoring near the top of the league lately, after period {league.meta.latest_period}. The
-          squares are the team&apos;s score rank in each of the last {shown} periods; blue is a top-{form.top_x} score.
+          Who has been scoring near the top lately (after period {league.meta.latest_period}). Each square is the
+          team&apos;s score rank in one of the last {shown} periods; blue is a top-{form.top_x} score.
         </CardDescription>
         <Explainer>
           <p>
