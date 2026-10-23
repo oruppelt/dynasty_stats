@@ -225,14 +225,30 @@ def end_regular_season(info: dict, games: pd.DataFrame, playoff_games: pd.DataFr
     return games[~later].reset_index(drop=True), playoffs
 
 
-def load_season(league_id: str, cookie: str, regular_periods: int | None = None) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
+def skip_playoff_periods(playoff_games: pd.DataFrame, periods: list[int]) -> pd.DataFrame:
+    """Leave out playoff periods that didn't count.
+
+    In 2022-23 and 2023-24 a Swiss round ran over two Fantrax periods around
+    the All-Star break, with the same pairings in both (2023-24: periods 34
+    and 35). The second period's score decided the game: the pairings of the
+    rounds after it only agree with those results. So the first period is
+    skipped.
+    """
+    return playoff_games[~playoff_games['Match'].isin(periods)].reset_index(drop=True)
+
+
+def load_season(league_id: str, cookie: str, regular_periods: int | None = None,
+                skip_periods: list[int] | None = None) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     """Played regular-season and playoff games of a Fantrax league, and its schedule (needs a logged-in cookie).
 
-    `regular_periods` overrides where Fantrax says the regular season ends (see end_regular_season).
+    `regular_periods` overrides where Fantrax says the regular season ends (see end_regular_season);
+    `skip_periods` are playoff periods to leave out (see skip_playoff_periods).
     """
     info = fetch_league_info(league_id)
     games = games_from_fantrax(info, fetch_scores(league_id, cookie))
     playoff_games = playoff_games_from_fantrax(info, fetch_scores(league_id, cookie, view='PLAYOFFS'))
     if regular_periods:
         games, playoff_games = end_regular_season(info, games, playoff_games, regular_periods)
+    if skip_periods:
+        playoff_games = skip_playoff_periods(playoff_games, skip_periods)
     return games, playoff_games, schedule_from_fantrax(info, games)

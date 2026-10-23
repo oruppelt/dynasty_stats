@@ -17,6 +17,8 @@ Optional per season:
   season). Goes to the season list, so it can change without a rebuild.
 - "regular_periods": where the regular season really ended, when Fantrax's
   own setting is off (2023-24: 32; its period 33 was the first Swiss round).
+- "skip_playoff_periods": playoff periods that didn't count, e.g. the first
+  half of a Swiss round that ran over two periods (fantrax.skip_playoff_periods).
 - "playoffs": "other" for a season before today's playoff format (LEAGUE.md).
   It gets no playoffs block; its playoff games are listed as played
   (playoff_games), and the site shows them as a plain list instead of a
@@ -104,6 +106,7 @@ def main() -> None:
     league_ids = {s['id']: s['fantrax_league_id'] for s in config['seasons']}
     other_playoffs = {s['id'] for s in config['seasons'] if s.get('playoffs') == 'other'}
     regular_periods = {s['id']: s.get('regular_periods') for s in config['seasons']}
+    skip_periods = {s['id']: s.get('skip_playoff_periods') for s in config['seasons']}
     failed = []
     if args.source:
         if not args.season:
@@ -122,7 +125,8 @@ def main() -> None:
         for season in seasons:
             # A season that fails keeps its old data; the others still build
             try:
-                games, playoff_games, schedule = fantrax.load_season(league_ids[season], cookie, regular_periods[season])
+                games, playoff_games, schedule = fantrax.load_season(
+                    league_ids[season], cookie, regular_periods[season], skip_periods[season])
                 playoff_format = 'other' if season in other_playoffs else 'swiss'
                 print(build(games, season_path(args.out, season), season, playoff_games, schedule, playoff_format))
             except Exception:

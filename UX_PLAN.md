@@ -298,6 +298,12 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: Swiss stage for 2022-23 and 2023-24 (branch `fix/allstar-playoff-rounds`)
+- Both seasons get the full Playoffs view (Swiss board, bracket, champion)
+  again. One Swiss round ran over two periods at the All-Star break; the
+  first of the two is left out (`"skip_playoff_periods"`), since the second
+  period's score decided the game.
+
 ### 2026-10-23: Earlier playoff formats, unplayed periods (branch `ux/earlier-playoffs`)
 - A season with an earlier playoff format shows its playoff games period by
   period in Standings → Playoffs, instead of nothing.

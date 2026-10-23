@@ -16,7 +16,7 @@ from pathlib import Path
 import pytest
 
 from fantrax import (FantraxError, check_private_response, games_from_fantrax, playoff_games_from_fantrax,
-                     end_regular_season, schedule_from_fantrax)
+                     end_regular_season, schedule_from_fantrax, skip_playoff_periods)
 from league_data import compute_league
 
 FIXTURES = Path(__file__).parent / 'fixtures'
@@ -149,6 +149,12 @@ def test_earlier_playoff_format_lists_the_games(info, scores):
     assert league['playoff_games'] == [
         {'period': 4, 'team': 'Alpha', 'score': 150.0, 'opponent': 'Charlie', 'opp_score': 140.0}]
     assert 'playoff_games' not in compute_league(games, playoffs)  # today's format: the playoffs block
+
+
+def test_skipped_playoff_period_is_left_out(info, scores):
+    playoffs = playoff_games_from_fantrax(info, json.loads((FIXTURES / 'fantrax_playoffs.json').read_text()), SEASON_OVER)
+    assert skip_playoff_periods(playoffs, [5]).equals(playoffs)
+    assert skip_playoff_periods(playoffs, [4]).empty
 
 
 def test_no_played_games_gives_empty_table(info, scores):
