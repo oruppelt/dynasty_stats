@@ -91,6 +91,32 @@ export interface Playoffs {
   champion: string | null;
 }
 
+/** A team's form (pipeline/form.py): how often it scores near the top lately. */
+export interface TeamForm {
+  team: string;
+  /** Average of the ranks of the weighted top finishes, elite score and recent all-play */
+  form_rank: number;
+  /** Periods with a top-`top_x` score, of `periods` */
+  top_finishes: number;
+  periods: number;
+  /** Top finishes, a period n periods back counting decay^n */
+  weighted_top_finishes: number;
+  /** top_x points for a period's best score down to 1, weighted the same way */
+  elite_score: number;
+  /** All-play win rate over the last `recent_periods` periods */
+  recent_all_play_pct: number;
+  /** The team's score rank in each of the latest periods (1 = best), oldest first */
+  finishes: { period: number; rank: number }[];
+}
+
+export interface Form {
+  top_x: number;
+  decay: number;
+  recent_periods: number;
+  /** Best form first */
+  teams: TeamForm[];
+}
+
 export interface LeagueData {
   meta: {
     /** When the data last changed */
@@ -103,6 +129,7 @@ export interface LeagueData {
   teams: TeamSummary[];
   results: PeriodResult[];
   matchups: Matchups;
+  form: Form;
   /** Null before the playoffs start, and for data from the sheet */
   playoffs: Playoffs | null;
 }
