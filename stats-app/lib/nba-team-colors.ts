@@ -21,7 +21,7 @@ export const NBA_TEAM_COLORS = {
   'Golden State Warriors': { primary: '#1D428A', secondary: '#FFC72C' },
   'Houston Rockets': { primary: '#CE1141', secondary: '#000000' },
   'Indiana Pacers': { primary: '#002D62', secondary: '#FDBB30' },
-  'LA Clippers': { primary: '#C8102E', secondary: '#1D428A' },
+  'Los Angeles Clippers': { primary: '#C8102E', secondary: '#1D428A' },
   'Los Angeles Lakers': { primary: '#552583', secondary: '#FDB927' },
   'Memphis Grizzlies': { primary: '#5D76A9', secondary: '#12173F' },
   'Miami Heat': { primary: '#98002E', secondary: '#F9A01B' },
@@ -82,4 +82,65 @@ export function getAllTeamNames(): NBATeamName[] {
  */
 export function isNBATeam(teamName: string): teamName is NBATeamName {
   return teamName in NBA_TEAM_COLORS;
+}
+
+/**
+ * Line colors for charts: a team color, picked so the league's lines spread
+ * over as many hues as the brands allow (ten teams have a red primary). Teams
+ * still share some hues, so charts label the lines too.
+ */
+const LINE_COLORS: Record<NBATeamName, string> = {
+  'Atlanta Hawks': '#C1D32F',
+  'Boston Celtics': '#007A33',
+  'Brooklyn Nets': '#000000',
+  'Charlotte Hornets': '#00788C',
+  'Chicago Bulls': '#CE1141',
+  'Cleveland Cavaliers': '#860038',
+  'Dallas Mavericks': '#00538C',
+  'Denver Nuggets': '#8DB9E8',
+  'Detroit Pistons': '#1D42BA',
+  'Golden State Warriors': '#FFC72C',
+  'Houston Rockets': '#CE1141',
+  'Indiana Pacers': '#002D62',
+  'Los Angeles Clippers': '#C8102E',
+  'Los Angeles Lakers': '#552583',
+  'Memphis Grizzlies': '#5D76A9',
+  'Miami Heat': '#98002E',
+  'Milwaukee Bucks': '#00471B',
+  'Minnesota Timberwolves': '#78BE20',
+  'New Orleans Pelicans': '#85714D',
+  'New York Knicks': '#F58426',
+  'Oklahoma City Thunder': '#007AC1',
+  'Orlando Magic': '#0077C0',
+  'Philadelphia 76ers': '#006BB6',
+  'Phoenix Suns': '#1D1160',
+  'Portland Trail Blazers': '#E03A3E',
+  'Sacramento Kings': '#63727A',
+  'San Antonio Spurs': '#C4CED4',
+  'Toronto Raptors': '#753BBD',
+  'Utah Jazz': '#002B5C',
+  'Washington Wizards': '#E31837',
+}
+
+function toHsl(hex: string): [number, number, number] {
+  const [r, g, b] = [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16) / 255)
+  const max = Math.max(r, g, b), min = Math.min(r, g, b)
+  const l = (max + min) / 2
+  if (max === min) return [0, 0, l]
+  const d = max - min
+  const s = l > 0.5 ? d / (2 - max - min) : d / (max + min)
+  const h = max === r ? (g - b) / d + (g < b ? 6 : 0) : max === g ? (b - r) / d + 2 : (r - g) / d + 4
+  return [h * 60, s, l]
+}
+
+/**
+ * A line color for the team that shows on the theme's background. Dark colors
+ * (navy, black) are lightened on the dark theme and pale ones darkened on the
+ * light theme, keeping their hue.
+ */
+export function teamLineColor(teamName: string, isDark: boolean): string {
+  if (!isNBATeam(teamName)) return getTeamColor(teamName).primary
+  const [h, s, l] = toHsl(LINE_COLORS[teamName])
+  const lightness = isDark ? Math.max(l, 0.6) : Math.min(l, 0.55)
+  return `hsl(${Math.round(h)} ${Math.round(s * 100)}% ${Math.round(lightness * 100)}%)`
 }
