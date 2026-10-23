@@ -143,8 +143,26 @@ differences from the sheet; none changes a result.
 ### Next up
 - [x] **Season switch** (2026-10-23): a season picker and a `?season=`
   link; seasons in `pipeline/seasons.json`, finished ones frozen.
+- [x] **Team colors in the Season charts** (2026-10-23): each team's line in
+  its own color, a team picker with quick picks (top 8, top 16, 17–30), and a
+  logo at each line's end (as in the old `nba-fantrax/standings_path.py`).
+- [ ] **Form view**, from `fantrax_summary_app/github-deployment/notebooks/playoff_strength_analyzer.ipynb`:
+  how often a team has a top-7 score in a period, and an "elite score" (7
+  points for the period's best score down to 1 for the 7th), both weighted
+  toward recent periods (x0.9 per period back), next to the all-play record.
+  Who is in form going into the playoffs.
 
 ### Needs Fantrax (after M2–M4)
+- **Players: starting lineups and MVP**, from `starting_lineup_analysis.ipynb`
+  in the same folder. Needs each team's roster for every period (a new
+  Fantrax call, many requests per build, so finished periods get cached):
+  - each team's starters per period and their points (the notebook works
+    them out as differences of season totals);
+  - each team's position mix, and its top scorer per period ("core",
+    "regular", "one-off");
+  - an MVP score: points per start, share of the team's points, "decisive
+    wins" (the player's points were more than the winning margin), volume
+    and team strength.
 - **Playoff odds.** Simulate the rest of the season many times from each
   team's scoring, using the real format:
   - The round robin.

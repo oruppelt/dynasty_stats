@@ -298,6 +298,16 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: Team colors in the Season charts (branch `ux/season-team-colors`)
+- "Teams in color": quick picks (top 8, top 16, 17–30, all, none) and a chip
+  per team; it applies to both Season charts and doubles as their legend.
+  The default is the top 8; the viewer's team is always in color.
+- Lines in team colors (`teamLineColor` in `lib/nba-team-colors.ts`: one
+  color per team, spread over as many hues as the brands allow, lightened on
+  the dark theme or darkened on the light one), with a small logo and code at
+  each line's end, spread apart so they don't overlap.
+- Fixed the Clippers' entry in the team colors ("Los Angeles Clippers").
+
 ### 2026-10-23: Season switch (branch `ux/season-switch`)
 - Seasons and their Fantrax league IDs in `pipeline/seasons.json`; the data
   is one file per season (`data/seasons/<season>.json`) plus a season list
