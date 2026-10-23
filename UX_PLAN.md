@@ -298,6 +298,21 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: Grouped tabs, Records, Rivalry, What if (branch `ux/more-views`)
+- Nine tabs become six sections, one row on phones: My Team, Recap,
+  Standings (Table, Form, Playoffs), Season (Rank & luck, Points), Matchups
+  (Rivalry, All vs All, Luck, What if) and Records. A section with several
+  views shows them as a row of buttons under the tabs.
+- **Records** (`pipeline/records.py`): top-5 lists of highest scores, best
+  and worst against the period average (periods with more NBA games score
+  higher), blowouts, closest games, unluckiest losses, luckiest wins, win
+  and losing streaks, and most period highs. Your team is highlighted.
+- **Rivalry**: any two teams: head-to-head record and games, how often each
+  outscores the other, a side-by-side comparison, and both teams' scores
+  period by period (the periods they met marked).
+- **What if** (`matchups.schedule_swap`): a team's record with each other
+  team's schedule, the easiest and hardest schedules, and the full grid.
+
 ### 2026-10-23: Wording pass before the public release (branch `ux/copy-review`)
 - My Team speaks to the viewer ("you", "your scores") instead of an unclear
   "it" or "their": the latest game, the stat tiles, recent periods and the
