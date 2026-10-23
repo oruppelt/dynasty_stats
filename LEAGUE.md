@@ -15,6 +15,18 @@ the commissioner.
 - A tied game counts as half a win and half a loss. Fantrax shows it as
   W-L-T, e.g. `21-11-1`.
 
+## Earlier seasons
+The league is in its 9th season (2026-27), always with 30 teams. The format
+changed over the years:
+- **Before 2021: no Swiss stage.** Marked `"playoffs": "other"` in
+  `pipeline/seasons.json`: their regular-season stats are shown, their
+  playoffs aren't. The year the Swiss stage started is *to confirm*.
+- **2023:** the regular season ended after period 32, one period short
+  (the season's note says so).
+- 2026-27: the scoring settings changed slightly, so raw scores aren't fully
+  comparable with earlier seasons.
+- Some early seasons have games where Fantrax recorded a score of 0.
+
 ## Regular season: 33 periods
 - **Periods 1–29: round robin.** Every team plays every other team once.
   This schedule is set before the season starts.

@@ -11,6 +11,13 @@ pipeline/seasons.json. A season marked "final" is over: its data file is kept
 as it is, and only rebuilt when it is named with --season. Fantrax needs
 FANTRAX_COOKIE, a logged-in browser's cookie (see fantrax.fetch_scores).
 
+Optional per season:
+- "note": one line the site shows with the season (e.g. a shorter regular
+  season). Goes to the season list, so it can change without a rebuild.
+- "playoffs": "other" for a season before today's playoff format (LEAGUE.md).
+  Its playoff games are left out (playoffs is null), and the site says the
+  format was different instead of showing a wrong Swiss stage.
+
 Writes stats-app/public/data/seasons/<season>.json, and data/seasons.json, the
 season list the site reads. The list only has the seasons with data, so a new
 season appears on the site once its first period is played. A season's file
@@ -70,8 +77,9 @@ def write_index(config: dict, out: Path) -> None:
     if not available:
         return
     default = config['default'] if config['default'] in available else available[0]
+    extras = {s['id']: {key: s[key] for key in ('note', 'playoffs') if key in s} for s in config['seasons']}
     path = out / 'seasons.json'
-    index = to_json({'default': default, 'seasons': [{'id': s} for s in available]})
+    index = to_json({'default': default, 'seasons': [{'id': s, **extras[s]} for s in available]})
     if not path.exists() or path.read_text() != index:
         path.write_text(index)
 
@@ -86,6 +94,7 @@ def main() -> None:
 
     config = json.loads(SEASONS_CONFIG.read_text())
     league_ids = {s['id']: s['fantrax_league_id'] for s in config['seasons']}
+    other_playoffs = {s['id'] for s in config['seasons'] if s.get('playoffs') == 'other'}
     if args.source:
         if not args.season:
             parser.error('--source needs --season')
@@ -99,6 +108,8 @@ def main() -> None:
             parser.error('Fantrax needs FANTRAX_COOKIE (see fantrax.fetch_scores)')
         for season in seasons:
             games, playoff_games, schedule = fantrax.load_season(league_ids[season], cookie)
+            if season in other_playoffs:
+                playoff_games = None
             print(build(games, season_path(args.out, season), season, playoff_games, schedule))
     write_index(config, args.out)
 

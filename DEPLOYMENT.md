@@ -154,8 +154,16 @@ saves the responses and prints what the games table holds.
   the season before `"final": true` once its playoffs are over (its data
   file is then kept as it is). The new season shows up in the picker once
   its first period ends; set `default` to it when it should open first.
-- **Rebuild a finished season:**
-  `FANTRAX_COOKIE="$(pbpaste)" .venv/bin/python pipeline/build_data.py --season 2025-26`.
+- **Add a past season, or rebuild a finished one:** list it in
+  `pipeline/seasons.json` with `"final": true` (in date order, newest
+  first), merge, then GitHub → Actions → **Refresh league data** → **Run
+  workflow**, type the season (e.g. `2021-22`) in the box and run. It builds
+  just that season with the stored cookie and commits its file. Locally
+  instead: `FANTRAX_COOKIE="$(pbpaste)" .venv/bin/python pipeline/build_data.py --season 2021-22`.
+- **Season notes and older formats:** a season can have `"note"` (one line
+  the site shows above the tabs, e.g. a shorter regular season) and
+  `"playoffs": "other"` (before today's playoff format: its playoffs aren't
+  shown). Both can change at any time; the next run updates the site.
 
 ---
 

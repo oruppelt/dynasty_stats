@@ -248,9 +248,22 @@ def test_season_index_lists_seasons_with_data(tmp_path):
     assert json.loads((tmp_path / 'seasons.json').read_text())['default'] == '2026-27'
 
 
+def test_season_index_notes(tmp_path):
+    config = {'default': '2025-26', 'seasons': [
+        {'id': '2025-26'},
+        {'id': '2019-20', 'note': 'Before the Swiss stage', 'playoffs': 'other', 'final': True},
+    ]}
+    for season in ('2025-26', '2019-20'):
+        build(load_games(FIXTURE), season_path(tmp_path, season), season)
+    write_index(config, tmp_path)
+    assert json.loads((tmp_path / 'seasons.json').read_text())['seasons'] == [
+        {'id': '2025-26'}, {'id': '2019-20', 'note': 'Before the Swiss stage', 'playoffs': 'other'}]
+
+
 def test_seasons_config():
     config = json.loads(SEASONS_CONFIG.read_text())
     ids = [s['id'] for s in config['seasons']]
     assert config['default'] in ids
     assert ids == sorted(ids, reverse=True)  # newest first: the order of the site's season picker
     assert all(s['fantrax_league_id'] for s in config['seasons'])
+    assert all(s.get('playoffs', 'swiss') in ('swiss', 'other') for s in config['seasons'])
