@@ -209,6 +209,8 @@ def compute_alltime(seasons: list[tuple[str, dict, dict]]) -> dict:
             'season': season,
             'in_progress': not settings.get('final'),
             'champion': next((t for t, f in finish.items() if f == 'champion'), None),
+            # "champion": null in seasons.json: the playoffs were never finished (2019-20, COVID)
+            'no_champion': 'champion' in settings and settings['champion'] is None,
             'runner_up': next((t for t, f in finish.items() if f == 'final'), None),
             'first_seed': rows[0]['team'],
             'periods': int(data['meta']['latest_period']),

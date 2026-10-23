@@ -22,6 +22,8 @@ export interface SeasonSummary {
   in_progress: boolean;
   /** Null while in progress, and for an earlier format whose champion isn't recorded */
   champion: string | null;
+  /** The playoffs were never finished (2019-20, COVID) */
+  no_champion: boolean;
   runner_up: string | null;
   /** The regular season's best team */
   first_seed: string;

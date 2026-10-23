@@ -55,11 +55,17 @@ def test_earlier_format_finishes():
     assert playoff_finishes(data, {'final': True, 'champion': 'Bravo'})['Bravo'] == 'champion'
 
 
+def test_season_without_a_champion(seasons):
+    _, data, _ = seasons[1]
+    summary = compute_alltime([('2019-20', data, {'final': True, 'champion': None})])['seasons'][0]
+    assert summary['no_champion'] is True
+
+
 def test_season_summary(alltime):
     assert alltime['seasons'] == [
-        {'season': '2025-26', 'in_progress': True, 'champion': None, 'runner_up': None,
+        {'season': '2025-26', 'in_progress': True, 'champion': None, 'no_champion': False, 'runner_up': None,
          'first_seed': 'Charlie', 'periods': 2},
-        {'season': '2024-25', 'in_progress': False, 'champion': 'Charlie', 'runner_up': 'Alpha',
+        {'season': '2024-25', 'in_progress': False, 'champion': 'Charlie', 'no_champion': False, 'runner_up': 'Alpha',
          'first_seed': 'Charlie', 'periods': 2},
     ]
 

@@ -20,7 +20,7 @@ function SeasonRow({ s, selectedTeam }: { s: SeasonSummary; selectedTeam: string
         <div className={cn('flex items-center gap-1.5 truncate font-semibold', !s.champion && 'font-normal text-muted-foreground')}>
           {s.champion && <Trophy className="h-4 w-4 shrink-0 text-rank-gold" />}
           <span className="truncate">
-            {s.champion ?? (s.in_progress ? 'In progress' : 'Champion not recorded (earlier format)')}
+            {s.champion ?? (s.in_progress ? 'In progress' : s.no_champion ? 'No champion' : 'Champion not recorded')}
           </span>
         </div>
         <div className="truncate text-xs text-muted-foreground">
@@ -81,7 +81,7 @@ export function ChampionsWidget({ selectedTeam }: { selectedTeam: string }) {
           </ol>
           {noFinal.length > 0 && (
             <p className="mt-3 text-xs text-muted-foreground">
-              {noFinal.join(' and ')} had an earlier playoff format, so their finals aren&apos;t counted here.
+              {noFinal.join(' and ')} had an earlier playoff format: their runners-up aren&apos;t known, so only titles count.
             </p>
           )}
         </CardContent>

@@ -24,7 +24,8 @@ Optional per season:
   (playoff_games), and the site shows them as a plain list instead of a
   wrong Swiss stage.
 - "champion": the champion of a season with "playoffs": "other", for the
-  all-time titles (the earlier formats' games don't say who won).
+  all-time titles (the earlier formats' games don't say who won); null for
+  a season without one (2019-20, COVID).
 
 Writes stats-app/public/data/seasons/<season>.json, data/seasons.json, the
 season list the site reads, and data/alltime.json, every season together
