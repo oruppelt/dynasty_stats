@@ -8,6 +8,7 @@ import { ErrorState } from './ErrorState'
 import { PeriodResult, useLeagueData } from '@/lib/league-data'
 import { Game, formatScore, periodRecap, resultsByPeriod } from '@/lib/season'
 import { formatCount } from '@/lib/standings'
+import { periodDates } from '@/lib/schedule'
 import { getUrlParam, setUrlParam } from '@/lib/url'
 import { cn } from '@/lib/utils'
 
@@ -144,6 +145,7 @@ export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
           <div className="space-y-1.5">
             <CardTitle>Period {period} recap</CardTitle>
             <CardDescription>
+              {periodDates(league, period) && <span className="font-medium text-foreground">{periodDates(league, period)}. </span>}
               {period === league.meta.latest_period ? 'The latest scoring period. ' : ''}
               &ldquo;Beat 12&rdquo; next to a score: it beat 12 of the other {rows.length - 1} teams&apos; scores that period.
             </CardDescription>
