@@ -6,8 +6,8 @@ Usage (from the repo root, with FANTRAX_COOKIE set; see fantrax.fetch_scores):
 
 Writes <out_dir>/league_info.json, scores.json and playoffs.json (the cookie
 is not saved), then prints what the games table holds and how its scores compare
-with stats-app/public/data/league.json. For looking at the responses and
-making test fixtures; the site build doesn't use it.
+with the season's data on the site (data/seasons/<season>.json). For looking
+at the responses and making test fixtures; the site build doesn't use it.
 """
 import argparse
 import json
@@ -16,15 +16,17 @@ import sys
 from pathlib import Path
 
 import fantrax
+from build_data import DEFAULT_OUT, SEASONS_CONFIG, season_path
 
-SITE_DATA = Path(__file__).resolve().parent.parent / 'stats-app' / 'public' / 'data' / 'league.json'
 
-
-def compare_with_site(games) -> None:
-    if not SITE_DATA.exists():
+def compare_with_site(league_id: str, games) -> None:
+    seasons = json.loads(SEASONS_CONFIG.read_text())['seasons']
+    season = next((s['id'] for s in seasons if s['fantrax_league_id'] == league_id), None)
+    site_data = season_path(DEFAULT_OUT, season) if season else None
+    if not site_data or not site_data.exists():
         return
     site = {(r['period'], r['team']): (r['opponent'], r['score'], r['opp_score'])
-            for r in json.loads(SITE_DATA.read_text())['results']}
+            for r in json.loads(site_data.read_text())['results']}
     common = missing = 0
     differences = []
     for g in games.itertuples():
@@ -35,7 +37,7 @@ def compare_with_site(games) -> None:
         common += 1
         if site[key] != (g.Opponent, g.Score, g.OppScore):
             differences.append((g.Match, g.Team, g.Score, g.Opponent, g.OppScore, site[key]))
-    print(f'Compared with league.json: {common} games in both, {missing} only in Fantrax, '
+    print(f'Compared with {site_data.name}: {common} games in both, {missing} only in Fantrax, '
           f'{len(differences)} different.')
     for d in differences[:20]:
         print(f'  period {d[0]}: Fantrax {d[1]} {d[2]} - {d[4]} {d[3]}; site {d[5]}')
@@ -66,7 +68,7 @@ def main() -> None:
     print(f'Games table: {len(games)} played regular-season games, periods '
           f'{games["Match"].min() if len(games) else "-"}-{games["Match"].max() if len(games) else "-"}, '
           f'{int((games["Result"] == "T").sum())} ties')
-    compare_with_site(games)
+    compare_with_site(args.league_id, games)
 
 
 if __name__ == '__main__':

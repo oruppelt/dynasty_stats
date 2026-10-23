@@ -5,10 +5,10 @@ How the app runs now, and the one-time steps to set it up.
 ## How it works
 
 ```
-Google Sheet ──(hourly GitHub Action)──▶ pipeline/build_data.py
+Fantrax ──(hourly GitHub Action)──▶ pipeline/build_data.py
                                               │ writes JSON, commits only if data changed
                                               ▼
-                              stats-app/public/data/league.json on main
+                   stats-app/public/data/seasons/<season>.json on main
                                               │ push triggers Render
                                               ▼
                          Render Static Site builds stats-app → out/
@@ -16,10 +16,10 @@ Google Sheet ──(hourly GitHub Action)──▶ pipeline/build_data.py
 
 - There is **no backend server** any more. The calculations run once per
   hour in GitHub Actions, and the site is plain static files.
-- After you edit the sheet, the site updates within about an hour, plus
-  ~2 minutes of Render build time. To update right away, trigger the
+- Once Fantrax ends a scoring period, the site updates within about an
+  hour, plus ~2 minutes of Render build time. To update right away, trigger the
   workflow by hand (see "Day to day").
-- If the sheet is broken (for example a column was added), the workflow
+- If Fantrax fails (an expired cookie, a changed response), the workflow
   fails, GitHub emails you, and the site keeps showing the last good data.
 
 ---
@@ -123,10 +123,11 @@ Auto-deploy is on by default, so every commit to `main` that touches
 
 ## Fantrax as the data source
 
-The hourly workflow reads Fantrax instead of the sheet once these two are set
-(GitHub → repo **Settings** → **Secrets and variables** → **Actions**):
+The hourly workflow builds every season in `pipeline/seasons.json` that
+isn't marked `"final"`, from that season's Fantrax league. It needs one
+secret (GitHub → repo **Settings** → **Secrets and variables** → **Actions**):
 
-1. **Secret** `FANTRAX_COOKIE`: the cookie of a browser logged in to Fantrax.
+- **Secret** `FANTRAX_COOKIE`: the cookie of a browser logged in to Fantrax.
    Fantrax's login has a reCAPTCHA, so the workflow can't log in itself.
    - Log in to fantrax.com in Chrome and open the league.
    - Open DevTools (⌥⌘I) → **Network**, then reload the page.
@@ -136,10 +137,7 @@ The hourly workflow reads Fantrax instead of the sheet once these two are set
      The cookie is longer than a terminal line can take, so it's read from
      the clipboard. Then copy something else so the cookie doesn't stay on
      the clipboard.
-2. **Variable** `FANTRAX_LEAGUE_ID`: the season's league ID (see
-   `LEAGUE.md`), e.g. `gh variable set FANTRAX_LEAGUE_ID --body lvvm6v0imqj2c9pz`.
-
-Check locally before setting them:
+Check a league locally:
 `FANTRAX_COOKIE="$(pbpaste)" .venv/bin/python pipeline/fantrax_fetch.py <league_id> /tmp/fantrax`
 saves the responses and prints what the games table holds.
 
@@ -149,35 +147,31 @@ saves the responses and prints what the games table holds.
 - **Cookie expired:** the workflow fails with "FANTRAX_COOKIE is missing or
   has expired" and GitHub emails you. The site keeps the last good data.
   Copy a fresh cookie and set the secret again.
-- **New season:** set `FANTRAX_LEAGUE_ID` to the new league and add it to
-  `LEAGUE.md`. Until the new league's first period ends, the site keeps the
-  previous season's data.
-- **Back to the sheet:** delete the `FANTRAX_LEAGUE_ID` variable.
+- **Seasons** (`pipeline/seasons.json`): each season's Fantrax league ID,
+  newest first, and `default`, the season the site opens on. The site's
+  season picker (and `?season=` links) lists the seasons that have data.
+- **New season:** add it at the top of `pipeline/seasons.json`, and mark
+  the season before `"final": true` once its playoffs are over (its data
+  file is then kept as it is). The new season shows up in the picker once
+  its first period ends; set `default` to it when it should open first.
+- **Rebuild a finished season:**
+  `FANTRAX_COOKIE="$(pbpaste)" .venv/bin/python pipeline/build_data.py --season 2025-26`.
 
 ---
 
 ## Day to day
 
-- **Sheet updated, want it live now:** GitHub → Actions → **Refresh league
+- **Want new scores live now:** GitHub → Actions → **Refresh league
   data** → **Run workflow**. The site updates ~2 minutes after the workflow
   finishes.
 - **Change the refresh frequency:** edit the `cron` line in
   `.github/workflows/refresh-data.yml` (e.g. `"17 */3 * * *"` for every
   3 hours).
-- **New season's sheet:** GitHub → repo **Settings** → **Secrets and
-  variables** → **Actions** → **Variables** → **New repository variable**:
-  name `LEAGUE_SHEET`, value the new sheet's link as copied from the browser.
-  The sheet needs the same 12 columns and a `DATA` tab, and must be viewable
-  by anyone with the link. Until its first period has scores, the site keeps
-  showing the previous data. To go back to the old sheet, delete the variable.
-  Test a sheet locally first with
-  `.venv/bin/python pipeline/build_data.py --source "<sheet link>"`.
 - **Off-season (public repos):** GitHub disables scheduled workflows after
   60 days without commits. Before the new season, go to Actions →
   Refresh league data and click **Enable workflow**.
 - **Workflow failed email:** open the failed run's log. The most common
-  cause is a change to the sheet's columns; the error lists the columns it
-  found. The site keeps the last good data until it is fixed.
+  cause is an expired Fantrax cookie (see "Fantrax as the data source"). The site keeps the last good data until it is fixed.
 
 ## Local development
 

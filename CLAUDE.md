@@ -13,7 +13,7 @@ Monorepo:
 - **`pipeline/`**: Python (pandas). Reads the Google Sheet once, computes all
   datasets, writes static JSON to `stats-app/public/data/`. No server.
 - **`stats-app/`**: Next.js 16 static export (TypeScript, Tailwind 4, React Query,
-  nivo). Reads `/data/league.json` at runtime.
+  nivo). Reads `/data/seasons.json` and `/data/seasons/<season>.json` at runtime.
 - **`.github/workflows/`**: `refresh-data.yml` (hourly: build data, commit if
   changed, which makes Render redeploy) and `ci.yml` (pytest + lint + build on
   PRs and main).
@@ -40,23 +40,25 @@ cd stats-app && npm run build    # static export to out/ (what Render serves)
 ## Architecture
 
 ### Data flow
-Google Sheet (`SHEET_ID` in `pipeline/league_data.py`, or the `LEAGUE_SHEET`
-env var / GitHub repository variable for a new season) → `load_games()` →
-`compute_league()` → `build_data.py` writes `stats-app/public/data/league.json`.
-When `FANTRAX_LEAGUE_ID` is set, `pipeline/fantrax.py` reads the Fantrax league
-instead (scores need the `FANTRAX_COOKIE` secret) and builds the same games
-table; see `DEPLOYMENT.md` and `ROADMAP.md`.
-It is only rewritten (and `meta.updated_at` only moves) when the data changes,
-so the hourly workflow commits only real updates. A sheet with no played games
-leaves the data in place.
+`pipeline/seasons.json` lists the seasons (Fantrax league IDs) and the
+default one. For each season not marked `final`, `pipeline/fantrax.py` reads
+the games from Fantrax (scores need the `FANTRAX_COOKIE` secret) →
+`compute_league()` → `build_data.py` writes
+`stats-app/public/data/seasons/<season>.json`, plus `data/seasons.json` (the
+seasons with data, and the default). See `DEPLOYMENT.md` and `ROADMAP.md`.
+`load_games()` reads the old Google Sheet format (`--source`, and the tests).
+A season file is only rewritten (and `meta.updated_at` only moves) when the
+data changes, so the hourly workflow commits only real updates. A source with
+no played games leaves the data in place.
 
-`league.json`: `meta`, `teams` (season totals: W-L, all-play W-L, points,
+A season file: `meta` (with `season`), `teams` (season totals: W-L, all-play W-L, points,
 luck), `results` (one row per team per scoring period, with `luck_to_date`:
 the team's luck through that period, from the games played so far), and
 `matchups`: the team list and four team-vs-team matrices (`all_play`, `wins`,
 `games`, `luck`).
 The site reads it through `useLeagueData()` in `lib/league-data.ts` (one
-request, shared types); components never fetch on their own.
+request, shared types); components never fetch on their own. The season on
+screen is `lib/selected-season.ts` (`?season=`, else the default).
 
 ### Metrics (`pipeline/league_data.py`)
 - **All-play strength**: in each scoring period (`Match` column; two per

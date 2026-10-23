@@ -7,10 +7,10 @@ results to `stats-app/public/data/`, and Render redeploys the site.
 - `league_data.py`: all the calculations (all-play strength, schedule luck,
   points for/against, head-to-head). Pure functions.
 - `build_data.py`: fetches the sheet once, runs the calculations, writes
-  `league.json`. `--source` (or `LEAGUE_SHEET`) takes another sheet's link.
+  a file per season (`seasons.json` lists them). `--source` reads a sheet or
+  CSV instead of Fantrax.
 - `fantrax.py`: reads a Fantrax league (schedule, regular-season and playoff
-  scores) into the same games table as the sheet. Used when
-  `FANTRAX_LEAGUE_ID` is set; see `DEPLOYMENT.md`. Scores need
+  scores) into the same games table as the sheet. See `DEPLOYMENT.md`. Scores need
   `FANTRAX_COOKIE`, the cookie of a browser logged in to Fantrax (Fantrax's
   login has a reCAPTCHA, so a script can't log in itself).
 - `playoffs.py`: the playoffs block (Swiss stage, knockout series,

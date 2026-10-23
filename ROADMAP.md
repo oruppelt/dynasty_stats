@@ -111,15 +111,13 @@ differences from the sheet; none changes a result.
   Otherwise list them by hand in `pipeline/seasons.json`.
 - Match teams across seasons by franchise name. Fantrax team IDs change
   with each new league (to check).
-- Files: `data/seasons/<year>.json` plus a small `data/index.json`. The
-  site gets a season picker; the current season stays the default.
+- Files: `data/seasons/<season>.json` plus `data/seasons.json` (done with
+  the season switch); older seasons are new entries in `pipeline/seasons.json`.
 
 **M5. Switch over**, ready 2026-10-23
-- Done: the hourly workflow reads Fantrax once the repository variable
-  `FANTRAX_LEAGUE_ID` and the secret `FANTRAX_COOKIE` are set; without the
-  variable it reads the sheet as before. Setup is in `DEPLOYMENT.md`.
-- To do: set both after the 4th period of 2026-27. After a season on
-  Fantrax, remove the sheet reader.
+- Done: the hourly workflow reads Fantrax (the secret `FANTRAX_COOKIE`)
+  for the seasons in `pipeline/seasons.json`. Setup is in `DEPLOYMENT.md`.
+- To do: set `default` to 2026-27 after its 4th period.
 
 **Open questions**
 - When to switch: after the 4th period of 2026-27 (league IDs in `LEAGUE.md`).
@@ -143,11 +141,8 @@ differences from the sheet; none changes a result.
   Standings columns plus a line on My Team.
 
 ### Next up
-- **Season switch** (agreed 2026-10-23, after the Playoffs tab): a season
-  picker and a `?season=` link. Finished seasons are fetched once and saved
-  as their own file, and the hourly job refreshes only the current season.
-  The real work is checking every view at both ends of a season: a finished
-  one, and a new one with only a few periods.
+- [x] **Season switch** (2026-10-23): a season picker and a `?season=`
+  link; seasons in `pipeline/seasons.json`, finished ones frozen.
 
 ### Needs Fantrax (after M2–M4)
 - **Playoff odds.** Simulate the rest of the season many times from each

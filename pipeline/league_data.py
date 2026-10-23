@@ -16,8 +16,8 @@ import pandas as pd
 
 from playoffs import compute_playoffs
 
-# Current season's sheet. A new season's sheet can be set without a code change
-# (LEAGUE_SHEET, see build_data.py); it needs the same columns and a DATA tab.
+# The 2025-26 sheet, the league's data before Fantrax. build_data.py --source
+# reads this or another sheet with the same columns and a DATA tab.
 SHEET_ID = '1gzQTlP9P4LtWXPgZOOAPsDsxAYbO70eCcHxyHmsl794'
 DATA_TAB = 'DATA'
 

@@ -57,10 +57,9 @@ What the existing metrics mean (useful for labelling them in plain words):
 
 ## Decisions
 
-- **Season rollover** (2026-10-22): each season gets a new sheet. Its link
-  goes in the `LEAGUE_SHEET` repository variable (see `DEPLOYMENT.md`); the
-  old sheet keeps working. Viewing past seasons is far-off roadmap, so
-  `league.json` has no season field yet.
+- **Season rollover** (2026-10-23, replaces the sheet-per-season decision):
+  a new season is a new entry in `pipeline/seasons.json`; the site has a
+  season picker (see the changelog).
 - **Recap unit** (2026-10-22): one scoring period, labelled "Period N".
 - **Ties** (2026-10-22): rare; records are W-L with a tie as half a win and
   half a loss (no T column).
@@ -298,6 +297,16 @@ Merged into Phase 2.5 (2026-10-22).
 ---
 
 ## Changelog
+
+### 2026-10-23: Season switch (branch `ux/season-switch`)
+- Seasons and their Fantrax league IDs in `pipeline/seasons.json`; the data
+  is one file per season (`data/seasons/<season>.json`) plus a season list
+  (`data/seasons.json`). Finished seasons are frozen; the hourly job builds
+  the others. The `FANTRAX_LEAGUE_ID` and `LEAGUE_SHEET` variables are gone.
+- Season picker in the header (only with more than one season) and a
+  `?season=` link; the default season stays out of the URL. Switching resets
+  each view's own picks (period, Swiss round); the team stays.
+- The header says "Final" once a season has a champion.
 
 ### 2026-10-23: Playoffs tab (branches `fantrax/playoffs`, `ux/playoffs-tab`)
 - `league.json` gets a `playoffs` block from Fantrax (Swiss rounds and

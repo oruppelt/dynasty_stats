@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { Fragment, useState } from "react"
 import { MyTeamWidget } from "./widgets/MyTeamWidget"
 import { StandingsWidget } from "./widgets/StandingsWidget"
 import { PointsWidget } from "./widgets/PointsWidget"
@@ -85,7 +85,8 @@ export function Dashboard() {
 
         {TABS.map(({ value, render }) => (
           <TabsContent key={value} value={value} className="mt-0">
-            {render(selectedTeam, openRecap)}
+            {/* A new season starts each view afresh (picked period, round, ...) */}
+            <Fragment key={league?.meta.season}>{render(selectedTeam, openRecap)}</Fragment>
           </TabsContent>
         ))}
       </Tabs>
