@@ -168,7 +168,10 @@ saves the responses and prints what the games table holds.
   `"regular_periods"` overrides where Fantrax says the regular season ends
   (2023-24), and `"skip_playoff_periods"` leaves out playoff periods that
   didn't count (2022-23, 2023-24: the first half of the All-Star round).
-  Rebuild the season after changing these or `"playoffs"`.
+  Rebuild the season after changing these or `"playoffs"`. A season with
+  `"playoffs": "other"` can name its `"champion"` and `"runner_up"` for the
+  History section;
+  that one needs no rebuild (the next run picks it up).
 
 ---
 

@@ -298,6 +298,31 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: History section (branch `ux/all-time`)
+- The Records tab becomes **History**, for every season together (the season
+  picker doesn't apply; the season note is hidden there):
+  - Champions: each season's champion, finalist and best regular season,
+    and the teams that reached a final.
+  - Franchises: career table by rates (win %, all-play %, score index,
+    luck, average finish, playoffs, finals, titles), and a season-by-season
+    grid of regular-season ranks shaded by the playoff run.
+  - Head to head: a team's career record against every team (playoff
+    games apart), and the all-pairs heatmap.
+  - Records: top-10 lists across seasons (best/worst/luckiest seasons,
+    games against the period average, streaks). Games with a 0 score
+    (Fantrax re-scoring) are left out of the game lists.
+- The season's record book moves to Season → Records.
+- The view buttons under the tabs (e.g. Standings → Table · Form ·
+  Playoffs) are now a bigger segmented control with the picked view in the
+  accent color, full width on phones; the small pills were easy to miss.
+- 2020-21: Chicago champion, Charlotte runner-up; 2019-20: no champion.
+- Franchises → Season by season: a Standings / Playoffs switch. Playoffs
+  labels each season's run (champion, F, SF, QF, R1). The earlier formats'
+  rounds come from their best-of-3 series (`alltime.knockout_rounds`);
+  2019-20 stopped after the quarterfinals.
+- New `data/alltime.json` from `pipeline/alltime.py`; a season with an
+  earlier format can name its `"champion"` in `seasons.json`.
+
 ### 2026-10-23: Swiss stage for 2022-23 and 2023-24 (branch `fix/allstar-playoff-rounds`)
 - Both seasons get the full Playoffs view (Swiss board, bracket, champion)
   again. One Swiss round ran over two periods at the All-Star break; the

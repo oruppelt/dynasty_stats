@@ -23,9 +23,13 @@ Optional per season:
   It gets no playoffs block; its playoff games are listed as played
   (playoff_games), and the site shows them as a plain list instead of a
   wrong Swiss stage.
+- "champion": the champion of a season with "playoffs": "other", for the
+  all-time titles (the earlier formats' games don't say who won); null for
+  a season without one (2019-20, COVID). "runner_up" likewise.
 
-Writes stats-app/public/data/seasons/<season>.json, and data/seasons.json, the
-season list the site reads. The list only has the seasons with data, so a new
+Writes stats-app/public/data/seasons/<season>.json, data/seasons.json, the
+season list the site reads, and data/alltime.json, every season together
+(alltime.py; rebuilt from the season files on every run). The list only has the seasons with data, so a new
 season appears on the site once its first period is played. A season's file
 is only rewritten when the data changes, and its `updated_at` (the "Updated
 ..." time in the header) only moves then. That keeps the scheduled GitHub
@@ -44,6 +48,7 @@ from pathlib import Path
 import pandas as pd
 
 import fantrax
+from alltime import compute_alltime
 from league_data import compute_league, load_games, sheet_csv_url
 
 SEASONS_CONFIG = Path(__file__).resolve().parent / 'seasons.json'
@@ -93,6 +98,18 @@ def write_index(config: dict, out: Path) -> None:
         path.write_text(index)
 
 
+def write_alltime(config: dict, out: Path) -> None:
+    """data/alltime.json, every season together (alltime.py), from the season files; written when it changes."""
+    seasons = [(s['id'], json.loads(season_path(out, s['id']).read_text()), s)
+               for s in config['seasons'] if season_path(out, s['id']).exists()]
+    if not seasons:
+        return
+    path = out / 'alltime.json'
+    data = to_json(compute_alltime(seasons))
+    if not path.exists() or path.read_text() != data:
+        path.write_text(data)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--season', help='build only this season, or several comma-separated '
@@ -134,6 +151,7 @@ def main() -> None:
                 print(f'{season}: FAILED; data left as it was.', file=sys.stderr)
                 traceback.print_exc()
     write_index(config, args.out)
+    write_alltime(config, args.out)
     if failed:
         sys.exit(f'Failed: {", ".join(failed)}')
 

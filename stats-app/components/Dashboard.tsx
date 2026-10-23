@@ -13,13 +13,17 @@ import { FormWidget } from "./widgets/FormWidget"
 import { RecordsWidget } from "./widgets/RecordsWidget"
 import { RivalryWidget } from "./widgets/RivalryWidget"
 import { ScheduleSwapWidget } from "./widgets/ScheduleSwapWidget"
+import { ChampionsWidget } from "./widgets/ChampionsWidget"
+import { FranchisesWidget } from "./widgets/FranchisesWidget"
+import { CareerHeadToHeadWidget } from "./widgets/CareerHeadToHeadWidget"
+import { AllTimeRecordsWidget } from "./widgets/AllTimeRecordsWidget"
 import { WidgetSkeleton } from "./widgets/WidgetSkeleton"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useLeagueData, useSeasonInfo } from '@/lib/league-data'
 import { useInitSelectedTeam, useSelectedTeam } from '@/lib/selected-team'
 import { getUrlParam, setUrlParam } from '@/lib/url'
 import { cn } from '@/lib/utils'
-import { CalendarDays, Info, ListOrdered, Medal, Swords, TrendingUp, User } from "lucide-react"
+import { CalendarDays, Info, Landmark, ListOrdered, Swords, TrendingUp, User } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 type Render = (selectedTeam: string, openRecap: (period: number) => void) => React.ReactNode
@@ -36,6 +40,8 @@ interface Section {
   label: string
   icon: LucideIcon
   views: View[]
+  /** Every season together, not the one picked in the header */
+  allSeasons?: boolean
 }
 
 const SECTIONS: Section[] = [
@@ -60,6 +66,7 @@ const SECTIONS: Section[] = [
     views: [
       { value: "season", label: "Rank & luck", render: team => <SeasonWidget selectedTeam={team} /> },
       { value: "points", label: "Points", render: team => <PointsWidget selectedTeam={team} /> },
+      { value: "records", label: "Records", render: team => <RecordsWidget selectedTeam={team} /> },
     ],
   },
   {
@@ -72,14 +79,23 @@ const SECTIONS: Section[] = [
     ],
   },
   {
-    value: "records", label: "Records", icon: Medal,
-    views: [{ value: "records", label: "Records", render: team => <RecordsWidget selectedTeam={team} /> }],
+    value: "history", label: "History", icon: Landmark, allSeasons: true,
+    views: [
+      { value: "champions", label: "Champions", render: team => <ChampionsWidget selectedTeam={team} /> },
+      { value: "franchises", label: "Franchises", render: team => <FranchisesWidget selectedTeam={team} /> },
+      { value: "h2h", label: "Head to head", render: team => <CareerHeadToHeadWidget selectedTeam={team} /> },
+      { value: "records", label: "Records", render: team => <AllTimeRecordsWidget selectedTeam={team} /> },
+    ],
   },
 ]
 
 function ViewPicker({ views, value, onChange }: { views: View[]; value: string; onChange: (view: string) => void }) {
   return (
-    <div role="tablist" className="mb-4 flex gap-1 overflow-x-auto">
+    // A segmented control: full width on phones (every view in sight, no sideways scroll), sized to fit above
+    <div
+      role="tablist"
+      className="mb-4 flex w-full gap-1 rounded-lg border bg-muted p-1 sm:inline-flex sm:w-auto"
+    >
       {views.map(v => (
         <button
           key={v.value}
@@ -88,8 +104,10 @@ function ViewPicker({ views, value, onChange }: { views: View[]; value: string; 
           aria-selected={v.value === value}
           onClick={() => onChange(v.value)}
           className={cn(
-            "shrink-0 rounded-full border px-3 py-1 text-sm font-medium transition-colors focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring",
-            v.value === value ? "border-foreground bg-foreground text-background" : "text-muted-foreground hover:bg-muted",
+            "grow whitespace-nowrap rounded-md px-1.5 py-2 text-[13px] font-semibold transition-colors focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring sm:grow-0 sm:px-5 sm:text-sm",
+            v.value === value
+              ? "bg-primary text-primary-foreground shadow-sm"
+              : "text-foreground/75 hover:bg-background hover:text-foreground",
           )}
         >
           {v.label}
@@ -118,6 +136,8 @@ export function Dashboard() {
     window.scrollTo({ top: 0 })
   }
 
+  const currentTab = tab ?? (selectedTeam ? "myteam" : "standings")
+
   if (!ready && !error) {
     return (
       <div className="w-full max-w-6xl mx-auto px-4 py-6">
@@ -129,7 +149,7 @@ export function Dashboard() {
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-6">
       <Tabs
-        value={tab ?? (selectedTeam ? "myteam" : "standings")}
+        value={currentTab}
         onValueChange={value => {
           setTab(value)
           // The link names a period only while the recap is open
@@ -137,7 +157,7 @@ export function Dashboard() {
         }}
         className="w-full"
       >
-        {seasonInfo?.note && (
+        {seasonInfo?.note && !SECTIONS.find(s => s.value === currentTab)?.allSeasons && (
           <p className="mb-3 flex items-start gap-2 rounded-md border px-3 py-2 text-sm text-muted-foreground">
             <Info className="mt-0.5 h-4 w-4 shrink-0" />
             <span><span className="font-medium text-foreground">{seasonInfo.id}:</span> {seasonInfo.note}</span>
@@ -168,7 +188,7 @@ export function Dashboard() {
                 />
               )}
               {/* A new season starts each view afresh (picked period, round, ...) */}
-              <Fragment key={`${league?.meta.season}-${view.value}`}>{view.render(selectedTeam, openRecap)}</Fragment>
+              <Fragment key={section.allSeasons ? view.value : `${league?.meta.season}-${view.value}`}>{view.render(selectedTeam, openRecap)}</Fragment>
             </TabsContent>
           )
         })}

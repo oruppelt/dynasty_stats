@@ -58,6 +58,9 @@ the team's luck through that period, from the games played so far), and
 `games`, `luck`, `schedule_swap`: wins with another team's schedule).
 `form` (`pipeline/form.py`): recent top finishes and elite score per team.
 `records` (`pipeline/records.py`): the record book's top-5 lists.
+`data/alltime.json` (`pipeline/alltime.py`, rebuilt from the season files
+on every run): titles, playoff finishes, career totals by rate, career
+head-to-head and all-time records.
 `playoffs` (`pipeline/playoffs.py`): Swiss stage, knockout, champion.
 `schedule` (`fantrax.schedule_from_fantrax`, null for sheet data): period
 dates and the regular-season games still to play (`lib/schedule.ts`).
@@ -88,9 +91,11 @@ JSON name their team under `Team`; every other key is a team name.
 ### Frontend
 - `app/page.tsx` → `components/layout/Header.tsx` (team picker) and
   `components/Dashboard.tsx` (six sections: My Team, Recap, Standings (Table,
-  Form, Playoffs), Season (Rank & luck, Points), Matchups (Rivalry, All vs
-  All, Luck, What if), Records) → `components/widgets/*`, each reading
-  `useLeagueData()`. Add a view to a section in `SECTIONS` rather than a new
+  Form, Playoffs), Season (Rank & luck, Points, Records), Matchups (Rivalry,
+  All vs All, Luck, What if), History (Champions, Franchises, Head to head,
+  Records)) → `components/widgets/*`, each reading `useLeagueData()`, or
+  for History (every season, not the picked one) `useAllTime()` in
+  `lib/alltime.ts`. Add a view to a section in `SECTIONS` rather than a new
   top-level tab.
 - Charts are nivo only. Both heatmaps go through `MatrixHeatmap` (stepped
   orange-blue scale from `useChartTheme().diverging`, legend, phone list

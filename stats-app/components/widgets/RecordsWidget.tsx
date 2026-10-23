@@ -9,21 +9,21 @@ import { formatScore } from '@/lib/season'
 import { formatCount } from '@/lib/standings'
 import { cn } from '@/lib/utils'
 
-interface Row {
+export interface RecordRow {
   key: string;
   team: string;
   value: ReactNode;
   detail: ReactNode;
 }
 
-const ratio = (g: RecordGame) => `${(g.score / g.period_avg).toFixed(2)}×`
-const line = (g: RecordGame) => `${formatScore(g.score)}–${formatScore(g.opp_score)}`
+export const ratio = (g: RecordGame) => `${(g.score / g.period_avg).toFixed(2)}×`
+export const line = (g: RecordGame) => `${formatScore(g.score)}–${formatScore(g.opp_score)}`
 const gameKey = (g: RecordGame) => `${g.period}-${g.team}`
 
-function RecordList({ title, note, rows, selectedTeam }: {
+export function RecordList({ title, note, rows, selectedTeam }: {
   title: string;
   note: string;
-  rows: Row[];
+  rows: RecordRow[];
   selectedTeam: string;
 }) {
   return (
@@ -63,14 +63,14 @@ export function RecordsWidget({ selectedTeam }: { selectedTeam: string }) {
   const { records, meta } = league
   // A streak that reaches the latest period is still going, until the playoffs start
   const ongoing = (s: Streak) => s.end === meta.latest_period && !league.playoffs?.swiss.rounds.length
-  const streakRows = (streaks: Streak[]): Row[] => streaks.map(s => ({
+  const streakRows = (streaks: Streak[]): RecordRow[] => streaks.map(s => ({
     key: `${s.team}-${s.start}`,
     team: s.team,
     value: s.length,
     detail: <>Periods {s.start}–{s.end}{ongoing(s) && <span className="font-semibold text-foreground"> · still going</span>}</>,
   }))
 
-  const lists: { title: string; note: string; rows: Row[] }[] = [
+  const lists: { title: string; note: string; rows: RecordRow[] }[] = [
     {
       title: 'Highest scores',
       note: 'The biggest scores of the season.',

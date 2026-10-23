@@ -20,11 +20,16 @@ Always 30 teams, with the same franchise names. Settings per season are in
 `pipeline/seasons.json`; the format changed over the years:
 - **2019-20:** the COVID season. 34 regular-season periods in Fantrax
   (period 34, during the NBA's pause, has no games); the playoffs didn't
-  follow the usual format (`"playoffs": "other"`).
+  follow the usual format (`"playoffs": "other"`). No champion
+  (`"champion": null`). The knockout (best-of-3 series, 16 teams) stopped
+  in the quarterfinals.
 - A season marked `"playoffs": "other"` lists its playoff games period by
   period (`playoff_games`) instead of the Swiss board and bracket.
 - **2020-21:** a shorter season that started in December: 30 regular-season
-  periods. Playoffs before the Swiss stage (`"playoffs": "other"`). In
+  periods. Playoffs before the Swiss stage (`"playoffs": "other"`).
+  The playoffs: a knockout of best-of-3 series, 16 teams.
+  Champion: Chicago Bulls, who beat Charlotte in the final (`"champion"`
+  and `"runner_up"` in `seasons.json`). In
   period 22 Fantrax recorded 0 for every team; a period where nobody scored
   is left out (`fantrax.games_from_fantrax`).
 - **2021-22:** the first season with the Swiss stage.

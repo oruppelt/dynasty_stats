@@ -113,8 +113,8 @@ differences from the sheet; none changes a result.
 - Done 2026-10-23: the workflow builds one named season on demand (also a
   finished one), and a season can have a note and `"playoffs": "other"` for
   the format before the Swiss stage (`LEAGUE.md`, Earlier seasons).
-- Then: all-time views (standings by rate, titles, franchise history,
-  career head-to-head, the record book across seasons).
+- Done 2026-10-23: the History section (champions, franchises, career
+  head-to-head, all-time records) from `data/alltime.json`.
 - Match teams across seasons by franchise name. Fantrax team IDs change
   with each new league (to check).
 - Files: `data/seasons/<season>.json` plus `data/seasons.json` (done with
@@ -138,8 +138,8 @@ differences from the sheet; none changes a result.
 ### With today's data (no migration needed)
 - [x] **Schedule swap ("what if")** (2026-10-23, Matchups → What if).
 - [x] **Rivalry view** (2026-10-23, Matchups → Rivalry).
-- [x] **Record book** (2026-10-23, Records). Across seasons once past
-  seasons are in (M4).
+- [x] **Record book** (2026-10-23, Season → Records; all seasons in
+  History → Records).
 - **Form and consistency.** The average over the last 4–6 periods against
   the season average, and how much a team's score varies. One or two
   Standings columns plus a line on My Team.
@@ -180,8 +180,7 @@ differences from the sheet; none changes a result.
 - **Strength of the remaining schedule.** The rest of a team's round robin,
   rated by the opponents' all-play strength.
 - **Swiss stage board and knockout bracket.** Done 2026-10-23 (Playoffs tab).
-- **Past seasons.** Champions, all-time records and franchise history,
-  career head-to-head, and the record book across seasons.
+- **Past seasons.** Done 2026-10-23: the History section.
 - **Rosters (Fantrax roster data, scores need the login):**
   - Points left on the bench: the best possible lineup against the lineup
     actually used.
