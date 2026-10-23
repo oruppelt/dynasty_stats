@@ -88,7 +88,7 @@ const columns: ColumnDef<Row>[] = [
     cell: ({ row }) => (
       <div className="flex items-center gap-2">
         <TeamLogo teamName={row.original.team} size={24} className="shrink-0" />
-        <span className="max-w-[8.5rem] truncate sm:max-w-none">{row.original.team}</span>
+        <span className="max-w-34 truncate sm:max-w-none">{row.original.team}</span>
       </div>
     ),
   },

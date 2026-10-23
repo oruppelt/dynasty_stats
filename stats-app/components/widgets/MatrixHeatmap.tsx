@@ -64,7 +64,7 @@ export function MatrixHeatmap(props: MatrixHeatmapProps) {
               aria-pressed={view === v}
               className={cn(
                 'rounded-sm px-3 py-1 font-medium capitalize text-muted-foreground',
-                view === v && 'bg-background text-foreground shadow-sm',
+                view === v && 'bg-background text-foreground shadow-xs',
               )}
             >
               {v}
@@ -182,7 +182,7 @@ function TeamList({ matrix, selectedTeam, scale, formatValue, detail, listTitle 
                 {detail && <div className="text-xs text-muted-foreground">{detail(selectedTeam, opponent)}</div>}
               </div>
               <span
-                className="min-w-[3.5rem] rounded px-2 py-0.5 text-center text-sm font-semibold tabular-nums"
+                className="min-w-14 rounded px-2 py-0.5 text-center text-sm font-semibold tabular-nums"
                 style={{ backgroundColor: color, color: textOn(color) }}
               >
                 {formatValue(value)}
