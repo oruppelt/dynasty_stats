@@ -52,7 +52,8 @@ def test_earlier_format_finishes():
     data = {'matchups': {'teams': ['Alpha', 'Bravo', 'Charlie']}, 'playoffs': None,
             'playoff_games': [{'period': 3, 'team': 'Alpha', 'score': 1, 'opponent': 'Bravo', 'opp_score': 2}]}
     assert playoff_finishes(data, {'final': True}) == {'Alpha': 'playoffs', 'Bravo': 'playoffs', 'Charlie': 'missed'}
-    assert playoff_finishes(data, {'final': True, 'champion': 'Bravo'})['Bravo'] == 'champion'
+    assert playoff_finishes(data, {'final': True, 'champion': 'Bravo', 'runner_up': 'Alpha'}) == {
+        'Alpha': 'final', 'Bravo': 'champion', 'Charlie': 'missed'}
 
 
 def test_season_without_a_champion(seasons):

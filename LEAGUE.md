@@ -26,7 +26,8 @@ Always 30 teams, with the same franchise names. Settings per season are in
   period (`playoff_games`) instead of the Swiss board and bracket.
 - **2020-21:** a shorter season that started in December: 30 regular-season
   periods. Playoffs before the Swiss stage (`"playoffs": "other"`).
-  Champion: Chicago Bulls (`"champion"` in `seasons.json`). In
+  Champion: Chicago Bulls, who beat Charlotte in the final (`"champion"`
+  and `"runner_up"` in `seasons.json`). In
   period 22 Fantrax recorded 0 for every team; a period where nobody scored
   is left out (`fantrax.games_from_fantrax`).
 - **2021-22:** the first season with the Swiss stage.

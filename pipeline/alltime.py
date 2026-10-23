@@ -69,7 +69,10 @@ def playoff_finishes(data: dict, settings: dict) -> dict[str, str] | None:
     else:
         for g in data.get('playoff_games') or []:
             finish[g['team']] = finish[g['opponent']] = 'playoffs'
-    if settings.get('champion'):  # an earlier format's champion, from seasons.json
+    # An earlier format's champion and runner-up, from seasons.json
+    if settings.get('runner_up'):
+        finish[settings['runner_up']] = 'final'
+    if settings.get('champion'):
         finish[settings['champion']] = 'champion'
     return finish
 

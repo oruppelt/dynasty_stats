@@ -42,8 +42,8 @@ export function ChampionsWidget({ selectedTeam }: { selectedTeam: string }) {
     .filter(f => f.finals > 0)
     .sort((a, b) => b.titles - a.titles || b.finals - a.finals || b.playoffs - a.playoffs || a.team.localeCompare(b.team))
   const first = data.seasons[data.seasons.length - 1].season
-  // Earlier formats: no final in the data
-  const noFinal = data.seasons.filter(s => !s.in_progress && !s.runner_up).map(s => s.season).reverse()
+  // A champion without a known runner-up (an earlier format)
+  const noFinal = data.seasons.filter(s => s.champion && !s.runner_up).map(s => s.season).reverse()
 
   return (
     <div className="grid w-full grid-cols-1 items-start gap-4 lg:grid-cols-[3fr_2fr]">

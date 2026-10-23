@@ -312,6 +312,10 @@ Merged into Phase 2.5 (2026-10-22).
     games against the period average, streaks). Games with a 0 score
     (Fantrax re-scoring) are left out of the game lists.
 - The season's record book moves to Season → Records.
+- The view buttons under the tabs (e.g. Standings → Table · Form ·
+  Playoffs) are now a bigger segmented control with the picked view in the
+  accent color, full width on phones; the small pills were easy to miss.
+- 2020-21: Chicago champion, Charlotte runner-up; 2019-20: no champion.
 - New `data/alltime.json` from `pipeline/alltime.py`; a season with an
   earlier format can name its `"champion"` in `seasons.json`.
 

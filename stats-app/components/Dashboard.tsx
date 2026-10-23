@@ -91,7 +91,11 @@ const SECTIONS: Section[] = [
 
 function ViewPicker({ views, value, onChange }: { views: View[]; value: string; onChange: (view: string) => void }) {
   return (
-    <div role="tablist" className="mb-4 flex gap-1 overflow-x-auto">
+    // A segmented control: full width on phones (every view in sight, no sideways scroll), sized to fit above
+    <div
+      role="tablist"
+      className="mb-4 flex w-full gap-1 rounded-lg border bg-muted p-1 sm:inline-flex sm:w-auto"
+    >
       {views.map(v => (
         <button
           key={v.value}
@@ -100,8 +104,10 @@ function ViewPicker({ views, value, onChange }: { views: View[]; value: string; 
           aria-selected={v.value === value}
           onClick={() => onChange(v.value)}
           className={cn(
-            "shrink-0 rounded-full border px-3 py-1 text-sm font-medium transition-colors focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring",
-            v.value === value ? "border-foreground bg-foreground text-background" : "text-muted-foreground hover:bg-muted",
+            "grow whitespace-nowrap rounded-md px-1.5 py-2 text-[13px] font-semibold transition-colors focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring sm:grow-0 sm:px-5 sm:text-sm",
+            v.value === value
+              ? "bg-primary text-primary-foreground shadow-sm"
+              : "text-foreground/75 hover:bg-background hover:text-foreground",
           )}
         >
           {v.label}
