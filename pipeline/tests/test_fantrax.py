@@ -5,7 +5,7 @@ Fixtures (tests/fixtures/fantrax_*.json), 4 teams, regular season through period
     Period 1: Alpha 1,000.5 - 90 Bravo, Charlie 80 - 70 Delta
     Period 2: Alpha 60 - 95.25 Charlie, Bravo 85 - 85 Delta (tie)
     Period 3: in progress (partial and 0-0 scores)
-    Period 4: a playoff game, Alpha 150 - 140 Charlie
+    Period 4: a playoff game, Alpha 150 - 140 Charlie, and one not set yet (TBD)
 `now` is set inside period 3 unless a test says otherwise.
 """
 import json

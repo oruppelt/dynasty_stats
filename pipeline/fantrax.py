@@ -115,8 +115,10 @@ def games_from_fantrax(info: dict, scores: dict, now: datetime | None = None) ->
     names = {team_id: team['name'].strip() for team_id, team in info['teamInfo'].items()}
     last_regular = info['playoffs']['lastRegularSeasonPeriod']
     ended = {p['number'] for p in info['scoringPeriods'] if _parse_time(p['endDate']) < now}
+    # Matchups not set yet (the Swiss periods, the playoffs) are {'TBD': True} without team IDs
     scheduled = {
-        m['period']: {frozenset((g['away']['id'], g['home']['id'])) for g in m['matchupList']}
+        m['period']: {frozenset((g['away']['id'], g['home']['id']))
+                      for g in m['matchupList'] if 'id' in g['away'] and 'id' in g['home']}
         for m in info['matchups']
     }
 
