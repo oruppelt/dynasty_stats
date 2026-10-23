@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { MyTeamWidget } from "./widgets/MyTeamWidget"
 import { StandingsWidget } from "./widgets/StandingsWidget"
 import { PointsWidget } from "./widgets/PointsWidget"
@@ -37,12 +37,10 @@ export function Dashboard() {
   const { data: league, error } = useLeagueData()
   useInitSelectedTeam(league?.matchups.teams)
   const { team: selectedTeam, ready } = useSelectedTeam()
-  // Until the viewer picks a tab: their team if they have one, else the league
-  const [tab, setTab] = useState<string | null>(null)
-  // A shared recap link (?period=) opens on the recap
-  useEffect(() => {
-    if (getUrlParam('period')) setTab("recap")
-  }, [])
+  // Until the viewer picks a tab: their team if they have one, else the league.
+  // A shared recap link (?period=) opens on the recap. (Reading the URL here is
+  // safe: the tabs only render after the team list loads, well after hydration.)
+  const [tab, setTab] = useState<string | null>(() => getUrlParam("period") ? "recap" : null)
 
   // Same as following a ?period= link: the recap reads the period when it opens
   const openRecap = (period: number) => {

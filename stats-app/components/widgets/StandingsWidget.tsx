@@ -164,6 +164,8 @@ export function StandingsWidget({ selectedTeam }: StandingsWidgetProps) {
   }, [league])
   const [sorting, setSorting] = useState<SortingState>([])
 
+  // The warning is about the React Compiler, which this app doesn't use
+  // eslint-disable-next-line react-hooks/incompatible-library
   const table = useReactTable({
     data: standings,
     columns,
