@@ -214,11 +214,14 @@ def compute_teams(results: pd.DataFrame, luck: dict[str, float]) -> list[dict]:
     } for team, row in totals.iterrows()]
 
 
-def compute_league(games: pd.DataFrame, playoff_games: pd.DataFrame | None = None) -> dict:
-    """The site's whole payload (league.json), apart from the update time.
+def compute_league(games: pd.DataFrame, playoff_games: pd.DataFrame | None = None,
+                   schedule: dict | None = None) -> dict:
+    """The site's whole payload (a season's file), apart from the update time.
 
     `games` is the regular season, which all the stats cover. `playoff_games`
     (same table; Fantrax only, the sheet has none) only feed the playoffs block.
+    `schedule` (period dates and games to come, fantrax.schedule_from_fantrax)
+    is passed through as it is; the sheet has none.
     """
     results = compute_results(games).merge(compute_luck_to_date(games), on=['Match', 'Team'], how='left')
     full = _both_sides(games)
@@ -246,4 +249,5 @@ def compute_league(games: pd.DataFrame, playoff_games: pd.DataFrame | None = Non
         "form": compute_form(results),
         "records": compute_records(results),
         "playoffs": compute_playoffs(teams, playoff_games) if playoff_games is not None else None,
+        "schedule": schedule,
     }

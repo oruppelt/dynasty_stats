@@ -99,11 +99,13 @@ differences from the sheet; none changes a result.
 - Done 2026-10-23: the `playoffs` block (Swiss rounds and standings,
   knockout series, champion), checked on 2025-26. Still to do: the rest of
   the list below.
-- Add `periods` (number, dates, phase, status) and future matchups.
+- Done 2026-10-23: the `schedule` block (period dates, the last regular
+  period, the games still to play) and, on the site, period dates and an
+  "Up next" card on My Team. Status (played, current, upcoming) is worked
+  out on the site from `latest_period` and the dates, so the file doesn't
+  change just because time passes.
 - Playoff games go in their own block. All-play, luck and the standings
   stay regular-season only.
-- The site: show the period dates, and show "not played yet" for future
-  games.
 
 **M4. Past seasons**
 - Find earlier seasons' league IDs. The Fantrax league history page has

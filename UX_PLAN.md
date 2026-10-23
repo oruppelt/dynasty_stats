@@ -312,6 +312,15 @@ Merged into Phase 2.5 (2026-10-22).
   period by period (the periods they met marked).
 - **What if** (`matchups.schedule_swap`): a team's record with each other
   team's schedule, the easiest and hardest schedules, and the full grid.
+### 2026-10-23: Schedule (branch `ux/schedule`)
+- The pipeline adds a `schedule` block from Fantrax's public league info:
+  each period's dates, the last regular-season period, and the
+  regular-season games still to play.
+- My Team: an "Up next" card with your next 4 games (dates, the opponent's
+  record and rank, how often your score has beaten theirs). Swiss periods
+  not paired yet say so. Hidden once the regular season is over.
+- Period dates next to the period on My Team and in the Recap.
+- 2025-26 got its period dates (its games are all played).
 
 ### 2026-10-23: Wording pass before the public release (branch `ux/copy-review`)
 - My Team speaks to the viewer ("you", "your scores") instead of an unclear

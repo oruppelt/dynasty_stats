@@ -59,6 +59,8 @@ the team's luck through that period, from the games played so far), and
 `form` (`pipeline/form.py`): recent top finishes and elite score per team.
 `records` (`pipeline/records.py`): the record book's top-5 lists.
 `playoffs` (`pipeline/playoffs.py`): Swiss stage, knockout, champion.
+`schedule` (`fantrax.schedule_from_fantrax`, null for sheet data): period
+dates and the regular-season games still to play (`lib/schedule.ts`).
 The site reads it through `useLeagueData()` in `lib/league-data.ts` (one
 request, shared types); components never fetch on their own. The season on
 screen is `lib/selected-season.ts` (`?season=`, else the default).
