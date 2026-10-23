@@ -89,3 +89,16 @@ export function periodRecap(rows: PeriodResult[]): Recap {
 export function formatScore(score: number): string {
   return score.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })
 }
+
+/** The recap highlights a team made that period, e.g. ["Top score", "Closest game"]. */
+export function recapHighlights(recap: Recap, team: string): string[] {
+  const inGame = (g: Game) => g.winner.team === team || g.loser.team === team
+  return [
+    recap.top.team === team && 'Top score',
+    recap.lowest.team === team && 'Lowest score',
+    recap.unluckiestLoss?.team === team && 'Unluckiest loss',
+    recap.luckiestWin?.team === team && 'Luckiest win',
+    inGame(recap.blowout) && 'Biggest blowout',
+    inGame(recap.closest) && 'Closest game',
+  ].filter((h): h is string => Boolean(h))
+}

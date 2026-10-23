@@ -20,11 +20,11 @@ interface TabDef {
   value: string
   label: string
   icon: LucideIcon
-  render: (selectedTeam: string) => React.ReactNode
+  render: (selectedTeam: string, openRecap: (period: number) => void) => React.ReactNode
 }
 
 const TABS: TabDef[] = [
-  { value: "myteam", label: "My Team", icon: User, render: team => <MyTeamWidget selectedTeam={team} /> },
+  { value: "myteam", label: "My Team", icon: User, render: (team, openRecap) => <MyTeamWidget selectedTeam={team} onOpenRecap={openRecap} /> },
   { value: "recap", label: "Recap", icon: CalendarDays, render: team => <RecapWidget selectedTeam={team} /> },
   { value: "standings", label: "Standings", icon: ListOrdered, render: team => <StandingsWidget selectedTeam={team} /> },
   { value: "season", label: "Season", icon: TrendingUp, render: team => <SeasonWidget selectedTeam={team} /> },
@@ -43,6 +43,13 @@ export function Dashboard() {
   useEffect(() => {
     if (getUrlParam('period')) setTab("recap")
   }, [])
+
+  // Same as following a ?period= link: the recap reads the period when it opens
+  const openRecap = (period: number) => {
+    setUrlParam("period", String(period))
+    setTab("recap")
+    window.scrollTo({ top: 0 })
+  }
 
   if (!ready && !error) {
     return (
@@ -78,7 +85,7 @@ export function Dashboard() {
 
         {TABS.map(({ value, render }) => (
           <TabsContent key={value} value={value} className="mt-0">
-            {render(selectedTeam)}
+            {render(selectedTeam, openRecap)}
           </TabsContent>
         ))}
       </Tabs>
