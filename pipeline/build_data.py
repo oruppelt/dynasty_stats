@@ -40,12 +40,12 @@ def to_json(data) -> str:
     return json.dumps(data, indent=2, allow_nan=False) + '\n'
 
 
-def build(games: pd.DataFrame, out: Path) -> str:
+def build(games: pd.DataFrame, out: Path, playoff_games: pd.DataFrame | None = None) -> str:
     """Write league.json from the played games if the data changed. Returns what happened, for the log."""
     if games.empty:
         return 'No played games yet; data left as it was.'
 
-    league = compute_league(games)
+    league = compute_league(games, playoff_games)
     path = out / 'league.json'
     if path.exists():
         previous = json.loads(path.read_text())
@@ -72,10 +72,10 @@ def main() -> None:
         cookie = os.environ.get('FANTRAX_COOKIE')
         if not cookie:
             parser.error('--fantrax needs FANTRAX_COOKIE (see fantrax.fetch_scores)')
-        games = fantrax.load_games(args.fantrax, cookie)
+        games, playoff_games = fantrax.load_season(args.fantrax, cookie)
     else:
-        games = load_games(sheet_csv_url(str(args.source)))
-    print(build(games, args.out))
+        games, playoff_games = load_games(sheet_csv_url(str(args.source))), None
+    print(build(games, args.out, playoff_games))
 
 
 if __name__ == '__main__':

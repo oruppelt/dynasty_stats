@@ -4,8 +4,8 @@ Save a Fantrax league's raw responses and check them against the site data.
 Usage (from the repo root, with FANTRAX_COOKIE set; see fantrax.fetch_scores):
     python pipeline/fantrax_fetch.py <league_id> <out_dir>
 
-Writes <out_dir>/league_info.json and <out_dir>/scores.json (the cookie is not
-saved), then prints what the games table holds and how its scores compare
+Writes <out_dir>/league_info.json, scores.json and playoffs.json (the cookie
+is not saved), then prints what the games table holds and how its scores compare
 with stats-app/public/data/league.json. For looking at the responses and
 making test fixtures; the site build doesn't use it.
 """
@@ -52,9 +52,11 @@ def main() -> None:
 
     info = fantrax.fetch_league_info(args.league_id)
     scores = fantrax.fetch_scores(args.league_id, cookie)
+    playoffs = fantrax.fetch_scores(args.league_id, cookie, view='PLAYOFFS')
     args.out_dir.mkdir(parents=True, exist_ok=True)
     (args.out_dir / 'league_info.json').write_text(json.dumps(info, indent=1))
     (args.out_dir / 'scores.json').write_text(json.dumps(scores, indent=1))
+    (args.out_dir / 'playoffs.json').write_text(json.dumps(playoffs, indent=1))
     print(f'Saved the responses to {args.out_dir}')
 
     captions = [t.get('caption') for t in scores.get('tableList', [])]

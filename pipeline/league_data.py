@@ -14,6 +14,8 @@ import re
 import numpy as np
 import pandas as pd
 
+from playoffs import compute_playoffs
+
 # Current season's sheet. A new season's sheet can be set without a code change
 # (LEAGUE_SHEET, see build_data.py); it needs the same columns and a DATA tab.
 SHEET_ID = '1gzQTlP9P4LtWXPgZOOAPsDsxAYbO70eCcHxyHmsl794'
@@ -181,18 +183,23 @@ def compute_teams(results: pd.DataFrame, luck: dict[str, float]) -> list[dict]:
     } for team, row in totals.iterrows()]
 
 
-def compute_league(games: pd.DataFrame) -> dict:
-    """The site's whole payload (league.json), apart from the update time."""
+def compute_league(games: pd.DataFrame, playoff_games: pd.DataFrame | None = None) -> dict:
+    """The site's whole payload (league.json), apart from the update time.
+
+    `games` is the regular season, which all the stats cover. `playoff_games`
+    (same table; Fantrax only, the sheet has none) only feed the playoffs block.
+    """
     results = compute_results(games).merge(compute_luck_to_date(games), on=['Match', 'Team'], how='left')
     full = _both_sides(games)
     luck = _luck_matrix(full).sum(axis=1).to_dict()
+    teams = compute_teams(results, luck)
 
     return {
         "meta": {
             "games": len(games),
             "latest_period": int(games['Match'].max()),
         },
-        "teams": compute_teams(results, luck),
+        "teams": teams,
         "results": [{
             "period": int(row.Match),
             "team": row.Team,
@@ -205,4 +212,5 @@ def compute_league(games: pd.DataFrame) -> dict:
             "luck_to_date": round(float(row.LuckToDate), 2),
         } for row in results.itertuples()],
         "matchups": compute_matchups(games),
+        "playoffs": compute_playoffs(teams, playoff_games) if playoff_games is not None else None,
     }
