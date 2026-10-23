@@ -162,10 +162,13 @@ saves the responses and prints what the games table holds.
   instead: `FANTRAX_COOKIE="$(pbpaste)" .venv/bin/python pipeline/build_data.py --season 2021-22`.
 - **Season notes and older formats:** a season can have `"note"` (one line
   the site shows above the tabs, e.g. a shorter regular season) and
-  `"playoffs": "other"` (before today's playoff format: its playoffs aren't
-  shown). Both can change at any time; the next run updates the site.
+  `"playoffs": "other"` (before today's playoff format: its playoff games
+  are listed instead of the Swiss board and bracket). A note can change at
+  any time; the next run updates the site.
   `"regular_periods"` overrides where Fantrax says the regular season ends
-  (2023-24); rebuild the season after changing it.
+  (2023-24), and `"skip_playoff_periods"` leaves out playoff periods that
+  didn't count (2022-23, 2023-24: the first half of the All-Star round).
+  Rebuild the season after changing these or `"playoffs"`.
 
 ---
 
