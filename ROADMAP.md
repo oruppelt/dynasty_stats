@@ -66,12 +66,17 @@ can log in. What's left:
 1. **A session cookie as a secret (`FANTRAX_COOKIE`).** Copy the cookie of a
    logged-in browser and refresh it by hand when it expires. A failed run
    says that the cookie expired and keeps the old data. How long the cookie
-   lasts decides whether this is good enough. Started 2026-10-23.
+   lasts decides whether this is good enough. Works: a cookie copied on
+   2026-10-23 at about 11:30 fetched all 2025-26 scores. Re-run
+   `fantrax_fetch.py` every few days to see when it expires.
 2. **Selenium in the Action.** This is what `fantrax_summary_app` did. It's
    slow, it breaks, and reCAPTCHA may block a headless browser in CI.
    Only if option 1 needs refreshing too often.
 
-**M1. A small Fantrax client (`pipeline/fantrax.py`)**, started 2026-10-23
+**M1. A small Fantrax client (`pipeline/fantrax.py`)**, done 2026-10-23.
+Checked on the real 2025-26 response: 495 regular-season games, periods
+1–33 (the sheet stops at 32), 1 tie. 15 games have small stat-correction
+differences from the sheet; none changes a result.
 - `league_info(league_id)` (public) and `schedule_scores(league_id)`
   (private, logged in), using `requests` only.
 - Save the raw responses as test fixtures. Tests run on the fixtures, not

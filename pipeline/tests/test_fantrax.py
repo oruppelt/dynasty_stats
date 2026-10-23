@@ -98,3 +98,9 @@ def test_private_response_errors():
         check_private_response({'pageError': {'code': 'NOT_MEMBER_OF_LEAGUE'}})
     with pytest.raises(FantraxError, match='Unexpected'):
         check_private_response({'responses': []})
+
+
+def test_changed_columns_fail(info, scores):
+    scores['tableList'][0]['header']['cells'].reverse()
+    with pytest.raises(FantraxError, match='unexpected columns'):
+        games_from_fantrax(info, scores, IN_PERIOD_3)

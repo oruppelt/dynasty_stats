@@ -33,6 +33,8 @@ USER_AGENT = 'Mozilla/5.0 (dynasty-stats pipeline)'
 TIMEOUT = 60
 
 GAME_COLUMNS = [c for c in COLUMNS if c not in UNUSED_COLUMNS]
+# Columns of each period's table in the SCHEDULE view
+SCORE_COLUMNS = ('away', 'fpts', 'home', 'fpts')
 
 
 class FantraxError(Exception):
@@ -123,6 +125,9 @@ def games_from_fantrax(info: dict, scores: dict, now: datetime | None = None) ->
         period = _period_number(table.get('caption', ''))
         if period is None or period > last_regular or period not in ended:
             continue
+        columns = tuple(cell.get('key') for cell in table.get('header', {}).get('cells', []))
+        if columns != SCORE_COLUMNS:
+            raise FantraxError(f'Period {period}: unexpected columns {columns}; the Fantrax response may have changed.')
         for row in table['rows']:
             away, away_score, home, home_score = row['cells'][:4]
             pair = frozenset((away.get('teamId'), home.get('teamId')))
