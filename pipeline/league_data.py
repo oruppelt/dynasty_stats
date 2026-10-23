@@ -16,6 +16,7 @@ import pandas as pd
 
 from form import compute_form
 from playoffs import compute_playoffs
+from records import compute_records
 
 # The 2025-26 sheet, the league's data before Fantrax. build_data.py --source
 # reads this or another sheet with the same columns and a DATA tab.
@@ -120,6 +121,32 @@ def _matrix_records(df: pd.DataFrame) -> list[dict]:
             for row in df.reset_index().to_dict('records')]
 
 
+def _schedule_swap(full: pd.DataFrame) -> pd.DataFrame:
+    """Wins each team (row) would have with another team's schedule (column).
+
+    The row team's score each period against the score of the opponent the
+    column team actually faced; where that opponent is the row team itself,
+    it plays the column team instead. A tie counts half. The diagonal is the
+    team's actual wins.
+    """
+    score = full.set_index(['Match', 'Team'])['Score'].to_dict()
+    teams = sorted(full['Team'].unique())
+    rows = {}
+    for team in teams:
+        row = {}
+        for owner in teams:
+            wins = 0.0
+            for g in full[full['Team'] == owner].itertuples():
+                opponent = owner if g.Opponent == team else g.Opponent
+                mine, theirs = score.get((g.Match, team)), score.get((g.Match, opponent))
+                if mine is None or theirs is None:
+                    continue
+                wins += 1 if mine > theirs else 0.5 if mine == theirs else 0
+            row[owner] = wins
+        rows[team] = row
+    return pd.DataFrame.from_dict(rows, orient='index')
+
+
 def compute_matchups(games: pd.DataFrame) -> dict:
     """Team-vs-team matrices, each a row per team with one value per opponent.
 
@@ -128,6 +155,8 @@ def compute_matchups(games: pd.DataFrame) -> dict:
     - luck: head-to-head wins minus expected wins (all_play x games), so a
       rematch counts twice. Every game hands out one win and one expected win
       in total, so luck sums to zero across the league.
+    - schedule_swap: the row team's wins had it played the column team's
+      schedule (the diagonal is its actual wins).
     A team against itself, or a pair that never played (for wins, games and
     luck), is null.
     """
@@ -145,6 +174,7 @@ def compute_matchups(games: pd.DataFrame) -> dict:
         "wins": rows(_head_to_head_wins(full)),
         "games": rows(_head_to_head_games(full)),
         "luck": rows(_luck_matrix(full), 2),
+        "schedule_swap": rows(_schedule_swap(full)),
     }
 
 
@@ -217,6 +247,7 @@ def compute_league(games: pd.DataFrame, playoff_games: pd.DataFrame | None = Non
         } for row in results.itertuples()],
         "matchups": compute_matchups(games),
         "form": compute_form(results),
+        "records": compute_records(results),
         "playoffs": compute_playoffs(teams, playoff_games) if playoff_games is not None else None,
         "schedule": schedule,
     }

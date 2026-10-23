@@ -132,12 +132,10 @@ differences from the sheet; none changes a result.
 ## 2. Features
 
 ### With today's data (no migration needed)
-- **Schedule swap ("what if").** A team's record had it played another
-  team's schedule. Shown as a grid, or a "pick a schedule" box on My Team.
-- **Rivalry view.** Two teams: every game between them, the head-to-head
-  record, the average margin, and how often each wins on scores alone.
-- **Record book.** Season highs and lows, win and loss streaks, the biggest
-  blowouts, the most points in a loss, and the unluckiest losses all season.
+- [x] **Schedule swap ("what if")** (2026-10-23, Matchups → What if).
+- [x] **Rivalry view** (2026-10-23, Matchups → Rivalry).
+- [x] **Record book** (2026-10-23, Records). Across seasons once past
+  seasons are in (M4).
 - **Form and consistency.** The average over the last 4–6 periods against
   the season average, and how much a team's score varies. One or two
   Standings columns plus a line on My Team.

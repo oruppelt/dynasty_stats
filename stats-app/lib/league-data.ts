@@ -21,6 +21,8 @@ export interface Matchups {
   games: MatrixRow[];
   /** Head-to-head wins minus expected wins (all_play x games); a row sums to the team's luck */
   luck: MatrixRow[];
+  /** Wins the row team would have with the column team's schedule; the diagonal is its actual wins */
+  schedule_swap: MatrixRow[];
 }
 
 /** Season totals. A tie counts as half a win and half a loss. */
@@ -117,6 +119,47 @@ export interface Form {
   teams: TeamForm[];
 }
 
+/** A game in the record book, from `team`'s side. */
+export interface RecordGame {
+  period: number;
+  team: string;
+  score: number;
+  opponent: string;
+  opp_score: number;
+  /** The average score that period (periods with more NBA games score higher) */
+  period_avg: number;
+  /** Teams the score beat that period (ties count half), of `others` */
+  all_play_wins: number;
+  others: number;
+}
+
+export interface Streak {
+  team: string;
+  length: number;
+  /** First and last period of the run */
+  start: number;
+  end: number;
+}
+
+/** The record book (pipeline/records.py): top-5 lists, regular season only. */
+export interface Records {
+  highest_scores: RecordGame[];
+  /** Highest score / period average */
+  best_vs_average: RecordGame[];
+  worst_vs_average: RecordGame[];
+  /** By the winner (a tie: the first team by name) */
+  blowouts: RecordGame[];
+  closest_games: RecordGame[];
+  /** Losses whose score beat the most teams */
+  unluckiest_losses: RecordGame[];
+  /** Wins whose score beat the fewest teams */
+  luckiest_wins: RecordGame[];
+  win_streaks: Streak[];
+  losing_streaks: Streak[];
+  /** Periods with the league's top score */
+  period_highs: { team: string; count: number }[];
+}
+
 /** The season's calendar and the games still to play (from Fantrax; null for data from the sheet). */
 export interface Schedule {
   /** Every scoring period, playoffs too; dates are YYYY-MM-DD in the league's time zone */
@@ -140,6 +183,7 @@ export interface LeagueData {
   results: PeriodResult[];
   matchups: Matchups;
   form: Form;
+  records: Records;
   /** Null before the playoffs start, and for data from the sheet */
   playoffs: Playoffs | null;
   schedule: Schedule | null;

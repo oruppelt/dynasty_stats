@@ -94,6 +94,20 @@ def test_schedule_luck_counts_rematches(tmp_path):
     assert sum(luck.values()) == pytest.approx(0, abs=0.02)
 
 
+def test_schedule_swap(data):
+    swap = {row['Team']: row for row in data['matchups']['schedule_swap']}
+    # Alpha with Bravo's schedule: P1 Bravo met Alpha, so Alpha plays Bravo (100-90 W); P2 Delta (60-85 L)
+    assert swap['Alpha']['Bravo'] == 1
+    # Bravo with Charlie's: P1 Delta (90-70 W), P2 Alpha (85-60 W)
+    assert swap['Bravo']['Charlie'] == 2
+    # Bravo with Delta's: P1 Charlie (90-80 W), P2 Delta met Bravo, so Bravo plays Delta (85-85 tie)
+    assert swap['Bravo']['Delta'] == 1.5
+    assert swap['Delta']['Alpha'] == 0
+    # The diagonal is the actual record
+    for team in data['teams']:
+        assert swap[team['team']][team['team']] == team['wins']
+
+
 def test_matrix_gaps_are_null(data):
     # Only pairs that never played (and a team against itself) are null; a real
     # value such as a luck of exactly -1.0 must never be mistaken for a gap
