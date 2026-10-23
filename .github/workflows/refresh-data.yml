@@ -47,6 +47,8 @@ jobs:
           FANTRAX_COOKIE: ${{ secrets.FANTRAX_COOKIE }}
 
       - name: Commit if anything changed
+        # Also after a failed build: the seasons that did build are kept (the run still shows as failed)
+        if: ${{ !cancelled() }}
         run: |
           if [ -z "$(git status --porcelain -- stats-app/public/data)" ]; then
             echo "Data unchanged; nothing to commit."

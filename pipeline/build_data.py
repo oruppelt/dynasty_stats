@@ -27,11 +27,14 @@ season appears on the site once its first period is played. A season's file
 is only rewritten when the data changes, and its `updated_at` (the "Updated
 ..." time in the header) only moves then. That keeps the scheduled GitHub
 Action from committing when nothing is new. A source without any played games
-leaves the existing data in place.
+leaves the existing data in place, and so does a season that fails (the
+others still build; the run then exits with an error).
 """
 import argparse
 import json
 import os
+import sys
+import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -100,6 +103,7 @@ def main() -> None:
     league_ids = {s['id']: s['fantrax_league_id'] for s in config['seasons']}
     other_playoffs = {s['id'] for s in config['seasons'] if s.get('playoffs') == 'other'}
     regular_periods = {s['id']: s.get('regular_periods') for s in config['seasons']}
+    failed = []
     if args.source:
         if not args.season:
             parser.error('--source needs --season')
@@ -115,11 +119,19 @@ def main() -> None:
         if seasons and not cookie:
             parser.error('Fantrax needs FANTRAX_COOKIE (see fantrax.fetch_scores)')
         for season in seasons:
-            games, playoff_games, schedule = fantrax.load_season(league_ids[season], cookie, regular_periods[season])
-            if season in other_playoffs:
-                playoff_games = None
-            print(build(games, season_path(args.out, season), season, playoff_games, schedule))
+            # A season that fails keeps its old data; the others still build
+            try:
+                games, playoff_games, schedule = fantrax.load_season(league_ids[season], cookie, regular_periods[season])
+                if season in other_playoffs:
+                    playoff_games = None
+                print(build(games, season_path(args.out, season), season, playoff_games, schedule))
+            except Exception:
+                failed.append(season)
+                print(f'{season}: FAILED; data left as it was.', file=sys.stderr)
+                traceback.print_exc()
     write_index(config, args.out)
+    if failed:
+        sys.exit(f'Failed: {", ".join(failed)}')
 
 
 if __name__ == '__main__':

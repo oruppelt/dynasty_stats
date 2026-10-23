@@ -33,8 +33,13 @@ USER_AGENT = 'Mozilla/5.0 (dynasty-stats pipeline)'
 TIMEOUT = 60
 
 GAME_COLUMNS = [c for c in COLUMNS if c not in UNUSED_COLUMNS]
-# Columns of each period's table in the SCHEDULE view
-SCORE_COLUMNS = ('away', 'fpts', 'home', 'fpts')
+# Columns of each period's table in the SCHEDULE view. A league where the commissioner
+# adjusted scores (2023-24) has each side's adjustment and the adjusted total too; the
+# total is the score that decided the game.
+SCORE_LAYOUTS = {
+    ('away', 'fpts', 'home', 'fpts'): (0, 1, 2, 3),
+    ('away', 'fpts', 'adj', 'total', 'home', 'fpts', 'adj', 'total'): (0, 3, 4, 7),
+}
 
 
 class FantraxError(Exception):
@@ -122,10 +127,10 @@ def _games(info: dict, tables: list[dict], period_of, now: datetime | None) -> p
         if period is None or period not in ended:
             continue
         columns = tuple(cell.get('key') for cell in table.get('header', {}).get('cells', []))
-        if columns != SCORE_COLUMNS:
+        if columns not in SCORE_LAYOUTS:
             raise FantraxError(f'Period {period}: unexpected columns {columns}; the Fantrax response may have changed.')
         for row in table['rows']:
-            away, away_score, home, home_score = row['cells'][:4]
+            away, away_score, home, home_score = (row['cells'][i] for i in SCORE_LAYOUTS[columns])
             pair = frozenset((away.get('teamId'), home.get('teamId')))
             if pair not in scheduled.get(period, set()):
                 raise FantraxError(f'Period {period}: {away.get("content")} vs {home.get("content")} '
