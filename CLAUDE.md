@@ -56,6 +56,8 @@ luck), `results` (one row per team per scoring period, with `luck_to_date`:
 the team's luck through that period, from the games played so far), and
 `matchups`: the team list and four team-vs-team matrices (`all_play`, `wins`,
 `games`, `luck`).
+`form` (`pipeline/form.py`): recent top finishes and elite score per team.
+`playoffs` (`pipeline/playoffs.py`): Swiss stage, knockout, champion.
 The site reads it through `useLeagueData()` in `lib/league-data.ts` (one
 request, shared types); components never fetch on their own. The season on
 screen is `lib/selected-season.ts` (`?season=`, else the default).
@@ -82,7 +84,7 @@ JSON name their team under `Team`; every other key is a team name.
 
 ### Frontend
 - `app/page.tsx` → `components/layout/Header.tsx` (team picker) and
-  `components/Dashboard.tsx` (tabs: My Team, Recap, Standings, Season,
+  `components/Dashboard.tsx` (tabs: My Team, Recap, Standings, Form, Season,
   Points, All vs All, Luck) → `components/widgets/*`, each reading `useLeagueData()`.
 - Charts are nivo only. Both heatmaps go through `MatrixHeatmap` (stepped
   orange-blue scale from `useChartTheme().diverging`, legend, phone list

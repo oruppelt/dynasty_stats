@@ -146,7 +146,7 @@ differences from the sheet; none changes a result.
 - [x] **Team colors in the Season charts** (2026-10-23): each team's line in
   its own color, a team picker with quick picks (top 8, top 16, 17–30), and a
   logo at each line's end (as in the old `nba-fantrax/standings_path.py`).
-- [ ] **Form view**, from `fantrax_summary_app/github-deployment/notebooks/playoff_strength_analyzer.ipynb`:
+- [x] **Form view** (2026-10-23, a Form tab), from `fantrax_summary_app/github-deployment/notebooks/playoff_strength_analyzer.ipynb`:
   how often a team has a top-7 score in a period, and an "elite score" (7
   points for the period's best score down to 1 for the 7th), both weighted
   toward recent periods (x0.9 per period back), next to the all-play record.
