@@ -12,7 +12,7 @@ for/against, head-to-head matrices.
 Monorepo:
 - **`pipeline/`**: Python (pandas). Reads the Google Sheet once, computes all
   datasets, writes static JSON to `stats-app/public/data/`. No server.
-- **`stats-app/`**: Next.js 15 static export (TypeScript, Tailwind, React Query,
+- **`stats-app/`**: Next.js 16 static export (TypeScript, Tailwind 4, React Query,
   nivo). Reads `/data/league.json` at runtime.
 - **`.github/workflows/`**: `refresh-data.yml` (hourly: build data, commit if
   changed, which makes Render redeploy) and `ci.yml` (pytest + lint + build on
@@ -88,7 +88,10 @@ JSON name their team under `Team`; every other key is a team name.
   results by period, standings after each period, a period's recap.
 - Season charts go through `SeasonLines` (nivo line: every team faded, the
   viewer's and the hovered team drawn on top).
-- Tailwind scans `lib/` too, so helpers there may return class names.
+- Tailwind 4 has no config file: theme colors (`--color-*`, from the HSL
+  variables for light and `.dark`) live in `app/globals.css` under `@theme`.
+  It scans every file in the project, so helpers in `lib/` may return class names.
+- Lint is plain `eslint` with `eslint.config.mjs` (`next lint` is gone in Next 16).
 - `lib/chart-theme.ts`: `useChartTheme()`. Chart libraries can't read CSS
   variables, so charts take light/dark colors from this hook. Use it for any
   new chart; use Tailwind theme tokens (`text-foreground`, `bg-muted`, ...)
