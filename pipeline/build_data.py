@@ -7,8 +7,9 @@ Usage (from the repo root):
     python pipeline/build_data.py --source games.csv  # or a local CSV
     python pipeline/build_data.py --fantrax <league_id>  # a Fantrax league instead of the sheet
 
-Fantrax needs FANTRAX_COOKIE, a logged-in browser's cookie (see
-fantrax.fetch_scores). It is being tried out next to the sheet (ROADMAP.md).
+Fantrax is used when --fantrax or the FANTRAX_LEAGUE_ID environment variable
+(a GitHub repository variable in the Action) names a league. It needs
+FANTRAX_COOKIE, a logged-in browser's cookie (see fantrax.fetch_scores).
 
 The sheet defaults to the LEAGUE_SHEET environment variable (a sheet link or
 ID; the GitHub Action sets it from a repository variable), else the sheet in
@@ -62,8 +63,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--source', default=os.environ.get('LEAGUE_SHEET') or SHEET_ID,
                         help='sheet link, sheet ID, CSV URL or CSV file (default: $LEAGUE_SHEET, else the league sheet)')
-    parser.add_argument('--fantrax', metavar='LEAGUE_ID',
-                        help='read this Fantrax league instead of the sheet (needs $FANTRAX_COOKIE)')
+    parser.add_argument('--fantrax', metavar='LEAGUE_ID', default=os.environ.get('FANTRAX_LEAGUE_ID'),
+                        help='read this Fantrax league instead of the sheet (default: $FANTRAX_LEAGUE_ID; '
+                             'needs $FANTRAX_COOKIE)')
     parser.add_argument('--out', type=Path, default=DEFAULT_OUT, help=f'output directory (default: {DEFAULT_OUT})')
     args = parser.parse_args()
     if args.fantrax:

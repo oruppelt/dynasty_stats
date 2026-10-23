@@ -1,4 +1,4 @@
-# Rebuilds the league data from the Google Sheet and commits it when it changed.
+# Rebuilds the league data (from Fantrax, or the Google Sheet) and commits it when it changed.
 # The commit to main triggers Render to redeploy the static site.
 #
 # Run it by hand from GitHub: Actions → "Refresh league data" → "Run workflow".
@@ -30,11 +30,14 @@ jobs:
 
       - run: pip install -r pipeline/requirements.txt
 
-      - name: Build data from the sheet
+      - name: Build data from Fantrax or the sheet
         run: python pipeline/build_data.py
         env:
-          # New season: set the repository variable LEAGUE_SHEET to the new sheet's link
-          # (Settings → Secrets and variables → Actions → Variables). Unset = the sheet in league_data.py.
+          # Fantrax: the repository variable FANTRAX_LEAGUE_ID (the season's league) and the secret
+          # FANTRAX_COOKIE (a logged-in browser's cookie). Unset league ID = the sheet below.
+          FANTRAX_LEAGUE_ID: ${{ vars.FANTRAX_LEAGUE_ID }}
+          FANTRAX_COOKIE: ${{ secrets.FANTRAX_COOKIE }}
+          # Sheet: the repository variable LEAGUE_SHEET (a sheet link). Unset = the sheet in league_data.py.
           LEAGUE_SHEET: ${{ vars.LEAGUE_SHEET }}
 
       - name: Commit if anything changed

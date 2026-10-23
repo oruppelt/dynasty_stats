@@ -121,6 +121,41 @@ Auto-deploy is on by default, so every commit to `main` that touches
 
 ---
 
+## Fantrax as the data source
+
+The hourly workflow reads Fantrax instead of the sheet once these two are set
+(GitHub → repo **Settings** → **Secrets and variables** → **Actions**):
+
+1. **Secret** `FANTRAX_COOKIE`: the cookie of a browser logged in to Fantrax.
+   Fantrax's login has a reCAPTCHA, so the workflow can't log in itself.
+   - Log in to fantrax.com in Chrome and open the league.
+   - Open DevTools (⌥⌘I) → **Network**, then reload the page.
+   - Click a request named `req` → **Headers** → **Request Headers**, and
+     copy the value of `cookie`.
+   - In a terminal in the repo: `pbpaste | gh secret set FANTRAX_COOKIE`.
+     The cookie is longer than a terminal line can take, so it's read from
+     the clipboard. Then copy something else so the cookie doesn't stay on
+     the clipboard.
+2. **Variable** `FANTRAX_LEAGUE_ID`: the season's league ID (see
+   `LEAGUE.md`), e.g. `gh variable set FANTRAX_LEAGUE_ID --body lvvm6v0imqj2c9pz`.
+
+Check locally before setting them:
+`FANTRAX_COOKIE="$(pbpaste)" .venv/bin/python pipeline/fantrax_fetch.py <league_id> /tmp/fantrax`
+saves the responses and prints what the games table holds.
+
+- **A period counts once Fantrax ends it**, e.g. Thursday's period at 16:00
+  ET on Friday, not when its last game finishes. Stat corrections made later
+  are picked up by the next hourly runs.
+- **Cookie expired:** the workflow fails with "FANTRAX_COOKIE is missing or
+  has expired" and GitHub emails you. The site keeps the last good data.
+  Copy a fresh cookie and set the secret again.
+- **New season:** set `FANTRAX_LEAGUE_ID` to the new league and add it to
+  `LEAGUE.md`. Until the new league's first period ends, the site keeps the
+  previous season's data.
+- **Back to the sheet:** delete the `FANTRAX_LEAGUE_ID` variable.
+
+---
+
 ## Day to day
 
 - **Sheet updated, want it live now:** GitHub → Actions → **Refresh league
