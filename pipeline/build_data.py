@@ -5,6 +5,10 @@ Usage (from the repo root):
     python pipeline/build_data.py                     # read the league Google Sheet
     python pipeline/build_data.py --source <sheet>    # another sheet (link or ID)
     python pipeline/build_data.py --source games.csv  # or a local CSV
+    python pipeline/build_data.py --fantrax <league_id>  # a Fantrax league instead of the sheet
+
+Fantrax needs FANTRAX_COOKIE, a logged-in browser's cookie (see
+fantrax.fetch_scores). It is being tried out next to the sheet (ROADMAP.md).
 
 The sheet defaults to the LEAGUE_SHEET environment variable (a sheet link or
 ID; the GitHub Action sets it from a repository variable), else the sheet in
@@ -13,7 +17,7 @@ league_data.py. That way a new season's sheet needs no code change.
 Writes stats-app/public/data/league.json. The file is only rewritten when the
 data changes, and its `updated_at` (the "Updated ..." time in the header) only
 moves then. That keeps the scheduled GitHub Action from committing when
-nothing is new. A sheet without any played games (e.g. a new season's sheet
+nothing is new. A source without any played games (e.g. a new season's sheet
 before the first period) leaves the existing data in place.
 """
 import argparse
@@ -22,6 +26,9 @@ import os
 from datetime import datetime, timezone
 from pathlib import Path
 
+import pandas as pd
+
+import fantrax
 from league_data import SHEET_ID, compute_league, load_games, sheet_csv_url
 
 DEFAULT_OUT = Path(__file__).resolve().parent.parent / 'stats-app' / 'public' / 'data'
@@ -32,11 +39,10 @@ def to_json(data) -> str:
     return json.dumps(data, indent=2, allow_nan=False) + '\n'
 
 
-def build(source: str, out: Path) -> str:
-    """Write league.json from the sheet if its data changed. Returns what happened, for the log."""
-    games = load_games(sheet_csv_url(str(source)))
+def build(games: pd.DataFrame, out: Path) -> str:
+    """Write league.json from the played games if the data changed. Returns what happened, for the log."""
     if games.empty:
-        return 'No played games in the sheet yet; data left as it was.'
+        return 'No played games yet; data left as it was.'
 
     league = compute_league(games)
     path = out / 'league.json'
@@ -56,9 +62,18 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--source', default=os.environ.get('LEAGUE_SHEET') or SHEET_ID,
                         help='sheet link, sheet ID, CSV URL or CSV file (default: $LEAGUE_SHEET, else the league sheet)')
+    parser.add_argument('--fantrax', metavar='LEAGUE_ID',
+                        help='read this Fantrax league instead of the sheet (needs $FANTRAX_COOKIE)')
     parser.add_argument('--out', type=Path, default=DEFAULT_OUT, help=f'output directory (default: {DEFAULT_OUT})')
     args = parser.parse_args()
-    print(build(args.source, args.out))
+    if args.fantrax:
+        cookie = os.environ.get('FANTRAX_COOKIE')
+        if not cookie:
+            parser.error('--fantrax needs FANTRAX_COOKIE (see fantrax.fetch_scores)')
+        games = fantrax.load_games(args.fantrax, cookie)
+    else:
+        games = load_games(sheet_csv_url(str(args.source)))
+    print(build(games, args.out))
 
 
 if __name__ == '__main__':

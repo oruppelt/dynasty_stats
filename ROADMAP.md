@@ -58,20 +58,20 @@ Other problems:
   its patches.
 
 ### Plan
-**M0. Get scores without a person logging in (the blocker; spike first)**
+**M0. Get scores without a person logging in (the blocker)**
 
-Try these in order:
-1. **Make the league public.** Check whether the commissioner can turn on
-   public viewing in the league settings, and whether `fxpa getStandings
-   SCHEDULE` then works without a login. This needs no secrets at all.
-2. **Log in from the GitHub Action, without a browser.** Use a separate
-   Fantrax account that's a member of the league, stored in repository
-   secrets. First find out whether login works with plain `requests`.
-   Selenium in CI is the last resort: it's slow and breaks.
-3. **Save a session cookie as a secret** and refresh it by hand when it
-   expires. This is only a stopgap.
+The league can't be made public (it's a custom league), and Fantrax's login
+form needs a reCAPTCHA v3 token, so neither plain `requests` nor a script
+can log in. What's left:
+1. **A session cookie as a secret (`FANTRAX_COOKIE`).** Copy the cookie of a
+   logged-in browser and refresh it by hand when it expires. A failed run
+   says that the cookie expired and keeps the old data. How long the cookie
+   lasts decides whether this is good enough. Started 2026-10-23.
+2. **Selenium in the Action.** This is what `fantrax_summary_app` did. It's
+   slow, it breaks, and reCAPTCHA may block a headless browser in CI.
+   Only if option 1 needs refreshing too often.
 
-**M1. A small Fantrax client (`pipeline/fantrax.py`)**
+**M1. A small Fantrax client (`pipeline/fantrax.py`)**, started 2026-10-23
 - `league_info(league_id)` (public) and `schedule_scores(league_id)`
   (private, logged in), using `requests` only.
 - Save the raw responses as test fixtures. Tests run on the fixtures, not
@@ -116,8 +116,10 @@ Try these in order:
 - Update `DEPLOYMENT.md`, `CLAUDE.md` and the secrets setup.
 
 **Open questions**
-- Is the 2026-27 Fantrax league already set up, and what is its ID?
-- Can the league be made public (M0, option 1)?
+- The 2026-27 league ID. The league started on 2026-10-21; the plan is to
+  switch over after its 4th period. `9p13valdm9mimg4s` is 2025-26.
+- Earlier seasons' league IDs: these come when we design the history (M4),
+  kept in one file such as `pipeline/seasons.json`.
 - The tiebreakers marked *to confirm* in `LEAGUE.md`.
 
 ---

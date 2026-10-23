@@ -8,6 +8,12 @@ results to `stats-app/public/data/`, and Render redeploys the site.
   points for/against, head-to-head). Pure functions.
 - `build_data.py`: fetches the sheet once, runs the calculations, writes
   `league.json`. `--source` (or `LEAGUE_SHEET`) takes another sheet's link.
+- `fantrax.py`: reads a Fantrax league (schedule and scores) into the same
+  games table as the sheet. Being tried out; see `ROADMAP.md`. Scores need
+  `FANTRAX_COOKIE`, the cookie of a browser logged in to Fantrax (Fantrax's
+  login has a reCAPTCHA, so a script can't log in itself).
+- `fantrax_fetch.py`: saves a league's raw Fantrax responses and compares
+  them with the site data. For checks and test fixtures only.
 - `tests/`: pytest tests on a small hand-checked league.
 - `test.ipynb`: older exploration notebook (not used by the pipeline).
 

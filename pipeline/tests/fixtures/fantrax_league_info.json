@@ -1,0 +1,161 @@
+{
+ "leagueName": "Test League",
+ "seasonYear": 2025,
+ "teamInfo": {
+  "a1": {
+   "name": "Alpha",
+   "id": "a1",
+   "division": "X"
+  },
+  "b2": {
+   "name": "Bravo",
+   "id": "b2",
+   "division": "X"
+  },
+  "c3": {
+   "name": "Charlie ",
+   "id": "c3",
+   "division": "X"
+  },
+  "d4": {
+   "name": "Delta",
+   "id": "d4",
+   "division": "X"
+  }
+ },
+ "scoringPeriods": [
+  {
+   "number": 1,
+   "startDate": "2025-10-21T19:30:00.0-0400",
+   "endDate": "2025-10-24T18:29:59.0-0400"
+  },
+  {
+   "number": 2,
+   "startDate": "2025-10-24T18:30:00.0-0400",
+   "endDate": "2025-10-27T18:59:59.0-0400"
+  },
+  {
+   "number": 3,
+   "startDate": "2025-10-27T19:00:00.0-0400",
+   "endDate": "2025-10-31T18:59:59.0-0400"
+  },
+  {
+   "number": 4,
+   "startDate": "2025-10-31T19:00:00.0-0400",
+   "endDate": "2025-11-03T18:59:59.0-0400"
+  }
+ ],
+ "matchups": [
+  {
+   "period": 1,
+   "matchupList": [
+    {
+     "away": {
+      "name": "Alpha",
+      "id": "a1",
+      "shortName": "ALP"
+     },
+     "home": {
+      "name": "Bravo",
+      "id": "b2",
+      "shortName": "BRA"
+     }
+    },
+    {
+     "away": {
+      "name": "Charlie",
+      "id": "c3",
+      "shortName": "CHA"
+     },
+     "home": {
+      "name": "Delta",
+      "id": "d4",
+      "shortName": "DEL"
+     }
+    }
+   ]
+  },
+  {
+   "period": 2,
+   "matchupList": [
+    {
+     "away": {
+      "name": "Alpha",
+      "id": "a1",
+      "shortName": "ALP"
+     },
+     "home": {
+      "name": "Charlie",
+      "id": "c3",
+      "shortName": "CHA"
+     }
+    },
+    {
+     "away": {
+      "name": "Bravo",
+      "id": "b2",
+      "shortName": "BRA"
+     },
+     "home": {
+      "name": "Delta",
+      "id": "d4",
+      "shortName": "DEL"
+     }
+    }
+   ]
+  },
+  {
+   "period": 3,
+   "matchupList": [
+    {
+     "away": {
+      "name": "Alpha",
+      "id": "a1",
+      "shortName": "ALP"
+     },
+     "home": {
+      "name": "Delta",
+      "id": "d4",
+      "shortName": "DEL"
+     }
+    },
+    {
+     "away": {
+      "name": "Bravo",
+      "id": "b2",
+      "shortName": "BRA"
+     },
+     "home": {
+      "name": "Charlie",
+      "id": "c3",
+      "shortName": "CHA"
+     }
+    }
+   ]
+  },
+  {
+   "period": 4,
+   "matchupList": [
+    {
+     "away": {
+      "name": "Alpha",
+      "id": "a1",
+      "shortName": "ALP"
+     },
+     "home": {
+      "name": "Charlie",
+      "id": "c3",
+      "shortName": "CHA"
+     }
+    }
+   ]
+  }
+ ],
+ "playoffs": {
+  "lastRegularSeasonPeriod": 3,
+  "numPlayoffTeams": 2,
+  "firstPlayoffPeriod": 4,
+  "mergePlayoffPeriods": false,
+  "used": true
+ }
+}
