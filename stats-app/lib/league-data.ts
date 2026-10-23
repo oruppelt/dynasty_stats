@@ -117,6 +117,16 @@ export interface Form {
   teams: TeamForm[];
 }
 
+/** The season's calendar and the games still to play (from Fantrax; null for data from the sheet). */
+export interface Schedule {
+  /** Every scoring period, playoffs too; dates are YYYY-MM-DD in the league's time zone */
+  periods: { period: number; start: string; end: string }[];
+  /** The last regular-season period */
+  regular_periods: number;
+  /** Regular-season games not played yet, each once. Swiss periods appear only once Fantrax sets them. */
+  upcoming: { period: number; team: string; opponent: string }[];
+}
+
 export interface LeagueData {
   meta: {
     /** When the data last changed */
@@ -132,6 +142,7 @@ export interface LeagueData {
   form: Form;
   /** Null before the playoffs start, and for data from the sheet */
   playoffs: Playoffs | null;
+  schedule: Schedule | null;
 }
 
 /** The seasons with data, newest first, and the one the site opens on. */

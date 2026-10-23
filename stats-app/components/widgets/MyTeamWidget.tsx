@@ -7,8 +7,10 @@ import { TeamLogo } from './TeamLogo'
 import { ErrorState } from './ErrorState'
 import { LeagueData, useLeagueData } from '@/lib/league-data'
 import { formatScore, periodRecap, recapHighlights } from '@/lib/season'
+import { UpcomingGame, periodDates, upcomingGames } from '@/lib/schedule'
 import { useSelectedTeam } from '@/lib/selected-team'
 import {
+  Standing,
   computeStandings,
   formatCount,
   formatLuck,
@@ -22,6 +24,7 @@ import { cn } from '@/lib/utils'
 
 const RECENT_PERIODS = 5
 const OPPONENTS_SHOWN = 3
+const UPCOMING_SHOWN = 4
 
 function luckSentence(luck: number): string {
   const amount = Math.abs(luck).toFixed(1)
@@ -74,7 +77,14 @@ function LatestPeriod({ league, team, onOpenRecap }: {
     <Card>
       <CardHeader className="flex flex-row items-center justify-between gap-3 space-y-0 pb-2">
         <div className="space-y-1.5">
-          <CardTitle className="text-lg">Period {period}</CardTitle>
+          <CardTitle className="text-lg">
+            Period {period}
+            {periodDates(league, period) && (
+              <span className="block text-sm font-normal text-muted-foreground sm:inline sm:text-lg">
+                <span className="hidden sm:inline"> · </span>{periodDates(league, period)}
+              </span>
+            )}
+          </CardTitle>
           <CardDescription>Your latest game</CardDescription>
         </div>
         {onOpenRecap && (
@@ -105,6 +115,66 @@ function LatestPeriod({ league, team, onOpenRecap }: {
             ))}
           </ul>
         )}
+      </CardContent>
+    </Card>
+  )
+}
+
+/** The team's next games, with how often it outscores each opponent. */
+function UpNext({ league, team, games, standings }: {
+  league: LeagueData;
+  team: string;
+  games: UpcomingGame[];
+  standings: Standing[];
+}) {
+  const allPlay = league.matchups.all_play.find(r => r.Team === team)
+
+  return (
+    <Card>
+      <CardHeader className="pb-2">
+        <CardTitle className="text-lg">Up next</CardTitle>
+        <CardDescription>Your next games, and how often your score has beaten each opponent&apos;s in the same period.</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <ul className="divide-y">
+          {games.map(g => {
+            const opponent = g.opponent ? standings.find(s => s.team === g.opponent) : undefined
+            const rate = g.opponent ? allPlay?.[g.opponent] : null
+            return (
+              <li key={g.period} className="flex items-center gap-3 py-2.5 text-sm sm:text-base">
+                <div className="w-16 shrink-0 sm:w-24">
+                  <div className="font-medium tabular-nums">
+                    P{g.period}
+                    {g.now && <span className="ml-1.5 rounded bg-strong px-1 py-0.5 text-[10px] font-semibold uppercase text-white">Now</span>}
+                  </div>
+                  <div className="text-xs text-muted-foreground">{periodDates(league, g.period)}</div>
+                </div>
+                {g.opponent ? (
+                  <>
+                    <TeamLogo teamName={g.opponent} size={28} className="shrink-0" />
+                    <div className="min-w-0 flex-1">
+                      <div className="truncate font-semibold">{g.opponent}</div>
+                      {opponent && (
+                        <div className="truncate text-sm text-muted-foreground">
+                          {formatRecord(opponent.wins, opponent.losses)} · {ordinal(opponent.rank)}
+                        </div>
+                      )}
+                    </div>
+                    {typeof rate === 'number' && (
+                      <span className="shrink-0 text-right tabular-nums">
+                        <span className="font-semibold">{Math.round(rate * 100)}%</span>
+                      </span>
+                    )}
+                  </>
+                ) : (
+                  <div className="min-w-0 flex-1 text-muted-foreground">
+                    A neighbor in the standings, paired after the previous period
+                  </div>
+                )}
+              </li>
+            )
+          })}
+        </ul>
       </CardContent>
     </Card>
   )
@@ -183,6 +253,7 @@ export function MyTeamWidget({ selectedTeam, onOpenRecap }: {
   const opponents = opponentsByWinRate(league, selectedTeam)
   const easiest = opponents.slice(0, OPPONENTS_SHOWN)
   const toughest = opponents.slice(-OPPONENTS_SHOWN).reverse()
+  const upcoming = upcomingGames(league, selectedTeam, UPCOMING_SHOWN)
 
   return (
     <div className="w-full space-y-4">
@@ -202,7 +273,10 @@ export function MyTeamWidget({ selectedTeam, onOpenRecap }: {
         </CardContent>
       </Card>
 
-      <LatestPeriod league={league} team={selectedTeam} onOpenRecap={onOpenRecap} />
+      <div className={cn('grid grid-cols-1 items-start gap-4', upcoming.length > 0 && 'lg:grid-cols-2')}>
+        <LatestPeriod league={league} team={selectedTeam} onOpenRecap={onOpenRecap} />
+        {upcoming.length > 0 && <UpNext league={league} team={selectedTeam} games={upcoming} standings={standings} />}
+      </div>
 
       {/* Stat tiles */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
