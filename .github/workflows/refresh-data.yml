@@ -3,8 +3,9 @@
 # The commit to main triggers Render to redeploy the static site.
 #
 # Run it by hand from GitHub: Actions → "Refresh league data" → "Run workflow". Type a season
-# there (e.g. 2021-22) to build just that one, also a finished one: that's how a past season
-# listed in pipeline/seasons.json gets its data file.
+# there (e.g. 2021-22, or several comma-separated) to build just those, finished ones too: that's
+# how a past season listed in pipeline/seasons.json gets its data file. Only one run waits in the
+# queue at a time, so name several seasons in one run rather than starting several runs.
 name: Refresh league data
 
 on:
@@ -13,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       season:
-        description: "Only this season, e.g. 2021-22 (empty: every season still in progress)"
+        description: "Only these seasons, e.g. 2021-22 or 2020-21,2019-20 (empty: every season still in progress)"
         required: false
         default: ""
 

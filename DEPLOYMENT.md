@@ -157,13 +157,15 @@ saves the responses and prints what the games table holds.
 - **Add a past season, or rebuild a finished one:** list it in
   `pipeline/seasons.json` with `"final": true` (in date order, newest
   first), merge, then GitHub → Actions → **Refresh league data** → **Run
-  workflow**, type the season (e.g. `2021-22`) in the box and run. It builds
+  workflow**, type the season (e.g. `2021-22`, or several comma-separated) in the box and run. It builds
   just that season with the stored cookie and commits its file. Locally
   instead: `FANTRAX_COOKIE="$(pbpaste)" .venv/bin/python pipeline/build_data.py --season 2021-22`.
 - **Season notes and older formats:** a season can have `"note"` (one line
   the site shows above the tabs, e.g. a shorter regular season) and
   `"playoffs": "other"` (before today's playoff format: its playoffs aren't
   shown). Both can change at any time; the next run updates the site.
+  `"regular_periods"` overrides where Fantrax says the regular season ends
+  (2023-24); rebuild the season after changing it.
 
 ---
 

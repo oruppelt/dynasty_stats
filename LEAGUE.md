@@ -16,15 +16,19 @@ the commissioner.
   W-L-T, e.g. `21-11-1`.
 
 ## Earlier seasons
-The league is in its 9th season (2026-27), always with 30 teams. The format
-changed over the years:
-- **Before 2021: no Swiss stage.** Marked `"playoffs": "other"` in
-  `pipeline/seasons.json`: their regular-season stats are shown, their
-  playoffs aren't. The year the Swiss stage started is *to confirm*.
-- **2023:** the regular season ended after period 32, one period short
-  (the season's note says so).
-- 2026-27: the scoring settings changed slightly, so raw scores aren't fully
-  comparable with earlier seasons.
+Always 30 teams, with the same franchise names. Settings per season are in
+`pipeline/seasons.json`; the format changed over the years:
+- **2019-20:** the COVID season. 34 regular-season periods in Fantrax
+  (period 34, during the NBA's pause, has no games); the playoffs didn't
+  follow the usual format, so they aren't shown (`"playoffs": "other"`).
+- **2020-21:** a shorter season that started in December: 30 regular-season
+  periods. Playoffs before the Swiss stage (`"playoffs": "other"`).
+- **2021-22:** the first season with the Swiss stage.
+- **2023-24:** the regular season ended after period 32. Fantrax still
+  counts period 33 as regular season, but it held the first Swiss round, so
+  `"regular_periods": 32` moves it to the playoffs.
+- **2026-27:** the scoring settings changed slightly, so raw scores aren't
+  fully comparable with earlier seasons.
 - Some early seasons have games where Fantrax recorded a score of 0.
 
 ## Regular season: 33 periods
