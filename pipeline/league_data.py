@@ -14,6 +14,7 @@ import re
 import numpy as np
 import pandas as pd
 
+from form import compute_form
 from playoffs import compute_playoffs
 
 # The 2025-26 sheet, the league's data before Fantrax. build_data.py --source
@@ -212,5 +213,6 @@ def compute_league(games: pd.DataFrame, playoff_games: pd.DataFrame | None = Non
             "luck_to_date": round(float(row.LuckToDate), 2),
         } for row in results.itertuples()],
         "matchups": compute_matchups(games),
+        "form": compute_form(results),
         "playoffs": compute_playoffs(teams, playoff_games) if playoff_games is not None else None,
     }

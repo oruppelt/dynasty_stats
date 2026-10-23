@@ -298,6 +298,31 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: Wording pass before the public release (branch `ux/copy-review`)
+- My Team speaks to the viewer ("you", "your scores") instead of an unclear
+  "it" or "their": the latest game, the stat tiles, recent periods and the
+  easiest and toughest opponents.
+- "Beat 13 of 29" is explained the same way on My Team and in the Recap;
+  the recap's luckiest win and unluckiest loss say what the score beat.
+- Standings: a one-line description, with the definitions (all-play, luck,
+  PF/PA, last 5) moved into "What does this mean?".
+- Shorter descriptions on Form, Season, Points and Luck; "hover or tap".
+- Bigger key numbers: team name and record, the latest score, stat tiles and
+  recap highlights.
+
+### 2026-10-23: Form tab (branch `ux/form-view`)
+- `pipeline/form.py` (tests in `tests/test_form.py`): each period's score
+  ranks; per team the top-7 finishes, an elite score (7 points for the best
+  score down to 1 for the 7th), both weighted 0.9 per period back, and the
+  all-play rate over the last 5 periods; the form rank averages the three
+  ranks. From the `playoff_strength_analyzer` notebook. `form` block in each
+  season file (added to the frozen 2025-26 file from its own games; the rest
+  of the file rebuilt identically).
+- New Form tab after Standings: the teams by form, the score rank in each of
+  the last 8 periods (top 7 in blue), top-7 count, elite score with a bar,
+  last-5 all-play and the standings rank to compare. Phones show the ranks
+  and the elite score. The tab bar is 5 columns on phones, 9 on desktop.
+
 ### 2026-10-23: Team colors in the Season charts (branch `ux/season-team-colors`)
 - "Teams in color": quick picks (top 8, top 16, 17–30, all, none) and a chip
   per team; it applies to both Season charts and doubles as their legend.

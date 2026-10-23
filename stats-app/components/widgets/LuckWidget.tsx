@@ -42,7 +42,7 @@ export function LuckWidget({ selectedTeam }: LuckWidgetProps) {
       <CardHeader className="space-y-2">
         <CardTitle>Luck by opponent</CardTitle>
         <CardDescription>
-          Wins each team (row) took from each opponent (column), minus the wins its scores earned in those games.
+          Each team (row) against each opponent (column): the games it actually won, minus the wins its scores earned.
         </CardDescription>
         <Explainer>
           <p>
