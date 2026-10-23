@@ -163,7 +163,12 @@ def games_from_fantrax(info: dict, scores: dict, now: datetime | None = None) ->
         match = re.fullmatch(r'Scoring Period (\d+)', caption)
         return int(match.group(1)) if match and int(match.group(1)) <= last_regular else None
 
-    return _games(info, scores.get('tableList', []), period_of, now)
+    games = _games(info, scores.get('tableList', []), period_of, now)
+    # A period where every team scored 0 wasn't played (Fantrax's 2020-21 period 22): leave it out
+    # rather than count 15 ties
+    scored = (games['Score'] != 0) | (games['OppScore'] != 0)
+    played = games.loc[scored, 'Match'].unique()
+    return games[games['Match'].isin(played)].reset_index(drop=True)
 
 
 def playoff_games_from_fantrax(info: dict, playoffs: dict, now: datetime | None = None) -> pd.DataFrame:
@@ -183,18 +188,18 @@ def schedule_from_fantrax(info: dict, games: pd.DataFrame) -> dict:
     - periods: every scoring period (playoffs too) with its first and last day,
       as dates in the league's time zone.
     - regular_periods: the last regular-season period.
-    - upcoming: the scheduled regular-season games of the periods not played
-      yet (`games` has the played ones), once each as team vs opponent. Swiss
+    - upcoming: the scheduled regular-season games after the last played
+      period (`games` has the played ones), once each as team vs opponent. Swiss
       periods (LEAGUE.md) are set one at a time, so later ones aren't listed
       until Fantrax sets them.
     """
     last_regular = info['playoffs']['lastRegularSeasonPeriod']
     names = {team_id: team['name'].strip() for team_id, team in info['teamInfo'].items()}
-    played = set(games['Match'])
+    last_played = int(games['Match'].max()) if len(games) else 0
     upcoming = [
         {'period': m['period'], 'team': names[g['away']['id']], 'opponent': names[g['home']['id']]}
         for m in sorted(info['matchups'], key=lambda m: m['period'])
-        if m['period'] <= last_regular and m['period'] not in played
+        if last_played < m['period'] <= last_regular
         for g in m['matchupList'] if 'id' in g['away'] and 'id' in g['home']
     ]
     return {

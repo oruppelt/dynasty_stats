@@ -18,8 +18,9 @@ Optional per season:
 - "regular_periods": where the regular season really ended, when Fantrax's
   own setting is off (2023-24: 32; its period 33 was the first Swiss round).
 - "playoffs": "other" for a season before today's playoff format (LEAGUE.md).
-  Its playoff games are left out (playoffs is null), and the site says the
-  format was different instead of showing a wrong Swiss stage.
+  It gets no playoffs block; its playoff games are listed as played
+  (playoff_games), and the site shows them as a plain list instead of a
+  wrong Swiss stage.
 
 Writes stats-app/public/data/seasons/<season>.json, and data/seasons.json, the
 season list the site reads. The list only has the seasons with data, so a new
@@ -57,12 +58,12 @@ def season_path(out: Path, season: str) -> Path:
 
 
 def build(games: pd.DataFrame, path: Path, season: str, playoff_games: pd.DataFrame | None = None,
-          schedule: dict | None = None) -> str:
+          schedule: dict | None = None, playoff_format: str = 'swiss') -> str:
     """Write a season's data file from the played games if the data changed. Returns what happened, for the log."""
     if games.empty:
         return f'{season}: no played games yet; data left as it was.'
 
-    league = compute_league(games, playoff_games, schedule)
+    league = compute_league(games, playoff_games, schedule, playoff_format)
     league['meta'] = {'season': season, **league['meta']}
     if path.exists():
         previous = json.loads(path.read_text())
@@ -122,9 +123,8 @@ def main() -> None:
             # A season that fails keeps its old data; the others still build
             try:
                 games, playoff_games, schedule = fantrax.load_season(league_ids[season], cookie, regular_periods[season])
-                if season in other_playoffs:
-                    playoff_games = None
-                print(build(games, season_path(args.out, season), season, playoff_games, schedule))
+                playoff_format = 'other' if season in other_playoffs else 'swiss'
+                print(build(games, season_path(args.out, season), season, playoff_games, schedule, playoff_format))
             except Exception:
                 failed.append(season)
                 print(f'{season}: FAILED; data left as it was.', file=sys.stderr)
