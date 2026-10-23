@@ -192,23 +192,23 @@ def test_wrong_column_count_fails_clearly(tmp_path):
 
 
 def test_build_writes_only_when_data_changes(tmp_path):
-    assert build(FIXTURE, tmp_path).startswith('Updated')
+    assert build(load_games(FIXTURE), tmp_path).startswith('Updated')
     first = (tmp_path / 'league.json').read_text()
     assert 'updated_at' in json.loads(first)['meta']
 
-    assert build(FIXTURE, tmp_path).startswith('No changes')
+    assert build(load_games(FIXTURE), tmp_path).startswith('No changes')
     assert (tmp_path / 'league.json').read_text() == first  # same update time
 
     changed = tmp_path / 'changed.csv'
     changed.write_text(FIXTURE.read_text().replace('Alpha,60', 'Alpha,61'))
-    assert build(changed, tmp_path).startswith('Updated')
+    assert build(load_games(changed), tmp_path).startswith('Updated')
 
 
 def test_build_keeps_data_when_sheet_has_no_games(tmp_path):
     # e.g. a new season's sheet before the first period is played
-    build(FIXTURE, tmp_path)
+    build(load_games(FIXTURE), tmp_path)
     before = (tmp_path / 'league.json').read_text()
     empty = tmp_path / 'empty.csv'
     empty.write_text(FIXTURE.read_text().splitlines()[0] + '\n')
-    assert build(empty, tmp_path).startswith('No played games')
+    assert build(load_games(empty), tmp_path).startswith('No played games')
     assert (tmp_path / 'league.json').read_text() == before
