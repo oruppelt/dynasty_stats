@@ -298,6 +298,14 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: Earlier playoff formats, unplayed periods (branch `ux/earlier-playoffs`)
+- A season with an earlier playoff format shows its playoff games period by
+  period in Standings → Playoffs, instead of nothing.
+- 2022-23 and 2023-24 marked as an earlier format for now (their Swiss stage
+  ran differently, which stopped their build).
+- A period where every team scored 0 is left out (2020-21 period 22) rather
+  than counted as 15 ties.
+
 ### 2026-10-23: Past seasons 2019-20 to 2024-25 (branch `ux/add-past-seasons`)
 - Six earlier seasons in `pipeline/seasons.json`, with notes: the COVID
   season and 2020-21 (no Swiss stage: their playoffs aren't shown), 2021-22

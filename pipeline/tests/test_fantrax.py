@@ -129,6 +129,28 @@ def test_unexpected_columns_fail(info, scores):
         games_from_fantrax(info, scores, IN_PERIOD_3)
 
 
+def test_period_with_only_zero_scores_is_left_out(info, scores):
+    for row in scores['tableList'][1]['rows']:  # period 2
+        row['cells'][1]['content'] = row['cells'][3]['content'] = '0'
+    games = games_from_fantrax(info, scores, IN_PERIOD_3)
+    assert list(games['Match']) == [1, 1]
+
+
+def test_single_zero_score_counts(info, scores):
+    scores['tableList'][1]['rows'][0]['cells'][1]['content'] = '0'
+    assert list(games_from_fantrax(info, scores, IN_PERIOD_3)['Match']) == [1, 1, 2, 2]
+
+
+def test_earlier_playoff_format_lists_the_games(info, scores):
+    games = games_from_fantrax(info, scores, SEASON_OVER)
+    playoffs = playoff_games_from_fantrax(info, json.loads((FIXTURES / 'fantrax_playoffs.json').read_text()), SEASON_OVER)
+    league = compute_league(games, playoffs, playoff_format='other')
+    assert league['playoffs'] is None
+    assert league['playoff_games'] == [
+        {'period': 4, 'team': 'Alpha', 'score': 150.0, 'opponent': 'Charlie', 'opp_score': 140.0}]
+    assert 'playoff_games' not in compute_league(games, playoffs)  # today's format: the playoffs block
+
+
 def test_no_played_games_gives_empty_table(info, scores):
     games = games_from_fantrax(info, scores, datetime(2025, 10, 22, tzinfo=timezone.utc))
     assert games.empty

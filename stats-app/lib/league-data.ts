@@ -186,6 +186,8 @@ export interface LeagueData {
   records: Records;
   /** Null before the playoffs start, and for data from the sheet */
   playoffs: Playoffs | null;
+  /** Only for a season with an earlier playoff format (no playoffs block): its playoff games as played */
+  playoff_games?: (PlayoffGame & { period: number })[];
   schedule: Schedule | null;
 }
 

@@ -20,10 +20,17 @@ Always 30 teams, with the same franchise names. Settings per season are in
 `pipeline/seasons.json`; the format changed over the years:
 - **2019-20:** the COVID season. 34 regular-season periods in Fantrax
   (period 34, during the NBA's pause, has no games); the playoffs didn't
-  follow the usual format, so they aren't shown (`"playoffs": "other"`).
+  follow the usual format (`"playoffs": "other"`).
+- A season marked `"playoffs": "other"` lists its playoff games period by
+  period (`playoff_games`) instead of the Swiss board and bracket.
 - **2020-21:** a shorter season that started in December: 30 regular-season
-  periods. Playoffs before the Swiss stage (`"playoffs": "other"`).
+  periods. Playoffs before the Swiss stage (`"playoffs": "other"`). In
+  period 22 Fantrax recorded 0 for every team; a period where nobody scored
+  is left out (`fantrax.games_from_fantrax`).
 - **2021-22:** the first season with the Swiss stage.
+- **2022-23 and 2023-24:** the Swiss stage worked differently (four rounds
+  of 8 games, then 6; *to check* from their games). Marked
+  `"playoffs": "other"` for now: their playoff games are listed, not drawn.
 - **2023-24:** the regular season ended after period 32. Fantrax still
   counts period 33 as regular season, but it held the first Swiss round, so
   `"regular_periods": 32` moves it to the playoffs.

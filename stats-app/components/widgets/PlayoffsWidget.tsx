@@ -220,6 +220,60 @@ function SwissRounds({ playoffs, selectedTeam }: { playoffs: Playoffs; selectedT
   )
 }
 
+/** A season before today's format: its playoff games, period by period, the latest first. */
+function EarlierPlayoffs({ season, games, selectedTeam }: {
+  season: string;
+  games: (PlayoffGame & { period: number })[];
+  selectedTeam: string;
+}) {
+  const periods = [...new Set(games.map(g => g.period))].sort((a, b) => b - a)
+  return (
+    <div className="w-full space-y-4">
+      <Card>
+        <CardHeader className="space-y-2">
+          <CardTitle>Playoffs</CardTitle>
+          <CardDescription>
+            {season} used a different playoff format from today&apos;s, so there&apos;s no Swiss board or bracket.
+            {periods.length > 0 ? ' These are its playoff games, the last period first.' : ' Fantrax has no playoff games for it.'}
+          </CardDescription>
+        </CardHeader>
+      </Card>
+      {periods.length > 0 && (
+        <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2">
+          {periods.map(period => (
+            <Card key={period}>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-base">Period {period}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="divide-y">
+                  {games.filter(g => g.period === period).map(g => (
+                    <li
+                      key={g.team}
+                      className={cn('space-y-1 py-2 text-sm', mine(selectedTeam, g.team, g.opponent) && '-mx-2 rounded-md bg-muted px-2')}
+                    >
+                      {[
+                        { team: g.team, score: g.score, won: g.score > g.opp_score },
+                        { team: g.opponent, score: g.opp_score, won: g.opp_score > g.score },
+                      ].map(side => (
+                        <div key={side.team} className={cn('flex items-center gap-2', !side.won && 'text-muted-foreground')}>
+                          <TeamLogo teamName={side.team} size={20} className="shrink-0" />
+                          <span className={cn('min-w-0 flex-1 truncate', side.won && 'font-semibold')}>{side.team}</span>
+                          <span className={cn('tabular-nums', side.won && 'font-semibold')}>{formatScore(side.score)}</span>
+                        </div>
+                      ))}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
 export function PlayoffsWidget({ selectedTeam }: { selectedTeam: string }) {
   const { data: league, isLoading, error } = useLeagueData()
   const seasonInfo = useSeasonInfo()
@@ -228,16 +282,17 @@ export function PlayoffsWidget({ selectedTeam }: { selectedTeam: string }) {
   if (error || !league) return <ErrorState />
 
   const { playoffs } = league
+  if (!playoffs && seasonInfo?.playoffs === 'other') {
+    return <EarlierPlayoffs season={league.meta.season} games={league.playoff_games ?? []} selectedTeam={selectedTeam} />
+  }
   if (!playoffs) {
     return (
       <Card>
         <CardHeader className="space-y-2">
           <CardTitle>Playoffs</CardTitle>
           <CardDescription>
-            {seasonInfo?.playoffs === 'other'
-              ? `${league.meta.season} used an earlier playoff format, before the Swiss stage, so its playoffs aren't shown here.`
-              : `The playoffs start after the regular season. The top 16 play a Swiss stage, then the 8 teams
-            through play a knockout, best of 3 periods per round.`}
+            The playoffs start after the regular season. The top 16 play a Swiss stage, then the 8 teams
+            through play a knockout, best of 3 periods per round.
           </CardDescription>
         </CardHeader>
       </Card>

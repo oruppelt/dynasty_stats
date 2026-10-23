@@ -215,20 +215,22 @@ def compute_teams(results: pd.DataFrame, luck: dict[str, float]) -> list[dict]:
 
 
 def compute_league(games: pd.DataFrame, playoff_games: pd.DataFrame | None = None,
-                   schedule: dict | None = None) -> dict:
+                   schedule: dict | None = None, playoff_format: str = 'swiss') -> dict:
     """The site's whole payload (a season's file), apart from the update time.
 
     `games` is the regular season, which all the stats cover. `playoff_games`
     (same table; Fantrax only, the sheet has none) only feed the playoffs block.
     `schedule` (period dates and games to come, fantrax.schedule_from_fantrax)
-    is passed through as it is; the sheet has none.
+    is passed through as it is; the sheet has none. With `playoff_format`
+    "other" (a season before today's format, LEAGUE.md), there's no playoffs
+    block; the playoff games are listed as they were played (`playoff_games`).
     """
     results = compute_results(games).merge(compute_luck_to_date(games), on=['Match', 'Team'], how='left')
     full = _both_sides(games)
     luck = _luck_matrix(full).sum(axis=1).to_dict()
     teams = compute_teams(results, luck)
 
-    return {
+    league = {
         "meta": {
             "games": len(games),
             "latest_period": int(games['Match'].max()),
@@ -248,6 +250,16 @@ def compute_league(games: pd.DataFrame, playoff_games: pd.DataFrame | None = Non
         "matchups": compute_matchups(games),
         "form": compute_form(results),
         "records": compute_records(results),
-        "playoffs": compute_playoffs(teams, playoff_games) if playoff_games is not None else None,
+        "playoffs": (compute_playoffs(teams, playoff_games)
+                     if playoff_games is not None and playoff_format == 'swiss' else None),
         "schedule": schedule,
     }
+    if playoff_format == 'other' and playoff_games is not None:
+        league["playoff_games"] = [{
+            "period": int(g.Match),
+            "team": g.Team,
+            "score": float(g.Score),
+            "opponent": g.Opponent,
+            "opp_score": float(g.OppScore),
+        } for g in playoff_games.sort_values(['Match', 'Team']).itertuples()]
+    return league
