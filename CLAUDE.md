@@ -14,7 +14,7 @@ Monorepo:
   datasets, writes static JSON to `stats-app/public/data/`. No server.
 - **`stats-app/`**: Next.js 16 static export (TypeScript, Tailwind 4, React Query,
   nivo). Reads `/data/seasons.json` and `/data/seasons/<season>.json` at runtime.
-- **`.github/workflows/`**: `refresh-data.yml` (hourly: build data, commit if
+- **`.github/workflows/`**: `refresh-data.yml` (after each period and daily: build data, commit if
   changed, which makes Render redeploy) and `ci.yml` (pytest + lint + build on
   PRs and main).
 
@@ -48,7 +48,7 @@ the games from Fantrax (scores need the `FANTRAX_COOKIE` secret) →
 seasons with data, and the default). See `DEPLOYMENT.md` and `ROADMAP.md`.
 `load_games()` reads the old Google Sheet format (`--source`, and the tests).
 A season file is only rewritten (and `meta.updated_at` only moves) when the
-data changes, so the hourly workflow commits only real updates. A source with
+data changes, so the scheduled workflow commits only real updates. A source with
 no played games leaves the data in place.
 
 A season file: `meta` (with `season`), `teams` (season totals: W-L, all-play W-L, points,
