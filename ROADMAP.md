@@ -96,6 +96,9 @@ differences from the sheet; none changes a result.
   - `status`: complete, current or future.
 
 **M3. Schedule and playoffs in `league.json`**
+- Done 2026-10-23: the `playoffs` block (Swiss rounds and standings,
+  knockout series, champion), checked on 2025-26. Still to do: the rest of
+  the list below.
 - Add `periods` (number, dates, phase, status) and future matchups.
 - Playoff games go in their own block. All-play, luck and the standings
   stay regular-season only.

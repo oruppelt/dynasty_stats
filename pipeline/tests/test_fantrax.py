@@ -5,7 +5,8 @@ Fixtures (tests/fixtures/fantrax_*.json), 4 teams, regular season through period
     Period 1: Alpha 1,000.5 - 90 Bravo, Charlie 80 - 70 Delta
     Period 2: Alpha 60 - 95.25 Charlie, Bravo 85 - 85 Delta (tie)
     Period 3: in progress (partial and 0-0 scores)
-    Period 4: a playoff game, Alpha 150 - 140 Charlie, and one not set yet (TBD)
+    Period 4: a playoff game, Alpha 150 - 140 Charlie, and one not set yet (TBD).
+              It is in the PLAYOFFS view as "Playoffs - Round 1" (fantrax_playoffs.json).
 `now` is set inside period 3 unless a test says otherwise.
 """
 import json
@@ -14,7 +15,7 @@ from pathlib import Path
 
 import pytest
 
-from fantrax import FantraxError, check_private_response, games_from_fantrax
+from fantrax import FantraxError, check_private_response, games_from_fantrax, playoff_games_from_fantrax
 from league_data import compute_league
 
 FIXTURES = Path(__file__).parent / 'fixtures'
@@ -104,3 +105,10 @@ def test_changed_columns_fail(info, scores):
     scores['tableList'][0]['header']['cells'].reverse()
     with pytest.raises(FantraxError, match='unexpected columns'):
         games_from_fantrax(info, scores, IN_PERIOD_3)
+
+
+def test_playoff_games(info):
+    playoffs = json.loads((FIXTURES / 'fantrax_playoffs.json').read_text())
+    games = playoff_games_from_fantrax(info, playoffs, SEASON_OVER)
+    assert games[['Team', 'Score', 'Opponent', 'OppScore', 'Match']].values.tolist() == [['Alpha', 150.0, 'Charlie', 140.0, 4]]
+    assert playoff_games_from_fantrax(info, playoffs, IN_PERIOD_3).empty

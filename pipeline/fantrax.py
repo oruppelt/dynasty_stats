@@ -56,14 +56,14 @@ def fetch_league_info(league_id: str) -> dict:
     return info
 
 
-def fetch_scores(league_id: str, cookie: str) -> dict:
-    """The league schedule with scores (getStandings, view SCHEDULE).
+def fetch_scores(league_id: str, cookie: str, view: str = 'SCHEDULE') -> dict:
+    """The league schedule with scores (getStandings, view SCHEDULE; PLAYOFFS has the playoff periods).
 
     `cookie` is the Cookie header of a browser logged in to Fantrax as a member
     of the league: in the browser's developer tools, open any request to
     fantrax.com/fxpa/req and copy the value of its `cookie` request header.
     """
-    body = {'msgs': [{'method': 'getStandings', 'data': {'leagueId': league_id, 'view': 'SCHEDULE'}}]}
+    body = {'msgs': [{'method': 'getStandings', 'data': {'leagueId': league_id, 'view': view}}]}
     request = urllib.request.Request(
         f'{PRIVATE_API}?{urllib.parse.urlencode({"leagueId": league_id})}',
         data=json.dumps(body).encode(),
@@ -98,22 +98,16 @@ def _score(cell: dict) -> float:
     return float(str(cell['content']).replace(',', ''))
 
 
-def _period_number(caption: str) -> int | None:
-    match = re.fullmatch(r'Scoring Period (\d+)', caption.strip())
-    return int(match.group(1)) if match else None
-
-
-def games_from_fantrax(info: dict, scores: dict, now: datetime | None = None) -> pd.DataFrame:
-    """Played regular-season games, in the same table as league_data.load_games().
+def _games(info: dict, tables: list[dict], period_of, now: datetime | None) -> pd.DataFrame:
+    """Played games from score tables (`period_of(caption)` gives a table's period, or None to skip it).
 
     A game is played once its scoring period has ended; the period in progress
-    is left out (its scores keep changing, and unplayed games read 0-0).
-    Playoff periods are left out: the stats cover the regular season only.
-    Each game appears once, as Team (away) vs Opponent (home).
+    is left out (its scores keep changing, and unplayed games read 0-0). Every
+    game is checked against the public schedule. Each game appears once, as
+    Team (away) vs Opponent (home).
     """
     now = now or datetime.now(timezone.utc)
     names = {team_id: team['name'].strip() for team_id, team in info['teamInfo'].items()}
-    last_regular = info['playoffs']['lastRegularSeasonPeriod']
     ended = {p['number'] for p in info['scoringPeriods'] if _parse_time(p['endDate']) < now}
     # Matchups not set yet (the Swiss periods, the playoffs) are {'TBD': True} without team IDs
     scheduled = {
@@ -123,9 +117,9 @@ def games_from_fantrax(info: dict, scores: dict, now: datetime | None = None) ->
     }
 
     rows = []
-    for table in scores.get('tableList', []):
-        period = _period_number(table.get('caption', ''))
-        if period is None or period > last_regular or period not in ended:
+    for table in tables:
+        period = period_of(table.get('caption', '').strip())
+        if period is None or period not in ended:
             continue
         columns = tuple(cell.get('key') for cell in table.get('header', {}).get('cells', []))
         if columns != SCORE_COLUMNS:
@@ -156,6 +150,30 @@ def games_from_fantrax(info: dict, scores: dict, now: datetime | None = None) ->
     return games[GAME_COLUMNS].sort_values(['Match', 'Team'], ignore_index=True)
 
 
-def load_games(league_id: str, cookie: str) -> pd.DataFrame:
-    """Played regular-season games of a Fantrax league (needs a logged-in cookie)."""
-    return games_from_fantrax(fetch_league_info(league_id), fetch_scores(league_id, cookie))
+def games_from_fantrax(info: dict, scores: dict, now: datetime | None = None) -> pd.DataFrame:
+    """Played regular-season games (view SCHEDULE), in the same table as league_data.load_games()."""
+    last_regular = info['playoffs']['lastRegularSeasonPeriod']
+
+    def period_of(caption: str) -> int | None:
+        match = re.fullmatch(r'Scoring Period (\d+)', caption)
+        return int(match.group(1)) if match and int(match.group(1)) <= last_regular else None
+
+    return _games(info, scores.get('tableList', []), period_of, now)
+
+
+def playoff_games_from_fantrax(info: dict, playoffs: dict, now: datetime | None = None) -> pd.DataFrame:
+    """Played playoff games (view PLAYOFFS), in the same table. Round N is period firstPlayoffPeriod + N - 1."""
+    first = info['playoffs']['firstPlayoffPeriod']
+
+    def period_of(caption: str) -> int | None:
+        match = re.fullmatch(r'Playoffs - Round (\d+)', caption)
+        return first + int(match.group(1)) - 1 if match else None
+
+    return _games(info, playoffs.get('tableList', []), period_of, now)
+
+
+def load_season(league_id: str, cookie: str) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Played regular-season and playoff games of a Fantrax league (needs a logged-in cookie)."""
+    info = fetch_league_info(league_id)
+    return (games_from_fantrax(info, fetch_scores(league_id, cookie)),
+            playoff_games_from_fantrax(info, fetch_scores(league_id, cookie, view='PLAYOFFS')))

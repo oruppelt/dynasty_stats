@@ -26,28 +26,41 @@ the commissioner.
   standings. These matchups are set one period at a time, so they aren't
   known in advance.
 - The top 16 teams in the regular season reach the playoffs. The final
-  regular-season standings set the knockout seeds.
+  standings (win rate, then points for) set the seeds. In 2025-26 this
+  matched Fantrax's own ranking exactly.
 
 ## Playoffs, round 1: Swiss stage (16 teams, up to 5 periods)
-- Teams with the same record play each other, one game per period.
-- **3 wins:** the team goes through to the knockout round. **3 losses:** the
-  team is out.
-- That leaves 8 teams for the knockout. In 2025-26 the Swiss stage was
-  periods 34–38, with 8, 8, 8, 6 and 3 games.
-- The knockout seeds come from the regular season, not the Swiss record.
-- How a tie is broken in the Swiss stage *(to confirm)*.
+- The top 16 of the regular season, seeded by their final rank.
+- **3 wins:** through to the knockout. **3 losses:** out. That leaves 8
+  teams for the knockout.
+- Pairings, one game per period:
+  - **Round 1:** seed 1 vs 16, 2 vs 15, ..., 8 vs 9.
+  - **Later rounds:** teams with the same record play each other. Within
+    each record group, the best seed plays the worst seed.
+- In 2025-26: periods 34–38, with 8, 8, 8, 6 and 3 games.
+- How a tied game counts *(to confirm)*. The pipeline counts it as neither a
+  win nor a loss.
 
 ## Playoffs, round 2: knockout (8 teams)
-- Quarterfinal, semifinal, final. Seeds are from the regular season.
-- Each round looks like a **best-of-3 series of periods** *(to confirm)*. In
-  2025-26:
-  - Quarterfinals: periods 39–41. Two of the series needed the third period.
+- **Bracket:** rank the 8 qualifiers by their regular-season seed (the
+  Swiss record doesn't matter), then play 1v8, 2v7, 3v6 and 4v5.
+- **Semifinals:** the winner of 1v8 plays the winner of 4v5, and the winner
+  of 2v7 plays the winner of 3v6. Then the final.
+- **Every round is a best-of-3 series of periods.** A third period is played
+  only when the series is 1–1.
+- 2025-26:
+  - Quarterfinals: periods 39–41. Miami beat the Knicks and New Orleans
+    beat Indiana, both 2–1.
   - Semifinals: periods 42–43.
-  - Final: periods 44–45.
-- The tiebreaker inside a series *(to confirm)*.
+  - Final: periods 44–45, Miami beat Oklahoma City 2–0.
+  - **Champion: Miami Heat** (seed 3).
+- How a tied game in a series counts *(to confirm)*. The pipeline counts it
+  as neither a win nor a loss.
 
 ## In the data
 - Our stats (all-play, luck, records) cover the **regular season only**,
-  periods 1–33. Playoff games are kept separate.
+  periods 1–33. Playoff games go to the `playoffs` block of `league.json`
+  (`pipeline/playoffs.py`). In Fantrax they're in the PLAYOFFS view:
+  "Playoffs - Round N" is period 33 + N.
 - Fantrax's own playoff setting (`numPlayoffTeams: 4`, first playoff period
   34) doesn't describe the real format. Use the matchups, not that setting.

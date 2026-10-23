@@ -51,6 +51,44 @@ export interface PeriodResult {
   luck_to_date: number;
 }
 
+/** A playoff game, as played (Team was the away side in Fantrax). */
+export interface PlayoffGame {
+  team: string;
+  score: number;
+  opponent: string;
+  opp_score: number;
+}
+
+export interface SwissStanding {
+  team: string;
+  /** Regular-season rank */
+  seed: number;
+  wins: number;
+  losses: number;
+  /** 3 wins: through to the knockout; 3 losses: out */
+  status: 'through' | 'out' | 'playing';
+}
+
+/** A best-of-3 knockout series; the better seed first in every pair. */
+export interface Series {
+  teams: [string, string];
+  seeds: [number, number];
+  wins: [number, number];
+  winner: string | null;
+  games: (PlayoffGame & { period: number })[];
+}
+
+/** The playoffs (LEAGUE.md): a Swiss stage, then a seeded knockout. */
+export interface Playoffs {
+  swiss: {
+    rounds: { round: number; period: number; games: PlayoffGame[] }[];
+    /** Best record first */
+    standings: SwissStanding[];
+  };
+  knockout: { round: number; name: string; series: Series[] }[];
+  champion: string | null;
+}
+
 export interface LeagueData {
   meta: {
     /** When the data last changed */
@@ -61,6 +99,8 @@ export interface LeagueData {
   teams: TeamSummary[];
   results: PeriodResult[];
   matchups: Matchups;
+  /** Null before the playoffs start, and for data from the sheet */
+  playoffs: Playoffs | null;
 }
 
 async function fetchLeagueData(): Promise<LeagueData> {
