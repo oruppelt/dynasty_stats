@@ -2,12 +2,15 @@
 
 import { ThemeToggle } from "@/components/theme-toggle"
 import { TeamLogo } from "@/components/widgets/TeamLogo"
-import { useLeagueData } from "@/lib/league-data"
+import { useLeagueData, useSeasons } from "@/lib/league-data"
+import { useSelectedSeason } from "@/lib/selected-season"
 import { useSelectedTeam } from "@/lib/selected-team"
 import { BarChart3 } from "lucide-react"
 
 export function Header() {
   const { data: league } = useLeagueData()
+  const { data: seasons } = useSeasons()
+  const setSeason = useSelectedSeason(s => s.setSeason)
   const { team, ready, setTeam } = useSelectedTeam()
 
   // Set by pipeline/build_data.py whenever the league data changes
@@ -28,10 +31,31 @@ export function Header() {
               <span className="hidden sm:inline">NBA Fantasy Stats</span>
             </div>
             {league && (
-              <p className="truncate text-xs text-muted-foreground" title="When the league data last changed">
-                Through period {league.meta.latest_period}
-                <span className="hidden sm:inline"> · Updated {updatedAt}</span>
-              </p>
+              <div className="flex items-center text-xs text-muted-foreground">
+                {seasons && seasons.seasons.length > 1 ? (
+                  <label className="shrink-0">
+                    <span className="sr-only">Season</span>
+                    <select
+                      value={league.meta.season}
+                      onChange={(e) => setSeason(e.target.value, seasons.default)}
+                      className="-ml-1 rounded-sm bg-transparent px-0.5 font-medium text-foreground focus:outline-hidden focus:ring-2 focus:ring-ring"
+                    >
+                      {seasons.seasons.map(s => <option key={s.id} value={s.id}>{s.id}</option>)}
+                    </select>
+                  </label>
+                ) : (
+                  <span className="shrink-0">{league.meta.season}</span>
+                )}
+                <span className="truncate" title="When the league data last changed">
+                  &nbsp;· {league.playoffs?.champion ? 'Final' : (
+                    <>
+                      <span className="sm:hidden">Period {league.meta.latest_period}</span>
+                      <span className="hidden sm:inline">Through period {league.meta.latest_period}</span>
+                    </>
+                  )}
+                  <span className="hidden sm:inline"> · Updated {updatedAt}</span>
+                </span>
+              </div>
             )}
           </div>
         </div>

@@ -1,6 +1,8 @@
-import { useQuery } from '@tanstack/react-query'
+import { keepPreviousData, useQuery, useQueryClient } from '@tanstack/react-query'
+import { useSelectedSeason } from './selected-season'
 
-// Shapes of /data/league.json, written by pipeline/build_data.py.
+// Shapes of the data files written by pipeline/build_data.py: /data/seasons.json
+// (the season list) and /data/seasons/<season>.json (one season's data).
 
 /** A matrix row: the team under `Team`, then one value per opponent (null = never played, or the team itself). */
 export interface MatrixRow {
@@ -93,6 +95,8 @@ export interface LeagueData {
   meta: {
     /** When the data last changed */
     updated_at: string;
+    /** e.g. "2025-26" */
+    season: string;
     games: number;
     latest_period: number;
   };
@@ -103,13 +107,39 @@ export interface LeagueData {
   playoffs: Playoffs | null;
 }
 
-async function fetchLeagueData(): Promise<LeagueData> {
-  const response = await fetch('/data/league.json')
+/** The seasons with data, newest first, and the one the site opens on. */
+export interface SeasonIndex {
+  default: string;
+  seasons: { id: string }[];
+}
+
+async function fetchJson<T>(url: string): Promise<T> {
+  const response = await fetch(url)
   if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`)
   return response.json()
 }
 
-/** The whole league dataset; one request shared by every component. */
+const seasonsQuery = { queryKey: ['seasons'], queryFn: () => fetchJson<SeasonIndex>('/data/seasons.json') }
+
+export function useSeasons() {
+  return useQuery(seasonsQuery)
+}
+
+/**
+ * The selected season's dataset (the default season until one is picked, or
+ * when the picked one isn't in the list); one request shared by every
+ * component. While another season loads, the previous one stays on screen.
+ */
 export function useLeagueData() {
-  return useQuery({ queryKey: ['league'], queryFn: fetchLeagueData })
+  const client = useQueryClient()
+  const season = useSelectedSeason(s => s.season)
+  return useQuery({
+    queryKey: ['league', season],
+    queryFn: async () => {
+      const index = await client.ensureQueryData(seasonsQuery)
+      const id = index.seasons.some(s => s.id === season) ? season : index.default
+      return fetchJson<LeagueData>(`/data/seasons/${id}.json`)
+    },
+    placeholderData: keepPreviousData,
+  })
 }
