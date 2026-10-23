@@ -35,7 +35,7 @@ Always 30 teams, with the same franchise names. Settings per season are in
   pairings of the rounds after it (in 2023-24, Phoenix won period 35 but
   would have lost on the two periods added up). `"skip_playoff_periods"`
   leaves out the first one. Champions: Houston Rockets (2022-23),
-  Sacramento Kings (2023-24) *(to confirm)*.
+  Sacramento Kings (2023-24).
 - **2023-24:** the regular season ended after period 32. Fantrax still
   counts period 33 as regular season, but it held the first Swiss round, so
   `"regular_periods": 32` moves it to the playoffs.
@@ -43,7 +43,11 @@ Always 30 teams, with the same franchise names. Settings per season are in
   adjusted total, the score that decided each game.
 - **2026-27:** the scoring settings changed slightly, so raw scores aren't
   fully comparable with earlier seasons.
-- Some early seasons have games where Fantrax recorded a score of 0.
+- Some games have a score of 0. Fantrax re-scores old games with today's
+  roster rules, so a lineup that was legal at the time can now count as
+  illegal and score 0. They're kept as they are.
+- **2018-19**, the first season, isn't included: too many of these 0s, and
+  the league has never counted it in its history.
 
 ## Regular season: 33 periods
 - **Periods 1–29: round robin.** Every team plays every other team once.
