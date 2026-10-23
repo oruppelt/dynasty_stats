@@ -271,7 +271,10 @@ Biggest new-feature opportunity and the most shareable content.
 - [x] **Share a recap** (2026-10-22): `?period=N` opens that period's recap;
   a Share button uses the phone's share sheet or copies the link.
 
-Idea for later: a recap card on My Team.
+- [x] **Recap card on My Team** (2026-10-23): the viewer's game in the
+  latest period, where its score ranked, any recap highlights it made (top
+  score, closest game, ...), and a "Full recap" button that opens the Recap
+  tab on that period.
 
 ---
 
@@ -294,6 +297,11 @@ Merged into Phase 2.5 (2026-10-22).
 ---
 
 ## Changelog
+
+### 2026-10-23: Recap card on My Team (branch `ux/my-team-recap-card`)
+- My Team shows the latest period under the team header: result and score,
+  the score's place that period, the recap highlights the team made, and a
+  "Full recap" button (opens the Recap tab with `?period=`).
 
 ### 2026-10-22: Recap links and cleanup (branch `ux/cleanup-period-link`)
 - `?period=` recap links and a Share button.

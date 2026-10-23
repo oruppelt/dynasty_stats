@@ -1,9 +1,12 @@
 import { useMemo } from 'react'
+import { ArrowRight } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
 import { ErrorState } from './ErrorState'
 import { LeagueData, useLeagueData } from '@/lib/league-data'
+import { formatScore, periodRecap, recapHighlights } from '@/lib/season'
 import { useSelectedTeam } from '@/lib/selected-team'
 import {
   computeStandings,
@@ -35,6 +38,76 @@ function opponentsByWinRate(league: LeagueData, team: string) {
     .filter(opponent => opponent !== team && typeof row[opponent] === 'number')
     .map(opponent => ({ opponent, rate: row[opponent] as number }))
     .sort((a, b) => b.rate - a.rate)
+}
+
+function ResultBadge({ win }: { win: number }) {
+  const result = win === 1 ? 'W' : win === 0 ? 'L' : 'T'
+  return (
+    <span
+      className={cn(
+        'w-6 shrink-0 rounded text-center text-xs font-bold leading-6 text-white',
+        result === 'W' ? 'bg-lucky' : result === 'L' ? 'bg-very-unlucky' : 'bg-neutral',
+      )}
+    >
+      {result}
+    </span>
+  )
+}
+
+/** The team's game in the latest period, its place in that period, and a way into the full recap. */
+function LatestPeriod({ league, team, onOpenRecap }: {
+  league: LeagueData;
+  team: string;
+  onOpenRecap?: (period: number) => void;
+}) {
+  const period = league.meta.latest_period
+  const rows = league.results.filter(r => r.period === period)
+  const mine = rows.find(r => r.team === team)
+  if (!mine) return null
+
+  const highlights = recapHighlights(periodRecap(rows), team)
+  const scoreRank = 1 + rows.filter(r => r.score > mine.score).length
+  const place = scoreRank === 1 ? 'The highest' : scoreRank === rows.length ? 'The lowest' : `The ${ordinal(scoreRank)}-highest`
+  const verb = mine.win === 1 ? 'Beat' : mine.win === 0 ? 'Lost to' : 'Tied'
+
+  return (
+    <Card>
+      <CardHeader className="flex flex-row items-center justify-between gap-3 space-y-0 pb-2">
+        <div className="space-y-1.5">
+          <CardTitle className="text-lg">Period {period}</CardTitle>
+          <CardDescription>The latest scoring period</CardDescription>
+        </div>
+        {onOpenRecap && (
+          <Button variant="outline" size="sm" className="h-9 shrink-0 gap-1.5" onClick={() => onOpenRecap(period)}>
+            Full recap <ArrowRight className="h-4 w-4" />
+          </Button>
+        )}
+      </CardHeader>
+      <CardContent className="space-y-3">
+        <div className="flex items-center gap-3">
+          <ResultBadge win={mine.win} />
+          <TeamLogo teamName={mine.opponent} size={28} className="shrink-0" />
+          <div className="min-w-0">
+            <div className="truncate">{verb} {mine.opponent}</div>
+            <div className="text-lg font-semibold tabular-nums">
+              {formatScore(mine.score)}–{formatScore(mine.opp_score)}
+            </div>
+          </div>
+        </div>
+        <p className="text-sm text-muted-foreground">
+          {place} score of {rows.length}; it would have
+          beaten {formatCount(mine.all_play_wins)} of {mine.all_play_wins + mine.all_play_losses} teams.
+        </p>
+        {highlights.length > 0 && (
+          <ul className="flex flex-wrap gap-2">
+            {highlights.map(h => (
+              <li key={h} className="rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium">{h}</li>
+            ))}
+          </ul>
+        )}
+      </CardContent>
+    </Card>
+  )
 }
 
 function StatTile({ label, value, detail, className }: {
@@ -83,7 +156,11 @@ function TeamChooser({ teams }: { teams: string[] }) {
   )
 }
 
-export function MyTeamWidget({ selectedTeam }: { selectedTeam: string }) {
+export function MyTeamWidget({ selectedTeam, onOpenRecap }: {
+  selectedTeam: string;
+  /** Opens the Recap tab on a period */
+  onOpenRecap?: (period: number) => void;
+}) {
   const { data: league, isLoading, error } = useLeagueData()
   const standings = useMemo(() => league ? computeStandings(league.teams) : [], [league])
 
@@ -125,6 +202,8 @@ export function MyTeamWidget({ selectedTeam }: { selectedTeam: string }) {
         </CardContent>
       </Card>
 
+      <LatestPeriod league={league} team={selectedTeam} onOpenRecap={onOpenRecap} />
+
       {/* Stat tiles */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <StatTile
@@ -160,19 +239,11 @@ export function MyTeamWidget({ selectedTeam }: { selectedTeam: string }) {
         <CardContent>
           <ul className="divide-y">
             {recent.map(r => {
-              const result = r.win === 1 ? 'W' : r.win === 0 ? 'L' : 'T'
               const others = r.all_play_wins + r.all_play_losses
               return (
                 <li key={r.period} className="flex items-center gap-3 py-2 text-sm">
                   <span className="w-8 shrink-0 text-muted-foreground tabular-nums">P{r.period}</span>
-                  <span
-                    className={cn(
-                      'w-6 shrink-0 rounded text-center text-xs font-bold leading-6 text-white',
-                      result === 'W' ? 'bg-lucky' : result === 'L' ? 'bg-very-unlucky' : 'bg-neutral',
-                    )}
-                  >
-                    {result}
-                  </span>
+                  <ResultBadge win={r.win} />
                   <div className="min-w-0 flex-1">
                     <div className="tabular-nums">
                       {r.score.toFixed(1)}–{r.opp_score.toFixed(1)}
