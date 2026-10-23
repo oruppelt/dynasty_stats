@@ -5,7 +5,7 @@ How the app runs now, and the one-time steps to set it up.
 ## How it works
 
 ```
-Fantrax ──(hourly GitHub Action)──▶ pipeline/build_data.py
+Fantrax ──(scheduled GitHub Action)──▶ pipeline/build_data.py
                                               │ writes JSON, commits only if data changed
                                               ▼
                    stats-app/public/data/seasons/<season>.json on main
@@ -33,7 +33,7 @@ Fantrax ──(hourly GitHub Action)──▶ pipeline/build_data.py
 3. Public or private:
    - **Public:** unlimited free Actions minutes. GitHub pauses scheduled
      workflows after 60 days without commits (see "Off-season" below).
-   - **Private:** 2,000 free Actions minutes/month. The hourly refresh
+   - **Private:** 2,000 free Actions minutes/month. The scheduled refresh
      uses roughly 720, so it fits.
 4. Leave **all** "Initialize this repository" options unchecked (no README,
    .gitignore or license). The repo must be empty.
@@ -97,7 +97,7 @@ write permissions** → **Save**, then run it again.
    - All seven tabs load (My Team, Recap, Standings, Season, Points, All vs All, Luck).
 
 Auto-deploy is on by default, so every commit to `main` that touches
-`stats-app/` (including the hourly data commits) redeploys the site.
+`stats-app/` (including the data commits) redeploys the site.
 
 ### Step 6: Move users over and switch off the old setup
 
@@ -123,7 +123,8 @@ Auto-deploy is on by default, so every commit to `main` that touches
 
 ## Fantrax as the data source
 
-The hourly workflow builds every season in `pipeline/seasons.json` that
+The workflow (Tuesday and Saturday early UTC, after the periods end, and
+daily at 12:17 UTC) builds every season in `pipeline/seasons.json` that
 isn't marked `"final"`, from that season's Fantrax league. It needs one
 secret (GitHub → repo **Settings** → **Secrets and variables** → **Actions**):
 
@@ -143,7 +144,10 @@ saves the responses and prints what the games table holds.
 
 - **A period counts once Fantrax ends it**, e.g. Thursday's period at 16:00
   ET on Friday, not when its last game finishes. Stat corrections made later
-  are picked up by the next hourly runs.
+  are picked up by the next run: every run re-reads all of the current
+  season's periods, and the daily run catches corrections made after a
+  period ends. To get results right away, run the workflow by hand.
+  GitHub can start scheduled runs late, or skip one when it's busy.
 - **Cookie expired:** the workflow fails with "FANTRAX_COOKIE is missing or
   has expired" and GitHub emails you. The site keeps the last good data.
   Copy a fresh cookie and set the secret again.
@@ -208,4 +212,4 @@ npm run build      # static export to out/, same as Render
 ```
 
 Running `build_data.py` locally changes the files in `stats-app/public/data/`.
-Committing them is fine, though the hourly workflow will do it anyway.
+Committing them is fine, though the scheduled workflow will do it anyway.

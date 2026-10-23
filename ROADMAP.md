@@ -121,7 +121,7 @@ differences from the sheet; none changes a result.
   the season switch); older seasons are new entries in `pipeline/seasons.json`.
 
 **M5. Switch over**, ready 2026-10-23
-- Done: the hourly workflow reads Fantrax (the secret `FANTRAX_COOKIE`)
+- Done: the scheduled workflow reads Fantrax (the secret `FANTRAX_COOKIE`)
   for the seasons in `pipeline/seasons.json`. Setup is in `DEPLOYMENT.md`.
 - To do: set `default` to 2026-27 after its 4th period.
 
@@ -143,6 +143,18 @@ differences from the sheet; none changes a result.
 - **Form and consistency.** The average over the last 4–6 periods against
   the season average, and how much a team's score varies. One or two
   Standings columns plus a line on My Team.
+
+- **Head-to-head history in coming matchups** (from `data/alltime.json`):
+  - My Team "Up next": the all-time record against each coming opponent,
+    the last meeting, any playoff meetings, and the current streak in the
+    series ("Charlotte has won the last 4").
+  - Recap: a preview of the next period, with a line per game that has a
+    story (a long streak, a playoff rematch, last season's final, a
+    lopsided or very even series).
+- **More from the career head-to-head:** each team's nemesis (worst
+  record against) and favorite opponent; the most lopsided and the most
+  even pairings (with enough games); the longest winning streak over one
+  team; playoff rematches; the closest and biggest games between two teams.
 
 ### Next up
 - [x] **Season switch** (2026-10-23): a season picker and a `?season=`
@@ -168,7 +180,11 @@ differences from the sheet; none changes a result.
     wins" (the player's points were more than the winning margin), volume
     and team strength.
 - **Playoff odds.** Simulate the rest of the season many times from each
-  team's scoring, using the real format:
+  team's scoring, using the real format. One week says little about a
+  team, so early in a season the model leans on last season's all-play
+  strength and the roster (a prior), and shifts to this season's scores as
+  they come in; or the odds only appear after ~8 periods. Either way it
+  says how sure it is. The format:
   - The round robin.
   - The Swiss neighbor periods, paired from the simulated standings.
   - The top 16.
@@ -181,6 +197,29 @@ differences from the sheet; none changes a result.
   rated by the opponents' all-play strength.
 - **Swiss stage board and knockout bracket.** Done 2026-10-23 (Playoffs tab).
 - **Past seasons.** Done 2026-10-23: the History section.
+- **What Fantrax gives us for players** (checked 2026-10-23):
+  - Public, no login: every team's roster for any period
+    (`fxea/general/getTeamRosters?leagueId=&period=`): each player's
+    status that period (active = in the lineup, reserve, minors),
+    contract (e.g. R23, REG1) and salary; and every NBA player's name,
+    team and position (`getPlayerIds?sport=NBA`). So lineups, roster moves
+    between periods (trades and pickups, without their dates) and
+    contracts need no cookie.
+  - With the login: transactions (`getTransactionDetailsHistory`: trades,
+    claims, drops with dates) and the players' fantasy points per period.
+    To check with a cookie.
+- **Player records, once we have players and their points:**
+  - Most points ever by one player in a period, in a season, and for one
+    franchise (career); the best single-period lineup.
+  - Each franchise's all-time leading scorers, and its longest-serving
+    players (most matchups started).
+  - Most matchups played, most franchises played for (journeymen), most
+    traded players.
+  - Trade results: points each side got after the trade.
+  - Points per salary dollar, best contracts, rookie contracts that paid
+    off (a dynasty league with salaries and contract types).
+  - Roster continuity: how much of a team's lineup is the same as last
+    season.
 - **Rosters (Fantrax roster data, scores need the login):**
   - Points left on the bench: the best possible lineup against the lineup
     actually used.
