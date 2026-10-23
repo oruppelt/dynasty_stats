@@ -4,6 +4,7 @@ Build the static league data files that the site serves.
 Usage (from the repo root):
     python pipeline/build_data.py                    # every season still in progress, from Fantrax
     python pipeline/build_data.py --season 2025-26   # one season (a finished one too)
+    python pipeline/build_data.py --season 2020-21,2019-20   # several
     python pipeline/build_data.py --season test --source games.csv  # a CSV or Google Sheet instead
 
 The seasons, their Fantrax league IDs and the season the site opens on are in
@@ -88,7 +89,8 @@ def write_index(config: dict, out: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--season', help='build only this season (default: every season not marked final)')
+    parser.add_argument('--season', help='build only this season, or several comma-separated '
+                                         '(default: every season not marked final)')
     parser.add_argument('--source', help='read the games from this sheet link, sheet ID, CSV URL or CSV file '
                                          'instead of Fantrax (needs --season)')
     parser.add_argument('--out', type=Path, default=DEFAULT_OUT, help=f'output directory (default: {DEFAULT_OUT})')
@@ -103,9 +105,12 @@ def main() -> None:
             parser.error('--source needs --season')
         print(build(load_games(sheet_csv_url(args.source)), season_path(args.out, args.season), args.season))
     else:
-        if args.season and args.season not in league_ids:
-            parser.error(f'{args.season} is not in {SEASONS_CONFIG.name}')
-        seasons = [args.season] if args.season else [s['id'] for s in config['seasons'] if not s.get('final')]
+        # --season takes one season or several, comma-separated
+        named = [s.strip() for s in args.season.split(',') if s.strip()] if args.season else []
+        for season in named:
+            if season not in league_ids:
+                parser.error(f'{season} is not in {SEASONS_CONFIG.name}')
+        seasons = named or [s['id'] for s in config['seasons'] if not s.get('final')]
         cookie = os.environ.get('FANTRAX_COOKIE')
         if seasons and not cookie:
             parser.error('Fantrax needs FANTRAX_COOKIE (see fantrax.fetch_scores)')
