@@ -1,0 +1,160 @@
+# Roadmap
+
+Plans after the UX overhaul (`UX_PLAN.md`, finished 2026-10-23). League rules
+are in `LEAGUE.md`.
+
+1. **Move the data source from the Google Sheet to Fantrax.** This is the
+   big project and the next one.
+2. **New features.** Some work with today's data; others need the Fantrax
+   data (schedule, playoffs, past seasons, rosters).
+
+---
+
+## 1. Migration: Google Sheet → Fantrax
+
+### What we have now
+- `pipeline/league_data.py` reads a Google Sheet that the commissioner fills
+  in by hand. It has one row per game and is turned into `league.json` with
+  pandas.
+- The sheet has only played games: no future schedule, no dates, no
+  playoffs, and one season per sheet. The 2025-26 sheet stops at period 32;
+  Fantrax has 33 regular periods plus playoffs.
+
+### What `fantrax_summary_app` taught us
+That project (`~/Documents/Projects/fantrax_summary_app`, never committed)
+used the unofficial `fantraxapi` 1.0.1 library and patched it in three
+places:
+
+| Problem | Cause | How it was patched |
+|---|---|---|
+| Standings crash on `int("8.5")` | Ties give half wins and fractional games back | `site-packages/fantraxapi/objs/standings.py` edited in place (lost on reinstall). Also two runtime patches, one of which replaced the built-in `int` |
+| `League()` fails on start | Period keys like `21 - Oct 23` don't match the expected `Oct 21` | `reset_info` replaced (`utils.py`) |
+| Playoff results raise `KeyError: slice(1, None)` | One view returns a dict, not a list | `scoring_period_results` replaced |
+
+Other problems:
+- **Login needs Selenium:** a headless Chrome logs in with your password and
+  saves the cookies.
+- **Unplayed matchups show as 0–0.** A naive reader counts them as ties.
+
+### What I checked (2026-10-23)
+- **Fantrax has two APIs.**
+  - **`/fxea/general/*` is public.** No login is needed.
+    - `getLeagueInfo` has every matchup for all 48 periods (including the
+      playoffs), the period dates, team IDs, short names and divisions, the
+      scoring settings and a `leagueHistoryId` (`4iv56wzlmqj2c9qw`).
+    - `getStandings` has season totals.
+    - `getTeamRosters?period=N` has rosters, without points.
+    - **It has no scores for each game.**
+  - **`/fxpa/req` is the private API the Fantrax website uses.**
+    `getStandings` with `view=SCHEDULE` returns the score of every game.
+    For this league it answers `WARNING_NOT_LOGGED_IN` without a login.
+- **The data agrees with the sheet.** I compared the 2025-26 Fantrax export
+  (periods 1–27) with the sheet: every matchup matches. 10 games have
+  slightly different scores (by 0.5 to 4.75 points); those are stat
+  corrections. None of them changes who won.
+- **We don't need Fantrax's standings.** The tie problem is in Fantrax's
+  W-L parsing, and we work out records ourselves from the scores. A small
+  client of our own for the 2–3 calls we use avoids the library and all of
+  its patches.
+
+### Plan
+**M0. Get scores without a person logging in (the blocker; spike first)**
+
+Try these in order:
+1. **Make the league public.** Check whether the commissioner can turn on
+   public viewing in the league settings, and whether `fxpa getStandings
+   SCHEDULE` then works without a login. This needs no secrets at all.
+2. **Log in from the GitHub Action, without a browser.** Use a separate
+   Fantrax account that's a member of the league, stored in repository
+   secrets. First find out whether login works with plain `requests`.
+   Selenium in CI is the last resort: it's slow and breaks.
+3. **Save a session cookie as a secret** and refresh it by hand when it
+   expires. This is only a stopgap.
+
+**M1. A small Fantrax client (`pipeline/fantrax.py`)**
+- `league_info(league_id)` (public) and `schedule_scores(league_id)`
+  (private, logged in), using `requests` only.
+- Save the raw responses as test fixtures. Tests run on the fixtures, not
+  on the network.
+- Fantrax responses change without notice, so check their shape and fail
+  with a clear message. A failed run leaves the old data in place, as the
+  sheet does today.
+
+**M2. A games table from Fantrax**
+- Build the same table that `load_games()` returns, so `compute_league()`
+  stays as it is.
+- New columns:
+  - Team IDs.
+  - Period start and end dates.
+  - `phase`: `regular`, `swiss` or `knockout`, with rules from `LEAGUE.md`.
+  - `status`: complete, current or future.
+- Only complete games count. That avoids the false 0–0 ties.
+- A one-off diff report against the sheet. Fantrax's scores win, because
+  they include the stat corrections.
+
+**M3. Schedule and playoffs in `league.json`**
+- Add `periods` (number, dates, phase, status) and future matchups.
+- Playoff games go in their own block. All-play, luck and the standings
+  stay regular-season only.
+- The site: show the period dates, and show "not played yet" for future
+  games.
+
+**M4. Past seasons**
+- Find earlier seasons' league IDs. The Fantrax league history page has
+  them, and `leagueHistoryId` may link them through the API (to check).
+  Otherwise list them by hand in `pipeline/seasons.json`.
+- Match teams across seasons by franchise name. Fantrax team IDs change
+  with each new league (to check).
+- Files: `data/seasons/<year>.json` plus a small `data/index.json`. The
+  site gets a season picker; the current season stays the default.
+
+**M5. Switch over**
+- The hourly workflow reads Fantrax, with the league ID in a repository
+  variable (as `LEAGUE_SHEET` is today).
+- Keep the sheet reader for one season behind `--source sheet` as a
+  fallback, then remove it.
+- Update `DEPLOYMENT.md`, `CLAUDE.md` and the secrets setup.
+
+**Open questions**
+- Is the 2026-27 Fantrax league already set up, and what is its ID?
+- Can the league be made public (M0, option 1)?
+- The tiebreakers marked *to confirm* in `LEAGUE.md`.
+
+---
+
+## 2. Features
+
+### With today's data (no migration needed)
+- **Schedule swap ("what if").** A team's record had it played another
+  team's schedule. Shown as a grid, or a "pick a schedule" box on My Team.
+- **Rivalry view.** Two teams: every game between them, the head-to-head
+  record, the average margin, and how often each wins on scores alone.
+- **Record book.** Season highs and lows, win and loss streaks, the biggest
+  blowouts, the most points in a loss, and the unluckiest losses all season.
+- **Form and consistency.** The average over the last 4–6 periods against
+  the season average, and how much a team's score varies. One or two
+  Standings columns plus a line on My Team.
+
+### Needs Fantrax (after M2–M4)
+- **Playoff odds.** Simulate the rest of the season many times from each
+  team's scoring, using the real format:
+  - The round robin.
+  - The Swiss neighbor periods, paired from the simulated standings.
+  - The top 16.
+  - The 3-wins / 3-losses Swiss stage.
+  - The seeded knockout.
+
+  Shows each team's chance to make the top 16, reach the knockout and win
+  the title, and how those chances moved after each period.
+- **Strength of the remaining schedule.** The rest of a team's round robin,
+  rated by the opponents' all-play strength.
+- **Swiss stage board.** Live 3-0 / 2-1 / ... groups with who has gone
+  through and who is out, then the knockout bracket.
+- **Past seasons.** Champions, all-time records and franchise history,
+  career head-to-head, and the record book across seasons.
+- **Rosters (Fantrax roster data, scores need the login):**
+  - Points left on the bench: the best possible lineup against the lineup
+    actually used.
+  - Each player's share of a team's points.
+  - Season MVPs.
+  - Trades and other transactions.
