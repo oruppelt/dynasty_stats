@@ -6,8 +6,12 @@ the commissioner.
 
 ## Basics
 - 30 teams, one per NBA franchise name (Fantrax league "Ligue des
-  telegramistes", 2025-26 league ID `9p13valdm9mimg4s`). Each Fantrax season
-  is a new league with a new ID.
+  telegramistes"). Each Fantrax season is a new league with a new ID:
+
+  | Season | Fantrax league ID |
+  |---|---|
+  | 2026-27 | `lvvm6v0imqj2c9pz` |
+  | 2025-26 | `9p13valdm9mimg4s` |
 - Head-to-head points league. Fantrax also lists six divisions, but they
   don't affect the schedule or seeding *(to confirm)*.
 - A **scoring period** is half a week: Mon–Thu and Fri–Sun. Around the

@@ -116,8 +116,7 @@ can log in. What's left:
 - Update `DEPLOYMENT.md`, `CLAUDE.md` and the secrets setup.
 
 **Open questions**
-- The 2026-27 league ID. The league started on 2026-10-21; the plan is to
-  switch over after its 4th period. `9p13valdm9mimg4s` is 2025-26.
+- When to switch: after the 4th period of 2026-27 (league IDs in `LEAGUE.md`).
 - Earlier seasons' league IDs: these come when we design the history (M4),
   kept in one file such as `pipeline/seasons.json`.
 - The tiebreakers marked *to confirm* in `LEAGUE.md`.
