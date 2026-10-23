@@ -20,6 +20,8 @@ Monorepo:
 
 Deployment and one-time setup: see `DEPLOYMENT.md`.
 Product/UX roadmap and changelog: see `UX_PLAN.md` (keep its changelog updated).
+What's next (the Fantrax migration, new features): see `ROADMAP.md`.
+League format (regular season, Swiss stage, knockout): see `LEAGUE.md`.
 
 ## Commands
 

@@ -299,6 +299,10 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: Roadmap and league rules (branch `docs/roadmap-fantrax`)
+- `ROADMAP.md`: the plan to replace the Google Sheet with Fantrax data, and
+  feature ideas. `LEAGUE.md`: the league format.
+
 ### 2026-10-23: Tooling upgrade (branch `ux/tooling-upgrade`)
 - Next.js 15.5 → 16 (Turbopack builds), ESLint 8 → 9 with a flat config,
   Tailwind 3 → 4 (config moved into `globals.css`). React stays on 18.
