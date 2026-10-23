@@ -108,9 +108,13 @@ differences from the sheet; none changes a result.
   stay regular-season only.
 
 **M4. Past seasons**
-- Find earlier seasons' league IDs. The Fantrax league history page has
-  them, and `leagueHistoryId` may link them through the API (to check).
-  Otherwise list them by hand in `pipeline/seasons.json`.
+- Earlier seasons' league IDs: from the commissioner, listed by hand in
+  `pipeline/seasons.json` (the public API doesn't list a league's history).
+- Done 2026-10-23: the workflow builds one named season on demand (also a
+  finished one), and a season can have a note and `"playoffs": "other"` for
+  the format before the Swiss stage (`LEAGUE.md`, Earlier seasons).
+- Then: all-time views (standings by rate, titles, franchise history,
+  career head-to-head, the record book across seasons).
 - Match teams across seasons by franchise name. Fantrax team IDs change
   with each new league (to check).
 - Files: `data/seasons/<season>.json` plus `data/seasons.json` (done with

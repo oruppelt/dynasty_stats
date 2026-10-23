@@ -15,11 +15,11 @@ import { RivalryWidget } from "./widgets/RivalryWidget"
 import { ScheduleSwapWidget } from "./widgets/ScheduleSwapWidget"
 import { WidgetSkeleton } from "./widgets/WidgetSkeleton"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { useLeagueData } from '@/lib/league-data'
+import { useLeagueData, useSeasonInfo } from '@/lib/league-data'
 import { useInitSelectedTeam, useSelectedTeam } from '@/lib/selected-team'
 import { getUrlParam, setUrlParam } from '@/lib/url'
 import { cn } from '@/lib/utils'
-import { CalendarDays, ListOrdered, Medal, Swords, TrendingUp, User } from "lucide-react"
+import { CalendarDays, Info, ListOrdered, Medal, Swords, TrendingUp, User } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 type Render = (selectedTeam: string, openRecap: (period: number) => void) => React.ReactNode
@@ -103,6 +103,7 @@ export function Dashboard() {
   const { data: league, error } = useLeagueData()
   useInitSelectedTeam(league?.matchups.teams)
   const { team: selectedTeam, ready } = useSelectedTeam()
+  const seasonInfo = useSeasonInfo()
   // Until the viewer picks a tab: their team if they have one, else the league.
   // A shared recap link (?period=) opens on the recap. (Reading the URL here is
   // safe: the tabs only render after the team list loads, well after hydration.)
@@ -136,6 +137,12 @@ export function Dashboard() {
         }}
         className="w-full"
       >
+        {seasonInfo?.note && (
+          <p className="mb-3 flex items-start gap-2 rounded-md border px-3 py-2 text-sm text-muted-foreground">
+            <Info className="mt-0.5 h-4 w-4 shrink-0" />
+            <span><span className="font-medium text-foreground">{seasonInfo.id}:</span> {seasonInfo.note}</span>
+          </p>
+        )}
         <TabsList className="mb-4 grid h-auto w-full grid-cols-6 gap-1">
           {SECTIONS.map(({ value, label, icon: Icon }) => (
             <TabsTrigger

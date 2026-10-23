@@ -298,6 +298,14 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: Ready for past seasons (branch `ux/past-seasons`)
+- The refresh workflow's Run button takes a season, to build one past
+  season with the stored cookie.
+- Per-season settings in `pipeline/seasons.json`: a note shown above the
+  tabs (e.g. a shorter regular season), and `"playoffs": "other"` for
+  seasons before the Swiss stage: the Playoffs view says the format was
+  different instead of showing a wrong Swiss board.
+
 ### 2026-10-23: Grouped tabs, Records, Rivalry, What if (branch `ux/more-views`)
 - Nine tabs become six sections, one row on phones: My Team, Recap,
   Standings (Table, Form, Playoffs), Season (Rank & luck, Points), Matchups

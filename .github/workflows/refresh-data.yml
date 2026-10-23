@@ -2,13 +2,20 @@
 # commits it when it changed.
 # The commit to main triggers Render to redeploy the static site.
 #
-# Run it by hand from GitHub: Actions → "Refresh league data" → "Run workflow".
+# Run it by hand from GitHub: Actions → "Refresh league data" → "Run workflow". Type a season
+# there (e.g. 2021-22) to build just that one, also a finished one: that's how a past season
+# listed in pipeline/seasons.json gets its data file.
 name: Refresh league data
 
 on:
   schedule:
     - cron: "17 * * * *" # hourly (off the top of the hour, when GitHub is busiest)
   workflow_dispatch:
+    inputs:
+      season:
+        description: "Only this season, e.g. 2021-22 (empty: every season still in progress)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -32,8 +39,9 @@ jobs:
       - run: pip install -r pipeline/requirements.txt
 
       - name: Build data from Fantrax
-        run: python pipeline/build_data.py
+        run: python pipeline/build_data.py ${SEASON:+--season "$SEASON"}
         env:
+          SEASON: ${{ inputs.season }}
           # A logged-in browser's Fantrax cookie (see pipeline/fantrax.py)
           FANTRAX_COOKIE: ${{ secrets.FANTRAX_COOKIE }}
 

@@ -5,7 +5,7 @@ import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
 import { ErrorState } from './ErrorState'
 import { Explainer } from './Explainer'
-import { PlayoffGame, Playoffs, Series, SwissStanding, useLeagueData } from '@/lib/league-data'
+import { PlayoffGame, Playoffs, Series, SwissStanding, useLeagueData, useSeasonInfo } from '@/lib/league-data'
 import { SwissResult, bracketOrder, swissResults } from '@/lib/playoffs'
 import { formatScore } from '@/lib/season'
 import { teamCode } from '@/lib/teams'
@@ -222,6 +222,7 @@ function SwissRounds({ playoffs, selectedTeam }: { playoffs: Playoffs; selectedT
 
 export function PlayoffsWidget({ selectedTeam }: { selectedTeam: string }) {
   const { data: league, isLoading, error } = useLeagueData()
+  const seasonInfo = useSeasonInfo()
 
   if (isLoading) return <WidgetSkeleton variant="list" />
   if (error || !league) return <ErrorState />
@@ -233,8 +234,10 @@ export function PlayoffsWidget({ selectedTeam }: { selectedTeam: string }) {
         <CardHeader className="space-y-2">
           <CardTitle>Playoffs</CardTitle>
           <CardDescription>
-            The playoffs start after the regular season. The top 16 play a Swiss stage, then the 8 teams
-            through play a knockout, best of 3 periods per round.
+            {seasonInfo?.playoffs === 'other'
+              ? `${league.meta.season} used an earlier playoff format, before the Swiss stage, so its playoffs aren't shown here.`
+              : `The playoffs start after the regular season. The top 16 play a Swiss stage, then the 8 teams
+            through play a knockout, best of 3 periods per round.`}
           </CardDescription>
         </CardHeader>
       </Card>

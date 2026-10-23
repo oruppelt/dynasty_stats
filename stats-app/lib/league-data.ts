@@ -189,10 +189,19 @@ export interface LeagueData {
   schedule: Schedule | null;
 }
 
+/** A season in the season list (pipeline/seasons.json). */
+export interface SeasonInfo {
+  id: string;
+  /** One line about the season, e.g. a shorter regular season */
+  note?: string;
+  /** "other": before today's playoff format, so there's no playoffs block */
+  playoffs?: 'other';
+}
+
 /** The seasons with data, newest first, and the one the site opens on. */
 export interface SeasonIndex {
   default: string;
-  seasons: { id: string }[];
+  seasons: SeasonInfo[];
 }
 
 async function fetchJson<T>(url: string): Promise<T> {
@@ -205,6 +214,13 @@ const seasonsQuery = { queryKey: ['seasons'], queryFn: () => fetchJson<SeasonInd
 
 export function useSeasons() {
   return useQuery(seasonsQuery)
+}
+
+/** The season on screen's entry in the season list (its note, its playoff format). */
+export function useSeasonInfo(): SeasonInfo | undefined {
+  const { data: league } = useLeagueData()
+  const { data: seasons } = useSeasons()
+  return seasons?.seasons.find(s => s.id === league?.meta.season)
 }
 
 /**
