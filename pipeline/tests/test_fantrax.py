@@ -111,6 +111,24 @@ def test_end_regular_season_early(info, scores):
     assert schedule_from_fantrax(info, regular)['regular_periods'] == 1
 
 
+def test_adjusted_scores_use_the_total(info, scores):
+    # A league with commissioner adjustments has fpts, adj and total for each side
+    for table in scores['tableList']:
+        table['header']['cells'] = [{'key': k} for k in ('away', 'fpts', 'adj', 'total', 'home', 'fpts', 'adj', 'total')]
+        for row in table['rows']:
+            away, away_score, home, home_score = row['cells'][:4]
+            row['cells'] = [away, away_score, {'content': '0'}, away_score,
+                            home, {'content': '1'}, {'content': '-1'}, home_score]
+    plain = games_from_fantrax(info, json.loads((FIXTURES / 'fantrax_scores.json').read_text()), IN_PERIOD_3)
+    assert games_from_fantrax(info, scores, IN_PERIOD_3).equals(plain)
+
+
+def test_unexpected_columns_fail(info, scores):
+    scores['tableList'][0]['header']['cells'][1]['key'] = 'points'
+    with pytest.raises(FantraxError, match='unexpected columns'):
+        games_from_fantrax(info, scores, IN_PERIOD_3)
+
+
 def test_no_played_games_gives_empty_table(info, scores):
     games = games_from_fantrax(info, scores, datetime(2025, 10, 22, tzinfo=timezone.utc))
     assert games.empty

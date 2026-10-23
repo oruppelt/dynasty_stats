@@ -27,6 +27,8 @@ Always 30 teams, with the same franchise names. Settings per season are in
 - **2023-24:** the regular season ended after period 32. Fantrax still
   counts period 33 as regular season, but it held the first Swiss round, so
   `"regular_periods": 32` moves it to the playoffs.
+  Its Fantrax scores include commissioner adjustments; the pipeline uses the
+  adjusted total, the score that decided each game.
 - **2026-27:** the scoring settings changed slightly, so raw scores aren't
   fully comparable with earlier seasons.
 - Some early seasons have games where Fantrax recorded a score of 0.
