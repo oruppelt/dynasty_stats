@@ -14,6 +14,8 @@ FANTRAX_COOKIE, a logged-in browser's cookie (see fantrax.fetch_scores).
 Optional per season:
 - "note": one line the site shows with the season (e.g. a shorter regular
   season). Goes to the season list, so it can change without a rebuild.
+- "regular_periods": where the regular season really ended, when Fantrax's
+  own setting is off (2023-24: 32; its period 33 was the first Swiss round).
 - "playoffs": "other" for a season before today's playoff format (LEAGUE.md).
   Its playoff games are left out (playoffs is null), and the site says the
   format was different instead of showing a wrong Swiss stage.
@@ -95,6 +97,7 @@ def main() -> None:
     config = json.loads(SEASONS_CONFIG.read_text())
     league_ids = {s['id']: s['fantrax_league_id'] for s in config['seasons']}
     other_playoffs = {s['id'] for s in config['seasons'] if s.get('playoffs') == 'other'}
+    regular_periods = {s['id']: s.get('regular_periods') for s in config['seasons']}
     if args.source:
         if not args.season:
             parser.error('--source needs --season')
@@ -107,7 +110,7 @@ def main() -> None:
         if seasons and not cookie:
             parser.error('Fantrax needs FANTRAX_COOKIE (see fantrax.fetch_scores)')
         for season in seasons:
-            games, playoff_games, schedule = fantrax.load_season(league_ids[season], cookie)
+            games, playoff_games, schedule = fantrax.load_season(league_ids[season], cookie, regular_periods[season])
             if season in other_playoffs:
                 playoff_games = None
             print(build(games, season_path(args.out, season), season, playoff_games, schedule))

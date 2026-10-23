@@ -16,7 +16,7 @@ from pathlib import Path
 import pytest
 
 from fantrax import (FantraxError, check_private_response, games_from_fantrax, playoff_games_from_fantrax,
-                     schedule_from_fantrax)
+                     end_regular_season, schedule_from_fantrax)
 from league_data import compute_league
 
 FIXTURES = Path(__file__).parent / 'fixtures'
@@ -100,6 +100,15 @@ def test_schedule_in_the_league_data(info, scores):
     schedule = schedule_from_fantrax(info, games)
     assert compute_league(games, schedule=schedule)['schedule'] == schedule
     assert compute_league(games)['schedule'] is None  # the sheet has no schedule
+
+
+def test_end_regular_season_early(info, scores):
+    # As if the regular season had ended after period 1: period 2 becomes the first playoff period
+    games = games_from_fantrax(info, scores, IN_PERIOD_3)
+    regular, playoffs = end_regular_season(info, games, games.iloc[0:0], 1)
+    assert list(regular['Match']) == [1, 1]
+    assert list(playoffs['Match']) == [2, 2]
+    assert schedule_from_fantrax(info, regular)['regular_periods'] == 1
 
 
 def test_no_played_games_gives_empty_table(info, scores):

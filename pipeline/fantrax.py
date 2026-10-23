@@ -200,10 +200,29 @@ def schedule_from_fantrax(info: dict, games: pd.DataFrame) -> dict:
     }
 
 
-def load_season(league_id: str, cookie: str) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
-    """Played regular-season and playoff games of a Fantrax league, and its schedule (needs a logged-in cookie)."""
+def end_regular_season(info: dict, games: pd.DataFrame, playoff_games: pd.DataFrame,
+                       regular_periods: int) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Move the games after `regular_periods` from the regular season to the playoffs.
+
+    For a season whose real regular season ended earlier than its Fantrax
+    setting says (2023-24 ended after period 32; Fantrax still counts period
+    33, which held the first Swiss round). Also lowers the setting in `info`,
+    so the schedule agrees.
+    """
+    info['playoffs']['lastRegularSeasonPeriod'] = regular_periods
+    later = games['Match'] > regular_periods
+    playoffs = pd.concat([games[later], playoff_games], ignore_index=True).sort_values(['Match', 'Team'], ignore_index=True)
+    return games[~later].reset_index(drop=True), playoffs
+
+
+def load_season(league_id: str, cookie: str, regular_periods: int | None = None) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
+    """Played regular-season and playoff games of a Fantrax league, and its schedule (needs a logged-in cookie).
+
+    `regular_periods` overrides where Fantrax says the regular season ends (see end_regular_season).
+    """
     info = fetch_league_info(league_id)
     games = games_from_fantrax(info, fetch_scores(league_id, cookie))
-    return (games,
-            playoff_games_from_fantrax(info, fetch_scores(league_id, cookie, view='PLAYOFFS')),
-            schedule_from_fantrax(info, games))
+    playoff_games = playoff_games_from_fantrax(info, fetch_scores(league_id, cookie, view='PLAYOFFS'))
+    if regular_periods:
+        games, playoff_games = end_regular_season(info, games, playoff_games, regular_periods)
+    return games, playoff_games, schedule_from_fantrax(info, games)

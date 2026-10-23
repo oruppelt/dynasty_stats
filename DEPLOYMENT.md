@@ -164,6 +164,8 @@ saves the responses and prints what the games table holds.
   the site shows above the tabs, e.g. a shorter regular season) and
   `"playoffs": "other"` (before today's playoff format: its playoffs aren't
   shown). Both can change at any time; the next run updates the site.
+  `"regular_periods"` overrides where Fantrax says the regular season ends
+  (2023-24); rebuild the season after changing it.
 
 ---
 

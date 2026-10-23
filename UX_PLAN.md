@@ -298,6 +298,13 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: Past seasons 2019-20 to 2024-25 (branch `ux/add-past-seasons`)
+- Six earlier seasons in `pipeline/seasons.json`, with notes: the COVID
+  season and 2020-21 (no Swiss stage: their playoffs aren't shown), 2021-22
+  (first Swiss stage), 2023-24 (regular season ended after period 32).
+- `"regular_periods"` for 2023-24: Fantrax counts its period 33 as regular
+  season, but it was the first Swiss round.
+
 ### 2026-10-23: Ready for past seasons (branch `ux/past-seasons`)
 - The refresh workflow's Run button takes a season, to build one past
   season with the stored cookie.
