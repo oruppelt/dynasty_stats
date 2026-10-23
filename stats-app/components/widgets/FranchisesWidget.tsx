@@ -13,7 +13,7 @@ import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
 import { ErrorState } from './ErrorState'
 import { Explainer } from './Explainer'
-import { AllTime, FINISH_LABEL, Finish, Franchise, TeamSeason, allPlayPct, formatIndex, useAllTime, winPct } from '@/lib/alltime'
+import { AllTime, FINISH_LABEL, FINISH_SHORT, Finish, Franchise, TeamSeason, allPlayPct, formatIndex, useAllTime, winPct } from '@/lib/alltime'
 import { formatLuck, formatPct, formatRecord, luckColor } from '@/lib/standings'
 import { teamCode } from '@/lib/teams'
 import { cn } from '@/lib/utils'
@@ -196,12 +196,15 @@ const FINISH_CELL: Record<Finish, string> = {
   semifinal: 'bg-strong/65 text-white',
   quarterfinal: 'bg-strong/45 text-foreground',
   swiss: 'bg-strong/20 text-foreground',
+  round1: 'bg-strong/20 text-foreground',
   playoffs: 'bg-muted-foreground/30 text-foreground', // round not known
   missed: 'text-muted-foreground',
 }
-const LEGEND: Finish[] = ['champion', 'final', 'semifinal', 'quarterfinal', 'swiss', 'playoffs', 'missed']
+const LEGEND: Finish[] = ['champion', 'final', 'semifinal', 'quarterfinal', 'swiss', 'round1', 'playoffs', 'missed']
 
-function SeasonCell({ s }: { s: TeamSeason | undefined }) {
+type GridMode = 'standings' | 'playoffs'
+
+function SeasonCell({ s, mode }: { s: TeamSeason | undefined; mode: GridMode }) {
   if (!s) return <td />
   const label = `${s.season}: ranked ${s.rank}, ${formatRecord(s.wins, s.losses)}` +
     (s.finish ? `, ${FINISH_LABEL[s.finish].toLowerCase()}` : ', in progress')
@@ -215,7 +218,9 @@ function SeasonCell({ s }: { s: TeamSeason | undefined }) {
           s.finish ? FINISH_CELL[s.finish] : 'border border-dashed text-muted-foreground',
         )}
       >
-        {s.finish === 'champion' ? <Trophy className="h-3.5 w-3.5" /> : s.rank}
+        {s.finish === 'champion'
+          ? <Trophy className="h-3.5 w-3.5" />
+          : mode === 'standings' || !s.finish ? s.rank : FINISH_SHORT[s.finish]}
       </div>
     </td>
   )
@@ -228,14 +233,35 @@ function SeasonGrid({ data, selectedTeam }: { data: AllTime; selectedTeam: strin
     .sort((a, b) => (a.average_rank ?? 99) - (b.average_rank ?? 99) || a.team.localeCompare(b.team))
     .map(f => f.team)
   const used = new Set(data.team_seasons.map(s => s.finish))
+  const [mode, setMode] = useState<GridMode>('standings')
 
   return (
     <Card className="w-full">
-      <CardHeader className="pb-2">
-        <CardTitle className="text-lg">Season by season</CardTitle>
+      <CardHeader className="space-y-2 pb-2">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <CardTitle className="text-lg">Season by season</CardTitle>
+          <div className="inline-flex self-start rounded-md bg-muted p-1 text-sm" role="group" aria-label="Show">
+            {(['standings', 'playoffs'] as const).map(m => (
+              <button
+                key={m}
+                type="button"
+                onClick={() => setMode(m)}
+                aria-pressed={mode === m}
+                className={cn(
+                  'rounded-sm px-3 py-1 font-medium capitalize text-muted-foreground',
+                  mode === m && 'bg-background text-foreground shadow-xs',
+                )}
+              >
+                {m}
+              </button>
+            ))}
+          </div>
+        </div>
         <CardDescription>
-          The regular-season rank each year, shaded by how far the team went in the playoffs. Best average
-          finish first.
+          {mode === 'standings'
+            ? 'Each team\'s final regular-season rank.'
+            : 'How far each team went in the playoffs: R1 is out in the first round (the Swiss stage since 2021-22).'}
+          {' '}Shaded by the playoff run; best average finish first.
         </CardDescription>
       </CardHeader>
       <CardContent className="px-2 sm:px-6">
@@ -267,7 +293,7 @@ function SeasonGrid({ data, selectedTeam }: { data: AllTime; selectedTeam: strin
                       <span className="hidden max-w-48 truncate sm:inline">{team}</span>
                     </div>
                   </th>
-                  {seasons.map(season => <SeasonCell key={season} s={bySeason.get(`${team}|${season}`)} />)}
+                  {seasons.map(season => <SeasonCell key={season} s={bySeason.get(`${team}|${season}`)} mode={mode} />)}
                 </tr>
               ))}
             </tbody>
@@ -279,7 +305,7 @@ function SeasonGrid({ data, selectedTeam }: { data: AllTime; selectedTeam: strin
               <span className={cn('flex h-4 w-5 items-center justify-center rounded-sm', FINISH_CELL[f], f === 'missed' && 'border')}>
                 {f === 'champion' && <Trophy className="h-3 w-3" />}
               </span>
-              {FINISH_LABEL[f]}
+              {FINISH_LABEL[f]}{FINISH_SHORT[f] && f !== 'champion' && ` (${FINISH_SHORT[f]})`}
             </li>
           ))}
           {used.has(null) && (

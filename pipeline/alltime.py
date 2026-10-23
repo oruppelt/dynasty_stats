@@ -19,9 +19,12 @@ from playoffs import seeds
 from records import compute_records
 
 TOP_N = 10
-# Best first. "playoffs": made the playoffs of an earlier format (round not known)
-FINISHES = ['champion', 'final', 'semifinal', 'quarterfinal', 'swiss', 'playoffs', 'missed']
+# Best first. "swiss": out in the Swiss stage; "round1": out in an earlier format's first knockout round;
+# "playoffs": made an earlier format's playoffs, round not known
+FINISHES = ['champion', 'final', 'semifinal', 'quarterfinal', 'swiss', 'round1', 'playoffs', 'missed']
 ROUND_FINISH = {'Final': 'final', 'Semifinals': 'semifinal', 'Quarterfinals': 'quarterfinal'}
+# An earlier format's knockout round, by the teams in it
+TEAMS_FINISH = {16: 'round1', 8: 'quarterfinal', 4: 'semifinal', 2: 'final'}
 GAME_LISTS = {
     # list: sort key of one entry, best first
     'highest_scores': lambda g: -g['score'],
@@ -67,14 +70,38 @@ def playoff_finishes(data: dict, settings: dict) -> dict[str, str] | None:
         if playoffs['champion']:
             finish[playoffs['champion']] = 'champion'
     else:
-        for g in data.get('playoff_games') or []:
-            finish[g['team']] = finish[g['opponent']] = 'playoffs'
+        finish.update(knockout_rounds(data.get('playoff_games') or []))
     # An earlier format's champion and runner-up, from seasons.json
     if settings.get('runner_up'):
         finish[settings['runner_up']] = 'final'
     if settings.get('champion'):
         finish[settings['champion']] = 'champion'
     return finish
+
+
+def knockout_rounds(games: list[dict]) -> dict[str, str]:
+    """The last round each team reached in an earlier format's knockout (best-of-3 series, 2019-20 and 2020-21).
+
+    A team's game against the opponent of its current series continues that
+    series; any other opponent starts its next one. A round is named by the
+    teams in it (16: round 1, 8: quarterfinals, ...). If the rounds don't add
+    up to a bracket, every team that played is just marked "playoffs".
+    """
+    opponent: dict[str, str] = {}
+    reached: dict[str, int] = {}  # team: its last round
+    series_rounds: dict[frozenset, int] = {}
+    for g in sorted(games, key=lambda g: g['period']):
+        a, b = g['team'], g['opponent']
+        if opponent.get(a) == b and opponent.get(b) == a:
+            continue
+        number = max(reached.get(a, 0), reached.get(b, 0)) + 1
+        opponent[a], opponent[b] = b, a
+        reached[a] = reached[b] = number
+        series_rounds[frozenset((a, b))] = number
+    in_round = {n: 2 * sum(1 for r in series_rounds.values() if r == n) for n in set(series_rounds.values())}
+    if any(teams not in TEAMS_FINISH for teams in in_round.values()):
+        return {team: 'playoffs' for team in reached}
+    return {team: TEAMS_FINISH[in_round[n]] for team, n in reached.items()}
 
 
 def _team_seasons(season: str, data: dict, finishes: dict | None) -> list[dict]:

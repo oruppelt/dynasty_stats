@@ -316,6 +316,10 @@ Merged into Phase 2.5 (2026-10-22).
   Playoffs) are now a bigger segmented control with the picked view in the
   accent color, full width on phones; the small pills were easy to miss.
 - 2020-21: Chicago champion, Charlotte runner-up; 2019-20: no champion.
+- Franchises → Season by season: a Standings / Playoffs switch. Playoffs
+  labels each season's run (champion, F, SF, QF, R1). The earlier formats'
+  rounds come from their best-of-3 series (`alltime.knockout_rounds`);
+  2019-20 stopped after the quarterfinals.
 - New `data/alltime.json` from `pipeline/alltime.py`; a season with an
   earlier format can name its `"champion"` in `seasons.json`.
 

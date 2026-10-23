@@ -4,8 +4,11 @@ import type { MatrixRow, RecordGame, Streak } from './league-data'
 // Shape of /data/alltime.json (pipeline/alltime.py): every season together.
 // Regular season only, apart from the titles and playoff finishes.
 
-/** How far a team went in a season's playoffs, best first. "playoffs": an earlier format, round not known. */
-export type Finish = 'champion' | 'final' | 'semifinal' | 'quarterfinal' | 'swiss' | 'playoffs' | 'missed'
+/**
+ * How far a team went in a season's playoffs, best first. "round1": out in an earlier format's first
+ * knockout round; "playoffs": an earlier format, round not known.
+ */
+export type Finish = 'champion' | 'final' | 'semifinal' | 'quarterfinal' | 'swiss' | 'round1' | 'playoffs' | 'missed'
 
 export const FINISH_LABEL: Record<Finish, string> = {
   champion: 'Champion',
@@ -13,6 +16,7 @@ export const FINISH_LABEL: Record<Finish, string> = {
   semifinal: 'Semifinals',
   quarterfinal: 'Quarterfinals',
   swiss: 'Out in the Swiss stage',
+  round1: 'Out in the first round',
   playoffs: 'Playoffs (earlier format)',
   missed: 'Missed the playoffs',
 }
@@ -118,5 +122,17 @@ export function useAllTime() {
 export const winPct = (s: { wins: number; games: number }) => s.wins / (s.games || 1)
 export const allPlayPct = (s: { all_play_wins: number; all_play_losses: number }) =>
   s.all_play_wins / (s.all_play_wins + s.all_play_losses || 1)
+/** A finish in a few letters, for the season grid (the champion gets a trophy instead) */
+export const FINISH_SHORT: Record<Finish, string> = {
+  champion: 'W',
+  final: 'F',
+  semifinal: 'SF',
+  quarterfinal: 'QF',
+  swiss: 'R1',
+  round1: 'R1',
+  playoffs: 'PO',
+  missed: '',
+}
+
 /** 1.104 → "1.10" */
 export const formatIndex = (index: number) => index.toFixed(2)

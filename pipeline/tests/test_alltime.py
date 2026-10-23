@@ -10,7 +10,7 @@ from pathlib import Path
 
 import pytest
 
-from alltime import compute_alltime, playoff_finishes
+from alltime import compute_alltime, knockout_rounds, playoff_finishes
 from league_data import compute_league, load_games
 
 FIXTURE = Path(__file__).parent / 'fixtures' / 'games.csv'
@@ -48,12 +48,27 @@ def test_playoff_finishes(seasons):
     assert playoff_finishes(seasons[0][1], seasons[0][2]) is None  # in progress
 
 
+def game(period, team, opponent):
+    return {'period': period, 'team': team, 'score': 1, 'opponent': opponent, 'opp_score': 2}
+
+
 def test_earlier_format_finishes():
     data = {'matchups': {'teams': ['Alpha', 'Bravo', 'Charlie']}, 'playoffs': None,
-            'playoff_games': [{'period': 3, 'team': 'Alpha', 'score': 1, 'opponent': 'Bravo', 'opp_score': 2}]}
-    assert playoff_finishes(data, {'final': True}) == {'Alpha': 'playoffs', 'Bravo': 'playoffs', 'Charlie': 'missed'}
+            'playoff_games': [game(3, 'Alpha', 'Bravo'), game(4, 'Alpha', 'Bravo')]}
+    # One series of two teams: the final
+    assert playoff_finishes(data, {'final': True}) == {'Alpha': 'final', 'Bravo': 'final', 'Charlie': 'missed'}
     assert playoff_finishes(data, {'final': True, 'champion': 'Bravo', 'runner_up': 'Alpha'}) == {
         'Alpha': 'final', 'Bravo': 'champion', 'Charlie': 'missed'}
+
+
+def test_knockout_rounds_from_series():
+    # Semifinals A-B (3 games) and C-D (2 games), then the final A-D
+    games = [game(1, 'A', 'B'), game(1, 'C', 'D'), game(2, 'A', 'B'), game(2, 'C', 'D'), game(3, 'A', 'B'),
+             game(4, 'A', 'D'), game(5, 'A', 'D')]
+    assert knockout_rounds(games) == {'A': 'final', 'B': 'semifinal', 'C': 'semifinal', 'D': 'final'}
+    # Six teams in a round don't make a bracket
+    odd = knockout_rounds([game(1, 'A', 'B'), game(1, 'C', 'D'), game(1, 'E', 'F')])
+    assert set(odd.values()) == {'playoffs'} and len(odd) == 6
 
 
 def test_season_without_a_champion(seasons):
