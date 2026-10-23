@@ -71,7 +71,7 @@ function TeamPicker({ standings, shown, onChange, selectedTeam }: {
           <div className="space-y-1.5">
             <CardTitle className="text-lg">Teams in color</CardTitle>
             <CardDescription>
-              For both charts below, in standings order. {selectedTeam ? 'Your team is always in color.' : ''}
+              Pick the teams to show in color in both charts below{selectedTeam ? '; yours always is' : ''}.
             </CardDescription>
           </div>
           <div className="flex flex-wrap gap-1.5" role="group" aria-label="Quick picks">
@@ -170,7 +170,7 @@ export function SeasonWidget({ selectedTeam }: { selectedTeam: string }) {
             <div className="space-y-1.5">
               <CardTitle>Rank over the season</CardTitle>
               <CardDescription>
-                Each line is a team&apos;s place after every period; 1st is at the top. Hover any line to see the team.{hint}
+                Each line is a team&apos;s place after every period; 1st is at the top. Hover or tap a line to see the team.{hint}
               </CardDescription>
             </div>
             <Toggle value={rankBy} onChange={setRankBy} />

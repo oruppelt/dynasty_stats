@@ -298,6 +298,18 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: Wording pass before the public release (branch `ux/copy-review`)
+- My Team speaks to the viewer ("you", "your scores") instead of an unclear
+  "it" or "their": the latest game, the stat tiles, recent periods and the
+  easiest and toughest opponents.
+- "Beat 13 of 29" is explained the same way on My Team and in the Recap;
+  the recap's luckiest win and unluckiest loss say what the score beat.
+- Standings: a one-line description, with the definitions (all-play, luck,
+  PF/PA, last 5) moved into "What does this mean?".
+- Shorter descriptions on Form, Season, Points and Luck; "hover or tap".
+- Bigger key numbers: team name and record, the latest score, stat tiles and
+  recap highlights.
+
 ### 2026-10-23: Form tab (branch `ux/form-view`)
 - `pipeline/form.py` (tests in `tests/test_form.py`): each period's score
   ranks; per team the top-7 finishes, an elite score (7 points for the best
