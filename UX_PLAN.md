@@ -299,6 +299,15 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: Playoffs tab (branches `fantrax/playoffs`, `ux/playoffs-tab`)
+- `league.json` gets a `playoffs` block from Fantrax (Swiss rounds and
+  standings, knockout series, champion; rules in `LEAGUE.md`).
+- New Playoffs tab: the champion; the knockout bracket (series score, seeds,
+  every period's score); the Swiss table (seed, a W/L chip per round with
+  the opponent and score on hover, record, through or out); the Swiss games
+  by round. The viewer's team is highlighted. Before the playoffs it shows
+  how they work.
+
 ### 2026-10-23: Fantrax data source (branches `fantrax/client`, `fantrax/switch`)
 - `pipeline/fantrax.py` reads the schedule (public API) and the scores
   (with a browser's session cookie) into the same games table as the sheet.

@@ -142,6 +142,13 @@ differences from the sheet; none changes a result.
   the season average, and how much a team's score varies. One or two
   Standings columns plus a line on My Team.
 
+### Next up
+- **Season switch** (agreed 2026-10-23, after the Playoffs tab): a season
+  picker and a `?season=` link. Finished seasons are fetched once and saved
+  as their own file, and the hourly job refreshes only the current season.
+  The real work is checking every view at both ends of a season: a finished
+  one, and a new one with only a few periods.
+
 ### Needs Fantrax (after M2–M4)
 - **Playoff odds.** Simulate the rest of the season many times from each
   team's scoring, using the real format:
@@ -155,8 +162,7 @@ differences from the sheet; none changes a result.
   the title, and how those chances moved after each period.
 - **Strength of the remaining schedule.** The rest of a team's round robin,
   rated by the opponents' all-play strength.
-- **Swiss stage board.** Live 3-0 / 2-1 / ... groups with who has gone
-  through and who is out, then the knockout bracket.
+- **Swiss stage board and knockout bracket.** Done 2026-10-23 (Playoffs tab).
 - **Past seasons.** Champions, all-time records and franchise history,
   career head-to-head, and the record book across seasons.
 - **Rosters (Fantrax roster data, scores need the login):**
