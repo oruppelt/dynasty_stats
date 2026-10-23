@@ -43,6 +43,9 @@ cd stats-app && npm run build    # static export to out/ (what Render serves)
 Google Sheet (`SHEET_ID` in `pipeline/league_data.py`, or the `LEAGUE_SHEET`
 env var / GitHub repository variable for a new season) → `load_games()` →
 `compute_league()` → `build_data.py` writes `stats-app/public/data/league.json`.
+When `FANTRAX_LEAGUE_ID` is set, `pipeline/fantrax.py` reads the Fantrax league
+instead (scores need the `FANTRAX_COOKIE` secret) and builds the same games
+table; see `DEPLOYMENT.md` and `ROADMAP.md`.
 It is only rewritten (and `meta.updated_at` only moves) when the data changes,
 so the hourly workflow commits only real updates. A sheet with no played games
 leaves the data in place.

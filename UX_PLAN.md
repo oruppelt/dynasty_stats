@@ -299,6 +299,13 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-23: Fantrax data source (branches `fantrax/client`, `fantrax/switch`)
+- `pipeline/fantrax.py` reads the schedule (public API) and the scores
+  (with a browser's session cookie) into the same games table as the sheet.
+  Checked on the real 2025-26 and 2026-27 leagues.
+- The hourly workflow uses it once `FANTRAX_LEAGUE_ID` and `FANTRAX_COOKIE`
+  are set (see `DEPLOYMENT.md`); until then it reads the sheet.
+
 ### 2026-10-23: Roadmap and league rules (branch `docs/roadmap-fantrax`)
 - `ROADMAP.md`: the plan to replace the Google Sheet with Fantrax data, and
   feature ideas. `LEAGUE.md`: the league format.

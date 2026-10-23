@@ -67,8 +67,8 @@ can log in. What's left:
    logged-in browser and refresh it by hand when it expires. A failed run
    says that the cookie expired and keeps the old data. How long the cookie
    lasts decides whether this is good enough. Works: a cookie copied on
-   2026-10-23 at about 11:30 fetched all 2025-26 scores. Re-run
-   `fantrax_fetch.py` every few days to see when it expires.
+   2026-10-23 fetched both seasons' scores. A Fantrax login lasts about a
+   year, so a yearly refresh should do (to watch).
 2. **Selenium in the Action.** This is what `fantrax_summary_app` did. It's
    slow, it breaks, and reCAPTCHA may block a headless browser in CI.
    Only if option 1 needs refreshing too often.
@@ -86,16 +86,14 @@ differences from the sheet; none changes a result.
   sheet does today.
 
 **M2. A games table from Fantrax**
-- Build the same table that `load_games()` returns, so `compute_league()`
-  stays as it is.
-- New columns:
+- Done 2026-10-23: the same table that `load_games()` returns, so
+  `compute_league()` stays as it is. Only ended periods count, which avoids
+  the false 0–0 ties. The diff against the sheet is `fantrax_fetch.py`.
+- Still to do, with M3. New columns:
   - Team IDs.
   - Period start and end dates.
   - `phase`: `regular`, `swiss` or `knockout`, with rules from `LEAGUE.md`.
   - `status`: complete, current or future.
-- Only complete games count. That avoids the false 0–0 ties.
-- A one-off diff report against the sheet. Fantrax's scores win, because
-  they include the stat corrections.
 
 **M3. Schedule and playoffs in `league.json`**
 - Add `periods` (number, dates, phase, status) and future matchups.
@@ -113,12 +111,12 @@ differences from the sheet; none changes a result.
 - Files: `data/seasons/<year>.json` plus a small `data/index.json`. The
   site gets a season picker; the current season stays the default.
 
-**M5. Switch over**
-- The hourly workflow reads Fantrax, with the league ID in a repository
-  variable (as `LEAGUE_SHEET` is today).
-- Keep the sheet reader for one season behind `--source sheet` as a
-  fallback, then remove it.
-- Update `DEPLOYMENT.md`, `CLAUDE.md` and the secrets setup.
+**M5. Switch over**, ready 2026-10-23
+- Done: the hourly workflow reads Fantrax once the repository variable
+  `FANTRAX_LEAGUE_ID` and the secret `FANTRAX_COOKIE` are set; without the
+  variable it reads the sheet as before. Setup is in `DEPLOYMENT.md`.
+- To do: set both after the 4th period of 2026-27. After a season on
+  Fantrax, remove the sheet reader.
 
 **Open questions**
 - When to switch: after the 4th period of 2026-27 (league IDs in `LEAGUE.md`).
