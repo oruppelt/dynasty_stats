@@ -18,7 +18,7 @@ export function Header() {
     : null
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b gradient-header backdrop-blur">
+    <header className="sticky top-0 z-50 w-full border-b gradient-header backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4">
         <div className="flex min-w-0 items-center gap-2">
           <BarChart3 className="hidden h-6 w-6 shrink-0 text-primary sm:block" />
@@ -43,7 +43,7 @@ export function Header() {
               <select
                 value={team}
                 onChange={(e) => setTeam(e.target.value)}
-                className="w-36 truncate rounded-lg border bg-background px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring sm:w-56"
+                className="w-36 truncate rounded-lg border bg-background px-2 py-1.5 text-sm focus:outline-hidden focus:ring-2 focus:ring-ring sm:w-56"
               >
                 <option value="">Pick your team</option>
                 {league.matchups.teams.map(t => (

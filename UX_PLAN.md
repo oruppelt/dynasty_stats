@@ -284,8 +284,9 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Phase 5: Cleanup
 
-- Next.js 16, Tailwind 4 and the ESLint 9 flat config (`next lint` is
-  deprecated). Clears the remaining `npm audit` findings, all in build tooling.
+- [x] Next.js 16, Tailwind 4 and the ESLint 9 flat config (2026-10-23).
+  `npm audit` for what ships: 0. One advisory is left in lint tooling
+  (`braces` under eslint-config-next, no fixed release yet).
 - [x] Delete `ROADMAP.md` (pre-monorepo; described the cache layers and
   backend that no longer exist).
 - [x] One `matchups` block in `league.json` replaces the older `strength`,
@@ -297,6 +298,14 @@ Merged into Phase 2.5 (2026-10-22).
 ---
 
 ## Changelog
+
+### 2026-10-23: Tooling upgrade (branch `ux/tooling-upgrade`)
+- Next.js 15.5 → 16 (Turbopack builds), ESLint 8 → 9 with a flat config,
+  Tailwind 3 → 4 (config moved into `globals.css`). React stays on 18.
+- The newer React hooks lint rules led to two small fixes (no setState
+  straight in an effect). Buttons keep the pointer cursor.
+- Removed unused packages: `@radix-ui/react-icons`, `@shadcn/ui`,
+  `tailwindcss-animate`, `autoprefixer` (built into Tailwind 4).
 
 ### 2026-10-23: Recap card on My Team (branch `ux/my-team-recap-card`)
 - My Team shows the latest period under the team header: result and score,

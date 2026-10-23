@@ -144,7 +144,7 @@ function TeamChooser({ teams }: { teams: string[] }) {
               key={team}
               type="button"
               onClick={() => setTeam(team)}
-              className="flex items-center gap-2 rounded-lg border p-2 text-left text-sm transition-colors hover:bg-muted focus:outline-none focus:ring-2 focus:ring-ring"
+              className="flex items-center gap-2 rounded-lg border p-2 text-left text-sm transition-colors hover:bg-muted focus:outline-hidden focus:ring-2 focus:ring-ring"
             >
               <TeamLogo teamName={team} size={28} className="shrink-0" />
               <span className="min-w-0 truncate">{team}</span>

@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   output: "export",
   // next/image optimization needs a server; logos are small PNGs, so serve them as-is
   images: { unoptimized: true },
+  // next dev would otherwise write an AGENTS.md; CLAUDE.md at the repo root covers it
+  agentRules: false,
 };
 
 export default nextConfig;

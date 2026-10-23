@@ -48,7 +48,7 @@ function Toggle({ value, onChange }: { value: RankBy; onChange: (v: RankBy) => v
           aria-pressed={value === v}
           className={cn(
             'rounded-sm px-3 py-1 font-medium text-muted-foreground',
-            value === v && 'bg-background text-foreground shadow-sm',
+            value === v && 'bg-background text-foreground shadow-xs',
           )}
         >
           {RANK_BY[v].label}
