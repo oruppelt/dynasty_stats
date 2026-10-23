@@ -15,7 +15,8 @@ from pathlib import Path
 
 import pytest
 
-from fantrax import FantraxError, check_private_response, games_from_fantrax, playoff_games_from_fantrax
+from fantrax import (FantraxError, check_private_response, games_from_fantrax, playoff_games_from_fantrax,
+                     schedule_from_fantrax)
 from league_data import compute_league
 
 FIXTURES = Path(__file__).parent / 'fixtures'
@@ -66,6 +67,39 @@ def test_same_league_as_the_sheet(info, scores):
     scores['tableList'][1]['rows'][0]['cells'][3]['content'] = '95'
     fantrax = compute_league(games_from_fantrax(info, scores, IN_PERIOD_3))
     assert fantrax == sheet
+
+
+def test_schedule_dates(info, scores):
+    schedule = schedule_from_fantrax(info, games_from_fantrax(info, scores, IN_PERIOD_3))
+    assert schedule['regular_periods'] == 3
+    assert schedule['periods'][0] == {'period': 1, 'start': '2025-10-21', 'end': '2025-10-24'}
+    assert [p['period'] for p in schedule['periods']] == [1, 2, 3, 4]  # the playoff period too
+
+
+def test_schedule_upcoming_games(info, scores):
+    # Periods 1-2 played; period 3 (in progress) is still to play, period 4 is a playoff period
+    schedule = schedule_from_fantrax(info, games_from_fantrax(info, scores, IN_PERIOD_3))
+    assert schedule['upcoming'] == [
+        {'period': 3, 'team': 'Alpha', 'opponent': 'Delta'},
+        {'period': 3, 'team': 'Bravo', 'opponent': 'Charlie'},  # trailing space stripped
+    ]
+
+
+def test_schedule_after_the_season(info, scores):
+    schedule = schedule_from_fantrax(info, games_from_fantrax(info, scores, SEASON_OVER))
+    assert schedule['upcoming'] == []
+
+
+def test_schedule_before_the_first_game(info, scores):
+    games = games_from_fantrax(info, scores, datetime(2025, 10, 22, tzinfo=timezone.utc))
+    assert [g['period'] for g in schedule_from_fantrax(info, games)['upcoming']] == [1, 1, 2, 2, 3, 3]
+
+
+def test_schedule_in_the_league_data(info, scores):
+    games = games_from_fantrax(info, scores, IN_PERIOD_3)
+    schedule = schedule_from_fantrax(info, games)
+    assert compute_league(games, schedule=schedule)['schedule'] == schedule
+    assert compute_league(games)['schedule'] is None  # the sheet has no schedule
 
 
 def test_no_played_games_gives_empty_table(info, scores):

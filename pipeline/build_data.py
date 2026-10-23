@@ -43,12 +43,13 @@ def season_path(out: Path, season: str) -> Path:
     return out / 'seasons' / f'{season}.json'
 
 
-def build(games: pd.DataFrame, path: Path, season: str, playoff_games: pd.DataFrame | None = None) -> str:
+def build(games: pd.DataFrame, path: Path, season: str, playoff_games: pd.DataFrame | None = None,
+          schedule: dict | None = None) -> str:
     """Write a season's data file from the played games if the data changed. Returns what happened, for the log."""
     if games.empty:
         return f'{season}: no played games yet; data left as it was.'
 
-    league = compute_league(games, playoff_games)
+    league = compute_league(games, playoff_games, schedule)
     league['meta'] = {'season': season, **league['meta']}
     if path.exists():
         previous = json.loads(path.read_text())
@@ -97,8 +98,8 @@ def main() -> None:
         if seasons and not cookie:
             parser.error('Fantrax needs FANTRAX_COOKIE (see fantrax.fetch_scores)')
         for season in seasons:
-            games, playoff_games = fantrax.load_season(league_ids[season], cookie)
-            print(build(games, season_path(args.out, season), season, playoff_games))
+            games, playoff_games, schedule = fantrax.load_season(league_ids[season], cookie)
+            print(build(games, season_path(args.out, season), season, playoff_games, schedule))
     write_index(config, args.out)
 
 

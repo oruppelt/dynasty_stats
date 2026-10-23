@@ -4,7 +4,7 @@ Fantrax league data: the schedule and the score of every game.
 Fantrax has two undocumented APIs:
 - `fxea/general/*` is public. `getLeagueInfo` has the teams, the scoring
   periods with their dates, every matchup (future ones too) and the playoff
-  settings, but no scores.
+  settings, but no scores. The site's schedule comes from it.
 - `fxpa/req` is what the Fantrax website itself calls. `getStandings` with
   view SCHEDULE has the scores, but only for a logged-in member of the league.
   Logging in takes a reCAPTCHA, so a script can't do it: it borrows the
@@ -172,8 +172,38 @@ def playoff_games_from_fantrax(info: dict, playoffs: dict, now: datetime | None 
     return _games(info, playoffs.get('tableList', []), period_of, now)
 
 
-def load_season(league_id: str, cookie: str) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Played regular-season and playoff games of a Fantrax league (needs a logged-in cookie)."""
+def schedule_from_fantrax(info: dict, games: pd.DataFrame) -> dict:
+    """The season's calendar and the regular-season games still to play.
+
+    - periods: every scoring period (playoffs too) with its first and last day,
+      as dates in the league's time zone.
+    - regular_periods: the last regular-season period.
+    - upcoming: the scheduled regular-season games of the periods not played
+      yet (`games` has the played ones), once each as team vs opponent. Swiss
+      periods (LEAGUE.md) are set one at a time, so later ones aren't listed
+      until Fantrax sets them.
+    """
+    last_regular = info['playoffs']['lastRegularSeasonPeriod']
+    names = {team_id: team['name'].strip() for team_id, team in info['teamInfo'].items()}
+    played = set(games['Match'])
+    upcoming = [
+        {'period': m['period'], 'team': names[g['away']['id']], 'opponent': names[g['home']['id']]}
+        for m in sorted(info['matchups'], key=lambda m: m['period'])
+        if m['period'] <= last_regular and m['period'] not in played
+        for g in m['matchupList'] if 'id' in g['away'] and 'id' in g['home']
+    ]
+    return {
+        'periods': [{'period': p['number'], 'start': p['startDate'][:10], 'end': p['endDate'][:10]}
+                    for p in sorted(info['scoringPeriods'], key=lambda p: p['number'])],
+        'regular_periods': last_regular,
+        'upcoming': upcoming,
+    }
+
+
+def load_season(league_id: str, cookie: str) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
+    """Played regular-season and playoff games of a Fantrax league, and its schedule (needs a logged-in cookie)."""
     info = fetch_league_info(league_id)
-    return (games_from_fantrax(info, fetch_scores(league_id, cookie)),
-            playoff_games_from_fantrax(info, fetch_scores(league_id, cookie, view='PLAYOFFS')))
+    games = games_from_fantrax(info, fetch_scores(league_id, cookie))
+    return (games,
+            playoff_games_from_fantrax(info, fetch_scores(league_id, cookie, view='PLAYOFFS')),
+            schedule_from_fantrax(info, games))
