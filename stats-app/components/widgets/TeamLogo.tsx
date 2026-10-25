@@ -6,9 +6,11 @@ interface TeamLogoProps {
   teamName: string;
   size?: number;
   className?: string;
+  /** Load right away, also off screen (the recap PDF waits for its logos) */
+  eager?: boolean;
 }
 
-export function TeamLogo({ teamName, size = 32, className = "" }: TeamLogoProps) {
+export function TeamLogo({ teamName, size = 32, className = "", eager = false }: TeamLogoProps) {
   const [imageError, setImageError] = useState(false);
 
   if (imageError) {
@@ -51,6 +53,7 @@ export function TeamLogo({ teamName, size = 32, className = "" }: TeamLogoProps)
         alt={teamName}
         width={size}
         height={size}
+        loading={eager ? 'eager' : undefined}
         className="h-full w-full object-contain"
         onError={() => setImageError(true)}
       />

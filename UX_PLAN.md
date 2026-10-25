@@ -298,6 +298,17 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-25: Recap as a PDF (branch `ux/recap-pdf`)
+- A **PDF** button on the Recap, next to Share: the period's recap (the six
+  highlights and every game) as a one-page PDF, light theme and a fixed
+  layout whatever the screen, with a link back to that recap. Phones open the
+  share sheet (straight into a chat); computers download it.
+- Made in the browser (`lib/pdf.ts`: html-to-image draws an off-screen
+  `RecapReport`, jsPDF wraps it; both load on first click). The page is as
+  tall as the report, so later additions (standings, charts) extend it.
+- `@theme inline` in `globals.css`, so a `.theme-light` subtree can be light
+  inside the dark theme.
+
 ### 2026-10-23: History section (branch `ux/all-time`)
 - The Records tab becomes **History**, for every season together (the season
   picker doesn't apply; the season note is hidden there):
