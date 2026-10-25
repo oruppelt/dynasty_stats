@@ -106,6 +106,9 @@ JSON name their team under `Team`; every other key is a team name.
   the same way). `lib/standings.ts`: ranks and number
   formatting (records, luck, points) shared by the views. `lib/season.ts`:
   results by period, standings after each period, a period's recap.
+- The Recap's PDF button (`lib/pdf.ts`) draws `RecapReport`, a fixed-width
+  light copy of the recap (`RecapParts`, shared with the view), off screen.
+  Breakpoints follow the screen, so the report uses fixed columns.
 - Season charts go through `SeasonLines` (nivo line: every team faded, the
   viewer's and the hovered team drawn on top).
 - Tailwind 4 has no config file: theme colors (`--color-*`, from the HSL

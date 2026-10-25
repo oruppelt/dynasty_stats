@@ -2,7 +2,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme {
+@theme inline {
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
 
@@ -96,7 +96,9 @@
 }
 
 @layer base {
-  :root {
+  /* .theme-light: a light subtree inside the dark theme (the recap PDF) */
+  :root,
+  .theme-light {
     --background: 0 0% 100%;
     --foreground: 224 71% 4%;
 

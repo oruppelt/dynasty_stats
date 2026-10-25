@@ -1,51 +1,18 @@
-import { useMemo, useState } from 'react'
-import { Check, ChevronLeft, ChevronRight, Share2 } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
+import { toast } from 'sonner'
+import { Check, ChevronLeft, ChevronRight, FileDown, Loader2, Share2 } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { WidgetSkeleton } from './WidgetSkeleton'
-import { TeamLogo } from './TeamLogo'
 import { ErrorState } from './ErrorState'
-import { PeriodResult, useLeagueData } from '@/lib/league-data'
-import { Game, formatScore, periodRecap, resultsByPeriod } from '@/lib/season'
-import { formatCount } from '@/lib/standings'
+import { GameList, RecapHighlights } from './RecapParts'
+import { RecapReport } from './RecapReport'
+import { LeagueData, PeriodResult, useLeagueData } from '@/lib/league-data'
+import { Game, Recap, periodRecap, resultsByPeriod } from '@/lib/season'
 import { periodDates } from '@/lib/schedule'
+import { savePdf } from '@/lib/pdf'
 import { getUrlParam, setUrlParam } from '@/lib/url'
-import { cn } from '@/lib/utils'
-
-const others = (r: PeriodResult) => r.all_play_wins + r.all_play_losses
-const score = (r: PeriodResult) => `${formatScore(r.score)}–${formatScore(r.opp_score)}`
-
-function HighlightTile({ label, team, value, detail }: {
-  label: string;
-  team: string;
-  value: string;
-  detail: string;
-}) {
-  return (
-    <Card>
-      <CardContent className="p-4">
-        <div className="text-sm text-muted-foreground">{label}</div>
-        <div className="mt-2 flex items-center gap-2">
-          <TeamLogo teamName={team} size={28} className="shrink-0" />
-          <span className="min-w-0 truncate font-semibold">{team}</span>
-        </div>
-        <div className="mt-2 text-3xl font-bold tabular-nums">{value}</div>
-        <div className="mt-1 text-sm text-muted-foreground">{detail}</div>
-      </CardContent>
-    </Card>
-  )
-}
-
-function GameSide({ r, won }: { r: PeriodResult; won: boolean }) {
-  return (
-    <div className={cn('flex items-center gap-2', !won && 'text-muted-foreground')}>
-      <TeamLogo teamName={r.team} size={24} className="shrink-0" />
-      <span className={cn('min-w-0 flex-1 truncate', won && 'font-semibold')}>{r.team}</span>
-      <span className={cn('tabular-nums', won && 'font-semibold')}>{formatScore(r.score)}</span>
-      <span className="w-14 shrink-0 text-right text-xs text-muted-foreground tabular-nums">beat {formatCount(r.all_play_wins)}</span>
-    </div>
-  )
-}
 
 function PeriodPicker({ period, periods, onChange }: {
   period: number;
@@ -114,6 +81,34 @@ function ShareButton({ period }: { period: number }) {
   )
 }
 
+/** The recap as a PDF to download or share. The report is drawn off screen only while the file is made. */
+function PdfButton({ league, period, recap }: { league: LeagueData; period: number; recap: Recap }) {
+  const [busy, setBusy] = useState(false)
+  const report = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!busy || !report.current) return
+    savePdf(report.current, `recap-${league.meta.season}-period-${period}.pdf`, `Period ${period} recap, ${league.meta.season}`)
+      .catch(() => toast.error('Could not make the PDF. Try again?'))
+      .finally(() => setBusy(false))
+  }, [busy, league, period])
+
+  return (
+    <>
+      <Button variant="outline" size="sm" className="h-9 gap-1.5" onClick={() => setBusy(true)} disabled={busy}>
+        {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <FileDown className="h-4 w-4" />}
+        PDF
+      </Button>
+      {busy && createPortal(
+        <div aria-hidden className="pointer-events-none fixed top-0 -left-[10000px]">
+          <RecapReport ref={report} league={league} period={period} recap={recap} />
+        </div>,
+        document.body,
+      )}
+    </>
+  )
+}
+
 export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
   const { data: league, isLoading, error } = useLeagueData()
   const byPeriod = useMemo(() => league ? resultsByPeriod(league.results) : new Map<number, PeriodResult[]>(), [league])
@@ -150,55 +145,15 @@ export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
               &ldquo;Beat 12&rdquo; next to a score: it beat 12 of the other {rows.length - 1} teams&apos; scores that period.
             </CardDescription>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <PeriodPicker period={period} periods={periods} onChange={pick} />
             <ShareButton period={period} />
+            <PdfButton league={league} period={period} recap={recap} />
           </div>
         </CardHeader>
       </Card>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <HighlightTile
-          label="Top score"
-          team={recap.top.team}
-          value={formatScore(recap.top.score)}
-          detail={`${recap.top.win === 1 ? 'Beat' : 'Lost to'} ${recap.top.opponent}`}
-        />
-        <HighlightTile
-          label="Lowest score"
-          team={recap.lowest.team}
-          value={formatScore(recap.lowest.score)}
-          detail={`${recap.lowest.win === 1 ? 'Beat' : 'Lost to'} ${recap.lowest.opponent}`}
-        />
-        {recap.unluckiestLoss && (
-          <HighlightTile
-            label="Unluckiest loss"
-            team={recap.unluckiestLoss.team}
-            value={score(recap.unluckiestLoss)}
-            detail={`Lost to ${recap.unluckiestLoss.opponent} with a score that beat ${formatCount(recap.unluckiestLoss.all_play_wins)} of the other ${others(recap.unluckiestLoss)} teams`}
-          />
-        )}
-        {recap.luckiestWin && (
-          <HighlightTile
-            label="Luckiest win"
-            team={recap.luckiestWin.team}
-            value={score(recap.luckiestWin)}
-            detail={`Beat ${recap.luckiestWin.opponent} with a score that beat only ${formatCount(recap.luckiestWin.all_play_wins)} of the other ${others(recap.luckiestWin)} teams`}
-          />
-        )}
-        <HighlightTile
-          label="Biggest blowout"
-          team={recap.blowout.winner.team}
-          value={`+${formatScore(recap.blowout.margin)}`}
-          detail={`Beat ${recap.blowout.loser.team} ${score(recap.blowout.winner)}`}
-        />
-        <HighlightTile
-          label="Closest game"
-          team={recap.closest.winner.team}
-          value={recap.closest.margin === 0 ? 'Tie' : `+${formatScore(recap.closest.margin)}`}
-          detail={`${recap.closest.margin === 0 ? 'Tied' : 'Beat'} ${recap.closest.loser.team} ${score(recap.closest.winner)}`}
-        />
-      </div>
+      <RecapHighlights recap={recap} className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" />
 
       <Card>
         <CardHeader>
@@ -206,17 +161,7 @@ export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
           <CardDescription>Highest winning score first{selectedTeam ? '; your game at the top' : ''}.</CardDescription>
         </CardHeader>
         <CardContent>
-          <ul className="grid grid-cols-1 gap-x-8 md:grid-cols-2">
-            {games.map(g => (
-              <li
-                key={g.winner.team}
-                className={cn('space-y-1.5 border-b px-2 py-2 text-sm', isMine(g) && 'rounded-md border-transparent bg-muted')}
-              >
-                <GameSide r={g.winner} won={g.margin > 0} />
-                <GameSide r={g.loser} won={false} />
-              </li>
-            ))}
-          </ul>
+          <GameList games={games} className="grid-cols-1 md:grid-cols-2" isMine={isMine} />
         </CardContent>
       </Card>
     </div>
