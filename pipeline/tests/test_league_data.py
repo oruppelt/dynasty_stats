@@ -11,6 +11,7 @@ from pathlib import Path
 
 import pytest
 
+import build_data
 from build_data import SEASONS_CONFIG, build, season_path, to_json, write_index
 from league_data import compute_league, load_games, sheet_csv_url
 
@@ -231,8 +232,9 @@ def test_build_keeps_data_when_sheet_has_no_games(tmp_path):
     assert path.read_text() == before
 
 
-def test_season_index_lists_seasons_with_data(tmp_path):
-    config = {'default': '2026-27', 'seasons': [{'id': '2026-27'}, {'id': '2025-26'}, {'id': '2024-25'}]}
+def test_season_index_lists_seasons_with_data(tmp_path, monkeypatch):
+    monkeypatch.setattr(build_data, 'DEFAULT_MIN_PERIODS', 2)  # the fixture has 2 periods
+    config = {'seasons': [{'id': '2026-27'}, {'id': '2025-26'}, {'id': '2024-25'}]}
     write_index(config, tmp_path)
     assert not (tmp_path / 'seasons.json').exists()  # no data at all yet
 
@@ -243,13 +245,25 @@ def test_season_index_lists_seasons_with_data(tmp_path):
     assert json.loads((tmp_path / 'seasons.json').read_text()) == {
         'default': '2025-26', 'seasons': [{'id': '2025-26'}, {'id': '2024-25'}]}
 
-    build(load_games(FIXTURE), season_path(tmp_path, '2026-27'), '2026-27')
+    games = load_games(FIXTURE)
+    # a new season with fewer periods played is listed, but the site still opens on the last one
+    build(games[games['Match'] < 2], season_path(tmp_path, '2026-27'), '2026-27')
     write_index(config, tmp_path)
+    index = json.loads((tmp_path / 'seasons.json').read_text())
+    assert index['default'] == '2025-26'
+    assert [s['id'] for s in index['seasons']] == ['2026-27', '2025-26', '2024-25']
+
+    build(games, season_path(tmp_path, '2026-27'), '2026-27')
+    write_index(config, tmp_path)
+    assert json.loads((tmp_path / 'seasons.json').read_text())['default'] == '2026-27'
+
+    # with only that young season, it is the default anyway
+    write_index({'seasons': [{'id': '2026-27'}]}, tmp_path)
     assert json.loads((tmp_path / 'seasons.json').read_text())['default'] == '2026-27'
 
 
 def test_season_index_notes(tmp_path):
-    config = {'default': '2025-26', 'seasons': [
+    config = {'seasons': [
         {'id': '2025-26'},
         {'id': '2019-20', 'note': 'Before the Swiss stage', 'playoffs': 'other', 'final': True},
     ]}
@@ -263,7 +277,6 @@ def test_season_index_notes(tmp_path):
 def test_seasons_config():
     config = json.loads(SEASONS_CONFIG.read_text())
     ids = [s['id'] for s in config['seasons']]
-    assert config['default'] in ids
     assert ids == sorted(ids, reverse=True)  # newest first: the order of the site's season picker
     assert all(s['fantrax_league_id'] for s in config['seasons'])
     assert all(s.get('playoffs', 'swiss') in ('swiss', 'other') for s in config['seasons'])

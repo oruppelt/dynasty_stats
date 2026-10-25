@@ -40,8 +40,8 @@ cd stats-app && npm run build    # static export to out/ (what Render serves)
 ## Architecture
 
 ### Data flow
-`pipeline/seasons.json` lists the seasons (Fantrax league IDs) and the
-default one. For each season not marked `final`, `pipeline/fantrax.py` reads
+`pipeline/seasons.json` lists the seasons (Fantrax league IDs). The default
+season is the newest with 4+ periods played (`write_index`). For each season not marked `final`, `pipeline/fantrax.py` reads
 the games from Fantrax (scores need the `FANTRAX_COOKIE` secret) →
 `compute_league()` → `build_data.py` writes
 `stats-app/public/data/seasons/<season>.json`, plus `data/seasons.json` (the

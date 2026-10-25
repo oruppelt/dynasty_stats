@@ -152,12 +152,14 @@ saves the responses and prints what the games table holds.
   has expired" and GitHub emails you. The site keeps the last good data.
   Copy a fresh cookie and set the secret again.
 - **Seasons** (`pipeline/seasons.json`): each season's Fantrax league ID,
-  newest first, and `default`, the season the site opens on. The site's
-  season picker (and `?season=` links) lists the seasons that have data.
+  newest first. The site's season picker (and `?season=` links) lists the
+  seasons that have data. It opens on the newest season with at least 4
+  periods played (`DEFAULT_MIN_PERIODS` in `build_data.py`), else the
+  newest season with data.
 - **New season:** add it at the top of `pipeline/seasons.json`, and mark
   the season before `"final": true` once its playoffs are over (its data
   file is then kept as it is). The new season shows up in the picker once
-  its first period ends; set `default` to it when it should open first.
+  its first period ends, and the site opens on it after its 4th.
 - **Add a past season, or rebuild a finished one:** list it in
   `pipeline/seasons.json` with `"final": true` (in date order, newest
   first), merge, then GitHub → Actions → **Refresh league data** → **Run
