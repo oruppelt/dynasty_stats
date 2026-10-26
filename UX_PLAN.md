@@ -298,6 +298,12 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-26: Refresh right after each period (branch `data/refresh-after-periods`)
+- Periods end Monday and Friday at 19:00 ET (Fantrax's time, not the last
+  game), so the refresh runs every 2 hours from 00:17 to 10:17 UTC on Tuesday
+  and Saturday, plus daily at 12:17 for stat corrections. Several tries,
+  since GitHub starts scheduled runs late or skips them.
+
 ### 2026-10-25: Default season picks itself (branch `data/auto-default-season`)
 - The site opens on the newest season with at least 4 periods played, else
   the newest season with data (`write_index`, `DEFAULT_MIN_PERIODS`).

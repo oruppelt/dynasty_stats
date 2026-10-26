@@ -10,11 +10,13 @@ name: Refresh league data
 
 on:
   schedule:
-    # Scoring periods end Monday and Friday evening ET (16:00 or 19:00), so a run early on Tuesday and
-    # Saturday (UTC) has the new results; the daily run picks up later stat corrections, and stands in
-    # when GitHub delays or skips a scheduled run (it does when busy). Every run re-reads every period
-    # of the current season. Minutes off the hour: GitHub is busiest at the top of it.
-    - cron: "17 2 * * 2,6"
+    # Scoring periods end Monday and Friday at 19:00 ET (23:00 UTC in summer time, 00:00 in winter),
+    # not when their last game finishes. So: every 2 hours from 00:17 to 10:17 UTC on Tuesday and
+    # Saturday, several tries because GitHub starts scheduled runs late or skips them when busy, and
+    # a run that finds nothing new commits nothing. The daily run picks up later stat corrections.
+    # Every run re-reads every period of the current season. Minutes off the hour: GitHub is busiest
+    # at the top of it.
+    - cron: "17 0-10/2 * * 2,6"
     - cron: "17 12 * * *"
   workflow_dispatch:
     inputs:
