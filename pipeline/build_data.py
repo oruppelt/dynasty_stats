@@ -7,8 +7,10 @@ Usage (from the repo root):
     python pipeline/build_data.py --season 2020-21,2019-20   # several
     python pipeline/build_data.py --season test --source games.csv  # a CSV or Google Sheet instead
 
-The seasons, their Fantrax league IDs and the season the site opens on are in
-pipeline/seasons.json. A season marked "final" is over: its data file is kept
+The seasons and their Fantrax league IDs are in pipeline/seasons.json, newest
+first. The site opens on the newest season with at least DEFAULT_MIN_PERIODS
+periods played (so a new season takes over a couple of weeks in, not after
+one period), else the newest season with data. A season marked "final" is over: its data file is kept
 as it is, and only rebuilt when it is named with --season. Fantrax needs
 FANTRAX_COOKIE, a logged-in browser's cookie (see fantrax.fetch_scores).
 
@@ -53,6 +55,7 @@ from league_data import compute_league, load_games, sheet_csv_url
 
 SEASONS_CONFIG = Path(__file__).resolve().parent / 'seasons.json'
 DEFAULT_OUT = Path(__file__).resolve().parent.parent / 'stats-app' / 'public' / 'data'
+DEFAULT_MIN_PERIODS = 4
 
 
 def to_json(data) -> str:
@@ -86,11 +89,13 @@ def build(games: pd.DataFrame, path: Path, season: str, playoff_games: pd.DataFr
 
 
 def write_index(config: dict, out: Path) -> None:
-    """The site's season list: the seasons that have data, in seasons.json order, and the one it opens on."""
+    """The site's season list: the seasons that have data, in seasons.json order, and the one it opens on
+    (the newest with DEFAULT_MIN_PERIODS periods played, else the newest)."""
     available = [s['id'] for s in config['seasons'] if season_path(out, s['id']).exists()]
     if not available:
         return
-    default = config['default'] if config['default'] in available else available[0]
+    played = {s: json.loads(season_path(out, s).read_text())['meta']['latest_period'] for s in available}
+    default = next((s for s in available if played[s] >= DEFAULT_MIN_PERIODS), available[0])
     extras = {s['id']: {key: s[key] for key in ('note', 'playoffs') if key in s} for s in config['seasons']}
     path = out / 'seasons.json'
     index = to_json({'default': default, 'seasons': [{'id': s, **extras[s]} for s in available]})

@@ -298,6 +298,12 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-25: Default season picks itself (branch `data/auto-default-season`)
+- The site opens on the newest season with at least 4 periods played, else
+  the newest season with data (`write_index`, `DEFAULT_MIN_PERIODS`).
+  `default` is gone from `pipeline/seasons.json`, so 2026-27 takes over
+  after its 4th period without a manual change.
+
 ### 2026-10-25: Recap as a PDF (branch `ux/recap-pdf`)
 - A **PDF** button on the Recap, next to Share: the period's recap (the six
   highlights and every game) as a one-page PDF, light theme and a fixed

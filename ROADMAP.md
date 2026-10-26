@@ -123,10 +123,10 @@ differences from the sheet; none changes a result.
 **M5. Switch over**, ready 2026-10-23
 - Done: the scheduled workflow reads Fantrax (the secret `FANTRAX_COOKIE`)
   for the seasons in `pipeline/seasons.json`. Setup is in `DEPLOYMENT.md`.
-- To do: set `default` to 2026-27 after its 4th period.
+- Done 2026-10-25: the site opens on the newest season with 4+ periods
+  played, so 2026-27 becomes the default by itself.
 
 **Open questions**
-- When to switch: after the 4th period of 2026-27 (league IDs in `LEAGUE.md`).
 - Earlier seasons' league IDs: these come when we design the history (M4),
   kept in one file such as `pipeline/seasons.json`.
 - The tiebreakers marked *to confirm* in `LEAGUE.md`.
