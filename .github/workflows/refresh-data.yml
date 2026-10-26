@@ -10,14 +10,16 @@ name: Refresh league data
 
 on:
   schedule:
-    # Scoring periods end Monday and Friday at 19:00 ET (23:00 UTC in summer time, 00:00 in winter),
-    # not when their last game finishes. So: every 2 hours from 00:17 to 10:17 UTC on Tuesday and
-    # Saturday, several tries because GitHub starts scheduled runs late or skips them when busy, and
-    # a run that finds nothing new commits nothing. The daily run picks up later stat corrections.
-    # Every run re-reads every period of the current season. Minutes off the hour: GitHub is busiest
-    # at the top of it.
-    - cron: "17 0-10/2 * * 2,6"
-    - cron: "17 12 * * *"
+    # A period's last games are Sunday or Thursday night, and it counts as played from 03:00 ET on
+    # Monday or Friday (fantrax.played_from; 07:00 UTC in summer time, 08:00 in winter). So: every
+    # 2 hours on Monday and Friday from 08:17 UTC, for the results and the day's stat corrections;
+    # several tries also because GitHub starts scheduled runs late or skips them when busy. Fantrax
+    # ends the period at 19:00 ET, so one more run at 00:17 UTC after it, then daily for later
+    # corrections. Every run re-reads every period of the current season, and a run that finds
+    # nothing new commits nothing. Minutes off the hour: GitHub is busiest at the top of it.
+    - cron: "17 8-22/2 * * 1,5"
+    - cron: "17 0 * * 2,6"
+    - cron: "17 12 * * 0,2,3,4,6"
   workflow_dispatch:
     inputs:
       season:

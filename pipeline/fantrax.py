@@ -99,6 +99,18 @@ def _parse_time(value: str) -> datetime:
     return datetime.strptime(value, '%Y-%m-%dT%H:%M:%S.%f%z')
 
 
+def played_from(end_date: str) -> datetime:
+    """When a period's games count as played: 03:00 league time (ET) on the day Fantrax ends it.
+
+    Fantrax ends a period on a Monday or Friday (11:59 to 21:59), as the next
+    period's first game starts, so that day's games belong to the next period.
+    By 03:00 the last game of the day before (Sunday or Thursday night) is over.
+    Its scores may still change a little until Fantrax ends the period, and
+    with stat corrections later on; every run re-reads them.
+    """
+    return _parse_time(end_date).replace(hour=3, minute=0, second=0, microsecond=0)
+
+
 def _score(cell: dict) -> float:
     return float(str(cell['content']).replace(',', ''))
 
@@ -106,14 +118,14 @@ def _score(cell: dict) -> float:
 def _games(info: dict, tables: list[dict], period_of, now: datetime | None) -> pd.DataFrame:
     """Played games from score tables (`period_of(caption)` gives a table's period, or None to skip it).
 
-    A game is played once its scoring period has ended; the period in progress
-    is left out (its scores keep changing, and unplayed games read 0-0). Every
+    A game is played once its period's last game day is over (`played_from`);
+    the period in progress is left out (unplayed games read 0-0). Every
     game is checked against the public schedule. Each game appears once, as
     Team (away) vs Opponent (home).
     """
     now = now or datetime.now(timezone.utc)
     names = {team_id: team['name'].strip() for team_id, team in info['teamInfo'].items()}
-    ended = {p['number'] for p in info['scoringPeriods'] if _parse_time(p['endDate']) < now}
+    ended = {p['number'] for p in info['scoringPeriods'] if played_from(p['endDate']) <= now}
     # Matchups not set yet (the Swiss periods, the playoffs) are {'TBD': True} without team IDs
     scheduled = {
         m['period']: {frozenset((g['away']['id'], g['home']['id']))

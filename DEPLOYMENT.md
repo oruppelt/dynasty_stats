@@ -123,8 +123,8 @@ Auto-deploy is on by default, so every commit to `main` that touches
 
 ## Fantrax as the data source
 
-The workflow (every 2 hours from 00:17 to 10:17 UTC on Tuesday and Saturday,
-right after the periods end, and daily at 12:17 UTC) builds every season in `pipeline/seasons.json` that
+The workflow (every 2 hours from 08:17 UTC on Monday and Friday, once at
+00:17 UTC on Tuesday and Saturday, and daily at 12:17 UTC on the other days) builds every season in `pipeline/seasons.json` that
 isn't marked `"final"`, from that season's Fantrax league. It needs one
 secret (GitHub → repo **Settings** → **Secrets and variables** → **Actions**):
 
@@ -142,13 +142,15 @@ Check a league locally:
 `FANTRAX_COOKIE="$(pbpaste)" .venv/bin/python pipeline/fantrax_fetch.py <league_id> /tmp/fantrax`
 saves the responses and prints what the games table holds.
 
-- **A period counts once Fantrax ends it**: Monday and Friday at 19:00 ET,
-  not when its last game finishes (the Fri–Sun period ends Monday evening). Stat corrections made later
+- **A period counts once its last game day is over**: from 03:00 ET on
+  Monday (the Fri–Sun period) or Friday (Mon–Thu), `fantrax.played_from`.
+  Fantrax only ends it at 19:00 ET that day, so scores can still move a
+  little until then; the runs that day pick that up. Stat corrections made later
   are picked up by the next run: every run re-reads all of the current
   season's periods, and the daily run catches corrections made after a
   period ends. To get results right away, run the workflow by hand
   (Actions → "Refresh league data" → "Run workflow", or
-  `gh workflow run refresh-data.yml`), after the period has ended.
+  `gh workflow run refresh-data.yml`), after 03:00 ET.
   GitHub can start scheduled runs late, or skip one when it's busy.
 - **Cookie expired:** the workflow fails with "FANTRAX_COOKIE is missing or
   has expired" and GitHub emails you. The site keeps the last good data.

@@ -54,6 +54,14 @@ def test_results_and_ties(info, scores):
     assert tie['Result'] == 'T' and tie['Winner'] is None and tie['Loser'] is None
 
 
+def test_period_counts_after_its_last_game_day(info, scores):
+    # Period 3 ends Friday 2025-10-31 at 18:59 ET; its last games are Thursday night
+    before = datetime(2025, 10, 31, 6, 59, tzinfo=timezone.utc)  # 02:59 ET
+    assert list(games_from_fantrax(info, scores, before)['Match'].unique()) == [1, 2]
+    after = datetime(2025, 10, 31, 7, 0, tzinfo=timezone.utc)  # 03:00 ET, before Fantrax ends the period
+    assert list(games_from_fantrax(info, scores, after)['Match'].unique()) == [1, 2, 3]
+
+
 def test_playoffs_left_out(info, scores):
     games = games_from_fantrax(info, scores, SEASON_OVER)
     assert sorted(games['Match'].unique()) == [1, 2, 3]

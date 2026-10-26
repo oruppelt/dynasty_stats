@@ -87,7 +87,7 @@ differences from the sheet; none changes a result.
 
 **M2. A games table from Fantrax**
 - Done 2026-10-23: the same table that `load_games()` returns, so
-  `compute_league()` stays as it is. Only ended periods count, which avoids
+  `compute_league()` stays as it is. Only periods whose last game day is over count (`fantrax.played_from`), which avoids
   the false 0–0 ties. The diff against the sheet is `fantrax_fetch.py`.
 - Still to do, with M3. New columns:
   - Team IDs.
