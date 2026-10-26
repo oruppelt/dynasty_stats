@@ -82,7 +82,8 @@ export interface AllTimeRecords {
   luckiest_wins: SeasonGame[];
   win_streaks: SeasonStreak[];
   losing_streaks: SeasonStreak[];
-  period_highs: { team: string; count: number }[];
+  /** Periods with one of the 5 best scores */
+  top5_periods: { team: string; count: number }[];
   /** Finished seasons only */
   best_seasons: TeamSeason[];
   worst_seasons: TeamSeason[];

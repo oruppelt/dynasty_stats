@@ -16,7 +16,7 @@ them) or the playoff finishes.
 import pandas as pd
 
 from playoffs import seeds
-from records import compute_records
+from records import compute_records, top_period_counts
 
 TOP_N = 10
 # Best first. "swiss": out in the Swiss stage; "round1": out in an earlier format's first knockout round;
@@ -205,9 +205,7 @@ def _records(seasons: list[tuple[str, dict]], team_seasons: list[dict], results:
         entries = sorted(({'season': season, **s} for season, r in streaks for s in r[name]), key=lambda s: s['team'])
         entries.sort(key=lambda s: (s['season'], s['end']), reverse=True)
         records[name] = sorted(entries, key=lambda s: -s['length'])[:TOP_N]
-    highs = results[results['Score'] == results.groupby(['Season', 'Match'])['Score'].transform('max')]
-    counts = highs.groupby('Team').size().sort_values(ascending=False, kind='stable')
-    records['period_highs'] = [{'team': team, 'count': int(n)} for team, n in counts.head(TOP_N).items()]
+    records['top5_periods'] = top_period_counts(results, ['Season', 'Match'], TOP_N)
 
     done = [s for s in team_seasons if s['finish']]
     pct = lambda s: s['wins'] / s['games']  # noqa: E731

@@ -115,9 +115,9 @@ export function AllTimeRecordsWidget({ selectedTeam }: { selectedTeam: string })
     { title: 'Longest winning streaks', note: 'Wins in a row within a season; a tie ends a streak.', rows: streakRows(r.win_streaks) },
     { title: 'Longest losing streaks', note: 'Losses in a row within a season.', rows: streakRows(r.losing_streaks) },
     {
-      title: 'Most period highs',
-      note: "Periods with the league's top score, all seasons.",
-      rows: r.period_highs.map(h => ({ key: h.team, team: h.team, value: h.count, detail: `Top score in ${h.count} periods` })),
+      title: 'Most top-5 periods',
+      note: "Periods with one of the league's 5 best scores, all seasons.",
+      rows: r.top5_periods.map(h => ({ key: h.team, team: h.team, value: h.count, detail: `Top 5 in ${h.count} periods` })),
     },
   ]
 
