@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-10-26T22:42:51+00:00",
+    "updated_at": "2026-10-27T17:59:40+00:00",
     "season": "2026-27",
     "games": 30,
     "latest_period": 2
@@ -88,8 +88,8 @@
       "games": 2,
       "wins": 1.0,
       "losses": 1.0,
-      "all_play_wins": 23.0,
-      "all_play_losses": 35.0,
+      "all_play_wins": 24.0,
+      "all_play_losses": 34.0,
       "points_for": 602.25,
       "points_against": 684.75,
       "luck": -0.5
@@ -102,7 +102,7 @@
       "all_play_wins": 24.5,
       "all_play_losses": 33.5,
       "points_for": 610.5,
-      "points_against": 691.5,
+      "points_against": 687.0,
       "luck": 0.5
     },
     {
@@ -319,9 +319,9 @@
       "games": 2,
       "wins": 1.0,
       "losses": 1.0,
-      "all_play_wins": 48.0,
-      "all_play_losses": 10.0,
-      "points_for": 753.5,
+      "all_play_wins": 47.0,
+      "all_play_losses": 11.0,
+      "points_for": 749.0,
       "points_against": 643.5,
       "luck": -0.5
     },
@@ -752,8 +752,8 @@
       "opponent": "Washington Wizards",
       "opp_score": 429.25,
       "win": 1.0,
-      "all_play_wins": 21.0,
-      "all_play_losses": 8.0,
+      "all_play_wins": 22.0,
+      "all_play_losses": 7.0,
       "luck_to_date": -0.5
     },
     {
@@ -761,7 +761,7 @@
       "team": "Detroit Pistons",
       "score": 329.5,
       "opponent": "Utah Jazz",
-      "opp_score": 448.5,
+      "opp_score": 444.0,
       "win": 0.0,
       "all_play_wins": 3.5,
       "all_play_losses": 25.5,
@@ -979,12 +979,12 @@
     {
       "period": 2,
       "team": "Utah Jazz",
-      "score": 448.5,
+      "score": 444.0,
       "opponent": "Detroit Pistons",
       "opp_score": 329.5,
       "win": 1.0,
-      "all_play_wins": 22.0,
-      "all_play_losses": 7.0,
+      "all_play_wins": 21.0,
+      "all_play_losses": 8.0,
       "luck_to_date": -0.5
     },
     {
@@ -1294,7 +1294,7 @@
         "Sacramento Kings": 0.5,
         "San Antonio Spurs": 0.5,
         "Toronto Raptors": 0.0,
-        "Utah Jazz": 0.0,
+        "Utah Jazz": 0.5,
         "Washington Wizards": 1.0
       },
       {
@@ -1966,7 +1966,7 @@
         "Chicago Bulls": 1.0,
         "Cleveland Cavaliers": 1.0,
         "Dallas Mavericks": 0.5,
-        "Denver Nuggets": 1.0,
+        "Denver Nuggets": 0.5,
         "Detroit Pistons": 1.0,
         "Golden State Warriors": 1.0,
         "Houston Rockets": 1.0,
@@ -5242,7 +5242,7 @@
         "Cleveland Cavaliers": 1.0,
         "Dallas Mavericks": 1.0,
         "Denver Nuggets": 1.0,
-        "Detroit Pistons": 0.0,
+        "Detroit Pistons": 1.0,
         "Golden State Warriors": 1.0,
         "Houston Rockets": 0.0,
         "Indiana Pacers": 2.0,
@@ -5956,7 +5956,7 @@
         "San Antonio Spurs": 2.0,
         "Toronto Raptors": 2.0,
         "Utah Jazz": 1.0,
-        "Washington Wizards": 2.0
+        "Washington Wizards": 1.0
       },
       {
         "Team": "Washington Wizards",
@@ -6056,25 +6056,6 @@
         ]
       },
       {
-        "team": "Utah Jazz",
-        "form_rank": 4,
-        "top_finishes": 1,
-        "periods": 2,
-        "weighted_top_finishes": 0.9,
-        "elite_score": 3.6,
-        "recent_all_play_pct": 0.828,
-        "finishes": [
-          {
-            "period": 1,
-            "rank": 4
-          },
-          {
-            "period": 2,
-            "rank": 8
-          }
-        ]
-      },
-      {
         "team": "Milwaukee Bucks",
         "form_rank": 4,
         "top_finishes": 2,
@@ -6095,7 +6076,7 @@
       },
       {
         "team": "Toronto Raptors",
-        "form_rank": 6,
+        "form_rank": 5,
         "top_finishes": 1,
         "periods": 2,
         "weighted_top_finishes": 1.0,
@@ -6113,8 +6094,27 @@
         ]
       },
       {
+        "team": "Utah Jazz",
+        "form_rank": 5,
+        "top_finishes": 1,
+        "periods": 2,
+        "weighted_top_finishes": 0.9,
+        "elite_score": 3.6,
+        "recent_all_play_pct": 0.81,
+        "finishes": [
+          {
+            "period": 1,
+            "rank": 4
+          },
+          {
+            "period": 2,
+            "rank": 9
+          }
+        ]
+      },
+      {
         "team": "Dallas Mavericks",
-        "form_rank": 6,
+        "form_rank": 5,
         "top_finishes": 1,
         "periods": 2,
         "weighted_top_finishes": 1.0,
@@ -6347,7 +6347,7 @@
         "periods": 2,
         "weighted_top_finishes": 0.0,
         "elite_score": 0.0,
-        "recent_all_play_pct": 0.397,
+        "recent_all_play_pct": 0.414,
         "finishes": [
           {
             "period": 1,
@@ -6355,13 +6355,13 @@
           },
           {
             "period": 2,
-            "rank": 9
+            "rank": 8
           }
         ]
       },
       {
         "team": "Indiana Pacers",
-        "form_rank": 19,
+        "form_rank": 20,
         "top_finishes": 0,
         "periods": 2,
         "weighted_top_finishes": 0.0,
@@ -6578,7 +6578,7 @@
         "score": 561.0,
         "opponent": "Phoenix Suns",
         "opp_score": 533.0,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 29.0,
         "others": 29
       },
@@ -6588,7 +6588,7 @@
         "score": 533.0,
         "opponent": "Memphis Grizzlies",
         "opp_score": 561.0,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 28.0,
         "others": 29
       },
@@ -6598,7 +6598,7 @@
         "score": 469.0,
         "opponent": "Minnesota Timberwolves",
         "opp_score": 439.0,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 27.0,
         "others": 29
       },
@@ -6608,7 +6608,7 @@
         "score": 462.25,
         "opponent": "Charlotte Hornets",
         "opp_score": 384.25,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 26.0,
         "others": 29
       },
@@ -6618,7 +6618,7 @@
         "score": 459.75,
         "opponent": "Sacramento Kings",
         "opp_score": 391.5,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 25.0,
         "others": 29
       }
@@ -6640,7 +6640,7 @@
         "score": 561.0,
         "opponent": "Phoenix Suns",
         "opp_score": 533.0,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 29.0,
         "others": 29
       },
@@ -6670,7 +6670,7 @@
         "score": 533.0,
         "opponent": "Memphis Grizzlies",
         "opp_score": 561.0,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 28.0,
         "others": 29
       }
@@ -6702,7 +6702,7 @@
         "score": 234.5,
         "opponent": "Portland Trail Blazers",
         "opp_score": 374.75,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 0.0,
         "others": 29
       },
@@ -6734,7 +6734,7 @@
         "score": 374.75,
         "opponent": "Chicago Bulls",
         "opp_score": 234.5,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 10.0,
         "others": 29
       },
@@ -6744,7 +6744,7 @@
         "score": 453.5,
         "opponent": "Orlando Magic",
         "opp_score": 329.5,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 24.0,
         "others": 29
       },
@@ -6771,11 +6771,11 @@
       {
         "period": 2,
         "team": "Utah Jazz",
-        "score": 448.5,
+        "score": 444.0,
         "opponent": "Detroit Pistons",
         "opp_score": 329.5,
-        "period_avg": 401.79,
-        "all_play_wins": 22.0,
+        "period_avg": 401.64,
+        "all_play_wins": 21.0,
         "others": 29
       }
     ],
@@ -6786,7 +6786,7 @@
         "score": 427.25,
         "opponent": "Boston Celtics",
         "opp_score": 422.75,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 17.0,
         "others": 29
       },
@@ -6796,7 +6796,7 @@
         "score": 358.0,
         "opponent": "New York Knicks",
         "opp_score": 351.75,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 8.0,
         "others": 29
       },
@@ -6826,7 +6826,7 @@
         "score": 379.0,
         "opponent": "Philadelphia 76ers",
         "opp_score": 369.0,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 11.0,
         "others": 29
       }
@@ -6838,7 +6838,7 @@
         "score": 533.0,
         "opponent": "Memphis Grizzlies",
         "opp_score": 561.0,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 28.0,
         "others": 29
       },
@@ -6868,7 +6868,7 @@
         "score": 439.0,
         "opponent": "Toronto Raptors",
         "opp_score": 469.0,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 20.0,
         "others": 29
       },
@@ -6878,7 +6878,7 @@
         "score": 429.25,
         "opponent": "Denver Nuggets",
         "opp_score": 447.0,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 18.0,
         "others": 29
       }
@@ -6900,7 +6900,7 @@
         "score": 334.25,
         "opponent": "Los Angeles Clippers",
         "opp_score": 316.75,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 5.0,
         "others": 29
       },
@@ -6920,7 +6920,7 @@
         "score": 358.0,
         "opponent": "New York Knicks",
         "opp_score": 351.75,
-        "period_avg": 401.79,
+        "period_avg": 401.64,
         "all_play_wins": 8.0,
         "others": 29
       },
