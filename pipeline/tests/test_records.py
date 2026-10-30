@@ -8,7 +8,7 @@ from pathlib import Path
 import pytest
 
 from league_data import compute_results, load_games
-from records import compute_records
+from records import compute_records, top_period_counts
 
 FIXTURE = Path(__file__).parent / 'fixtures' / 'games.csv'
 
@@ -60,5 +60,16 @@ def test_streaks(records):
     assert [(s['team'], s['end']) for s in records['losing_streaks']] == [('Alpha', 2), ('Bravo', 1), ('Delta', 1)]
 
 
-def test_period_highs(records):
-    assert records['period_highs'] == [{'team': 'Alpha', 'count': 1}, {'team': 'Charlie', 'count': 1}]
+def test_top5_periods(records):
+    # 4 teams, so every team is in the top 5 of both periods
+    assert records['top5_periods'] == [{'team': t, 'count': 2} for t in ('Alpha', 'Bravo', 'Charlie')]
+
+
+def test_top_period_counts_with_fewer_places():
+    results = compute_results(load_games(FIXTURE))
+    # Top 2: Alpha and Bravo in period 1; Charlie, then Bravo and Delta tied for 2nd in period 2
+    assert top_period_counts(results, ['Match'], top_n=5, places=2) == [
+        {'team': 'Bravo', 'count': 2}, {'team': 'Alpha', 'count': 1},
+        {'team': 'Charlie', 'count': 1}, {'team': 'Delta', 'count': 1}]
+    assert top_period_counts(results, ['Match'], top_n=5, places=1) == [
+        {'team': 'Alpha', 'count': 1}, {'team': 'Charlie', 'count': 1}]

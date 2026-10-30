@@ -139,11 +139,11 @@ export function RecordsWidget({ selectedTeam }: { selectedTeam: string }) {
       rows: streakRows(records.losing_streaks),
     },
     {
-      title: 'Most period highs',
-      note: "Periods with the league's top score.",
-      rows: records.period_highs.map(h => ({
+      title: 'Most top-5 periods',
+      note: "Periods with one of the league's 5 best scores.",
+      rows: records.top5_periods.map(h => ({
         key: h.team, team: h.team, value: h.count,
-        detail: `Top score in ${h.count} of ${meta.latest_period} periods`,
+        detail: `Top 5 in ${h.count} of ${meta.latest_period} periods`,
       })),
     },
   ]

@@ -298,6 +298,14 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-10-26: Top-5 periods instead of period highs (branch `ux/top5-periods`)
+- Season → Records and History → Records: "Most period highs" (the single
+  best score of 30) becomes **Most top-5 periods**: periods with one of the
+  5 best scores (a tie for 5th counts for each team). Data key
+  `top5_periods` (`records.top_period_counts`). The season files' records
+  were recomputed from their stored results; the rest of each record book is
+  unchanged.
+
 ### 2026-10-26: Results the morning after the last game (branch `data/refresh-after-periods`)
 - A period counts as played from 03:00 ET on the day Fantrax ends it
   (Monday or Friday; `fantrax.played_from`), once its last games (Sunday or
