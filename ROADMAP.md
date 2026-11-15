@@ -338,11 +338,64 @@ gives us for players" above):
 - **Trades that were later undone, or picks that were forfeited**: the log
   has `deleted` and `resultCode`; to check how they show up.
 
+### What the transaction data showed (2026-11-15)
+Fetched for every season into `pipeline/data/transactions/` (CSV; see
+`pipeline/analysis/fetch_transactions.py`, nothing in the build reads it
+yet): 2,228 trade items (players, picks, budget), 4,136 claims and drops,
+8 drafts of 60 picks, the round-1 orders and each league's future picks.
+`pipeline/analysis/check_transactions.py` replays them on the cached
+rosters:
+- **Within a season, every roster change is explained** (2019-20 and
+  2021-22 to 2026-27). 2020-21: 9 trades show on the rosters a period after
+  the log's period, so the lineage takes *when* from the rosters and *how*
+  from the logs (an event within a period of the change).
+- **Across seasons, every period-1 roster is explained** by the end of the
+  previous season, that league's late moves, the new league's moves and
+  the draft (one exception below).
+- **Free agency:** every off-season, 200–250 players are dropped (contracts
+  ending) and the auction's results come back as claims entered in a short
+  window (e.g. 2024: Jul 31–Aug 8). Per year 25–44 are re-signed by the
+  team that dropped them, almost always on a new contract; 100–120 sign
+  elsewhere; 60–90 aren't signed. 0–2 a year are re-signed after the
+  season starts. So for the lineage, an off-season drop and a later claim
+  by the same team is "re-signed in free agency", not leaving the team.
+  Players kept without a drop just count down their contract (REG3→REG2,
+  R13→R12) with the same salary (2022-23: salaries were rounded, e.g.
+  4,732,032 → 4,732,000; 2021-22: 20 REG2 players became R11/R21).
+- **Same-minute fixes:** a signing entered on the wrong team is fixed in
+  the same minute (claim by team A, claim by B, drop by A). Moves in the
+  same minute follow Fantrax's own row order (the log is newest first),
+  trades first; a drop of a player not on that team has no effect.
+- **Chains inside one period:** a player traded twice, or traded and
+  dropped right away by the receiving team (a salary dump), between two
+  roster snapshots: a stint of zero periods.
+- **A trade item "to (Drop)"** is a drop as part of a trade (1 case).
+- **Lakers/Clippers 2025-26:** the log uses team names at the time of the
+  move; the two owners swapped names on 2025-06-27 (before: each team's
+  own players; after: the other name). The "trade" of 2025-10-19 with 22
+  players and 9 picks lists the old rosters and changes nothing (several
+  of its players and picks were long gone). Not mapped (see above).
+- **Duplicate Fantrax players:** Leonard Miller has two IDs; Toronto
+  drafted one (06cd8), the Clippers the other (06cei), and a commissioner
+  trade swapped them, so the real one (06cei) ended in Toronto. Justin
+  Jackson also has two IDs.
+- **Arrivals not in the log:** 1–13 players a summer (mostly 2020 and
+  2022) are dropped by a team the log never shows them joining (no effect
+  on rosters; the lineage shows "joined, not in the log").
+- **Picks:** traded by original owner ("2026 Round 2 (Minnesota)") until
+  the order is set, then by slot ("Round 1 Pick 16"). Round 1 follows the
+  draft's `draftOrder` (26–30 of 30 slots from 2021); round 2 follows the
+  previous season's standings, worst first (25–29 of 30 from 2023). Still
+  to check: the 2020 draft (neither fits) and the few slots per year that
+  don't (picks traded during the draft, or "final standings" meaning the
+  playoff finish). Budget ($) is traded too (111 items).
+
 ### Steps
 1. **Raw data, cached:** for each season, the draft, the trade and
    claim/drop logs (paged), and the rosters with points per team and
    period. Finished seasons are fetched once and kept in the repo or a
-   cache, not re-read on every run.
+   cache, not re-read on every run. *Done for the logs and drafts
+   (`pipeline/data/transactions/`); the rosters are the player cache.*
 2. **An asset table:** one row per pick (year, round, original team) and
    per player, and an event table (drafted, traded, claimed, dropped, with
    date, period, from, to). Check it against `getDraftPicks` (current

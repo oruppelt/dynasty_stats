@@ -71,6 +71,10 @@ periods in the lineup and on the bench, per team, per period for the recap,
 playoffs), read by `usePlayers()` in `lib/players.ts`;
 `data/players/alltime.json` (rebuilt from the cache on every run) has the
 all-time records, read by `useAllTimePlayers()`. `--no-players` skips them.
+Transactions (for the player lineage, not used by the build yet):
+`pipeline/data/transactions/` (trades, claims and drops, drafts, picks) from
+`pipeline/analysis/fetch_transactions.py`; `pipeline/analysis/check_transactions.py`
+replays them on the player cache (findings in ROADMAP.md section 3).
 `schedule` (`fantrax.schedule_from_fantrax`, null for sheet data): period
 dates and the regular-season games still to play (`lib/schedule.ts`).
 The site reads it through `useLeagueData()` in `lib/league-data.ts` (one
