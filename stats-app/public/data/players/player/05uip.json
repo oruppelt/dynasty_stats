@@ -149,6 +149,8 @@
       "team": "Milwaukee Bucks",
       "round": 1,
       "pick": 14,
+      "overall": 14,
+      "certain": true,
       "periods": 33,
       "starts": 18,
       "gp": 27,
@@ -237,45 +239,6 @@
     }
   ],
   "trades": {
-    "xrkqmnnwlcgjgfnn": {
-      "date": "2023-01-05",
-      "season": "2022-23",
-      "period": 24,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Golden State Warriors",
-          "player_id": "05uip",
-          "player": "Corey Kispert",
-          "label": "Corey Kispert"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Golden State Warriors",
-          "player_id": "03nwk",
-          "player": "Kelly Oubre Jr.",
-          "label": "Kelly Oubre Jr."
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Boston Celtics",
-          "player_id": "01ens",
-          "player": "Patrick Beverley",
-          "label": "Patrick Beverley"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Boston Celtics",
-          "player_id": "051p1",
-          "player": "Brandon Clarke",
-          "label": "Brandon Clarke"
-        }
-      ]
-    },
     "4csdps1ul4mqtiiz": {
       "date": "2022-06-20",
       "season": "2022-23",
@@ -317,13 +280,70 @@
           "kind": "pick",
           "from": "Milwaukee Bucks",
           "to": "Boston Celtics",
-          "label": "2022 round 1 pick, no. 14"
+          "label": "2022 round 1 pick, no. 14",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "0621f",
+            "player": "AJ Griffin",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Milwaukee Bucks",
           "to": "Boston Celtics",
-          "label": "2023 round 2 pick (Milwaukee Bucks)"
+          "label": "2023 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06cdh",
+            "player": "GG Jackson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "xrkqmnnwlcgjgfnn": {
+      "date": "2023-01-05",
+      "season": "2022-23",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Golden State Warriors",
+          "player_id": "05uip",
+          "player": "Corey Kispert",
+          "label": "Corey Kispert"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Golden State Warriors",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr."
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Boston Celtics",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Boston Celtics",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke"
         }
       ]
     }

@@ -255,52 +255,87 @@
     }
   ],
   "trades": {
-    "cqyb06mckp43flz4": {
-      "date": "2021-05-25",
+    "y6t02lq8ks8pna2n": {
+      "date": "2021-08-12",
       "season": "2021-22",
       "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "San Antonio Spurs",
-          "player_id": "049ki",
-          "player": "Marvin Bagley",
-          "label": "Marvin Bagley"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "player_id": "0018n",
-          "player": "Lou Williams",
-          "label": "Lou Williams"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
           "player_id": "038xl",
           "player": "Dewayne Dedmon",
           "label": "Dewayne Dedmon"
         },
         {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "label": "2021 round 2 pick (San Antonio Spurs)"
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "04qrk",
+          "player": "Trae Young",
+          "label": "Trae Young"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "051pj",
+          "player": "Alen Smailagic",
+          "label": "Alen Smailagic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtv",
+          "player": "Tyrese Haliburton",
+          "label": "Tyrese Haliburton"
         },
         {
           "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "label": "2022 round 1 pick (Los Angeles Lakers)"
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 1 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "0621k",
+            "player": "Christian Braun",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "label": "2021 round 1 pick (Boston Celtics)"
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2023 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06ccu",
+            "player": "Tristan Vukcevic",
+            "certain": true
+          }
         }
       ]
     },
@@ -321,13 +356,31 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Sacramento Kings",
-          "label": "2021 round 2 pick, no. 14"
+          "label": "2021 round 2 pick, no. 14",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          }
         },
         {
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Sacramento Kings",
-          "label": "2021 round 1 pick, no. 11"
+          "label": "2021 round 1 pick, no. 11",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "05uil",
+            "player": "James Bouknight",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -352,35 +405,6 @@
           "player_id": "02nfw",
           "player": "Tomas Satoransky",
           "label": "Tomas Satoransky"
-        }
-      ]
-    },
-    "51fiui4ekhx62qh8": {
-      "date": "2020-11-25",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "San Antonio Spurs",
-          "player_id": "038xl",
-          "player": "Dewayne Dedmon",
-          "label": "Dewayne Dedmon"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "San Antonio Spurs",
-          "label": "2021 round 1 pick (Boston Celtics)"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Boston Celtics",
-          "player_id": "03apy",
-          "player": "Rodney Hood",
-          "label": "Rodney Hood"
         }
       ]
     },
@@ -409,7 +433,16 @@
           "kind": "pick",
           "from": "San Antonio Spurs",
           "to": "Dallas Mavericks",
-          "label": "2024 round 2 pick (San Antonio Spurs)"
+          "label": "2024 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06mly",
+            "player": "Quinten Post",
+            "certain": false
+          }
         }
       ]
     },
@@ -460,64 +493,130 @@
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Boston Celtics",
-          "label": "2021 round 1 pick (Washington Wizards)"
+          "label": "2021 round 1 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "05uiz",
+            "player": "Quentin Grimes",
+            "certain": true
+          }
         }
       ]
     },
-    "y6t02lq8ks8pna2n": {
-      "date": "2021-08-12",
+    "cqyb06mckp43flz4": {
+      "date": "2021-05-25",
       "season": "2021-22",
       "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Los Angeles Clippers",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "0018n",
+          "player": "Lou Williams",
+          "label": "Lou Williams"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
           "player_id": "038xl",
           "player": "Dewayne Dedmon",
           "label": "Dewayne Dedmon"
         },
         {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Los Angeles Clippers",
-          "player_id": "04qrk",
-          "player": "Trae Young",
-          "label": "Trae Young"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "player_id": "051pj",
-          "player": "Alen Smailagic",
-          "label": "Alen Smailagic"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "player_id": "05qtv",
-          "player": "Tyrese Haliburton",
-          "label": "Tyrese Haliburton"
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "05uj3",
+            "player": "Day'Ron Sharpe",
+            "certain": false
+          }
         },
         {
           "kind": "pick",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "label": "2022 round 1 pick (Los Angeles Clippers)"
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06211",
+            "player": "Chet Holmgren",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "label": "2022 round 2 pick (Los Angeles Clippers)"
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "05uis",
+            "player": "Tre Mann",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "51fiui4ekhx62qh8": {
+      "date": "2020-11-25",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
         },
         {
           "kind": "pick",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "label": "2023 round 2 pick (Los Angeles Clippers)"
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "label": "2021 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "05uis",
+            "player": "Tre Mann",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
         }
       ]
     }

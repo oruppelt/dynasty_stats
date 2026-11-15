@@ -327,33 +327,6 @@
     }
   ],
   "trades": {
-    "wkoo4l0sl9gmv139": {
-      "date": "2022-10-20",
-      "season": "2022-23",
-      "period": 2,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Oklahoma City Thunder",
-          "player_id": "027oq",
-          "player": "Bismack Biyombo",
-          "label": "Bismack Biyombo"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Minnesota Timberwolves)"
-        },
-        {
-          "kind": "budget",
-          "from": "Oklahoma City Thunder",
-          "to": "Golden State Warriors",
-          "label": "$3 budget"
-        }
-      ]
-    },
     "okjjp9solqjjzh20": {
       "date": "2023-12-24",
       "season": "2023-24",
@@ -379,7 +352,16 @@
           "kind": "pick",
           "from": "Indiana Pacers",
           "to": "Portland Trail Blazers",
-          "label": "2025 round 1 pick (Indiana Pacers)"
+          "label": "2025 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "06v5e",
+            "player": "Yang Hansen",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -404,6 +386,42 @@
           "player_id": "027p4",
           "player": "Tobias Harris",
           "label": "Tobias Harris"
+        }
+      ]
+    },
+    "wkoo4l0sl9gmv139": {
+      "date": "2022-10-20",
+      "season": "2022-23",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "027oq",
+          "player": "Bismack Biyombo",
+          "label": "Bismack Biyombo"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "06cd1",
+            "player": "Jordan Walsh",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Oklahoma City Thunder",
+          "to": "Golden State Warriors",
+          "label": "$3 budget"
         }
       ]
     }

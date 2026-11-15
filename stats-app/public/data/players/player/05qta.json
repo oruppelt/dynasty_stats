@@ -35,13 +35,54 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2020 round 2 pick (Indiana Pacers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-06-24",
+      "from": "Indiana Pacers",
+      "team": "Denver Nuggets",
+      "trade": "0fs2e6mzjxarkqcv",
+      "label": "2020 round 2 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 4,
+      "date": "2019-11-01",
+      "from": "Denver Nuggets",
+      "team": "Cleveland Cavaliers",
+      "trade": "mrggfdnik2gldpms",
+      "label": "2020 round 2 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 23,
+      "date": "2020-01-08",
+      "from": "Cleveland Cavaliers",
+      "team": "Memphis Grizzlies",
+      "trade": "4uomns6fk51ipc8r",
+      "label": "2020 round 2 pick (Indiana Pacers)"
+    },
+    {
       "kind": "draft",
       "season": "2020-21",
       "period": 0,
       "date": "2020-11-24",
       "team": "Memphis Grizzlies",
       "round": 2,
-      "pick": 34,
+      "pick": 4,
+      "overall": 34,
+      "original": "Indiana Pacers",
+      "certain": true,
       "periods": 62,
       "starts": 0,
       "gp": 0,
@@ -57,8 +98,226 @@
       "team": "Memphis Grizzlies"
     }
   ],
-  "trades": {},
+  "trades": {
+    "0fs2e6mzjxarkqcv": {
+      "date": "2019-06-24",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Indiana Pacers",
+          "player_id": "04qsm",
+          "player": "De'Anthony Melton",
+          "label": "De'Anthony Melton"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Denver Nuggets",
+          "player_id": "01en7",
+          "player": "James Johnson",
+          "label": "James Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Denver Nuggets",
+          "label": "2020 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05qta",
+            "player": "Elijah Hughes",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Denver Nuggets",
+          "label": "2021 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05uj7",
+            "player": "Jason Preston",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "mrggfdnik2gldpms": {
+      "date": "2019-11-01",
+      "season": "2019-20",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Denver Nuggets",
+          "player_id": "027oj",
+          "player": "Kyrie Irving",
+          "label": "Kyrie Irving"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Denver Nuggets",
+          "player_id": "042n6",
+          "player": "Jakob Poeltl",
+          "label": "Jakob Poeltl"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03ad0",
+          "player": "Tyus Jones",
+          "label": "Tyus Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "05uj1",
+            "player": "Cameron Thomas",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05qta",
+            "player": "Elijah Hughes",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Denver Nuggets)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "05uiu",
+            "player": "Jalen Johnson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "4uomns6fk51ipc8r": {
+      "date": "2020-01-08",
+      "season": "2019-20",
+      "period": 23,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "label": "2020 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "05qua",
+            "player": "Cassius Winston",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "label": "2020 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05qta",
+            "player": "Elijah Hughes",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "label": "2020 round 2 pick (Brooklyn Nets)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05qv8",
+            "player": "Facundo Campazzo",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 16,
+            "overall": 16,
+            "player_id": "05qt0",
+            "player": "Saddiq Bey",
+            "certain": false
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

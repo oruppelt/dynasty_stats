@@ -21,13 +21,44 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Golden State Warriors",
+      "label": "2022 round 2 pick (Golden State Warriors)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-24",
+      "from": "Golden State Warriors",
+      "team": "Miami Heat",
+      "trade": "zv53id4jkhvs48ye",
+      "label": "2022 round 2 pick (Golden State Warriors)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "from": "Miami Heat",
+      "team": "Dallas Mavericks",
+      "trade": "ci5v7ywvkid24lwf",
+      "label": "2022 round 2 pick (Golden State Warriors)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-29",
       "team": "Dallas Mavericks",
       "round": 2,
-      "pick": 58,
+      "pick": 28,
+      "overall": 58,
+      "original": "Golden State Warriors",
+      "certain": true,
       "periods": 1,
       "starts": 0,
       "gp": 0,
@@ -43,8 +74,115 @@
       "team": "Dallas Mavericks"
     }
   ],
-  "trades": {},
+  "trades": {
+    "ci5v7ywvkid24lwf": {
+      "date": "2020-12-06",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewl",
+          "player": "Terrance Ferguson",
+          "label": "Terrance Ferguson"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewj",
+          "player": "T.J. Leaf",
+          "label": "T.J. Leaf"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2021 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05ujl",
+            "player": "David Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2022 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "0622j",
+            "player": "Luke Travers",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "zv53id4jkhvs48ye": {
+      "date": "2020-11-24",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2022 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "0622j",
+            "player": "Luke Travers",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick, no. 16"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

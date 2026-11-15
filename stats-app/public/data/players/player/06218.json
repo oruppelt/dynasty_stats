@@ -170,6 +170,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2022 round 1 pick (Orlando Magic)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-03",
+      "from": "Orlando Magic",
+      "team": "Sacramento Kings",
+      "trade": "3l0w7p04kpgu1kue",
+      "label": "2022 round 1 pick (Orlando Magic)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "from": "Sacramento Kings",
+      "team": "Washington Wizards",
+      "trade": "uzok8m7ikwkzi0g6",
+      "label": "2022 round 1 pick (Orlando Magic)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -177,6 +205,9 @@
       "team": "Washington Wizards",
       "round": 1,
       "pick": 8,
+      "overall": 8,
+      "original": "Orlando Magic",
+      "certain": true,
       "periods": 60,
       "starts": 50,
       "gp": 79,
@@ -308,6 +339,106 @@
     }
   ],
   "trades": {
+    "vyihkajqlze3uxyo": {
+      "date": "2024-08-03",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Sacramento Kings",
+          "player_id": "06218",
+          "player": "Jeremy Sochan",
+          "label": "Jeremy Sochan"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 5,
+            "overall": 5,
+            "player_id": "076t6",
+            "player": "Darius Acuff",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "3l0w7p04kpgu1kue": {
+      "date": "2021-06-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "027pg",
+          "player": "Bojan Bogdanovic",
+          "label": "Bojan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "049kf",
+          "player": "Mo Bamba",
+          "label": "Mo Bamba"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06218",
+            "player": "Jeremy Sochan",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "051po",
+          "player": "Bol Bol",
+          "label": "Bol Bol"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "027pe",
+          "player": "Jimmy Butler",
+          "label": "Jimmy Butler"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        }
+      ]
+    },
     "cg5cj2c3mvrtprrr": {
       "date": "2026-10-29",
       "season": "2026-27",
@@ -348,116 +479,6 @@
           "from": "Orlando Magic",
           "to": "New Orleans Pelicans",
           "label": "2028 round 2 pick (Orlando Magic)"
-        }
-      ]
-    },
-    "qv786h5cmhvytj7l": {
-      "date": "2025-11-13",
-      "season": "2025-26",
-      "period": 8,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Toronto Raptors",
-          "player_id": "03e74",
-          "player": "Spencer Dinwiddie",
-          "label": "Spencer Dinwiddie"
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Miami Heat",
-          "player_id": "03nwm",
-          "player": "Devin Booker",
-          "label": "Devin Booker"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Toronto Raptors",
-          "player_id": "06218",
-          "player": "Jeremy Sochan",
-          "label": "Jeremy Sochan"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Houston Rockets",
-          "player_id": "05qtv",
-          "player": "Tyrese Haliburton",
-          "label": "Tyrese Haliburton"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Houston Rockets",
-          "player_id": "06v5p",
-          "player": "Nolan Traore",
-          "label": "Nolan Traore"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Toronto Raptors",
-          "label": "2026 round 1 pick (Phoenix Suns)"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Houston Rockets",
-          "label": "2026 round 2 pick (Chicago Bulls)"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Toronto Raptors",
-          "label": "2026 round 1 pick (Indiana Pacers)"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Houston Rockets",
-          "label": "2027 round 2 pick (Golden State Warriors)"
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Miami Heat",
-          "player_id": "01eo6",
-          "player": "James Harden",
-          "label": "James Harden"
-        }
-      ]
-    },
-    "qsrtciiplrqk6b31": {
-      "date": "2024-01-24",
-      "season": "2023-24",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Washington Wizards",
-          "player_id": "06ccf",
-          "player": "Ausar Thompson",
-          "label": "Ausar Thompson"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Milwaukee Bucks",
-          "player_id": "06218",
-          "player": "Jeremy Sochan",
-          "label": "Jeremy Sochan"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Milwaukee Bucks",
-          "player_id": "0621u",
-          "player": "Andrew Nembhard",
-          "label": "Andrew Nembhard"
         }
       ]
     },
@@ -512,29 +533,216 @@
         }
       ]
     },
-    "vyihkajqlze3uxyo": {
-      "date": "2024-08-03",
-      "season": "2024-25",
-      "period": 1,
+    "qv786h5cmhvytj7l": {
+      "date": "2025-11-13",
+      "season": "2025-26",
+      "period": 8,
       "items": [
         {
           "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Sacramento Kings",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "player_id": "03e74",
+          "player": "Spencer Dinwiddie",
+          "label": "Spencer Dinwiddie"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "03nwm",
+          "player": "Devin Booker",
+          "label": "Devin Booker"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
           "player_id": "06218",
           "player": "Jeremy Sochan",
           "label": "Jeremy Sochan"
         },
         {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "05qtv",
+          "player": "Tyrese Haliburton",
+          "label": "Tyrese Haliburton"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "06v5p",
+          "player": "Nolan Traore",
+          "label": "Nolan Traore"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "076t9",
+            "player": "Darryn Peterson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2026 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "076u2",
+            "player": "Dillon Mitchell",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "076sv",
+            "player": "Bennett Stirtz",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Miami Heat",
+          "player_id": "01eo6",
+          "player": "James Harden",
+          "label": "James Harden"
+        }
+      ]
+    },
+    "uzok8m7ikwkzi0g6": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "051om",
+          "player": "Jarrett Culver",
+          "label": "Jarrett Culver"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
           "kind": "pick",
           "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06217",
+            "player": "Dyson Daniels",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06218",
+            "player": "Jeremy Sochan",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Sacramento Kings",
+          "player_id": "042n7",
+          "player": "Domantas Sabonis",
+          "label": "Domantas Sabonis"
+        }
+      ]
+    },
+    "qsrtciiplrqk6b31": {
+      "date": "2024-01-24",
+      "season": "2023-24",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Washington Wizards",
+          "player_id": "06ccf",
+          "player": "Ausar Thompson",
+          "label": "Ausar Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
           "to": "Milwaukee Bucks",
-          "label": "2026 round 1 pick (Sacramento Kings)"
+          "player_id": "06218",
+          "player": "Jeremy Sochan",
+          "label": "Jeremy Sochan"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "player_id": "0621u",
+          "player": "Andrew Nembhard",
+          "label": "Andrew Nembhard"
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

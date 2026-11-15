@@ -86,6 +86,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Minnesota Timberwolves",
+      "label": "2025 round 1 pick (Minnesota Timberwolves)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "from": "Minnesota Timberwolves",
+      "team": "San Antonio Spurs",
+      "trade": "aqapwojpm3cvd21d",
+      "label": "2025 round 1 pick (Minnesota Timberwolves)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -93,6 +111,9 @@
       "team": "San Antonio Spurs",
       "round": 1,
       "pick": 21,
+      "overall": 21,
+      "original": "Minnesota Timberwolves",
+      "certain": true,
       "periods": 33,
       "starts": 6,
       "gp": 10,
@@ -117,6 +138,81 @@
     }
   ],
   "trades": {
+    "aqapwojpm3cvd21d": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "player_id": "03r7h",
+          "player": "Delon Wright",
+          "label": "Delon Wright"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "player_id": "051p0",
+          "player": "Matisse Thybulle",
+          "label": "Matisse Thybulle"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 1 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "06v5j",
+            "player": "Jase Richardson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uul",
+          "player": "Jose Alvarado",
+          "label": "Jose Alvarado"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "059g0",
+          "player": "Amir Coffey",
+          "label": "Amir Coffey"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "06v59",
+            "player": "Will Riley",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "label": "$23 budget"
+        }
+      ]
+    },
     "zlfnl31gmqt85aw1": {
       "date": "2026-06-25",
       "season": "2026-27",
@@ -134,7 +230,16 @@
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "San Antonio Spurs",
-          "label": "2026 round 2 pick, no. 24"
+          "label": "2026 round 2 pick, no. 24",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -164,12 +269,31 @@
           "kind": "pick",
           "from": "San Antonio Spurs",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick, no. 23"
+          "label": "2026 round 1 pick, no. 23",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "076t4",
+            "player": "Ebuka Okorie",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

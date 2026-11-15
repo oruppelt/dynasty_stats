@@ -21,6 +21,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Chicago Bulls",
+      "label": "2026 round 1 pick (Chicago Bulls)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Chicago Bulls",
+      "team": "Philadelphia 76ers",
+      "trade": "llmo9x2dmklfs52y",
+      "label": "2026 round 1 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-02",
+      "from": "Philadelphia 76ers",
+      "team": "Portland Trail Blazers",
+      "trade": "fiw35r4gmr3vp2cv",
+      "label": "2026 round 1 pick, no. 15"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -28,6 +56,9 @@
       "team": "Portland Trail Blazers",
       "round": 1,
       "pick": 15,
+      "overall": 15,
+      "original": "Chicago Bulls",
+      "certain": true,
       "periods": 7,
       "starts": 0,
       "gp": 0,
@@ -36,8 +67,195 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "llmo9x2dmklfs52y": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "031lx",
+          "player": "CJ McCollum",
+          "label": "CJ McCollum"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "076t5",
+            "player": "Alex Karaban",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsj",
+          "player": "Bruce Brown",
+          "label": "Bruce Brown"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Utah Jazz",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "076t2",
+            "player": "Cameron Carr",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtq",
+          "player": "Tre Jones",
+          "label": "Tre Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Chicago Bulls",
+          "player_id": "02nf7",
+          "player": "Harrison Barnes",
+          "label": "Harrison Barnes"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06ca5",
+          "player": "Kris Murray",
+          "label": "Kris Murray"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06cbz",
+          "player": "Brice Sensabaugh",
+          "label": "Brice Sensabaugh"
+        }
+      ]
+    },
+    "fiw35r4gmr3vp2cv": {
+      "date": "2026-07-02",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick, no. 15",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "076t2",
+            "player": "Cameron Carr",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Philadelphia 76ers",
+          "label": "2027 round 1 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick, no. 23",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "076t4",
+            "player": "Ebuka Okorie",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

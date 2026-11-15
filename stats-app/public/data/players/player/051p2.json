@@ -219,6 +219,9 @@
       "team": "Cleveland Cavaliers",
       "round": 1,
       "pick": 17,
+      "overall": 17,
+      "original": "Golden State Warriors",
+      "certain": true,
       "periods": 35,
       "starts": 16,
       "gp": 27,
@@ -423,6 +426,45 @@
     }
   ],
   "trades": {
+    "zpkfhqzrldezs5gu": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "player_id": "04ex6",
+          "player": "Isaiah Hartenstein",
+          "label": "Isaiah Hartenstein"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "player_id": "051p2",
+          "player": "Grant Williams",
+          "label": "Grant Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "player_id": "05uj0",
+          "player": "Bones Hyland",
+          "label": "Bones Hyland"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Charlotte Hornets",
+          "player_id": "04qrl",
+          "player": "Wendell Carter",
+          "label": "Wendell Carter"
+        }
+      ]
+    },
     "krftry3nlxylys5x": {
       "date": "2024-06-28",
       "season": "2024-25",
@@ -456,13 +498,31 @@
           "kind": "pick",
           "from": "Phoenix Suns",
           "to": "Milwaukee Bucks",
-          "label": "2025 round 2 pick (Phoenix Suns)"
+          "label": "2025 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 12,
+            "overall": 42,
+            "player_id": "06v8e",
+            "player": "Javon Small",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Phoenix Suns",
           "to": "Milwaukee Bucks",
-          "label": "2024 round 1 pick, no. 14"
+          "label": "2024 round 1 pick, no. 14",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          }
         }
       ]
     },
@@ -507,46 +567,16 @@
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Charlotte Hornets",
-          "label": "2023 round 2 pick (Phoenix Suns)"
-        }
-      ]
-    },
-    "zpkfhqzrldezs5gu": {
-      "date": "2023-01-27",
-      "season": "2022-23",
-      "period": 30,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Golden State Warriors",
-          "player_id": "04ex6",
-          "player": "Isaiah Hartenstein",
-          "label": "Isaiah Hartenstein"
-        },
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Golden State Warriors",
-          "player_id": "051p2",
-          "player": "Grant Williams",
-          "label": "Grant Williams"
-        },
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Golden State Warriors",
-          "player_id": "05uj0",
-          "player": "Bones Hyland",
-          "label": "Bones Hyland"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Charlotte Hornets",
-          "player_id": "04qrl",
-          "player": "Wendell Carter",
-          "label": "Wendell Carter"
+          "label": "2023 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06cd9",
+            "player": "Jaylen Clark",
+            "certain": true
+          }
         }
       ]
     }

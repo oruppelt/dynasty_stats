@@ -77,6 +77,44 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Charlotte Hornets",
+      "label": "2024 round 2 pick (Charlotte Hornets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-01",
+      "from": "Charlotte Hornets",
+      "team": "Sacramento Kings",
+      "trade": "o168ohw7l69qhdp0",
+      "label": "2024 round 2 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-01",
+      "from": "Sacramento Kings",
+      "team": "Portland Trail Blazers",
+      "trade": "qcplt94xl6aub8kb",
+      "label": "2024 round 2 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-07",
+      "from": "Portland Trail Blazers",
+      "team": "Cleveland Cavaliers",
+      "trade": "mu1sghjul8ykpvq9",
+      "label": "2024 round 2 pick (Charlotte Hornets)"
+    },
+    {
       "kind": "claim",
       "season": "2022-23",
       "period": 1,
@@ -139,13 +177,26 @@
       "team": "Portland Trail Blazers"
     },
     {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-29",
+      "from": "Cleveland Cavaliers",
+      "team": "Golden State Warriors",
+      "trade": "9t7crq6jlxzvbjmo",
+      "label": "2024 round 2 pick, no. 24"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-29",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 54,
+      "pick": 24,
+      "overall": 54,
+      "original": "Charlotte Hornets",
+      "certain": false,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -215,13 +266,31 @@
           "kind": "pick",
           "from": "Houston Rockets",
           "to": "Portland Trail Blazers",
-          "label": "2025 round 2 pick (Milwaukee Bucks)"
+          "label": "2025 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06v5b",
+            "player": "Yanic Konan Niederhauser",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Houston Rockets",
           "to": "Los Angeles Lakers",
-          "label": "2025 round 2 pick (Houston Rockets)"
+          "label": "2025 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06v85",
+            "player": "Alijah Martin",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -243,6 +312,256 @@
           "kind": "budget",
           "from": "Portland Trail Blazers",
           "to": "Houston Rockets",
+          "label": "$7 budget"
+        }
+      ]
+    },
+    "mu1sghjul8ykpvq9": {
+      "date": "2022-10-07",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "0623f",
+          "player": "Justin Lewis",
+          "label": "Justin Lewis"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Orlando Magic",
+          "label": "2023 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06cdj",
+            "player": "Colby Jones",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "label": "$15 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "04ewb",
+          "player": "Jonathan Isaac",
+          "label": "Jonathan Isaac"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2024 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 16,
+            "overall": 16,
+            "player_id": "06mkb",
+            "player": "Ja'Kobe Walter",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Cleveland Cavaliers",
+          "label": "2024 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "001bb",
+            "player": "Jorge Garbajosa",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2023 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06cd7",
+            "player": "Keyontae Johnson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "ynipswzwlknts8pu": {
+      "date": "2023-07-29",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "player_id": "001bb",
+          "player": "Jorge Garbajosa",
+          "label": "Jorge Garbajosa"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "player_id": "0623f",
+          "player": "Justin Lewis",
+          "label": "Justin Lewis"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Orlando Magic",
+          "to": "Minnesota Timberwolves",
+          "label": "$5 budget"
+        }
+      ]
+    },
+    "qcplt94xl6aub8kb": {
+      "date": "2022-08-01",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Sacramento Kings",
+          "label": "2023 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06cdk",
+            "player": "Jalen Slawson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Portland Trail Blazers",
+          "label": "2024 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "001bb",
+            "player": "Jorge Garbajosa",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "o168ohw7l69qhdp0": {
+      "date": "2022-08-01",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "001bb",
+            "player": "Jorge Garbajosa",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Sacramento Kings",
+          "to": "Charlotte Hornets",
+          "label": "$31 budget"
+        }
+      ]
+    },
+    "9t7crq6jlxzvbjmo": {
+      "date": "2024-06-29",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Golden State Warriors",
+          "label": "2024 round 2 pick, no. 24",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "001bb",
+            "player": "Jorge Garbajosa",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Golden State Warriors",
+          "to": "Cleveland Cavaliers",
           "label": "$7 budget"
         }
       ]
@@ -283,41 +602,6 @@
           "player_id": "0623g",
           "player": "Michael Foster",
           "label": "Michael Foster"
-        }
-      ]
-    },
-    "ynipswzwlknts8pu": {
-      "date": "2023-07-29",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Orlando Magic",
-          "player_id": "001bb",
-          "player": "Jorge Garbajosa",
-          "label": "Jorge Garbajosa"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Orlando Magic",
-          "player_id": "0623f",
-          "player": "Justin Lewis",
-          "label": "Justin Lewis"
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Orlando Magic",
-          "label": "2024 round 2 pick (Memphis Grizzlies)"
-        },
-        {
-          "kind": "budget",
-          "from": "Orlando Magic",
-          "to": "Minnesota Timberwolves",
-          "label": "$5 budget"
         }
       ]
     }

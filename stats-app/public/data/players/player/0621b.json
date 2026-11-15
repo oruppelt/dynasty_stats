@@ -128,6 +128,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2022 round 1 pick (Indiana Pacers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 18,
+      "date": "2021-12-19",
+      "from": "Indiana Pacers",
+      "team": "Portland Trail Blazers",
+      "trade": "ulhq4eahkxdadm8q",
+      "label": "2022 round 1 pick (Indiana Pacers)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -135,6 +153,9 @@
       "team": "Portland Trail Blazers",
       "round": 1,
       "pick": 18,
+      "overall": 18,
+      "original": "Indiana Pacers",
+      "certain": true,
       "periods": 98,
       "starts": 86,
       "gp": 141,
@@ -214,9 +235,57 @@
           "label": "2027 round 1 pick (Utah Jazz)"
         }
       ]
+    },
+    "ulhq4eahkxdadm8q": {
+      "date": "2021-12-19",
+      "season": "2021-22",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "01uyd",
+          "player": "Avery Bradley",
+          "label": "Avery Bradley"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2022 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 18,
+            "overall": 18,
+            "player_id": "0621b",
+            "player": "Jalen Williams",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "04ex8",
+          "player": "Dillon Brooks",
+          "label": "Dillon Brooks"
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

@@ -100,6 +100,54 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Cleveland Cavaliers",
+      "label": "2024 round 1 pick (Cleveland Cavaliers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-30",
+      "from": "Cleveland Cavaliers",
+      "team": "Washington Wizards",
+      "trade": "zyo6opbml67imffa",
+      "label": "2024 round 1 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-27",
+      "from": "Washington Wizards",
+      "team": "Dallas Mavericks",
+      "trade": "2cu2h9icljdu82jn",
+      "label": "2024 round 1 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Dallas Mavericks",
+      "team": "Miami Heat",
+      "trade": "f24ziii5lxyb2o23",
+      "label": "2024 round 1 pick, no. 11"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Miami Heat",
+      "team": "Washington Wizards",
+      "trade": "uq2o1bs8lxyjavfd",
+      "label": "2024 round 1 pick, no. 11"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -107,6 +155,9 @@
       "team": "Washington Wizards",
       "round": 1,
       "pick": 11,
+      "overall": 11,
+      "original": "Cleveland Cavaliers",
+      "certain": true,
       "periods": 73,
       "starts": 24,
       "gp": 39,
@@ -115,8 +166,311 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "2cu2h9icljdu82jn": {
+      "date": "2023-06-27",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Washington Wizards",
+          "label": "2023 round 1 pick, no. 22",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06cdj",
+            "player": "Colby Jones",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06mjy",
+            "player": "Tidjane Salaun",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "f24ziii5lxyb2o23": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2024 round 1 pick, no. 11",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06mjy",
+            "player": "Tidjane Salaun",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick, no. 7",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06mly",
+            "player": "Quinten Post",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2024 round 1 pick, no. 14",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick, no. 4",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "06mk3",
+            "player": "Matas Buzelis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "$15 budget"
+        }
+      ]
+    },
+    "zyo6opbml67imffa": {
+      "date": "2022-07-30",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "05qtm",
+          "player": "Precious Achiuwa",
+          "label": "Precious Achiuwa"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "05uj4",
+          "player": "Santi Aldama",
+          "label": "Santi Aldama"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "label": "2024 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06mjy",
+            "player": "Tidjane Salaun",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        }
+      ]
+    },
+    "uq2o1bs8lxyjavfd": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "player_id": "04qs4",
+          "player": "Robert Williams",
+          "label": "Robert Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 7",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06mly",
+            "player": "Quinten Post",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2024 round 1 pick, no. 14",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Washington Wizards",
+          "label": "2024 round 2 pick, no. 5",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06mkh",
+            "player": "Pacome Dadiet",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Washington Wizards",
+          "label": "2024 round 1 pick, no. 11",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06mjy",
+            "player": "Tidjane Salaun",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "player_id": "051p8",
+          "player": "Jordan Poole",
+          "label": "Jordan Poole"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "player_id": "03e74",
+          "player": "Spencer Dinwiddie",
+          "label": "Spencer Dinwiddie"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick, no. 30",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "06mlx",
+            "player": "Melvin Ajinca",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 11",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06mlo",
+            "player": "KJ Simpson",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Phoenix Suns",
+          "label": "2024 round 1 pick, no. 8",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06mjx",
+            "player": "Ron Holland",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

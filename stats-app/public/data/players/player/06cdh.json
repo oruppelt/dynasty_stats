@@ -142,13 +142,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Milwaukee Bucks",
+      "label": "2023 round 2 pick (Milwaukee Bucks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-20",
+      "from": "Milwaukee Bucks",
+      "team": "Boston Celtics",
+      "trade": "4csdps1ul4mqtiiz",
+      "label": "2023 round 2 pick (Milwaukee Bucks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 23,
+      "date": "2023-01-02",
+      "from": "Boston Celtics",
+      "team": "Oklahoma City Thunder",
+      "trade": "jg91nnqmlcerb7ao",
+      "label": "2023 round 2 pick (Milwaukee Bucks)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
       "date": "2023-06-27",
       "team": "Oklahoma City Thunder",
       "round": 2,
-      "pick": 40,
+      "pick": 10,
+      "overall": 40,
+      "original": "Milwaukee Bucks",
+      "certain": true,
       "periods": 71,
       "starts": 10,
       "gp": 17,
@@ -215,6 +246,129 @@
     }
   ],
   "trades": {
+    "4csdps1ul4mqtiiz": {
+      "date": "2022-06-20",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Milwaukee Bucks",
+          "player_id": "03lls",
+          "player": "Jaylen Brown",
+          "label": "Jaylen Brown"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Milwaukee Bucks",
+          "player_id": "01eog",
+          "player": "Patty Mills",
+          "label": "Patty Mills"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Boston Celtics",
+          "player_id": "031mb",
+          "player": "Tim Hardaway",
+          "label": "Tim Hardaway"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Boston Celtics",
+          "player_id": "05uip",
+          "player": "Corey Kispert",
+          "label": "Corey Kispert"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Boston Celtics",
+          "label": "2022 round 1 pick, no. 14",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "0621f",
+            "player": "AJ Griffin",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Boston Celtics",
+          "label": "2023 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06cdh",
+            "player": "GG Jackson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "jg91nnqmlcerb7ao": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06235",
+          "player": "Kenneth Lofton",
+          "label": "Kenneth Lofton"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "065px",
+          "player": "Trevion Williams",
+          "label": "Trevion Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06cdh",
+            "player": "GG Jackson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford"
+        }
+      ]
+    },
     "b7zez6g3mhsz8kok": {
       "date": "2025-11-10",
       "season": "2025-26",
@@ -256,7 +410,16 @@
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Toronto Raptors",
-          "label": "2026 round 1 pick (Oklahoma City Thunder)"
+          "label": "2026 round 1 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "076u1",
+            "player": "Henri Veesaar",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -284,6 +447,16 @@
     }
   },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

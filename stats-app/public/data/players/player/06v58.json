@@ -100,6 +100,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2025 round 1 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 22,
+      "date": "2024-01-05",
+      "from": "Boston Celtics",
+      "team": "Oklahoma City Thunder",
+      "trade": "0x0h24u3lr0j2d6r",
+      "label": "2025 round 1 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -107,6 +125,9 @@
       "team": "Oklahoma City Thunder",
       "round": 1,
       "pick": 7,
+      "overall": 7,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 19,
       "starts": 7,
       "gp": 12,
@@ -164,7 +185,16 @@
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Toronto Raptors",
-          "label": "2026 round 1 pick (Boston Celtics)"
+          "label": "2026 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "076tl",
+            "player": "Brayden Burries",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
@@ -189,9 +219,88 @@
           "label": "Jabari Smith"
         }
       ]
+    },
+    "0x0h24u3lr0j2d6r": {
+      "date": "2024-01-05",
+      "season": "2023-24",
+      "period": 22,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06235",
+          "player": "Kenneth Lofton",
+          "label": "Kenneth Lofton"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "031mb",
+          "player": "Tim Hardaway",
+          "label": "Tim Hardaway"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06v58",
+            "player": "Tre Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2024 round 1 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06mle",
+            "player": "Kyle Filipowski",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "031m4",
+          "player": "Dennis Schroder",
+          "label": "Dennis Schroder"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

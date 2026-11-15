@@ -320,29 +320,6 @@
     }
   ],
   "trades": {
-    "4082kokckyio7f5a": {
-      "date": "2022-01-17",
-      "season": "2021-22",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Sacramento Kings",
-          "player_id": "05uin",
-          "player": "Chris Duarte",
-          "label": "Chris Duarte"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Memphis Grizzlies",
-          "player_id": "049kf",
-          "player": "Mo Bamba",
-          "label": "Mo Bamba"
-        }
-      ]
-    },
     "nsziz30xlccebfbg": {
       "date": "2023-01-01",
       "season": "2022-23",
@@ -360,13 +337,31 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Houston Rockets",
-          "label": "2023 round 2 pick (Los Angeles Clippers)"
+          "label": "2023 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06ccu",
+            "player": "Tristan Vukcevic",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Los Angeles Clippers",
-          "label": "2023 round 2 pick (Charlotte Hornets)"
+          "label": "2023 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "033b7",
+            "player": null,
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -426,7 +421,16 @@
           "kind": "pick",
           "from": "Houston Rockets",
           "to": "Los Angeles Clippers",
-          "label": "2023 round 1 pick (Houston Rockets)"
+          "label": "2023 round 1 pick (Houston Rockets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "06ccb",
+            "player": "Nick Smith",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -462,64 +466,26 @@
         }
       ]
     },
-    "3l0w7p04kpgu1kue": {
-      "date": "2021-06-03",
+    "4082kokckyio7f5a": {
+      "date": "2022-01-17",
       "season": "2021-22",
-      "period": 1,
+      "period": 27,
       "items": [
         {
           "kind": "player",
-          "from": "Orlando Magic",
+          "from": "Memphis Grizzlies",
           "to": "Sacramento Kings",
-          "player_id": "01sc8",
-          "player": "John Wall",
-          "label": "John Wall"
+          "player_id": "05uin",
+          "player": "Chris Duarte",
+          "label": "Chris Duarte"
         },
         {
           "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Sacramento Kings",
-          "player_id": "027pg",
-          "player": "Bojan Bogdanovic",
-          "label": "Bojan Bogdanovic"
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Sacramento Kings",
+          "from": "Sacramento Kings",
+          "to": "Memphis Grizzlies",
           "player_id": "049kf",
           "player": "Mo Bamba",
           "label": "Mo Bamba"
-        },
-        {
-          "kind": "pick",
-          "from": "Orlando Magic",
-          "to": "Sacramento Kings",
-          "label": "2022 round 1 pick (Orlando Magic)"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Orlando Magic",
-          "player_id": "051po",
-          "player": "Bol Bol",
-          "label": "Bol Bol"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Orlando Magic",
-          "player_id": "027pe",
-          "player": "Jimmy Butler",
-          "label": "Jimmy Butler"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Orlando Magic",
-          "player_id": "04qs5",
-          "player": "Jacob Evans",
-          "label": "Jacob Evans"
         }
       ]
     },
@@ -559,6 +525,76 @@
           "player_id": "02nfa",
           "player": "Austin Rivers",
           "label": "Austin Rivers"
+        }
+      ]
+    },
+    "3l0w7p04kpgu1kue": {
+      "date": "2021-06-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "027pg",
+          "player": "Bojan Bogdanovic",
+          "label": "Bojan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "049kf",
+          "player": "Mo Bamba",
+          "label": "Mo Bamba"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06218",
+            "player": "Jeremy Sochan",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "051po",
+          "player": "Bol Bol",
+          "label": "Bol Bol"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "027pe",
+          "player": "Jimmy Butler",
+          "label": "Jimmy Butler"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
         }
       ]
     }

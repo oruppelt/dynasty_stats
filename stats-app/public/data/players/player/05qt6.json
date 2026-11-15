@@ -114,6 +114,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Los Angeles Lakers",
+      "label": "2020 round 1 pick (Los Angeles Lakers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 7,
+      "date": "2019-11-12",
+      "from": "Charlotte Hornets",
+      "team": "Golden State Warriors",
+      "trade": "fxer8dkxk2waggde",
+      "label": "2020 round 1 pick (Los Angeles Lakers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 7,
+      "date": "2019-11-14",
+      "from": "Golden State Warriors",
+      "team": "Phoenix Suns",
+      "trade": "efbkpthdk2xp9yc0",
+      "label": "2020 round 1 pick (Los Angeles Lakers)"
+    },
+    {
       "kind": "draft",
       "season": "2020-21",
       "period": 0,
@@ -121,6 +149,9 @@
       "team": "Phoenix Suns",
       "round": 1,
       "pick": 24,
+      "overall": 24,
+      "original": "Los Angeles Lakers",
+      "certain": false,
       "periods": 95,
       "starts": 38,
       "gp": 45,
@@ -157,8 +188,119 @@
       "team": "Memphis Grizzlies"
     }
   ],
-  "trades": {},
+  "trades": {
+    "fxer8dkxk2waggde": {
+      "date": "2019-11-12",
+      "season": "2019-20",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "player_id": "0201u",
+          "player": "Ish Smith",
+          "label": "Ish Smith"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "label": "2020 round 1 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "05qt6",
+            "player": "Jordan Nwora",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick (Toronto Raptors)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "05qu2",
+            "player": "Justinian Jessup",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Charlotte Hornets",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris"
+        }
+      ]
+    },
+    "efbkpthdk2xp9yc0": {
+      "date": "2019-11-14",
+      "season": "2019-20",
+      "period": 7,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Phoenix Suns",
+          "label": "2020 round 1 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "05qt6",
+            "player": "Jordan Nwora",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Phoenix Suns",
+          "label": "2020 round 2 pick (Toronto Raptors)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "05qu2",
+            "player": "Justinian Jessup",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Golden State Warriors",
+          "label": "2020 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 9,
+            "overall": 9,
+            "player_id": "05qt9",
+            "player": "Killian Hayes",
+            "certain": false
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

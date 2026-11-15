@@ -114,6 +114,54 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Atlanta Hawks",
+      "label": "2023 round 1 pick (Atlanta Hawks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-04",
+      "from": "Atlanta Hawks",
+      "team": "Washington Wizards",
+      "trade": "mwwyzn4ykwro4f2f",
+      "label": "2023 round 1 pick (Atlanta Hawks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 28,
+      "date": "2023-01-20",
+      "from": "Washington Wizards",
+      "team": "Miami Heat",
+      "trade": "m9ic3sm9ld0jz28w",
+      "label": "2023 round 1 pick (Atlanta Hawks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-26",
+      "from": "Miami Heat",
+      "team": "Utah Jazz",
+      "trade": "tbw260rxldbmy6ec",
+      "label": "2023 round 1 pick (Atlanta Hawks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "from": "Utah Jazz",
+      "team": "Portland Trail Blazers",
+      "trade": "b8r8172jldexl7cs",
+      "label": "2023 round 1 pick (Atlanta Hawks)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
@@ -121,6 +169,9 @@
       "team": "Portland Trail Blazers",
       "round": 1,
       "pick": 23,
+      "overall": 23,
+      "original": "Atlanta Hawks",
+      "certain": true,
       "periods": 65,
       "starts": 9,
       "gp": 10,
@@ -214,7 +265,16 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Utah Jazz",
-          "label": "2026 round 1 pick (Dallas Mavericks)"
+          "label": "2026 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "076t5",
+            "player": "Alex Karaban",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -244,7 +304,16 @@
           "kind": "pick",
           "from": "Chicago Bulls",
           "to": "Philadelphia 76ers",
-          "label": "2026 round 1 pick (Chicago Bulls)"
+          "label": "2026 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "076t2",
+            "player": "Cameron Carr",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -287,9 +356,425 @@
           "label": "Brice Sensabaugh"
         }
       ]
+    },
+    "mwwyzn4ykwro4f2f": {
+      "date": "2021-12-04",
+      "season": "2021-22",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "05qt8",
+          "player": "Cassius Stanley",
+          "label": "Cassius Stanley"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "051oo",
+          "player": "Jaxson Hayes",
+          "label": "Jaxson Hayes"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "03avi",
+          "player": "Doug McDermott",
+          "label": "Doug McDermott"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "0621u",
+            "player": "Andrew Nembhard",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "label": "2023 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06ca5",
+            "player": "Kris Murray",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsu",
+          "player": "Shake Milton",
+          "label": "Shake Milton"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Atlanta Hawks",
+          "player_id": "027p0",
+          "player": "Nikola Vucevic",
+          "label": "Nikola Vucevic"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Atlanta Hawks",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        }
+      ]
+    },
+    "m9ic3sm9ld0jz28w": {
+      "date": "2023-01-20",
+      "season": "2022-23",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Washington Wizards",
+          "player_id": "06216",
+          "player": "Shaedon Sharpe",
+          "label": "Shaedon Sharpe"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Washington Wizards",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Washington Wizards",
+          "label": "2023 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06ccx",
+            "player": "Hunter Tyson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Miami Heat",
+          "player_id": "05qtm",
+          "player": "Precious Achiuwa",
+          "label": "Precious Achiuwa"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Miami Heat",
+          "label": "2023 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06cdk",
+            "player": "Jalen Slawson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Miami Heat",
+          "label": "2023 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06cbz",
+            "player": "Brice Sensabaugh",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Miami Heat",
+          "label": "2023 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06cdd",
+            "player": "Andre Jackson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Miami Heat",
+          "label": "2023 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06ca5",
+            "player": "Kris Murray",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "b8r8172jldexl7cs": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Utah Jazz",
+          "player_id": "031m9",
+          "player": "Mason Plumlee",
+          "label": "Mason Plumlee"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "player_id": "04jw4",
+          "player": "Maxi Kleber",
+          "label": "Maxi Kleber"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "label": "2023 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06ca5",
+            "player": "Kris Murray",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "tbw260rxldbmy6ec": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05qtm",
+          "player": "Precious Achiuwa",
+          "label": "Precious Achiuwa"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05uus",
+          "player": "Austin Reaves",
+          "label": "Austin Reaves"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05ujg",
+          "player": "Isaiah Livers",
+          "label": "Isaiah Livers"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06cbz",
+            "player": "Brice Sensabaugh",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06cdd",
+            "player": "Andre Jackson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06mkf",
+            "player": "AJ Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (Miami Heat)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06mkh",
+            "player": "Pacome Dadiet",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06ca5",
+            "player": "Kris Murray",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05qsq",
+          "player": "Tyrese Maxey",
+          "label": "Tyrese Maxey"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05ujr",
+          "player": "Charles Bassey",
+          "label": "Charles Bassey"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05qud",
+          "player": "Aleksej Pokusevski",
+          "label": "Aleksej Pokusevski"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "03ad0",
+          "player": "Tyus Jones",
+          "label": "Tyus Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "051pw",
+          "player": "Jalen McDaniels",
+          "label": "Jalen McDaniels"
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

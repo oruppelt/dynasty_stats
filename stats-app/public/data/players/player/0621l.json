@@ -142,6 +142,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Minnesota Timberwolves",
+      "label": "2022 round 1 pick, no. 24",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-27",
+      "from": "Minnesota Timberwolves",
+      "team": "Chicago Bulls",
+      "trade": "mkq4pvzjl4wmiyta",
+      "label": "2022 round 1 pick, no. 24"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -149,6 +167,9 @@
       "team": "Chicago Bulls",
       "round": 1,
       "pick": 24,
+      "overall": 24,
+      "original": "Minnesota Timberwolves",
+      "certain": true,
       "periods": 98,
       "starts": 75,
       "gp": 120,
@@ -225,12 +246,76 @@
           "kind": "pick",
           "from": "Milwaukee Bucks",
           "to": "Chicago Bulls",
-          "label": "2026 round 1 pick (New Orleans Pelicans)"
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "mkq4pvzjl4wmiyta": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujs",
+          "player": "Sandro Mamukelashvili",
+          "label": "Sandro Mamukelashvili"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 1 pick, no. 19",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "0621n",
+            "player": "MarJon Beauchamp",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Chicago Bulls",
+          "label": "2022 round 1 pick, no. 24",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "0621l",
+            "player": "Walker Kessler",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

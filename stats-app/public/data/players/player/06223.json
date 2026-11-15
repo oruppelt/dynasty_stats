@@ -114,13 +114,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2022 round 2 pick (Orlando Magic)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-09-01",
+      "from": "Orlando Magic",
+      "team": "Atlanta Hawks",
+      "trade": "olra9olekt197as1",
+      "label": "2022 round 2 pick (Orlando Magic)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 25,
+      "date": "2022-01-10",
+      "from": "Atlanta Hawks",
+      "team": "Dallas Mavericks",
+      "trade": "qjr5uydxky8oj5x3",
+      "label": "2022 round 2 pick (Orlando Magic)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-28",
       "team": "Dallas Mavericks",
       "round": 2,
-      "pick": 44,
+      "pick": 14,
+      "overall": 44,
+      "original": "Orlando Magic",
+      "certain": true,
       "periods": 65,
       "starts": 40,
       "gp": 47,
@@ -171,8 +202,117 @@
       "contract": "REG1"
     }
   ],
-  "trades": {},
+  "trades": {
+    "qjr5uydxky8oj5x3": {
+      "date": "2022-01-10",
+      "season": "2021-22",
+      "period": 25,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Dallas Mavericks",
+          "label": "2022 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "0621z",
+            "player": "Gabriele Procida",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Dallas Mavericks",
+          "label": "2022 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06223",
+            "player": "Bryce McGowens",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7m",
+          "player": "Cedi Osman",
+          "label": "Cedi Osman"
+        }
+      ]
+    },
+    "olra9olekt197as1": {
+      "date": "2021-09-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "04jwd",
+          "player": "Royce O'Neale",
+          "label": "Royce O'Neale"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "label": "2022 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsa",
+          "player": "Jalen Brunson",
+          "label": "Jalen Brunson"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06223",
+            "player": "Bryce McGowens",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

@@ -577,6 +577,35 @@
     }
   ],
   "trades": {
+    "usb4nd6bk2rz46bo": {
+      "date": "2019-11-10",
+      "season": "2019-20",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Indiana Pacers",
+          "player_id": "04ex1",
+          "player": "Jordan Bell",
+          "label": "Jordan Bell"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Indiana Pacers",
+          "label": "2020 round 1 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Boston Celtics",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        }
+      ]
+    },
     "mwwyzn4ykwro4f2f": {
       "date": "2021-12-04",
       "season": "2021-22",
@@ -626,19 +655,46 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Washington Wizards",
-          "label": "2022 round 2 pick (Chicago Bulls)"
+          "label": "2022 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "0621u",
+            "player": "Andrew Nembhard",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Washington Wizards",
-          "label": "2022 round 1 pick (Golden State Warriors)"
+          "label": "2022 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Washington Wizards",
-          "label": "2023 round 1 pick (Atlanta Hawks)"
+          "label": "2023 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06ca5",
+            "player": "Kris Murray",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -663,6 +719,37 @@
           "player_id": "027pf",
           "player": "Cory Joseph",
           "label": "Cory Joseph"
+        }
+      ]
+    },
+    "lx2k2grzkt1r78ly": {
+      "date": "2021-09-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Philadelphia 76ers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Philadelphia 76ers",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Los Angeles Lakers",
+          "player_id": "03al0",
+          "player": "Aaron Gordon",
+          "label": "Aaron Gordon"
         }
       ]
     },
@@ -723,125 +810,16 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Miami Heat",
-          "label": "2025 round 1 pick (Atlanta Hawks)"
-        }
-      ]
-    },
-    "9vgur2qqkwp7qyjp": {
-      "date": "2021-12-02",
-      "season": "2021-22",
-      "period": 13,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Atlanta Hawks",
-          "to": "Indiana Pacers",
-          "label": "$1 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Atlanta Hawks",
-          "player_id": "04qs0",
-          "player": "Aaron Holiday",
-          "label": "Aaron Holiday"
-        },
-        {
-          "kind": "pick",
-          "from": "Indiana Pacers",
-          "to": "Atlanta Hawks",
-          "label": "2022 round 2 pick (Cleveland Cavaliers)"
-        }
-      ]
-    },
-    "lx2k2grzkt1r78ly": {
-      "date": "2021-09-02",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Philadelphia 76ers",
-          "player_id": "005ke",
-          "player": "Danilo Gallinari",
-          "label": "Danilo Gallinari"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Philadelphia 76ers",
-          "player_id": "04qs0",
-          "player": "Aaron Holiday",
-          "label": "Aaron Holiday"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Los Angeles Lakers",
-          "player_id": "03al0",
-          "player": "Aaron Gordon",
-          "label": "Aaron Gordon"
-        }
-      ]
-    },
-    "usb4nd6bk2rz46bo": {
-      "date": "2019-11-10",
-      "season": "2019-20",
-      "period": 7,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Indiana Pacers",
-          "player_id": "04ex1",
-          "player": "Jordan Bell",
-          "label": "Jordan Bell"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Indiana Pacers",
-          "label": "2020 round 1 pick (New Orleans Pelicans)"
-        },
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Boston Celtics",
-          "player_id": "04qs0",
-          "player": "Aaron Holiday",
-          "label": "Aaron Holiday"
-        }
-      ]
-    },
-    "zv22ykp0kw3x46bg": {
-      "date": "2021-11-17",
-      "season": "2021-22",
-      "period": 10,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Sacramento Kings",
-          "player_id": "05qsn",
-          "player": "Malachi Flynn",
-          "label": "Malachi Flynn"
-        },
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Sacramento Kings",
-          "player_id": "05qtx",
-          "player": "Jahmi'us Ramsey",
-          "label": "Jahmi'us Ramsey"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Indiana Pacers",
-          "player_id": "04qs0",
-          "player": "Aaron Holiday",
-          "label": "Aaron Holiday"
+          "label": "2025 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          }
         }
       ]
     },
@@ -862,7 +840,16 @@
           "kind": "pick",
           "from": "Philadelphia 76ers",
           "to": "Sacramento Kings",
-          "label": "2023 round 2 pick (Philadelphia 76ers)"
+          "label": "2023 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06cdg",
+            "player": "Maxwell Lewis",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -910,6 +897,73 @@
           "player_id": "042nr",
           "player": "Damian Jones",
           "label": "Damian Jones"
+        }
+      ]
+    },
+    "zv22ykp0kw3x46bg": {
+      "date": "2021-11-17",
+      "season": "2021-22",
+      "period": 10,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "player_id": "05qtx",
+          "player": "Jahmi'us Ramsey",
+          "label": "Jahmi'us Ramsey"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Indiana Pacers",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        }
+      ]
+    },
+    "9vgur2qqkwp7qyjp": {
+      "date": "2021-12-02",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Atlanta Hawks",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "0621x",
+            "player": "Jaylin Williams",
+            "certain": true
+          }
         }
       ]
     }

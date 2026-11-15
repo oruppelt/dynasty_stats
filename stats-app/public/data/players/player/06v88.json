@@ -86,13 +86,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2025 round 2 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Boston Celtics",
+      "team": "Houston Rockets",
+      "trade": "efe0iawnlxyrz99m",
+      "label": "2025 round 2 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 5,
+      "date": "2024-11-04",
+      "from": "Houston Rockets",
+      "team": "Miami Heat",
+      "trade": "9txb56t8m32yr95c",
+      "label": "2025 round 2 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-04",
       "team": "Miami Heat",
       "round": 2,
-      "pick": 36,
+      "pick": 6,
+      "overall": 36,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 40,
       "starts": 11,
       "gp": 19,
@@ -101,8 +132,87 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "9txb56t8m32yr95c": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "06cce",
+          "player": "Jalen Hood-Schifino",
+          "label": "Jalen Hood-Schifino"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06v88",
+            "player": "Maxime Raynaud",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "04jwb",
+          "player": "Luke Kornet",
+          "label": "Luke Kornet"
+        }
+      ]
+    },
+    "efe0iawnlxyrz99m": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06v88",
+            "player": "Maxime Raynaud",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "player_id": "06mlr",
+          "player": "Jamal Shead",
+          "label": "Jamal Shead"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

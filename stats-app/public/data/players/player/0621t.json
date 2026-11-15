@@ -128,13 +128,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Minnesota Timberwolves",
+      "label": "2022 round 2 pick, no. 24",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-27",
+      "from": "Minnesota Timberwolves",
+      "team": "Golden State Warriors",
+      "trade": "y55xx89bl4wskfv5",
+      "label": "2022 round 2 pick, no. 24"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-29",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 54,
+      "pick": 24,
+      "overall": 54,
+      "original": "Minnesota Timberwolves",
+      "certain": true,
       "periods": 98,
       "starts": 35,
       "gp": 62,
@@ -185,8 +206,47 @@
       "contract": "REG1"
     }
   ],
-  "trades": {},
+  "trades": {
+    "y55xx89bl4wskfv5": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "label": "2022 round 2 pick, no. 24",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "0621t",
+            "player": "Peyton Watson",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

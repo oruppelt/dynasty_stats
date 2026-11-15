@@ -114,13 +114,64 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Washington Wizards",
+      "label": "2022 round 2 pick (Washington Wizards)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-09",
+      "from": "Washington Wizards",
+      "team": "Toronto Raptors",
+      "trade": "41f9k727kihb18pa",
+      "label": "2022 round 2 pick (Washington Wizards)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 21,
+      "date": "2021-03-01",
+      "from": "Toronto Raptors",
+      "team": "Boston Celtics",
+      "trade": "n3iu6fufklqk845u",
+      "label": "2022 round 2 pick (Washington Wizards)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 24,
+      "date": "2021-03-14",
+      "from": "Boston Celtics",
+      "team": "Washington Wizards",
+      "trade": "ee6xgebckm9jocfk",
+      "label": "2022 round 2 pick (Washington Wizards)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 9,
+      "date": "2021-11-18",
+      "from": "Washington Wizards",
+      "team": "Chicago Bulls",
+      "trade": "exrf6pckkw4s6iuq",
+      "label": "2022 round 2 pick (Washington Wizards)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-28",
       "team": "Chicago Bulls",
       "round": 2,
-      "pick": 33,
+      "pick": 3,
+      "overall": 33,
+      "original": "Washington Wizards",
+      "certain": true,
       "periods": 95,
       "starts": 11,
       "gp": 7,
@@ -157,8 +208,246 @@
       "team": "Chicago Bulls"
     }
   ],
-  "trades": {},
+  "trades": {
+    "ee6xgebckm9jocfk": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "03nwo",
+          "player": "Frank Kaminsky",
+          "label": "Frank Kaminsky"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "0621o",
+            "player": "Blake Wesley",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "05qwu",
+          "player": "Killian Tillie",
+          "label": "Killian Tillie"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "label": "2022 round 1 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "06210",
+            "player": "Paolo Banchero",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "exrf6pckkw4s6iuq": {
+      "date": "2021-11-18",
+      "season": "2021-22",
+      "period": 10,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Washington Wizards",
+          "player_id": "02x1k",
+          "player": "Justin Holiday",
+          "label": "Justin Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Washington Wizards",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Chicago Bulls",
+          "player_id": "04qrx",
+          "player": "Josh Okogie",
+          "label": "Josh Okogie"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Chicago Bulls",
+          "player_id": "004zd",
+          "player": "Marc Gasol",
+          "label": "Marc Gasol"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Chicago Bulls",
+          "label": "2022 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "0621o",
+            "player": "Blake Wesley",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Chicago Bulls",
+          "label": "2023 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06cdd",
+            "player": "Andre Jackson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "41f9k727kihb18pa": {
+      "date": "2020-12-09",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Toronto Raptors)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "051p6",
+            "player": "Dylan Windler",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Toronto Raptors",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Toronto Raptors",
+          "label": "2022 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "0621o",
+            "player": "Blake Wesley",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Toronto Raptors",
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "n3iu6fufklqk845u": {
+      "date": "2021-03-01",
+      "season": "2020-21",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Toronto Raptors",
+          "player_id": "042o6",
+          "player": "Jake Layman",
+          "label": "Jake Layman"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Boston Celtics",
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Boston Celtics",
+          "label": "2022 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "0621o",
+            "player": "Blake Wesley",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

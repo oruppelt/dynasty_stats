@@ -35,13 +35,94 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Memphis Grizzlies",
+      "label": "2024 round 2 pick (Memphis Grizzlies)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-17",
+      "from": "Memphis Grizzlies",
+      "team": "Portland Trail Blazers",
+      "trade": "k70w55l6l9cpz1by",
+      "label": "2024 round 2 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 21,
+      "date": "2022-12-26",
+      "from": "Portland Trail Blazers",
+      "team": "Memphis Grizzlies",
+      "trade": "0jpui8znlc50zbu9",
+      "label": "2024 round 2 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 27,
+      "date": "2023-01-16",
+      "from": "Memphis Grizzlies",
+      "team": "Minnesota Timberwolves",
+      "trade": "c78464erlcyppe9f",
+      "label": "2024 round 2 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "from": "Minnesota Timberwolves",
+      "team": "Orlando Magic",
+      "trade": "ynipswzwlknts8pu",
+      "label": "2024 round 2 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 13,
+      "date": "2023-12-04",
+      "from": "Orlando Magic",
+      "team": "Atlanta Hawks",
+      "trade": "18v4rya5lpr3wy1m",
+      "label": "2024 round 2 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 17,
+      "date": "2023-12-21",
+      "from": "Atlanta Hawks",
+      "team": "Memphis Grizzlies",
+      "trade": "gf9smt20lqf07q97",
+      "label": "2024 round 2 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "from": "Memphis Grizzlies",
+      "team": "New York Knicks",
+      "trade": "79wk2egvlrpcba0l",
+      "label": "2024 round 2 pick (Memphis Grizzlies)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-28",
       "team": "New York Knicks",
       "round": 2,
-      "pick": 36,
+      "pick": 6,
+      "overall": 36,
+      "original": "Memphis Grizzlies",
+      "certain": false,
       "periods": 66,
       "starts": 0,
       "gp": 0,
@@ -57,8 +138,526 @@
       "team": "New York Knicks"
     }
   ],
-  "trades": {},
+  "trades": {
+    "gf9smt20lqf07q97": {
+      "date": "2023-12-21",
+      "season": "2023-24",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qt4",
+          "player": "Aaron Nesmith",
+          "label": "Aaron Nesmith"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Memphis Grizzlies",
+          "player_id": "05uij",
+          "player": "Davion Mitchell",
+          "label": "Davion Mitchell"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Atlanta Hawks",
+          "to": "Memphis Grizzlies",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7e",
+          "player": "Cameron Payne",
+          "label": "Cameron Payne"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "06mkm",
+            "player": "Baylor Scheierman",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "k70w55l6l9cpz1by": {
+      "date": "2022-10-17",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Portland Trail Blazers",
+          "player_id": "02nfy",
+          "player": "Jae Crowder",
+          "label": "Jae Crowder"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Portland Trail Blazers",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Portland Trail Blazers",
+          "to": "Memphis Grizzlies",
+          "label": "$15 budget"
+        }
+      ]
+    },
+    "c78464erlcyppe9f": {
+      "date": "2023-01-16",
+      "season": "2022-23",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Washington Wizards",
+          "player_id": "02nf9",
+          "player": "Andre Drummond",
+          "label": "Andre Drummond"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Memphis Grizzlies",
+          "player_id": "04qsi",
+          "player": "Jarred Vanderbilt",
+          "label": "Jarred Vanderbilt"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "label": "2024 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06mk7",
+            "player": "Kel'el Ware",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "042nw",
+          "player": "Malcolm Brogdon",
+          "label": "Malcolm Brogdon"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "label": "2023 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06cei",
+            "player": "Leonard Miller",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "0jpui8znlc50zbu9": {
+      "date": "2022-12-26",
+      "season": "2022-23",
+      "period": 21,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Portland Trail Blazers",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "player_id": "03r7l",
+          "player": "Larry Nance",
+          "label": "Larry Nance"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "03927",
+          "player": "JaMychal Green",
+          "label": "JaMychal Green"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "05ujp",
+          "player": "Brandon Boston",
+          "label": "Brandon Boston"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "0621x",
+          "player": "Jaylin Williams",
+          "label": "Jaylin Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "04t8w",
+          "player": "Kenrich Williams",
+          "label": "Kenrich Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "051pp",
+          "player": "Isaiah Roby",
+          "label": "Isaiah Roby"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2023 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06cel",
+            "player": "Sidy Cissoko",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "ynipswzwlknts8pu": {
+      "date": "2023-07-29",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "player_id": "001bb",
+          "player": "Jorge Garbajosa",
+          "label": "Jorge Garbajosa"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "player_id": "0623f",
+          "player": "Justin Lewis",
+          "label": "Justin Lewis"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Orlando Magic",
+          "to": "Minnesota Timberwolves",
+          "label": "$5 budget"
+        }
+      ]
+    },
+    "79wk2egvlrpcba0l": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2025 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 2,
+            "overall": 2,
+            "player_id": "06v5y",
+            "player": "Dylan Harper",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Memphis Grizzlies",
+          "player_id": "051oj",
+          "player": "RJ Barrett",
+          "label": "RJ Barrett"
+        }
+      ]
+    },
+    "18v4rya5lpr3wy1m": {
+      "date": "2023-12-04",
+      "season": "2023-24",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "0621a",
+          "player": "Ousmane Dieng",
+          "label": "Ousmane Dieng"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "05uij",
+          "player": "Davion Mitchell",
+          "label": "Davion Mitchell"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "02nfk",
+          "player": "Evan Fournier",
+          "label": "Evan Fournier"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

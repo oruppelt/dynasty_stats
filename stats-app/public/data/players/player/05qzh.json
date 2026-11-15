@@ -184,6 +184,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Portland Trail Blazers",
+      "label": "2021 round 2 pick (Portland Trail Blazers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 2,
+      "date": "2019-10-27",
+      "from": "Portland Trail Blazers",
+      "team": "Miami Heat",
+      "trade": "kc1p17v7k28rq4km",
+      "label": "2021 round 2 pick (Portland Trail Blazers)"
+    },
+    {
       "kind": "claim",
       "season": "2020-21",
       "period": 42,
@@ -198,13 +216,26 @@
       "contract": "REG1"
     },
     {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-03",
+      "from": "Miami Heat",
+      "team": "Boston Celtics",
+      "trade": "vy03dh0ckrvx26zj",
+      "label": "2021 round 2 pick, no. 27"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
       "date": "2021-08-03",
       "team": "Boston Celtics",
       "round": 2,
-      "pick": 57,
+      "pick": 27,
+      "overall": 57,
+      "original": "Portland Trail Blazers",
+      "certain": true,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -387,35 +418,6 @@
     }
   ],
   "trades": {
-    "uuh2rleylbqddl2p": {
-      "date": "2022-12-16",
-      "season": "2022-23",
-      "period": 18,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Golden State Warriors",
-          "player_id": "005ll",
-          "player": "George Hill",
-          "label": "George Hill"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Golden State Warriors",
-          "label": "2023 round 2 pick (Orlando Magic)"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Atlanta Hawks",
-          "player_id": "05qzh",
-          "player": "Naji Marshall",
-          "label": "Naji Marshall"
-        }
-      ]
-    },
     "h3agpstjkylmcv6c": {
       "date": "2022-01-19",
       "season": "2021-22",
@@ -447,7 +449,16 @@
           "kind": "pick",
           "from": "Phoenix Suns",
           "to": "Utah Jazz",
-          "label": "2023 round 2 pick (Phoenix Suns)"
+          "label": "2023 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06cd9",
+            "player": "Jaylen Clark",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -458,9 +469,127 @@
           "label": "Joe Harris"
         }
       ]
+    },
+    "vy03dh0ckrvx26zj": {
+      "date": "2021-08-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "05qwu",
+          "player": "Killian Tillie",
+          "label": "Killian Tillie"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick, no. 27",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "05qzh",
+            "player": "Naji Marshall",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "kc1p17v7k28rq4km": {
+      "date": "2019-10-27",
+      "season": "2019-20",
+      "period": 2,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2020 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "05qu4",
+            "player": "Saben Lee",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Miami Heat",
+          "player_id": "001ax",
+          "player": "Jeff Green",
+          "label": "Jeff Green"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Miami Heat",
+          "label": "2021 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "05qzh",
+            "player": "Naji Marshall",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "uuh2rleylbqddl2p": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "005ll",
+          "player": "George Hill",
+          "label": "George Hill"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "label": "2023 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06ccv",
+            "player": "Trayce Jackson-Davis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "player_id": "05qzh",
+          "player": "Naji Marshall",
+          "label": "Naji Marshall"
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

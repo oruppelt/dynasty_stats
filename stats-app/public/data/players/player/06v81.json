@@ -35,13 +35,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "New York Knicks",
+      "label": "2025 round 2 pick, no. 5",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-04",
+      "from": "New York Knicks",
+      "team": "Memphis Grizzlies",
+      "trade": "3ib7pqpbmcp1xe2h",
+      "label": "2025 round 2 pick, no. 5"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-04",
       "team": "Memphis Grizzlies",
       "round": 2,
-      "pick": 35,
+      "pick": 5,
+      "overall": 35,
+      "original": "New York Knicks",
+      "certain": true,
       "periods": 40,
       "starts": 0,
       "gp": 0,
@@ -50,8 +71,47 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "3ib7pqpbmcp1xe2h": {
+      "date": "2025-07-04",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "$12 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Memphis Grizzlies",
+          "label": "2025 round 2 pick, no. 5",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06v81",
+            "player": "Johni Broome",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

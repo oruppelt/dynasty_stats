@@ -86,6 +86,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "San Antonio Spurs",
+      "label": "2022 round 1 pick (San Antonio Spurs)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 5,
+      "date": "2021-11-01",
+      "from": "San Antonio Spurs",
+      "team": "Chicago Bulls",
+      "trade": "dw0d099pkvgq3dpg",
+      "label": "2022 round 1 pick (San Antonio Spurs)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-27",
+      "from": "Chicago Bulls",
+      "team": "Minnesota Timberwolves",
+      "trade": "mkq4pvzjl4wmiyta",
+      "label": "2022 round 1 pick, no. 19"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-27",
+      "from": "Minnesota Timberwolves",
+      "team": "Oklahoma City Thunder",
+      "trade": "orlj6u33l4wo4rie",
+      "label": "2022 round 1 pick, no. 19"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -93,6 +131,9 @@
       "team": "Oklahoma City Thunder",
       "round": 1,
       "pick": 19,
+      "overall": 19,
+      "original": "San Antonio Spurs",
+      "certain": true,
       "periods": 65,
       "starts": 46,
       "gp": 58,
@@ -108,8 +149,162 @@
       "team": "Oklahoma City Thunder"
     }
   ],
-  "trades": {},
+  "trades": {
+    "orlj6u33l4wo4rie": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Oklahoma City Thunder",
+          "player_id": "04qsb",
+          "player": "Devonte' Graham",
+          "label": "Devonte' Graham"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06cc7",
+            "player": "Brandin Podziemski",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Oklahoma City Thunder",
+          "label": "2022 round 1 pick, no. 19",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "0621n",
+            "player": "MarJon Beauchamp",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 1 pick, no. 15",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "0621p",
+            "player": "Wendell Moore",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "dw0d099pkvgq3dpg": {
+      "date": "2021-11-01",
+      "season": "2021-22",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "San Antonio Spurs",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "player_id": "0598b",
+          "player": "Moses Brown",
+          "label": "Moses Brown"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "label": "2022 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "0621n",
+            "player": "MarJon Beauchamp",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "mkq4pvzjl4wmiyta": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujs",
+          "player": "Sandro Mamukelashvili",
+          "label": "Sandro Mamukelashvili"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 1 pick, no. 19",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "0621n",
+            "player": "MarJon Beauchamp",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Chicago Bulls",
+          "label": "2022 round 1 pick, no. 24",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "0621l",
+            "player": "Walker Kessler",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

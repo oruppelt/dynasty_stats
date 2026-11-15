@@ -334,57 +334,6 @@
     }
   ],
   "trades": {
-    "0x0h24u3lr0j2d6r": {
-      "date": "2024-01-05",
-      "season": "2023-24",
-      "period": 22,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "06235",
-          "player": "Kenneth Lofton",
-          "label": "Kenneth Lofton"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "031mb",
-          "player": "Tim Hardaway",
-          "label": "Tim Hardaway"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "label": "2025 round 1 pick (Boston Celtics)"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "label": "2024 round 1 pick (Minnesota Timberwolves)"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Boston Celtics",
-          "player_id": "031m4",
-          "player": "Dennis Schroder",
-          "label": "Dennis Schroder"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Boston Celtics",
-          "player_id": "03e6u",
-          "player": "Bogdan Bogdanovic",
-          "label": "Bogdan Bogdanovic"
-        }
-      ]
-    },
     "4csdps1ul4mqtiiz": {
       "date": "2022-06-20",
       "season": "2022-23",
@@ -426,13 +375,100 @@
           "kind": "pick",
           "from": "Milwaukee Bucks",
           "to": "Boston Celtics",
-          "label": "2022 round 1 pick, no. 14"
+          "label": "2022 round 1 pick, no. 14",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "0621f",
+            "player": "AJ Griffin",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Milwaukee Bucks",
           "to": "Boston Celtics",
-          "label": "2023 round 2 pick (Milwaukee Bucks)"
+          "label": "2023 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06cdh",
+            "player": "GG Jackson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "0x0h24u3lr0j2d6r": {
+      "date": "2024-01-05",
+      "season": "2023-24",
+      "period": 22,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06235",
+          "player": "Kenneth Lofton",
+          "label": "Kenneth Lofton"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "031mb",
+          "player": "Tim Hardaway",
+          "label": "Tim Hardaway"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06v58",
+            "player": "Tre Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2024 round 1 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06mle",
+            "player": "Kyle Filipowski",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "031m4",
+          "player": "Dennis Schroder",
+          "label": "Dennis Schroder"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
         }
       ]
     }

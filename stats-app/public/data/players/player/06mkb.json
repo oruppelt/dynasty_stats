@@ -100,6 +100,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Portland Trail Blazers",
+      "label": "2024 round 1 pick (Portland Trail Blazers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-07",
+      "from": "Portland Trail Blazers",
+      "team": "Orlando Magic",
+      "trade": "mu1sghjul8ykpvq9",
+      "label": "2024 round 1 pick (Portland Trail Blazers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-20",
+      "from": "Orlando Magic",
+      "team": "Dallas Mavericks",
+      "trade": "umry9n3zlj4p4wo1",
+      "label": "2024 round 1 pick (Portland Trail Blazers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Dallas Mavericks",
+      "team": "Houston Rockets",
+      "trade": "43fpltv7lxybrbab",
+      "label": "2024 round 1 pick, no. 16"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -107,6 +145,9 @@
       "team": "Houston Rockets",
       "round": 1,
       "pick": 16,
+      "overall": 16,
+      "original": "Portland Trail Blazers",
+      "certain": true,
       "periods": 66,
       "starts": 34,
       "gp": 51,
@@ -131,6 +172,119 @@
     }
   ],
   "trades": {
+    "mu1sghjul8ykpvq9": {
+      "date": "2022-10-07",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "0623f",
+          "player": "Justin Lewis",
+          "label": "Justin Lewis"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Orlando Magic",
+          "label": "2023 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06cdj",
+            "player": "Colby Jones",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "label": "$15 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "04ewb",
+          "player": "Jonathan Isaac",
+          "label": "Jonathan Isaac"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2024 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 16,
+            "overall": 16,
+            "player_id": "06mkb",
+            "player": "Ja'Kobe Walter",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Cleveland Cavaliers",
+          "label": "2024 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "001bb",
+            "player": "Jorge Garbajosa",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2023 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06cd7",
+            "player": "Keyontae Johnson",
+            "certain": true
+          }
+        }
+      ]
+    },
     "vrjztxeimssj9gyv": {
       "date": "2026-08-14",
       "season": "2026-27",
@@ -173,9 +327,137 @@
           "label": "2027 round 1 pick (Minnesota Timberwolves)"
         }
       ]
+    },
+    "umry9n3zlj4p4wo1": {
+      "date": "2023-06-20",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Orlando Magic",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewb",
+          "player": "Jonathan Isaac",
+          "label": "Jonathan Isaac"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 16,
+            "overall": 16,
+            "player_id": "06mkb",
+            "player": "Ja'Kobe Walter",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 18,
+            "overall": 18,
+            "player_id": "06mk8",
+            "player": "Jared McCain",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 1 pick, no. 22",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06cdj",
+            "player": "Colby Jones",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "43fpltv7lxybrbab": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Houston Rockets",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Houston Rockets",
+          "label": "2024 round 1 pick, no. 21"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Houston Rockets",
+          "label": "2024 round 1 pick, no. 16",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 16,
+            "overall": 16,
+            "player_id": "06mkb",
+            "player": "Ja'Kobe Walter",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Houston Rockets",
+          "to": "Dallas Mavericks",
+          "label": "$1 budget"
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

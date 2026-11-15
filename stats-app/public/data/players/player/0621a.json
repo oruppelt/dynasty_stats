@@ -156,6 +156,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Portland Trail Blazers",
+      "label": "2022 round 1 pick (Portland Trail Blazers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 24,
+      "date": "2021-03-14",
+      "from": "Portland Trail Blazers",
+      "team": "Detroit Pistons",
+      "trade": "lpvb9p0kkm9ltz87",
+      "label": "2022 round 1 pick (Portland Trail Blazers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-24",
+      "from": "Detroit Pistons",
+      "team": "Minnesota Timberwolves",
+      "trade": "qcrl769ol4sqe48g",
+      "label": "2022 round 1 pick, no. 17"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-27",
+      "from": "Minnesota Timberwolves",
+      "team": "Orlando Magic",
+      "trade": "kx1kwxiwl4wjgppq",
+      "label": "2022 round 1 pick, no. 17"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -163,6 +201,9 @@
       "team": "Orlando Magic",
       "round": 1,
       "pick": 17,
+      "overall": 17,
+      "original": "Portland Trail Blazers",
+      "certain": true,
       "periods": 45,
       "starts": 21,
       "gp": 21,
@@ -282,7 +323,16 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Boston Celtics",
-          "label": "2024 round 2 pick, no. 13"
+          "label": "2024 round 2 pick, no. 13",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06mkj",
+            "player": "Terrence Shannon",
+            "certain": false
+          }
         },
         {
           "kind": "player",
@@ -291,6 +341,113 @@
           "player_id": "03nwk",
           "player": "Kelly Oubre Jr.",
           "label": "Kelly Oubre Jr."
+        }
+      ]
+    },
+    "lpvb9p0kkm9ltz87": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Portland Trail Blazers",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Portland Trail Blazers",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "player_id": "05qu4",
+          "player": "Saben Lee",
+          "label": "Saben Lee"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "player_id": "02nfc",
+          "player": "Jeremy Lamb",
+          "label": "Jeremy Lamb"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "0621a",
+            "player": "Ousmane Dieng",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "kx1kwxiwl4wjgppq": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "label": "2022 round 1 pick, no. 17",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "0621a",
+            "player": "Ousmane Dieng",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Minnesota Timberwolves",
+          "player_id": "04jwd",
+          "player": "Royce O'Neale",
+          "label": "Royce O'Neale"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 1 pick, no. 28",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          }
         }
       ]
     },
@@ -343,12 +500,84 @@
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Atlanta Hawks",
-          "label": "2024 round 2 pick (Memphis Grizzlies)"
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "qcrl769ol4sqe48g": {
+      "date": "2022-06-24",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Minnesota Timberwolves",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 1 pick, no. 17",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "0621a",
+            "player": "Ousmane Dieng",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Detroit Pistons",
+          "player_id": "03ad3",
+          "player": "Karl-Anthony Towns",
+          "label": "Karl-Anthony Towns"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Detroit Pistons",
+          "label": "2023 round 1 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 16,
+            "overall": 16,
+            "player_id": "06ca9",
+            "player": "Jordan Hawkins",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

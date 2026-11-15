@@ -351,35 +351,6 @@
         }
       ]
     },
-    "auat5jg8k3ygvkfy": {
-      "date": "2019-12-09",
-      "season": "2019-20",
-      "period": 15,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Memphis Grizzlies",
-          "player_id": "027p2",
-          "player": "Enes Kanter",
-          "label": "Enes Kanter"
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Memphis Grizzlies",
-          "label": "2021 round 1 pick (Memphis Grizzlies)"
-        },
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Los Angeles Lakers",
-          "player_id": "04849",
-          "player": "Danuel House",
-          "label": "Danuel House"
-        }
-      ]
-    },
     "6ttsntjokynaaoq3": {
       "date": "2022-01-20",
       "season": "2021-22",
@@ -413,7 +384,16 @@
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Washington Wizards",
-          "label": "2023 round 2 pick (Los Angeles Lakers)"
+          "label": "2023 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06cdf",
+            "player": "Julian Phillips",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -456,19 +436,75 @@
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "Sacramento Kings",
-          "label": "2023 round 1 pick (Portland Trail Blazers)"
+          "label": "2023 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06cc7",
+            "player": "Brandin Podziemski",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Portland Trail Blazers",
-          "label": "2023 round 2 pick (Sacramento Kings)"
+          "label": "2023 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06cdk",
+            "player": "Jalen Slawson",
+            "certain": true
+          }
         },
         {
           "kind": "budget",
           "from": "Sacramento Kings",
           "to": "Portland Trail Blazers",
           "label": "$6 budget"
+        }
+      ]
+    },
+    "auat5jg8k3ygvkfy": {
+      "date": "2019-12-09",
+      "season": "2019-20",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "027p2",
+          "player": "Enes Kanter",
+          "label": "Enes Kanter"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "label": "2021 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "05uj2",
+            "player": "Jaden Springer",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "player_id": "04849",
+          "player": "Danuel House",
+          "label": "Danuel House"
         }
       ]
     },

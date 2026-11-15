@@ -114,13 +114,74 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Washington Wizards",
+      "label": "2021 round 2 pick (Washington Wizards)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 22,
+      "date": "2020-01-05",
+      "from": "Washington Wizards",
+      "team": "Golden State Warriors",
+      "trade": "udji14ckk51fhwxe",
+      "label": "2021 round 2 pick (Washington Wizards)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-21",
+      "from": "Golden State Warriors",
+      "team": "San Antonio Spurs",
+      "trade": "awk46tqqkhrhpijg",
+      "label": "2021 round 2 pick (Washington Wizards)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-03",
+      "from": "San Antonio Spurs",
+      "team": "Los Angeles Lakers",
+      "trade": "af99yn18ki8m1j0e",
+      "label": "2021 round 2 pick (Washington Wizards)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 21,
+      "date": "2021-03-01",
+      "from": "Los Angeles Lakers",
+      "team": "Boston Celtics",
+      "trade": "cknsztqwklqk49ho",
+      "label": "2021 round 2 pick (Washington Wizards)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-14",
+      "from": "Boston Celtics",
+      "team": "Denver Nuggets",
+      "trade": "5ckrl4m9kpjpedur",
+      "label": "2021 round 2 pick, no. 30"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
       "date": "2021-08-03",
       "team": "Denver Nuggets",
       "round": 2,
-      "pick": 60,
+      "pick": 30,
+      "overall": 60,
+      "original": "Washington Wizards",
+      "certain": false,
       "periods": 98,
       "starts": 39,
       "gp": 48,
@@ -157,8 +218,235 @@
       "team": "Denver Nuggets"
     }
   ],
-  "trades": {},
+  "trades": {
+    "udji14ckk51fhwxe": {
+      "date": "2020-01-05",
+      "season": "2019-20",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Washington Wizards",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Golden State Warriors",
+          "player_id": "031md",
+          "player": "Andre Roberson",
+          "label": "Andre Roberson"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "05ujk",
+            "player": "Dalano Banton",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "5ckrl4m9kpjpedur": {
+      "date": "2021-06-14",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Denver Nuggets",
+          "label": "2021 round 2 pick, no. 4"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Denver Nuggets",
+          "label": "2021 round 2 pick, no. 30",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "05ujk",
+            "player": "Dalano Banton",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Boston Celtics",
+          "label": "2022 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "051pm",
+            "player": "Admiral Schofield",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "awk46tqqkhrhpijg": {
+      "date": "2020-11-21",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "label": "2021 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "05ujk",
+            "player": "Dalano Banton",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick, no. 5",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "05qtq",
+            "player": "Tre Jones",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "af99yn18ki8m1j0e": {
+      "date": "2020-12-03",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "player_id": "031lz",
+          "player": "Steven Adams",
+          "label": "Steven Adams"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "label": "2022 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06221",
+            "player": "Kennedy Chandler",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "label": "2022 round 1 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06211",
+            "player": "Chet Holmgren",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "label": "2021 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "05ujk",
+            "player": "Dalano Banton",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "cknsztqwklqk49ho": {
+      "date": "2021-03-01",
+      "season": "2020-21",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Los Angeles Lakers",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "05ujk",
+            "player": "Dalano Banton",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "(Drop)",
+          "player_id": "04qsg",
+          "player": "Isaac Bonga",
+          "label": "Isaac Bonga"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

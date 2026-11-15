@@ -98,13 +98,64 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Chicago Bulls",
+      "label": "2024 round 2 pick (Chicago Bulls)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-18",
+      "from": "Chicago Bulls",
+      "team": "Dallas Mavericks",
+      "trade": "o7egut5nlbsb9x0e",
+      "label": "2024 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-25",
+      "from": "Dallas Mavericks",
+      "team": "Minnesota Timberwolves",
+      "trade": "ll6492qklql9ax74",
+      "label": "2024 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "from": "Minnesota Timberwolves",
+      "team": "Memphis Grizzlies",
+      "trade": "0ndod7cllrpdvpgn",
+      "label": "2024 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Memphis Grizzlies",
+      "team": "Sacramento Kings",
+      "trade": "cw0jo5zulxyykp9s",
+      "label": "2024 round 2 pick, no. 27"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-29",
       "team": "Sacramento Kings",
       "round": 2,
-      "pick": 57,
+      "pick": 27,
+      "overall": 57,
+      "original": "Chicago Bulls",
+      "certain": true,
       "periods": 6,
       "starts": 0,
       "gp": 0,
@@ -166,6 +217,317 @@
     }
   ],
   "trades": {
+    "yqdm26wgmih99jx3": {
+      "date": "2025-11-27",
+      "season": "2025-26",
+      "period": 12,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "049kd",
+          "player": "Deandre Ayton",
+          "label": "Deandre Ayton"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mkk",
+          "player": "Ryan Dunn",
+          "label": "Ryan Dunn"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mlx",
+          "player": "Melvin Ajinca",
+          "label": "Melvin Ajinca"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "05qtt",
+          "player": "Onyeka Okongwu",
+          "label": "Onyeka Okongwu"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter"
+        }
+      ]
+    },
+    "0ndod7cllrpdvpgn": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "player_id": "0622c",
+          "player": "Isaiah Mobley",
+          "label": "Isaiah Mobley"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "o7egut5nlbsb9x0e": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06ccd",
+            "player": "Noah Clowney",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Chicago Bulls",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell"
+        }
+      ]
+    },
+    "cw0jo5zulxyykp9s": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick, no. 25",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06mmh",
+            "player": "Isaac Jones",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick, no. 27",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Memphis Grizzlies",
+          "label": "2026 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "076u4",
+            "player": "Meleek Thomas",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "o9x12180m3dbpz6a": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "042ne",
+          "player": "Malik Beasley",
+          "label": "Malik Beasley"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "03kqi",
+          "player": "Joe Ingles",
+          "label": "Joe Ingles"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          }
+        }
+      ]
+    },
     "fqy5f8aem6akho3q": {
       "date": "2025-01-24",
       "season": "2024-25",
@@ -235,130 +597,102 @@
         }
       ]
     },
-    "o9x12180m3dbpz6a": {
-      "date": "2024-11-11",
-      "season": "2024-25",
-      "period": 7,
+    "ll6492qklql9ax74": {
+      "date": "2023-12-25",
+      "season": "2023-24",
+      "period": 19,
       "items": [
         {
           "kind": "player",
-          "from": "Miami Heat",
-          "to": "Sacramento Kings",
-          "player_id": "042ne",
-          "player": "Malik Beasley",
-          "label": "Malik Beasley"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Sacramento Kings",
-          "player_id": "05uis",
-          "player": "Tre Mann",
-          "label": "Tre Mann"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Miami Heat",
-          "player_id": "04qs0",
-          "player": "Aaron Holiday",
-          "label": "Aaron Holiday"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Miami Heat",
-          "player_id": "03kqi",
-          "player": "Joe Ingles",
-          "label": "Joe Ingles"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Miami Heat",
-          "player_id": "06mm5",
-          "player": "PJ Hall",
-          "label": "PJ Hall"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Miami Heat",
-          "player_id": "06mmh",
-          "player": "Isaac Jones",
-          "label": "Isaac Jones"
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson"
         },
         {
           "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Miami Heat",
-          "label": "2025 round 1 pick (Atlanta Hawks)"
-        }
-      ]
-    },
-    "yqdm26wgmih99jx3": {
-      "date": "2025-11-27",
-      "season": "2025-26",
-      "period": 12,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Utah Jazz",
-          "player_id": "049kd",
-          "player": "Deandre Ayton",
-          "label": "Deandre Ayton"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Utah Jazz",
-          "player_id": "06mm5",
-          "player": "PJ Hall",
-          "label": "PJ Hall"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Utah Jazz",
-          "player_id": "06mkk",
-          "player": "Ryan Dunn",
-          "label": "Ryan Dunn"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Utah Jazz",
-          "player_id": "06mlx",
-          "player": "Melvin Ajinca",
-          "label": "Melvin Ajinca"
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Utah Jazz",
-          "label": "2026 round 1 pick (Utah Jazz)"
+          "from": "Dallas Mavericks",
+          "to": "Toronto Raptors",
+          "label": "2025 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06v8d",
+            "player": "Bogoljub Markovic",
+            "certain": true
+          }
         },
         {
           "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Boston Celtics",
-          "player_id": "05qtt",
-          "player": "Onyeka Okongwu",
-          "label": "Onyeka Okongwu"
+          "from": "Minnesota Timberwolves",
+          "to": "Toronto Raptors",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
         },
         {
           "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Boston Celtics",
-          "player_id": "04qrr",
-          "player": "Michael Porter",
-          "label": "Michael Porter"
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06mm1",
+            "player": "Bronny James",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

@@ -142,6 +142,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Sacramento Kings",
+      "label": "2022 round 1 pick, no. 5",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-28",
+      "from": "Sacramento Kings",
+      "team": "Orlando Magic",
+      "trade": "3svuxfmvl3ps0x1r",
+      "label": "2022 round 1 pick, no. 5"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -149,6 +167,9 @@
       "team": "Orlando Magic",
       "round": 1,
       "pick": 5,
+      "overall": 5,
+      "original": "Sacramento Kings",
+      "certain": true,
       "periods": 98,
       "starts": 93,
       "gp": 154,
@@ -209,37 +230,6 @@
     }
   ],
   "trades": {
-    "ne9vonk1mkvnp53w": {
-      "date": "2026-01-28",
-      "season": "2025-26",
-      "period": 30,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Sacramento Kings",
-          "player_id": "03el5",
-          "player": "Kristaps Porzingis",
-          "label": "Kristaps Porzingis"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Golden State Warriors",
-          "player_id": "06215",
-          "player": "Bennedict Mathurin",
-          "label": "Bennedict Mathurin"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Golden State Warriors",
-          "player_id": "05uic",
-          "player": "Jalen Green",
-          "label": "Jalen Green"
-        }
-      ]
-    },
     "tcgwfz7bmk11cgpz": {
       "date": "2026-01-05",
       "season": "2025-26",
@@ -274,9 +264,95 @@
           "label": "$13 budget"
         }
       ]
+    },
+    "3svuxfmvl3ps0x1r": {
+      "date": "2022-05-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "05uii",
+          "player": "Franz Wagner",
+          "label": "Franz Wagner"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "label": "2022 round 1 pick, no. 5",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 5,
+            "overall": 5,
+            "player_id": "06215",
+            "player": "Bennedict Mathurin",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "label": "2022 round 1 pick, no. 28",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "ne9vonk1mkvnp53w": {
+      "date": "2026-01-28",
+      "season": "2025-26",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Sacramento Kings",
+          "player_id": "03el5",
+          "player": "Kristaps Porzingis",
+          "label": "Kristaps Porzingis"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "player_id": "06215",
+          "player": "Bennedict Mathurin",
+          "label": "Bennedict Mathurin"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "player_id": "05uic",
+          "player": "Jalen Green",
+          "label": "Jalen Green"
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

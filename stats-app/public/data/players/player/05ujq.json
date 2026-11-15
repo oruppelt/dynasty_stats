@@ -128,13 +128,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2021 round 2 pick, no. 17",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-02",
+      "from": "Orlando Magic",
+      "team": "Atlanta Hawks",
+      "trade": "82msv72nkruxx4bm",
+      "label": "2021 round 2 pick, no. 17"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
       "date": "2021-08-02",
       "team": "Atlanta Hawks",
       "round": 2,
-      "pick": 47,
+      "pick": 17,
+      "overall": 47,
+      "original": "Orlando Magic",
+      "certain": true,
       "periods": 46,
       "starts": 9,
       "gp": 12,
@@ -214,35 +235,6 @@
     }
   ],
   "trades": {
-    "k8wsy8nslklm9aqo": {
-      "date": "2023-07-27",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05ujq",
-          "player": "Luka Garza",
-          "label": "Luka Garza"
-        },
-        {
-          "kind": "pick",
-          "from": "Indiana Pacers",
-          "to": "Minnesota Timberwolves",
-          "label": "2024 round 1 pick (Indiana Pacers)"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Indiana Pacers",
-          "player_id": "04qrr",
-          "player": "Michael Porter",
-          "label": "Michael Porter"
-        }
-      ]
-    },
     "ztms8t1klb56v07z": {
       "date": "2022-12-01",
       "season": "2022-23",
@@ -284,7 +276,16 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Indiana Pacers",
-          "label": "2024 round 1 pick (Atlanta Hawks)"
+          "label": "2024 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06mk1",
+            "player": "Zach Edey",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -295,9 +296,102 @@
           "label": "Marcus Morris"
         }
       ]
+    },
+    "k8wsy8nslklm9aqo": {
+      "date": "2023-07-27",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujq",
+          "player": "Luka Garza",
+          "label": "Luka Garza"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06mm1",
+            "player": "Bronny James",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Indiana Pacers",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter"
+        }
+      ]
+    },
+    "82msv72nkruxx4bm": {
+      "date": "2021-08-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "label": "2021 round 2 pick, no. 24",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2021 round 2 pick, no. 17",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "05ujq",
+            "player": "Luka Garza",
+            "certain": true
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

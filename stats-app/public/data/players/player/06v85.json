@@ -46,13 +46,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Houston Rockets",
+      "label": "2025 round 2 pick (Houston Rockets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 29,
+      "date": "2024-01-29",
+      "from": "Houston Rockets",
+      "team": "Los Angeles Lakers",
+      "trade": "rl38owphlrxywdov",
+      "label": "2025 round 2 pick (Houston Rockets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-07",
+      "from": "Los Angeles Lakers",
+      "team": "Los Angeles Clippers",
+      "trade": "4t0u06zblzjjx6tr",
+      "label": "2025 round 2 pick (Houston Rockets)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-04",
       "team": "Los Angeles Lakers",
       "round": 2,
-      "pick": 44,
+      "pick": 14,
+      "overall": 44,
+      "original": "Houston Rockets",
+      "certain": true,
       "periods": 40,
       "starts": 1,
       "gp": 2,
@@ -61,8 +92,171 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "rl38owphlrxywdov": {
+      "date": "2024-01-29",
+      "season": "2023-24",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "05uim",
+          "player": "Joshua Primo",
+          "label": "Joshua Primo"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Portland Trail Blazers",
+          "player_id": "001bb",
+          "player": "Jorge Garbajosa",
+          "label": "Jorge Garbajosa"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "03r7r",
+          "player": "Richaun Holmes",
+          "label": "Richaun Holmes"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Portland Trail Blazers",
+          "player_id": "0623g",
+          "player": "Michael Foster",
+          "label": "Michael Foster"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Portland Trail Blazers",
+          "label": "2025 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06v5b",
+            "player": "Yanic Konan Niederhauser",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "label": "2025 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06v85",
+            "player": "Alijah Martin",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Houston Rockets",
+          "player_id": "031m9",
+          "player": "Mason Plumlee",
+          "label": "Mason Plumlee"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Houston Rockets",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "budget",
+          "from": "Portland Trail Blazers",
+          "to": "Houston Rockets",
+          "label": "$7 budget"
+        }
+      ]
+    },
+    "4t0u06zblzjjx6tr": {
+      "date": "2024-08-07",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "027pe",
+          "player": "Jimmy Butler",
+          "label": "Jimmy Butler"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "06mke",
+          "player": "DaRon Holmes",
+          "label": "DaRon Holmes"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "label": "2025 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06v85",
+            "player": "Alijah Martin",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "label": "2025 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06v87",
+            "player": "Koby Brea",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

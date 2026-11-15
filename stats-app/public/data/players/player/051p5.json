@@ -163,6 +163,8 @@
       "team": "Minnesota Timberwolves",
       "round": 1,
       "pick": 23,
+      "overall": 23,
+      "certain": true,
       "periods": 94,
       "starts": 32,
       "gp": 51,
@@ -230,43 +232,6 @@
     }
   ],
   "trades": {
-    "psa6bq70lomkt3fc": {
-      "date": "2023-11-06",
-      "season": "2023-24",
-      "period": 5,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Golden State Warriors",
-          "player_id": "05qym",
-          "player": "Kenyon Martin",
-          "label": "Kenyon Martin"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Golden State Warriors",
-          "player_id": "03r7e",
-          "player": "Cameron Payne",
-          "label": "Cameron Payne"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Atlanta Hawks",
-          "player_id": "051p5",
-          "player": "Nassir Little",
-          "label": "Nassir Little"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Atlanta Hawks",
-          "label": "2024 round 2 pick (Houston Rockets)"
-        }
-      ]
-    },
     "4ghkugn9lbqnbawd": {
       "date": "2022-12-16",
       "season": "2022-23",
@@ -340,7 +305,53 @@
           "kind": "pick",
           "from": "Minnesota Timberwolves",
           "to": "Golden State Warriors",
-          "label": "2023 round 1 pick (Cleveland Cavaliers)"
+          "label": "2023 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06cby",
+            "player": "Keyonte George",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "psa6bq70lomkt3fc": {
+      "date": "2023-11-06",
+      "season": "2023-24",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "03r7e",
+          "player": "Cameron Payne",
+          "label": "Cameron Payne"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "player_id": "051p5",
+          "player": "Nassir Little",
+          "label": "Nassir Little"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Houston Rockets)"
         }
       ]
     }

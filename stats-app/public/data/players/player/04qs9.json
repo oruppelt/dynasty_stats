@@ -375,27 +375,6 @@
     }
   ],
   "trades": {
-    "91b2lqntlosnb8h6": {
-      "date": "2023-11-10",
-      "season": "2023-24",
-      "period": 6,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Cleveland Cavaliers",
-          "to": "Denver Nuggets",
-          "label": "$16 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Denver Nuggets",
-          "to": "Cleveland Cavaliers",
-          "player_id": "04qs9",
-          "player": "Jevon Carter",
-          "label": "Jevon Carter"
-        }
-      ]
-    },
     "s0ah5x4nlbpllfey": {
       "date": "2022-12-15",
       "season": "2022-23",
@@ -429,7 +408,16 @@
           "kind": "pick",
           "from": "New York Knicks",
           "to": "Indiana Pacers",
-          "label": "2023 round 1 pick (New York Knicks)"
+          "label": "2023 round 1 pick (New York Knicks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06ca4",
+            "player": "Kobe Bufkin",
+            "certain": true
+          }
         }
       ]
     },
@@ -450,7 +438,16 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Philadelphia 76ers",
-          "label": "2022 round 2 pick (Dallas Mavericks)"
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -472,7 +469,37 @@
           "kind": "pick",
           "from": "Philadelphia 76ers",
           "to": "Miami Heat",
-          "label": "2023 round 1 pick (Philadelphia 76ers)"
+          "label": "2023 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06ca7",
+            "player": "Cam Whitmore",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "91b2lqntlosnb8h6": {
+      "date": "2023-11-10",
+      "season": "2023-24",
+      "period": 6,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Cleveland Cavaliers",
+          "to": "Denver Nuggets",
+          "label": "$16 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04qs9",
+          "player": "Jevon Carter",
+          "label": "Jevon Carter"
         }
       ]
     }

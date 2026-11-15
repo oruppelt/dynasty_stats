@@ -100,13 +100,74 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Milwaukee Bucks",
+      "label": "2021 round 2 pick (Milwaukee Bucks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 32,
+      "date": "2020-02-07",
+      "from": "Milwaukee Bucks",
+      "team": "Philadelphia 76ers",
+      "trade": "pg5svv74k6cm79h7",
+      "label": "2021 round 2 pick (Milwaukee Bucks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "from": "Philadelphia 76ers",
+      "team": "Golden State Warriors",
+      "trade": "qpkfdisvkic56339",
+      "label": "2021 round 2 pick (Milwaukee Bucks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 24,
+      "date": "2021-03-13",
+      "from": "Golden State Warriors",
+      "team": "Atlanta Hawks",
+      "trade": "j0tyig71km80p9oa",
+      "label": "2021 round 2 pick (Milwaukee Bucks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-02",
+      "from": "Atlanta Hawks",
+      "team": "Sacramento Kings",
+      "trade": "omyajhuakpf4ztuk",
+      "label": "2021 round 2 pick, no. 14"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-02",
+      "from": "Sacramento Kings",
+      "team": "Houston Rockets",
+      "trade": "13s27tg6kruq3j9m",
+      "label": "2021 round 2 pick, no. 14"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
       "date": "2021-08-02",
       "team": "Houston Rockets",
       "round": 2,
-      "pick": 44,
+      "pick": 14,
+      "overall": 44,
+      "original": "Milwaukee Bucks",
+      "certain": false,
       "periods": 33,
       "starts": 2,
       "gp": 4,
@@ -179,6 +240,114 @@
     }
   ],
   "trades": {
+    "z8sjokgtl69dqsan": {
+      "date": "2022-07-31",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Washington Wizards",
+          "player_id": "05ujh",
+          "player": "Greg Brown",
+          "label": "Greg Brown"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Washington Wizards",
+          "label": "2024 round 2 pick (Houston Rockets)"
+        },
+        {
+          "kind": "budget",
+          "from": "Washington Wizards",
+          "to": "Houston Rockets",
+          "label": "$10 budget"
+        }
+      ]
+    },
+    "13s27tg6kruq3j9m": {
+      "date": "2021-08-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick, no. 8"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Houston Rockets",
+          "label": "2021 round 2 pick, no. 13",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "05uj5",
+            "player": "Isaiah Todd",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Houston Rockets",
+          "label": "2021 round 2 pick, no. 14",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "j0tyig71km80p9oa": {
+      "date": "2021-03-13",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "label": "2021 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          }
+        }
+      ]
+    },
     "otcznyo1l9qx8rg5": {
       "date": "2022-10-27",
       "season": "2022-23",
@@ -240,30 +409,145 @@
         }
       ]
     },
-    "z8sjokgtl69dqsan": {
-      "date": "2022-07-31",
-      "season": "2022-23",
+    "omyajhuakpf4ztuk": {
+      "date": "2021-06-02",
+      "season": "2021-22",
       "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Washington Wizards",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "027pe",
+          "player": "Jimmy Butler",
+          "label": "Jimmy Butler"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick, no. 14",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick, no. 11",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "05uil",
+            "player": "James Bouknight",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "04qru",
+          "player": "Donte DiVincenzo",
+          "label": "Donte DiVincenzo"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "02nfw",
+          "player": "Tomas Satoransky",
+          "label": "Tomas Satoransky"
+        }
+      ]
+    },
+    "pg5svv74k6cm79h7": {
+      "date": "2020-02-07",
+      "season": "2019-20",
+      "period": 32,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Philadelphia 76ers",
+          "player_id": "0483a",
+          "player": "Yogi Ferrell",
+          "label": "Yogi Ferrell"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Philadelphia 76ers",
+          "label": "2021 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Milwaukee Bucks",
+          "player_id": "03e6r",
+          "player": "Shabazz Napier",
+          "label": "Shabazz Napier"
+        }
+      ]
+    },
+    "gl4810izl9s7wcsd": {
+      "date": "2022-10-28",
+      "season": "2022-23",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
           "player_id": "05ujh",
           "player": "Greg Brown",
           "label": "Greg Brown"
         },
         {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson"
+        },
+        {
           "kind": "pick",
-          "from": "Houston Rockets",
-          "to": "Washington Wizards",
-          "label": "2024 round 2 pick (Houston Rockets)"
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
         },
         {
           "kind": "budget",
-          "from": "Washington Wizards",
-          "to": "Houston Rockets",
-          "label": "$10 budget"
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "label": "$15 budget"
         }
       ]
     },
@@ -308,47 +592,76 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Detroit Pistons",
-          "label": "2024 round 2 pick (Sacramento Kings)"
+          "label": "2024 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06mm8",
+            "player": "Keshad Johnson",
+            "certain": true
+          }
         }
       ]
     },
-    "gl4810izl9s7wcsd": {
-      "date": "2022-10-28",
-      "season": "2022-23",
-      "period": 4,
+    "qpkfdisvkic56339": {
+      "date": "2020-12-06",
+      "season": "2020-21",
+      "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Detroit Pistons",
-          "player_id": "05ujh",
-          "player": "Greg Brown",
-          "label": "Greg Brown"
-        },
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Detroit Pistons",
-          "player_id": "0622z",
-          "player": "Orlando Robinson",
-          "label": "Orlando Robinson"
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
         },
         {
           "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "Detroit Pistons",
-          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "label": "2021 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05qvg",
+            "player": "Anthony Lamb",
+            "certain": true
+          }
         },
         {
-          "kind": "budget",
-          "from": "Detroit Pistons",
-          "to": "Cleveland Cavaliers",
-          "label": "$15 budget"
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

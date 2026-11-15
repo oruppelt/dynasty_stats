@@ -114,6 +114,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Charlotte Hornets",
+      "label": "2023 round 1 pick (Charlotte Hornets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "from": "Charlotte Hornets",
+      "team": "Chicago Bulls",
+      "trade": "caq0c945l69jh4fc",
+      "label": "2023 round 1 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-18",
+      "from": "Chicago Bulls",
+      "team": "Dallas Mavericks",
+      "trade": "o7egut5nlbsb9x0e",
+      "label": "2023 round 1 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-26",
+      "from": "Dallas Mavericks",
+      "team": "Los Angeles Lakers",
+      "trade": "itomme9kljcykmjp",
+      "label": "2023 round 1 pick, no. 24"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
@@ -121,6 +159,9 @@
       "team": "Los Angeles Lakers",
       "round": 1,
       "pick": 24,
+      "overall": 24,
+      "original": "Charlotte Hornets",
+      "certain": true,
       "periods": 98,
       "starts": 47,
       "gp": 71,
@@ -156,8 +197,198 @@
       "contract": "REG1"
     }
   ],
-  "trades": {},
+  "trades": {
+    "o7egut5nlbsb9x0e": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06ccd",
+            "player": "Noah Clowney",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Chicago Bulls",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell"
+        }
+      ]
+    },
+    "caq0c945l69jh4fc": {
+      "date": "2022-07-31",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Chicago Bulls",
+          "player_id": "03ajv",
+          "player": "Julius Randle",
+          "label": "Julius Randle"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Chicago Bulls",
+          "label": "2023 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06ccd",
+            "player": "Noah Clowney",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06mld",
+            "player": "Jonathan Mogbo",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Memphis Grizzlies",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        },
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Chicago Bulls",
+          "label": "$1 budget"
+        }
+      ]
+    },
+    "itomme9kljcykmjp": {
+      "date": "2023-06-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Los Angeles Lakers",
+          "label": "2023 round 1 pick, no. 24",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06ccd",
+            "player": "Noah Clowney",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Los Angeles Lakers",
+          "label": "2023 round 1 pick, no. 20",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06cc7",
+            "player": "Brandin Podziemski",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 1 pick, no. 13",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 13,
+            "overall": 13,
+            "player_id": "06cc8",
+            "player": "Dereck Lively",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

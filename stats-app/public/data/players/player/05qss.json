@@ -21,13 +21,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Milwaukee Bucks",
+      "label": "2020 round 2 pick (Milwaukee Bucks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 32,
+      "date": "2020-02-07",
+      "from": "Milwaukee Bucks",
+      "team": "San Antonio Spurs",
+      "trade": "9ruxekhgk6ciqyyw",
+      "label": "2020 round 2 pick (Milwaukee Bucks)"
+    },
+    {
       "kind": "draft",
       "season": "2020-21",
       "period": 0,
       "date": "2020-11-24",
       "team": "San Antonio Spurs",
       "round": 2,
-      "pick": 45,
+      "pick": 15,
+      "overall": 45,
+      "original": "Milwaukee Bucks",
+      "certain": true,
       "periods": 29,
       "starts": 0,
       "gp": 0,
@@ -96,12 +117,80 @@
           "kind": "pick",
           "from": "San Antonio Spurs",
           "to": "Sacramento Kings",
-          "label": "2023 round 2 pick (San Antonio Spurs)"
+          "label": "2023 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06cen",
+            "player": "Caleb Daniels",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "9ruxekhgk6ciqyyw": {
+      "date": "2020-02-07",
+      "season": "2019-20",
+      "period": 32,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "San Antonio Spurs",
+          "player_id": "005lm",
+          "player": "Goran Dragic",
+          "label": "Goran Dragic"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "San Antonio Spurs",
+          "player_id": "03hz1",
+          "player": "Tyler Johnson",
+          "label": "Tyler Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "San Antonio Spurs",
+          "label": "2020 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "05qss",
+            "player": "Tyler Bey",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Milwaukee Bucks",
+          "player_id": "01eon",
+          "player": "DeMar DeRozan",
+          "label": "DeMar DeRozan"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Milwaukee Bucks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris"
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

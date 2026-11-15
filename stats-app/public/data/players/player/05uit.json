@@ -142,6 +142,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Minnesota Timberwolves",
+      "label": "2021 round 1 pick, no. 13",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-02",
+      "from": "Minnesota Timberwolves",
+      "team": "Sacramento Kings",
+      "trade": "3p74t99pkrudqaqs",
+      "label": "2021 round 1 pick, no. 13"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
@@ -149,6 +167,9 @@
       "team": "Sacramento Kings",
       "round": 1,
       "pick": 13,
+      "overall": 13,
+      "original": "Minnesota Timberwolves",
+      "certain": true,
       "periods": 26,
       "starts": 21,
       "gp": 10,
@@ -237,6 +258,120 @@
     }
   ],
   "trades": {
+    "dnueejgokyiqqlz5": {
+      "date": "2022-01-17",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Sacramento Kings",
+          "player_id": "02qe4",
+          "player": "Kent Bazemore",
+          "label": "Kent Bazemore"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Sacramento Kings",
+          "player_id": "03927",
+          "player": "JaMychal Green",
+          "label": "JaMychal Green"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Sacramento Kings",
+          "label": "2023 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06cc7",
+            "player": "Brandin Podziemski",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "player_id": "05uje",
+          "player": "Jared Butler",
+          "label": "Jared Butler"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "player_id": "05uit",
+          "player": "Kai Jones",
+          "label": "Kai Jones"
+        }
+      ]
+    },
+    "3p74t99pkrudqaqs": {
+      "date": "2021-08-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick, no. 13",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 13,
+            "overall": 13,
+            "player_id": "05uit",
+            "player": "Kai Jones",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick, no. 13",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "05uj5",
+            "player": "Isaiah Todd",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Minnesota Timberwolves",
+          "label": "2021 round 1 pick, no. 11",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "05uil",
+            "player": "James Bouknight",
+            "certain": true
+          }
+        }
+      ]
+    },
     "xmox8ksrl9e24fip": {
       "date": "2022-10-18",
       "season": "2022-23",
@@ -294,65 +429,31 @@
           "kind": "pick",
           "from": "Los Angeles Lakers",
           "to": "Charlotte Hornets",
-          "label": "2024 round 2 pick (Los Angeles Lakers)"
-        }
-      ]
-    },
-    "dnueejgokyiqqlz5": {
-      "date": "2022-01-17",
-      "season": "2021-22",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Sacramento Kings",
-          "player_id": "02qe4",
-          "player": "Kent Bazemore",
-          "label": "Kent Bazemore"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Sacramento Kings",
-          "player_id": "03927",
-          "player": "JaMychal Green",
-          "label": "JaMychal Green"
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Sacramento Kings",
-          "label": "2023 round 1 pick (Portland Trail Blazers)"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Los Angeles Lakers",
-          "player_id": "05uje",
-          "player": "Jared Butler",
-          "label": "Jared Butler"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Los Angeles Lakers",
-          "player_id": "05qst",
-          "player": "Paul Reed",
-          "label": "Paul Reed"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Los Angeles Lakers",
-          "player_id": "05uit",
-          "player": "Kai Jones",
-          "label": "Kai Jones"
+          "label": "2024 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06mlh",
+            "player": "Johnny Furphy",
+            "certain": false
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

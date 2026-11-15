@@ -35,13 +35,44 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Atlanta Hawks",
+      "label": "2025 round 2 pick (Atlanta Hawks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-10-26",
+      "from": "Atlanta Hawks",
+      "team": "Phoenix Suns",
+      "trade": "ymsmlbyhlo7be62s",
+      "label": "2025 round 2 pick (Atlanta Hawks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-04",
+      "from": "Phoenix Suns",
+      "team": "Houston Rockets",
+      "trade": "ljnizeewmcnudnmr",
+      "label": "2025 round 2 pick, no. 15"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-04",
       "team": "Houston Rockets",
       "round": 2,
-      "pick": 45,
+      "pick": 15,
+      "overall": 45,
+      "original": "Atlanta Hawks",
+      "certain": true,
       "periods": 40,
       "starts": 0,
       "gp": 0,
@@ -50,8 +81,126 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "ymsmlbyhlo7be62s": {
+      "date": "2023-10-26",
+      "season": "2023-24",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "03acy",
+          "player": "Dario Saric",
+          "label": "Dario Saric"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "label": "2025 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "06va1",
+            "player": "Max Shulga",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin"
+        }
+      ]
+    },
+    "ljnizeewmcnudnmr": {
+      "date": "2025-07-04",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Phoenix Suns",
+          "player_id": "04ex6",
+          "player": "Isaiah Hartenstein",
+          "label": "Isaiah Hartenstein"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick, no. 15",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "06va1",
+            "player": "Max Shulga",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "label": "2025 round 1 pick, no. 12",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06v5x",
+            "player": "Carter Bryant",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

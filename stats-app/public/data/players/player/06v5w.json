@@ -86,6 +86,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Dallas Mavericks",
+      "label": "2025 round 1 pick, no. 23",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-01",
+      "from": "Dallas Mavericks",
+      "team": "Oklahoma City Thunder",
+      "trade": "uzng6ajcmck27c8b",
+      "label": "2025 round 1 pick, no. 23"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -93,6 +111,9 @@
       "team": "Oklahoma City Thunder",
       "round": 1,
       "pick": 23,
+      "overall": 23,
+      "original": "Dallas Mavericks",
+      "certain": true,
       "periods": 40,
       "starts": 8,
       "gp": 17,
@@ -101,8 +122,56 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "uzng6ajcmck27c8b": {
+      "date": "2025-07-01",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 1 pick, no. 23",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06v5w",
+            "player": "Nique Clifford",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Dallas Mavericks",
+          "label": "2026 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "076tb",
+            "player": "Allen Graves",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

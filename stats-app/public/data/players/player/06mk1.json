@@ -100,6 +100,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Atlanta Hawks",
+      "label": "2024 round 1 pick (Atlanta Hawks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 13,
+      "date": "2022-12-01",
+      "from": "Atlanta Hawks",
+      "team": "Indiana Pacers",
+      "trade": "ztms8t1klb56v07z",
+      "label": "2024 round 1 pick (Atlanta Hawks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-18",
+      "from": "Indiana Pacers",
+      "team": "Orlando Magic",
+      "trade": "2kaanhk9lbsgnxkr",
+      "label": "2024 round 1 pick (Atlanta Hawks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-26",
+      "from": "Orlando Magic",
+      "team": "Detroit Pistons",
+      "trade": "bqmrmr84ljd160xk",
+      "label": "2024 round 1 pick (Atlanta Hawks)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -107,6 +145,9 @@
       "team": "Detroit Pistons",
       "round": 1,
       "pick": 10,
+      "overall": 10,
+      "original": "Atlanta Hawks",
+      "certain": true,
       "periods": 66,
       "starts": 31,
       "gp": 38,
@@ -131,6 +172,44 @@
     }
   ],
   "trades": {
+    "2kaanhk9lbsgnxkr": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Orlando Magic",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Orlando Magic",
+          "label": "2024 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06mk1",
+            "player": "Zach Edey",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Indiana Pacers",
+          "player_id": "05qtl",
+          "player": "Cole Anthony",
+          "label": "Cole Anthony"
+        }
+      ]
+    },
     "vogevc0fmvf1khtl": {
       "date": "2026-10-19",
       "season": "2026-27",
@@ -191,9 +270,148 @@
           "label": "2028 round 1 pick (Minnesota Timberwolves)"
         }
       ]
+    },
+    "ztms8t1klb56v07z": {
+      "date": "2022-12-01",
+      "season": "2022-23",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "05uj5",
+          "player": "Isaiah Todd",
+          "label": "Isaiah Todd"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "05ujq",
+          "player": "Luka Garza",
+          "label": "Luka Garza"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "059q7",
+          "player": "Juan Toscano-Anderson",
+          "label": "Juan Toscano-Anderson"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "label": "2024 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06mk1",
+            "player": "Zach Edey",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Atlanta Hawks",
+          "player_id": "027oy",
+          "player": "Marcus Morris",
+          "label": "Marcus Morris"
+        }
+      ]
+    },
+    "bqmrmr84ljd160xk": {
+      "date": "2023-06-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Orlando Magic",
+          "label": "2023 round 1 pick, no. 14",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06cc2",
+            "player": "Gradey Dick",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Detroit Pistons",
+          "label": "2023 round 2 pick, no. 7",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06cel",
+            "player": "Sidy Cissoko",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Detroit Pistons",
+          "label": "2025 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "02oyy",
+            "player": null,
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Detroit Pistons",
+          "label": "2024 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06mk1",
+            "player": "Zach Edey",
+            "certain": true
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

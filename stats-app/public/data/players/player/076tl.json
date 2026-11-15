@@ -62,6 +62,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2026 round 1 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Boston Celtics",
+      "team": "Oklahoma City Thunder",
+      "trade": "zws2x9dxlxyaxawu",
+      "label": "2026 round 1 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 20,
+      "date": "2025-12-26",
+      "from": "Oklahoma City Thunder",
+      "team": "Toronto Raptors",
+      "trade": "h89qz7i7mjn1jv97",
+      "label": "2026 round 1 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -69,6 +97,9 @@
       "team": "Toronto Raptors",
       "round": 1,
       "pick": 10,
+      "overall": 10,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 7,
       "starts": 4,
       "gp": 8,
@@ -77,8 +108,115 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "h89qz7i7mjn1jv97": {
+      "date": "2025-12-26",
+      "season": "2025-26",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06v58",
+          "player": "Tre Johnson",
+          "label": "Tre Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "05uiw",
+          "player": "Isaiah Jackson",
+          "label": "Isaiah Jackson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "0558t",
+          "player": "Max Strus",
+          "label": "Max Strus"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "076tl",
+            "player": "Brayden Burries",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2027 round 1 pick (Oklahoma City Thunder)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06mjz",
+          "player": "Donovan Clingan",
+          "label": "Donovan Clingan"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06212",
+          "player": "Jabari Smith",
+          "label": "Jabari Smith"
+        }
+      ]
+    },
+    "zws2x9dxlxyaxawu": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2026 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "076tl",
+            "player": "Brayden Burries",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "label": "2024 round 1 pick, no. 22"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

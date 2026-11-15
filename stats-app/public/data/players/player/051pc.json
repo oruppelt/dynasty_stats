@@ -41,13 +41,34 @@
       "date": "2019-06-24",
       "team": "Brooklyn Nets",
       "round": 2,
-      "pick": 38,
+      "pick": 8,
+      "overall": 38,
+      "original": "Indiana Pacers",
+      "certain": true,
       "periods": 61,
       "starts": 0,
       "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
+    },
+    {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2019 round 2 pick, no. 8",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-10-20",
+      "from": "Indiana Pacers",
+      "team": "Brooklyn Nets",
+      "trade": "0r0z9s1ijx9bmlcn",
+      "label": "2019 round 2 pick, no. 8"
     },
     {
       "kind": "drop",
@@ -57,7 +78,60 @@
       "team": "Brooklyn Nets"
     }
   ],
-  "trades": {},
+  "trades": {
+    "0r0z9s1ijx9bmlcn": {
+      "date": "2019-10-20",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Brooklyn Nets",
+          "to": "Indiana Pacers",
+          "label": "2019 round 1 pick, no. 10",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "051oq",
+            "player": "Cam Reddish",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Brooklyn Nets",
+          "label": "2019 round 2 pick, no. 8",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "051pc",
+            "player": "KZ Okpala",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Brooklyn Nets",
+          "label": "2019 round 1 pick, no. 11",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "051ol",
+            "player": "Darius Garland",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
     {
       "season": "2019-20",

@@ -70,13 +70,74 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2021 round 2 pick (Indiana Pacers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-06-24",
+      "from": "Indiana Pacers",
+      "team": "Denver Nuggets",
+      "trade": "0fs2e6mzjxarkqcv",
+      "label": "2021 round 2 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 13,
+      "date": "2021-02-04",
+      "from": "Denver Nuggets",
+      "team": "Indiana Pacers",
+      "trade": "unllo8iokkr25a79",
+      "label": "2021 round 2 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 15,
+      "date": "2021-02-08",
+      "from": "Indiana Pacers",
+      "team": "Golden State Warriors",
+      "trade": "w8j96he1kkwppr2d",
+      "label": "2021 round 2 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-02",
+      "from": "Golden State Warriors",
+      "team": "Denver Nuggets",
+      "trade": "cksz0ka8kruo4h5l",
+      "label": "2021 round 2 pick, no. 2"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-02",
+      "from": "Denver Nuggets",
+      "team": "Golden State Warriors",
+      "trade": "cksz0ka8kruo4h5l",
+      "label": "2021 round 2 pick, no. 4"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
       "date": "2021-08-02",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 34,
+      "pick": 4,
+      "overall": 34,
+      "original": "Indiana Pacers",
+      "certain": true,
       "periods": 55,
       "starts": 2,
       "gp": 0,
@@ -108,6 +169,172 @@
     }
   ],
   "trades": {
+    "0fs2e6mzjxarkqcv": {
+      "date": "2019-06-24",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Indiana Pacers",
+          "player_id": "04qsm",
+          "player": "De'Anthony Melton",
+          "label": "De'Anthony Melton"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Denver Nuggets",
+          "player_id": "01en7",
+          "player": "James Johnson",
+          "label": "James Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Denver Nuggets",
+          "label": "2020 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05qta",
+            "player": "Elijah Hughes",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Denver Nuggets",
+          "label": "2021 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05uj7",
+            "player": "Jason Preston",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "cksz0ka8kruo4h5l": {
+      "date": "2021-08-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick, no. 23",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "05ujt",
+            "player": "Aaron Wiggins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick, no. 4",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05uj7",
+            "player": "Jason Preston",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2021 round 2 pick, no. 2",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05uj7",
+            "player": "Jason Preston",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "w8j96he1kkwppr2d": {
+      "date": "2021-02-08",
+      "season": "2020-21",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Indiana Pacers",
+          "player_id": "05qt9",
+          "player": "Killian Hayes",
+          "label": "Killian Hayes"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Indiana Pacers",
+          "player_id": "042nb",
+          "player": "Juancho Hernangomez",
+          "label": "Juancho Hernangomez"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Indiana Pacers",
+          "label": "2022 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Golden State Warriors",
+          "player_id": "031lp",
+          "player": "Victor Oladipo",
+          "label": "Victor Oladipo"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05uj7",
+            "player": "Jason Preston",
+            "certain": true
+          }
+        }
+      ]
+    },
     "gval9i9vlcer1ktf": {
       "date": "2023-01-02",
       "season": "2022-23",
@@ -125,7 +352,16 @@
           "kind": "pick",
           "from": "Golden State Warriors",
           "to": "Miami Heat",
-          "label": "2024 round 2 pick (Golden State Warriors)"
+          "label": "2024 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06mkf",
+            "player": "AJ Johnson",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -136,9 +372,65 @@
           "label": "Tre Mann"
         }
       ]
+    },
+    "unllo8iokkr25a79": {
+      "date": "2021-02-04",
+      "season": "2020-21",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Indiana Pacers",
+          "player_id": "05qtx",
+          "player": "Jahmi'us Ramsey",
+          "label": "Jahmi'us Ramsey"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Indiana Pacers",
+          "player_id": "04ewb",
+          "player": "Jonathan Isaac",
+          "label": "Jonathan Isaac"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Indiana Pacers",
+          "label": "2021 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05uj7",
+            "player": "Jason Preston",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Denver Nuggets",
+          "player_id": "04ewr",
+          "player": "Kyle Kuzma",
+          "label": "Kyle Kuzma"
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

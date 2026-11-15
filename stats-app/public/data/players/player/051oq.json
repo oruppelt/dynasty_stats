@@ -205,12 +205,33 @@
       "team": "Indiana Pacers",
       "round": 1,
       "pick": 10,
+      "overall": 10,
+      "original": "Brooklyn Nets",
+      "certain": true,
       "periods": 88,
       "starts": 68,
       "gp": 97,
       "points": 2144.25,
       "salary": 2842368,
       "contract": "R13"
+    },
+    {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Brooklyn Nets",
+      "label": "2019 round 1 pick, no. 10",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-10-20",
+      "from": "Brooklyn Nets",
+      "team": "Indiana Pacers",
+      "trade": "0r0z9s1ijx9bmlcn",
+      "label": "2019 round 1 pick, no. 10"
     },
     {
       "kind": "trade",
@@ -375,49 +396,6 @@
     }
   ],
   "trades": {
-    "5bxdraq0m5qxtpz8": {
-      "date": "2025-01-10",
-      "season": "2024-25",
-      "period": 24,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05uik",
-          "player": "Ziaire Williams",
-          "label": "Ziaire Williams"
-        },
-        {
-          "kind": "budget",
-          "from": "Milwaukee Bucks",
-          "to": "Minnesota Timberwolves",
-          "label": "$4 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Milwaukee Bucks",
-          "player_id": "051oq",
-          "player": "Cam Reddish",
-          "label": "Cam Reddish"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Milwaukee Bucks",
-          "player_id": "06226",
-          "player": "Moussa Diabate",
-          "label": "Moussa Diabate"
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Milwaukee Bucks",
-          "label": "2025 round 2 pick (Cleveland Cavaliers)"
-        }
-      ]
-    },
     "u84ukmdukyle5in8": {
       "date": "2022-01-19",
       "season": "2021-22",
@@ -478,6 +456,110 @@
           "player_id": "03ad2",
           "player": "Myles Turner",
           "label": "Myles Turner"
+        }
+      ]
+    },
+    "5bxdraq0m5qxtpz8": {
+      "date": "2025-01-10",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uik",
+          "player": "Ziaire Williams",
+          "label": "Ziaire Williams"
+        },
+        {
+          "kind": "budget",
+          "from": "Milwaukee Bucks",
+          "to": "Minnesota Timberwolves",
+          "label": "$4 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "player_id": "051oq",
+          "player": "Cam Reddish",
+          "label": "Cam Reddish"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "player_id": "06226",
+          "player": "Moussa Diabate",
+          "label": "Moussa Diabate"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "06v59",
+            "player": "Will Riley",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "0r0z9s1ijx9bmlcn": {
+      "date": "2019-10-20",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Brooklyn Nets",
+          "to": "Indiana Pacers",
+          "label": "2019 round 1 pick, no. 10",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "051oq",
+            "player": "Cam Reddish",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Brooklyn Nets",
+          "label": "2019 round 2 pick, no. 8",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "051pc",
+            "player": "KZ Okpala",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Brooklyn Nets",
+          "label": "2019 round 1 pick, no. 11",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "051ol",
+            "player": "Darius Garland",
+            "certain": true
+          }
         }
       ]
     }

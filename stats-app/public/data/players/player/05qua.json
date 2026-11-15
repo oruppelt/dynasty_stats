@@ -35,13 +35,54 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Dallas Mavericks",
+      "label": "2020 round 2 pick (Dallas Mavericks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 22,
+      "date": "2020-01-05",
+      "from": "Memphis Grizzlies",
+      "team": "Cleveland Cavaliers",
+      "trade": "ja9otupwk5130qp9",
+      "label": "2020 round 2 pick (Dallas Mavericks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 23,
+      "date": "2020-01-08",
+      "from": "Cleveland Cavaliers",
+      "team": "Memphis Grizzlies",
+      "trade": "4uomns6fk51ipc8r",
+      "label": "2020 round 2 pick (Dallas Mavericks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 25,
+      "date": "2020-01-16",
+      "from": "Memphis Grizzlies",
+      "team": "Los Angeles Clippers",
+      "trade": "k4ftr55dk5f685f4",
+      "label": "2020 round 2 pick (Dallas Mavericks)"
+    },
+    {
       "kind": "draft",
       "season": "2020-21",
       "period": 0,
       "date": "2020-11-24",
       "team": "Los Angeles Clippers",
       "round": 2,
-      "pick": 47,
+      "pick": 17,
+      "overall": 47,
+      "original": "Dallas Mavericks",
+      "certain": false,
       "periods": 62,
       "starts": 0,
       "gp": 0,
@@ -57,8 +98,195 @@
       "team": "Los Angeles Clippers"
     }
   ],
-  "trades": {},
+  "trades": {
+    "ja9otupwk5130qp9": {
+      "date": "2020-01-05",
+      "season": "2019-20",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "0015b",
+          "player": "Kyle Lowry",
+          "label": "Kyle Lowry"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "005le",
+          "player": "Robin Lopez",
+          "label": "Robin Lopez"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "player_id": "001bo",
+          "player": "Paul Millsap",
+          "label": "Paul Millsap"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "05qua",
+            "player": "Cassius Winston",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Brooklyn Nets)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05qv8",
+            "player": "Facundo Campazzo",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "k4ftr55dk5f685f4": {
+      "date": "2020-01-16",
+      "season": "2019-20",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Memphis Grizzlies",
+          "player_id": "02nfy",
+          "player": "Jae Crowder",
+          "label": "Jae Crowder"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Clippers",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Clippers",
+          "label": "2020 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "05qua",
+            "player": "Cassius Winston",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Clippers",
+          "label": "2020 round 2 pick (Brooklyn Nets)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05qv8",
+            "player": "Facundo Campazzo",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "4uomns6fk51ipc8r": {
+      "date": "2020-01-08",
+      "season": "2019-20",
+      "period": 23,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "label": "2020 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "05qua",
+            "player": "Cassius Winston",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "label": "2020 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05qta",
+            "player": "Elijah Hughes",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "label": "2020 round 2 pick (Brooklyn Nets)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05qv8",
+            "player": "Facundo Campazzo",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 16,
+            "overall": 16,
+            "player_id": "05qt0",
+            "player": "Saddiq Bey",
+            "certain": false
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

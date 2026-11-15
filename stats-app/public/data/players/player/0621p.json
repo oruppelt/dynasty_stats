@@ -114,6 +114,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Oklahoma City Thunder",
+      "label": "2022 round 1 pick, no. 15",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-27",
+      "from": "Oklahoma City Thunder",
+      "team": "Minnesota Timberwolves",
+      "trade": "orlj6u33l4wo4rie",
+      "label": "2022 round 1 pick, no. 15"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-27",
+      "from": "Minnesota Timberwolves",
+      "team": "Cleveland Cavaliers",
+      "trade": "bwkyx3vyl4womqe3",
+      "label": "2022 round 1 pick, no. 15"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -121,6 +149,9 @@
       "team": "Cleveland Cavaliers",
       "round": 1,
       "pick": 15,
+      "overall": 15,
+      "original": "Oklahoma City Thunder",
+      "certain": true,
       "periods": 3,
       "starts": 0,
       "gp": 0,
@@ -195,109 +226,63 @@
     }
   ],
   "trades": {
-    "apzneezol9yatn6q": {
-      "date": "2022-11-02",
+    "orlj6u33l4wo4rie": {
+      "date": "2022-06-27",
       "season": "2022-23",
-      "period": 6,
+      "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Washington Wizards",
-          "player_id": "027oz",
-          "player": "Kawhi Leonard",
-          "label": "Kawhi Leonard"
+          "from": "Minnesota Timberwolves",
+          "to": "Oklahoma City Thunder",
+          "player_id": "04qsb",
+          "player": "Devonte' Graham",
+          "label": "Devonte' Graham"
         },
         {
           "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Washington Wizards",
-          "label": "2024 round 2 pick (Boston Celtics)"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Boston Celtics",
-          "player_id": "0621p",
-          "player": "Wendell Moore",
-          "label": "Wendell Moore"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Boston Celtics",
-          "player_id": "03nwk",
-          "player": "Kelly Oubre Jr.",
-          "label": "Kelly Oubre Jr."
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Boston Celtics",
-          "player_id": "05qt4",
-          "player": "Aaron Nesmith",
-          "label": "Aaron Nesmith"
-        }
-      ]
-    },
-    "otcznyo1l9qx8rg5": {
-      "date": "2022-10-27",
-      "season": "2022-23",
-      "period": 4,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Washington Wizards",
-          "player_id": "0621j",
-          "player": "Malaki Branham",
-          "label": "Malaki Branham"
-        },
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Washington Wizards",
-          "player_id": "0621p",
-          "player": "Wendell Moore",
-          "label": "Wendell Moore"
-        },
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Washington Wizards",
-          "player_id": "059ca",
-          "player": "Oshae Brissett",
-          "label": "Oshae Brissett"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Cleveland Cavaliers",
-          "player_id": "05ujh",
-          "player": "Greg Brown",
-          "label": "Greg Brown"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Cleveland Cavaliers",
-          "player_id": "051oo",
-          "player": "Jaxson Hayes",
-          "label": "Jaxson Hayes"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Cleveland Cavaliers",
-          "player_id": "04jwd",
-          "player": "Royce O'Neale",
-          "label": "Royce O'Neale"
+          "from": "Minnesota Timberwolves",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06cc7",
+            "player": "Brandin Podziemski",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
-          "from": "Washington Wizards",
-          "to": "Cleveland Cavaliers",
-          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+          "from": "Minnesota Timberwolves",
+          "to": "Oklahoma City Thunder",
+          "label": "2022 round 1 pick, no. 19",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "0621n",
+            "player": "MarJon Beauchamp",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 1 pick, no. 15",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "0621p",
+            "player": "Wendell Moore",
+            "certain": true
+          }
         }
       ]
     },
@@ -334,7 +319,16 @@
           "kind": "pick",
           "from": "Boston Celtics",
           "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Milwaukee Bucks)"
+          "label": "2023 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06cdh",
+            "player": "GG Jackson",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -409,12 +403,199 @@
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Oklahoma City Thunder",
-          "label": "2024 round 1 pick (Orlando Magic)"
+          "label": "2024 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06mlr",
+            "player": "Jamal Shead",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "otcznyo1l9qx8rg5": {
+      "date": "2022-10-27",
+      "season": "2022-23",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "0621j",
+          "player": "Malaki Branham",
+          "label": "Malaki Branham"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "059ca",
+          "player": "Oshae Brissett",
+          "label": "Oshae Brissett"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05ujh",
+          "player": "Greg Brown",
+          "label": "Greg Brown"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "051oo",
+          "player": "Jaxson Hayes",
+          "label": "Jaxson Hayes"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04jwd",
+          "player": "Royce O'Neale",
+          "label": "Royce O'Neale"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        }
+      ]
+    },
+    "bwkyx3vyl4womqe3": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uiu",
+          "player": "Jalen Johnson",
+          "label": "Jalen Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 1 pick, no. 6",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 6,
+            "overall": 6,
+            "player_id": "0621c",
+            "player": "Jalen Duren",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 1 pick, no. 15",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "0621p",
+            "player": "Wendell Moore",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "apzneezol9yatn6q": {
+      "date": "2022-11-02",
+      "season": "2022-23",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr."
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "05qt4",
+          "player": "Aaron Nesmith",
+          "label": "Aaron Nesmith"
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

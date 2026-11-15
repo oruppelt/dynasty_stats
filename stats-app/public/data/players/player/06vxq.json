@@ -35,13 +35,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Memphis Grizzlies",
+      "label": "2025 round 2 pick (Memphis Grizzlies)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 26,
+      "date": "2025-01-18",
+      "from": "Memphis Grizzlies",
+      "team": "Philadelphia 76ers",
+      "trade": "wlf38grxm6178zj0",
+      "label": "2025 round 2 pick (Memphis Grizzlies)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-05",
       "team": "Philadelphia 76ers",
       "round": 2,
-      "pick": 58,
+      "pick": 28,
+      "overall": 58,
+      "original": "Memphis Grizzlies",
+      "certain": true,
       "periods": 40,
       "starts": 0,
       "gp": 0,
@@ -50,8 +71,57 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "wlf38grxm6178zj0": {
+      "date": "2025-01-18",
+      "season": "2024-25",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "02nf9",
+          "player": "Andre Drummond",
+          "label": "Andre Drummond"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "label": "2025 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06vxq",
+            "player": "Jahmai Mashack",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

@@ -170,13 +170,74 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Cleveland Cavaliers",
+      "label": "2020 round 2 pick (Cleveland Cavaliers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-06-25",
+      "from": "Cleveland Cavaliers",
+      "team": "Golden State Warriors",
+      "trade": "s5ptzaz6jxas90pf",
+      "label": "2020 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 2,
+      "date": "2019-10-25",
+      "from": "Golden State Warriors",
+      "team": "Orlando Magic",
+      "trade": "6kk26nz5k269o7q2",
+      "label": "2020 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-13",
+      "from": "Orlando Magic",
+      "team": "San Antonio Spurs",
+      "trade": "5gg4pkc8kg0rxsjg",
+      "label": "2020 round 2 pick, no. 5"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-21",
+      "from": "San Antonio Spurs",
+      "team": "Golden State Warriors",
+      "trade": "awk46tqqkhrhpijg",
+      "label": "2020 round 2 pick, no. 5"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "from": "Golden State Warriors",
+      "team": "Denver Nuggets",
+      "trade": "wtasn88kkhuyzg99",
+      "label": "2020 round 2 pick, no. 5"
+    },
+    {
       "kind": "draft",
       "season": "2020-21",
       "period": 0,
       "date": "2020-11-24",
       "team": "Denver Nuggets",
       "round": 2,
-      "pick": 35,
+      "pick": 5,
+      "overall": 35,
+      "original": "Cleveland Cavaliers",
+      "certain": false,
       "periods": 95,
       "starts": 53,
       "gp": 74,
@@ -279,30 +340,57 @@
     }
   ],
   "trades": {
-    "7kx183fulzh11jvr": {
-      "date": "2024-08-05",
-      "season": "2024-25",
-      "period": 1,
+    "6kk26nz5k269o7q2": {
+      "date": "2019-10-25",
+      "season": "2019-20",
+      "period": 2,
       "items": [
         {
-          "kind": "budget",
-          "from": "Philadelphia 76ers",
-          "to": "Utah Jazz",
-          "label": "$10 budget"
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
         },
         {
           "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Philadelphia 76ers",
-          "player_id": "05qtq",
-          "player": "Tre Jones",
-          "label": "Tre Jones"
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "04jwc",
+          "player": "Alfonzo McKinnie",
+          "label": "Alfonzo McKinnie"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "02nf8",
+          "player": "Terrence Ross",
+          "label": "Terrence Ross"
         },
         {
           "kind": "pick",
-          "from": "Utah Jazz",
-          "to": "Philadelphia 76ers",
-          "label": "2026 round 2 pick (Utah Jazz)"
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "label": "2020 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "05qtq",
+            "player": "Tre Jones",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Golden State Warriors",
+          "player_id": "031lq",
+          "player": "Otto Porter",
+          "label": "Otto Porter"
         }
       ]
     },
@@ -347,7 +435,16 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Utah Jazz",
-          "label": "2026 round 1 pick (Dallas Mavericks)"
+          "label": "2026 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "076t5",
+            "player": "Alex Karaban",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -377,7 +474,16 @@
           "kind": "pick",
           "from": "Chicago Bulls",
           "to": "Philadelphia 76ers",
-          "label": "2026 round 1 pick (Chicago Bulls)"
+          "label": "2026 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "076t2",
+            "player": "Cameron Carr",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -420,9 +526,202 @@
           "label": "Brice Sensabaugh"
         }
       ]
+    },
+    "awk46tqqkhrhpijg": {
+      "date": "2020-11-21",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "label": "2021 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "05ujk",
+            "player": "Dalano Banton",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick, no. 5",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "05qtq",
+            "player": "Tre Jones",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "s5ptzaz6jxas90pf": {
+      "date": "2019-06-25",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "05qtq",
+            "player": "Tre Jones",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Cleveland Cavaliers",
+          "label": "2019 round 2 pick, no. 24"
+        }
+      ]
+    },
+    "wtasn88kkhuyzg99": {
+      "date": "2020-11-23",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2020 round 1 pick, no. 29"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2020 round 2 pick, no. 26"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2021 round 2 pick (Denver Nuggets)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "05ujt",
+            "player": "Aaron Wiggins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2020 round 2 pick, no. 5",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "05qtq",
+            "player": "Tre Jones",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "5gg4pkc8kg0rxsjg": {
+      "date": "2020-10-13",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "label": "2020 round 2 pick, no. 5",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "05qtq",
+            "player": "Tre Jones",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Orlando Magic",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        }
+      ]
+    },
+    "7kx183fulzh11jvr": {
+      "date": "2024-08-05",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Philadelphia 76ers",
+          "to": "Utah Jazz",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtq",
+          "player": "Tre Jones",
+          "label": "Tre Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 2 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "076uk",
+            "player": "Ja'Kobi Gillespie",
+            "certain": true
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

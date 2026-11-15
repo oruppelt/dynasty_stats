@@ -128,13 +128,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Brooklyn Nets",
+      "label": "2023 round 2 pick (Brooklyn Nets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 23,
+      "date": "2023-01-02",
+      "from": "Brooklyn Nets",
+      "team": "Golden State Warriors",
+      "trade": "nm5ofq8elceqqeug",
+      "label": "2023 round 2 pick (Brooklyn Nets)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
       "date": "2023-06-28",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 56,
+      "pick": 26,
+      "overall": 56,
+      "original": "Brooklyn Nets",
+      "certain": true,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -193,6 +214,90 @@
     }
   ],
   "trades": {
+    "xqm77aorlrs4fy0j": {
+      "date": "2024-01-24",
+      "season": "2023-24",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Washington Wizards",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "San Antonio Spurs",
+          "player_id": "02nf3",
+          "player": "Bradley Beal",
+          "label": "Bradley Beal"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "San Antonio Spurs",
+          "player_id": "06cd4",
+          "player": "Toumani Camara",
+          "label": "Toumani Camara"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06mk7",
+            "player": "Kel'el Ware",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "nm5ofq8elceqqeug": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Brooklyn Nets",
+          "to": "Golden State Warriors",
+          "player_id": "05ujf",
+          "player": "Joe Wieskamp",
+          "label": "Joe Wieskamp"
+        },
+        {
+          "kind": "pick",
+          "from": "Brooklyn Nets",
+          "to": "Golden State Warriors",
+          "label": "2023 round 2 pick (Brooklyn Nets)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 26,
+            "overall": 56,
+            "player_id": "06cd4",
+            "player": "Toumani Camara",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Brooklyn Nets",
+          "player_id": "031mc",
+          "player": "Reggie Bullock",
+          "label": "Reggie Bullock"
+        }
+      ]
+    },
     "e5lcksjwljtua3d0": {
       "date": "2023-07-08",
       "season": "2023-24",
@@ -229,46 +334,19 @@
           "label": "2024 round 2 pick (Houston Rockets)"
         }
       ]
-    },
-    "xqm77aorlrs4fy0j": {
-      "date": "2024-01-24",
-      "season": "2023-24",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Washington Wizards",
-          "player_id": "01uyj",
-          "player": "Paul George",
-          "label": "Paul George"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "San Antonio Spurs",
-          "player_id": "02nf3",
-          "player": "Bradley Beal",
-          "label": "Bradley Beal"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "San Antonio Spurs",
-          "player_id": "06cd4",
-          "player": "Toumani Camara",
-          "label": "Toumani Camara"
-        },
-        {
-          "kind": "pick",
-          "from": "Washington Wizards",
-          "to": "San Antonio Spurs",
-          "label": "2024 round 1 pick (Philadelphia 76ers)"
-        }
-      ]
     }
   },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

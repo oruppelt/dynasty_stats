@@ -86,6 +86,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Chicago Bulls",
+      "label": "2021 round 2 pick (Chicago Bulls)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 20,
+      "date": "2019-12-29",
+      "from": "Chicago Bulls",
+      "team": "Golden State Warriors",
+      "trade": "m37hmfl2k4olgvg7",
+      "label": "2021 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "from": "Golden State Warriors",
+      "team": "Philadelphia 76ers",
+      "trade": "qpkfdisvkic56339",
+      "label": "2021 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 15,
+      "date": "2021-02-08",
+      "from": "Philadelphia 76ers",
+      "team": "Boston Celtics",
+      "trade": "yhxta0frkkwqqtwa",
+      "label": "2021 round 2 pick (Chicago Bulls)"
+    },
+    {
       "kind": "claim",
       "season": "2020-21",
       "period": 24,
@@ -113,7 +151,10 @@
       "date": "2021-08-03",
       "team": "Boston Celtics",
       "round": 2,
-      "pick": 58,
+      "pick": 28,
+      "overall": 58,
+      "original": "Chicago Bulls",
+      "certain": true,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -148,8 +189,163 @@
       "team": "Boston Celtics"
     }
   ],
-  "trades": {},
+  "trades": {
+    "yhxta0frkkwqqtwa": {
+      "date": "2021-02-08",
+      "season": "2020-21",
+      "period": 15,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Philadelphia 76ers",
+          "label": "2021 round 1 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "05uiz",
+            "player": "Quentin Grimes",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05qvg",
+            "player": "Anthony Lamb",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "05uj9",
+            "player": "Herbert Jones",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "m37hmfl2k4olgvg7": {
+      "date": "2019-12-29",
+      "season": "2019-20",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "player_id": "01en2",
+          "player": "Jeff Teague",
+          "label": "Jeff Teague"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "player_id": "031mc",
+          "player": "Reggie Bullock",
+          "label": "Reggie Bullock"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05qvg",
+            "player": "Anthony Lamb",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Chicago Bulls",
+          "player_id": "0017e",
+          "player": "Chris Paul",
+          "label": "Chris Paul"
+        }
+      ]
+    },
+    "qpkfdisvkic56339": {
+      "date": "2020-12-06",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "label": "2021 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05qvg",
+            "player": "Anthony Lamb",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

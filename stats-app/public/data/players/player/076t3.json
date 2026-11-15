@@ -21,6 +21,24 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Atlanta Hawks",
+      "label": "2026 round 1 pick (Atlanta Hawks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-13",
+      "from": "Atlanta Hawks",
+      "team": "Houston Rockets",
+      "trade": "glz93afsmhx6pjs4",
+      "label": "2026 round 1 pick (Atlanta Hawks)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -28,6 +46,9 @@
       "team": "Houston Rockets",
       "round": 1,
       "pick": 22,
+      "overall": 22,
+      "original": "Atlanta Hawks",
+      "certain": true,
       "periods": 7,
       "starts": 0,
       "gp": 0,
@@ -36,8 +57,57 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "glz93afsmhx6pjs4": {
+      "date": "2025-11-13",
+      "season": "2025-26",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Houston Rockets",
+          "player_id": "05qti",
+          "player": "Josh Green",
+          "label": "Josh Green"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Houston Rockets",
+          "label": "2026 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "076t3",
+            "player": "Karim Lopez",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Atlanta Hawks",
+          "player_id": "06ccf",
+          "player": "Ausar Thompson",
+          "label": "Ausar Thompson"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

@@ -52,6 +52,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Charlotte Hornets",
+      "label": "2026 round 1 pick (Charlotte Hornets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-26",
+      "from": "Charlotte Hornets",
+      "team": "Oklahoma City Thunder",
+      "trade": "0lwk42u9m6dv18yt",
+      "label": "2026 round 1 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-01",
+      "from": "Oklahoma City Thunder",
+      "team": "Dallas Mavericks",
+      "trade": "uzng6ajcmck27c8b",
+      "label": "2026 round 1 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Dallas Mavericks",
+      "team": "Utah Jazz",
+      "trade": "v5ras31lmkqs89nd",
+      "label": "2026 round 1 pick (Charlotte Hornets)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -59,6 +97,9 @@
       "team": "Utah Jazz",
       "round": 1,
       "pick": 17,
+      "overall": 17,
+      "original": "Charlotte Hornets",
+      "certain": true,
       "periods": 7,
       "starts": 3,
       "gp": 7,
@@ -67,8 +108,202 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "uzng6ajcmck27c8b": {
+      "date": "2025-07-01",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 1 pick, no. 23",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06v5w",
+            "player": "Nique Clifford",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Dallas Mavericks",
+          "label": "2026 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "076tb",
+            "player": "Allen Graves",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "0lwk42u9m6dv18yt": {
+      "date": "2025-01-26",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "05qtb",
+          "player": "Sam Merrill",
+          "label": "Sam Merrill"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "052fs",
+          "player": "Garrison Mathews",
+          "label": "Garrison Mathews"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "label": "2026 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "076tb",
+            "player": "Allen Graves",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "label": "2026 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "076u9",
+            "player": "Izaiyah Nelson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "player_id": "051p4",
+          "player": "Ty Jerome",
+          "label": "Ty Jerome"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "player_id": "03nwn",
+          "player": "Bobby Portis",
+          "label": "Bobby Portis"
+        }
+      ]
+    },
+    "v5ras31lmkqs89nd": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Utah Jazz",
+          "player_id": "06mk8",
+          "player": "Jared McCain",
+          "label": "Jared McCain"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Utah Jazz",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "076tb",
+            "player": "Allen Graves",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Dallas Mavericks",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Dallas Mavericks",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Dallas Mavericks",
+          "label": "2026 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "076t5",
+            "player": "Alex Karaban",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

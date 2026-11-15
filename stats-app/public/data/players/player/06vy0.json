@@ -35,13 +35,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Sacramento Kings",
+      "label": "2025 round 2 pick (Sacramento Kings)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-26",
+      "from": "Sacramento Kings",
+      "team": "Detroit Pistons",
+      "trade": "pxto19a2ljd8w62x",
+      "label": "2025 round 2 pick (Sacramento Kings)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-04",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 50,
+      "pick": 20,
+      "overall": 50,
+      "original": "Sacramento Kings",
+      "certain": true,
       "periods": 33,
       "starts": 0,
       "gp": 0,
@@ -126,9 +147,62 @@
           "label": "2028 round 1 pick (Minnesota Timberwolves)"
         }
       ]
+    },
+    "pxto19a2ljd8w62x": {
+      "date": "2023-06-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "label": "2023 round 2 pick, no. 5",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06ca3",
+            "player": "Julian Strawther",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2025 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06vy0",
+            "player": "Eli John Ndiaye",
+            "certain": true
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

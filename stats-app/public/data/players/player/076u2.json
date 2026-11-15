@@ -21,13 +21,44 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Chicago Bulls",
+      "label": "2026 round 2 pick (Chicago Bulls)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 23,
+      "date": "2025-01-08",
+      "from": "Chicago Bulls",
+      "team": "Miami Heat",
+      "trade": "6wp31wt3m5mhwc4q",
+      "label": "2026 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-13",
+      "from": "Miami Heat",
+      "team": "Houston Rockets",
+      "trade": "qv786h5cmhvytj7l",
+      "label": "2026 round 2 pick (Chicago Bulls)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-03",
       "team": "Houston Rockets",
       "round": 2,
-      "pick": 45,
+      "pick": 15,
+      "overall": 45,
+      "original": "Chicago Bulls",
+      "certain": true,
       "periods": 7,
       "starts": 0,
       "gp": 0,
@@ -36,8 +67,171 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "qv786h5cmhvytj7l": {
+      "date": "2025-11-13",
+      "season": "2025-26",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "player_id": "03e74",
+          "player": "Spencer Dinwiddie",
+          "label": "Spencer Dinwiddie"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "03nwm",
+          "player": "Devin Booker",
+          "label": "Devin Booker"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
+          "player_id": "06218",
+          "player": "Jeremy Sochan",
+          "label": "Jeremy Sochan"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "05qtv",
+          "player": "Tyrese Haliburton",
+          "label": "Tyrese Haliburton"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "06v5p",
+          "player": "Nolan Traore",
+          "label": "Nolan Traore"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "076t9",
+            "player": "Darryn Peterson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2026 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "076u2",
+            "player": "Dillon Mitchell",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "076sv",
+            "player": "Bennett Stirtz",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Miami Heat",
+          "player_id": "01eo6",
+          "player": "James Harden",
+          "label": "James Harden"
+        }
+      ]
+    },
+    "6wp31wt3m5mhwc4q": {
+      "date": "2025-01-08",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "076u2",
+            "player": "Dillon Mitchell",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Chicago Bulls",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

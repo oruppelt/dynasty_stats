@@ -184,6 +184,16 @@
   ],
   "timeline": [
     {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-06-21",
+      "from": "Indiana Pacers",
+      "team": "Boston Celtics",
+      "trade": "s9d1c6dkjx6jhhgd",
+      "label": "2019 round 1 pick (Los Angeles Clippers)"
+    },
+    {
       "kind": "draft",
       "season": "2019-20",
       "period": 0,
@@ -191,12 +201,23 @@
       "team": "Boston Celtics",
       "round": 1,
       "pick": 18,
+      "overall": 18,
+      "original": "Los Angeles Clippers",
+      "certain": true,
       "periods": 32,
       "starts": 26,
       "gp": 39,
       "points": 626.75,
       "salary": 1885728,
       "contract": "R13"
+    },
+    {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Los Angeles Clippers",
+      "label": "2019 round 1 pick (Los Angeles Clippers)",
+      "date": null
     },
     {
       "kind": "trade",
@@ -342,6 +363,59 @@
     }
   ],
   "trades": {
+    "7zkxt54tkgi6yan4": {
+      "date": "2020-10-20",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Golden State Warriors",
+          "player_id": "051p8",
+          "player": "Jordan Poole",
+          "label": "Jordan Poole"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Boston Celtics",
+          "label": "2020 round 2 pick, no. 20",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "05qst",
+            "player": "Paul Reed",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "svkmws6wlzh38gwi": {
+      "date": "2024-08-05",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Minnesota Timberwolves",
+          "player_id": "051p8",
+          "player": "Jordan Poole",
+          "label": "Jordan Poole"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Miami Heat",
+          "player_id": "027oo",
+          "player": "Jonas Valanciunas",
+          "label": "Jonas Valanciunas"
+        }
+      ]
+    },
     "uq2o1bs8lxyjavfd": {
       "date": "2024-06-28",
       "season": "2024-25",
@@ -359,25 +433,61 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Phoenix Suns",
-          "label": "2024 round 2 pick, no. 7"
+          "label": "2024 round 2 pick, no. 7",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06mly",
+            "player": "Quinten Post",
+            "certain": false
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Phoenix Suns",
-          "label": "2024 round 1 pick, no. 14"
+          "label": "2024 round 1 pick, no. 14",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Washington Wizards",
-          "label": "2024 round 2 pick, no. 5"
+          "label": "2024 round 2 pick, no. 5",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06mkh",
+            "player": "Pacome Dadiet",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Washington Wizards",
-          "label": "2024 round 1 pick, no. 11"
+          "label": "2024 round 1 pick, no. 11",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06mjy",
+            "player": "Tidjane Salaun",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -399,19 +509,113 @@
           "kind": "pick",
           "from": "Phoenix Suns",
           "to": "Miami Heat",
-          "label": "2024 round 2 pick, no. 30"
+          "label": "2024 round 2 pick, no. 30",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "06mlx",
+            "player": "Melvin Ajinca",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Phoenix Suns",
-          "label": "2024 round 2 pick, no. 11"
+          "label": "2024 round 2 pick, no. 11",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06mlo",
+            "player": "KJ Simpson",
+            "certain": false
+          }
         },
         {
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Phoenix Suns",
-          "label": "2024 round 1 pick, no. 8"
+          "label": "2024 round 1 pick, no. 8",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06mjx",
+            "player": "Ron Holland",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "s9d1c6dkjx6jhhgd": {
+      "date": "2019-06-21",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Indiana Pacers",
+          "label": "2019 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "051ol",
+            "player": "Darius Garland",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Boston Celtics",
+          "label": "2019 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "051pl",
+            "player": "Eric Paschall",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Boston Celtics",
+          "label": "2019 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "051po",
+            "player": "Bol Bol",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Boston Celtics",
+          "label": "2019 round 1 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 18,
+            "overall": 18,
+            "player_id": "051p8",
+            "player": "Jordan Poole",
+            "certain": true
+          }
         }
       ]
     },
@@ -455,50 +659,6 @@
           "from": "Minnesota Timberwolves",
           "to": "Houston Rockets",
           "label": "2027 round 1 pick (Minnesota Timberwolves)"
-        }
-      ]
-    },
-    "7zkxt54tkgi6yan4": {
-      "date": "2020-10-20",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Golden State Warriors",
-          "player_id": "051p8",
-          "player": "Jordan Poole",
-          "label": "Jordan Poole"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Boston Celtics",
-          "label": "2020 round 2 pick, no. 20"
-        }
-      ]
-    },
-    "svkmws6wlzh38gwi": {
-      "date": "2024-08-05",
-      "season": "2024-25",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Minnesota Timberwolves",
-          "player_id": "051p8",
-          "player": "Jordan Poole",
-          "label": "Jordan Poole"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Miami Heat",
-          "player_id": "027oo",
-          "player": "Jonas Valanciunas",
-          "label": "Jonas Valanciunas"
         }
       ]
     }

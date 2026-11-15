@@ -86,13 +86,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Utah Jazz",
+      "label": "2023 round 2 pick (Utah Jazz)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "from": "Utah Jazz",
+      "team": "Charlotte Hornets",
+      "trade": "1wol7nl2lde7omt5",
+      "label": "2023 round 2 pick (Utah Jazz)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "from": "Charlotte Hornets",
+      "team": "New York Knicks",
+      "trade": "nu3ujh51ldej0oph",
+      "label": "2023 round 2 pick (Utah Jazz)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
       "date": "2023-06-27",
       "team": "New York Knicks",
       "round": 2,
-      "pick": 48,
+      "pick": 18,
+      "overall": 48,
+      "original": "Utah Jazz",
+      "certain": true,
       "periods": 65,
       "starts": 7,
       "gp": 4,
@@ -108,8 +139,103 @@
       "team": "New York Knicks"
     }
   ],
-  "trades": {},
+  "trades": {
+    "1wol7nl2lde7omt5": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Utah Jazz",
+          "player_id": "04jw4",
+          "player": "Maxi Kleber",
+          "label": "Maxi Kleber"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "player_id": "06233",
+          "player": "Ron Harper",
+          "label": "Ron Harper"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "player_id": "0623h",
+          "player": "Alondes Williams",
+          "label": "Alondes Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "label": "2023 round 2 pick (Utah Jazz)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "06cd3",
+            "player": "Emoni Bates",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "nu3ujh51ldej0oph": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "New York Knicks",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "New York Knicks",
+          "label": "2023 round 2 pick (Utah Jazz)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "06cd3",
+            "player": "Emoni Bates",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Charlotte Hornets",
+          "player_id": "03el5",
+          "player": "Kristaps Porzingis",
+          "label": "Kristaps Porzingis"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

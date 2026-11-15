@@ -142,13 +142,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Philadelphia 76ers",
+      "label": "2022 round 2 pick (Philadelphia 76ers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 21,
+      "date": "2021-03-01",
+      "from": "Philadelphia 76ers",
+      "team": "Boston Celtics",
+      "trade": "1dficb49klqifkr2",
+      "label": "2022 round 2 pick (Philadelphia 76ers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-18",
+      "from": "Boston Celtics",
+      "team": "Houston Rockets",
+      "trade": "g2f53zxaksheu85c",
+      "label": "2022 round 2 pick (Philadelphia 76ers)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-28",
       "team": "Houston Rockets",
       "round": 2,
-      "pick": 37,
+      "pick": 7,
+      "overall": 37,
+      "original": "Philadelphia 76ers",
+      "certain": true,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -269,7 +300,16 @@
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Toronto Raptors",
-          "label": "2026 round 1 pick (Oklahoma City Thunder)"
+          "label": "2026 round 1 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "076u1",
+            "player": "Henri Veesaar",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -320,7 +360,16 @@
           "kind": "pick",
           "from": "Houston Rockets",
           "to": "Toronto Raptors",
-          "label": "2023 round 2 pick (Houston Rockets)"
+          "label": "2023 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "00129",
+            "player": "Carmelo Anthony",
+            "certain": true
+          }
         },
         {
           "kind": "budget",
@@ -329,9 +378,149 @@
           "label": "$7 budget"
         }
       ]
+    },
+    "g2f53zxaksheu85c": {
+      "date": "2021-08-18",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "00129",
+          "player": "Carmelo Anthony",
+          "label": "Carmelo Anthony"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2022 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "0621y",
+            "player": "Max Christie",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2022 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "051pm",
+            "player": "Admiral Schofield",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2023 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06ccx",
+            "player": "Hunter Tyson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "player_id": "04qs6",
+          "player": "Dzanan Musa",
+          "label": "Dzanan Musa"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "player_id": "03lls",
+          "player": "Jaylen Brown",
+          "label": "Jaylen Brown"
+        }
+      ]
+    },
+    "1dficb49klqifkr2": {
+      "date": "2021-03-01",
+      "season": "2020-21",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Philadelphia 76ers",
+          "player_id": "03al0",
+          "player": "Aaron Gordon",
+          "label": "Aaron Gordon"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "player_id": "051pa",
+          "player": "Kevin Porter",
+          "label": "Kevin Porter"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "label": "2022 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "0621y",
+            "player": "Max Christie",
+            "certain": true
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

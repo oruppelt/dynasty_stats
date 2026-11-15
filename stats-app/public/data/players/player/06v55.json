@@ -86,6 +86,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Cleveland Cavaliers",
+      "label": "2025 round 1 pick (Cleveland Cavaliers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "from": "Cleveland Cavaliers",
+      "team": "Minnesota Timberwolves",
+      "trade": "g0lheio6lkoa83d2",
+      "label": "2025 round 1 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "from": "Minnesota Timberwolves",
+      "team": "Detroit Pistons",
+      "trade": "veuxhdyulzh2p9ac",
+      "label": "2025 round 1 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 5,
+      "date": "2024-11-04",
+      "from": "Detroit Pistons",
+      "team": "Cleveland Cavaliers",
+      "trade": "e3rmgazym32x5n22",
+      "label": "2025 round 1 pick (Cleveland Cavaliers)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -93,6 +131,8 @@
       "team": "Cleveland Cavaliers",
       "round": 1,
       "pick": 8,
+      "overall": 8,
+      "certain": true,
       "periods": 40,
       "starts": 19,
       "gp": 33,
@@ -101,8 +141,240 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "veuxhdyulzh2p9ac": {
+      "date": "2024-08-05",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Minnesota Timberwolves",
+          "player_id": "027oo",
+          "player": "Jonas Valanciunas",
+          "label": "Jonas Valanciunas"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Detroit Pistons",
+          "player_id": "03aq2",
+          "player": "Jerami Grant",
+          "label": "Jerami Grant"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Detroit Pistons",
+          "label": "2025 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06v55",
+            "player": "Kasparas Jakucionis",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "e3rmgazym32x5n22": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "0527h",
+          "player": "Naz Reid",
+          "label": "Naz Reid"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "042n2",
+          "player": "Kris Dunn",
+          "label": "Kris Dunn"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "051op",
+          "player": "Rui Hachimura",
+          "label": "Rui Hachimura"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "label": "2025 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06y3q",
+            "player": "Ryan Nembhard",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06cel",
+          "player": "Sidy Cissoko",
+          "label": "Sidy Cissoko"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04qsd",
+          "player": "Mitchell Robinson",
+          "label": "Mitchell Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06mld",
+          "player": "Jonathan Mogbo",
+          "label": "Jonathan Mogbo"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06ccy",
+          "player": "Jalen Pickett",
+          "label": "Jalen Pickett"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06cc9",
+          "player": "Olivier-Maxence Prosper",
+          "label": "Olivier-Maxence Prosper"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "label": "2025 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06v7y",
+            "player": "Noah Penda",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "label": "2025 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06v55",
+            "player": "Kasparas Jakucionis",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "g0lheio6lkoa83d2": {
+      "date": "2023-07-29",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "label": "2025 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06v55",
+            "player": "Kasparas Jakucionis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Cleveland Cavaliers",
+          "label": "2025 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06y3q",
+            "player": "Ryan Nembhard",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Minnesota Timberwolves",
+          "to": "Cleveland Cavaliers",
+          "label": "$10 budget"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

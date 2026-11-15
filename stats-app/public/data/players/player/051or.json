@@ -170,19 +170,40 @@
   ],
   "timeline": [
     {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-06-24",
+      "from": "Toronto Raptors",
+      "team": "Memphis Grizzlies",
+      "trade": "evsc49z6jxaiikub",
+      "label": "2019 round 2 pick, no. 2"
+    },
+    {
       "kind": "draft",
       "season": "2019-20",
       "period": 0,
       "date": "2019-06-24",
       "team": "Memphis Grizzlies",
       "round": 2,
-      "pick": 32,
+      "pick": 2,
+      "overall": 32,
+      "original": "Toronto Raptors",
+      "certain": false,
       "periods": 61,
       "starts": 27,
       "gp": 49,
       "points": 1028.25,
       "salary": 1000000,
       "contract": "R23"
+    },
+    {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Toronto Raptors",
+      "label": "2019 round 2 pick, no. 2",
+      "date": null
     },
     {
       "kind": "trade",
@@ -283,6 +304,36 @@
     }
   ],
   "trades": {
+    "evsc49z6jxaiikub": {
+      "date": "2019-06-24",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Toronto Raptors",
+          "player_id": "04847",
+          "player": "Bryn Forbes",
+          "label": "Bryn Forbes"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Memphis Grizzlies",
+          "label": "2019 round 2 pick, no. 2",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "051or",
+            "player": "Cameron Johnson",
+            "certain": false
+          }
+        }
+      ]
+    },
     "20af3cgxkpeqvvt8": {
       "date": "2021-06-02",
       "season": "2021-22",
@@ -308,13 +359,31 @@
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Charlotte Hornets",
-          "label": "2022 round 1 pick (Memphis Grizzlies)"
+          "label": "2022 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "06228",
+            "player": "Josh Minott",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Charlotte Hornets",
-          "label": "2021 round 1 pick, no. 26"
+          "label": "2021 round 1 pick, no. 26",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "05uj0",
+            "player": "Bones Hyland",
+            "certain": true
+          }
         }
       ]
     }

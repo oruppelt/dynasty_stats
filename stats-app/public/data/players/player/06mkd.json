@@ -100,6 +100,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "New Orleans Pelicans",
+      "label": "2024 round 1 pick (New Orleans Pelicans)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-28",
+      "from": "New Orleans Pelicans",
+      "team": "Los Angeles Clippers",
+      "trade": "lzuchjjolqphb417",
+      "label": "2024 round 1 pick (New Orleans Pelicans)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -107,6 +125,9 @@
       "team": "Los Angeles Clippers",
       "round": 1,
       "pick": 28,
+      "overall": 28,
+      "original": "New Orleans Pelicans",
+      "certain": true,
       "periods": 73,
       "starts": 66,
       "gp": 99,
@@ -121,8 +142,103 @@
       "team": "Los Angeles Lakers"
     }
   ],
-  "trades": {},
+  "trades": {
+    "lzuchjjolqphb417": {
+      "date": "2023-12-28",
+      "season": "2023-24",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "New Orleans Pelicans",
+          "player_id": "005ki",
+          "player": "Brook Lopez",
+          "label": "Brook Lopez"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "New Orleans Pelicans",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "New Orleans Pelicans",
+          "player_id": "051ox",
+          "player": "Nickeil Alexander-Walker",
+          "label": "Nickeil Alexander-Walker"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "New Orleans Pelicans",
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Clippers",
+          "player_id": "01eo9",
+          "player": "Jrue Holiday",
+          "label": "Jrue Holiday"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Clippers",
+          "label": "2025 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06v5h",
+            "player": "Derik Queen",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Clippers",
+          "label": "2024 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06mkd",
+            "player": "Yves Missi",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

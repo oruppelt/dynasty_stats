@@ -128,6 +128,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Chicago Bulls",
+      "label": "2024 round 1 pick (Chicago Bulls)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-26",
+      "from": "Chicago Bulls",
+      "team": "Memphis Grizzlies",
+      "trade": "74u2l06clkjlwwrn",
+      "label": "2024 round 1 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 17,
+      "date": "2023-12-21",
+      "from": "Memphis Grizzlies",
+      "team": "Atlanta Hawks",
+      "trade": "gf9smt20lqf07q97",
+      "label": "2024 round 1 pick (Chicago Bulls)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -135,6 +163,9 @@
       "team": "Atlanta Hawks",
       "round": 1,
       "pick": 27,
+      "overall": 27,
+      "original": "Chicago Bulls",
+      "certain": true,
       "periods": 23,
       "starts": 3,
       "gp": 1,
@@ -174,40 +205,106 @@
     }
   ],
   "trades": {
-    "3e8zy5h8m5ppki7t": {
-      "date": "2025-01-09",
-      "season": "2024-25",
-      "period": 24,
+    "74u2l06clkjlwwrn": {
+      "date": "2023-07-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Memphis Grizzlies",
+          "player_id": "051ps",
+          "player": "Terance Mann",
+          "label": "Terance Mann"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "06mkm",
+            "player": "Baylor Scheierman",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Chicago Bulls",
+          "label": "$10 budget"
+        }
+      ]
+    },
+    "gf9smt20lqf07q97": {
+      "date": "2023-12-21",
+      "season": "2023-24",
+      "period": 18,
       "items": [
         {
           "kind": "player",
           "from": "Atlanta Hawks",
-          "to": "Miami Heat",
-          "player_id": "06mkm",
-          "player": "Baylor Scheierman",
-          "label": "Baylor Scheierman"
+          "to": "Memphis Grizzlies",
+          "player_id": "05qt4",
+          "player": "Aaron Nesmith",
+          "label": "Aaron Nesmith"
         },
         {
           "kind": "player",
           "from": "Atlanta Hawks",
-          "to": "Miami Heat",
-          "player_id": "005kd",
-          "player": "Kevin Love",
-          "label": "Kevin Love"
+          "to": "Memphis Grizzlies",
+          "player_id": "05uij",
+          "player": "Davion Mitchell",
+          "label": "Davion Mitchell"
         },
         {
           "kind": "pick",
           "from": "Atlanta Hawks",
-          "to": "Miami Heat",
-          "label": "2026 round 2 pick (Atlanta Hawks)"
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Atlanta Hawks",
+          "to": "Memphis Grizzlies",
+          "label": "$10 budget"
         },
         {
           "kind": "player",
-          "from": "Miami Heat",
+          "from": "Memphis Grizzlies",
           "to": "Atlanta Hawks",
-          "player_id": "03r7u",
-          "player": "Josh Richardson",
-          "label": "Josh Richardson"
+          "player_id": "03r7e",
+          "player": "Cameron Payne",
+          "label": "Cameron Payne"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "06mkm",
+            "player": "Baylor Scheierman",
+            "certain": true
+          }
         }
       ]
     },
@@ -236,13 +333,31 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Phoenix Suns",
-          "label": "2026 round 2 pick (Miami Heat)"
+          "label": "2026 round 2 pick (Miami Heat)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "076ue",
+            "player": "Trey Kaufman-Renn",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Phoenix Suns",
-          "label": "2026 round 2 pick (Atlanta Hawks)"
+          "label": "2026 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "076ua",
+            "player": "Lajae Jones",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -253,9 +368,65 @@
           "label": "Kevin Huerter"
         }
       ]
+    },
+    "3e8zy5h8m5ppki7t": {
+      "date": "2025-01-09",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Miami Heat",
+          "player_id": "06mkm",
+          "player": "Baylor Scheierman",
+          "label": "Baylor Scheierman"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Miami Heat",
+          "player_id": "005kd",
+          "player": "Kevin Love",
+          "label": "Kevin Love"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "076ua",
+            "player": "Lajae Jones",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

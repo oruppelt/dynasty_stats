@@ -21,6 +21,24 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Miami Heat",
+      "label": "2026 round 1 pick (Miami Heat)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 27,
+      "date": "2026-01-19",
+      "from": "Miami Heat",
+      "team": "Philadelphia 76ers",
+      "trade": "qtj5h137mklfkucq",
+      "label": "2026 round 1 pick (Miami Heat)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -28,6 +46,9 @@
       "team": "Philadelphia 76ers",
       "round": 1,
       "pick": 28,
+      "overall": 28,
+      "original": "Miami Heat",
+      "certain": true,
       "periods": 7,
       "starts": 0,
       "gp": 0,
@@ -36,8 +57,73 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "qtj5h137mklfkucq": {
+      "date": "2026-01-19",
+      "season": "2025-26",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "04qrw",
+          "player": "Kevin Huerter",
+          "label": "Kevin Huerter"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "0622k",
+          "player": "Jabari Walker",
+          "label": "Jabari Walker"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick (Miami Heat)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "076ud",
+            "player": "Isaiah Evans",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "02nf9",
+          "player": "Andre Drummond",
+          "label": "Andre Drummond"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "05qub",
+          "player": "Isaiah Stewart",
+          "label": "Isaiah Stewart"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

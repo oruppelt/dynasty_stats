@@ -35,13 +35,54 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "San Antonio Spurs",
+      "label": "2023 round 2 pick (San Antonio Spurs)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-09-01",
+      "from": "San Antonio Spurs",
+      "team": "Sacramento Kings",
+      "trade": "qpytx42akt19ylzv",
+      "label": "2023 round 2 pick (San Antonio Spurs)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "from": "Sacramento Kings",
+      "team": "Boston Celtics",
+      "trade": "9b0henoykwl4z069",
+      "label": "2023 round 2 pick (San Antonio Spurs)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 27,
+      "date": "2022-01-18",
+      "from": "Boston Celtics",
+      "team": "Miami Heat",
+      "trade": "ejtia2dekyj5hjpw",
+      "label": "2023 round 2 pick (San Antonio Spurs)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
       "date": "2023-06-28",
       "team": "Miami Heat",
       "round": 2,
-      "pick": 58,
+      "pick": 28,
+      "overall": 58,
+      "original": "San Antonio Spurs",
+      "certain": true,
       "periods": 38,
       "starts": 0,
       "gp": 0,
@@ -57,8 +98,184 @@
       "team": "Miami Heat"
     }
   ],
-  "trades": {},
+  "trades": {
+    "qpytx42akt19ylzv": {
+      "date": "2021-09-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "051ou",
+          "player": "Romeo Langford",
+          "label": "Romeo Langford"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "05qss",
+          "player": "Tyler Bey",
+          "label": "Tyler Bey"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2023 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06cen",
+            "player": "Caleb Daniels",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "ejtia2dekyj5hjpw": {
+      "date": "2022-01-18",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "0018r",
+          "player": "Thaddeus Young",
+          "label": "Thaddeus Young"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "051oy",
+          "player": "Goga Bitadze",
+          "label": "Goga Bitadze"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "label": "2023 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06ccx",
+            "player": "Hunter Tyson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "label": "2023 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06cen",
+            "player": "Caleb Daniels",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "03aq3",
+          "player": "Kyle Anderson",
+          "label": "Kyle Anderson"
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
+        }
+      ]
+    },
+    "9b0henoykwl4z069": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "player_id": "051oy",
+          "player": "Goga Bitadze",
+          "label": "Goga Bitadze"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "label": "2023 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06cen",
+            "player": "Caleb Daniels",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

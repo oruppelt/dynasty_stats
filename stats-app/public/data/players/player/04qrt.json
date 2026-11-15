@@ -129,33 +129,6 @@
     }
   ],
   "trades": {
-    "xyjia3f5kvcfyhy3": {
-      "date": "2021-10-29",
-      "season": "2021-22",
-      "period": 4,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Detroit Pistons",
-          "to": "Toronto Raptors",
-          "label": "$1 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Detroit Pistons",
-          "player_id": "04qrt",
-          "player": "Zhaire Smith",
-          "label": "Zhaire Smith"
-        },
-        {
-          "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "Detroit Pistons",
-          "label": "2022 round 2 pick (Charlotte Hornets)"
-        }
-      ]
-    },
     "6dty708wkm9579c4": {
       "date": "2021-03-14",
       "season": "2020-21",
@@ -181,25 +154,61 @@
           "kind": "pick",
           "from": "Charlotte Hornets",
           "to": "Toronto Raptors",
-          "label": "2021 round 2 pick (Charlotte Hornets)"
+          "label": "2021 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "05ujw",
+            "player": "Jericho Sims",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Charlotte Hornets",
           "to": "Toronto Raptors",
-          "label": "2021 round 1 pick (Charlotte Hornets)"
+          "label": "2021 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "05uja",
+            "player": "Miles McBride",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Charlotte Hornets",
           "to": "Toronto Raptors",
-          "label": "2022 round 2 pick (Charlotte Hornets)"
+          "label": "2022 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "051pr",
+            "player": "Ignas Brazdeikis",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Charlotte Hornets",
           "to": "Toronto Raptors",
-          "label": "2022 round 1 pick (Charlotte Hornets)"
+          "label": "2022 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "0621h",
+            "player": "Dalen Terry",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -216,6 +225,42 @@
           "player_id": "049s5",
           "player": "Dennis Smith",
           "label": "Dennis Smith"
+        }
+      ]
+    },
+    "xyjia3f5kvcfyhy3": {
+      "date": "2021-10-29",
+      "season": "2021-22",
+      "period": 4,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Detroit Pistons",
+          "to": "Toronto Raptors",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Detroit Pistons",
+          "player_id": "04qrt",
+          "player": "Zhaire Smith",
+          "label": "Zhaire Smith"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Detroit Pistons",
+          "label": "2022 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "051pr",
+            "player": "Ignas Brazdeikis",
+            "certain": true
+          }
         }
       ]
     }

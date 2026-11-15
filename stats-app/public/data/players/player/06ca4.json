@@ -80,6 +80,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "New York Knicks",
+      "label": "2023 round 1 pick (New York Knicks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 17,
+      "date": "2022-12-15",
+      "from": "New York Knicks",
+      "team": "Indiana Pacers",
+      "trade": "s0ah5x4nlbpllfey",
+      "label": "2023 round 1 pick (New York Knicks)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
@@ -87,6 +105,9 @@
       "team": "Indiana Pacers",
       "round": 1,
       "pick": 15,
+      "overall": 15,
+      "original": "New York Knicks",
+      "certain": true,
       "periods": 50,
       "starts": 3,
       "gp": 1,
@@ -118,6 +139,52 @@
     }
   ],
   "trades": {
+    "s0ah5x4nlbpllfey": {
+      "date": "2022-12-15",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "New York Knicks",
+          "player_id": "0558t",
+          "player": "Max Strus",
+          "label": "Max Strus"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "New York Knicks",
+          "player_id": "04qs9",
+          "player": "Jevon Carter",
+          "label": "Jevon Carter"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Indiana Pacers",
+          "player_id": "005ka",
+          "player": "Derrick Rose",
+          "label": "Derrick Rose"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Indiana Pacers",
+          "label": "2023 round 1 pick (New York Knicks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06ca4",
+            "player": "Kobe Bufkin",
+            "certain": true
+          }
+        }
+      ]
+    },
     "0trs00ixm508eth8": {
       "date": "2024-12-23",
       "season": "2024-25",
@@ -165,6 +232,16 @@
     }
   },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

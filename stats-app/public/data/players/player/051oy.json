@@ -219,6 +219,8 @@
       "team": "Phoenix Suns",
       "round": 1,
       "pick": 9,
+      "overall": 9,
+      "certain": true,
       "periods": 61,
       "starts": 15,
       "gp": 21,
@@ -424,56 +426,16 @@
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "Los Angeles Clippers",
-          "label": "2025 round 1 pick (Portland Trail Blazers)"
-        }
-      ]
-    },
-    "ejtia2dekyj5hjpw": {
-      "date": "2022-01-18",
-      "season": "2021-22",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Miami Heat",
-          "player_id": "0018r",
-          "player": "Thaddeus Young",
-          "label": "Thaddeus Young"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Miami Heat",
-          "player_id": "051oy",
-          "player": "Goga Bitadze",
-          "label": "Goga Bitadze"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Miami Heat",
-          "label": "2023 round 2 pick (Boston Celtics)"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Miami Heat",
-          "label": "2023 round 2 pick (San Antonio Spurs)"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Boston Celtics",
-          "player_id": "03aq3",
-          "player": "Kyle Anderson",
-          "label": "Kyle Anderson"
-        },
-        {
-          "kind": "budget",
-          "from": "Miami Heat",
-          "to": "Boston Celtics",
-          "label": "$5 budget"
+          "label": "2025 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "06v72",
+            "player": "Rasheer Fleming",
+            "certain": true
+          }
         }
       ]
     },
@@ -502,7 +464,16 @@
           "kind": "pick",
           "from": "Phoenix Suns",
           "to": "Sacramento Kings",
-          "label": "2021 round 2 pick, no. 1"
+          "label": "2021 round 2 pick, no. 1",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "05uje",
+            "player": "Jared Butler",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -547,7 +518,83 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Boston Celtics",
-          "label": "2023 round 2 pick (San Antonio Spurs)"
+          "label": "2023 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06cen",
+            "player": "Caleb Daniels",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "ejtia2dekyj5hjpw": {
+      "date": "2022-01-18",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "0018r",
+          "player": "Thaddeus Young",
+          "label": "Thaddeus Young"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "051oy",
+          "player": "Goga Bitadze",
+          "label": "Goga Bitadze"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "label": "2023 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06ccx",
+            "player": "Hunter Tyson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "label": "2023 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06cen",
+            "player": "Caleb Daniels",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "03aq3",
+          "player": "Kyle Anderson",
+          "label": "Kyle Anderson"
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
         }
       ]
     }

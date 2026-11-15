@@ -170,6 +170,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Philadelphia 76ers",
+      "label": "2021 round 1 pick, no. 4",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-01",
+      "from": "Philadelphia 76ers",
+      "team": "Sacramento Kings",
+      "trade": "hb86xq3kkpd3h2og",
+      "label": "2021 round 1 pick, no. 4"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
@@ -177,6 +195,9 @@
       "team": "Sacramento Kings",
       "round": 1,
       "pick": 4,
+      "overall": 4,
+      "original": "Philadelphia 76ers",
+      "certain": true,
       "periods": 62,
       "starts": 31,
       "gp": 49,
@@ -356,18 +377,116 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Detroit Pistons",
-          "label": "2024 round 1 pick (Sacramento Kings)"
+          "label": "2024 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "06mlm",
+            "player": "Oso Ighodaro",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Detroit Pistons",
-          "label": "2023 round 1 pick (Sacramento Kings)"
+          "label": "2023 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "06cc9",
+            "player": "Olivier-Maxence Prosper",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "hb86xq3kkpd3h2og": {
+      "date": "2021-06-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "051po",
+          "player": "Bol Bol",
+          "label": "Bol Bol"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05qsk",
+          "player": "Isaac Okoro",
+          "label": "Isaac Okoro"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05quc",
+          "player": "CJ Elleby",
+          "label": "CJ Elleby"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "051ov",
+          "player": "Sekou Doumbouya",
+          "label": "Sekou Doumbouya"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick, no. 4",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "05uif",
+            "player": "Jalen Suggs",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid"
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

@@ -128,6 +128,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Philadelphia 76ers",
+      "label": "2022 round 1 pick (Philadelphia 76ers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "from": "Philadelphia 76ers",
+      "team": "Sacramento Kings",
+      "trade": "o80318c5kwkp7gxb",
+      "label": "2022 round 1 pick (Philadelphia 76ers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "from": "Sacramento Kings",
+      "team": "Washington Wizards",
+      "trade": "uzok8m7ikwkzi0g6",
+      "label": "2022 round 1 pick (Philadelphia 76ers)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -135,6 +163,9 @@
       "team": "Washington Wizards",
       "round": 1,
       "pick": 7,
+      "overall": 7,
+      "original": "Philadelphia 76ers",
+      "certain": true,
       "periods": 98,
       "starts": 82,
       "gp": 131,
@@ -164,8 +195,126 @@
       "contract": "REG3"
     }
   ],
-  "trades": {},
+  "trades": {
+    "uzok8m7ikwkzi0g6": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "051om",
+          "player": "Jarrett Culver",
+          "label": "Jarrett Culver"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06217",
+            "player": "Dyson Daniels",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06218",
+            "player": "Jeremy Sochan",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Sacramento Kings",
+          "player_id": "042n7",
+          "player": "Domantas Sabonis",
+          "label": "Domantas Sabonis"
+        }
+      ]
+    },
+    "o80318c5kwkp7gxb": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05uiz",
+          "player": "Quentin Grimes",
+          "label": "Quentin Grimes"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06217",
+            "player": "Dyson Daniels",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qsk",
+          "player": "Isaac Okoro",
+          "label": "Isaac Okoro"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

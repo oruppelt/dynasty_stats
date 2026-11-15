@@ -264,40 +264,57 @@
     }
   ],
   "trades": {
-    "3zvf0vxsksosut9z": {
-      "date": "2021-08-23",
+    "yuxsbccvkynk77x4": {
+      "date": "2022-01-21",
       "season": "2021-22",
-      "period": 1,
+      "period": 28,
       "items": [
         {
           "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "New York Knicks",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
           "player_id": "01uyt",
           "player": "Derrick Favors",
           "label": "Derrick Favors"
         },
         {
           "kind": "player",
-          "from": "New York Knicks",
-          "to": "Los Angeles Lakers",
-          "player_id": "051p7",
-          "player": "Mfiondu Kabengele",
-          "label": "Mfiondu Kabengele"
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uur",
+          "player": "Joel Ayayi",
+          "label": "Joel Ayayi"
         },
         {
           "kind": "player",
-          "from": "New York Knicks",
-          "to": "Los Angeles Lakers",
-          "player_id": "049kh",
-          "player": "Kevin Knox",
-          "label": "Kevin Knox"
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uun",
+          "player": "Matthew Hurt",
+          "label": "Matthew Hurt"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
         },
         {
           "kind": "pick",
-          "from": "New York Knicks",
-          "to": "Los Angeles Lakers",
-          "label": "2022 round 1 pick (New York Knicks)"
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          }
         }
       ]
     },
@@ -342,7 +359,62 @@
           "kind": "pick",
           "from": "New York Knicks",
           "to": "Cleveland Cavaliers",
-          "label": "2022 round 1 pick (Boston Celtics)"
+          "label": "2022 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "0621j",
+            "player": "Malaki Branham",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "3zvf0vxsksosut9z": {
+      "date": "2021-08-23",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "New York Knicks",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Los Angeles Lakers",
+          "player_id": "051p7",
+          "player": "Mfiondu Kabengele",
+          "label": "Mfiondu Kabengele"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Los Angeles Lakers",
+          "player_id": "049kh",
+          "player": "Kevin Knox",
+          "label": "Kevin Knox"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 1 pick (New York Knicks)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "0621s",
+            "player": "TyTy Washington",
+            "certain": true
+          }
         }
       ]
     },
@@ -371,52 +443,16 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Atlanta Hawks",
-          "label": "2021 round 2 pick (Sacramento Kings)"
-        }
-      ]
-    },
-    "yuxsbccvkynk77x4": {
-      "date": "2022-01-21",
-      "season": "2021-22",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Philadelphia 76ers",
-          "player_id": "01uyt",
-          "player": "Derrick Favors",
-          "label": "Derrick Favors"
-        },
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Philadelphia 76ers",
-          "player_id": "05uur",
-          "player": "Joel Ayayi",
-          "label": "Joel Ayayi"
-        },
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Philadelphia 76ers",
-          "player_id": "05uun",
-          "player": "Matthew Hurt",
-          "label": "Matthew Hurt"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Cleveland Cavaliers",
-          "player_id": "005ke",
-          "player": "Danilo Gallinari",
-          "label": "Danilo Gallinari"
-        },
-        {
-          "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Cleveland Cavaliers",
-          "label": "2022 round 2 pick (Dallas Mavericks)"
+          "label": "2021 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          }
         }
       ]
     }

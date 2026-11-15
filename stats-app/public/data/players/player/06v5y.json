@@ -86,6 +86,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Philadelphia 76ers",
+      "label": "2025 round 1 pick (Philadelphia 76ers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 26,
+      "date": "2024-01-19",
+      "from": "Philadelphia 76ers",
+      "team": "Memphis Grizzlies",
+      "trade": "p0mxkvsnlrkrvpa0",
+      "label": "2025 round 1 pick (Philadelphia 76ers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "from": "Memphis Grizzlies",
+      "team": "New York Knicks",
+      "trade": "79wk2egvlrpcba0l",
+      "label": "2025 round 1 pick (Philadelphia 76ers)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -93,6 +121,9 @@
       "team": "New York Knicks",
       "round": 1,
       "pick": 2,
+      "overall": 2,
+      "original": "Philadelphia 76ers",
+      "certain": true,
       "periods": 40,
       "starts": 32,
       "gp": 54,
@@ -101,8 +132,149 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "p0mxkvsnlrkrvpa0": {
+      "date": "2024-01-19",
+      "season": "2023-24",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "03ad7",
+          "player": "Kevon Looney",
+          "label": "Kevon Looney"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "051pq",
+          "player": "Talen Horton-Tucker",
+          "label": "Talen Horton-Tucker"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2025 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 2,
+            "overall": 2,
+            "player_id": "06v5y",
+            "player": "Dylan Harper",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "79wk2egvlrpcba0l": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2025 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 2,
+            "overall": 2,
+            "player_id": "06v5y",
+            "player": "Dylan Harper",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Memphis Grizzlies",
+          "player_id": "051oj",
+          "player": "RJ Barrett",
+          "label": "RJ Barrett"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

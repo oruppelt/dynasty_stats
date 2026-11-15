@@ -184,13 +184,54 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Oklahoma City Thunder",
+      "label": "2021 round 2 pick (Oklahoma City Thunder)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 22,
+      "date": "2020-01-03",
+      "from": "Oklahoma City Thunder",
+      "team": "Indiana Pacers",
+      "trade": "7eejxd3ck4tqfheg",
+      "label": "2021 round 2 pick (Oklahoma City Thunder)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "from": "Indiana Pacers",
+      "team": "Denver Nuggets",
+      "trade": "gfurs4p9khutcfnn",
+      "label": "2021 round 2 pick (Oklahoma City Thunder)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "from": "Denver Nuggets",
+      "team": "Houston Rockets",
+      "trade": "ueqn8qnjkibcosr0",
+      "label": "2021 round 2 pick (Oklahoma City Thunder)"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
       "date": "2021-08-03",
       "team": "Houston Rockets",
       "round": 2,
-      "pick": 50,
+      "pick": 20,
+      "overall": 50,
+      "original": "Oklahoma City Thunder",
+      "certain": false,
       "periods": 33,
       "starts": 0,
       "gp": 0,
@@ -338,74 +379,6 @@
     }
   ],
   "trades": {
-    "pm8ukv5nl9ihx8hb": {
-      "date": "2022-10-21",
-      "season": "2022-23",
-      "period": 2,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Minnesota Timberwolves",
-          "to": "Toronto Raptors",
-          "label": "$10 budget"
-        },
-        {
-          "kind": "pick",
-          "from": "New York Knicks",
-          "to": "Minnesota Timberwolves",
-          "label": "2023 round 2 pick (Cleveland Cavaliers)"
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05ujd",
-          "player": "Neemias Queta",
-          "label": "Neemias Queta"
-        },
-        {
-          "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "New York Knicks",
-          "label": "2024 round 2 pick (Atlanta Hawks)"
-        }
-      ]
-    },
-    "9tx7kzr4l69d7j09": {
-      "date": "2022-07-31",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Toronto Raptors",
-          "player_id": "05ujd",
-          "player": "Neemias Queta",
-          "label": "Neemias Queta"
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Toronto Raptors",
-          "player_id": "0621y",
-          "player": "Max Christie",
-          "label": "Max Christie"
-        },
-        {
-          "kind": "pick",
-          "from": "Houston Rockets",
-          "to": "Toronto Raptors",
-          "label": "2023 round 2 pick (Houston Rockets)"
-        },
-        {
-          "kind": "budget",
-          "from": "Toronto Raptors",
-          "to": "Houston Rockets",
-          "label": "$7 budget"
-        }
-      ]
-    },
     "qqtxc5wbm65k1oug": {
       "date": "2025-01-23",
       "season": "2024-25",
@@ -439,7 +412,16 @@
           "kind": "pick",
           "from": "Denver Nuggets",
           "to": "Miami Heat",
-          "label": "2025 round 2 pick (Denver Nuggets)"
+          "label": "2025 round 2 pick (Denver Nuggets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "06v8b",
+            "player": "Rocco Zikarsky",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -477,7 +459,253 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Denver Nuggets",
-          "label": "2025 round 2 pick (Indiana Pacers)"
+          "label": "2025 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06v89",
+            "player": "Jamir Watkins",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "ueqn8qnjkibcosr0": {
+      "date": "2020-12-05",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Houston Rockets",
+          "player_id": "04qs6",
+          "player": "Dzanan Musa",
+          "label": "Dzanan Musa"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Houston Rockets",
+          "label": "2021 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "05ujd",
+            "player": "Neemias Queta",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Denver Nuggets",
+          "label": "2022 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "051pm",
+            "player": "Admiral Schofield",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "twi7bssbm4mj14hn": {
+      "date": "2024-12-13",
+      "season": "2024-25",
+      "period": 16,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "player_id": "06ceg",
+          "player": "Ricky Council",
+          "label": "Ricky Council"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "Golden State Warriors",
+          "label": "$8 budget"
+        }
+      ]
+    },
+    "7eejxd3ck4tqfheg": {
+      "date": "2020-01-03",
+      "season": "2019-20",
+      "period": 22,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03e7m",
+          "player": "Jordan McRae",
+          "label": "Jordan McRae"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Indiana Pacers",
+          "player_id": "03xmu",
+          "player": "Dragan Bender",
+          "label": "Dragan Bender"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Indiana Pacers",
+          "label": "2020 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "05qtp",
+            "player": "Grant Riller",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Indiana Pacers",
+          "label": "2021 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "05ujd",
+            "player": "Neemias Queta",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "pm8ukv5nl9ihx8hb": {
+      "date": "2022-10-21",
+      "season": "2022-23",
+      "period": 2,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Minnesota Timberwolves",
+          "to": "Toronto Raptors",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Minnesota Timberwolves",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "New York Knicks",
+          "label": "2024 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 12,
+            "overall": 42,
+            "player_id": "06mlk",
+            "player": "Ajay Mitchell",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "9tx7kzr4l69d7j09": {
+      "date": "2022-07-31",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "player_id": "0621y",
+          "player": "Max Christie",
+          "label": "Max Christie"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "label": "2023 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "00129",
+            "player": "Carmelo Anthony",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Toronto Raptors",
+          "to": "Houston Rockets",
+          "label": "$7 budget"
         }
       ]
     },
@@ -498,7 +726,16 @@
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Minnesota Timberwolves",
-          "label": "2024 round 2 pick (Memphis Grizzlies)"
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
         },
         {
           "kind": "player",
@@ -536,7 +773,16 @@
           "kind": "pick",
           "from": "Minnesota Timberwolves",
           "to": "Washington Wizards",
-          "label": "2024 round 1 pick (Philadelphia 76ers)"
+          "label": "2024 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06mk7",
+            "player": "Kel'el Ware",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -558,53 +804,89 @@
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Minnesota Timberwolves",
-          "label": "2023 round 2 pick (New Orleans Pelicans)"
+          "label": "2023 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06cei",
+            "player": "Leonard Miller",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Minnesota Timberwolves",
-          "label": "2024 round 2 pick (Boston Celtics)"
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          }
         }
       ]
     },
-    "twi7bssbm4mj14hn": {
-      "date": "2024-12-13",
-      "season": "2024-25",
-      "period": 16,
+    "gfurs4p9khutcfnn": {
+      "date": "2020-11-23",
+      "season": "2020-21",
+      "period": 1,
       "items": [
         {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Miami Heat",
-          "player_id": "06ceg",
-          "player": "Ricky Council",
-          "label": "Ricky Council"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Miami Heat",
-          "player_id": "05ujd",
-          "player": "Neemias Queta",
-          "label": "Neemias Queta"
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Indiana Pacers",
+          "label": "2020 round 1 pick, no. 20",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "05qsn",
+            "player": "Malachi Flynn",
+            "certain": false
+          }
         },
         {
           "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Miami Heat",
-          "label": "2026 round 2 pick (Golden State Warriors)"
+          "from": "Indiana Pacers",
+          "to": "Denver Nuggets",
+          "label": "2020 round 1 pick, no. 29"
         },
         {
-          "kind": "budget",
-          "from": "Miami Heat",
-          "to": "Golden State Warriors",
-          "label": "$8 budget"
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Denver Nuggets",
+          "label": "2021 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "05ujd",
+            "player": "Neemias Queta",
+            "certain": false
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

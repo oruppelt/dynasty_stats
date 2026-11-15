@@ -35,6 +35,24 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Portland Trail Blazers",
+      "label": "2025 round 1 pick (Portland Trail Blazers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 21,
+      "date": "2024-12-31",
+      "from": "Portland Trail Blazers",
+      "team": "Los Angeles Clippers",
+      "trade": "tmognf8mm5bc9aob",
+      "label": "2025 round 1 pick (Portland Trail Blazers)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -42,6 +60,9 @@
       "team": "Los Angeles Lakers",
       "round": 1,
       "pick": 25,
+      "overall": 25,
+      "original": "Portland Trail Blazers",
+      "certain": true,
       "periods": 40,
       "starts": 0,
       "gp": 0,
@@ -50,8 +71,63 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "tmognf8mm5bc9aob": {
+      "date": "2024-12-31",
+      "season": "2024-25",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Portland Trail Blazers",
+          "player_id": "051oy",
+          "player": "Goga Bitadze",
+          "label": "Goga Bitadze"
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Clippers",
+          "to": "Portland Trail Blazers",
+          "label": "$20 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Los Angeles Clippers",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Los Angeles Clippers",
+          "label": "2025 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "06v72",
+            "player": "Rasheer Fleming",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

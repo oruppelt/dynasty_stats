@@ -35,13 +35,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Portland Trail Blazers",
+      "label": "2022 round 2 pick, no. 17",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-28",
+      "from": "Portland Trail Blazers",
+      "team": "Brooklyn Nets",
+      "trade": "tyvhjs7gl4y0ppni",
+      "label": "2022 round 2 pick, no. 17"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-28",
       "team": "Brooklyn Nets",
       "round": 2,
-      "pick": 47,
+      "pick": 17,
+      "overall": 47,
+      "original": "Portland Trail Blazers",
+      "certain": true,
       "periods": 65,
       "starts": 0,
       "gp": 0,
@@ -57,8 +78,47 @@
       "team": "Brooklyn Nets"
     }
   ],
-  "trades": {},
+  "trades": {
+    "tyvhjs7gl4y0ppni": {
+      "date": "2022-06-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Brooklyn Nets",
+          "to": "Portland Trail Blazers",
+          "label": "$8 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Brooklyn Nets",
+          "label": "2022 round 2 pick, no. 17",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "06229",
+            "player": "Ismael Kamagate",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

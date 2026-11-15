@@ -86,6 +86,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Atlanta Hawks",
+      "label": "2021 round 1 pick, no. 11",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-02",
+      "from": "Atlanta Hawks",
+      "team": "Sacramento Kings",
+      "trade": "omyajhuakpf4ztuk",
+      "label": "2021 round 1 pick, no. 11"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-02",
+      "from": "Sacramento Kings",
+      "team": "Minnesota Timberwolves",
+      "trade": "3p74t99pkrudqaqs",
+      "label": "2021 round 1 pick, no. 11"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
@@ -93,6 +121,9 @@
       "team": "Minnesota Timberwolves",
       "round": 1,
       "pick": 11,
+      "overall": 11,
+      "original": "Atlanta Hawks",
+      "certain": true,
       "periods": 33,
       "starts": 7,
       "gp": 8,
@@ -137,6 +168,102 @@
     }
   ],
   "trades": {
+    "3p74t99pkrudqaqs": {
+      "date": "2021-08-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick, no. 13",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 13,
+            "overall": 13,
+            "player_id": "05uit",
+            "player": "Kai Jones",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick, no. 13",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "05uj5",
+            "player": "Isaiah Todd",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Minnesota Timberwolves",
+          "label": "2021 round 1 pick, no. 11",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "05uil",
+            "player": "James Bouknight",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "u99m5em4l66hdh7a": {
+      "date": "2022-07-29",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06mmh",
+            "player": "Isaac Jones",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "$15 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "05uil",
+          "player": "James Bouknight",
+          "label": "James Bouknight"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "06227",
+          "player": "Ryan Rollins",
+          "label": "Ryan Rollins"
+        }
+      ]
+    },
     "ir3ij1a2l4ss2b1p": {
       "date": "2022-06-24",
       "season": "2022-23",
@@ -170,47 +297,100 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Minnesota Timberwolves",
-          "label": "2023 round 1 pick (Portland Trail Blazers)"
+          "label": "2023 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06cc7",
+            "player": "Brandin Podziemski",
+            "certain": true
+          }
         }
       ]
     },
-    "u99m5em4l66hdh7a": {
-      "date": "2022-07-29",
-      "season": "2022-23",
+    "omyajhuakpf4ztuk": {
+      "date": "2021-06-02",
+      "season": "2021-22",
       "period": 1,
       "items": [
         {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "027pe",
+          "player": "Jimmy Butler",
+          "label": "Jimmy Butler"
+        },
+        {
           "kind": "pick",
-          "from": "Orlando Magic",
+          "from": "Atlanta Hawks",
           "to": "Sacramento Kings",
-          "label": "2024 round 2 pick (Orlando Magic)"
+          "label": "2021 round 2 pick, no. 14",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          }
         },
         {
-          "kind": "budget",
-          "from": "Orlando Magic",
+          "kind": "pick",
+          "from": "Atlanta Hawks",
           "to": "Sacramento Kings",
-          "label": "$15 budget"
+          "label": "2021 round 1 pick, no. 11",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "05uil",
+            "player": "James Bouknight",
+            "certain": true
+          }
         },
         {
           "kind": "player",
           "from": "Sacramento Kings",
-          "to": "Orlando Magic",
-          "player_id": "05uil",
-          "player": "James Bouknight",
-          "label": "James Bouknight"
+          "to": "Atlanta Hawks",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
         },
         {
           "kind": "player",
           "from": "Sacramento Kings",
-          "to": "Orlando Magic",
-          "player_id": "06227",
-          "player": "Ryan Rollins",
-          "label": "Ryan Rollins"
+          "to": "Atlanta Hawks",
+          "player_id": "04qru",
+          "player": "Donte DiVincenzo",
+          "label": "Donte DiVincenzo"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "02nfw",
+          "player": "Tomas Satoransky",
+          "label": "Tomas Satoransky"
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

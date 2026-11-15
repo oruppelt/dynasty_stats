@@ -163,6 +163,8 @@
       "team": "Oklahoma City Thunder",
       "round": 1,
       "pick": 13,
+      "overall": 13,
+      "certain": true,
       "periods": 29,
       "starts": 0,
       "gp": 0,
@@ -300,6 +302,29 @@
     }
   ],
   "trades": {
+    "vr2qxdk4midg53ey": {
+      "date": "2025-11-24",
+      "season": "2025-26",
+      "period": 11,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "New Orleans Pelicans",
+          "player_id": "05qtk",
+          "player": "Vit Krejci",
+          "label": "Vit Krejci"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Houston Rockets",
+          "player_id": "05qti",
+          "player": "Josh Green",
+          "label": "Josh Green"
+        }
+      ]
+    },
     "ghzol8yfmidcvjxt": {
       "date": "2025-11-24",
       "season": "2025-26",
@@ -345,26 +370,41 @@
         }
       ]
     },
-    "vr2qxdk4midg53ey": {
-      "date": "2025-11-24",
+    "glz93afsmhx6pjs4": {
+      "date": "2025-11-13",
       "season": "2025-26",
-      "period": 11,
+      "period": 8,
       "items": [
         {
           "kind": "player",
-          "from": "Houston Rockets",
-          "to": "New Orleans Pelicans",
-          "player_id": "05qtk",
-          "player": "Vit Krejci",
-          "label": "Vit Krejci"
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
+          "from": "Atlanta Hawks",
           "to": "Houston Rockets",
           "player_id": "05qti",
           "player": "Josh Green",
           "label": "Josh Green"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Houston Rockets",
+          "label": "2026 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "076t3",
+            "player": "Karim Lopez",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Atlanta Hawks",
+          "player_id": "06ccf",
+          "player": "Ausar Thompson",
+          "label": "Ausar Thompson"
         }
       ]
     },
@@ -385,7 +425,16 @@
           "kind": "pick",
           "from": "Chicago Bulls",
           "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Chicago Bulls)"
+          "label": "2023 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "033l6",
+            "player": null,
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -394,35 +443,6 @@
           "player_id": "05qti",
           "player": "Josh Green",
           "label": "Josh Green"
-        }
-      ]
-    },
-    "glz93afsmhx6pjs4": {
-      "date": "2025-11-13",
-      "season": "2025-26",
-      "period": 8,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Houston Rockets",
-          "player_id": "05qti",
-          "player": "Josh Green",
-          "label": "Josh Green"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Houston Rockets",
-          "label": "2026 round 1 pick (Atlanta Hawks)"
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Atlanta Hawks",
-          "player_id": "06ccf",
-          "player": "Ausar Thompson",
-          "label": "Ausar Thompson"
         }
       ]
     }

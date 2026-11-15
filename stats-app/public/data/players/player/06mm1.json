@@ -86,6 +86,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2024 round 1 pick (Indiana Pacers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-27",
+      "from": "Indiana Pacers",
+      "team": "Minnesota Timberwolves",
+      "trade": "k8wsy8nslklm9aqo",
+      "label": "2024 round 1 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-25",
+      "from": "Minnesota Timberwolves",
+      "team": "Dallas Mavericks",
+      "trade": "ll6492qklql9ax74",
+      "label": "2024 round 1 pick (Indiana Pacers)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -93,6 +121,9 @@
       "team": "Boston Celtics",
       "round": 1,
       "pick": 22,
+      "overall": 22,
+      "original": "Indiana Pacers",
+      "certain": true,
       "periods": 66,
       "starts": 9,
       "gp": 8,
@@ -122,6 +153,90 @@
     }
   ],
   "trades": {
+    "ll6492qklql9ax74": {
+      "date": "2023-12-25",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Toronto Raptors",
+          "label": "2025 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06v8d",
+            "player": "Bogoljub Markovic",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Toronto Raptors",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06mm1",
+            "player": "Bronny James",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
+        }
+      ]
+    },
     "rhyr5c70msr9j4s3": {
       "date": "2026-08-13",
       "season": "2026-27",
@@ -156,9 +271,57 @@
           "label": "2027 round 1 pick (Toronto Raptors)"
         }
       ]
+    },
+    "k8wsy8nslklm9aqo": {
+      "date": "2023-07-27",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujq",
+          "player": "Luka Garza",
+          "label": "Luka Garza"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06mm1",
+            "player": "Bronny James",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Indiana Pacers",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter"
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

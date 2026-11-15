@@ -49,13 +49,74 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Phoenix Suns",
+      "label": "2022 round 2 pick (Phoenix Suns)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-22",
+      "from": "Phoenix Suns",
+      "team": "Houston Rockets",
+      "trade": "itk9a777ksn5h5hd",
+      "label": "2022 round 2 pick (Phoenix Suns)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-10-19",
+      "from": "Houston Rockets",
+      "team": "Los Angeles Lakers",
+      "trade": "28sw7algkux3tmz0",
+      "label": "2022 round 2 pick (Phoenix Suns)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-28",
+      "from": "Los Angeles Lakers",
+      "team": "Denver Nuggets",
+      "trade": "o1q5l498l4xttj0r",
+      "label": "2022 round 2 pick, no. 16"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-28",
+      "from": "Denver Nuggets",
+      "team": "Sacramento Kings",
+      "trade": "2fs72a7yl4xvwan6",
+      "label": "2022 round 2 pick, no. 16"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-28",
+      "from": "Sacramento Kings",
+      "team": "Miami Heat",
+      "trade": "9sv9d55bl4xzxthc",
+      "label": "2022 round 2 pick, no. 16"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-28",
       "team": "Miami Heat",
       "round": 2,
-      "pick": 46,
+      "pick": 16,
+      "overall": 46,
+      "original": "Phoenix Suns",
+      "certain": false,
       "periods": 33,
       "starts": 0,
       "gp": 0,
@@ -115,6 +176,70 @@
     }
   ],
   "trades": {
+    "itk9a777ksn5h5hd": {
+      "date": "2021-08-22",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Houston Rockets",
+          "to": "Phoenix Suns",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "player_id": "05qth",
+          "player": "Tyrell Terry",
+          "label": "Tyrell Terry"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "label": "2022 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "0622c",
+            "player": "Isaiah Mobley",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "2fs72a7yl4xvwan6": {
+      "date": "2022-06-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Sacramento Kings",
+          "label": "2022 round 2 pick, no. 16",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "0622c",
+            "player": "Isaiah Mobley",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Sacramento Kings",
+          "to": "Denver Nuggets",
+          "label": "$8 budget"
+        }
+      ]
+    },
     "oflw47jqljtoulxm": {
       "date": "2023-07-08",
       "season": "2023-24",
@@ -154,6 +279,204 @@
         }
       ]
     },
+    "0ndod7cllrpdvpgn": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "player_id": "0622c",
+          "player": "Isaiah Mobley",
+          "label": "Isaiah Mobley"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "o1q5l498l4xttj0r": {
+      "date": "2022-06-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Los Angeles Lakers",
+          "label": "2023 round 1 pick (Denver Nuggets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06cac",
+            "player": "Cason Wallace",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Denver Nuggets",
+          "label": "2022 round 1 pick, no. 27",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "0621k",
+            "player": "Christian Braun",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Denver Nuggets",
+          "label": "2022 round 2 pick, no. 16",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "0622c",
+            "player": "Isaiah Mobley",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "28sw7algkux3tmz0": {
+      "date": "2021-10-19",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qs6",
+          "player": "Dzanan Musa",
+          "label": "Dzanan Musa"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "05qth",
+          "player": "Tyrell Terry",
+          "label": "Tyrell Terry"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qsp",
+          "player": "Chimezie Metu",
+          "label": "Chimezie Metu"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "0622c",
+            "player": "Isaiah Mobley",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Lakers",
+          "to": "Houston Rockets",
+          "label": "$1 budget"
+        }
+      ]
+    },
+    "9sv9d55bl4xzxthc": {
+      "date": "2022-06-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "label": "2022 round 2 pick, no. 11"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "label": "2022 round 2 pick, no. 16",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "0622c",
+            "player": "Isaiah Mobley",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "label": "2022 round 2 pick, no. 18",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "0622k",
+            "player": "Jabari Walker",
+            "certain": false
+          }
+        }
+      ]
+    },
     "qrn7gyzjljtrsvqe": {
       "date": "2023-07-08",
       "season": "2023-24",
@@ -177,45 +500,31 @@
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Memphis Grizzlies",
-          "label": "2024 round 2 pick (Orlando Magic)"
-        }
-      ]
-    },
-    "0ndod7cllrpdvpgn": {
-      "date": "2024-01-22",
-      "season": "2023-24",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Minnesota Timberwolves",
-          "player_id": "0622c",
-          "player": "Isaiah Mobley",
-          "label": "Isaiah Mobley"
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "Minnesota Timberwolves",
-          "label": "2024 round 2 pick (Philadelphia 76ers)"
-        },
-        {
-          "kind": "budget",
-          "from": "Memphis Grizzlies",
-          "to": "Minnesota Timberwolves",
-          "label": "$1 budget"
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Memphis Grizzlies",
-          "label": "2024 round 2 pick (Chicago Bulls)"
+          "label": "2024 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06mmh",
+            "player": "Isaac Jones",
+            "certain": false
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

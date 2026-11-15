@@ -32,13 +32,64 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Golden State Warriors",
+      "label": "2026 round 2 pick (Golden State Warriors)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 16,
+      "date": "2024-12-13",
+      "from": "Golden State Warriors",
+      "team": "Miami Heat",
+      "trade": "twi7bssbm4mj14hn",
+      "label": "2026 round 2 pick (Golden State Warriors)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 5,
+      "date": "2025-11-06",
+      "from": "Miami Heat",
+      "team": "Portland Trail Blazers",
+      "trade": "u31lz7dpmhn7i0du",
+      "label": "2026 round 2 pick (Golden State Warriors)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Portland Trail Blazers",
+      "team": "Boston Celtics",
+      "trade": "22yya7camkqj2lli",
+      "label": "2026 round 2 pick (Golden State Warriors)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "Boston Celtics",
+      "team": "Detroit Pistons",
+      "trade": "clvorhzpmkuzzfxs",
+      "label": "2026 round 2 pick (Golden State Warriors)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-04",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 53,
+      "pick": 23,
+      "overall": 53,
+      "original": "Golden State Warriors",
+      "certain": true,
       "periods": 7,
       "starts": 1,
       "gp": 1,
@@ -47,8 +98,230 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "u31lz7dpmhn7i0du": {
+      "date": "2025-11-06",
+      "season": "2025-26",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06ccv",
+          "player": "Trayce Jackson-Davis",
+          "label": "Trayce Jackson-Davis"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mkf",
+          "player": "AJ Johnson",
+          "label": "AJ Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2027 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Golden State Warriors",
+          "player_id": "05uio",
+          "player": "Moses Moody",
+          "label": "Moses Moody"
+        }
+      ]
+    },
+    "22yya7camkqj2lli": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Portland Trail Blazers",
+          "player_id": "051pa",
+          "player": "Kevin Porter",
+          "label": "Kevin Porter"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "076tt",
+            "player": "Ugonna Onyenso",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "twi7bssbm4mj14hn": {
+      "date": "2024-12-13",
+      "season": "2024-25",
+      "period": 16,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "player_id": "06ceg",
+          "player": "Ricky Council",
+          "label": "Ricky Council"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "Golden State Warriors",
+          "label": "$8 budget"
+        }
+      ]
+    },
+    "clvorhzpmkuzzfxs": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "player_id": "06mly",
+          "player": "Quinten Post",
+          "label": "Quinten Post"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

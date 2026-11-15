@@ -66,13 +66,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "New Orleans Pelicans",
+      "label": "2025 round 2 pick (New Orleans Pelicans)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 21,
+      "date": "2024-12-30",
+      "from": "New Orleans Pelicans",
+      "team": "Miami Heat",
+      "trade": "d6sg7z0mm59sukx3",
+      "label": "2025 round 2 pick (New Orleans Pelicans)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 21,
+      "date": "2024-12-30",
+      "from": "Miami Heat",
+      "team": "Houston Rockets",
+      "trade": "1jghgk36m5avz9qx",
+      "label": "2025 round 2 pick (New Orleans Pelicans)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-04",
       "team": "Houston Rockets",
       "round": 2,
-      "pick": 43,
+      "pick": 13,
+      "overall": 43,
+      "original": "New Orleans Pelicans",
+      "certain": true,
       "periods": 40,
       "starts": 3,
       "gp": 5,
@@ -81,8 +112,133 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "1jghgk36m5avz9qx": {
+      "date": "2024-12-30",
+      "season": "2024-25",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "06cd1",
+          "player": "Jordan Walsh",
+          "label": "Jordan Walsh"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "03e74",
+          "player": "Spencer Dinwiddie",
+          "label": "Spencer Dinwiddie"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "05qtl",
+          "player": "Cole Anthony",
+          "label": "Cole Anthony"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06v8a",
+            "player": "Brooks Barnhizer",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "d6sg7z0mm59sukx3": {
+      "date": "2024-12-30",
+      "season": "2024-25",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "New Orleans Pelicans",
+          "player_id": "027oo",
+          "player": "Jonas Valanciunas",
+          "label": "Jonas Valanciunas"
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "New Orleans Pelicans",
+          "label": "$45 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "06ccw",
+          "player": "Jordan Miller",
+          "label": "Jordan Miller"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06v8a",
+            "player": "Brooks Barnhizer",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

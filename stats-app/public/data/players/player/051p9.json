@@ -233,6 +233,8 @@
       "team": "San Antonio Spurs",
       "round": 1,
       "pick": 26,
+      "overall": 26,
+      "certain": true,
       "periods": 94,
       "starts": 58,
       "gp": 89,
@@ -344,41 +346,6 @@
     }
   ],
   "trades": {
-    "scg1j8dflqf7huhq": {
-      "date": "2023-12-21",
-      "season": "2023-24",
-      "period": 18,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "San Antonio Spurs",
-          "player_id": "04ewk",
-          "player": "John Collins",
-          "label": "John Collins"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "San Antonio Spurs",
-          "label": "2024 round 2 pick (Houston Rockets)"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "San Antonio Spurs",
-          "label": "2024 round 2 pick (Cleveland Cavaliers)"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Atlanta Hawks",
-          "player_id": "051p9",
-          "player": "Keldon Johnson",
-          "label": "Keldon Johnson"
-        }
-      ]
-    },
     "sq7it0uxm6e3ev52": {
       "date": "2025-01-27",
       "season": "2024-25",
@@ -412,7 +379,16 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Milwaukee Bucks",
-          "label": "2026 round 1 pick (Orlando Magic)"
+          "label": "2026 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "076sw",
+            "player": "Labaron Philon",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -437,6 +413,50 @@
           "player_id": "027oz",
           "player": "Kawhi Leonard",
           "label": "Kawhi Leonard"
+        }
+      ]
+    },
+    "lot0xakcmhs7b6qj": {
+      "date": "2025-11-10",
+      "season": "2025-26",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Milwaukee Bucks",
+          "player_id": "0621l",
+          "player": "Walker Kessler",
+          "label": "Walker Kessler"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "label": "2027 round 1 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          }
         }
       ]
     },
@@ -481,7 +501,16 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Utah Jazz",
-          "label": "2026 round 1 pick (Dallas Mavericks)"
+          "label": "2026 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "076t5",
+            "player": "Alex Karaban",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -511,7 +540,16 @@
           "kind": "pick",
           "from": "Chicago Bulls",
           "to": "Philadelphia 76ers",
-          "label": "2026 round 1 pick (Chicago Bulls)"
+          "label": "2026 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "076t2",
+            "player": "Cameron Carr",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -555,38 +593,38 @@
         }
       ]
     },
-    "lot0xakcmhs7b6qj": {
-      "date": "2025-11-10",
-      "season": "2025-26",
-      "period": 7,
+    "scg1j8dflqf7huhq": {
+      "date": "2023-12-21",
+      "season": "2023-24",
+      "period": 18,
       "items": [
         {
           "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Milwaukee Bucks",
-          "player_id": "0621l",
-          "player": "Walker Kessler",
-          "label": "Walker Kessler"
+          "from": "Atlanta Hawks",
+          "to": "San Antonio Spurs",
+          "player_id": "04ewk",
+          "player": "John Collins",
+          "label": "John Collins"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 2 pick (Houston Rockets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
         },
         {
           "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Chicago Bulls",
+          "from": "San Antonio Spurs",
+          "to": "Atlanta Hawks",
           "player_id": "051p9",
           "player": "Keldon Johnson",
           "label": "Keldon Johnson"
-        },
-        {
-          "kind": "pick",
-          "from": "Milwaukee Bucks",
-          "to": "Chicago Bulls",
-          "label": "2027 round 1 pick (Milwaukee Bucks)"
-        },
-        {
-          "kind": "pick",
-          "from": "Milwaukee Bucks",
-          "to": "Chicago Bulls",
-          "label": "2026 round 1 pick (New Orleans Pelicans)"
         }
       ]
     }

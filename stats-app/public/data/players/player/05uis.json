@@ -184,6 +184,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2021 round 1 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-25",
+      "from": "Boston Celtics",
+      "team": "San Antonio Spurs",
+      "trade": "51fiui4ekhx62qh8",
+      "label": "2021 round 1 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-25",
+      "from": "San Antonio Spurs",
+      "team": "Sacramento Kings",
+      "trade": "cqyb06mckp43flz4",
+      "label": "2021 round 1 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
@@ -191,6 +219,9 @@
       "team": "Sacramento Kings",
       "round": 1,
       "pick": 19,
+      "overall": 19,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 33,
       "starts": 17,
       "gp": 27,
@@ -339,27 +370,6 @@
     }
   ],
   "trades": {
-    "zplnwgpylktqr2i8": {
-      "date": "2023-08-02",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Philadelphia 76ers",
-          "player_id": "05uis",
-          "player": "Tre Mann",
-          "label": "Tre Mann"
-        },
-        {
-          "kind": "budget",
-          "from": "Philadelphia 76ers",
-          "to": "Golden State Warriors",
-          "label": "$15 budget"
-        }
-      ]
-    },
     "gval9i9vlcer1ktf": {
       "date": "2023-01-02",
       "season": "2022-23",
@@ -377,7 +387,16 @@
           "kind": "pick",
           "from": "Golden State Warriors",
           "to": "Miami Heat",
-          "label": "2024 round 2 pick (Golden State Warriors)"
+          "label": "2024 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06mkf",
+            "player": "AJ Johnson",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -446,44 +465,37 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Miami Heat",
-          "label": "2025 round 1 pick (Atlanta Hawks)"
+          "label": "2025 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          }
         }
       ]
     },
-    "xgsw4iopmk6qzj5s": {
-      "date": "2026-01-09",
-      "season": "2025-26",
-      "period": 24,
+    "zplnwgpylktqr2i8": {
+      "date": "2023-08-02",
+      "season": "2023-24",
+      "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "New York Knicks",
-          "player_id": "04qrl",
-          "player": "Wendell Carter",
-          "label": "Wendell Carter"
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Detroit Pistons",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
           "player_id": "05uis",
           "player": "Tre Mann",
           "label": "Tre Mann"
         },
         {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Detroit Pistons",
-          "player_id": "06mk0",
-          "player": "Rob Dillingham",
-          "label": "Rob Dillingham"
-        },
-        {
-          "kind": "pick",
-          "from": "New York Knicks",
-          "to": "Detroit Pistons",
-          "label": "2027 round 2 pick (New York Knicks)"
+          "kind": "budget",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "label": "$15 budget"
         }
       ]
     },
@@ -535,12 +547,182 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Miami Heat",
-          "label": "2024 round 2 pick (Sacramento Kings)"
+          "label": "2024 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06mm8",
+            "player": "Keshad Johnson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "xgsw4iopmk6qzj5s": {
+      "date": "2026-01-09",
+      "season": "2025-26",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New York Knicks",
+          "player_id": "04qrl",
+          "player": "Wendell Carter",
+          "label": "Wendell Carter"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Detroit Pistons",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Detroit Pistons",
+          "player_id": "06mk0",
+          "player": "Rob Dillingham",
+          "label": "Rob Dillingham"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Detroit Pistons",
+          "label": "2027 round 2 pick (New York Knicks)"
+        }
+      ]
+    },
+    "cqyb06mckp43flz4": {
+      "date": "2021-05-25",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "0018n",
+          "player": "Lou Williams",
+          "label": "Lou Williams"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "05uj3",
+            "player": "Day'Ron Sharpe",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06211",
+            "player": "Chet Holmgren",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "05uis",
+            "player": "Tre Mann",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "51fiui4ekhx62qh8": {
+      "date": "2020-11-25",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "label": "2021 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "05uis",
+            "player": "Tre Mann",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

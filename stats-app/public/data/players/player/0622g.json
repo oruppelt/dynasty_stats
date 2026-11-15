@@ -35,13 +35,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2022 round 2 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 8,
+      "date": "2021-01-16",
+      "from": "Boston Celtics",
+      "team": "Detroit Pistons",
+      "trade": "vaxb0ggwkjy4tla7",
+      "label": "2022 round 2 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-29",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 52,
+      "pick": 22,
+      "overall": 52,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 33,
       "starts": 0,
       "gp": 0,
@@ -73,6 +94,44 @@
     }
   ],
   "trades": {
+    "vaxb0ggwkjy4tla7": {
+      "date": "2021-01-16",
+      "season": "2020-21",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "2022 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "0622g",
+            "player": "JD Davison",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon"
+        }
+      ]
+    },
     "8zyfkpkglo4cnvz0": {
       "date": "2023-10-24",
       "season": "2023-24",
@@ -110,6 +169,16 @@
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

@@ -148,7 +148,9 @@
       "date": "2020-11-24",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 52,
+      "pick": 22,
+      "overall": 52,
+      "certain": true,
       "periods": 47,
       "starts": 1,
       "gp": 0,
@@ -237,41 +239,6 @@
     }
   ],
   "trades": {
-    "ihb5ule4lraiqw2b": {
-      "date": "2024-01-12",
-      "season": "2023-24",
-      "period": 24,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Utah Jazz",
-          "player_id": "06gix",
-          "player": "Duop Reath",
-          "label": "Duop Reath"
-        },
-        {
-          "kind": "budget",
-          "from": "Oklahoma City Thunder",
-          "to": "Utah Jazz",
-          "label": "$5 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Oklahoma City Thunder",
-          "player_id": "05qtu",
-          "player": "Skylar Mays",
-          "label": "Skylar Mays"
-        },
-        {
-          "kind": "pick",
-          "from": "Utah Jazz",
-          "to": "Oklahoma City Thunder",
-          "label": "2025 round 2 pick (Utah Jazz)"
-        }
-      ]
-    },
     "y7jfydkxkxg1vebv": {
       "date": "2021-12-21",
       "season": "2021-22",
@@ -337,19 +304,90 @@
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Cleveland Cavaliers",
-          "label": "2023 round 1 pick (Memphis Grizzlies)"
+          "label": "2023 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06cdj",
+            "player": "Colby Jones",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Detroit Pistons",
-          "label": "2023 round 2 pick (Memphis Grizzlies)"
+          "label": "2023 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "06ccy",
+            "player": "Jalen Pickett",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Detroit Pistons",
-          "label": "2022 round 1 pick (Atlanta Hawks)"
+          "label": "2022 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06224",
+            "player": "E.J. Liddell",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "ihb5ule4lraiqw2b": {
+      "date": "2024-01-12",
+      "season": "2023-24",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "player_id": "06gix",
+          "player": "Duop Reath",
+          "label": "Duop Reath"
+        },
+        {
+          "kind": "budget",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "player_id": "05qtu",
+          "player": "Skylar Mays",
+          "label": "Skylar Mays"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 2 pick (Utah Jazz)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 26,
+            "overall": 56,
+            "player_id": "06vxp",
+            "player": "Taelon Peter",
+            "certain": true
+          }
         }
       ]
     }

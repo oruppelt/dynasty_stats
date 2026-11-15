@@ -41,7 +41,9 @@
       "date": "2019-06-24",
       "team": "Orlando Magic",
       "round": 2,
-      "pick": 35,
+      "pick": 5,
+      "overall": 35,
+      "certain": true,
       "periods": 32,
       "starts": 0,
       "gp": 0,
@@ -82,7 +84,16 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Orlando Magic",
-          "label": "2020 round 1 pick, no. 20"
+          "label": "2020 round 1 pick, no. 20",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "05qsn",
+            "player": "Malachi Flynn",
+            "certain": false
+          }
         },
         {
           "kind": "player",
@@ -104,13 +115,31 @@
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Atlanta Hawks",
-          "label": "2020 round 1 pick, no. 26"
+          "label": "2020 round 1 pick, no. 26",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "05qsu",
+            "player": null,
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Atlanta Hawks",
-          "label": "2020 round 2 pick, no. 14"
+          "label": "2020 round 2 pick, no. 14",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05qt8",
+            "player": "Cassius Stanley",
+            "certain": true
+          }
         }
       ]
     }

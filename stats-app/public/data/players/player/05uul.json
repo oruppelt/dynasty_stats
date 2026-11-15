@@ -170,6 +170,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Dallas Mavericks",
+      "label": "2022 round 2 pick (Dallas Mavericks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "from": "Dallas Mavericks",
+      "team": "Miami Heat",
+      "trade": "ci5v7ywvkid24lwf",
+      "label": "2022 round 2 pick (Dallas Mavericks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 26,
+      "date": "2022-01-14",
+      "from": "Miami Heat",
+      "team": "Philadelphia 76ers",
+      "trade": "yy9p5ocdkye254n4",
+      "label": "2022 round 2 pick (Dallas Mavericks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-21",
+      "from": "Philadelphia 76ers",
+      "team": "Cleveland Cavaliers",
+      "trade": "yuxsbccvkynk77x4",
+      "label": "2022 round 2 pick (Dallas Mavericks)"
+    },
+    {
       "kind": "claim",
       "season": "2021-22",
       "period": 31,
@@ -190,7 +228,10 @@
       "date": "2022-06-28",
       "team": "Cleveland Cavaliers",
       "round": 2,
-      "pick": 40,
+      "pick": 10,
+      "overall": 40,
+      "original": "Dallas Mavericks",
+      "certain": true,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -352,63 +393,6 @@
     }
   ],
   "trades": {
-    "aqapwojpm3cvd21d": {
-      "date": "2024-11-11",
-      "season": "2024-25",
-      "period": 7,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "San Antonio Spurs",
-          "player_id": "03r7h",
-          "player": "Delon Wright",
-          "label": "Delon Wright"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "San Antonio Spurs",
-          "player_id": "051p0",
-          "player": "Matisse Thybulle",
-          "label": "Matisse Thybulle"
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "San Antonio Spurs",
-          "label": "2025 round 1 pick (Minnesota Timberwolves)"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05uul",
-          "player": "Jose Alvarado",
-          "label": "Jose Alvarado"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Minnesota Timberwolves",
-          "player_id": "059g0",
-          "player": "Amir Coffey",
-          "label": "Amir Coffey"
-        },
-        {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Minnesota Timberwolves",
-          "label": "2025 round 2 pick (Cleveland Cavaliers)"
-        },
-        {
-          "kind": "budget",
-          "from": "San Antonio Spurs",
-          "to": "Minnesota Timberwolves",
-          "label": "$23 budget"
-        }
-      ]
-    },
     "3ytw64kjmkuq5bqa": {
       "date": "2026-01-26",
       "season": "2025-26",
@@ -442,12 +426,284 @@
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Milwaukee Bucks",
-          "label": "2026 round 2 pick (Washington Wizards)"
+          "label": "2026 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 26,
+            "overall": 56,
+            "player_id": "076uq",
+            "player": "Rafael Castro",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "yuxsbccvkynk77x4": {
+      "date": "2022-01-21",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uur",
+          "player": "Joel Ayayi",
+          "label": "Joel Ayayi"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uun",
+          "player": "Matthew Hurt",
+          "label": "Matthew Hurt"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "aqapwojpm3cvd21d": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "player_id": "03r7h",
+          "player": "Delon Wright",
+          "label": "Delon Wright"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "player_id": "051p0",
+          "player": "Matisse Thybulle",
+          "label": "Matisse Thybulle"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 1 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "06v5j",
+            "player": "Jase Richardson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uul",
+          "player": "Jose Alvarado",
+          "label": "Jose Alvarado"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "059g0",
+          "player": "Amir Coffey",
+          "label": "Amir Coffey"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "06v59",
+            "player": "Will Riley",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "label": "$23 budget"
+        }
+      ]
+    },
+    "ci5v7ywvkid24lwf": {
+      "date": "2020-12-06",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewl",
+          "player": "Terrance Ferguson",
+          "label": "Terrance Ferguson"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewj",
+          "player": "T.J. Leaf",
+          "label": "T.J. Leaf"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2021 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05ujl",
+            "player": "David Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2022 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "0622j",
+            "player": "Luke Travers",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "yy9p5ocdkye254n4": {
+      "date": "2022-01-14",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "01uz7",
+          "player": "Gordon Hayward",
+          "label": "Gordon Hayward"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "04qs9",
+          "player": "Jevon Carter",
+          "label": "Jevon Carter"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "label": "2023 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06ca7",
+            "player": "Cam Whitmore",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

@@ -163,6 +163,8 @@
       "team": "Utah Jazz",
       "round": 1,
       "pick": 16,
+      "overall": 16,
+      "certain": true,
       "periods": 33,
       "starts": 1,
       "gp": 3,
@@ -265,6 +267,66 @@
     }
   ],
   "trades": {
+    "u31lz7dpmhn7i0du": {
+      "date": "2025-11-06",
+      "season": "2025-26",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06ccv",
+          "player": "Trayce Jackson-Davis",
+          "label": "Trayce Jackson-Davis"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mkf",
+          "player": "AJ Johnson",
+          "label": "AJ Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2027 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Golden State Warriors",
+          "player_id": "05uio",
+          "player": "Moses Moody",
+          "label": "Moses Moody"
+        }
+      ]
+    },
     "aesgkz49l3pw62x9": {
       "date": "2022-05-28",
       "season": "2022-23",
@@ -314,58 +376,16 @@
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Orlando Magic",
-          "label": "2022 round 1 pick, no. 6"
-        }
-      ]
-    },
-    "u31lz7dpmhn7i0du": {
-      "date": "2025-11-06",
-      "season": "2025-26",
-      "period": 6,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Portland Trail Blazers",
-          "player_id": "06ccv",
-          "player": "Trayce Jackson-Davis",
-          "label": "Trayce Jackson-Davis"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Portland Trail Blazers",
-          "player_id": "06mkf",
-          "player": "AJ Johnson",
-          "label": "AJ Johnson"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Miami Heat",
-          "label": "2027 round 2 pick (Golden State Warriors)"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Portland Trail Blazers",
-          "player_id": "06mmh",
-          "player": "Isaac Jones",
-          "label": "Isaac Jones"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Portland Trail Blazers",
-          "label": "2026 round 2 pick (Golden State Warriors)"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Golden State Warriors",
-          "player_id": "05uio",
-          "player": "Moses Moody",
-          "label": "Moses Moody"
+          "label": "2022 round 1 pick, no. 6",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 6,
+            "overall": 6,
+            "player_id": "0621c",
+            "player": "Jalen Duren",
+            "certain": true
+          }
         }
       ]
     }

@@ -177,6 +177,8 @@
       "team": "Phoenix Suns",
       "round": 1,
       "pick": 1,
+      "overall": 1,
+      "certain": true,
       "periods": 12,
       "starts": 8,
       "gp": 14,
@@ -237,6 +239,45 @@
     }
   ],
   "trades": {
+    "fnutgtpilbqehm1q": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "player_id": "05uic",
+          "player": "Jalen Green",
+          "label": "Jalen Green"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Indiana Pacers",
+          "player_id": "05uib",
+          "player": "Cade Cunningham",
+          "label": "Cade Cunningham"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Indiana Pacers",
+          "player_id": "05uuq",
+          "player": "Jock Landale",
+          "label": "Jock Landale"
+        }
+      ]
+    },
     "hbk0cwdukwl4dkmr": {
       "date": "2021-11-29",
       "season": "2021-22",
@@ -286,46 +327,16 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Phoenix Suns",
-          "label": "2023 round 1 pick (Boston Celtics)"
-        }
-      ]
-    },
-    "fnutgtpilbqehm1q": {
-      "date": "2022-12-16",
-      "season": "2022-23",
-      "period": 18,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Sacramento Kings",
-          "player_id": "027pf",
-          "player": "Cory Joseph",
-          "label": "Cory Joseph"
-        },
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Sacramento Kings",
-          "player_id": "05uic",
-          "player": "Jalen Green",
-          "label": "Jalen Green"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Indiana Pacers",
-          "player_id": "05uib",
-          "player": "Cade Cunningham",
-          "label": "Cade Cunningham"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Indiana Pacers",
-          "player_id": "05uuq",
-          "player": "Jock Landale",
-          "label": "Jock Landale"
+          "label": "2023 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06cc2",
+            "player": "Gradey Dick",
+            "certain": true
+          }
         }
       ]
     }

@@ -94,6 +94,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Toronto Raptors",
+      "label": "2020 round 1 pick (Toronto Raptors)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-14",
+      "from": "Toronto Raptors",
+      "team": "Phoenix Suns",
+      "trade": "nk4cghgyjzb8r1h5",
+      "label": "2020 round 1 pick (Toronto Raptors)"
+    },
+    {
       "kind": "draft",
       "season": "2020-21",
       "period": 0,
@@ -101,6 +119,9 @@
       "team": "Phoenix Suns",
       "round": 1,
       "pick": 21,
+      "overall": 21,
+      "original": "Toronto Raptors",
+      "certain": false,
       "periods": 29,
       "starts": 0,
       "gp": 0,
@@ -188,46 +209,174 @@
     }
   ],
   "trades": {
-    "28sw7algkux3tmz0": {
-      "date": "2021-10-19",
-      "season": "2021-22",
+    "yclg2r1dl45ic5rx": {
+      "date": "2022-06-08",
+      "season": "2022-23",
       "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Los Angeles Lakers",
-          "player_id": "04qs6",
-          "player": "Dzanan Musa",
-          "label": "Dzanan Musa"
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Los Angeles Lakers",
+          "from": "Chicago Bulls",
+          "to": "Orlando Magic",
           "player_id": "05qth",
           "player": "Tyrell Terry",
           "label": "Tyrell Terry"
         },
         {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Los Angeles Lakers",
-          "player_id": "04qsp",
-          "player": "Chimezie Metu",
-          "label": "Chimezie Metu"
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Orlando Magic",
+          "label": "2022 round 2 pick, no. 19",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "04eww",
+            "player": null,
+            "certain": true
+          }
         },
         {
           "kind": "pick",
-          "from": "Houston Rockets",
-          "to": "Los Angeles Lakers",
-          "label": "2022 round 2 pick (Phoenix Suns)"
-        },
+          "from": "Orlando Magic",
+          "to": "Chicago Bulls",
+          "label": "2022 round 2 pick, no. 27",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "itk9a777ksn5h5hd": {
+      "date": "2021-08-22",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
         {
           "kind": "budget",
-          "from": "Los Angeles Lakers",
+          "from": "Houston Rockets",
+          "to": "Phoenix Suns",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
           "to": "Houston Rockets",
+          "player_id": "05qth",
+          "player": "Tyrell Terry",
+          "label": "Tyrell Terry"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "label": "2022 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "0622c",
+            "player": "Isaiah Mobley",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "nk4cghgyjzb8r1h5": {
+      "date": "2019-08-14",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Toronto Raptors",
+          "player_id": "02ngi",
+          "player": "Tornike Shengelia",
+          "label": "Tornike Shengelia"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Phoenix Suns",
+          "player_id": "041f7",
+          "player": "Mike James",
+          "label": "Mike James"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Phoenix Suns",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Phoenix Suns",
+          "label": "2020 round 1 pick (Toronto Raptors)",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "05qth",
+            "player": "Tyrell Terry",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "4cpai1imkw4sf9gq": {
+      "date": "2021-11-18",
+      "season": "2021-22",
+      "period": 9,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Chicago Bulls",
+          "to": "San Antonio Spurs",
           "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "player_id": "05qu3",
+          "player": "Nico Mannion",
+          "label": "Nico Mannion"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "player_id": "05qth",
+          "player": "Tyrell Terry",
+          "label": "Tyrell Terry"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "label": "2022 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "04eww",
+            "player": null,
+            "certain": true
+          }
         }
       ]
     },
@@ -286,97 +435,65 @@
         }
       ]
     },
-    "4cpai1imkw4sf9gq": {
-      "date": "2021-11-18",
-      "season": "2021-22",
-      "period": 9,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Chicago Bulls",
-          "to": "San Antonio Spurs",
-          "label": "$1 budget"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Chicago Bulls",
-          "player_id": "05qu3",
-          "player": "Nico Mannion",
-          "label": "Nico Mannion"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Chicago Bulls",
-          "player_id": "05qth",
-          "player": "Tyrell Terry",
-          "label": "Tyrell Terry"
-        },
-        {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Chicago Bulls",
-          "label": "2022 round 2 pick (San Antonio Spurs)"
-        }
-      ]
-    },
-    "yclg2r1dl45ic5rx": {
-      "date": "2022-06-08",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Orlando Magic",
-          "player_id": "05qth",
-          "player": "Tyrell Terry",
-          "label": "Tyrell Terry"
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Orlando Magic",
-          "label": "2022 round 2 pick, no. 19"
-        },
-        {
-          "kind": "pick",
-          "from": "Orlando Magic",
-          "to": "Chicago Bulls",
-          "label": "2022 round 2 pick, no. 27"
-        }
-      ]
-    },
-    "itk9a777ksn5h5hd": {
-      "date": "2021-08-22",
+    "28sw7algkux3tmz0": {
+      "date": "2021-10-19",
       "season": "2021-22",
       "period": 1,
       "items": [
         {
-          "kind": "budget",
+          "kind": "player",
           "from": "Houston Rockets",
-          "to": "Phoenix Suns",
-          "label": "$10 budget"
+          "to": "Los Angeles Lakers",
+          "player_id": "04qs6",
+          "player": "Dzanan Musa",
+          "label": "Dzanan Musa"
         },
         {
           "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Houston Rockets",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
           "player_id": "05qth",
           "player": "Tyrell Terry",
           "label": "Tyrell Terry"
         },
         {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qsp",
+          "player": "Chimezie Metu",
+          "label": "Chimezie Metu"
+        },
+        {
           "kind": "pick",
-          "from": "Phoenix Suns",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "0622c",
+            "player": "Isaiah Mobley",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Lakers",
           "to": "Houston Rockets",
-          "label": "2022 round 2 pick (Phoenix Suns)"
+          "label": "$1 budget"
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

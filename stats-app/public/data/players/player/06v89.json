@@ -72,13 +72,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2025 round 2 pick (Indiana Pacers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 15,
+      "date": "2024-12-09",
+      "from": "Indiana Pacers",
+      "team": "Miami Heat",
+      "trade": "gy7ia1v7m4gxhk6e",
+      "label": "2025 round 2 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-23",
+      "from": "Miami Heat",
+      "team": "Denver Nuggets",
+      "trade": "qqtxc5wbm65k1oug",
+      "label": "2025 round 2 pick (Indiana Pacers)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-05",
       "team": "Denver Nuggets",
       "round": 2,
-      "pick": 59,
+      "pick": 29,
+      "overall": 59,
+      "original": "Indiana Pacers",
+      "certain": true,
       "periods": 33,
       "starts": 9,
       "gp": 15,
@@ -94,8 +125,196 @@
       "team": "Denver Nuggets"
     }
   ],
-  "trades": {},
+  "trades": {
+    "qqtxc5wbm65k1oug": {
+      "date": "2025-01-23",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "05qu1",
+          "player": "James Wiseman",
+          "label": "James Wiseman"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "04qru",
+          "player": "Donte DiVincenzo",
+          "label": "Donte DiVincenzo"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Denver Nuggets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "06v8b",
+            "player": "Rocco Zikarsky",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "06cef",
+          "player": "Oscar Tshiebwe",
+          "label": "Oscar Tshiebwe"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "06ceg",
+          "player": "Ricky Council",
+          "label": "Ricky Council"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "label": "2025 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06v89",
+            "player": "Jamir Watkins",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "gy7ia1v7m4gxhk6e": {
+      "date": "2024-12-09",
+      "season": "2024-25",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "05qt0",
+          "player": "Saddiq Bey",
+          "label": "Saddiq Bey"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "05qtl",
+          "player": "Cole Anthony",
+          "label": "Cole Anthony"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2026 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "076sv",
+            "player": "Bennett Stirtz",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06v89",
+            "player": "Jamir Watkins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "02ng3",
+          "player": "Khris Middleton",
+          "label": "Khris Middleton"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

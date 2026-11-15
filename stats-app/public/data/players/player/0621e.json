@@ -128,6 +128,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "New Orleans Pelicans",
+      "label": "2022 round 1 pick (New Orleans Pelicans)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-12-02",
+      "from": "New Orleans Pelicans",
+      "team": "Washington Wizards",
+      "trade": "tkca1bmjkwoypp13",
+      "label": "2022 round 1 pick (New Orleans Pelicans)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -135,6 +153,9 @@
       "team": "Washington Wizards",
       "round": 1,
       "pick": 13,
+      "overall": 13,
+      "original": "New Orleans Pelicans",
+      "certain": true,
       "periods": 98,
       "starts": 60,
       "gp": 59,
@@ -164,8 +185,72 @@
       "contract": "REG2"
     }
   ],
-  "trades": {},
+  "trades": {
+    "tkca1bmjkwoypp13": {
+      "date": "2021-12-02",
+      "season": "2021-22",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Washington Wizards",
+          "player_id": "03nwi",
+          "player": "Justise Winslow",
+          "label": "Justise Winslow"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Washington Wizards",
+          "label": "2023 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06cei",
+            "player": "Leonard Miller",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 13,
+            "overall": 13,
+            "player_id": "0621e",
+            "player": "Mark Williams",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "New Orleans Pelicans",
+          "player_id": "02nf7",
+          "player": "Harrison Barnes",
+          "label": "Harrison Barnes"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

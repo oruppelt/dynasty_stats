@@ -148,7 +148,8 @@
       "date": "2022-06-28",
       "team": "Sacramento Kings",
       "round": 2,
-      "pick": 41,
+      "pick": 11,
+      "overall": 41,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -316,13 +317,31 @@
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Utah Jazz",
-          "label": "2024 round 2 pick (New Orleans Pelicans)"
+          "label": "2024 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05uiq",
+            "player": "Alperen Sengun",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Utah Jazz",
-          "label": "2024 round 2 pick (Portland Trail Blazers)"
+          "label": "2024 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "06mlq",
+            "player": "Pelle Larsson",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -336,58 +355,16 @@
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Orlando Magic",
-          "label": "2024 round 1 pick (Utah Jazz)"
-        }
-      ]
-    },
-    "976lery6lda9vro9": {
-      "date": "2023-01-26",
-      "season": "2022-23",
-      "period": 30,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Toronto Raptors",
-          "player_id": "03apx",
-          "player": "Gary Harris",
-          "label": "Gary Harris"
-        },
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Toronto Raptors",
-          "player_id": "06227",
-          "player": "Ryan Rollins",
-          "label": "Ryan Rollins"
-        },
-        {
-          "kind": "pick",
-          "from": "Charlotte Hornets",
-          "to": "Toronto Raptors",
-          "label": "2023 round 2 pick (Phoenix Suns)"
-        },
-        {
-          "kind": "pick",
-          "from": "Charlotte Hornets",
-          "to": "Toronto Raptors",
-          "label": "2024 round 2 pick (Los Angeles Lakers)"
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Charlotte Hornets",
-          "player_id": "051op",
-          "player": "Rui Hachimura",
-          "label": "Rui Hachimura"
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Charlotte Hornets",
-          "player_id": "04jw4",
-          "player": "Maxi Kleber",
-          "label": "Maxi Kleber"
+          "label": "2024 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 18,
+            "overall": 18,
+            "player_id": "06mk8",
+            "player": "Jared McCain",
+            "certain": true
+          }
         }
       ]
     },
@@ -432,7 +409,16 @@
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Charlotte Hornets",
-          "label": "2023 round 2 pick (Phoenix Suns)"
+          "label": "2023 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06cd9",
+            "player": "Jaylen Clark",
+            "certain": true
+          }
         }
       ]
     },
@@ -445,7 +431,16 @@
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Sacramento Kings",
-          "label": "2024 round 2 pick (Orlando Magic)"
+          "label": "2024 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06mmh",
+            "player": "Isaac Jones",
+            "certain": false
+          }
         },
         {
           "kind": "budget",
@@ -468,6 +463,75 @@
           "player_id": "06227",
           "player": "Ryan Rollins",
           "label": "Ryan Rollins"
+        }
+      ]
+    },
+    "976lery6lda9vro9": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "06227",
+          "player": "Ryan Rollins",
+          "label": "Ryan Rollins"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2023 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06cd9",
+            "player": "Jaylen Clark",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2024 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06mlh",
+            "player": "Johnny Furphy",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "051op",
+          "player": "Rui Hachimura",
+          "label": "Rui Hachimura"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "04jw4",
+          "player": "Maxi Kleber",
+          "label": "Maxi Kleber"
         }
       ]
     }

@@ -35,13 +35,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Oklahoma City Thunder",
+      "label": "2025 round 2 pick (Oklahoma City Thunder)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-13",
+      "from": "Oklahoma City Thunder",
+      "team": "San Antonio Spurs",
+      "trade": "58we3gpom3fyo8j6",
+      "label": "2025 round 2 pick (Oklahoma City Thunder)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-04",
       "team": "San Antonio Spurs",
       "round": 2,
-      "pick": 40,
+      "pick": 10,
+      "overall": 40,
+      "original": "Oklahoma City Thunder",
+      "certain": true,
       "periods": 40,
       "starts": 0,
       "gp": 0,
@@ -50,8 +71,49 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "58we3gpom3fyo8j6": {
+      "date": "2024-11-13",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06v5d",
+            "player": "Hugo Gonzalez",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03r7l",
+          "player": "Larry Nance",
+          "label": "Larry Nance"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

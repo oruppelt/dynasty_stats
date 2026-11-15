@@ -191,6 +191,8 @@
       "team": "Milwaukee Bucks",
       "round": 1,
       "pick": 15,
+      "overall": 15,
+      "certain": true,
       "periods": 95,
       "starts": 45,
       "gp": 61,
@@ -293,6 +295,52 @@
     }
   ],
   "trades": {
+    "jsw3rc10mkl3o2h1": {
+      "date": "2026-01-19",
+      "season": "2025-26",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Chicago Bulls",
+          "player_id": "05qty",
+          "player": "Jalen Smith",
+          "label": "Jalen Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Chicago Bulls",
+          "player_id": "0621u",
+          "player": "Andrew Nembhard",
+          "label": "Andrew Nembhard"
+        }
+      ]
+    },
     "68vzx5bemhetwvoq": {
       "date": "2025-10-31",
       "season": "2025-26",
@@ -318,13 +366,31 @@
           "kind": "pick",
           "from": "Milwaukee Bucks",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick (Portland Trail Blazers)"
+          "label": "2026 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "076t0",
+            "player": "Caleb Wilson",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Milwaukee Bucks",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick (Orlando Magic)"
+          "label": "2026 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "076sw",
+            "player": "Labaron Philon",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -338,44 +404,16 @@
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "Milwaukee Bucks",
-          "label": "2026 round 1 pick (New Orleans Pelicans)"
-        }
-      ]
-    },
-    "jsw3rc10mkl3o2h1": {
-      "date": "2026-01-19",
-      "season": "2025-26",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Portland Trail Blazers",
-          "player_id": "05qtr",
-          "player": "Devin Vassell",
-          "label": "Devin Vassell"
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick (New Orleans Pelicans)"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Chicago Bulls",
-          "player_id": "05qty",
-          "player": "Jalen Smith",
-          "label": "Jalen Smith"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Chicago Bulls",
-          "player_id": "0621u",
-          "player": "Andrew Nembhard",
-          "label": "Andrew Nembhard"
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          }
         }
       ]
     }

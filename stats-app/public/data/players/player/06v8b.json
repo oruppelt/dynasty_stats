@@ -49,13 +49,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Denver Nuggets",
+      "label": "2025 round 2 pick (Denver Nuggets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-23",
+      "from": "Denver Nuggets",
+      "team": "Miami Heat",
+      "trade": "qqtxc5wbm65k1oug",
+      "label": "2025 round 2 pick (Denver Nuggets)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-05",
       "team": "Miami Heat",
       "round": 2,
-      "pick": 52,
+      "pick": 22,
+      "overall": 52,
+      "original": "Denver Nuggets",
+      "certain": true,
       "periods": 27,
       "starts": 0,
       "gp": 0,
@@ -95,6 +116,99 @@
     }
   ],
   "trades": {
+    "qqtxc5wbm65k1oug": {
+      "date": "2025-01-23",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "05qu1",
+          "player": "James Wiseman",
+          "label": "James Wiseman"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "04qru",
+          "player": "Donte DiVincenzo",
+          "label": "Donte DiVincenzo"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Denver Nuggets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "06v8b",
+            "player": "Rocco Zikarsky",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "06cef",
+          "player": "Oscar Tshiebwe",
+          "label": "Oscar Tshiebwe"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "06ceg",
+          "player": "Ricky Council",
+          "label": "Ricky Council"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "label": "2025 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06v89",
+            "player": "Jamir Watkins",
+            "certain": true
+          }
+        }
+      ]
+    },
     "ww5mlxmcmkqs951p": {
       "date": "2026-01-23",
       "season": "2025-26",
@@ -112,7 +226,16 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 2 pick (Indiana Pacers)"
+          "label": "2026 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -141,7 +264,16 @@
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "San Antonio Spurs",
-          "label": "2026 round 2 pick, no. 24"
+          "label": "2026 round 2 pick, no. 24",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -171,12 +303,31 @@
           "kind": "pick",
           "from": "San Antonio Spurs",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick, no. 23"
+          "label": "2026 round 1 pick, no. 23",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "076t4",
+            "player": "Ebuka Okorie",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

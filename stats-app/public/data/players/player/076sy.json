@@ -52,6 +52,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Utah Jazz",
+      "label": "2026 round 1 pick (Utah Jazz)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-26",
+      "from": "Utah Jazz",
+      "team": "Houston Rockets",
+      "trade": "c0yl11uom6dr39pn",
+      "label": "2026 round 1 pick (Utah Jazz)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-07",
+      "from": "Houston Rockets",
+      "team": "Boston Celtics",
+      "trade": "yyv5fklbme1qbgi3",
+      "label": "2026 round 1 pick (Utah Jazz)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 12,
+      "date": "2025-11-27",
+      "from": "Boston Celtics",
+      "team": "Utah Jazz",
+      "trade": "yqdm26wgmih99jx3",
+      "label": "2026 round 1 pick (Utah Jazz)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -59,6 +97,8 @@
       "team": "Utah Jazz",
       "round": 1,
       "pick": 11,
+      "overall": 11,
+      "certain": true,
       "periods": 7,
       "starts": 3,
       "gp": 5,
@@ -67,8 +107,178 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "yqdm26wgmih99jx3": {
+      "date": "2025-11-27",
+      "season": "2025-26",
+      "period": 12,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "049kd",
+          "player": "Deandre Ayton",
+          "label": "Deandre Ayton"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mkk",
+          "player": "Ryan Dunn",
+          "label": "Ryan Dunn"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mlx",
+          "player": "Melvin Ajinca",
+          "label": "Melvin Ajinca"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "05qtt",
+          "player": "Onyeka Okongwu",
+          "label": "Onyeka Okongwu"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter"
+        }
+      ]
+    },
+    "c0yl11uom6dr39pn": {
+      "date": "2025-01-26",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Phoenix Suns",
+          "label": "2025 round 1 pick (Houston Rockets)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06v5x",
+            "player": "Carter Bryant",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "player_id": "0621g",
+          "player": "Tari Eason",
+          "label": "Tari Eason"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "player_id": "0529c",
+          "player": "Dean Wade",
+          "label": "Dean Wade"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Houston Rockets",
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "yyv5fklbme1qbgi3": {
+      "date": "2025-08-07",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

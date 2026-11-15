@@ -46,13 +46,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Los Angeles Lakers",
+      "label": "2024 round 2 pick (Los Angeles Lakers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-18",
+      "from": "Los Angeles Lakers",
+      "team": "Charlotte Hornets",
+      "trade": "xmox8ksrl9e24fip",
+      "label": "2024 round 2 pick (Los Angeles Lakers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-26",
+      "from": "Charlotte Hornets",
+      "team": "Toronto Raptors",
+      "trade": "976lery6lda9vro9",
+      "label": "2024 round 2 pick (Los Angeles Lakers)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-28",
       "team": "Toronto Raptors",
       "round": 2,
-      "pick": 34,
+      "pick": 4,
+      "overall": 34,
+      "original": "Los Angeles Lakers",
+      "certain": false,
       "periods": 66,
       "starts": 1,
       "gp": 2,
@@ -68,8 +99,158 @@
       "team": "Toronto Raptors"
     }
   ],
-  "trades": {},
+  "trades": {
+    "xmox8ksrl9e24fip": {
+      "date": "2022-10-18",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Los Angeles Lakers",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Los Angeles Lakers",
+          "player_id": "049kc",
+          "player": "Malik Monk",
+          "label": "Malik Monk"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Los Angeles Lakers",
+          "player_id": "02ym0",
+          "player": "Andrew Wiggins",
+          "label": "Andrew Wiggins"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Charlotte Hornets",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Charlotte Hornets",
+          "player_id": "05uit",
+          "player": "Kai Jones",
+          "label": "Kai Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Charlotte Hornets",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Charlotte Hornets",
+          "label": "2024 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06mlh",
+            "player": "Johnny Furphy",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "976lery6lda9vro9": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "06227",
+          "player": "Ryan Rollins",
+          "label": "Ryan Rollins"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2023 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06cd9",
+            "player": "Jaylen Clark",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2024 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06mlh",
+            "player": "Johnny Furphy",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "051op",
+          "player": "Rui Hachimura",
+          "label": "Rui Hachimura"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "04jw4",
+          "player": "Maxi Kleber",
+          "label": "Maxi Kleber"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

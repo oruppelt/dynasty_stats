@@ -281,35 +281,6 @@
     }
   ],
   "trades": {
-    "dfguyn9jldey013k": {
-      "date": "2023-01-27",
-      "season": "2022-23",
-      "period": 30,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Dallas Mavericks",
-          "to": "Portland Trail Blazers",
-          "player_id": "05qtf",
-          "player": "Xavier Tillman",
-          "label": "Xavier Tillman"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Dallas Mavericks",
-          "player_id": "04jw4",
-          "player": "Maxi Kleber",
-          "label": "Maxi Kleber"
-        },
-        {
-          "kind": "pick",
-          "from": "Portland Trail Blazers",
-          "to": "Dallas Mavericks",
-          "label": "2023 round 2 pick (Cleveland Cavaliers)"
-        }
-      ]
-    },
     "1wol7nl2lde7omt5": {
       "date": "2023-01-27",
       "season": "2022-23",
@@ -343,7 +314,16 @@
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Charlotte Hornets",
-          "label": "2023 round 2 pick (Utah Jazz)"
+          "label": "2023 round 2 pick (Utah Jazz)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "06cd3",
+            "player": "Emoni Bates",
+            "certain": true
+          }
         }
       ]
     },
@@ -372,13 +352,31 @@
           "kind": "pick",
           "from": "Charlotte Hornets",
           "to": "Toronto Raptors",
-          "label": "2023 round 2 pick (Phoenix Suns)"
+          "label": "2023 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06cd9",
+            "player": "Jaylen Clark",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Charlotte Hornets",
           "to": "Toronto Raptors",
-          "label": "2024 round 2 pick (Los Angeles Lakers)"
+          "label": "2024 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06mlh",
+            "player": "Johnny Furphy",
+            "certain": false
+          }
         },
         {
           "kind": "player",
@@ -423,7 +421,54 @@
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Portland Trail Blazers",
-          "label": "2023 round 1 pick (Atlanta Hawks)"
+          "label": "2023 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06ca5",
+            "player": "Kris Murray",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "dfguyn9jldey013k": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Dallas Mavericks",
+          "player_id": "04jw4",
+          "player": "Maxi Kleber",
+          "label": "Maxi Kleber"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          }
         }
       ]
     }

@@ -354,43 +354,6 @@
     }
   ],
   "trades": {
-    "0ha362o3kjh7rhss": {
-      "date": "2021-01-03",
-      "season": "2020-21",
-      "period": 4,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Detroit Pistons",
-          "player_id": "03acx",
-          "player": "Dante Exum",
-          "label": "Dante Exum"
-        },
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Detroit Pistons",
-          "player_id": "04ex3",
-          "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
-        },
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "Detroit Pistons",
-          "label": "2021 round 1 pick (Cleveland Cavaliers)"
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Cleveland Cavaliers",
-          "player_id": "03kqi",
-          "player": "Joe Ingles",
-          "label": "Joe Ingles"
-        }
-      ]
-    },
     "o9x12180m3dbpz6a": {
       "date": "2024-11-11",
       "season": "2024-25",
@@ -448,7 +411,16 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Miami Heat",
-          "label": "2025 round 1 pick (Atlanta Hawks)"
+          "label": "2025 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          }
         }
       ]
     },
@@ -469,7 +441,16 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Portland Trail Blazers",
-          "label": "2022 round 2 pick (Cleveland Cavaliers)"
+          "label": "2022 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "0621x",
+            "player": "Jaylin Williams",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -478,6 +459,52 @@
           "player_id": "043ib",
           "player": "Dorian Finney-Smith",
           "label": "Dorian Finney-Smith"
+        }
+      ]
+    },
+    "0ha362o3kjh7rhss": {
+      "date": "2021-01-03",
+      "season": "2020-21",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "label": "2021 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "05uix",
+            "player": "Usman Garuba",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03kqi",
+          "player": "Joe Ingles",
+          "label": "Joe Ingles"
         }
       ]
     }

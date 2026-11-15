@@ -66,13 +66,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Dallas Mavericks",
+      "label": "2025 round 2 pick (Dallas Mavericks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 8,
+      "date": "2024-11-15",
+      "from": "Dallas Mavericks",
+      "team": "San Antonio Spurs",
+      "trade": "r48yvwa7m3ijl7dc",
+      "label": "2025 round 2 pick (Dallas Mavericks)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-05",
       "team": "San Antonio Spurs",
       "round": 2,
-      "pick": 53,
+      "pick": 23,
+      "overall": 53,
+      "original": "Dallas Mavericks",
+      "certain": true,
       "periods": 40,
       "starts": 3,
       "gp": 5,
@@ -81,8 +102,57 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "r48yvwa7m3ijl7dc": {
+      "date": "2024-11-15",
+      "season": "2024-25",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "player_id": "04qsm",
+          "player": "De'Anthony Melton",
+          "label": "De'Anthony Melton"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "06v7z",
+            "player": "Sion James",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "049kc",
+          "player": "Malik Monk",
+          "label": "Malik Monk"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

@@ -128,6 +128,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Sacramento Kings",
+      "label": "2023 round 1 pick (Sacramento Kings)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-26",
+      "from": "Sacramento Kings",
+      "team": "Detroit Pistons",
+      "trade": "jvet5461ldd2yw41",
+      "label": "2023 round 1 pick (Sacramento Kings)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
@@ -135,6 +153,9 @@
       "team": "Detroit Pistons",
       "round": 1,
       "pick": 25,
+      "overall": 25,
+      "original": "Sacramento Kings",
+      "certain": true,
       "periods": 36,
       "starts": 2,
       "gp": 1,
@@ -249,7 +270,16 @@
           "kind": "pick",
           "from": "Cleveland Cavaliers",
           "to": "Detroit Pistons",
-          "label": "2025 round 2 pick (Minnesota Timberwolves)"
+          "label": "2025 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06y3q",
+            "player": "Ryan Nembhard",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -295,18 +325,119 @@
           "kind": "pick",
           "from": "Detroit Pistons",
           "to": "Cleveland Cavaliers",
-          "label": "2025 round 2 pick (San Antonio Spurs)"
+          "label": "2025 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06v7y",
+            "player": "Noah Penda",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Detroit Pistons",
           "to": "Cleveland Cavaliers",
-          "label": "2025 round 1 pick (Cleveland Cavaliers)"
+          "label": "2025 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06v55",
+            "player": "Kasparas Jakucionis",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "jvet5461ldd2yw41": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "player_id": "05uig",
+          "player": "Josh Giddey",
+          "label": "Josh Giddey"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "budget",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "label": "$20 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "player_id": "05uif",
+          "player": "Jalen Suggs",
+          "label": "Jalen Suggs"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2024 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "06mlm",
+            "player": "Oso Ighodaro",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2023 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "06cc9",
+            "player": "Olivier-Maxence Prosper",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

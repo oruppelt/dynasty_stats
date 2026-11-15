@@ -191,6 +191,8 @@
       "team": "Philadelphia 76ers",
       "round": 1,
       "pick": 8,
+      "overall": 8,
+      "certain": true,
       "periods": 29,
       "starts": 29,
       "gp": 44,
@@ -362,44 +364,16 @@
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Philadelphia 76ers",
-          "label": "2023 round 2 pick (Washington Wizards)"
-        }
-      ]
-    },
-    "o80318c5kwkp7gxb": {
-      "date": "2021-11-29",
-      "season": "2021-22",
-      "period": 13,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
-          "player_id": "05uiz",
-          "player": "Quentin Grimes",
-          "label": "Quentin Grimes"
-        },
-        {
-          "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
-          "label": "2022 round 1 pick (Philadelphia 76ers)"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Philadelphia 76ers",
-          "player_id": "05qsk",
-          "player": "Isaac Okoro",
-          "label": "Isaac Okoro"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Philadelphia 76ers",
-          "player_id": "051p3",
-          "player": "Darius Bazley",
-          "label": "Darius Bazley"
+          "label": "2023 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06cdd",
+            "player": "Andre Jackson",
+            "certain": true
+          }
         }
       ]
     },
@@ -452,7 +426,16 @@
           "kind": "pick",
           "from": "Philadelphia 76ers",
           "to": "Sacramento Kings",
-          "label": "2021 round 1 pick, no. 4"
+          "label": "2021 round 1 pick, no. 4",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "05uif",
+            "player": "Jalen Suggs",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -461,6 +444,52 @@
           "player_id": "03al2",
           "player": "Joel Embiid",
           "label": "Joel Embiid"
+        }
+      ]
+    },
+    "o80318c5kwkp7gxb": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05uiz",
+          "player": "Quentin Grimes",
+          "label": "Quentin Grimes"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06217",
+            "player": "Dyson Daniels",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qsk",
+          "player": "Isaac Okoro",
+          "label": "Isaac Okoro"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
         }
       ]
     }

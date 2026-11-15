@@ -170,13 +170,54 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Denver Nuggets",
+      "label": "2021 round 2 pick (Denver Nuggets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-06-24",
+      "from": "Denver Nuggets",
+      "team": "Golden State Warriors",
+      "trade": "fiikeg54jxapkyle",
+      "label": "2021 round 2 pick (Denver Nuggets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "from": "Golden State Warriors",
+      "team": "Denver Nuggets",
+      "trade": "wtasn88kkhuyzg99",
+      "label": "2021 round 2 pick (Denver Nuggets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-02",
+      "from": "Denver Nuggets",
+      "team": "Golden State Warriors",
+      "trade": "cksz0ka8kruo4h5l",
+      "label": "2021 round 2 pick, no. 23"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
       "date": "2021-08-03",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 53,
+      "pick": 23,
+      "overall": 53,
+      "original": "Denver Nuggets",
+      "certain": true,
       "periods": 66,
       "starts": 25,
       "gp": 35,
@@ -300,6 +341,116 @@
     }
   ],
   "trades": {
+    "fiikeg54jxapkyle": {
+      "date": "2019-06-24",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2019 round 2 pick, no. 24"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2019 round 2 pick, no. 19",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "051pi",
+            "player": "Daniel Gafford",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Denver Nuggets)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "05ujt",
+            "player": "Aaron Wiggins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2021 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "05uj1",
+            "player": "Cameron Thomas",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "cksz0ka8kruo4h5l": {
+      "date": "2021-08-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick, no. 23",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "05ujt",
+            "player": "Aaron Wiggins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick, no. 4",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05uj7",
+            "player": "Jason Preston",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2021 round 2 pick, no. 2",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05uj7",
+            "player": "Jason Preston",
+            "certain": true
+          }
+        }
+      ]
+    },
     "8x9ec2fzm334p6t0": {
       "date": "2024-11-04",
       "season": "2024-25",
@@ -333,7 +484,16 @@
           "kind": "pick",
           "from": "Minnesota Timberwolves",
           "to": "Milwaukee Bucks",
-          "label": "2026 round 2 pick (Minnesota Timberwolves)"
+          "label": "2026 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "076tv",
+            "player": null,
+            "certain": true
+          }
         }
       ]
     },
@@ -383,9 +543,68 @@
           "label": "Aaron Wiggins"
         }
       ]
+    },
+    "wtasn88kkhuyzg99": {
+      "date": "2020-11-23",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2020 round 1 pick, no. 29"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2020 round 2 pick, no. 26"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2021 round 2 pick (Denver Nuggets)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "05ujt",
+            "player": "Aaron Wiggins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2020 round 2 pick, no. 5",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "05qtq",
+            "player": "Tre Jones",
+            "certain": false
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

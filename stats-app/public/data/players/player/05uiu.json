@@ -156,6 +156,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Denver Nuggets",
+      "label": "2021 round 1 pick (Denver Nuggets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 4,
+      "date": "2019-11-01",
+      "from": "Denver Nuggets",
+      "team": "Cleveland Cavaliers",
+      "trade": "mrggfdnik2gldpms",
+      "label": "2021 round 1 pick (Denver Nuggets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 17,
+      "date": "2019-12-19",
+      "from": "Cleveland Cavaliers",
+      "team": "New York Knicks",
+      "trade": "kyiyrs77k4cvyypt",
+      "label": "2021 round 1 pick (Denver Nuggets)"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
@@ -163,6 +191,9 @@
       "team": "New York Knicks",
       "round": 1,
       "pick": 23,
+      "overall": 23,
+      "original": "Denver Nuggets",
+      "certain": true,
       "periods": 13,
       "starts": 0,
       "gp": 0,
@@ -251,24 +282,49 @@
     }
   ],
   "trades": {
-    "4odq53ngljd9v0pc": {
-      "date": "2023-06-26",
-      "season": "2023-24",
+    "zkwyiotnl656dftt": {
+      "date": "2022-07-28",
+      "season": "2022-23",
       "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
+          "from": "Minnesota Timberwolves",
+          "to": "Philadelphia 76ers",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Philadelphia 76ers",
           "player_id": "05uiu",
           "player": "Jalen Johnson",
           "label": "Jalen Johnson"
         },
         {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
           "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Philadelphia 76ers",
-          "label": "2023 round 2 pick, no. 5"
+          "from": "Philadelphia 76ers",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06mk7",
+            "player": "Kel'el Ware",
+            "certain": true
+          }
         }
       ]
     },
@@ -313,7 +369,16 @@
           "kind": "pick",
           "from": "New York Knicks",
           "to": "Cleveland Cavaliers",
-          "label": "2022 round 1 pick (Boston Celtics)"
+          "label": "2022 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "0621j",
+            "player": "Malaki Branham",
+            "certain": true
+          }
         }
       ]
     },
@@ -342,55 +407,245 @@
           "kind": "pick",
           "from": "Cleveland Cavaliers",
           "to": "Minnesota Timberwolves",
-          "label": "2022 round 1 pick, no. 6"
+          "label": "2022 round 1 pick, no. 6",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 6,
+            "overall": 6,
+            "player_id": "0621c",
+            "player": "Jalen Duren",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Minnesota Timberwolves",
           "to": "Cleveland Cavaliers",
-          "label": "2022 round 1 pick, no. 15"
+          "label": "2022 round 1 pick, no. 15",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "0621p",
+            "player": "Wendell Moore",
+            "certain": true
+          }
         }
       ]
     },
-    "zkwyiotnl656dftt": {
-      "date": "2022-07-28",
-      "season": "2022-23",
+    "kyiyrs77k4cvyypt": {
+      "date": "2019-12-19",
+      "season": "2019-20",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "04416",
+          "player": "Frank Ntilikina",
+          "label": "Frank Ntilikina"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "0018r",
+          "player": "Thaddeus Young",
+          "label": "Thaddeus Young"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2021 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "05uj4",
+            "player": "Santi Aldama",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2021 round 1 pick (Denver Nuggets)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "05uiu",
+            "player": "Jalen Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0393p",
+          "player": "Troy Daniels",
+          "label": "Troy Daniels"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "031lw",
+          "player": "Trey Burke",
+          "label": "Trey Burke"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03lgk",
+          "player": "Allonzo Trier",
+          "label": "Allonzo Trier"
+        }
+      ]
+    },
+    "4odq53ngljd9v0pc": {
+      "date": "2023-06-26",
+      "season": "2023-24",
       "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Philadelphia 76ers",
-          "player_id": "01enw",
-          "player": "Ricky Rubio",
-          "label": "Ricky Rubio"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Philadelphia 76ers",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
           "player_id": "05uiu",
           "player": "Jalen Johnson",
           "label": "Jalen Johnson"
         },
         {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "label": "2023 round 2 pick, no. 5",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06ca3",
+            "player": "Julian Strawther",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "mrggfdnik2gldpms": {
+      "date": "2019-11-01",
+      "season": "2019-20",
+      "period": 4,
+      "items": [
+        {
           "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Minnesota Timberwolves",
-          "player_id": "01ens",
-          "player": "Patrick Beverley",
-          "label": "Patrick Beverley"
+          "from": "Cleveland Cavaliers",
+          "to": "Denver Nuggets",
+          "player_id": "027oj",
+          "player": "Kyrie Irving",
+          "label": "Kyrie Irving"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Denver Nuggets",
+          "player_id": "042n6",
+          "player": "Jakob Poeltl",
+          "label": "Jakob Poeltl"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03ad0",
+          "player": "Tyus Jones",
+          "label": "Tyus Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins"
         },
         {
           "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Minnesota Timberwolves",
-          "label": "2024 round 1 pick (Philadelphia 76ers)"
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "05uj1",
+            "player": "Cameron Thomas",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05qta",
+            "player": "Elijah Hughes",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Denver Nuggets)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "05uiu",
+            "player": "Jalen Johnson",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

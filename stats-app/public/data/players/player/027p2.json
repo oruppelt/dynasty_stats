@@ -201,35 +201,6 @@
     }
   ],
   "trades": {
-    "auat5jg8k3ygvkfy": {
-      "date": "2019-12-09",
-      "season": "2019-20",
-      "period": 15,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Memphis Grizzlies",
-          "player_id": "027p2",
-          "player": "Enes Kanter",
-          "label": "Enes Kanter"
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Memphis Grizzlies",
-          "label": "2021 round 1 pick (Memphis Grizzlies)"
-        },
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Los Angeles Lakers",
-          "player_id": "04849",
-          "player": "Danuel House",
-          "label": "Danuel House"
-        }
-      ]
-    },
     "y7jfydkxkxg1vebv": {
       "date": "2021-12-21",
       "season": "2021-22",
@@ -295,19 +266,84 @@
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Cleveland Cavaliers",
-          "label": "2023 round 1 pick (Memphis Grizzlies)"
+          "label": "2023 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06cdj",
+            "player": "Colby Jones",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Detroit Pistons",
-          "label": "2023 round 2 pick (Memphis Grizzlies)"
+          "label": "2023 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "06ccy",
+            "player": "Jalen Pickett",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Detroit Pistons",
-          "label": "2022 round 1 pick (Atlanta Hawks)"
+          "label": "2022 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06224",
+            "player": "E.J. Liddell",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "auat5jg8k3ygvkfy": {
+      "date": "2019-12-09",
+      "season": "2019-20",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "027p2",
+          "player": "Enes Kanter",
+          "label": "Enes Kanter"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "label": "2021 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "05uj2",
+            "player": "Jaden Springer",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "player_id": "04849",
+          "player": "Danuel House",
+          "label": "Danuel House"
         }
       ]
     }

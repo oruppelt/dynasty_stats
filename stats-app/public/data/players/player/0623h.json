@@ -63,13 +63,74 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Los Angeles Clippers",
+      "label": "2022 round 2 pick (Los Angeles Clippers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "from": "Los Angeles Clippers",
+      "team": "Atlanta Hawks",
+      "trade": "y6t02lq8ks8pna2n",
+      "label": "2022 round 2 pick (Los Angeles Clippers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-09-01",
+      "from": "Atlanta Hawks",
+      "team": "Orlando Magic",
+      "trade": "olra9olekt197as1",
+      "label": "2022 round 2 pick (Los Angeles Clippers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-08",
+      "from": "Orlando Magic",
+      "team": "Chicago Bulls",
+      "trade": "yclg2r1dl45ic5rx",
+      "label": "2022 round 2 pick, no. 27"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-20",
+      "from": "Chicago Bulls",
+      "team": "San Antonio Spurs",
+      "trade": "vdfb3txdl4n5o5bc",
+      "label": "2022 round 2 pick, no. 27"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-26",
+      "from": "San Antonio Spurs",
+      "team": "Golden State Warriors",
+      "trade": "uo1sp6usl4v6u44q",
+      "label": "2022 round 2 pick, no. 27"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-29",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 57,
+      "pick": 27,
+      "overall": 57,
+      "original": "Los Angeles Clippers",
+      "certain": true,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -155,6 +216,545 @@
     }
   ],
   "trades": {
+    "yclg2r1dl45ic5rx": {
+      "date": "2022-06-08",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Orlando Magic",
+          "player_id": "05qth",
+          "player": "Tyrell Terry",
+          "label": "Tyrell Terry"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Orlando Magic",
+          "label": "2022 round 2 pick, no. 19",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "04eww",
+            "player": null,
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Chicago Bulls",
+          "label": "2022 round 2 pick, no. 27",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "vdfb3txdl4n5o5bc": {
+      "date": "2022-06-20",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "San Antonio Spurs",
+          "label": "2022 round 2 pick, no. 27",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Chicago Bulls",
+          "to": "San Antonio Spurs",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "label": "2024 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "y6t02lq8ks8pna2n": {
+      "date": "2021-08-12",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "04qrk",
+          "player": "Trae Young",
+          "label": "Trae Young"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "051pj",
+          "player": "Alen Smailagic",
+          "label": "Alen Smailagic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtv",
+          "player": "Tyrese Haliburton",
+          "label": "Tyrese Haliburton"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 1 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "0621k",
+            "player": "Christian Braun",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2023 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06ccu",
+            "player": "Tristan Vukcevic",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "olra9olekt197as1": {
+      "date": "2021-09-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "04jwd",
+          "player": "Royce O'Neale",
+          "label": "Royce O'Neale"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "label": "2022 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsa",
+          "player": "Jalen Brunson",
+          "label": "Jalen Brunson"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06223",
+            "player": "Bryce McGowens",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "1wol7nl2lde7omt5": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Utah Jazz",
+          "player_id": "04jw4",
+          "player": "Maxi Kleber",
+          "label": "Maxi Kleber"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "player_id": "06233",
+          "player": "Ron Harper",
+          "label": "Ron Harper"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "player_id": "0623h",
+          "player": "Alondes Williams",
+          "label": "Alondes Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "label": "2023 round 2 pick (Utah Jazz)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "06cd3",
+            "player": "Emoni Bates",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "uo1sp6usl4v6u44q": {
+      "date": "2022-06-26",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Golden State Warriors",
+          "label": "2022 round 2 pick, no. 27",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "dbubp4f4l6f3gujf": {
+      "date": "2022-08-04",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0623h",
+          "player": "Alondes Williams",
+          "label": "Alondes Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "048zt",
+          "player": "Derrick Jones",
+          "label": "Derrick Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06caa",
+            "player": "Ben Sheppard",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 1 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 9,
+            "overall": 9,
+            "player_id": "06cc0",
+            "player": "Taylor Hendricks",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06cda",
+            "player": "James Nnaji",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 1 pick (Denver Nuggets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06cac",
+            "player": "Cason Wallace",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "02xg9",
+          "player": "Rudy Gobert",
+          "label": "Rudy Gobert"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris"
+        },
+        {
+          "kind": "budget",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "$5 budget"
+        }
+      ]
+    },
+    "4z37uwscl6cbia4r": {
+      "date": "2022-08-02",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "0623h",
+          "player": "Alondes Williams",
+          "label": "Alondes Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "label": "2023 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06caa",
+            "player": "Ben Sheppard",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "label": "$5 budget"
+        }
+      ]
+    },
+    "7nvjxigzlrahc7kt": {
+      "date": "2024-01-12",
+      "season": "2023-24",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06233",
+          "player": "Ron Harper",
+          "label": "Ron Harper"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0623h",
+          "player": "Alondes Williams",
+          "label": "Alondes Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0017e",
+          "player": "Chris Paul",
+          "label": "Chris Paul"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06v8j",
+            "player": "John Tonje",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "06v82",
+            "player": "Adou Thiero",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard"
+        },
+        {
+          "kind": "budget",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "label": "$21 budget"
+        }
+      ]
+    },
     "9fzowpbal97efy5l": {
       "date": "2022-10-13",
       "season": "2022-23",
@@ -204,218 +804,31 @@
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Oklahoma City Thunder",
-          "label": "2024 round 2 pick (Portland Trail Blazers)"
-        }
-      ]
-    },
-    "7nvjxigzlrahc7kt": {
-      "date": "2024-01-12",
-      "season": "2023-24",
-      "period": 24,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Oklahoma City Thunder",
-          "player_id": "06233",
-          "player": "Ron Harper",
-          "label": "Ron Harper"
-        },
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Oklahoma City Thunder",
-          "player_id": "0623h",
-          "player": "Alondes Williams",
-          "label": "Alondes Williams"
-        },
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Oklahoma City Thunder",
-          "player_id": "0017e",
-          "player": "Chris Paul",
-          "label": "Chris Paul"
-        },
-        {
-          "kind": "pick",
-          "from": "Charlotte Hornets",
-          "to": "Oklahoma City Thunder",
-          "label": "2025 round 2 pick (Charlotte Hornets)"
-        },
-        {
-          "kind": "pick",
-          "from": "Charlotte Hornets",
-          "to": "Oklahoma City Thunder",
-          "label": "2025 round 1 pick (Charlotte Hornets)"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Charlotte Hornets",
-          "player_id": "03byk",
-          "player": "Jordan Clarkson",
-          "label": "Jordan Clarkson"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Charlotte Hornets",
-          "player_id": "04ewd",
-          "player": "Luke Kennard",
-          "label": "Luke Kennard"
-        },
-        {
-          "kind": "budget",
-          "from": "Oklahoma City Thunder",
-          "to": "Charlotte Hornets",
-          "label": "$21 budget"
-        }
-      ]
-    },
-    "1wol7nl2lde7omt5": {
-      "date": "2023-01-27",
-      "season": "2022-23",
-      "period": 30,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Utah Jazz",
-          "player_id": "04jw4",
-          "player": "Maxi Kleber",
-          "label": "Maxi Kleber"
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Charlotte Hornets",
-          "player_id": "06233",
-          "player": "Ron Harper",
-          "label": "Ron Harper"
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Charlotte Hornets",
-          "player_id": "0623h",
-          "player": "Alondes Williams",
-          "label": "Alondes Williams"
-        },
-        {
-          "kind": "pick",
-          "from": "Utah Jazz",
-          "to": "Charlotte Hornets",
-          "label": "2023 round 2 pick (Utah Jazz)"
-        }
-      ]
-    },
-    "dbubp4f4l6f3gujf": {
-      "date": "2022-08-04",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Oklahoma City Thunder",
-          "player_id": "0623h",
-          "player": "Alondes Williams",
-          "label": "Alondes Williams"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Oklahoma City Thunder",
-          "player_id": "027ou",
-          "player": "Klay Thompson",
-          "label": "Klay Thompson"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Oklahoma City Thunder",
-          "player_id": "048zt",
-          "player": "Derrick Jones",
-          "label": "Derrick Jones"
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Golden State Warriors)"
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Oklahoma City Thunder",
-          "label": "2023 round 1 pick (Oklahoma City Thunder)"
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Oklahoma City Thunder)"
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Oklahoma City Thunder",
-          "label": "2023 round 1 pick (Denver Nuggets)"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Los Angeles Lakers",
-          "player_id": "02xg9",
-          "player": "Rudy Gobert",
-          "label": "Rudy Gobert"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Los Angeles Lakers",
-          "player_id": "027p4",
-          "player": "Tobias Harris",
-          "label": "Tobias Harris"
-        },
-        {
-          "kind": "budget",
-          "from": "Oklahoma City Thunder",
-          "to": "Los Angeles Lakers",
-          "label": "$5 budget"
-        }
-      ]
-    },
-    "4z37uwscl6cbia4r": {
-      "date": "2022-08-02",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Los Angeles Lakers",
-          "player_id": "0623h",
-          "player": "Alondes Williams",
-          "label": "Alondes Williams"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Los Angeles Lakers",
-          "label": "2023 round 2 pick (Golden State Warriors)"
-        },
-        {
-          "kind": "budget",
-          "from": "Los Angeles Lakers",
-          "to": "Golden State Warriors",
-          "label": "$5 budget"
+          "label": "2024 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "06mlq",
+            "player": "Pelle Larsson",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

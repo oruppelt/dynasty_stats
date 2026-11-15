@@ -49,13 +49,83 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Sacramento Kings",
+      "label": "2021 round 2 pick (Sacramento Kings)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 12,
+      "date": "2019-11-28",
+      "from": "Sacramento Kings",
+      "team": "Golden State Warriors",
+      "trade": "8lzeowgvk3ip8kj8",
+      "label": "2021 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-24",
+      "from": "Golden State Warriors",
+      "team": "New York Knicks",
+      "trade": "wogha7g7khvzisbh",
+      "label": "2021 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 22,
+      "date": "2021-03-06",
+      "from": "New York Knicks",
+      "team": "Sacramento Kings",
+      "trade": "etfluotfklxsl8yb",
+      "label": "2021 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 24,
+      "date": "2021-03-13",
+      "from": "Sacramento Kings",
+      "team": "Atlanta Hawks",
+      "trade": "gzvk4aj0km80h0pp",
+      "label": "2021 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-02",
+      "from": "Atlanta Hawks",
+      "team": "Orlando Magic",
+      "trade": "82msv72nkruxx4bm",
+      "label": "2021 round 2 pick, no. 24"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-03",
+      "from": "Orlando Magic",
+      "team": "Sacramento Kings",
+      "trade": "np0m06bzkrvu1hml",
+      "label": "2021 round 2 pick, no. 24"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
       "date": "2021-08-03",
       "team": "Sacramento Kings",
       "round": 2,
-      "pick": 54,
+      "pick": 24,
+      "overall": 54,
+      "certain": true,
       "periods": 12,
       "starts": 0,
       "gp": 0,
@@ -136,12 +206,254 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Phoenix Suns",
-          "label": "2023 round 1 pick (Boston Celtics)"
+          "label": "2023 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06cc2",
+            "player": "Gradey Dick",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "8lzeowgvk3ip8kj8": {
+      "date": "2019-11-28",
+      "season": "2019-20",
+      "period": 12,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Sacramento Kings",
+          "player_id": "027ov",
+          "player": "Alec Burks",
+          "label": "Alec Burks"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "player_id": "03ad5",
+          "player": "Trey Lyles",
+          "label": "Trey Lyles"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "np0m06bzkrvu1hml": {
+      "date": "2021-08-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick, no. 24",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "label": "$5 budget"
+        }
+      ]
+    },
+    "wogha7g7khvzisbh": {
+      "date": "2020-11-24",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "New York Knicks",
+          "label": "2021 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick, no. 23"
+        }
+      ]
+    },
+    "etfluotfklxsl8yb": {
+      "date": "2021-03-06",
+      "season": "2020-21",
+      "period": 22,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Sacramento Kings",
+          "player_id": "03nwq",
+          "player": "Christian Wood",
+          "label": "Christian Wood"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "New York Knicks",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "New York Knicks",
+          "player_id": "0019g",
+          "player": "LaMarcus Aldridge",
+          "label": "LaMarcus Aldridge"
+        }
+      ]
+    },
+    "gzvk4aj0km80h0pp": {
+      "date": "2021-03-13",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "001bo",
+          "player": "Paul Millsap",
+          "label": "Paul Millsap"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "label": "2021 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "82msv72nkruxx4bm": {
+      "date": "2021-08-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "label": "2021 round 2 pick, no. 24",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2021 round 2 pick, no. 17",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "05ujq",
+            "player": "Luka Garza",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

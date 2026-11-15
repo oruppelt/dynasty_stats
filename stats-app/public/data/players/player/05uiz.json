@@ -156,6 +156,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Washington Wizards",
+      "label": "2021 round 1 pick (Washington Wizards)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-21",
+      "from": "Washington Wizards",
+      "team": "Boston Celtics",
+      "trade": "3pi54sfdkhs5x16c",
+      "label": "2021 round 1 pick (Washington Wizards)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 15,
+      "date": "2021-02-08",
+      "from": "Boston Celtics",
+      "team": "Philadelphia 76ers",
+      "trade": "yhxta0frkkwqqtwa",
+      "label": "2021 round 1 pick (Washington Wizards)"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
@@ -163,6 +191,9 @@
       "team": "Philadelphia 76ers",
       "round": 1,
       "pick": 30,
+      "overall": 30,
+      "original": "Washington Wizards",
+      "certain": true,
       "periods": 12,
       "starts": 6,
       "gp": 3,
@@ -229,6 +260,118 @@
     }
   ],
   "trades": {
+    "yhxta0frkkwqqtwa": {
+      "date": "2021-02-08",
+      "season": "2020-21",
+      "period": 15,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Philadelphia 76ers",
+          "label": "2021 round 1 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "05uiz",
+            "player": "Quentin Grimes",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05qvg",
+            "player": "Anthony Lamb",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "05uj9",
+            "player": "Herbert Jones",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "3pi54sfdkhs5x16c": {
+      "date": "2020-11-21",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "051pl",
+          "player": "Eric Paschall",
+          "label": "Eric Paschall"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "04qrx",
+          "player": "Josh Okogie",
+          "label": "Josh Okogie"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "label": "2020 round 2 pick, no. 24"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "label": "2021 round 1 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "05uiz",
+            "player": "Quentin Grimes",
+            "certain": true
+          }
+        }
+      ]
+    },
     "o80318c5kwkp7gxb": {
       "date": "2021-11-29",
       "season": "2021-22",
@@ -246,7 +389,16 @@
           "kind": "pick",
           "from": "Philadelphia 76ers",
           "to": "Sacramento Kings",
-          "label": "2022 round 1 pick (Philadelphia 76ers)"
+          "label": "2022 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06217",
+            "player": "Dyson Daniels",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -268,6 +420,16 @@
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

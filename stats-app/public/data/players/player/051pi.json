@@ -226,19 +226,40 @@
   ],
   "timeline": [
     {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-06-24",
+      "from": "Denver Nuggets",
+      "team": "Golden State Warriors",
+      "trade": "fiikeg54jxapkyle",
+      "label": "2019 round 2 pick, no. 19"
+    },
+    {
       "kind": "draft",
       "season": "2019-20",
       "period": 0,
       "date": "2019-06-25",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 49,
+      "pick": 19,
+      "overall": 49,
+      "original": "Denver Nuggets",
+      "certain": false,
       "periods": 55,
       "starts": 29,
       "gp": 44,
       "points": 694.0,
       "salary": 1000000,
       "contract": "R23"
+    },
+    {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Denver Nuggets",
+      "label": "2019 round 2 pick, no. 19",
+      "date": null
     },
     {
       "kind": "trade",
@@ -380,107 +401,6 @@
     }
   ],
   "trades": {
-    "yyv5fklbme1qbgi3": {
-      "date": "2025-08-07",
-      "season": "2025-26",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Houston Rockets",
-          "player_id": "051pi",
-          "player": "Daniel Gafford",
-          "label": "Daniel Gafford"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Houston Rockets",
-          "label": "2027 round 2 pick (Boston Celtics)"
-        },
-        {
-          "kind": "pick",
-          "from": "Houston Rockets",
-          "to": "Boston Celtics",
-          "label": "2026 round 1 pick (Utah Jazz)"
-        }
-      ]
-    },
-    "jg91nnqmlcerb7ao": {
-      "date": "2023-01-02",
-      "season": "2022-23",
-      "period": 23,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "06235",
-          "player": "Kenneth Lofton",
-          "label": "Kenneth Lofton"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "0621p",
-          "player": "Wendell Moore",
-          "label": "Wendell Moore"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "065px",
-          "player": "Trevion Williams",
-          "label": "Trevion Williams"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Milwaukee Bucks)"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Boston Celtics",
-          "player_id": "051pi",
-          "player": "Daniel Gafford",
-          "label": "Daniel Gafford"
-        }
-      ]
-    },
-    "j0tyig71km80p9oa": {
-      "date": "2021-03-13",
-      "season": "2020-21",
-      "period": 25,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Golden State Warriors",
-          "player_id": "03wr4",
-          "player": "T.J. McConnell",
-          "label": "T.J. McConnell"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Atlanta Hawks",
-          "player_id": "051pi",
-          "player": "Daniel Gafford",
-          "label": "Daniel Gafford"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Atlanta Hawks",
-          "label": "2021 round 2 pick (Milwaukee Bucks)"
-        }
-      ]
-    },
     "76hzrghukw3fve7v": {
       "date": "2021-11-17",
       "season": "2021-22",
@@ -522,7 +442,74 @@
           "kind": "pick",
           "from": "Indiana Pacers",
           "to": "Atlanta Hawks",
-          "label": "2022 round 1 pick (Golden State Warriors)"
+          "label": "2022 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "fiikeg54jxapkyle": {
+      "date": "2019-06-24",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2019 round 2 pick, no. 24"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2019 round 2 pick, no. 19",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "051pi",
+            "player": "Daniel Gafford",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Denver Nuggets)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "05ujt",
+            "player": "Aaron Wiggins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2021 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "05uj1",
+            "player": "Cameron Thomas",
+            "certain": true
+          }
         }
       ]
     },
@@ -551,7 +538,16 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Oklahoma City Thunder",
-          "label": "2023 round 1 pick (Philadelphia 76ers)"
+          "label": "2023 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06ca7",
+            "player": "Cam Whitmore",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -576,6 +572,134 @@
           "player_id": "05ujg",
           "player": "Isaiah Livers",
           "label": "Isaiah Livers"
+        }
+      ]
+    },
+    "jg91nnqmlcerb7ao": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06235",
+          "player": "Kenneth Lofton",
+          "label": "Kenneth Lofton"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "065px",
+          "player": "Trevion Williams",
+          "label": "Trevion Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06cdh",
+            "player": "GG Jackson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford"
+        }
+      ]
+    },
+    "yyv5fklbme1qbgi3": {
+      "date": "2025-08-07",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "j0tyig71km80p9oa": {
+      "date": "2021-03-13",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "label": "2021 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          }
         }
       ]
     }

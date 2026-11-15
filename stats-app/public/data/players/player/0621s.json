@@ -114,6 +114,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "New York Knicks",
+      "label": "2022 round 1 pick (New York Knicks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-23",
+      "from": "New York Knicks",
+      "team": "Los Angeles Lakers",
+      "trade": "3zvf0vxsksosut9z",
+      "label": "2022 round 1 pick (New York Knicks)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -121,6 +139,9 @@
       "team": "Los Angeles Lakers",
       "round": 1,
       "pick": 25,
+      "overall": 25,
+      "original": "New York Knicks",
+      "certain": true,
       "periods": 17,
       "starts": 0,
       "gp": 0,
@@ -182,59 +203,6 @@
     }
   ],
   "trades": {
-    "x216qg6wlbqcxmyd": {
-      "date": "2022-12-16",
-      "season": "2022-23",
-      "period": 18,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Los Angeles Lakers",
-          "player_id": "05qu0",
-          "player": "Jaden McDaniels",
-          "label": "Jaden McDaniels"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Los Angeles Lakers",
-          "player_id": "04qse",
-          "player": "Gary Trent",
-          "label": "Gary Trent"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Golden State Warriors",
-          "player_id": "05uj2",
-          "player": "Jaden Springer",
-          "label": "Jaden Springer"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Golden State Warriors",
-          "player_id": "0621s",
-          "player": "TyTy Washington",
-          "label": "TyTy Washington"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Golden State Warriors",
-          "player_id": "051on",
-          "player": "Coby White",
-          "label": "Coby White"
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Golden State Warriors",
-          "label": "2023 round 1 pick (Golden State Warriors)"
-        }
-      ]
-    },
     "q6vs663flobpq0e5": {
       "date": "2023-10-30",
       "season": "2023-24",
@@ -302,9 +270,127 @@
           "label": "2024 round 2 pick (Houston Rockets)"
         }
       ]
+    },
+    "x216qg6wlbqcxmyd": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "05qu0",
+          "player": "Jaden McDaniels",
+          "label": "Jaden McDaniels"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qse",
+          "player": "Gary Trent",
+          "label": "Gary Trent"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "05uj2",
+          "player": "Jaden Springer",
+          "label": "Jaden Springer"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "0621s",
+          "player": "TyTy Washington",
+          "label": "TyTy Washington"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "label": "2023 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "06cca",
+            "player": "Brandon Miller",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "3zvf0vxsksosut9z": {
+      "date": "2021-08-23",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "New York Knicks",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Los Angeles Lakers",
+          "player_id": "051p7",
+          "player": "Mfiondu Kabengele",
+          "label": "Mfiondu Kabengele"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Los Angeles Lakers",
+          "player_id": "049kh",
+          "player": "Kevin Knox",
+          "label": "Kevin Knox"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 1 pick (New York Knicks)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "0621s",
+            "player": "TyTy Washington",
+            "certain": true
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

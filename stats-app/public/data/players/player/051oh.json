@@ -205,6 +205,8 @@
       "team": "Chicago Bulls",
       "round": 1,
       "pick": 1,
+      "overall": 1,
+      "certain": true,
       "periods": 87,
       "starts": 32,
       "gp": 51,
@@ -299,27 +301,6 @@
     }
   ],
   "trades": {
-    "k259h001kyir0iw1": {
-      "date": "2022-01-17",
-      "season": "2021-22",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Washington Wizards",
-          "player_id": "051oh",
-          "player": "Zion Williamson",
-          "label": "Zion Williamson"
-        },
-        {
-          "kind": "pick",
-          "from": "Washington Wizards",
-          "to": "Sacramento Kings",
-          "label": "2022 round 1 pick (Golden State Warriors)"
-        }
-      ]
-    },
     "jem0vnvulrwfwkbi": {
       "date": "2024-01-28",
       "season": "2023-24",
@@ -361,7 +342,46 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Milwaukee Bucks",
-          "label": "2025 round 1 pick (Sacramento Kings)"
+          "label": "2025 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06v5s",
+            "player": "Drake Powell",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "k259h001kyir0iw1": {
+      "date": "2022-01-17",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "051oh",
+          "player": "Zion Williamson",
+          "label": "Zion Williamson"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          }
         }
       ]
     },
@@ -398,13 +418,31 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Chicago Bulls",
-          "label": "2023 round 2 pick (Philadelphia 76ers)"
+          "label": "2023 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06cdg",
+            "player": "Maxwell Lewis",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Chicago Bulls",
-          "label": "2022 round 2 pick (Sacramento Kings)"
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          }
         }
       ]
     }

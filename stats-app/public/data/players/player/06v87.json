@@ -35,13 +35,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Los Angeles Lakers",
+      "label": "2025 round 2 pick (Los Angeles Lakers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-07",
+      "from": "Los Angeles Lakers",
+      "team": "Los Angeles Clippers",
+      "trade": "4t0u06zblzjjx6tr",
+      "label": "2025 round 2 pick (Los Angeles Lakers)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-04",
       "team": "Los Angeles Lakers",
       "round": 2,
-      "pick": 39,
+      "pick": 9,
+      "overall": 39,
+      "original": "Los Angeles Clippers",
+      "certain": true,
       "periods": 35,
       "starts": 0,
       "gp": 0,
@@ -57,8 +78,80 @@
       "team": "Los Angeles Lakers"
     }
   ],
-  "trades": {},
+  "trades": {
+    "4t0u06zblzjjx6tr": {
+      "date": "2024-08-07",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "027pe",
+          "player": "Jimmy Butler",
+          "label": "Jimmy Butler"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "06mke",
+          "player": "DaRon Holmes",
+          "label": "DaRon Holmes"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "label": "2025 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06v85",
+            "player": "Alijah Martin",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "label": "2025 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06v87",
+            "player": "Koby Brea",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

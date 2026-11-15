@@ -128,6 +128,54 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2023 round 1 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-03",
+      "from": "Boston Celtics",
+      "team": "Sacramento Kings",
+      "trade": "nbjmzd7vkph0fax8",
+      "label": "2023 round 1 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "from": "Sacramento Kings",
+      "team": "Phoenix Suns",
+      "trade": "hbk0cwdukwl4dkmr",
+      "label": "2023 round 1 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 27,
+      "date": "2022-01-20",
+      "from": "Phoenix Suns",
+      "team": "Detroit Pistons",
+      "trade": "5w9td9m5kynerwmb",
+      "label": "2023 round 1 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-26",
+      "from": "Detroit Pistons",
+      "team": "Orlando Magic",
+      "trade": "bqmrmr84ljd160xk",
+      "label": "2023 round 1 pick, no. 14"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
@@ -135,6 +183,9 @@
       "team": "Orlando Magic",
       "round": 1,
       "pick": 14,
+      "overall": 14,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -199,70 +250,109 @@
     }
   ],
   "trades": {
-    "t7clusd2lp79luid": {
-      "date": "2023-11-20",
-      "season": "2023-24",
-      "period": 9,
+    "hbk0cwdukwl4dkmr": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
       "items": [
         {
           "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Oklahoma City Thunder",
-          "player_id": "02xg9",
-          "player": "Rudy Gobert",
-          "label": "Rudy Gobert"
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "player_id": "05uib",
+          "player": "Cade Cunningham",
+          "label": "Cade Cunningham"
         },
         {
           "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Oklahoma City Thunder",
-          "player_id": "03e6u",
-          "player": "Bogdan Bogdanovic",
-          "label": "Bogdan Bogdanovic"
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall"
         },
         {
           "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Oklahoma City Thunder",
-          "player_id": "03byk",
-          "player": "Jordan Clarkson",
-          "label": "Jordan Clarkson"
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "03bxn",
+          "player": "T.J. Warren",
+          "label": "T.J. Warren"
         },
         {
           "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Los Angeles Lakers",
-          "player_id": "01uyj",
-          "player": "Paul George",
-          "label": "Paul George"
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "042n7",
+          "player": "Domantas Sabonis",
+          "label": "Domantas Sabonis"
         },
         {
           "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Los Angeles Lakers",
-          "player_id": "06cc2",
-          "player": "Gradey Dick",
-          "label": "Gradey Dick"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Los Angeles Lakers",
-          "player_id": "0621m",
-          "player": "David Roddy",
-          "label": "David Roddy"
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "05uj8",
+          "player": "Rokas Jokubaitis",
+          "label": "Rokas Jokubaitis"
         },
         {
           "kind": "pick",
-          "from": "Oklahoma City Thunder",
-          "to": "Los Angeles Lakers",
-          "label": "2024 round 1 pick (Memphis Grizzlies)"
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "label": "2023 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06cc2",
+            "player": "Gradey Dick",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "nbjmzd7vkph0fax8": {
+      "date": "2021-06-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris"
         },
         {
           "kind": "pick",
-          "from": "Oklahoma City Thunder",
-          "to": "Los Angeles Lakers",
-          "label": "2024 round 1 pick (Orlando Magic)"
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "label": "2023 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06cc2",
+            "player": "Gradey Dick",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "player_id": "042n2",
+          "player": "Kris Dunn",
+          "label": "Kris Dunn"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick, no. 4"
         }
       ]
     },
@@ -329,12 +419,221 @@
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Oklahoma City Thunder",
-          "label": "2024 round 1 pick (Orlando Magic)"
+          "label": "2024 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06mlr",
+            "player": "Jamal Shead",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "5w9td9m5kynerwmb": {
+      "date": "2022-01-20",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Phoenix Suns",
+          "player_id": "059g0",
+          "player": "Amir Coffey",
+          "label": "Amir Coffey"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Detroit Pistons",
+          "player_id": "031mc",
+          "player": "Reggie Bullock",
+          "label": "Reggie Bullock"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Detroit Pistons",
+          "label": "2023 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06cc2",
+            "player": "Gradey Dick",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "bqmrmr84ljd160xk": {
+      "date": "2023-06-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Orlando Magic",
+          "label": "2023 round 1 pick, no. 14",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06cc2",
+            "player": "Gradey Dick",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Detroit Pistons",
+          "label": "2023 round 2 pick, no. 7",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06cel",
+            "player": "Sidy Cissoko",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Detroit Pistons",
+          "label": "2025 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "02oyy",
+            "player": null,
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Detroit Pistons",
+          "label": "2024 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06mk1",
+            "player": "Zach Edey",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "t7clusd2lp79luid": {
+      "date": "2023-11-20",
+      "season": "2023-24",
+      "period": 9,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "02xg9",
+          "player": "Rudy Gobert",
+          "label": "Rudy Gobert"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "06cc2",
+          "player": "Gradey Dick",
+          "label": "Gradey Dick"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "0621m",
+          "player": "David Roddy",
+          "label": "David Roddy"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "2024 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06mjw",
+            "player": "Stephon Castle",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "2024 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06mlr",
+            "player": "Jamal Shead",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

@@ -100,6 +100,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2024 round 1 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-25",
+      "from": "Boston Celtics",
+      "team": "Chicago Bulls",
+      "trade": "jc5usd8pl4u61fxp",
+      "label": "2024 round 1 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 24,
+      "date": "2024-01-12",
+      "from": "Chicago Bulls",
+      "team": "Atlanta Hawks",
+      "trade": "w77iv92nlraibgpv",
+      "label": "2024 round 1 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Atlanta Hawks",
+      "team": "Sacramento Kings",
+      "trade": "cqap8u98lxyaxee6",
+      "label": "2024 round 1 pick, no. 20"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -107,6 +145,9 @@
       "team": "Sacramento Kings",
       "round": 1,
       "pick": 20,
+      "overall": 20,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 66,
       "starts": 31,
       "gp": 42,
@@ -136,8 +177,195 @@
       "contract": "FA"
     }
   ],
-  "trades": {},
+  "trades": {
+    "w77iv92nlraibgpv": {
+      "date": "2024-01-12",
+      "season": "2023-24",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "005kd",
+          "player": "Kevin Love",
+          "label": "Kevin Love"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "0621r",
+          "player": "Patrick Baldwin",
+          "label": "Patrick Baldwin"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7v",
+          "player": "Pat Connaughton",
+          "label": "Pat Connaughton"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06mkj",
+            "player": "Terrence Shannon",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06mlg",
+            "player": "Tyler Kolek",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "cqap8u98lxyaxee6": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "04qrn",
+          "player": "Mikal Bridges",
+          "label": "Mikal Bridges"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "label": "2024 round 1 pick, no. 20",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06mlg",
+            "player": "Tyler Kolek",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "049kb",
+          "player": "De'Aaron Fox",
+          "label": "De'Aaron Fox"
+        }
+      ]
+    },
+    "jc5usd8pl4u61fxp": {
+      "date": "2022-06-25",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "player_id": "03byg",
+          "player": "Montrezl Harrell",
+          "label": "Montrezl Harrell"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "label": "2022 round 1 pick, no. 14",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "0621f",
+            "player": "AJ Griffin",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "label": "2024 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06mlg",
+            "player": "Tyler Kolek",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Boston Celtics",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

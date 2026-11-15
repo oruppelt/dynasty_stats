@@ -21,13 +21,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Oklahoma City Thunder",
+      "label": "2026 round 2 pick, no. 30",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-04",
+      "from": "Oklahoma City Thunder",
+      "team": "Golden State Warriors",
+      "trade": "u513w1avmr6blakx",
+      "label": "2026 round 2 pick, no. 30"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-04",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 60,
+      "pick": 30,
+      "overall": 60,
+      "original": "Oklahoma City Thunder",
+      "certain": true,
       "periods": 7,
       "starts": 0,
       "gp": 0,
@@ -36,8 +57,47 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "u513w1avmr6blakx": {
+      "date": "2026-07-04",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Golden State Warriors",
+          "to": "Oklahoma City Thunder",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Golden State Warriors",
+          "label": "2026 round 2 pick, no. 30",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "076ug",
+            "player": "Malique Lewis",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

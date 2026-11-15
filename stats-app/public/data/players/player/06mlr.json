@@ -100,6 +100,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2024 round 1 pick (Orlando Magic)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "from": "Orlando Magic",
+      "team": "Oklahoma City Thunder",
+      "trade": "iwz7ckzclkns1xkv",
+      "label": "2024 round 1 pick (Orlando Magic)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 9,
+      "date": "2023-11-20",
+      "from": "Oklahoma City Thunder",
+      "team": "Los Angeles Lakers",
+      "trade": "t7clusd2lp79luid",
+      "label": "2024 round 1 pick (Orlando Magic)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -107,6 +135,9 @@
       "team": "Houston Rockets",
       "round": 1,
       "pick": 26,
+      "overall": 26,
+      "original": "Orlando Magic",
+      "certain": true,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -129,6 +160,167 @@
     }
   ],
   "trades": {
+    "iwz7ckzclkns1xkv": {
+      "date": "2023-07-29",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Orlando Magic",
+          "player_id": "065px",
+          "player": "Trevion Williams",
+          "label": "Trevion Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Orlando Magic",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Orlando Magic",
+          "player_id": "05uim",
+          "player": "Joshua Primo",
+          "label": "Joshua Primo"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Orlando Magic",
+          "player_id": "0623g",
+          "player": "Michael Foster",
+          "label": "Michael Foster"
+        },
+        {
+          "kind": "budget",
+          "from": "Oklahoma City Thunder",
+          "to": "Orlando Magic",
+          "label": "$15 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06cc2",
+          "player": "Gradey Dick",
+          "label": "Gradey Dick"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Oklahoma City Thunder",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Oklahoma City Thunder",
+          "label": "2024 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06mlr",
+            "player": "Jamal Shead",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "t7clusd2lp79luid": {
+      "date": "2023-11-20",
+      "season": "2023-24",
+      "period": 9,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "02xg9",
+          "player": "Rudy Gobert",
+          "label": "Rudy Gobert"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "06cc2",
+          "player": "Gradey Dick",
+          "label": "Gradey Dick"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "0621m",
+          "player": "David Roddy",
+          "label": "David Roddy"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "2024 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06mjw",
+            "player": "Stephon Castle",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "2024 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06mlr",
+            "player": "Jamal Shead",
+            "certain": true
+          }
+        }
+      ]
+    },
     "efe0iawnlxyrz99m": {
       "date": "2024-06-28",
       "season": "2024-25",
@@ -138,7 +330,16 @@
           "kind": "pick",
           "from": "Boston Celtics",
           "to": "Houston Rockets",
-          "label": "2025 round 2 pick (Boston Celtics)"
+          "label": "2025 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06v88",
+            "player": "Maxime Raynaud",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -152,6 +353,16 @@
     }
   },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

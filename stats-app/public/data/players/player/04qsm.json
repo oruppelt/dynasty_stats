@@ -383,35 +383,6 @@
     }
   ],
   "trades": {
-    "gvsgeu8skyjvgsva": {
-      "date": "2022-01-18",
-      "season": "2021-22",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Portland Trail Blazers",
-          "player_id": "02nff",
-          "player": "Maurice Harkless",
-          "label": "Maurice Harkless"
-        },
-        {
-          "kind": "pick",
-          "from": "Oklahoma City Thunder",
-          "to": "Portland Trail Blazers",
-          "label": "2023 round 2 pick (Chicago Bulls)"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Oklahoma City Thunder",
-          "player_id": "04qsm",
-          "player": "De'Anthony Melton",
-          "label": "De'Anthony Melton"
-        }
-      ]
-    },
     "r48yvwa7m3ijl7dc": {
       "date": "2024-11-15",
       "season": "2024-25",
@@ -429,7 +400,16 @@
           "kind": "pick",
           "from": "Dallas Mavericks",
           "to": "San Antonio Spurs",
-          "label": "2025 round 2 pick (Dallas Mavericks)"
+          "label": "2025 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "06v7z",
+            "player": "Sion James",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -438,6 +418,44 @@
           "player_id": "049kc",
           "player": "Malik Monk",
           "label": "Malik Monk"
+        }
+      ]
+    },
+    "gvsgeu8skyjvgsva": {
+      "date": "2022-01-18",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Portland Trail Blazers",
+          "player_id": "02nff",
+          "player": "Maurice Harkless",
+          "label": "Maurice Harkless"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Portland Trail Blazers",
+          "label": "2023 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "033l6",
+            "player": null,
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "04qsm",
+          "player": "De'Anthony Melton",
+          "label": "De'Anthony Melton"
         }
       ]
     }

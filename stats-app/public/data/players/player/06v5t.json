@@ -80,6 +80,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Memphis Grizzlies",
+      "label": "2025 round 1 pick (Memphis Grizzlies)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-27",
+      "from": "Memphis Grizzlies",
+      "team": "New York Knicks",
+      "trade": "rrz52y71m6ewxnpo",
+      "label": "2025 round 1 pick (Memphis Grizzlies)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -87,6 +105,9 @@
       "team": "New York Knicks",
       "round": 1,
       "pick": 28,
+      "overall": 28,
+      "original": "Memphis Grizzlies",
+      "certain": true,
       "periods": 37,
       "starts": 3,
       "gp": 2,
@@ -141,9 +162,73 @@
           "label": "Miles McBride"
         }
       ]
+    },
+    "rrz52y71m6ewxnpo": {
+      "date": "2025-01-27",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "06cdf",
+          "player": "Julian Phillips",
+          "label": "Julian Phillips"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "03aq3",
+          "player": "Kyle Anderson",
+          "label": "Kyle Anderson"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "04yk1",
+          "player": "Haywood Highsmith",
+          "label": "Haywood Highsmith"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2025 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06v5t",
+            "player": "Ben Saraf",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards"
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

@@ -121,12 +121,32 @@
       "team": "Orlando Magic",
       "round": 1,
       "pick": 5,
+      "overall": 5,
+      "certain": true,
       "periods": 32,
       "starts": 27,
       "gp": 43,
       "points": 931.25,
       "salary": 4285152,
       "contract": "R13"
+    },
+    {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2019 round 1 pick, no. 14",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-06-23",
+      "from": "Orlando Magic",
+      "team": "Chicago Bulls",
+      "trade": "szp2gwzijx9bygfm",
+      "label": "2019 round 1 pick, no. 14"
     },
     {
       "kind": "trade",
@@ -195,6 +215,95 @@
     }
   ],
   "trades": {
+    "szp2gwzijx9bygfm": {
+      "date": "2019-06-23",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Orlando Magic",
+          "label": "2019 round 1 pick, no. 20"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Orlando Magic",
+          "label": "2020 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "05qsu",
+            "player": null,
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Chicago Bulls",
+          "label": "2019 round 1 pick, no. 14",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 5,
+            "overall": 5,
+            "player_id": "051om",
+            "player": "Jarrett Culver",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "1wpat29ikrqxuzxp": {
+      "date": "2021-07-31",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "player_id": "051om",
+          "player": "Jarrett Culver",
+          "label": "Jarrett Culver"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "player_id": "051oy",
+          "player": "Goga Bitadze",
+          "label": "Goga Bitadze"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick, no. 1",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "05uje",
+            "player": "Jared Butler",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall"
+        }
+      ]
+    },
     "uzok8m7ikwkzi0g6": {
       "date": "2021-11-29",
       "season": "2021-22",
@@ -220,13 +329,31 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Washington Wizards",
-          "label": "2022 round 1 pick (Philadelphia 76ers)"
+          "label": "2022 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06217",
+            "player": "Dyson Daniels",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Washington Wizards",
-          "label": "2022 round 1 pick (Orlando Magic)"
+          "label": "2022 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06218",
+            "player": "Jeremy Sochan",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -263,7 +390,16 @@
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Sacramento Kings",
-          "label": "2020 round 1 pick, no. 14"
+          "label": "2020 round 1 pick, no. 14",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "05qsl",
+            "player": "Patrick Williams",
+            "certain": false
+          }
         },
         {
           "kind": "player",
@@ -284,7 +420,16 @@
           "kind": "pick",
           "from": "Phoenix Suns",
           "to": "Sacramento Kings",
-          "label": "2020 round 1 pick, no. 7"
+          "label": "2020 round 1 pick, no. 7",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "05qsx",
+            "player": "Obi Toppin",
+            "certain": false
+          }
         },
         {
           "kind": "player",
@@ -298,44 +443,16 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Phoenix Suns",
-          "label": "2020 round 1 pick, no. 14"
-        }
-      ]
-    },
-    "1wpat29ikrqxuzxp": {
-      "date": "2021-07-31",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Sacramento Kings",
-          "player_id": "051om",
-          "player": "Jarrett Culver",
-          "label": "Jarrett Culver"
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Sacramento Kings",
-          "player_id": "051oy",
-          "player": "Goga Bitadze",
-          "label": "Goga Bitadze"
-        },
-        {
-          "kind": "pick",
-          "from": "Phoenix Suns",
-          "to": "Sacramento Kings",
-          "label": "2021 round 2 pick, no. 1"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Phoenix Suns",
-          "player_id": "01sc8",
-          "player": "John Wall",
-          "label": "John Wall"
+          "label": "2020 round 1 pick, no. 14",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "05qsl",
+            "player": "Patrick Williams",
+            "certain": false
+          }
         }
       ]
     }

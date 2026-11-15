@@ -149,6 +149,7 @@
       "team": "Golden State Warriors",
       "round": 1,
       "pick": 29,
+      "overall": 29,
       "periods": 56,
       "starts": 16,
       "gp": 30,
@@ -216,37 +217,6 @@
     }
   ],
   "trades": {
-    "cyx8lvwnkyj62mio": {
-      "date": "2022-01-18",
-      "season": "2021-22",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Utah Jazz",
-          "player_id": "05qud",
-          "player": "Aleksej Pokusevski",
-          "label": "Aleksej Pokusevski"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Utah Jazz",
-          "player_id": "05qsp",
-          "player": "Isaiah Joe",
-          "label": "Isaiah Joe"
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Golden State Warriors",
-          "player_id": "051p1",
-          "player": "Brandon Clarke",
-          "label": "Brandon Clarke"
-        }
-      ]
-    },
     "tbw260rxldbmy6ec": {
       "date": "2023-01-26",
       "season": "2022-23",
@@ -280,31 +250,76 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Utah Jazz",
-          "label": "2023 round 1 pick (San Antonio Spurs)"
+          "label": "2023 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06cbz",
+            "player": "Brice Sensabaugh",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Utah Jazz",
-          "label": "2023 round 2 pick (Washington Wizards)"
+          "label": "2023 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06cdd",
+            "player": "Andre Jackson",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Utah Jazz",
-          "label": "2024 round 2 pick (Golden State Warriors)"
+          "label": "2024 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06mkf",
+            "player": "AJ Johnson",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Utah Jazz",
-          "label": "2024 round 2 pick (Miami Heat)"
+          "label": "2024 round 2 pick (Miami Heat)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06mkh",
+            "player": "Pacome Dadiet",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Utah Jazz",
-          "label": "2023 round 1 pick (Atlanta Hawks)"
+          "label": "2023 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06ca5",
+            "player": "Kris Murray",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -345,6 +360,37 @@
           "player_id": "051pw",
           "player": "Jalen McDaniels",
           "label": "Jalen McDaniels"
+        }
+      ]
+    },
+    "cyx8lvwnkyj62mio": {
+      "date": "2022-01-18",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Utah Jazz",
+          "player_id": "05qud",
+          "player": "Aleksej Pokusevski",
+          "label": "Aleksej Pokusevski"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Utah Jazz",
+          "player_id": "05qsp",
+          "player": "Isaiah Joe",
+          "label": "Isaiah Joe"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Golden State Warriors",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke"
         }
       ]
     }

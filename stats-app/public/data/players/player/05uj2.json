@@ -114,6 +114,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Memphis Grizzlies",
+      "label": "2021 round 1 pick (Memphis Grizzlies)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-09-17",
+      "from": "Memphis Grizzlies",
+      "team": "Los Angeles Lakers",
+      "trade": "z8b967onjzf14ng3",
+      "label": "2021 round 1 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 15,
+      "date": "2019-12-09",
+      "from": "Los Angeles Lakers",
+      "team": "Memphis Grizzlies",
+      "trade": "auat5jg8k3ygvkfy",
+      "label": "2021 round 1 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 10,
+      "date": "2021-01-23",
+      "from": "Memphis Grizzlies",
+      "team": "Los Angeles Lakers",
+      "trade": "7484ccylkk6rarno",
+      "label": "2021 round 1 pick (Memphis Grizzlies)"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
@@ -121,6 +159,9 @@
       "team": "Los Angeles Lakers",
       "round": 1,
       "pick": 25,
+      "overall": 25,
+      "original": "Memphis Grizzlies",
+      "certain": true,
       "periods": 50,
       "starts": 15,
       "gp": 1,
@@ -152,6 +193,36 @@
     }
   ],
   "trades": {
+    "7484ccylkk6rarno": {
+      "date": "2021-01-23",
+      "season": "2020-21",
+      "period": 10,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "04qrs",
+          "player": "Troy Brown",
+          "label": "Troy Brown"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "label": "2021 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "05uj2",
+            "player": "Jaden Springer",
+            "certain": true
+          }
+        }
+      ]
+    },
     "x216qg6wlbqcxmyd": {
       "date": "2022-12-16",
       "season": "2022-23",
@@ -201,12 +272,130 @@
           "kind": "pick",
           "from": "Los Angeles Lakers",
           "to": "Golden State Warriors",
-          "label": "2023 round 1 pick (Golden State Warriors)"
+          "label": "2023 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "06cca",
+            "player": "Brandon Miller",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "auat5jg8k3ygvkfy": {
+      "date": "2019-12-09",
+      "season": "2019-20",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "027p2",
+          "player": "Enes Kanter",
+          "label": "Enes Kanter"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "label": "2021 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "05uj2",
+            "player": "Jaden Springer",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "player_id": "04849",
+          "player": "Danuel House",
+          "label": "Danuel House"
+        }
+      ]
+    },
+    "z8b967onjzf14ng3": {
+      "date": "2019-09-17",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "042nq",
+          "player": "Dejounte Murray",
+          "label": "Dejounte Murray"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "label": "2020 round 2 pick (Brooklyn Nets)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05qv8",
+            "player": "Facundo Campazzo",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "player_id": "031lz",
+          "player": "Steven Adams",
+          "label": "Steven Adams"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "label": "2021 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "05uj2",
+            "player": "Jaden Springer",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

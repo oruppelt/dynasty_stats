@@ -100,13 +100,43 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Los Angeles Lakers",
+      "label": "2022 round 2 pick (Los Angeles Lakers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-03",
+      "from": "Los Angeles Lakers",
+      "team": "San Antonio Spurs",
+      "trade": "af99yn18ki8m1j0e",
+      "label": "2022 round 2 pick (Los Angeles Lakers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-22",
+      "from": "San Antonio Spurs",
+      "team": "Los Angeles Lakers",
+      "trade": "na2l9ab3kslt8xbw",
+      "label": "2022 round 2 pick (Los Angeles Lakers)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-28",
       "team": "Los Angeles Lakers",
       "round": 2,
-      "pick": 31,
+      "pick": 1,
+      "overall": 31,
+      "certain": true,
       "periods": 65,
       "starts": 10,
       "gp": 7,
@@ -143,8 +173,125 @@
       "team": "Miami Heat"
     }
   ],
-  "trades": {},
+  "trades": {
+    "af99yn18ki8m1j0e": {
+      "date": "2020-12-03",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "player_id": "031lz",
+          "player": "Steven Adams",
+          "label": "Steven Adams"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "label": "2022 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06221",
+            "player": "Kennedy Chandler",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "label": "2022 round 1 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06211",
+            "player": "Chet Holmgren",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "label": "2021 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "05ujk",
+            "player": "Dalano Banton",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "na2l9ab3kslt8xbw": {
+      "date": "2021-08-22",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "player_id": "03xmv",
+          "player": "Jayson Tatum",
+          "label": "Jayson Tatum"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "05uiq",
+          "player": "Alperen Sengun",
+          "label": "Alperen Sengun"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06221",
+            "player": "Kennedy Chandler",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

@@ -128,6 +128,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Los Angeles Lakers",
+      "label": "2022 round 1 pick (Los Angeles Lakers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-03",
+      "from": "Los Angeles Lakers",
+      "team": "San Antonio Spurs",
+      "trade": "af99yn18ki8m1j0e",
+      "label": "2022 round 1 pick (Los Angeles Lakers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-25",
+      "from": "San Antonio Spurs",
+      "team": "Sacramento Kings",
+      "trade": "cqyb06mckp43flz4",
+      "label": "2022 round 1 pick (Los Angeles Lakers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-23",
+      "from": "Sacramento Kings",
+      "team": "Los Angeles Lakers",
+      "trade": "4yavjg7dksolg9o9",
+      "label": "2022 round 1 pick (Los Angeles Lakers)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -135,6 +173,8 @@
       "team": "Los Angeles Lakers",
       "round": 1,
       "pick": 1,
+      "overall": 1,
+      "certain": true,
       "periods": 98,
       "starts": 40,
       "gp": 66,
@@ -170,8 +210,208 @@
       "contract": "REG4"
     }
   ],
-  "trades": {},
+  "trades": {
+    "cqyb06mckp43flz4": {
+      "date": "2021-05-25",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "0018n",
+          "player": "Lou Williams",
+          "label": "Lou Williams"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "05uj3",
+            "player": "Day'Ron Sharpe",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06211",
+            "player": "Chet Holmgren",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "05uis",
+            "player": "Tre Mann",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "af99yn18ki8m1j0e": {
+      "date": "2020-12-03",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "player_id": "031lz",
+          "player": "Steven Adams",
+          "label": "Steven Adams"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "label": "2022 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06221",
+            "player": "Kennedy Chandler",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "label": "2022 round 1 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06211",
+            "player": "Chet Holmgren",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "label": "2021 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "05ujk",
+            "player": "Dalano Banton",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "4yavjg7dksolg9o9": {
+      "date": "2021-08-23",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Sacramento Kings",
+          "player_id": "05uiq",
+          "player": "Alperen Sengun",
+          "label": "Alperen Sengun"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "player_id": "048zt",
+          "player": "Derrick Jones",
+          "label": "Derrick Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 1 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06211",
+            "player": "Chet Holmgren",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "label": "2023 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06cc7",
+            "player": "Brandin Podziemski",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

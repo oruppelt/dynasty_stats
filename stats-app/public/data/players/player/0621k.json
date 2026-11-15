@@ -128,6 +128,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Los Angeles Clippers",
+      "label": "2022 round 1 pick (Los Angeles Clippers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "from": "Los Angeles Clippers",
+      "team": "Atlanta Hawks",
+      "trade": "y6t02lq8ks8pna2n",
+      "label": "2022 round 1 pick (Los Angeles Clippers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-31",
+      "from": "Atlanta Hawks",
+      "team": "Los Angeles Lakers",
+      "trade": "d2jlztcrkt09j3wo",
+      "label": "2022 round 1 pick (Los Angeles Clippers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-28",
+      "from": "Los Angeles Lakers",
+      "team": "Denver Nuggets",
+      "trade": "o1q5l498l4xttj0r",
+      "label": "2022 round 1 pick, no. 27"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -135,6 +173,9 @@
       "team": "Denver Nuggets",
       "round": 1,
       "pick": 27,
+      "overall": 27,
+      "original": "Los Angeles Clippers",
+      "certain": true,
       "periods": 98,
       "starts": 88,
       "gp": 143,
@@ -164,8 +205,216 @@
       "contract": "REG3"
     }
   ],
-  "trades": {},
+  "trades": {
+    "y6t02lq8ks8pna2n": {
+      "date": "2021-08-12",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "04qrk",
+          "player": "Trae Young",
+          "label": "Trae Young"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "051pj",
+          "player": "Alen Smailagic",
+          "label": "Alen Smailagic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtv",
+          "player": "Tyrese Haliburton",
+          "label": "Tyrese Haliburton"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 1 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "0621k",
+            "player": "Christian Braun",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2023 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06ccu",
+            "player": "Tristan Vukcevic",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "d2jlztcrkt09j3wo": {
+      "date": "2021-08-31",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Lakers",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Lakers",
+          "player_id": "051pj",
+          "player": "Alen Smailagic",
+          "label": "Alen Smailagic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 26,
+            "overall": 56,
+            "player_id": "0623l",
+            "player": "Jamaree Bouyea",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 1 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "0621k",
+            "player": "Christian Braun",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7l",
+          "player": "Larry Nance",
+          "label": "Larry Nance"
+        }
+      ]
+    },
+    "o1q5l498l4xttj0r": {
+      "date": "2022-06-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Los Angeles Lakers",
+          "label": "2023 round 1 pick (Denver Nuggets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06cac",
+            "player": "Cason Wallace",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Denver Nuggets",
+          "label": "2022 round 1 pick, no. 27",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "0621k",
+            "player": "Christian Braun",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Denver Nuggets",
+          "label": "2022 round 2 pick, no. 16",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "0622c",
+            "player": "Isaiah Mobley",
+            "certain": false
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

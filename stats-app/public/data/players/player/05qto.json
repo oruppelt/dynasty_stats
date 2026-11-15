@@ -177,6 +177,8 @@
       "team": "San Antonio Spurs",
       "round": 1,
       "pick": 2,
+      "overall": 2,
+      "certain": true,
       "periods": 95,
       "starts": 71,
       "gp": 117,
@@ -237,6 +239,37 @@
     }
   ],
   "trades": {
+    "jftv7a4ylqjbgh11": {
+      "date": "2023-12-24",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "player_id": "05qto",
+          "player": "LaMelo Ball",
+          "label": "LaMelo Ball"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "San Antonio Spurs",
+          "player_id": "051oi",
+          "player": "Ja Morant",
+          "label": "Ja Morant"
+        }
+      ]
+    },
     "n3xruumslxyaxk6d": {
       "date": "2024-06-28",
       "season": "2024-25",
@@ -268,38 +301,16 @@
           "kind": "pick",
           "from": "Toronto Raptors",
           "to": "Houston Rockets",
-          "label": "2024 round 2 pick, no. 3"
-        }
-      ]
-    },
-    "jftv7a4ylqjbgh11": {
-      "date": "2023-12-24",
-      "season": "2023-24",
-      "period": 19,
-      "items": [
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Toronto Raptors",
-          "player_id": "049s5",
-          "player": "Dennis Smith",
-          "label": "Dennis Smith"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Toronto Raptors",
-          "player_id": "05qto",
-          "player": "LaMelo Ball",
-          "label": "LaMelo Ball"
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "San Antonio Spurs",
-          "player_id": "051oi",
-          "player": "Ja Morant",
-          "label": "Ja Morant"
+          "label": "2024 round 2 pick, no. 3",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "06mln",
+            "player": "Adem Bona",
+            "certain": false
+          }
         }
       ]
     }

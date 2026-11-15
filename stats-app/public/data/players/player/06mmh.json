@@ -128,13 +128,64 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2024 round 2 pick (Orlando Magic)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "from": "Orlando Magic",
+      "team": "Sacramento Kings",
+      "trade": "u99m5em4l66hdh7a",
+      "label": "2024 round 2 pick (Orlando Magic)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 3,
+      "date": "2022-10-26",
+      "from": "Sacramento Kings",
+      "team": "Washington Wizards",
+      "trade": "qjkmf20bl9priwd9",
+      "label": "2024 round 2 pick (Orlando Magic)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-08",
+      "from": "Washington Wizards",
+      "team": "Memphis Grizzlies",
+      "trade": "qrn7gyzjljtrsvqe",
+      "label": "2024 round 2 pick (Orlando Magic)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Memphis Grizzlies",
+      "team": "Sacramento Kings",
+      "trade": "cw0jo5zulxyykp9s",
+      "label": "2024 round 2 pick, no. 25"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-29",
       "team": "Sacramento Kings",
       "round": 2,
-      "pick": 55,
+      "pick": 25,
+      "overall": 55,
+      "original": "Orlando Magic",
+      "certain": false,
       "periods": 6,
       "starts": 0,
       "gp": 0,
@@ -196,54 +247,124 @@
     }
   ],
   "trades": {
-    "u31lz7dpmhn7i0du": {
-      "date": "2025-11-06",
+    "22yya7camkqj2lli": {
+      "date": "2026-01-23",
       "season": "2025-26",
-      "period": 6,
+      "period": 28,
       "items": [
         {
           "kind": "player",
-          "from": "Golden State Warriors",
+          "from": "Boston Celtics",
           "to": "Portland Trail Blazers",
-          "player_id": "06ccv",
-          "player": "Trayce Jackson-Davis",
-          "label": "Trayce Jackson-Davis"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Portland Trail Blazers",
-          "player_id": "06mkf",
-          "player": "AJ Johnson",
-          "label": "AJ Johnson"
+          "player_id": "051pa",
+          "player": "Kevin Porter",
+          "label": "Kevin Porter"
         },
         {
           "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Miami Heat",
-          "label": "2027 round 2 pick (Golden State Warriors)"
+          "from": "Boston Celtics",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "076tt",
+            "player": "Ugonna Onyenso",
+            "certain": true
+          }
         },
         {
           "kind": "player",
-          "from": "Miami Heat",
-          "to": "Portland Trail Blazers",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
           "player_id": "06mmh",
           "player": "Isaac Jones",
           "label": "Isaac Jones"
         },
         {
           "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Portland Trail Blazers",
-          "label": "2026 round 2 pick (Golden State Warriors)"
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "cw0jo5zulxyykp9s": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick, no. 25",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06mmh",
+            "player": "Isaac Jones",
+            "certain": false
+          }
         },
         {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Golden State Warriors",
-          "player_id": "05uio",
-          "player": "Moses Moody",
-          "label": "Moses Moody"
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick, no. 27",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Memphis Grizzlies",
+          "label": "2026 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "076u4",
+            "player": "Meleek Thomas",
+            "certain": true
+          }
         }
       ]
     },
@@ -304,63 +425,224 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Miami Heat",
-          "label": "2025 round 1 pick (Atlanta Hawks)"
+          "label": "2025 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          }
         }
       ]
     },
-    "22yya7camkqj2lli": {
-      "date": "2026-01-23",
-      "season": "2025-26",
-      "period": 28,
+    "qjkmf20bl9priwd9": {
+      "date": "2022-10-26",
+      "season": "2022-23",
+      "period": 4,
       "items": [
         {
           "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Portland Trail Blazers",
-          "player_id": "051pa",
-          "player": "Kevin Porter",
-          "label": "Kevin Porter"
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "05qsl",
+          "player": "Patrick Williams",
+          "label": "Patrick Williams"
         },
         {
           "kind": "pick",
-          "from": "Boston Celtics",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2023 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06cdk",
+            "player": "Jalen Slawson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2024 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06mmh",
+            "player": "Isaac Jones",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Sacramento Kings",
+          "player_id": "05uj4",
+          "player": "Santi Aldama",
+          "label": "Santi Aldama"
+        }
+      ]
+    },
+    "u99m5em4l66hdh7a": {
+      "date": "2022-07-29",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06mmh",
+            "player": "Isaac Jones",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "$15 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "05uil",
+          "player": "James Bouknight",
+          "label": "James Bouknight"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "06227",
+          "player": "Ryan Rollins",
+          "label": "Ryan Rollins"
+        }
+      ]
+    },
+    "u31lz7dpmhn7i0du": {
+      "date": "2025-11-06",
+      "season": "2025-26",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 2 pick (Boston Celtics)"
+          "player_id": "06ccv",
+          "player": "Trayce Jackson-Davis",
+          "label": "Trayce Jackson-Davis"
         },
         {
           "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Boston Celtics",
-          "player_id": "027ou",
-          "player": "Klay Thompson",
-          "label": "Klay Thompson"
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mkf",
+          "player": "AJ Johnson",
+          "label": "AJ Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2027 round 2 pick (Golden State Warriors)"
         },
         {
           "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Boston Celtics",
-          "player_id": "05qsx",
-          "player": "Obi Toppin",
-          "label": "Obi Toppin"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Boston Celtics",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
           "player_id": "06mmh",
           "player": "Isaac Jones",
           "label": "Isaac Jones"
         },
         {
           "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
           "from": "Portland Trail Blazers",
-          "to": "Boston Celtics",
-          "label": "2026 round 2 pick (Golden State Warriors)"
+          "to": "Golden State Warriors",
+          "player_id": "05uio",
+          "player": "Moses Moody",
+          "label": "Moses Moody"
+        }
+      ]
+    },
+    "qrn7gyzjljtrsvqe": {
+      "date": "2023-07-08",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Washington Wizards",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Memphis Grizzlies",
+          "player_id": "0622c",
+          "player": "Isaiah Mobley",
+          "label": "Isaiah Mobley"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06mmh",
+            "player": "Isaac Jones",
+            "certain": false
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

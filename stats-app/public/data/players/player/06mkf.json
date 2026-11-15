@@ -100,13 +100,53 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Golden State Warriors",
+      "label": "2024 round 2 pick (Golden State Warriors)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 23,
+      "date": "2023-01-02",
+      "from": "Golden State Warriors",
+      "team": "Miami Heat",
+      "trade": "gval9i9vlcer1ktf",
+      "label": "2024 round 2 pick (Golden State Warriors)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-26",
+      "from": "Miami Heat",
+      "team": "Utah Jazz",
+      "trade": "tbw260rxldbmy6ec",
+      "label": "2024 round 2 pick (Golden State Warriors)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "from": "Utah Jazz",
+      "team": "Golden State Warriors",
+      "trade": "o47mrulcldew7u7t",
+      "label": "2024 round 2 pick (Golden State Warriors)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-29",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 49,
+      "pick": 19,
+      "overall": 49,
+      "certain": true,
       "periods": 38,
       "starts": 1,
       "gp": 2,
@@ -177,7 +217,16 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 2 pick (Golden State Warriors)"
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -188,9 +237,249 @@
           "label": "Moses Moody"
         }
       ]
+    },
+    "gval9i9vlcer1ktf": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "player_id": "05uj7",
+          "player": "Jason Preston",
+          "label": "Jason Preston"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06mkf",
+            "player": "AJ Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Golden State Warriors",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann"
+        }
+      ]
+    },
+    "tbw260rxldbmy6ec": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05qtm",
+          "player": "Precious Achiuwa",
+          "label": "Precious Achiuwa"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05uus",
+          "player": "Austin Reaves",
+          "label": "Austin Reaves"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05ujg",
+          "player": "Isaiah Livers",
+          "label": "Isaiah Livers"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06cbz",
+            "player": "Brice Sensabaugh",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06cdd",
+            "player": "Andre Jackson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06mkf",
+            "player": "AJ Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (Miami Heat)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06mkh",
+            "player": "Pacome Dadiet",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06ca5",
+            "player": "Kris Murray",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05qsq",
+          "player": "Tyrese Maxey",
+          "label": "Tyrese Maxey"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05ujr",
+          "player": "Charles Bassey",
+          "label": "Charles Bassey"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05qud",
+          "player": "Aleksej Pokusevski",
+          "label": "Aleksej Pokusevski"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "03ad0",
+          "player": "Tyus Jones",
+          "label": "Tyus Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "051pw",
+          "player": "Jalen McDaniels",
+          "label": "Jalen McDaniels"
+        }
+      ]
+    },
+    "o47mrulcldew7u7t": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Utah Jazz",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Golden State Warriors",
+          "player_id": "02ng4",
+          "player": "Will Barton",
+          "label": "Will Barton"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Golden State Warriors",
+          "player_id": "05ujg",
+          "player": "Isaiah Livers",
+          "label": "Isaiah Livers"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Golden State Warriors",
+          "label": "2024 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06mkf",
+            "player": "AJ Johnson",
+            "certain": true
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

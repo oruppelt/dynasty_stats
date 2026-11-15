@@ -100,13 +100,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Detroit Pistons",
+      "label": "2023 round 2 pick, no. 5",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-26",
+      "from": "Detroit Pistons",
+      "team": "Sacramento Kings",
+      "trade": "pxto19a2ljd8w62x",
+      "label": "2023 round 2 pick, no. 5"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-26",
+      "from": "Sacramento Kings",
+      "team": "Philadelphia 76ers",
+      "trade": "4odq53ngljd9v0pc",
+      "label": "2023 round 2 pick, no. 5"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
       "date": "2023-06-27",
       "team": "Philadelphia 76ers",
       "round": 2,
-      "pick": 35,
+      "pick": 5,
+      "overall": 35,
+      "original": "Detroit Pistons",
+      "certain": true,
       "periods": 98,
       "starts": 46,
       "gp": 74,
@@ -122,8 +153,92 @@
       "team": "Philadelphia 76ers"
     }
   ],
-  "trades": {},
+  "trades": {
+    "4odq53ngljd9v0pc": {
+      "date": "2023-06-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05uiu",
+          "player": "Jalen Johnson",
+          "label": "Jalen Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "label": "2023 round 2 pick, no. 5",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06ca3",
+            "player": "Julian Strawther",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "pxto19a2ljd8w62x": {
+      "date": "2023-06-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "label": "2023 round 2 pick, no. 5",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06ca3",
+            "player": "Julian Strawther",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2025 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06vy0",
+            "player": "Eli John Ndiaye",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

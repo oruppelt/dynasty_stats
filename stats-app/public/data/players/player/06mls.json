@@ -90,13 +90,74 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2024 round 2 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 5,
+      "date": "2022-11-02",
+      "from": "Boston Celtics",
+      "team": "Washington Wizards",
+      "trade": "apzneezol9yatn6q",
+      "label": "2024 round 2 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 27,
+      "date": "2023-01-16",
+      "from": "Washington Wizards",
+      "team": "Minnesota Timberwolves",
+      "trade": "c78464erlcyppe9f",
+      "label": "2024 round 2 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-24",
+      "from": "Minnesota Timberwolves",
+      "team": "Los Angeles Clippers",
+      "trade": "vonp1d50ldamgv6o",
+      "label": "2024 round 2 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-28",
+      "from": "Los Angeles Clippers",
+      "team": "New Orleans Pelicans",
+      "trade": "lzuchjjolqphb417",
+      "label": "2024 round 2 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 28,
+      "date": "2024-01-28",
+      "from": "New Orleans Pelicans",
+      "team": "Los Angeles Lakers",
+      "trade": "9f97r5qtlrxnq5ab",
+      "label": "2024 round 2 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-29",
       "team": "Los Angeles Lakers",
       "round": 2,
-      "pick": 50,
+      "pick": 20,
+      "overall": 50,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 73,
       "starts": 4,
       "gp": 5,
@@ -111,8 +172,385 @@
       "team": "Los Angeles Clippers"
     }
   ],
-  "trades": {},
+  "trades": {
+    "vonp1d50ldamgv6o": {
+      "date": "2023-01-24",
+      "season": "2022-23",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "031m4",
+          "player": "Dennis Schroder",
+          "label": "Dennis Schroder"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "player_id": "04xhy",
+          "player": "Yuta Watanabe",
+          "label": "Yuta Watanabe"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "label": "2023 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06cei",
+            "player": "Leonard Miller",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "9f97r5qtlrxnq5ab": {
+      "date": "2024-01-28",
+      "season": "2023-24",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "New Orleans Pelicans",
+          "player_id": "06220",
+          "player": "Jaden Hardy",
+          "label": "Jaden Hardy"
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Lakers",
+          "to": "New Orleans Pelicans",
+          "label": "$27 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Lakers",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Lakers",
+          "player_id": "0621v",
+          "player": "Caleb Houstan",
+          "label": "Caleb Houstan"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Lakers",
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "c78464erlcyppe9f": {
+      "date": "2023-01-16",
+      "season": "2022-23",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Washington Wizards",
+          "player_id": "02nf9",
+          "player": "Andre Drummond",
+          "label": "Andre Drummond"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Memphis Grizzlies",
+          "player_id": "04qsi",
+          "player": "Jarred Vanderbilt",
+          "label": "Jarred Vanderbilt"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "label": "2024 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06mk7",
+            "player": "Kel'el Ware",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "042nw",
+          "player": "Malcolm Brogdon",
+          "label": "Malcolm Brogdon"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "label": "2023 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06cei",
+            "player": "Leonard Miller",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "lzuchjjolqphb417": {
+      "date": "2023-12-28",
+      "season": "2023-24",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "New Orleans Pelicans",
+          "player_id": "005ki",
+          "player": "Brook Lopez",
+          "label": "Brook Lopez"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "New Orleans Pelicans",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "New Orleans Pelicans",
+          "player_id": "051ox",
+          "player": "Nickeil Alexander-Walker",
+          "label": "Nickeil Alexander-Walker"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "New Orleans Pelicans",
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Clippers",
+          "player_id": "01eo9",
+          "player": "Jrue Holiday",
+          "label": "Jrue Holiday"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Clippers",
+          "label": "2025 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06v5h",
+            "player": "Derik Queen",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Clippers",
+          "label": "2024 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06mkd",
+            "player": "Yves Missi",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "apzneezol9yatn6q": {
+      "date": "2022-11-02",
+      "season": "2022-23",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr."
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "05qt4",
+          "player": "Aaron Nesmith",
+          "label": "Aaron Nesmith"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

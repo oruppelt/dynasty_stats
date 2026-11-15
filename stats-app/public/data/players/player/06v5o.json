@@ -56,6 +56,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2025 round 1 pick (Orlando Magic)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 28,
+      "date": "2024-01-27",
+      "from": "Orlando Magic",
+      "team": "San Antonio Spurs",
+      "trade": "zqk1dc26lrw35amu",
+      "label": "2025 round 1 pick (Orlando Magic)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -63,6 +81,9 @@
       "team": "San Antonio Spurs",
       "round": 1,
       "pick": 30,
+      "overall": 30,
+      "original": "Orlando Magic",
+      "certain": true,
       "periods": 33,
       "starts": 2,
       "gp": 2,
@@ -182,6 +203,68 @@
         }
       ]
     },
+    "zqk1dc26lrw35amu": {
+      "date": "2024-01-27",
+      "season": "2023-24",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "0621x",
+          "player": "Jaylin Williams",
+          "label": "Jaylin Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "06v5o",
+            "player": "Liam McNeeley",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Orlando Magic",
+          "player_id": "051op",
+          "player": "Rui Hachimura",
+          "label": "Rui Hachimura"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Orlando Magic",
+          "player_id": "027pg",
+          "player": "Bojan Bogdanovic",
+          "label": "Bojan Bogdanovic"
+        }
+      ]
+    },
     "wemsb0xwmsu8e3ur": {
       "date": "2026-08-15",
       "season": "2026-27",
@@ -228,7 +311,16 @@
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "San Antonio Spurs",
-          "label": "2026 round 2 pick, no. 24"
+          "label": "2026 round 2 pick, no. 24",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -258,12 +350,31 @@
           "kind": "pick",
           "from": "San Antonio Spurs",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick, no. 23"
+          "label": "2026 round 1 pick, no. 23",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "076t4",
+            "player": "Ebuka Okorie",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

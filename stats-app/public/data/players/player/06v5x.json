@@ -86,6 +86,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Houston Rockets",
+      "label": "2025 round 1 pick (Houston Rockets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-26",
+      "from": "Houston Rockets",
+      "team": "Phoenix Suns",
+      "trade": "c0yl11uom6dr39pn",
+      "label": "2025 round 1 pick (Houston Rockets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-04",
+      "from": "Phoenix Suns",
+      "team": "Houston Rockets",
+      "trade": "ljnizeewmcnudnmr",
+      "label": "2025 round 1 pick, no. 12"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -93,6 +121,8 @@
       "team": "Houston Rockets",
       "round": 1,
       "pick": 12,
+      "overall": 12,
+      "certain": true,
       "periods": 40,
       "starts": 18,
       "gp": 24,
@@ -101,8 +131,125 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "c0yl11uom6dr39pn": {
+      "date": "2025-01-26",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Phoenix Suns",
+          "label": "2025 round 1 pick (Houston Rockets)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06v5x",
+            "player": "Carter Bryant",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "player_id": "0621g",
+          "player": "Tari Eason",
+          "label": "Tari Eason"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "player_id": "0529c",
+          "player": "Dean Wade",
+          "label": "Dean Wade"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Houston Rockets",
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "ljnizeewmcnudnmr": {
+      "date": "2025-07-04",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Phoenix Suns",
+          "player_id": "04ex6",
+          "player": "Isaiah Hartenstein",
+          "label": "Isaiah Hartenstein"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick, no. 15",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "06va1",
+            "player": "Max Shulga",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "label": "2025 round 1 pick, no. 12",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06v5x",
+            "player": "Carter Bryant",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

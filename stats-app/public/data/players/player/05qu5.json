@@ -77,13 +77,44 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Golden State Warriors",
+      "label": "2020 round 2 pick (Golden State Warriors)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-14",
+      "from": "Indiana Pacers",
+      "team": "Sacramento Kings",
+      "trade": "l40p7oofjza9sdb5",
+      "label": "2020 round 2 pick (Golden State Warriors)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-16",
+      "from": "Sacramento Kings",
+      "team": "San Antonio Spurs",
+      "trade": "9l4igjhejze8yi0p",
+      "label": "2020 round 2 pick (Golden State Warriors)"
+    },
+    {
       "kind": "draft",
       "season": "2020-21",
       "period": 0,
       "date": "2020-11-24",
       "team": "San Antonio Spurs",
       "round": 2,
-      "pick": 39,
+      "pick": 9,
+      "overall": 39,
+      "original": "Golden State Warriors",
+      "certain": true,
       "periods": 29,
       "starts": 0,
       "gp": 0,
@@ -173,6 +204,165 @@
     }
   ],
   "trades": {
+    "zyo6opbml67imffa": {
+      "date": "2022-07-30",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "05qtm",
+          "player": "Precious Achiuwa",
+          "label": "Precious Achiuwa"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "05uj4",
+          "player": "Santi Aldama",
+          "label": "Santi Aldama"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "label": "2024 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06mjy",
+            "player": "Tidjane Salaun",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        }
+      ]
+    },
+    "mu1sghjul8ykpvq9": {
+      "date": "2022-10-07",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "0623f",
+          "player": "Justin Lewis",
+          "label": "Justin Lewis"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Orlando Magic",
+          "label": "2023 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06cdj",
+            "player": "Colby Jones",
+            "certain": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "label": "$15 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "04ewb",
+          "player": "Jonathan Isaac",
+          "label": "Jonathan Isaac"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2024 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 16,
+            "overall": 16,
+            "player_id": "06mkb",
+            "player": "Ja'Kobe Walter",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Cleveland Cavaliers",
+          "label": "2024 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "001bb",
+            "player": "Jorge Garbajosa",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2023 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06cd7",
+            "player": "Keyontae Johnson",
+            "certain": true
+          }
+        }
+      ]
+    },
     "0jpui8znlc50zbu9": {
       "date": "2022-12-26",
       "season": "2022-23",
@@ -196,7 +386,16 @@
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Portland Trail Blazers",
-          "label": "2023 round 2 pick (Cleveland Cavaliers)"
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -258,90 +457,67 @@
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "Memphis Grizzlies",
-          "label": "2024 round 2 pick (Memphis Grizzlies)"
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
         },
         {
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "Orlando Magic",
-          "label": "2023 round 2 pick (Indiana Pacers)"
+          "label": "2023 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06cel",
+            "player": "Sidy Cissoko",
+            "certain": true
+          }
         }
       ]
     },
-    "mu1sghjul8ykpvq9": {
-      "date": "2022-10-07",
-      "season": "2022-23",
+    "l40p7oofjza9sdb5": {
+      "date": "2019-08-14",
+      "season": "2019-20",
       "period": 1,
       "items": [
         {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Portland Trail Blazers",
-          "player_id": "05qu5",
-          "player": "Udoka Azubuike",
-          "label": "Udoka Azubuike"
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "label": "2020 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "05qu5",
+            "player": "Udoka Azubuike",
+            "certain": true
+          }
         },
         {
           "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Portland Trail Blazers",
-          "player_id": "038xi",
-          "player": "Robert Covington",
-          "label": "Robert Covington"
-        },
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Portland Trail Blazers",
-          "player_id": "0623f",
-          "player": "Justin Lewis",
-          "label": "Justin Lewis"
+          "from": "Sacramento Kings",
+          "to": "Indiana Pacers",
+          "player_id": "04qs8",
+          "player": "Elie Okobo",
+          "label": "Elie Okobo"
         },
         {
           "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "Orlando Magic",
-          "label": "2023 round 1 pick (Memphis Grizzlies)"
-        },
-        {
-          "kind": "budget",
-          "from": "Cleveland Cavaliers",
-          "to": "Portland Trail Blazers",
-          "label": "$15 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Cleveland Cavaliers",
-          "player_id": "03nwl",
-          "player": "Terry Rozier",
-          "label": "Terry Rozier"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Orlando Magic",
-          "player_id": "04ewb",
-          "player": "Jonathan Isaac",
-          "label": "Jonathan Isaac"
-        },
-        {
-          "kind": "pick",
-          "from": "Portland Trail Blazers",
-          "to": "Orlando Magic",
-          "label": "2024 round 1 pick (Portland Trail Blazers)"
-        },
-        {
-          "kind": "pick",
-          "from": "Portland Trail Blazers",
-          "to": "Cleveland Cavaliers",
-          "label": "2024 round 2 pick (Charlotte Hornets)"
-        },
-        {
-          "kind": "pick",
-          "from": "Portland Trail Blazers",
-          "to": "Orlando Magic",
-          "label": "2023 round 2 pick (Portland Trail Blazers)"
+          "from": "Sacramento Kings",
+          "to": "Indiana Pacers",
+          "label": "2020 round 2 pick (New York Knicks)"
         }
       ]
     },
@@ -370,13 +546,31 @@
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Washington Wizards",
-          "label": "2022 round 1 pick (Philadelphia 76ers)"
+          "label": "2022 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06217",
+            "player": "Dyson Daniels",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Washington Wizards",
-          "label": "2022 round 1 pick (Orlando Magic)"
+          "label": "2022 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06218",
+            "player": "Jeremy Sochan",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -385,43 +579,6 @@
           "player_id": "042n7",
           "player": "Domantas Sabonis",
           "label": "Domantas Sabonis"
-        }
-      ]
-    },
-    "zyo6opbml67imffa": {
-      "date": "2022-07-30",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Washington Wizards",
-          "player_id": "05qtm",
-          "player": "Precious Achiuwa",
-          "label": "Precious Achiuwa"
-        },
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Washington Wizards",
-          "player_id": "05uj4",
-          "player": "Santi Aldama",
-          "label": "Santi Aldama"
-        },
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "Washington Wizards",
-          "label": "2024 round 1 pick (Cleveland Cavaliers)"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Cleveland Cavaliers",
-          "player_id": "05qu5",
-          "player": "Udoka Azubuike",
-          "label": "Udoka Azubuike"
         }
       ]
     },
@@ -464,12 +621,79 @@
           "kind": "pick",
           "from": "San Antonio Spurs",
           "to": "Sacramento Kings",
-          "label": "2023 round 2 pick (San Antonio Spurs)"
+          "label": "2023 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06cen",
+            "player": "Caleb Daniels",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "9l4igjhejze8yi0p": {
+      "date": "2019-08-16",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "player_id": "051ou",
+          "player": "Romeo Langford",
+          "label": "Romeo Langford"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "label": "2021 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "05uiy",
+            "player": "Josh Christopher",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "label": "2020 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "05qu5",
+            "player": "Udoka Azubuike",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "0019g",
+          "player": "LaMarcus Aldridge",
+          "label": "LaMarcus Aldridge"
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

@@ -212,6 +212,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Phoenix Suns",
+      "label": "2020 round 1 pick, no. 7",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-19",
+      "from": "Phoenix Suns",
+      "team": "Sacramento Kings",
+      "trade": "owpx1qgikhpa8mc1",
+      "label": "2020 round 1 pick, no. 7"
+    },
+    {
       "kind": "draft",
       "season": "2020-21",
       "period": 0,
@@ -219,6 +237,9 @@
       "team": "Sacramento Kings",
       "round": 1,
       "pick": 7,
+      "overall": 7,
+      "original": "Phoenix Suns",
+      "certain": false,
       "periods": 21,
       "starts": 3,
       "gp": 6,
@@ -330,66 +351,6 @@
     }
   ],
   "trades": {
-    "etfluotfklxsl8yb": {
-      "date": "2021-03-06",
-      "season": "2020-21",
-      "period": 22,
-      "items": [
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Sacramento Kings",
-          "player_id": "03nwq",
-          "player": "Christian Wood",
-          "label": "Christian Wood"
-        },
-        {
-          "kind": "pick",
-          "from": "New York Knicks",
-          "to": "Sacramento Kings",
-          "label": "2021 round 2 pick (Sacramento Kings)"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "New York Knicks",
-          "player_id": "05qsx",
-          "player": "Obi Toppin",
-          "label": "Obi Toppin"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "New York Knicks",
-          "player_id": "0019g",
-          "player": "LaMarcus Aldridge",
-          "label": "LaMarcus Aldridge"
-        }
-      ]
-    },
-    "ajis8ve4mkv3b33w": {
-      "date": "2026-01-26",
-      "season": "2025-26",
-      "period": 29,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "San Antonio Spurs",
-          "player_id": "05qsx",
-          "player": "Obi Toppin",
-          "label": "Obi Toppin"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Boston Celtics",
-          "player_id": "0623m",
-          "player": "Keon Ellis",
-          "label": "Keon Ellis"
-        }
-      ]
-    },
     "22yya7camkqj2lli": {
       "date": "2026-01-23",
       "season": "2025-26",
@@ -407,7 +368,16 @@
           "kind": "pick",
           "from": "Boston Celtics",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 2 pick (Boston Celtics)"
+          "label": "2026 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "076tt",
+            "player": "Ugonna Onyenso",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -437,7 +407,16 @@
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "Boston Celtics",
-          "label": "2026 round 2 pick (Golden State Warriors)"
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          }
         }
       ]
     },
@@ -493,9 +472,128 @@
           "label": "2027 round 1 pick (Utah Jazz)"
         }
       ]
+    },
+    "ajis8ve4mkv3b33w": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis"
+        }
+      ]
+    },
+    "etfluotfklxsl8yb": {
+      "date": "2021-03-06",
+      "season": "2020-21",
+      "period": 22,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Sacramento Kings",
+          "player_id": "03nwq",
+          "player": "Christian Wood",
+          "label": "Christian Wood"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "New York Knicks",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "New York Knicks",
+          "player_id": "0019g",
+          "player": "LaMarcus Aldridge",
+          "label": "LaMarcus Aldridge"
+        }
+      ]
+    },
+    "owpx1qgikhpa8mc1": {
+      "date": "2020-11-19",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "label": "2020 round 1 pick, no. 7",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "05qsx",
+            "player": "Obi Toppin",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "051om",
+          "player": "Jarrett Culver",
+          "label": "Jarrett Culver"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "label": "2020 round 1 pick, no. 14",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "05qsl",
+            "player": "Patrick Williams",
+            "certain": false
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

@@ -128,13 +128,84 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Sacramento Kings",
+      "label": "2022 round 2 pick (Sacramento Kings)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-09",
+      "from": "Sacramento Kings",
+      "team": "Washington Wizards",
+      "trade": "1qnolhv6kih8mff8",
+      "label": "2022 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-09",
+      "from": "Washington Wizards",
+      "team": "Toronto Raptors",
+      "trade": "41f9k727kihb18pa",
+      "label": "2022 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 21,
+      "date": "2021-03-01",
+      "from": "Toronto Raptors",
+      "team": "Boston Celtics",
+      "trade": "n3iu6fufklqk845u",
+      "label": "2022 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-03",
+      "from": "Boston Celtics",
+      "team": "Dallas Mavericks",
+      "trade": "i9p4sfzckpgpjxct",
+      "label": "2022 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-31",
+      "from": "Dallas Mavericks",
+      "team": "Sacramento Kings",
+      "trade": "qvmkdi0ekt03xqks",
+      "label": "2022 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 27,
+      "date": "2022-01-17",
+      "from": "Sacramento Kings",
+      "team": "Chicago Bulls",
+      "trade": "de5pkn4ykyik1gb0",
+      "label": "2022 round 2 pick (Sacramento Kings)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-28",
       "team": "Chicago Bulls",
       "round": 2,
-      "pick": 35,
+      "pick": 5,
+      "overall": 35,
+      "original": "Sacramento Kings",
+      "certain": false,
       "periods": 56,
       "starts": 0,
       "gp": 0,
@@ -181,26 +252,202 @@
     }
   ],
   "trades": {
-    "q1whrzq2m3d9pbxh": {
-      "date": "2024-11-11",
-      "season": "2024-25",
-      "period": 7,
+    "1qnolhv6kih8mff8": {
+      "date": "2020-12-09",
+      "season": "2020-21",
+      "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Los Angeles Clippers",
-          "player_id": "0621r",
-          "player": "Patrick Baldwin",
-          "label": "Patrick Baldwin"
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
         },
         {
           "kind": "player",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "player_id": "06220",
-          "player": "Jaden Hardy",
-          "label": "Jaden Hardy"
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "05qsl",
+          "player": "Patrick Williams",
+          "label": "Patrick Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Sacramento Kings",
+          "player_id": "04qru",
+          "player": "Donte DiVincenzo",
+          "label": "Donte DiVincenzo"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Sacramento Kings",
+          "player_id": "02nfw",
+          "player": "Tomas Satoransky",
+          "label": "Tomas Satoransky"
+        }
+      ]
+    },
+    "de5pkn4ykyik1gb0": {
+      "date": "2022-01-17",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Sacramento Kings",
+          "player_id": "051oh",
+          "player": "Zion Williamson",
+          "label": "Zion Williamson"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "label": "2023 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06cdg",
+            "player": "Maxwell Lewis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "i9p4sfzckpgpjxct": {
+      "date": "2021-06-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Dallas Mavericks",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Dallas Mavericks",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Dallas Mavericks",
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Boston Celtics",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris"
+        }
+      ]
+    },
+    "qvmkdi0ekt03xqks": {
+      "date": "2021-08-31",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Sacramento Kings",
+          "player_id": "03apz",
+          "player": "Willie Cauley-Stein",
+          "label": "Willie Cauley-Stein"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Sacramento Kings",
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Dallas Mavericks",
+          "player_id": "0018n",
+          "player": "Lou Williams",
+          "label": "Lou Williams"
         }
       ]
     },
@@ -253,18 +500,174 @@
           "kind": "pick",
           "from": "Chicago Bulls",
           "to": "Atlanta Hawks",
-          "label": "2024 round 2 pick (Milwaukee Bucks)"
+          "label": "2024 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06mkj",
+            "player": "Terrence Shannon",
+            "certain": false
+          }
         },
         {
           "kind": "pick",
           "from": "Chicago Bulls",
           "to": "Atlanta Hawks",
-          "label": "2024 round 1 pick (Boston Celtics)"
+          "label": "2024 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06mlg",
+            "player": "Tyler Kolek",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "q1whrzq2m3d9pbxh": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "0621r",
+          "player": "Patrick Baldwin",
+          "label": "Patrick Baldwin"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "06220",
+          "player": "Jaden Hardy",
+          "label": "Jaden Hardy"
+        }
+      ]
+    },
+    "41f9k727kihb18pa": {
+      "date": "2020-12-09",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Toronto Raptors)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "051p6",
+            "player": "Dylan Windler",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Toronto Raptors",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Toronto Raptors",
+          "label": "2022 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "0621o",
+            "player": "Blake Wesley",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Toronto Raptors",
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "n3iu6fufklqk845u": {
+      "date": "2021-03-01",
+      "season": "2020-21",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Toronto Raptors",
+          "player_id": "042o6",
+          "player": "Jake Layman",
+          "label": "Jake Layman"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Boston Celtics",
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Boston Celtics",
+          "label": "2022 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "0621o",
+            "player": "Blake Wesley",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

@@ -49,13 +49,84 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Cleveland Cavaliers",
+      "label": "2023 round 2 pick (Cleveland Cavaliers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "from": "Cleveland Cavaliers",
+      "team": "New York Knicks",
+      "trade": "hjrmkgmil66e5368",
+      "label": "2023 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 2,
+      "date": "2022-10-21",
+      "from": "New York Knicks",
+      "team": "Minnesota Timberwolves",
+      "trade": "pm8ukv5nl9ihx8hb",
+      "label": "2023 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-18",
+      "from": "Minnesota Timberwolves",
+      "team": "Orlando Magic",
+      "trade": "be82rz5ilbs9n0fe",
+      "label": "2023 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 21,
+      "date": "2022-12-26",
+      "from": "Orlando Magic",
+      "team": "Portland Trail Blazers",
+      "trade": "0jpui8znlc50zbu9",
+      "label": "2023 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "from": "Portland Trail Blazers",
+      "team": "Dallas Mavericks",
+      "trade": "dfguyn9jldey013k",
+      "label": "2023 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-27",
+      "from": "Dallas Mavericks",
+      "team": "Brooklyn Nets",
+      "trade": "462goib3ljeoejyf",
+      "label": "2023 round 2 pick, no. 19"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
       "date": "2023-06-27",
       "team": "Brooklyn Nets",
       "round": 2,
-      "pick": 49,
+      "pick": 19,
+      "overall": 49,
+      "original": "Cleveland Cavaliers",
+      "certain": true,
       "periods": 98,
       "starts": 0,
       "gp": 0,
@@ -71,8 +142,365 @@
       "team": "Brooklyn Nets"
     }
   ],
-  "trades": {},
+  "trades": {
+    "462goib3ljeoejyf": {
+      "date": "2023-06-27",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Brooklyn Nets",
+          "to": "Dallas Mavericks",
+          "label": "$9 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Brooklyn Nets",
+          "label": "2023 round 2 pick, no. 19",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "pm8ukv5nl9ihx8hb": {
+      "date": "2022-10-21",
+      "season": "2022-23",
+      "period": 2,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Minnesota Timberwolves",
+          "to": "Toronto Raptors",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Minnesota Timberwolves",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "New York Knicks",
+          "label": "2024 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 12,
+            "overall": 42,
+            "player_id": "06mlk",
+            "player": "Ajay Mitchell",
+            "certain": false
+          }
+        }
+      ]
+    },
+    "0jpui8znlc50zbu9": {
+      "date": "2022-12-26",
+      "season": "2022-23",
+      "period": 21,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Portland Trail Blazers",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "player_id": "03r7l",
+          "player": "Larry Nance",
+          "label": "Larry Nance"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "03927",
+          "player": "JaMychal Green",
+          "label": "JaMychal Green"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "05ujp",
+          "player": "Brandon Boston",
+          "label": "Brandon Boston"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "0621x",
+          "player": "Jaylin Williams",
+          "label": "Jaylin Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "04t8w",
+          "player": "Kenrich Williams",
+          "label": "Kenrich Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "051pp",
+          "player": "Isaiah Roby",
+          "label": "Isaiah Roby"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2023 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06cel",
+            "player": "Sidy Cissoko",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "be82rz5ilbs9n0fe": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "player_id": "05ujs",
+          "player": "Sandro Mamukelashvili",
+          "label": "Sandro Mamukelashvili"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "player_id": "005ll",
+          "player": "George Hill",
+          "label": "George Hill"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Minnesota Timberwolves",
+          "player_id": "0527h",
+          "player": "Naz Reid",
+          "label": "Naz Reid"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujp",
+          "player": "Brandon Boston",
+          "label": "Brandon Boston"
+        }
+      ]
+    },
+    "dfguyn9jldey013k": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Dallas Mavericks",
+          "player_id": "04jw4",
+          "player": "Maxi Kleber",
+          "label": "Maxi Kleber"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "hjrmkgmil66e5368": {
+      "date": "2022-07-29",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06cby",
+            "player": "Keyonte George",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03nwn",
+          "player": "Bobby Portis",
+          "label": "Bobby Portis"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

@@ -63,13 +63,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Memphis Grizzlies",
+      "label": "2023 round 2 pick (Memphis Grizzlies)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 19,
+      "date": "2021-12-21",
+      "from": "Memphis Grizzlies",
+      "team": "Detroit Pistons",
+      "trade": "y7jfydkxkxg1vebv",
+      "label": "2023 round 2 pick (Memphis Grizzlies)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
       "date": "2023-06-28",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 52,
+      "pick": 22,
+      "overall": 52,
+      "original": "Memphis Grizzlies",
+      "certain": true,
       "periods": 36,
       "starts": 0,
       "gp": 0,
@@ -101,6 +122,114 @@
     }
   ],
   "trades": {
+    "y7jfydkxkxg1vebv": {
+      "date": "2021-12-21",
+      "season": "2021-22",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qt0",
+          "player": "Saddiq Bey",
+          "label": "Saddiq Bey"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qtu",
+          "player": "Skylar Mays",
+          "label": "Skylar Mays"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "01uz9",
+          "player": "Nemanja Bjelica",
+          "label": "Nemanja Bjelica"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qu4",
+          "player": "Saben Lee",
+          "label": "Saben Lee"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "player_id": "027p2",
+          "player": "Enes Kanter",
+          "label": "Enes Kanter"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2023 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06cdj",
+            "player": "Colby Jones",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2023 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "06ccy",
+            "player": "Jalen Pickett",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06224",
+            "player": "E.J. Liddell",
+            "certain": true
+          }
+        }
+      ]
+    },
     "e3rmgazym32x5n22": {
       "date": "2024-11-04",
       "season": "2024-25",
@@ -142,7 +271,16 @@
           "kind": "pick",
           "from": "Cleveland Cavaliers",
           "to": "Detroit Pistons",
-          "label": "2025 round 2 pick (Minnesota Timberwolves)"
+          "label": "2025 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06y3q",
+            "player": "Ryan Nembhard",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -188,18 +326,46 @@
           "kind": "pick",
           "from": "Detroit Pistons",
           "to": "Cleveland Cavaliers",
-          "label": "2025 round 2 pick (San Antonio Spurs)"
+          "label": "2025 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06v7y",
+            "player": "Noah Penda",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Detroit Pistons",
           "to": "Cleveland Cavaliers",
-          "label": "2025 round 1 pick (Cleveland Cavaliers)"
+          "label": "2025 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06v55",
+            "player": "Kasparas Jakucionis",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

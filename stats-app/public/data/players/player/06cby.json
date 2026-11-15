@@ -114,6 +114,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Cleveland Cavaliers",
+      "label": "2023 round 1 pick (Cleveland Cavaliers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "from": "Cleveland Cavaliers",
+      "team": "New York Knicks",
+      "trade": "hjrmkgmil66e5368",
+      "label": "2023 round 1 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-18",
+      "from": "New York Knicks",
+      "team": "Minnesota Timberwolves",
+      "trade": "z5jlvl0yl9df5648",
+      "label": "2023 round 1 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-16",
+      "from": "Minnesota Timberwolves",
+      "team": "Golden State Warriors",
+      "trade": "4ghkugn9lbqnbawd",
+      "label": "2023 round 1 pick (Cleveland Cavaliers)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
@@ -121,6 +159,9 @@
       "team": "Golden State Warriors",
       "round": 1,
       "pick": 19,
+      "overall": 19,
+      "original": "Cleveland Cavaliers",
+      "certain": true,
       "periods": 98,
       "starts": 81,
       "gp": 132,
@@ -150,8 +191,195 @@
       "contract": "REG4"
     }
   ],
-  "trades": {},
+  "trades": {
+    "z5jlvl0yl9df5648": {
+      "date": "2022-10-18",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "New York Knicks",
+          "label": "2024 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06mld",
+            "player": "Jonathan Mogbo",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Minnesota Timberwolves",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06cby",
+            "player": "Keyonte George",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "4ghkugn9lbqnbawd": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "005ll",
+          "player": "George Hill",
+          "label": "George Hill"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "042nr",
+          "player": "Damian Jones",
+          "label": "Damian Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "06220",
+          "player": "Jaden Hardy",
+          "label": "Jaden Hardy"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "051p5",
+          "player": "Nassir Little",
+          "label": "Nassir Little"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06cby",
+            "player": "Keyonte George",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "hjrmkgmil66e5368": {
+      "date": "2022-07-29",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06cby",
+            "player": "Keyonte George",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03nwn",
+          "player": "Bobby Portis",
+          "label": "Bobby Portis"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

@@ -100,13 +100,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "San Antonio Spurs",
+      "label": "2025 round 2 pick (San Antonio Spurs)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "San Antonio Spurs",
+      "team": "Detroit Pistons",
+      "trade": "8c6pve8tlxywwxv1",
+      "label": "2025 round 2 pick (San Antonio Spurs)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 5,
+      "date": "2024-11-04",
+      "from": "Detroit Pistons",
+      "team": "Cleveland Cavaliers",
+      "trade": "e3rmgazym32x5n22",
+      "label": "2025 round 2 pick (San Antonio Spurs)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-04",
       "team": "Cleveland Cavaliers",
       "round": 2,
-      "pick": 32,
+      "pick": 2,
+      "overall": 32,
+      "original": "San Antonio Spurs",
+      "certain": true,
       "periods": 36,
       "starts": 7,
       "gp": 11,
@@ -131,6 +162,58 @@
     }
   ],
   "trades": {
+    "8c6pve8tlxywwxv1": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 2 pick, no. 2",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06mli",
+            "player": "Juan Nunez",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Detroit Pistons",
+          "label": "2026 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "076tw",
+            "player": "Nick Martinelli",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Detroit Pistons",
+          "label": "2025 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06v7y",
+            "player": "Noah Penda",
+            "certain": true
+          }
+        }
+      ]
+    },
     "oj9lawe7mvsdcb33": {
       "date": "2026-10-29",
       "season": "2026-27",
@@ -175,9 +258,143 @@
           "label": "Kyle Kuzma"
         }
       ]
+    },
+    "e3rmgazym32x5n22": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "0527h",
+          "player": "Naz Reid",
+          "label": "Naz Reid"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "042n2",
+          "player": "Kris Dunn",
+          "label": "Kris Dunn"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "051op",
+          "player": "Rui Hachimura",
+          "label": "Rui Hachimura"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "label": "2025 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06y3q",
+            "player": "Ryan Nembhard",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06cel",
+          "player": "Sidy Cissoko",
+          "label": "Sidy Cissoko"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04qsd",
+          "player": "Mitchell Robinson",
+          "label": "Mitchell Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06mld",
+          "player": "Jonathan Mogbo",
+          "label": "Jonathan Mogbo"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06ccy",
+          "player": "Jalen Pickett",
+          "label": "Jalen Pickett"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06cc9",
+          "player": "Olivier-Maxence Prosper",
+          "label": "Olivier-Maxence Prosper"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "label": "2025 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06v7y",
+            "player": "Noah Penda",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "label": "2025 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06v55",
+            "player": "Kasparas Jakucionis",
+            "certain": true
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

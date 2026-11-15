@@ -128,6 +128,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Memphis Grizzlies",
+      "label": "2022 round 1 pick (Memphis Grizzlies)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-02",
+      "from": "Memphis Grizzlies",
+      "team": "Charlotte Hornets",
+      "trade": "20af3cgxkpeqvvt8",
+      "label": "2022 round 1 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 27,
+      "date": "2022-01-20",
+      "from": "Charlotte Hornets",
+      "team": "Detroit Pistons",
+      "trade": "wg2khwkzkymoxxff",
+      "label": "2022 round 1 pick (Memphis Grizzlies)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -135,6 +163,9 @@
       "team": "Detroit Pistons",
       "round": 1,
       "pick": 30,
+      "overall": 30,
+      "original": "Memphis Grizzlies",
+      "certain": true,
       "periods": 52,
       "starts": 11,
       "gp": 6,
@@ -208,6 +239,44 @@
     }
   ],
   "trades": {
+    "wg2khwkzkymoxxff": {
+      "date": "2022-01-20",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Detroit Pistons",
+          "player_id": "01uza",
+          "player": "Lance Stephenson",
+          "label": "Lance Stephenson"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "06228",
+            "player": "Josh Minott",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Charlotte Hornets",
+          "player_id": "04qsi",
+          "player": "Jarred Vanderbilt",
+          "label": "Jarred Vanderbilt"
+        }
+      ]
+    },
     "f55b9i8llqovzig1": {
       "date": "2023-12-28",
       "season": "2023-24",
@@ -249,7 +318,16 @@
           "kind": "pick",
           "from": "Detroit Pistons",
           "to": "Miami Heat",
-          "label": "2024 round 1 pick (Miami Heat)"
+          "label": "2024 round 1 pick (Miami Heat)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "06mk3",
+            "player": "Matas Buzelis",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -271,7 +349,16 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Detroit Pistons",
-          "label": "2024 round 2 pick (Los Angeles Clippers)"
+          "label": "2024 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06mli",
+            "player": "Juan Nunez",
+            "certain": false
+          }
         },
         {
           "kind": "player",
@@ -290,9 +377,72 @@
           "label": "Mitchell Robinson"
         }
       ]
+    },
+    "20af3cgxkpeqvvt8": {
+      "date": "2021-06-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Memphis Grizzlies",
+          "player_id": "042n1",
+          "player": "Brandon Ingram",
+          "label": "Brandon Ingram"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Charlotte Hornets",
+          "player_id": "051or",
+          "player": "Cameron Johnson",
+          "label": "Cameron Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Charlotte Hornets",
+          "label": "2022 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "06228",
+            "player": "Josh Minott",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Charlotte Hornets",
+          "label": "2021 round 1 pick, no. 26",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "05uj0",
+            "player": "Bones Hyland",
+            "certain": true
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

@@ -35,13 +35,44 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Charlotte Hornets",
+      "label": "2025 round 2 pick (Charlotte Hornets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 24,
+      "date": "2024-01-12",
+      "from": "Charlotte Hornets",
+      "team": "Oklahoma City Thunder",
+      "trade": "7nvjxigzlrahc7kt",
+      "label": "2025 round 2 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-05",
+      "from": "Oklahoma City Thunder",
+      "team": "Brooklyn Nets",
+      "trade": "0gk8a169mcpx4e4d",
+      "label": "2025 round 2 pick, no. 27"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-05",
       "team": "Brooklyn Nets",
       "round": 2,
-      "pick": 57,
+      "pick": 27,
+      "overall": 57,
+      "original": "Charlotte Hornets",
+      "certain": true,
       "periods": 40,
       "starts": 0,
       "gp": 0,
@@ -50,8 +81,130 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "0gk8a169mcpx4e4d": {
+      "date": "2025-07-05",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Brooklyn Nets",
+          "to": "Oklahoma City Thunder",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Brooklyn Nets",
+          "label": "2025 round 2 pick, no. 27",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06v8j",
+            "player": "John Tonje",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "7nvjxigzlrahc7kt": {
+      "date": "2024-01-12",
+      "season": "2023-24",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06233",
+          "player": "Ron Harper",
+          "label": "Ron Harper"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0623h",
+          "player": "Alondes Williams",
+          "label": "Alondes Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0017e",
+          "player": "Chris Paul",
+          "label": "Chris Paul"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06v8j",
+            "player": "John Tonje",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "06v82",
+            "player": "Adou Thiero",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard"
+        },
+        {
+          "kind": "budget",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "label": "$21 budget"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

@@ -35,13 +35,44 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Chicago Bulls",
+      "label": "2025 round 2 pick (Chicago Bulls)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 7,
+      "date": "2023-11-14",
+      "from": "Chicago Bulls",
+      "team": "Dallas Mavericks",
+      "trade": "4z8u6ap8loyoglfb",
+      "label": "2025 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-25",
+      "from": "Dallas Mavericks",
+      "team": "Toronto Raptors",
+      "trade": "ll6492qklql9ax74",
+      "label": "2025 round 2 pick (Chicago Bulls)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-04",
       "team": "Toronto Raptors",
       "round": 2,
-      "pick": 41,
+      "pick": 11,
+      "overall": 41,
+      "original": "Chicago Bulls",
+      "certain": true,
       "periods": 40,
       "starts": 0,
       "gp": 0,
@@ -50,8 +81,141 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "ll6492qklql9ax74": {
+      "date": "2023-12-25",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Toronto Raptors",
+          "label": "2025 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06v8d",
+            "player": "Bogoljub Markovic",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Toronto Raptors",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06mm1",
+            "player": "Bronny James",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
+        }
+      ]
+    },
+    "4z8u6ap8loyoglfb": {
+      "date": "2023-11-14",
+      "season": "2023-24",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "player_id": "05qu8",
+          "player": "Omer Yurtseven",
+          "label": "Omer Yurtseven"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2025 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06v8d",
+            "player": "Bogoljub Markovic",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Chicago Bulls",
+          "player_id": "03e79",
+          "player": "Dwight Powell",
+          "label": "Dwight Powell"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

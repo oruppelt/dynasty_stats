@@ -170,6 +170,16 @@
   ],
   "timeline": [
     {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-06-21",
+      "from": "Boston Celtics",
+      "team": "Indiana Pacers",
+      "trade": "s9d1c6dkjx6jhhgd",
+      "label": "2019 round 1 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2019-20",
       "period": 0,
@@ -177,12 +187,33 @@
       "team": "Brooklyn Nets",
       "round": 1,
       "pick": 11,
+      "overall": 11,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 94,
       "starts": 82,
       "gp": 123,
       "points": 3651.75,
       "salary": 2700288,
       "contract": "R13"
+    },
+    {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2019 round 1 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-10-20",
+      "from": "Indiana Pacers",
+      "team": "Brooklyn Nets",
+      "trade": "0r0z9s1ijx9bmlcn",
+      "label": "2019 round 1 pick, no. 11"
     },
     {
       "kind": "drop",
@@ -227,7 +258,127 @@
       "contract": "REG4"
     }
   ],
-  "trades": {},
+  "trades": {
+    "s9d1c6dkjx6jhhgd": {
+      "date": "2019-06-21",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Indiana Pacers",
+          "label": "2019 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "051ol",
+            "player": "Darius Garland",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Boston Celtics",
+          "label": "2019 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "051pl",
+            "player": "Eric Paschall",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Boston Celtics",
+          "label": "2019 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "051po",
+            "player": "Bol Bol",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Boston Celtics",
+          "label": "2019 round 1 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 18,
+            "overall": 18,
+            "player_id": "051p8",
+            "player": "Jordan Poole",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "0r0z9s1ijx9bmlcn": {
+      "date": "2019-10-20",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Brooklyn Nets",
+          "to": "Indiana Pacers",
+          "label": "2019 round 1 pick, no. 10",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "051oq",
+            "player": "Cam Reddish",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Brooklyn Nets",
+          "label": "2019 round 2 pick, no. 8",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "051pc",
+            "player": "KZ Okpala",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Brooklyn Nets",
+          "label": "2019 round 1 pick, no. 11",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "051ol",
+            "player": "Darius Garland",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
     {
       "season": "2019-20",

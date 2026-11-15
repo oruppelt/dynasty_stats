@@ -21,13 +21,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Utah Jazz",
+      "label": "2026 round 2 pick (Utah Jazz)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "from": "Utah Jazz",
+      "team": "Philadelphia 76ers",
+      "trade": "7kx183fulzh11jvr",
+      "label": "2026 round 2 pick (Utah Jazz)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-03",
       "team": "Philadelphia 76ers",
       "round": 2,
-      "pick": 39,
+      "pick": 9,
+      "overall": 39,
+      "original": "Utah Jazz",
+      "certain": true,
       "periods": 7,
       "starts": 0,
       "gp": 0,
@@ -36,8 +57,55 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "7kx183fulzh11jvr": {
+      "date": "2024-08-05",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Philadelphia 76ers",
+          "to": "Utah Jazz",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtq",
+          "player": "Tre Jones",
+          "label": "Tre Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 2 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "076uk",
+            "player": "Ja'Kobi Gillespie",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

@@ -128,6 +128,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Houston Rockets",
+      "label": "2022 round 1 pick, no. 23",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-27",
+      "from": "Houston Rockets",
+      "team": "Utah Jazz",
+      "trade": "1yjewi5il4x6wzkp",
+      "label": "2022 round 1 pick, no. 23"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
@@ -135,6 +153,9 @@
       "team": "Utah Jazz",
       "round": 1,
       "pick": 23,
+      "overall": 23,
+      "original": "Houston Rockets",
+      "certain": true,
       "periods": 98,
       "starts": 31,
       "gp": 52,
@@ -204,8 +225,56 @@
       "contract": "REG1"
     }
   ],
-  "trades": {},
+  "trades": {
+    "1yjewi5il4x6wzkp": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Utah Jazz",
+          "label": "2022 round 1 pick, no. 23",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "0621q",
+            "player": "Nikola Jovic",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Houston Rockets",
+          "label": "2023 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 18,
+            "overall": 18,
+            "player_id": "06cce",
+            "player": "Jalen Hood-Schifino",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

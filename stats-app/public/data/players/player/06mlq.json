@@ -114,13 +114,54 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Portland Trail Blazers",
+      "label": "2024 round 2 pick (Portland Trail Blazers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-07",
+      "from": "Portland Trail Blazers",
+      "team": "Orlando Magic",
+      "trade": "p9uyquxbl8ylwlkp",
+      "label": "2024 round 2 pick (Portland Trail Blazers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-12",
+      "from": "Orlando Magic",
+      "team": "Utah Jazz",
+      "trade": "zzfkpw4ol95t0sup",
+      "label": "2024 round 2 pick (Portland Trail Blazers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-13",
+      "from": "Utah Jazz",
+      "team": "Oklahoma City Thunder",
+      "trade": "9fzowpbal97efy5l",
+      "label": "2024 round 2 pick (Portland Trail Blazers)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-29",
       "team": "Oklahoma City Thunder",
       "round": 2,
-      "pick": 46,
+      "pick": 16,
+      "overall": 46,
+      "original": "Portland Trail Blazers",
+      "certain": true,
       "periods": 18,
       "starts": 6,
       "gp": 7,
@@ -145,6 +186,128 @@
     }
   ],
   "trades": {
+    "p9uyquxbl8ylwlkp": {
+      "date": "2022-10-07",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "player_id": "043cj",
+          "player": "Gary Payton II",
+          "label": "Gary Payton II"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2024 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "06mlq",
+            "player": "Pelle Larsson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "zzfkpw4ol95t0sup": {
+      "date": "2022-10-12",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "06227",
+          "player": "Ryan Rollins",
+          "label": "Ryan Rollins"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "06233",
+          "player": "Ron Harper",
+          "label": "Ron Harper"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "0527h",
+          "player": "Naz Reid",
+          "label": "Naz Reid"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05uiq",
+            "player": "Alperen Sengun",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "06mlq",
+            "player": "Pelle Larsson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "label": "2024 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 18,
+            "overall": 18,
+            "player_id": "06mk8",
+            "player": "Jared McCain",
+            "certain": true
+          }
+        }
+      ]
+    },
     "f545zgb6m50zzjc9": {
       "date": "2024-12-23",
       "season": "2024-25",
@@ -186,12 +349,93 @@
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Cleveland Cavaliers",
-          "label": "2025 round 1 pick (Oklahoma City Thunder)"
+          "label": "2025 round 1 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06v80",
+            "player": "Ryan Kalkbrenner",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "9fzowpbal97efy5l": {
+      "date": "2022-10-13",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "player_id": "0623h",
+          "player": "Alondes Williams",
+          "label": "Alondes Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "player_id": "051pw",
+          "player": "Jalen McDaniels",
+          "label": "Jalen McDaniels"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "player_id": "027os",
+          "player": "Kemba Walker",
+          "label": "Kemba Walker"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "player_id": "05ujg",
+          "player": "Isaiah Livers",
+          "label": "Isaiah Livers"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0621m",
+          "player": "David Roddy",
+          "label": "David Roddy"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "label": "2024 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "06mlq",
+            "player": "Pelle Larsson",
+            "certain": true
+          }
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

@@ -41,13 +41,32 @@
       "date": "2019-06-24",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 46,
+      "pick": 16,
+      "overall": 46,
       "periods": 35,
       "starts": 0,
       "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
+    },
+    {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Houston Rockets",
+      "label": "2022 round 2 pick (Houston Rockets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "from": "Houston Rockets",
+      "team": "Denver Nuggets",
+      "trade": "ueqn8qnjkibcosr0",
+      "label": "2022 round 2 pick (Houston Rockets)"
     },
     {
       "kind": "drop",
@@ -57,13 +76,46 @@
       "team": "Detroit Pistons"
     },
     {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-14",
+      "from": "Denver Nuggets",
+      "team": "Boston Celtics",
+      "trade": "5ckrl4m9kpjpedur",
+      "label": "2022 round 2 pick (Houston Rockets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-18",
+      "from": "Boston Celtics",
+      "team": "Houston Rockets",
+      "trade": "g2f53zxaksheu85c",
+      "label": "2022 round 2 pick (Houston Rockets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-22",
+      "from": "Houston Rockets",
+      "team": "Boston Celtics",
+      "trade": "wgzh0mptksm03avm",
+      "label": "2022 round 2 pick (Houston Rockets)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-29",
       "team": "Boston Celtics",
       "round": 2,
-      "pick": 53,
+      "pick": 23,
+      "overall": 53,
+      "original": "Houston Rockets",
+      "certain": true,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -77,7 +129,241 @@
       "team": "Boston Celtics"
     }
   ],
-  "trades": {},
+  "trades": {
+    "5ckrl4m9kpjpedur": {
+      "date": "2021-06-14",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Denver Nuggets",
+          "label": "2021 round 2 pick, no. 4"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Denver Nuggets",
+          "label": "2021 round 2 pick, no. 30",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "05ujk",
+            "player": "Dalano Banton",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Boston Celtics",
+          "label": "2022 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "051pm",
+            "player": "Admiral Schofield",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "ueqn8qnjkibcosr0": {
+      "date": "2020-12-05",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Houston Rockets",
+          "player_id": "04qs6",
+          "player": "Dzanan Musa",
+          "label": "Dzanan Musa"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Houston Rockets",
+          "label": "2021 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "05ujd",
+            "player": "Neemias Queta",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Denver Nuggets",
+          "label": "2022 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "051pm",
+            "player": "Admiral Schofield",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "wgzh0mptksm03avm": {
+      "date": "2021-08-22",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "04qs6",
+          "player": "Dzanan Musa",
+          "label": "Dzanan Musa"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "031m4",
+          "player": "Dennis Schroder",
+          "label": "Dennis Schroder"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "label": "2022 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "051pm",
+            "player": "Admiral Schofield",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "label": "2023 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06ccx",
+            "player": "Hunter Tyson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "g2f53zxaksheu85c": {
+      "date": "2021-08-18",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "00129",
+          "player": "Carmelo Anthony",
+          "label": "Carmelo Anthony"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2022 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "0621y",
+            "player": "Max Christie",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2022 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "051pm",
+            "player": "Admiral Schofield",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2023 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06ccx",
+            "player": "Hunter Tyson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "player_id": "04qs6",
+          "player": "Dzanan Musa",
+          "label": "Dzanan Musa"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "player_id": "03lls",
+          "player": "Jaylen Brown",
+          "label": "Jaylen Brown"
+        }
+      ]
+    }
+  },
   "axis": [
     {
       "season": "2019-20",

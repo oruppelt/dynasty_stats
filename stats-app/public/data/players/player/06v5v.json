@@ -86,6 +86,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Phoenix Suns",
+      "label": "2025 round 1 pick (Phoenix Suns)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 25,
+      "date": "2024-01-15",
+      "from": "Phoenix Suns",
+      "team": "Memphis Grizzlies",
+      "trade": "oz23ebmblrf7gezg",
+      "label": "2025 round 1 pick (Phoenix Suns)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 4,
+      "date": "2024-11-01",
+      "from": "Memphis Grizzlies",
+      "team": "Miami Heat",
+      "trade": "pfyg2x59m2yetksi",
+      "label": "2025 round 1 pick (Phoenix Suns)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -93,6 +121,9 @@
       "team": "Miami Heat",
       "round": 1,
       "pick": 6,
+      "overall": 6,
+      "original": "Phoenix Suns",
+      "certain": true,
       "periods": 40,
       "starts": 33,
       "gp": 52,
@@ -101,8 +132,141 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "pfyg2x59m2yetksi": {
+      "date": "2024-11-01",
+      "season": "2024-25",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "player_id": "06cp4",
+          "player": "Craig Porter",
+          "label": "Craig Porter"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "player_id": "02ng3",
+          "player": "Khris Middleton",
+          "label": "Khris Middleton"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 6,
+            "overall": 6,
+            "player_id": "06v5v",
+            "player": "Cedric Coward",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick (Miami Heat)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06v5l",
+            "player": "Cooper Flagg",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qu0",
+          "player": "Jaden McDaniels",
+          "label": "Jaden McDaniels"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qsq",
+          "player": "Tyrese Maxey",
+          "label": "Tyrese Maxey"
+        }
+      ]
+    },
+    "oz23ebmblrf7gezg": {
+      "date": "2024-01-15",
+      "season": "2023-24",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Phoenix Suns",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "label": "2025 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 6,
+            "overall": 6,
+            "player_id": "06v5v",
+            "player": "Cedric Coward",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "06mkl",
+            "player": "Isaiah Collier",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

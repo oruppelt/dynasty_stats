@@ -421,110 +421,6 @@
     }
   ],
   "trades": {
-    "w77iv92nlraibgpv": {
-      "date": "2024-01-12",
-      "season": "2023-24",
-      "period": 24,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Chicago Bulls",
-          "player_id": "005kd",
-          "player": "Kevin Love",
-          "label": "Kevin Love"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Chicago Bulls",
-          "player_id": "031lv",
-          "player": "Kentavious Caldwell-Pope",
-          "label": "Kentavious Caldwell-Pope"
-        },
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Atlanta Hawks",
-          "player_id": "05uug",
-          "player": "Sam Hauser",
-          "label": "Sam Hauser"
-        },
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Atlanta Hawks",
-          "player_id": "0621r",
-          "player": "Patrick Baldwin",
-          "label": "Patrick Baldwin"
-        },
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Atlanta Hawks",
-          "player_id": "03r7v",
-          "player": "Pat Connaughton",
-          "label": "Pat Connaughton"
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Atlanta Hawks",
-          "label": "2024 round 2 pick (Milwaukee Bucks)"
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Atlanta Hawks",
-          "label": "2024 round 1 pick (Boston Celtics)"
-        }
-      ]
-    },
-    "ghzol8yfmidcvjxt": {
-      "date": "2025-11-24",
-      "season": "2025-26",
-      "period": 11,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "New Orleans Pelicans",
-          "player_id": "05qti",
-          "player": "Josh Green",
-          "label": "Josh Green"
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "New Orleans Pelicans",
-          "player_id": "000zv",
-          "player": "Al Horford",
-          "label": "Al Horford"
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Houston Rockets",
-          "player_id": "031lv",
-          "player": "Kentavious Caldwell-Pope",
-          "label": "Kentavious Caldwell-Pope"
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Houston Rockets",
-          "player_id": "04qsi",
-          "player": "Jarred Vanderbilt",
-          "label": "Jarred Vanderbilt"
-        },
-        {
-          "kind": "pick",
-          "from": "New Orleans Pelicans",
-          "to": "Houston Rockets",
-          "label": "2027 round 2 pick (New Orleans Pelicans)"
-        }
-      ]
-    },
     "ycc0kyhxk3u6ztuk": {
       "date": "2019-12-06",
       "season": "2019-20",
@@ -581,7 +477,16 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Phoenix Suns",
-          "label": "2025 round 2 pick (Atlanta Hawks)"
+          "label": "2025 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "06va1",
+            "player": "Max Shulga",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -598,6 +503,51 @@
           "player_id": "05qym",
           "player": "Kenyon Martin",
           "label": "Kenyon Martin"
+        }
+      ]
+    },
+    "ghzol8yfmidcvjxt": {
+      "date": "2025-11-24",
+      "season": "2025-26",
+      "period": 11,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "New Orleans Pelicans",
+          "player_id": "05qti",
+          "player": "Josh Green",
+          "label": "Josh Green"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "New Orleans Pelicans",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Houston Rockets",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Houston Rockets",
+          "player_id": "04qsi",
+          "player": "Jarred Vanderbilt",
+          "label": "Jarred Vanderbilt"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (New Orleans Pelicans)"
         }
       ]
     },
@@ -626,7 +576,16 @@
           "kind": "pick",
           "from": "Los Angeles Lakers",
           "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Los Angeles Lakers)"
+          "label": "2023 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06cdf",
+            "player": "Julian Phillips",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -640,7 +599,93 @@
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Los Angeles Lakers",
-          "label": "2023 round 1 pick (Oklahoma City Thunder)"
+          "label": "2023 round 1 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 9,
+            "overall": 9,
+            "player_id": "06cc0",
+            "player": "Taylor Hendricks",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "w77iv92nlraibgpv": {
+      "date": "2024-01-12",
+      "season": "2023-24",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "005kd",
+          "player": "Kevin Love",
+          "label": "Kevin Love"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "0621r",
+          "player": "Patrick Baldwin",
+          "label": "Patrick Baldwin"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7v",
+          "player": "Pat Connaughton",
+          "label": "Pat Connaughton"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06mkj",
+            "player": "Terrence Shannon",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06mlg",
+            "player": "Tyler Kolek",
+            "certain": true
+          }
         }
       ]
     }

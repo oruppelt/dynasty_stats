@@ -21,13 +21,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2026 round 2 pick (Orlando Magic)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 13,
+      "date": "2025-12-03",
+      "from": "Orlando Magic",
+      "team": "Brooklyn Nets",
+      "trade": "de1p940kmipu5om6",
+      "label": "2026 round 2 pick (Orlando Magic)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-03",
       "team": "Brooklyn Nets",
       "round": 2,
-      "pick": 50,
+      "pick": 20,
+      "overall": 50,
+      "original": "Orlando Magic",
+      "certain": true,
       "periods": 7,
       "starts": 0,
       "gp": 0,
@@ -36,8 +57,57 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "de1p940kmipu5om6": {
+      "date": "2025-12-03",
+      "season": "2025-26",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Brooklyn Nets",
+          "to": "Orlando Magic",
+          "player_id": "005l0",
+          "player": "Nicolas Batum",
+          "label": "Nicolas Batum"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Brooklyn Nets",
+          "player_id": "04ews",
+          "player": "Tony Bradley",
+          "label": "Tony Bradley"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Brooklyn Nets",
+          "label": "2026 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "076u6",
+            "player": "Braden Smith",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

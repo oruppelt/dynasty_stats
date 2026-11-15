@@ -152,27 +152,6 @@
     }
   ],
   "trades": {
-    "vy03dh0ckrvx26zj": {
-      "date": "2021-08-03",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Miami Heat",
-          "player_id": "05qwu",
-          "player": "Killian Tillie",
-          "label": "Killian Tillie"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Boston Celtics",
-          "label": "2021 round 2 pick, no. 27"
-        }
-      ]
-    },
     "ee6xgebckm9jocfk": {
       "date": "2021-03-14",
       "season": "2020-21",
@@ -190,7 +169,16 @@
           "kind": "pick",
           "from": "Boston Celtics",
           "to": "Washington Wizards",
-          "label": "2022 round 2 pick (Washington Wizards)"
+          "label": "2022 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "0621o",
+            "player": "Blake Wesley",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -204,7 +192,46 @@
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Boston Celtics",
-          "label": "2022 round 1 pick (Washington Wizards)"
+          "label": "2022 round 1 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "06210",
+            "player": "Paolo Banchero",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "vy03dh0ckrvx26zj": {
+      "date": "2021-08-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "05qwu",
+          "player": "Killian Tillie",
+          "label": "Killian Tillie"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick, no. 27",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "05qzh",
+            "player": "Naji Marshall",
+            "certain": true
+          }
         }
       ]
     }

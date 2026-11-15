@@ -93,6 +93,7 @@
       "team": "Milwaukee Bucks",
       "round": 1,
       "pick": 28,
+      "overall": 28,
       "periods": 31,
       "starts": 0,
       "gp": 0,
@@ -106,6 +107,14 @@
       "period": 33,
       "date": "2020-02-10",
       "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Toronto Raptors",
+      "label": "2022 round 2 pick (Toronto Raptors)",
+      "date": null
     },
     {
       "kind": "claim",
@@ -122,6 +131,26 @@
       "contract": "REG1"
     },
     {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-09",
+      "from": "Toronto Raptors",
+      "team": "Washington Wizards",
+      "trade": "41f9k727kihb18pa",
+      "label": "2022 round 2 pick (Toronto Raptors)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 24,
+      "date": "2021-03-13",
+      "from": "Washington Wizards",
+      "team": "Minnesota Timberwolves",
+      "trade": "2km3m9qmkm7xl6h2",
+      "label": "2022 round 2 pick (Toronto Raptors)"
+    },
+    {
       "kind": "drop",
       "season": "2021-22",
       "period": 1,
@@ -135,7 +164,10 @@
       "date": "2022-06-29",
       "team": "Minnesota Timberwolves",
       "round": 2,
-      "pick": 51,
+      "pick": 21,
+      "overall": 51,
+      "original": "Toronto Raptors",
+      "certain": true,
       "periods": 0,
       "starts": 0,
       "gp": 0,
@@ -149,7 +181,90 @@
       "team": "Minnesota Timberwolves"
     }
   ],
-  "trades": {},
+  "trades": {
+    "2km3m9qmkm7xl6h2": {
+      "date": "2021-03-13",
+      "season": "2020-21",
+      "period": 24,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 2 pick (Toronto Raptors)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "051p6",
+            "player": "Dylan Windler",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "41f9k727kihb18pa": {
+      "date": "2020-12-09",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Toronto Raptors)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "051p6",
+            "player": "Dylan Windler",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Toronto Raptors",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Toronto Raptors",
+          "label": "2022 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "0621o",
+            "player": "Blake Wesley",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Toronto Raptors",
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          }
+        }
+      ]
+    }
+  },
   "axis": [
     {
       "season": "2019-20",

@@ -100,13 +100,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2024 round 2 pick, no. 21",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-29",
+      "from": "Indiana Pacers",
+      "team": "Golden State Warriors",
+      "trade": "wa89xdtylxzwvtxb",
+      "label": "2024 round 2 pick, no. 21"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-29",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 51,
+      "pick": 21,
+      "overall": 51,
+      "original": "Indiana Pacers",
+      "certain": false,
       "periods": 73,
       "starts": 31,
       "gp": 53,
@@ -115,8 +136,47 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "wa89xdtylxzwvtxb": {
+      "date": "2024-06-29",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Golden State Warriors",
+          "to": "Indiana Pacers",
+          "label": "$7 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Golden State Warriors",
+          "label": "2024 round 2 pick, no. 21",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06mlz",
+            "player": "Cam Spencer",
+            "certain": false
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

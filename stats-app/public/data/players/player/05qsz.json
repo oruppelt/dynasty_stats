@@ -42,13 +42,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Phoenix Suns",
+      "label": "2020 round 2 pick (Phoenix Suns)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-04",
+      "from": "Phoenix Suns",
+      "team": "Boston Celtics",
+      "trade": "9vu7j14qjyww9xn4",
+      "label": "2020 round 2 pick (Phoenix Suns)"
+    },
+    {
       "kind": "draft",
       "season": "2020-21",
       "period": 0,
       "date": "2020-11-24",
       "team": "Boston Celtics",
       "round": 2,
-      "pick": 37,
+      "pick": 7,
+      "overall": 37,
+      "original": "Phoenix Suns",
+      "certain": false,
       "periods": 29,
       "starts": 2,
       "gp": 1,
@@ -64,8 +85,44 @@
       "team": "Boston Celtics"
     }
   ],
-  "trades": {},
+  "trades": {
+    "9vu7j14qjyww9xn4": {
+      "date": "2019-08-04",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Phoenix Suns",
+          "player_id": "01g61",
+          "player": "Ersan Ilyasova",
+          "label": "Ersan Ilyasova"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Boston Celtics",
+          "label": "2020 round 2 pick (Phoenix Suns)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "05qsz",
+            "player": "Reggie Perry",
+            "certain": false
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

@@ -35,13 +35,44 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Sacramento Kings",
+      "label": "2024 round 2 pick (Sacramento Kings)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-01",
+      "from": "Sacramento Kings",
+      "team": "Miami Heat",
+      "trade": "jc9wiognl3w1i5wk",
+      "label": "2024 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-26",
+      "from": "Miami Heat",
+      "team": "Detroit Pistons",
+      "trade": "0cpp4tktldd5fyqm",
+      "label": "2024 round 2 pick (Sacramento Kings)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-29",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 59,
+      "pick": 29,
+      "overall": 59,
+      "original": "Sacramento Kings",
+      "certain": true,
       "periods": 66,
       "starts": 0,
       "gp": 0,
@@ -57,8 +88,111 @@
       "team": "Detroit Pistons"
     }
   ],
-  "trades": {},
+  "trades": {
+    "jc9wiognl3w1i5wk": {
+      "date": "2022-06-01",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "05uiw",
+          "player": "Isaiah Jackson",
+          "label": "Isaiah Jackson"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06mm8",
+            "player": "Keshad Johnson",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "0cpp4tktldd5fyqm": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "05ujh",
+          "player": "Greg Brown",
+          "label": "Greg Brown"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "player_id": "027p9",
+          "player": "Reggie Jackson",
+          "label": "Reggie Jackson"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06mm8",
+            "player": "Keshad Johnson",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

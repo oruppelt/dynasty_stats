@@ -49,13 +49,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2020 round 2 pick, no. 14",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-20",
+      "from": "Orlando Magic",
+      "team": "Atlanta Hawks",
+      "trade": "rjwv8ryjkhq7dzun",
+      "label": "2020 round 2 pick, no. 14"
+    },
+    {
       "kind": "draft",
       "season": "2020-21",
       "period": 0,
       "date": "2020-11-24",
       "team": "Atlanta Hawks",
       "round": 2,
-      "pick": 44,
+      "pick": 14,
+      "overall": 44,
+      "original": "Orlando Magic",
+      "certain": true,
       "periods": 42,
       "starts": 0,
       "gp": 0,
@@ -87,6 +108,74 @@
     }
   ],
   "trades": {
+    "rjwv8ryjkhq7dzun": {
+      "date": "2020-11-20",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "label": "2020 round 1 pick, no. 20",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "05qsn",
+            "player": "Malachi Flynn",
+            "certain": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "042ni",
+          "player": "Ante Zizic",
+          "label": "Ante Zizic"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "051ph",
+          "player": "Deividas Sirvydis",
+          "label": "Deividas Sirvydis"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2020 round 1 pick, no. 26",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "05qsu",
+            "player": null,
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2020 round 2 pick, no. 14",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05qt8",
+            "player": "Cassius Stanley",
+            "certain": true
+          }
+        }
+      ]
+    },
     "mwwyzn4ykwro4f2f": {
       "date": "2021-12-04",
       "season": "2021-22",
@@ -136,19 +225,46 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Washington Wizards",
-          "label": "2022 round 2 pick (Chicago Bulls)"
+          "label": "2022 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "0621u",
+            "player": "Andrew Nembhard",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Washington Wizards",
-          "label": "2022 round 1 pick (Golden State Warriors)"
+          "label": "2022 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Washington Wizards",
-          "label": "2023 round 1 pick (Atlanta Hawks)"
+          "label": "2023 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06ca5",
+            "player": "Kris Murray",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -178,6 +294,11 @@
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

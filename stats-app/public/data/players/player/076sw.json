@@ -32,6 +32,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2026 round 1 pick (Orlando Magic)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 25,
+      "date": "2025-01-13",
+      "from": "Orlando Magic",
+      "team": "Atlanta Hawks",
+      "trade": "elhvdxrdm5v6pxvy",
+      "label": "2026 round 1 pick (Orlando Magic)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-27",
+      "from": "Atlanta Hawks",
+      "team": "Milwaukee Bucks",
+      "trade": "sq7it0uxm6e3ev52",
+      "label": "2026 round 1 pick (Orlando Magic)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "from": "Milwaukee Bucks",
+      "team": "Portland Trail Blazers",
+      "trade": "68vzx5bemhetwvoq",
+      "label": "2026 round 1 pick (Orlando Magic)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -39,6 +77,9 @@
       "team": "Portland Trail Blazers",
       "round": 1,
       "pick": 20,
+      "overall": 20,
+      "original": "Orlando Magic",
+      "certain": true,
       "periods": 7,
       "starts": 1,
       "gp": 0,
@@ -47,8 +88,211 @@
       "contract": "R13"
     }
   ],
-  "trades": {},
+  "trades": {
+    "sq7it0uxm6e3ev52": {
+      "date": "2025-01-27",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "player_id": "03e7f",
+          "player": "Vasilije Micic",
+          "label": "Vasilije Micic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "076sw",
+            "player": "Labaron Philon",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "051pa",
+          "player": "Kevin Porter",
+          "label": "Kevin Porter"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Los Angeles Clippers",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard"
+        }
+      ]
+    },
+    "elhvdxrdm5v6pxvy": {
+      "date": "2025-01-13",
+      "season": "2024-25",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "049kb",
+          "player": "De'Aaron Fox",
+          "label": "De'Aaron Fox"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2026 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "076sw",
+            "player": "Labaron Philon",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "68vzx5bemhetwvoq": {
+      "date": "2025-10-31",
+      "season": "2025-26",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Portland Trail Blazers",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qty",
+          "player": "Jalen Smith",
+          "label": "Jalen Smith"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "076t0",
+            "player": "Caleb Wilson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "076sw",
+            "player": "Labaron Philon",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Milwaukee Bucks",
+          "player_id": "04ewk",
+          "player": "John Collins",
+          "label": "John Collins"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,

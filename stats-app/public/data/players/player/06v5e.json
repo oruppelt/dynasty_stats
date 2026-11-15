@@ -66,6 +66,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2025 round 1 pick (Indiana Pacers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-24",
+      "from": "Indiana Pacers",
+      "team": "Portland Trail Blazers",
+      "trade": "okjjp9solqjjzh20",
+      "label": "2025 round 1 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "from": "Portland Trail Blazers",
+      "team": "San Antonio Spurs",
+      "trade": "gxuld3d3lzh814pk",
+      "label": "2025 round 1 pick (Indiana Pacers)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -73,6 +101,9 @@
       "team": "San Antonio Spurs",
       "round": 1,
       "pick": 29,
+      "overall": 29,
+      "original": "Indiana Pacers",
+      "certain": true,
       "periods": 33,
       "starts": 3,
       "gp": 3,
@@ -104,6 +135,68 @@
     }
   ],
   "trades": {
+    "okjjp9solqjjzh20": {
+      "date": "2023-12-24",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "03nwq",
+          "player": "Christian Wood",
+          "label": "Christian Wood"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "04qse",
+          "player": "Gary Trent",
+          "label": "Gary Trent"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2025 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "06v5e",
+            "player": "Yang Hansen",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "06cef",
+          "player": "Oscar Tshiebwe",
+          "label": "Oscar Tshiebwe"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "027oq",
+          "player": "Bismack Biyombo",
+          "label": "Bismack Biyombo"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris"
+        }
+      ]
+    },
     "zlfnl31gmqt85aw1": {
       "date": "2026-06-25",
       "season": "2026-27",
@@ -121,7 +214,16 @@
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "San Antonio Spurs",
-          "label": "2026 round 2 pick, no. 24"
+          "label": "2026 round 2 pick, no. 24",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -151,12 +253,77 @@
           "kind": "pick",
           "from": "San Antonio Spurs",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick, no. 23"
+          "label": "2026 round 1 pick, no. 23",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "076t4",
+            "player": "Ebuka Okorie",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "gxuld3d3lzh814pk": {
+      "date": "2024-08-05",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "player_id": "03nwq",
+          "player": "Christian Wood",
+          "label": "Christian Wood"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "player_id": "031lz",
+          "player": "Steven Adams",
+          "label": "Steven Adams"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "06v5e",
+            "player": "Yang Hansen",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "04ewk",
+          "player": "John Collins",
+          "label": "John Collins"
         }
       ]
     }
   },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

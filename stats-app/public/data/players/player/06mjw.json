@@ -100,6 +100,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Memphis Grizzlies",
+      "label": "2024 round 1 pick (Memphis Grizzlies)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 10,
+      "date": "2022-11-20",
+      "from": "Memphis Grizzlies",
+      "team": "Washington Wizards",
+      "trade": "na46l1galanv6p4z",
+      "label": "2024 round 1 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-26",
+      "from": "Washington Wizards",
+      "team": "Oklahoma City Thunder",
+      "trade": "lz8mddj1lkk2t9tb",
+      "label": "2024 round 1 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 9,
+      "date": "2023-11-20",
+      "from": "Oklahoma City Thunder",
+      "team": "Los Angeles Lakers",
+      "trade": "t7clusd2lp79luid",
+      "label": "2024 round 1 pick (Memphis Grizzlies)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -107,6 +145,9 @@
       "team": "Los Angeles Lakers",
       "round": 1,
       "pick": 7,
+      "overall": 7,
+      "original": "Memphis Grizzlies",
+      "certain": true,
       "periods": 66,
       "starts": 60,
       "gp": 91,
@@ -137,6 +178,160 @@
     }
   ],
   "trades": {
+    "na46l1galanv6p4z": {
+      "date": "2022-11-20",
+      "season": "2022-23",
+      "period": 11,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Washington Wizards",
+          "player_id": "043ib",
+          "player": "Dorian Finney-Smith",
+          "label": "Dorian Finney-Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Washington Wizards",
+          "player_id": "042nw",
+          "player": "Malcolm Brogdon",
+          "label": "Malcolm Brogdon"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Washington Wizards",
+          "label": "2024 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06mjw",
+            "player": "Stephon Castle",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Memphis Grizzlies",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qsl",
+          "player": "Patrick Williams",
+          "label": "Patrick Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Memphis Grizzlies",
+          "label": "2023 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06cdf",
+            "player": "Julian Phillips",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "t7clusd2lp79luid": {
+      "date": "2023-11-20",
+      "season": "2023-24",
+      "period": 9,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "02xg9",
+          "player": "Rudy Gobert",
+          "label": "Rudy Gobert"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "06cc2",
+          "player": "Gradey Dick",
+          "label": "Gradey Dick"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "0621m",
+          "player": "David Roddy",
+          "label": "David Roddy"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "2024 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06mjw",
+            "player": "Stephon Castle",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "2024 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06mlr",
+            "player": "Jamal Shead",
+            "certain": true
+          }
+        }
+      ]
+    },
     "a3b1c6mrmqqjlm1s": {
       "date": "2026-06-23",
       "season": "2026-27",
@@ -154,7 +349,16 @@
           "kind": "pick",
           "from": "Los Angeles Clippers",
           "to": "New Orleans Pelicans",
-          "label": "2026 round 2 pick (New Orleans Pelicans)"
+          "label": "2026 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "076u5",
+            "player": "Jaron Pierre",
+            "certain": true
+          }
         },
         {
           "kind": "pick",
@@ -171,9 +375,49 @@
           "label": "Jalen Brunson"
         }
       ]
+    },
+    "lz8mddj1lkk2t9tb": {
+      "date": "2023-07-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Washington Wizards",
+          "player_id": "06cda",
+          "player": "James Nnaji",
+          "label": "James Nnaji"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Oklahoma City Thunder",
+          "label": "2024 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06mjw",
+            "player": "Stephon Castle",
+            "certain": true
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

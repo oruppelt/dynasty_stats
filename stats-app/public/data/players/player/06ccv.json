@@ -114,13 +114,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2023 round 2 pick (Orlando Magic)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-05",
+      "from": "Orlando Magic",
+      "team": "Atlanta Hawks",
+      "trade": "0j9wja8ekwrzezvl",
+      "label": "2023 round 2 pick (Orlando Magic)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-16",
+      "from": "Atlanta Hawks",
+      "team": "Golden State Warriors",
+      "trade": "uuh2rleylbqddl2p",
+      "label": "2023 round 2 pick (Orlando Magic)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
       "date": "2023-06-27",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 32,
+      "pick": 2,
+      "overall": 32,
+      "original": "Orlando Magic",
+      "certain": true,
       "periods": 70,
       "starts": 34,
       "gp": 56,
@@ -191,7 +222,16 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 2 pick (Golden State Warriors)"
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -202,9 +242,102 @@
           "label": "Moses Moody"
         }
       ]
+    },
+    "0j9wja8ekwrzezvl": {
+      "date": "2021-12-05",
+      "season": "2021-22",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "04qsu",
+          "player": "Shake Milton",
+          "label": "Shake Milton"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "0621z",
+            "player": "Gabriele Procida",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2023 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06ccv",
+            "player": "Trayce Jackson-Davis",
+            "certain": true
+          }
+        }
+      ]
+    },
+    "uuh2rleylbqddl2p": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "005ll",
+          "player": "George Hill",
+          "label": "George Hill"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "label": "2023 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06ccv",
+            "player": "Trayce Jackson-Davis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "player_id": "05qzh",
+          "player": "Naji Marshall",
+          "label": "Naji Marshall"
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

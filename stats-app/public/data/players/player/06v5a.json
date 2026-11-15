@@ -86,6 +86,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Atlanta Hawks",
+      "label": "2025 round 1 pick (Atlanta Hawks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-03",
+      "from": "Atlanta Hawks",
+      "team": "Sacramento Kings",
+      "trade": "xlt1l483lzdzxsfa",
+      "label": "2025 round 1 pick (Atlanta Hawks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "from": "Sacramento Kings",
+      "team": "Miami Heat",
+      "trade": "o9x12180m3dbpz6a",
+      "label": "2025 round 1 pick (Atlanta Hawks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-04",
+      "from": "Miami Heat",
+      "team": "Phoenix Suns",
+      "trade": "wf1rqpzzmcoqfrnq",
+      "label": "2025 round 1 pick, no. 15"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -93,6 +131,9 @@
       "team": "Phoenix Suns",
       "round": 1,
       "pick": 15,
+      "overall": 15,
+      "original": "Atlanta Hawks",
+      "certain": true,
       "periods": 33,
       "starts": 22,
       "gp": 31,
@@ -117,6 +158,76 @@
     }
   ],
   "trades": {
+    "o9x12180m3dbpz6a": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "042ne",
+          "player": "Malik Beasley",
+          "label": "Malik Beasley"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "03kqi",
+          "player": "Joe Ingles",
+          "label": "Joe Ingles"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          }
+        }
+      ]
+    },
     "d3urdettmsz0jqra": {
       "date": "2026-08-18",
       "season": "2026-27",
@@ -161,9 +272,109 @@
           "label": "2028 round 1 pick (Phoenix Suns)"
         }
       ]
+    },
+    "xlt1l483lzdzxsfa": {
+      "date": "2024-08-03",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr."
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "label": "2025 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "04qrn",
+          "player": "Mikal Bridges",
+          "label": "Mikal Bridges"
+        }
+      ]
+    },
+    "wf1rqpzzmcoqfrnq": {
+      "date": "2025-07-04",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2025 round 1 pick, no. 15",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick, no. 26",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06v5p",
+            "player": "Nolan Traore",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "label": "2026 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "076t9",
+            "player": "Darryn Peterson",
+            "certain": true
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2025-26",
       "length": 45,

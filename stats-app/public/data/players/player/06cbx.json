@@ -114,6 +114,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Miami Heat",
+      "label": "2023 round 1 pick (Miami Heat)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-23",
+      "from": "Miami Heat",
+      "team": "Philadelphia 76ers",
+      "trade": "6dc5xcnfld97nf0g",
+      "label": "2023 round 1 pick (Miami Heat)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
@@ -121,6 +139,9 @@
       "team": "Philadelphia 76ers",
       "round": 1,
       "pick": 17,
+      "overall": 17,
+      "original": "Miami Heat",
+      "certain": true,
       "periods": 98,
       "starts": 92,
       "gp": 143,
@@ -150,8 +171,72 @@
       "contract": "REG3"
     }
   ],
-  "trades": {},
+  "trades": {
+    "6dc5xcnfld97nf0g": {
+      "date": "2023-01-23",
+      "season": "2022-23",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "031m0",
+          "player": "Kelly Olynyk",
+          "label": "Kelly Olynyk"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "label": "2023 round 2 pick (Miami Heat)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "06cdc",
+            "player": "Jalen Wilson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "label": "2023 round 1 pick (Miami Heat)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "06cbx",
+            "player": "Jaime Jaquez",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "04ewr",
+          "player": "Kyle Kuzma",
+          "label": "Kyle Kuzma"
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
     {
       "season": "2023-24",
       "length": 45,

@@ -74,13 +74,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2020 round 2 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 7,
+      "date": "2019-11-13",
+      "from": "Boston Celtics",
+      "team": "Golden State Warriors",
+      "trade": "18yvuxoyk2wfh60f",
+      "label": "2020 round 2 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2020-21",
       "period": 0,
       "date": "2020-11-24",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 41,
+      "pick": 11,
+      "overall": 41,
+      "original": "Boston Celtics",
+      "certain": false,
       "periods": 29,
       "starts": 1,
       "gp": 2,
@@ -142,6 +163,103 @@
     }
   ],
   "trades": {
+    "4cpai1imkw4sf9gq": {
+      "date": "2021-11-18",
+      "season": "2021-22",
+      "period": 9,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Chicago Bulls",
+          "to": "San Antonio Spurs",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "player_id": "05qu3",
+          "player": "Nico Mannion",
+          "label": "Nico Mannion"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "player_id": "05qth",
+          "player": "Tyrell Terry",
+          "label": "Tyrell Terry"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "label": "2022 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "04eww",
+            "player": null,
+            "certain": true
+          }
+        }
+      ]
+    },
+    "18yvuxoyk2wfh60f": {
+      "date": "2019-11-13",
+      "season": "2019-20",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Golden State Warriors",
+          "player_id": "0017e",
+          "player": "Chris Paul",
+          "label": "Chris Paul"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "05qu3",
+            "player": "Nico Mannion",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Golden State Warriors",
+          "label": "2020 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "05qtt",
+            "player": "Onyeka Okongwu",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Boston Celtics",
+          "player_id": "031lq",
+          "player": "Otto Porter",
+          "label": "Otto Porter"
+        }
+      ]
+    },
     "32nurs6skvuqo2yr": {
       "date": "2021-11-11",
       "season": "2021-22",
@@ -197,41 +315,6 @@
         }
       ]
     },
-    "4cpai1imkw4sf9gq": {
-      "date": "2021-11-18",
-      "season": "2021-22",
-      "period": 9,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Chicago Bulls",
-          "to": "San Antonio Spurs",
-          "label": "$1 budget"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Chicago Bulls",
-          "player_id": "05qu3",
-          "player": "Nico Mannion",
-          "label": "Nico Mannion"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Chicago Bulls",
-          "player_id": "05qth",
-          "player": "Tyrell Terry",
-          "label": "Tyrell Terry"
-        },
-        {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Chicago Bulls",
-          "label": "2022 round 2 pick (San Antonio Spurs)"
-        }
-      ]
-    },
     "78sajgbpksonf12n": {
       "date": "2021-08-23",
       "season": "2021-22",
@@ -257,7 +340,16 @@
           "kind": "pick",
           "from": "Golden State Warriors",
           "to": "Los Angeles Lakers",
-          "label": "2023 round 1 pick (Golden State Warriors)"
+          "label": "2023 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "06cca",
+            "player": "Brandon Miller",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -271,6 +363,11 @@
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
     {
       "season": "2020-21",
       "length": 42,

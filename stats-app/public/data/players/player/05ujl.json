@@ -35,13 +35,44 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2021 round 2 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 5,
+      "date": "2019-11-07",
+      "from": "Boston Celtics",
+      "team": "Miami Heat",
+      "trade": "yzpa9lmnk2oo5ui0",
+      "label": "2021 round 2 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "from": "Miami Heat",
+      "team": "Dallas Mavericks",
+      "trade": "ci5v7ywvkid24lwf",
+      "label": "2021 round 2 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
       "date": "2021-08-03",
       "team": "Dallas Mavericks",
       "round": 2,
-      "pick": 49,
+      "pick": 19,
+      "overall": 49,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 66,
       "starts": 0,
       "gp": 0,
@@ -57,8 +88,125 @@
       "team": "Dallas Mavericks"
     }
   ],
-  "trades": {},
+  "trades": {
+    "yzpa9lmnk2oo5ui0": {
+      "date": "2019-11-07",
+      "season": "2019-20",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "048zs",
+          "player": "Shaquille Harrison",
+          "label": "Shaquille Harrison"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "label": "2021 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05ujl",
+            "player": "David Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "04ewv",
+          "player": "Frank Jackson",
+          "label": "Frank Jackson"
+        }
+      ]
+    },
+    "ci5v7ywvkid24lwf": {
+      "date": "2020-12-06",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewl",
+          "player": "Terrance Ferguson",
+          "label": "Terrance Ferguson"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewj",
+          "player": "T.J. Leaf",
+          "label": "T.J. Leaf"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2021 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05ujl",
+            "player": "David Johnson",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2022 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "0622j",
+            "player": "Luke Travers",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

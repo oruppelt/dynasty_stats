@@ -170,6 +170,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Charlotte Hornets",
+      "label": "2021 round 1 pick (Charlotte Hornets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 24,
+      "date": "2021-03-14",
+      "from": "Charlotte Hornets",
+      "team": "Toronto Raptors",
+      "trade": "6dty708wkm9579c4",
+      "label": "2021 round 1 pick (Charlotte Hornets)"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
@@ -177,6 +195,9 @@
       "team": "Toronto Raptors",
       "round": 1,
       "pick": 29,
+      "overall": 29,
+      "original": "Charlotte Hornets",
+      "certain": true,
       "periods": 66,
       "starts": 11,
       "gp": 14,
@@ -306,6 +327,105 @@
     }
   ],
   "trades": {
+    "6dty708wkm9579c4": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "04qrt",
+          "player": "Zhaire Smith",
+          "label": "Zhaire Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "049s6",
+          "player": "Markelle Fultz",
+          "label": "Markelle Fultz"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2021 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "05ujw",
+            "player": "Jericho Sims",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2021 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "05uja",
+            "player": "Miles McBride",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2022 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "051pr",
+            "player": "Ignas Brazdeikis",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2022 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "0621h",
+            "player": "Dalen Terry",
+            "certain": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "02nf8",
+          "player": "Terrence Ross",
+          "label": "Terrence Ross"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
+        }
+      ]
+    },
     "ma10od3tmvzbzbvy": {
       "date": "2026-11-02",
       "season": "2026-27",
@@ -339,6 +459,16 @@
     }
   },
   "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
     {
       "season": "2021-22",
       "length": 47,

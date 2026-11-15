@@ -128,13 +128,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2022 round 2 pick, no. 18",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-27",
+      "from": "Indiana Pacers",
+      "team": "Sacramento Kings",
+      "trade": "w0a6nzz7l4wssb9d",
+      "label": "2022 round 2 pick, no. 18"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-28",
+      "from": "Sacramento Kings",
+      "team": "Miami Heat",
+      "trade": "9sv9d55bl4xzxthc",
+      "label": "2022 round 2 pick, no. 18"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-28",
       "team": "Miami Heat",
       "round": 2,
-      "pick": 48,
+      "pick": 18,
+      "overall": 48,
+      "original": "Indiana Pacers",
+      "certain": false,
       "periods": 98,
       "starts": 58,
       "gp": 77,
@@ -187,6 +218,34 @@
     }
   ],
   "trades": {
+    "w0a6nzz7l4wssb9d": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "label": "2022 round 2 pick, no. 18",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "0622k",
+            "player": "Jabari Walker",
+            "certain": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Sacramento Kings",
+          "to": "Indiana Pacers",
+          "label": "$8 budget"
+        }
+      ]
+    },
     "qtj5h137mklfkucq": {
       "date": "2026-01-19",
       "season": "2025-26",
@@ -212,7 +271,16 @@
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Philadelphia 76ers",
-          "label": "2026 round 1 pick (Miami Heat)"
+          "label": "2026 round 1 pick (Miami Heat)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "076ud",
+            "player": "Isaiah Evans",
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -231,9 +299,62 @@
           "label": "Isaiah Stewart"
         }
       ]
+    },
+    "9sv9d55bl4xzxthc": {
+      "date": "2022-06-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "label": "2022 round 2 pick, no. 11"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "label": "2022 round 2 pick, no. 16",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "0622c",
+            "player": "Isaiah Mobley",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "label": "2022 round 2 pick, no. 18",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "0622k",
+            "player": "Jabari Walker",
+            "certain": false
+          }
+        }
+      ]
     }
   },
   "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
     {
       "season": "2022-23",
       "length": 48,

@@ -21,13 +21,34 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "San Antonio Spurs",
+      "label": "2026 round 2 pick (San Antonio Spurs)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "San Antonio Spurs",
+      "team": "Detroit Pistons",
+      "trade": "8c6pve8tlxywwxv1",
+      "label": "2026 round 2 pick (San Antonio Spurs)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-03",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 44,
+      "pick": 14,
+      "overall": 44,
+      "original": "San Antonio Spurs",
+      "certain": true,
       "periods": 7,
       "starts": 0,
       "gp": 0,
@@ -36,8 +57,71 @@
       "contract": "R23"
     }
   ],
-  "trades": {},
+  "trades": {
+    "8c6pve8tlxywwxv1": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 2 pick, no. 2",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06mli",
+            "player": "Juan Nunez",
+            "certain": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Detroit Pistons",
+          "label": "2026 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "076tw",
+            "player": "Nick Martinelli",
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Detroit Pistons",
+          "label": "2025 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06v7y",
+            "player": "Noah Penda",
+            "certain": true
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
     {
       "season": "2026-27",
       "length": 7,
