@@ -5,6 +5,7 @@ import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
 import { ErrorState } from './ErrorState'
 import { Explainer } from './Explainer'
+import { PlayerTimeline, formatDate } from './PlayerTimeline'
 import { PlayerIndexEntry, PlayerPage, describeContract, formatFpts, formatSalary, usePlayerIndex, usePlayerPage } from '@/lib/players'
 import { useSelectedPlayer } from '@/lib/selected-player'
 import { formatPoints } from '@/lib/standings'
@@ -12,8 +13,8 @@ import { teamCode } from '@/lib/teams'
 import { cn } from '@/lib/utils'
 
 // Players → Player: search any player who was ever on a roster, and their
-// career in the league season by season. The start of the player lineage
-// (ROADMAP.md, section 3): trades and draft picks come later.
+// career in the league: a timeline of moves (PlayerTimeline) and season by
+// season. Part of the player lineage (ROADMAP.md, section 3).
 
 /** Lowercase without accents, so "jokic" finds "Jokić". */
 const fold = (text: string) => text.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
@@ -89,6 +90,16 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
   const playoffPoints = sum('playoff_points')
   // Every season's salary in full, whichever team paid it (not the sum of Paid)
   const paid = page.salary
+  const current = latest.season === currentSeason
+  const thisSeason = seasons.filter(s => s.season === currentSeason)
+  const seasonPoints = thisSeason.reduce((t, s) => t + s.points, 0)
+  const seasonStarts = thisSeason.reduce((t, s) => t + s.starts, 0)
+  const seasonGp = thisSeason.reduce((t, s) => t + s.gp, 0)
+  // How he got to his latest team: the last arrival on the timeline
+  const arrival = [...(page.timeline ?? [])].reverse().find(e => !['drop', 'renamed'].includes(e.kind))
+  const how: Record<string, string> = { draft: 'drafted', claim: 'signed', 're-sign': 're-signed', trade: 'traded', joined: '' }
+  const since = arrival && arrival.kind !== 'joined' && arrival.date && current
+    ? ` since ${formatDate(arrival.date)} (${how[arrival.kind]})` : ''
 
   return (
     <>
@@ -99,17 +110,20 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
             <div className="min-w-0">
               <CardTitle className="truncate text-2xl">{page.player}</CardTitle>
               <CardDescription>
-                {latest.season === currentSeason ? latest.team : `Last on a roster: ${latest.team}, ${latest.season}`} · {seasonCount} season{seasonCount === 1 ? '' : 's'} in the league
+                {current ? `${latest.team}${since}` : `Last on a roster: ${latest.team}, ${latest.season}`} · {seasonCount} season{seasonCount === 1 ? '' : 's'} in the league
                 {teams.length > 1 && `, ${teams.length} teams`}
               </CardDescription>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
-            <Stat label="Points" value={formatPoints(points)} sub="Regular season, in a lineup" />
+          <div className={cn('grid grid-cols-2 gap-2 sm:grid-cols-3', current ? 'lg:grid-cols-6' : 'lg:grid-cols-5')}>
+            {current && (
+              <Stat label={`This season (${currentSeason})`} value={formatPoints(seasonPoints)} sub={`${seasonStarts} starts · ${perGame(seasonPoints, seasonGp)} per game`} />
+            )}
+            <Stat label="Career points" value={formatPoints(points)} sub="Regular season, in a lineup" />
             <Stat label="Starts" value={String(sum('starts'))} sub={`${gp} games · ${perGame(points, gp)} per game`} />
             <Stat label="Playoffs" value={formatPoints(playoffPoints)} sub={`${sum('playoff_starts')} starts`} />
             <Stat label="Career salary" value={formatSalary(paid)} sub={paid ? `${Math.round(points / (paid / 1e6)).toLocaleString()} points per $1M` : undefined} />
-            <Stat label={latest.season === currentSeason ? 'Contract' : 'Last contract'} value={formatSalary(latest.salary)} sub={describeContract(latest.contract)} />
+            <Stat label={current ? 'Contract' : 'Last contract'} value={formatSalary(latest.salary)} sub={describeContract(latest.contract)} />
           </div>
           <Explainer>
             <p>
@@ -128,6 +142,8 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
           </Explainer>
         </CardHeader>
       </Card>
+
+      <PlayerTimeline page={page} selectedTeam={selectedTeam} />
 
       <Card className="w-full">
         <CardHeader className="pb-2">

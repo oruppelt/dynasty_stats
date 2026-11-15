@@ -203,6 +203,49 @@ export interface PlayerPage {
   seasons: PlayerStint[];
   /** The 5 best periods in a lineup, regular season or playoffs */
   best_periods: (SeasonPlayerPeriod & { playoffs: boolean })[];
+  /** How he moved between teams, oldest first (from the transaction logs; absent without them) */
+  timeline?: TimelineEvent[];
+  /** The trades on the timeline, by id */
+  trades?: Record<string, Trade>;
+}
+
+/** A move on a player's timeline. Team names are as they were at the time. */
+export interface TimelineEvent {
+  /** claim: signed as a free agent; re-sign: signed back by the team that dropped him; joined: on a roster
+   * with no logged move (the rosters when the records start); renamed: his team's name changed */
+  kind: 'draft' | 'claim' | 're-sign' | 'trade' | 'drop' | 'joined' | 'renamed';
+  /** The league season and period the move took effect in (absent for renamed; period 0 is the draft) */
+  season?: string;
+  period?: number;
+  /** YYYY-MM-DD, US Eastern; null for joined */
+  date: string | null;
+  /** The team he went to (the team that dropped him, for a drop) */
+  team: string;
+  /** trade and renamed: the team he came from */
+  from?: string;
+  /** trade: the id in `trades` */
+  trade?: string;
+  /** draft */
+  round?: number;
+  pick?: number;
+  /** claim, re-sign: the free-agent bid */
+  bid?: number;
+  /** joined: on a roster in the first period of the records */
+  before_logs?: boolean;
+  /** Arrivals: the contract in his first period on the team, and the regular season there until he left */
+  salary?: number;
+  contract?: string;
+  periods?: number;
+  starts?: number;
+  points?: number;
+}
+
+export interface Trade {
+  date: string | null;
+  season: string;
+  period: number;
+  /** Every item, each from one team to another ("(Drop)" for a player released in the trade) */
+  items: { kind: 'player' | 'pick' | 'budget'; from: string; to: string; player_id?: string; player?: string; label: string }[];
 }
 
 async function fetchJson<T>(url: string): Promise<T | null> {
