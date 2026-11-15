@@ -59,6 +59,7 @@ from pathlib import Path
 import pandas as pd
 
 import fantrax
+import lineage
 import players
 from alltime import compute_alltime
 from league_data import compute_league, load_games, sheet_csv_url
@@ -128,7 +129,7 @@ def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame,
 def write_players_alltime(config: dict, out: Path) -> None:
     """data/players/alltime.json, every season's player records together (players.compute_alltime_players),
     and the player pages: data/players/index.json (the search list) and data/players/player/<id>.json
-    (players.compute_player_pages). From the cached rows and each season's periods (the season's player
+    (players.compute_player_pages, with the timeline from lineage.compute_timelines). From the cached rows and each season's periods (the season's player
     file, whose meta also has the season's length for the salary paid); each file is written only when it changes."""
     seasons, lengths = [], {}
     for s in config['seasons']:
@@ -143,6 +144,11 @@ def write_players_alltime(config: dict, out: Path) -> None:
         return
     _write_if_changed(out / 'players' / 'alltime.json', to_json(players.compute_alltime_players(seasons, season_lengths=lengths)))
     index, pages = players.compute_player_pages(seasons, lengths)
+    transactions = lineage.read_transactions()
+    if transactions is not None:
+        for pid, timeline in lineage.compute_timelines(seasons, transactions).items():
+            if pid in pages:
+                pages[pid].update(timeline=timeline['events'], trades=timeline['trades'])
     _write_if_changed(out / 'players' / 'index.json', to_json(index))
     page_dir = out / 'players' / 'player'
     page_dir.mkdir(parents=True, exist_ok=True)
