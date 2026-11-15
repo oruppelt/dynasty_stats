@@ -137,6 +137,12 @@ def test_alltime(rows):
     # A franchise counts only the points scored for it
     assert [(p['player'], p['points'], p['seasons']) for p in data['franchises']['Alpha']] == [('Bob', 200.0, 2), ('Ann', 100.0, 2)]
     assert [(p['player'], p['points']) for p in data['playoffs']['career']] == [('Bob', 1000.0)]
+    # With playoffs: Bob's playoff periods (500 each season) count too
+    both = data['with_playoffs']
+    assert [(p['season'], p['player'], p['fpts']) for p in both['best_periods']][:2] == [('2024-25', 'Bob', 500), ('2025-26', 'Bob', 500)]
+    assert (both['career'][0]['player'], both['career'][0]['points'], both['career'][0]['starts']) == ('Bob', 1200.0, 6)
+    assert [(p['player'], p['points']) for p in both['franchises']['Alpha']][0] == ('Bob', 1200.0)
+    assert both['best_seasons'][0]['points'] == 600.0
 
 
 def test_check_scores(rows):

@@ -77,17 +77,23 @@ export interface PlayersData {
 /** A period entry over several seasons */
 export type SeasonPlayerPeriod = PlayerPeriod & { season: string }
 
-/** Shape of /data/players/alltime.json: every season's player records. Regular season apart from `playoffs`. */
-export interface AllTimePlayers {
-  meta: { seasons: string[] };
+/** The all-time lineup records, either regular season only or with the playoffs. */
+export interface AllTimeRecords {
   best_periods: SeasonPlayerPeriod[];
-  best_bench: SeasonPlayerPeriod[];
   /** A player's points in one season (every team) */
   best_seasons: (PlayerLeader & { season: string })[];
   /** Points over every season */
   career: (PlayerLeader & { seasons: number })[];
   /** Per team, its all-time top 10 scorers (points for that team) */
   franchises: Record<string, (TeamPlayer & { seasons: number })[]>;
+}
+
+/** Shape of /data/players/alltime.json: every season's player records. The top-level records are
+ * regular season only; `with_playoffs` counts playoff points too; `playoffs` is playoffs only. */
+export interface AllTimePlayers extends AllTimeRecords {
+  meta: { seasons: string[] };
+  best_bench: SeasonPlayerPeriod[];
+  with_playoffs: AllTimeRecords;
   playoffs: { best_periods: SeasonPlayerPeriod[]; career: (PlayerLeader & { seasons: number })[] };
 }
 

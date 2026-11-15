@@ -339,6 +339,7 @@ export function PlayerAllTimeWidget({ selectedTeam }: { selectedTeam: string }) 
   const { data, isLoading, error } = useAllTimePlayers()
   const teams = data ? Object.keys(data.franchises) : []
   const [picked, setPicked] = useState<string | null>(null)
+  const [withPlayoffs, setWithPlayoffs] = useState(false)
   if (isLoading) return <WidgetSkeleton variant="list" />
   if (error) return <ErrorState />
   if (!data) {
@@ -350,6 +351,8 @@ export function PlayerAllTimeWidget({ selectedTeam }: { selectedTeam: string }) 
   }
   const franchise = picked ?? (teams.includes(selectedTeam) ? selectedTeam : teams[0])
   const seasons = data.meta.seasons
+  const records = withPlayoffs ? data.with_playoffs : data
+  const counted = withPlayoffs ? 'regular season and playoffs' : 'regular season'
 
   return (
     <div className="w-full space-y-4">
@@ -359,17 +362,36 @@ export function PlayerAllTimeWidget({ selectedTeam }: { selectedTeam: string }) 
           explainer={
             <p>
               Points count only while a player was in a lineup. Franchises are matched by team name across
-              seasons; a franchise&apos;s scorers count only the points scored for it. Regular season, apart
-              from the playoff lists.
+              seasons; a franchise&apos;s scorers count only the points scored for it. &quot;With
+              playoffs&quot; adds playoff points to the franchise, career, season and period lists; the bench
+              list is always the regular season.
             </p>
           }
         >
           Every season since {seasons[0]} ({seasons.length} seasons). Every season, not just the one picked above.
           {selectedTeam && ' Your team is highlighted.'}
         </Intro>
+        <CardContent className="pt-0">
+          <div className="inline-flex rounded-md bg-muted p-1 text-sm" role="group" aria-label="Points counted">
+            {([false, true] as const).map(on => (
+              <button
+                key={String(on)}
+                type="button"
+                onClick={() => setWithPlayoffs(on)}
+                aria-pressed={withPlayoffs === on}
+                className={cn(
+                  'rounded-sm px-3 py-1 font-medium text-muted-foreground',
+                  withPlayoffs === on && 'bg-background text-foreground shadow-xs',
+                )}
+              >
+                {on ? 'With playoffs' : 'Regular season'}
+              </button>
+            ))}
+          </div>
+        </CardContent>
       </Card>
 
-      <TableCard title="Franchise scorers" note="A franchise's top scorers: points for that team, over every season.">
+      <TableCard title="Franchise scorers" note={`A franchise's top scorers: points for that team, over every season (${counted}).`}>
         <div className="mb-3 px-3 sm:px-0">
           <select
             value={franchise}
@@ -381,7 +403,7 @@ export function PlayerAllTimeWidget({ selectedTeam }: { selectedTeam: string }) 
           </select>
         </div>
         <ol className="space-y-1 px-3 sm:px-0">
-          {data.franchises[franchise].map((p, i) => (
+          {records.franchises[franchise].map((p, i) => (
             <li key={p.player_id} className="flex items-center gap-2 rounded-md px-1.5 py-1.5">
               <span className="w-5 shrink-0 text-xs text-muted-foreground tabular-nums">{i + 1}</span>
               <TeamLogo teamName={franchise} size={24} className="shrink-0" />
@@ -397,17 +419,17 @@ export function PlayerAllTimeWidget({ selectedTeam }: { selectedTeam: string }) 
         </ol>
       </TableCard>
 
-      <TableCard title="Career leaders" note="Regular-season points over every season, for any team.">
-        <LeadersTable rows={data.career} selectedTeam={selectedTeam} seasons />
+      <TableCard title="Career leaders" note={`Points over every season, for any team (${counted}).`}>
+        <LeadersTable rows={records.career} selectedTeam={selectedTeam} seasons />
       </TableCard>
 
-      <TableCard title="Best seasons" note="A player's points in one regular season.">
-        <LeadersTable rows={data.best_seasons} selectedTeam={selectedTeam} />
+      <TableCard title="Best seasons" note={`A player's points in one season (${counted}).`}>
+        <LeadersTable rows={records.best_seasons} selectedTeam={selectedTeam} />
       </TableCard>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <PeriodList title="Best periods" note="The biggest single-period scores ever." rows={data.best_periods} selectedTeam={selectedTeam} />
-        <PeriodList title="Left on the bench" note="The biggest bench periods ever." rows={data.best_bench} selectedTeam={selectedTeam} />
+        <PeriodList title="Best periods" note={`The biggest single-period scores ever (${counted}).`} rows={records.best_periods} selectedTeam={selectedTeam} />
+        <PeriodList title="Left on the bench" note="The biggest bench periods ever (regular season)." rows={data.best_bench} selectedTeam={selectedTeam} />
         <PeriodList title="Playoff periods" note="The biggest playoff periods ever." rows={data.playoffs.best_periods} selectedTeam={selectedTeam} />
       </div>
 
