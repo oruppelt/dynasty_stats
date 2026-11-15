@@ -139,5 +139,207 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-27",
+      "team": "Cleveland Cavaliers",
+      "round": 1,
+      "pick": 22,
+      "periods": 3,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1593000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 4,
+      "date": "2022-10-27",
+      "from": "Cleveland Cavaliers",
+      "team": "Washington Wizards",
+      "trade": "otcznyo1l9qx8rg5",
+      "periods": 32,
+      "starts": 17,
+      "points": 369.25,
+      "salary": 1593000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 3,
+      "date": "2023-10-30",
+      "from": "Washington Wizards",
+      "team": "Cleveland Cavaliers",
+      "trade": "q6vs663flobpq0e5",
+      "periods": 30,
+      "starts": 19,
+      "points": 437.25,
+      "salary": 1593000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-03",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "team": "Milwaukee Bucks",
+      "bid": 10.0,
+      "periods": 21,
+      "starts": 20,
+      "points": 60.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-24",
+      "from": "Milwaukee Bucks",
+      "team": "Miami Heat",
+      "trade": "cf7eolbcm6ayf0u0",
+      "periods": 6,
+      "starts": 6,
+      "points": 1.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "otcznyo1l9qx8rg5": {
+      "date": "2022-10-27",
+      "season": "2022-23",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "0621j",
+          "player": "Malaki Branham",
+          "label": "Malaki Branham"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "059ca",
+          "player": "Oshae Brissett",
+          "label": "Oshae Brissett"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05ujh",
+          "player": "Greg Brown",
+          "label": "Greg Brown"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "051oo",
+          "player": "Jaxson Hayes",
+          "label": "Jaxson Hayes"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04jwd",
+          "player": "Royce O'Neale",
+          "label": "Royce O'Neale"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        }
+      ]
+    },
+    "q6vs663flobpq0e5": {
+      "date": "2023-10-30",
+      "season": "2023-24",
+      "period": 3,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "04xdu",
+          "player": "Drew Eubanks",
+          "label": "Drew Eubanks"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0621s",
+          "player": "TyTy Washington",
+          "label": "TyTy Washington"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0621j",
+          "player": "Malaki Branham",
+          "label": "Malaki Branham"
+        }
+      ]
+    },
+    "cf7eolbcm6ayf0u0": {
+      "date": "2025-01-24",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "06cd1",
+          "player": "Jordan Walsh",
+          "label": "Jordan Walsh"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "0621j",
+          "player": "Malaki Branham",
+          "label": "Malaki Branham"
+        }
+      ]
+    }
+  }
 }

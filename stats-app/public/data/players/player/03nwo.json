@@ -125,5 +125,174 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-12",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 21,
+      "points": 758.5,
+      "salary": 1750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-20",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 12,
+      "date": "2021-01-29",
+      "team": "Boston Celtics",
+      "bid": 21.0,
+      "periods": 12,
+      "starts": 10,
+      "points": 330.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 25,
+      "date": "2021-03-14",
+      "from": "Boston Celtics",
+      "team": "Washington Wizards",
+      "trade": "ee6xgebckm9jocfk",
+      "periods": 6,
+      "starts": 1,
+      "points": 14.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 32,
+      "date": "2021-04-09",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 7,
+      "date": "2021-11-08",
+      "team": "Golden State Warriors",
+      "bid": 4.0,
+      "periods": 7,
+      "starts": 2,
+      "points": 136.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-03",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 14,
+      "date": "2022-12-02",
+      "team": "Washington Wizards",
+      "bid": 1.0,
+      "periods": 20,
+      "starts": 14,
+      "points": 95.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 34,
+      "date": "2023-02-10",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 34,
+      "date": "2023-02-10",
+      "team": "Washington Wizards",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Washington Wizards"
+    }
+  ],
+  "trades": {
+    "ee6xgebckm9jocfk": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "03nwo",
+          "player": "Frank Kaminsky",
+          "label": "Frank Kaminsky"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Washington Wizards)"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "05qwu",
+          "player": "Killian Tillie",
+          "label": "Killian Tillie"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "label": "2022 round 1 pick (Washington Wizards)"
+        }
+      ]
+    }
+  }
 }

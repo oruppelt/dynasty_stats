@@ -60,5 +60,158 @@
       "paid": 181818
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-27",
+      "team": "Utah Jazz",
+      "round": 2,
+      "pick": 39,
+      "periods": 58,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 27,
+      "date": "2025-01-20",
+      "from": "Utah Jazz",
+      "team": "Boston Celtics",
+      "trade": "zwmr8saim64qjsgk",
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-24",
+      "from": "Boston Celtics",
+      "team": "Miami Heat",
+      "trade": "fqy5f8aem6akho3q",
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-20",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "fqy5f8aem6akho3q": {
+      "date": "2025-01-24",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "06cdg",
+          "player": "Maxwell Lewis",
+          "label": "Maxwell Lewis"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "06q2e",
+          "player": "Jamison Battle",
+          "label": "Jamison Battle"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "042n1",
+          "player": "Brandon Ingram",
+          "label": "Brandon Ingram"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "06mlx",
+          "player": "Melvin Ajinca",
+          "label": "Melvin Ajinca"
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
+        }
+      ]
+    },
+    "zwmr8saim64qjsgk": {
+      "date": "2025-01-20",
+      "season": "2024-25",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "05qtt",
+          "player": "Onyeka Okongwu",
+          "label": "Onyeka Okongwu"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "042n1",
+          "player": "Brandon Ingram",
+          "label": "Brandon Ingram"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "06cdg",
+          "player": "Maxwell Lewis",
+          "label": "Maxwell Lewis"
+        }
+      ]
+    }
+  }
 }

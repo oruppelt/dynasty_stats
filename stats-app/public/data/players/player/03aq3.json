@@ -181,5 +181,211 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Miami Heat",
+      "before_logs": true,
+      "periods": 88,
+      "starts": 78,
+      "points": 3185.5,
+      "salary": 6912800,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-18",
+      "from": "Miami Heat",
+      "team": "Boston Celtics",
+      "trade": "ejtia2dekyj5hjpw",
+      "periods": 6,
+      "starts": 2,
+      "points": 112.25,
+      "salary": 6912800,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-01",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 65,
+      "starts": 55,
+      "points": 2227.5,
+      "salary": 9000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 9,
+      "points": 271.0,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-27",
+      "from": "Memphis Grizzlies",
+      "team": "New York Knicks",
+      "trade": "rrz52y71m6ewxnpo",
+      "periods": 5,
+      "starts": 5,
+      "points": 76.25,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-27",
+      "team": "New York Knicks"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-18",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 15,
+      "points": 179.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 36,
+      "date": "2026-02-27",
+      "team": "Chicago Bulls"
+    }
+  ],
+  "trades": {
+    "rrz52y71m6ewxnpo": {
+      "date": "2025-01-27",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "06cdf",
+          "player": "Julian Phillips",
+          "label": "Julian Phillips"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "03aq3",
+          "player": "Kyle Anderson",
+          "label": "Kyle Anderson"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "04yk1",
+          "player": "Haywood Highsmith",
+          "label": "Haywood Highsmith"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2025 round 1 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards"
+        }
+      ]
+    },
+    "ejtia2dekyj5hjpw": {
+      "date": "2022-01-18",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "0018r",
+          "player": "Thaddeus Young",
+          "label": "Thaddeus Young"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "051oy",
+          "player": "Goga Bitadze",
+          "label": "Goga Bitadze"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "label": "2023 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "label": "2023 round 2 pick (San Antonio Spurs)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "03aq3",
+          "player": "Kyle Anderson",
+          "label": "Kyle Anderson"
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
+        }
+      ]
+    }
+  }
 }

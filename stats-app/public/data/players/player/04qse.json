@@ -195,5 +195,256 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 28,
+      "date": "2020-01-24",
+      "team": "Los Angeles Lakers",
+      "bid": 10.0,
+      "periods": 5,
+      "starts": 5,
+      "points": 223.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 25,
+      "points": 1191.0,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-17",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 50,
+      "starts": 40,
+      "points": 2244.75,
+      "salary": 7500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-16",
+      "from": "Golden State Warriors",
+      "team": "Los Angeles Lakers",
+      "trade": "x216qg6wlbqcxmyd",
+      "periods": 16,
+      "starts": 16,
+      "points": 960.0,
+      "salary": 7500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 18,
+      "starts": 13,
+      "points": 419.0,
+      "salary": 11000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-24",
+      "from": "Indiana Pacers",
+      "team": "Portland Trail Blazers",
+      "trade": "okjjp9solqjjzh20",
+      "periods": 14,
+      "starts": 13,
+      "points": 558.0,
+      "salary": 11000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 66,
+      "starts": 52,
+      "points": 1481.5,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-04",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-19",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "x216qg6wlbqcxmyd": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "05qu0",
+          "player": "Jaden McDaniels",
+          "label": "Jaden McDaniels"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qse",
+          "player": "Gary Trent",
+          "label": "Gary Trent"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "05uj2",
+          "player": "Jaden Springer",
+          "label": "Jaden Springer"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "0621s",
+          "player": "TyTy Washington",
+          "label": "TyTy Washington"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "label": "2023 round 1 pick (Golden State Warriors)"
+        }
+      ]
+    },
+    "okjjp9solqjjzh20": {
+      "date": "2023-12-24",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "03nwq",
+          "player": "Christian Wood",
+          "label": "Christian Wood"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "04qse",
+          "player": "Gary Trent",
+          "label": "Gary Trent"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2025 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "06cef",
+          "player": "Oscar Tshiebwe",
+          "label": "Oscar Tshiebwe"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "027oq",
+          "player": "Bismack Biyombo",
+          "label": "Bismack Biyombo"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris"
+        }
+      ]
+    }
+  }
 }

@@ -97,5 +97,113 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-29",
+      "team": "Washington Wizards",
+      "bid": 0.0,
+      "periods": 23,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 25,
+      "date": "2021-03-14",
+      "from": "Washington Wizards",
+      "team": "Boston Celtics",
+      "trade": "ee6xgebckm9jocfk",
+      "periods": 6,
+      "starts": 1,
+      "points": 7.75,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-03",
+      "from": "Boston Celtics",
+      "team": "Miami Heat",
+      "trade": "vy03dh0ckrvx26zj",
+      "periods": 33,
+      "starts": 16,
+      "points": 294.25,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "ee6xgebckm9jocfk": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "03nwo",
+          "player": "Frank Kaminsky",
+          "label": "Frank Kaminsky"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Washington Wizards)"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "05qwu",
+          "player": "Killian Tillie",
+          "label": "Killian Tillie"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "label": "2022 round 1 pick (Washington Wizards)"
+        }
+      ]
+    },
+    "vy03dh0ckrvx26zj": {
+      "date": "2021-08-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "05qwu",
+          "player": "Killian Tillie",
+          "label": "Killian Tillie"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick, no. 27"
+        }
+      ]
+    }
+  }
 }

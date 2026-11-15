@@ -223,5 +223,304 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Toronto Raptors",
+      "before_logs": true,
+      "periods": 22,
+      "starts": 17,
+      "points": 736.75,
+      "salary": 1324128,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 23,
+      "date": "2020-01-05",
+      "from": "Toronto Raptors",
+      "team": "Chicago Bulls",
+      "trade": "zfobl4hpk4z88ws8",
+      "periods": 39,
+      "starts": 28,
+      "points": 1615.75,
+      "salary": 1324128,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 41,
+      "date": "2021-05-10",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-20",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 66,
+      "starts": 54,
+      "points": 2667.5,
+      "salary": 7500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-27",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 12,
+      "starts": 11,
+      "points": 447.75,
+      "salary": 10000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 13,
+      "date": "2023-12-04",
+      "from": "Atlanta Hawks",
+      "team": "Orlando Magic",
+      "trade": "18v4rya5lpr3wy1m",
+      "periods": 15,
+      "starts": 15,
+      "points": 547.25,
+      "salary": 10000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 28,
+      "date": "2024-01-27",
+      "from": "Orlando Magic",
+      "team": "San Antonio Spurs",
+      "trade": "zqk1dc26lrw35amu",
+      "periods": 11,
+      "starts": 11,
+      "points": 668.75,
+      "salary": 10000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "from": "San Antonio Spurs",
+      "team": "Golden State Warriors",
+      "trade": "kh16sd0mm3d44kz5",
+      "periods": 60,
+      "starts": 50,
+      "points": 3520.5,
+      "salary": 10000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-27",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 249.25,
+      "salary": 13150000,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "zfobl4hpk4z88ws8": {
+      "date": "2020-01-05",
+      "season": "2019-20",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Toronto Raptors",
+          "player_id": "03e6m",
+          "player": "Elfrid Payton",
+          "label": "Elfrid Payton"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Chicago Bulls",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart"
+        }
+      ]
+    },
+    "zqk1dc26lrw35amu": {
+      "date": "2024-01-27",
+      "season": "2023-24",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "0621x",
+          "player": "Jaylin Williams",
+          "label": "Jaylin Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 1 pick (Orlando Magic)"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Orlando Magic",
+          "player_id": "051op",
+          "player": "Rui Hachimura",
+          "label": "Rui Hachimura"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Orlando Magic",
+          "player_id": "027pg",
+          "player": "Bojan Bogdanovic",
+          "label": "Bojan Bogdanovic"
+        }
+      ]
+    },
+    "18v4rya5lpr3wy1m": {
+      "date": "2023-12-04",
+      "season": "2023-24",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "0621a",
+          "player": "Ousmane Dieng",
+          "label": "Ousmane Dieng"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "05uij",
+          "player": "Davion Mitchell",
+          "label": "Davion Mitchell"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "02nfk",
+          "player": "Evan Fournier",
+          "label": "Evan Fournier"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Memphis Grizzlies)"
+        }
+      ]
+    },
+    "kh16sd0mm3d44kz5": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "player_id": "049kc",
+          "player": "Malik Monk",
+          "label": "Malik Monk"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "player_id": "05uj3",
+          "player": "Day'Ron Sharpe",
+          "label": "Day'Ron Sharpe"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "label": "2026 round 1 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Golden State Warriors",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart"
+        }
+      ]
+    }
+  }
 }

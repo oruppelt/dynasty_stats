@@ -153,5 +153,196 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 3,
+      "date": "2023-10-30",
+      "team": "Los Angeles Clippers",
+      "bid": 10.0,
+      "periods": 8,
+      "starts": 7,
+      "points": 77.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 11,
+      "date": "2023-11-27",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 18,
+      "date": "2024-12-20",
+      "team": "Golden State Warriors",
+      "bid": 6.0,
+      "periods": 7,
+      "starts": 2,
+      "points": 68.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 25,
+      "date": "2025-01-13",
+      "from": "Golden State Warriors",
+      "team": "Philadelphia 76ers",
+      "trade": "kl69rnqzm5tmro6v",
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 27,
+      "date": "2025-01-20",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "team": "Portland Trail Blazers",
+      "bid": 18.0,
+      "periods": 24,
+      "starts": 24,
+      "points": 805.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Portland Trail Blazers",
+      "team": "Miami Heat",
+      "trade": "ww5mlxmcmkqs951p",
+      "periods": 6,
+      "starts": 3,
+      "points": 174.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 35,
+      "date": "2026-02-23",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 40,
+      "date": "2026-03-13",
+      "team": "Memphis Grizzlies",
+      "bid": 2.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 46,
+      "date": "2026-04-03",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-18",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 4,
+      "points": 19.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "kl69rnqzm5tmro6v": {
+      "date": "2025-01-13",
+      "season": "2024-25",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uup",
+          "player": "Jay Huff",
+          "label": "Jay Huff"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "05wqo",
+          "player": "Dru Smith",
+          "label": "Dru Smith"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "label": "2025 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard"
+        }
+      ]
+    },
+    "ww5mlxmcmkqs951p": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v8b",
+          "player": "Rocco Zikarsky",
+          "label": "Rocco Zikarsky"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Miami Heat",
+          "player_id": "05wqo",
+          "player": "Dru Smith",
+          "label": "Dru Smith"
+        }
+      ]
+    }
+  }
 }

@@ -29,5 +29,70 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 17,
+      "date": "2019-12-16",
+      "team": "Chicago Bulls",
+      "bid": 2.0,
+      "periods": 1,
+      "starts": 1,
+      "points": 22.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 18,
+      "date": "2019-12-18",
+      "from": "Chicago Bulls",
+      "team": "Sacramento Kings",
+      "trade": "xqnn1uqbk4blgow9",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 18,
+      "date": "2019-12-18",
+      "team": "Sacramento Kings"
+    }
+  ],
+  "trades": {
+    "xqnn1uqbk4blgow9": {
+      "date": "2019-12-18",
+      "season": "2019-20",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Sacramento Kings",
+          "player_id": "042oh",
+          "player": "Abdel Nader",
+          "label": "Abdel Nader"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "player_id": "048zt",
+          "player": "Derrick Jones",
+          "label": "Derrick Jones"
+        }
+      ]
+    }
+  }
 }

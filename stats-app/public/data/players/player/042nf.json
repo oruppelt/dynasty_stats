@@ -167,5 +167,249 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Golden State Warriors",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 17,
+      "points": 675.75,
+      "salary": 1362240,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-08",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 62,
+      "starts": 34,
+      "points": 2005.5,
+      "salary": 11400000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-30",
+      "from": "Golden State Warriors",
+      "team": "Minnesota Timberwolves",
+      "trade": "kshs9fh7l67nk2rk",
+      "periods": 33,
+      "starts": 27,
+      "points": 1246.75,
+      "salary": 11400000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-21",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 19,
+      "starts": 11,
+      "points": 481.75,
+      "salary": 4650000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 20,
+      "date": "2023-12-28",
+      "from": "Milwaukee Bucks",
+      "team": "Detroit Pistons",
+      "trade": "f55b9i8llqovzig1",
+      "periods": 13,
+      "starts": 11,
+      "points": 523.25,
+      "salary": 4650000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Detroit Pistons"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "Oklahoma City Thunder",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 26,
+      "points": 1013.0,
+      "salary": 5320000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-08",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 31,
+      "points": 748.75,
+      "salary": 4500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 46,
+      "date": "2026-04-03",
+      "team": "Portland Trail Blazers"
+    }
+  ],
+  "trades": {
+    "f55b9i8llqovzig1": {
+      "date": "2023-12-28",
+      "season": "2023-24",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "06228",
+          "player": "Josh Minott",
+          "label": "Josh Minott"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "06224",
+          "player": "E.J. Liddell",
+          "label": "E.J. Liddell"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "0626t",
+          "player": "Dominick Barlow",
+          "label": "Dominick Barlow"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "03avi",
+          "player": "Doug McDermott",
+          "label": "Doug McDermott"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "label": "2024 round 1 pick (Miami Heat)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "0015b",
+          "player": "Kyle Lowry",
+          "label": "Kyle Lowry"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "042ne",
+          "player": "Malik Beasley",
+          "label": "Malik Beasley"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Detroit Pistons",
+          "player_id": "042nf",
+          "player": "Caris LeVert",
+          "label": "Caris LeVert"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "04qsd",
+          "player": "Mitchell Robinson",
+          "label": "Mitchell Robinson"
+        }
+      ]
+    },
+    "kshs9fh7l67nk2rk": {
+      "date": "2022-07-30",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "042nf",
+          "player": "Caris LeVert",
+          "label": "Caris LeVert"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "05uj3",
+          "player": "Day'Ron Sharpe",
+          "label": "Day'Ron Sharpe"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "label": "2023 round 2 pick (Minnesota Timberwolves)"
+        }
+      ]
+    }
+  }
 }

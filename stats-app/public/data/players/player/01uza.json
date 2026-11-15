@@ -83,5 +83,72 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 24,
+      "date": "2022-01-07",
+      "team": "Charlotte Hornets",
+      "bid": 3.0,
+      "periods": 4,
+      "starts": 3,
+      "points": 58.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-20",
+      "from": "Charlotte Hornets",
+      "team": "Detroit Pistons",
+      "trade": "wg2khwkzkymoxxff",
+      "periods": 6,
+      "starts": 6,
+      "points": 205.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Detroit Pistons"
+    }
+  ],
+  "trades": {
+    "wg2khwkzkymoxxff": {
+      "date": "2022-01-20",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Detroit Pistons",
+          "player_id": "01uza",
+          "player": "Lance Stephenson",
+          "label": "Lance Stephenson"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Charlotte Hornets",
+          "player_id": "04qsi",
+          "player": "Jarred Vanderbilt",
+          "label": "Jarred Vanderbilt"
+        }
+      ]
+    }
+  }
 }

@@ -139,5 +139,181 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-27",
+      "team": "Memphis Grizzlies",
+      "round": 2,
+      "pick": 43,
+      "periods": 60,
+      "starts": 2,
+      "points": 12.5,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-27",
+      "from": "Memphis Grizzlies",
+      "team": "New York Knicks",
+      "trade": "rrz52y71m6ewxnpo",
+      "periods": 12,
+      "starts": 1,
+      "points": 21.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 8,
+      "date": "2025-11-14",
+      "from": "New York Knicks",
+      "team": "Boston Celtics",
+      "trade": "rwavofofmhyybw3d",
+      "periods": 19,
+      "starts": 6,
+      "points": 84.0,
+      "salary": 1000000,
+      "contract": "R21"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 27,
+      "date": "2026-01-19",
+      "from": "Boston Celtics",
+      "team": "Utah Jazz",
+      "trade": "e3vz5ltfmkkuep3d",
+      "periods": 7,
+      "starts": 3,
+      "points": 30.5,
+      "salary": 1000000,
+      "contract": "R21"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Utah Jazz"
+    }
+  ],
+  "trades": {
+    "e3vz5ltfmkkuep3d": {
+      "date": "2026-01-19",
+      "season": "2025-26",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06cdf",
+          "player": "Julian Phillips",
+          "label": "Julian Phillips"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "label": "2027 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "042n2",
+          "player": "Kris Dunn",
+          "label": "Kris Dunn"
+        }
+      ]
+    },
+    "rrz52y71m6ewxnpo": {
+      "date": "2025-01-27",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "06cdf",
+          "player": "Julian Phillips",
+          "label": "Julian Phillips"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "03aq3",
+          "player": "Kyle Anderson",
+          "label": "Kyle Anderson"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "04yk1",
+          "player": "Haywood Highsmith",
+          "label": "Haywood Highsmith"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2025 round 1 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards"
+        }
+      ]
+    },
+    "rwavofofmhyybw3d": {
+      "date": "2025-11-14",
+      "season": "2025-26",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "player_id": "04qrx",
+          "player": "Josh Okogie",
+          "label": "Josh Okogie"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "player_id": "06cdf",
+          "player": "Julian Phillips",
+          "label": "Julian Phillips"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "label": "2026 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "budget",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "label": "$2 budget"
+        }
+      ]
+    }
+  }
 }

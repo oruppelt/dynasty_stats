@@ -97,5 +97,82 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2025-26",
+      "period": 0,
+      "date": "2025-07-04",
+      "team": "Cleveland Cavaliers",
+      "round": 2,
+      "pick": 32,
+      "periods": 36,
+      "starts": 7,
+      "points": 136.5,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 4,
+      "date": "2026-10-29",
+      "from": "Cleveland Cavaliers",
+      "team": "Portland Trail Blazers",
+      "trade": "oj9lawe7mvsdcb33",
+      "periods": 4,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    }
+  ],
+  "trades": {
+    "oj9lawe7mvsdcb33": {
+      "date": "2026-10-29",
+      "season": "2026-27",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v7y",
+          "player": "Noah Penda",
+          "label": "Noah Penda"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "06cc0",
+          "player": "Taylor Hendricks",
+          "label": "Taylor Hendricks"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "04qrm",
+          "player": "Collin Sexton",
+          "label": "Collin Sexton"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "label": "2028 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04ewr",
+          "player": "Kyle Kuzma",
+          "label": "Kyle Kuzma"
+        }
+      ]
+    }
+  }
 }

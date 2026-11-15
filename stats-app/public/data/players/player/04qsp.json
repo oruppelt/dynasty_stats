@@ -97,5 +97,124 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-11",
+      "team": "Houston Rockets",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-10-19",
+      "from": "Houston Rockets",
+      "team": "Los Angeles Lakers",
+      "trade": "28sw7algkux3tmz0",
+      "periods": 33,
+      "starts": 32,
+      "points": 929.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "team": "Oklahoma City Thunder",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 22,
+      "points": 346.5,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 25,
+      "date": "2024-01-15",
+      "team": "Milwaukee Bucks",
+      "bid": 1.0,
+      "periods": 8,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-26",
+      "team": "Milwaukee Bucks"
+    }
+  ],
+  "trades": {
+    "28sw7algkux3tmz0": {
+      "date": "2021-10-19",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qs6",
+          "player": "Dzanan Musa",
+          "label": "Dzanan Musa"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "05qth",
+          "player": "Tyrell Terry",
+          "label": "Tyrell Terry"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qsp",
+          "player": "Chimezie Metu",
+          "label": "Chimezie Metu"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 2 pick (Phoenix Suns)"
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Lakers",
+          "to": "Houston Rockets",
+          "label": "$1 budget"
+        }
+      ]
+    }
+  }
 }

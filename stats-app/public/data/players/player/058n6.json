@@ -97,5 +97,86 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 41,
+      "date": "2021-05-10",
+      "team": "Chicago Bulls",
+      "bid": 20.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-03",
+      "team": "Toronto Raptors",
+      "bid": 18.0,
+      "periods": 10,
+      "starts": 7,
+      "points": 297.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 24,
+      "date": "2022-01-06",
+      "from": "Toronto Raptors",
+      "team": "San Antonio Spurs",
+      "trade": "yq4658ibky2vrytk",
+      "periods": 9,
+      "starts": 3,
+      "points": 10.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 33,
+      "date": "2022-02-07",
+      "team": "San Antonio Spurs"
+    }
+  ],
+  "trades": {
+    "yq4658ibky2vrytk": {
+      "date": "2022-01-06",
+      "season": "2021-22",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "player_id": "0529c",
+          "player": "Dean Wade",
+          "label": "Dean Wade"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "San Antonio Spurs",
+          "player_id": "058n6",
+          "player": "Armoni Brooks",
+          "label": "Armoni Brooks"
+        }
+      ]
+    }
+  }
 }

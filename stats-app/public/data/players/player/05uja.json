@@ -167,5 +167,168 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Toronto Raptors",
+      "round": 1,
+      "pick": 29,
+      "periods": 66,
+      "starts": 11,
+      "points": 174.0,
+      "salary": 1305792,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-10-23",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 25,
+      "date": "2024-01-15",
+      "team": "Utah Jazz",
+      "bid": 1.0,
+      "periods": 2,
+      "starts": 1,
+      "points": 50.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 28,
+      "date": "2024-01-26",
+      "team": "Washington Wizards",
+      "bid": 5.0,
+      "periods": 5,
+      "starts": 5,
+      "points": 160.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-26",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Washington Wizards",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 21,
+      "points": 627.25,
+      "salary": 2753000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-06",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-19",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 23,
+      "points": 886.5,
+      "salary": 6000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 37,
+      "date": "2026-03-02",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 4,
+      "starts": 4,
+      "points": 104.75,
+      "salary": 3050000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 5,
+      "date": "2026-11-02",
+      "from": "Orlando Magic",
+      "team": "New York Knicks",
+      "trade": "ma10od3tmvzbzbvy",
+      "periods": 3,
+      "starts": 3,
+      "points": 105.25,
+      "salary": 3050000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "ma10od3tmvzbzbvy": {
+      "date": "2026-11-02",
+      "season": "2026-27",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Orlando Magic",
+          "player_id": "06v5t",
+          "player": "Ben Saraf",
+          "label": "Ben Saraf"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Orlando Magic",
+          "player_id": "076ts",
+          "player": "Tyler Nickel",
+          "label": "Tyler Nickel"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "New York Knicks",
+          "player_id": "05uja",
+          "player": "Miles McBride",
+          "label": "Miles McBride"
+        }
+      ]
+    }
+  }
 }

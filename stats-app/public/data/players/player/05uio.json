@@ -153,5 +153,215 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Utah Jazz",
+      "round": 1,
+      "pick": 16,
+      "periods": 33,
+      "starts": 1,
+      "points": 75.75,
+      "salary": 2089440,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-28",
+      "from": "Utah Jazz",
+      "team": "Orlando Magic",
+      "trade": "aesgkz49l3pw62x9",
+      "periods": 65,
+      "starts": 44,
+      "points": 886.5,
+      "salary": 2089000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 9,
+      "points": 368.75,
+      "salary": 2089000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-07",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 5,
+      "starts": 3,
+      "points": 206.25,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 6,
+      "date": "2025-11-06",
+      "from": "Portland Trail Blazers",
+      "team": "Golden State Warriors",
+      "trade": "u31lz7dpmhn7i0du",
+      "periods": 28,
+      "starts": 21,
+      "points": 1002.25,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-21",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-13",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1750000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "aesgkz49l3pw62x9": {
+      "date": "2022-05-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "042n1",
+          "player": "Brandon Ingram",
+          "label": "Brandon Ingram"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "player_id": "01enn",
+          "player": "Blake Griffin",
+          "label": "Blake Griffin"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "player_id": "027pt",
+          "player": "Davis Bertans",
+          "label": "Davis Bertans"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "player_id": "05uj4",
+          "player": "Santi Aldama",
+          "label": "Santi Aldama"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "player_id": "05uio",
+          "player": "Moses Moody",
+          "label": "Moses Moody"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "label": "2022 round 1 pick, no. 6"
+        }
+      ]
+    },
+    "u31lz7dpmhn7i0du": {
+      "date": "2025-11-06",
+      "season": "2025-26",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06ccv",
+          "player": "Trayce Jackson-Davis",
+          "label": "Trayce Jackson-Davis"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mkf",
+          "player": "AJ Johnson",
+          "label": "AJ Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2027 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Golden State Warriors",
+          "player_id": "05uio",
+          "player": "Moses Moody",
+          "label": "Moses Moody"
+        }
+      ]
+    }
+  }
 }

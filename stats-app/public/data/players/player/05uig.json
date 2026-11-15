@@ -153,5 +153,112 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Detroit Pistons",
+      "round": 1,
+      "pick": 7,
+      "periods": 62,
+      "starts": 61,
+      "points": 3062.75,
+      "salary": 3552960,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-26",
+      "from": "Detroit Pistons",
+      "team": "Sacramento Kings",
+      "trade": "jvet5461ldd2yw41",
+      "periods": 36,
+      "starts": 33,
+      "points": 1683.25,
+      "salary": 3553000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 73,
+      "starts": 66,
+      "points": 3577.25,
+      "salary": 20000000,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "jvet5461ldd2yw41": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "player_id": "05uig",
+          "player": "Josh Giddey",
+          "label": "Josh Giddey"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "budget",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "label": "$20 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "player_id": "05uif",
+          "player": "Jalen Suggs",
+          "label": "Jalen Suggs"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2024 round 1 pick (Sacramento Kings)"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2023 round 1 pick (Sacramento Kings)"
+        }
+      ]
+    }
+  }
 }

@@ -167,5 +167,111 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Los Angeles Lakers",
+      "before_logs": true,
+      "periods": 61,
+      "starts": 55,
+      "points": 4298.0,
+      "salary": 5360640,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-11",
+      "team": "Los Angeles Lakers",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-22",
+      "from": "Los Angeles Lakers",
+      "team": "San Antonio Spurs",
+      "trade": "na2l9ab3kslt8xbw",
+      "periods": 131,
+      "starts": 129,
+      "points": 11031.25,
+      "salary": 30162500,
+      "contract": "REG4"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-10",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "San Antonio Spurs",
+      "bid": 0.0,
+      "periods": 40,
+      "starts": 7,
+      "points": 576.25,
+      "salary": 28500000,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "na2l9ab3kslt8xbw": {
+      "date": "2021-08-22",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "player_id": "03xmv",
+          "player": "Jayson Tatum",
+          "label": "Jayson Tatum"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "05uiq",
+          "player": "Alperen Sengun",
+          "label": "Alperen Sengun"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 2 pick (Los Angeles Lakers)"
+        }
+      ]
+    }
+  }
 }

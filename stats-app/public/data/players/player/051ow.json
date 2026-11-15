@@ -153,5 +153,141 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2019-20",
+      "period": 0,
+      "date": "2019-06-23",
+      "team": "Boston Celtics",
+      "round": 1,
+      "pick": 7,
+      "periods": 55,
+      "starts": 10,
+      "points": 285.75,
+      "salary": 3552960,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 25,
+      "date": "2021-03-14",
+      "from": "Boston Celtics",
+      "team": "New York Knicks",
+      "trade": "4r1euqwqkm9llhjz",
+      "periods": 39,
+      "starts": 22,
+      "points": 1200.5,
+      "salary": 3552960,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "New York Knicks"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-02",
+      "team": "New York Knicks",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 11,
+      "points": 289.75,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "New York Knicks"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 26,
+      "date": "2024-01-19",
+      "team": "Memphis Grizzlies",
+      "bid": 2.0,
+      "periods": 7,
+      "starts": 1,
+      "points": 14.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "team": "New York Knicks",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-27",
+      "team": "New York Knicks"
+    }
+  ],
+  "trades": {
+    "4r1euqwqkm9llhjz": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "player_id": "051ow",
+          "player": "Chuma Okeke",
+          "label": "Chuma Okeke"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "label": "2022 round 1 pick (Washington Wizards)"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "player_id": "0018r",
+          "player": "Thaddeus Young",
+          "label": "Thaddeus Young"
+        }
+      ]
+    }
+  }
 }

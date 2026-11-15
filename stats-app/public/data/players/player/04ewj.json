@@ -69,5 +69,133 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Miami Heat",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 15,
+      "points": 158.0,
+      "salary": 1926408,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "from": "Miami Heat",
+      "team": "Dallas Mavericks",
+      "trade": "ci5v7ywvkid24lwf",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "from": "Dallas Mavericks",
+      "team": "Cleveland Cavaliers",
+      "trade": "arji78gykidgnybp",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-21",
+      "team": "Cleveland Cavaliers"
+    }
+  ],
+  "trades": {
+    "arji78gykidgnybp": {
+      "date": "2020-12-06",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Dallas Mavericks",
+          "player_id": "03apz",
+          "player": "Willie Cauley-Stein",
+          "label": "Willie Cauley-Stein"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04ewj",
+          "player": "T.J. Leaf",
+          "label": "T.J. Leaf"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03avi",
+          "player": "Doug McDermott",
+          "label": "Doug McDermott"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "02nfa",
+          "player": "Austin Rivers",
+          "label": "Austin Rivers"
+        }
+      ]
+    },
+    "ci5v7ywvkid24lwf": {
+      "date": "2020-12-06",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2022 round 2 pick (Dallas Mavericks)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewl",
+          "player": "Terrance Ferguson",
+          "label": "Terrance Ferguson"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewj",
+          "player": "T.J. Leaf",
+          "label": "T.J. Leaf"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2021 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2022 round 2 pick (Golden State Warriors)"
+        }
+      ]
+    }
+  }
 }

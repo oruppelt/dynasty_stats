@@ -153,5 +153,302 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Miami Heat",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 21,
+      "points": 1258.0,
+      "salary": 24971436,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-07",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 54,
+      "starts": 53,
+      "points": 3191.75,
+      "salary": 22523809,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 26,
+      "date": "2022-01-14",
+      "from": "Miami Heat",
+      "team": "Philadelphia 76ers",
+      "trade": "yy9p5ocdkye254n4",
+      "periods": 8,
+      "starts": 6,
+      "points": 155.25,
+      "salary": 22523809,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 22,
+      "starts": 12,
+      "points": 471.25,
+      "salary": 7050000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 23,
+      "date": "2023-01-01",
+      "from": "Los Angeles Clippers",
+      "team": "Houston Rockets",
+      "trade": "nsziz30xlccebfbg",
+      "periods": 11,
+      "starts": 4,
+      "points": 125.0,
+      "salary": 7050000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-25",
+      "from": "Houston Rockets",
+      "team": "Milwaukee Bucks",
+      "trade": "os2ympihlki70543",
+      "periods": 32,
+      "starts": 14,
+      "points": 695.0,
+      "salary": 7050000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-26",
+      "team": "Milwaukee Bucks"
+    }
+  ],
+  "trades": {
+    "yy9p5ocdkye254n4": {
+      "date": "2022-01-14",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "01uz7",
+          "player": "Gordon Hayward",
+          "label": "Gordon Hayward"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "label": "2022 round 2 pick (Dallas Mavericks)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "04qs9",
+          "player": "Jevon Carter",
+          "label": "Jevon Carter"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "label": "2023 round 1 pick (Philadelphia 76ers)"
+        }
+      ]
+    },
+    "os2ympihlki70543": {
+      "date": "2023-07-25",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Milwaukee Bucks",
+          "player_id": "01uz7",
+          "player": "Gordon Hayward",
+          "label": "Gordon Hayward"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Houston Rockets",
+          "player_id": "02nfk",
+          "player": "Evan Fournier",
+          "label": "Evan Fournier"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    },
+    "nsziz30xlccebfbg": {
+      "date": "2023-01-01",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "038ia",
+          "player": "Seth Curry",
+          "label": "Seth Curry"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Houston Rockets",
+          "label": "2023 round 2 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "label": "2023 round 2 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Atlanta Hawks",
+          "player_id": "051pn",
+          "player": "Jaylen Nowell",
+          "label": "Jaylen Nowell"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Clippers",
+          "player_id": "027pg",
+          "player": "Bojan Bogdanovic",
+          "label": "Bojan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Clippers",
+          "player_id": "03r7r",
+          "player": "Richaun Holmes",
+          "label": "Richaun Holmes"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Atlanta Hawks",
+          "player_id": "056aq",
+          "player": "Terence Davis",
+          "label": "Terence Davis"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Clippers",
+          "player_id": "049kf",
+          "player": "Mo Bamba",
+          "label": "Mo Bamba"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Clippers",
+          "player_id": "042n8",
+          "player": "Taurean Prince",
+          "label": "Taurean Prince"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Clippers",
+          "label": "2023 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Clippers",
+          "label": "2023 round 1 pick (Houston Rockets)"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Houston Rockets",
+          "player_id": "01uz7",
+          "player": "Gordon Hayward",
+          "label": "Gordon Hayward"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Houston Rockets",
+          "player_id": "051pb",
+          "player": "Nicolas Claxton",
+          "label": "Nicolas Claxton"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Houston Rockets",
+          "player_id": "05uir",
+          "player": "Trey Murphy",
+          "label": "Trey Murphy"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Houston Rockets",
+          "player_id": "03bxn",
+          "player": "T.J. Warren",
+          "label": "T.J. Warren"
+        }
+      ]
+    }
+  }
 }

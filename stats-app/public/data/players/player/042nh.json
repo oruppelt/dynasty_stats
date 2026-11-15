@@ -32,5 +32,80 @@
       "paid": 1177020
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Boston Celtics",
+      "before_logs": true,
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1255488,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 3,
+      "date": "2019-10-28",
+      "from": "Boston Celtics",
+      "team": "New Orleans Pelicans",
+      "trade": "ovtdxu63k2am458h",
+      "periods": 30,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1255488,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "New Orleans Pelicans"
+    }
+  ],
+  "trades": {
+    "ovtdxu63k2am458h": {
+      "date": "2019-10-28",
+      "season": "2019-20",
+      "period": 3,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "New Orleans Pelicans",
+          "player_id": "03r7m",
+          "player": "Cedi Osman",
+          "label": "Cedi Osman"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "New Orleans Pelicans",
+          "player_id": "042nh",
+          "player": "Malachi Richardson",
+          "label": "Malachi Richardson"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Boston Celtics",
+          "player_id": "01enq",
+          "player": "DeMarre Carroll",
+          "label": "DeMarre Carroll"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Boston Celtics",
+          "label": "2020 round 1 pick (New Orleans Pelicans)"
+        }
+      ]
+    }
+  }
 }

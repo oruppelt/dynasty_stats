@@ -139,5 +139,199 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-29",
+      "team": "Toronto Raptors",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-09-02",
+      "from": "Toronto Raptors",
+      "team": "Charlotte Hornets",
+      "trade": "c8fxouxak016d8je",
+      "periods": 6,
+      "starts": 2,
+      "points": 73.5,
+      "salary": 11111111,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 7,
+      "date": "2019-11-12",
+      "from": "Charlotte Hornets",
+      "team": "Golden State Warriors",
+      "trade": "fxer8dkxk2waggde",
+      "periods": 26,
+      "starts": 25,
+      "points": 1152.5,
+      "salary": 11111111,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 7,
+      "points": 169.0,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-17",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 18,
+      "starts": 6,
+      "points": 111.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 19,
+      "date": "2021-12-20",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 24,
+      "date": "2022-01-07",
+      "team": "Milwaukee Bucks",
+      "bid": 10.0,
+      "periods": 10,
+      "starts": 2,
+      "points": 22.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 29,
+      "date": "2024-01-29",
+      "team": "Utah Jazz",
+      "bid": 1.0,
+      "periods": 3,
+      "starts": 2,
+      "points": 50.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 32,
+      "date": "2024-02-09",
+      "team": "Utah Jazz"
+    }
+  ],
+  "trades": {
+    "fxer8dkxk2waggde": {
+      "date": "2019-11-12",
+      "season": "2019-20",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "player_id": "0201u",
+          "player": "Ish Smith",
+          "label": "Ish Smith"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "label": "2020 round 1 pick (Los Angeles Lakers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick (Toronto Raptors)"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Charlotte Hornets",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris"
+        }
+      ]
+    },
+    "c8fxouxak016d8je": {
+      "date": "2019-09-02",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "03e79",
+          "player": "Dwight Powell",
+          "label": "Dwight Powell"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "0201u",
+          "player": "Ish Smith",
+          "label": "Ish Smith"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "label": "2020 round 2 pick (Toronto Raptors)"
+        }
+      ]
+    }
+  }
 }

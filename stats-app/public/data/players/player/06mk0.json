@@ -97,5 +97,154 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2024-25",
+      "period": 0,
+      "date": "2024-06-28",
+      "team": "New York Knicks",
+      "round": 1,
+      "pick": 6,
+      "periods": 56,
+      "starts": 13,
+      "points": 173.5,
+      "salary": 3892000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 24,
+      "date": "2026-01-09",
+      "from": "New York Knicks",
+      "team": "Detroit Pistons",
+      "trade": "xgsw4iopmk6qzj5s",
+      "periods": 10,
+      "starts": 8,
+      "points": 90.75,
+      "salary": 3892000,
+      "contract": "R12"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-10-19",
+      "from": "Detroit Pistons",
+      "team": "Minnesota Timberwolves",
+      "trade": "vogevc0fmvf1khtl",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-10-19",
+      "team": "Minnesota Timberwolves"
+    }
+  ],
+  "trades": {
+    "vogevc0fmvf1khtl": {
+      "date": "2026-10-19",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06vy0",
+          "player": "Eli John Ndiaye",
+          "label": "Eli John Ndiaye"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06mk1",
+          "player": "Zach Edey",
+          "label": "Zach Edey"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06mlm",
+          "player": "Oso Ighodaro",
+          "label": "Oso Ighodaro"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06mk0",
+          "player": "Rob Dillingham",
+          "label": "Rob Dillingham"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06vxs",
+          "player": "Hunter Sallis",
+          "label": "Hunter Sallis"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Detroit Pistons",
+          "player_id": "076t1",
+          "player": "Dailyn Swain",
+          "label": "Dailyn Swain"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Detroit Pistons",
+          "label": "2028 round 1 pick (Minnesota Timberwolves)"
+        }
+      ]
+    },
+    "xgsw4iopmk6qzj5s": {
+      "date": "2026-01-09",
+      "season": "2025-26",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New York Knicks",
+          "player_id": "04qrl",
+          "player": "Wendell Carter",
+          "label": "Wendell Carter"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Detroit Pistons",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Detroit Pistons",
+          "player_id": "06mk0",
+          "player": "Rob Dillingham",
+          "label": "Rob Dillingham"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Detroit Pistons",
+          "label": "2027 round 2 pick (New York Knicks)"
+        }
+      ]
+    }
+  }
 }

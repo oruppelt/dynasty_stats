@@ -167,5 +167,142 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-23",
+      "team": "Charlotte Hornets",
+      "round": 1,
+      "pick": 30,
+      "periods": 95,
+      "starts": 67,
+      "points": 2647.5,
+      "salary": 1296384,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 65,
+      "starts": 42,
+      "points": 1678.25,
+      "salary": 4750000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-31",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 26,
+      "starts": 24,
+      "points": 899.5,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 27,
+      "date": "2026-01-19",
+      "from": "Philadelphia 76ers",
+      "team": "Miami Heat",
+      "trade": "qtj5h137mklfkucq",
+      "periods": 7,
+      "starts": 5,
+      "points": 149.5,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-18",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-13",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 3,
+      "points": 114.25,
+      "salary": 3500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "qtj5h137mklfkucq": {
+      "date": "2026-01-19",
+      "season": "2025-26",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "04qrw",
+          "player": "Kevin Huerter",
+          "label": "Kevin Huerter"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "0622k",
+          "player": "Jabari Walker",
+          "label": "Jabari Walker"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick (Miami Heat)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "02nf9",
+          "player": "Andre Drummond",
+          "label": "Andre Drummond"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "05qub",
+          "player": "Isaiah Stewart",
+          "label": "Isaiah Stewart"
+        }
+      ]
+    }
+  }
 }

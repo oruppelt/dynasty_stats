@@ -97,5 +97,105 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-28",
+      "team": "Oklahoma City Thunder",
+      "round": 2,
+      "pick": 45,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-29",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-08",
+      "team": "Denver Nuggets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 16,
+      "points": 624.5,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-30",
+      "team": "Denver Nuggets"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Houston Rockets",
+      "bid": 0.0,
+      "periods": 10,
+      "starts": 10,
+      "points": 310.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 11,
+      "date": "2025-11-24",
+      "from": "Houston Rockets",
+      "team": "New Orleans Pelicans",
+      "trade": "vr2qxdk4midg53ey",
+      "periods": 23,
+      "starts": 15,
+      "points": 621.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-22",
+      "team": "New Orleans Pelicans"
+    }
+  ],
+  "trades": {
+    "vr2qxdk4midg53ey": {
+      "date": "2025-11-24",
+      "season": "2025-26",
+      "period": 11,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "New Orleans Pelicans",
+          "player_id": "05qtk",
+          "player": "Vit Krejci",
+          "label": "Vit Krejci"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Houston Rockets",
+          "player_id": "05qti",
+          "player": "Josh Green",
+          "label": "Josh Green"
+        }
+      ]
+    }
+  }
 }

@@ -32,5 +32,82 @@
       "paid": 187500
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Toronto Raptors",
+      "bid": 0.0,
+      "periods": 26,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "from": "Toronto Raptors",
+      "team": "Golden State Warriors",
+      "trade": "rxtnvaqdlrozo98w",
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-10-21",
+      "team": "Golden State Warriors"
+    }
+  ],
+  "trades": {
+    "rxtnvaqdlrozo98w": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "player_id": "0626t",
+          "player": "Dominick Barlow",
+          "label": "Dominick Barlow"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "player_id": "05uwa",
+          "player": "A.J. Lawson",
+          "label": "A.J. Lawson"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Golden State Warriors",
+          "player_id": "06cet",
+          "player": "Terquavion Smith",
+          "label": "Terquavion Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Golden State Warriors",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley"
+        }
+      ]
+    }
+  }
 }

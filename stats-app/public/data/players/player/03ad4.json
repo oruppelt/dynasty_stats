@@ -167,5 +167,121 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-16",
+      "team": "Brooklyn Nets",
+      "bid": 0.0,
+      "periods": 127,
+      "starts": 104,
+      "points": 5461.0,
+      "salary": 22500000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Brooklyn Nets"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Brooklyn Nets",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 32,
+      "points": 1822.75,
+      "salary": 12888333,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Brooklyn Nets"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 66,
+      "starts": 60,
+      "points": 1695.5,
+      "salary": 14700000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-18",
+      "from": "Phoenix Suns",
+      "team": "Orlando Magic",
+      "trade": "d3urdettmsz0jqra",
+      "periods": 7,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 14700000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "d3urdettmsz0jqra": {
+      "date": "2026-08-18",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Phoenix Suns",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "player_id": "06v5a",
+          "player": "Collin Murray-Boyles",
+          "label": "Collin Murray-Boyles"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "player_id": "03ad4",
+          "player": "D'Angelo Russell",
+          "label": "D'Angelo Russell"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "label": "2028 round 1 pick (Phoenix Suns)"
+        }
+      ]
+    }
+  }
 }

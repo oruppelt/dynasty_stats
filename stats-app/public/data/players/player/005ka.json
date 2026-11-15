@@ -167,5 +167,211 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-11",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 31,
+      "points": 1315.5,
+      "salary": 7000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-10",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 23,
+      "points": 746.25,
+      "salary": 8500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-16",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 348.25,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 8,
+      "date": "2021-11-11",
+      "from": "Chicago Bulls",
+      "team": "New York Knicks",
+      "trade": "v3rlzfg2kvv1em8x",
+      "periods": 43,
+      "starts": 17,
+      "points": 458.5,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-15",
+      "from": "New York Knicks",
+      "team": "Indiana Pacers",
+      "trade": "s0ah5x4nlbpllfey",
+      "periods": 16,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-08-02",
+      "team": "Oklahoma City Thunder",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 3,
+      "points": 61.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 8,
+      "date": "2023-11-17",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 11,
+      "date": "2023-11-27",
+      "team": "Boston Celtics",
+      "bid": 15.0,
+      "periods": 16,
+      "starts": 4,
+      "points": 72.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "team": "Boston Celtics"
+    }
+  ],
+  "trades": {
+    "s0ah5x4nlbpllfey": {
+      "date": "2022-12-15",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "New York Knicks",
+          "player_id": "0558t",
+          "player": "Max Strus",
+          "label": "Max Strus"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "New York Knicks",
+          "player_id": "04qs9",
+          "player": "Jevon Carter",
+          "label": "Jevon Carter"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Indiana Pacers",
+          "player_id": "005ka",
+          "player": "Derrick Rose",
+          "label": "Derrick Rose"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Indiana Pacers",
+          "label": "2023 round 1 pick (New York Knicks)"
+        }
+      ]
+    },
+    "v3rlzfg2kvv1em8x": {
+      "date": "2021-11-11",
+      "season": "2021-22",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "New York Knicks",
+          "player_id": "005ka",
+          "player": "Derrick Rose",
+          "label": "Derrick Rose"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Chicago Bulls",
+          "player_id": "05ujr",
+          "player": "Charles Bassey",
+          "label": "Charles Bassey"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Chicago Bulls",
+          "player_id": "05uj4",
+          "player": "Santi Aldama",
+          "label": "Santi Aldama"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Chicago Bulls",
+          "label": "2022 round 1 pick (Washington Wizards)"
+        }
+      ]
+    }
+  }
 }

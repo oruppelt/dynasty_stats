@@ -83,5 +83,88 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-12",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 2,
+      "date": "2019-10-25",
+      "from": "Golden State Warriors",
+      "team": "Orlando Magic",
+      "trade": "6kk26nz5k269o7q2",
+      "periods": 31,
+      "starts": 5,
+      "points": 35.25,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Orlando Magic"
+    }
+  ],
+  "trades": {
+    "6kk26nz5k269o7q2": {
+      "date": "2019-10-25",
+      "season": "2019-20",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "04jwc",
+          "player": "Alfonzo McKinnie",
+          "label": "Alfonzo McKinnie"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "02nf8",
+          "player": "Terrence Ross",
+          "label": "Terrence Ross"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "label": "2020 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Golden State Warriors",
+          "player_id": "031lq",
+          "player": "Otto Porter",
+          "label": "Otto Porter"
+        }
+      ]
+    }
+  }
 }

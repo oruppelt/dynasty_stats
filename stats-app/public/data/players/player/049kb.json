@@ -195,5 +195,229 @@
       "gp": 3,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Sacramento Kings",
+      "before_logs": true,
+      "periods": 61,
+      "starts": 49,
+      "points": 3308.75,
+      "salary": 4326336,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-13",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 98,
+      "starts": 85,
+      "points": 5830.75,
+      "salary": 24795000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Sacramento Kings",
+      "team": "Atlanta Hawks",
+      "trade": "cqap8u98lxyaxee6",
+      "periods": 24,
+      "starts": 22,
+      "points": 1705.5,
+      "salary": 24795000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 25,
+      "date": "2025-01-13",
+      "from": "Atlanta Hawks",
+      "team": "Orlando Magic",
+      "trade": "elhvdxrdm5v6pxvy",
+      "periods": 9,
+      "starts": 8,
+      "points": 536.5,
+      "salary": 24795000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Dallas Mavericks",
+      "bid": 0.0,
+      "periods": 34,
+      "starts": 27,
+      "points": 1810.0,
+      "salary": 21000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 2,
+      "date": "2026-10-23",
+      "from": "Dallas Mavericks",
+      "team": "Utah Jazz",
+      "trade": "ropqfs1wmvhr2o2x",
+      "periods": 6,
+      "starts": 6,
+      "points": 396.25,
+      "salary": 21000000,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "elhvdxrdm5v6pxvy": {
+      "date": "2025-01-13",
+      "season": "2024-25",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "049kb",
+          "player": "De'Aaron Fox",
+          "label": "De'Aaron Fox"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2026 round 1 pick (Orlando Magic)"
+        }
+      ]
+    },
+    "ropqfs1wmvhr2o2x": {
+      "date": "2026-10-23",
+      "season": "2026-27",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Utah Jazz",
+          "player_id": "049kb",
+          "player": "De'Aaron Fox",
+          "label": "De'Aaron Fox"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Dallas Mavericks",
+          "player_id": "01eo9",
+          "player": "Jrue Holiday",
+          "label": "Jrue Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Utah Jazz",
+          "player_id": "06mkc",
+          "player": "Jaylon Tyson",
+          "label": "Jaylon Tyson"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewk",
+          "player": "John Collins",
+          "label": "John Collins"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Utah Jazz",
+          "label": "2028 round 1 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Utah Jazz",
+          "label": "2027 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Milwaukee Bucks",
+          "player_id": "04ewe",
+          "player": "Donovan Mitchell",
+          "label": "Donovan Mitchell"
+        }
+      ]
+    },
+    "cqap8u98lxyaxee6": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "04qrn",
+          "player": "Mikal Bridges",
+          "label": "Mikal Bridges"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "label": "2024 round 1 pick, no. 20"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "049kb",
+          "player": "De'Aaron Fox",
+          "label": "De'Aaron Fox"
+        }
+      ]
+    }
+  }
 }

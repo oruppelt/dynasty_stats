@@ -153,5 +153,172 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-11",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 11,
+      "starts": 8,
+      "points": 481.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 12,
+      "date": "2019-11-28",
+      "from": "Golden State Warriors",
+      "team": "Sacramento Kings",
+      "trade": "8lzeowgvk3ip8kj8",
+      "periods": 21,
+      "starts": 16,
+      "points": 938.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 19,
+      "points": 867.0,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-13",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 31,
+      "points": 1529.25,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-02",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 21,
+      "points": 974.25,
+      "salary": 2250002,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 48,
+      "date": "2023-04-03",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 15,
+      "points": 496.25,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 41,
+      "date": "2024-03-15",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 23,
+      "points": 280.0,
+      "salary": 1300000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-28",
+      "team": "Cleveland Cavaliers"
+    }
+  ],
+  "trades": {
+    "8lzeowgvk3ip8kj8": {
+      "date": "2019-11-28",
+      "season": "2019-20",
+      "period": 12,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Sacramento Kings",
+          "player_id": "027ov",
+          "player": "Alec Burks",
+          "label": "Alec Burks"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "player_id": "03ad5",
+          "player": "Trey Lyles",
+          "label": "Trey Lyles"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Sacramento Kings)"
+        }
+      ]
+    }
+  }
 }

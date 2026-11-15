@@ -153,5 +153,217 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Golden State Warriors",
+      "before_logs": true,
+      "periods": 10,
+      "starts": 9,
+      "points": 443.0,
+      "salary": 2021472,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 11,
+      "date": "2019-11-25",
+      "from": "Golden State Warriors",
+      "team": "Atlanta Hawks",
+      "trade": "00p5towuk3e4pdt1",
+      "periods": 22,
+      "starts": 14,
+      "points": 503.75,
+      "salary": 2021472,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 10,
+      "points": 255.75,
+      "salary": 6500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-28",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 8,
+      "points": 280.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 2,
+      "date": "2023-10-26",
+      "from": "Atlanta Hawks",
+      "team": "Phoenix Suns",
+      "trade": "ymsmlbyhlo7be62s",
+      "periods": 31,
+      "starts": 18,
+      "points": 938.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-30",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 17,
+      "points": 61.5,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-06",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "00p5towuk3e4pdt1": {
+      "date": "2019-11-25",
+      "season": "2019-20",
+      "period": 11,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "051pz",
+          "player": "Kyle Guy",
+          "label": "Kyle Guy"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "player_id": "03acy",
+          "player": "Dario Saric",
+          "label": "Dario Saric"
+        }
+      ]
+    },
+    "ymsmlbyhlo7be62s": {
+      "date": "2023-10-26",
+      "season": "2023-24",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "03acy",
+          "player": "Dario Saric",
+          "label": "Dario Saric"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "label": "2025 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin"
+        }
+      ]
+    }
+  }
 }

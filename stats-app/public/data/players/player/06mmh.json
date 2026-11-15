@@ -125,5 +125,235 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2024-25",
+      "period": 0,
+      "date": "2024-06-29",
+      "team": "Sacramento Kings",
+      "round": 2,
+      "pick": 55,
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "from": "Sacramento Kings",
+      "team": "Miami Heat",
+      "trade": "o9x12180m3dbpz6a",
+      "periods": 32,
+      "starts": 9,
+      "points": 98.75,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 6,
+      "date": "2025-11-06",
+      "from": "Miami Heat",
+      "team": "Portland Trail Blazers",
+      "trade": "u31lz7dpmhn7i0du",
+      "periods": 22,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Portland Trail Blazers",
+      "team": "Boston Celtics",
+      "trade": "22yya7camkqj2lli",
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-04",
+      "team": "Boston Celtics"
+    }
+  ],
+  "trades": {
+    "22yya7camkqj2lli": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Portland Trail Blazers",
+          "player_id": "051pa",
+          "player": "Kevin Porter",
+          "label": "Kevin Porter"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "label": "2026 round 2 pick (Golden State Warriors)"
+        }
+      ]
+    },
+    "u31lz7dpmhn7i0du": {
+      "date": "2025-11-06",
+      "season": "2025-26",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06ccv",
+          "player": "Trayce Jackson-Davis",
+          "label": "Trayce Jackson-Davis"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mkf",
+          "player": "AJ Johnson",
+          "label": "AJ Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2027 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Golden State Warriors",
+          "player_id": "05uio",
+          "player": "Moses Moody",
+          "label": "Moses Moody"
+        }
+      ]
+    },
+    "o9x12180m3dbpz6a": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "042ne",
+          "player": "Malik Beasley",
+          "label": "Malik Beasley"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "03kqi",
+          "player": "Joe Ingles",
+          "label": "Joe Ingles"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick (Atlanta Hawks)"
+        }
+      ]
+    }
+  }
 }

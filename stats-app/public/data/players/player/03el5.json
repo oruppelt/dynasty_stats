@@ -195,5 +195,130 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-14",
+      "team": "New York Knicks",
+      "bid": 0.0,
+      "periods": 123,
+      "starts": 102,
+      "points": 6367.25,
+      "salary": 20000000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "from": "New York Knicks",
+      "team": "Charlotte Hornets",
+      "trade": "nu3ujh51ldej0oph",
+      "periods": 4,
+      "starts": 3,
+      "points": 299.0,
+      "salary": 20000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 94,
+      "starts": 66,
+      "points": 3621.0,
+      "salary": 25799385,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 30,
+      "date": "2026-01-28",
+      "from": "Golden State Warriors",
+      "team": "Sacramento Kings",
+      "trade": "ne9vonk1mkvnp53w",
+      "periods": 11,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 25799385,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "ne9vonk1mkvnp53w": {
+      "date": "2026-01-28",
+      "season": "2025-26",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Sacramento Kings",
+          "player_id": "03el5",
+          "player": "Kristaps Porzingis",
+          "label": "Kristaps Porzingis"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "player_id": "06215",
+          "player": "Bennedict Mathurin",
+          "label": "Bennedict Mathurin"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "player_id": "05uic",
+          "player": "Jalen Green",
+          "label": "Jalen Green"
+        }
+      ]
+    },
+    "nu3ujh51ldej0oph": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "New York Knicks",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "New York Knicks",
+          "label": "2023 round 2 pick (Utah Jazz)"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Charlotte Hornets",
+          "player_id": "03el5",
+          "player": "Kristaps Porzingis",
+          "label": "Kristaps Porzingis"
+        }
+      ]
+    }
+  }
 }

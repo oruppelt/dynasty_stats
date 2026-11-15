@@ -111,5 +111,95 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-27",
+      "team": "Golden State Warriors",
+      "round": 2,
+      "pick": 32,
+      "periods": 70,
+      "starts": 34,
+      "points": 1259.25,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 6,
+      "date": "2025-11-06",
+      "from": "Golden State Warriors",
+      "team": "Portland Trail Blazers",
+      "trade": "u31lz7dpmhn7i0du",
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R21"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-10",
+      "team": "Portland Trail Blazers"
+    }
+  ],
+  "trades": {
+    "u31lz7dpmhn7i0du": {
+      "date": "2025-11-06",
+      "season": "2025-26",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06ccv",
+          "player": "Trayce Jackson-Davis",
+          "label": "Trayce Jackson-Davis"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mkf",
+          "player": "AJ Johnson",
+          "label": "AJ Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2027 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Golden State Warriors",
+          "player_id": "05uio",
+          "player": "Moses Moody",
+          "label": "Moses Moody"
+        }
+      ]
+    }
+  }
 }

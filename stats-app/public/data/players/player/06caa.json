@@ -125,5 +125,131 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-27",
+      "team": "Oklahoma City Thunder",
+      "round": 2,
+      "pick": 36,
+      "periods": 71,
+      "starts": 20,
+      "points": 544.25,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-10",
+      "from": "Oklahoma City Thunder",
+      "team": "Toronto Raptors",
+      "trade": "b7zez6g3mhsz8kok",
+      "periods": 27,
+      "starts": 15,
+      "points": 464.0,
+      "salary": 1000000,
+      "contract": "R21"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-18",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 1,
+      "points": 5.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 7,
+      "date": "2026-11-09",
+      "team": "Orlando Magic"
+    }
+  ],
+  "trades": {
+    "b7zez6g3mhsz8kok": {
+      "date": "2025-11-10",
+      "season": "2025-26",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06cdh",
+          "player": "GG Jackson",
+          "label": "GG Jackson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06caa",
+          "player": "Ben Sheppard",
+          "label": "Ben Sheppard"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06mlj",
+          "player": "Bobi Klintman",
+          "label": "Bobi Klintman"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06mk9",
+          "player": "Dalton Knecht",
+          "label": "Dalton Knecht"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Oklahoma City Thunder)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "048zt",
+          "player": "Derrick Jones",
+          "label": "Derrick Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0621y",
+          "player": "Max Christie",
+          "label": "Max Christie"
+        },
+        {
+          "kind": "budget",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "label": "$15 budget"
+        }
+      ]
+    }
+  }
 }

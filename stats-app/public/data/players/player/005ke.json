@@ -181,5 +181,485 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Denver Nuggets",
+      "before_logs": true,
+      "periods": 3,
+      "starts": 3,
+      "points": 162.0,
+      "salary": 17270063,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 4,
+      "date": "2019-11-01",
+      "from": "Denver Nuggets",
+      "team": "Cleveland Cavaliers",
+      "trade": "mrggfdnik2gldpms",
+      "periods": 14,
+      "starts": 12,
+      "points": 709.75,
+      "salary": 17270063,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 18,
+      "date": "2019-12-19",
+      "from": "Cleveland Cavaliers",
+      "team": "Sacramento Kings",
+      "trade": "u4u6cj1zk4cjuwah",
+      "periods": 15,
+      "starts": 12,
+      "points": 699.0,
+      "salary": 17270063,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-07",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 11,
+      "points": 476.5,
+      "salary": 10000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-22",
+      "from": "Chicago Bulls",
+      "team": "Oklahoma City Thunder",
+      "trade": "3f7d7k4ykslsp719",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-26",
+      "from": "Oklahoma City Thunder",
+      "team": "Los Angeles Lakers",
+      "trade": "9g9xo6c0ksr9xlxq",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-09-02",
+      "from": "Los Angeles Lakers",
+      "team": "Philadelphia 76ers",
+      "trade": "lx2k2grzkt1r78ly",
+      "periods": 27,
+      "starts": 21,
+      "points": 610.5,
+      "salary": 10000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-21",
+      "from": "Philadelphia 76ers",
+      "team": "Cleveland Cavaliers",
+      "trade": "yuxsbccvkynk77x4",
+      "periods": 6,
+      "starts": 6,
+      "points": 203.25,
+      "salary": 10000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-20",
+      "from": "Cleveland Cavaliers",
+      "team": "Orlando Magic",
+      "trade": "25j29lacl4n2yx7t",
+      "periods": 20,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 10000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 21,
+      "date": "2022-12-26",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 27,
+      "starts": 8,
+      "points": 196.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 28,
+      "date": "2024-01-26",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 33,
+      "date": "2024-02-12",
+      "team": "New York Knicks",
+      "bid": 1.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 34,
+      "date": "2024-02-16",
+      "team": "Phoenix Suns",
+      "bid": 48.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 41,
+      "date": "2024-03-15",
+      "team": "Phoenix Suns"
+    }
+  ],
+  "trades": {
+    "lx2k2grzkt1r78ly": {
+      "date": "2021-09-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Philadelphia 76ers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Philadelphia 76ers",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Los Angeles Lakers",
+          "player_id": "03al0",
+          "player": "Aaron Gordon",
+          "label": "Aaron Gordon"
+        }
+      ]
+    },
+    "u4u6cj1zk4cjuwah": {
+      "date": "2019-12-19",
+      "season": "2019-20",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Sacramento Kings",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03r7i",
+          "player": "Rondae Hollis-Jefferson",
+          "label": "Rondae Hollis-Jefferson"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Charlotte Hornets)"
+        }
+      ]
+    },
+    "yuxsbccvkynk77x4": {
+      "date": "2022-01-21",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uur",
+          "player": "Joel Ayayi",
+          "label": "Joel Ayayi"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uun",
+          "player": "Matthew Hurt",
+          "label": "Matthew Hurt"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 2 pick (Dallas Mavericks)"
+        }
+      ]
+    },
+    "25j29lacl4n2yx7t": {
+      "date": "2022-06-20",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Orlando Magic",
+          "player_id": "03r7l",
+          "player": "Larry Nance",
+          "label": "Larry Nance"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Orlando Magic",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Orlando Magic",
+          "label": "2022 round 1 pick, no. 4"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05uj4",
+          "player": "Santi Aldama",
+          "label": "Santi Aldama"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 1 pick, no. 6"
+        }
+      ]
+    },
+    "9g9xo6c0ksr9xlxq": {
+      "date": "2021-08-26",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Los Angeles Lakers)"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "2023 round 1 pick (Oklahoma City Thunder)"
+        }
+      ]
+    },
+    "3f7d7k4ykslsp719": {
+      "date": "2021-08-22",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Oklahoma City Thunder",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Chicago Bulls",
+          "player_id": "05qti",
+          "player": "Josh Green",
+          "label": "Josh Green"
+        }
+      ]
+    },
+    "mrggfdnik2gldpms": {
+      "date": "2019-11-01",
+      "season": "2019-20",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Denver Nuggets",
+          "player_id": "027oj",
+          "player": "Kyrie Irving",
+          "label": "Kyrie Irving"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Denver Nuggets",
+          "player_id": "042n6",
+          "player": "Jakob Poeltl",
+          "label": "Jakob Poeltl"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03ad0",
+          "player": "Tyus Jones",
+          "label": "Tyus Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Denver Nuggets)"
+        }
+      ]
+    }
+  }
 }

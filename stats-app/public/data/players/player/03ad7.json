@@ -181,5 +181,239 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-12",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 4,
+      "points": 24.25,
+      "salary": 7000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 10,
+      "points": 207.75,
+      "salary": 2250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-20",
+      "team": "Toronto Raptors",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 29,
+      "points": 1251.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 56,
+      "starts": 55,
+      "points": 2314.75,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 24,
+      "date": "2024-01-12",
+      "from": "Utah Jazz",
+      "team": "Philadelphia 76ers",
+      "trade": "ohy4z070lralwygb",
+      "periods": 2,
+      "starts": 2,
+      "points": 68.5,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 26,
+      "date": "2024-01-19",
+      "from": "Philadelphia 76ers",
+      "team": "Memphis Grizzlies",
+      "trade": "p0mxkvsnlrkrvpa0",
+      "periods": 7,
+      "starts": 7,
+      "points": 123.75,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 30,
+      "points": 1017.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-07",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-21",
+      "team": "Brooklyn Nets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 24,
+      "points": 185.75,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Brooklyn Nets"
+    }
+  ],
+  "trades": {
+    "p0mxkvsnlrkrvpa0": {
+      "date": "2024-01-19",
+      "season": "2023-24",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "03ad7",
+          "player": "Kevon Looney",
+          "label": "Kevon Looney"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "051pq",
+          "player": "Talen Horton-Tucker",
+          "label": "Talen Horton-Tucker"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2025 round 1 pick (Philadelphia 76ers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Philadelphia 76ers)"
+        }
+      ]
+    },
+    "ohy4z070lralwygb": {
+      "date": "2024-01-12",
+      "season": "2023-24",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Utah Jazz",
+          "player_id": "03r7m",
+          "player": "Cedi Osman",
+          "label": "Cedi Osman"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Philadelphia 76ers",
+          "player_id": "03ad7",
+          "player": "Kevon Looney",
+          "label": "Kevon Looney"
+        }
+      ]
+    }
+  }
 }

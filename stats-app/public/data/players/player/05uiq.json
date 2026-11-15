@@ -139,5 +139,158 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "San Antonio Spurs",
+      "round": 1,
+      "pick": 6,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-22",
+      "from": "San Antonio Spurs",
+      "team": "Los Angeles Lakers",
+      "trade": "na2l9ab3kslt8xbw",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-23",
+      "from": "Los Angeles Lakers",
+      "team": "Sacramento Kings",
+      "trade": "4yavjg7dksolg9o9",
+      "periods": 98,
+      "starts": 92,
+      "points": 5117.25,
+      "salary": 3892032,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 43,
+      "date": "2024-03-22",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "draft",
+      "season": "2024-25",
+      "period": 0,
+      "date": "2024-06-29",
+      "team": "Chicago Bulls",
+      "round": 2,
+      "pick": 58,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-05",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 73,
+      "starts": 69,
+      "points": 4922.5,
+      "salary": 25000000,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "4yavjg7dksolg9o9": {
+      "date": "2021-08-23",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Sacramento Kings",
+          "player_id": "05uiq",
+          "player": "Alperen Sengun",
+          "label": "Alperen Sengun"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "player_id": "048zt",
+          "player": "Derrick Jones",
+          "label": "Derrick Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 1 pick (Los Angeles Lakers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "label": "2023 round 1 pick (Portland Trail Blazers)"
+        }
+      ]
+    },
+    "na2l9ab3kslt8xbw": {
+      "date": "2021-08-22",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "player_id": "03xmv",
+          "player": "Jayson Tatum",
+          "label": "Jayson Tatum"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "05uiq",
+          "player": "Alperen Sengun",
+          "label": "Alperen Sengun"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 2 pick (Los Angeles Lakers)"
+        }
+      ]
+    }
+  }
 }

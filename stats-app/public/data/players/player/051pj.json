@@ -83,5 +83,154 @@
       "gp": 0,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2019-20",
+      "period": 0,
+      "date": "2019-06-24",
+      "team": "Los Angeles Clippers",
+      "round": 1,
+      "pick": 25,
+      "periods": 61,
+      "starts": 7,
+      "points": 72.0,
+      "salary": 1409664,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "from": "Los Angeles Clippers",
+      "team": "Atlanta Hawks",
+      "trade": "y6t02lq8ks8pna2n",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-31",
+      "from": "Atlanta Hawks",
+      "team": "Los Angeles Lakers",
+      "trade": "d2jlztcrkt09j3wo",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-10-19",
+      "team": "Los Angeles Lakers"
+    }
+  ],
+  "trades": {
+    "y6t02lq8ks8pna2n": {
+      "date": "2021-08-12",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "04qrk",
+          "player": "Trae Young",
+          "label": "Trae Young"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "051pj",
+          "player": "Alen Smailagic",
+          "label": "Alen Smailagic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtv",
+          "player": "Tyrese Haliburton",
+          "label": "Tyrese Haliburton"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 1 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2023 round 2 pick (Los Angeles Clippers)"
+        }
+      ]
+    },
+    "d2jlztcrkt09j3wo": {
+      "date": "2021-08-31",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Lakers",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Lakers",
+          "player_id": "051pj",
+          "player": "Alen Smailagic",
+          "label": "Alen Smailagic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 1 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7l",
+          "player": "Larry Nance",
+          "label": "Larry Nance"
+        }
+      ]
+    }
+  }
 }

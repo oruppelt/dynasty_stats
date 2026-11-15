@@ -125,5 +125,136 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 7,
+      "date": "2021-01-11",
+      "team": "Detroit Pistons",
+      "bid": 3.0,
+      "periods": 23,
+      "starts": 22,
+      "points": 1139.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Cleveland Cavaliers",
+      "round": 2,
+      "pick": 45,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-16",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-10-19",
+      "from": "Chicago Bulls",
+      "team": "Atlanta Hawks",
+      "trade": "a582c102kuxxow5s",
+      "periods": 66,
+      "starts": 36,
+      "points": 1593.25,
+      "salary": 10000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-08-01",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 25,
+      "starts": 15,
+      "points": 393.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 26,
+      "date": "2024-01-18",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 37,
+      "date": "2024-03-01",
+      "team": "Brooklyn Nets",
+      "bid": 41.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Brooklyn Nets"
+    }
+  ],
+  "trades": {
+    "a582c102kuxxow5s": {
+      "date": "2021-10-19",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "02nfw",
+          "player": "Tomas Satoransky",
+          "label": "Tomas Satoransky"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "05qve",
+          "player": "Jae'Sean Tate",
+          "label": "Jae'Sean Tate"
+        }
+      ]
+    }
+  }
 }

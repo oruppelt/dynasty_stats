@@ -139,5 +139,191 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-28",
+      "team": "Houston Rockets",
+      "round": 2,
+      "pick": 37,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "from": "Houston Rockets",
+      "team": "Toronto Raptors",
+      "trade": "9tx7kzr4l69d7j09",
+      "periods": 98,
+      "starts": 37,
+      "points": 1114.75,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-10",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Toronto Raptors",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 6,
+      "points": 264.25,
+      "salary": 1662500,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-10",
+      "from": "Toronto Raptors",
+      "team": "Oklahoma City Thunder",
+      "trade": "b7zez6g3mhsz8kok",
+      "periods": 27,
+      "starts": 15,
+      "points": 692.5,
+      "salary": 1662500,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-10",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 6,
+      "points": 123.0,
+      "salary": 4500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "9tx7kzr4l69d7j09": {
+      "date": "2022-07-31",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "player_id": "0621y",
+          "player": "Max Christie",
+          "label": "Max Christie"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "label": "2023 round 2 pick (Houston Rockets)"
+        },
+        {
+          "kind": "budget",
+          "from": "Toronto Raptors",
+          "to": "Houston Rockets",
+          "label": "$7 budget"
+        }
+      ]
+    },
+    "b7zez6g3mhsz8kok": {
+      "date": "2025-11-10",
+      "season": "2025-26",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06cdh",
+          "player": "GG Jackson",
+          "label": "GG Jackson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06caa",
+          "player": "Ben Sheppard",
+          "label": "Ben Sheppard"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06mlj",
+          "player": "Bobi Klintman",
+          "label": "Bobi Klintman"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06mk9",
+          "player": "Dalton Knecht",
+          "label": "Dalton Knecht"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Oklahoma City Thunder)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "048zt",
+          "player": "Derrick Jones",
+          "label": "Derrick Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0621y",
+          "player": "Max Christie",
+          "label": "Max Christie"
+        },
+        {
+          "kind": "budget",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "label": "$15 budget"
+        }
+      ]
+    }
+  }
 }

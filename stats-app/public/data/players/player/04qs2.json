@@ -181,5 +181,181 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "New Orleans Pelicans",
+      "before_logs": true,
+      "periods": 94,
+      "starts": 60,
+      "points": 1390.0,
+      "salary": 1409664,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-02",
+      "team": "San Antonio Spurs",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 18,
+      "points": 848.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-27",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 16,
+      "points": 571.75,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 18,
+      "starts": 17,
+      "points": 746.75,
+      "salary": 1750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 19,
+      "date": "2024-12-23",
+      "from": "Indiana Pacers",
+      "team": "Miami Heat",
+      "trade": "0trs00ixm508eth8",
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 21,
+      "date": "2024-12-30",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 7,
+      "points": 200.5,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-21",
+      "team": "Oklahoma City Thunder",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 4,
+      "points": 151.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "0trs00ixm508eth8": {
+      "date": "2024-12-23",
+      "season": "2024-25",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "04qs2",
+          "player": "Moritz Wagner",
+          "label": "Moritz Wagner"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "06ca4",
+          "player": "Kobe Bufkin",
+          "label": "Kobe Bufkin"
+        },
+        {
+          "kind": "budget",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "$20 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "031m9",
+          "player": "Mason Plumlee",
+          "label": "Mason Plumlee"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed"
+        }
+      ]
+    }
+  }
 }

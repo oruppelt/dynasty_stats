@@ -111,5 +111,134 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-13",
+      "team": "Los Angeles Lakers",
+      "bid": 0.0,
+      "periods": 61,
+      "starts": 52,
+      "points": 2940.25,
+      "salary": 35000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-17",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 21,
+      "points": 718.0,
+      "salary": 15000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-13",
+      "from": "Utah Jazz",
+      "team": "Oklahoma City Thunder",
+      "trade": "9fzowpbal97efy5l",
+      "periods": 33,
+      "starts": 8,
+      "points": 53.5,
+      "salary": 2250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "Oklahoma City Thunder"
+    }
+  ],
+  "trades": {
+    "9fzowpbal97efy5l": {
+      "date": "2022-10-13",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "player_id": "0623h",
+          "player": "Alondes Williams",
+          "label": "Alondes Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "player_id": "051pw",
+          "player": "Jalen McDaniels",
+          "label": "Jalen McDaniels"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "player_id": "027os",
+          "player": "Kemba Walker",
+          "label": "Kemba Walker"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "player_id": "05ujg",
+          "player": "Isaiah Livers",
+          "label": "Isaiah Livers"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0621m",
+          "player": "David Roddy",
+          "label": "David Roddy"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "label": "2024 round 2 pick (Portland Trail Blazers)"
+        }
+      ]
+    }
+  }
 }

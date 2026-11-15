@@ -77,5 +77,128 @@
       "gp": 0,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-14",
+      "team": "Los Angeles Lakers",
+      "bid": 0.0,
+      "periods": 21,
+      "starts": 1,
+      "points": 25.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 22,
+      "date": "2020-01-03",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 28,
+      "date": "2021-03-26",
+      "team": "Houston Rockets",
+      "bid": 1.0,
+      "periods": 3,
+      "starts": 1,
+      "points": 15.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 22,
+      "date": "2021-12-31",
+      "team": "San Antonio Spurs",
+      "bid": 2.0,
+      "periods": 4,
+      "starts": 1,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 26,
+      "date": "2022-01-13",
+      "from": "San Antonio Spurs",
+      "team": "Dallas Mavericks",
+      "trade": "1zyt3pfrkycyno26",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 26,
+      "date": "2022-01-13",
+      "team": "Dallas Mavericks"
+    }
+  ],
+  "trades": {
+    "1zyt3pfrkycyno26": {
+      "date": "2022-01-13",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr."
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewi",
+          "player": "D.J. Wilson",
+          "label": "D.J. Wilson"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "01uz3",
+          "player": "DeMarcus Cousins",
+          "label": "DeMarcus Cousins"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George"
+        }
+      ]
+    }
+  }
 }

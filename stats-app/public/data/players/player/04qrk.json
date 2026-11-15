@@ -167,5 +167,139 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Atlanta Hawks",
+      "before_logs": true,
+      "periods": 61,
+      "starts": 58,
+      "points": 4586.5,
+      "salary": 4285152,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "from": "Atlanta Hawks",
+      "team": "Los Angeles Clippers",
+      "trade": "y6t02lq8ks8pna2n",
+      "periods": 33,
+      "starts": 31,
+      "points": 2410.25,
+      "salary": 4285152,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 131,
+      "starts": 105,
+      "points": 7717.25,
+      "salary": 35750000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "renamed",
+      "date": "2025-06-27",
+      "from": "Los Angeles Clippers",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-17",
+      "team": "Los Angeles Lakers",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 546.0,
+      "salary": 21808695,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "y6t02lq8ks8pna2n": {
+      "date": "2021-08-12",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "04qrk",
+          "player": "Trae Young",
+          "label": "Trae Young"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "051pj",
+          "player": "Alen Smailagic",
+          "label": "Alen Smailagic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtv",
+          "player": "Tyrese Haliburton",
+          "label": "Tyrese Haliburton"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 1 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2023 round 2 pick (Los Angeles Clippers)"
+        }
+      ]
+    }
+  }
 }

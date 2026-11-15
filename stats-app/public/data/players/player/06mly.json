@@ -125,5 +125,101 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2024-25",
+      "period": 0,
+      "date": "2024-06-28",
+      "team": "San Antonio Spurs",
+      "round": 2,
+      "pick": 37,
+      "periods": 43,
+      "starts": 4,
+      "points": 179.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 11,
+      "date": "2025-11-24",
+      "from": "San Antonio Spurs",
+      "team": "Boston Celtics",
+      "trade": "rynj81s7midkgo4r",
+      "periods": 18,
+      "starts": 12,
+      "points": 461.25,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "Boston Celtics",
+      "team": "Detroit Pistons",
+      "trade": "clvorhzpmkuzzfxs",
+      "periods": 12,
+      "starts": 12,
+      "points": 201.25,
+      "salary": 1000000,
+      "contract": "R22"
+    }
+  ],
+  "trades": {
+    "clvorhzpmkuzzfxs": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "player_id": "06mly",
+          "player": "Quinten Post",
+          "label": "Quinten Post"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "2026 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard"
+        }
+      ]
+    },
+    "rynj81s7midkgo4r": {
+      "date": "2025-11-24",
+      "season": "2025-26",
+      "period": 11,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "label": "2026 round 2 pick (Minnesota Timberwolves)"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "player_id": "06mly",
+          "player": "Quinten Post",
+          "label": "Quinten Post"
+        }
+      ]
+    }
+  }
 }

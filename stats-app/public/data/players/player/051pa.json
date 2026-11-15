@@ -209,5 +209,294 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2019-20",
+      "period": 0,
+      "date": "2019-06-24",
+      "team": "Philadelphia 76ers",
+      "round": 1,
+      "pick": 24,
+      "periods": 52,
+      "starts": 26,
+      "points": 657.0,
+      "salary": 1468416,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 21,
+      "date": "2021-03-01",
+      "from": "Philadelphia 76ers",
+      "team": "Boston Celtics",
+      "trade": "1dficb49klqifkr2",
+      "periods": 42,
+      "starts": 27,
+      "points": 1205.25,
+      "salary": 1468416,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-02",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 47,
+      "starts": 25,
+      "points": 1508.5,
+      "salary": 9000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 15,
+      "date": "2023-12-11",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-10",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 25,
+      "points": 782.75,
+      "salary": 9717215,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-27",
+      "from": "Los Angeles Clippers",
+      "team": "Atlanta Hawks",
+      "trade": "sq7it0uxm6e3ev52",
+      "periods": 5,
+      "starts": 5,
+      "points": 115.75,
+      "salary": 9717215,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 27,
+      "starts": 16,
+      "points": 954.25,
+      "salary": 12000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Boston Celtics",
+      "team": "Portland Trail Blazers",
+      "trade": "22yya7camkqj2lli",
+      "periods": 6,
+      "starts": 2,
+      "points": 191.0,
+      "salary": 12000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 46,
+      "date": "2026-04-03",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 8954000,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "1dficb49klqifkr2": {
+      "date": "2021-03-01",
+      "season": "2020-21",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Philadelphia 76ers",
+          "player_id": "03al0",
+          "player": "Aaron Gordon",
+          "label": "Aaron Gordon"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "player_id": "051pa",
+          "player": "Kevin Porter",
+          "label": "Kevin Porter"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "label": "2022 round 2 pick (Philadelphia 76ers)"
+        }
+      ]
+    },
+    "sq7it0uxm6e3ev52": {
+      "date": "2025-01-27",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "player_id": "03e7f",
+          "player": "Vasilije Micic",
+          "label": "Vasilije Micic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 1 pick (Orlando Magic)"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "051pa",
+          "player": "Kevin Porter",
+          "label": "Kevin Porter"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Los Angeles Clippers",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard"
+        }
+      ]
+    },
+    "22yya7camkqj2lli": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Portland Trail Blazers",
+          "player_id": "051pa",
+          "player": "Kevin Porter",
+          "label": "Kevin Porter"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "label": "2026 round 2 pick (Golden State Warriors)"
+        }
+      ]
+    }
+  }
 }

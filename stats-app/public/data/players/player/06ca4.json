@@ -77,5 +77,89 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-26",
+      "team": "Indiana Pacers",
+      "round": 1,
+      "pick": 15,
+      "periods": 50,
+      "starts": 3,
+      "points": -0.5,
+      "salary": 2119000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 19,
+      "date": "2024-12-23",
+      "from": "Indiana Pacers",
+      "team": "Miami Heat",
+      "trade": "0trs00ixm508eth8",
+      "periods": 15,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2119000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-10-20",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "0trs00ixm508eth8": {
+      "date": "2024-12-23",
+      "season": "2024-25",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "04qs2",
+          "player": "Moritz Wagner",
+          "label": "Moritz Wagner"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "06ca4",
+          "player": "Kobe Bufkin",
+          "label": "Kobe Bufkin"
+        },
+        {
+          "kind": "budget",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "$20 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "031m9",
+          "player": "Mason Plumlee",
+          "label": "Mason Plumlee"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed"
+        }
+      ]
+    }
+  }
 }

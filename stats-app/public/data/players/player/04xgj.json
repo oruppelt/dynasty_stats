@@ -111,5 +111,128 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 2,
+      "date": "2019-10-25",
+      "team": "New Orleans Pelicans",
+      "bid": 50.0,
+      "periods": 31,
+      "starts": 28,
+      "points": 1180.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 15,
+      "points": 682.25,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-11",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 5500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-27",
+      "from": "Cleveland Cavaliers",
+      "team": "Washington Wizards",
+      "trade": "duakokx5l63zce1u",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-17",
+      "team": "Memphis Grizzlies",
+      "bid": 47.0,
+      "periods": 5,
+      "starts": 3,
+      "points": 27.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 6,
+      "date": "2022-11-04",
+      "team": "Memphis Grizzlies"
+    }
+  ],
+  "trades": {
+    "duakokx5l63zce1u": {
+      "date": "2022-07-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "04xgj",
+          "player": "Kendrick Nunn",
+          "label": "Kendrick Nunn"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "budget",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "label": "$5 budget"
+        }
+      ]
+    }
+  }
 }

@@ -111,5 +111,130 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-29",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-10-23",
+      "from": "Miami Heat",
+      "team": "Houston Rockets",
+      "trade": "jy1tx6bwk22vouop",
+      "periods": 23,
+      "starts": 16,
+      "points": 175.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 24,
+      "date": "2020-01-10",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Houston Rockets",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 26,
+      "points": 704.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "team": "Denver Nuggets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 13,
+      "points": 295.75,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Denver Nuggets"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-10-23",
+      "team": "Portland Trail Blazers",
+      "bid": 6.0,
+      "periods": 4,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 5,
+      "date": "2023-11-06",
+      "team": "Portland Trail Blazers"
+    }
+  ],
+  "trades": {
+    "jy1tx6bwk22vouop": {
+      "date": "2019-10-23",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "031mb",
+          "player": "Tim Hardaway",
+          "label": "Tim Hardaway"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "label": "2020 round 2 pick (Houston Rockets)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "031mu",
+          "player": "Mike Muscala",
+          "label": "Mike Muscala"
+        }
+      ]
+    }
+  }
 }

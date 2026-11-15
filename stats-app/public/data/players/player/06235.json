@@ -101,5 +101,173 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-28",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 22,
+      "starts": 3,
+      "points": 4.25,
+      "salary": 1956739,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 23,
+      "date": "2023-01-02",
+      "from": "Boston Celtics",
+      "team": "Oklahoma City Thunder",
+      "trade": "jg91nnqmlcerb7ao",
+      "periods": 11,
+      "starts": 1,
+      "points": 0.0,
+      "salary": 1956739,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 21,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 22,
+      "date": "2024-01-05",
+      "from": "Boston Celtics",
+      "team": "Oklahoma City Thunder",
+      "trade": "0x0h24u3lr0j2d6r",
+      "periods": 11,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Oklahoma City Thunder"
+    }
+  ],
+  "trades": {
+    "jg91nnqmlcerb7ao": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06235",
+          "player": "Kenneth Lofton",
+          "label": "Kenneth Lofton"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "065px",
+          "player": "Trevion Williams",
+          "label": "Trevion Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford"
+        }
+      ]
+    },
+    "0x0h24u3lr0j2d6r": {
+      "date": "2024-01-05",
+      "season": "2023-24",
+      "period": 22,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06235",
+          "player": "Kenneth Lofton",
+          "label": "Kenneth Lofton"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "031mb",
+          "player": "Tim Hardaway",
+          "label": "Tim Hardaway"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 1 pick (Boston Celtics)"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2024 round 1 pick (Minnesota Timberwolves)"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "031m4",
+          "player": "Dennis Schroder",
+          "label": "Dennis Schroder"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        }
+      ]
+    }
+  }
 }

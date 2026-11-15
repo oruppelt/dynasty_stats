@@ -153,5 +153,198 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-29",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 49,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 17,
+      "date": "2023-12-18",
+      "from": "Milwaukee Bucks",
+      "team": "Miami Heat",
+      "trade": "ssp9l719lqaof5h2",
+      "periods": 3,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 20,
+      "date": "2023-12-29",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "team": "Minnesota Timberwolves",
+      "bid": 23.0,
+      "periods": 17,
+      "starts": 5,
+      "points": 229.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 24,
+      "date": "2025-01-10",
+      "from": "Minnesota Timberwolves",
+      "team": "Milwaukee Bucks",
+      "trade": "5bxdraq0m5qxtpz8",
+      "periods": 10,
+      "starts": 4,
+      "points": 198.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-08",
+      "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Oklahoma City Thunder",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 24,
+      "points": 1214.5,
+      "salary": 2250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 5,
+      "points": 286.0,
+      "salary": 3500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "ssp9l719lqaof5h2": {
+      "date": "2023-12-18",
+      "season": "2023-24",
+      "period": 17,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "043ib",
+          "player": "Dorian Finney-Smith",
+          "label": "Dorian Finney-Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "05uin",
+          "player": "Chris Duarte",
+          "label": "Chris Duarte"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "05uuv",
+          "player": "Trendon Watford",
+          "label": "Trendon Watford"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "06226",
+          "player": "Moussa Diabate",
+          "label": "Moussa Diabate"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    },
+    "5bxdraq0m5qxtpz8": {
+      "date": "2025-01-10",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uik",
+          "player": "Ziaire Williams",
+          "label": "Ziaire Williams"
+        },
+        {
+          "kind": "budget",
+          "from": "Milwaukee Bucks",
+          "to": "Minnesota Timberwolves",
+          "label": "$4 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "player_id": "051oq",
+          "player": "Cam Reddish",
+          "label": "Cam Reddish"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "player_id": "06226",
+          "player": "Moussa Diabate",
+          "label": "Moussa Diabate"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)"
+        }
+      ]
+    }
+  }
 }

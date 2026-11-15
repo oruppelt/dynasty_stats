@@ -139,5 +139,186 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-16",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 32,
+      "points": 1263.25,
+      "salary": 12000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-08",
+      "team": "Washington Wizards",
+      "bid": 0.0,
+      "periods": 22,
+      "starts": 16,
+      "points": 736.25,
+      "salary": 7876000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 24,
+      "date": "2021-03-13",
+      "from": "Washington Wizards",
+      "team": "Minnesota Timberwolves",
+      "trade": "54y895i8km7uoi1b",
+      "periods": 7,
+      "starts": 5,
+      "points": 153.75,
+      "salary": 7876000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-13",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 16,
+      "points": 345.0,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 36,
+      "date": "2026-02-27",
+      "team": "Dallas Mavericks",
+      "bid": 10.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-10",
+      "team": "Dallas Mavericks"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 3,
+      "date": "2026-10-26",
+      "team": "Golden State Warriors",
+      "bid": 2.0,
+      "periods": 1,
+      "starts": 1,
+      "points": 10.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 4,
+      "date": "2026-10-30",
+      "team": "Golden State Warriors"
+    }
+  ],
+  "trades": {
+    "54y895i8km7uoi1b": {
+      "date": "2021-03-13",
+      "season": "2020-21",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "03r7z",
+          "player": "Norman Powell",
+          "label": "Norman Powell"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "05qt4",
+          "player": "Aaron Nesmith",
+          "label": "Aaron Nesmith"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "049kc",
+          "player": "Malik Monk",
+          "label": "Malik Monk"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "042n8",
+          "player": "Taurean Prince",
+          "label": "Taurean Prince"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "005l3",
+          "player": "DeAndre Jordan",
+          "label": "DeAndre Jordan"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05qsl",
+          "player": "Patrick Williams",
+          "label": "Patrick Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "005kf",
+          "player": "Eric Gordon",
+          "label": "Eric Gordon"
+        }
+      ]
+    }
+  }
 }

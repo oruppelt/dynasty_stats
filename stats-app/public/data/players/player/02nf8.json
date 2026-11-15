@@ -167,5 +167,262 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-12",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 1,
+      "starts": 1,
+      "points": 22.0,
+      "salary": 10000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 2,
+      "date": "2019-10-25",
+      "from": "Golden State Warriors",
+      "team": "Orlando Magic",
+      "trade": "6kk26nz5k269o7q2",
+      "periods": 45,
+      "starts": 43,
+      "points": 1873.0,
+      "salary": 10000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 15,
+      "date": "2021-02-08",
+      "from": "Orlando Magic",
+      "team": "Toronto Raptors",
+      "trade": "fg701svckkwr9d15",
+      "periods": 9,
+      "starts": 8,
+      "points": 466.0,
+      "salary": 10000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 25,
+      "date": "2021-03-14",
+      "from": "Toronto Raptors",
+      "team": "Charlotte Hornets",
+      "trade": "6dty708wkm9579c4",
+      "periods": 39,
+      "starts": 20,
+      "points": 719.0,
+      "salary": 10000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 3,
+      "date": "2022-10-24",
+      "team": "Utah Jazz",
+      "bid": 54.0,
+      "periods": 5,
+      "starts": 3,
+      "points": 73.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 8,
+      "date": "2022-11-11",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 41,
+      "date": "2023-03-10",
+      "team": "Houston Rockets",
+      "bid": 23.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Houston Rockets"
+    }
+  ],
+  "trades": {
+    "6dty708wkm9579c4": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "04qrt",
+          "player": "Zhaire Smith",
+          "label": "Zhaire Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "049s6",
+          "player": "Markelle Fultz",
+          "label": "Markelle Fultz"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2021 round 2 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2021 round 1 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2022 round 2 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2022 round 1 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "02nf8",
+          "player": "Terrence Ross",
+          "label": "Terrence Ross"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
+        }
+      ]
+    },
+    "6kk26nz5k269o7q2": {
+      "date": "2019-10-25",
+      "season": "2019-20",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "04jwc",
+          "player": "Alfonzo McKinnie",
+          "label": "Alfonzo McKinnie"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "02nf8",
+          "player": "Terrence Ross",
+          "label": "Terrence Ross"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "label": "2020 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Golden State Warriors",
+          "player_id": "031lq",
+          "player": "Otto Porter",
+          "label": "Otto Porter"
+        }
+      ]
+    },
+    "fg701svckkwr9d15": {
+      "date": "2021-02-08",
+      "season": "2020-21",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Toronto Raptors",
+          "player_id": "02nf8",
+          "player": "Terrence Ross",
+          "label": "Terrence Ross"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Toronto Raptors",
+          "label": "2021 round 1 pick (Orlando Magic)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Orlando Magic",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Orlando Magic",
+          "player_id": "03927",
+          "player": "JaMychal Green",
+          "label": "JaMychal Green"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Orlando Magic",
+          "label": "2021 round 2 pick (Toronto Raptors)"
+        }
+      ]
+    }
+  }
 }

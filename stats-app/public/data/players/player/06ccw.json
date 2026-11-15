@@ -83,5 +83,130 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-10-21",
+      "team": "New Orleans Pelicans",
+      "bid": 4.0,
+      "periods": 20,
+      "starts": 2,
+      "points": 20.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 21,
+      "date": "2024-12-30",
+      "from": "New Orleans Pelicans",
+      "team": "Miami Heat",
+      "trade": "d6sg7z0mm59sukx3",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 21,
+      "date": "2024-12-30",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 8,
+      "date": "2025-11-14",
+      "team": "Memphis Grizzlies",
+      "bid": 15.0,
+      "periods": 26,
+      "starts": 4,
+      "points": 194.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-21",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-10-19",
+      "team": "Boston Celtics"
+    }
+  ],
+  "trades": {
+    "d6sg7z0mm59sukx3": {
+      "date": "2024-12-30",
+      "season": "2024-25",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "New Orleans Pelicans",
+          "player_id": "027oo",
+          "player": "Jonas Valanciunas",
+          "label": "Jonas Valanciunas"
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "New Orleans Pelicans",
+          "label": "$45 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "06ccw",
+          "player": "Jordan Miller",
+          "label": "Jordan Miller"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (New Orleans Pelicans)"
+        }
+      ]
+    }
+  }
 }

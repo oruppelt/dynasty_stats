@@ -125,5 +125,172 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Brooklyn Nets",
+      "before_logs": true,
+      "periods": 2,
+      "starts": 2,
+      "points": 84.0,
+      "salary": 5600000,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 3,
+      "date": "2019-10-26",
+      "team": "Brooklyn Nets"
+    },
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 3,
+      "date": "2019-10-28",
+      "team": "Portland Trail Blazers",
+      "bid": 34.0,
+      "periods": 30,
+      "starts": 21,
+      "points": 1208.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 62,
+      "starts": 48,
+      "points": 1104.0,
+      "salary": 12000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-28",
+      "from": "Utah Jazz",
+      "team": "Orlando Magic",
+      "trade": "aesgkz49l3pw62x9",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-02",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 39,
+      "date": "2024-03-08",
+      "team": "Sacramento Kings",
+      "bid": 12.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-05-10",
+      "team": "Sacramento Kings"
+    }
+  ],
+  "trades": {
+    "aesgkz49l3pw62x9": {
+      "date": "2022-05-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "042n1",
+          "player": "Brandon Ingram",
+          "label": "Brandon Ingram"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "player_id": "01enn",
+          "player": "Blake Griffin",
+          "label": "Blake Griffin"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "player_id": "027pt",
+          "player": "Davis Bertans",
+          "label": "Davis Bertans"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "player_id": "05uj4",
+          "player": "Santi Aldama",
+          "label": "Santi Aldama"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "player_id": "05uio",
+          "player": "Moses Moody",
+          "label": "Moses Moody"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "label": "2022 round 1 pick, no. 6"
+        }
+      ]
+    }
+  }
 }

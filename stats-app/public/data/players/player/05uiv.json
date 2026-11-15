@@ -153,5 +153,206 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Toronto Raptors",
+      "round": 1,
+      "pick": 17,
+      "periods": 33,
+      "starts": 4,
+      "points": 50.25,
+      "salary": 1984800,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-13",
+      "from": "Toronto Raptors",
+      "team": "Memphis Grizzlies",
+      "trade": "e6tqf9qll4d4dis2",
+      "periods": 34,
+      "starts": 4,
+      "points": 26.25,
+      "salary": 1985000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 2,
+      "date": "2023-10-27",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-08",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 22,
+      "date": "2025-01-03",
+      "team": "Portland Trail Blazers",
+      "bid": 38.0,
+      "periods": 12,
+      "starts": 11,
+      "points": 556.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-18",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 3,
+      "starts": 1,
+      "points": 0.0,
+      "salary": 2800000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "from": "Indiana Pacers",
+      "team": "Milwaukee Bucks",
+      "trade": "yimzvg76mhex6syx",
+      "periods": 25,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2800000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "team": "Milwaukee Bucks"
+    }
+  ],
+  "trades": {
+    "e6tqf9qll4d4dis2": {
+      "date": "2022-06-13",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Toronto Raptors",
+          "player_id": "027pe",
+          "player": "Jimmy Butler",
+          "label": "Jimmy Butler"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Toronto Raptors",
+          "player_id": "05qt0",
+          "player": "Saddiq Bey",
+          "label": "Saddiq Bey"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Memphis Grizzlies",
+          "player_id": "042nw",
+          "player": "Malcolm Brogdon",
+          "label": "Malcolm Brogdon"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Memphis Grizzlies",
+          "player_id": "05uiv",
+          "player": "Keon Johnson",
+          "label": "Keon Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Memphis Grizzlies",
+          "label": "2022 round 1 pick, no. 21"
+        }
+      ]
+    },
+    "yimzvg76mhex6syx": {
+      "date": "2025-10-31",
+      "season": "2025-26",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "player_id": "05uiv",
+          "player": "Keon Johnson",
+          "label": "Keon Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "label": "2027 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "0623e",
+          "player": "Collin Gillespie",
+          "label": "Collin Gillespie"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "05uuq",
+          "player": "Jock Landale",
+          "label": "Jock Landale"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "label": "2027 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    }
+  }
 }

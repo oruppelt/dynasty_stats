@@ -97,5 +97,116 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 4,
+      "date": "2024-11-01",
+      "team": "Golden State Warriors",
+      "bid": 5.0,
+      "periods": 2,
+      "starts": 1,
+      "points": 8.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 6,
+      "date": "2024-11-08",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 11,
+      "date": "2024-11-25",
+      "team": "Utah Jazz",
+      "bid": 18.0,
+      "periods": 18,
+      "starts": 7,
+      "points": 165.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-26",
+      "from": "Utah Jazz",
+      "team": "Phoenix Suns",
+      "trade": "2ovotsinm6dqv7ln",
+      "periods": 4,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 33,
+      "date": "2025-02-10",
+      "team": "Phoenix Suns"
+    }
+  ],
+  "trades": {
+    "2ovotsinm6dqv7ln": {
+      "date": "2025-01-26",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "player_id": "03r7z",
+          "player": "Norman Powell",
+          "label": "Norman Powell"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "player_id": "051ps",
+          "player": "Terance Mann",
+          "label": "Terance Mann"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "player_id": "027pg",
+          "player": "Bojan Bogdanovic",
+          "label": "Bojan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "player_id": "05yoh",
+          "player": "Lindy Waters",
+          "label": "Lindy Waters"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "player_id": "06mm3",
+          "player": "Ulrich Chomche",
+          "label": "Ulrich Chomche"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "label": "2025 round 1 pick (Utah Jazz)"
+        }
+      ]
+    }
+  }
 }

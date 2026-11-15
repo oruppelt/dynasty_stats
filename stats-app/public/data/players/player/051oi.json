@@ -195,5 +195,175 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2019-20",
+      "period": 0,
+      "date": "2019-06-23",
+      "team": "Toronto Raptors",
+      "round": 1,
+      "pick": 2,
+      "periods": 94,
+      "starts": 77,
+      "points": 4732.0,
+      "salary": 5844480,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-30",
+      "team": "Toronto Raptors",
+      "bid": 0.0,
+      "periods": 51,
+      "starts": 34,
+      "points": 2304.5,
+      "salary": 31350000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-24",
+      "from": "Toronto Raptors",
+      "team": "San Antonio Spurs",
+      "trade": "jftv7a4ylqjbgh11",
+      "periods": 6,
+      "starts": 6,
+      "points": 278.75,
+      "salary": 31350000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 25,
+      "date": "2024-01-15",
+      "from": "San Antonio Spurs",
+      "team": "Los Angeles Lakers",
+      "trade": "yjhuxq3zlrf24wir",
+      "periods": 74,
+      "starts": 41,
+      "points": 1785.75,
+      "salary": 31350000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "renamed",
+      "date": "2025-06-27",
+      "from": "Los Angeles Lakers",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 3,
+      "points": 128.75,
+      "salary": 12954545,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "jftv7a4ylqjbgh11": {
+      "date": "2023-12-24",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "player_id": "05qto",
+          "player": "LaMelo Ball",
+          "label": "LaMelo Ball"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "San Antonio Spurs",
+          "player_id": "051oi",
+          "player": "Ja Morant",
+          "label": "Ja Morant"
+        }
+      ]
+    },
+    "yjhuxq3zlrf24wir": {
+      "date": "2024-01-15",
+      "season": "2023-24",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "player_id": "03r7e",
+          "player": "Cameron Payne",
+          "label": "Cameron Payne"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "051oi",
+          "player": "Ja Morant",
+          "label": "Ja Morant"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "031m9",
+          "player": "Mason Plumlee",
+          "label": "Mason Plumlee"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "05ujt",
+          "player": "Aaron Wiggins",
+          "label": "Aaron Wiggins"
+        }
+      ]
+    }
+  }
 }

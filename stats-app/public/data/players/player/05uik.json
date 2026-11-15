@@ -153,5 +153,140 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Toronto Raptors",
+      "round": 1,
+      "pick": 18,
+      "periods": 98,
+      "starts": 44,
+      "points": 962.5,
+      "salary": 1885728,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-22",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-08",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 23,
+      "starts": 23,
+      "points": 562.75,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 24,
+      "date": "2025-01-10",
+      "from": "Milwaukee Bucks",
+      "team": "Minnesota Timberwolves",
+      "trade": "5bxdraq0m5qxtpz8",
+      "periods": 10,
+      "starts": 5,
+      "points": 239.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 25,
+      "points": 752.0,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-04",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-19",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 6,
+      "points": 283.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "5bxdraq0m5qxtpz8": {
+      "date": "2025-01-10",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uik",
+          "player": "Ziaire Williams",
+          "label": "Ziaire Williams"
+        },
+        {
+          "kind": "budget",
+          "from": "Milwaukee Bucks",
+          "to": "Minnesota Timberwolves",
+          "label": "$4 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "player_id": "051oq",
+          "player": "Cam Reddish",
+          "label": "Cam Reddish"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "player_id": "06226",
+          "player": "Moussa Diabate",
+          "label": "Moussa Diabate"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)"
+        }
+      ]
+    }
+  }
 }

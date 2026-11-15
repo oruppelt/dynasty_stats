@@ -83,5 +83,72 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Milwaukee Bucks",
+      "before_logs": true,
+      "periods": 30,
+      "starts": 7,
+      "points": 104.5,
+      "salary": 2400000,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 32,
+      "date": "2020-02-07",
+      "from": "Milwaukee Bucks",
+      "team": "Philadelphia 76ers",
+      "trade": "pg5svv74k6cm79h7",
+      "periods": 2,
+      "starts": 1,
+      "points": 10.25,
+      "salary": 2400000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Philadelphia 76ers"
+    }
+  ],
+  "trades": {
+    "pg5svv74k6cm79h7": {
+      "date": "2020-02-07",
+      "season": "2019-20",
+      "period": 32,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Philadelphia 76ers",
+          "player_id": "0483a",
+          "player": "Yogi Ferrell",
+          "label": "Yogi Ferrell"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Philadelphia 76ers",
+          "label": "2021 round 2 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Milwaukee Bucks",
+          "player_id": "03e6r",
+          "player": "Shabazz Napier",
+          "label": "Shabazz Napier"
+        }
+      ]
+    }
+  }
 }

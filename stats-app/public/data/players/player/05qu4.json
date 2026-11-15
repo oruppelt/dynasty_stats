@@ -111,5 +111,184 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-24",
+      "team": "Portland Trail Blazers",
+      "round": 2,
+      "pick": 55,
+      "periods": 23,
+      "starts": 5,
+      "points": 131.25,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 25,
+      "date": "2021-03-14",
+      "from": "Portland Trail Blazers",
+      "team": "Detroit Pistons",
+      "trade": "lpvb9p0kkm9ltz87",
+      "periods": 24,
+      "starts": 3,
+      "points": 50.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 19,
+      "date": "2021-12-21",
+      "from": "Detroit Pistons",
+      "team": "Memphis Grizzlies",
+      "trade": "y7jfydkxkxg1vebv",
+      "periods": 15,
+      "starts": 2,
+      "points": 54.75,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-12",
+      "team": "Memphis Grizzlies"
+    }
+  ],
+  "trades": {
+    "y7jfydkxkxg1vebv": {
+      "date": "2021-12-21",
+      "season": "2021-22",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qt0",
+          "player": "Saddiq Bey",
+          "label": "Saddiq Bey"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qtu",
+          "player": "Skylar Mays",
+          "label": "Skylar Mays"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "01uz9",
+          "player": "Nemanja Bjelica",
+          "label": "Nemanja Bjelica"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qu4",
+          "player": "Saben Lee",
+          "label": "Saben Lee"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "player_id": "027p2",
+          "player": "Enes Kanter",
+          "label": "Enes Kanter"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2023 round 1 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2023 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Atlanta Hawks)"
+        }
+      ]
+    },
+    "lpvb9p0kkm9ltz87": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Portland Trail Blazers",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Portland Trail Blazers",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "player_id": "05qu4",
+          "player": "Saben Lee",
+          "label": "Saben Lee"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "player_id": "02nfc",
+          "player": "Jeremy Lamb",
+          "label": "Jeremy Lamb"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Portland Trail Blazers)"
+        }
+      ]
+    }
+  }
 }

@@ -139,5 +139,152 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-20",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 9,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 10,
+      "date": "2021-11-19",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 21,
+      "date": "2021-12-27",
+      "team": "Portland Trail Blazers",
+      "bid": 9.0,
+      "periods": 10,
+      "starts": 5,
+      "points": 298.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 31,
+      "date": "2022-01-31",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 33,
+      "date": "2022-02-07",
+      "team": "Philadelphia 76ers",
+      "bid": 1.0,
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-28",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 5,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 6,
+      "date": "2022-11-04",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 6,
+      "date": "2023-11-10",
+      "team": "Chicago Bulls",
+      "bid": 18.0,
+      "periods": 1,
+      "starts": 1,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 7,
+      "date": "2023-11-14",
+      "from": "Chicago Bulls",
+      "team": "Dallas Mavericks",
+      "trade": "4z8u6ap8loyoglfb",
+      "periods": 26,
+      "starts": 21,
+      "points": 149.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Dallas Mavericks"
+    }
+  ],
+  "trades": {
+    "4z8u6ap8loyoglfb": {
+      "date": "2023-11-14",
+      "season": "2023-24",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "player_id": "05qu8",
+          "player": "Omer Yurtseven",
+          "label": "Omer Yurtseven"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2025 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Chicago Bulls",
+          "player_id": "03e79",
+          "player": "Dwight Powell",
+          "label": "Dwight Powell"
+        }
+      ]
+    }
+  }
 }

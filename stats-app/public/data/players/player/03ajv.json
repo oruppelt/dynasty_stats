@@ -167,5 +167,117 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-16",
+      "team": "Oklahoma City Thunder",
+      "bid": 0.0,
+      "periods": 61,
+      "starts": 61,
+      "points": 4139.5,
+      "salary": 26190477,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-17",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 31,
+      "points": 2098.0,
+      "salary": 27000000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "from": "Charlotte Hornets",
+      "team": "Chicago Bulls",
+      "trade": "caq0c945l69jh4fc",
+      "periods": 98,
+      "starts": 90,
+      "points": 6362.75,
+      "salary": 27000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-10",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 40,
+      "starts": 40,
+      "points": 2840.5,
+      "salary": 13571429,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "caq0c945l69jh4fc": {
+      "date": "2022-07-31",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Chicago Bulls",
+          "player_id": "03ajv",
+          "player": "Julius Randle",
+          "label": "Julius Randle"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Chicago Bulls",
+          "label": "2023 round 1 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 1 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Memphis Grizzlies",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        },
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Chicago Bulls",
+          "label": "$1 budget"
+        }
+      ]
+    }
+  }
 }

@@ -181,5 +181,272 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 42,
+      "date": "2021-05-14",
+      "team": "Chicago Bulls",
+      "bid": 1.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-03",
+      "team": "Boston Celtics",
+      "round": 2,
+      "pick": 57,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-17",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 27,
+      "starts": 3,
+      "points": 5.25,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-19",
+      "from": "Phoenix Suns",
+      "team": "Utah Jazz",
+      "trade": "h3agpstjkylmcv6c",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-20",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 41,
+      "date": "2022-03-11",
+      "team": "Houston Rockets",
+      "bid": 5.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 6,
+      "date": "2022-11-04",
+      "team": "Golden State Warriors",
+      "bid": 2.0,
+      "periods": 12,
+      "starts": 6,
+      "points": 242.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-16",
+      "from": "Golden State Warriors",
+      "team": "Atlanta Hawks",
+      "trade": "uuh2rleylbqddl2p",
+      "periods": 16,
+      "starts": 13,
+      "points": 538.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 23,
+      "points": 618.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-01",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 24,
+      "points": 944.0,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-08",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 27,
+      "points": 1476.0,
+      "salary": 4000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-09",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-13",
+      "team": "Detroit Pistons",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 225.0,
+      "salary": 7000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "uuh2rleylbqddl2p": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "005ll",
+          "player": "George Hill",
+          "label": "George Hill"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "label": "2023 round 2 pick (Orlando Magic)"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "player_id": "05qzh",
+          "player": "Naji Marshall",
+          "label": "Naji Marshall"
+        }
+      ]
+    },
+    "h3agpstjkylmcv6c": {
+      "date": "2022-01-19",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "player_id": "05qzh",
+          "player": "Naji Marshall",
+          "label": "Naji Marshall"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "player_id": "05qu2",
+          "player": "Justinian Jessup",
+          "label": "Justinian Jessup"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "label": "2022 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "label": "2023 round 2 pick (Phoenix Suns)"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "player_id": "03e6z",
+          "player": "Joe Harris",
+          "label": "Joe Harris"
+        }
+      ]
+    }
+  }
 }

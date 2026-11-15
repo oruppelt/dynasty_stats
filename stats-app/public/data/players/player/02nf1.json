@@ -181,5 +181,129 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "New Orleans Pelicans",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 32,
+      "points": 2775.75,
+      "salary": 20347410,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 127,
+      "starts": 93,
+      "points": 7854.0,
+      "salary": 34200000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 60,
+      "starts": 45,
+      "points": 3519.0,
+      "salary": 23853261,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "New Orleans Pelicans",
+      "team": "Detroit Pistons",
+      "trade": "944khsg8mkqqmbol",
+      "periods": 13,
+      "starts": 10,
+      "points": 544.75,
+      "salary": 23853261,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "944khsg8mkqqmbol": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "player_id": "05uif",
+          "player": "Jalen Suggs",
+          "label": "Jalen Suggs"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "player_id": "03aq2",
+          "player": "Jerami Grant",
+          "label": "Jerami Grant"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "player_id": "05qsp",
+          "player": "Isaiah Joe",
+          "label": "Isaiah Joe"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "label": "2027 round 2 pick (New York Knicks)"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Detroit Pistons",
+          "player_id": "02nf1",
+          "player": "Anthony Davis",
+          "label": "Anthony Davis"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Detroit Pistons",
+          "player_id": "031lz",
+          "player": "Steven Adams",
+          "label": "Steven Adams"
+        }
+      ]
+    }
+  }
 }

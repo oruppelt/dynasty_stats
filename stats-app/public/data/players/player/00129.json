@@ -97,5 +97,139 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-14",
+      "team": "Los Angeles Lakers",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 19,
+      "points": 994.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 28,
+      "points": 1274.25,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-18",
+      "from": "Boston Celtics",
+      "team": "Houston Rockets",
+      "trade": "g2f53zxaksheu85c",
+      "periods": 33,
+      "starts": 28,
+      "points": 1427.25,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-28",
+      "team": "Toronto Raptors",
+      "round": 2,
+      "pick": 60,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Toronto Raptors"
+    }
+  ],
+  "trades": {
+    "g2f53zxaksheu85c": {
+      "date": "2021-08-18",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "00129",
+          "player": "Carmelo Anthony",
+          "label": "Carmelo Anthony"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2022 round 2 pick (Philadelphia 76ers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2022 round 2 pick (Houston Rockets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2023 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "player_id": "04qs6",
+          "player": "Dzanan Musa",
+          "label": "Dzanan Musa"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "player_id": "03lls",
+          "player": "Jaylen Brown",
+          "label": "Jaylen Brown"
+        }
+      ]
+    }
+  }
 }

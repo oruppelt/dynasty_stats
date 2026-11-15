@@ -167,5 +167,294 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Los Angeles Clippers",
+      "before_logs": true,
+      "periods": 22,
+      "starts": 15,
+      "points": 1066.5,
+      "salary": 24800000,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 23,
+      "date": "2020-01-05",
+      "from": "Los Angeles Clippers",
+      "team": "Cleveland Cavaliers",
+      "trade": "20hjof7bk4ylgm07",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 23,
+      "date": "2020-01-05",
+      "from": "Cleveland Cavaliers",
+      "team": "Memphis Grizzlies",
+      "trade": "ja9otupwk5130qp9",
+      "periods": 10,
+      "starts": 9,
+      "points": 602.5,
+      "salary": 24800000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 62,
+      "starts": 54,
+      "points": 3046.0,
+      "salary": 22500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 52,
+      "starts": 45,
+      "points": 2115.25,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 20,
+      "date": "2023-12-28",
+      "from": "Miami Heat",
+      "team": "Milwaukee Bucks",
+      "trade": "f55b9i8llqovzig1",
+      "periods": 13,
+      "starts": 4,
+      "points": 93.25,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-26",
+      "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-01",
+      "team": "New York Knicks",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 22,
+      "points": 554.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-27",
+      "team": "New York Knicks"
+    }
+  ],
+  "trades": {
+    "f55b9i8llqovzig1": {
+      "date": "2023-12-28",
+      "season": "2023-24",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "06228",
+          "player": "Josh Minott",
+          "label": "Josh Minott"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "06224",
+          "player": "E.J. Liddell",
+          "label": "E.J. Liddell"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "0626t",
+          "player": "Dominick Barlow",
+          "label": "Dominick Barlow"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "03avi",
+          "player": "Doug McDermott",
+          "label": "Doug McDermott"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "label": "2024 round 1 pick (Miami Heat)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "0015b",
+          "player": "Kyle Lowry",
+          "label": "Kyle Lowry"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "042ne",
+          "player": "Malik Beasley",
+          "label": "Malik Beasley"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Detroit Pistons",
+          "player_id": "042nf",
+          "player": "Caris LeVert",
+          "label": "Caris LeVert"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "04qsd",
+          "player": "Mitchell Robinson",
+          "label": "Mitchell Robinson"
+        }
+      ]
+    },
+    "20hjof7bk4ylgm07": {
+      "date": "2020-01-05",
+      "season": "2019-20",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Los Angeles Clippers",
+          "player_id": "01uz6",
+          "player": "Ed Davis",
+          "label": "Ed Davis"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Los Angeles Clippers",
+          "player_id": "03lgk",
+          "player": "Allonzo Trier",
+          "label": "Allonzo Trier"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0015b",
+          "player": "Kyle Lowry",
+          "label": "Kyle Lowry"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "01enn",
+          "player": "Blake Griffin",
+          "label": "Blake Griffin"
+        }
+      ]
+    },
+    "ja9otupwk5130qp9": {
+      "date": "2020-01-05",
+      "season": "2019-20",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "0015b",
+          "player": "Kyle Lowry",
+          "label": "Kyle Lowry"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "005le",
+          "player": "Robin Lopez",
+          "label": "Robin Lopez"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "player_id": "001bo",
+          "player": "Paul Millsap",
+          "label": "Paul Millsap"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Dallas Mavericks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Brooklyn Nets)"
+        }
+      ]
+    }
+  }
 }

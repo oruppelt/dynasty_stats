@@ -153,5 +153,188 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-11",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 2,
+      "starts": 2,
+      "points": 34.0,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 3,
+      "date": "2019-10-27",
+      "from": "Portland Trail Blazers",
+      "team": "Miami Heat",
+      "trade": "kc1p17v7k28rq4km",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 3,
+      "date": "2019-10-27",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 5,
+      "date": "2019-11-04",
+      "team": "Los Angeles Clippers",
+      "bid": 1.0,
+      "periods": 17,
+      "starts": 6,
+      "points": 114.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 22,
+      "date": "2020-01-05",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 24,
+      "date": "2020-01-10",
+      "team": "Chicago Bulls",
+      "bid": 1.0,
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 31,
+      "date": "2020-02-04",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-03",
+      "team": "Houston Rockets",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 29,
+      "points": 1024.25,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-15",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 27,
+      "points": 807.5,
+      "salary": 4000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-30",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 24,
+      "points": 454.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 18,
+      "date": "2023-12-22",
+      "team": "San Antonio Spurs",
+      "bid": 5.0,
+      "periods": 15,
+      "starts": 4,
+      "points": 92.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "San Antonio Spurs"
+    }
+  ],
+  "trades": {
+    "kc1p17v7k28rq4km": {
+      "date": "2019-10-27",
+      "season": "2019-20",
+      "period": 2,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2020 round 2 pick (Sacramento Kings)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Miami Heat",
+          "player_id": "001ax",
+          "player": "Jeff Green",
+          "label": "Jeff Green"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Miami Heat",
+          "label": "2021 round 2 pick (Portland Trail Blazers)"
+        }
+      ]
+    }
+  }
 }

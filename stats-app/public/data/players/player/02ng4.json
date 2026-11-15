@@ -125,5 +125,135 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Los Angeles Lakers",
+      "before_logs": true,
+      "periods": 51,
+      "starts": 49,
+      "points": 2398.0,
+      "salary": 9600000,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 20,
+      "date": "2021-02-25",
+      "from": "Los Angeles Lakers",
+      "team": "Chicago Bulls",
+      "trade": "ln8pcm2eklktycvf",
+      "periods": 10,
+      "starts": 8,
+      "points": 518.0,
+      "salary": 9600000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 41,
+      "date": "2021-05-10",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-14",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 62,
+      "starts": 47,
+      "points": 2009.25,
+      "salary": 6000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "from": "Utah Jazz",
+      "team": "Golden State Warriors",
+      "trade": "o47mrulcldew7u7t",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "team": "Golden State Warriors"
+    }
+  ],
+  "trades": {
+    "ln8pcm2eklktycvf": {
+      "date": "2021-02-25",
+      "season": "2020-21",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Los Angeles Lakers",
+          "player_id": "05qtt",
+          "player": "Onyeka Okongwu",
+          "label": "Onyeka Okongwu"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Chicago Bulls",
+          "player_id": "02ng4",
+          "player": "Will Barton",
+          "label": "Will Barton"
+        }
+      ]
+    },
+    "o47mrulcldew7u7t": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Utah Jazz",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Golden State Warriors",
+          "player_id": "02ng4",
+          "player": "Will Barton",
+          "label": "Will Barton"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Golden State Warriors",
+          "player_id": "05ujg",
+          "player": "Isaiah Livers",
+          "label": "Isaiah Livers"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Golden State Warriors",
+          "label": "2024 round 2 pick (Golden State Warriors)"
+        }
+      ]
+    }
+  }
 }

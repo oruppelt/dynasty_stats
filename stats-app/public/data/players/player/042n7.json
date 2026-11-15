@@ -181,5 +181,184 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Washington Wizards",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 32,
+      "points": 2203.0,
+      "salary": 2127840,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-09",
+      "team": "Washington Wizards",
+      "bid": 0.0,
+      "periods": 41,
+      "starts": 40,
+      "points": 3068.25,
+      "salary": 20662500,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "from": "Washington Wizards",
+      "team": "Sacramento Kings",
+      "trade": "uzok8m7ikwkzi0g6",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "from": "Sacramento Kings",
+      "team": "Phoenix Suns",
+      "trade": "hbk0cwdukwl4dkmr",
+      "periods": 86,
+      "starts": 80,
+      "points": 6464.0,
+      "salary": 20662500,
+      "contract": "REG3"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 73,
+      "starts": 54,
+      "points": 3746.5,
+      "salary": 26647500,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "uzok8m7ikwkzi0g6": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "051om",
+          "player": "Jarrett Culver",
+          "label": "Jarrett Culver"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (Philadelphia 76ers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (Orlando Magic)"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Sacramento Kings",
+          "player_id": "042n7",
+          "player": "Domantas Sabonis",
+          "label": "Domantas Sabonis"
+        }
+      ]
+    },
+    "hbk0cwdukwl4dkmr": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "player_id": "05uib",
+          "player": "Cade Cunningham",
+          "label": "Cade Cunningham"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "03bxn",
+          "player": "T.J. Warren",
+          "label": "T.J. Warren"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "042n7",
+          "player": "Domantas Sabonis",
+          "label": "Domantas Sabonis"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "05uj8",
+          "player": "Rokas Jokubaitis",
+          "label": "Rokas Jokubaitis"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "label": "2023 round 1 pick (Boston Celtics)"
+        }
+      ]
+    }
+  }
 }

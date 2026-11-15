@@ -181,5 +181,243 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-23",
+      "team": "Orlando Magic",
+      "round": 1,
+      "pick": 18,
+      "periods": 80,
+      "starts": 60,
+      "points": 2454.0,
+      "salary": 1885728,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 19,
+      "date": "2022-12-18",
+      "from": "Orlando Magic",
+      "team": "Indiana Pacers",
+      "trade": "2kaanhk9lbsgnxkr",
+      "periods": 15,
+      "starts": 14,
+      "points": 719.0,
+      "salary": 1886000,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-26",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 46,
+      "starts": 41,
+      "points": 1445.25,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 15,
+      "date": "2024-12-09",
+      "from": "Indiana Pacers",
+      "team": "Miami Heat",
+      "trade": "gy7ia1v7m4gxhk6e",
+      "periods": 6,
+      "starts": 6,
+      "points": 120.5,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 21,
+      "date": "2024-12-30",
+      "from": "Miami Heat",
+      "team": "Houston Rockets",
+      "trade": "1jghgk36m5avz9qx",
+      "periods": 13,
+      "starts": 12,
+      "points": 545.5,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 29,
+      "points": 474.75,
+      "salary": 3400000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-04",
+      "team": "Phoenix Suns"
+    }
+  ],
+  "trades": {
+    "gy7ia1v7m4gxhk6e": {
+      "date": "2024-12-09",
+      "season": "2024-25",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "05qt0",
+          "player": "Saddiq Bey",
+          "label": "Saddiq Bey"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "05qtl",
+          "player": "Cole Anthony",
+          "label": "Cole Anthony"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2026 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "02ng3",
+          "player": "Khris Middleton",
+          "label": "Khris Middleton"
+        }
+      ]
+    },
+    "1jghgk36m5avz9qx": {
+      "date": "2024-12-30",
+      "season": "2024-25",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "06cd1",
+          "player": "Jordan Walsh",
+          "label": "Jordan Walsh"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "03e74",
+          "player": "Spencer Dinwiddie",
+          "label": "Spencer Dinwiddie"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "05qtl",
+          "player": "Cole Anthony",
+          "label": "Cole Anthony"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick (New Orleans Pelicans)"
+        }
+      ]
+    },
+    "2kaanhk9lbsgnxkr": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Orlando Magic",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Orlando Magic",
+          "label": "2024 round 1 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Indiana Pacers",
+          "player_id": "05qtl",
+          "player": "Cole Anthony",
+          "label": "Cole Anthony"
+        }
+      ]
+    }
+  }
 }

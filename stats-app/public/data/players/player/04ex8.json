@@ -181,5 +181,145 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 2,
+      "date": "2019-10-25",
+      "team": "Houston Rockets",
+      "bid": 1.0,
+      "periods": 31,
+      "starts": 31,
+      "points": 1411.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 47,
+      "starts": 37,
+      "points": 1685.5,
+      "salary": 7000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 19,
+      "date": "2021-12-19",
+      "from": "Portland Trail Blazers",
+      "team": "Indiana Pacers",
+      "trade": "ulhq4eahkxdadm8q",
+      "periods": 15,
+      "starts": 3,
+      "points": 48.5,
+      "salary": 7000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-02",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 30,
+      "points": 1227.75,
+      "salary": 8400001,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-27",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 65,
+      "starts": 51,
+      "points": 2118.0,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-18",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 40,
+      "starts": 38,
+      "points": 1875.75,
+      "salary": 5000000,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "ulhq4eahkxdadm8q": {
+      "date": "2021-12-19",
+      "season": "2021-22",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "01uyd",
+          "player": "Avery Bradley",
+          "label": "Avery Bradley"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2022 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "04ex8",
+          "player": "Dillon Brooks",
+          "label": "Dillon Brooks"
+        }
+      ]
+    }
+  }
 }

@@ -97,5 +97,80 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Portland Trail Blazers",
+      "before_logs": true,
+      "periods": 7,
+      "starts": 1,
+      "points": 34.75,
+      "salary": 1000000,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 8,
+      "date": "2019-11-15",
+      "from": "Portland Trail Blazers",
+      "team": "Golden State Warriors",
+      "trade": "c3zmah04k2zxfc9u",
+      "periods": 35,
+      "starts": 15,
+      "points": 357.0,
+      "salary": 1000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 11,
+      "date": "2021-01-25",
+      "team": "Golden State Warriors"
+    }
+  ],
+  "trades": {
+    "c3zmah04k2zxfc9u": {
+      "date": "2019-11-15",
+      "season": "2019-20",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "042n8",
+          "player": "Taurean Prince",
+          "label": "Taurean Prince"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Golden State Warriors",
+          "player_id": "04qrz",
+          "player": "Chandler Hutchison",
+          "label": "Chandler Hutchison"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Golden State Warriors",
+          "player_id": "03r7v",
+          "player": "Pat Connaughton",
+          "label": "Pat Connaughton"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick (Memphis Grizzlies)"
+        }
+      ]
+    }
+  }
 }

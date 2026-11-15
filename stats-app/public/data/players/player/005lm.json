@@ -125,5 +125,148 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-29",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 30,
+      "starts": 23,
+      "points": 932.25,
+      "salary": 16500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 32,
+      "date": "2020-02-07",
+      "from": "Milwaukee Bucks",
+      "team": "San Antonio Spurs",
+      "trade": "9ruxekhgk6ciqyyw",
+      "periods": 2,
+      "starts": 2,
+      "points": 112.0,
+      "salary": 16500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-10",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 17,
+      "points": 601.25,
+      "salary": 10000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-11",
+      "team": "Houston Rockets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 1,
+      "points": 23.0,
+      "salary": 4500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-17",
+      "team": "Los Angeles Clippers",
+      "bid": 3.0,
+      "periods": 33,
+      "starts": 15,
+      "points": 380.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Los Angeles Clippers"
+    }
+  ],
+  "trades": {
+    "9ruxekhgk6ciqyyw": {
+      "date": "2020-02-07",
+      "season": "2019-20",
+      "period": 32,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "San Antonio Spurs",
+          "player_id": "005lm",
+          "player": "Goran Dragic",
+          "label": "Goran Dragic"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "San Antonio Spurs",
+          "player_id": "03hz1",
+          "player": "Tyler Johnson",
+          "label": "Tyler Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "San Antonio Spurs",
+          "label": "2020 round 2 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Milwaukee Bucks",
+          "player_id": "01eon",
+          "player": "DeMar DeRozan",
+          "label": "DeMar DeRozan"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Milwaukee Bucks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris"
+        }
+      ]
+    }
+  }
 }

@@ -125,5 +125,131 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2024-25",
+      "period": 0,
+      "date": "2024-06-28",
+      "team": "Atlanta Hawks",
+      "round": 1,
+      "pick": 27,
+      "periods": 23,
+      "starts": 3,
+      "points": 6.0,
+      "salary": 1324000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 24,
+      "date": "2025-01-09",
+      "from": "Atlanta Hawks",
+      "team": "Miami Heat",
+      "trade": "3e8zy5h8m5ppki7t",
+      "periods": 29,
+      "starts": 6,
+      "points": -0.5,
+      "salary": 1324000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 20,
+      "date": "2025-12-26",
+      "from": "Miami Heat",
+      "team": "Phoenix Suns",
+      "trade": "h2k3pjs8mjn9v95o",
+      "periods": 21,
+      "starts": 14,
+      "points": 402.5,
+      "salary": 1324000,
+      "contract": "R12"
+    }
+  ],
+  "trades": {
+    "h2k3pjs8mjn9v95o": {
+      "date": "2025-12-26",
+      "season": "2025-26",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "player_id": "06mkm",
+          "player": "Baylor Scheierman",
+          "label": "Baylor Scheierman"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "player_id": "03e6s",
+          "player": "Clint Capela",
+          "label": "Clint Capela"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2026 round 2 pick (Miami Heat)"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2026 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "player_id": "04qrw",
+          "player": "Kevin Huerter",
+          "label": "Kevin Huerter"
+        }
+      ]
+    },
+    "3e8zy5h8m5ppki7t": {
+      "date": "2025-01-09",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Miami Heat",
+          "player_id": "06mkm",
+          "player": "Baylor Scheierman",
+          "label": "Baylor Scheierman"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Miami Heat",
+          "player_id": "005kd",
+          "player": "Kevin Love",
+          "label": "Kevin Love"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        }
+      ]
+    }
+  }
 }

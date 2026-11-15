@@ -167,5 +167,250 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-23",
+      "team": "Indiana Pacers",
+      "round": 1,
+      "pick": 20,
+      "periods": 38,
+      "starts": 17,
+      "points": 126.5,
+      "salary": 1728576,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 10,
+      "date": "2021-11-17",
+      "from": "Indiana Pacers",
+      "team": "Sacramento Kings",
+      "trade": "zv22ykp0kw3x46bg",
+      "periods": 17,
+      "starts": 9,
+      "points": 77.5,
+      "salary": 1728576,
+      "contract": "R12"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 27,
+      "date": "2022-01-17",
+      "from": "Sacramento Kings",
+      "team": "Chicago Bulls",
+      "trade": "de5pkn4ykyik1gb0",
+      "periods": 25,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1728576,
+      "contract": "R12"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 19,
+      "date": "2022-12-18",
+      "from": "Chicago Bulls",
+      "team": "Dallas Mavericks",
+      "trade": "o7egut5nlbsb9x0e",
+      "periods": 15,
+      "starts": 15,
+      "points": 217.5,
+      "salary": 1729000,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "Dallas Mavericks"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 4,
+      "date": "2023-11-03",
+      "team": "Toronto Raptors",
+      "bid": 13.0,
+      "periods": 15,
+      "starts": 15,
+      "points": 359.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-24",
+      "from": "Toronto Raptors",
+      "team": "San Antonio Spurs",
+      "trade": "u2tkp72llqjb30p8",
+      "periods": 14,
+      "starts": 9,
+      "points": 31.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "San Antonio Spurs"
+    }
+  ],
+  "trades": {
+    "zv22ykp0kw3x46bg": {
+      "date": "2021-11-17",
+      "season": "2021-22",
+      "period": 10,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "player_id": "05qtx",
+          "player": "Jahmi'us Ramsey",
+          "label": "Jahmi'us Ramsey"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Indiana Pacers",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        }
+      ]
+    },
+    "de5pkn4ykyik1gb0": {
+      "date": "2022-01-17",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Sacramento Kings",
+          "player_id": "051oh",
+          "player": "Zion Williamson",
+          "label": "Zion Williamson"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "label": "2023 round 2 pick (Philadelphia 76ers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "label": "2022 round 2 pick (Sacramento Kings)"
+        }
+      ]
+    },
+    "u2tkp72llqjb30p8": {
+      "date": "2023-12-24",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "player_id": "05g3q",
+          "player": "Gabe Vincent",
+          "label": "Gabe Vincent"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "label": "2024 round 2 pick (Minnesota Timberwolves)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "San Antonio Spurs",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn"
+        }
+      ]
+    },
+    "o7egut5nlbsb9x0e": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 1 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (San Antonio Spurs)"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Chicago Bulls",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell"
+        }
+      ]
+    }
+  }
 }

@@ -153,5 +153,235 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "New York Knicks",
+      "round": 1,
+      "pick": 23,
+      "periods": 13,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1529568,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-02",
+      "from": "New York Knicks",
+      "team": "Cleveland Cavaliers",
+      "trade": "75iigt7rkwp2anvv",
+      "periods": 20,
+      "starts": 15,
+      "points": 4.5,
+      "salary": 1529568,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-27",
+      "from": "Cleveland Cavaliers",
+      "team": "Minnesota Timberwolves",
+      "trade": "bwkyx3vyl4womqe3",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-28",
+      "from": "Minnesota Timberwolves",
+      "team": "Philadelphia 76ers",
+      "trade": "zkwyiotnl656dftt",
+      "periods": 33,
+      "starts": 31,
+      "points": 779.0,
+      "salary": 1530000,
+      "contract": "R12"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-26",
+      "from": "Philadelphia 76ers",
+      "team": "Sacramento Kings",
+      "trade": "4odq53ngljd9v0pc",
+      "periods": 32,
+      "starts": 21,
+      "points": 1442.25,
+      "salary": 1530000,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "team": "Oklahoma City Thunder",
+      "bid": 0.0,
+      "periods": 73,
+      "starts": 63,
+      "points": 4829.75,
+      "salary": 16800000,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "bwkyx3vyl4womqe3": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uiu",
+          "player": "Jalen Johnson",
+          "label": "Jalen Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 1 pick, no. 6"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 1 pick, no. 15"
+        }
+      ]
+    },
+    "zkwyiotnl656dftt": {
+      "date": "2022-07-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Philadelphia 76ers",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uiu",
+          "player": "Jalen Johnson",
+          "label": "Jalen Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 1 pick (Philadelphia 76ers)"
+        }
+      ]
+    },
+    "4odq53ngljd9v0pc": {
+      "date": "2023-06-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05uiu",
+          "player": "Jalen Johnson",
+          "label": "Jalen Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "label": "2023 round 2 pick, no. 5"
+        }
+      ]
+    },
+    "75iigt7rkwp2anvv": {
+      "date": "2021-12-02",
+      "season": "2021-22",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "0019g",
+          "player": "LaMarcus Aldridge",
+          "label": "LaMarcus Aldridge"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05uiu",
+          "player": "Jalen Johnson",
+          "label": "Jalen Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 1 pick (Boston Celtics)"
+        }
+      ]
+    }
+  }
 }

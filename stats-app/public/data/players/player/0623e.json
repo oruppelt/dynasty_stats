@@ -111,5 +111,119 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 6,
+      "date": "2023-11-10",
+      "team": "Denver Nuggets",
+      "bid": 4.0,
+      "periods": 11,
+      "starts": 6,
+      "points": 13.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 17,
+      "date": "2023-12-18",
+      "team": "Denver Nuggets"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 2,
+      "date": "2025-10-24",
+      "team": "Milwaukee Bucks",
+      "bid": 57.0,
+      "periods": 2,
+      "starts": 2,
+      "points": 152.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "from": "Milwaukee Bucks",
+      "team": "Indiana Pacers",
+      "trade": "yimzvg76mhex6syx",
+      "periods": 30,
+      "starts": 30,
+      "points": 1754.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-10",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-12",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 275.25,
+      "salary": 8000000,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "yimzvg76mhex6syx": {
+      "date": "2025-10-31",
+      "season": "2025-26",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "player_id": "05uiv",
+          "player": "Keon Johnson",
+          "label": "Keon Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "label": "2027 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "0623e",
+          "player": "Collin Gillespie",
+          "label": "Collin Gillespie"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "05uuq",
+          "player": "Jock Landale",
+          "label": "Jock Landale"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "label": "2027 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    }
+  }
 }

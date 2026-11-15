@@ -139,5 +139,92 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-27",
+      "team": "Chicago Bulls",
+      "round": 1,
+      "pick": 24,
+      "periods": 98,
+      "starts": 75,
+      "points": 4094.75,
+      "salary": 1468000,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-10",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 4,
+      "points": 222.0,
+      "salary": 17100000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-10",
+      "from": "Chicago Bulls",
+      "team": "Milwaukee Bucks",
+      "trade": "lot0xakcmhs7b6qj",
+      "periods": 34,
+      "starts": 7,
+      "points": 566.75,
+      "salary": 17100000,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "lot0xakcmhs7b6qj": {
+      "date": "2025-11-10",
+      "season": "2025-26",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Milwaukee Bucks",
+          "player_id": "0621l",
+          "player": "Walker Kessler",
+          "label": "Walker Kessler"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "label": "2027 round 1 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "label": "2026 round 1 pick (New Orleans Pelicans)"
+        }
+      ]
+    }
+  }
 }

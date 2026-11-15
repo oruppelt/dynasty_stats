@@ -139,5 +139,127 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Houston Rockets",
+      "round": 1,
+      "pick": 9,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "from": "Houston Rockets",
+      "team": "Orlando Magic",
+      "trade": "masc0nzxks8lf0si",
+      "periods": 33,
+      "starts": 31,
+      "points": 1623.0,
+      "salary": 2991936,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-28",
+      "from": "Orlando Magic",
+      "team": "Sacramento Kings",
+      "trade": "3svuxfmvl3ps0x1r",
+      "periods": 65,
+      "starts": 57,
+      "points": 3512.0,
+      "salary": 2992000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 73,
+      "starts": 46,
+      "points": 3273.5,
+      "salary": 17265217,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "3svuxfmvl3ps0x1r": {
+      "date": "2022-05-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "05uii",
+          "player": "Franz Wagner",
+          "label": "Franz Wagner"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "label": "2022 round 1 pick, no. 5"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "label": "2022 round 1 pick, no. 28"
+        }
+      ]
+    },
+    "masc0nzxks8lf0si": {
+      "date": "2021-08-12",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Orlando Magic",
+          "player_id": "05uii",
+          "player": "Franz Wagner",
+          "label": "Franz Wagner"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Houston Rockets",
+          "player_id": "051ot",
+          "player": "Tyler Herro",
+          "label": "Tyler Herro"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Houston Rockets",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        }
+      ]
+    }
+  }
 }

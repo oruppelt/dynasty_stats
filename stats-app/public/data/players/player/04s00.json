@@ -209,5 +209,301 @@
       "gp": 3,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 5,
+      "date": "2019-11-04",
+      "team": "Dallas Mavericks",
+      "bid": 15.0,
+      "periods": 28,
+      "starts": 28,
+      "points": 1241.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Dallas Mavericks"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 29,
+      "points": 1352.25,
+      "salary": 9000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-16",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 5,
+      "starts": 5,
+      "points": 177.0,
+      "salary": 10000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 6,
+      "date": "2021-11-05",
+      "from": "Chicago Bulls",
+      "team": "Dallas Mavericks",
+      "trade": "n2n73bdakvmhu8ak",
+      "periods": 79,
+      "starts": 64,
+      "points": 2025.75,
+      "salary": 10000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-25",
+      "from": "Dallas Mavericks",
+      "team": "Minnesota Timberwolves",
+      "trade": "ll6492qklql9ax74",
+      "periods": 14,
+      "starts": 10,
+      "points": 372.0,
+      "salary": 10000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-22",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 14,
+      "starts": 11,
+      "points": 375.75,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 15,
+      "date": "2024-12-09",
+      "from": "Miami Heat",
+      "team": "Indiana Pacers",
+      "trade": "gy7ia1v7m4gxhk6e",
+      "periods": 19,
+      "starts": 16,
+      "points": 568.25,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-10",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 28,
+      "points": 1167.5,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-19",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-18",
+      "team": "Brooklyn Nets",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 399.0,
+      "salary": 6500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "n2n73bdakvmhu8ak": {
+      "date": "2021-11-05",
+      "season": "2021-22",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Chicago Bulls",
+          "player_id": "0018n",
+          "player": "Lou Williams",
+          "label": "Lou Williams"
+        }
+      ]
+    },
+    "ll6492qklql9ax74": {
+      "date": "2023-12-25",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Toronto Raptors",
+          "label": "2025 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Toronto Raptors",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
+        }
+      ]
+    },
+    "gy7ia1v7m4gxhk6e": {
+      "date": "2024-12-09",
+      "season": "2024-25",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "05qt0",
+          "player": "Saddiq Bey",
+          "label": "Saddiq Bey"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "05qtl",
+          "player": "Cole Anthony",
+          "label": "Cole Anthony"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2026 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "02ng3",
+          "player": "Khris Middleton",
+          "label": "Khris Middleton"
+        }
+      ]
+    }
+  }
 }

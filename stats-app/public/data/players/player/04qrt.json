@@ -74,5 +74,147 @@
       "paid": 569847
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Charlotte Hornets",
+      "before_logs": true,
+      "periods": 54,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2089440,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 24,
+      "date": "2021-03-14",
+      "from": "Charlotte Hornets",
+      "team": "Toronto Raptors",
+      "trade": "6dty708wkm9579c4",
+      "periods": 10,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2089440,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 4,
+      "date": "2021-10-29",
+      "from": "Toronto Raptors",
+      "team": "Detroit Pistons",
+      "trade": "xyjia3f5kvcfyhy3",
+      "periods": 9,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2089440,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-12-01",
+      "team": "Detroit Pistons"
+    }
+  ],
+  "trades": {
+    "6dty708wkm9579c4": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "04qrt",
+          "player": "Zhaire Smith",
+          "label": "Zhaire Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "049s6",
+          "player": "Markelle Fultz",
+          "label": "Markelle Fultz"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2021 round 2 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2021 round 1 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2022 round 2 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2022 round 1 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "02nf8",
+          "player": "Terrence Ross",
+          "label": "Terrence Ross"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith"
+        }
+      ]
+    },
+    "xyjia3f5kvcfyhy3": {
+      "date": "2021-10-29",
+      "season": "2021-22",
+      "period": 4,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Detroit Pistons",
+          "to": "Toronto Raptors",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Detroit Pistons",
+          "player_id": "04qrt",
+          "player": "Zhaire Smith",
+          "label": "Zhaire Smith"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Detroit Pistons",
+          "label": "2022 round 2 pick (Charlotte Hornets)"
+        }
+      ]
+    }
+  }
 }

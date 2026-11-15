@@ -167,5 +167,215 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-03",
+      "team": "Golden State Warriors",
+      "round": 2,
+      "pick": 53,
+      "periods": 66,
+      "starts": 25,
+      "points": 537.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-10-24",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 18,
+      "date": "2023-12-22",
+      "team": "San Antonio Spurs",
+      "bid": 2.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 133.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 25,
+      "date": "2024-01-15",
+      "from": "San Antonio Spurs",
+      "team": "Los Angeles Lakers",
+      "trade": "yjhuxq3zlrf24wir",
+      "periods": 8,
+      "starts": 8,
+      "points": 284.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-27",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 4,
+      "starts": 4,
+      "points": 143.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 5,
+      "date": "2024-11-04",
+      "from": "Milwaukee Bucks",
+      "team": "Minnesota Timberwolves",
+      "trade": "8x9ec2fzm334p6t0",
+      "periods": 29,
+      "starts": 20,
+      "points": 923.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-20",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 20,
+      "points": 809.0,
+      "salary": 4000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-12",
+      "team": "Denver Nuggets",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 356.25,
+      "salary": 3000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "8x9ec2fzm334p6t0": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "06cp4",
+          "player": "Craig Porter",
+          "label": "Craig Porter"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujt",
+          "player": "Aaron Wiggins",
+          "label": "Aaron Wiggins"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Miami Heat",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 2 pick (Minnesota Timberwolves)"
+        }
+      ]
+    },
+    "yjhuxq3zlrf24wir": {
+      "date": "2024-01-15",
+      "season": "2023-24",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "player_id": "03r7e",
+          "player": "Cameron Payne",
+          "label": "Cameron Payne"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "San Antonio Spurs",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "051oi",
+          "player": "Ja Morant",
+          "label": "Ja Morant"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "031m9",
+          "player": "Mason Plumlee",
+          "label": "Mason Plumlee"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Los Angeles Lakers",
+          "player_id": "05ujt",
+          "player": "Aaron Wiggins",
+          "label": "Aaron Wiggins"
+        }
+      ]
+    }
+  }
 }

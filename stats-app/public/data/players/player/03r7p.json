@@ -153,5 +153,164 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-20",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 18,
+      "starts": 13,
+      "points": 43.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 19,
+      "date": "2019-12-23",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 40,
+      "date": "2020-03-09",
+      "team": "Memphis Grizzlies",
+      "bid": 1.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 17,
+      "date": "2021-02-15",
+      "team": "Indiana Pacers",
+      "bid": 2.0,
+      "periods": 13,
+      "starts": 10,
+      "points": 164.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 8,
+      "date": "2021-11-12",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 12,
+      "date": "2021-11-26",
+      "team": "Golden State Warriors",
+      "bid": 7.0,
+      "periods": 12,
+      "starts": 7,
+      "points": 211.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 24,
+      "date": "2022-01-07",
+      "from": "Golden State Warriors",
+      "team": "Dallas Mavericks",
+      "trade": "nk3nvtueky4p7m5u",
+      "periods": 10,
+      "starts": 2,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Dallas Mavericks"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 25,
+      "date": "2023-01-09",
+      "team": "Boston Celtics",
+      "bid": 15.0,
+      "periods": 9,
+      "starts": 3,
+      "points": 9.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Boston Celtics"
+    }
+  ],
+  "trades": {
+    "nk3nvtueky4p7m5u": {
+      "date": "2022-01-07",
+      "season": "2021-22",
+      "period": 24,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Dallas Mavericks",
+          "to": "Golden State Warriors",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Dallas Mavericks",
+          "player_id": "03r7p",
+          "player": "Willy Hernangomez",
+          "label": "Willy Hernangomez"
+        }
+      ]
+    }
+  }
 }

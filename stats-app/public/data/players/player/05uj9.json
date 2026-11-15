@@ -153,5 +153,141 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Boston Celtics",
+      "round": 2,
+      "pick": 33,
+      "periods": 66,
+      "starts": 48,
+      "points": 2092.75,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-19",
+      "from": "Boston Celtics",
+      "team": "Minnesota Timberwolves",
+      "trade": "umd8exrulj2qxonm",
+      "periods": 32,
+      "starts": 26,
+      "points": 1206.0,
+      "salary": 1000000,
+      "contract": "R21"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 24,
+      "starts": 13,
+      "points": 525.5,
+      "salary": 8500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 25,
+      "date": "2025-01-13",
+      "from": "Minnesota Timberwolves",
+      "team": "Cleveland Cavaliers",
+      "trade": "m4oh5770m5s364so",
+      "periods": 42,
+      "starts": 17,
+      "points": 640.0,
+      "salary": 8500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-26",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-14",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 5,
+      "points": 107.0,
+      "salary": 6300000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "m4oh5770m5s364so": {
+      "date": "2025-01-13",
+      "season": "2024-25",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "0558t",
+          "player": "Max Strus",
+          "label": "Max Strus"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05uj9",
+          "player": "Herbert Jones",
+          "label": "Herbert Jones"
+        },
+        {
+          "kind": "budget",
+          "from": "Minnesota Timberwolves",
+          "to": "Cleveland Cavaliers",
+          "label": "$1 budget"
+        }
+      ]
+    },
+    "umd8exrulj2qxonm": {
+      "date": "2023-06-19",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uj9",
+          "player": "Herbert Jones",
+          "label": "Herbert Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Boston Celtics",
+          "label": "2024 round 1 pick (Minnesota Timberwolves)"
+        }
+      ]
+    }
+  }
 }

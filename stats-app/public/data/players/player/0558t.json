@@ -181,5 +181,289 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-10-18",
+      "team": "Boston Celtics",
+      "bid": 31.0,
+      "periods": 33,
+      "starts": 15,
+      "points": 546.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-30",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 17,
+      "starts": 17,
+      "points": 743.0,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-15",
+      "from": "Indiana Pacers",
+      "team": "New York Knicks",
+      "trade": "s0ah5x4nlbpllfey",
+      "periods": 16,
+      "starts": 16,
+      "points": 609.0,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "New York Knicks"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Houston Rockets",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 27,
+      "points": 1453.5,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-26",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 24,
+      "starts": 3,
+      "points": 109.5,
+      "salary": 7800000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 25,
+      "date": "2025-01-13",
+      "from": "Cleveland Cavaliers",
+      "team": "Minnesota Timberwolves",
+      "trade": "m4oh5770m5s364so",
+      "periods": 9,
+      "starts": 6,
+      "points": 325.75,
+      "salary": 7800000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-18",
+      "team": "Oklahoma City Thunder",
+      "bid": 0.0,
+      "periods": 19,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 3300000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 20,
+      "date": "2025-12-26",
+      "from": "Oklahoma City Thunder",
+      "team": "Toronto Raptors",
+      "trade": "h89qz7i7mjn1jv97",
+      "periods": 14,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 3300000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-18",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-19",
+      "team": "Oklahoma City Thunder",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 2,
+      "points": 40.5,
+      "salary": 5112000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "m4oh5770m5s364so": {
+      "date": "2025-01-13",
+      "season": "2024-25",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "0558t",
+          "player": "Max Strus",
+          "label": "Max Strus"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05uj9",
+          "player": "Herbert Jones",
+          "label": "Herbert Jones"
+        },
+        {
+          "kind": "budget",
+          "from": "Minnesota Timberwolves",
+          "to": "Cleveland Cavaliers",
+          "label": "$1 budget"
+        }
+      ]
+    },
+    "h89qz7i7mjn1jv97": {
+      "date": "2025-12-26",
+      "season": "2025-26",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06v58",
+          "player": "Tre Johnson",
+          "label": "Tre Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "05uiw",
+          "player": "Isaiah Jackson",
+          "label": "Isaiah Jackson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "0558t",
+          "player": "Max Strus",
+          "label": "Max Strus"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Boston Celtics)"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2027 round 1 pick (Oklahoma City Thunder)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06mjz",
+          "player": "Donovan Clingan",
+          "label": "Donovan Clingan"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06212",
+          "player": "Jabari Smith",
+          "label": "Jabari Smith"
+        }
+      ]
+    },
+    "s0ah5x4nlbpllfey": {
+      "date": "2022-12-15",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "New York Knicks",
+          "player_id": "0558t",
+          "player": "Max Strus",
+          "label": "Max Strus"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "New York Knicks",
+          "player_id": "04qs9",
+          "player": "Jevon Carter",
+          "label": "Jevon Carter"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Indiana Pacers",
+          "player_id": "005ka",
+          "player": "Derrick Rose",
+          "label": "Derrick Rose"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Indiana Pacers",
+          "label": "2023 round 1 pick (New York Knicks)"
+        }
+      ]
+    }
+  }
 }

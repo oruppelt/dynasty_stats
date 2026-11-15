@@ -139,5 +139,272 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 9,
+      "date": "2019-11-18",
+      "team": "Indiana Pacers",
+      "bid": 20.0,
+      "periods": 10,
+      "starts": 7,
+      "points": 334.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 19,
+      "date": "2019-12-22",
+      "from": "Indiana Pacers",
+      "team": "Houston Rockets",
+      "trade": "jczv175kk4fvkyxw",
+      "periods": 14,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-03",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 14,
+      "starts": 6,
+      "points": 99.5,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 15,
+      "date": "2021-02-09",
+      "from": "Indiana Pacers",
+      "team": "Milwaukee Bucks",
+      "trade": "5iowtk61kky1yo09",
+      "periods": 14,
+      "starts": 9,
+      "points": 182.25,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 16,
+      "date": "2021-12-10",
+      "team": "Cleveland Cavaliers",
+      "bid": 15.0,
+      "periods": 12,
+      "starts": 12,
+      "points": 307.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-19",
+      "from": "Cleveland Cavaliers",
+      "team": "Indiana Pacers",
+      "trade": "u84ukmdukyle5in8",
+      "periods": 6,
+      "starts": 5,
+      "points": 147.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Indiana Pacers"
+    }
+  ],
+  "trades": {
+    "jczv175kk4fvkyxw": {
+      "date": "2019-12-22",
+      "season": "2019-20",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Indiana Pacers",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Indiana Pacers",
+          "label": "2020 round 1 pick (Houston Rockets)"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Houston Rockets",
+          "player_id": "031lx",
+          "player": "CJ McCollum",
+          "label": "CJ McCollum"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Houston Rockets",
+          "player_id": "0012a",
+          "player": "JR Smith",
+          "label": "JR Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Houston Rockets",
+          "player_id": "031lu",
+          "player": "Ben McLemore",
+          "label": "Ben McLemore"
+        }
+      ]
+    },
+    "5iowtk61kky1yo09": {
+      "date": "2021-02-09",
+      "season": "2020-21",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "player_id": "01enn",
+          "player": "Blake Griffin",
+          "label": "Blake Griffin"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "player_id": "031lu",
+          "player": "Ben McLemore",
+          "label": "Ben McLemore"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "05qv8",
+          "player": "Facundo Campazzo",
+          "label": "Facundo Campazzo"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "03nwj",
+          "player": "Stanley Johnson",
+          "label": "Stanley Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "04ex5",
+          "player": "Thomas Bryant",
+          "label": "Thomas Bryant"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "label": "2022 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    },
+    "u84ukmdukyle5in8": {
+      "date": "2022-01-19",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Indiana Pacers",
+          "player_id": "031lu",
+          "player": "Ben McLemore",
+          "label": "Ben McLemore"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Indiana Pacers",
+          "player_id": "04ewf",
+          "player": "Bam Adebayo",
+          "label": "Bam Adebayo"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Indiana Pacers",
+          "player_id": "031lp",
+          "player": "Victor Oladipo",
+          "label": "Victor Oladipo"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Indiana Pacers",
+          "player_id": "059ca",
+          "player": "Oshae Brissett",
+          "label": "Oshae Brissett"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "051oq",
+          "player": "Cam Reddish",
+          "label": "Cam Reddish"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03r7l",
+          "player": "Larry Nance",
+          "label": "Larry Nance"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03ad2",
+          "player": "Myles Turner",
+          "label": "Myles Turner"
+        }
+      ]
+    }
+  }
 }

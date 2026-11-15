@@ -139,5 +139,163 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-03",
+      "team": "Chicago Bulls",
+      "round": 2,
+      "pick": 51,
+      "periods": 33,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-27",
+      "from": "Chicago Bulls",
+      "team": "Minnesota Timberwolves",
+      "trade": "mkq4pvzjl4wmiyta",
+      "periods": 18,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 19,
+      "date": "2022-12-18",
+      "from": "Minnesota Timberwolves",
+      "team": "Orlando Magic",
+      "trade": "be82rz5ilbs9n0fe",
+      "periods": 19,
+      "starts": 6,
+      "points": 17.75,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 5,
+      "date": "2023-11-05",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Denver Nuggets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 31,
+      "points": 1487.5,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Denver Nuggets"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-13",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 6,
+      "points": 295.25,
+      "salary": 7500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "be82rz5ilbs9n0fe": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "player_id": "05ujs",
+          "player": "Sandro Mamukelashvili",
+          "label": "Sandro Mamukelashvili"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "player_id": "005ll",
+          "player": "George Hill",
+          "label": "George Hill"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Minnesota Timberwolves",
+          "player_id": "0527h",
+          "player": "Naz Reid",
+          "label": "Naz Reid"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujp",
+          "player": "Brandon Boston",
+          "label": "Brandon Boston"
+        }
+      ]
+    },
+    "mkq4pvzjl4wmiyta": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujs",
+          "player": "Sandro Mamukelashvili",
+          "label": "Sandro Mamukelashvili"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 1 pick, no. 19"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Chicago Bulls",
+          "label": "2022 round 1 pick, no. 24"
+        }
+      ]
+    }
+  }
 }

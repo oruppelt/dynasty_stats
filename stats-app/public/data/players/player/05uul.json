@@ -167,5 +167,274 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 31,
+      "date": "2022-01-31",
+      "team": "Boston Celtics",
+      "bid": 9.0,
+      "periods": 3,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-28",
+      "team": "Cleveland Cavaliers",
+      "round": 2,
+      "pick": 40,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-29",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-28",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 22,
+      "points": 946.75,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 46,
+      "date": "2023-03-26",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 24,
+      "points": 667.25,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "San Antonio Spurs",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 6,
+      "points": 325.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "from": "San Antonio Spurs",
+      "team": "Minnesota Timberwolves",
+      "trade": "aqapwojpm3cvd21d",
+      "periods": 27,
+      "starts": 8,
+      "points": 367.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Washington Wizards",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 15,
+      "points": 574.5,
+      "salary": 2300000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "Washington Wizards",
+      "team": "Milwaukee Bucks",
+      "trade": "3ytw64kjmkuq5bqa",
+      "periods": 5,
+      "starts": 5,
+      "points": 230.5,
+      "salary": 2300000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-18",
+      "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-17",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-17",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-17",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 5,
+      "points": 30.5,
+      "salary": 1500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "3ytw64kjmkuq5bqa": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Washington Wizards",
+          "player_id": "04qsd",
+          "player": "Mitchell Robinson",
+          "label": "Mitchell Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "player_id": "05uul",
+          "player": "Jose Alvarado",
+          "label": "Jose Alvarado"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "player_id": "005ki",
+          "player": "Brook Lopez",
+          "label": "Brook Lopez"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 2 pick (Washington Wizards)"
+        }
+      ]
+    },
+    "aqapwojpm3cvd21d": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "player_id": "03r7h",
+          "player": "Delon Wright",
+          "label": "Delon Wright"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "player_id": "051p0",
+          "player": "Matisse Thybulle",
+          "label": "Matisse Thybulle"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 1 pick (Minnesota Timberwolves)"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uul",
+          "player": "Jose Alvarado",
+          "label": "Jose Alvarado"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "059g0",
+          "player": "Amir Coffey",
+          "label": "Amir Coffey"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "budget",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "label": "$23 budget"
+        }
+      ]
+    }
+  }
 }

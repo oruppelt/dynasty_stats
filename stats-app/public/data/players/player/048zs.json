@@ -83,5 +83,72 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-10",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 5,
+      "starts": 2,
+      "points": 17.75,
+      "salary": 1200000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 6,
+      "date": "2019-11-07",
+      "from": "Boston Celtics",
+      "team": "Miami Heat",
+      "trade": "yzpa9lmnk2oo5ui0",
+      "periods": 27,
+      "starts": 22,
+      "points": 256.0,
+      "salary": 1200000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "yzpa9lmnk2oo5ui0": {
+      "date": "2019-11-07",
+      "season": "2019-20",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "048zs",
+          "player": "Shaquille Harrison",
+          "label": "Shaquille Harrison"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "label": "2021 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "04ewv",
+          "player": "Frank Jackson",
+          "label": "Frank Jackson"
+        }
+      ]
+    }
+  }
 }

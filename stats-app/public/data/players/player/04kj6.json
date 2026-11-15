@@ -181,5 +181,115 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Dallas Mavericks",
+      "before_logs": true,
+      "periods": 86,
+      "starts": 74,
+      "points": 5838.75,
+      "salary": 5248512,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 26,
+      "date": "2022-01-13",
+      "from": "Dallas Mavericks",
+      "team": "Philadelphia 76ers",
+      "trade": "9j43e33xkyd0spki",
+      "periods": 8,
+      "starts": 8,
+      "points": 966.75,
+      "salary": 5248512,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-28",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 131,
+      "starts": 112,
+      "points": 10231.25,
+      "salary": 40857000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-13",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 800.25,
+      "salary": 38000000,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "9j43e33xkyd0spki": {
+      "date": "2022-01-13",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04kj6",
+          "player": "Luka Doncic",
+          "label": "Luka Doncic"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Philadelphia 76ers",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Dallas Mavericks",
+          "player_id": "03lg1",
+          "player": "Ben Simmons",
+          "label": "Ben Simmons"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Dallas Mavericks",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        }
+      ]
+    }
+  }
 }

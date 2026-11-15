@@ -139,5 +139,329 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-28",
+      "team": "Sacramento Kings",
+      "round": 2,
+      "pick": 41,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "from": "Sacramento Kings",
+      "team": "Orlando Magic",
+      "trade": "u99m5em4l66hdh7a",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-12",
+      "from": "Orlando Magic",
+      "team": "Utah Jazz",
+      "trade": "zzfkpw4ol95t0sup",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-18",
+      "from": "Utah Jazz",
+      "team": "Charlotte Hornets",
+      "trade": "4emaqok0l9dytp9y",
+      "periods": 29,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-26",
+      "from": "Charlotte Hornets",
+      "team": "Toronto Raptors",
+      "trade": "976lery6lda9vro9",
+      "periods": 36,
+      "starts": 8,
+      "points": 48.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-10-18",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 21,
+      "date": "2024-12-30",
+      "team": "New Orleans Pelicans",
+      "bid": 11.0,
+      "periods": 13,
+      "starts": 1,
+      "points": 48.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-05",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 29,
+      "points": 1825.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-19",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Toronto Raptors",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 294.5,
+      "salary": 13254333,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "u99m5em4l66hdh7a": {
+      "date": "2022-07-29",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick (Orlando Magic)"
+        },
+        {
+          "kind": "budget",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "$15 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "05uil",
+          "player": "James Bouknight",
+          "label": "James Bouknight"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "06227",
+          "player": "Ryan Rollins",
+          "label": "Ryan Rollins"
+        }
+      ]
+    },
+    "zzfkpw4ol95t0sup": {
+      "date": "2022-10-12",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "06227",
+          "player": "Ryan Rollins",
+          "label": "Ryan Rollins"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "06233",
+          "player": "Ron Harper",
+          "label": "Ron Harper"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "0527h",
+          "player": "Naz Reid",
+          "label": "Naz Reid"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (Portland Trail Blazers)"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "label": "2024 round 1 pick (Utah Jazz)"
+        }
+      ]
+    },
+    "976lery6lda9vro9": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "06227",
+          "player": "Ryan Rollins",
+          "label": "Ryan Rollins"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2023 round 2 pick (Phoenix Suns)"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2024 round 2 pick (Los Angeles Lakers)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "051op",
+          "player": "Rui Hachimura",
+          "label": "Rui Hachimura"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "04jw4",
+          "player": "Maxi Kleber",
+          "label": "Maxi Kleber"
+        }
+      ]
+    },
+    "4emaqok0l9dytp9y": {
+      "date": "2022-10-18",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Utah Jazz",
+          "player_id": "03r7z",
+          "player": "Norman Powell",
+          "label": "Norman Powell"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Utah Jazz",
+          "player_id": "03ad0",
+          "player": "Tyus Jones",
+          "label": "Tyus Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "player_id": "06227",
+          "player": "Ryan Rollins",
+          "label": "Ryan Rollins"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "player_id": "051p2",
+          "player": "Grant Williams",
+          "label": "Grant Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "label": "2023 round 2 pick (Phoenix Suns)"
+        }
+      ]
+    }
+  }
 }

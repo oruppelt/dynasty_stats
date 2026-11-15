@@ -57,5 +57,73 @@
       "gp": 0,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-26",
+      "team": "Houston Rockets",
+      "round": 1,
+      "pick": 18,
+      "periods": 36,
+      "starts": 1,
+      "points": 0.0,
+      "salary": 1886000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 5,
+      "date": "2024-11-04",
+      "from": "Houston Rockets",
+      "team": "Miami Heat",
+      "trade": "9txb56t8m32yr95c",
+      "periods": 19,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1886000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 24,
+      "date": "2025-01-10",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "9txb56t8m32yr95c": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "06cce",
+          "player": "Jalen Hood-Schifino",
+          "label": "Jalen Hood-Schifino"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "04jwb",
+          "player": "Luke Kornet",
+          "label": "Luke Kornet"
+        }
+      ]
+    }
+  }
 }

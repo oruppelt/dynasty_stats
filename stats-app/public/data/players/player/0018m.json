@@ -97,5 +97,102 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-10",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-22",
+      "from": "Boston Celtics",
+      "team": "Orlando Magic",
+      "trade": "uclwcvzxkht5iegm",
+      "periods": 29,
+      "starts": 9,
+      "points": 373.25,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-20",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 12,
+      "points": 301.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Philadelphia 76ers"
+    }
+  ],
+  "trades": {
+    "uclwcvzxkht5iegm": {
+      "date": "2020-11-22",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Orlando Magic",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Orlando Magic",
+          "player_id": "0018m",
+          "player": "Andre Iguodala",
+          "label": "Andre Iguodala"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Boston Celtics",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Boston Celtics",
+          "player_id": "03al0",
+          "player": "Aaron Gordon",
+          "label": "Aaron Gordon"
+        }
+      ]
+    }
+  }
 }

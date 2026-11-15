@@ -139,5 +139,152 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Minnesota Timberwolves",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 18,
+      "points": 459.0,
+      "salary": 9600000,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-03",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 14,
+      "starts": 5,
+      "points": 118.5,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 15,
+      "date": "2021-02-09",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 19,
+      "date": "2021-02-22",
+      "team": "Chicago Bulls",
+      "bid": 1.0,
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 20,
+      "date": "2021-02-25",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 7,
+      "date": "2021-11-08",
+      "team": "Boston Celtics",
+      "bid": 6.0,
+      "periods": 6,
+      "starts": 2,
+      "points": 70.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-28",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 17,
+      "date": "2021-12-13",
+      "team": "Indiana Pacers",
+      "bid": 25.0,
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 19,
+      "date": "2021-12-19",
+      "from": "Indiana Pacers",
+      "team": "Portland Trail Blazers",
+      "trade": "ulhq4eahkxdadm8q",
+      "periods": 15,
+      "starts": 12,
+      "points": 347.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 34,
+      "date": "2022-02-11",
+      "team": "Portland Trail Blazers"
+    }
+  ],
+  "trades": {
+    "ulhq4eahkxdadm8q": {
+      "date": "2021-12-19",
+      "season": "2021-22",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "01uyd",
+          "player": "Avery Bradley",
+          "label": "Avery Bradley"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2022 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "04ex8",
+          "player": "Dillon Brooks",
+          "label": "Dillon Brooks"
+        }
+      ]
+    }
+  }
 }

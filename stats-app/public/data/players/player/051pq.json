@@ -139,5 +139,181 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2019-20",
+      "period": 0,
+      "date": "2019-06-24",
+      "team": "Atlanta Hawks",
+      "round": 2,
+      "pick": 31,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-10-22",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-21",
+      "team": "Los Angeles Clippers",
+      "bid": 5.0,
+      "periods": 29,
+      "starts": 17,
+      "points": 466.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-16",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 66,
+      "starts": 41,
+      "points": 1200.25,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-31",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 25,
+      "starts": 25,
+      "points": 757.25,
+      "salary": 1750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 26,
+      "date": "2024-01-19",
+      "from": "Philadelphia 76ers",
+      "team": "Memphis Grizzlies",
+      "trade": "p0mxkvsnlrkrvpa0",
+      "periods": 7,
+      "starts": 1,
+      "points": 0.0,
+      "salary": 1750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 14,
+      "date": "2024-12-06",
+      "team": "Phoenix Suns",
+      "bid": 7.0,
+      "periods": 15,
+      "starts": 3,
+      "points": 85.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-26",
+      "team": "Phoenix Suns"
+    }
+  ],
+  "trades": {
+    "p0mxkvsnlrkrvpa0": {
+      "date": "2024-01-19",
+      "season": "2023-24",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "03ad7",
+          "player": "Kevon Looney",
+          "label": "Kevon Looney"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "051pq",
+          "player": "Talen Horton-Tucker",
+          "label": "Talen Horton-Tucker"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2025 round 1 pick (Philadelphia 76ers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Philadelphia 76ers)"
+        }
+      ]
+    }
+  }
 }

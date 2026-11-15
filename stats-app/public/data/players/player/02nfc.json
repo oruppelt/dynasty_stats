@@ -111,5 +111,88 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-13",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 55,
+      "starts": 39,
+      "points": 1692.0,
+      "salary": 13500000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 25,
+      "date": "2021-03-14",
+      "from": "Portland Trail Blazers",
+      "team": "Detroit Pistons",
+      "trade": "lpvb9p0kkm9ltz87",
+      "periods": 39,
+      "starts": 34,
+      "points": 792.0,
+      "salary": 13500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Detroit Pistons"
+    }
+  ],
+  "trades": {
+    "lpvb9p0kkm9ltz87": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Portland Trail Blazers",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Portland Trail Blazers",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "player_id": "05qu4",
+          "player": "Saben Lee",
+          "label": "Saben Lee"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "player_id": "02nfc",
+          "player": "Jeremy Lamb",
+          "label": "Jeremy Lamb"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Portland Trail Blazers)"
+        }
+      ]
+    }
+  }
 }

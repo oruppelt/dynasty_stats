@@ -167,5 +167,199 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Sacramento Kings",
+      "round": 1,
+      "pick": 4,
+      "periods": 62,
+      "starts": 31,
+      "points": 1204.25,
+      "salary": 4732032,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-26",
+      "from": "Sacramento Kings",
+      "team": "Detroit Pistons",
+      "trade": "jvet5461ldd2yw41",
+      "periods": 36,
+      "starts": 29,
+      "points": 1277.0,
+      "salary": 4732000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Detroit Pistons"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Detroit Pistons",
+      "bid": 0.0,
+      "periods": 60,
+      "starts": 44,
+      "points": 1981.5,
+      "salary": 7000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Detroit Pistons",
+      "team": "New Orleans Pelicans",
+      "trade": "944khsg8mkqqmbol",
+      "periods": 6,
+      "starts": 5,
+      "points": 453.25,
+      "salary": 7000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-22",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-12",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 2,
+      "points": 79.25,
+      "salary": 13333333,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "944khsg8mkqqmbol": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "player_id": "05uif",
+          "player": "Jalen Suggs",
+          "label": "Jalen Suggs"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "player_id": "03aq2",
+          "player": "Jerami Grant",
+          "label": "Jerami Grant"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "player_id": "05qsp",
+          "player": "Isaiah Joe",
+          "label": "Isaiah Joe"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "label": "2027 round 2 pick (New York Knicks)"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Detroit Pistons",
+          "player_id": "02nf1",
+          "player": "Anthony Davis",
+          "label": "Anthony Davis"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Detroit Pistons",
+          "player_id": "031lz",
+          "player": "Steven Adams",
+          "label": "Steven Adams"
+        }
+      ]
+    },
+    "jvet5461ldd2yw41": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "player_id": "05uig",
+          "player": "Josh Giddey",
+          "label": "Josh Giddey"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "budget",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "label": "$20 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "player_id": "05uif",
+          "player": "Jalen Suggs",
+          "label": "Jalen Suggs"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2024 round 1 pick (Sacramento Kings)"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2023 round 1 pick (Sacramento Kings)"
+        }
+      ]
+    }
+  }
 }

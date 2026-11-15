@@ -97,5 +97,108 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 4,
+      "date": "2023-11-03",
+      "team": "Charlotte Hornets",
+      "bid": 17.0,
+      "periods": 29,
+      "starts": 13,
+      "points": 374.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-01",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-08",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 18,
+      "points": 623.5,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-27",
+      "from": "Memphis Grizzlies",
+      "team": "New York Knicks",
+      "trade": "rrz52y71m6ewxnpo",
+      "periods": 5,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-27",
+      "team": "New York Knicks"
+    }
+  ],
+  "trades": {
+    "rrz52y71m6ewxnpo": {
+      "date": "2025-01-27",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "06cdf",
+          "player": "Julian Phillips",
+          "label": "Julian Phillips"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "03aq3",
+          "player": "Kyle Anderson",
+          "label": "Kyle Anderson"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "04yk1",
+          "player": "Haywood Highsmith",
+          "label": "Haywood Highsmith"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2025 round 1 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards"
+        }
+      ]
+    }
+  }
 }

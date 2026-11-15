@@ -32,5 +32,68 @@
       "paid": 90909
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2026-27",
+      "period": 0,
+      "date": "2026-07-03",
+      "team": "New York Knicks",
+      "round": 2,
+      "pick": 49,
+      "periods": 4,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 5,
+      "date": "2026-11-02",
+      "from": "New York Knicks",
+      "team": "Orlando Magic",
+      "trade": "ma10od3tmvzbzbvy",
+      "periods": 3,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    }
+  ],
+  "trades": {
+    "ma10od3tmvzbzbvy": {
+      "date": "2026-11-02",
+      "season": "2026-27",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Orlando Magic",
+          "player_id": "06v5t",
+          "player": "Ben Saraf",
+          "label": "Ben Saraf"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Orlando Magic",
+          "player_id": "076ts",
+          "player": "Tyler Nickel",
+          "label": "Tyler Nickel"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "New York Knicks",
+          "player_id": "05uja",
+          "player": "Miles McBride",
+          "label": "Miles McBride"
+        }
+      ]
+    }
+  }
 }

@@ -139,5 +139,137 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-27",
+      "team": "Orlando Magic",
+      "round": 1,
+      "pick": 4,
+      "periods": 98,
+      "starts": 79,
+      "points": 3582.75,
+      "salary": 4732000,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-08",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 12,
+      "points": 387.75,
+      "salary": 9954143,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "Orlando Magic",
+      "team": "Portland Trail Blazers",
+      "trade": "dn0hq58kmkv9e76t",
+      "periods": 5,
+      "starts": 5,
+      "points": 208.75,
+      "salary": 9954143,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "from": "Portland Trail Blazers",
+      "team": "Boston Celtics",
+      "trade": "mgqvc743msvz4j56",
+      "periods": 7,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 9954143,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "mgqvc743msvz4j56": {
+      "date": "2026-08-16",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Portland Trail Blazers",
+          "player_id": "0621b",
+          "player": "Jalen Williams",
+          "label": "Jalen Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "06214",
+          "player": "Jaden Ivey",
+          "label": "Jaden Ivey"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "label": "2027 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "label": "2027 round 1 pick (Utah Jazz)"
+        }
+      ]
+    },
+    "dn0hq58kmkv9e76t": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "player_id": "06214",
+          "player": "Jaden Ivey",
+          "label": "Jaden Ivey"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "player_id": "0496e",
+          "player": "Alex Caruso",
+          "label": "Alex Caruso"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell"
+        }
+      ]
+    }
+  }
 }

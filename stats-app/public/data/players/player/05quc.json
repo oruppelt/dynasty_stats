@@ -83,5 +83,123 @@
       "gp": 1,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-24",
+      "team": "Philadelphia 76ers",
+      "round": 2,
+      "pick": 38,
+      "periods": 29,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-01",
+      "from": "Philadelphia 76ers",
+      "team": "Sacramento Kings",
+      "trade": "hb86xq3kkpd3h2og",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-10-12",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 34,
+      "date": "2022-02-11",
+      "team": "Memphis Grizzlies",
+      "bid": 14.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 44,
+      "date": "2022-03-21",
+      "team": "Memphis Grizzlies"
+    }
+  ],
+  "trades": {
+    "hb86xq3kkpd3h2og": {
+      "date": "2021-06-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "051po",
+          "player": "Bol Bol",
+          "label": "Bol Bol"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05qsk",
+          "player": "Isaac Okoro",
+          "label": "Isaac Okoro"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05quc",
+          "player": "CJ Elleby",
+          "label": "CJ Elleby"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "051ov",
+          "player": "Sekou Doumbouya",
+          "label": "Sekou Doumbouya"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick, no. 4"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid"
+        }
+      ]
+    }
+  }
 }

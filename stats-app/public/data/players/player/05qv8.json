@@ -97,5 +97,147 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-24",
+      "team": "Los Angeles Clippers",
+      "round": 2,
+      "pick": 49,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-25",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 14,
+      "starts": 4,
+      "points": 40.0,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 15,
+      "date": "2021-02-09",
+      "from": "Milwaukee Bucks",
+      "team": "Indiana Pacers",
+      "trade": "5iowtk61kky1yo09",
+      "periods": 14,
+      "starts": 14,
+      "points": 460.75,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-03",
+      "team": "Los Angeles Clippers",
+      "round": 2,
+      "pick": 52,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-16",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 32,
+      "points": 1002.5,
+      "salary": 2250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Portland Trail Blazers"
+    }
+  ],
+  "trades": {
+    "5iowtk61kky1yo09": {
+      "date": "2021-02-09",
+      "season": "2020-21",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "player_id": "01enn",
+          "player": "Blake Griffin",
+          "label": "Blake Griffin"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "player_id": "031lu",
+          "player": "Ben McLemore",
+          "label": "Ben McLemore"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "05qv8",
+          "player": "Facundo Campazzo",
+          "label": "Facundo Campazzo"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "03nwj",
+          "player": "Stanley Johnson",
+          "label": "Stanley Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "04ex5",
+          "player": "Thomas Bryant",
+          "label": "Thomas Bryant"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "label": "2022 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    }
+  }
 }

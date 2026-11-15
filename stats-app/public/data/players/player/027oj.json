@@ -181,5 +181,141 @@
       "gp": 3,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-15",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 3,
+      "starts": 3,
+      "points": 275.0,
+      "salary": 27750000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 4,
+      "date": "2019-11-01",
+      "from": "Cleveland Cavaliers",
+      "team": "Denver Nuggets",
+      "trade": "mrggfdnik2gldpms",
+      "periods": 124,
+      "starts": 71,
+      "points": 4942.25,
+      "salary": 27750000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "Denver Nuggets"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 65,
+      "starts": 55,
+      "points": 3565.5,
+      "salary": 26000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-29",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 40,
+      "starts": 6,
+      "points": 346.5,
+      "salary": 15156818,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "mrggfdnik2gldpms": {
+      "date": "2019-11-01",
+      "season": "2019-20",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Denver Nuggets",
+          "player_id": "027oj",
+          "player": "Kyrie Irving",
+          "label": "Kyrie Irving"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Denver Nuggets",
+          "player_id": "042n6",
+          "player": "Jakob Poeltl",
+          "label": "Jakob Poeltl"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03ad0",
+          "player": "Tyus Jones",
+          "label": "Tyus Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Denver Nuggets)"
+        }
+      ]
+    }
+  }
 }

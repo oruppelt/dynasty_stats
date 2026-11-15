@@ -125,5 +125,153 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 28,
+      "date": "2024-01-26",
+      "team": "Boston Celtics",
+      "bid": 1.0,
+      "periods": 5,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-29",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-08",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 28,
+      "points": 1239.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-08",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 3,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 5750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "from": "New Orleans Pelicans",
+      "team": "Portland Trail Blazers",
+      "trade": "i76e7lmhmheud55d",
+      "periods": 3,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 5750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-10",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-10",
+      "team": "New Orleans Pelicans",
+      "bid": 24.0,
+      "periods": 27,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-22",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-17",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 3,
+      "points": 68.0,
+      "salary": 7000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "i76e7lmhmheud55d": {
+      "date": "2025-10-31",
+      "season": "2025-26",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Portland Trail Blazers",
+          "player_id": "04ewr",
+          "player": "Kyle Kuzma",
+          "label": "Kyle Kuzma"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Portland Trail Blazers",
+          "player_id": "0623a",
+          "player": "Scotty Pippen",
+          "label": "Scotty Pippen"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Portland Trail Blazers",
+          "label": "2027 round 1 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "New Orleans Pelicans",
+          "player_id": "01eo9",
+          "player": "Jrue Holiday",
+          "label": "Jrue Holiday"
+        }
+      ]
+    }
+  }
 }

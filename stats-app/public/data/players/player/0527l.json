@@ -195,5 +195,281 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 62,
+      "starts": 45,
+      "points": 2060.0,
+      "salary": 5250000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 42,
+      "date": "2022-03-14",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-28",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 34,
+      "starts": 29,
+      "points": 1354.75,
+      "salary": 7350000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 2,
+      "date": "2023-10-26",
+      "from": "Atlanta Hawks",
+      "team": "Phoenix Suns",
+      "trade": "ymsmlbyhlo7be62s",
+      "periods": 23,
+      "starts": 18,
+      "points": 880.25,
+      "salary": 7350000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 25,
+      "date": "2024-01-15",
+      "from": "Phoenix Suns",
+      "team": "Memphis Grizzlies",
+      "trade": "oz23ebmblrf7gezg",
+      "periods": 1,
+      "starts": 1,
+      "points": 51.75,
+      "salary": 7350000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 26,
+      "date": "2024-01-19",
+      "from": "Memphis Grizzlies",
+      "team": "Philadelphia 76ers",
+      "trade": "p0mxkvsnlrkrvpa0",
+      "periods": 7,
+      "starts": 7,
+      "points": 248.75,
+      "salary": 7350000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 66,
+      "starts": 55,
+      "points": 2367.0,
+      "salary": 6000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-13",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-13",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-13",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 269.25,
+      "salary": 1187500,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "oz23ebmblrf7gezg": {
+      "date": "2024-01-15",
+      "season": "2023-24",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Phoenix Suns",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "label": "2025 round 1 pick (Phoenix Suns)"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 1 pick (Phoenix Suns)"
+        }
+      ]
+    },
+    "p0mxkvsnlrkrvpa0": {
+      "date": "2024-01-19",
+      "season": "2023-24",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "03ad7",
+          "player": "Kevon Looney",
+          "label": "Kevon Looney"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "051pq",
+          "player": "Talen Horton-Tucker",
+          "label": "Talen Horton-Tucker"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2025 round 1 pick (Philadelphia 76ers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Philadelphia 76ers)"
+        }
+      ]
+    },
+    "ymsmlbyhlo7be62s": {
+      "date": "2023-10-26",
+      "season": "2023-24",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "03acy",
+          "player": "Dario Saric",
+          "label": "Dario Saric"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "label": "2025 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin"
+        }
+      ]
+    }
+  }
 }

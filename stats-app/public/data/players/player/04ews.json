@@ -111,5 +111,112 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 31,
+      "date": "2021-04-05",
+      "team": "Golden State Warriors",
+      "bid": 17.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-11",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 2,
+      "date": "2021-10-22",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-10-20",
+      "team": "Orlando Magic",
+      "bid": 21.0,
+      "periods": 13,
+      "starts": 2,
+      "points": 22.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 14,
+      "date": "2025-12-03",
+      "from": "Orlando Magic",
+      "team": "Brooklyn Nets",
+      "trade": "de1p940kmipu5om6",
+      "periods": 20,
+      "starts": 3,
+      "points": 18.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-10",
+      "team": "Brooklyn Nets"
+    }
+  ],
+  "trades": {
+    "de1p940kmipu5om6": {
+      "date": "2025-12-03",
+      "season": "2025-26",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Brooklyn Nets",
+          "to": "Orlando Magic",
+          "player_id": "005l0",
+          "player": "Nicolas Batum",
+          "label": "Nicolas Batum"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Brooklyn Nets",
+          "player_id": "04ews",
+          "player": "Tony Bradley",
+          "label": "Tony Bradley"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Brooklyn Nets",
+          "label": "2026 round 2 pick (Orlando Magic)"
+        }
+      ]
+    }
+  }
 }

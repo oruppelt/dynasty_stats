@@ -153,5 +153,171 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-03",
+      "team": "Los Angeles Lakers",
+      "bid": 0.0,
+      "periods": 4,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 5,
+      "date": "2021-01-02",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 3,
+      "date": "2021-10-25",
+      "team": "Los Angeles Clippers",
+      "bid": 1.0,
+      "periods": 31,
+      "starts": 25,
+      "points": 826.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-17",
+      "team": "Los Angeles Clippers",
+      "bid": 1.0,
+      "periods": 29,
+      "starts": 17,
+      "points": 537.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "from": "Los Angeles Clippers",
+      "team": "Houston Rockets",
+      "trade": "vspfi0aqldf3aaw5",
+      "periods": 4,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 42,
+      "date": "2023-03-13",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-08-01",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 22,
+      "points": 610.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-08",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 31,
+      "points": 973.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-08",
+      "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 6,
+      "date": "2026-11-06",
+      "team": "Atlanta Hawks",
+      "bid": 4.0,
+      "periods": 2,
+      "starts": 1,
+      "points": 30.0,
+      "salary": 1000000,
+      "contract": "FA"
+    }
+  ],
+  "trades": {
+    "vspfi0aqldf3aaw5": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Clippers",
+          "player_id": "03bxn",
+          "player": "T.J. Warren",
+          "label": "T.J. Warren"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Clippers",
+          "label": "2023 round 2 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Houston Rockets",
+          "player_id": "042o9",
+          "player": "Georges Niang",
+          "label": "Georges Niang"
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Clippers",
+          "to": "Houston Rockets",
+          "label": "$10 budget"
+        }
+      ]
+    }
+  }
 }

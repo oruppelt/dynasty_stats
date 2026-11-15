@@ -111,5 +111,128 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-16",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 22,
+      "points": 822.75,
+      "salary": 3750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 27,
+      "date": "2021-03-22",
+      "team": "Portland Trail Blazers",
+      "bid": 6.0,
+      "periods": 4,
+      "starts": 1,
+      "points": 48.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-17",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-17",
+      "from": "Phoenix Suns",
+      "team": "Orlando Magic",
+      "trade": "5ivzbhq8ksfr8qpo",
+      "periods": 16,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 17,
+      "date": "2021-12-13",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 19,
+      "date": "2021-12-20",
+      "team": "Portland Trail Blazers",
+      "bid": 7.0,
+      "periods": 15,
+      "starts": 7,
+      "points": 133.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Portland Trail Blazers"
+    }
+  ],
+  "trades": {
+    "5ivzbhq8ksfr8qpo": {
+      "date": "2021-08-17",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Orlando Magic",
+          "to": "Phoenix Suns",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "player_id": "0014u",
+          "player": "Trevor Ariza",
+          "label": "Trevor Ariza"
+        },
+        {
+          "kind": "budget",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "label": "$10 budget"
+        }
+      ]
+    }
+  }
 }

@@ -181,5 +181,266 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Sacramento Kings",
+      "before_logs": true,
+      "periods": 61,
+      "starts": 47,
+      "points": 3789.5,
+      "salary": 20200000,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-01",
+      "from": "Sacramento Kings",
+      "team": "Philadelphia 76ers",
+      "trade": "hb86xq3kkpd3h2og",
+      "periods": 33,
+      "starts": 29,
+      "points": 2509.25,
+      "salary": 20200000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 125,
+      "starts": 97,
+      "points": 6577.5,
+      "salary": 34857000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Philadelphia 76ers",
+      "team": "Atlanta Hawks",
+      "trade": "llmo9x2dmklfs52y",
+      "periods": 6,
+      "starts": 6,
+      "points": 420.0,
+      "salary": 34857000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-21",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-17",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 401.75,
+      "salary": 14545455,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "llmo9x2dmklfs52y": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "031lx",
+          "player": "CJ McCollum",
+          "label": "CJ McCollum"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Dallas Mavericks)"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsj",
+          "player": "Bruce Brown",
+          "label": "Bruce Brown"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Utah Jazz",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtq",
+          "player": "Tre Jones",
+          "label": "Tre Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Chicago Bulls",
+          "player_id": "02nf7",
+          "player": "Harrison Barnes",
+          "label": "Harrison Barnes"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06ca5",
+          "player": "Kris Murray",
+          "label": "Kris Murray"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06cbz",
+          "player": "Brice Sensabaugh",
+          "label": "Brice Sensabaugh"
+        }
+      ]
+    },
+    "hb86xq3kkpd3h2og": {
+      "date": "2021-06-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "051po",
+          "player": "Bol Bol",
+          "label": "Bol Bol"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05qsk",
+          "player": "Isaac Okoro",
+          "label": "Isaac Okoro"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05quc",
+          "player": "CJ Elleby",
+          "label": "CJ Elleby"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "051ov",
+          "player": "Sekou Doumbouya",
+          "label": "Sekou Doumbouya"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick, no. 4"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid"
+        }
+      ]
+    }
+  }
 }

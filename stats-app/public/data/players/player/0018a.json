@@ -125,5 +125,183 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-10",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 19,
+      "starts": 19,
+      "points": 678.25,
+      "salary": 1100000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 20,
+      "date": "2019-12-27",
+      "from": "Boston Celtics",
+      "team": "Chicago Bulls",
+      "trade": "hbx5kxxxk4ojflti",
+      "periods": 13,
+      "starts": 11,
+      "points": 542.25,
+      "salary": 1100000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "Washington Wizards",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 14,
+      "points": 631.5,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-15",
+      "team": "Toronto Raptors",
+      "bid": 0.0,
+      "periods": 9,
+      "starts": 5,
+      "points": 117.5,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 10,
+      "date": "2021-11-17",
+      "from": "Toronto Raptors",
+      "team": "Los Angeles Lakers",
+      "trade": "n8w0d73gkw3epqyd",
+      "periods": 24,
+      "starts": 22,
+      "points": 453.0,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Los Angeles Lakers"
+    }
+  ],
+  "trades": {
+    "hbx5kxxxk4ojflti": {
+      "date": "2019-12-27",
+      "season": "2019-20",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "player_id": "0018a",
+          "player": "Dwight Howard",
+          "label": "Dwight Howard"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Boston Celtics",
+          "player_id": "04qrx",
+          "player": "Josh Okogie",
+          "label": "Josh Okogie"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Boston Celtics",
+          "player_id": "042nr",
+          "player": "Damian Jones",
+          "label": "Damian Jones"
+        }
+      ]
+    },
+    "n8w0d73gkw3epqyd": {
+      "date": "2021-11-17",
+      "season": "2021-22",
+      "period": 10,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Toronto Raptors",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Toronto Raptors",
+          "player_id": "03al0",
+          "player": "Aaron Gordon",
+          "label": "Aaron Gordon"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Toronto Raptors",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Los Angeles Lakers",
+          "player_id": "0018a",
+          "player": "Dwight Howard",
+          "label": "Dwight Howard"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Los Angeles Lakers",
+          "player_id": "03nwm",
+          "player": "Devin Booker",
+          "label": "Devin Booker"
+        }
+      ]
+    }
+  }
 }

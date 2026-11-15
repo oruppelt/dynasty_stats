@@ -139,5 +139,176 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-13",
+      "team": "Los Angeles Lakers",
+      "bid": 0.0,
+      "periods": 3,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 4,
+      "date": "2019-11-01",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 10,
+      "date": "2021-01-22",
+      "team": "Milwaukee Bucks",
+      "bid": 1.0,
+      "periods": 5,
+      "starts": 2,
+      "points": 86.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 15,
+      "date": "2021-02-09",
+      "from": "Milwaukee Bucks",
+      "team": "Indiana Pacers",
+      "trade": "5iowtk61kky1yo09",
+      "periods": 4,
+      "starts": 4,
+      "points": 13.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 20,
+      "date": "2021-02-25",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 42,
+      "date": "2021-05-14",
+      "team": "Charlotte Hornets",
+      "bid": 1.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-21",
+      "team": "Boston Celtics",
+      "bid": 6.0,
+      "periods": 6,
+      "starts": 3,
+      "points": 97.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-30",
+      "team": "Denver Nuggets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 14,
+      "points": 364.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "Denver Nuggets"
+    }
+  ],
+  "trades": {
+    "5iowtk61kky1yo09": {
+      "date": "2021-02-09",
+      "season": "2020-21",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "player_id": "01enn",
+          "player": "Blake Griffin",
+          "label": "Blake Griffin"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "player_id": "031lu",
+          "player": "Ben McLemore",
+          "label": "Ben McLemore"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "05qv8",
+          "player": "Facundo Campazzo",
+          "label": "Facundo Campazzo"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "03nwj",
+          "player": "Stanley Johnson",
+          "label": "Stanley Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "04ex5",
+          "player": "Thomas Bryant",
+          "label": "Thomas Bryant"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "label": "2022 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    }
+  }
 }

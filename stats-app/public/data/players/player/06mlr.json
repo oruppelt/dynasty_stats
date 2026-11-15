@@ -97,5 +97,56 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2024-25",
+      "period": 0,
+      "date": "2024-06-28",
+      "team": "Houston Rockets",
+      "round": 1,
+      "pick": 26,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Houston Rockets",
+      "team": "Boston Celtics",
+      "trade": "efe0iawnlxyrz99m",
+      "periods": 73,
+      "starts": 57,
+      "points": 1930.0,
+      "salary": 1363000,
+      "contract": "R13"
+    }
+  ],
+  "trades": {
+    "efe0iawnlxyrz99m": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "player_id": "06mlr",
+          "player": "Jamal Shead",
+          "label": "Jamal Shead"
+        }
+      ]
+    }
+  }
 }

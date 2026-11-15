@@ -125,5 +125,162 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 8,
+      "date": "2021-01-15",
+      "team": "New Orleans Pelicans",
+      "bid": 2.0,
+      "periods": 22,
+      "starts": 20,
+      "points": 511.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "team": "New Orleans Pelicans",
+      "bid": 11.0,
+      "periods": 21,
+      "starts": 20,
+      "points": 877.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-27",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 2,
+      "date": "2022-10-20",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 4,
+      "date": "2024-11-01",
+      "team": "Charlotte Hornets",
+      "bid": 4.0,
+      "periods": 25,
+      "starts": 10,
+      "points": 282.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-26",
+      "from": "Charlotte Hornets",
+      "team": "Oklahoma City Thunder",
+      "trade": "0lwk42u9m6dv18yt",
+      "periods": 1,
+      "starts": 1,
+      "points": 36.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 30,
+      "date": "2025-01-31",
+      "team": "Oklahoma City Thunder"
+    }
+  ],
+  "trades": {
+    "0lwk42u9m6dv18yt": {
+      "date": "2025-01-26",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "05qtb",
+          "player": "Sam Merrill",
+          "label": "Sam Merrill"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "052fs",
+          "player": "Garrison Mathews",
+          "label": "Garrison Mathews"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "label": "2026 round 1 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "label": "2026 round 2 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "player_id": "051p4",
+          "player": "Ty Jerome",
+          "label": "Ty Jerome"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "player_id": "03nwn",
+          "player": "Bobby Portis",
+          "label": "Bobby Portis"
+        }
+      ]
+    }
+  }
 }
