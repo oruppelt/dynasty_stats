@@ -17,13 +17,14 @@ import { ChampionsWidget } from "./widgets/ChampionsWidget"
 import { FranchisesWidget } from "./widgets/FranchisesWidget"
 import { CareerHeadToHeadWidget } from "./widgets/CareerHeadToHeadWidget"
 import { AllTimeRecordsWidget } from "./widgets/AllTimeRecordsWidget"
+import { PlayerLeadersWidget, PlayerPeriodsWidget, PlayerTeamsWidget } from "./widgets/PlayersWidgets"
 import { WidgetSkeleton } from "./widgets/WidgetSkeleton"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useLeagueData, useSeasonInfo } from '@/lib/league-data'
 import { useInitSelectedTeam, useSelectedTeam } from '@/lib/selected-team'
 import { getUrlParam, setUrlParam } from '@/lib/url'
 import { cn } from '@/lib/utils'
-import { CalendarDays, Info, Landmark, ListOrdered, Swords, TrendingUp, User } from "lucide-react"
+import { CalendarDays, Info, Landmark, ListOrdered, Shirt, Swords, TrendingUp, User } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 type Render = (selectedTeam: string, openRecap: (period: number) => void) => React.ReactNode
@@ -76,6 +77,14 @@ const SECTIONS: Section[] = [
       { value: "allvsall", label: "All vs All", render: team => <AllVsAllWidget selectedTeam={team} /> },
       { value: "luck", label: "Luck", render: team => <LuckWidget selectedTeam={team} /> },
       { value: "whatif", label: "What if", render: team => <ScheduleSwapWidget selectedTeam={team} /> },
+    ],
+  },
+  {
+    value: "players", label: "Players", icon: Shirt,
+    views: [
+      { value: "leaders", label: "Leaders", render: team => <PlayerLeadersWidget selectedTeam={team} /> },
+      { value: "periods", label: "Best periods", render: team => <PlayerPeriodsWidget selectedTeam={team} /> },
+      { value: "teams", label: "Teams", render: team => <PlayerTeamsWidget selectedTeam={team} /> },
     ],
   },
   {
@@ -163,7 +172,7 @@ export function Dashboard() {
             <span><span className="font-medium text-foreground">{seasonInfo.id}:</span> {seasonInfo.note}</span>
           </p>
         )}
-        <TabsList className="mb-4 grid h-auto w-full grid-cols-6 gap-1">
+        <TabsList className="mb-4 grid h-auto w-full grid-cols-7 gap-1">
           {SECTIONS.map(({ value, label, icon: Icon }) => (
             <TabsTrigger
               key={value}
