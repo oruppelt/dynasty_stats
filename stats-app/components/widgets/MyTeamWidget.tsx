@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button'
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
+import { YourPlayers } from './PlayerParts'
 import { ErrorState } from './ErrorState'
 import { LeagueData, useLeagueData } from '@/lib/league-data'
 import { formatScore, periodRecap, recapHighlights } from '@/lib/season'
@@ -302,6 +303,8 @@ export function MyTeamWidget({ selectedTeam, onOpenRecap }: {
           detail={`Scored against you: ${ordinal(standing.points_against_rank)} most in the league`}
         />
       </div>
+
+      <YourPlayers team={selectedTeam} />
 
       <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-2">
       {/* Recent periods */}

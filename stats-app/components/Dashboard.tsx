@@ -17,7 +17,7 @@ import { ChampionsWidget } from "./widgets/ChampionsWidget"
 import { FranchisesWidget } from "./widgets/FranchisesWidget"
 import { CareerHeadToHeadWidget } from "./widgets/CareerHeadToHeadWidget"
 import { AllTimeRecordsWidget } from "./widgets/AllTimeRecordsWidget"
-import { PlayerLeadersWidget, PlayerPeriodsWidget, PlayerTeamsWidget } from "./widgets/PlayersWidgets"
+import { PlayerAllTimeWidget, PlayerLeadersWidget, PlayerPeriodsWidget, PlayerTeamsWidget } from "./widgets/PlayersWidgets"
 import { WidgetSkeleton } from "./widgets/WidgetSkeleton"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useLeagueData, useSeasonInfo } from '@/lib/league-data'
@@ -85,6 +85,7 @@ const SECTIONS: Section[] = [
       { value: "leaders", label: "Leaders", render: team => <PlayerLeadersWidget selectedTeam={team} /> },
       { value: "periods", label: "Best periods", render: team => <PlayerPeriodsWidget selectedTeam={team} /> },
       { value: "teams", label: "Teams", render: team => <PlayerTeamsWidget selectedTeam={team} /> },
+      { value: "alltime", label: "All-time", render: team => <PlayerAllTimeWidget selectedTeam={team} /> },
     ],
   },
   {

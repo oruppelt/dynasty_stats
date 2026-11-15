@@ -5,7 +5,7 @@ import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
 import { ErrorState } from './ErrorState'
 import { Explainer } from './Explainer'
-import { PlayerPeriod, PlayersData, formatFpts, usePlayers } from '@/lib/players'
+import { PlayerLeader, PlayerPeriod, PlayersData, SeasonPlayerPeriod, formatFpts, useAllTimePlayers, usePlayers } from '@/lib/players'
 import { useLeagueData } from '@/lib/league-data'
 import { formatPoints } from '@/lib/standings'
 import { teamCode } from '@/lib/teams'
@@ -45,80 +45,120 @@ const games = (n: number) => `${n} game${n === 1 ? '' : 's'}`
 
 // ---------------------------------------------------------------- Leaders
 
+/** Players by points: the season leaders, playoff leaders, career leaders. `seasons` adds that column. */
+function LeadersTable({ rows, selectedTeam, seasons }: {
+  rows: (PlayerLeader & { seasons?: number; season?: string })[];
+  selectedTeam: string;
+  seasons?: boolean;
+}) {
+  return (
+    <div className="w-full overflow-x-auto">
+      <table className="w-full text-sm tabular-nums">
+        <thead>
+          <tr className="text-muted-foreground">
+            <th className="h-10 w-8 border-b px-2 text-right font-medium">#</th>
+            <th className="sticky left-0 z-10 h-10 border-b bg-card px-2 text-left font-medium">Player</th>
+            <th className="h-10 border-b px-2 text-right font-medium text-foreground">
+              <span className="inline-flex items-center gap-1">Points<ArrowDown className="h-3 w-3" /></span>
+            </th>
+            {seasons && <th className="h-10 border-b px-2 text-right font-medium">Seasons</th>}
+            <th className="h-10 border-b px-2 text-right font-medium">Starts</th>
+            <th className="h-10 border-b px-2 text-right font-medium">GP</th>
+            <th className="h-10 whitespace-nowrap border-b px-2 text-right font-medium">Per game</th>
+          </tr>
+        </thead>
+        <tbody className="[&_tr:last-child_td]:border-0">
+          {rows.map((p, i) => {
+            const mine = p.teams.includes(selectedTeam)
+            return (
+              <tr key={`${p.season ?? ''}-${p.player_id}`} className={cn(mine && 'bg-muted font-semibold')}>
+                <td className="h-11 border-b px-2 text-right text-xs text-muted-foreground">{i + 1}</td>
+                <td className={cn('sticky left-0 z-10 h-11 border-b px-2', mine ? 'bg-muted' : 'bg-card')}>
+                  <div className="flex items-center gap-2">
+                    <TeamLogos teams={p.teams} />
+                    <div className="min-w-0">
+                      <div className="max-w-36 truncate sm:max-w-none">{p.player}</div>
+                      <div className="max-w-36 truncate text-xs font-normal text-muted-foreground sm:max-w-none">
+                        {p.season && `${p.season} · `}{p.teams.map(teamCode).join(' → ')}
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td className="h-11 border-b px-2 text-right font-semibold">{formatPoints(p.points)}</td>
+                {seasons && <td className="h-11 border-b px-2 text-right">{p.seasons}</td>}
+                <td className="h-11 border-b px-2 text-right">{p.starts}</td>
+                <td className="h-11 border-b px-2 text-right">{p.gp}</td>
+                <td className="h-11 border-b px-2 text-right">{p.gp ? (p.points / p.gp).toFixed(1) : '–'}</td>
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+/** Overlapping logos of every team a player scored for (at most 3, then a count). */
+function TeamLogos({ teams }: { teams: string[] }) {
+  return (
+    <span className="flex shrink-0 items-center -space-x-2">
+      {teams.slice(0, 3).map(t => <TeamLogo key={t} teamName={t} size={22} />)}
+      {teams.length > 3 && <span className="pl-2.5 text-xs text-muted-foreground">+{teams.length - 3}</span>}
+    </span>
+  )
+}
+
+function TableCard({ title, note, children }: { title: string; note: ReactNode; children: ReactNode }) {
+  return (
+    <Card className="w-full">
+      <CardHeader className="pb-2">
+        <CardTitle className="text-lg">{title}</CardTitle>
+        <CardDescription>{note}</CardDescription>
+      </CardHeader>
+      <CardContent className="px-0 sm:px-6">{children}</CardContent>
+    </Card>
+  )
+}
+
 export function PlayerLeadersWidget({ selectedTeam }: { selectedTeam: string }) {
   const { view, data } = usePlayersView()
   if (!data) return view
 
   return (
-    <Card className="w-full">
-      <Intro
-        title="Season leaders"
-        explainer={
-          <p>
-            Points count only while the player was in a lineup: a bench period adds nothing. <strong>Starts</strong>:
-            periods in a lineup; <strong>GP</strong>: the NBA games played in them; <strong>Per game</strong>:
-            points per game played. A player traded during the season shows every team they scored for.
-          </p>
-        }
-      >
-        The top {data.leaders.length} scorers for their fantasy teams, regular season through {data.meta.periods} periods.
-        {selectedTeam && ' Your team’s players are highlighted.'}
-      </Intro>
-      <CardContent className="px-0 sm:px-6">
-        <div className="w-full overflow-x-auto">
-          <table className="w-full text-sm tabular-nums">
-            <thead>
-              <tr className="text-muted-foreground">
-                <th className="h-10 w-8 border-b px-2 text-right font-medium">#</th>
-                <th className="sticky left-0 z-10 h-10 border-b bg-card px-2 text-left font-medium">Player</th>
-                <th className="h-10 border-b px-2 text-right font-medium text-foreground">
-                  <span className="inline-flex items-center gap-1">Points<ArrowDown className="h-3 w-3" /></span>
-                </th>
-                <th className="h-10 border-b px-2 text-right font-medium">Starts</th>
-                <th className="h-10 border-b px-2 text-right font-medium">GP</th>
-                <th className="h-10 whitespace-nowrap border-b px-2 text-right font-medium">Per game</th>
-              </tr>
-            </thead>
-            <tbody className="[&_tr:last-child_td]:border-0">
-              {data.leaders.map((p, i) => {
-                const mine = p.teams.includes(selectedTeam)
-                return (
-                  <tr key={p.player_id} className={cn(mine && 'bg-muted font-semibold')}>
-                    <td className="h-11 border-b px-2 text-right text-xs text-muted-foreground">{i + 1}</td>
-                    <td className={cn('sticky left-0 z-10 h-11 border-b px-2', mine ? 'bg-muted' : 'bg-card')}>
-                      <div className="flex items-center gap-2">
-                        <span className="flex shrink-0 -space-x-2">
-                          {p.teams.map(t => <TeamLogo key={t} teamName={t} size={22} />)}
-                        </span>
-                        <div className="min-w-0">
-                          <div className="max-w-36 truncate sm:max-w-none">{p.player}</div>
-                          <div className="text-xs font-normal text-muted-foreground">
-                            {p.teams.map(teamCode).join(' → ')}
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="h-11 border-b px-2 text-right font-semibold">{formatPoints(p.points)}</td>
-                    <td className="h-11 border-b px-2 text-right">{p.starts}</td>
-                    <td className="h-11 border-b px-2 text-right">{p.gp}</td>
-                    <td className="h-11 border-b px-2 text-right">{p.gp ? (p.points / p.gp).toFixed(1) : '–'}</td>
-                  </tr>
-                )
-              })}
-            </tbody>
-          </table>
-        </div>
-      </CardContent>
-    </Card>
+    <div className="w-full space-y-4">
+      <Card className="w-full">
+        <Intro
+          title="Season leaders"
+          explainer={
+            <p>
+              Points count only while the player was in a lineup: a bench period adds nothing. <strong>Starts</strong>:
+              periods in a lineup; <strong>GP</strong>: the NBA games played in them; <strong>Per game</strong>:
+              points per game played. A player traded during the season shows every team they scored for.
+            </p>
+          }
+        >
+          The top {data.leaders.length} scorers for their fantasy teams, regular season through {data.meta.periods} periods.
+          {selectedTeam && ' Your team’s players are highlighted.'}
+        </Intro>
+        <CardContent className="px-0 sm:px-6">
+          <LeadersTable rows={data.leaders} selectedTeam={selectedTeam} />
+        </CardContent>
+      </Card>
+      {data.playoffs && (
+        <TableCard title="Playoff leaders" note="Points in the playoffs (Swiss stage and knockout), for teams still playing.">
+          <LeadersTable rows={data.playoffs.leaders} selectedTeam={selectedTeam} />
+        </TableCard>
+      )}
+    </div>
   )
 }
 
 // ---------------------------------------------------------------- Best periods
 
-function PeriodList({ title, note, rows, selectedTeam }: {
+export function PeriodList({ title, note, rows, selectedTeam }: {
   title: string;
   note: string;
-  rows: PlayerPeriod[];
+  rows: (PlayerPeriod | SeasonPlayerPeriod)[];
   selectedTeam: string;
 }) {
   return (
@@ -131,7 +171,7 @@ function PeriodList({ title, note, rows, selectedTeam }: {
         <ol className="space-y-1">
           {rows.map((p, i) => (
             <li
-              key={`${p.period}-${p.team}-${p.player_id}`}
+              key={`${'season' in p ? p.season : ''}-${p.period}-${p.team}-${p.player_id}`}
               className={cn('flex items-center gap-2 rounded-md px-1.5 py-1.5', p.team === selectedTeam && 'bg-muted')}
             >
               <span className="w-5 shrink-0 text-xs text-muted-foreground tabular-nums">{i + 1}</span>
@@ -139,7 +179,7 @@ function PeriodList({ title, note, rows, selectedTeam }: {
               <div className="min-w-0 flex-1">
                 <div className="truncate text-sm font-medium">{p.player}</div>
                 <div className="truncate text-xs text-muted-foreground">
-                  {p.team} · P{p.period} · {games(p.gp)}
+                  {'season' in p && `${p.season} · `}{p.team} · P{p.period} · {games(p.gp)}
                 </div>
               </div>
               <span className="shrink-0 text-right text-base font-bold tabular-nums">{formatFpts(p.fpts)}</span>
@@ -167,7 +207,7 @@ export function PlayerPeriodsWidget({ selectedTeam }: { selectedTeam: string }) 
             </p>
           }
         >
-          The biggest single-period scores by one player, regular season.
+          The biggest single-period scores by one player, regular season{data.playoffs ? ' and playoffs' : ''}.
           {selectedTeam && ' Your team is highlighted.'}
         </Intro>
       </Card>
@@ -184,6 +224,14 @@ export function PlayerPeriodsWidget({ selectedTeam }: { selectedTeam: string }) 
           rows={data.best_bench}
           selectedTeam={selectedTeam}
         />
+        {data.playoffs && (
+          <PeriodList
+            title="In the playoffs"
+            note="The biggest playoff periods."
+            rows={data.playoffs.best_periods}
+            selectedTeam={selectedTeam}
+          />
+        )}
       </div>
     </div>
   )
@@ -282,5 +330,90 @@ export function PlayerTeamsWidget({ selectedTeam }: { selectedTeam: string }) {
         </div>
       </CardContent>
     </Card>
+  )
+}
+
+// ---------------------------------------------------------------- All-time
+
+export function PlayerAllTimeWidget({ selectedTeam }: { selectedTeam: string }) {
+  const { data, isLoading, error } = useAllTimePlayers()
+  const teams = data ? Object.keys(data.franchises) : []
+  const [picked, setPicked] = useState<string | null>(null)
+  if (isLoading) return <WidgetSkeleton variant="list" />
+  if (error) return <ErrorState />
+  if (!data) {
+    return (
+      <Card className="w-full">
+        <CardContent className="p-8 text-center text-sm text-muted-foreground">No player data yet.</CardContent>
+      </Card>
+    )
+  }
+  const franchise = picked ?? (teams.includes(selectedTeam) ? selectedTeam : teams[0])
+  const seasons = data.meta.seasons
+
+  return (
+    <div className="w-full space-y-4">
+      <Card>
+        <Intro
+          title="All-time player records"
+          explainer={
+            <p>
+              Points count only while a player was in a lineup. Franchises are matched by team name across
+              seasons; a franchise&apos;s scorers count only the points scored for it. Regular season, apart
+              from the playoff lists.
+            </p>
+          }
+        >
+          Every season since {seasons[0]} ({seasons.length} seasons). Every season, not just the one picked above.
+          {selectedTeam && ' Your team is highlighted.'}
+        </Intro>
+      </Card>
+
+      <TableCard title="Franchise scorers" note="A franchise's top scorers: points for that team, over every season.">
+        <div className="mb-3 px-3 sm:px-0">
+          <select
+            value={franchise}
+            onChange={e => setPicked(e.target.value)}
+            className="h-9 w-full rounded-md border bg-background px-2 text-sm sm:w-72"
+            aria-label="Franchise"
+          >
+            {teams.map(t => <option key={t} value={t}>{t}</option>)}
+          </select>
+        </div>
+        <ol className="space-y-1 px-3 sm:px-0">
+          {data.franchises[franchise].map((p, i) => (
+            <li key={p.player_id} className="flex items-center gap-2 rounded-md px-1.5 py-1.5">
+              <span className="w-5 shrink-0 text-xs text-muted-foreground tabular-nums">{i + 1}</span>
+              <TeamLogo teamName={franchise} size={24} className="shrink-0" />
+              <div className="min-w-0 flex-1">
+                <div className="truncate text-sm font-medium">{p.player}</div>
+                <div className="truncate text-xs text-muted-foreground">
+                  {p.seasons} season{p.seasons === 1 ? '' : 's'} · {p.starts} starts · {p.gp ? (p.points / p.gp).toFixed(1) : '–'} per game
+                </div>
+              </div>
+              <span className="shrink-0 text-right text-base font-bold tabular-nums">{formatPoints(p.points)}</span>
+            </li>
+          ))}
+        </ol>
+      </TableCard>
+
+      <TableCard title="Career leaders" note="Regular-season points over every season, for any team.">
+        <LeadersTable rows={data.career} selectedTeam={selectedTeam} seasons />
+      </TableCard>
+
+      <TableCard title="Best seasons" note="A player's points in one regular season.">
+        <LeadersTable rows={data.best_seasons} selectedTeam={selectedTeam} />
+      </TableCard>
+
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <PeriodList title="Best periods" note="The biggest single-period scores ever." rows={data.best_periods} selectedTeam={selectedTeam} />
+        <PeriodList title="Left on the bench" note="The biggest bench periods ever." rows={data.best_bench} selectedTeam={selectedTeam} />
+        <PeriodList title="Playoff periods" note="The biggest playoff periods ever." rows={data.playoffs.best_periods} selectedTeam={selectedTeam} />
+      </div>
+
+      <TableCard title="Playoff career leaders" note="Playoff points over every season.">
+        <LeadersTable rows={data.playoffs.career} selectedTeam={selectedTeam} seasons />
+      </TableCard>
+    </div>
   )
 }
