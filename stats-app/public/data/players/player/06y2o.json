@@ -97,5 +97,79 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 19,
+      "date": "2025-12-22",
+      "team": "Toronto Raptors",
+      "bid": 8.0,
+      "periods": 11,
+      "starts": 10,
+      "points": 415.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 30,
+      "date": "2026-01-28",
+      "from": "Toronto Raptors",
+      "team": "New Orleans Pelicans",
+      "trade": "d6329nwumkvrkqy0",
+      "periods": 4,
+      "starts": 4,
+      "points": 227.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-22",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-17",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 1,
+      "points": 24.75,
+      "salary": 3500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "d6329nwumkvrkqy0": {
+      "date": "2026-01-28",
+      "season": "2025-26",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Toronto Raptors",
+          "player_id": "06cd1",
+          "player": "Jordan Walsh",
+          "label": "Jordan Walsh"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "New Orleans Pelicans",
+          "player_id": "06y2o",
+          "player": "Dylan Cardwell",
+          "label": "Dylan Cardwell"
+        }
+      ]
+    }
+  }
 }

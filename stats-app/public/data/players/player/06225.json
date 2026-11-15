@@ -29,5 +29,77 @@
       "gp": 0,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-28",
+      "team": "Detroit Pistons",
+      "round": 2,
+      "pick": 42,
+      "periods": 33,
+      "starts": 1,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "from": "Detroit Pistons",
+      "team": "Miami Heat",
+      "trade": "f5xsbh6ylknr0qpy",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-31",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "f5xsbh6ylknr0qpy": {
+      "date": "2023-07-29",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "06225",
+          "player": "Trevor Keels",
+          "label": "Trevor Keels"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "player_id": "027oo",
+          "player": "Jonas Valanciunas",
+          "label": "Jonas Valanciunas"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "label": "2025 round 1 pick (Miami Heat)"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "label": "2024 round 1 pick (Miami Heat)"
+        }
+      ]
+    }
+  }
 }

@@ -167,5 +167,163 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Phoenix Suns",
+      "round": 1,
+      "pick": 1,
+      "periods": 12,
+      "starts": 8,
+      "points": 436.75,
+      "salary": 6532128,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "from": "Phoenix Suns",
+      "team": "Sacramento Kings",
+      "trade": "hbk0cwdukwl4dkmr",
+      "periods": 38,
+      "starts": 23,
+      "points": 1393.75,
+      "salary": 6532128,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-16",
+      "from": "Sacramento Kings",
+      "team": "Indiana Pacers",
+      "trade": "fnutgtpilbqehm1q",
+      "periods": 48,
+      "starts": 27,
+      "points": 1588.5,
+      "salary": 6532000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 73,
+      "starts": 71,
+      "points": 5716.75,
+      "salary": 19000000,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "fnutgtpilbqehm1q": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "player_id": "05uic",
+          "player": "Jalen Green",
+          "label": "Jalen Green"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Indiana Pacers",
+          "player_id": "05uib",
+          "player": "Cade Cunningham",
+          "label": "Cade Cunningham"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Indiana Pacers",
+          "player_id": "05uuq",
+          "player": "Jock Landale",
+          "label": "Jock Landale"
+        }
+      ]
+    },
+    "hbk0cwdukwl4dkmr": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "player_id": "05uib",
+          "player": "Cade Cunningham",
+          "label": "Cade Cunningham"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "03bxn",
+          "player": "T.J. Warren",
+          "label": "T.J. Warren"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "042n7",
+          "player": "Domantas Sabonis",
+          "label": "Domantas Sabonis"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "05uj8",
+          "player": "Rokas Jokubaitis",
+          "label": "Rokas Jokubaitis"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "label": "2023 round 1 pick (Boston Celtics)"
+        }
+      ]
+    }
+  }
 }

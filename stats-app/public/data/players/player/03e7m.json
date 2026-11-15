@@ -83,5 +83,78 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 12,
+      "date": "2019-11-29",
+      "team": "Indiana Pacers",
+      "bid": 4.0,
+      "periods": 10,
+      "starts": 2,
+      "points": 134.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 22,
+      "date": "2020-01-03",
+      "from": "Indiana Pacers",
+      "team": "Oklahoma City Thunder",
+      "trade": "7eejxd3ck4tqfheg",
+      "periods": 11,
+      "starts": 8,
+      "points": 325.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Oklahoma City Thunder"
+    }
+  ],
+  "trades": {
+    "7eejxd3ck4tqfheg": {
+      "date": "2020-01-03",
+      "season": "2019-20",
+      "period": 22,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03e7m",
+          "player": "Jordan McRae",
+          "label": "Jordan McRae"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Indiana Pacers",
+          "player_id": "03xmu",
+          "player": "Dragan Bender",
+          "label": "Dragan Bender"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Indiana Pacers",
+          "label": "2020 round 2 pick (Oklahoma City Thunder)"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Indiana Pacers",
+          "label": "2021 round 2 pick (Oklahoma City Thunder)"
+        }
+      ]
+    }
+  }
 }

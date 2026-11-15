@@ -195,5 +195,313 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "before_logs": true,
+      "periods": 18,
+      "starts": 18,
+      "points": 1177.5,
+      "salary": 20607813,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 19,
+      "date": "2019-12-22",
+      "from": "Indiana Pacers",
+      "team": "Houston Rockets",
+      "trade": "jczv175kk4fvkyxw",
+      "periods": 43,
+      "starts": 43,
+      "points": 1822.5,
+      "salary": 20607813,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-18",
+      "team": "Houston Rockets",
+      "bid": 0.0,
+      "periods": 98,
+      "starts": 77,
+      "points": 5042.25,
+      "salary": 19509909,
+      "contract": "REG3"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-07",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-01",
+      "team": "Dallas Mavericks",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 26,
+      "points": 1582.75,
+      "salary": 15000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-02",
+      "from": "Dallas Mavericks",
+      "team": "Atlanta Hawks",
+      "trade": "pfmus3fxmclyfw30",
+      "periods": 27,
+      "starts": 24,
+      "points": 1247.5,
+      "salary": 15000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Atlanta Hawks",
+      "team": "Chicago Bulls",
+      "trade": "llmo9x2dmklfs52y",
+      "periods": 6,
+      "starts": 6,
+      "points": 399.0,
+      "salary": 15000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-10",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-19",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 324.25,
+      "salary": 15000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "jczv175kk4fvkyxw": {
+      "date": "2019-12-22",
+      "season": "2019-20",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Indiana Pacers",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Indiana Pacers",
+          "label": "2020 round 1 pick (Houston Rockets)"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Houston Rockets",
+          "player_id": "031lx",
+          "player": "CJ McCollum",
+          "label": "CJ McCollum"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Houston Rockets",
+          "player_id": "0012a",
+          "player": "JR Smith",
+          "label": "JR Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Houston Rockets",
+          "player_id": "031lu",
+          "player": "Ben McLemore",
+          "label": "Ben McLemore"
+        }
+      ]
+    },
+    "pfmus3fxmclyfw30": {
+      "date": "2025-07-02",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Dallas Mavericks",
+          "player_id": "051ot",
+          "player": "Tyler Herro",
+          "label": "Tyler Herro"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Atlanta Hawks",
+          "player_id": "031lx",
+          "player": "CJ McCollum",
+          "label": "CJ McCollum"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Atlanta Hawks",
+          "label": "2026 round 1 pick (Dallas Mavericks)"
+        }
+      ]
+    },
+    "llmo9x2dmklfs52y": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "031lx",
+          "player": "CJ McCollum",
+          "label": "CJ McCollum"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Dallas Mavericks)"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsj",
+          "player": "Bruce Brown",
+          "label": "Bruce Brown"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Utah Jazz",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtq",
+          "player": "Tre Jones",
+          "label": "Tre Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Chicago Bulls",
+          "player_id": "02nf7",
+          "player": "Harrison Barnes",
+          "label": "Harrison Barnes"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06ca5",
+          "player": "Kris Murray",
+          "label": "Kris Murray"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06cbz",
+          "player": "Brice Sensabaugh",
+          "label": "Brice Sensabaugh"
+        }
+      ]
+    }
+  }
 }

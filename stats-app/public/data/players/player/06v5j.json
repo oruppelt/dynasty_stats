@@ -83,5 +83,88 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2025-26",
+      "period": 0,
+      "date": "2025-07-04",
+      "team": "San Antonio Spurs",
+      "round": 1,
+      "pick": 21,
+      "periods": 33,
+      "starts": 6,
+      "points": 126.5,
+      "salary": 1659000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-25",
+      "from": "San Antonio Spurs",
+      "team": "Portland Trail Blazers",
+      "trade": "zlfnl31gmqt85aw1",
+      "periods": 7,
+      "starts": 5,
+      "points": 147.5,
+      "salary": 1659000,
+      "contract": "R12"
+    }
+  ],
+  "trades": {
+    "zlfnl31gmqt85aw1": {
+      "date": "2026-06-25",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "player_id": "06v8b",
+          "player": "Rocco Zikarsky",
+          "label": "Rocco Zikarsky"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "label": "2026 round 2 pick, no. 24"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5j",
+          "player": "Jase Richardson",
+          "label": "Jase Richardson"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5o",
+          "player": "Liam McNeeley",
+          "label": "Liam McNeeley"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5e",
+          "player": "Yang Hansen",
+          "label": "Yang Hansen"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick, no. 23"
+        }
+      ]
+    }
+  }
 }

@@ -195,5 +195,253 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-23",
+      "team": "Dallas Mavericks",
+      "round": 1,
+      "pick": 12,
+      "periods": 80,
+      "starts": 50,
+      "points": 2097.0,
+      "salary": 2565312,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 19,
+      "date": "2022-12-18",
+      "from": "Dallas Mavericks",
+      "team": "Chicago Bulls",
+      "trade": "o7egut5nlbsb9x0e",
+      "periods": 15,
+      "starts": 5,
+      "points": 237.25,
+      "salary": 2565000,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-23",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 91,
+      "starts": 79,
+      "points": 3882.0,
+      "salary": 15500000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 27,
+      "date": "2026-01-19",
+      "from": "Chicago Bulls",
+      "team": "Portland Trail Blazers",
+      "trade": "jsw3rc10mkl3o2h1",
+      "periods": 2,
+      "starts": 1,
+      "points": 17.5,
+      "salary": 15500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "Portland Trail Blazers",
+      "team": "Orlando Magic",
+      "trade": "dn0hq58kmkv9e76t",
+      "periods": 5,
+      "starts": 4,
+      "points": 183.5,
+      "salary": 15500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-15",
+      "from": "Orlando Magic",
+      "team": "Philadelphia 76ers",
+      "trade": "eah3rh8omsuevyv0",
+      "periods": 7,
+      "starts": 7,
+      "points": 319.25,
+      "salary": 15500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "eah3rh8omsuevyv0": {
+      "date": "2026-08-15",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Philadelphia 76ers",
+          "player_id": "06216",
+          "player": "Shaedon Sharpe",
+          "label": "Shaedon Sharpe"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Orlando Magic",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Orlando Magic",
+          "player_id": "076t4",
+          "player": "Ebuka Okorie",
+          "label": "Ebuka Okorie"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Orlando Magic",
+          "label": "2027 round 1 pick (New Orleans Pelicans)"
+        }
+      ]
+    },
+    "o7egut5nlbsb9x0e": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 1 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (San Antonio Spurs)"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Chicago Bulls",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell"
+        }
+      ]
+    },
+    "dn0hq58kmkv9e76t": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "player_id": "06214",
+          "player": "Jaden Ivey",
+          "label": "Jaden Ivey"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "player_id": "0496e",
+          "player": "Alex Caruso",
+          "label": "Alex Caruso"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell"
+        }
+      ]
+    },
+    "jsw3rc10mkl3o2h1": {
+      "date": "2026-01-19",
+      "season": "2025-26",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Chicago Bulls",
+          "player_id": "05qty",
+          "player": "Jalen Smith",
+          "label": "Jalen Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Chicago Bulls",
+          "player_id": "0621u",
+          "player": "Andrew Nembhard",
+          "label": "Andrew Nembhard"
+        }
+      ]
+    }
+  }
 }

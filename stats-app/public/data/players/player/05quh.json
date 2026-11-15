@@ -153,5 +153,133 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-23",
+      "team": "Dallas Mavericks",
+      "round": 1,
+      "pick": 27,
+      "periods": 95,
+      "starts": 13,
+      "points": 358.25,
+      "salary": 1323552,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "Dallas Mavericks"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-10-23",
+      "team": "Utah Jazz",
+      "bid": 3.0,
+      "periods": 8,
+      "starts": 3,
+      "points": 67.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 9,
+      "date": "2023-11-20",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 34,
+      "date": "2025-02-14",
+      "team": "Washington Wizards",
+      "bid": 30.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-06",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 25,
+      "date": "2026-01-12",
+      "team": "Memphis Grizzlies",
+      "bid": 8.0,
+      "periods": 4,
+      "starts": 3,
+      "points": 93.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "Memphis Grizzlies",
+      "team": "Philadelphia 76ers",
+      "trade": "obkbcgl9mkv2naz2",
+      "periods": 5,
+      "starts": 3,
+      "points": 33.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-03",
+      "team": "Philadelphia 76ers"
+    }
+  ],
+  "trades": {
+    "obkbcgl9mkv2naz2": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "05quh",
+          "player": "Zeke Nnaji",
+          "label": "Zeke Nnaji"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 2 pick (Sacramento Kings)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "04qrw",
+          "player": "Kevin Huerter",
+          "label": "Kevin Huerter"
+        }
+      ]
+    }
+  }
 }

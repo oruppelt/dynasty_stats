@@ -32,5 +32,108 @@
       "paid": 687500
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2019-20",
+      "period": 0,
+      "date": "2019-06-25",
+      "team": "Atlanta Hawks",
+      "round": 2,
+      "pick": 59,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-10-20",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-10-22",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Atlanta Hawks",
+      "before_logs": true,
+      "periods": 10,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 11,
+      "date": "2019-11-25",
+      "from": "Atlanta Hawks",
+      "team": "Golden State Warriors",
+      "trade": "00p5towuk3e4pdt1",
+      "periods": 22,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-22",
+      "team": "Golden State Warriors"
+    }
+  ],
+  "trades": {
+    "00p5towuk3e4pdt1": {
+      "date": "2019-11-25",
+      "season": "2019-20",
+      "period": 11,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "051pz",
+          "player": "Kyle Guy",
+          "label": "Kyle Guy"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "player_id": "03acy",
+          "player": "Dario Saric",
+          "label": "Dario Saric"
+        }
+      ]
+    }
+  }
 }

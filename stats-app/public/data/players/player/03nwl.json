@@ -181,5 +181,344 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-14",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 30,
+      "points": 1715.0,
+      "salary": 14333333,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-16",
+      "from": "Sacramento Kings",
+      "team": "Orlando Magic",
+      "trade": "5vp2vr5zkg9lvu4i",
+      "periods": 62,
+      "starts": 57,
+      "points": 3611.25,
+      "salary": 14333333,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-02",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-07",
+      "from": "Orlando Magic",
+      "team": "Cleveland Cavaliers",
+      "trade": "mu1sghjul8ykpvq9",
+      "periods": 69,
+      "starts": 60,
+      "points": 3562.75,
+      "salary": 11400000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 5,
+      "date": "2024-11-04",
+      "from": "Cleveland Cavaliers",
+      "team": "Oklahoma City Thunder",
+      "trade": "9zd79sc2m331fy8y",
+      "periods": 29,
+      "starts": 27,
+      "points": 996.5,
+      "salary": 11400000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-18",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 2,
+      "date": "2025-10-23",
+      "from": "Boston Celtics",
+      "team": "Indiana Pacers",
+      "trade": "9yi89irgmgzi22l2",
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "from": "Indiana Pacers",
+      "team": "Portland Trail Blazers",
+      "trade": "9colormomhexsfi3",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "team": "Portland Trail Blazers"
+    }
+  ],
+  "trades": {
+    "5vp2vr5zkg9lvu4i": {
+      "date": "2020-10-16",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "051om",
+          "player": "Jarrett Culver",
+          "label": "Jarrett Culver"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "2020 round 1 pick, no. 14"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        }
+      ]
+    },
+    "9zd79sc2m331fy8y": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005kf",
+          "player": "Eric Gordon",
+          "label": "Eric Gordon"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06cc0",
+          "player": "Taylor Hendricks",
+          "label": "Taylor Hendricks"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06ca7",
+          "player": "Cam Whitmore",
+          "label": "Cam Whitmore"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "label": "2025 round 1 pick (Charlotte Hornets)"
+        }
+      ]
+    },
+    "9yi89irgmgzi22l2": {
+      "date": "2025-10-23",
+      "season": "2025-26",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Indiana Pacers",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        },
+        {
+          "kind": "budget",
+          "from": "Indiana Pacers",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
+        }
+      ]
+    },
+    "9colormomhexsfi3": {
+      "date": "2025-10-31",
+      "season": "2025-26",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2027 round 2 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        }
+      ]
+    },
+    "mu1sghjul8ykpvq9": {
+      "date": "2022-10-07",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "0623f",
+          "player": "Justin Lewis",
+          "label": "Justin Lewis"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Orlando Magic",
+          "label": "2023 round 1 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "budget",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "label": "$15 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "04ewb",
+          "player": "Jonathan Isaac",
+          "label": "Jonathan Isaac"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2024 round 1 pick (Portland Trail Blazers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Cleveland Cavaliers",
+          "label": "2024 round 2 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2023 round 2 pick (Portland Trail Blazers)"
+        }
+      ]
+    }
+  }
 }

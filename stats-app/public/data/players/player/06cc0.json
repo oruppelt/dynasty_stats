@@ -125,5 +125,166 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-26",
+      "team": "Oklahoma City Thunder",
+      "round": 1,
+      "pick": 9,
+      "periods": 36,
+      "starts": 11,
+      "points": 207.75,
+      "salary": 2992000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 5,
+      "date": "2024-11-04",
+      "from": "Oklahoma City Thunder",
+      "team": "Cleveland Cavaliers",
+      "trade": "9zd79sc2m331fy8y",
+      "periods": 62,
+      "starts": 17,
+      "points": 326.5,
+      "salary": 2992000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-12",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 3,
+      "starts": 1,
+      "points": 0.0,
+      "salary": 2992000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 4,
+      "date": "2026-10-29",
+      "from": "Cleveland Cavaliers",
+      "team": "Portland Trail Blazers",
+      "trade": "oj9lawe7mvsdcb33",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 4,
+      "date": "2026-10-29",
+      "team": "Portland Trail Blazers"
+    }
+  ],
+  "trades": {
+    "9zd79sc2m331fy8y": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005kf",
+          "player": "Eric Gordon",
+          "label": "Eric Gordon"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06cc0",
+          "player": "Taylor Hendricks",
+          "label": "Taylor Hendricks"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06ca7",
+          "player": "Cam Whitmore",
+          "label": "Cam Whitmore"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "label": "2025 round 1 pick (Charlotte Hornets)"
+        }
+      ]
+    },
+    "oj9lawe7mvsdcb33": {
+      "date": "2026-10-29",
+      "season": "2026-27",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v7y",
+          "player": "Noah Penda",
+          "label": "Noah Penda"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "06cc0",
+          "player": "Taylor Hendricks",
+          "label": "Taylor Hendricks"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "04qrm",
+          "player": "Collin Sexton",
+          "label": "Collin Sexton"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "label": "2028 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04ewr",
+          "player": "Kyle Kuzma",
+          "label": "Kyle Kuzma"
+        }
+      ]
+    }
+  }
 }

@@ -167,5 +167,426 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Toronto Raptors",
+      "before_logs": true,
+      "periods": 46,
+      "starts": 43,
+      "points": 2183.75,
+      "salary": 8371274,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 15,
+      "date": "2021-02-08",
+      "from": "Toronto Raptors",
+      "team": "Orlando Magic",
+      "trade": "fg701svckkwr9d15",
+      "periods": 15,
+      "starts": 14,
+      "points": 1048.5,
+      "salary": 8371274,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "from": "Orlando Magic",
+      "team": "Houston Rockets",
+      "trade": "masc0nzxks8lf0si",
+      "periods": 33,
+      "starts": 29,
+      "points": 1383.0,
+      "salary": 8371274,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-30",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-07",
+      "from": "Cleveland Cavaliers",
+      "team": "Portland Trail Blazers",
+      "trade": "mu1sghjul8ykpvq9",
+      "periods": 20,
+      "starts": 9,
+      "points": 273.75,
+      "salary": 9000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 21,
+      "date": "2022-12-26",
+      "from": "Portland Trail Blazers",
+      "team": "Orlando Magic",
+      "trade": "0jpui8znlc50zbu9",
+      "periods": 13,
+      "starts": 13,
+      "points": 330.5,
+      "salary": 9000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-31",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 18,
+      "points": 565.0,
+      "salary": 1956000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 29,
+      "date": "2024-01-28",
+      "from": "New Orleans Pelicans",
+      "team": "Los Angeles Lakers",
+      "trade": "9f97r5qtlrxnq5ab",
+      "periods": 4,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1956000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-27",
+      "team": "Los Angeles Lakers"
+    }
+  ],
+  "trades": {
+    "masc0nzxks8lf0si": {
+      "date": "2021-08-12",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Orlando Magic",
+          "player_id": "05uii",
+          "player": "Franz Wagner",
+          "label": "Franz Wagner"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Houston Rockets",
+          "player_id": "051ot",
+          "player": "Tyler Herro",
+          "label": "Tyler Herro"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Houston Rockets",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        }
+      ]
+    },
+    "0jpui8znlc50zbu9": {
+      "date": "2022-12-26",
+      "season": "2022-23",
+      "period": 21,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Portland Trail Blazers",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "player_id": "03r7l",
+          "player": "Larry Nance",
+          "label": "Larry Nance"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "03927",
+          "player": "JaMychal Green",
+          "label": "JaMychal Green"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "05ujp",
+          "player": "Brandon Boston",
+          "label": "Brandon Boston"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "0621x",
+          "player": "Jaylin Williams",
+          "label": "Jaylin Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "04t8w",
+          "player": "Kenrich Williams",
+          "label": "Kenrich Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "051pp",
+          "player": "Isaiah Roby",
+          "label": "Isaiah Roby"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2023 round 2 pick (Indiana Pacers)"
+        }
+      ]
+    },
+    "9f97r5qtlrxnq5ab": {
+      "date": "2024-01-28",
+      "season": "2023-24",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "New Orleans Pelicans",
+          "player_id": "06220",
+          "player": "Jaden Hardy",
+          "label": "Jaden Hardy"
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Lakers",
+          "to": "New Orleans Pelicans",
+          "label": "$27 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Lakers",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Lakers",
+          "player_id": "0621v",
+          "player": "Caleb Houstan",
+          "label": "Caleb Houstan"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Lakers",
+          "label": "2024 round 2 pick (Boston Celtics)"
+        }
+      ]
+    },
+    "mu1sghjul8ykpvq9": {
+      "date": "2022-10-07",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "0623f",
+          "player": "Justin Lewis",
+          "label": "Justin Lewis"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Orlando Magic",
+          "label": "2023 round 1 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "budget",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "label": "$15 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "04ewb",
+          "player": "Jonathan Isaac",
+          "label": "Jonathan Isaac"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2024 round 1 pick (Portland Trail Blazers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Cleveland Cavaliers",
+          "label": "2024 round 2 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2023 round 2 pick (Portland Trail Blazers)"
+        }
+      ]
+    },
+    "fg701svckkwr9d15": {
+      "date": "2021-02-08",
+      "season": "2020-21",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Toronto Raptors",
+          "player_id": "02nf8",
+          "player": "Terrence Ross",
+          "label": "Terrence Ross"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Toronto Raptors",
+          "label": "2021 round 1 pick (Orlando Magic)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Orlando Magic",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Orlando Magic",
+          "player_id": "03927",
+          "player": "JaMychal Green",
+          "label": "JaMychal Green"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Orlando Magic",
+          "label": "2021 round 2 pick (Toronto Raptors)"
+        }
+      ]
+    }
+  }
 }

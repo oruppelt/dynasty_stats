@@ -97,5 +97,102 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-12",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 22,
+      "starts": 7,
+      "points": 54.75,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 23,
+      "date": "2020-01-05",
+      "from": "Cleveland Cavaliers",
+      "team": "Los Angeles Clippers",
+      "trade": "20hjof7bk4ylgm07",
+      "periods": 10,
+      "starts": 2,
+      "points": 8.0,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 9,
+      "date": "2021-01-18",
+      "team": "Boston Celtics",
+      "bid": 16.0,
+      "periods": 12,
+      "starts": 3,
+      "points": 109.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 21,
+      "date": "2021-03-01",
+      "team": "Boston Celtics"
+    }
+  ],
+  "trades": {
+    "20hjof7bk4ylgm07": {
+      "date": "2020-01-05",
+      "season": "2019-20",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Los Angeles Clippers",
+          "player_id": "01uz6",
+          "player": "Ed Davis",
+          "label": "Ed Davis"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Los Angeles Clippers",
+          "player_id": "03lgk",
+          "player": "Allonzo Trier",
+          "label": "Allonzo Trier"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0015b",
+          "player": "Kyle Lowry",
+          "label": "Kyle Lowry"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "01enn",
+          "player": "Blake Griffin",
+          "label": "Blake Griffin"
+        }
+      ]
+    }
+  }
 }

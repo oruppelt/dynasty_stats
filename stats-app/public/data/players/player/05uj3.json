@@ -153,5 +153,226 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Sacramento Kings",
+      "round": 2,
+      "pick": 38,
+      "periods": 33,
+      "starts": 28,
+      "points": 399.75,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-24",
+      "from": "Sacramento Kings",
+      "team": "Minnesota Timberwolves",
+      "trade": "ir3ij1a2l4ss2b1p",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-30",
+      "from": "Minnesota Timberwolves",
+      "team": "Golden State Warriors",
+      "trade": "kshs9fh7l67nk2rk",
+      "periods": 65,
+      "starts": 12,
+      "points": 528.25,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-01",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1425000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "from": "Golden State Warriors",
+      "team": "San Antonio Spurs",
+      "trade": "kh16sd0mm3d44kz5",
+      "periods": 27,
+      "starts": 15,
+      "points": 519.25,
+      "salary": 1425000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 2,
+      "points": 87.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-14",
+      "team": "Toronto Raptors",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 334.75,
+      "salary": 9500000,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "kh16sd0mm3d44kz5": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "player_id": "049kc",
+          "player": "Malik Monk",
+          "label": "Malik Monk"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "player_id": "05uj3",
+          "player": "Day'Ron Sharpe",
+          "label": "Day'Ron Sharpe"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "label": "2026 round 1 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Golden State Warriors",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart"
+        }
+      ]
+    },
+    "ir3ij1a2l4ss2b1p": {
+      "date": "2022-06-24",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Sacramento Kings",
+          "player_id": "05qsl",
+          "player": "Patrick Williams",
+          "label": "Patrick Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Sacramento Kings",
+          "player_id": "05uil",
+          "player": "James Bouknight",
+          "label": "James Bouknight"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uj3",
+          "player": "Day'Ron Sharpe",
+          "label": "Day'Ron Sharpe"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Minnesota Timberwolves",
+          "label": "2023 round 1 pick (Portland Trail Blazers)"
+        }
+      ]
+    },
+    "kshs9fh7l67nk2rk": {
+      "date": "2022-07-30",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "042nf",
+          "player": "Caris LeVert",
+          "label": "Caris LeVert"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "05uj3",
+          "player": "Day'Ron Sharpe",
+          "label": "Day'Ron Sharpe"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "label": "2023 round 2 pick (Minnesota Timberwolves)"
+        }
+      ]
+    }
+  }
 }

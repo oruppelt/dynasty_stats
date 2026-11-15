@@ -195,5 +195,489 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-23",
+      "team": "Boston Celtics",
+      "round": 1,
+      "pick": 23,
+      "periods": 29,
+      "starts": 20,
+      "points": 642.25,
+      "salary": 1529568,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-03",
+      "from": "Boston Celtics",
+      "team": "Dallas Mavericks",
+      "trade": "i9p4sfzckpgpjxct",
+      "periods": 62,
+      "starts": 35,
+      "points": 526.25,
+      "salary": 1529568,
+      "contract": "R12"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "from": "Dallas Mavericks",
+      "team": "Portland Trail Blazers",
+      "trade": "dfguyn9jldey013k",
+      "periods": 4,
+      "starts": 4,
+      "points": 173.25,
+      "salary": 1530000,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 18,
+      "points": 653.0,
+      "salary": 2250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 29,
+      "date": "2024-01-29",
+      "from": "Portland Trail Blazers",
+      "team": "Houston Rockets",
+      "trade": "rl38owphlrxywdov",
+      "periods": 4,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-26",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Denver Nuggets",
+      "bid": 0.0,
+      "periods": 27,
+      "starts": 7,
+      "points": 50.75,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-23",
+      "from": "Denver Nuggets",
+      "team": "Miami Heat",
+      "trade": "qqtxc5wbm65k1oug",
+      "periods": 6,
+      "starts": 4,
+      "points": -4.5,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 2,
+      "date": "2025-10-24",
+      "team": "Chicago Bulls",
+      "bid": 10.0,
+      "periods": 26,
+      "starts": 1,
+      "points": 9.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Chicago Bulls",
+      "team": "Utah Jazz",
+      "trade": "llmo9x2dmklfs52y",
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-20",
+      "team": "Utah Jazz"
+    }
+  ],
+  "trades": {
+    "dfguyn9jldey013k": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Dallas Mavericks",
+          "player_id": "04jw4",
+          "player": "Maxi Kleber",
+          "label": "Maxi Kleber"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)"
+        }
+      ]
+    },
+    "i9p4sfzckpgpjxct": {
+      "date": "2021-06-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Dallas Mavericks",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Dallas Mavericks",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Dallas Mavericks",
+          "label": "2022 round 2 pick (Sacramento Kings)"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Boston Celtics",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris"
+        }
+      ]
+    },
+    "llmo9x2dmklfs52y": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "031lx",
+          "player": "CJ McCollum",
+          "label": "CJ McCollum"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Dallas Mavericks)"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsj",
+          "player": "Bruce Brown",
+          "label": "Bruce Brown"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Utah Jazz",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtq",
+          "player": "Tre Jones",
+          "label": "Tre Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Chicago Bulls",
+          "player_id": "02nf7",
+          "player": "Harrison Barnes",
+          "label": "Harrison Barnes"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06ca5",
+          "player": "Kris Murray",
+          "label": "Kris Murray"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06cbz",
+          "player": "Brice Sensabaugh",
+          "label": "Brice Sensabaugh"
+        }
+      ]
+    },
+    "rl38owphlrxywdov": {
+      "date": "2024-01-29",
+      "season": "2023-24",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "05uim",
+          "player": "Joshua Primo",
+          "label": "Joshua Primo"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Portland Trail Blazers",
+          "player_id": "001bb",
+          "player": "Jorge Garbajosa",
+          "label": "Jorge Garbajosa"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "03r7r",
+          "player": "Richaun Holmes",
+          "label": "Richaun Holmes"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Portland Trail Blazers",
+          "player_id": "0623g",
+          "player": "Michael Foster",
+          "label": "Michael Foster"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Portland Trail Blazers",
+          "label": "2025 round 2 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "label": "2025 round 2 pick (Houston Rockets)"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Houston Rockets",
+          "player_id": "031m9",
+          "player": "Mason Plumlee",
+          "label": "Mason Plumlee"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Houston Rockets",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "budget",
+          "from": "Portland Trail Blazers",
+          "to": "Houston Rockets",
+          "label": "$7 budget"
+        }
+      ]
+    },
+    "qqtxc5wbm65k1oug": {
+      "date": "2025-01-23",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "05qu1",
+          "player": "James Wiseman",
+          "label": "James Wiseman"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "04qru",
+          "player": "Donte DiVincenzo",
+          "label": "Donte DiVincenzo"
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Denver Nuggets)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "06cef",
+          "player": "Oscar Tshiebwe",
+          "label": "Oscar Tshiebwe"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "06ceg",
+          "player": "Ricky Council",
+          "label": "Ricky Council"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "label": "2025 round 2 pick (Indiana Pacers)"
+        }
+      ]
+    }
+  }
 }

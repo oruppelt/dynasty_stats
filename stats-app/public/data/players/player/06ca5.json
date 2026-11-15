@@ -111,5 +111,179 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-27",
+      "team": "Portland Trail Blazers",
+      "round": 1,
+      "pick": 23,
+      "periods": 65,
+      "starts": 9,
+      "points": 158.0,
+      "salary": 1530000,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-29",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 5,
+      "date": "2025-11-03",
+      "team": "Utah Jazz",
+      "bid": 27.0,
+      "periods": 23,
+      "starts": 10,
+      "points": 287.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Utah Jazz",
+      "team": "Atlanta Hawks",
+      "trade": "llmo9x2dmklfs52y",
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-21",
+      "team": "Atlanta Hawks"
+    }
+  ],
+  "trades": {
+    "llmo9x2dmklfs52y": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "031lx",
+          "player": "CJ McCollum",
+          "label": "CJ McCollum"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Dallas Mavericks)"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsj",
+          "player": "Bruce Brown",
+          "label": "Bruce Brown"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Utah Jazz",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtq",
+          "player": "Tre Jones",
+          "label": "Tre Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Chicago Bulls",
+          "player_id": "02nf7",
+          "player": "Harrison Barnes",
+          "label": "Harrison Barnes"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06ca5",
+          "player": "Kris Murray",
+          "label": "Kris Murray"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06cbz",
+          "player": "Brice Sensabaugh",
+          "label": "Brice Sensabaugh"
+        }
+      ]
+    }
+  }
 }

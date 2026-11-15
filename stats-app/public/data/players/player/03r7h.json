@@ -153,5 +153,180 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-13",
+      "team": "Denver Nuggets",
+      "bid": 0.0,
+      "periods": 61,
+      "starts": 54,
+      "points": 2495.5,
+      "salary": 11750000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Denver Nuggets"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-15",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 29,
+      "points": 818.5,
+      "salary": 3500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-28",
+      "team": "Houston Rockets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 10,
+      "points": 402.25,
+      "salary": 1750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-23",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 19,
+      "points": 542.75,
+      "salary": 3830000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-18",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 6,
+      "points": 45.0,
+      "salary": 3500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "from": "Minnesota Timberwolves",
+      "team": "San Antonio Spurs",
+      "trade": "aqapwojpm3cvd21d",
+      "periods": 27,
+      "starts": 26,
+      "points": 288.75,
+      "salary": 3500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "San Antonio Spurs"
+    }
+  ],
+  "trades": {
+    "aqapwojpm3cvd21d": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "player_id": "03r7h",
+          "player": "Delon Wright",
+          "label": "Delon Wright"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "player_id": "051p0",
+          "player": "Matisse Thybulle",
+          "label": "Matisse Thybulle"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 1 pick (Minnesota Timberwolves)"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uul",
+          "player": "Jose Alvarado",
+          "label": "Jose Alvarado"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "059g0",
+          "player": "Amir Coffey",
+          "label": "Amir Coffey"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "budget",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "label": "$23 budget"
+        }
+      ]
+    }
+  }
 }

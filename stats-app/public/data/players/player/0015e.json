@@ -181,5 +181,238 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Utah Jazz",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 19,
+      "points": 767.0,
+      "salary": 22824486,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 24,
+      "points": 1419.5,
+      "salary": 12000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-16",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 28,
+      "points": 1531.75,
+      "salary": 11470000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-02",
+      "from": "Golden State Warriors",
+      "team": "Philadelphia 76ers",
+      "trade": "4bd21z2dl6cb0vvy",
+      "periods": 25,
+      "starts": 24,
+      "points": 998.75,
+      "salary": 11470000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 26,
+      "date": "2023-01-13",
+      "from": "Philadelphia 76ers",
+      "team": "Milwaukee Bucks",
+      "trade": "mh0uxrnhlcug9vty",
+      "periods": 40,
+      "starts": 36,
+      "points": 1910.75,
+      "salary": 11470000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-26",
+      "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 29,
+      "points": 1187.5,
+      "salary": 8000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-06",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 1,
+      "starts": 1,
+      "points": 7.75,
+      "salary": 4250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 2,
+      "date": "2025-10-23",
+      "from": "Portland Trail Blazers",
+      "team": "Indiana Pacers",
+      "trade": "9ki57qcomh3docdw",
+      "periods": 32,
+      "starts": 14,
+      "points": 374.25,
+      "salary": 4250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-10",
+      "team": "Indiana Pacers"
+    }
+  ],
+  "trades": {
+    "4bd21z2dl6cb0vvy": {
+      "date": "2022-08-02",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "0015e",
+          "player": "Mike Conley",
+          "label": "Mike Conley"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "label": "2024 round 1 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio"
+        }
+      ]
+    },
+    "9ki57qcomh3docdw": {
+      "date": "2025-10-23",
+      "season": "2025-26",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "042nw",
+          "player": "Malcolm Brogdon",
+          "label": "Malcolm Brogdon"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2027 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "0015e",
+          "player": "Mike Conley",
+          "label": "Mike Conley"
+        }
+      ]
+    },
+    "mh0uxrnhlcug9vty": {
+      "date": "2023-01-13",
+      "season": "2022-23",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04ewr",
+          "player": "Kyle Kuzma",
+          "label": "Kyle Kuzma"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Milwaukee Bucks",
+          "player_id": "0015e",
+          "player": "Mike Conley",
+          "label": "Mike Conley"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Milwaukee Bucks",
+          "label": "2024 round 1 pick (Golden State Warriors)"
+        }
+      ]
+    }
+  }
 }

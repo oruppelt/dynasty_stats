@@ -125,5 +125,92 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-27",
+      "team": "Portland Trail Blazers",
+      "round": 1,
+      "pick": 18,
+      "periods": 98,
+      "starts": 86,
+      "points": 5111.25,
+      "salary": 1886000,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-29",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 17,
+      "points": 884.25,
+      "salary": 27000000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "from": "Boston Celtics",
+      "team": "Portland Trail Blazers",
+      "trade": "mgqvc743msvz4j56",
+      "periods": 7,
+      "starts": 2,
+      "points": 90.5,
+      "salary": 27000000,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "mgqvc743msvz4j56": {
+      "date": "2026-08-16",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Portland Trail Blazers",
+          "player_id": "0621b",
+          "player": "Jalen Williams",
+          "label": "Jalen Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "06214",
+          "player": "Jaden Ivey",
+          "label": "Jaden Ivey"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "label": "2027 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "label": "2027 round 1 pick (Utah Jazz)"
+        }
+      ]
+    }
+  }
 }

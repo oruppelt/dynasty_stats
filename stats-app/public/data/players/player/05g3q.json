@@ -153,5 +153,190 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 8,
+      "date": "2021-01-15",
+      "team": "Memphis Grizzlies",
+      "bid": 1.0,
+      "periods": 1,
+      "starts": 1,
+      "points": 5.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 9,
+      "date": "2021-01-18",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-03",
+      "team": "Golden State Warriors",
+      "bid": 1.0,
+      "periods": 20,
+      "starts": 14,
+      "points": 683.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-17",
+      "team": "San Antonio Spurs",
+      "bid": 50.0,
+      "periods": 33,
+      "starts": 24,
+      "points": 625.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-27",
+      "team": "San Antonio Spurs",
+      "bid": 0.0,
+      "periods": 18,
+      "starts": 11,
+      "points": 80.75,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-24",
+      "from": "San Antonio Spurs",
+      "team": "Toronto Raptors",
+      "trade": "u2tkp72llqjb30p8",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-24",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "team": "Boston Celtics",
+      "bid": 4.0,
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-29",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 31,
+      "date": "2025-02-03",
+      "team": "Chicago Bulls",
+      "bid": 2.0,
+      "periods": 3,
+      "starts": 3,
+      "points": 100.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-29",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-10-20",
+      "team": "Minnesota Timberwolves",
+      "bid": 22.0,
+      "periods": 3,
+      "starts": 2,
+      "points": 39.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "team": "Minnesota Timberwolves"
+    }
+  ],
+  "trades": {
+    "u2tkp72llqjb30p8": {
+      "date": "2023-12-24",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "player_id": "05g3q",
+          "player": "Gabe Vincent",
+          "label": "Gabe Vincent"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "label": "2024 round 2 pick (Minnesota Timberwolves)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "San Antonio Spurs",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn"
+        }
+      ]
+    }
+  }
 }

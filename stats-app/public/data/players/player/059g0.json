@@ -167,5 +167,243 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 11,
+      "date": "2021-11-22",
+      "team": "Oklahoma City Thunder",
+      "bid": 1.0,
+      "periods": 3,
+      "starts": 2,
+      "points": 21.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-03",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 23,
+      "date": "2022-01-03",
+      "team": "Detroit Pistons",
+      "bid": 5.0,
+      "periods": 5,
+      "starts": 5,
+      "points": 296.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-20",
+      "from": "Detroit Pistons",
+      "team": "Phoenix Suns",
+      "trade": "5w9td9m5kynerwmb",
+      "periods": 6,
+      "starts": 6,
+      "points": 259.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-27",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 16,
+      "starts": 3,
+      "points": 31.5,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 17,
+      "date": "2022-12-12",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 31,
+      "date": "2024-02-05",
+      "team": "Oklahoma City Thunder",
+      "bid": 15.0,
+      "periods": 2,
+      "starts": 2,
+      "points": 71.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "San Antonio Spurs",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 6,
+      "points": 170.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "from": "San Antonio Spurs",
+      "team": "Minnesota Timberwolves",
+      "trade": "aqapwojpm3cvd21d",
+      "periods": 27,
+      "starts": 11,
+      "points": 525.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 9,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 10,
+      "date": "2025-11-21",
+      "team": "Minnesota Timberwolves"
+    }
+  ],
+  "trades": {
+    "aqapwojpm3cvd21d": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "player_id": "03r7h",
+          "player": "Delon Wright",
+          "label": "Delon Wright"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "player_id": "051p0",
+          "player": "Matisse Thybulle",
+          "label": "Matisse Thybulle"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 1 pick (Minnesota Timberwolves)"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uul",
+          "player": "Jose Alvarado",
+          "label": "Jose Alvarado"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "059g0",
+          "player": "Amir Coffey",
+          "label": "Amir Coffey"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "budget",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "label": "$23 budget"
+        }
+      ]
+    },
+    "5w9td9m5kynerwmb": {
+      "date": "2022-01-20",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Phoenix Suns",
+          "player_id": "059g0",
+          "player": "Amir Coffey",
+          "label": "Amir Coffey"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Detroit Pistons",
+          "player_id": "031mc",
+          "player": "Reggie Bullock",
+          "label": "Reggie Bullock"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Detroit Pistons",
+          "label": "2023 round 1 pick (Boston Celtics)"
+        }
+      ]
+    }
+  }
 }

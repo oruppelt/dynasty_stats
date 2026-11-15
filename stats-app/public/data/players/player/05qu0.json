@@ -181,5 +181,215 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-24",
+      "team": "Golden State Warriors",
+      "round": 2,
+      "pick": 46,
+      "periods": 79,
+      "starts": 53,
+      "points": 2078.25,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-16",
+      "from": "Golden State Warriors",
+      "team": "Los Angeles Lakers",
+      "trade": "x216qg6wlbqcxmyd",
+      "periods": 16,
+      "starts": 16,
+      "points": 848.75,
+      "salary": 1000000,
+      "contract": "R21"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Toronto Raptors",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 26,
+      "points": 848.75,
+      "salary": 10000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-22",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 3,
+      "starts": 3,
+      "points": 75.75,
+      "salary": 2250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 4,
+      "date": "2024-11-01",
+      "from": "Miami Heat",
+      "team": "Memphis Grizzlies",
+      "trade": "pfyg2x59m2yetksi",
+      "periods": 30,
+      "starts": 28,
+      "points": 1636.25,
+      "salary": 2250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-27",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 40,
+      "starts": 38,
+      "points": 2114.25,
+      "salary": 10333333,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "x216qg6wlbqcxmyd": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "05qu0",
+          "player": "Jaden McDaniels",
+          "label": "Jaden McDaniels"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qse",
+          "player": "Gary Trent",
+          "label": "Gary Trent"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "05uj2",
+          "player": "Jaden Springer",
+          "label": "Jaden Springer"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "0621s",
+          "player": "TyTy Washington",
+          "label": "TyTy Washington"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "label": "2023 round 1 pick (Golden State Warriors)"
+        }
+      ]
+    },
+    "pfyg2x59m2yetksi": {
+      "date": "2024-11-01",
+      "season": "2024-25",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "player_id": "06cp4",
+          "player": "Craig Porter",
+          "label": "Craig Porter"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "player_id": "02ng3",
+          "player": "Khris Middleton",
+          "label": "Khris Middleton"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick (Phoenix Suns)"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick (Miami Heat)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qu0",
+          "player": "Jaden McDaniels",
+          "label": "Jaden McDaniels"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qsq",
+          "player": "Tyrese Maxey",
+          "label": "Tyrese Maxey"
+        }
+      ]
+    }
+  }
 }

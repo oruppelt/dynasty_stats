@@ -63,5 +63,74 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 5,
+      "date": "2019-11-04",
+      "team": "Sacramento Kings",
+      "bid": 20.0,
+      "periods": 9,
+      "starts": 3,
+      "points": 47.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 14,
+      "date": "2019-12-06",
+      "from": "Sacramento Kings",
+      "team": "New York Knicks",
+      "trade": "ycc0kyhxk3u6ztuk",
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 15,
+      "date": "2019-12-07",
+      "team": "New York Knicks"
+    }
+  ],
+  "trades": {
+    "ycc0kyhxk3u6ztuk": {
+      "date": "2019-12-06",
+      "season": "2019-20",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Sacramento Kings",
+          "player_id": "01eoh",
+          "player": "Tyreke Evans",
+          "label": "Tyreke Evans"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "New York Knicks",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "New York Knicks",
+          "player_id": "004zh",
+          "player": "Anthony Tolliver",
+          "label": "Anthony Tolliver"
+        }
+      ]
+    }
+  }
 }

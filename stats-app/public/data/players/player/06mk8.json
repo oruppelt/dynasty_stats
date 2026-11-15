@@ -111,5 +111,88 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2024-25",
+      "period": 0,
+      "date": "2024-06-28",
+      "team": "Dallas Mavericks",
+      "round": 1,
+      "pick": 18,
+      "periods": 60,
+      "starts": 15,
+      "points": 686.0,
+      "salary": 1886000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Dallas Mavericks",
+      "team": "Utah Jazz",
+      "trade": "v5ras31lmkqs89nd",
+      "periods": 13,
+      "starts": 12,
+      "points": 439.25,
+      "salary": 1886000,
+      "contract": "R12"
+    }
+  ],
+  "trades": {
+    "v5ras31lmkqs89nd": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Utah Jazz",
+          "player_id": "06mk8",
+          "player": "Jared McCain",
+          "label": "Jared McCain"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Utah Jazz",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Dallas Mavericks",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Dallas Mavericks",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Dallas Mavericks",
+          "label": "2026 round 1 pick (Dallas Mavericks)"
+        }
+      ]
+    }
+  }
 }

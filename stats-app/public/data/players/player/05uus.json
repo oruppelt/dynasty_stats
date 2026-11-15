@@ -153,5 +153,220 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-18",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "from": "Los Angeles Clippers",
+      "team": "Miami Heat",
+      "trade": "vube46epl691vgy8",
+      "periods": 29,
+      "starts": 1,
+      "points": 55.75,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-26",
+      "from": "Miami Heat",
+      "team": "Utah Jazz",
+      "trade": "tbw260rxldbmy6ec",
+      "periods": 36,
+      "starts": 31,
+      "points": 1809.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 66,
+      "starts": 52,
+      "points": 3146.75,
+      "salary": 13619048,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 6,
+      "points": 436.5,
+      "salary": 26492000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "tbw260rxldbmy6ec": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05qtm",
+          "player": "Precious Achiuwa",
+          "label": "Precious Achiuwa"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05uus",
+          "player": "Austin Reaves",
+          "label": "Austin Reaves"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05ujg",
+          "player": "Isaiah Livers",
+          "label": "Isaiah Livers"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 1 pick (San Antonio Spurs)"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 2 pick (Washington Wizards)"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (Miami Heat)"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 1 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05qsq",
+          "player": "Tyrese Maxey",
+          "label": "Tyrese Maxey"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05ujr",
+          "player": "Charles Bassey",
+          "label": "Charles Bassey"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05qud",
+          "player": "Aleksej Pokusevski",
+          "label": "Aleksej Pokusevski"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "03ad0",
+          "player": "Tyus Jones",
+          "label": "Tyus Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "051pw",
+          "player": "Jalen McDaniels",
+          "label": "Jalen McDaniels"
+        }
+      ]
+    },
+    "vube46epl691vgy8": {
+      "date": "2022-07-31",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Miami Heat",
+          "player_id": "05uus",
+          "player": "Austin Reaves",
+          "label": "Austin Reaves"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Los Angeles Clippers",
+          "player_id": "05qu1",
+          "player": "James Wiseman",
+          "label": "James Wiseman"
+        }
+      ]
+    }
+  }
 }

@@ -209,5 +209,311 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-23",
+      "team": "Minnesota Timberwolves",
+      "round": 1,
+      "pick": 10,
+      "periods": 22,
+      "starts": 10,
+      "points": 72.75,
+      "salary": 2842368,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 24,
+      "date": "2021-03-13",
+      "from": "Minnesota Timberwolves",
+      "team": "Washington Wizards",
+      "trade": "54y895i8km7uoi1b",
+      "periods": 45,
+      "starts": 14,
+      "points": 209.5,
+      "salary": 2842368,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 6,
+      "date": "2022-11-02",
+      "from": "Washington Wizards",
+      "team": "Boston Celtics",
+      "trade": "apzneezol9yatn6q",
+      "periods": 28,
+      "starts": 16,
+      "points": 634.5,
+      "salary": 2842000,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-23",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 17,
+      "starts": 13,
+      "points": 619.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 18,
+      "date": "2023-12-21",
+      "from": "Atlanta Hawks",
+      "team": "Memphis Grizzlies",
+      "trade": "gf9smt20lqf07q97",
+      "periods": 8,
+      "starts": 8,
+      "points": 312.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 26,
+      "date": "2024-01-18",
+      "from": "Memphis Grizzlies",
+      "team": "Detroit Pistons",
+      "trade": "zd8dfww5lrfwowq2",
+      "periods": 7,
+      "starts": 6,
+      "points": 404.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Detroit Pistons"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 73,
+      "starts": 38,
+      "points": 1377.0,
+      "salary": 10333333,
+      "contract": "REG3"
+    },
+    {
+      "kind": "renamed",
+      "date": "2025-06-27",
+      "from": "Los Angeles Clippers",
+      "team": "Los Angeles Lakers"
+    }
+  ],
+  "trades": {
+    "zd8dfww5lrfwowq2": {
+      "date": "2024-01-18",
+      "season": "2023-24",
+      "period": 25,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "label": "2025 round 1 pick (Miami Heat)"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "player_id": "051pg",
+          "player": "Cody Martin",
+          "label": "Cody Martin"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "player_id": "05qt4",
+          "player": "Aaron Nesmith",
+          "label": "Aaron Nesmith"
+        }
+      ]
+    },
+    "54y895i8km7uoi1b": {
+      "date": "2021-03-13",
+      "season": "2020-21",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "03r7z",
+          "player": "Norman Powell",
+          "label": "Norman Powell"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "05qt4",
+          "player": "Aaron Nesmith",
+          "label": "Aaron Nesmith"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "049kc",
+          "player": "Malik Monk",
+          "label": "Malik Monk"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "042n8",
+          "player": "Taurean Prince",
+          "label": "Taurean Prince"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "005l3",
+          "player": "DeAndre Jordan",
+          "label": "DeAndre Jordan"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05qsl",
+          "player": "Patrick Williams",
+          "label": "Patrick Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "005kf",
+          "player": "Eric Gordon",
+          "label": "Eric Gordon"
+        }
+      ]
+    },
+    "gf9smt20lqf07q97": {
+      "date": "2023-12-21",
+      "season": "2023-24",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qt4",
+          "player": "Aaron Nesmith",
+          "label": "Aaron Nesmith"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Memphis Grizzlies",
+          "player_id": "05uij",
+          "player": "Davion Mitchell",
+          "label": "Davion Mitchell"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "budget",
+          "from": "Atlanta Hawks",
+          "to": "Memphis Grizzlies",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7e",
+          "player": "Cameron Payne",
+          "label": "Cameron Payne"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 1 pick (Chicago Bulls)"
+        }
+      ]
+    },
+    "apzneezol9yatn6q": {
+      "date": "2022-11-02",
+      "season": "2022-23",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "label": "2024 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr."
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "05qt4",
+          "player": "Aaron Nesmith",
+          "label": "Aaron Nesmith"
+        }
+      ]
+    }
+  }
 }

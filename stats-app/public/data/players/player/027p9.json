@@ -167,5 +167,205 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "San Antonio Spurs",
+      "before_logs": true,
+      "periods": 27,
+      "starts": 13,
+      "points": 29.75,
+      "salary": 13634782,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 28,
+      "date": "2020-01-23",
+      "from": "San Antonio Spurs",
+      "team": "Boston Celtics",
+      "trade": "4euzfrmtk5qqusgf",
+      "periods": 5,
+      "starts": 5,
+      "points": 260.75,
+      "salary": 13634782,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-08",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 29,
+      "points": 976.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-15",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 62,
+      "starts": 48,
+      "points": 2020.5,
+      "salary": 7500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-26",
+      "from": "Miami Heat",
+      "team": "Detroit Pistons",
+      "trade": "0cpp4tktldd5fyqm",
+      "periods": 4,
+      "starts": 3,
+      "points": 87.25,
+      "salary": 7500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Detroit Pistons"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "New York Knicks",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 32,
+      "points": 1162.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "New York Knicks"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-31",
+      "team": "New York Knicks",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 22,
+      "points": 249.0,
+      "salary": 1035000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-27",
+      "team": "New York Knicks"
+    }
+  ],
+  "trades": {
+    "0cpp4tktldd5fyqm": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "05ujh",
+          "player": "Greg Brown",
+          "label": "Greg Brown"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "player_id": "027p9",
+          "player": "Reggie Jackson",
+          "label": "Reggie Jackson"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Sacramento Kings)"
+        }
+      ]
+    },
+    "4euzfrmtk5qqusgf": {
+      "date": "2020-01-23",
+      "season": "2019-20",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "player_id": "001bo",
+          "player": "Paul Millsap",
+          "label": "Paul Millsap"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "player_id": "027p9",
+          "player": "Reggie Jackson",
+          "label": "Reggie Jackson"
+        }
+      ]
+    }
+  }
 }

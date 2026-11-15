@@ -181,5 +181,191 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Philadelphia 76ers",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 32,
+      "points": 2337.0,
+      "salary": 5147616,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 54,
+      "starts": 29,
+      "points": 1664.75,
+      "salary": 26600000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 26,
+      "date": "2022-01-13",
+      "from": "Philadelphia 76ers",
+      "team": "Dallas Mavericks",
+      "trade": "9j43e33xkyd0spki",
+      "periods": 73,
+      "starts": 40,
+      "points": 1487.0,
+      "salary": 26600000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Dallas Mavericks"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 22,
+      "points": 656.5,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-27",
+      "from": "New Orleans Pelicans",
+      "team": "Los Angeles Lakers",
+      "trade": "51zk19yvm6f8isac",
+      "periods": 5,
+      "starts": 2,
+      "points": 44.5,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-26",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Houston Rockets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-04",
+      "team": "Houston Rockets"
+    }
+  ],
+  "trades": {
+    "9j43e33xkyd0spki": {
+      "date": "2022-01-13",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04kj6",
+          "player": "Luka Doncic",
+          "label": "Luka Doncic"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Philadelphia 76ers",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Dallas Mavericks",
+          "player_id": "03lg1",
+          "player": "Ben Simmons",
+          "label": "Ben Simmons"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Dallas Mavericks",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        }
+      ]
+    },
+    "51zk19yvm6f8isac": {
+      "date": "2025-01-27",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "New Orleans Pelicans",
+          "player_id": "04qrx",
+          "player": "Josh Okogie",
+          "label": "Josh Okogie"
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Lakers",
+          "to": "New Orleans Pelicans",
+          "label": "$28 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Lakers",
+          "player_id": "03lg1",
+          "player": "Ben Simmons",
+          "label": "Ben Simmons"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Lakers",
+          "label": "2026 round 2 pick (New Orleans Pelicans)"
+        }
+      ]
+    }
+  }
 }

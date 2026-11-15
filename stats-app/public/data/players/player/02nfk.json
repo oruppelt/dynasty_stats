@@ -153,5 +153,250 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Brooklyn Nets",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 32,
+      "points": 1695.25,
+      "salary": 13600000,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Brooklyn Nets"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 62,
+      "starts": 48,
+      "points": 2239.0,
+      "salary": 9000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 12,
+      "points": 202.75,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-25",
+      "from": "Milwaukee Bucks",
+      "team": "Houston Rockets",
+      "trade": "os2ympihlki70543",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-08-05",
+      "from": "Houston Rockets",
+      "team": "Orlando Magic",
+      "trade": "h8uio85olkybsfu9",
+      "periods": 12,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 13,
+      "date": "2023-12-04",
+      "from": "Orlando Magic",
+      "team": "Atlanta Hawks",
+      "trade": "18v4rya5lpr3wy1m",
+      "periods": 16,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 29,
+      "date": "2024-01-29",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 34,
+      "date": "2024-02-16",
+      "team": "New Orleans Pelicans",
+      "bid": 16.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "New Orleans Pelicans"
+    }
+  ],
+  "trades": {
+    "os2ympihlki70543": {
+      "date": "2023-07-25",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Milwaukee Bucks",
+          "player_id": "01uz7",
+          "player": "Gordon Hayward",
+          "label": "Gordon Hayward"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Houston Rockets",
+          "player_id": "02nfk",
+          "player": "Evan Fournier",
+          "label": "Evan Fournier"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    },
+    "h8uio85olkybsfu9": {
+      "date": "2023-08-05",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Orlando Magic",
+          "player_id": "02nfk",
+          "player": "Evan Fournier",
+          "label": "Evan Fournier"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Houston Rockets",
+          "player_id": "05uim",
+          "player": "Joshua Primo",
+          "label": "Joshua Primo"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Houston Rockets",
+          "player_id": "001bb",
+          "player": "Jorge Garbajosa",
+          "label": "Jorge Garbajosa"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Houston Rockets",
+          "player_id": "0623g",
+          "player": "Michael Foster",
+          "label": "Michael Foster"
+        }
+      ]
+    },
+    "18v4rya5lpr3wy1m": {
+      "date": "2023-12-04",
+      "season": "2023-24",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "0621a",
+          "player": "Ousmane Dieng",
+          "label": "Ousmane Dieng"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "05uij",
+          "player": "Davion Mitchell",
+          "label": "Davion Mitchell"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "02nfk",
+          "player": "Evan Fournier",
+          "label": "Evan Fournier"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Memphis Grizzlies)"
+        }
+      ]
+    }
+  }
 }

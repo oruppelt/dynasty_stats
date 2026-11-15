@@ -125,5 +125,80 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-27",
+      "team": "Toronto Raptors",
+      "round": 1,
+      "pick": 20,
+      "periods": 55,
+      "starts": 10,
+      "points": 9.75,
+      "salary": 1729000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 23,
+      "date": "2024-01-08",
+      "from": "Toronto Raptors",
+      "team": "Golden State Warriors",
+      "trade": "genxz7dolr4tnz5g",
+      "periods": 43,
+      "starts": 4,
+      "points": 73.0,
+      "salary": 1729000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 34,
+      "date": "2025-02-20",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 6,
+      "date": "2026-11-06",
+      "team": "Miami Heat",
+      "bid": 8.0,
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    }
+  ],
+  "trades": {
+    "genxz7dolr4tnz5g": {
+      "date": "2024-01-08",
+      "season": "2023-24",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Golden State Warriors",
+          "player_id": "0621h",
+          "player": "Dalen Terry",
+          "label": "Dalen Terry"
+        }
+      ]
+    }
+  }
 }

@@ -125,5 +125,106 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-13",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 22,
+      "starts": 6,
+      "points": 300.0,
+      "salary": 5291005,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 23,
+      "date": "2020-01-05",
+      "from": "Chicago Bulls",
+      "team": "Toronto Raptors",
+      "trade": "zfobl4hpk4z88ws8",
+      "periods": 39,
+      "starts": 30,
+      "points": 1356.75,
+      "salary": 5291005,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-13",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 21,
+      "points": 224.5,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 12,
+      "date": "2024-11-29",
+      "team": "Phoenix Suns",
+      "bid": 16.0,
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 14,
+      "date": "2024-12-06",
+      "team": "Phoenix Suns"
+    }
+  ],
+  "trades": {
+    "zfobl4hpk4z88ws8": {
+      "date": "2020-01-05",
+      "season": "2019-20",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Toronto Raptors",
+          "player_id": "03e6m",
+          "player": "Elfrid Payton",
+          "label": "Elfrid Payton"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Chicago Bulls",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart"
+        }
+      ]
+    }
+  }
 }

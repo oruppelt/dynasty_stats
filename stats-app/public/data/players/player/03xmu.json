@@ -57,5 +57,98 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-11",
+      "team": "Oklahoma City Thunder",
+      "bid": 0.0,
+      "periods": 21,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 22,
+      "date": "2020-01-03",
+      "from": "Oklahoma City Thunder",
+      "team": "Indiana Pacers",
+      "trade": "7eejxd3ck4tqfheg",
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 23,
+      "date": "2020-01-06",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 37,
+      "date": "2020-02-28",
+      "team": "Denver Nuggets",
+      "bid": 13.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Denver Nuggets"
+    }
+  ],
+  "trades": {
+    "7eejxd3ck4tqfheg": {
+      "date": "2020-01-03",
+      "season": "2019-20",
+      "period": 22,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03e7m",
+          "player": "Jordan McRae",
+          "label": "Jordan McRae"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Indiana Pacers",
+          "player_id": "03xmu",
+          "player": "Dragan Bender",
+          "label": "Dragan Bender"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Indiana Pacers",
+          "label": "2020 round 2 pick (Oklahoma City Thunder)"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Indiana Pacers",
+          "label": "2021 round 2 pick (Oklahoma City Thunder)"
+        }
+      ]
+    }
+  }
 }

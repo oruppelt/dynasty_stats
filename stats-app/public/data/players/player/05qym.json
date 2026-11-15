@@ -153,5 +153,268 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 25,
+      "date": "2021-03-15",
+      "team": "Toronto Raptors",
+      "bid": 40.0,
+      "periods": 6,
+      "starts": 6,
+      "points": 232.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-18",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 15,
+      "points": 408.25,
+      "salary": 3250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 4,
+      "date": "2022-10-28",
+      "team": "New Orleans Pelicans",
+      "bid": 11.0,
+      "periods": 30,
+      "starts": 24,
+      "points": 999.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 2,
+      "date": "2023-10-26",
+      "from": "Phoenix Suns",
+      "team": "Atlanta Hawks",
+      "trade": "ymsmlbyhlo7be62s",
+      "periods": 3,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 5,
+      "date": "2023-11-06",
+      "from": "Atlanta Hawks",
+      "team": "Golden State Warriors",
+      "trade": "psa6bq70lomkt3fc",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 5,
+      "date": "2023-11-06",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 5,
+      "date": "2024-11-04",
+      "team": "Chicago Bulls",
+      "bid": 2.0,
+      "periods": 19,
+      "starts": 11,
+      "points": 250.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 24,
+      "date": "2025-01-08",
+      "from": "Chicago Bulls",
+      "team": "Miami Heat",
+      "trade": "6wp31wt3m5mhwc4q",
+      "periods": 10,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "psa6bq70lomkt3fc": {
+      "date": "2023-11-06",
+      "season": "2023-24",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "03r7e",
+          "player": "Cameron Payne",
+          "label": "Cameron Payne"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "player_id": "051p5",
+          "player": "Nassir Little",
+          "label": "Nassir Little"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Houston Rockets)"
+        }
+      ]
+    },
+    "6wp31wt3m5mhwc4q": {
+      "date": "2025-01-08",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Chicago Bulls",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis"
+        }
+      ]
+    },
+    "ymsmlbyhlo7be62s": {
+      "date": "2023-10-26",
+      "season": "2023-24",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "03acy",
+          "player": "Dario Saric",
+          "label": "Dario Saric"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "label": "2025 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin"
+        }
+      ]
+    }
+  }
 }

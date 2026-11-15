@@ -195,5 +195,255 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-24",
+      "team": "Golden State Warriors",
+      "round": 2,
+      "pick": 53,
+      "periods": 56,
+      "starts": 2,
+      "points": 112.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-18",
+      "from": "Golden State Warriors",
+      "team": "Utah Jazz",
+      "trade": "cyx8lvwnkyj62mio",
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "team": "Utah Jazz",
+      "bid": 5.0,
+      "periods": 4,
+      "starts": 2,
+      "points": 33.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 34,
+      "date": "2023-02-10",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 36,
+      "date": "2023-02-17",
+      "team": "Charlotte Hornets",
+      "bid": 11.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 27,
+      "points": 902.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Houston Rockets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 17,
+      "points": 497.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Detroit Pistons",
+      "bid": 0.0,
+      "periods": 27,
+      "starts": 19,
+      "points": 593.25,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Detroit Pistons",
+      "team": "New Orleans Pelicans",
+      "trade": "944khsg8mkqqmbol",
+      "periods": 6,
+      "starts": 4,
+      "points": 249.25,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-22",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 6,
+      "points": 39.25,
+      "salary": 3000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "cyx8lvwnkyj62mio": {
+      "date": "2022-01-18",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Utah Jazz",
+          "player_id": "05qud",
+          "player": "Aleksej Pokusevski",
+          "label": "Aleksej Pokusevski"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Utah Jazz",
+          "player_id": "05qsp",
+          "player": "Isaiah Joe",
+          "label": "Isaiah Joe"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Golden State Warriors",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke"
+        }
+      ]
+    },
+    "944khsg8mkqqmbol": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "player_id": "05uif",
+          "player": "Jalen Suggs",
+          "label": "Jalen Suggs"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "player_id": "03aq2",
+          "player": "Jerami Grant",
+          "label": "Jerami Grant"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "player_id": "05qsp",
+          "player": "Isaiah Joe",
+          "label": "Isaiah Joe"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "New Orleans Pelicans",
+          "label": "2027 round 2 pick (New York Knicks)"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Detroit Pistons",
+          "player_id": "02nf1",
+          "player": "Anthony Davis",
+          "label": "Anthony Davis"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Detroit Pistons",
+          "player_id": "031lz",
+          "player": "Steven Adams",
+          "label": "Steven Adams"
+        }
+      ]
+    }
+  }
 }

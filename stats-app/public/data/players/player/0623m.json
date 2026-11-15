@@ -167,5 +167,255 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 16,
+      "date": "2023-12-15",
+      "team": "Denver Nuggets",
+      "bid": 8.0,
+      "periods": 9,
+      "starts": 2,
+      "points": 1.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 25,
+      "date": "2024-01-15",
+      "team": "Denver Nuggets"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 44,
+      "date": "2024-03-25",
+      "team": "Sacramento Kings",
+      "bid": 1.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-05-10",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 20,
+      "starts": 12,
+      "points": 389.25,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 21,
+      "date": "2024-12-30",
+      "from": "New Orleans Pelicans",
+      "team": "Miami Heat",
+      "trade": "d6sg7z0mm59sukx3",
+      "periods": 3,
+      "starts": 3,
+      "points": 184.25,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 24,
+      "date": "2025-01-08",
+      "from": "Miami Heat",
+      "team": "Chicago Bulls",
+      "trade": "6wp31wt3m5mhwc4q",
+      "periods": 10,
+      "starts": 10,
+      "points": 509.5,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-29",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "San Antonio Spurs",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 21,
+      "points": 534.25,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "San Antonio Spurs",
+      "team": "Boston Celtics",
+      "trade": "ajis8ve4mkv3b33w",
+      "periods": 5,
+      "starts": 3,
+      "points": 132.0,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-04",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-13",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 6,
+      "points": 168.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "ajis8ve4mkv3b33w": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis"
+        }
+      ]
+    },
+    "6wp31wt3m5mhwc4q": {
+      "date": "2025-01-08",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Chicago Bulls",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis"
+        }
+      ]
+    },
+    "d6sg7z0mm59sukx3": {
+      "date": "2024-12-30",
+      "season": "2024-25",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "New Orleans Pelicans",
+          "player_id": "027oo",
+          "player": "Jonas Valanciunas",
+          "label": "Jonas Valanciunas"
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "New Orleans Pelicans",
+          "label": "$45 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "06ccw",
+          "player": "Jordan Miller",
+          "label": "Jordan Miller"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (New Orleans Pelicans)"
+        }
+      ]
+    }
+  }
 }

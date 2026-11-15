@@ -111,5 +111,82 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2024-25",
+      "period": 0,
+      "date": "2024-06-29",
+      "team": "Oklahoma City Thunder",
+      "round": 2,
+      "pick": 46,
+      "periods": 18,
+      "starts": 6,
+      "points": 97.5,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 19,
+      "date": "2024-12-23",
+      "from": "Oklahoma City Thunder",
+      "team": "Cleveland Cavaliers",
+      "trade": "f545zgb6m50zzjc9",
+      "periods": 55,
+      "starts": 27,
+      "points": 827.0,
+      "salary": 1000000,
+      "contract": "R23"
+    }
+  ],
+  "trades": {
+    "f545zgb6m50zzjc9": {
+      "date": "2024-12-23",
+      "season": "2024-25",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03e6s",
+          "player": "Clint Capela",
+          "label": "Clint Capela"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03nwn",
+          "player": "Bobby Portis",
+          "label": "Bobby Portis"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06mlq",
+          "player": "Pelle Larsson",
+          "label": "Pelle Larsson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "player_id": "02xg9",
+          "player": "Rudy Gobert",
+          "label": "Rudy Gobert"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "label": "2025 round 1 pick (Oklahoma City Thunder)"
+        }
+      ]
+    }
+  }
 }

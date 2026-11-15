@@ -97,5 +97,98 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 7,
+      "date": "2023-11-13",
+      "team": "Oklahoma City Thunder",
+      "bid": 4.0,
+      "periods": 17,
+      "starts": 1,
+      "points": 3.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 24,
+      "date": "2024-01-12",
+      "from": "Oklahoma City Thunder",
+      "team": "Utah Jazz",
+      "trade": "ihb5ule4lraiqw2b",
+      "periods": 9,
+      "starts": 6,
+      "points": 220.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-22",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-01",
+      "team": "Brooklyn Nets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-06",
+      "team": "Brooklyn Nets"
+    }
+  ],
+  "trades": {
+    "ihb5ule4lraiqw2b": {
+      "date": "2024-01-12",
+      "season": "2023-24",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "player_id": "06gix",
+          "player": "Duop Reath",
+          "label": "Duop Reath"
+        },
+        {
+          "kind": "budget",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "player_id": "05qtu",
+          "player": "Skylar Mays",
+          "label": "Skylar Mays"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 2 pick (Utah Jazz)"
+        }
+      ]
+    }
+  }
 }

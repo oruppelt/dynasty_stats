@@ -83,5 +83,64 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 11,
+      "date": "2025-11-24",
+      "team": "Toronto Raptors",
+      "bid": 3.0,
+      "periods": 18,
+      "starts": 17,
+      "points": 642.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "Toronto Raptors",
+      "team": "Oklahoma City Thunder",
+      "trade": "lam8ncmimkuwcqpi",
+      "periods": 5,
+      "starts": 2,
+      "points": 89.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 43,
+      "date": "2026-03-23",
+      "team": "Oklahoma City Thunder"
+    }
+  ],
+  "trades": {
+    "lam8ncmimkuwcqpi": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2026 round 2 pick (Charlotte Hornets)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06vy3",
+          "player": "Caleb Love",
+          "label": "Caleb Love"
+        }
+      ]
+    }
+  }
 }

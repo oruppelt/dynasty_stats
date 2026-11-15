@@ -18,5 +18,113 @@
       "paid": 1000000
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2019-20",
+      "period": 0,
+      "date": "2019-06-25",
+      "team": "Atlanta Hawks",
+      "round": 2,
+      "pick": 60,
+      "periods": 32,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "from": "Atlanta Hawks",
+      "team": "Cleveland Cavaliers",
+      "trade": "9kgilzvrki9xyzut",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-22",
+      "team": "Cleveland Cavaliers"
+    }
+  ],
+  "trades": {
+    "9kgilzvrki9xyzut": {
+      "date": "2020-12-04",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "042ni",
+          "player": "Ante Zizic",
+          "label": "Ante Zizic"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "051q4",
+          "player": "Vanja Marinkovic",
+          "label": "Vanja Marinkovic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 1 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Atlanta Hawks",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Atlanta Hawks",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 1 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Atlanta Hawks",
+          "label": "2021 round 1 pick (Golden State Warriors)"
+        }
+      ]
+    }
+  }
 }

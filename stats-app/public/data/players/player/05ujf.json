@@ -46,5 +46,73 @@
       "paid": 333333
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Brooklyn Nets",
+      "round": 2,
+      "pick": 40,
+      "periods": 55,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 23,
+      "date": "2023-01-02",
+      "from": "Brooklyn Nets",
+      "team": "Golden State Warriors",
+      "trade": "nm5ofq8elceqqeug",
+      "periods": 11,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Golden State Warriors"
+    }
+  ],
+  "trades": {
+    "nm5ofq8elceqqeug": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Brooklyn Nets",
+          "to": "Golden State Warriors",
+          "player_id": "05ujf",
+          "player": "Joe Wieskamp",
+          "label": "Joe Wieskamp"
+        },
+        {
+          "kind": "pick",
+          "from": "Brooklyn Nets",
+          "to": "Golden State Warriors",
+          "label": "2023 round 2 pick (Brooklyn Nets)"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Brooklyn Nets",
+          "player_id": "031mc",
+          "player": "Reggie Bullock",
+          "label": "Reggie Bullock"
+        }
+      ]
+    }
+  }
 }

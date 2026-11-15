@@ -39,5 +39,94 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 2,
+      "points": 7.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-10",
+      "from": "Utah Jazz",
+      "team": "Portland Trail Blazers",
+      "trade": "v3wccgv0mhsxznc0",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-10",
+      "team": "Portland Trail Blazers"
+    }
+  ],
+  "trades": {
+    "v3wccgv0mhsxznc0": {
+      "date": "2025-11-10",
+      "season": "2025-26",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Utah Jazz",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "player_id": "04k0q",
+          "player": "Nigel Hayes-Davis",
+          "label": "Nigel Hayes-Davis"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "label": "2027 round 1 pick (Utah Jazz)"
+        }
+      ]
+    }
+  }
 }

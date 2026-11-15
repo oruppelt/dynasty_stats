@@ -209,5 +209,228 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "before_logs": true,
+      "periods": 5,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 6,
+      "date": "2019-11-05",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 14,
+      "date": "2019-12-06",
+      "team": "Sacramento Kings",
+      "bid": 8.0,
+      "periods": 19,
+      "starts": 14,
+      "points": 641.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-08",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 18,
+      "points": 731.25,
+      "salary": 4500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-16",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 27,
+      "starts": 22,
+      "points": 1011.0,
+      "salary": 3300000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-18",
+      "from": "Portland Trail Blazers",
+      "team": "Oklahoma City Thunder",
+      "trade": "gvsgeu8skyjvgsva",
+      "periods": 6,
+      "starts": 6,
+      "points": 346.75,
+      "salary": 3300000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-30",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 65,
+      "starts": 52,
+      "points": 2661.0,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-30",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "team": "Dallas Mavericks",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 2,
+      "points": 98.25,
+      "salary": 7160000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 8,
+      "date": "2024-11-15",
+      "from": "Dallas Mavericks",
+      "team": "San Antonio Spurs",
+      "trade": "r48yvwa7m3ijl7dc",
+      "periods": 59,
+      "starts": 19,
+      "points": 555.25,
+      "salary": 7160000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 46,
+      "date": "2026-04-03",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-18",
+      "team": "Washington Wizards",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 335.5,
+      "salary": 5000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "gvsgeu8skyjvgsva": {
+      "date": "2022-01-18",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Portland Trail Blazers",
+          "player_id": "02nff",
+          "player": "Maurice Harkless",
+          "label": "Maurice Harkless"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Portland Trail Blazers",
+          "label": "2023 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "04qsm",
+          "player": "De'Anthony Melton",
+          "label": "De'Anthony Melton"
+        }
+      ]
+    },
+    "r48yvwa7m3ijl7dc": {
+      "date": "2024-11-15",
+      "season": "2024-25",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "player_id": "04qsm",
+          "player": "De'Anthony Melton",
+          "label": "De'Anthony Melton"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 2 pick (Dallas Mavericks)"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "049kc",
+          "player": "Malik Monk",
+          "label": "Malik Monk"
+        }
+      ]
+    }
+  }
 }

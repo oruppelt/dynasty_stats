@@ -167,5 +167,185 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-09-13",
+      "team": "Phoenix Suns",
+      "bid": 5.0,
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 2,
+      "date": "2019-10-25",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 29,
+      "date": "2020-01-27",
+      "team": "Cleveland Cavaliers",
+      "bid": 24.0,
+      "periods": 4,
+      "starts": 4,
+      "points": 121.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 30,
+      "date": "2021-04-02",
+      "team": "Denver Nuggets",
+      "bid": 14.0,
+      "periods": 1,
+      "starts": 1,
+      "points": 23.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Denver Nuggets"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 29,
+      "date": "2024-01-29",
+      "team": "Atlanta Hawks",
+      "bid": 20.0,
+      "periods": 4,
+      "starts": 1,
+      "points": 4.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-01",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 4,
+      "starts": 3,
+      "points": 138.75,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 5,
+      "date": "2024-11-04",
+      "from": "Miami Heat",
+      "team": "Houston Rockets",
+      "trade": "9txb56t8m32yr95c",
+      "periods": 29,
+      "starts": 17,
+      "points": 537.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 28,
+      "points": 1244.25,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Philadelphia 76ers",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 158.25,
+      "salary": 2500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "9txb56t8m32yr95c": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "06cce",
+          "player": "Jalen Hood-Schifino",
+          "label": "Jalen Hood-Schifino"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "04jwb",
+          "player": "Luke Kornet",
+          "label": "Luke Kornet"
+        }
+      ]
+    }
+  }
 }

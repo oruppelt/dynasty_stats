@@ -153,5 +153,166 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Utah Jazz",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 31,
+      "points": 1362.75,
+      "salary": 6664000,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 56,
+      "starts": 37,
+      "points": 1752.25,
+      "salary": 6000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-19",
+      "from": "Utah Jazz",
+      "team": "Phoenix Suns",
+      "trade": "h3agpstjkylmcv6c",
+      "periods": 4,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 6000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 32,
+      "date": "2022-02-04",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 34,
+      "date": "2022-02-11",
+      "team": "Oklahoma City Thunder",
+      "bid": 3.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 22,
+      "points": 809.25,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 9,
+      "date": "2023-11-20",
+      "team": "New York Knicks",
+      "bid": 1.0,
+      "periods": 24,
+      "starts": 23,
+      "points": 46.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-27",
+      "team": "New York Knicks"
+    }
+  ],
+  "trades": {
+    "h3agpstjkylmcv6c": {
+      "date": "2022-01-19",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "player_id": "05qzh",
+          "player": "Naji Marshall",
+          "label": "Naji Marshall"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "player_id": "05qu2",
+          "player": "Justinian Jessup",
+          "label": "Justinian Jessup"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "label": "2022 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "label": "2023 round 2 pick (Phoenix Suns)"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "player_id": "03e6z",
+          "player": "Joe Harris",
+          "label": "Joe Harris"
+        }
+      ]
+    }
+  }
 }

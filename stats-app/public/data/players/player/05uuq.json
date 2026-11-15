@@ -167,5 +167,265 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 5,
+      "date": "2022-10-31",
+      "team": "Sacramento Kings",
+      "bid": 11.0,
+      "periods": 13,
+      "starts": 2,
+      "points": 33.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-16",
+      "from": "Sacramento Kings",
+      "team": "Indiana Pacers",
+      "trade": "fnutgtpilbqehm1q",
+      "periods": 16,
+      "starts": 10,
+      "points": 185.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 13,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 14,
+      "date": "2023-12-08",
+      "team": "Milwaukee Bucks"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 40,
+      "date": "2024-03-11",
+      "team": "Sacramento Kings",
+      "bid": 36.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-05-10",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-08",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 4,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 5,
+      "date": "2024-11-04",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-10-20",
+      "team": "Boston Celtics",
+      "bid": 20.0,
+      "periods": 3,
+      "starts": 3,
+      "points": 107.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "from": "Boston Celtics",
+      "team": "Milwaukee Bucks",
+      "trade": "nk1jb6yxmhelw0l5",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "from": "Milwaukee Bucks",
+      "team": "Indiana Pacers",
+      "trade": "yimzvg76mhex6syx",
+      "periods": 30,
+      "starts": 24,
+      "points": 1115.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-10",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-12",
+      "team": "Denver Nuggets",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 4,
+      "points": 112.75,
+      "salary": 4000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "nk1jb6yxmhelw0l5": {
+      "date": "2025-10-31",
+      "season": "2025-26",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Milwaukee Bucks",
+          "player_id": "05uuq",
+          "player": "Jock Landale",
+          "label": "Jock Landale"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Boston Celtics",
+          "label": "2026 round 2 pick (Minnesota Timberwolves)"
+        }
+      ]
+    },
+    "yimzvg76mhex6syx": {
+      "date": "2025-10-31",
+      "season": "2025-26",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "player_id": "05uiv",
+          "player": "Keon Johnson",
+          "label": "Keon Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "label": "2027 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "0623e",
+          "player": "Collin Gillespie",
+          "label": "Collin Gillespie"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "05uuq",
+          "player": "Jock Landale",
+          "label": "Jock Landale"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "label": "2027 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    },
+    "fnutgtpilbqehm1q": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Sacramento Kings",
+          "player_id": "05uic",
+          "player": "Jalen Green",
+          "label": "Jalen Green"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Indiana Pacers",
+          "player_id": "05uib",
+          "player": "Cade Cunningham",
+          "label": "Cade Cunningham"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Indiana Pacers",
+          "player_id": "05uuq",
+          "player": "Jock Landale",
+          "label": "Jock Landale"
+        }
+      ]
+    }
+  }
 }

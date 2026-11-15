@@ -167,5 +167,146 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Brooklyn Nets",
+      "before_logs": true,
+      "periods": 94,
+      "starts": 94,
+      "points": 4588.0,
+      "salary": 2842368,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Brooklyn Nets"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 65,
+      "starts": 64,
+      "points": 4143.5,
+      "salary": 15000000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Atlanta Hawks",
+      "team": "Sacramento Kings",
+      "trade": "cqap8u98lxyaxee6",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-03",
+      "from": "Sacramento Kings",
+      "team": "Atlanta Hawks",
+      "trade": "xlt1l483lzdzxsfa",
+      "periods": 66,
+      "starts": 66,
+      "points": 3964.75,
+      "salary": 15000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-17",
+      "team": "Washington Wizards",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 200.0,
+      "salary": 15980000,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "xlt1l483lzdzxsfa": {
+      "date": "2024-08-03",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr."
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "label": "2025 round 1 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "04qrn",
+          "player": "Mikal Bridges",
+          "label": "Mikal Bridges"
+        }
+      ]
+    },
+    "cqap8u98lxyaxee6": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "04qrn",
+          "player": "Mikal Bridges",
+          "label": "Mikal Bridges"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "label": "2024 round 1 pick, no. 20"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "049kb",
+          "player": "De'Aaron Fox",
+          "label": "De'Aaron Fox"
+        }
+      ]
+    }
+  }
 }

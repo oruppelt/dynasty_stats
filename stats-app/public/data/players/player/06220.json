@@ -167,5 +167,292 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-28",
+      "team": "Minnesota Timberwolves",
+      "round": 1,
+      "pick": 28,
+      "periods": 17,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1315000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-16",
+      "from": "Minnesota Timberwolves",
+      "team": "Golden State Warriors",
+      "trade": "4ghkugn9lbqnbawd",
+      "periods": 24,
+      "starts": 9,
+      "points": 197.25,
+      "salary": 1315000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 9,
+      "date": "2023-11-20",
+      "from": "Golden State Warriors",
+      "team": "Los Angeles Lakers",
+      "trade": "gebhqes2lp7bilac",
+      "periods": 20,
+      "starts": 9,
+      "points": 289.25,
+      "salary": 1315000,
+      "contract": "R12"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 29,
+      "date": "2024-01-28",
+      "from": "Los Angeles Lakers",
+      "team": "New Orleans Pelicans",
+      "trade": "9f97r5qtlrxnq5ab",
+      "periods": 4,
+      "starts": 1,
+      "points": 60.75,
+      "salary": 1315000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 40,
+      "date": "2024-03-11",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 2,
+      "date": "2024-10-25",
+      "team": "Los Angeles Clippers",
+      "bid": 5.0,
+      "periods": 5,
+      "starts": 4,
+      "points": 17.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "from": "Los Angeles Clippers",
+      "team": "Atlanta Hawks",
+      "trade": "q1whrzq2m3d9pbxh",
+      "periods": 27,
+      "starts": 17,
+      "points": 365.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 37,
+      "date": "2026-03-02",
+      "team": "Minnesota Timberwolves",
+      "bid": 1.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 39,
+      "date": "2026-03-09",
+      "team": "Minnesota Timberwolves"
+    }
+  ],
+  "trades": {
+    "gebhqes2lp7bilac": {
+      "date": "2023-11-20",
+      "season": "2023-24",
+      "period": 9,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "06220",
+          "player": "Jaden Hardy",
+          "label": "Jaden Hardy"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "065ut",
+          "player": "Jacob Gilyard",
+          "label": "Jacob Gilyard"
+        }
+      ]
+    },
+    "9f97r5qtlrxnq5ab": {
+      "date": "2024-01-28",
+      "season": "2023-24",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "New Orleans Pelicans",
+          "player_id": "06220",
+          "player": "Jaden Hardy",
+          "label": "Jaden Hardy"
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Lakers",
+          "to": "New Orleans Pelicans",
+          "label": "$27 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Lakers",
+          "player_id": "038xi",
+          "player": "Robert Covington",
+          "label": "Robert Covington"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Lakers",
+          "player_id": "0621v",
+          "player": "Caleb Houstan",
+          "label": "Caleb Houstan"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Lakers",
+          "label": "2024 round 2 pick (Boston Celtics)"
+        }
+      ]
+    },
+    "q1whrzq2m3d9pbxh": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "0621r",
+          "player": "Patrick Baldwin",
+          "label": "Patrick Baldwin"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "06220",
+          "player": "Jaden Hardy",
+          "label": "Jaden Hardy"
+        }
+      ]
+    },
+    "4ghkugn9lbqnbawd": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "005ll",
+          "player": "George Hill",
+          "label": "George Hill"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "042nr",
+          "player": "Damian Jones",
+          "label": "Damian Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "06220",
+          "player": "Jaden Hardy",
+          "label": "Jaden Hardy"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "051p5",
+          "player": "Nassir Little",
+          "label": "Nassir Little"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)"
+        }
+      ]
+    }
+  }
 }

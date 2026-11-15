@@ -125,5 +125,171 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Atlanta Hawks",
+      "round": 2,
+      "pick": 47,
+      "periods": 46,
+      "starts": 9,
+      "points": 119.5,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 14,
+      "date": "2022-12-01",
+      "from": "Atlanta Hawks",
+      "team": "Indiana Pacers",
+      "trade": "ztms8t1klb56v07z",
+      "periods": 20,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-27",
+      "from": "Indiana Pacers",
+      "team": "Minnesota Timberwolves",
+      "trade": "k8wsy8nslklm9aqo",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-10-23",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 22,
+      "points": 653.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-04",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-17",
+      "team": "Houston Rockets",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 3,
+      "points": 116.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "ztms8t1klb56v07z": {
+      "date": "2022-12-01",
+      "season": "2022-23",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "05uj5",
+          "player": "Isaiah Todd",
+          "label": "Isaiah Todd"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "05ujq",
+          "player": "Luka Garza",
+          "label": "Luka Garza"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "059q7",
+          "player": "Juan Toscano-Anderson",
+          "label": "Juan Toscano-Anderson"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "label": "2024 round 1 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Atlanta Hawks",
+          "player_id": "027oy",
+          "player": "Marcus Morris",
+          "label": "Marcus Morris"
+        }
+      ]
+    },
+    "k8wsy8nslklm9aqo": {
+      "date": "2023-07-27",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujq",
+          "player": "Luka Garza",
+          "label": "Luka Garza"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Indiana Pacers",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter"
+        }
+      ]
+    }
+  }
 }

@@ -139,5 +139,230 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-30",
+      "team": "Detroit Pistons",
+      "bid": 0.0,
+      "periods": 52,
+      "starts": 4,
+      "points": 15.75,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 20,
+      "date": "2023-12-28",
+      "from": "Detroit Pistons",
+      "team": "Miami Heat",
+      "trade": "f55b9i8llqovzig1",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 20,
+      "date": "2023-12-29",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 23,
+      "date": "2024-01-08",
+      "team": "Golden State Warriors",
+      "bid": 1.0,
+      "periods": 4,
+      "starts": 2,
+      "points": 56.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "from": "Golden State Warriors",
+      "team": "Toronto Raptors",
+      "trade": "rxtnvaqdlrozo98w",
+      "periods": 6,
+      "starts": 1,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 2,
+      "date": "2025-10-24",
+      "team": "Oklahoma City Thunder",
+      "bid": 24.0,
+      "periods": 32,
+      "starts": 11,
+      "points": 620.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-10",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1750000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "f55b9i8llqovzig1": {
+      "date": "2023-12-28",
+      "season": "2023-24",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "06228",
+          "player": "Josh Minott",
+          "label": "Josh Minott"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "06224",
+          "player": "E.J. Liddell",
+          "label": "E.J. Liddell"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "0626t",
+          "player": "Dominick Barlow",
+          "label": "Dominick Barlow"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "03avi",
+          "player": "Doug McDermott",
+          "label": "Doug McDermott"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "label": "2024 round 1 pick (Miami Heat)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "0015b",
+          "player": "Kyle Lowry",
+          "label": "Kyle Lowry"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "042ne",
+          "player": "Malik Beasley",
+          "label": "Malik Beasley"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Detroit Pistons",
+          "player_id": "042nf",
+          "player": "Caris LeVert",
+          "label": "Caris LeVert"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "04qsd",
+          "player": "Mitchell Robinson",
+          "label": "Mitchell Robinson"
+        }
+      ]
+    },
+    "rxtnvaqdlrozo98w": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "player_id": "0626t",
+          "player": "Dominick Barlow",
+          "label": "Dominick Barlow"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "player_id": "05uwa",
+          "player": "A.J. Lawson",
+          "label": "A.J. Lawson"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Golden State Warriors",
+          "player_id": "06cet",
+          "player": "Terquavion Smith",
+          "label": "Terquavion Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Golden State Warriors",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley"
+        }
+      ]
+    }
+  }
 }

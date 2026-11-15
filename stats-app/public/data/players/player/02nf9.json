@@ -209,5 +209,386 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Detroit Pistons",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 32,
+      "points": 2482.5,
+      "salary": 20347410,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Detroit Pistons"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-08",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 17,
+      "points": 1061.0,
+      "salary": 30000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 28,
+      "points": 1291.0,
+      "salary": 4250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-02",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 26,
+      "starts": 8,
+      "points": 177.75,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 27,
+      "date": "2023-01-16",
+      "from": "Memphis Grizzlies",
+      "team": "Washington Wizards",
+      "trade": "c78464erlcyppe9f",
+      "periods": 7,
+      "starts": 4,
+      "points": 136.5,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-25",
+      "from": "Washington Wizards",
+      "team": "San Antonio Spurs",
+      "trade": "oqo6hnq5lki0ofs1",
+      "periods": 32,
+      "starts": 31,
+      "points": 1337.25,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-04",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 25,
+      "starts": 13,
+      "points": 398.75,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 26,
+      "date": "2025-01-18",
+      "from": "Memphis Grizzlies",
+      "team": "Philadelphia 76ers",
+      "trade": "wlf38grxm6178zj0",
+      "periods": 8,
+      "starts": 1,
+      "points": 15.0,
+      "salary": 2750000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-07",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-10-20",
+      "team": "Philadelphia 76ers",
+      "bid": 5.0,
+      "periods": 26,
+      "starts": 20,
+      "points": 734.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 27,
+      "date": "2026-01-19",
+      "from": "Philadelphia 76ers",
+      "team": "Miami Heat",
+      "trade": "qtj5h137mklfkucq",
+      "periods": 7,
+      "starts": 3,
+      "points": 75.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 44,
+      "date": "2026-03-27",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 6,
+      "points": 161.75,
+      "salary": 1500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "wlf38grxm6178zj0": {
+      "date": "2025-01-18",
+      "season": "2024-25",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "02nf9",
+          "player": "Andre Drummond",
+          "label": "Andre Drummond"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "label": "2025 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        }
+      ]
+    },
+    "c78464erlcyppe9f": {
+      "date": "2023-01-16",
+      "season": "2022-23",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Washington Wizards",
+          "player_id": "02nf9",
+          "player": "Andre Drummond",
+          "label": "Andre Drummond"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Memphis Grizzlies",
+          "player_id": "04qsi",
+          "player": "Jarred Vanderbilt",
+          "label": "Jarred Vanderbilt"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "label": "2024 round 1 pick (Philadelphia 76ers)"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "042nw",
+          "player": "Malcolm Brogdon",
+          "label": "Malcolm Brogdon"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "label": "2023 round 2 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Boston Celtics)"
+        }
+      ]
+    },
+    "oqo6hnq5lki0ofs1": {
+      "date": "2023-07-25",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "San Antonio Spurs",
+          "to": "Washington Wizards",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "San Antonio Spurs",
+          "player_id": "02nf9",
+          "player": "Andre Drummond",
+          "label": "Andre Drummond"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 2 pick (Minnesota Timberwolves)"
+        }
+      ]
+    },
+    "qtj5h137mklfkucq": {
+      "date": "2026-01-19",
+      "season": "2025-26",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "04qrw",
+          "player": "Kevin Huerter",
+          "label": "Kevin Huerter"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "0622k",
+          "player": "Jabari Walker",
+          "label": "Jabari Walker"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick (Miami Heat)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "02nf9",
+          "player": "Andre Drummond",
+          "label": "Andre Drummond"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "05qub",
+          "player": "Isaiah Stewart",
+          "label": "Isaiah Stewart"
+        }
+      ]
+    }
+  }
 }

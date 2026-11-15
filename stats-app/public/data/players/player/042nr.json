@@ -125,5 +125,213 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 8,
+      "date": "2019-11-15",
+      "team": "Chicago Bulls",
+      "bid": 10.0,
+      "periods": 12,
+      "starts": 9,
+      "points": 331.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 20,
+      "date": "2019-12-27",
+      "from": "Chicago Bulls",
+      "team": "Boston Celtics",
+      "trade": "hbx5kxxxk4ojflti",
+      "periods": 13,
+      "starts": 11,
+      "points": 273.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 33,
+      "date": "2022-02-07",
+      "team": "San Antonio Spurs",
+      "bid": 2.0,
+      "periods": 1,
+      "starts": 1,
+      "points": 41.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 17,
+      "starts": 2,
+      "points": 22.25,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-16",
+      "from": "Minnesota Timberwolves",
+      "team": "Golden State Warriors",
+      "trade": "4ghkugn9lbqnbawd",
+      "periods": 12,
+      "starts": 5,
+      "points": 60.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "team": "Golden State Warriors"
+    }
+  ],
+  "trades": {
+    "hbx5kxxxk4ojflti": {
+      "date": "2019-12-27",
+      "season": "2019-20",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "player_id": "0018a",
+          "player": "Dwight Howard",
+          "label": "Dwight Howard"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Boston Celtics",
+          "player_id": "04qrx",
+          "player": "Josh Okogie",
+          "label": "Josh Okogie"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Boston Celtics",
+          "player_id": "042nr",
+          "player": "Damian Jones",
+          "label": "Damian Jones"
+        }
+      ]
+    },
+    "4ghkugn9lbqnbawd": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "005ll",
+          "player": "George Hill",
+          "label": "George Hill"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "042nr",
+          "player": "Damian Jones",
+          "label": "Damian Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "06220",
+          "player": "Jaden Hardy",
+          "label": "Jaden Hardy"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "051p5",
+          "player": "Nassir Little",
+          "label": "Nassir Little"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)"
+        }
+      ]
+    }
+  }
 }

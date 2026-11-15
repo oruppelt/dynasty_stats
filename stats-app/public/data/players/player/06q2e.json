@@ -97,5 +97,125 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 2,
+      "date": "2024-10-25",
+      "team": "Boston Celtics",
+      "bid": 5.0,
+      "periods": 26,
+      "starts": 3,
+      "points": 53.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-24",
+      "from": "Boston Celtics",
+      "team": "Miami Heat",
+      "trade": "fqy5f8aem6akho3q",
+      "periods": 6,
+      "starts": 2,
+      "points": 58.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 4,
+      "date": "2026-10-30",
+      "team": "Chicago Bulls",
+      "bid": 6.0,
+      "periods": 4,
+      "starts": 3,
+      "points": 115.75,
+      "salary": 1000000,
+      "contract": "FA"
+    }
+  ],
+  "trades": {
+    "fqy5f8aem6akho3q": {
+      "date": "2025-01-24",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "06cdg",
+          "player": "Maxwell Lewis",
+          "label": "Maxwell Lewis"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "06q2e",
+          "player": "Jamison Battle",
+          "label": "Jamison Battle"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "042n1",
+          "player": "Brandon Ingram",
+          "label": "Brandon Ingram"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "06mlx",
+          "player": "Melvin Ajinca",
+          "label": "Melvin Ajinca"
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
+        }
+      ]
+    }
+  }
 }

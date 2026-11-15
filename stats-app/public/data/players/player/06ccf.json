@@ -139,5 +139,265 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-26",
+      "team": "Milwaukee Bucks",
+      "round": 1,
+      "pick": 8,
+      "periods": 27,
+      "starts": 26,
+      "points": 1082.5,
+      "salary": 3255000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 28,
+      "date": "2024-01-24",
+      "from": "Milwaukee Bucks",
+      "team": "Washington Wizards",
+      "trade": "qsrtciiplrqk6b31",
+      "periods": 38,
+      "starts": 23,
+      "points": 988.75,
+      "salary": 3255000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-20",
+      "from": "Washington Wizards",
+      "team": "Minnesota Timberwolves",
+      "trade": "xdwxqh3rmejso1lv",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-22",
+      "from": "Minnesota Timberwolves",
+      "team": "Houston Rockets",
+      "trade": "rzau113zmeml44da",
+      "periods": 7,
+      "starts": 7,
+      "points": 356.5,
+      "salary": 3255000,
+      "contract": "R11"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 8,
+      "date": "2025-11-13",
+      "from": "Houston Rockets",
+      "team": "Atlanta Hawks",
+      "trade": "glz93afsmhx6pjs4",
+      "periods": 26,
+      "starts": 24,
+      "points": 1170.75,
+      "salary": 3255000,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-12",
+      "team": "San Antonio Spurs",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 6,
+      "points": 280.25,
+      "salary": 15000000,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "qsrtciiplrqk6b31": {
+      "date": "2024-01-24",
+      "season": "2023-24",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Washington Wizards",
+          "player_id": "06ccf",
+          "player": "Ausar Thompson",
+          "label": "Ausar Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "player_id": "06218",
+          "player": "Jeremy Sochan",
+          "label": "Jeremy Sochan"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "player_id": "0621u",
+          "player": "Andrew Nembhard",
+          "label": "Andrew Nembhard"
+        }
+      ]
+    },
+    "glz93afsmhx6pjs4": {
+      "date": "2025-11-13",
+      "season": "2025-26",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Houston Rockets",
+          "player_id": "05qti",
+          "player": "Josh Green",
+          "label": "Josh Green"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Houston Rockets",
+          "label": "2026 round 1 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Atlanta Hawks",
+          "player_id": "06ccf",
+          "player": "Ausar Thompson",
+          "label": "Ausar Thompson"
+        }
+      ]
+    },
+    "xdwxqh3rmejso1lv": {
+      "date": "2025-08-20",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "01eon",
+          "player": "DeMar DeRozan",
+          "label": "DeMar DeRozan"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06ccf",
+          "player": "Ausar Thompson",
+          "label": "Ausar Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03nwm",
+          "player": "Devin Booker",
+          "label": "Devin Booker"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06cdj",
+          "player": "Colby Jones",
+          "label": "Colby Jones"
+        }
+      ]
+    },
+    "rzau113zmeml44da": {
+      "date": "2025-08-22",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06mm2",
+          "player": "Kevin McCullar",
+          "label": "Kevin McCullar"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03ad3",
+          "player": "Karl-Anthony Towns",
+          "label": "Karl-Anthony Towns"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06mln",
+          "player": "Adem Bona",
+          "label": "Adem Bona"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "player_id": "03nwm",
+          "player": "Devin Booker",
+          "label": "Devin Booker"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "player_id": "06ccf",
+          "player": "Ausar Thompson",
+          "label": "Ausar Thompson"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (Minnesota Timberwolves)"
+        }
+      ]
+    }
+  }
 }

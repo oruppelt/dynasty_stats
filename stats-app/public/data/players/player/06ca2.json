@@ -97,5 +97,81 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-27",
+      "team": "Dallas Mavericks",
+      "round": 2,
+      "pick": 33,
+      "periods": 60,
+      "starts": 11,
+      "points": 82.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-26",
+      "from": "Dallas Mavericks",
+      "team": "Los Angeles Clippers",
+      "trade": "qrgt7xrlm6dy0gs0",
+      "periods": 5,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Los Angeles Clippers"
+    }
+  ],
+  "trades": {
+    "qrgt7xrlm6dy0gs0": {
+      "date": "2025-01-26",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Los Angeles Clippers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Los Angeles Clippers",
+          "player_id": "06ca2",
+          "player": "Kobe Brown",
+          "label": "Kobe Brown"
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Los Angeles Clippers",
+          "label": "2026 round 2 pick (Dallas Mavericks)"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Dallas Mavericks",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        }
+      ]
+    }
+  }
 }

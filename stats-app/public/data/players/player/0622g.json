@@ -32,5 +32,79 @@
       "paid": 1000000
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-29",
+      "team": "Detroit Pistons",
+      "round": 2,
+      "pick": 52,
+      "periods": 33,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-10-24",
+      "from": "Detroit Pistons",
+      "team": "Boston Celtics",
+      "trade": "8zyfkpkglo4cnvz0",
+      "periods": 32,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-26",
+      "team": "Boston Celtics"
+    }
+  ],
+  "trades": {
+    "8zyfkpkglo4cnvz0": {
+      "date": "2023-10-24",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "0622g",
+          "player": "JD Davison",
+          "label": "JD Davison"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        }
+      ]
+    }
+  }
 }

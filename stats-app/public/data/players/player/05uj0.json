@@ -153,5 +153,136 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Charlotte Hornets",
+      "round": 1,
+      "pick": 26,
+      "periods": 62,
+      "starts": 31,
+      "points": 925.75,
+      "salary": 1362912,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "from": "Charlotte Hornets",
+      "team": "Golden State Warriors",
+      "trade": "zpkfhqzrldezs5gu",
+      "periods": 22,
+      "starts": 7,
+      "points": 111.75,
+      "salary": 1363000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-26",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 41,
+      "date": "2024-03-15",
+      "team": "Charlotte Hornets",
+      "bid": 8.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-01",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 19,
+      "date": "2024-12-23",
+      "team": "Indiana Pacers",
+      "bid": 5.0,
+      "periods": 15,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 34,
+      "date": "2025-02-14",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-19",
+      "team": "Denver Nuggets",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 2,
+      "points": 98.25,
+      "salary": 4000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "zpkfhqzrldezs5gu": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "player_id": "04ex6",
+          "player": "Isaiah Hartenstein",
+          "label": "Isaiah Hartenstein"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "player_id": "051p2",
+          "player": "Grant Williams",
+          "label": "Grant Williams"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "player_id": "05uj0",
+          "player": "Bones Hyland",
+          "label": "Bones Hyland"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Charlotte Hornets",
+          "player_id": "04qrl",
+          "player": "Wendell Carter",
+          "label": "Wendell Carter"
+        }
+      ]
+    }
+  }
 }

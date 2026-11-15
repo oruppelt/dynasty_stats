@@ -125,5 +125,147 @@
       "gp": 3,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 25,
+      "date": "2021-03-15",
+      "team": "Sacramento Kings",
+      "bid": 35.0,
+      "periods": 6,
+      "starts": 6,
+      "points": 370.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-13",
+      "team": "San Antonio Spurs",
+      "bid": 0.0,
+      "periods": 4,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 8000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 5,
+      "date": "2021-11-01",
+      "from": "San Antonio Spurs",
+      "team": "Chicago Bulls",
+      "trade": "dw0d099pkvgq3dpg",
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 8000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 6,
+      "date": "2021-11-05",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 10,
+      "date": "2024-11-22",
+      "team": "Boston Celtics",
+      "bid": 1.0,
+      "periods": 18,
+      "starts": 2,
+      "points": 32.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-24",
+      "from": "Boston Celtics",
+      "team": "San Antonio Spurs",
+      "trade": "1agc4oylm691y3ag",
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 30,
+      "date": "2025-01-30",
+      "team": "San Antonio Spurs"
+    }
+  ],
+  "trades": {
+    "1agc4oylm691y3ag": {
+      "date": "2025-01-24",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "player_id": "0598b",
+          "player": "Moses Brown",
+          "label": "Moses Brown"
+        },
+        {
+          "kind": "budget",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "label": "$1 budget"
+        }
+      ]
+    },
+    "dw0d099pkvgq3dpg": {
+      "date": "2021-11-01",
+      "season": "2021-22",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "San Antonio Spurs",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "player_id": "0598b",
+          "player": "Moses Brown",
+          "label": "Moses Brown"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "label": "2022 round 1 pick (San Antonio Spurs)"
+        }
+      ]
+    }
+  }
 }

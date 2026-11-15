@@ -181,5 +181,119 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-11",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 88,
+      "starts": 80,
+      "points": 4982.0,
+      "salary": 30000000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-19",
+      "from": "Indiana Pacers",
+      "team": "Cleveland Cavaliers",
+      "trade": "u84ukmdukyle5in8",
+      "periods": 39,
+      "starts": 37,
+      "points": 2042.25,
+      "salary": 30000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-31",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 105,
+      "starts": 100,
+      "points": 5658.75,
+      "salary": 17500000,
+      "contract": "REG4"
+    }
+  ],
+  "trades": {
+    "u84ukmdukyle5in8": {
+      "date": "2022-01-19",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Indiana Pacers",
+          "player_id": "031lu",
+          "player": "Ben McLemore",
+          "label": "Ben McLemore"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Indiana Pacers",
+          "player_id": "04ewf",
+          "player": "Bam Adebayo",
+          "label": "Bam Adebayo"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Indiana Pacers",
+          "player_id": "031lp",
+          "player": "Victor Oladipo",
+          "label": "Victor Oladipo"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Indiana Pacers",
+          "player_id": "059ca",
+          "player": "Oshae Brissett",
+          "label": "Oshae Brissett"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "051oq",
+          "player": "Cam Reddish",
+          "label": "Cam Reddish"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03r7l",
+          "player": "Larry Nance",
+          "label": "Larry Nance"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03ad2",
+          "player": "Myles Turner",
+          "label": "Myles Turner"
+        }
+      ]
+    }
+  }
 }

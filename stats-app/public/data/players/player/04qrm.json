@@ -181,5 +181,121 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Cleveland Cavaliers",
+      "before_logs": true,
+      "periods": 94,
+      "starts": 63,
+      "points": 3033.75,
+      "salary": 3254880,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-27",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 98,
+      "starts": 77,
+      "points": 3537.25,
+      "salary": 9500000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-10",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 36,
+      "starts": 19,
+      "points": 825.0,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 4,
+      "date": "2026-10-29",
+      "from": "Cleveland Cavaliers",
+      "team": "Portland Trail Blazers",
+      "trade": "oj9lawe7mvsdcb33",
+      "periods": 4,
+      "starts": 4,
+      "points": 148.0,
+      "salary": 5000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "oj9lawe7mvsdcb33": {
+      "date": "2026-10-29",
+      "season": "2026-27",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v7y",
+          "player": "Noah Penda",
+          "label": "Noah Penda"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "06cc0",
+          "player": "Taylor Hendricks",
+          "label": "Taylor Hendricks"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "player_id": "04qrm",
+          "player": "Collin Sexton",
+          "label": "Collin Sexton"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Portland Trail Blazers",
+          "label": "2028 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04ewr",
+          "player": "Kyle Kuzma",
+          "label": "Kyle Kuzma"
+        }
+      ]
+    }
+  }
 }

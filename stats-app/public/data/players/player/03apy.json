@@ -111,5 +111,215 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-11",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 1,
+      "starts": 1,
+      "points": 18.75,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 2,
+      "date": "2019-10-25",
+      "from": "Golden State Warriors",
+      "team": "Orlando Magic",
+      "trade": "6kk26nz5k269o7q2",
+      "periods": 31,
+      "starts": 12,
+      "points": 430.75,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-13",
+      "from": "Orlando Magic",
+      "team": "San Antonio Spurs",
+      "trade": "5gg4pkc8kg0rxsjg",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-25",
+      "from": "San Antonio Spurs",
+      "team": "Boston Celtics",
+      "trade": "51fiui4ekhx62qh8",
+      "periods": 20,
+      "starts": 7,
+      "points": 120.0,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 21,
+      "date": "2021-03-01",
+      "from": "Boston Celtics",
+      "team": "Los Angeles Lakers",
+      "trade": "cknsztqwklqk49ho",
+      "periods": 9,
+      "starts": 6,
+      "points": 89.0,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Los Angeles Lakers"
+    }
+  ],
+  "trades": {
+    "5gg4pkc8kg0rxsjg": {
+      "date": "2020-10-13",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "label": "2020 round 2 pick, no. 5"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Orlando Magic",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        }
+      ]
+    },
+    "51fiui4ekhx62qh8": {
+      "date": "2020-11-25",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "label": "2021 round 1 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
+        }
+      ]
+    },
+    "6kk26nz5k269o7q2": {
+      "date": "2019-10-25",
+      "season": "2019-20",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "04jwc",
+          "player": "Alfonzo McKinnie",
+          "label": "Alfonzo McKinnie"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "02nf8",
+          "player": "Terrence Ross",
+          "label": "Terrence Ross"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "label": "2020 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Golden State Warriors",
+          "player_id": "031lq",
+          "player": "Otto Porter",
+          "label": "Otto Porter"
+        }
+      ]
+    },
+    "cknsztqwklqk49ho": {
+      "date": "2021-03-01",
+      "season": "2020-21",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Los Angeles Lakers",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick (Washington Wizards)"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "(Drop)",
+          "player_id": "04qsg",
+          "player": "Isaac Bonga",
+          "label": "Isaac Bonga"
+        }
+      ]
+    }
+  }
 }

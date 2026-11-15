@@ -111,5 +111,113 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 2,
+      "date": "2024-10-25",
+      "team": "Golden State Warriors",
+      "bid": 5.0,
+      "periods": 23,
+      "starts": 13,
+      "points": 483.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 25,
+      "date": "2025-01-13",
+      "from": "Golden State Warriors",
+      "team": "Philadelphia 76ers",
+      "trade": "kl69rnqzm5tmro6v",
+      "periods": 9,
+      "starts": 6,
+      "points": 51.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-07",
+      "team": "Philadelphia 76ers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 25,
+      "points": 1241.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-06",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-12",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 165.5,
+      "salary": 3500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "kl69rnqzm5tmro6v": {
+      "date": "2025-01-13",
+      "season": "2024-25",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uup",
+          "player": "Jay Huff",
+          "label": "Jay Huff"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "05wqo",
+          "player": "Dru Smith",
+          "label": "Dru Smith"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "label": "2025 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard"
+        }
+      ]
+    }
+  }
 }

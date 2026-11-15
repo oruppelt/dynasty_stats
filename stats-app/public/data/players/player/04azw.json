@@ -195,5 +195,358 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Chicago Bulls",
+      "before_logs": true,
+      "periods": 61,
+      "starts": 42,
+      "points": 2112.0,
+      "salary": 3628896,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-16",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 66,
+      "starts": 56,
+      "points": 3537.25,
+      "salary": 7250000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 56,
+      "starts": 46,
+      "points": 3035.75,
+      "salary": 26000000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 25,
+      "date": "2025-01-13",
+      "from": "Orlando Magic",
+      "team": "Atlanta Hawks",
+      "trade": "elhvdxrdm5v6pxvy",
+      "periods": 36,
+      "starts": 33,
+      "points": 1946.0,
+      "salary": 26000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Atlanta Hawks",
+      "team": "Philadelphia 76ers",
+      "trade": "llmo9x2dmklfs52y",
+      "periods": 6,
+      "starts": 6,
+      "points": 326.25,
+      "salary": 26000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-15",
+      "from": "Philadelphia 76ers",
+      "team": "Orlando Magic",
+      "trade": "eah3rh8omsuevyv0",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-18",
+      "from": "Orlando Magic",
+      "team": "Phoenix Suns",
+      "trade": "d3urdettmsz0jqra",
+      "periods": 7,
+      "starts": 7,
+      "points": 304.75,
+      "salary": 26000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "elhvdxrdm5v6pxvy": {
+      "date": "2025-01-13",
+      "season": "2024-25",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "049kb",
+          "player": "De'Aaron Fox",
+          "label": "De'Aaron Fox"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2026 round 1 pick (Orlando Magic)"
+        }
+      ]
+    },
+    "eah3rh8omsuevyv0": {
+      "date": "2026-08-15",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Philadelphia 76ers",
+          "player_id": "06216",
+          "player": "Shaedon Sharpe",
+          "label": "Shaedon Sharpe"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Orlando Magic",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Orlando Magic",
+          "player_id": "076t4",
+          "player": "Ebuka Okorie",
+          "label": "Ebuka Okorie"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Orlando Magic",
+          "label": "2027 round 1 pick (New Orleans Pelicans)"
+        }
+      ]
+    },
+    "llmo9x2dmklfs52y": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "031lx",
+          "player": "CJ McCollum",
+          "label": "CJ McCollum"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Dallas Mavericks)"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsj",
+          "player": "Bruce Brown",
+          "label": "Bruce Brown"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Utah Jazz",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtq",
+          "player": "Tre Jones",
+          "label": "Tre Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Chicago Bulls",
+          "player_id": "02nf7",
+          "player": "Harrison Barnes",
+          "label": "Harrison Barnes"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06ca5",
+          "player": "Kris Murray",
+          "label": "Kris Murray"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06cbz",
+          "player": "Brice Sensabaugh",
+          "label": "Brice Sensabaugh"
+        }
+      ]
+    },
+    "d3urdettmsz0jqra": {
+      "date": "2026-08-18",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Phoenix Suns",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "player_id": "06v5a",
+          "player": "Collin Murray-Boyles",
+          "label": "Collin Murray-Boyles"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "player_id": "03ad4",
+          "player": "D'Angelo Russell",
+          "label": "D'Angelo Russell"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "label": "2028 round 1 pick (Phoenix Suns)"
+        }
+      ]
+    }
+  }
 }

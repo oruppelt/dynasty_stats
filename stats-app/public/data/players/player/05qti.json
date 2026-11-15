@@ -153,5 +153,270 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-23",
+      "team": "Oklahoma City Thunder",
+      "round": 1,
+      "pick": 13,
+      "periods": 29,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2436960,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-22",
+      "from": "Oklahoma City Thunder",
+      "team": "Chicago Bulls",
+      "trade": "3f7d7k4ykslsp719",
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2436960,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 2,
+      "date": "2021-10-22",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 8,
+      "date": "2022-11-11",
+      "team": "Brooklyn Nets",
+      "bid": 23.0,
+      "periods": 26,
+      "starts": 14,
+      "points": 483.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Brooklyn Nets"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-26",
+      "team": "Denver Nuggets",
+      "bid": 0.0,
+      "periods": 65,
+      "starts": 50,
+      "points": 1470.25,
+      "salary": 5500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-30",
+      "team": "Denver Nuggets"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 8,
+      "date": "2025-11-13",
+      "from": "Atlanta Hawks",
+      "team": "Houston Rockets",
+      "trade": "glz93afsmhx6pjs4",
+      "periods": 3,
+      "starts": 2,
+      "points": 0.0,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 11,
+      "date": "2025-11-24",
+      "from": "Houston Rockets",
+      "team": "New Orleans Pelicans",
+      "trade": "ghzol8yfmidcvjxt",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 11,
+      "date": "2025-11-24",
+      "from": "New Orleans Pelicans",
+      "team": "Houston Rockets",
+      "trade": "vr2qxdk4midg53ey",
+      "periods": 23,
+      "starts": 16,
+      "points": 353.0,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-22",
+      "team": "Houston Rockets"
+    }
+  ],
+  "trades": {
+    "ghzol8yfmidcvjxt": {
+      "date": "2025-11-24",
+      "season": "2025-26",
+      "period": 11,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "New Orleans Pelicans",
+          "player_id": "05qti",
+          "player": "Josh Green",
+          "label": "Josh Green"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "New Orleans Pelicans",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Houston Rockets",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Houston Rockets",
+          "player_id": "04qsi",
+          "player": "Jarred Vanderbilt",
+          "label": "Jarred Vanderbilt"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (New Orleans Pelicans)"
+        }
+      ]
+    },
+    "glz93afsmhx6pjs4": {
+      "date": "2025-11-13",
+      "season": "2025-26",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Houston Rockets",
+          "player_id": "05qti",
+          "player": "Josh Green",
+          "label": "Josh Green"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Houston Rockets",
+          "label": "2026 round 1 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Atlanta Hawks",
+          "player_id": "06ccf",
+          "player": "Ausar Thompson",
+          "label": "Ausar Thompson"
+        }
+      ]
+    },
+    "3f7d7k4ykslsp719": {
+      "date": "2021-08-22",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Oklahoma City Thunder",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Chicago Bulls",
+          "player_id": "05qti",
+          "player": "Josh Green",
+          "label": "Josh Green"
+        }
+      ]
+    },
+    "vr2qxdk4midg53ey": {
+      "date": "2025-11-24",
+      "season": "2025-26",
+      "period": 11,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "New Orleans Pelicans",
+          "player_id": "05qtk",
+          "player": "Vit Krejci",
+          "label": "Vit Krejci"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Houston Rockets",
+          "player_id": "05qti",
+          "player": "Josh Green",
+          "label": "Josh Green"
+        }
+      ]
+    }
+  }
 }

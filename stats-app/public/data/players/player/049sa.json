@@ -153,5 +153,190 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 4,
+      "date": "2019-11-01",
+      "team": "Los Angeles Lakers",
+      "bid": 5.0,
+      "periods": 29,
+      "starts": 6,
+      "points": 137.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Los Angeles Lakers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-10",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 15,
+      "points": 721.5,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 3,
+      "starts": 2,
+      "points": 23.0,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 4,
+      "date": "2021-10-29",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 12,
+      "date": "2021-11-26",
+      "team": "Charlotte Hornets",
+      "bid": 13.0,
+      "periods": 20,
+      "starts": 13,
+      "points": 553.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 32,
+      "date": "2022-02-04",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 33,
+      "date": "2022-02-07",
+      "team": "Minnesota Timberwolves",
+      "bid": 41.0,
+      "periods": 1,
+      "starts": 1,
+      "points": 72.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-04",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-14",
+      "from": "Charlotte Hornets",
+      "team": "Los Angeles Clippers",
+      "trade": "c48p6vdll986ikws",
+      "periods": 18,
+      "starts": 3,
+      "points": 94.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 19,
+      "date": "2022-12-20",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 26,
+      "date": "2023-01-13",
+      "team": "New Orleans Pelicans",
+      "bid": 18.0,
+      "periods": 8,
+      "starts": 5,
+      "points": 104.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 41,
+      "date": "2023-03-10",
+      "team": "New Orleans Pelicans"
+    }
+  ],
+  "trades": {
+    "c48p6vdll986ikws": {
+      "date": "2022-10-14",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Los Angeles Clippers",
+          "player_id": "031m4",
+          "player": "Dennis Schroder",
+          "label": "Dennis Schroder"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Los Angeles Clippers",
+          "player_id": "049sa",
+          "player": "Hamidou Diallo",
+          "label": "Hamidou Diallo"
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Clippers",
+          "to": "Charlotte Hornets",
+          "label": "$15 budget"
+        }
+      ]
+    }
+  }
 }

@@ -32,5 +32,105 @@
       "paid": 1000000
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2024-25",
+      "period": 0,
+      "date": "2024-06-29",
+      "team": "Houston Rockets",
+      "round": 2,
+      "pick": 52,
+      "periods": 33,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-22",
+      "from": "Houston Rockets",
+      "team": "Minnesota Timberwolves",
+      "trade": "rzau113zmeml44da",
+      "periods": 33,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-07",
+      "team": "Minnesota Timberwolves"
+    }
+  ],
+  "trades": {
+    "rzau113zmeml44da": {
+      "date": "2025-08-22",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06mm2",
+          "player": "Kevin McCullar",
+          "label": "Kevin McCullar"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03ad3",
+          "player": "Karl-Anthony Towns",
+          "label": "Karl-Anthony Towns"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06mln",
+          "player": "Adem Bona",
+          "label": "Adem Bona"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "player_id": "03nwm",
+          "player": "Devin Booker",
+          "label": "Devin Booker"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "player_id": "06ccf",
+          "player": "Ausar Thompson",
+          "label": "Ausar Thompson"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (Minnesota Timberwolves)"
+        }
+      ]
+    }
+  }
 }

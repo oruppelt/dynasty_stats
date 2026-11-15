@@ -139,5 +139,92 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-27",
+      "team": "Phoenix Suns",
+      "round": 1,
+      "pick": 16,
+      "periods": 93,
+      "starts": 57,
+      "points": 2435.0,
+      "salary": 2089000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-26",
+      "from": "Phoenix Suns",
+      "team": "Utah Jazz",
+      "trade": "c0yl11uom6dr39pn",
+      "periods": 5,
+      "starts": 4,
+      "points": 186.0,
+      "salary": 2089000,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-10",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 40,
+      "starts": 30,
+      "points": 1237.75,
+      "salary": 10977000,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "c0yl11uom6dr39pn": {
+      "date": "2025-01-26",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Phoenix Suns",
+          "label": "2025 round 1 pick (Houston Rockets)"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "player_id": "0621g",
+          "player": "Tari Eason",
+          "label": "Tari Eason"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "player_id": "0529c",
+          "player": "Dean Wade",
+          "label": "Dean Wade"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Houston Rockets",
+          "label": "2026 round 1 pick (Utah Jazz)"
+        }
+      ]
+    }
+  }
 }

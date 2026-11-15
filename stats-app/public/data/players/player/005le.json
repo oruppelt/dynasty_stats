@@ -125,5 +125,182 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-12",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 22,
+      "starts": 1,
+      "points": 21.75,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 23,
+      "date": "2020-01-05",
+      "from": "Cleveland Cavaliers",
+      "team": "Memphis Grizzlies",
+      "trade": "ja9otupwk5130qp9",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 23,
+      "date": "2020-01-05",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 24,
+      "date": "2020-01-10",
+      "team": "Houston Rockets",
+      "bid": 1.0,
+      "periods": 9,
+      "starts": 1,
+      "points": 18.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-21",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 5,
+      "date": "2021-01-04",
+      "team": "Cleveland Cavaliers",
+      "bid": 3.0,
+      "periods": 14,
+      "starts": 6,
+      "points": 203.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 19,
+      "date": "2021-02-22",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 20,
+      "date": "2021-02-26",
+      "team": "Memphis Grizzlies",
+      "bid": 10.0,
+      "periods": 10,
+      "starts": 2,
+      "points": 97.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-20",
+      "team": "Brooklyn Nets",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 6,
+      "points": 81.75,
+      "salary": 1600000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 41,
+      "date": "2022-03-11",
+      "team": "Brooklyn Nets"
+    }
+  ],
+  "trades": {
+    "ja9otupwk5130qp9": {
+      "date": "2020-01-05",
+      "season": "2019-20",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "0015b",
+          "player": "Kyle Lowry",
+          "label": "Kyle Lowry"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "005le",
+          "player": "Robin Lopez",
+          "label": "Robin Lopez"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "player_id": "001bo",
+          "player": "Paul Millsap",
+          "label": "Paul Millsap"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Dallas Mavericks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Brooklyn Nets)"
+        }
+      ]
+    }
+  }
 }

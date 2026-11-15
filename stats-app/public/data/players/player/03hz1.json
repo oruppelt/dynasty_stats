@@ -83,5 +83,88 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-14",
+      "team": "Milwaukee Bucks",
+      "bid": 0.0,
+      "periods": 30,
+      "starts": 23,
+      "points": 313.75,
+      "salary": 3500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 32,
+      "date": "2020-02-07",
+      "from": "Milwaukee Bucks",
+      "team": "San Antonio Spurs",
+      "trade": "9ruxekhgk6ciqyyw",
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 3500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "San Antonio Spurs"
+    }
+  ],
+  "trades": {
+    "9ruxekhgk6ciqyyw": {
+      "date": "2020-02-07",
+      "season": "2019-20",
+      "period": 32,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "San Antonio Spurs",
+          "player_id": "005lm",
+          "player": "Goran Dragic",
+          "label": "Goran Dragic"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "San Antonio Spurs",
+          "player_id": "03hz1",
+          "player": "Tyler Johnson",
+          "label": "Tyler Johnson"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "San Antonio Spurs",
+          "label": "2020 round 2 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Milwaukee Bucks",
+          "player_id": "01eon",
+          "player": "DeMar DeRozan",
+          "label": "DeMar DeRozan"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Milwaukee Bucks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris"
+        }
+      ]
+    }
+  }
 }

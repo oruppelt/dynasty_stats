@@ -181,5 +181,112 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2019-20",
+      "period": 0,
+      "date": "2019-06-23",
+      "team": "New York Knicks",
+      "round": 1,
+      "pick": 3,
+      "periods": 94,
+      "starts": 89,
+      "points": 4053.75,
+      "salary": 5248512,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "New York Knicks"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-30",
+      "team": "New York Knicks",
+      "bid": 0.0,
+      "periods": 59,
+      "starts": 55,
+      "points": 2643.5,
+      "salary": 14539131,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "from": "New York Knicks",
+      "team": "Memphis Grizzlies",
+      "trade": "79wk2egvlrpcba0l",
+      "periods": 72,
+      "starts": 55,
+      "points": 2901.0,
+      "salary": 14539131,
+      "contract": "REG3"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-30",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-14",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 449.25,
+      "salary": 11400000,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "79wk2egvlrpcba0l": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2024 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2025 round 1 pick (Philadelphia 76ers)"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Memphis Grizzlies",
+          "player_id": "051oj",
+          "player": "RJ Barrett",
+          "label": "RJ Barrett"
+        }
+      ]
+    }
+  }
 }

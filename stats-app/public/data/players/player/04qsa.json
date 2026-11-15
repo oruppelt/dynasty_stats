@@ -181,5 +181,237 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Washington Wizards",
+      "before_logs": true,
+      "periods": 61,
+      "starts": 38,
+      "points": 1489.5,
+      "salary": 1000000,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-13",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-09-01",
+      "from": "Orlando Magic",
+      "team": "Atlanta Hawks",
+      "trade": "olra9olekt197as1",
+      "periods": 9,
+      "starts": 9,
+      "points": 446.25,
+      "salary": 4000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 10,
+      "date": "2021-11-17",
+      "from": "Atlanta Hawks",
+      "team": "Indiana Pacers",
+      "trade": "76hzrghukw3fve7v",
+      "periods": 24,
+      "starts": 23,
+      "points": 1286.75,
+      "salary": 4000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-28",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 98,
+      "starts": 96,
+      "points": 6899.0,
+      "salary": 15000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-08",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 31,
+      "points": 2241.5,
+      "salary": 21850000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-23",
+      "from": "New Orleans Pelicans",
+      "team": "Los Angeles Clippers",
+      "trade": "a3b1c6mrmqqjlm1s",
+      "periods": 7,
+      "starts": 7,
+      "points": 468.25,
+      "salary": 21850000,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "a3b1c6mrmqqjlm1s": {
+      "date": "2026-06-23",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "New Orleans Pelicans",
+          "player_id": "06mjw",
+          "player": "Stephon Castle",
+          "label": "Stephon Castle"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "New Orleans Pelicans",
+          "label": "2026 round 2 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "New Orleans Pelicans",
+          "label": "2027 round 1 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Los Angeles Clippers",
+          "player_id": "04qsa",
+          "player": "Jalen Brunson",
+          "label": "Jalen Brunson"
+        }
+      ]
+    },
+    "76hzrghukw3fve7v": {
+      "date": "2021-11-17",
+      "season": "2021-22",
+      "period": 10,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "03r7l",
+          "player": "Larry Nance",
+          "label": "Larry Nance"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "04qsa",
+          "player": "Jalen Brunson",
+          "label": "Jalen Brunson"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Atlanta Hawks",
+          "player_id": "031lp",
+          "player": "Victor Oladipo",
+          "label": "Victor Oladipo"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 1 pick (Golden State Warriors)"
+        }
+      ]
+    },
+    "olra9olekt197as1": {
+      "date": "2021-09-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "04jwd",
+          "player": "Royce O'Neale",
+          "label": "Royce O'Neale"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "label": "2022 round 2 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsa",
+          "player": "Jalen Brunson",
+          "label": "Jalen Brunson"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Orlando Magic)"
+        }
+      ]
+    }
+  }
 }

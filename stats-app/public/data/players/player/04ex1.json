@@ -57,5 +57,92 @@
       "gp": 0,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Boston Celtics",
+      "before_logs": true,
+      "periods": 6,
+      "starts": 1,
+      "points": 0.0,
+      "salary": 1102594,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 7,
+      "date": "2019-11-10",
+      "from": "Boston Celtics",
+      "team": "Indiana Pacers",
+      "trade": "usb4nd6bk2rz46bo",
+      "periods": 11,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1102594,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 18,
+      "date": "2019-12-20",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 32,
+      "date": "2020-02-07",
+      "team": "Minnesota Timberwolves",
+      "bid": 5.0,
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Minnesota Timberwolves"
+    }
+  ],
+  "trades": {
+    "usb4nd6bk2rz46bo": {
+      "date": "2019-11-10",
+      "season": "2019-20",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Indiana Pacers",
+          "player_id": "04ex1",
+          "player": "Jordan Bell",
+          "label": "Jordan Bell"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Indiana Pacers",
+          "label": "2020 round 1 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Boston Celtics",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        }
+      ]
+    }
+  }
 }

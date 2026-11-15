@@ -111,5 +111,360 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Golden State Warriors",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 12,
+      "points": 185.25,
+      "salary": 1315392,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "from": "Golden State Warriors",
+      "team": "Philadelphia 76ers",
+      "trade": "qpkfdisvkic56339",
+      "periods": 29,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1315392,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-01",
+      "from": "Philadelphia 76ers",
+      "team": "Sacramento Kings",
+      "trade": "hb86xq3kkpd3h2og",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-06-03",
+      "from": "Sacramento Kings",
+      "team": "Orlando Magic",
+      "trade": "3l0w7p04kpgu1kue",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-02",
+      "from": "Orlando Magic",
+      "team": "Atlanta Hawks",
+      "trade": "82msv72nkruxx4bm",
+      "periods": 13,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1315392,
+      "contract": "R11"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-04",
+      "from": "Atlanta Hawks",
+      "team": "Washington Wizards",
+      "trade": "mwwyzn4ykwro4f2f",
+      "periods": 20,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1315392,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Washington Wizards"
+    }
+  ],
+  "trades": {
+    "qpkfdisvkic56339": {
+      "date": "2020-12-06",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "label": "2021 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    },
+    "82msv72nkruxx4bm": {
+      "date": "2021-08-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "label": "2021 round 2 pick, no. 24"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2021 round 2 pick, no. 17"
+        }
+      ]
+    },
+    "mwwyzn4ykwro4f2f": {
+      "date": "2021-12-04",
+      "season": "2021-22",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "05qt8",
+          "player": "Cassius Stanley",
+          "label": "Cassius Stanley"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "051oo",
+          "player": "Jaxson Hayes",
+          "label": "Jaxson Hayes"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "03avi",
+          "player": "Doug McDermott",
+          "label": "Doug McDermott"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "label": "2023 round 1 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsu",
+          "player": "Shake Milton",
+          "label": "Shake Milton"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Atlanta Hawks",
+          "player_id": "027p0",
+          "player": "Nikola Vucevic",
+          "label": "Nikola Vucevic"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Atlanta Hawks",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        }
+      ]
+    },
+    "3l0w7p04kpgu1kue": {
+      "date": "2021-06-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "027pg",
+          "player": "Bojan Bogdanovic",
+          "label": "Bojan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "049kf",
+          "player": "Mo Bamba",
+          "label": "Mo Bamba"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Orlando Magic)"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "051po",
+          "player": "Bol Bol",
+          "label": "Bol Bol"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "027pe",
+          "player": "Jimmy Butler",
+          "label": "Jimmy Butler"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        }
+      ]
+    },
+    "hb86xq3kkpd3h2og": {
+      "date": "2021-06-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "051po",
+          "player": "Bol Bol",
+          "label": "Bol Bol"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05qsk",
+          "player": "Isaac Okoro",
+          "label": "Isaac Okoro"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05quc",
+          "player": "CJ Elleby",
+          "label": "CJ Elleby"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "051ov",
+          "player": "Sekou Doumbouya",
+          "label": "Sekou Doumbouya"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick, no. 4"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid"
+        }
+      ]
+    }
+  }
 }

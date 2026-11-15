@@ -167,5 +167,286 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-11",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 127,
+      "starts": 99,
+      "points": 5307.5,
+      "salary": 15000000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-29",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 28,
+      "points": 1461.25,
+      "salary": 12242045,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Phoenix Suns",
+      "team": "Miami Heat",
+      "trade": "uq2o1bs8lxyjavfd",
+      "periods": 20,
+      "starts": 18,
+      "points": 647.5,
+      "salary": 12242045,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 21,
+      "date": "2024-12-30",
+      "from": "Miami Heat",
+      "team": "Houston Rockets",
+      "trade": "1jghgk36m5avz9qx",
+      "periods": 20,
+      "starts": 13,
+      "points": 650.75,
+      "salary": 12242045,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 8,
+      "date": "2025-11-13",
+      "from": "Houston Rockets",
+      "team": "Toronto Raptors",
+      "trade": "qv786h5cmhvytj7l",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 8,
+      "date": "2025-11-13",
+      "team": "Toronto Raptors"
+    }
+  ],
+  "trades": {
+    "uq2o1bs8lxyjavfd": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "player_id": "04qs4",
+          "player": "Robert Williams",
+          "label": "Robert Williams"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 7"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2024 round 1 pick, no. 14"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Washington Wizards",
+          "label": "2024 round 2 pick, no. 5"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Washington Wizards",
+          "label": "2024 round 1 pick, no. 11"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "player_id": "051p8",
+          "player": "Jordan Poole",
+          "label": "Jordan Poole"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "player_id": "03e74",
+          "player": "Spencer Dinwiddie",
+          "label": "Spencer Dinwiddie"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick, no. 30"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 11"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Phoenix Suns",
+          "label": "2024 round 1 pick, no. 8"
+        }
+      ]
+    },
+    "qv786h5cmhvytj7l": {
+      "date": "2025-11-13",
+      "season": "2025-26",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "player_id": "03e74",
+          "player": "Spencer Dinwiddie",
+          "label": "Spencer Dinwiddie"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "03nwm",
+          "player": "Devin Booker",
+          "label": "Devin Booker"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
+          "player_id": "06218",
+          "player": "Jeremy Sochan",
+          "label": "Jeremy Sochan"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "05qtv",
+          "player": "Tyrese Haliburton",
+          "label": "Tyrese Haliburton"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "06v5p",
+          "player": "Nolan Traore",
+          "label": "Nolan Traore"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Phoenix Suns)"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2026 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Miami Heat",
+          "player_id": "01eo6",
+          "player": "James Harden",
+          "label": "James Harden"
+        }
+      ]
+    },
+    "1jghgk36m5avz9qx": {
+      "date": "2024-12-30",
+      "season": "2024-25",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "06cd1",
+          "player": "Jordan Walsh",
+          "label": "Jordan Walsh"
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "03e74",
+          "player": "Spencer Dinwiddie",
+          "label": "Spencer Dinwiddie"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "05qtl",
+          "player": "Cole Anthony",
+          "label": "Cole Anthony"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick (New Orleans Pelicans)"
+        }
+      ]
+    }
+  }
 }

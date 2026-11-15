@@ -67,5 +67,73 @@
       "gp": 0,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Golden State Warriors",
+      "round": 2,
+      "pick": 34,
+      "periods": 55,
+      "starts": 2,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 23,
+      "date": "2023-01-02",
+      "from": "Golden State Warriors",
+      "team": "Miami Heat",
+      "trade": "gval9i9vlcer1ktf",
+      "periods": 7,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-26",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "gval9i9vlcer1ktf": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "player_id": "05uj7",
+          "player": "Jason Preston",
+          "label": "Jason Preston"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Golden State Warriors",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann"
+        }
+      ]
+    }
+  }
 }

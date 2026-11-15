@@ -181,5 +181,135 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Utah Jazz",
+      "before_logs": true,
+      "periods": 61,
+      "starts": 61,
+      "points": 4032.75,
+      "salary": 2489184,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-14",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 131,
+      "starts": 121,
+      "points": 8719.5,
+      "salary": 28500000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-10",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 34,
+      "starts": 34,
+      "points": 2726.0,
+      "salary": 20900000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 2,
+      "date": "2026-10-23",
+      "from": "Utah Jazz",
+      "team": "Milwaukee Bucks",
+      "trade": "ropqfs1wmvhr2o2x",
+      "periods": 6,
+      "starts": 6,
+      "points": 470.0,
+      "salary": 20900000,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "ropqfs1wmvhr2o2x": {
+      "date": "2026-10-23",
+      "season": "2026-27",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Utah Jazz",
+          "player_id": "049kb",
+          "player": "De'Aaron Fox",
+          "label": "De'Aaron Fox"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Dallas Mavericks",
+          "player_id": "01eo9",
+          "player": "Jrue Holiday",
+          "label": "Jrue Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Utah Jazz",
+          "player_id": "06mkc",
+          "player": "Jaylon Tyson",
+          "label": "Jaylon Tyson"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewk",
+          "player": "John Collins",
+          "label": "John Collins"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Utah Jazz",
+          "label": "2028 round 1 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Utah Jazz",
+          "label": "2027 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Milwaukee Bucks",
+          "player_id": "04ewe",
+          "player": "Donovan Mitchell",
+          "label": "Donovan Mitchell"
+        }
+      ]
+    }
+  }
 }

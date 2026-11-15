@@ -139,5 +139,214 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-24",
+      "team": "Detroit Pistons",
+      "round": 2,
+      "pick": 52,
+      "periods": 47,
+      "starts": 1,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 19,
+      "date": "2021-12-21",
+      "from": "Detroit Pistons",
+      "team": "Memphis Grizzlies",
+      "trade": "y7jfydkxkxg1vebv",
+      "periods": 15,
+      "starts": 2,
+      "points": 41.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 34,
+      "date": "2022-02-11",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 48,
+      "date": "2023-04-03",
+      "team": "Memphis Grizzlies",
+      "bid": 1.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 6,
+      "date": "2023-11-10",
+      "team": "Utah Jazz",
+      "bid": 47.0,
+      "periods": 18,
+      "starts": 8,
+      "points": 238.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 24,
+      "date": "2024-01-12",
+      "from": "Utah Jazz",
+      "team": "Oklahoma City Thunder",
+      "trade": "ihb5ule4lraiqw2b",
+      "periods": 9,
+      "starts": 4,
+      "points": 9.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Oklahoma City Thunder"
+    }
+  ],
+  "trades": {
+    "y7jfydkxkxg1vebv": {
+      "date": "2021-12-21",
+      "season": "2021-22",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qt0",
+          "player": "Saddiq Bey",
+          "label": "Saddiq Bey"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qtu",
+          "player": "Skylar Mays",
+          "label": "Skylar Mays"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "01uz9",
+          "player": "Nemanja Bjelica",
+          "label": "Nemanja Bjelica"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qu4",
+          "player": "Saben Lee",
+          "label": "Saben Lee"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "player_id": "027p2",
+          "player": "Enes Kanter",
+          "label": "Enes Kanter"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2023 round 1 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2023 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Atlanta Hawks)"
+        }
+      ]
+    },
+    "ihb5ule4lraiqw2b": {
+      "date": "2024-01-12",
+      "season": "2023-24",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "player_id": "06gix",
+          "player": "Duop Reath",
+          "label": "Duop Reath"
+        },
+        {
+          "kind": "budget",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "player_id": "05qtu",
+          "player": "Skylar Mays",
+          "label": "Skylar Mays"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 2 pick (Utah Jazz)"
+        }
+      ]
+    }
+  }
 }

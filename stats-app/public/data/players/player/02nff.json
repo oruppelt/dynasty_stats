@@ -111,5 +111,130 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Detroit Pistons",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 25,
+      "points": 830.25,
+      "salary": 8669663,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Detroit Pistons"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 14,
+      "points": 69.75,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 4,
+      "date": "2021-10-29",
+      "team": "Oklahoma City Thunder",
+      "bid": 3.0,
+      "periods": 23,
+      "starts": 12,
+      "points": 234.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 27,
+      "date": "2022-01-18",
+      "from": "Oklahoma City Thunder",
+      "team": "Portland Trail Blazers",
+      "trade": "gvsgeu8skyjvgsva",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 27,
+      "date": "2022-01-18",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 33,
+      "date": "2022-02-07",
+      "team": "Houston Rockets",
+      "bid": 5.0,
+      "periods": 1,
+      "starts": 1,
+      "points": 7.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Houston Rockets"
+    }
+  ],
+  "trades": {
+    "gvsgeu8skyjvgsva": {
+      "date": "2022-01-18",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Portland Trail Blazers",
+          "player_id": "02nff",
+          "player": "Maurice Harkless",
+          "label": "Maurice Harkless"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Portland Trail Blazers",
+          "label": "2023 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "04qsm",
+          "player": "De'Anthony Melton",
+          "label": "De'Anthony Melton"
+        }
+      ]
+    }
+  }
 }

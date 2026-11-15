@@ -125,5 +125,147 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-28",
+      "team": "Toronto Raptors",
+      "round": 2,
+      "pick": 57,
+      "periods": 32,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-07",
+      "from": "Toronto Raptors",
+      "team": "San Antonio Spurs",
+      "trade": "apff3ll8lzjik29h",
+      "periods": 33,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-05",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 10,
+      "starts": 10,
+      "points": 204.75,
+      "salary": 2499476,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 11,
+      "date": "2025-11-24",
+      "from": "Boston Celtics",
+      "team": "Houston Rockets",
+      "trade": "o90w1xhlmicw5zpu",
+      "periods": 23,
+      "starts": 23,
+      "points": 379.25,
+      "salary": 2499476,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-22",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-14",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 2,
+      "points": 64.75,
+      "salary": 1500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "o90w1xhlmicw5zpu": {
+      "date": "2025-11-24",
+      "season": "2025-26",
+      "period": 11,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "06mkj",
+          "player": "Terrence Shannon",
+          "label": "Terrence Shannon"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "06cd9",
+          "player": "Jaylen Clark",
+          "label": "Jaylen Clark"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "label": "2027 round 2 pick (Boston Celtics)"
+        }
+      ]
+    },
+    "apff3ll8lzjik29h": {
+      "date": "2024-08-07",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "San Antonio Spurs",
+          "player_id": "06cd9",
+          "player": "Jaylen Clark",
+          "label": "Jaylen Clark"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)"
+        }
+      ]
+    }
+  }
 }

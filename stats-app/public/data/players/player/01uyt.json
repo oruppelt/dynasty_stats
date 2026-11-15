@@ -139,5 +139,279 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Portland Trail Blazers",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 22,
+      "points": 998.75,
+      "salary": 13520000,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 23,
+      "starts": 14,
+      "points": 466.0,
+      "salary": 5800000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 25,
+      "date": "2021-03-13",
+      "from": "Sacramento Kings",
+      "team": "Atlanta Hawks",
+      "trade": "gzvk4aj0km80h0pp",
+      "periods": 6,
+      "starts": 6,
+      "points": 242.5,
+      "salary": 5800000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-20",
+      "team": "Los Angeles Lakers",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-23",
+      "from": "Los Angeles Lakers",
+      "team": "New York Knicks",
+      "trade": "3zvf0vxsksosut9z",
+      "periods": 13,
+      "starts": 4,
+      "points": 75.5,
+      "salary": 3500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-02",
+      "from": "New York Knicks",
+      "team": "Cleveland Cavaliers",
+      "trade": "75iigt7rkwp2anvv",
+      "periods": 14,
+      "starts": 12,
+      "points": 179.25,
+      "salary": 3500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-21",
+      "from": "Cleveland Cavaliers",
+      "team": "Philadelphia 76ers",
+      "trade": "yuxsbccvkynk77x4",
+      "periods": 6,
+      "starts": 1,
+      "points": 20.75,
+      "salary": 3500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Philadelphia 76ers"
+    }
+  ],
+  "trades": {
+    "yuxsbccvkynk77x4": {
+      "date": "2022-01-21",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uur",
+          "player": "Joel Ayayi",
+          "label": "Joel Ayayi"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uun",
+          "player": "Matthew Hurt",
+          "label": "Matthew Hurt"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 2 pick (Dallas Mavericks)"
+        }
+      ]
+    },
+    "3zvf0vxsksosut9z": {
+      "date": "2021-08-23",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "New York Knicks",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Los Angeles Lakers",
+          "player_id": "051p7",
+          "player": "Mfiondu Kabengele",
+          "label": "Mfiondu Kabengele"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Los Angeles Lakers",
+          "player_id": "049kh",
+          "player": "Kevin Knox",
+          "label": "Kevin Knox"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Los Angeles Lakers",
+          "label": "2022 round 1 pick (New York Knicks)"
+        }
+      ]
+    },
+    "gzvk4aj0km80h0pp": {
+      "date": "2021-03-13",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "001bo",
+          "player": "Paul Millsap",
+          "label": "Paul Millsap"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "label": "2021 round 2 pick (Sacramento Kings)"
+        }
+      ]
+    },
+    "75iigt7rkwp2anvv": {
+      "date": "2021-12-02",
+      "season": "2021-22",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "0019g",
+          "player": "LaMarcus Aldridge",
+          "label": "LaMarcus Aldridge"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05uiu",
+          "player": "Jalen Johnson",
+          "label": "Jalen Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 1 pick (Boston Celtics)"
+        }
+      ]
+    }
+  }
 }

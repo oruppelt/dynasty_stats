@@ -139,5 +139,137 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-27",
+      "team": "Orlando Magic",
+      "round": 1,
+      "pick": 5,
+      "periods": 98,
+      "starts": 93,
+      "points": 4040.75,
+      "salary": 4285000,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-08",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-18",
+      "team": "Golden State Warriors",
+      "bid": 0.0,
+      "periods": 22,
+      "starts": 15,
+      "points": 670.75,
+      "salary": 10000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 23,
+      "date": "2026-01-05",
+      "from": "Golden State Warriors",
+      "team": "Sacramento Kings",
+      "trade": "tcgwfz7bmk11cgpz",
+      "periods": 7,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 10000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 30,
+      "date": "2026-01-28",
+      "from": "Sacramento Kings",
+      "team": "Golden State Warriors",
+      "trade": "ne9vonk1mkvnp53w",
+      "periods": 11,
+      "starts": 9,
+      "points": 307.5,
+      "salary": 10000000,
+      "contract": "REG3"
+    }
+  ],
+  "trades": {
+    "tcgwfz7bmk11cgpz": {
+      "date": "2026-01-05",
+      "season": "2025-26",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Sacramento Kings",
+          "player_id": "06215",
+          "player": "Bennedict Mathurin",
+          "label": "Bennedict Mathurin"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Sacramento Kings",
+          "label": "2027 round 1 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "player_id": "05uj4",
+          "player": "Santi Aldama",
+          "label": "Santi Aldama"
+        },
+        {
+          "kind": "budget",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "label": "$13 budget"
+        }
+      ]
+    },
+    "ne9vonk1mkvnp53w": {
+      "date": "2026-01-28",
+      "season": "2025-26",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Sacramento Kings",
+          "player_id": "03el5",
+          "player": "Kristaps Porzingis",
+          "label": "Kristaps Porzingis"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "player_id": "06215",
+          "player": "Bennedict Mathurin",
+          "label": "Bennedict Mathurin"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "player_id": "05uic",
+          "player": "Jalen Green",
+          "label": "Jalen Green"
+        }
+      ]
+    }
+  }
 }

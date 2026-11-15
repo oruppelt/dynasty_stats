@@ -125,5 +125,179 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Sacramento Kings",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 31,
+      "points": 2084.5,
+      "salary": 17877612,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 21,
+      "starts": 12,
+      "points": 430.75,
+      "salary": 17500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 22,
+      "date": "2021-03-06",
+      "from": "Sacramento Kings",
+      "team": "New York Knicks",
+      "trade": "etfluotfklxsl8yb",
+      "periods": 8,
+      "starts": 1,
+      "points": 28.25,
+      "salary": 17500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "New York Knicks"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-13",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 13,
+      "starts": 11,
+      "points": 471.75,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-02",
+      "from": "Cleveland Cavaliers",
+      "team": "New York Knicks",
+      "trade": "75iigt7rkwp2anvv",
+      "periods": 20,
+      "starts": 9,
+      "points": 244.75,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "New York Knicks"
+    }
+  ],
+  "trades": {
+    "etfluotfklxsl8yb": {
+      "date": "2021-03-06",
+      "season": "2020-21",
+      "period": 22,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Sacramento Kings",
+          "player_id": "03nwq",
+          "player": "Christian Wood",
+          "label": "Christian Wood"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick (Sacramento Kings)"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "New York Knicks",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "New York Knicks",
+          "player_id": "0019g",
+          "player": "LaMarcus Aldridge",
+          "label": "LaMarcus Aldridge"
+        }
+      ]
+    },
+    "75iigt7rkwp2anvv": {
+      "date": "2021-12-02",
+      "season": "2021-22",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "0019g",
+          "player": "LaMarcus Aldridge",
+          "label": "LaMarcus Aldridge"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05uiu",
+          "player": "Jalen Johnson",
+          "label": "Jalen Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 1 pick (Boston Celtics)"
+        }
+      ]
+    }
+  }
 }

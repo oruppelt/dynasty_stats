@@ -111,5 +111,112 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Miami Heat",
+      "before_logs": true,
+      "periods": 5,
+      "starts": 5,
+      "points": 121.25,
+      "salary": 1102594,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 6,
+      "date": "2019-11-07",
+      "from": "Miami Heat",
+      "team": "Boston Celtics",
+      "trade": "yzpa9lmnk2oo5ui0",
+      "periods": 27,
+      "starts": 11,
+      "points": 160.5,
+      "salary": 1102594,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 40,
+      "date": "2021-05-07",
+      "team": "Charlotte Hornets",
+      "bid": 20.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 41,
+      "date": "2021-05-10",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 11,
+      "date": "2021-11-22",
+      "team": "Chicago Bulls",
+      "bid": 5.0,
+      "periods": 23,
+      "starts": 13,
+      "points": 458.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Chicago Bulls"
+    }
+  ],
+  "trades": {
+    "yzpa9lmnk2oo5ui0": {
+      "date": "2019-11-07",
+      "season": "2019-20",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "048zs",
+          "player": "Shaquille Harrison",
+          "label": "Shaquille Harrison"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "label": "2021 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "04ewv",
+          "player": "Frank Jackson",
+          "label": "Frank Jackson"
+        }
+      ]
+    }
+  }
 }

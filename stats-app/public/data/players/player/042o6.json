@@ -97,5 +97,90 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-10",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 14,
+      "points": 284.0,
+      "salary": 1200000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-23",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-16",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 20,
+      "starts": 7,
+      "points": 86.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 21,
+      "date": "2021-03-01",
+      "from": "Boston Celtics",
+      "team": "Toronto Raptors",
+      "trade": "n3iu6fufklqk845u",
+      "periods": 9,
+      "starts": 6,
+      "points": 121.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Toronto Raptors"
+    }
+  ],
+  "trades": {
+    "n3iu6fufklqk845u": {
+      "date": "2021-03-01",
+      "season": "2020-21",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Toronto Raptors",
+          "player_id": "042o6",
+          "player": "Jake Layman",
+          "label": "Jake Layman"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Boston Celtics",
+          "label": "2022 round 2 pick (Sacramento Kings)"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Boston Celtics",
+          "label": "2022 round 2 pick (Washington Wizards)"
+        }
+      ]
+    }
+  }
 }

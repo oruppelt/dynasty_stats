@@ -18,5 +18,85 @@
       "paid": 1000000
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-24",
+      "team": "San Antonio Spurs",
+      "round": 2,
+      "pick": 45,
+      "periods": 29,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-09-01",
+      "from": "San Antonio Spurs",
+      "team": "Sacramento Kings",
+      "trade": "qpytx42akt19ylzv",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-10-12",
+      "team": "Sacramento Kings"
+    }
+  ],
+  "trades": {
+    "qpytx42akt19ylzv": {
+      "date": "2021-09-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "051ou",
+          "player": "Romeo Langford",
+          "label": "Romeo Langford"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "05qss",
+          "player": "Tyler Bey",
+          "label": "Tyler Bey"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2023 round 2 pick (San Antonio Spurs)"
+        }
+      ]
+    }
+  }
 }

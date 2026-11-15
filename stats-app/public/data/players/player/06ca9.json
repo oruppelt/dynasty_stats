@@ -97,5 +97,87 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2023-24",
+      "period": 0,
+      "date": "2023-06-26",
+      "team": "Detroit Pistons",
+      "round": 1,
+      "pick": 16,
+      "periods": 65,
+      "starts": 31,
+      "points": 996.0,
+      "salary": 2089000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-05",
+      "from": "Detroit Pistons",
+      "team": "Memphis Grizzlies",
+      "trade": "fukufocgmcq7nafm",
+      "periods": 24,
+      "starts": 5,
+      "points": 30.5,
+      "salary": 2089000,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 25,
+      "date": "2026-01-12",
+      "team": "Memphis Grizzlies"
+    }
+  ],
+  "trades": {
+    "fukufocgmcq7nafm": {
+      "date": "2025-07-05",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "06ca9",
+          "player": "Jordan Hawkins",
+          "label": "Jordan Hawkins"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "06mma",
+          "player": "Jalen Bridges",
+          "label": "Jalen Bridges"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "06mlw",
+          "player": "Enrique Freeman",
+          "label": "Enrique Freeman"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2027 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "$10 budget"
+        }
+      ]
+    }
+  }
 }

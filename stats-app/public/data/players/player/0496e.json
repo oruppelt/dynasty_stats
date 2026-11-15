@@ -181,5 +181,167 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-11",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 61,
+      "starts": 50,
+      "points": 1292.0,
+      "salary": 7000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-16",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 19,
+      "points": 771.25,
+      "salary": 1425000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-28",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 65,
+      "starts": 53,
+      "points": 2264.5,
+      "salary": 5000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Chicago Bulls"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-01",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 16,
+      "points": 589.25,
+      "salary": 9000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 12,
+      "points": 378.0,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "Orlando Magic",
+      "team": "Portland Trail Blazers",
+      "trade": "dn0hq58kmkv9e76t",
+      "periods": 5,
+      "starts": 2,
+      "points": 75.75,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 46,
+      "date": "2026-04-03",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-17",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 6,
+      "points": 219.75,
+      "salary": 6000000,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "dn0hq58kmkv9e76t": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "player_id": "06214",
+          "player": "Jaden Ivey",
+          "label": "Jaden Ivey"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "player_id": "0496e",
+          "player": "Alex Caruso",
+          "label": "Alex Caruso"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell"
+        }
+      ]
+    }
+  }
 }

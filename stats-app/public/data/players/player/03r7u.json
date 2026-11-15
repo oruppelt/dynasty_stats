@@ -167,5 +167,356 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Miami Heat",
+      "before_logs": true,
+      "periods": 61,
+      "starts": 44,
+      "points": 1988.25,
+      "salary": 7440000,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 20,
+      "points": 702.75,
+      "salary": 10000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-25",
+      "from": "Boston Celtics",
+      "team": "Chicago Bulls",
+      "trade": "jc5usd8pl4u61fxp",
+      "periods": 33,
+      "starts": 18,
+      "points": 754.0,
+      "salary": 10000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-27",
+      "from": "Chicago Bulls",
+      "team": "Utah Jazz",
+      "trade": "0x33e8dqljebq4sl",
+      "periods": 32,
+      "starts": 24,
+      "points": 833.25,
+      "salary": 10000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-22",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-08",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 23,
+      "starts": 14,
+      "points": 94.25,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 24,
+      "date": "2025-01-08",
+      "from": "Chicago Bulls",
+      "team": "Miami Heat",
+      "trade": "6wp31wt3m5mhwc4q",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 24,
+      "date": "2025-01-09",
+      "from": "Miami Heat",
+      "team": "Atlanta Hawks",
+      "trade": "3e8zy5h8m5ppki7t",
+      "periods": 5,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-27",
+      "from": "Atlanta Hawks",
+      "team": "Los Angeles Clippers",
+      "trade": "sq7it0uxm6e3ev52",
+      "periods": 5,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Los Angeles Clippers"
+    }
+  ],
+  "trades": {
+    "3e8zy5h8m5ppki7t": {
+      "date": "2025-01-09",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Miami Heat",
+          "player_id": "06mkm",
+          "player": "Baylor Scheierman",
+          "label": "Baylor Scheierman"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Miami Heat",
+          "player_id": "005kd",
+          "player": "Kevin Love",
+          "label": "Kevin Love"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        }
+      ]
+    },
+    "jc5usd8pl4u61fxp": {
+      "date": "2022-06-25",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "player_id": "03byg",
+          "player": "Montrezl Harrell",
+          "label": "Montrezl Harrell"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "label": "2022 round 1 pick, no. 14"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "label": "2024 round 1 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Boston Celtics",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard"
+        }
+      ]
+    },
+    "6wp31wt3m5mhwc4q": {
+      "date": "2025-01-08",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Chicago Bulls",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis"
+        }
+      ]
+    },
+    "0x33e8dqljebq4sl": {
+      "date": "2023-06-27",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Utah Jazz",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Utah Jazz",
+          "player_id": "0621f",
+          "player": "AJ Griffin",
+          "label": "AJ Griffin"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Utah Jazz",
+          "label": "2023 round 2 pick, no. 9"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Chicago Bulls",
+          "label": "2024 round 2 pick (Miami Heat)"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Chicago Bulls",
+          "label": "2024 round 2 pick (New Orleans Pelicans)"
+        }
+      ]
+    },
+    "sq7it0uxm6e3ev52": {
+      "date": "2025-01-27",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "player_id": "03e7f",
+          "player": "Vasilije Micic",
+          "label": "Vasilije Micic"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 1 pick (Orlando Magic)"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "051pa",
+          "player": "Kevin Porter",
+          "label": "Kevin Porter"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Los Angeles Clippers",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard"
+        }
+      ]
+    }
+  }
 }

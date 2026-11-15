@@ -167,5 +167,309 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2019-20",
+      "period": 0,
+      "date": "2019-06-24",
+      "team": "San Antonio Spurs",
+      "round": 2,
+      "pick": 44,
+      "periods": 32,
+      "starts": 29,
+      "points": 679.75,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-13",
+      "from": "San Antonio Spurs",
+      "team": "Orlando Magic",
+      "trade": "5gg4pkc8kg0rxsjg",
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-16",
+      "from": "Orlando Magic",
+      "team": "Sacramento Kings",
+      "trade": "5vp2vr5zkg9lvu4i",
+      "periods": 41,
+      "starts": 30,
+      "points": 1333.75,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "from": "Sacramento Kings",
+      "team": "Philadelphia 76ers",
+      "trade": "o80318c5kwkp7gxb",
+      "periods": 13,
+      "starts": 10,
+      "points": 436.5,
+      "salary": 1000000,
+      "contract": "R21"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 26,
+      "date": "2022-01-13",
+      "from": "Philadelphia 76ers",
+      "team": "Dallas Mavericks",
+      "trade": "9j43e33xkyd0spki",
+      "periods": 8,
+      "starts": 8,
+      "points": 366.75,
+      "salary": 1000000,
+      "contract": "R21"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Dallas Mavericks"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-04",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 22,
+      "starts": 11,
+      "points": 319.0,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 23,
+      "date": "2023-01-01",
+      "from": "Memphis Grizzlies",
+      "team": "Los Angeles Clippers",
+      "trade": "1yujdmvplcdgfp1l",
+      "periods": 11,
+      "starts": 11,
+      "points": 165.25,
+      "salary": 5000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-27",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-29",
+      "team": "Boston Celtics"
+    }
+  ],
+  "trades": {
+    "1yujdmvplcdgfp1l": {
+      "date": "2023-01-01",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Memphis Grizzlies",
+          "player_id": "027pg",
+          "player": "Bojan Bogdanovic",
+          "label": "Bojan Bogdanovic"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Clippers",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Clippers",
+          "label": "2023 round 1 pick (Phoenix Suns)"
+        }
+      ]
+    },
+    "5vp2vr5zkg9lvu4i": {
+      "date": "2020-10-16",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "051om",
+          "player": "Jarrett Culver",
+          "label": "Jarrett Culver"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "2020 round 1 pick, no. 14"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        }
+      ]
+    },
+    "9j43e33xkyd0spki": {
+      "date": "2022-01-13",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04kj6",
+          "player": "Luka Doncic",
+          "label": "Luka Doncic"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Philadelphia 76ers",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Dallas Mavericks",
+          "player_id": "03lg1",
+          "player": "Ben Simmons",
+          "label": "Ben Simmons"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Dallas Mavericks",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        }
+      ]
+    },
+    "o80318c5kwkp7gxb": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05uiz",
+          "player": "Quentin Grimes",
+          "label": "Quentin Grimes"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Philadelphia 76ers)"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qsk",
+          "player": "Isaac Okoro",
+          "label": "Isaac Okoro"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        }
+      ]
+    },
+    "5gg4pkc8kg0rxsjg": {
+      "date": "2020-10-13",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "label": "2020 round 2 pick, no. 5"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Orlando Magic",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        }
+      ]
+    }
+  }
 }

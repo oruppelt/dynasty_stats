@@ -125,5 +125,98 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-15",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 74,
+      "starts": 30,
+      "points": 548.5,
+      "salary": 14000000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-02",
+      "from": "New Orleans Pelicans",
+      "team": "Washington Wizards",
+      "trade": "tkca1bmjkwoypp13",
+      "periods": 20,
+      "starts": 14,
+      "points": 384.25,
+      "salary": 14000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-30",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 19,
+      "points": 638.25,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "New Orleans Pelicans"
+    }
+  ],
+  "trades": {
+    "tkca1bmjkwoypp13": {
+      "date": "2021-12-02",
+      "season": "2021-22",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Washington Wizards",
+          "player_id": "03nwi",
+          "player": "Justise Winslow",
+          "label": "Justise Winslow"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Washington Wizards",
+          "label": "2023 round 2 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "New Orleans Pelicans",
+          "player_id": "02nf7",
+          "player": "Harrison Barnes",
+          "label": "Harrison Barnes"
+        }
+      ]
+    }
+  }
 }

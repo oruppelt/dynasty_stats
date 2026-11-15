@@ -209,5 +209,357 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-18",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 12,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "from": "Boston Celtics",
+      "team": "Sacramento Kings",
+      "trade": "9b0henoykwl4z069",
+      "periods": 14,
+      "starts": 6,
+      "points": 16.75,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 27,
+      "date": "2022-01-17",
+      "from": "Sacramento Kings",
+      "team": "Chicago Bulls",
+      "trade": "de5pkn4ykyik1gb0",
+      "periods": 63,
+      "starts": 6,
+      "points": 209.75,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 24,
+      "date": "2024-01-12",
+      "from": "Chicago Bulls",
+      "team": "Atlanta Hawks",
+      "trade": "w77iv92nlraibgpv",
+      "periods": 9,
+      "starts": 8,
+      "points": 222.25,
+      "salary": 1000000,
+      "contract": "R21"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Atlanta Hawks"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-01",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 24,
+      "starts": 21,
+      "points": 634.25,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 25,
+      "date": "2025-01-13",
+      "from": "Atlanta Hawks",
+      "team": "Orlando Magic",
+      "trade": "elhvdxrdm5v6pxvy",
+      "periods": 9,
+      "starts": 2,
+      "points": 102.75,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 3,
+      "starts": 3,
+      "points": 124.5,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "from": "Portland Trail Blazers",
+      "team": "Indiana Pacers",
+      "trade": "9colormomhexsfi3",
+      "periods": 30,
+      "starts": 16,
+      "points": 636.75,
+      "salary": 2500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-10",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Los Angeles Clippers",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 5,
+      "points": 199.0,
+      "salary": 2227000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "elhvdxrdm5v6pxvy": {
+      "date": "2025-01-13",
+      "season": "2024-25",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "049kb",
+          "player": "De'Aaron Fox",
+          "label": "De'Aaron Fox"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen"
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2026 round 1 pick (Orlando Magic)"
+        }
+      ]
+    },
+    "w77iv92nlraibgpv": {
+      "date": "2024-01-12",
+      "season": "2023-24",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "005kd",
+          "player": "Kevin Love",
+          "label": "Kevin Love"
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "0621r",
+          "player": "Patrick Baldwin",
+          "label": "Patrick Baldwin"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7v",
+          "player": "Pat Connaughton",
+          "label": "Pat Connaughton"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 1 pick (Boston Celtics)"
+        }
+      ]
+    },
+    "de5pkn4ykyik1gb0": {
+      "date": "2022-01-17",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Sacramento Kings",
+          "player_id": "051oh",
+          "player": "Zion Williamson",
+          "label": "Zion Williamson"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "label": "2023 round 2 pick (Philadelphia 76ers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "label": "2022 round 2 pick (Sacramento Kings)"
+        }
+      ]
+    },
+    "9colormomhexsfi3": {
+      "date": "2025-10-31",
+      "season": "2025-26",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2027 round 2 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        }
+      ]
+    },
+    "9b0henoykwl4z069": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "player_id": "051oy",
+          "player": "Goga Bitadze",
+          "label": "Goga Bitadze"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "label": "2023 round 2 pick (San Antonio Spurs)"
+        }
+      ]
+    }
+  }
 }

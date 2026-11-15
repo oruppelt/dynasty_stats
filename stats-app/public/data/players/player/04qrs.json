@@ -139,5 +139,141 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Toronto Raptors",
+      "before_logs": true,
+      "periods": 32,
+      "starts": 21,
+      "points": 983.75,
+      "salary": 1000000,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-23",
+      "from": "Toronto Raptors",
+      "team": "Los Angeles Lakers",
+      "trade": "1tc2hyhfkj19w70z",
+      "periods": 9,
+      "starts": 4,
+      "points": 53.75,
+      "salary": 2119264,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 10,
+      "date": "2021-01-23",
+      "from": "Los Angeles Lakers",
+      "team": "Memphis Grizzlies",
+      "trade": "7484ccylkk6rarno",
+      "periods": 27,
+      "starts": 4,
+      "points": 51.25,
+      "salary": 2119264,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 9,
+      "date": "2021-11-15",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 6,
+      "date": "2022-11-04",
+      "team": "New Orleans Pelicans",
+      "bid": 11.0,
+      "periods": 28,
+      "starts": 21,
+      "points": 680.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "New Orleans Pelicans"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-31",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 19,
+      "points": 144.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-05-09",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "1tc2hyhfkj19w70z": {
+      "date": "2020-12-23",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Toronto Raptors",
+          "player_id": "042ne",
+          "player": "Malik Beasley",
+          "label": "Malik Beasley"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qrs",
+          "player": "Troy Brown",
+          "label": "Troy Brown"
+        }
+      ]
+    },
+    "7484ccylkk6rarno": {
+      "date": "2021-01-23",
+      "season": "2020-21",
+      "period": 10,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "04qrs",
+          "player": "Troy Brown",
+          "label": "Troy Brown"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "label": "2021 round 1 pick (Memphis Grizzlies)"
+        }
+      ]
+    }
+  }
 }

@@ -139,5 +139,150 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-14",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 61,
+      "starts": 15,
+      "points": 650.0,
+      "salary": 13500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Charlotte Hornets"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 7,
+      "date": "2021-11-08",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 14,
+      "date": "2021-12-03",
+      "team": "San Antonio Spurs",
+      "bid": 5.0,
+      "periods": 12,
+      "starts": 8,
+      "points": 333.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 26,
+      "date": "2022-01-13",
+      "from": "San Antonio Spurs",
+      "team": "Dallas Mavericks",
+      "trade": "1zyt3pfrkycyno26",
+      "periods": 8,
+      "starts": 8,
+      "points": 72.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Dallas Mavericks"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-29",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-23",
+      "team": "New Orleans Pelicans"
+    }
+  ],
+  "trades": {
+    "1zyt3pfrkycyno26": {
+      "date": "2022-01-13",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson"
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr."
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewi",
+          "player": "D.J. Wilson",
+          "label": "D.J. Wilson"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "01uz3",
+          "player": "DeMarcus Cousins",
+          "label": "DeMarcus Cousins"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George"
+        }
+      ]
+    }
+  }
 }

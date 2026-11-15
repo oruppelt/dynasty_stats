@@ -125,5 +125,187 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-14",
+      "team": "Los Angeles Lakers",
+      "bid": 0.0,
+      "periods": 14,
+      "starts": 6,
+      "points": 135.0,
+      "salary": 10000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 15,
+      "date": "2019-12-09",
+      "from": "Los Angeles Lakers",
+      "team": "Memphis Grizzlies",
+      "trade": "auat5jg8k3ygvkfy",
+      "periods": 47,
+      "starts": 31,
+      "points": 1852.0,
+      "salary": 10000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-11",
+      "team": "Memphis Grizzlies",
+      "bid": 0.0,
+      "periods": 19,
+      "starts": 3,
+      "points": 57.25,
+      "salary": 4000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 20,
+      "date": "2021-12-21",
+      "from": "Memphis Grizzlies",
+      "team": "Detroit Pistons",
+      "trade": "y7jfydkxkxg1vebv",
+      "periods": 14,
+      "starts": 4,
+      "points": 9.5,
+      "salary": 4000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Detroit Pistons"
+    }
+  ],
+  "trades": {
+    "y7jfydkxkxg1vebv": {
+      "date": "2021-12-21",
+      "season": "2021-22",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qt0",
+          "player": "Saddiq Bey",
+          "label": "Saddiq Bey"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qtu",
+          "player": "Skylar Mays",
+          "label": "Skylar Mays"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "01uz9",
+          "player": "Nemanja Bjelica",
+          "label": "Nemanja Bjelica"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qu4",
+          "player": "Saben Lee",
+          "label": "Saben Lee"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "player_id": "027p2",
+          "player": "Enes Kanter",
+          "label": "Enes Kanter"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2023 round 1 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2023 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Atlanta Hawks)"
+        }
+      ]
+    },
+    "auat5jg8k3ygvkfy": {
+      "date": "2019-12-09",
+      "season": "2019-20",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "027p2",
+          "player": "Enes Kanter",
+          "label": "Enes Kanter"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "label": "2021 round 1 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "player_id": "04849",
+          "player": "Danuel House",
+          "label": "Danuel House"
+        }
+      ]
+    }
+  }
 }

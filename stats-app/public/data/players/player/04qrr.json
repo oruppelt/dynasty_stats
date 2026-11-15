@@ -195,5 +195,296 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Minnesota Timberwolves",
+      "before_logs": true,
+      "periods": 94,
+      "starts": 39,
+      "points": 2025.25,
+      "salary": 2315328,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "team": "Minnesota Timberwolves",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 25,
+      "points": 1130.5,
+      "salary": 11400000,
+      "contract": "REG3"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-27",
+      "from": "Minnesota Timberwolves",
+      "team": "Indiana Pacers",
+      "trade": "k8wsy8nslklm9aqo",
+      "periods": 65,
+      "starts": 64,
+      "points": 3706.75,
+      "salary": 11400000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-10",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Portland Trail Blazers",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 6,
+      "points": 356.5,
+      "salary": 13000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-10",
+      "from": "Portland Trail Blazers",
+      "team": "Utah Jazz",
+      "trade": "v3wccgv0mhsxznc0",
+      "periods": 5,
+      "starts": 4,
+      "points": 295.5,
+      "salary": 13000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 12,
+      "date": "2025-11-27",
+      "from": "Utah Jazz",
+      "team": "Boston Celtics",
+      "trade": "yqdm26wgmih99jx3",
+      "periods": 22,
+      "starts": 18,
+      "points": 1147.75,
+      "salary": 13000000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-13",
+      "from": "Boston Celtics",
+      "team": "Toronto Raptors",
+      "trade": "rhyr5c70msr9j4s3",
+      "periods": 7,
+      "starts": 7,
+      "points": 451.5,
+      "salary": 13000000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "v3wccgv0mhsxznc0": {
+      "date": "2025-11-10",
+      "season": "2025-26",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Utah Jazz",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "player_id": "04k0q",
+          "player": "Nigel Hayes-Davis",
+          "label": "Nigel Hayes-Davis"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke"
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Portland Trail Blazers",
+          "label": "2027 round 1 pick (Utah Jazz)"
+        }
+      ]
+    },
+    "rhyr5c70msr9j4s3": {
+      "date": "2026-08-13",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Toronto Raptors",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Toronto Raptors",
+          "player_id": "06mm1",
+          "player": "Bronny James",
+          "label": "Bronny James"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Boston Celtics",
+          "label": "2027 round 2 pick (Toronto Raptors)"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Boston Celtics",
+          "label": "2027 round 1 pick (Toronto Raptors)"
+        }
+      ]
+    },
+    "k8wsy8nslklm9aqo": {
+      "date": "2023-07-27",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujq",
+          "player": "Luka Garza",
+          "label": "Luka Garza"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Indiana Pacers",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter"
+        }
+      ]
+    },
+    "yqdm26wgmih99jx3": {
+      "date": "2025-11-27",
+      "season": "2025-26",
+      "period": 12,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "049kd",
+          "player": "Deandre Ayton",
+          "label": "Deandre Ayton"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mkk",
+          "player": "Ryan Dunn",
+          "label": "Ryan Dunn"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mlx",
+          "player": "Melvin Ajinca",
+          "label": "Melvin Ajinca"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Utah Jazz)"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "05qtt",
+          "player": "Onyeka Okongwu",
+          "label": "Onyeka Okongwu"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter"
+        }
+      ]
+    }
+  }
 }

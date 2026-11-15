@@ -111,5 +111,118 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 12,
+      "date": "2021-11-26",
+      "team": "Oklahoma City Thunder",
+      "bid": 1.0,
+      "periods": 17,
+      "starts": 12,
+      "points": 246.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 29,
+      "date": "2022-01-24",
+      "team": "Oklahoma City Thunder"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 11,
+      "date": "2022-11-21",
+      "team": "Minnesota Timberwolves",
+      "bid": 19.0,
+      "periods": 18,
+      "starts": 3,
+      "points": 27.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-24",
+      "from": "Minnesota Timberwolves",
+      "team": "Los Angeles Clippers",
+      "trade": "vonp1d50ldamgv6o",
+      "periods": 5,
+      "starts": 5,
+      "points": 157.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-31",
+      "team": "Los Angeles Lakers",
+      "bid": 0.0,
+      "periods": 15,
+      "starts": 1,
+      "points": 7.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 16,
+      "date": "2023-12-15",
+      "team": "Los Angeles Lakers"
+    }
+  ],
+  "trades": {
+    "vonp1d50ldamgv6o": {
+      "date": "2023-01-24",
+      "season": "2022-23",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "031m4",
+          "player": "Dennis Schroder",
+          "label": "Dennis Schroder"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "player_id": "04xhy",
+          "player": "Yuta Watanabe",
+          "label": "Yuta Watanabe"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "label": "2023 round 2 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "label": "2024 round 2 pick (Boston Celtics)"
+        }
+      ]
+    }
+  }
 }

@@ -195,5 +195,262 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Dallas Mavericks",
+      "before_logs": true,
+      "periods": 33,
+      "starts": 31,
+      "points": 1579.75,
+      "salary": 20200000,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 2,
+      "date": "2020-12-23",
+      "from": "Dallas Mavericks",
+      "team": "Chicago Bulls",
+      "trade": "xheannvgkj1iymrq",
+      "periods": 28,
+      "starts": 26,
+      "points": 1634.25,
+      "salary": 20200000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-13",
+      "from": "Chicago Bulls",
+      "team": "Brooklyn Nets",
+      "trade": "wcivp5rxksa4q78n",
+      "periods": 33,
+      "starts": 29,
+      "points": 1677.25,
+      "salary": 20200000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Brooklyn Nets"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "team": "Charlotte Hornets",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-18",
+      "from": "Charlotte Hornets",
+      "team": "Los Angeles Lakers",
+      "trade": "xmox8ksrl9e24fip",
+      "periods": 98,
+      "starts": 91,
+      "points": 3812.5,
+      "salary": 13333333,
+      "contract": "REG3"
+    },
+    {
+      "kind": "renamed",
+      "date": "2025-06-27",
+      "from": "Los Angeles Lakers",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-08",
+      "team": "Los Angeles Clippers"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "San Antonio Spurs",
+      "bid": 0.0,
+      "periods": 28,
+      "starts": 26,
+      "points": 1487.5,
+      "salary": 12500000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "San Antonio Spurs",
+      "team": "New Orleans Pelicans",
+      "trade": "nuuo5uvwmkv30gos",
+      "periods": 12,
+      "starts": 11,
+      "points": 460.0,
+      "salary": 12500000,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "xmox8ksrl9e24fip": {
+      "date": "2022-10-18",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Los Angeles Lakers",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Los Angeles Lakers",
+          "player_id": "049kc",
+          "player": "Malik Monk",
+          "label": "Malik Monk"
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Los Angeles Lakers",
+          "player_id": "02ym0",
+          "player": "Andrew Wiggins",
+          "label": "Andrew Wiggins"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Charlotte Hornets",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Charlotte Hornets",
+          "player_id": "05uit",
+          "player": "Kai Jones",
+          "label": "Kai Jones"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Charlotte Hornets",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Charlotte Hornets",
+          "label": "2024 round 2 pick (Los Angeles Lakers)"
+        }
+      ]
+    },
+    "xheannvgkj1iymrq": {
+      "date": "2020-12-23",
+      "season": "2020-21",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr."
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Chicago Bulls",
+          "player_id": "02ym0",
+          "player": "Andrew Wiggins",
+          "label": "Andrew Wiggins"
+        }
+      ]
+    },
+    "wcivp5rxksa4q78n": {
+      "date": "2021-08-13",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Brooklyn Nets",
+          "to": "Chicago Bulls",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Brooklyn Nets",
+          "player_id": "02ym0",
+          "player": "Andrew Wiggins",
+          "label": "Andrew Wiggins"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Brooklyn Nets",
+          "label": "2023 round 1 pick (Chicago Bulls)"
+        }
+      ]
+    },
+    "nuuo5uvwmkv30gos": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "San Antonio Spurs",
+          "player_id": "03aq2",
+          "player": "Jerami Grant",
+          "label": "Jerami Grant"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "New Orleans Pelicans",
+          "player_id": "02ym0",
+          "player": "Andrew Wiggins",
+          "label": "Andrew Wiggins"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "New Orleans Pelicans",
+          "label": "2026 round 2 pick (Minnesota Timberwolves)"
+        }
+      ]
+    }
+  }
 }

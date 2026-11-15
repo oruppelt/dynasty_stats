@@ -139,5 +139,163 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Memphis Grizzlies",
+      "round": 1,
+      "pick": 12,
+      "periods": 26,
+      "starts": 19,
+      "points": 781.0,
+      "salary": 2565312,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 27,
+      "date": "2022-01-17",
+      "from": "Memphis Grizzlies",
+      "team": "Sacramento Kings",
+      "trade": "4082kokckyio7f5a",
+      "periods": 35,
+      "starts": 22,
+      "points": 719.25,
+      "salary": 2565312,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-23",
+      "from": "Sacramento Kings",
+      "team": "Milwaukee Bucks",
+      "trade": "5pxpxbx7ld978ypq",
+      "periods": 21,
+      "starts": 8,
+      "points": 200.75,
+      "salary": 2565000,
+      "contract": "R12"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 17,
+      "date": "2023-12-18",
+      "from": "Milwaukee Bucks",
+      "team": "Miami Heat",
+      "trade": "ssp9l719lqaof5h2",
+      "periods": 16,
+      "starts": 14,
+      "points": 107.5,
+      "salary": 2565000,
+      "contract": "R11"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-05-09",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "ssp9l719lqaof5h2": {
+      "date": "2023-12-18",
+      "season": "2023-24",
+      "period": 17,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "043ib",
+          "player": "Dorian Finney-Smith",
+          "label": "Dorian Finney-Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "05uin",
+          "player": "Chris Duarte",
+          "label": "Chris Duarte"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "05uuv",
+          "player": "Trendon Watford",
+          "label": "Trendon Watford"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "06226",
+          "player": "Moussa Diabate",
+          "label": "Moussa Diabate"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    },
+    "5pxpxbx7ld978ypq": {
+      "date": "2023-01-23",
+      "season": "2022-23",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Sacramento Kings",
+          "player_id": "04qru",
+          "player": "Donte DiVincenzo",
+          "label": "Donte DiVincenzo"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Milwaukee Bucks",
+          "player_id": "05uin",
+          "player": "Chris Duarte",
+          "label": "Chris Duarte"
+        }
+      ]
+    },
+    "4082kokckyio7f5a": {
+      "date": "2022-01-17",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Sacramento Kings",
+          "player_id": "05uin",
+          "player": "Chris Duarte",
+          "label": "Chris Duarte"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Memphis Grizzlies",
+          "player_id": "049kf",
+          "player": "Mo Bamba",
+          "label": "Mo Bamba"
+        }
+      ]
+    }
+  }
 }

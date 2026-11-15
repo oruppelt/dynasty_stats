@@ -32,5 +32,88 @@
       "paid": 5520000
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "before_logs": true,
+      "periods": 17,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 11776000,
+      "contract": "REG1",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 18,
+      "date": "2019-12-22",
+      "from": "Indiana Pacers",
+      "team": "Houston Rockets",
+      "trade": "jczv175kk4fvkyxw",
+      "periods": 15,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 11776000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Houston Rockets"
+    }
+  ],
+  "trades": {
+    "jczv175kk4fvkyxw": {
+      "date": "2019-12-22",
+      "season": "2019-20",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Indiana Pacers",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Indiana Pacers",
+          "label": "2020 round 1 pick (Houston Rockets)"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Houston Rockets",
+          "player_id": "031lx",
+          "player": "CJ McCollum",
+          "label": "CJ McCollum"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Houston Rockets",
+          "player_id": "0012a",
+          "player": "JR Smith",
+          "label": "JR Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Houston Rockets",
+          "player_id": "031lu",
+          "player": "Ben McLemore",
+          "label": "Ben McLemore"
+        }
+      ]
+    }
+  }
 }

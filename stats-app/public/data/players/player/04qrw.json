@@ -209,5 +209,261 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Miami Heat",
+      "before_logs": true,
+      "periods": 94,
+      "starts": 82,
+      "points": 3545.25,
+      "salary": 1800552,
+      "contract": "REG3",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-23",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-01",
+      "team": "Miami Heat",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 33,
+      "points": 1579.25,
+      "salary": 3087500,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-22",
+      "team": "Miami Heat"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-31",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 65,
+      "starts": 55,
+      "points": 1890.5,
+      "salary": 10505000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-08",
+      "team": "Phoenix Suns"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-21",
+      "team": "Phoenix Suns",
+      "bid": 0.0,
+      "periods": 19,
+      "starts": 15,
+      "points": 548.5,
+      "salary": 4037500,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 20,
+      "date": "2025-12-26",
+      "from": "Phoenix Suns",
+      "team": "Miami Heat",
+      "trade": "h2k3pjs8mjn9v95o",
+      "periods": 7,
+      "starts": 4,
+      "points": 190.25,
+      "salary": 4037500,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 27,
+      "date": "2026-01-19",
+      "from": "Miami Heat",
+      "team": "Philadelphia 76ers",
+      "trade": "qtj5h137mklfkucq",
+      "periods": 2,
+      "starts": 2,
+      "points": 94.75,
+      "salary": 4037500,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "Philadelphia 76ers",
+      "team": "Memphis Grizzlies",
+      "trade": "obkbcgl9mkv2naz2",
+      "periods": 5,
+      "starts": 2,
+      "points": 99.5,
+      "salary": 4037500,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-21",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-08-16",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 7,
+      "starts": 7,
+      "points": 260.5,
+      "salary": 2500000,
+      "contract": "REG1"
+    }
+  ],
+  "trades": {
+    "obkbcgl9mkv2naz2": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "05quh",
+          "player": "Zeke Nnaji",
+          "label": "Zeke Nnaji"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 2 pick (Sacramento Kings)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "04qrw",
+          "player": "Kevin Huerter",
+          "label": "Kevin Huerter"
+        }
+      ]
+    },
+    "h2k3pjs8mjn9v95o": {
+      "date": "2025-12-26",
+      "season": "2025-26",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "player_id": "06mkm",
+          "player": "Baylor Scheierman",
+          "label": "Baylor Scheierman"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "player_id": "03e6s",
+          "player": "Clint Capela",
+          "label": "Clint Capela"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2026 round 2 pick (Miami Heat)"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2026 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "player_id": "04qrw",
+          "player": "Kevin Huerter",
+          "label": "Kevin Huerter"
+        }
+      ]
+    },
+    "qtj5h137mklfkucq": {
+      "date": "2026-01-19",
+      "season": "2025-26",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "04qrw",
+          "player": "Kevin Huerter",
+          "label": "Kevin Huerter"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "0622k",
+          "player": "Jabari Walker",
+          "label": "Jabari Walker"
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick (Miami Heat)"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "02nf9",
+          "player": "Andre Drummond",
+          "label": "Andre Drummond"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "05qub",
+          "player": "Isaiah Stewart",
+          "label": "Isaiah Stewart"
+        }
+      ]
+    }
+  }
 }

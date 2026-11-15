@@ -83,5 +83,102 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 3,
+      "date": "2019-10-28",
+      "team": "New York Knicks",
+      "bid": 5.0,
+      "periods": 15,
+      "starts": 7,
+      "points": 61.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 18,
+      "date": "2019-12-19",
+      "from": "New York Knicks",
+      "team": "Cleveland Cavaliers",
+      "trade": "kyiyrs77k4cvyypt",
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2019-20",
+      "period": 20,
+      "date": "2019-12-27",
+      "team": "Cleveland Cavaliers"
+    }
+  ],
+  "trades": {
+    "kyiyrs77k4cvyypt": {
+      "date": "2019-12-19",
+      "season": "2019-20",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "04416",
+          "player": "Frank Ntilikina",
+          "label": "Frank Ntilikina"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "0018r",
+          "player": "Thaddeus Young",
+          "label": "Thaddeus Young"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2021 round 1 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2021 round 1 pick (Denver Nuggets)"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0393p",
+          "player": "Troy Daniels",
+          "label": "Troy Daniels"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "031lw",
+          "player": "Trey Burke",
+          "label": "Trey Burke"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03lgk",
+          "player": "Allonzo Trier",
+          "label": "Allonzo Trier"
+        }
+      ]
+    }
+  }
 }

@@ -181,5 +181,215 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "before_logs": true,
+      "periods": 61,
+      "starts": 38,
+      "points": 822.25,
+      "salary": 1190155,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-11",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 26,
+      "starts": 15,
+      "points": 356.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 27,
+      "date": "2022-01-17",
+      "from": "Indiana Pacers",
+      "team": "Portland Trail Blazers",
+      "trade": "aauuyzg4kyix1unc",
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-21",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 47,
+      "date": "2023-03-31",
+      "team": "Memphis Grizzlies",
+      "bid": 1.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-05-06",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-24",
+      "team": "Boston Celtics",
+      "bid": 6.0,
+      "periods": 6,
+      "starts": 4,
+      "points": 94.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-07",
+      "team": "Boston Celtics"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "team": "Golden State Warriors",
+      "bid": 33.0,
+      "periods": 12,
+      "starts": 7,
+      "points": 220.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 16,
+      "date": "2025-12-12",
+      "from": "Golden State Warriors",
+      "team": "Toronto Raptors",
+      "trade": "6wp9ofaamj2uxl97",
+      "periods": 18,
+      "starts": 18,
+      "points": 408.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-18",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2026-27",
+      "period": 2,
+      "date": "2026-10-23",
+      "team": "Golden State Warriors",
+      "bid": 3.0,
+      "periods": 6,
+      "starts": 5,
+      "points": 64.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 8,
+      "date": "2026-11-13",
+      "team": "Golden State Warriors"
+    }
+  ],
+  "trades": {
+    "6wp9ofaamj2uxl97": {
+      "date": "2025-12-12",
+      "season": "2025-26",
+      "period": 16,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "player_id": "04qsn",
+          "player": "Svi Mykhailiuk",
+          "label": "Svi Mykhailiuk"
+        },
+        {
+          "kind": "budget",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Golden State Warriors",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley"
+        }
+      ]
+    },
+    "aauuyzg4kyix1unc": {
+      "date": "2022-01-17",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "04qsn",
+          "player": "Svi Mykhailiuk",
+          "label": "Svi Mykhailiuk"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2023 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "051pb",
+          "player": "Nicolas Claxton",
+          "label": "Nicolas Claxton"
+        }
+      ]
+    }
+  }
 }

@@ -111,5 +111,193 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2022-23",
+      "period": 0,
+      "date": "2022-06-28",
+      "team": "Los Angeles Lakers",
+      "round": 1,
+      "pick": 25,
+      "periods": 17,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1410000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-16",
+      "from": "Los Angeles Lakers",
+      "team": "Golden State Warriors",
+      "trade": "x216qg6wlbqcxmyd",
+      "periods": 16,
+      "starts": 10,
+      "points": 98.5,
+      "salary": 1410000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-08",
+      "from": "Golden State Warriors",
+      "team": "Washington Wizards",
+      "trade": "e5lcksjwljtua3d0",
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1410000,
+      "contract": "R12"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 3,
+      "date": "2023-10-30",
+      "from": "Washington Wizards",
+      "team": "Cleveland Cavaliers",
+      "trade": "q6vs663flobpq0e5",
+      "periods": 8,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1410000,
+      "contract": "R12"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 11,
+      "date": "2023-11-27",
+      "team": "Cleveland Cavaliers"
+    }
+  ],
+  "trades": {
+    "x216qg6wlbqcxmyd": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "05qu0",
+          "player": "Jaden McDaniels",
+          "label": "Jaden McDaniels"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qse",
+          "player": "Gary Trent",
+          "label": "Gary Trent"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "05uj2",
+          "player": "Jaden Springer",
+          "label": "Jaden Springer"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "0621s",
+          "player": "TyTy Washington",
+          "label": "TyTy Washington"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "label": "2023 round 1 pick (Golden State Warriors)"
+        }
+      ]
+    },
+    "e5lcksjwljtua3d0": {
+      "date": "2023-07-08",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Washington Wizards",
+          "player_id": "06cd4",
+          "player": "Toumani Camara",
+          "label": "Toumani Camara"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Washington Wizards",
+          "player_id": "0621s",
+          "player": "TyTy Washington",
+          "label": "TyTy Washington"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Golden State Warriors",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Golden State Warriors",
+          "label": "2024 round 2 pick (Houston Rockets)"
+        }
+      ]
+    },
+    "q6vs663flobpq0e5": {
+      "date": "2023-10-30",
+      "season": "2023-24",
+      "period": 3,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "04xdu",
+          "player": "Drew Eubanks",
+          "label": "Drew Eubanks"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0621s",
+          "player": "TyTy Washington",
+          "label": "TyTy Washington"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0621j",
+          "player": "Malaki Branham",
+          "label": "Malaki Branham"
+        }
+      ]
+    }
+  }
 }

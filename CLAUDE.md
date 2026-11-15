@@ -77,10 +77,12 @@ The site reads it through `useLeagueData()` in `lib/league-data.ts` (one
 request, shared types); components never fetch on their own. The season on
 screen is `lib/selected-season.ts` (`?season=`, else the default).
 
-Transactions (for the player lineage, not used by the build yet):
-`pipeline/data/transactions/` (trades, claims and drops, drafts, picks) from
-`pipeline/analysis/fetch_transactions.py`; `pipeline/analysis/check_transactions.py`
+Transactions (the player lineage): `pipeline/data/transactions/` (trades,
+claims and drops, drafts, picks; committed, fetched by hand with
+`pipeline/analysis/fetch_transactions.py`); `pipeline/analysis/check_transactions.py`
 replays them on the player cache (findings in ROADMAP.md section 3).
+`pipeline/lineage.py` turns them into each player's timeline (`timeline`
+and `trades` on the player page, `components/widgets/PlayerTimeline.tsx`).
 
 ### Metrics (`pipeline/league_data.py`)
 - **All-play strength**: in each scoring period (`Match` column; two per

@@ -97,5 +97,106 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-29",
+      "team": "Chicago Bulls",
+      "bid": 0.0,
+      "periods": 20,
+      "starts": 16,
+      "points": 750.75,
+      "salary": 20000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 21,
+      "date": "2019-12-29",
+      "from": "Chicago Bulls",
+      "team": "Golden State Warriors",
+      "trade": "m37hmfl2k4olgvg7",
+      "periods": 12,
+      "starts": 12,
+      "points": 386.75,
+      "salary": 20000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-05",
+      "team": "San Antonio Spurs",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 19,
+      "points": 397.5,
+      "salary": 6700000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "San Antonio Spurs"
+    }
+  ],
+  "trades": {
+    "m37hmfl2k4olgvg7": {
+      "date": "2019-12-29",
+      "season": "2019-20",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "player_id": "01en2",
+          "player": "Jeff Teague",
+          "label": "Jeff Teague"
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "player_id": "031mc",
+          "player": "Reggie Bullock",
+          "label": "Reggie Bullock"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Chicago Bulls",
+          "player_id": "0017e",
+          "player": "Chris Paul",
+          "label": "Chris Paul"
+        }
+      ]
+    }
+  }
 }

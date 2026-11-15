@@ -181,5 +181,296 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Detroit Pistons",
+      "before_logs": true,
+      "periods": 35,
+      "starts": 35,
+      "points": 1521.0,
+      "salary": 10436364,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 4,
+      "date": "2021-01-03",
+      "from": "Detroit Pistons",
+      "team": "Cleveland Cavaliers",
+      "trade": "0ha362o3kjh7rhss",
+      "periods": 25,
+      "starts": 16,
+      "points": 887.25,
+      "salary": 10436364,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-31",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "team": "Atlanta Hawks",
+      "bid": 0.0,
+      "periods": 27,
+      "starts": 22,
+      "points": 739.0,
+      "salary": 7500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-18",
+      "from": "Atlanta Hawks",
+      "team": "Portland Trail Blazers",
+      "trade": "b9wzq4b8kyjt7xtx",
+      "periods": 4,
+      "starts": 3,
+      "points": 82.5,
+      "salary": 7500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 32,
+      "date": "2022-02-04",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "team": "Sacramento Kings",
+      "bid": 11.0,
+      "periods": 4,
+      "starts": 2,
+      "points": 72.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-04-10",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 2,
+      "date": "2023-10-27",
+      "team": "Memphis Grizzlies",
+      "bid": 3.0,
+      "periods": 31,
+      "starts": 22,
+      "points": 571.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Memphis Grizzlies"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-08",
+      "team": "San Antonio Spurs",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-08",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-08",
+      "team": "Sacramento Kings",
+      "bid": 0.0,
+      "periods": 6,
+      "starts": 2,
+      "points": 10.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "from": "Sacramento Kings",
+      "team": "Miami Heat",
+      "trade": "o9x12180m3dbpz6a",
+      "periods": 9,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 16,
+      "date": "2024-12-13",
+      "team": "Miami Heat"
+    }
+  ],
+  "trades": {
+    "b9wzq4b8kyjt7xtx": {
+      "date": "2022-01-18",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Portland Trail Blazers",
+          "player_id": "03kqi",
+          "player": "Joe Ingles",
+          "label": "Joe Ingles"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Portland Trail Blazers",
+          "label": "2022 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Atlanta Hawks",
+          "player_id": "043ib",
+          "player": "Dorian Finney-Smith",
+          "label": "Dorian Finney-Smith"
+        }
+      ]
+    },
+    "0ha362o3kjh7rhss": {
+      "date": "2021-01-03",
+      "season": "2020-21",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "label": "2021 round 1 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03kqi",
+          "player": "Joe Ingles",
+          "label": "Joe Ingles"
+        }
+      ]
+    },
+    "o9x12180m3dbpz6a": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "042ne",
+          "player": "Malik Beasley",
+          "label": "Malik Beasley"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "03kqi",
+          "player": "Joe Ingles",
+          "label": "Joe Ingles"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones"
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick (Atlanta Hawks)"
+        }
+      ]
+    }
+  }
 }

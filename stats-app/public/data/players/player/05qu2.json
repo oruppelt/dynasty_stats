@@ -46,5 +46,87 @@
       "paid": 30303
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-24",
+      "team": "Phoenix Suns",
+      "round": 2,
+      "pick": 51,
+      "periods": 55,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R23"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 27,
+      "date": "2022-01-19",
+      "from": "Phoenix Suns",
+      "team": "Utah Jazz",
+      "trade": "h3agpstjkylmcv6c",
+      "periods": 1,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "R22"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-20",
+      "team": "Utah Jazz"
+    }
+  ],
+  "trades": {
+    "h3agpstjkylmcv6c": {
+      "date": "2022-01-19",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "player_id": "05qzh",
+          "player": "Naji Marshall",
+          "label": "Naji Marshall"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "player_id": "05qu2",
+          "player": "Justinian Jessup",
+          "label": "Justinian Jessup"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "label": "2022 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "label": "2023 round 2 pick (Phoenix Suns)"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "player_id": "03e6z",
+          "player": "Joe Harris",
+          "label": "Joe Harris"
+        }
+      ]
+    }
+  }
 }

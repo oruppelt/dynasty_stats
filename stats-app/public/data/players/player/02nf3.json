@@ -181,5 +181,113 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "joined",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Washington Wizards",
+      "before_logs": true,
+      "periods": 61,
+      "starts": 61,
+      "points": 4074.75,
+      "salary": 20347410,
+      "contract": "REG2",
+      "date": null
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-13",
+      "team": "Washington Wizards",
+      "bid": 0.0,
+      "periods": 93,
+      "starts": 58,
+      "points": 3242.0,
+      "salary": 29450000,
+      "contract": "REG4"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 28,
+      "date": "2024-01-24",
+      "from": "Washington Wizards",
+      "team": "San Antonio Spurs",
+      "trade": "xqm77aorlrs4fy0j",
+      "periods": 38,
+      "starts": 37,
+      "points": 1551.25,
+      "salary": 29450000,
+      "contract": "REG2"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 40,
+      "starts": 4,
+      "points": 17.75,
+      "salary": 10000000,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "xqm77aorlrs4fy0j": {
+      "date": "2024-01-24",
+      "season": "2023-24",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Washington Wizards",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "San Antonio Spurs",
+          "player_id": "02nf3",
+          "player": "Bradley Beal",
+          "label": "Bradley Beal"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "San Antonio Spurs",
+          "player_id": "06cd4",
+          "player": "Toumani Camara",
+          "label": "Toumani Camara"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 1 pick (Philadelphia 76ers)"
+        }
+      ]
+    }
+  }
 }

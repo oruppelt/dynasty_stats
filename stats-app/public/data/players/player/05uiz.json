@@ -153,5 +153,114 @@
       "gp": 2,
       "playoffs": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2021-22",
+      "period": 0,
+      "date": "2021-08-02",
+      "team": "Philadelphia 76ers",
+      "round": 1,
+      "pick": 30,
+      "periods": 12,
+      "starts": 6,
+      "points": 4.5,
+      "salary": 1296384,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-11-29",
+      "from": "Philadelphia 76ers",
+      "team": "Sacramento Kings",
+      "trade": "o80318c5kwkp7gxb",
+      "periods": 86,
+      "starts": 44,
+      "points": 1601.75,
+      "salary": 1296384,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 40,
+      "date": "2024-03-11",
+      "team": "Sacramento Kings"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 22,
+      "points": 959.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-26",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-17",
+      "team": "New Orleans Pelicans",
+      "bid": 0.0,
+      "periods": 40,
+      "starts": 35,
+      "points": 1559.5,
+      "salary": 9000000,
+      "contract": "REG2"
+    }
+  ],
+  "trades": {
+    "o80318c5kwkp7gxb": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05uiz",
+          "player": "Quentin Grimes",
+          "label": "Quentin Grimes"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Philadelphia 76ers)"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qsk",
+          "player": "Isaac Okoro",
+          "label": "Isaac Okoro"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley"
+        }
+      ]
+    }
+  }
 }

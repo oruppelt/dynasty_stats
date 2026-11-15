@@ -57,5 +57,102 @@
       "gp": 1,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-25",
+      "team": "Golden State Warriors",
+      "bid": 8.0,
+      "periods": 8,
+      "starts": 1,
+      "points": 0.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "from": "Golden State Warriors",
+      "team": "Toronto Raptors",
+      "trade": "rxtnvaqdlrozo98w",
+      "periods": 6,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Toronto Raptors"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 40,
+      "date": "2025-03-14",
+      "team": "Charlotte Hornets",
+      "bid": 2.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 42,
+      "date": "2025-03-21",
+      "team": "Charlotte Hornets"
+    }
+  ],
+  "trades": {
+    "rxtnvaqdlrozo98w": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "player_id": "0626t",
+          "player": "Dominick Barlow",
+          "label": "Dominick Barlow"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "player_id": "05uwa",
+          "player": "A.J. Lawson",
+          "label": "A.J. Lawson"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Golden State Warriors",
+          "player_id": "06cet",
+          "player": "Terquavion Smith",
+          "label": "Terquavion Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Golden State Warriors",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley"
+        }
+      ]
+    }
+  }
 }

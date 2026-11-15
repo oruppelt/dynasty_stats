@@ -139,5 +139,127 @@
       "gp": 3,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2020-21",
+      "period": 0,
+      "date": "2020-11-23",
+      "team": "Golden State Warriors",
+      "round": 1,
+      "pick": 9,
+      "periods": 14,
+      "starts": 4,
+      "points": 43.0,
+      "salary": 2991936,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2020-21",
+      "period": 15,
+      "date": "2021-02-08",
+      "from": "Golden State Warriors",
+      "team": "Indiana Pacers",
+      "trade": "w8j96he1kkwppr2d",
+      "periods": 81,
+      "starts": 54,
+      "points": 2042.25,
+      "salary": 2991936,
+      "contract": "R13"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-26",
+      "team": "Indiana Pacers",
+      "bid": 0.0,
+      "periods": 32,
+      "starts": 18,
+      "points": 773.0,
+      "salary": 2992000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-07-26",
+      "team": "Indiana Pacers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 36,
+      "date": "2025-02-28",
+      "team": "Utah Jazz",
+      "bid": 16.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 44,
+      "date": "2025-03-28",
+      "team": "Utah Jazz"
+    }
+  ],
+  "trades": {
+    "w8j96he1kkwppr2d": {
+      "date": "2021-02-08",
+      "season": "2020-21",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Indiana Pacers",
+          "player_id": "05qt9",
+          "player": "Killian Hayes",
+          "label": "Killian Hayes"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Indiana Pacers",
+          "player_id": "042nb",
+          "player": "Juancho Hernangomez",
+          "label": "Juancho Hernangomez"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Indiana Pacers",
+          "label": "2022 round 1 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Golden State Warriors",
+          "player_id": "031lp",
+          "player": "Victor Oladipo",
+          "label": "Victor Oladipo"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Indiana Pacers)"
+        }
+      ]
+    }
+  }
 }

@@ -139,5 +139,162 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 20,
+      "date": "2019-12-27",
+      "team": "Houston Rockets",
+      "bid": 4.0,
+      "periods": 13,
+      "starts": 3,
+      "points": 99.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Houston Rockets"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 7,
+      "date": "2021-11-08",
+      "team": "Orlando Magic",
+      "bid": 25.0,
+      "periods": 27,
+      "starts": 22,
+      "points": 857.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Orlando Magic"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-28",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-07",
+      "from": "Orlando Magic",
+      "team": "Portland Trail Blazers",
+      "trade": "p9uyquxbl8ylwlkp",
+      "periods": 33,
+      "starts": 1,
+      "points": 7.75,
+      "salary": 1750001,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-24",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "re-sign",
+      "season": "2023-24",
+      "period": 2,
+      "date": "2023-10-27",
+      "team": "Portland Trail Blazers",
+      "bid": 11.0,
+      "periods": 31,
+      "starts": 7,
+      "points": 129.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-04-24",
+      "team": "Portland Trail Blazers"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 4,
+      "date": "2024-11-01",
+      "team": "San Antonio Spurs",
+      "bid": 5.0,
+      "periods": 30,
+      "starts": 27,
+      "points": 471.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-06-25",
+      "team": "San Antonio Spurs"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 2,
+      "date": "2025-10-24",
+      "team": "Sacramento Kings",
+      "bid": 15.0,
+      "periods": 32,
+      "starts": 28,
+      "points": 672.0,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-07-10",
+      "team": "Sacramento Kings"
+    }
+  ],
+  "trades": {
+    "p9uyquxbl8ylwlkp": {
+      "date": "2022-10-07",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Portland Trail Blazers",
+          "player_id": "043cj",
+          "player": "Gary Payton II",
+          "label": "Gary Payton II"
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Orlando Magic",
+          "label": "2024 round 2 pick (Portland Trail Blazers)"
+        }
+      ]
+    }
+  }
 }

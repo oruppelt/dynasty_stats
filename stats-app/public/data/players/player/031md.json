@@ -32,5 +32,125 @@
       "paid": 468750
     }
   ],
-  "best_periods": []
+  "best_periods": [],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-08-10",
+      "team": "Boston Celtics",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-10-17",
+      "from": "Boston Celtics",
+      "team": "Washington Wizards",
+      "trade": "03s5wywlk1ulzgvx",
+      "periods": 22,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 23,
+      "date": "2020-01-05",
+      "from": "Washington Wizards",
+      "team": "Golden State Warriors",
+      "trade": "udji14ckk51fhwxe",
+      "periods": 10,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 1500000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 0,
+      "starts": 0,
+      "points": 0.0
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-21",
+      "team": "Cleveland Cavaliers"
+    }
+  ],
+  "trades": {
+    "udji14ckk51fhwxe": {
+      "date": "2020-01-05",
+      "season": "2019-20",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Washington Wizards",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Golden State Warriors",
+          "player_id": "031md",
+          "player": "Andre Roberson",
+          "label": "Andre Roberson"
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Washington Wizards)"
+        }
+      ]
+    },
+    "03s5wywlk1ulzgvx": {
+      "date": "2019-10-17",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "031md",
+          "player": "Andre Roberson",
+          "label": "Andre Roberson"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "042nh",
+          "player": "Malachi Richardson",
+          "label": "Malachi Richardson"
+        }
+      ]
+    }
+  }
 }

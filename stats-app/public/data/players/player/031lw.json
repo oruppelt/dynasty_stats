@@ -97,5 +97,122 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-09-01",
+      "team": "New York Knicks",
+      "bid": 0.0,
+      "periods": 17,
+      "starts": 10,
+      "points": 118.0,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2019-20",
+      "period": 18,
+      "date": "2019-12-19",
+      "from": "New York Knicks",
+      "team": "Cleveland Cavaliers",
+      "trade": "kyiyrs77k4cvyypt",
+      "periods": 15,
+      "starts": 15,
+      "points": 134.75,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-10-08",
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-03",
+      "team": "Orlando Magic",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 11,
+      "points": 276.25,
+      "salary": 1000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Orlando Magic"
+    }
+  ],
+  "trades": {
+    "kyiyrs77k4cvyypt": {
+      "date": "2019-12-19",
+      "season": "2019-20",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "04416",
+          "player": "Frank Ntilikina",
+          "label": "Frank Ntilikina"
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "player_id": "0018r",
+          "player": "Thaddeus Young",
+          "label": "Thaddeus Young"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2021 round 1 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2021 round 1 pick (Denver Nuggets)"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0393p",
+          "player": "Troy Daniels",
+          "label": "Troy Daniels"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "031lw",
+          "player": "Trey Burke",
+          "label": "Trey Burke"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03lgk",
+          "player": "Allonzo Trier",
+          "label": "Allonzo Trier"
+        }
+      ]
+    }
+  }
 }

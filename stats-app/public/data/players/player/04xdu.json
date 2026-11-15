@@ -153,5 +153,174 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "claim",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-04",
+      "team": "Denver Nuggets",
+      "bid": 0.0,
+      "periods": 29,
+      "starts": 19,
+      "points": 214.5,
+      "salary": 2000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-07",
+      "team": "Denver Nuggets"
+    },
+    {
+      "kind": "claim",
+      "season": "2021-22",
+      "period": 5,
+      "date": "2021-11-01",
+      "team": "Minnesota Timberwolves",
+      "bid": 1.0,
+      "periods": 29,
+      "starts": 18,
+      "points": 458.25,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-05-24",
+      "team": "Minnesota Timberwolves"
+    },
+    {
+      "kind": "claim",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "team": "Utah Jazz",
+      "bid": 0.0,
+      "periods": 33,
+      "starts": 20,
+      "points": 701.75,
+      "salary": 1250000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-21",
+      "team": "Utah Jazz"
+    },
+    {
+      "kind": "claim",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-26",
+      "team": "Cleveland Cavaliers",
+      "bid": 0.0,
+      "periods": 2,
+      "starts": 0,
+      "points": 0.0,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "trade",
+      "season": "2023-24",
+      "period": 3,
+      "date": "2023-10-30",
+      "from": "Cleveland Cavaliers",
+      "team": "Washington Wizards",
+      "trade": "q6vs663flobpq0e5",
+      "periods": 30,
+      "starts": 25,
+      "points": 620.75,
+      "salary": 3000000,
+      "contract": "REG1"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-26",
+      "team": "Washington Wizards"
+    },
+    {
+      "kind": "claim",
+      "season": "2024-25",
+      "period": 27,
+      "date": "2025-01-20",
+      "team": "Golden State Warriors",
+      "bid": 3.0,
+      "periods": 5,
+      "starts": 3,
+      "points": 116.75,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2024-25",
+      "period": 32,
+      "date": "2025-02-07",
+      "team": "Golden State Warriors"
+    },
+    {
+      "kind": "claim",
+      "season": "2025-26",
+      "period": 2,
+      "date": "2025-10-24",
+      "team": "Sacramento Kings",
+      "bid": 5.0,
+      "periods": 21,
+      "starts": 11,
+      "points": 231.5,
+      "salary": 1000000,
+      "contract": "FA"
+    },
+    {
+      "kind": "drop",
+      "season": "2025-26",
+      "period": 23,
+      "date": "2026-01-05",
+      "team": "Sacramento Kings"
+    }
+  ],
+  "trades": {
+    "q6vs663flobpq0e5": {
+      "date": "2023-10-30",
+      "season": "2023-24",
+      "period": 3,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "04xdu",
+          "player": "Drew Eubanks",
+          "label": "Drew Eubanks"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0621s",
+          "player": "TyTy Washington",
+          "label": "TyTy Washington"
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0621j",
+          "player": "Malaki Branham",
+          "label": "Malaki Branham"
+        }
+      ]
+    }
+  }
 }

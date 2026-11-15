@@ -97,5 +97,96 @@
       "gp": 2,
       "playoffs": false
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "kind": "draft",
+      "season": "2025-26",
+      "period": 0,
+      "date": "2025-07-04",
+      "team": "Oklahoma City Thunder",
+      "round": 1,
+      "pick": 7,
+      "periods": 19,
+      "starts": 7,
+      "points": 280.75,
+      "salary": 3553000,
+      "contract": "R13"
+    },
+    {
+      "kind": "trade",
+      "season": "2025-26",
+      "period": 20,
+      "date": "2025-12-26",
+      "from": "Oklahoma City Thunder",
+      "team": "Toronto Raptors",
+      "trade": "h89qz7i7mjn1jv97",
+      "periods": 21,
+      "starts": 14,
+      "points": 554.75,
+      "salary": 3553000,
+      "contract": "R13"
+    }
+  ],
+  "trades": {
+    "h89qz7i7mjn1jv97": {
+      "date": "2025-12-26",
+      "season": "2025-26",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06v58",
+          "player": "Tre Johnson",
+          "label": "Tre Johnson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "05uiw",
+          "player": "Isaiah Jackson",
+          "label": "Isaiah Jackson"
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "0558t",
+          "player": "Max Strus",
+          "label": "Max Strus"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Boston Celtics)"
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2027 round 1 pick (Oklahoma City Thunder)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06mjz",
+          "player": "Donovan Clingan",
+          "label": "Donovan Clingan"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06212",
+          "player": "Jabari Smith",
+          "label": "Jabari Smith"
+        }
+      ]
+    }
+  }
 }
