@@ -164,6 +164,7 @@
       "bid": 0.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -176,6 +177,7 @@
       "trade": "z8b967onjzf14ng3",
       "periods": 25,
       "starts": 8,
+      "gp": 10,
       "points": 114.25,
       "salary": 6500000,
       "contract": "REG2"
@@ -190,6 +192,7 @@
       "trade": "k4ftr55dk5f685f4",
       "periods": 7,
       "starts": 7,
+      "gp": 4,
       "points": 28.0,
       "salary": 6500000,
       "contract": "REG2"
@@ -204,6 +207,7 @@
       "trade": "fut56wjqkhubm0ar",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -216,6 +220,7 @@
       "trade": "ggttvlodkih45bt8",
       "periods": 3,
       "starts": 2,
+      "gp": 3,
       "points": 35.5,
       "salary": 6500000,
       "contract": "REG1"
@@ -230,6 +235,7 @@
       "trade": "0ha362o3kjh7rhss",
       "periods": 3,
       "starts": 1,
+      "gp": 1,
       "points": 14.0,
       "salary": 6500000,
       "contract": "REG1"
@@ -244,6 +250,7 @@
       "trade": "vaxb0ggwkjy4tla7",
       "periods": 15,
       "starts": 15,
+      "gp": 26,
       "points": 504.0,
       "salary": 6500000,
       "contract": "REG1"
@@ -258,6 +265,7 @@
       "trade": "4r1euqwqkm9llhjz",
       "periods": 6,
       "starts": 6,
+      "gp": 11,
       "points": 204.5,
       "salary": 6500000,
       "contract": "REG1"
@@ -278,6 +286,7 @@
       "bid": 0.0,
       "periods": 7,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "REG1"
@@ -291,32 +300,91 @@
     }
   ],
   "trades": {
-    "ggttvlodkih45bt8": {
-      "date": "2020-12-09",
-      "season": "2020-21",
+    "z8b967onjzf14ng3": {
+      "date": "2019-09-17",
+      "season": "2019-20",
       "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Cleveland Cavaliers",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
           "player_id": "04ex3",
           "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Cleveland Cavaliers",
-          "label": "2022 round 2 pick (Chicago Bulls)"
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 114.25,
+            "starts": 8,
+            "gp": 10,
+            "periods": 25,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "k4ftr55dk5f685f4"
+          }
         },
         {
           "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Chicago Bulls",
-          "player_id": "02nfa",
-          "player": "Austin Rivers",
-          "label": "Austin Rivers"
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "042nq",
+          "player": "Dejounte Murray",
+          "label": "Dejounte Murray"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "label": "2020 round 2 pick (Brooklyn Nets)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05qv8",
+            "player": "Facundo Campazzo",
+            "certain": false
+          },
+          "next": {
+            "trade": "ja9otupwk5130qp9"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "player_id": "031lz",
+          "player": "Steven Adams",
+          "label": "Steven Adams"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "label": "2021 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "05uj2",
+            "player": "Jaden Springer",
+            "certain": true
+          },
+          "next": {
+            "trade": "x216qg6wlbqcxmyd"
+          },
+          "result": {
+            "points": 11.5,
+            "starts": 15,
+            "gp": 1,
+            "periods": 50,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -331,7 +399,17 @@
           "to": "Detroit Pistons",
           "player_id": "03acx",
           "player": "Dante Exum",
-          "label": "Dante Exum"
+          "label": "Dante Exum",
+          "result": {
+            "points": -3.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 25,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
         },
         {
           "kind": "player",
@@ -339,13 +417,42 @@
           "to": "Detroit Pistons",
           "player_id": "04ex3",
           "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 14.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "vaxb0ggwkjy4tla7"
+          }
         },
         {
           "kind": "pick",
           "from": "Cleveland Cavaliers",
           "to": "Detroit Pistons",
-          "label": "2021 round 1 pick (Cleveland Cavaliers)"
+          "label": "2021 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "05uix",
+            "player": "Usman Garuba",
+            "certain": true
+          },
+          "result": {
+            "points": 837.0,
+            "starts": 52,
+            "gp": 59,
+            "periods": 73,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-11-17"
+          }
         },
         {
           "kind": "player",
@@ -353,116 +460,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "03kqi",
           "player": "Joe Ingles",
-          "label": "Joe Ingles"
-        }
-      ]
-    },
-    "z8b967onjzf14ng3": {
-      "date": "2019-09-17",
-      "season": "2019-20",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Memphis Grizzlies",
-          "player_id": "04ex3",
-          "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Memphis Grizzlies",
-          "player_id": "042nq",
-          "player": "Dejounte Murray",
-          "label": "Dejounte Murray"
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Memphis Grizzlies",
-          "label": "2020 round 2 pick (Brooklyn Nets)"
-        },
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Los Angeles Lakers",
-          "player_id": "031lz",
-          "player": "Steven Adams",
-          "label": "Steven Adams"
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "Los Angeles Lakers",
-          "label": "2021 round 1 pick (Memphis Grizzlies)"
-        }
-      ]
-    },
-    "4r1euqwqkm9llhjz": {
-      "date": "2021-03-14",
-      "season": "2020-21",
-      "period": 25,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "New York Knicks",
-          "player_id": "051ow",
-          "player": "Chuma Okeke",
-          "label": "Chuma Okeke"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "New York Knicks",
-          "player_id": "04ex3",
-          "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "New York Knicks",
-          "label": "2022 round 1 pick (Washington Wizards)"
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Boston Celtics",
-          "player_id": "0018r",
-          "player": "Thaddeus Young",
-          "label": "Thaddeus Young"
-        }
-      ]
-    },
-    "vaxb0ggwkjy4tla7": {
-      "date": "2021-01-16",
-      "season": "2020-21",
-      "period": 8,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Detroit Pistons",
-          "player_id": "03e6n",
-          "player": "Jusuf Nurkic",
-          "label": "Jusuf Nurkic"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Detroit Pistons",
-          "label": "2022 round 2 pick (Boston Celtics)"
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Boston Celtics",
-          "player_id": "04ex3",
-          "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
+          "label": "Joe Ingles",
+          "result": {
+            "points": 887.25,
+            "starts": 16,
+            "gp": 29,
+            "periods": 25,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
         }
       ]
     },
@@ -477,13 +485,42 @@
           "to": "Los Angeles Clippers",
           "player_id": "0017e",
           "player": "Chris Paul",
-          "label": "Chris Paul"
+          "label": "Chris Paul",
+          "result": {
+            "points": 1994.0,
+            "starts": 29,
+            "gp": 47,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-08-07"
+          }
         },
         {
           "kind": "pick",
           "from": "Chicago Bulls",
           "to": "Los Angeles Clippers",
-          "label": "2020 round 2 pick, no. 17"
+          "label": "2020 round 2 pick, no. 17",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 12,
+            "overall": 42,
+            "player_id": "05qso",
+            "player": "Jalen Harris",
+            "certain": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 62,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -491,13 +528,104 @@
           "to": "Chicago Bulls",
           "player_id": "04ex3",
           "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ggttvlodkih45bt8"
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Clippers",
           "to": "Chicago Bulls",
-          "label": "2020 round 2 pick, no. 6"
+          "label": "2020 round 2 pick, no. 6",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 12,
+            "overall": 42,
+            "player_id": "05qso",
+            "player": "Jalen Harris",
+            "certain": false
+          },
+          "next": {
+            "trade": "fut56wjqkhubm0ar"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
+          }
+        }
+      ]
+    },
+    "ggttvlodkih45bt8": {
+      "date": "2020-12-09",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 35.5,
+            "starts": 2,
+            "gp": 3,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0ha362o3kjh7rhss"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "0621u",
+            "player": "Andrew Nembhard",
+            "certain": true
+          },
+          "next": {
+            "trade": "rnv8gweekwon3og4"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Chicago Bulls",
+          "player_id": "02nfa",
+          "player": "Austin Rivers",
+          "label": "Austin Rivers",
+          "result": {
+            "points": 91.25,
+            "starts": 4,
+            "gp": 7,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-01-25"
+          }
         }
       ]
     },
@@ -512,7 +640,17 @@
           "to": "Memphis Grizzlies",
           "player_id": "02nfy",
           "player": "Jae Crowder",
-          "label": "Jae Crowder"
+          "label": "Jae Crowder",
+          "result": {
+            "points": 272.25,
+            "starts": 7,
+            "gp": 9,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         },
         {
           "kind": "player",
@@ -520,552 +658,262 @@
           "to": "Los Angeles Clippers",
           "player_id": "04ex3",
           "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 28.0,
+            "starts": 7,
+            "gp": 4,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fut56wjqkhubm0ar"
+          }
         },
         {
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Los Angeles Clippers",
-          "label": "2020 round 2 pick (Dallas Mavericks)"
+          "label": "2020 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "05qua",
+            "player": "Cassius Winston",
+            "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 62,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
         },
         {
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Los Angeles Clippers",
-          "label": "2020 round 2 pick (Brooklyn Nets)"
+          "label": "2020 round 2 pick (Brooklyn Nets)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05qv8",
+            "player": "Facundo Campazzo",
+            "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-08-07"
+          }
+        }
+      ]
+    },
+    "4r1euqwqkm9llhjz": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "player_id": "051ow",
+          "player": "Chuma Okeke",
+          "label": "Chuma Okeke",
+          "result": {
+            "points": 1200.5,
+            "starts": 22,
+            "gp": 39,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 204.5,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "label": "2022 round 1 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "06210",
+            "player": "Paolo Banchero",
+            "certain": true
+          },
+          "next": {
+            "trade": "v3rlzfg2kvv1em8x"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "player_id": "0018r",
+          "player": "Thaddeus Young",
+          "label": "Thaddeus Young",
+          "result": {
+            "points": 365.5,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
+        }
+      ]
+    },
+    "vaxb0ggwkjy4tla7": {
+      "date": "2021-01-16",
+      "season": "2020-21",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "lpvb9p0kkm9ltz87"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "2022 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "0622g",
+            "player": "JD Davison",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "8zyfkpkglo4cnvz0"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 504.0,
+            "starts": 15,
+            "gp": 26,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "4r1euqwqkm9llhjz"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Memphis Grizzlies",
-      "Los Angeles Clippers",
-      "Cleveland Cavaliers",
-      "Detroit Pistons",
-      "Boston Celtics",
-      "New York Knicks",
-      "Minnesota Timberwolves"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        37.5,
-        1
-      ],
-      [
-        0,
-        2,
-        0,
-        32.5,
-        1
-      ],
-      [
-        0,
-        3,
-        0,
-        17.0,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        45.75,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        10.75,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        9.5,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        9,
-        0,
-        30.25,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        2.5,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        12.25,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        9.25,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        15.75,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        25.75,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        7.0,
-        1
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        12.25,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        2.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        4.25,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        49.5,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        10.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        31.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        40.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        20.25,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        0.0,
-        1
-      ],
-      [
-        0,
-        27,
-        1,
-        11.25,
-        1
-      ],
-      [
-        0,
-        28,
-        1,
-        0.0,
-        1
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        1
-      ],
-      [
-        0,
-        31,
-        1,
-        10.25,
-        1
-      ],
-      [
-        0,
-        32,
-        1,
-        0.0,
-        1
-      ],
-      [
-        0,
-        33,
-        1,
-        6.5,
-        1
-      ],
-      [
-        1,
-        1,
-        2,
-        8.0,
-        1
-      ],
-      [
-        1,
-        2,
-        2,
-        27.5,
-        1
-      ],
-      [
-        1,
-        3,
-        2,
-        39.25,
-        0
-      ],
-      [
-        1,
-        4,
-        2,
-        14.0,
-        0
-      ],
-      [
-        1,
-        5,
-        3,
-        36.5,
-        0
-      ],
-      [
-        1,
-        6,
-        3,
-        23.5,
-        0
-      ],
-      [
-        1,
-        7,
-        3,
-        14.0,
-        1
-      ],
-      [
-        1,
-        8,
-        3,
-        44.5,
-        1
-      ],
-      [
-        1,
-        9,
-        4,
-        10.0,
-        1
-      ],
-      [
-        1,
-        10,
-        4,
-        21.25,
-        1
-      ],
-      [
-        1,
-        11,
-        4,
-        56.5,
-        1
-      ],
-      [
-        1,
-        12,
-        4,
-        55.0,
-        1
-      ],
-      [
-        1,
-        13,
-        4,
-        30.75,
-        1
-      ],
-      [
-        1,
-        14,
-        4,
-        37.0,
-        1
-      ],
-      [
-        1,
-        15,
-        4,
-        60.75,
-        1
-      ],
-      [
-        1,
-        16,
-        4,
-        57.25,
-        1
-      ],
-      [
-        1,
-        17,
-        4,
-        34.0,
-        1
-      ],
-      [
-        1,
-        18,
-        4,
-        9.5,
-        1
-      ],
-      [
-        1,
-        19,
-        4,
-        8.0,
-        1
-      ],
-      [
-        1,
-        20,
-        4,
-        19.5,
-        1
-      ],
-      [
-        1,
-        21,
-        4,
-        28.5,
-        1
-      ],
-      [
-        1,
-        23,
-        4,
-        32.5,
-        1
-      ],
-      [
-        1,
-        24,
-        4,
-        43.5,
-        1
-      ],
-      [
-        1,
-        25,
-        5,
-        12.0,
-        1
-      ],
-      [
-        1,
-        26,
-        5,
-        24.0,
-        1
-      ],
-      [
-        1,
-        27,
-        5,
-        18.75,
-        1
-      ],
-      [
-        1,
-        28,
-        5,
-        71.25,
-        1
-      ],
-      [
-        1,
-        29,
-        5,
-        43.25,
-        1
-      ],
-      [
-        1,
-        30,
-        5,
-        35.25,
-        1
-      ],
-      [
-        2,
-        1,
-        6,
-        0.0,
-        0
-      ],
-      [
-        2,
-        2,
-        6,
-        0.0,
-        0
-      ],
-      [
-        2,
-        3,
-        6,
-        0.0,
-        0
-      ],
-      [
-        2,
-        4,
-        6,
-        0.0,
-        0
-      ],
-      [
-        2,
-        5,
-        6,
-        0.0,
-        0
-      ],
-      [
-        2,
-        6,
-        6,
-        0.0,
-        0
-      ],
-      [
-        2,
-        7,
-        6,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

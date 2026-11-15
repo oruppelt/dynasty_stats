@@ -108,6 +108,7 @@
       "bid": 0.0,
       "periods": 17,
       "starts": 9,
+      "gp": 14,
       "points": 329.25,
       "salary": 4000000,
       "contract": "REG1"
@@ -122,6 +123,7 @@
       "trade": "kcdchu1bk4cjskel",
       "periods": 15,
       "starts": 5,
+      "gp": 10,
       "points": 140.75,
       "salary": 4000000,
       "contract": "REG1"
@@ -142,6 +144,7 @@
       "bid": 2.0,
       "periods": 2,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -166,7 +169,17 @@
           "to": "Sacramento Kings",
           "player_id": "04849",
           "player": "Danuel House",
-          "label": "Danuel House"
+          "label": "Danuel House",
+          "result": {
+            "points": 593.5,
+            "starts": 12,
+            "gp": 21,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         },
         {
           "kind": "player",
@@ -174,326 +187,61 @@
           "to": "Los Angeles Lakers",
           "player_id": "027q9",
           "player": "Isaiah Thomas",
-          "label": "Isaiah Thomas"
+          "label": "Isaiah Thomas",
+          "result": {
+            "points": 140.75,
+            "starts": 5,
+            "gp": 10,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Sacramento Kings",
-      "Los Angeles Lakers",
-      "Memphis Grizzlies"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        28.5,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        33.5,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        33.25,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        42.5,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        15.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        30.75,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        57.0,
-        1
-      ],
-      [
-        0,
-        9,
-        0,
-        20.0,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        37.5,
-        1
-      ],
-      [
-        0,
-        11,
-        0,
-        17.0,
-        1
-      ],
-      [
-        0,
-        12,
-        0,
-        44.0,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        44.5,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        57.5,
-        0
-      ],
-      [
-        0,
-        18,
-        1,
-        52.0,
-        1
-      ],
-      [
-        0,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        1,
-        37.75,
-        0
-      ],
-      [
-        0,
-        21,
-        1,
-        24.5,
-        1
-      ],
-      [
-        0,
-        22,
-        1,
-        4.5,
-        1
-      ],
-      [
-        0,
-        23,
-        1,
-        20.5,
-        0
-      ],
-      [
-        0,
-        24,
-        1,
-        14.25,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        17.25,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        8.5,
-        1
-      ],
-      [
-        0,
-        27,
-        1,
-        51.25,
-        1
-      ],
-      [
-        0,
-        28,
-        1,
-        19.5,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        13.5,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        15.5,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        35,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        36,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        38,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        39,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        19,
-        2,
-        10.5,
-        0
-      ],
-      [
-        2,
-        20,
-        2,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

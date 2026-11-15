@@ -21,82 +21,481 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Dallas Mavericks",
+      "label": "2026 round 2 pick (Dallas Mavericks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-26",
+      "from": "Dallas Mavericks",
+      "team": "Los Angeles Clippers",
+      "trade": "qrgt7xrlm6dy0gs0",
+      "label": "2026 round 2 pick (Dallas Mavericks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-10-19",
+      "from": "Los Angeles Clippers",
+      "team": "Los Angeles Lakers",
+      "trade": "cm7v89tdmcedxe0x",
+      "label": "2026 round 2 pick (Dallas Mavericks)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-04",
       "team": "Los Angeles Lakers",
       "round": 2,
-      "pick": 59,
+      "pick": 29,
+      "overall": 59,
+      "original": "Dallas Mavericks",
+      "certain": true,
       "periods": 7,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Los Angeles Lakers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
+  "trades": {
+    "qrgt7xrlm6dy0gs0": {
+      "date": "2025-01-26",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Los Angeles Clippers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "sq7it0uxm6e3ev52"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Los Angeles Clippers",
+          "player_id": "06ca2",
+          "player": "Kobe Brown",
+          "label": "Kobe Brown",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Los Angeles Clippers",
+          "label": "2026 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "076we",
+            "player": "Michael Ajayi",
+            "certain": true
+          },
+          "next": {
+            "kept": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Dallas Mavericks",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson",
+          "result": {
+            "points": 277.75,
+            "starts": 5,
+            "gp": 9,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        }
       ]
-    ]
-  }
+    },
+    "cm7v89tdmcedxe0x": {
+      "date": "2025-10-19",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "05qt4",
+          "player": "Aaron Nesmith",
+          "label": "Aaron Nesmith"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "06ccb",
+          "player": "Nick Smith",
+          "label": "Nick Smith"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "05uuv",
+          "player": "Trendon Watford",
+          "label": "Trendon Watford"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "06cab",
+          "player": "Jarace Walker",
+          "label": "Jarace Walker"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "06ccu",
+          "player": "Tristan Vukcevic",
+          "label": "Tristan Vukcevic"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "06mke",
+          "player": "DaRon Holmes",
+          "label": "DaRon Holmes"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "06cp2",
+          "player": "Colin Castleton",
+          "label": "Colin Castleton"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "06ccc",
+          "player": "Dariq Whitehead",
+          "label": "Dariq Whitehead"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qrk",
+          "player": "Trae Young",
+          "label": "Trae Young"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "06mkd",
+          "player": "Yves Missi",
+          "label": "Yves Missi"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "player_id": "06mjv",
+          "player": "Reed Sheppard",
+          "label": "Reed Sheppard"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "label": "2025 round 2 pick, no. 14"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "label": "2025 round 2 pick, no. 4"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "label": "2025 round 1 pick, no. 11",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 9,
+            "overall": 9,
+            "player_id": "06v5f",
+            "player": "Khaman Maluach",
+            "certain": true
+          },
+          "next": {
+            "trade": "cm7v89tdmcedxe0x"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "label": "2025 round 1 pick, no. 4",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "06v57",
+            "player": "Ace Bailey",
+            "certain": true
+          },
+          "result": {
+            "points": 1519.0,
+            "starts": 40,
+            "gp": 61,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "label": "2025 round 2 pick, no. 9"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "label": "2026 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "076we",
+            "player": "Michael Ajayi",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Los Angeles Lakers",
+          "label": "2025 round 1 pick, no. 25"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "02ym0",
+          "player": "Andrew Wiggins",
+          "label": "Andrew Wiggins"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "027pe",
+          "player": "Jimmy Butler",
+          "label": "Jimmy Butler"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "06mls",
+          "player": "Cam Christie",
+          "label": "Cam Christie"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "06cc7",
+          "player": "Brandin Podziemski",
+          "label": "Brandin Podziemski"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "06211",
+          "player": "Chet Holmgren",
+          "label": "Chet Holmgren"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "03r7v",
+          "player": "Pat Connaughton",
+          "label": "Pat Connaughton"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "06mjt",
+          "player": "Zaccharie Risacher",
+          "label": "Zaccharie Risacher"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "06ccd",
+          "player": "Noah Clowney",
+          "label": "Noah Clowney"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "06cc2",
+          "player": "Gradey Dick",
+          "label": "Gradey Dick"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "051oi",
+          "player": "Ja Morant",
+          "label": "Ja Morant"
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "player_id": "06mjw",
+          "player": "Stephon Castle",
+          "label": "Stephon Castle"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "label": "2025 round 1 pick, no. 9",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 9,
+            "overall": 9,
+            "player_id": "06v5f",
+            "player": "Khaman Maluach",
+            "certain": true
+          },
+          "next": {
+            "kept": true
+          },
+          "result": {
+            "points": 193.25,
+            "starts": 7,
+            "gp": 10,
+            "periods": 40,
+            "ongoing": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Los Angeles Clippers",
+          "label": "2026 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "076u5",
+            "player": "Jaron Pierre",
+            "certain": true
+          },
+          "next": {
+            "trade": "a3b1c6mrmqqjlm1s"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New Orleans Pelicans"
+          }
+        }
+      ]
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

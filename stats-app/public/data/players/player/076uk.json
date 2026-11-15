@@ -21,82 +21,115 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Utah Jazz",
+      "label": "2026 round 2 pick (Utah Jazz)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "from": "Utah Jazz",
+      "team": "Philadelphia 76ers",
+      "trade": "7kx183fulzh11jvr",
+      "label": "2026 round 2 pick (Utah Jazz)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-03",
       "team": "Philadelphia 76ers",
       "round": 2,
-      "pick": 39,
+      "pick": 9,
+      "overall": 39,
+      "original": "Utah Jazz",
+      "certain": true,
       "periods": 7,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Philadelphia 76ers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        1.5,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        4.5,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
+  "trades": {
+    "7kx183fulzh11jvr": {
+      "date": "2024-08-05",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Philadelphia 76ers",
+          "to": "Utah Jazz",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtq",
+          "player": "Tre Jones",
+          "label": "Tre Jones",
+          "result": {
+            "points": 436.75,
+            "starts": 20,
+            "gp": 26,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-07"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 2 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "076uk",
+            "player": "Ja'Kobi Gillespie",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
       ]
-    ]
-  }
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

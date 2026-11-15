@@ -35,15 +35,37 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2022 round 2 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 8,
+      "date": "2021-01-16",
+      "from": "Boston Celtics",
+      "team": "Detroit Pistons",
+      "trade": "vaxb0ggwkjy4tla7",
+      "label": "2022 round 2 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-29",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 52,
+      "pick": 22,
+      "overall": 52,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 33,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -58,6 +80,7 @@
       "trade": "8zyfkpkglo4cnvz0",
       "periods": 32,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -71,6 +94,74 @@
     }
   ],
   "trades": {
+    "vaxb0ggwkjy4tla7": {
+      "date": "2021-01-16",
+      "season": "2020-21",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "lpvb9p0kkm9ltz87"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "2022 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "0622g",
+            "player": "JD Davison",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "8zyfkpkglo4cnvz0"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 504.0,
+            "starts": 15,
+            "gp": 26,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "4r1euqwqkm9llhjz"
+          }
+        }
+      ]
+    },
     "8zyfkpkglo4cnvz0": {
       "date": "2023-10-24",
       "season": "2023-24",
@@ -88,7 +179,17 @@
           "to": "Boston Celtics",
           "player_id": "0622z",
           "player": "Orlando Robinson",
-          "label": "Orlando Robinson"
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "k0n8u96ulph7peqp"
+          }
         },
         {
           "kind": "player",
@@ -96,7 +197,17 @@
           "to": "Boston Celtics",
           "player_id": "0622g",
           "player": "JD Davison",
-          "label": "JD Davison"
+          "label": "JD Davison",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-26"
+          }
         },
         {
           "kind": "pick",
@@ -107,522 +218,41 @@
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Detroit Pistons",
-      "Boston Celtics"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        3.5,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        -4.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        6.25,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        1.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        1.0,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        1,
-        5.0,
-        0
-      ],
-      [
-        1,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        33,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        35,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        36,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        37,
-        1,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

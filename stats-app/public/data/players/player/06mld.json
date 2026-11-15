@@ -114,6 +114,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Charlotte Hornets",
+      "label": "2024 round 1 pick (Charlotte Hornets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "from": "Charlotte Hornets",
+      "team": "Memphis Grizzlies",
+      "trade": "caq0c945l69jh4fc",
+      "label": "2024 round 1 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-31",
+      "from": "Memphis Grizzlies",
+      "team": "Minnesota Timberwolves",
+      "trade": "1c0sreovl69nay3a",
+      "label": "2024 round 1 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-18",
+      "from": "Minnesota Timberwolves",
+      "team": "New York Knicks",
+      "trade": "z5jlvl0yl9df5648",
+      "label": "2024 round 1 pick (Charlotte Hornets)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -121,8 +159,12 @@
       "team": "Detroit Pistons",
       "round": 1,
       "pick": 23,
+      "overall": 23,
+      "original": "Charlotte Hornets",
+      "certain": true,
       "periods": 4,
       "starts": 1,
+      "gp": 2,
       "points": 45.5,
       "salary": 1530000,
       "contract": "R13"
@@ -137,6 +179,7 @@
       "trade": "e3rmgazym32x5n22",
       "periods": 39,
       "starts": 20,
+      "gp": 31,
       "points": 540.5,
       "salary": 1530000,
       "contract": "R13"
@@ -157,6 +200,7 @@
       "bid": 1.0,
       "periods": 3,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -170,6 +214,200 @@
     }
   ],
   "trades": {
+    "1c0sreovl69nay3a": {
+      "date": "2022-07-31",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher",
+          "result": {
+            "points": 1003.0,
+            "starts": 22,
+            "gp": 39,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-21"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06mld",
+            "player": "Jonathan Mogbo",
+            "certain": true
+          },
+          "next": {
+            "trade": "z5jlvl0yl9df5648"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Minnesota Timberwolves",
+          "to": "Memphis Grizzlies",
+          "label": "$1 budget"
+        }
+      ]
+    },
+    "z5jlvl0yl9df5648": {
+      "date": "2022-10-18",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "New York Knicks",
+          "label": "2024 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06mld",
+            "player": "Jonathan Mogbo",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Minnesota Timberwolves",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06cby",
+            "player": "Keyonte George",
+            "certain": true
+          },
+          "next": {
+            "trade": "4ghkugn9lbqnbawd"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        }
+      ]
+    },
+    "caq0c945l69jh4fc": {
+      "date": "2022-07-31",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Chicago Bulls",
+          "player_id": "03ajv",
+          "player": "Julius Randle",
+          "label": "Julius Randle",
+          "result": {
+            "points": 6362.75,
+            "starts": 90,
+            "gp": 150,
+            "periods": 98,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Chicago Bulls",
+          "label": "2023 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06ccd",
+            "player": "Noah Clowney",
+            "certain": true
+          },
+          "next": {
+            "trade": "o7egut5nlbsb9x0e"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06mld",
+            "player": "Jonathan Mogbo",
+            "certain": true
+          },
+          "next": {
+            "trade": "1c0sreovl69nay3a"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Memphis Grizzlies",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1c0sreovl69nay3a"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Chicago Bulls",
+          "label": "$1 budget"
+        }
+      ]
+    },
     "e3rmgazym32x5n22": {
       "date": "2024-11-04",
       "season": "2024-25",
@@ -181,7 +419,17 @@
           "to": "Detroit Pistons",
           "player_id": "0527h",
           "player": "Naz Reid",
-          "label": "Naz Reid"
+          "label": "Naz Reid",
+          "result": {
+            "points": 1653.5,
+            "starts": 29,
+            "gp": 49,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
         },
         {
           "kind": "player",
@@ -189,7 +437,17 @@
           "to": "Detroit Pistons",
           "player_id": "042n2",
           "player": "Kris Dunn",
-          "label": "Kris Dunn"
+          "label": "Kris Dunn",
+          "result": {
+            "points": 385.25,
+            "starts": 8,
+            "gp": 15,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
         },
         {
           "kind": "player",
@@ -197,7 +455,17 @@
           "to": "Detroit Pistons",
           "player_id": "051op",
           "player": "Rui Hachimura",
-          "label": "Rui Hachimura"
+          "label": "Rui Hachimura",
+          "result": {
+            "points": 939.25,
+            "starts": 22,
+            "gp": 32,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
         },
         {
           "kind": "player",
@@ -205,13 +473,42 @@
           "to": "Detroit Pistons",
           "player_id": "062pk",
           "player": "Simone Fontecchio",
-          "label": "Simone Fontecchio"
+          "label": "Simone Fontecchio",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "chb5mtn3m33d71lg"
+          }
         },
         {
           "kind": "pick",
           "from": "Cleveland Cavaliers",
           "to": "Detroit Pistons",
-          "label": "2025 round 2 pick (Minnesota Timberwolves)"
+          "label": "2025 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06y3q",
+            "player": "Ryan Nembhard",
+            "certain": true
+          },
+          "result": {
+            "points": 232.0,
+            "starts": 17,
+            "gp": 20,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -219,7 +516,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "06cel",
           "player": "Sidy Cissoko",
-          "label": "Sidy Cissoko"
+          "label": "Sidy Cissoko",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-28"
+          }
         },
         {
           "kind": "player",
@@ -227,7 +534,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "04qsd",
           "player": "Mitchell Robinson",
-          "label": "Mitchell Robinson"
+          "label": "Mitchell Robinson",
+          "result": {
+            "points": 175.75,
+            "starts": 6,
+            "gp": 8,
+            "periods": 50,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "8q5lmlnrmjwl6l7b"
+          }
         },
         {
           "kind": "player",
@@ -235,7 +552,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "06mld",
           "player": "Jonathan Mogbo",
-          "label": "Jonathan Mogbo"
+          "label": "Jonathan Mogbo",
+          "result": {
+            "points": 540.5,
+            "starts": 20,
+            "gp": 31,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-24"
+          }
         },
         {
           "kind": "player",
@@ -243,7 +570,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "06ccy",
           "player": "Jalen Pickett",
-          "label": "Jalen Pickett"
+          "label": "Jalen Pickett",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-14"
+          }
         },
         {
           "kind": "player",
@@ -251,369 +588,96 @@
           "to": "Cleveland Cavaliers",
           "player_id": "06cc9",
           "player": "Olivier-Maxence Prosper",
-          "label": "Olivier-Maxence Prosper"
+          "label": "Olivier-Maxence Prosper",
+          "result": {
+            "points": 379.25,
+            "starts": 18,
+            "gp": 28,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-28"
+          }
         },
         {
           "kind": "pick",
           "from": "Detroit Pistons",
           "to": "Cleveland Cavaliers",
-          "label": "2025 round 2 pick (San Antonio Spurs)"
+          "label": "2025 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06v7y",
+            "player": "Noah Penda",
+            "certain": true
+          },
+          "result": {
+            "points": 136.5,
+            "starts": 7,
+            "gp": 11,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "oj9lawe7mvsdcb33"
+          }
         },
         {
           "kind": "pick",
           "from": "Detroit Pistons",
           "to": "Cleveland Cavaliers",
-          "label": "2025 round 1 pick (Cleveland Cavaliers)"
+          "label": "2025 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06v55",
+            "player": "Kasparas Jakucionis",
+            "certain": true
+          },
+          "result": {
+            "points": 510.0,
+            "starts": 19,
+            "gp": 33,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Detroit Pistons",
-      "Cleveland Cavaliers",
-      "Toronto Raptors"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        14.25,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        68.25,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        43.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        45.5,
-        1
-      ],
-      [
-        0,
-        5,
-        1,
-        33.5,
-        1
-      ],
-      [
-        0,
-        6,
-        1,
-        18.5,
-        1
-      ],
-      [
-        0,
-        7,
-        1,
-        9.0,
-        1
-      ],
-      [
-        0,
-        8,
-        1,
-        20.0,
-        1
-      ],
-      [
-        0,
-        9,
-        1,
-        28.75,
-        1
-      ],
-      [
-        0,
-        10,
-        1,
-        33.0,
-        1
-      ],
-      [
-        0,
-        11,
-        1,
-        19.75,
-        1
-      ],
-      [
-        0,
-        12,
-        1,
-        35.75,
-        1
-      ],
-      [
-        0,
-        13,
-        1,
-        49.5,
-        1
-      ],
-      [
-        0,
-        14,
-        1,
-        35.75,
-        1
-      ],
-      [
-        0,
-        15,
-        1,
-        44.75,
-        1
-      ],
-      [
-        0,
-        16,
-        1,
-        0.0,
-        1
-      ],
-      [
-        0,
-        17,
-        1,
-        36.75,
-        1
-      ],
-      [
-        0,
-        18,
-        1,
-        14.0,
-        1
-      ],
-      [
-        0,
-        19,
-        1,
-        46.75,
-        1
-      ],
-      [
-        0,
-        20,
-        1,
-        5.0,
-        1
-      ],
-      [
-        0,
-        21,
-        1,
-        -3.0,
-        1
-      ],
-      [
-        0,
-        22,
-        1,
-        0.0,
-        1
-      ],
-      [
-        0,
-        23,
-        1,
-        10.0,
-        0
-      ],
-      [
-        0,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        5.0,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        38.75,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        70.0,
-        1
-      ],
-      [
-        0,
-        33,
-        1,
-        42.75,
-        1
-      ],
-      [
-        1,
-        1,
-        1,
-        9.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        14.25,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        7.5,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        6.5,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        1,
-        2,
-        -3.0,
-        0
-      ],
-      [
-        2,
-        2,
-        2,
-        16.5,
-        0
-      ],
-      [
-        2,
-        3,
-        2,
-        11.5,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

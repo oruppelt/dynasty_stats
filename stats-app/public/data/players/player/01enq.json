@@ -64,6 +64,7 @@
       "bid": 0.0,
       "periods": 2,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 3500000,
       "contract": "REG1"
@@ -78,6 +79,7 @@
       "trade": "ovtdxu63k2am458h",
       "periods": 15,
       "starts": 2,
+      "gp": 3,
       "points": 27.25,
       "salary": 3500000,
       "contract": "REG1"
@@ -102,7 +104,17 @@
           "to": "New Orleans Pelicans",
           "player_id": "03r7m",
           "player": "Cedi Osman",
-          "label": "Cedi Osman"
+          "label": "Cedi Osman",
+          "result": {
+            "points": 1076.75,
+            "starts": 27,
+            "gp": 46,
+            "periods": 30,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         },
         {
           "kind": "player",
@@ -110,7 +122,17 @@
           "to": "New Orleans Pelicans",
           "player_id": "042nh",
           "player": "Malachi Richardson",
-          "label": "Malachi Richardson"
+          "label": "Malachi Richardson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 30,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         },
         {
           "kind": "player",
@@ -118,7 +140,17 @@
           "to": "Boston Celtics",
           "player_id": "01enq",
           "player": "DeMarre Carroll",
-          "label": "DeMarre Carroll"
+          "label": "DeMarre Carroll",
+          "result": {
+            "points": 27.25,
+            "starts": 2,
+            "gp": 3,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2019-12-19"
+          }
         },
         {
           "kind": "pick",
@@ -129,173 +161,46 @@
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "New Orleans Pelicans",
-      "Boston Celtics"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        1,
-        18.75,
-        0
-      ],
-      [
-        0,
-        5,
-        1,
-        0.5,
-        0
-      ],
-      [
-        0,
-        6,
-        1,
-        16.5,
-        0
-      ],
-      [
-        0,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        1,
-        15.75,
-        0
-      ],
-      [
-        0,
-        10,
-        1,
-        22.25,
-        1
-      ],
-      [
-        0,
-        11,
-        1,
-        5.0,
-        1
-      ],
-      [
-        0,
-        12,
-        1,
-        7.0,
-        0
-      ],
-      [
-        0,
-        13,
-        1,
-        -2.75,
-        0
-      ],
-      [
-        0,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        1,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -86,6 +86,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Chicago Bulls",
+      "label": "2021 round 2 pick (Chicago Bulls)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 20,
+      "date": "2019-12-29",
+      "from": "Chicago Bulls",
+      "team": "Golden State Warriors",
+      "trade": "m37hmfl2k4olgvg7",
+      "label": "2021 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "from": "Golden State Warriors",
+      "team": "Philadelphia 76ers",
+      "trade": "qpkfdisvkic56339",
+      "label": "2021 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 15,
+      "date": "2021-02-08",
+      "from": "Philadelphia 76ers",
+      "team": "Boston Celtics",
+      "trade": "yhxta0frkkwqqtwa",
+      "label": "2021 round 2 pick (Chicago Bulls)"
+    },
+    {
       "kind": "claim",
       "season": "2020-21",
       "period": 24,
@@ -94,6 +132,7 @@
       "bid": 1.0,
       "periods": 4,
       "starts": 1,
+      "gp": 2,
       "points": 37.25,
       "salary": 1000000,
       "contract": "FA"
@@ -112,9 +151,13 @@
       "date": "2021-08-03",
       "team": "Boston Celtics",
       "round": 2,
-      "pick": 58,
+      "pick": 28,
+      "overall": 58,
+      "original": "Chicago Bulls",
+      "certain": true,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -133,6 +176,7 @@
       "bid": 15.0,
       "periods": 9,
       "starts": 4,
+      "gp": 7,
       "points": 118.25,
       "salary": 1000000,
       "contract": "FA"
@@ -145,140 +189,288 @@
       "team": "Boston Celtics"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Boston Celtics"
-    ],
-    "periods": [
-      [
-        0,
-        24,
-        0,
-        13.5,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        37.25,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        5.5,
-        0
-      ],
-      [
-        2,
-        25,
-        0,
-        6.75,
-        0
-      ],
-      [
-        2,
-        26,
-        0,
-        62.5,
-        1
-      ],
-      [
-        2,
-        27,
-        0,
-        24.0,
-        1
-      ],
-      [
-        2,
-        28,
-        0,
-        19.75,
-        1
-      ],
-      [
-        2,
-        29,
-        0,
-        16.25,
-        0
-      ],
-      [
-        2,
-        30,
-        0,
-        9.5,
-        0
-      ],
-      [
-        2,
-        31,
-        0,
-        12.0,
-        1
-      ],
-      [
-        2,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        2,
-        33,
-        0,
-        0.0,
-        0
+  "trades": {
+    "qpkfdisvkic56339": {
+      "date": "2020-12-06",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "hb86xq3kkpd3h2og"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "label": "2021 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05qvg",
+            "player": "Anthony Lamb",
+            "certain": true
+          },
+          "next": {
+            "trade": "yhxta0frkkwqqtwa"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          },
+          "next": {
+            "trade": "j0tyig71km80p9oa"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
+        }
       ]
-    ]
-  }
+    },
+    "m37hmfl2k4olgvg7": {
+      "date": "2019-12-29",
+      "season": "2019-20",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "player_id": "01en2",
+          "player": "Jeff Teague",
+          "label": "Jeff Teague",
+          "result": {
+            "points": 386.75,
+            "starts": 12,
+            "gp": 19,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "player_id": "031mc",
+          "player": "Reggie Bullock",
+          "label": "Reggie Bullock",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2019-12-29"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05qvg",
+            "player": "Anthony Lamb",
+            "certain": true
+          },
+          "next": {
+            "trade": "qpkfdisvkic56339"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Chicago Bulls",
+          "player_id": "0017e",
+          "player": "Chris Paul",
+          "label": "Chris Paul",
+          "result": {
+            "points": 883.5,
+            "starts": 11,
+            "gp": 20,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fut56wjqkhubm0ar"
+          }
+        }
+      ]
+    },
+    "yhxta0frkkwqqtwa": {
+      "date": "2021-02-08",
+      "season": "2020-21",
+      "period": 15,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Philadelphia 76ers",
+          "label": "2021 round 1 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "05uiz",
+            "player": "Quentin Grimes",
+            "certain": true
+          },
+          "result": {
+            "points": 4.5,
+            "starts": 6,
+            "gp": 3,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "o80318c5kwkp7gxb"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05qvg",
+            "player": "Anthony Lamb",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-08-07"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "05uj9",
+            "player": "Herbert Jones",
+            "certain": true
+          },
+          "result": {
+            "points": 2092.75,
+            "starts": 48,
+            "gp": 74,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "umd8exrulj2qxonm"
+          }
+        }
+      ]
+    }
+  },
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

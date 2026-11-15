@@ -100,15 +100,47 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "San Antonio Spurs",
+      "label": "2025 round 2 pick (San Antonio Spurs)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "San Antonio Spurs",
+      "team": "Detroit Pistons",
+      "trade": "8c6pve8tlxywwxv1",
+      "label": "2025 round 2 pick (San Antonio Spurs)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 5,
+      "date": "2024-11-04",
+      "from": "Detroit Pistons",
+      "team": "Cleveland Cavaliers",
+      "trade": "e3rmgazym32x5n22",
+      "label": "2025 round 2 pick (San Antonio Spurs)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-04",
       "team": "Cleveland Cavaliers",
       "round": 2,
-      "pick": 32,
+      "pick": 2,
+      "overall": 32,
+      "original": "San Antonio Spurs",
+      "certain": true,
       "periods": 36,
       "starts": 7,
+      "gp": 11,
       "points": 136.5,
       "salary": 1000000,
       "contract": "R23"
@@ -123,6 +155,7 @@
       "trade": "oj9lawe7mvsdcb33",
       "periods": 4,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -140,7 +173,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "06v7y",
           "player": "Noah Penda",
-          "label": "Noah Penda"
+          "label": "Noah Penda",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -148,7 +191,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "06cc0",
           "player": "Taylor Hendricks",
-          "label": "Taylor Hendricks"
+          "label": "Taylor Hendricks",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-29"
+          }
         },
         {
           "kind": "player",
@@ -156,7 +209,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "04qrm",
           "player": "Collin Sexton",
-          "label": "Collin Sexton"
+          "label": "Collin Sexton",
+          "result": {
+            "points": 148.0,
+            "starts": 4,
+            "gp": 8,
+            "periods": 4,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "pick",
@@ -170,330 +233,364 @@
           "to": "Cleveland Cavaliers",
           "player_id": "04ewr",
           "player": "Kyle Kuzma",
-          "label": "Kyle Kuzma"
+          "label": "Kyle Kuzma",
+          "result": {
+            "points": 169.0,
+            "starts": 4,
+            "gp": 7,
+            "periods": 4,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
+    "8c6pve8tlxywwxv1": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 2 pick, no. 2",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06mli",
+            "player": "Juan Nunez",
+            "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-04-03"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Detroit Pistons",
+          "label": "2026 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "076tw",
+            "player": "Nick Martinelli",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Detroit Pistons",
+          "label": "2025 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06v7y",
+            "player": "Noah Penda",
+            "certain": true
+          },
+          "next": {
+            "trade": "e3rmgazym32x5n22"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Cleveland Cavaliers"
+          }
+        }
+      ]
+    },
+    "e3rmgazym32x5n22": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "0527h",
+          "player": "Naz Reid",
+          "label": "Naz Reid",
+          "result": {
+            "points": 1653.5,
+            "starts": 29,
+            "gp": 49,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "042n2",
+          "player": "Kris Dunn",
+          "label": "Kris Dunn",
+          "result": {
+            "points": 385.25,
+            "starts": 8,
+            "gp": 15,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "051op",
+          "player": "Rui Hachimura",
+          "label": "Rui Hachimura",
+          "result": {
+            "points": 939.25,
+            "starts": 22,
+            "gp": 32,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "chb5mtn3m33d71lg"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "label": "2025 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06y3q",
+            "player": "Ryan Nembhard",
+            "certain": true
+          },
+          "result": {
+            "points": 232.0,
+            "starts": 17,
+            "gp": 20,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06cel",
+          "player": "Sidy Cissoko",
+          "label": "Sidy Cissoko",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-28"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04qsd",
+          "player": "Mitchell Robinson",
+          "label": "Mitchell Robinson",
+          "result": {
+            "points": 175.75,
+            "starts": 6,
+            "gp": 8,
+            "periods": 50,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "8q5lmlnrmjwl6l7b"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06mld",
+          "player": "Jonathan Mogbo",
+          "label": "Jonathan Mogbo",
+          "result": {
+            "points": 540.5,
+            "starts": 20,
+            "gp": 31,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06ccy",
+          "player": "Jalen Pickett",
+          "label": "Jalen Pickett",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-14"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06cc9",
+          "player": "Olivier-Maxence Prosper",
+          "label": "Olivier-Maxence Prosper",
+          "result": {
+            "points": 379.25,
+            "starts": 18,
+            "gp": 28,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-28"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "label": "2025 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06v7y",
+            "player": "Noah Penda",
+            "certain": true
+          },
+          "result": {
+            "points": 136.5,
+            "starts": 7,
+            "gp": 11,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "oj9lawe7mvsdcb33"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "label": "2025 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06v55",
+            "player": "Kasparas Jakucionis",
+            "certain": true
+          },
+          "result": {
+            "points": 510.0,
+            "starts": 19,
+            "gp": 33,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Cleveland Cavaliers",
-      "Portland Trail Blazers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        20.75,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        24.75,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        7.5,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        3.5,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        43.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        24.75,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        9.5,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        6.5,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        11.75,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        54.5,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        26.75,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        20.25,
-        1
-      ],
-      [
-        0,
-        21,
-        0,
-        7.5,
-        1
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        23,
-        0,
-        81.75,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        55.0,
-        1
-      ],
-      [
-        0,
-        25,
-        0,
-        21.25,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        14.75,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        38.5,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        1.5,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        17.75,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        23.75,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        16.75,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        15.25,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        17.75,
-        1
-      ],
-      [
-        0,
-        34,
-        0,
-        3.0,
-        0
-      ],
-      [
-        0,
-        35,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        36,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

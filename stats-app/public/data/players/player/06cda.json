@@ -35,15 +35,46 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Oklahoma City Thunder",
+      "label": "2023 round 2 pick (Oklahoma City Thunder)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-27",
+      "from": "Oklahoma City Thunder",
+      "team": "Los Angeles Lakers",
+      "trade": "4quvc9lpl63hph3g",
+      "label": "2023 round 2 pick (Oklahoma City Thunder)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-08-04",
+      "from": "Los Angeles Lakers",
+      "team": "Oklahoma City Thunder",
+      "trade": "dbubp4f4l6f3gujf",
+      "label": "2023 round 2 pick (Oklahoma City Thunder)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
       "date": "2023-06-27",
       "team": "Oklahoma City Thunder",
       "round": 2,
-      "pick": 31,
+      "pick": 1,
+      "overall": 31,
+      "certain": true,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -56,6 +87,7 @@
       "trade": "lz8mddj1lkk2t9tb",
       "periods": 65,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -69,6 +101,206 @@
     }
   ],
   "trades": {
+    "dbubp4f4l6f3gujf": {
+      "date": "2022-08-04",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0623h",
+          "player": "Alondes Williams",
+          "label": "Alondes Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9fzowpbal97efy5l"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson",
+          "result": {
+            "points": 1561.5,
+            "starts": 33,
+            "gp": 43,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-22"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "048zt",
+          "player": "Derrick Jones",
+          "label": "Derrick Jones",
+          "result": {
+            "points": 670.0,
+            "starts": 30,
+            "gp": 44,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-22"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06caa",
+            "player": "Ben Sheppard",
+            "certain": true
+          },
+          "result": {
+            "points": 544.25,
+            "starts": 20,
+            "gp": 32,
+            "periods": 71,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "b7zez6g3mhsz8kok"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 1 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 9,
+            "overall": 9,
+            "player_id": "06cc0",
+            "player": "Taylor Hendricks",
+            "certain": true
+          },
+          "result": {
+            "points": 207.75,
+            "starts": 11,
+            "gp": 12,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9zd79sc2m331fy8y"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06cda",
+            "player": "James Nnaji",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "lz8mddj1lkk2t9tb"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 1 pick (Denver Nuggets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06cac",
+            "player": "Cason Wallace",
+            "certain": true
+          },
+          "next": {
+            "trade": "whpo1bh4lj410r59"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "02xg9",
+          "player": "Rudy Gobert",
+          "label": "Rudy Gobert",
+          "result": {
+            "points": 2197.25,
+            "starts": 41,
+            "gp": 59,
+            "periods": 41,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "t7clusd2lp79luid"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "xmox8ksrl9e24fip"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "$5 budget"
+        }
+      ]
+    },
     "lz8mddj1lkk2t9tb": {
       "date": "2023-07-26",
       "season": "2023-24",
@@ -80,534 +312,120 @@
           "to": "Washington Wizards",
           "player_id": "06cda",
           "player": "James Nnaji",
-          "label": "James Nnaji"
+          "label": "James Nnaji",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 65,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-08"
+          }
         },
         {
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Oklahoma City Thunder",
-          "label": "2024 round 1 pick (Memphis Grizzlies)"
+          "label": "2024 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06mjw",
+            "player": "Stephon Castle",
+            "certain": true
+          },
+          "next": {
+            "trade": "t7clusd2lp79luid"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        }
+      ]
+    },
+    "4quvc9lpl63hph3g": {
+      "date": "2022-07-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "031m0",
+          "player": "Kelly Olynyk",
+          "label": "Kelly Olynyk",
+          "result": {
+            "points": 683.5,
+            "starts": 12,
+            "gp": 22,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1ikem71elb0p3dff"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "2023 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06cda",
+            "player": "James Nnaji",
+            "certain": true
+          },
+          "next": {
+            "trade": "dbubp4f4l6f3gujf"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Oklahoma City Thunder"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Washington Wizards"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        33,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        34,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        35,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        36,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        37,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        38,
-        0,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

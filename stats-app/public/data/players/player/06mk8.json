@@ -114,6 +114,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Utah Jazz",
+      "label": "2024 round 1 pick (Utah Jazz)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-10-12",
+      "from": "Utah Jazz",
+      "team": "Orlando Magic",
+      "trade": "zzfkpw4ol95t0sup",
+      "label": "2024 round 1 pick (Utah Jazz)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-20",
+      "from": "Orlando Magic",
+      "team": "Dallas Mavericks",
+      "trade": "umry9n3zlj4p4wo1",
+      "label": "2024 round 1 pick (Utah Jazz)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -121,8 +149,12 @@
       "team": "Dallas Mavericks",
       "round": 1,
       "pick": 18,
+      "overall": 18,
+      "original": "Utah Jazz",
+      "certain": true,
       "periods": 60,
       "starts": 15,
+      "gp": 26,
       "points": 686.0,
       "salary": 1886000,
       "contract": "R13"
@@ -137,12 +169,306 @@
       "trade": "v5ras31lmkqs89nd",
       "periods": 13,
       "starts": 12,
+      "gp": 21,
       "points": 439.25,
       "salary": 1886000,
       "contract": "R12"
     }
   ],
   "trades": {
+    "umry9n3zlj4p4wo1": {
+      "date": "2023-06-20",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Orlando Magic",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "iwz7ckzclkns1xkv"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewb",
+          "player": "Jonathan Isaac",
+          "label": "Jonathan Isaac",
+          "result": {
+            "points": 704.75,
+            "starts": 27,
+            "gp": 33,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "43fpltv7lxybrbab"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 16,
+            "overall": 16,
+            "player_id": "06mkb",
+            "player": "Ja'Kobe Walter",
+            "certain": true
+          },
+          "next": {
+            "trade": "43fpltv7lxybrbab"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 18,
+            "overall": 18,
+            "player_id": "06mk8",
+            "player": "Jared McCain",
+            "certain": true
+          },
+          "result": {
+            "points": 686.0,
+            "starts": 15,
+            "gp": 26,
+            "periods": 60,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "v5ras31lmkqs89nd"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 1 pick, no. 22",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06cdj",
+            "player": "Colby Jones",
+            "certain": true
+          },
+          "next": {
+            "trade": "2cu2h9icljdu82jn"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
+          }
+        }
+      ]
+    },
+    "zzfkpw4ol95t0sup": {
+      "date": "2022-10-12",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "06227",
+          "player": "Ryan Rollins",
+          "label": "Ryan Rollins",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "4emaqok0l9dytp9y"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "06233",
+          "player": "Ron Harper",
+          "label": "Ron Harper",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1wol7nl2lde7omt5"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac",
+          "result": {
+            "points": 1419.25,
+            "starts": 27,
+            "gp": 48,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "wec3x6p4ldeiwcta"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "player_id": "0527h",
+          "player": "Naz Reid",
+          "label": "Naz Reid",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "wu8twpval9ecybma"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05uiq",
+            "player": "Alperen Sengun",
+            "certain": true
+          },
+          "next": {
+            "trade": "0x33e8dqljebq4sl"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "06mlq",
+            "player": "Pelle Larsson",
+            "certain": true
+          },
+          "next": {
+            "trade": "9fzowpbal97efy5l"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Oklahoma City Thunder"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "umry9n3zlj4p4wo1"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Orlando Magic",
+          "label": "2024 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 18,
+            "overall": 18,
+            "player_id": "06mk8",
+            "player": "Jared McCain",
+            "certain": true
+          },
+          "next": {
+            "trade": "umry9n3zlj4p4wo1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
+        }
+      ]
+    },
     "v5ras31lmkqs89nd": {
       "date": "2026-01-23",
       "season": "2025-26",
@@ -154,7 +480,17 @@
           "to": "Utah Jazz",
           "player_id": "06mk8",
           "player": "Jared McCain",
-          "label": "Jared McCain"
+          "label": "Jared McCain",
+          "result": {
+            "points": 439.25,
+            "starts": 12,
+            "gp": 21,
+            "periods": 13,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -162,13 +498,42 @@
           "to": "Utah Jazz",
           "player_id": "05qst",
           "player": "Paul Reed",
-          "label": "Paul Reed"
+          "label": "Paul Reed",
+          "result": {
+            "points": 186.75,
+            "starts": 2,
+            "gp": 4,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-20"
+          }
         },
         {
           "kind": "pick",
           "from": "Dallas Mavericks",
           "to": "Utah Jazz",
-          "label": "2026 round 1 pick (Charlotte Hornets)"
+          "label": "2026 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "076tb",
+            "player": "Allen Graves",
+            "certain": true
+          },
+          "result": {
+            "points": 105.25,
+            "starts": 3,
+            "gp": 7,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -176,7 +541,17 @@
           "to": "Dallas Mavericks",
           "player_id": "062pk",
           "player": "Simone Fontecchio",
-          "label": "Simone Fontecchio"
+          "label": "Simone Fontecchio",
+          "result": {
+            "points": 133.25,
+            "starts": 3,
+            "gp": 6,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
         },
         {
           "kind": "player",
@@ -184,600 +559,71 @@
           "to": "Dallas Mavericks",
           "player_id": "03e6n",
           "player": "Jusuf Nurkic",
-          "label": "Jusuf Nurkic"
+          "label": "Jusuf Nurkic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-02-27"
+          }
         },
         {
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Dallas Mavericks",
-          "label": "2026 round 1 pick (Dallas Mavericks)"
+          "label": "2026 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "076t5",
+            "player": "Alex Karaban",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Dallas Mavericks",
-      "Utah Jazz"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        6.5,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        8.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        21.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        29.5,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        23.0,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        63.75,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        98.25,
-        1
-      ],
-      [
-        0,
-        8,
-        0,
-        48.0,
-        1
-      ],
-      [
-        0,
-        9,
-        0,
-        71.75,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        78.5,
-        1
-      ],
-      [
-        0,
-        11,
-        0,
-        16.5,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        4.75,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        60.25,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        37.75,
-        1
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        6.5,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        34,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        35,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        36,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        39,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        40,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        41,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        42,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        0,
-        3.5,
-        1
-      ],
-      [
-        1,
-        6,
-        0,
-        5.25,
-        0
-      ],
-      [
-        1,
-        7,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        1,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        0,
-        14.0,
-        0
-      ],
-      [
-        1,
-        10,
-        0,
-        26.75,
-        0
-      ],
-      [
-        1,
-        11,
-        0,
-        22.75,
-        0
-      ],
-      [
-        1,
-        12,
-        0,
-        68.0,
-        0
-      ],
-      [
-        1,
-        13,
-        0,
-        31.75,
-        1
-      ],
-      [
-        1,
-        14,
-        0,
-        48.5,
-        1
-      ],
-      [
-        1,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        0,
-        29.75,
-        1
-      ],
-      [
-        1,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        0,
-        55.25,
-        1
-      ],
-      [
-        1,
-        19,
-        0,
-        34.25,
-        0
-      ],
-      [
-        1,
-        20,
-        0,
-        29.0,
-        0
-      ],
-      [
-        1,
-        21,
-        0,
-        17.75,
-        0
-      ],
-      [
-        1,
-        22,
-        0,
-        17.25,
-        0
-      ],
-      [
-        1,
-        23,
-        0,
-        10.5,
-        0
-      ],
-      [
-        1,
-        24,
-        0,
-        11.5,
-        0
-      ],
-      [
-        1,
-        25,
-        0,
-        10.5,
-        0
-      ],
-      [
-        1,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        29,
-        1,
-        60.75,
-        1
-      ],
-      [
-        1,
-        30,
-        1,
-        23.5,
-        1
-      ],
-      [
-        1,
-        31,
-        1,
-        18.0,
-        1
-      ],
-      [
-        1,
-        32,
-        1,
-        4.0,
-        1
-      ],
-      [
-        1,
-        33,
-        1,
-        57.25,
-        1
-      ],
-      [
-        2,
-        1,
-        1,
-        35.5,
-        1
-      ],
-      [
-        2,
-        2,
-        1,
-        4.5,
-        0
-      ],
-      [
-        2,
-        3,
-        1,
-        50.0,
-        1
-      ],
-      [
-        2,
-        4,
-        1,
-        14.0,
-        1
-      ],
-      [
-        2,
-        5,
-        1,
-        26.75,
-        1
-      ],
-      [
-        2,
-        6,
-        1,
-        88.75,
-        1
-      ],
-      [
-        2,
-        7,
-        1,
-        60.75,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

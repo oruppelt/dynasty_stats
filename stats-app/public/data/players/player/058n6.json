@@ -108,6 +108,7 @@
       "bid": 20.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -128,6 +129,7 @@
       "bid": 18.0,
       "periods": 10,
       "starts": 7,
+      "gp": 14,
       "points": 297.75,
       "salary": 1000000,
       "contract": "FA"
@@ -142,6 +144,7 @@
       "trade": "yq4658ibky2vrytk",
       "periods": 9,
       "starts": 3,
+      "gp": 2,
       "points": 10.5,
       "salary": 1000000,
       "contract": "FA"
@@ -166,7 +169,17 @@
           "to": "Toronto Raptors",
           "player_id": "0529c",
           "player": "Dean Wade",
-          "label": "Dean Wade"
+          "label": "Dean Wade",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-01-10"
+          }
         },
         {
           "kind": "player",
@@ -174,202 +187,56 @@
           "to": "San Antonio Spurs",
           "player_id": "058n6",
           "player": "Armoni Brooks",
-          "label": "Armoni Brooks"
+          "label": "Armoni Brooks",
+          "result": {
+            "points": 10.5,
+            "starts": 3,
+            "gp": 2,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-02-07"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Chicago Bulls",
-      "Toronto Raptors",
-      "San Antonio Spurs"
-    ],
-    "periods": [
-      [
-        0,
-        41,
-        0,
-        77.5,
-        1
-      ],
-      [
-        0,
-        42,
-        0,
-        65.0,
-        1
-      ],
-      [
-        1,
-        14,
-        1,
-        28.0,
-        1
-      ],
-      [
-        1,
-        15,
-        1,
-        34.25,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        86.0,
-        1
-      ],
-      [
-        1,
-        17,
-        1,
-        31.75,
-        1
-      ],
-      [
-        1,
-        18,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        19,
-        1,
-        69.75,
-        1
-      ],
-      [
-        1,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        50.0,
-        1
-      ],
-      [
-        1,
-        22,
-        1,
-        32.25,
-        1
-      ],
-      [
-        1,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        2,
-        3.5,
-        1
-      ],
-      [
-        1,
-        25,
-        2,
-        0.0,
-        1
-      ],
-      [
-        1,
-        26,
-        2,
-        7.0,
-        1
-      ],
-      [
-        1,
-        27,
-        2,
-        17.5,
-        0
-      ],
-      [
-        1,
-        28,
-        2,
-        10.0,
-        0
-      ],
-      [
-        1,
-        29,
-        2,
-        1.0,
-        0
-      ],
-      [
-        1,
-        30,
-        2,
-        -2.5,
-        0
-      ],
-      [
-        1,
-        31,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        2,
-        10.5,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

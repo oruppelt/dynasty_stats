@@ -41,9 +41,12 @@
       "date": "2019-06-24",
       "team": "Orlando Magic",
       "round": 2,
-      "pick": 35,
+      "pick": 5,
+      "overall": 35,
+      "certain": true,
       "periods": 32,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 0,
       "contract": "R23"
@@ -58,6 +61,7 @@
       "trade": "rjwv8ryjkhq7dzun",
       "periods": 4,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -80,7 +84,23 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Orlando Magic",
-          "label": "2020 round 1 pick, no. 20"
+          "label": "2020 round 1 pick, no. 20",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "05qsn",
+            "player": "Malachi Flynn",
+            "certain": false
+          },
+          "next": {
+            "trade": "5usrawq4khus042o"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Indiana Pacers"
+          }
         },
         {
           "kind": "player",
@@ -88,7 +108,17 @@
           "to": "Atlanta Hawks",
           "player_id": "042ni",
           "player": "Ante Zizic",
-          "label": "Ante Zizic"
+          "label": "Ante Zizic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9kgilzvrki9xyzut"
+          }
         },
         {
           "kind": "player",
@@ -96,323 +126,101 @@
           "to": "Atlanta Hawks",
           "player_id": "051ph",
           "player": "Deividas Sirvydis",
-          "label": "Deividas Sirvydis"
+          "label": "Deividas Sirvydis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-01-04"
+          }
         },
         {
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Atlanta Hawks",
-          "label": "2020 round 1 pick, no. 26"
+          "label": "2020 round 1 pick, no. 26",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "05qsu",
+            "player": null,
+            "certain": true
+          }
         },
         {
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Atlanta Hawks",
-          "label": "2020 round 2 pick, no. 14"
+          "label": "2020 round 2 pick, no. 14",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05qt8",
+            "player": "Cassius Stanley",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 42,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "mwwyzn4ykwro4f2f"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Orlando Magic",
-      "Atlanta Hawks"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

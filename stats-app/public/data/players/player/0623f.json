@@ -57,6 +57,7 @@
       "bid": 0.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -69,6 +70,7 @@
       "trade": "mu1sghjul8ykpvq9",
       "periods": 18,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -83,6 +85,7 @@
       "trade": "cb1ycqqllbtik1hw",
       "periods": 15,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -97,6 +100,7 @@
       "trade": "ynipswzwlknts8pu",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -109,6 +113,7 @@
       "trade": "avs2o92elkp8zjwf",
       "periods": 32,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -133,7 +138,17 @@
           "to": "Orlando Magic",
           "player_id": "001bb",
           "player": "Jorge Garbajosa",
-          "label": "Jorge Garbajosa"
+          "label": "Jorge Garbajosa",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "h8uio85olkybsfu9"
+          }
         },
         {
           "kind": "player",
@@ -141,42 +156,45 @@
           "to": "Orlando Magic",
           "player_id": "0623f",
           "player": "Justin Lewis",
-          "label": "Justin Lewis"
+          "label": "Justin Lewis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "avs2o92elkp8zjwf"
+          }
         },
         {
           "kind": "pick",
           "from": "Minnesota Timberwolves",
           "to": "Orlando Magic",
-          "label": "2024 round 2 pick (Memphis Grizzlies)"
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          },
+          "next": {
+            "trade": "18v4rya5lpr3wy1m"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
         },
         {
           "kind": "budget",
           "from": "Orlando Magic",
           "to": "Minnesota Timberwolves",
           "label": "$5 budget"
-        }
-      ]
-    },
-    "cb1ycqqllbtik1hw": {
-      "date": "2022-12-18",
-      "season": "2022-23",
-      "period": 19,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Portland Trail Blazers",
-          "player_id": "05ujp",
-          "player": "Brandon Boston",
-          "label": "Brandon Boston"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Minnesota Timberwolves",
-          "player_id": "0623f",
-          "player": "Justin Lewis",
-          "label": "Justin Lewis"
         }
       ]
     },
@@ -191,7 +209,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "05qu5",
           "player": "Udoka Azubuike",
-          "label": "Udoka Azubuike"
+          "label": "Udoka Azubuike",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0jpui8znlc50zbu9"
+          }
         },
         {
           "kind": "player",
@@ -199,7 +227,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "038xi",
           "player": "Robert Covington",
-          "label": "Robert Covington"
+          "label": "Robert Covington",
+          "result": {
+            "points": 273.75,
+            "starts": 9,
+            "gp": 12,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0jpui8znlc50zbu9"
+          }
         },
         {
           "kind": "player",
@@ -207,13 +245,39 @@
           "to": "Portland Trail Blazers",
           "player_id": "0623f",
           "player": "Justin Lewis",
-          "label": "Justin Lewis"
+          "label": "Justin Lewis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 18,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "cb1ycqqllbtik1hw"
+          }
         },
         {
           "kind": "pick",
           "from": "Cleveland Cavaliers",
           "to": "Orlando Magic",
-          "label": "2023 round 1 pick (Memphis Grizzlies)"
+          "label": "2023 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06cdj",
+            "player": "Colby Jones",
+            "certain": true
+          },
+          "next": {
+            "trade": "umry9n3zlj4p4wo1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
+          }
         },
         {
           "kind": "budget",
@@ -227,7 +291,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "03nwl",
           "player": "Terry Rozier",
-          "label": "Terry Rozier"
+          "label": "Terry Rozier",
+          "result": {
+            "points": 3562.75,
+            "starts": 60,
+            "gp": 88,
+            "periods": 69,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9zd79sc2m331fy8y"
+          }
         },
         {
           "kind": "player",
@@ -235,25 +309,86 @@
           "to": "Orlando Magic",
           "player_id": "04ewb",
           "player": "Jonathan Isaac",
-          "label": "Jonathan Isaac"
+          "label": "Jonathan Isaac",
+          "result": {
+            "points": 153.75,
+            "starts": 5,
+            "gp": 8,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "umry9n3zlj4p4wo1"
+          }
         },
         {
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "Orlando Magic",
-          "label": "2024 round 1 pick (Portland Trail Blazers)"
+          "label": "2024 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 16,
+            "overall": 16,
+            "player_id": "06mkb",
+            "player": "Ja'Kobe Walter",
+            "certain": true
+          },
+          "next": {
+            "trade": "umry9n3zlj4p4wo1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
         },
         {
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "Cleveland Cavaliers",
-          "label": "2024 round 2 pick (Charlotte Hornets)"
+          "label": "2024 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "001bb",
+            "player": "Jorge Garbajosa",
+            "certain": false
+          },
+          "next": {
+            "trade": "9t7crq6jlxzvbjmo"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
         },
         {
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "Orlando Magic",
-          "label": "2023 round 2 pick (Portland Trail Blazers)"
+          "label": "2023 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06cd7",
+            "player": "Keyontae Johnson",
+            "certain": true
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 65,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -268,7 +403,17 @@
           "to": "Orlando Magic",
           "player_id": "051p0",
           "player": "Matisse Thybulle",
-          "label": "Matisse Thybulle"
+          "label": "Matisse Thybulle",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "jjplryjqlkp9u3lj"
+          }
         },
         {
           "kind": "player",
@@ -276,7 +421,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "0623f",
           "player": "Justin Lewis",
-          "label": "Justin Lewis"
+          "label": "Justin Lewis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-28"
+          }
         },
         {
           "kind": "player",
@@ -284,535 +439,89 @@
           "to": "Cleveland Cavaliers",
           "player_id": "065px",
           "player": "Trevion Williams",
-          "label": "Trevion Williams"
+          "label": "Trevion Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-28"
+          }
+        }
+      ]
+    },
+    "cb1ycqqllbtik1hw": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Portland Trail Blazers",
+          "player_id": "05ujp",
+          "player": "Brandon Boston",
+          "label": "Brandon Boston",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 2,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0jpui8znlc50zbu9"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "0623f",
+          "player": "Justin Lewis",
+          "label": "Justin Lewis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ynipswzwlknts8pu"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Portland Trail Blazers",
-      "Minnesota Timberwolves",
-      "Cleveland Cavaliers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        34,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        35,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        37,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        38,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        39,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        22,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        2,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

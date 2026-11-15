@@ -163,6 +163,7 @@
       "before_logs": true,
       "periods": 32,
       "starts": 4,
+      "gp": 6,
       "points": 84.25,
       "salary": 7680000,
       "contract": "REG2",
@@ -178,6 +179,7 @@
       "trade": "wyc5aaskkiivratd",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -190,6 +192,7 @@
       "trade": "7xemuaidkijdb1oy",
       "periods": 3,
       "starts": 1,
+      "gp": 2,
       "points": 23.5,
       "salary": 7680000,
       "contract": "REG1"
@@ -204,6 +207,7 @@
       "trade": "0ha362o3kjh7rhss",
       "periods": 25,
       "starts": 1,
+      "gp": 1,
       "points": -3.0,
       "salary": 7680000,
       "contract": "REG1"
@@ -224,6 +228,7 @@
       "bid": 16.0,
       "periods": 12,
       "starts": 6,
+      "gp": 11,
       "points": 330.75,
       "salary": 1000000,
       "contract": "FA"
@@ -238,6 +243,7 @@
       "trade": "79wk2egvlrpcba0l",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -250,6 +256,7 @@
       "trade": "zv7v0wdklrpe6mxo",
       "periods": 6,
       "starts": 1,
+      "gp": 1,
       "points": 14.25,
       "salary": 1000000,
       "contract": "FA"
@@ -270,6 +277,7 @@
       "bid": 0.0,
       "periods": 33,
       "starts": 3,
+      "gp": 5,
       "points": 136.0,
       "salary": 2250000,
       "contract": "REG1"
@@ -290,6 +298,7 @@
       "bid": 0.0,
       "periods": 10,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 2500000,
       "contract": "REG1"
@@ -314,7 +323,17 @@
           "to": "Detroit Pistons",
           "player_id": "03acx",
           "player": "Dante Exum",
-          "label": "Dante Exum"
+          "label": "Dante Exum",
+          "result": {
+            "points": -3.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 25,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
         },
         {
           "kind": "player",
@@ -322,13 +341,42 @@
           "to": "Detroit Pistons",
           "player_id": "04ex3",
           "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 14.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "vaxb0ggwkjy4tla7"
+          }
         },
         {
           "kind": "pick",
           "from": "Cleveland Cavaliers",
           "to": "Detroit Pistons",
-          "label": "2021 round 1 pick (Cleveland Cavaliers)"
+          "label": "2021 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "05uix",
+            "player": "Usman Garuba",
+            "certain": true
+          },
+          "result": {
+            "points": 837.0,
+            "starts": 52,
+            "gp": 59,
+            "periods": 73,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-11-17"
+          }
         },
         {
           "kind": "player",
@@ -336,106 +384,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "03kqi",
           "player": "Joe Ingles",
-          "label": "Joe Ingles"
-        }
-      ]
-    },
-    "zv7v0wdklrpe6mxo": {
-      "date": "2024-01-22",
-      "season": "2023-24",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "New York Knicks",
-          "player_id": "04qrx",
-          "player": "Josh Okogie",
-          "label": "Josh Okogie"
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "New York Knicks",
-          "label": "2024 round 2 pick (Philadelphia 76ers)"
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Minnesota Timberwolves",
-          "player_id": "03acx",
-          "player": "Dante Exum",
-          "label": "Dante Exum"
-        }
-      ]
-    },
-    "7xemuaidkijdb1oy": {
-      "date": "2020-12-11",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Memphis Grizzlies",
-          "player_id": "03r7i",
-          "player": "Rondae Hollis-Jefferson",
-          "label": "Rondae Hollis-Jefferson"
-        },
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "Memphis Grizzlies",
-          "label": "2022 round 1 pick (Atlanta Hawks)"
-        },
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Cleveland Cavaliers",
-          "player_id": "03acx",
-          "player": "Dante Exum",
-          "label": "Dante Exum"
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "Cleveland Cavaliers",
-          "label": "2021 round 1 pick (Cleveland Cavaliers)"
-        }
-      ]
-    },
-    "79wk2egvlrpcba0l": {
-      "date": "2024-01-22",
-      "season": "2023-24",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "New York Knicks",
-          "player_id": "03acx",
-          "player": "Dante Exum",
-          "label": "Dante Exum"
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "New York Knicks",
-          "label": "2024 round 2 pick (Memphis Grizzlies)"
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "New York Knicks",
-          "label": "2025 round 1 pick (Philadelphia 76ers)"
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Memphis Grizzlies",
-          "player_id": "051oj",
-          "player": "RJ Barrett",
-          "label": "RJ Barrett"
+          "label": "Joe Ingles",
+          "result": {
+            "points": 887.25,
+            "starts": 16,
+            "gp": 29,
+            "periods": 25,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
         }
       ]
     },
@@ -450,13 +409,26 @@
           "to": "Phoenix Suns",
           "player_id": "005kd",
           "player": "Kevin Love",
-          "label": "Kevin Love"
+          "label": "Kevin Love",
+          "result": {
+            "points": 44.75,
+            "starts": 1,
+            "gp": 2,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-08-07"
+          }
         },
         {
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Phoenix Suns",
-          "label": "2022 round 2 pick (Memphis Grizzlies)"
+          "label": "2022 round 2 pick (Memphis Grizzlies)",
+          "next": {
+            "trade": "h3agpstjkylmcv6c"
+          }
         },
         {
           "kind": "player",
@@ -464,7 +436,17 @@
           "to": "Memphis Grizzlies",
           "player_id": "000zv",
           "player": "Al Horford",
-          "label": "Al Horford"
+          "label": "Al Horford",
+          "result": {
+            "points": 754.75,
+            "starts": 16,
+            "gp": 21,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "v95yd34bkm6i6xbc"
+          }
         },
         {
           "kind": "player",
@@ -472,1014 +454,331 @@
           "to": "Memphis Grizzlies",
           "player_id": "03acx",
           "player": "Dante Exum",
-          "label": "Dante Exum"
+          "label": "Dante Exum",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "7xemuaidkijdb1oy"
+          }
         },
         {
           "kind": "pick",
           "from": "Phoenix Suns",
           "to": "Memphis Grizzlies",
-          "label": "2021 round 1 pick (Dallas Mavericks)"
+          "label": "2021 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "05uin",
+            "player": "Chris Duarte",
+            "certain": true
+          },
+          "result": {
+            "points": 781.0,
+            "starts": 19,
+            "gp": 31,
+            "periods": 26,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "4082kokckyio7f5a"
+          }
+        }
+      ]
+    },
+    "79wk2egvlrpcba0l": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zv7v0wdklrpe6mxo"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-21"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2025 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 2,
+            "overall": 2,
+            "player_id": "06v5y",
+            "player": "Dylan Harper",
+            "certain": true
+          },
+          "result": {
+            "points": 1460.75,
+            "starts": 32,
+            "gp": 54,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Memphis Grizzlies",
+          "player_id": "051oj",
+          "player": "RJ Barrett",
+          "label": "RJ Barrett",
+          "result": {
+            "points": 2901.0,
+            "starts": 55,
+            "gp": 78,
+            "periods": 72,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-30"
+          }
+        }
+      ]
+    },
+    "7xemuaidkijdb1oy": {
+      "date": "2020-12-11",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "03r7i",
+          "player": "Rondae Hollis-Jefferson",
+          "label": "Rondae Hollis-Jefferson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-01-23"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "label": "2022 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06224",
+            "player": "E.J. Liddell",
+            "certain": true
+          },
+          "next": {
+            "trade": "y7jfydkxkxg1vebv"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum",
+          "result": {
+            "points": 23.5,
+            "starts": 1,
+            "gp": 2,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0ha362o3kjh7rhss"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "05uix",
+            "player": "Usman Garuba",
+            "certain": true
+          },
+          "next": {
+            "trade": "0ha362o3kjh7rhss"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        }
+      ]
+    },
+    "zv7v0wdklrpe6mxo": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "New York Knicks",
+          "player_id": "04qrx",
+          "player": "Josh Okogie",
+          "label": "Josh Okogie",
+          "result": {
+            "points": 168.25,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-27"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "New York Knicks",
+          "label": "2024 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          },
+          "next": {
+            "trade": "46b3rvz8lxz156yq"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum",
+          "result": {
+            "points": 14.25,
+            "starts": 1,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-22"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Phoenix Suns",
-      "Cleveland Cavaliers",
-      "Detroit Pistons",
-      "Memphis Grizzlies",
-      "Minnesota Timberwolves",
-      "Denver Nuggets"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        9.5,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        5.5,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        4.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        15.5,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.25,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        -4.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        8.5,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        33.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        24.75,
-        1
-      ],
-      [
-        0,
-        22,
-        0,
-        49.75,
-        1
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        15.75,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        9.75,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        22.25,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        16.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        12.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        13.5,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        8.25,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        19.75,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        45.5,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        23.5,
-        1
-      ],
-      [
-        1,
-        4,
-        1,
-        11.75,
-        0
-      ],
-      [
-        1,
-        5,
-        2,
-        -3.0,
-        1
-      ],
-      [
-        1,
-        6,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        2,
-        0.0,
-        0
-      ],
-      [
-        4,
-        15,
-        3,
-        125.75,
-        1
-      ],
-      [
-        4,
-        16,
-        3,
-        27.0,
-        1
-      ],
-      [
-        4,
-        17,
-        3,
-        52.25,
-        1
-      ],
-      [
-        4,
-        18,
-        3,
-        38.75,
-        0
-      ],
-      [
-        4,
-        19,
-        3,
-        80.0,
-        1
-      ],
-      [
-        4,
-        20,
-        3,
-        34.75,
-        1
-      ],
-      [
-        4,
-        21,
-        3,
-        11.0,
-        1
-      ],
-      [
-        4,
-        22,
-        3,
-        0.0,
-        0
-      ],
-      [
-        4,
-        23,
-        3,
-        0.0,
-        0
-      ],
-      [
-        4,
-        24,
-        3,
-        0.0,
-        0
-      ],
-      [
-        4,
-        25,
-        3,
-        0.0,
-        0
-      ],
-      [
-        4,
-        26,
-        3,
-        0.0,
-        0
-      ],
-      [
-        4,
-        27,
-        4,
-        13.75,
-        0
-      ],
-      [
-        4,
-        28,
-        4,
-        14.25,
-        1
-      ],
-      [
-        4,
-        29,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        30,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        31,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        32,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        33,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        35,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        36,
-        4,
-        19.75,
-        0
-      ],
-      [
-        4,
-        37,
-        4,
-        6.25,
-        0
-      ],
-      [
-        4,
-        38,
-        4,
-        50.0,
-        0
-      ],
-      [
-        4,
-        39,
-        4,
-        14.0,
-        0
-      ],
-      [
-        4,
-        40,
-        4,
-        35.25,
-        1
-      ],
-      [
-        4,
-        41,
-        4,
-        12.5,
-        0
-      ],
-      [
-        5,
-        1,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        2,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        3,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        4,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        5,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        6,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        7,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        8,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        9,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        10,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        11,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        12,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        13,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        14,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        15,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        16,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        17,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        18,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        19,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        20,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        21,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        22,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        23,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        24,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        25,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        26,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        27,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        28,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        29,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        30,
-        5,
-        29.5,
-        0
-      ],
-      [
-        5,
-        31,
-        5,
-        53.0,
-        1
-      ],
-      [
-        5,
-        32,
-        5,
-        13.5,
-        1
-      ],
-      [
-        5,
-        33,
-        5,
-        69.5,
-        1
-      ],
-      [
-        5,
-        34,
-        5,
-        30.25,
-        1
-      ],
-      [
-        5,
-        35,
-        5,
-        64.0,
-        1
-      ],
-      [
-        5,
-        36,
-        5,
-        3.0,
-        1
-      ],
-      [
-        5,
-        37,
-        5,
-        -1.0,
-        1
-      ],
-      [
-        5,
-        38,
-        5,
-        33.75,
-        1
-      ],
-      [
-        6,
-        1,
-        5,
-        0.0,
-        0
-      ],
-      [
-        6,
-        2,
-        5,
-        0.0,
-        0
-      ],
-      [
-        6,
-        3,
-        5,
-        0.0,
-        0
-      ],
-      [
-        6,
-        4,
-        5,
-        0.0,
-        0
-      ],
-      [
-        6,
-        5,
-        5,
-        0.0,
-        0
-      ],
-      [
-        6,
-        6,
-        5,
-        0.0,
-        0
-      ],
-      [
-        6,
-        7,
-        5,
-        0.0,
-        0
-      ],
-      [
-        6,
-        8,
-        5,
-        0.0,
-        0
-      ],
-      [
-        6,
-        9,
-        5,
-        0.0,
-        0
-      ],
-      [
-        6,
-        10,
-        5,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

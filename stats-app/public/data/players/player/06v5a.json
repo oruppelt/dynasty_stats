@@ -86,6 +86,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Atlanta Hawks",
+      "label": "2025 round 1 pick (Atlanta Hawks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-03",
+      "from": "Atlanta Hawks",
+      "team": "Sacramento Kings",
+      "trade": "xlt1l483lzdzxsfa",
+      "label": "2025 round 1 pick (Atlanta Hawks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 7,
+      "date": "2024-11-11",
+      "from": "Sacramento Kings",
+      "team": "Miami Heat",
+      "trade": "o9x12180m3dbpz6a",
+      "label": "2025 round 1 pick (Atlanta Hawks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-04",
+      "from": "Miami Heat",
+      "team": "Phoenix Suns",
+      "trade": "wf1rqpzzmcoqfrnq",
+      "label": "2025 round 1 pick, no. 15"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -93,8 +131,12 @@
       "team": "Phoenix Suns",
       "round": 1,
       "pick": 15,
+      "overall": 15,
+      "original": "Atlanta Hawks",
+      "certain": true,
       "periods": 33,
       "starts": 22,
+      "gp": 31,
       "points": 826.0,
       "salary": 2119000,
       "contract": "R13"
@@ -109,12 +151,294 @@
       "trade": "d3urdettmsz0jqra",
       "periods": 7,
       "starts": 7,
+      "gp": 11,
       "points": 277.5,
       "salary": 2119000,
       "contract": "R12"
     }
   ],
   "trades": {
+    "o9x12180m3dbpz6a": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "042ne",
+          "player": "Malik Beasley",
+          "label": "Malik Beasley",
+          "result": {
+            "points": 1447.25,
+            "starts": 26,
+            "gp": 44,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-02"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann",
+          "result": {
+            "points": 14.5,
+            "starts": 4,
+            "gp": 1,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-02"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday",
+          "result": {
+            "points": 76.0,
+            "starts": 6,
+            "gp": 8,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-12-13"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "03kqi",
+          "player": "Joe Ingles",
+          "label": "Joe Ingles",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-12-13"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fqy5f8aem6akho3q"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones",
+          "result": {
+            "points": 98.75,
+            "starts": 9,
+            "gp": 12,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "u31lz7dpmhn7i0du"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          },
+          "next": {
+            "trade": "wf1rqpzzmcoqfrnq"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
+        }
+      ]
+    },
+    "xlt1l483lzdzxsfa": {
+      "date": "2024-08-03",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr.",
+          "result": {
+            "points": 1721.75,
+            "starts": 33,
+            "gp": 51,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-08"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "label": "2025 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          },
+          "next": {
+            "trade": "o9x12180m3dbpz6a"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "04qrn",
+          "player": "Mikal Bridges",
+          "label": "Mikal Bridges",
+          "result": {
+            "points": 3964.75,
+            "starts": 66,
+            "gp": 110,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
+          }
+        }
+      ]
+    },
+    "wf1rqpzzmcoqfrnq": {
+      "date": "2025-07-04",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2025 round 1 pick, no. 15",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          },
+          "result": {
+            "points": 826.0,
+            "starts": 22,
+            "gp": 31,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "d3urdettmsz0jqra"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick, no. 26",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06v5p",
+            "player": "Nolan Traore",
+            "certain": true
+          },
+          "result": {
+            "points": 15.5,
+            "starts": 2,
+            "gp": 1,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "label": "2026 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "076t9",
+            "player": "Darryn Peterson",
+            "certain": true
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Toronto Raptors"
+          }
+        }
+      ]
+    },
     "d3urdettmsz0jqra": {
       "date": "2026-08-18",
       "season": "2026-27",
@@ -126,7 +450,17 @@
           "to": "Phoenix Suns",
           "player_id": "04azw",
           "player": "Lauri Markkanen",
-          "label": "Lauri Markkanen"
+          "label": "Lauri Markkanen",
+          "result": {
+            "points": 304.75,
+            "starts": 7,
+            "gp": 8,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -134,7 +468,17 @@
           "to": "Orlando Magic",
           "player_id": "06v5a",
           "player": "Collin Murray-Boyles",
-          "label": "Collin Murray-Boyles"
+          "label": "Collin Murray-Boyles",
+          "result": {
+            "points": 277.5,
+            "starts": 7,
+            "gp": 11,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -142,7 +486,17 @@
           "to": "Orlando Magic",
           "player_id": "03ad4",
           "player": "D'Angelo Russell",
-          "label": "D'Angelo Russell"
+          "label": "D'Angelo Russell",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -150,7 +504,17 @@
           "to": "Orlando Magic",
           "player_id": "04ewc",
           "player": "Zach Collins",
-          "label": "Zach Collins"
+          "label": "Zach Collins",
+          "result": {
+            "points": 29.25,
+            "starts": 3,
+            "gp": 3,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "pick",
@@ -161,304 +525,26 @@
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Phoenix Suns",
-      "Orlando Magic"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        -2.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        64.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        53.0,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        51.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        22.0,
-        1
-      ],
-      [
-        0,
-        8,
-        0,
-        17.25,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        5.0,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        5.5,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        6.0,
-        1
-      ],
-      [
-        0,
-        12,
-        0,
-        37.75,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        49.25,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        3.5,
-        1
-      ],
-      [
-        0,
-        15,
-        0,
-        17.75,
-        1
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        31.75,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        44.25,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        39.0,
-        1
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        21,
-        0,
-        62.25,
-        1
-      ],
-      [
-        0,
-        22,
-        0,
-        15.25,
-        1
-      ],
-      [
-        0,
-        23,
-        0,
-        98.75,
-        1
-      ],
-      [
-        0,
-        24,
-        0,
-        92.75,
-        1
-      ],
-      [
-        0,
-        25,
-        0,
-        73.75,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        66.75,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        29,
-        0,
-        31.5,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        58.75,
-        1
-      ],
-      [
-        0,
-        31,
-        0,
-        87.5,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        3.75,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        33.25,
-        1
-      ],
-      [
-        1,
-        1,
-        1,
-        32.0,
-        1
-      ],
-      [
-        1,
-        2,
-        1,
-        37.75,
-        1
-      ],
-      [
-        1,
-        3,
-        1,
-        10.5,
-        1
-      ],
-      [
-        1,
-        4,
-        1,
-        42.0,
-        1
-      ],
-      [
-        1,
-        5,
-        1,
-        49.75,
-        1
-      ],
-      [
-        1,
-        6,
-        1,
-        48.25,
-        1
-      ],
-      [
-        1,
-        7,
-        1,
-        57.25,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

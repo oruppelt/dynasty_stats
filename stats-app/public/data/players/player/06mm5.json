@@ -98,15 +98,67 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Chicago Bulls",
+      "label": "2024 round 2 pick (Chicago Bulls)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-18",
+      "from": "Chicago Bulls",
+      "team": "Dallas Mavericks",
+      "trade": "o7egut5nlbsb9x0e",
+      "label": "2024 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-25",
+      "from": "Dallas Mavericks",
+      "team": "Minnesota Timberwolves",
+      "trade": "ll6492qklql9ax74",
+      "label": "2024 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "from": "Minnesota Timberwolves",
+      "team": "Memphis Grizzlies",
+      "trade": "0ndod7cllrpdvpgn",
+      "label": "2024 round 2 pick (Chicago Bulls)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Memphis Grizzlies",
+      "team": "Sacramento Kings",
+      "trade": "cw0jo5zulxyykp9s",
+      "label": "2024 round 2 pick, no. 27"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-29",
       "team": "Sacramento Kings",
       "round": 2,
-      "pick": 57,
+      "pick": 27,
+      "overall": 57,
+      "original": "Chicago Bulls",
+      "certain": true,
       "periods": 6,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -121,6 +173,7 @@
       "trade": "o9x12180m3dbpz6a",
       "periods": 21,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -135,6 +188,7 @@
       "trade": "fqy5f8aem6akho3q",
       "periods": 17,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -149,6 +203,7 @@
       "trade": "yqdm26wgmih99jx3",
       "periods": 22,
       "starts": 2,
+      "gp": 3,
       "points": 55.25,
       "salary": 1000000,
       "contract": "R22"
@@ -162,75 +217,6 @@
     }
   ],
   "trades": {
-    "fqy5f8aem6akho3q": {
-      "date": "2025-01-24",
-      "season": "2024-25",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Miami Heat",
-          "player_id": "06cdg",
-          "player": "Maxwell Lewis",
-          "label": "Maxwell Lewis"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Miami Heat",
-          "player_id": "06q2e",
-          "player": "Jamison Battle",
-          "label": "Jamison Battle"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Miami Heat",
-          "player_id": "062pk",
-          "player": "Simone Fontecchio",
-          "label": "Simone Fontecchio"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Miami Heat",
-          "player_id": "042n1",
-          "player": "Brandon Ingram",
-          "label": "Brandon Ingram"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Boston Celtics",
-          "player_id": "06mm5",
-          "player": "PJ Hall",
-          "label": "PJ Hall"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Boston Celtics",
-          "player_id": "049ka",
-          "player": "Lonzo Ball",
-          "label": "Lonzo Ball"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Boston Celtics",
-          "player_id": "06mlx",
-          "player": "Melvin Ajinca",
-          "label": "Melvin Ajinca"
-        },
-        {
-          "kind": "budget",
-          "from": "Miami Heat",
-          "to": "Boston Celtics",
-          "label": "$5 budget"
-        }
-      ]
-    },
     "o9x12180m3dbpz6a": {
       "date": "2024-11-11",
       "season": "2024-25",
@@ -242,7 +228,17 @@
           "to": "Sacramento Kings",
           "player_id": "042ne",
           "player": "Malik Beasley",
-          "label": "Malik Beasley"
+          "label": "Malik Beasley",
+          "result": {
+            "points": 1447.25,
+            "starts": 26,
+            "gp": 44,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-02"
+          }
         },
         {
           "kind": "player",
@@ -250,7 +246,17 @@
           "to": "Sacramento Kings",
           "player_id": "05uis",
           "player": "Tre Mann",
-          "label": "Tre Mann"
+          "label": "Tre Mann",
+          "result": {
+            "points": 14.5,
+            "starts": 4,
+            "gp": 1,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-02"
+          }
         },
         {
           "kind": "player",
@@ -258,7 +264,17 @@
           "to": "Miami Heat",
           "player_id": "04qs0",
           "player": "Aaron Holiday",
-          "label": "Aaron Holiday"
+          "label": "Aaron Holiday",
+          "result": {
+            "points": 76.0,
+            "starts": 6,
+            "gp": 8,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-12-13"
+          }
         },
         {
           "kind": "player",
@@ -266,7 +282,17 @@
           "to": "Miami Heat",
           "player_id": "03kqi",
           "player": "Joe Ingles",
-          "label": "Joe Ingles"
+          "label": "Joe Ingles",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-12-13"
+          }
         },
         {
           "kind": "player",
@@ -274,7 +300,17 @@
           "to": "Miami Heat",
           "player_id": "06mm5",
           "player": "PJ Hall",
-          "label": "PJ Hall"
+          "label": "PJ Hall",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fqy5f8aem6akho3q"
+          }
         },
         {
           "kind": "player",
@@ -282,13 +318,39 @@
           "to": "Miami Heat",
           "player_id": "06mmh",
           "player": "Isaac Jones",
-          "label": "Isaac Jones"
+          "label": "Isaac Jones",
+          "result": {
+            "points": 98.75,
+            "starts": 9,
+            "gp": 12,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "u31lz7dpmhn7i0du"
+          }
         },
         {
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Miami Heat",
-          "label": "2025 round 1 pick (Atlanta Hawks)"
+          "label": "2025 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          },
+          "next": {
+            "trade": "wf1rqpzzmcoqfrnq"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
         }
       ]
     },
@@ -303,7 +365,17 @@
           "to": "Utah Jazz",
           "player_id": "049kd",
           "player": "Deandre Ayton",
-          "label": "Deandre Ayton"
+          "label": "Deandre Ayton",
+          "result": {
+            "points": 946.25,
+            "starts": 22,
+            "gp": 31,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-20"
+          }
         },
         {
           "kind": "player",
@@ -311,7 +383,17 @@
           "to": "Utah Jazz",
           "player_id": "06mm5",
           "player": "PJ Hall",
-          "label": "PJ Hall"
+          "label": "PJ Hall",
+          "result": {
+            "points": 55.25,
+            "starts": 2,
+            "gp": 3,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-28"
+          }
         },
         {
           "kind": "player",
@@ -319,7 +401,17 @@
           "to": "Utah Jazz",
           "player_id": "06mkk",
           "player": "Ryan Dunn",
-          "label": "Ryan Dunn"
+          "label": "Ryan Dunn",
+          "result": {
+            "points": 450.75,
+            "starts": 19,
+            "gp": 31,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-19"
+          }
         },
         {
           "kind": "player",
@@ -327,13 +419,42 @@
           "to": "Utah Jazz",
           "player_id": "06mlx",
           "player": "Melvin Ajinca",
-          "label": "Melvin Ajinca"
+          "label": "Melvin Ajinca",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-20"
+          }
         },
         {
           "kind": "pick",
           "from": "Boston Celtics",
           "to": "Utah Jazz",
-          "label": "2026 round 1 pick (Utah Jazz)"
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          },
+          "result": {
+            "points": 114.0,
+            "starts": 3,
+            "gp": 5,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -341,7 +462,17 @@
           "to": "Boston Celtics",
           "player_id": "05qtt",
           "player": "Onyeka Okongwu",
-          "label": "Onyeka Okongwu"
+          "label": "Onyeka Okongwu",
+          "result": {
+            "points": 1808.0,
+            "starts": 26,
+            "gp": 45,
+            "periods": 29,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -349,498 +480,593 @@
           "to": "Boston Celtics",
           "player_id": "04qrr",
           "player": "Michael Porter",
-          "label": "Michael Porter"
+          "label": "Michael Porter",
+          "result": {
+            "points": 1147.75,
+            "starts": 18,
+            "gp": 25,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "rhyr5c70msr9j4s3"
+          }
+        }
+      ]
+    },
+    "0ndod7cllrpdvpgn": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "player_id": "0622c",
+          "player": "Isaiah Mobley",
+          "label": "Isaiah Mobley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          },
+          "next": {
+            "trade": "zv7v0wdklrpe6mxo"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          },
+          "next": {
+            "trade": "cw0jo5zulxyykp9s"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        }
+      ]
+    },
+    "fqy5f8aem6akho3q": {
+      "date": "2025-01-24",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "06cdg",
+          "player": "Maxwell Lewis",
+          "label": "Maxwell Lewis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-20"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "06q2e",
+          "player": "Jamison Battle",
+          "label": "Jamison Battle",
+          "result": {
+            "points": 58.0,
+            "starts": 2,
+            "gp": 4,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio",
+          "result": {
+            "points": 175.0,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "042n1",
+          "player": "Brandon Ingram",
+          "label": "Brandon Ingram",
+          "result": {
+            "points": 0.0,
+            "starts": 2,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 17,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "yqdm26wgmih99jx3"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball",
+          "result": {
+            "points": 162.75,
+            "starts": 4,
+            "gp": 6,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-07"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "06mlx",
+          "player": "Melvin Ajinca",
+          "label": "Melvin Ajinca",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 17,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "yqdm26wgmih99jx3"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
+        }
+      ]
+    },
+    "ll6492qklql9ax74": {
+      "date": "2023-12-25",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson",
+          "result": {
+            "points": 372.0,
+            "starts": 10,
+            "gp": 18,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-22"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          },
+          "next": {
+            "trade": "0ndod7cllrpdvpgn"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Toronto Raptors",
+          "label": "2025 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06v8d",
+            "player": "Bogoljub Markovic",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Toronto Raptors",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher",
+          "result": {
+            "points": 192.0,
+            "starts": 9,
+            "gp": 13,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris",
+          "result": {
+            "points": 38.75,
+            "starts": 4,
+            "gp": 5,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06mm1",
+            "player": "Bronny James",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith",
+          "result": {
+            "points": 518.0,
+            "starts": 11,
+            "gp": 19,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-22"
+          }
+        }
+      ]
+    },
+    "o7egut5nlbsb9x0e": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn",
+          "result": {
+            "points": 217.5,
+            "starts": 15,
+            "gp": 21,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-22"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          },
+          "next": {
+            "trade": "ll6492qklql9ax74"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06ccd",
+            "player": "Noah Clowney",
+            "certain": true
+          },
+          "next": {
+            "trade": "itomme9kljcykmjp"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          },
+          "next": {
+            "trade": "f24ziii5lxyb2o23"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Chicago Bulls",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell",
+          "result": {
+            "points": 237.25,
+            "starts": 5,
+            "gp": 6,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-23"
+          }
+        }
+      ]
+    },
+    "cw0jo5zulxyykp9s": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick, no. 25",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06mmh",
+            "player": "Isaac Jones",
+            "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "o9x12180m3dbpz6a"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick, no. 27",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "o9x12180m3dbpz6a"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Memphis Grizzlies",
+          "label": "2026 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "076u4",
+            "player": "Meleek Thomas",
+            "certain": true
+          },
+          "next": {
+            "trade": "obkbcgl9mkv2naz2"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Utah Jazz"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Sacramento Kings",
-      "Miami Heat",
-      "Boston Celtics",
-      "Utah Jazz"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        1,
-        1.5,
-        0
-      ],
-      [
-        0,
-        11,
-        1,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        1,
-        3.0,
-        0
-      ],
-      [
-        0,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        1,
-        7.75,
-        0
-      ],
-      [
-        0,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        2.75,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        10.5,
-        0
-      ],
-      [
-        0,
-        28,
-        2,
-        6.0,
-        0
-      ],
-      [
-        0,
-        29,
-        2,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        2,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        2,
-        3.5,
-        0
-      ],
-      [
-        0,
-        32,
-        2,
-        3.5,
-        0
-      ],
-      [
-        0,
-        33,
-        2,
-        4.0,
-        0
-      ],
-      [
-        1,
-        1,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        2,
-        14.75,
-        0
-      ],
-      [
-        1,
-        3,
-        2,
-        6.25,
-        0
-      ],
-      [
-        1,
-        4,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        2,
-        8.0,
-        0
-      ],
-      [
-        1,
-        6,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        2,
-        8.5,
-        0
-      ],
-      [
-        1,
-        8,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        3,
-        15.5,
-        0
-      ],
-      [
-        1,
-        21,
-        3,
-        24.5,
-        0
-      ],
-      [
-        1,
-        22,
-        3,
-        44.25,
-        0
-      ],
-      [
-        1,
-        23,
-        3,
-        55.25,
-        1
-      ],
-      [
-        1,
-        24,
-        3,
-        0.0,
-        1
-      ],
-      [
-        1,
-        25,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        33,
-        3,
-        42.25,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

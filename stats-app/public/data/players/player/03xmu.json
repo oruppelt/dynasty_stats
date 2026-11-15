@@ -68,6 +68,7 @@
       "bid": 0.0,
       "periods": 21,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 2000000,
       "contract": "REG1"
@@ -82,6 +83,7 @@
       "trade": "7eejxd3ck4tqfheg",
       "periods": 1,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 2000000,
       "contract": "REG1"
@@ -102,6 +104,7 @@
       "bid": 13.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -126,7 +129,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "03e7m",
           "player": "Jordan McRae",
-          "label": "Jordan McRae"
+          "label": "Jordan McRae",
+          "result": {
+            "points": 325.25,
+            "starts": 8,
+            "gp": 12,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         },
         {
           "kind": "player",
@@ -134,233 +147,105 @@
           "to": "Indiana Pacers",
           "player_id": "03xmu",
           "player": "Dragan Bender",
-          "label": "Dragan Bender"
+          "label": "Dragan Bender",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-01-06"
+          }
         },
         {
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Indiana Pacers",
-          "label": "2020 round 2 pick (Oklahoma City Thunder)"
+          "label": "2020 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "05qtp",
+            "player": "Grant Riller",
+            "certain": false
+          },
+          "next": {
+            "trade": "rxojqv5xkhq68p46"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Cleveland Cavaliers"
+          }
         },
         {
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Indiana Pacers",
-          "label": "2021 round 2 pick (Oklahoma City Thunder)"
+          "label": "2021 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "05ujd",
+            "player": "Neemias Queta",
+            "certain": false
+          },
+          "next": {
+            "trade": "gfurs4p9khutcfnn"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Oklahoma City Thunder",
-      "Indiana Pacers",
-      "Denver Nuggets"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        3.75,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        18.5,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        12.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        37,
-        2,
-        61.0,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

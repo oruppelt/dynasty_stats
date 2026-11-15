@@ -98,15 +98,57 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "New Orleans Pelicans",
+      "label": "2023 round 2 pick (New Orleans Pelicans)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 13,
+      "date": "2021-12-02",
+      "from": "New Orleans Pelicans",
+      "team": "Washington Wizards",
+      "trade": "tkca1bmjkwoypp13",
+      "label": "2023 round 2 pick (New Orleans Pelicans)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 27,
+      "date": "2023-01-16",
+      "from": "Washington Wizards",
+      "team": "Minnesota Timberwolves",
+      "trade": "c78464erlcyppe9f",
+      "label": "2023 round 2 pick (New Orleans Pelicans)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-24",
+      "from": "Minnesota Timberwolves",
+      "team": "Los Angeles Clippers",
+      "trade": "vonp1d50ldamgv6o",
+      "label": "2023 round 2 pick (New Orleans Pelicans)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
       "date": "2023-06-28",
       "team": "Los Angeles Clippers",
       "round": 2,
-      "pick": 51,
+      "pick": 21,
+      "overall": 51,
+      "original": "New Orleans Pelicans",
+      "certain": true,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -119,6 +161,7 @@
       "trade": "6ayc5q7eljo18azn",
       "periods": 32,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1659000,
       "contract": "R13"
@@ -133,6 +176,7 @@
       "trade": "ztwmlc8rlzji9u94",
       "periods": 33,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1659000,
       "contract": "R12"
@@ -153,6 +197,7 @@
       "bid": 2.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -173,6 +218,7 @@
       "bid": 36.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -193,12 +239,103 @@
       "bid": 0.0,
       "periods": 7,
       "starts": 1,
+      "gp": 1,
       "points": 5.0,
       "salary": 1500000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "tkca1bmjkwoypp13": {
+      "date": "2021-12-02",
+      "season": "2021-22",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Washington Wizards",
+          "player_id": "03nwi",
+          "player": "Justise Winslow",
+          "label": "Justise Winslow",
+          "result": {
+            "points": 384.25,
+            "starts": 14,
+            "gp": 17,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Washington Wizards",
+          "label": "2023 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06cei",
+            "player": "Leonard Miller",
+            "certain": true
+          },
+          "next": {
+            "trade": "c78464erlcyppe9f"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 13,
+            "overall": 13,
+            "player_id": "0621e",
+            "player": "Mark Williams",
+            "certain": true
+          },
+          "result": {
+            "points": 1989.25,
+            "starts": 60,
+            "gp": 59,
+            "periods": 98,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-08"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "New Orleans Pelicans",
+          "player_id": "02nf7",
+          "player": "Harrison Barnes",
+          "label": "Harrison Barnes",
+          "result": {
+            "points": 1034.25,
+            "starts": 18,
+            "gp": 32,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        }
+      ]
+    },
     "6ayc5q7eljo18azn": {
       "date": "2023-10-22",
       "season": "2023-24",
@@ -210,7 +347,17 @@
           "to": "Toronto Raptors",
           "player_id": "06cei",
           "player": "Leonard Miller",
-          "label": "Leonard Miller"
+          "label": "Leonard Miller",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ztwmlc8rlzji9u94"
+          }
         },
         {
           "kind": "player",
@@ -239,566 +386,384 @@
           "to": "Milwaukee Bucks",
           "player_id": "06cei",
           "player": "Leonard Miller",
-          "label": "Leonard Miller"
+          "label": "Leonard Miller",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-19"
+          }
         },
         {
           "kind": "pick",
           "from": "Toronto Raptors",
           "to": "Milwaukee Bucks",
-          "label": "2025 round 2 pick (Toronto Raptors)"
+          "label": "2025 round 2 pick (Toronto Raptors)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "06v86",
+            "player": "Micah Peavy",
+            "certain": true
+          },
+          "next": {
+            "trade": "8mocn229mcpvz0fx"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
+        }
+      ]
+    },
+    "vonp1d50ldamgv6o": {
+      "date": "2023-01-24",
+      "season": "2022-23",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "031m4",
+          "player": "Dennis Schroder",
+          "label": "Dennis Schroder",
+          "result": {
+            "points": 231.75,
+            "starts": 4,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "player_id": "04xhy",
+          "player": "Yuta Watanabe",
+          "label": "Yuta Watanabe",
+          "result": {
+            "points": 157.75,
+            "starts": 5,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "label": "2023 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06cei",
+            "player": "Leonard Miller",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "6ayc5q7eljo18azn"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          },
+          "next": {
+            "trade": "lzuchjjolqphb417"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        }
+      ]
+    },
+    "c78464erlcyppe9f": {
+      "date": "2023-01-16",
+      "season": "2022-23",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Washington Wizards",
+          "player_id": "02nf9",
+          "player": "Andre Drummond",
+          "label": "Andre Drummond",
+          "result": {
+            "points": 136.5,
+            "starts": 4,
+            "gp": 7,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "oqo6hnq5lki0ofs1"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          },
+          "next": {
+            "trade": "ynipswzwlknts8pu"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-07"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Memphis Grizzlies",
+          "player_id": "04qsi",
+          "player": "Jarred Vanderbilt",
+          "label": "Jarred Vanderbilt",
+          "result": {
+            "points": 635.25,
+            "starts": 16,
+            "gp": 29,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White",
+          "result": {
+            "points": 217.0,
+            "starts": 6,
+            "gp": 11,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "oflw47jqljtoulxm"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-01-20"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Washington Wizards",
+          "label": "2024 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06mk7",
+            "player": "Kel'el Ware",
+            "certain": true
+          },
+          "next": {
+            "trade": "xqm77aorlrs4fy0j"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "042nw",
+          "player": "Malcolm Brogdon",
+          "label": "Malcolm Brogdon",
+          "result": {
+            "points": 188.25,
+            "starts": 4,
+            "gp": 6,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell",
+          "result": {
+            "points": 298.25,
+            "starts": 4,
+            "gp": 8,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "label": "2023 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06cei",
+            "player": "Leonard Miller",
+            "certain": true
+          },
+          "next": {
+            "trade": "vonp1d50ldamgv6o"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          },
+          "next": {
+            "trade": "vonp1d50ldamgv6o"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Toronto Raptors",
-      "Milwaukee Bucks",
-      "Golden State Warriors",
-      "New York Knicks",
-      "Miami Heat"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        1.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        4.5,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        7.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        10.5,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        12.5,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        3.5,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        8.25,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        1,
-        2.0,
-        0
-      ],
-      [
-        1,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        1,
-        -1.5,
-        0
-      ],
-      [
-        1,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        2.0,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        9.5,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        1,
-        3.5,
-        0
-      ],
-      [
-        1,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        33,
-        1,
-        10.25,
-        0
-      ],
-      [
-        2,
-        37,
-        2,
-        29.5,
-        0
-      ],
-      [
-        2,
-        41,
-        3,
-        67.25,
-        1
-      ],
-      [
-        3,
-        1,
-        4,
-        1.0,
-        0
-      ],
-      [
-        3,
-        2,
-        4,
-        53.25,
-        0
-      ],
-      [
-        3,
-        3,
-        4,
-        38.75,
-        0
-      ],
-      [
-        3,
-        4,
-        4,
-        5.0,
-        1
-      ],
-      [
-        3,
-        5,
-        4,
-        32.5,
-        0
-      ],
-      [
-        3,
-        6,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        7,
-        4,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

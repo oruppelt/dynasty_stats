@@ -68,6 +68,7 @@
       "bid": 8.0,
       "periods": 8,
       "starts": 1,
+      "gp": 1,
       "points": 0.5,
       "salary": 1000000,
       "contract": "FA"
@@ -82,6 +83,7 @@
       "trade": "rxtnvaqdlrozo98w",
       "periods": 6,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -102,6 +104,7 @@
       "bid": 2.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -126,7 +129,17 @@
           "to": "Toronto Raptors",
           "player_id": "0626t",
           "player": "Dominick Barlow",
-          "label": "Dominick Barlow"
+          "label": "Dominick Barlow",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
         },
         {
           "kind": "player",
@@ -134,7 +147,17 @@
           "to": "Toronto Raptors",
           "player_id": "05uwa",
           "player": "A.J. Lawson",
-          "label": "A.J. Lawson"
+          "label": "A.J. Lawson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
         },
         {
           "kind": "player",
@@ -142,7 +165,17 @@
           "to": "Golden State Warriors",
           "player_id": "06cet",
           "player": "Terquavion Smith",
-          "label": "Terquavion Smith"
+          "label": "Terquavion Smith",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-10-21"
+          }
         },
         {
           "kind": "player",
@@ -150,152 +183,41 @@
           "to": "Golden State Warriors",
           "player_id": "049ki",
           "player": "Marvin Bagley",
-          "label": "Marvin Bagley"
+          "label": "Marvin Bagley",
+          "result": {
+            "points": 114.25,
+            "starts": 3,
+            "gp": 5,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-23"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Golden State Warriors",
-      "Toronto Raptors",
-      "Charlotte Hornets"
-    ],
-    "periods": [
-      [
-        0,
-        19,
-        0,
-        0.5,
-        1
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        8.25,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        31.75,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        7.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        3.25,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        12.25,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        7.5,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        0.5,
-        0
-      ],
-      [
-        0,
-        29,
-        1,
-        10.5,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        4.0,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        9.0,
-        0
-      ],
-      [
-        1,
-        40,
-        2,
-        52.5,
-        0
-      ],
-      [
-        1,
-        41,
-        2,
-        23.25,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

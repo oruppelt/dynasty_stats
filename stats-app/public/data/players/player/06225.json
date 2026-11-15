@@ -38,9 +38,12 @@
       "date": "2022-06-28",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 42,
+      "pick": 12,
+      "overall": 42,
+      "certain": false,
       "periods": 33,
       "starts": 1,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -55,6 +58,7 @@
       "trade": "f5xsbh6ylknr0qpy",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -77,7 +81,17 @@
           "to": "Miami Heat",
           "player_id": "06225",
           "player": "Trevor Keels",
-          "label": "Trevor Keels"
+          "label": "Trevor Keels",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-31"
+          }
         },
         {
           "kind": "player",
@@ -85,286 +99,90 @@
           "to": "Detroit Pistons",
           "player_id": "027oo",
           "player": "Jonas Valanciunas",
-          "label": "Jonas Valanciunas"
+          "label": "Jonas Valanciunas",
+          "result": {
+            "points": 1911.0,
+            "starts": 32,
+            "gp": 53,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "veuxhdyulzh2p9ac"
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Detroit Pistons",
-          "label": "2025 round 1 pick (Miami Heat)"
+          "label": "2025 round 1 pick (Miami Heat)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06v5l",
+            "player": "Cooper Flagg",
+            "certain": true
+          },
+          "next": {
+            "trade": "zd8dfww5lrfwowq2"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Detroit Pistons",
-          "label": "2024 round 1 pick (Miami Heat)"
+          "label": "2024 round 1 pick (Miami Heat)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "06mk3",
+            "player": "Matas Buzelis",
+            "certain": true
+          },
+          "next": {
+            "trade": "f55b9i8llqovzig1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Detroit Pistons"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        1.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

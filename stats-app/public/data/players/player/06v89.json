@@ -72,15 +72,47 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2025 round 2 pick (Indiana Pacers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 15,
+      "date": "2024-12-09",
+      "from": "Indiana Pacers",
+      "team": "Miami Heat",
+      "trade": "gy7ia1v7m4gxhk6e",
+      "label": "2025 round 2 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-23",
+      "from": "Miami Heat",
+      "team": "Denver Nuggets",
+      "trade": "qqtxc5wbm65k1oug",
+      "label": "2025 round 2 pick (Indiana Pacers)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
       "date": "2025-07-05",
       "team": "Denver Nuggets",
       "round": 2,
-      "pick": 59,
+      "pick": 29,
+      "overall": 59,
+      "original": "Indiana Pacers",
+      "certain": true,
       "periods": 33,
       "starts": 9,
+      "gp": 15,
       "points": 362.75,
       "salary": 1000000,
       "contract": "R23"
@@ -93,290 +125,356 @@
       "team": "Denver Nuggets"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Denver Nuggets"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        16.25,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        7.5,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        11.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        7.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        44.5,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        5.75,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        27.0,
-        1
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        6.25,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        6.5,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        29.25,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        35.25,
-        1
-      ],
-      [
-        0,
-        28,
-        0,
-        60.25,
-        1
-      ],
-      [
-        0,
-        29,
-        0,
-        31.5,
-        1
-      ],
-      [
-        0,
-        30,
-        0,
-        46.0,
-        1
-      ],
-      [
-        0,
-        31,
-        0,
-        21.25,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        67.75,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        19.0,
-        0
-      ],
-      [
-        0,
-        34,
-        0,
-        57.75,
-        1
-      ],
-      [
-        0,
-        35,
-        0,
-        28.5,
-        1
-      ],
-      [
-        0,
-        36,
-        0,
-        20.25,
-        0
-      ],
-      [
-        0,
-        37,
-        0,
-        25.75,
-        1
-      ],
-      [
-        0,
-        38,
-        0,
-        0.0,
-        0
+  "trades": {
+    "qqtxc5wbm65k1oug": {
+      "date": "2025-01-23",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "05qu1",
+          "player": "James Wiseman",
+          "label": "James Wiseman",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-02-07"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "04qru",
+          "player": "Donte DiVincenzo",
+          "label": "Donte DiVincenzo",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman",
+          "result": {
+            "points": -4.5,
+            "starts": 4,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Denver Nuggets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "06v8b",
+            "player": "Rocco Zikarsky",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ww5mlxmcmkqs951p"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "06cef",
+          "player": "Oscar Tshiebwe",
+          "label": "Oscar Tshiebwe",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-30"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-30"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "06ceg",
+          "player": "Ricky Council",
+          "label": "Ricky Council",
+          "result": {
+            "points": 102.75,
+            "starts": 4,
+            "gp": 7,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-02-19"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-30"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "label": "2025 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06v89",
+            "player": "Jamir Watkins",
+            "certain": true
+          },
+          "result": {
+            "points": 362.75,
+            "starts": 9,
+            "gp": 15,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-20"
+          }
+        }
       ]
-    ]
-  }
+    },
+    "gy7ia1v7m4gxhk6e": {
+      "date": "2024-12-09",
+      "season": "2024-25",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "05qt0",
+          "player": "Saddiq Bey",
+          "label": "Saddiq Bey",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-01-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "05qtl",
+          "player": "Cole Anthony",
+          "label": "Cole Anthony",
+          "result": {
+            "points": 120.5,
+            "starts": 6,
+            "gp": 8,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1jghgk36m5avz9qx"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2026 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "076sv",
+            "player": "Bennett Stirtz",
+            "certain": true
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Toronto Raptors"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06v89",
+            "player": "Jamir Watkins",
+            "certain": true
+          },
+          "next": {
+            "trade": "qqtxc5wbm65k1oug"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          },
+          "next": {
+            "trade": "ww5mlxmcmkqs951p"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson",
+          "result": {
+            "points": 568.25,
+            "starts": 16,
+            "gp": 26,
+            "periods": 19,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "02ng3",
+          "player": "Khris Middleton",
+          "label": "Khris Middleton",
+          "result": {
+            "points": 527.75,
+            "starts": 13,
+            "gp": 19,
+            "periods": 19,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
+        }
+      ]
+    }
+  },
+  "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

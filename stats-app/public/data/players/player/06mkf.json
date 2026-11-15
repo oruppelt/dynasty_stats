@@ -100,15 +100,56 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Golden State Warriors",
+      "label": "2024 round 2 pick (Golden State Warriors)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 23,
+      "date": "2023-01-02",
+      "from": "Golden State Warriors",
+      "team": "Miami Heat",
+      "trade": "gval9i9vlcer1ktf",
+      "label": "2024 round 2 pick (Golden State Warriors)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-26",
+      "from": "Miami Heat",
+      "team": "Utah Jazz",
+      "trade": "tbw260rxldbmy6ec",
+      "label": "2024 round 2 pick (Golden State Warriors)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 30,
+      "date": "2023-01-27",
+      "from": "Utah Jazz",
+      "team": "Golden State Warriors",
+      "trade": "o47mrulcldew7u7t",
+      "label": "2024 round 2 pick (Golden State Warriors)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-29",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 49,
+      "pick": 19,
+      "overall": 49,
+      "certain": true,
       "periods": 38,
       "starts": 1,
+      "gp": 2,
       "points": 15.0,
       "salary": 1000000,
       "contract": "R23"
@@ -123,6 +164,7 @@
       "trade": "u31lz7dpmhn7i0du",
       "periods": 28,
       "starts": 4,
+      "gp": 2,
       "points": 46.5,
       "salary": 1000000,
       "contract": "R22"
@@ -147,7 +189,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "06ccv",
           "player": "Trayce Jackson-Davis",
-          "label": "Trayce Jackson-Davis"
+          "label": "Trayce Jackson-Davis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-10"
+          }
         },
         {
           "kind": "player",
@@ -155,7 +207,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "06mkf",
           "player": "AJ Johnson",
-          "label": "AJ Johnson"
+          "label": "AJ Johnson",
+          "result": {
+            "points": 46.5,
+            "starts": 4,
+            "gp": 2,
+            "periods": 28,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-04"
+          }
         },
         {
           "kind": "pick",
@@ -169,13 +231,39 @@
           "to": "Portland Trail Blazers",
           "player_id": "06mmh",
           "player": "Isaac Jones",
-          "label": "Isaac Jones"
+          "label": "Isaac Jones",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "22yya7camkqj2lli"
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 2 pick (Golden State Warriors)"
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          },
+          "next": {
+            "trade": "22yya7camkqj2lli"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
         },
         {
           "kind": "player",
@@ -183,517 +271,461 @@
           "to": "Golden State Warriors",
           "player_id": "05uio",
           "player": "Moses Moody",
-          "label": "Moses Moody"
+          "label": "Moses Moody",
+          "result": {
+            "points": 1002.25,
+            "starts": 21,
+            "gp": 38,
+            "periods": 28,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-21"
+          }
+        }
+      ]
+    },
+    "tbw260rxldbmy6ec": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05qtm",
+          "player": "Precious Achiuwa",
+          "label": "Precious Achiuwa",
+          "result": {
+            "points": 217.5,
+            "starts": 3,
+            "gp": 6,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-21"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05uus",
+          "player": "Austin Reaves",
+          "label": "Austin Reaves",
+          "result": {
+            "points": 1809.0,
+            "starts": 31,
+            "gp": 54,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "player_id": "05ujg",
+          "player": "Isaiah Livers",
+          "label": "Isaiah Livers",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "o47mrulcldew7u7t"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06cbz",
+            "player": "Brice Sensabaugh",
+            "certain": true
+          },
+          "result": {
+            "points": 34.0,
+            "starts": 2,
+            "gp": 5,
+            "periods": 38,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-11-11"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06cdd",
+            "player": "Andre Jackson",
+            "certain": true
+          },
+          "next": {
+            "trade": "wec3x6p4ldeiwcta"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06mkf",
+            "player": "AJ Johnson",
+            "certain": true
+          },
+          "next": {
+            "trade": "o47mrulcldew7u7t"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2024 round 2 pick (Miami Heat)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06mkh",
+            "player": "Pacome Dadiet",
+            "certain": true
+          },
+          "next": {
+            "trade": "0x33e8dqljebq4sl"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Utah Jazz",
+          "label": "2023 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06ca5",
+            "player": "Kris Murray",
+            "certain": true
+          },
+          "next": {
+            "trade": "b8r8172jldexl7cs"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05qsq",
+          "player": "Tyrese Maxey",
+          "label": "Tyrese Maxey",
+          "result": {
+            "points": 123.25,
+            "starts": 4,
+            "gp": 6,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-22"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05ujr",
+          "player": "Charles Bassey",
+          "label": "Charles Bassey",
+          "result": {
+            "points": 272.75,
+            "starts": 13,
+            "gp": 17,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-05-09"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "05qud",
+          "player": "Aleksej Pokusevski",
+          "label": "Aleksej Pokusevski",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-22"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "03ad0",
+          "player": "Tyus Jones",
+          "label": "Tyus Jones",
+          "result": {
+            "points": 91.75,
+            "starts": 3,
+            "gp": 5,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Miami Heat",
+          "player_id": "051pw",
+          "player": "Jalen McDaniels",
+          "label": "Jalen McDaniels",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-03-14"
+          }
+        }
+      ]
+    },
+    "gval9i9vlcer1ktf": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "player_id": "05uj7",
+          "player": "Jason Preston",
+          "label": "Jason Preston",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-01-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06mkf",
+            "player": "AJ Johnson",
+            "certain": true
+          },
+          "next": {
+            "trade": "tbw260rxldbmy6ec"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Golden State Warriors",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann",
+          "result": {
+            "points": 259.25,
+            "starts": 11,
+            "gp": 18,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zplnwgpylktqr2i8"
+          }
+        }
+      ]
+    },
+    "o47mrulcldew7u7t": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Utah Jazz",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio",
+          "result": {
+            "points": 26.5,
+            "starts": 1,
+            "gp": 1,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Golden State Warriors",
+          "player_id": "02ng4",
+          "player": "Will Barton",
+          "label": "Will Barton",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-01-27"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Golden State Warriors",
+          "player_id": "05ujg",
+          "player": "Isaiah Livers",
+          "label": "Isaiah Livers",
+          "result": {
+            "points": 118.25,
+            "starts": 5,
+            "gp": 9,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-12-25"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Golden State Warriors",
+          "label": "2024 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06mkf",
+            "player": "AJ Johnson",
+            "certain": true
+          },
+          "result": {
+            "points": 15.0,
+            "starts": 1,
+            "gp": 2,
+            "periods": 38,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "u31lz7dpmhn7i0du"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Golden State Warriors",
-      "Portland Trail Blazers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        3.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        -1.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        5.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        5.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        26.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        15.0,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        1.5,
-        0
-      ],
-      [
-        0,
-        34,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        35,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        36,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        3.5,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        2.5,
-        0
-      ],
-      [
-        1,
-        5,
-        0,
-        5.25,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        5.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        1.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        -2.0,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        -0.5,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        2.5,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        -0.5,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        -3.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        13.75,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        25.5,
-        0
-      ],
-      [
-        1,
-        23,
-        1,
-        11.0,
-        0
-      ],
-      [
-        1,
-        24,
-        1,
-        12.75,
-        0
-      ],
-      [
-        1,
-        25,
-        1,
-        -1.0,
-        0
-      ],
-      [
-        1,
-        26,
-        1,
-        8.25,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        29,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        30,
-        1,
-        11.0,
-        1
-      ],
-      [
-        1,
-        31,
-        1,
-        35.5,
-        1
-      ],
-      [
-        1,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        33,
-        1,
-        1.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

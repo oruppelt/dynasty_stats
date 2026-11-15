@@ -94,6 +94,7 @@
       "bid": 0.0,
       "periods": 1,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 2000000,
       "contract": "REG1"
@@ -108,6 +109,7 @@
       "trade": "6kk26nz5k269o7q2",
       "periods": 31,
       "starts": 5,
+      "gp": 6,
       "points": 35.25,
       "salary": 2000000,
       "contract": "REG1"
@@ -132,7 +134,17 @@
           "to": "Orlando Magic",
           "player_id": "03apy",
           "player": "Rodney Hood",
-          "label": "Rodney Hood"
+          "label": "Rodney Hood",
+          "result": {
+            "points": 430.75,
+            "starts": 12,
+            "gp": 19,
+            "periods": 31,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "5gg4pkc8kg0rxsjg"
+          }
         },
         {
           "kind": "player",
@@ -140,7 +152,17 @@
           "to": "Orlando Magic",
           "player_id": "04jwc",
           "player": "Alfonzo McKinnie",
-          "label": "Alfonzo McKinnie"
+          "label": "Alfonzo McKinnie",
+          "result": {
+            "points": 35.25,
+            "starts": 5,
+            "gp": 6,
+            "periods": 31,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         },
         {
           "kind": "player",
@@ -148,13 +170,39 @@
           "to": "Orlando Magic",
           "player_id": "02nf8",
           "player": "Terrence Ross",
-          "label": "Terrence Ross"
+          "label": "Terrence Ross",
+          "result": {
+            "points": 1873.0,
+            "starts": 43,
+            "gp": 72,
+            "periods": 45,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fg701svckkwr9d15"
+          }
         },
         {
           "kind": "pick",
           "from": "Golden State Warriors",
           "to": "Orlando Magic",
-          "label": "2020 round 2 pick (Cleveland Cavaliers)"
+          "label": "2020 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "05qtq",
+            "player": "Tre Jones",
+            "certain": false
+          },
+          "next": {
+            "trade": "5gg4pkc8kg0rxsjg"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
         },
         {
           "kind": "player",
@@ -162,283 +210,61 @@
           "to": "Golden State Warriors",
           "player_id": "031lq",
           "player": "Otto Porter",
-          "label": "Otto Porter"
+          "label": "Otto Porter",
+          "result": {
+            "points": 197.0,
+            "starts": 4,
+            "gp": 8,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "18yvuxoyk2wfh60f"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Golden State Warriors",
-      "Orlando Magic"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        1,
-        1.5,
-        0
-      ],
-      [
-        0,
-        5,
-        1,
-        5.0,
-        0
-      ],
-      [
-        0,
-        6,
-        1,
-        1.5,
-        1
-      ],
-      [
-        0,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        1,
-        17.75,
-        0
-      ],
-      [
-        0,
-        9,
-        1,
-        46.25,
-        0
-      ],
-      [
-        0,
-        10,
-        1,
-        26.5,
-        0
-      ],
-      [
-        0,
-        11,
-        1,
-        16.5,
-        1
-      ],
-      [
-        0,
-        12,
-        1,
-        0.5,
-        1
-      ],
-      [
-        0,
-        13,
-        1,
-        2.0,
-        0
-      ],
-      [
-        0,
-        14,
-        1,
-        5.75,
-        0
-      ],
-      [
-        0,
-        15,
-        1,
-        5.25,
-        0
-      ],
-      [
-        0,
-        16,
-        1,
-        0.5,
-        0
-      ],
-      [
-        0,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        1,
-        2.0,
-        0
-      ],
-      [
-        0,
-        20,
-        1,
-        7.25,
-        0
-      ],
-      [
-        0,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        1,
-        20.75,
-        0
-      ],
-      [
-        0,
-        23,
-        1,
-        15.25,
-        0
-      ],
-      [
-        0,
-        24,
-        1,
-        27.5,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        20.75,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        53.5,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        9.75,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        7.5,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        9.0,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        9.5,
-        1
-      ],
-      [
-        0,
-        33,
-        1,
-        7.25,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

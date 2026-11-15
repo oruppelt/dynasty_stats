@@ -21,6 +21,24 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Oklahoma City Thunder",
+      "label": "2026 round 1 pick (Oklahoma City Thunder)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-10",
+      "from": "Oklahoma City Thunder",
+      "team": "Toronto Raptors",
+      "trade": "b7zez6g3mhsz8kok",
+      "label": "2026 round 1 pick (Oklahoma City Thunder)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -28,75 +46,180 @@
       "team": "Toronto Raptors",
       "round": 1,
       "pick": 30,
+      "overall": 30,
+      "original": "Oklahoma City Thunder",
+      "certain": true,
       "periods": 7,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1296000,
       "contract": "R13"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Toronto Raptors"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
+  "trades": {
+    "b7zez6g3mhsz8kok": {
+      "date": "2025-11-10",
+      "season": "2025-26",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06cdh",
+          "player": "GG Jackson",
+          "label": "GG Jackson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06caa",
+          "player": "Ben Sheppard",
+          "label": "Ben Sheppard",
+          "result": {
+            "points": 464.0,
+            "starts": 15,
+            "gp": 27,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06mlj",
+          "player": "Bobi Klintman",
+          "label": "Bobi Klintman",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06mk9",
+          "player": "Dalton Knecht",
+          "label": "Dalton Knecht",
+          "result": {
+            "points": 193.25,
+            "starts": 19,
+            "gp": 26,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "076u1",
+            "player": "Henri Veesaar",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "048zt",
+          "player": "Derrick Jones",
+          "label": "Derrick Jones",
+          "result": {
+            "points": 115.5,
+            "starts": 2,
+            "gp": 4,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0621y",
+          "player": "Max Christie",
+          "label": "Max Christie",
+          "result": {
+            "points": 692.5,
+            "starts": 15,
+            "gp": 25,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "label": "$15 budget"
+        }
       ]
-    ]
-  }
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

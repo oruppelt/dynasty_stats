@@ -21,82 +21,415 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2026 round 2 pick (Indiana Pacers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 15,
+      "date": "2024-12-09",
+      "from": "Indiana Pacers",
+      "team": "Miami Heat",
+      "trade": "gy7ia1v7m4gxhk6e",
+      "label": "2026 round 2 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Miami Heat",
+      "team": "Portland Trail Blazers",
+      "trade": "ww5mlxmcmkqs951p",
+      "label": "2026 round 2 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-25",
+      "from": "Portland Trail Blazers",
+      "team": "San Antonio Spurs",
+      "trade": "zlfnl31gmqt85aw1",
+      "label": "2026 round 2 pick, no. 24"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-04",
       "team": "San Antonio Spurs",
       "round": 2,
-      "pick": 54,
+      "pick": 24,
+      "overall": 54,
+      "original": "Indiana Pacers",
+      "certain": true,
       "periods": 7,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "San Antonio Spurs"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        14.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        2.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        2.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        1.5,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        10.0,
-        0
+  "trades": {
+    "zlfnl31gmqt85aw1": {
+      "date": "2026-06-25",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "player_id": "06v8b",
+          "player": "Rocco Zikarsky",
+          "label": "Rocco Zikarsky",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "label": "2026 round 2 pick, no. 24",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5j",
+          "player": "Jase Richardson",
+          "label": "Jase Richardson",
+          "result": {
+            "points": 147.5,
+            "starts": 5,
+            "gp": 8,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5o",
+          "player": "Liam McNeeley",
+          "label": "Liam McNeeley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "dy1iwzstmspva1dv"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5e",
+          "player": "Yang Hansen",
+          "label": "Yang Hansen",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-22"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick, no. 23",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "076t4",
+            "player": "Ebuka Okorie",
+            "certain": true
+          },
+          "next": {
+            "trade": "fiw35r4gmr3vp2cv"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
+          }
+        }
       ]
-    ]
-  }
+    },
+    "ww5mlxmcmkqs951p": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v8b",
+          "player": "Rocco Zikarsky",
+          "label": "Rocco Zikarsky",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zlfnl31gmqt85aw1"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          },
+          "next": {
+            "trade": "zlfnl31gmqt85aw1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Miami Heat",
+          "player_id": "05wqo",
+          "player": "Dru Smith",
+          "label": "Dru Smith",
+          "result": {
+            "points": 174.0,
+            "starts": 3,
+            "gp": 6,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-02-23"
+          }
+        }
+      ]
+    },
+    "gy7ia1v7m4gxhk6e": {
+      "date": "2024-12-09",
+      "season": "2024-25",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "05qt0",
+          "player": "Saddiq Bey",
+          "label": "Saddiq Bey",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-01-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "player_id": "05qtl",
+          "player": "Cole Anthony",
+          "label": "Cole Anthony",
+          "result": {
+            "points": 120.5,
+            "starts": 6,
+            "gp": 8,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1jghgk36m5avz9qx"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2026 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "076sv",
+            "player": "Bennett Stirtz",
+            "certain": true
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Toronto Raptors"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06v89",
+            "player": "Jamir Watkins",
+            "certain": true
+          },
+          "next": {
+            "trade": "qqtxc5wbm65k1oug"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          },
+          "next": {
+            "trade": "ww5mlxmcmkqs951p"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson",
+          "result": {
+            "points": 568.25,
+            "starts": 16,
+            "gp": 26,
+            "periods": 19,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Indiana Pacers",
+          "player_id": "02ng3",
+          "player": "Khris Middleton",
+          "label": "Khris Middleton",
+          "result": {
+            "points": 527.75,
+            "starts": 13,
+            "gp": 19,
+            "periods": 19,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
+        }
+      ]
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -86,6 +86,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2024 round 1 pick (Indiana Pacers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-27",
+      "from": "Indiana Pacers",
+      "team": "Minnesota Timberwolves",
+      "trade": "k8wsy8nslklm9aqo",
+      "label": "2024 round 1 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-25",
+      "from": "Minnesota Timberwolves",
+      "team": "Dallas Mavericks",
+      "trade": "ll6492qklql9ax74",
+      "label": "2024 round 1 pick (Indiana Pacers)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -93,8 +121,12 @@
       "team": "Boston Celtics",
       "round": 1,
       "pick": 22,
+      "overall": 22,
+      "original": "Indiana Pacers",
+      "certain": true,
       "periods": 66,
       "starts": 9,
+      "gp": 8,
       "points": 80.75,
       "salary": 1593000,
       "contract": "R13"
@@ -109,6 +141,7 @@
       "trade": "rhyr5c70msr9j4s3",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -131,7 +164,17 @@
           "to": "Toronto Raptors",
           "player_id": "04qrr",
           "player": "Michael Porter",
-          "label": "Michael Porter"
+          "label": "Michael Porter",
+          "result": {
+            "points": 451.5,
+            "starts": 7,
+            "gp": 11,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -139,7 +182,17 @@
           "to": "Toronto Raptors",
           "player_id": "06mm1",
           "player": "Bronny James",
-          "label": "Bronny James"
+          "label": "Bronny James",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-15"
+          }
         },
         {
           "kind": "pick",
@@ -154,492 +207,243 @@
           "label": "2027 round 1 pick (Toronto Raptors)"
         }
       ]
+    },
+    "ll6492qklql9ax74": {
+      "date": "2023-12-25",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "04s00",
+          "player": "Duncan Robinson",
+          "label": "Duncan Robinson",
+          "result": {
+            "points": 372.0,
+            "starts": 10,
+            "gp": 18,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-22"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          },
+          "next": {
+            "trade": "0ndod7cllrpdvpgn"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Toronto Raptors",
+          "label": "2025 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06v8d",
+            "player": "Bogoljub Markovic",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Toronto Raptors",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher",
+          "result": {
+            "points": 192.0,
+            "starts": 9,
+            "gp": 13,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "player_id": "04exe",
+          "player": "Monte Morris",
+          "label": "Monte Morris",
+          "result": {
+            "points": 38.75,
+            "starts": 4,
+            "gp": 5,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06mm1",
+            "player": "Bronny James",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith",
+          "result": {
+            "points": 518.0,
+            "starts": 11,
+            "gp": 19,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-22"
+          }
+        }
+      ]
+    },
+    "k8wsy8nslklm9aqo": {
+      "date": "2023-07-27",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujq",
+          "player": "Luka Garza",
+          "label": "Luka Garza",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-10-23"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06mm1",
+            "player": "Bronny James",
+            "certain": true
+          },
+          "next": {
+            "trade": "ll6492qklql9ax74"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Indiana Pacers",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter",
+          "result": {
+            "points": 3706.75,
+            "starts": 64,
+            "gp": 104,
+            "periods": 65,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
+        }
+      ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Boston Celtics"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.5,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        10.25,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        2.5,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        3.75,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        1.5,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        5.25,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        16.25,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        -1.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        6.75,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        14.25,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        7.0,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        18.75,
-        1
-      ],
-      [
-        1,
-        5,
-        0,
-        27.75,
-        1
-      ],
-      [
-        1,
-        6,
-        0,
-        18.75,
-        1
-      ],
-      [
-        1,
-        7,
-        0,
-        8.25,
-        1
-      ],
-      [
-        1,
-        8,
-        0,
-        7.25,
-        1
-      ],
-      [
-        1,
-        9,
-        0,
-        0.0,
-        1
-      ],
-      [
-        1,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        0,
-        1.5,
-        0
-      ],
-      [
-        1,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        0,
-        -1.0,
-        0
-      ],
-      [
-        1,
-        14,
-        0,
-        7.25,
-        0
-      ],
-      [
-        1,
-        15,
-        0,
-        0.0,
-        1
-      ],
-      [
-        1,
-        16,
-        0,
-        0.0,
-        1
-      ],
-      [
-        1,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        0,
-        4.5,
-        0
-      ],
-      [
-        1,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        0,
-        3.5,
-        0
-      ],
-      [
-        1,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        0,
-        11.5,
-        0
-      ],
-      [
-        1,
-        26,
-        0,
-        1.0,
-        0
-      ],
-      [
-        1,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        0,
-        21.75,
-        0
-      ],
-      [
-        1,
-        30,
-        0,
-        5.5,
-        0
-      ],
-      [
-        1,
-        31,
-        0,
-        10.25,
-        0
-      ],
-      [
-        1,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        33,
-        0,
-        28.25,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

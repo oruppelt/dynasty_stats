@@ -108,6 +108,7 @@
       "bid": 0.0,
       "periods": 17,
       "starts": 8,
+      "gp": 13,
       "points": 255.5,
       "salary": 5000000,
       "contract": "REG2"
@@ -122,6 +123,7 @@
       "trade": "u4u6cj1zk4cjuwah",
       "periods": 15,
       "starts": 15,
+      "gp": 24,
       "points": 543.25,
       "salary": 5000000,
       "contract": "REG2"
@@ -136,6 +138,7 @@
       "trade": "7xemuaidkijdb1oy",
       "periods": 9,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 5000000,
       "contract": "REG1"
@@ -149,41 +152,6 @@
     }
   ],
   "trades": {
-    "7xemuaidkijdb1oy": {
-      "date": "2020-12-11",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Memphis Grizzlies",
-          "player_id": "03r7i",
-          "player": "Rondae Hollis-Jefferson",
-          "label": "Rondae Hollis-Jefferson"
-        },
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "Memphis Grizzlies",
-          "label": "2022 round 1 pick (Atlanta Hawks)"
-        },
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Cleveland Cavaliers",
-          "player_id": "03acx",
-          "player": "Dante Exum",
-          "label": "Dante Exum"
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "Cleveland Cavaliers",
-          "label": "2021 round 1 pick (Cleveland Cavaliers)"
-        }
-      ]
-    },
     "u4u6cj1zk4cjuwah": {
       "date": "2019-12-19",
       "season": "2019-20",
@@ -195,7 +163,17 @@
           "to": "Sacramento Kings",
           "player_id": "005ke",
           "player": "Danilo Gallinari",
-          "label": "Danilo Gallinari"
+          "label": "Danilo Gallinari",
+          "result": {
+            "points": 699.0,
+            "starts": 12,
+            "gp": 17,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         },
         {
           "kind": "player",
@@ -203,13 +181,39 @@
           "to": "Cleveland Cavaliers",
           "player_id": "03r7i",
           "player": "Rondae Hollis-Jefferson",
-          "label": "Rondae Hollis-Jefferson"
+          "label": "Rondae Hollis-Jefferson",
+          "result": {
+            "points": 543.25,
+            "starts": 15,
+            "gp": 24,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "7xemuaidkijdb1oy"
+          }
         },
         {
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Cleveland Cavaliers",
-          "label": "2021 round 1 pick (Chicago Bulls)"
+          "label": "2021 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "05uj4",
+            "player": "Santi Aldama",
+            "certain": true
+          },
+          "next": {
+            "trade": "kyiyrs77k4cvyypt"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
         },
         {
           "kind": "pick",
@@ -218,344 +222,135 @@
           "label": "2020 round 2 pick (Charlotte Hornets)"
         }
       ]
+    },
+    "7xemuaidkijdb1oy": {
+      "date": "2020-12-11",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "03r7i",
+          "player": "Rondae Hollis-Jefferson",
+          "label": "Rondae Hollis-Jefferson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-01-23"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "label": "2022 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06224",
+            "player": "E.J. Liddell",
+            "certain": true
+          },
+          "next": {
+            "trade": "y7jfydkxkxg1vebv"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum",
+          "result": {
+            "points": 23.5,
+            "starts": 1,
+            "gp": 2,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0ha362o3kjh7rhss"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "05uix",
+            "player": "Usman Garuba",
+            "certain": true
+          },
+          "next": {
+            "trade": "0ha362o3kjh7rhss"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        }
+      ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Sacramento Kings",
-      "Cleveland Cavaliers",
-      "Memphis Grizzlies"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.75,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        16.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        70.75,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        16.5,
-        1
-      ],
-      [
-        0,
-        9,
-        0,
-        43.0,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        35.75,
-        1
-      ],
-      [
-        0,
-        11,
-        0,
-        51.5,
-        1
-      ],
-      [
-        0,
-        12,
-        0,
-        58.0,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        8.0,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        22.25,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        21.25,
-        1
-      ],
-      [
-        0,
-        16,
-        0,
-        6.5,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        21.5,
-        1
-      ],
-      [
-        0,
-        18,
-        1,
-        66.0,
-        1
-      ],
-      [
-        0,
-        19,
-        1,
-        71.0,
-        1
-      ],
-      [
-        0,
-        20,
-        1,
-        8.75,
-        1
-      ],
-      [
-        0,
-        21,
-        1,
-        52.25,
-        1
-      ],
-      [
-        0,
-        22,
-        1,
-        36.5,
-        1
-      ],
-      [
-        0,
-        23,
-        1,
-        45.0,
-        1
-      ],
-      [
-        0,
-        24,
-        1,
-        19.75,
-        1
-      ],
-      [
-        0,
-        25,
-        1,
-        4.5,
-        1
-      ],
-      [
-        0,
-        26,
-        1,
-        69.5,
-        1
-      ],
-      [
-        0,
-        27,
-        1,
-        38.75,
-        1
-      ],
-      [
-        0,
-        28,
-        1,
-        24.5,
-        1
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        1
-      ],
-      [
-        0,
-        31,
-        1,
-        4.25,
-        1
-      ],
-      [
-        0,
-        32,
-        1,
-        46.75,
-        1
-      ],
-      [
-        0,
-        33,
-        1,
-        55.75,
-        1
-      ],
-      [
-        1,
-        1,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        2,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

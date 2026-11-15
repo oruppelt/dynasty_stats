@@ -121,6 +121,7 @@
       "before_logs": true,
       "periods": 32,
       "starts": 12,
+      "gp": 18,
       "points": 185.25,
       "salary": 1315392,
       "contract": "REG3",
@@ -136,6 +137,7 @@
       "trade": "qpkfdisvkic56339",
       "periods": 29,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1315392,
       "contract": "REG2"
@@ -150,6 +152,7 @@
       "trade": "hb86xq3kkpd3h2og",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -162,6 +165,7 @@
       "trade": "3l0w7p04kpgu1kue",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -174,6 +178,7 @@
       "trade": "82msv72nkruxx4bm",
       "periods": 13,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1315392,
       "contract": "R11"
@@ -188,6 +193,7 @@
       "trade": "mwwyzn4ykwro4f2f",
       "periods": 20,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1315392,
       "contract": "R11"
@@ -201,95 +207,6 @@
     }
   ],
   "trades": {
-    "mwwyzn4ykwro4f2f": {
-      "date": "2021-12-04",
-      "season": "2021-22",
-      "period": 14,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Washington Wizards",
-          "player_id": "05qt8",
-          "player": "Cassius Stanley",
-          "label": "Cassius Stanley"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Washington Wizards",
-          "player_id": "051oo",
-          "player": "Jaxson Hayes",
-          "label": "Jaxson Hayes"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Washington Wizards",
-          "player_id": "04qs0",
-          "player": "Aaron Holiday",
-          "label": "Aaron Holiday"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Washington Wizards",
-          "player_id": "04qs5",
-          "player": "Jacob Evans",
-          "label": "Jacob Evans"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Washington Wizards",
-          "player_id": "03avi",
-          "player": "Doug McDermott",
-          "label": "Doug McDermott"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Washington Wizards",
-          "label": "2022 round 2 pick (Chicago Bulls)"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Washington Wizards",
-          "label": "2022 round 1 pick (Golden State Warriors)"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Washington Wizards",
-          "label": "2023 round 1 pick (Atlanta Hawks)"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Atlanta Hawks",
-          "player_id": "04qsu",
-          "player": "Shake Milton",
-          "label": "Shake Milton"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Atlanta Hawks",
-          "player_id": "027p0",
-          "player": "Nikola Vucevic",
-          "label": "Nikola Vucevic"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Atlanta Hawks",
-          "player_id": "027pf",
-          "player": "Cory Joseph",
-          "label": "Cory Joseph"
-        }
-      ]
-    },
     "hb86xq3kkpd3h2og": {
       "date": "2021-06-01",
       "season": "2021-22",
@@ -301,7 +218,17 @@
           "to": "Sacramento Kings",
           "player_id": "051po",
           "player": "Bol Bol",
-          "label": "Bol Bol"
+          "label": "Bol Bol",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "3l0w7p04kpgu1kue"
+          }
         },
         {
           "kind": "player",
@@ -309,7 +236,17 @@
           "to": "Sacramento Kings",
           "player_id": "05qsk",
           "player": "Isaac Okoro",
-          "label": "Isaac Okoro"
+          "label": "Isaac Okoro",
+          "result": {
+            "points": 244.25,
+            "starts": 8,
+            "gp": 12,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "o80318c5kwkp7gxb"
+          }
         },
         {
           "kind": "player",
@@ -317,7 +254,17 @@
           "to": "Sacramento Kings",
           "player_id": "05quc",
           "player": "CJ Elleby",
-          "label": "CJ Elleby"
+          "label": "CJ Elleby",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-10-12"
+          }
         },
         {
           "kind": "player",
@@ -325,7 +272,17 @@
           "to": "Sacramento Kings",
           "player_id": "051ov",
           "player": "Sekou Doumbouya",
-          "label": "Sekou Doumbouya"
+          "label": "Sekou Doumbouya",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-10-12"
+          }
         },
         {
           "kind": "player",
@@ -333,13 +290,42 @@
           "to": "Sacramento Kings",
           "player_id": "04qs5",
           "player": "Jacob Evans",
-          "label": "Jacob Evans"
+          "label": "Jacob Evans",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "3l0w7p04kpgu1kue"
+          }
         },
         {
           "kind": "pick",
           "from": "Philadelphia 76ers",
           "to": "Sacramento Kings",
-          "label": "2021 round 1 pick, no. 4"
+          "label": "2021 round 1 pick, no. 4",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "05uif",
+            "player": "Jalen Suggs",
+            "certain": true
+          },
+          "result": {
+            "points": 1204.25,
+            "starts": 31,
+            "gp": 49,
+            "periods": 62,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "jvet5461ldd2yw41"
+          }
         },
         {
           "kind": "player",
@@ -347,7 +333,17 @@
           "to": "Philadelphia 76ers",
           "player_id": "03al2",
           "player": "Joel Embiid",
-          "label": "Joel Embiid"
+          "label": "Joel Embiid",
+          "result": {
+            "points": 2509.25,
+            "starts": 29,
+            "gp": 42,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
         }
       ]
     },
@@ -362,19 +358,61 @@
           "to": "Philadelphia 76ers",
           "player_id": "04qs5",
           "player": "Jacob Evans",
-          "label": "Jacob Evans"
+          "label": "Jacob Evans",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "hb86xq3kkpd3h2og"
+          }
         },
         {
           "kind": "pick",
           "from": "Golden State Warriors",
           "to": "Philadelphia 76ers",
-          "label": "2021 round 2 pick (Chicago Bulls)"
+          "label": "2021 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "05qvg",
+            "player": "Anthony Lamb",
+            "certain": true
+          },
+          "next": {
+            "trade": "yhxta0frkkwqqtwa"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
         },
         {
           "kind": "pick",
           "from": "Philadelphia 76ers",
           "to": "Golden State Warriors",
-          "label": "2021 round 2 pick (Milwaukee Bucks)"
+          "label": "2021 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          },
+          "next": {
+            "trade": "j0tyig71km80p9oa"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
         }
       ]
     },
@@ -387,7 +425,23 @@
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Orlando Magic",
-          "label": "2021 round 2 pick, no. 24"
+          "label": "2021 round 2 pick, no. 24",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          },
+          "next": {
+            "trade": "np0m06bzkrvu1hml"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
         },
         {
           "kind": "player",
@@ -395,13 +449,262 @@
           "to": "Atlanta Hawks",
           "player_id": "04qs5",
           "player": "Jacob Evans",
-          "label": "Jacob Evans"
+          "label": "Jacob Evans",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 13,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "mwwyzn4ykwro4f2f"
+          }
         },
         {
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Atlanta Hawks",
-          "label": "2021 round 2 pick, no. 17"
+          "label": "2021 round 2 pick, no. 17",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "05ujq",
+            "player": "Luka Garza",
+            "certain": true
+          },
+          "result": {
+            "points": 119.5,
+            "starts": 9,
+            "gp": 12,
+            "periods": 46,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ztms8t1klb56v07z"
+          }
+        }
+      ]
+    },
+    "mwwyzn4ykwro4f2f": {
+      "date": "2021-12-04",
+      "season": "2021-22",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "05qt8",
+          "player": "Cassius Stanley",
+          "label": "Cassius Stanley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "051oo",
+          "player": "Jaxson Hayes",
+          "label": "Jaxson Hayes",
+          "result": {
+            "points": 539.25,
+            "starts": 13,
+            "gp": 22,
+            "periods": 19,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "04qs0",
+          "player": "Aaron Holiday",
+          "label": "Aaron Holiday",
+          "result": {
+            "points": 262.25,
+            "starts": 17,
+            "gp": 17,
+            "periods": 19,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "player_id": "03avi",
+          "player": "Doug McDermott",
+          "label": "Doug McDermott",
+          "result": {
+            "points": 261.0,
+            "starts": 9,
+            "gp": 13,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "6ttsntjokynaaoq3"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "0621u",
+            "player": "Andrew Nembhard",
+            "certain": true
+          },
+          "result": {
+            "points": 1234.25,
+            "starts": 38,
+            "gp": 60,
+            "periods": 60,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qsrtciiplrqk6b31"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "label": "2022 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          },
+          "next": {
+            "trade": "k259h001kyir0iw1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Minnesota Timberwolves"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Washington Wizards",
+          "label": "2023 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06ca5",
+            "player": "Kris Murray",
+            "certain": true
+          },
+          "next": {
+            "trade": "m9ic3sm9ld0jz28w"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsu",
+          "player": "Shake Milton",
+          "label": "Shake Milton",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0j9wja8ekwrzezvl"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Atlanta Hawks",
+          "player_id": "027p0",
+          "player": "Nikola Vucevic",
+          "label": "Nikola Vucevic",
+          "result": {
+            "points": 3963.0,
+            "starts": 50,
+            "gp": 86,
+            "periods": 53,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-23"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Atlanta Hawks",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph",
+          "result": {
+            "points": 367.5,
+            "starts": 8,
+            "gp": 15,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
         }
       ]
     },
@@ -416,7 +719,17 @@
           "to": "Sacramento Kings",
           "player_id": "01sc8",
           "player": "John Wall",
-          "label": "John Wall"
+          "label": "John Wall",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1wpat29ikrqxuzxp"
+          }
         },
         {
           "kind": "player",
@@ -424,7 +737,17 @@
           "to": "Sacramento Kings",
           "player_id": "027pg",
           "player": "Bojan Bogdanovic",
-          "label": "Bojan Bogdanovic"
+          "label": "Bojan Bogdanovic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fo7scs77kpgwrgb1"
+          }
         },
         {
           "kind": "player",
@@ -432,13 +755,39 @@
           "to": "Sacramento Kings",
           "player_id": "049kf",
           "player": "Mo Bamba",
-          "label": "Mo Bamba"
+          "label": "Mo Bamba",
+          "result": {
+            "points": 1142.0,
+            "starts": 21,
+            "gp": 32,
+            "periods": 26,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "4082kokckyio7f5a"
+          }
         },
         {
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Sacramento Kings",
-          "label": "2022 round 1 pick (Orlando Magic)"
+          "label": "2022 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06218",
+            "player": "Jeremy Sochan",
+            "certain": true
+          },
+          "next": {
+            "trade": "uzok8m7ikwkzi0g6"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
+          }
         },
         {
           "kind": "player",
@@ -446,7 +795,17 @@
           "to": "Orlando Magic",
           "player_id": "051po",
           "player": "Bol Bol",
-          "label": "Bol Bol"
+          "label": "Bol Bol",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 13,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-12-03"
+          }
         },
         {
           "kind": "player",
@@ -454,7 +813,17 @@
           "to": "Orlando Magic",
           "player_id": "027pe",
           "player": "Jimmy Butler",
-          "label": "Jimmy Butler"
+          "label": "Jimmy Butler",
+          "result": {
+            "points": 1186.75,
+            "starts": 19,
+            "gp": 24,
+            "periods": 26,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "iajf9os4kyj1owl3"
+          }
         },
         {
           "kind": "player",
@@ -462,719 +831,61 @@
           "to": "Orlando Magic",
           "player_id": "04qs5",
           "player": "Jacob Evans",
-          "label": "Jacob Evans"
+          "label": "Jacob Evans",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "82msv72nkruxx4bm"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Golden State Warriors",
-      "Philadelphia 76ers",
-      "Atlanta Hawks",
-      "Washington Wizards"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        28.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        4.5,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        1.5,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        45.0,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        7.75,
-        1
-      ],
-      [
-        0,
-        18,
-        0,
-        -2.75,
-        1
-      ],
-      [
-        0,
-        19,
-        0,
-        8.0,
-        1
-      ],
-      [
-        0,
-        20,
-        0,
-        1.5,
-        1
-      ],
-      [
-        0,
-        21,
-        0,
-        22.5,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        14.0,
-        1
-      ],
-      [
-        0,
-        23,
-        0,
-        16.5,
-        1
-      ],
-      [
-        0,
-        24,
-        0,
-        24.0,
-        1
-      ],
-      [
-        0,
-        25,
-        0,
-        1.0,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        8.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        12.25,
-        1
-      ],
-      [
-        0,
-        31,
-        0,
-        56.5,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        1,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        2,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        3,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        4,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        5,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        6,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        7,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        8,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        9,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        10,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        11,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        12,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        13,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        14,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        15,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        16,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        17,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        18,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        19,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        20,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        21,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        22,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        23,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        24,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        25,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        26,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        27,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        28,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        29,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        30,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        31,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        32,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        33,
-        3,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

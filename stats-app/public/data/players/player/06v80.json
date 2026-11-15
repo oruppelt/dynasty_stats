@@ -86,6 +86,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Oklahoma City Thunder",
+      "label": "2025 round 1 pick (Oklahoma City Thunder)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 19,
+      "date": "2024-12-23",
+      "from": "Oklahoma City Thunder",
+      "team": "Cleveland Cavaliers",
+      "trade": "f545zgb6m50zzjc9",
+      "label": "2025 round 1 pick (Oklahoma City Thunder)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -93,332 +111,143 @@
       "team": "Cleveland Cavaliers",
       "round": 1,
       "pick": 14,
+      "overall": 14,
+      "original": "Oklahoma City Thunder",
+      "certain": true,
       "periods": 40,
       "starts": 29,
+      "gp": 50,
       "points": 1186.0,
       "salary": 2315000,
       "contract": "R13"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Cleveland Cavaliers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        25.5,
-        1
-      ],
-      [
-        0,
-        2,
-        0,
-        43.0,
-        1
-      ],
-      [
-        0,
-        3,
-        0,
-        75.75,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        71.5,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        49.75,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        26.5,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        55.0,
-        1
-      ],
-      [
-        0,
-        8,
-        0,
-        34.75,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        49.75,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        6.5,
-        1
-      ],
-      [
-        0,
-        11,
-        0,
-        17.25,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        55.5,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        70.75,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        56.25,
-        1
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        43.25,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        23.0,
-        1
-      ],
-      [
-        0,
-        18,
-        0,
-        22.75,
-        1
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        35.5,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        17.25,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        53.25,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        35.0,
-        1
-      ],
-      [
-        0,
-        28,
-        0,
-        15.25,
-        1
-      ],
-      [
-        0,
-        29,
-        0,
-        63.25,
-        1
-      ],
-      [
-        0,
-        30,
-        0,
-        21.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        69.75,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        6.0,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        65.0,
-        1
-      ],
-      [
-        0,
-        34,
-        0,
-        77.5,
-        1
-      ],
-      [
-        0,
-        35,
-        0,
-        22.0,
-        1
-      ],
-      [
-        0,
-        36,
-        0,
-        9.0,
-        1
-      ],
-      [
-        1,
-        1,
-        0,
-        23.0,
-        1
-      ],
-      [
-        1,
-        2,
-        0,
-        49.0,
-        1
-      ],
-      [
-        1,
-        3,
-        0,
-        20.75,
-        1
-      ],
-      [
-        1,
-        4,
-        0,
-        37.0,
-        1
-      ],
-      [
-        1,
-        5,
-        0,
-        34.0,
-        1
-      ],
-      [
-        1,
-        6,
-        0,
-        7.0,
-        1
-      ],
-      [
-        1,
-        7,
-        0,
-        65.5,
-        1
+  "trades": {
+    "f545zgb6m50zzjc9": {
+      "date": "2024-12-23",
+      "season": "2024-25",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03e6s",
+          "player": "Clint Capela",
+          "label": "Clint Capela",
+          "result": {
+            "points": 395.5,
+            "starts": 9,
+            "gp": 15,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03nwn",
+          "player": "Bobby Portis",
+          "label": "Bobby Portis",
+          "result": {
+            "points": 418.25,
+            "starts": 9,
+            "gp": 14,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0lwk42u9m6dv18yt"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "player_id": "06mlq",
+          "player": "Pelle Larsson",
+          "label": "Pelle Larsson",
+          "result": {
+            "points": 827.0,
+            "starts": 27,
+            "gp": 42,
+            "periods": 55,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "player_id": "02xg9",
+          "player": "Rudy Gobert",
+          "label": "Rudy Gobert",
+          "result": {
+            "points": 3015.25,
+            "starts": 48,
+            "gp": 82,
+            "periods": 48,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Cleveland Cavaliers",
+          "label": "2025 round 1 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06v80",
+            "player": "Ryan Kalkbrenner",
+            "certain": true
+          },
+          "result": {
+            "points": 1186.0,
+            "starts": 29,
+            "gp": 50,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
       ]
-    ]
-  }
+    }
+  },
+  "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

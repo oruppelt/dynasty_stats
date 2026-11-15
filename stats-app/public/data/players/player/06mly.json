@@ -128,15 +128,66 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "San Antonio Spurs",
+      "label": "2024 round 2 pick (San Antonio Spurs)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 18,
+      "date": "2022-12-18",
+      "from": "San Antonio Spurs",
+      "team": "Dallas Mavericks",
+      "trade": "sz7kgafmlbsani0i",
+      "label": "2024 round 2 pick (San Antonio Spurs)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Dallas Mavericks",
+      "team": "Miami Heat",
+      "trade": "f24ziii5lxyb2o23",
+      "label": "2024 round 2 pick, no. 7"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Miami Heat",
+      "team": "Phoenix Suns",
+      "trade": "uq2o1bs8lxyjavfd",
+      "label": "2024 round 2 pick, no. 7"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Phoenix Suns",
+      "team": "San Antonio Spurs",
+      "trade": "k1m6hr4jlxywuc01",
+      "label": "2024 round 2 pick, no. 7"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-28",
       "team": "San Antonio Spurs",
       "round": 2,
-      "pick": 37,
+      "pick": 7,
+      "overall": 37,
+      "certain": false,
       "periods": 43,
       "starts": 4,
+      "gp": 8,
       "points": 179.0,
       "salary": 1000000,
       "contract": "R23"
@@ -151,6 +202,7 @@
       "trade": "rynj81s7midkgo4r",
       "periods": 18,
       "starts": 12,
+      "gp": 22,
       "points": 461.25,
       "salary": 1000000,
       "contract": "R22"
@@ -165,6 +217,7 @@
       "trade": "clvorhzpmkuzzfxs",
       "periods": 12,
       "starts": 12,
+      "gp": 16,
       "points": 201.25,
       "salary": 1000000,
       "contract": "R22"
@@ -180,7 +233,19 @@
           "kind": "pick",
           "from": "Boston Celtics",
           "to": "San Antonio Spurs",
-          "label": "2026 round 2 pick (Minnesota Timberwolves)"
+          "label": "2026 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "076tv",
+            "player": null,
+            "certain": true
+          },
+          "next": {
+            "trade": "nuuo5uvwmkv30gos"
+          }
         },
         {
           "kind": "player",
@@ -188,7 +253,460 @@
           "to": "Boston Celtics",
           "player_id": "06mly",
           "player": "Quinten Post",
-          "label": "Quinten Post"
+          "label": "Quinten Post",
+          "result": {
+            "points": 461.25,
+            "starts": 12,
+            "gp": 22,
+            "periods": 18,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "clvorhzpmkuzzfxs"
+          }
+        }
+      ]
+    },
+    "uq2o1bs8lxyjavfd": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "player_id": "04qs4",
+          "player": "Robert Williams",
+          "label": "Robert Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "krftry3nlxylys5x"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 7",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06mly",
+            "player": "Quinten Post",
+            "certain": false
+          },
+          "next": {
+            "trade": "k1m6hr4jlxywuc01"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2024 round 1 pick, no. 14",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          },
+          "next": {
+            "trade": "krftry3nlxylys5x"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Washington Wizards",
+          "label": "2024 round 2 pick, no. 5",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06mkh",
+            "player": "Pacome Dadiet",
+            "certain": true
+          },
+          "result": {
+            "points": -2.0,
+            "starts": 2,
+            "gp": 2,
+            "periods": 73,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Washington Wizards",
+          "label": "2024 round 1 pick, no. 11",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06mjy",
+            "player": "Tidjane Salaun",
+            "certain": true
+          },
+          "result": {
+            "points": 546.25,
+            "starts": 24,
+            "gp": 39,
+            "periods": 73,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "player_id": "051p8",
+          "player": "Jordan Poole",
+          "label": "Jordan Poole",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "svkmws6wlzh38gwi"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "player_id": "03e74",
+          "player": "Spencer Dinwiddie",
+          "label": "Spencer Dinwiddie",
+          "result": {
+            "points": 647.5,
+            "starts": 18,
+            "gp": 27,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1jghgk36m5avz9qx"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick, no. 30",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "06mlx",
+            "player": "Melvin Ajinca",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fqy5f8aem6akho3q"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 11",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06mlo",
+            "player": "KJ Simpson",
+            "certain": false
+          },
+          "result": {
+            "points": 24.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-03"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Phoenix Suns",
+          "label": "2024 round 1 pick, no. 8",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06mjx",
+            "player": "Ron Holland",
+            "certain": true
+          },
+          "result": {
+            "points": 1242.25,
+            "starts": 40,
+            "gp": 63,
+            "periods": 73,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
+    "k1m6hr4jlxywuc01": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 2 pick, no. 7",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06mly",
+            "player": "Quinten Post",
+            "certain": false
+          },
+          "result": {
+            "points": 179.0,
+            "starts": 4,
+            "gp": 8,
+            "periods": 43,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "rynj81s7midkgo4r"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 26"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 9"
+        }
+      ]
+    },
+    "sz7kgafmlbsani0i": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards",
+          "result": {
+            "points": 94.5,
+            "starts": 8,
+            "gp": 7,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon",
+          "result": {
+            "points": 22.75,
+            "starts": 6,
+            "gp": 3,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06mly",
+            "player": "Quinten Post",
+            "certain": false
+          },
+          "next": {
+            "trade": "f24ziii5lxyb2o23"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
+          }
+        }
+      ]
+    },
+    "f24ziii5lxyb2o23": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2024 round 1 pick, no. 11",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06mjy",
+            "player": "Tidjane Salaun",
+            "certain": true
+          },
+          "next": {
+            "trade": "uq2o1bs8lxyjavfd"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick, no. 7",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06mly",
+            "player": "Quinten Post",
+            "certain": false
+          },
+          "next": {
+            "trade": "uq2o1bs8lxyjavfd"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2024 round 1 pick, no. 14",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          },
+          "next": {
+            "trade": "uq2o1bs8lxyjavfd"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick, no. 4",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "06mk3",
+            "player": "Matas Buzelis",
+            "certain": true
+          },
+          "result": {
+            "points": 2192.25,
+            "starts": 43,
+            "gp": 75,
+            "periods": 73,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "$15 budget"
         }
       ]
     },
@@ -203,13 +721,42 @@
           "to": "Detroit Pistons",
           "player_id": "06mly",
           "player": "Quinten Post",
-          "label": "Quinten Post"
+          "label": "Quinten Post",
+          "result": {
+            "points": 201.25,
+            "starts": 12,
+            "gp": 16,
+            "periods": 12,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "pick",
           "from": "Boston Celtics",
           "to": "Detroit Pistons",
-          "label": "2026 round 2 pick (Golden State Warriors)"
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          },
+          "result": {
+            "points": 4.75,
+            "starts": 1,
+            "gp": 1,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -217,546 +764,46 @@
           "to": "Boston Celtics",
           "player_id": "04ewd",
           "player": "Luke Kennard",
-          "label": "Luke Kennard"
+          "label": "Luke Kennard",
+          "result": {
+            "points": 102.25,
+            "starts": 3,
+            "gp": 5,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-04"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "San Antonio Spurs",
-      "Boston Celtics",
-      "Detroit Pistons"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        1.5,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        3.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        7.75,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        75.25,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        17.75,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        17.5,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        31.5,
-        1
-      ],
-      [
-        0,
-        31,
-        0,
-        70.25,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        34.75,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        42.5,
-        1
-      ],
-      [
-        1,
-        1,
-        0,
-        5.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        11.0,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        50.5,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        10.5,
-        0
-      ],
-      [
-        1,
-        5,
-        0,
-        73.25,
-        0
-      ],
-      [
-        1,
-        6,
-        0,
-        62.25,
-        0
-      ],
-      [
-        1,
-        7,
-        0,
-        23.0,
-        0
-      ],
-      [
-        1,
-        8,
-        0,
-        23.5,
-        0
-      ],
-      [
-        1,
-        9,
-        0,
-        32.25,
-        0
-      ],
-      [
-        1,
-        10,
-        0,
-        27.75,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        71.75,
-        1
-      ],
-      [
-        1,
-        12,
-        1,
-        18.0,
-        1
-      ],
-      [
-        1,
-        13,
-        1,
-        31.0,
-        1
-      ],
-      [
-        1,
-        14,
-        1,
-        82.25,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        61.25,
-        1
-      ],
-      [
-        1,
-        17,
-        1,
-        27.5,
-        1
-      ],
-      [
-        1,
-        18,
-        1,
-        18.25,
-        1
-      ],
-      [
-        1,
-        19,
-        1,
-        48.0,
-        1
-      ],
-      [
-        1,
-        20,
-        1,
-        18.75,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        18.25,
-        1
-      ],
-      [
-        1,
-        22,
-        1,
-        46.75,
-        1
-      ],
-      [
-        1,
-        23,
-        1,
-        32.75,
-        0
-      ],
-      [
-        1,
-        24,
-        1,
-        47.75,
-        1
-      ],
-      [
-        1,
-        25,
-        1,
-        5.5,
-        1
-      ],
-      [
-        1,
-        26,
-        1,
-        22.5,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        67.25,
-        1
-      ],
-      [
-        1,
-        28,
-        1,
-        14.25,
-        0
-      ],
-      [
-        1,
-        29,
-        2,
-        53.25,
-        1
-      ],
-      [
-        1,
-        30,
-        2,
-        13.25,
-        1
-      ],
-      [
-        1,
-        31,
-        2,
-        30.75,
-        1
-      ],
-      [
-        1,
-        32,
-        2,
-        1.0,
-        1
-      ],
-      [
-        1,
-        33,
-        2,
-        26.25,
-        1
-      ],
-      [
-        2,
-        1,
-        2,
-        7.0,
-        1
-      ],
-      [
-        2,
-        2,
-        2,
-        22.25,
-        1
-      ],
-      [
-        2,
-        3,
-        2,
-        38.0,
-        1
-      ],
-      [
-        2,
-        4,
-        2,
-        0.0,
-        1
-      ],
-      [
-        2,
-        5,
-        2,
-        4.0,
-        1
-      ],
-      [
-        2,
-        6,
-        2,
-        4.0,
-        1
-      ],
-      [
-        2,
-        7,
-        2,
-        1.5,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

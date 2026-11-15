@@ -128,6 +128,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Philadelphia 76ers",
+      "label": "2023 round 1 pick (Philadelphia 76ers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 26,
+      "date": "2022-01-14",
+      "from": "Philadelphia 76ers",
+      "team": "Miami Heat",
+      "trade": "yy9p5ocdkye254n4",
+      "label": "2023 round 1 pick (Philadelphia 76ers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 13,
+      "date": "2022-11-28",
+      "from": "Miami Heat",
+      "team": "Oklahoma City Thunder",
+      "trade": "1ikem71elb0p3dff",
+      "label": "2023 round 1 pick (Philadelphia 76ers)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
@@ -135,8 +163,12 @@
       "team": "Oklahoma City Thunder",
       "round": 1,
       "pick": 10,
+      "overall": 10,
+      "original": "Philadelphia 76ers",
+      "certain": true,
       "periods": 36,
       "starts": 15,
+      "gp": 21,
       "points": 477.25,
       "salary": 2842000,
       "contract": "R13"
@@ -151,6 +183,7 @@
       "trade": "9zd79sc2m331fy8y",
       "periods": 50,
       "starts": 37,
+      "gp": 42,
       "points": 858.0,
       "salary": 2842000,
       "contract": "R12"
@@ -165,6 +198,7 @@
       "trade": "8q5lmlnrmjwl6l7b",
       "periods": 11,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 2842000,
       "contract": "R11"
@@ -178,6 +212,233 @@
     }
   ],
   "trades": {
+    "yy9p5ocdkye254n4": {
+      "date": "2022-01-14",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "01uz7",
+          "player": "Gordon Hayward",
+          "label": "Gordon Hayward",
+          "result": {
+            "points": 155.25,
+            "starts": 6,
+            "gp": 7,
+            "periods": 8,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          },
+          "next": {
+            "trade": "yuxsbccvkynk77x4"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Cleveland Cavaliers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris",
+          "result": {
+            "points": 291.75,
+            "starts": 7,
+            "gp": 12,
+            "periods": 8,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "04qs9",
+          "player": "Jevon Carter",
+          "label": "Jevon Carter",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 2,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-01-18"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "label": "2023 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06ca7",
+            "player": "Cam Whitmore",
+            "certain": true
+          },
+          "next": {
+            "trade": "1ikem71elb0p3dff"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Oklahoma City Thunder"
+          }
+        }
+      ]
+    },
+    "1ikem71elb0p3dff": {
+      "date": "2022-11-28",
+      "season": "2022-23",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Oklahoma City Thunder",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford",
+          "result": {
+            "points": 476.25,
+            "starts": 10,
+            "gp": 18,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "jg91nnqmlcerb7ao"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Oklahoma City Thunder",
+          "player_id": "051pg",
+          "player": "Cody Martin",
+          "label": "Cody Martin",
+          "result": {
+            "points": 92.5,
+            "starts": 10,
+            "gp": 5,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06ca7",
+            "player": "Cam Whitmore",
+            "certain": true
+          },
+          "result": {
+            "points": 477.25,
+            "starts": 15,
+            "gp": 21,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9zd79sc2m331fy8y"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Miami Heat",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley",
+          "result": {
+            "points": 190.0,
+            "starts": 6,
+            "gp": 9,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "m9ic3sm9ld0jz28w"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Miami Heat",
+          "player_id": "031m0",
+          "player": "Kelly Olynyk",
+          "label": "Kelly Olynyk",
+          "result": {
+            "points": 458.25,
+            "starts": 9,
+            "gp": 16,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "6dc5xcnfld97nf0g"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Miami Heat",
+          "player_id": "05ujg",
+          "player": "Isaiah Livers",
+          "label": "Isaiah Livers",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 17,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "tbw260rxldbmy6ec"
+          }
+        }
+      ]
+    },
     "8q5lmlnrmjwl6l7b": {
       "date": "2026-01-02",
       "season": "2025-26",
@@ -189,7 +450,17 @@
           "to": "Milwaukee Bucks",
           "player_id": "06ca7",
           "player": "Cam Whitmore",
-          "label": "Cam Whitmore"
+          "label": "Cam Whitmore",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-02-11"
+          }
         },
         {
           "kind": "player",
@@ -197,7 +468,17 @@
           "to": "Milwaukee Bucks",
           "player_id": "04qsd",
           "player": "Mitchell Robinson",
-          "label": "Mitchell Robinson"
+          "label": "Mitchell Robinson",
+          "result": {
+            "points": 307.25,
+            "starts": 7,
+            "gp": 10,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "3ytw64kjmkuq5bqa"
+          }
         },
         {
           "kind": "player",
@@ -205,7 +486,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "03nwn",
           "player": "Bobby Portis",
-          "label": "Bobby Portis"
+          "label": "Bobby Portis",
+          "result": {
+            "points": 476.5,
+            "starts": 10,
+            "gp": 16,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
         }
       ]
     },
@@ -220,7 +511,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "03nwl",
           "player": "Terry Rozier",
-          "label": "Terry Rozier"
+          "label": "Terry Rozier",
+          "result": {
+            "points": 996.5,
+            "starts": 27,
+            "gp": 42,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
         },
         {
           "kind": "player",
@@ -228,7 +529,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "005kf",
           "player": "Eric Gordon",
-          "label": "Eric Gordon"
+          "label": "Eric Gordon",
+          "result": {
+            "points": 517.25,
+            "starts": 22,
+            "gp": 29,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-28"
+          }
         },
         {
           "kind": "player",
@@ -236,7 +547,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "06cc0",
           "player": "Taylor Hendricks",
-          "label": "Taylor Hendricks"
+          "label": "Taylor Hendricks",
+          "result": {
+            "points": 326.5,
+            "starts": 17,
+            "gp": 25,
+            "periods": 62,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
+          }
         },
         {
           "kind": "player",
@@ -244,725 +565,76 @@
           "to": "Cleveland Cavaliers",
           "player_id": "06ca7",
           "player": "Cam Whitmore",
-          "label": "Cam Whitmore"
+          "label": "Cam Whitmore",
+          "result": {
+            "points": 858.0,
+            "starts": 37,
+            "gp": 42,
+            "periods": 50,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "8q5lmlnrmjwl6l7b"
+          }
         },
         {
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Cleveland Cavaliers",
-          "label": "2025 round 1 pick (Charlotte Hornets)"
+          "label": "2025 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "06v82",
+            "player": "Adou Thiero",
+            "certain": true
+          },
+          "result": {
+            "points": 20.5,
+            "starts": 3,
+            "gp": 5,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Oklahoma City Thunder",
-      "Cleveland Cavaliers",
-      "Milwaukee Bucks"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        -3.5,
-        1
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        -1.5,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        14.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        12.25,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        10.25,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        28.25,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        19.5,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        21,
-        0,
-        43.5,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        36.5,
-        1
-      ],
-      [
-        0,
-        23,
-        0,
-        56.75,
-        1
-      ],
-      [
-        0,
-        24,
-        0,
-        46.0,
-        1
-      ],
-      [
-        0,
-        25,
-        0,
-        31.25,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        48.25,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        19.5,
-        1
-      ],
-      [
-        0,
-        28,
-        0,
-        92.75,
-        1
-      ],
-      [
-        0,
-        29,
-        0,
-        56.75,
-        1
-      ],
-      [
-        0,
-        30,
-        0,
-        62.0,
-        1
-      ],
-      [
-        0,
-        31,
-        0,
-        8.0,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        24.5,
-        1
-      ],
-      [
-        1,
-        1,
-        0,
-        3.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        24.5,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        11.25,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        5.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        12.75,
-        1
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        9,
-        1,
-        4.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        17,
-        1,
-        5.5,
-        1
-      ],
-      [
-        1,
-        18,
-        1,
-        20.25,
-        1
-      ],
-      [
-        1,
-        19,
-        1,
-        79.75,
-        1
-      ],
-      [
-        1,
-        20,
-        1,
-        21.5,
-        1
-      ],
-      [
-        1,
-        21,
-        1,
-        29.0,
-        1
-      ],
-      [
-        1,
-        22,
-        1,
-        41.0,
-        1
-      ],
-      [
-        1,
-        23,
-        1,
-        51.25,
-        1
-      ],
-      [
-        1,
-        24,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        25,
-        1,
-        85.5,
-        1
-      ],
-      [
-        1,
-        26,
-        1,
-        33.0,
-        1
-      ],
-      [
-        1,
-        27,
-        1,
-        46.25,
-        1
-      ],
-      [
-        1,
-        28,
-        1,
-        2.0,
-        1
-      ],
-      [
-        1,
-        29,
-        1,
-        21.0,
-        1
-      ],
-      [
-        1,
-        30,
-        1,
-        1.75,
-        1
-      ],
-      [
-        1,
-        31,
-        1,
-        83.75,
-        1
-      ],
-      [
-        1,
-        32,
-        1,
-        51.0,
-        1
-      ],
-      [
-        1,
-        33,
-        1,
-        22.5,
-        1
-      ],
-      [
-        2,
-        1,
-        1,
-        23.25,
-        0
-      ],
-      [
-        2,
-        2,
-        1,
-        26.25,
-        0
-      ],
-      [
-        2,
-        3,
-        1,
-        36.25,
-        0
-      ],
-      [
-        2,
-        4,
-        1,
-        20.5,
-        0
-      ],
-      [
-        2,
-        5,
-        1,
-        4.0,
-        0
-      ],
-      [
-        2,
-        6,
-        1,
-        24.5,
-        1
-      ],
-      [
-        2,
-        7,
-        1,
-        57.0,
-        1
-      ],
-      [
-        2,
-        8,
-        1,
-        9.25,
-        1
-      ],
-      [
-        2,
-        9,
-        1,
-        32.75,
-        1
-      ],
-      [
-        2,
-        10,
-        1,
-        48.75,
-        1
-      ],
-      [
-        2,
-        11,
-        1,
-        9.0,
-        1
-      ],
-      [
-        2,
-        12,
-        1,
-        11.25,
-        1
-      ],
-      [
-        2,
-        13,
-        1,
-        57.75,
-        1
-      ],
-      [
-        2,
-        14,
-        1,
-        0.0,
-        1
-      ],
-      [
-        2,
-        15,
-        1,
-        0.0,
-        1
-      ],
-      [
-        2,
-        16,
-        1,
-        0.0,
-        1
-      ],
-      [
-        2,
-        17,
-        1,
-        0.0,
-        1
-      ],
-      [
-        2,
-        18,
-        1,
-        0.0,
-        1
-      ],
-      [
-        2,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        22,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        23,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        24,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        25,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        26,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        27,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        28,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        29,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        30,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        31,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        32,
-        2,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

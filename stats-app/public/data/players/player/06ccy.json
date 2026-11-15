@@ -63,15 +63,37 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2021-22",
+      "period": 1,
+      "team": "Memphis Grizzlies",
+      "label": "2023 round 2 pick (Memphis Grizzlies)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 19,
+      "date": "2021-12-21",
+      "from": "Memphis Grizzlies",
+      "team": "Detroit Pistons",
+      "trade": "y7jfydkxkxg1vebv",
+      "label": "2023 round 2 pick (Memphis Grizzlies)"
+    },
+    {
       "kind": "draft",
       "season": "2023-24",
       "period": 0,
       "date": "2023-06-28",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 52,
+      "pick": 22,
+      "overall": 52,
+      "original": "Memphis Grizzlies",
+      "certain": true,
       "periods": 36,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -86,6 +108,7 @@
       "trade": "e3rmgazym32x5n22",
       "periods": 36,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -99,6 +122,211 @@
     }
   ],
   "trades": {
+    "y7jfydkxkxg1vebv": {
+      "date": "2021-12-21",
+      "season": "2021-22",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qt0",
+          "player": "Saddiq Bey",
+          "label": "Saddiq Bey",
+          "result": {
+            "points": 848.5,
+            "starts": 13,
+            "gp": 23,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "e6tqf9qll4d4dis2"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac",
+          "result": {
+            "points": 379.0,
+            "starts": 12,
+            "gp": 17,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qcrl769ol4sqe48g"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qtu",
+          "player": "Skylar Mays",
+          "label": "Skylar Mays",
+          "result": {
+            "points": 41.0,
+            "starts": 2,
+            "gp": 3,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-02-11"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "01uz9",
+          "player": "Nemanja Bjelica",
+          "label": "Nemanja Bjelica",
+          "result": {
+            "points": 116.75,
+            "starts": 4,
+            "gp": 7,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qu4",
+          "player": "Saben Lee",
+          "label": "Saben Lee",
+          "result": {
+            "points": 54.75,
+            "starts": 2,
+            "gp": 3,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-10-12"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "player_id": "027p2",
+          "player": "Enes Kanter",
+          "label": "Enes Kanter",
+          "result": {
+            "points": 9.5,
+            "starts": 4,
+            "gp": 1,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher",
+          "result": {
+            "points": 207.5,
+            "starts": 4,
+            "gp": 6,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "517h4usgky2tqwaa"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "label": "2023 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06cdj",
+            "player": "Colby Jones",
+            "certain": true
+          },
+          "next": {
+            "trade": "mu1sghjul8ykpvq9"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2023 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "06ccy",
+            "player": "Jalen Pickett",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "e3rmgazym32x5n22"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06224",
+            "player": "E.J. Liddell",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 52,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "f55b9i8llqovzig1"
+          }
+        }
+      ]
+    },
     "e3rmgazym32x5n22": {
       "date": "2024-11-04",
       "season": "2024-25",
@@ -110,7 +338,17 @@
           "to": "Detroit Pistons",
           "player_id": "0527h",
           "player": "Naz Reid",
-          "label": "Naz Reid"
+          "label": "Naz Reid",
+          "result": {
+            "points": 1653.5,
+            "starts": 29,
+            "gp": 49,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
         },
         {
           "kind": "player",
@@ -118,7 +356,17 @@
           "to": "Detroit Pistons",
           "player_id": "042n2",
           "player": "Kris Dunn",
-          "label": "Kris Dunn"
+          "label": "Kris Dunn",
+          "result": {
+            "points": 385.25,
+            "starts": 8,
+            "gp": 15,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
         },
         {
           "kind": "player",
@@ -126,7 +374,17 @@
           "to": "Detroit Pistons",
           "player_id": "051op",
           "player": "Rui Hachimura",
-          "label": "Rui Hachimura"
+          "label": "Rui Hachimura",
+          "result": {
+            "points": 939.25,
+            "starts": 22,
+            "gp": 32,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
         },
         {
           "kind": "player",
@@ -134,13 +392,42 @@
           "to": "Detroit Pistons",
           "player_id": "062pk",
           "player": "Simone Fontecchio",
-          "label": "Simone Fontecchio"
+          "label": "Simone Fontecchio",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "chb5mtn3m33d71lg"
+          }
         },
         {
           "kind": "pick",
           "from": "Cleveland Cavaliers",
           "to": "Detroit Pistons",
-          "label": "2025 round 2 pick (Minnesota Timberwolves)"
+          "label": "2025 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06y3q",
+            "player": "Ryan Nembhard",
+            "certain": true
+          },
+          "result": {
+            "points": 232.0,
+            "starts": 17,
+            "gp": 20,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -148,7 +435,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "06cel",
           "player": "Sidy Cissoko",
-          "label": "Sidy Cissoko"
+          "label": "Sidy Cissoko",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-28"
+          }
         },
         {
           "kind": "player",
@@ -156,7 +453,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "04qsd",
           "player": "Mitchell Robinson",
-          "label": "Mitchell Robinson"
+          "label": "Mitchell Robinson",
+          "result": {
+            "points": 175.75,
+            "starts": 6,
+            "gp": 8,
+            "periods": 50,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "8q5lmlnrmjwl6l7b"
+          }
         },
         {
           "kind": "player",
@@ -164,7 +471,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "06mld",
           "player": "Jonathan Mogbo",
-          "label": "Jonathan Mogbo"
+          "label": "Jonathan Mogbo",
+          "result": {
+            "points": 540.5,
+            "starts": 20,
+            "gp": 31,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-24"
+          }
         },
         {
           "kind": "player",
@@ -172,7 +489,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "06ccy",
           "player": "Jalen Pickett",
-          "label": "Jalen Pickett"
+          "label": "Jalen Pickett",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-14"
+          }
         },
         {
           "kind": "player",
@@ -180,583 +507,101 @@
           "to": "Cleveland Cavaliers",
           "player_id": "06cc9",
           "player": "Olivier-Maxence Prosper",
-          "label": "Olivier-Maxence Prosper"
+          "label": "Olivier-Maxence Prosper",
+          "result": {
+            "points": 379.25,
+            "starts": 18,
+            "gp": 28,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-28"
+          }
         },
         {
           "kind": "pick",
           "from": "Detroit Pistons",
           "to": "Cleveland Cavaliers",
-          "label": "2025 round 2 pick (San Antonio Spurs)"
+          "label": "2025 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06v7y",
+            "player": "Noah Penda",
+            "certain": true
+          },
+          "result": {
+            "points": 136.5,
+            "starts": 7,
+            "gp": 11,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "oj9lawe7mvsdcb33"
+          }
         },
         {
           "kind": "pick",
           "from": "Detroit Pistons",
           "to": "Cleveland Cavaliers",
-          "label": "2025 round 1 pick (Cleveland Cavaliers)"
+          "label": "2025 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 8,
+            "overall": 8,
+            "player_id": "06v55",
+            "player": "Kasparas Jakucionis",
+            "certain": true
+          },
+          "result": {
+            "points": 510.0,
+            "starts": 19,
+            "gp": 33,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Detroit Pistons",
-      "Cleveland Cavaliers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        2.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        4.5,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        5.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        5.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        12.25,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        22.75,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        8.25,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        -3.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        7.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        10.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        5.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        35,
-        0,
-        0.25,
-        0
-      ],
-      [
-        0,
-        36,
-        0,
-        -1.5,
-        0
-      ],
-      [
-        0,
-        37,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        26.75,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        7.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        32.75,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        2.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        14.5,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        5.0,
-        0
-      ],
-      [
-        1,
-        23,
-        1,
-        10.0,
-        0
-      ],
-      [
-        1,
-        24,
-        1,
-        6.25,
-        0
-      ],
-      [
-        1,
-        25,
-        1,
-        19.25,
-        0
-      ],
-      [
-        1,
-        26,
-        1,
-        2.5,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        2.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        1.5,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        9.75,
-        0
-      ],
-      [
-        1,
-        31,
-        1,
-        44.75,
-        0
-      ],
-      [
-        1,
-        32,
-        1,
-        16.25,
-        0
-      ],
-      [
-        1,
-        33,
-        1,
-        50.25,
-        0
-      ],
-      [
-        2,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        2,
-        1,
-        2.0,
-        0
-      ],
-      [
-        2,
-        3,
-        1,
-        15.25,
-        0
-      ],
-      [
-        2,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        6,
-        1,
-        8.0,
-        0
-      ],
-      [
-        2,
-        7,
-        1,
-        2.5,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

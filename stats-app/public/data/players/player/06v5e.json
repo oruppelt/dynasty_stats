@@ -66,6 +66,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Indiana Pacers",
+      "label": "2025 round 1 pick (Indiana Pacers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 19,
+      "date": "2023-12-24",
+      "from": "Indiana Pacers",
+      "team": "Portland Trail Blazers",
+      "trade": "okjjp9solqjjzh20",
+      "label": "2025 round 1 pick (Indiana Pacers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "from": "Portland Trail Blazers",
+      "team": "San Antonio Spurs",
+      "trade": "gxuld3d3lzh814pk",
+      "label": "2025 round 1 pick (Indiana Pacers)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -73,8 +101,12 @@
       "team": "San Antonio Spurs",
       "round": 1,
       "pick": 29,
+      "overall": 29,
+      "original": "Indiana Pacers",
+      "certain": true,
       "periods": 33,
       "starts": 3,
+      "gp": 3,
       "points": 3.5,
       "salary": 1306000,
       "contract": "R13"
@@ -89,6 +121,7 @@
       "trade": "zlfnl31gmqt85aw1",
       "periods": 1,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1306000,
       "contract": "R12"
@@ -102,6 +135,92 @@
     }
   ],
   "trades": {
+    "gxuld3d3lzh814pk": {
+      "date": "2024-08-05",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "player_id": "03nwq",
+          "player": "Christian Wood",
+          "label": "Christian Wood",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "player_id": "031lz",
+          "player": "Steven Adams",
+          "label": "Steven Adams",
+          "result": {
+            "points": 401.5,
+            "starts": 24,
+            "gp": 30,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "06v5e",
+            "player": "Yang Hansen",
+            "certain": true
+          },
+          "result": {
+            "points": 3.5,
+            "starts": 3,
+            "gp": 3,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zlfnl31gmqt85aw1"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "04ewk",
+          "player": "John Collins",
+          "label": "John Collins",
+          "result": {
+            "points": 1294.0,
+            "starts": 24,
+            "gp": 34,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-29"
+          }
+        }
+      ]
+    },
     "zlfnl31gmqt85aw1": {
       "date": "2026-06-25",
       "season": "2026-27",
@@ -113,13 +232,42 @@
           "to": "San Antonio Spurs",
           "player_id": "06v8b",
           "player": "Rocco Zikarsky",
-          "label": "Rocco Zikarsky"
+          "label": "Rocco Zikarsky",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "San Antonio Spurs",
-          "label": "2026 round 2 pick, no. 24"
+          "label": "2026 round 2 pick, no. 24",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -127,7 +275,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "06v5j",
           "player": "Jase Richardson",
-          "label": "Jase Richardson"
+          "label": "Jase Richardson",
+          "result": {
+            "points": 147.5,
+            "starts": 5,
+            "gp": 8,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -135,7 +293,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "06v5o",
           "player": "Liam McNeeley",
-          "label": "Liam McNeeley"
+          "label": "Liam McNeeley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "dy1iwzstmspva1dv"
+          }
         },
         {
           "kind": "player",
@@ -143,273 +311,182 @@
           "to": "Portland Trail Blazers",
           "player_id": "06v5e",
           "player": "Yang Hansen",
-          "label": "Yang Hansen"
+          "label": "Yang Hansen",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-22"
+          }
         },
         {
           "kind": "pick",
           "from": "San Antonio Spurs",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick, no. 23"
+          "label": "2026 round 1 pick, no. 23",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "076t4",
+            "player": "Ebuka Okorie",
+            "certain": true
+          },
+          "next": {
+            "trade": "fiw35r4gmr3vp2cv"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
+          }
+        }
+      ]
+    },
+    "okjjp9solqjjzh20": {
+      "date": "2023-12-24",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "03nwq",
+          "player": "Christian Wood",
+          "label": "Christian Wood",
+          "result": {
+            "points": 377.5,
+            "starts": 11,
+            "gp": 19,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "gxuld3d3lzh814pk"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "04qse",
+          "player": "Gary Trent",
+          "label": "Gary Trent",
+          "result": {
+            "points": 558.0,
+            "starts": 13,
+            "gp": 21,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2025 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "06v5e",
+            "player": "Yang Hansen",
+            "certain": true
+          },
+          "next": {
+            "trade": "gxuld3d3lzh814pk"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "06cef",
+          "player": "Oscar Tshiebwe",
+          "label": "Oscar Tshiebwe",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 23,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "f6unfq5nm3sz0k4i"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "027oq",
+          "player": "Bismack Biyombo",
+          "label": "Bismack Biyombo",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-01-22"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris",
+          "result": {
+            "points": 840.25,
+            "starts": 13,
+            "gp": 20,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "San Antonio Spurs",
-      "Portland Trail Blazers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        4.5,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        13.5,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        -3.25,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        20.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        23.5,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        1.0,
-        1
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        11.75,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        8.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        16.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        2.5,
-        1
-      ],
-      [
-        0,
-        21,
-        0,
-        9.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        14.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        11.5,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.5,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        6.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        -1.25,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.5,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        12.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.5,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        -4.5,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        10.25,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        4.5,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -93,8 +93,12 @@
       "team": "Los Angeles Clippers",
       "round": 1,
       "pick": 25,
+      "overall": 25,
+      "original": "Memphis Grizzlies",
+      "certain": true,
       "periods": 61,
       "starts": 7,
+      "gp": 7,
       "points": 72.0,
       "salary": 1409664,
       "contract": "R13"
@@ -109,6 +113,7 @@
       "trade": "y6t02lq8ks8pna2n",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -121,6 +126,7 @@
       "trade": "d2jlztcrkt09j3wo",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -143,7 +149,17 @@
           "to": "Los Angeles Clippers",
           "player_id": "038xl",
           "player": "Dewayne Dedmon",
-          "label": "Dewayne Dedmon"
+          "label": "Dewayne Dedmon",
+          "result": {
+            "points": 735.75,
+            "starts": 21,
+            "gp": 36,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
         },
         {
           "kind": "player",
@@ -151,7 +167,17 @@
           "to": "Los Angeles Clippers",
           "player_id": "04qrk",
           "player": "Trae Young",
-          "label": "Trae Young"
+          "label": "Trae Young",
+          "result": {
+            "points": 2410.25,
+            "starts": 31,
+            "gp": 49,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
         },
         {
           "kind": "player",
@@ -159,7 +185,17 @@
           "to": "Atlanta Hawks",
           "player_id": "051pj",
           "player": "Alen Smailagic",
-          "label": "Alen Smailagic"
+          "label": "Alen Smailagic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "d2jlztcrkt09j3wo"
+          }
         },
         {
           "kind": "player",
@@ -167,25 +203,83 @@
           "to": "Atlanta Hawks",
           "player_id": "05qtv",
           "player": "Tyrese Haliburton",
-          "label": "Tyrese Haliburton"
+          "label": "Tyrese Haliburton",
+          "result": {
+            "points": 4265.5,
+            "starts": 58,
+            "gp": 93,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-23"
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Clippers",
           "to": "Atlanta Hawks",
-          "label": "2022 round 1 pick (Los Angeles Clippers)"
+          "label": "2022 round 1 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "0621k",
+            "player": "Christian Braun",
+            "certain": true
+          },
+          "next": {
+            "trade": "d2jlztcrkt09j3wo"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Clippers",
           "to": "Atlanta Hawks",
-          "label": "2022 round 2 pick (Los Angeles Clippers)"
+          "label": "2022 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          },
+          "next": {
+            "trade": "olra9olekt197as1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Clippers",
           "to": "Atlanta Hawks",
-          "label": "2023 round 2 pick (Los Angeles Clippers)"
+          "label": "2023 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06ccu",
+            "player": "Tristan Vukcevic",
+            "certain": true
+          },
+          "next": {
+            "trade": "nsziz30xlccebfbg"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
+          }
         }
       ]
     },
@@ -200,7 +294,17 @@
           "to": "Los Angeles Lakers",
           "player_id": "027ou",
           "player": "Klay Thompson",
-          "label": "Klay Thompson"
+          "label": "Klay Thompson",
+          "result": {
+            "points": 417.75,
+            "starts": 10,
+            "gp": 13,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "dbubp4f4l6f3gujf"
+          }
         },
         {
           "kind": "player",
@@ -208,19 +312,61 @@
           "to": "Los Angeles Lakers",
           "player_id": "051pj",
           "player": "Alen Smailagic",
-          "label": "Alen Smailagic"
+          "label": "Alen Smailagic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-10-19"
+          }
         },
         {
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Los Angeles Lakers",
-          "label": "2022 round 2 pick (Atlanta Hawks)"
+          "label": "2022 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 26,
+            "overall": 56,
+            "player_id": "0623l",
+            "player": "Jamaree Bouyea",
+            "certain": true
+          },
+          "next": {
+            "trade": "azi1g7rbl4zh2blg"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
         },
         {
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Los Angeles Lakers",
-          "label": "2022 round 1 pick (Los Angeles Clippers)"
+          "label": "2022 round 1 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "0621k",
+            "player": "Christian Braun",
+            "certain": true
+          },
+          "next": {
+            "trade": "o1q5l498l4xttj0r"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
         },
         {
           "kind": "player",
@@ -228,541 +374,61 @@
           "to": "Atlanta Hawks",
           "player_id": "03r7l",
           "player": "Larry Nance",
-          "label": "Larry Nance"
+          "label": "Larry Nance",
+          "result": {
+            "points": 292.75,
+            "starts": 8,
+            "gp": 15,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "76hzrghukw3fve7v"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Los Angeles Clippers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        24.5,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        35.25,
-        1
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        23,
-        0,
-        13.75,
-        1
-      ],
-      [
-        0,
-        24,
-        0,
-        13.25,
-        1
-      ],
-      [
-        0,
-        25,
-        0,
-        9.75,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        22.25,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        -1.5,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        0,
-        2.5,
-        0
-      ],
-      [
-        1,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        0,
-        16.5,
-        0
-      ],
-      [
-        1,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        33,
-        0,
-        19.5,
-        0
-      ],
-      [
-        1,
-        34,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        35,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        36,
-        0,
-        8.25,
-        0
-      ],
-      [
-        1,
-        37,
-        0,
-        14.5,
-        0
-      ],
-      [
-        1,
-        38,
-        0,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -72,6 +72,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Sacramento Kings",
+      "label": "2026 round 1 pick (Sacramento Kings)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-03",
+      "from": "Sacramento Kings",
+      "team": "Milwaukee Bucks",
+      "trade": "vyihkajqlze3uxyo",
+      "label": "2026 round 1 pick (Sacramento Kings)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -79,75 +97,84 @@
       "team": "Milwaukee Bucks",
       "round": 1,
       "pick": 5,
+      "overall": 5,
+      "original": "Sacramento Kings",
+      "certain": true,
       "periods": 7,
       "starts": 7,
+      "gp": 11,
       "points": 465.0,
       "salary": 4285000,
       "contract": "R13"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Milwaukee Bucks"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        13.0,
-        1
-      ],
-      [
-        0,
-        2,
-        0,
-        78.75,
-        1
-      ],
-      [
-        0,
-        3,
-        0,
-        80.75,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        61.75,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        80.5,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        101.0,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        49.25,
-        1
+  "trades": {
+    "vyihkajqlze3uxyo": {
+      "date": "2024-08-03",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Sacramento Kings",
+          "player_id": "06218",
+          "player": "Jeremy Sochan",
+          "label": "Jeremy Sochan",
+          "result": {
+            "points": 923.25,
+            "starts": 25,
+            "gp": 32,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-08"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 5,
+            "overall": 5,
+            "player_id": "076t6",
+            "player": "Darius Acuff",
+            "certain": true
+          },
+          "result": {
+            "points": 465.0,
+            "starts": 7,
+            "gp": 11,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
       ]
-    ]
-  }
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

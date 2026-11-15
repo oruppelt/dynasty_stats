@@ -207,23 +207,22 @@ export interface PlayerPage {
   timeline?: TimelineEvent[];
   /** The trades on the timeline, by id */
   trades?: Record<string, Trade>;
-  /** Every period on a roster, for the timeline's career strip */
-  track?: PlayerTrack;
+  /** The league's seasons from his first on, for the timeline's career strip */
+  axis?: SeasonAxis[];
 }
 
-export interface PlayerTrack {
-  /** From his first season on a roster to the newest. length: periods played so far; playoffs_from: the first playoff period */
-  seasons: { season: string; length: number; playoffs_from: number | null }[];
-  teams: string[];
-  /** [season index, period, team index, fpts, 1 if in the lineup] */
-  periods: [number, number, number, number, number][];
+/** A season on the career strip. length: the periods played so far; playoffs_from: the first playoff period */
+export interface SeasonAxis {
+  season: string;
+  length: number;
+  playoffs_from: number | null;
 }
 
 /** A move on a player's timeline. Team names are as they were at the time. */
 export interface TimelineEvent {
   /** claim: signed as a free agent; re-sign: signed back by the team that dropped him; joined: on a roster
    * with no logged move (the rosters when the records start); renamed: his team's name changed */
-  kind: 'draft' | 'claim' | 're-sign' | 'trade' | 'drop' | 'joined' | 'renamed';
+  kind: 'draft' | 'claim' | 're-sign' | 'trade' | 'drop' | 'joined' | 'renamed' | 'pick' | 'pick-trade';
   /** The league season and period the move took effect in (absent for renamed; period 0 is the draft) */
   season?: string;
   period?: number;
@@ -238,6 +237,13 @@ export interface TimelineEvent {
   /** draft */
   round?: number;
   pick?: number;
+  /** draft: the pick's number overall; the team whose pick it was (absent: the drafting team's own); whether
+   * the pick's path is certain (round-2 orders are partly inferred) */
+  overall?: number;
+  original?: string;
+  certain?: boolean;
+  /** pick (the pick he was drafted with, held by its original team) and pick-trade: the pick */
+  label?: string;
   /** claim, re-sign: the free-agent bid */
   bid?: number;
   /** joined: on a roster in the first period of the records */
@@ -247,6 +253,8 @@ export interface TimelineEvent {
   contract?: string;
   periods?: number;
   starts?: number;
+  /** Games in the lineup */
+  gp?: number;
   points?: number;
 }
 
@@ -255,7 +263,17 @@ export interface Trade {
   season: string;
   period: number;
   /** Every item, each from one team to another ("(Drop)" for a player released in the trade) */
-  items: { kind: 'player' | 'pick' | 'budget'; from: string; to: string; player_id?: string; player?: string; label: string }[];
+  items: {
+    kind: 'player' | 'pick' | 'budget'; from: string; to: string; player_id?: string; player?: string; label: string;
+    /** A pick: who was drafted with it */
+    became?: { season: string; round: number; pick: number; overall: number; player_id: string; player?: string; certain: boolean };
+    /** What the team that got it got out of it: a player's regular season there until he left (a pick: the
+     * player drafted with it, if that team used it); traded_on: the pick went on before the draft */
+    result?: TradeResult;
+    /** What the team that got it did with it after (a pick it used: the drafted player): traded it away in
+     * another trade, dropped it, still has it; absent: it left without a logged move (or a pick not used yet) */
+    next?: { trade: string } | { dropped: string } | { kept: true };
+  }[];
 }
 
 async function fetchJson<T>(url: string): Promise<T | null> {
@@ -270,6 +288,17 @@ export function usePlayerIndex() {
   return useQuery({
     queryKey: ['players', 'index'],
     queryFn: () => fetchJson<PlayerIndexEntry[]>('/data/players/index.json'),
+  })
+}
+
+/** Every trade, by id, with what each item became (/data/players/trades.json), for the trade trees. Loaded
+ * only when one is opened. */
+export function useTrades(enabled: boolean) {
+  return useQuery({
+    queryKey: ['players', 'trades'],
+    enabled,
+    staleTime: Infinity,
+    queryFn: () => fetchJson<Record<string, Trade>>('/data/players/trades.json'),
   })
 }
 
@@ -297,3 +326,7 @@ export function describeContract(code: string): string {
   if (code === 'MIN') return 'Minimum contract'
   return code
 }
+
+export type TradeResult =
+  | { points: number; starts: number; gp: number; periods: number; ongoing: boolean; traded_on?: undefined }
+  | { traded_on: true; drafted_by: string; points?: undefined; starts?: undefined; gp?: undefined; periods?: undefined; ongoing?: undefined }

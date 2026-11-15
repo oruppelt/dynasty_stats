@@ -298,6 +298,25 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-15: Career path: points per game, picks, trade results, trade trees (branch `lineage/ppg-strip`)
+- The career strip drops the per-period points bars (they can't cover a
+  pick, and doubled the player pages): each stint block shows his points
+  per game there instead, and the stint card has points, starts, periods
+  and per game. A "now" line marks the season in progress.
+- **Picks as assets:** a drafted player's path starts with the pick he was
+  drafted with, as striped blocks from its original team through every
+  trade to the draft ("Drafted: round 1, 2nd pick with PHI's pick"). In a
+  trade, a pick says who it became ("2025 round 1 pick (PHI) → #2 Dylan
+  Harper"); round-2 picks the order only infers are marked "likely".
+- **Trade results:** the trade panel shows what each side got out of it
+  (lineup points and starts, regular season, while the player stayed; a
+  pick: the player drafted with it, if that team used it), per item and per
+  team, with a split bar in the teams' colors.
+- **Trade trees:** "Follow the trade tree" opens, across the stint card,
+  what each team did with everything it got: kept, dropped, or traded on,
+  and then what came back, and so on (8 levels), with each tree's points in
+  all. Every trade is in `data/players/trades.json`, loaded only then.
+
 ### 2026-11-15: Player timeline (branch `lineage/player-timeline`)
 - Players → Player gets a **Career path**: a strip read left to right,
   oldest to newest, with one block per stint in the team's colors (dashed:

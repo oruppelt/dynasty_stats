@@ -72,6 +72,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Phoenix Suns",
+      "label": "2026 round 1 pick (Phoenix Suns)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-07-04",
+      "from": "Phoenix Suns",
+      "team": "Miami Heat",
+      "trade": "wf1rqpzzmcoqfrnq",
+      "label": "2026 round 1 pick (Phoenix Suns)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-13",
+      "from": "Miami Heat",
+      "team": "Toronto Raptors",
+      "trade": "qv786h5cmhvytj7l",
+      "label": "2026 round 1 pick (Phoenix Suns)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -79,75 +107,309 @@
       "team": "Toronto Raptors",
       "round": 1,
       "pick": 3,
+      "overall": 3,
+      "original": "Phoenix Suns",
+      "certain": true,
       "periods": 7,
       "starts": 7,
+      "gp": 12,
       "points": 421.0,
       "salary": 5249000,
       "contract": "R13"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Toronto Raptors"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        17.25,
-        1
-      ],
-      [
-        0,
-        2,
-        0,
-        49.0,
-        1
-      ],
-      [
-        0,
-        3,
-        0,
-        74.0,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        31.25,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        71.75,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        99.5,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        78.25,
-        1
+  "trades": {
+    "qv786h5cmhvytj7l": {
+      "date": "2025-11-13",
+      "season": "2025-26",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "player_id": "03e74",
+          "player": "Spencer Dinwiddie",
+          "label": "Spencer Dinwiddie",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-13"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "03nwm",
+          "player": "Devin Booker",
+          "label": "Devin Booker",
+          "result": {
+            "points": 1584.25,
+            "starts": 26,
+            "gp": 40,
+            "periods": 33,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
+          "player_id": "06218",
+          "player": "Jeremy Sochan",
+          "label": "Jeremy Sochan",
+          "result": {
+            "points": 213.0,
+            "starts": 18,
+            "gp": 21,
+            "periods": 26,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "05qtv",
+          "player": "Tyrese Haliburton",
+          "label": "Tyrese Haliburton",
+          "result": {
+            "points": 211.75,
+            "starts": 3,
+            "gp": 4,
+            "periods": 33,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "06v5p",
+          "player": "Nolan Traore",
+          "label": "Nolan Traore",
+          "result": {
+            "points": 525.0,
+            "starts": 14,
+            "gp": 21,
+            "periods": 33,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "076t9",
+            "player": "Darryn Peterson",
+            "certain": true
+          },
+          "result": {
+            "points": 421.0,
+            "starts": 7,
+            "gp": 12,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2026 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "076u2",
+            "player": "Dillon Mitchell",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "076sv",
+            "player": "Bennett Stirtz",
+            "certain": true
+          },
+          "result": {
+            "points": 152.5,
+            "starts": 4,
+            "gp": 8,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Miami Heat",
+          "player_id": "01eo6",
+          "player": "James Harden",
+          "label": "James Harden",
+          "result": {
+            "points": 1832.25,
+            "starts": 21,
+            "gp": 35,
+            "periods": 26,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        }
       ]
-    ]
-  }
+    },
+    "wf1rqpzzmcoqfrnq": {
+      "date": "2025-07-04",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2025 round 1 pick, no. 15",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          },
+          "result": {
+            "points": 826.0,
+            "starts": 22,
+            "gp": 31,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "d3urdettmsz0jqra"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick, no. 26",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06v5p",
+            "player": "Nolan Traore",
+            "certain": true
+          },
+          "result": {
+            "points": 15.5,
+            "starts": 2,
+            "gp": 1,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "label": "2026 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "076t9",
+            "player": "Darryn Peterson",
+            "certain": true
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Toronto Raptors"
+          }
+        }
+      ]
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

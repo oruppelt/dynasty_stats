@@ -73,8 +73,11 @@
       "team": "Dallas Mavericks",
       "round": 1,
       "pick": 10,
+      "overall": 10,
+      "certain": true,
       "periods": 33,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 2842000,
       "contract": "R13"
@@ -89,6 +92,7 @@
       "trade": "whpo1bh4lj410r59",
       "periods": 32,
       "starts": 3,
+      "gp": 3,
       "points": 31.5,
       "salary": 2842000,
       "contract": "R12"
@@ -113,7 +117,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "06219",
           "player": "Johnny Davis",
-          "label": "Johnny Davis"
+          "label": "Johnny Davis",
+          "result": {
+            "points": 31.5,
+            "starts": 3,
+            "gp": 3,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-21"
+          }
         },
         {
           "kind": "budget",
@@ -127,511 +141,93 @@
           "to": "Dallas Mavericks",
           "player_id": "04qsb",
           "player": "Devonte' Graham",
-          "label": "Devonte' Graham"
+          "label": "Devonte' Graham",
+          "result": {
+            "points": 27.25,
+            "starts": 5,
+            "gp": 2,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
         },
         {
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Dallas Mavericks",
-          "label": "2023 round 1 pick, no. 11"
+          "label": "2023 round 1 pick, no. 11",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06cac",
+            "player": "Cason Wallace",
+            "certain": true
+          },
+          "result": {
+            "points": 3033.5,
+            "starts": 78,
+            "gp": 134,
+            "periods": 98,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
+          }
         },
         {
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Dallas Mavericks",
-          "label": "2023 round 1 pick, no. 20"
+          "label": "2023 round 1 pick, no. 20",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06cc7",
+            "player": "Brandin Podziemski",
+            "certain": true
+          },
+          "next": {
+            "trade": "itomme9kljcykmjp"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Dallas Mavericks",
-      "Oklahoma City Thunder"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.5,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        6.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        2.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        3.5,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        6.25,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        2.75,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        4.5,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        1.0,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        22.75,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        19.25,
-        1
-      ],
-      [
-        1,
-        5,
-        1,
-        12.25,
-        1
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        7,
-        1,
-        11.75,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        3.5,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        23.75,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        4.25,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        0.5,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        -0.5,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        1.0,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        2.0,
-        0
-      ],
-      [
-        1,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        7.25,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        7.75,
-        0
-      ],
-      [
-        1,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        1,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

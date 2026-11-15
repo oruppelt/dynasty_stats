@@ -122,6 +122,7 @@
       "bid": 17.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "REG1"
@@ -142,6 +143,7 @@
       "bid": 0.0,
       "periods": 1,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "REG1"
@@ -162,6 +164,7 @@
       "bid": 21.0,
       "periods": 13,
       "starts": 2,
+      "gp": 3,
       "points": 22.25,
       "salary": 1000000,
       "contract": "FA"
@@ -176,6 +179,7 @@
       "trade": "de1p940kmipu5om6",
       "periods": 20,
       "starts": 3,
+      "gp": 2,
       "points": 18.25,
       "salary": 1000000,
       "contract": "FA"
@@ -200,7 +204,17 @@
           "to": "Orlando Magic",
           "player_id": "005l0",
           "player": "Nicolas Batum",
-          "label": "Nicolas Batum"
+          "label": "Nicolas Batum",
+          "result": {
+            "points": 190.5,
+            "starts": 7,
+            "gp": 13,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-25"
+          }
         },
         {
           "kind": "player",
@@ -208,342 +222,81 @@
           "to": "Brooklyn Nets",
           "player_id": "04ews",
           "player": "Tony Bradley",
-          "label": "Tony Bradley"
+          "label": "Tony Bradley",
+          "result": {
+            "points": 18.25,
+            "starts": 3,
+            "gp": 2,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
         },
         {
           "kind": "pick",
           "from": "Orlando Magic",
           "to": "Brooklyn Nets",
-          "label": "2026 round 2 pick (Orlando Magic)"
+          "label": "2026 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "076u6",
+            "player": "Braden Smith",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Golden State Warriors",
-      "Chicago Bulls",
-      "Orlando Magic",
-      "Brooklyn Nets"
-    ],
-    "periods": [
-      [
-        0,
-        31,
-        0,
-        65.5,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        47.75,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        29.75,
-        0
-      ],
-      [
-        0,
-        34,
-        0,
-        46.75,
-        1
-      ],
-      [
-        0,
-        35,
-        0,
-        42.5,
-        1
-      ],
-      [
-        0,
-        36,
-        0,
-        6.25,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        5,
-        1,
-        2,
-        5.75,
-        0
-      ],
-      [
-        5,
-        2,
-        2,
-        34.5,
-        0
-      ],
-      [
-        5,
-        3,
-        2,
-        19.0,
-        0
-      ],
-      [
-        5,
-        4,
-        2,
-        20.75,
-        1
-      ],
-      [
-        5,
-        5,
-        2,
-        16.5,
-        0
-      ],
-      [
-        5,
-        6,
-        2,
-        37.25,
-        0
-      ],
-      [
-        5,
-        7,
-        2,
-        23.0,
-        0
-      ],
-      [
-        5,
-        8,
-        2,
-        7.75,
-        0
-      ],
-      [
-        5,
-        9,
-        2,
-        5.5,
-        0
-      ],
-      [
-        5,
-        10,
-        2,
-        4.5,
-        0
-      ],
-      [
-        5,
-        11,
-        2,
-        1.5,
-        1
-      ],
-      [
-        5,
-        12,
-        2,
-        8.25,
-        0
-      ],
-      [
-        5,
-        13,
-        2,
-        20.0,
-        0
-      ],
-      [
-        5,
-        14,
-        3,
-        3.5,
-        0
-      ],
-      [
-        5,
-        15,
-        3,
-        0.0,
-        1
-      ],
-      [
-        5,
-        16,
-        3,
-        11.25,
-        1
-      ],
-      [
-        5,
-        17,
-        3,
-        7.0,
-        1
-      ],
-      [
-        5,
-        18,
-        3,
-        0.0,
-        0
-      ],
-      [
-        5,
-        19,
-        3,
-        0.0,
-        0
-      ],
-      [
-        5,
-        20,
-        3,
-        9.75,
-        0
-      ],
-      [
-        5,
-        21,
-        3,
-        9.5,
-        0
-      ],
-      [
-        5,
-        22,
-        3,
-        6.25,
-        0
-      ],
-      [
-        5,
-        23,
-        3,
-        11.0,
-        0
-      ],
-      [
-        5,
-        24,
-        3,
-        7.75,
-        0
-      ],
-      [
-        5,
-        25,
-        3,
-        9.5,
-        0
-      ],
-      [
-        5,
-        26,
-        3,
-        49.75,
-        0
-      ],
-      [
-        5,
-        27,
-        3,
-        24.25,
-        0
-      ],
-      [
-        5,
-        28,
-        3,
-        0.0,
-        0
-      ],
-      [
-        5,
-        29,
-        3,
-        0.0,
-        0
-      ],
-      [
-        5,
-        30,
-        3,
-        0.0,
-        0
-      ],
-      [
-        5,
-        31,
-        3,
-        0.0,
-        0
-      ],
-      [
-        5,
-        32,
-        3,
-        0.0,
-        0
-      ],
-      [
-        5,
-        33,
-        3,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

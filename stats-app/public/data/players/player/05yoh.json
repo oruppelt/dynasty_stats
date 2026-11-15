@@ -108,6 +108,7 @@
       "bid": 5.0,
       "periods": 2,
       "starts": 1,
+      "gp": 1,
       "points": 8.0,
       "salary": 1000000,
       "contract": "FA"
@@ -128,6 +129,7 @@
       "bid": 18.0,
       "periods": 18,
       "starts": 7,
+      "gp": 8,
       "points": 165.0,
       "salary": 1000000,
       "contract": "FA"
@@ -142,6 +144,7 @@
       "trade": "2ovotsinm6dqv7ln",
       "periods": 4,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -166,7 +169,17 @@
           "to": "Utah Jazz",
           "player_id": "03r7z",
           "player": "Norman Powell",
-          "label": "Norman Powell"
+          "label": "Norman Powell",
+          "result": {
+            "points": 327.0,
+            "starts": 5,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-26"
+          }
         },
         {
           "kind": "player",
@@ -174,7 +187,17 @@
           "to": "Phoenix Suns",
           "player_id": "051ps",
           "player": "Terance Mann",
-          "label": "Terance Mann"
+          "label": "Terance Mann",
+          "result": {
+            "points": 79.0,
+            "starts": 3,
+            "gp": 6,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
         },
         {
           "kind": "player",
@@ -182,7 +205,17 @@
           "to": "Phoenix Suns",
           "player_id": "027pg",
           "player": "Bojan Bogdanovic",
-          "label": "Bojan Bogdanovic"
+          "label": "Bojan Bogdanovic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-01-26"
+          }
         },
         {
           "kind": "player",
@@ -190,7 +223,17 @@
           "to": "Phoenix Suns",
           "player_id": "05yoh",
           "player": "Lindy Waters",
-          "label": "Lindy Waters"
+          "label": "Lindy Waters",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-02-10"
+          }
         },
         {
           "kind": "player",
@@ -198,209 +241,58 @@
           "to": "Phoenix Suns",
           "player_id": "06mm3",
           "player": "Ulrich Chomche",
-          "label": "Ulrich Chomche"
+          "label": "Ulrich Chomche",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 38,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-03"
+          }
         },
         {
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Phoenix Suns",
-          "label": "2025 round 1 pick (Utah Jazz)"
+          "label": "2025 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06v5p",
+            "player": "Nolan Traore",
+            "certain": true
+          },
+          "next": {
+            "trade": "wf1rqpzzmcoqfrnq"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Golden State Warriors",
-      "Utah Jazz",
-      "Phoenix Suns"
-    ],
-    "periods": [
-      [
-        0,
-        4,
-        0,
-        8.0,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        14.0,
-        0
-      ],
-      [
-        0,
-        11,
-        1,
-        48.5,
-        1
-      ],
-      [
-        0,
-        12,
-        1,
-        10.5,
-        1
-      ],
-      [
-        0,
-        13,
-        1,
-        0.0,
-        1
-      ],
-      [
-        0,
-        14,
-        1,
-        14.0,
-        0
-      ],
-      [
-        0,
-        15,
-        1,
-        17.75,
-        1
-      ],
-      [
-        0,
-        16,
-        1,
-        48.0,
-        1
-      ],
-      [
-        0,
-        17,
-        1,
-        12.25,
-        1
-      ],
-      [
-        0,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        1,
-        19.0,
-        0
-      ],
-      [
-        0,
-        21,
-        1,
-        25.75,
-        0
-      ],
-      [
-        0,
-        22,
-        1,
-        51.75,
-        0
-      ],
-      [
-        0,
-        23,
-        1,
-        28.0,
-        1
-      ],
-      [
-        0,
-        24,
-        1,
-        11.0,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        25.75,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        -1.0,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        37.0,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        1.0,
-        0
-      ],
-      [
-        0,
-        29,
-        2,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        2,
-        4.75,
-        0
-      ],
-      [
-        0,
-        31,
-        2,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        2,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

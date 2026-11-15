@@ -112,6 +112,7 @@
       "bid": 0.0,
       "periods": 22,
       "starts": 3,
+      "gp": 2,
       "points": 4.25,
       "salary": 1956739,
       "contract": "REG1"
@@ -126,6 +127,7 @@
       "trade": "jg91nnqmlcerb7ao",
       "periods": 11,
       "starts": 1,
+      "gp": 0,
       "points": 0.0,
       "salary": 1956739,
       "contract": "REG1"
@@ -146,6 +148,7 @@
       "bid": 0.0,
       "periods": 21,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 2000000,
       "contract": "REG1"
@@ -160,6 +163,7 @@
       "trade": "0x0h24u3lr0j2d6r",
       "periods": 11,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 2000000,
       "contract": "REG1"
@@ -173,57 +177,6 @@
     }
   ],
   "trades": {
-    "0x0h24u3lr0j2d6r": {
-      "date": "2024-01-05",
-      "season": "2023-24",
-      "period": 22,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "06235",
-          "player": "Kenneth Lofton",
-          "label": "Kenneth Lofton"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "031mb",
-          "player": "Tim Hardaway",
-          "label": "Tim Hardaway"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "label": "2025 round 1 pick (Boston Celtics)"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "label": "2024 round 1 pick (Minnesota Timberwolves)"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Boston Celtics",
-          "player_id": "031m4",
-          "player": "Dennis Schroder",
-          "label": "Dennis Schroder"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Boston Celtics",
-          "player_id": "03e6u",
-          "player": "Bogdan Bogdanovic",
-          "label": "Bogdan Bogdanovic"
-        }
-      ]
-    },
     "jg91nnqmlcerb7ao": {
       "date": "2023-01-02",
       "season": "2022-23",
@@ -235,7 +188,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "06235",
           "player": "Kenneth Lofton",
-          "label": "Kenneth Lofton"
+          "label": "Kenneth Lofton",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
         },
         {
           "kind": "player",
@@ -243,7 +206,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "0621p",
           "player": "Wendell Moore",
-          "label": "Wendell Moore"
+          "label": "Wendell Moore",
+          "result": {
+            "points": 28.0,
+            "starts": 9,
+            "gp": 7,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "iwz7ckzclkns1xkv"
+          }
         },
         {
           "kind": "player",
@@ -251,13 +224,42 @@
           "to": "Oklahoma City Thunder",
           "player_id": "065px",
           "player": "Trevion Williams",
-          "label": "Trevion Williams"
+          "label": "Trevion Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "iwz7ckzclkns1xkv"
+          }
         },
         {
           "kind": "pick",
           "from": "Boston Celtics",
           "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Milwaukee Bucks)"
+          "label": "2023 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06cdh",
+            "player": "GG Jackson",
+            "certain": true
+          },
+          "result": {
+            "points": 426.75,
+            "starts": 10,
+            "gp": 17,
+            "periods": 71,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "b7zez6g3mhsz8kok"
+          }
         },
         {
           "kind": "player",
@@ -265,499 +267,169 @@
           "to": "Boston Celtics",
           "player_id": "051pi",
           "player": "Daniel Gafford",
-          "label": "Daniel Gafford"
+          "label": "Daniel Gafford",
+          "result": {
+            "points": 2128.25,
+            "starts": 41,
+            "gp": 59,
+            "periods": 43,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        }
+      ]
+    },
+    "0x0h24u3lr0j2d6r": {
+      "date": "2024-01-05",
+      "season": "2023-24",
+      "period": 22,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06235",
+          "player": "Kenneth Lofton",
+          "label": "Kenneth Lofton",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "031mb",
+          "player": "Tim Hardaway",
+          "label": "Tim Hardaway",
+          "result": {
+            "points": 575.0,
+            "starts": 10,
+            "gp": 18,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06v58",
+            "player": "Tre Johnson",
+            "certain": true
+          },
+          "result": {
+            "points": 280.75,
+            "starts": 7,
+            "gp": 12,
+            "periods": 19,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "h89qz7i7mjn1jv97"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2024 round 1 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06mle",
+            "player": "Kyle Filipowski",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "031m4",
+          "player": "Dennis Schroder",
+          "label": "Dennis Schroder",
+          "result": {
+            "points": 1664.0,
+            "starts": 34,
+            "gp": 57,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "6bj5gougm6ey741f"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic",
+          "result": {
+            "points": 634.25,
+            "starts": 11,
+            "gp": 20,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-29"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Boston Celtics",
-      "Oklahoma City Thunder"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        5.5,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        4.75,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        3.5,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        7.5,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        -0.5,
-        1
-      ],
-      [
-        0,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        0.0,
-        1
-      ],
-      [
-        0,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        1,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        -1.5,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        26.75,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        19.25,
-        0
-      ],
-      [
-        1,
-        5,
-        0,
-        3.0,
-        0
-      ],
-      [
-        1,
-        6,
-        0,
-        3.75,
-        0
-      ],
-      [
-        1,
-        7,
-        0,
-        -1.0,
-        0
-      ],
-      [
-        1,
-        8,
-        0,
-        8.5,
-        0
-      ],
-      [
-        1,
-        9,
-        0,
-        11.0,
-        0
-      ],
-      [
-        1,
-        10,
-        0,
-        4.0,
-        0
-      ],
-      [
-        1,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        0,
-        2.0,
-        0
-      ],
-      [
-        1,
-        13,
-        0,
-        1.5,
-        0
-      ],
-      [
-        1,
-        14,
-        0,
-        16.25,
-        0
-      ],
-      [
-        1,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        0,
-        -4.0,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        1,
-        2.0,
-        0
-      ],
-      [
-        1,
-        32,
-        1,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

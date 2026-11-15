@@ -107,8 +107,12 @@
       "team": "Los Angeles Lakers",
       "round": 1,
       "pick": 25,
+      "overall": 25,
+      "original": "Houston Rockets",
+      "certain": true,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -121,6 +125,7 @@
       "trade": "4t0u06zblzjjx6tr",
       "periods": 73,
       "starts": 5,
+      "gp": 7,
       "points": 93.5,
       "salary": 1410000,
       "contract": "R13"
@@ -144,7 +149,17 @@
           "to": "Los Angeles Lakers",
           "player_id": "027pe",
           "player": "Jimmy Butler",
-          "label": "Jimmy Butler"
+          "label": "Jimmy Butler",
+          "result": {
+            "points": 2743.0,
+            "starts": 50,
+            "gp": 65,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
+          }
         },
         {
           "kind": "player",
@@ -152,7 +167,17 @@
           "to": "Los Angeles Clippers",
           "player_id": "027ou",
           "player": "Klay Thompson",
-          "label": "Klay Thompson"
+          "label": "Klay Thompson",
+          "result": {
+            "points": 1038.75,
+            "starts": 27,
+            "gp": 37,
+            "periods": 28,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qrgt7xrlm6dy0gs0"
+          }
         },
         {
           "kind": "player",
@@ -160,557 +185,86 @@
           "to": "Los Angeles Clippers",
           "player_id": "06mke",
           "player": "DaRon Holmes",
-          "label": "DaRon Holmes"
+          "label": "DaRon Holmes",
+          "result": {
+            "points": 93.5,
+            "starts": 5,
+            "gp": 7,
+            "periods": 73,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Lakers",
           "to": "Los Angeles Clippers",
-          "label": "2025 round 2 pick (Houston Rockets)"
+          "label": "2025 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06v85",
+            "player": "Alijah Martin",
+            "certain": true
+          },
+          "result": {
+            "points": 14.25,
+            "starts": 1,
+            "gp": 2,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Lakers",
           "to": "Los Angeles Clippers",
-          "label": "2025 round 2 pick (Los Angeles Lakers)"
+          "label": "2025 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06v87",
+            "player": "Koby Brea",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 35,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-26"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Los Angeles Clippers",
-      "Los Angeles Lakers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        5.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        34.0,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        37.75,
-        1
-      ],
-      [
-        1,
-        23,
-        1,
-        26.5,
-        1
-      ],
-      [
-        1,
-        24,
-        1,
-        8.0,
-        1
-      ],
-      [
-        1,
-        25,
-        1,
-        7.5,
-        1
-      ],
-      [
-        1,
-        26,
-        1,
-        13.75,
-        1
-      ],
-      [
-        1,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        10.0,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        4.0,
-        0
-      ],
-      [
-        1,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        33,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        1,
-        1,
-        8.0,
-        0
-      ],
-      [
-        2,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        3,
-        1,
-        6.0,
-        0
-      ],
-      [
-        2,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        5,
-        1,
-        -1.5,
-        0
-      ],
-      [
-        2,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        7,
-        1,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

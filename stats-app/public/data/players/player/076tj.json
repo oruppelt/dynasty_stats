@@ -21,6 +21,64 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "New Orleans Pelicans",
+      "label": "2026 round 1 pick (New Orleans Pelicans)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-05",
+      "from": "New Orleans Pelicans",
+      "team": "Milwaukee Bucks",
+      "trade": "it8bg42zlzh2r88j",
+      "label": "2026 round 1 pick (New Orleans Pelicans)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-08-07",
+      "from": "Milwaukee Bucks",
+      "team": "Portland Trail Blazers",
+      "trade": "khktmunilzjipzs2",
+      "label": "2026 round 1 pick (New Orleans Pelicans)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 4,
+      "date": "2025-10-31",
+      "from": "Portland Trail Blazers",
+      "team": "Milwaukee Bucks",
+      "trade": "68vzx5bemhetwvoq",
+      "label": "2026 round 1 pick (New Orleans Pelicans)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 7,
+      "date": "2025-11-10",
+      "from": "Milwaukee Bucks",
+      "team": "Chicago Bulls",
+      "trade": "lot0xakcmhs7b6qj",
+      "label": "2026 round 1 pick (New Orleans Pelicans)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 27,
+      "date": "2026-01-19",
+      "from": "Chicago Bulls",
+      "team": "Portland Trail Blazers",
+      "trade": "jsw3rc10mkl3o2h1",
+      "label": "2026 round 1 pick (New Orleans Pelicans)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -28,75 +86,474 @@
       "team": "Portland Trail Blazers",
       "round": 1,
       "pick": 25,
+      "overall": 25,
+      "original": "New Orleans Pelicans",
+      "certain": true,
       "periods": 7,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1410000,
       "contract": "R13"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Portland Trail Blazers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        -2.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
+  "trades": {
+    "68vzx5bemhetwvoq": {
+      "date": "2025-10-31",
+      "season": "2025-26",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Portland Trail Blazers",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson",
+          "result": {
+            "points": 708.25,
+            "starts": 30,
+            "gp": 47,
+            "periods": 30,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-04-03"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qty",
+          "player": "Jalen Smith",
+          "label": "Jalen Smith",
+          "result": {
+            "points": 881.0,
+            "starts": 19,
+            "gp": 30,
+            "periods": 23,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "jsw3rc10mkl3o2h1"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "076t0",
+            "player": "Caleb Wilson",
+            "certain": true
+          },
+          "result": {
+            "points": 371.0,
+            "starts": 7,
+            "gp": 10,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "076sw",
+            "player": "Labaron Philon",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Milwaukee Bucks",
+          "player_id": "04ewk",
+          "player": "John Collins",
+          "label": "John Collins",
+          "result": {
+            "points": 1413.5,
+            "starts": 30,
+            "gp": 49,
+            "periods": 31,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ropqfs1wmvhr2o2x"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          },
+          "next": {
+            "trade": "lot0xakcmhs7b6qj"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        }
       ]
-    ]
-  }
+    },
+    "khktmunilzjipzs2": {
+      "date": "2024-08-07",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Portland Trail Blazers",
+          "player_id": "0621u",
+          "player": "Andrew Nembhard",
+          "label": "Andrew Nembhard",
+          "result": {
+            "points": 736.0,
+            "starts": 19,
+            "gp": 26,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-29"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          },
+          "next": {
+            "kept": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Milwaukee Bucks",
+          "label": "2025 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06v5b",
+            "player": "Yanic Konan Niederhauser",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "076t0",
+            "player": "Caleb Wilson",
+            "certain": true
+          },
+          "next": {
+            "trade": "68vzx5bemhetwvoq"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        }
+      ]
+    },
+    "jsw3rc10mkl3o2h1": {
+      "date": "2026-01-19",
+      "season": "2025-26",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell",
+          "result": {
+            "points": 17.5,
+            "starts": 1,
+            "gp": 1,
+            "periods": 2,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "dn0hq58kmkv9e76t"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Chicago Bulls",
+          "player_id": "05qty",
+          "player": "Jalen Smith",
+          "label": "Jalen Smith",
+          "result": {
+            "points": 281.25,
+            "starts": 7,
+            "gp": 9,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Chicago Bulls",
+          "player_id": "0621u",
+          "player": "Andrew Nembhard",
+          "label": "Andrew Nembhard",
+          "result": {
+            "points": 375.25,
+            "starts": 7,
+            "gp": 11,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
+        }
+      ]
+    },
+    "it8bg42zlzh2r88j": {
+      "date": "2024-08-05",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Milwaukee Bucks",
+          "to": "New Orleans Pelicans",
+          "label": "$15 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Milwaukee Bucks",
+          "player_id": "049s6",
+          "player": "Markelle Fultz",
+          "label": "Markelle Fultz",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-10-31"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          },
+          "next": {
+            "trade": "khktmunilzjipzs2"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        }
+      ]
+    },
+    "lot0xakcmhs7b6qj": {
+      "date": "2025-11-10",
+      "season": "2025-26",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Milwaukee Bucks",
+          "player_id": "0621l",
+          "player": "Walker Kessler",
+          "label": "Walker Kessler",
+          "result": {
+            "points": 566.75,
+            "starts": 7,
+            "gp": 13,
+            "periods": 34,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson",
+          "result": {
+            "points": 1017.5,
+            "starts": 21,
+            "gp": 36,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "llmo9x2dmklfs52y"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "label": "2027 round 1 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          },
+          "next": {
+            "trade": "jsw3rc10mkl3o2h1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        }
+      ]
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

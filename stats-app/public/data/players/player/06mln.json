@@ -100,15 +100,37 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Toronto Raptors",
+      "label": "2024 round 2 pick, no. 3",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Toronto Raptors",
+      "team": "Houston Rockets",
+      "trade": "n3xruumslxyaxk6d",
+      "label": "2024 round 2 pick, no. 3"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-28",
       "team": "Houston Rockets",
       "round": 2,
-      "pick": 33,
+      "pick": 3,
+      "overall": 33,
+      "original": "Toronto Raptors",
+      "certain": false,
       "periods": 33,
       "starts": 2,
+      "gp": 2,
       "points": 5.25,
       "salary": 1000000,
       "contract": "R23"
@@ -123,12 +145,87 @@
       "trade": "rzau113zmeml44da",
       "periods": 40,
       "starts": 9,
+      "gp": 16,
       "points": 214.5,
       "salary": 1000000,
       "contract": "R22"
     }
   ],
   "trades": {
+    "n3xruumslxyaxk6d": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "player_id": "01eo6",
+          "player": "James Harden",
+          "label": "James Harden",
+          "result": {
+            "points": 2933.0,
+            "starts": 39,
+            "gp": 60,
+            "periods": 40,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Houston Rockets",
+          "player_id": "05qto",
+          "player": "LaMelo Ball",
+          "label": "LaMelo Ball",
+          "result": {
+            "points": 3975.25,
+            "starts": 63,
+            "gp": 90,
+            "periods": 73,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Houston Rockets",
+          "label": "2024 round 2 pick, no. 22"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Houston Rockets",
+          "label": "2024 round 2 pick, no. 3",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "06mln",
+            "player": "Adem Bona",
+            "certain": false
+          },
+          "result": {
+            "points": 5.25,
+            "starts": 2,
+            "gp": 2,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "rzau113zmeml44da"
+          }
+        }
+      ]
+    },
     "rzau113zmeml44da": {
       "date": "2025-08-22",
       "season": "2025-26",
@@ -140,7 +237,17 @@
           "to": "Minnesota Timberwolves",
           "player_id": "06mm2",
           "player": "Kevin McCullar",
-          "label": "Kevin McCullar"
+          "label": "Kevin McCullar",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-07"
+          }
         },
         {
           "kind": "player",
@@ -148,7 +255,17 @@
           "to": "Minnesota Timberwolves",
           "player_id": "03ad3",
           "player": "Karl-Anthony Towns",
-          "label": "Karl-Anthony Towns"
+          "label": "Karl-Anthony Towns",
+          "result": {
+            "points": 2874.25,
+            "starts": 39,
+            "gp": 63,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -156,7 +273,17 @@
           "to": "Minnesota Timberwolves",
           "player_id": "06mln",
           "player": "Adem Bona",
-          "label": "Adem Bona"
+          "label": "Adem Bona",
+          "result": {
+            "points": 214.5,
+            "starts": 9,
+            "gp": 16,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -164,7 +291,17 @@
           "to": "Minnesota Timberwolves",
           "player_id": "03wr4",
           "player": "T.J. McConnell",
-          "label": "T.J. McConnell"
+          "label": "T.J. McConnell",
+          "result": {
+            "points": 560.5,
+            "starts": 14,
+            "gp": 22,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-02-20"
+          }
         },
         {
           "kind": "player",
@@ -172,7 +309,17 @@
           "to": "Houston Rockets",
           "player_id": "03nwm",
           "player": "Devin Booker",
-          "label": "Devin Booker"
+          "label": "Devin Booker",
+          "result": {
+            "points": 592.5,
+            "starts": 7,
+            "gp": 13,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          }
         },
         {
           "kind": "player",
@@ -180,7 +327,17 @@
           "to": "Houston Rockets",
           "player_id": "06ccf",
           "player": "Ausar Thompson",
-          "label": "Ausar Thompson"
+          "label": "Ausar Thompson",
+          "result": {
+            "points": 356.5,
+            "starts": 7,
+            "gp": 10,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "glz93afsmhx6pjs4"
+          }
         },
         {
           "kind": "pick",
@@ -191,589 +348,31 @@
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Houston Rockets",
-      "Minnesota Timberwolves"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        3.5,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        4.75,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        0.5,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        10.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        18.75,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        1.5,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        3.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        19.75,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        6.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        10.25,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        20.75,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        10.75,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        38.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        16.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        11.25,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        46.5,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        22.5,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        31.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        34.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        20.75,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        34.25,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        5.25,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        6.25,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.5,
-        1
-      ],
-      [
-        1,
-        2,
-        1,
-        11.75,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        58.25,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        28.0,
-        1
-      ],
-      [
-        1,
-        5,
-        1,
-        20.25,
-        1
-      ],
-      [
-        1,
-        6,
-        1,
-        35.75,
-        1
-      ],
-      [
-        1,
-        7,
-        1,
-        15.5,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        13.75,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        44.25,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        20.25,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        20.75,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        48.25,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        5.5,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        42.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        39.75,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        14.75,
-        1
-      ],
-      [
-        1,
-        23,
-        1,
-        23.25,
-        1
-      ],
-      [
-        1,
-        24,
-        1,
-        23.75,
-        1
-      ],
-      [
-        1,
-        25,
-        1,
-        18.0,
-        1
-      ],
-      [
-        1,
-        26,
-        1,
-        20.75,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        50.25,
-        1
-      ],
-      [
-        1,
-        28,
-        1,
-        4.75,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        48.0,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        13.25,
-        0
-      ],
-      [
-        1,
-        31,
-        1,
-        50.0,
-        0
-      ],
-      [
-        1,
-        32,
-        1,
-        14.5,
-        0
-      ],
-      [
-        1,
-        33,
-        1,
-        63.5,
-        0
-      ],
-      [
-        1,
-        34,
-        1,
-        46.25,
-        0
-      ],
-      [
-        1,
-        35,
-        1,
-        38.0,
-        0
-      ],
-      [
-        1,
-        36,
-        1,
-        16.5,
-        0
-      ],
-      [
-        1,
-        37,
-        1,
-        41.0,
-        1
-      ],
-      [
-        1,
-        38,
-        1,
-        19.25,
-        1
-      ],
-      [
-        1,
-        39,
-        1,
-        30.25,
-        1
-      ],
-      [
-        1,
-        40,
-        1,
-        50.0,
-        0
-      ],
-      [
-        2,
-        1,
-        1,
-        17.0,
-        0
-      ],
-      [
-        2,
-        2,
-        1,
-        42.5,
-        0
-      ],
-      [
-        2,
-        3,
-        1,
-        6.25,
-        0
-      ],
-      [
-        2,
-        4,
-        1,
-        23.0,
-        0
-      ],
-      [
-        2,
-        5,
-        1,
-        23.0,
-        0
-      ],
-      [
-        2,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        7,
-        1,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

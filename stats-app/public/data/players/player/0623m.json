@@ -178,6 +178,7 @@
       "bid": 8.0,
       "periods": 9,
       "starts": 2,
+      "gp": 2,
       "points": 1.0,
       "salary": 1000000,
       "contract": "FA"
@@ -198,6 +199,7 @@
       "bid": 1.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -218,6 +220,7 @@
       "bid": 0.0,
       "periods": 20,
       "starts": 12,
+      "gp": 22,
       "points": 389.25,
       "salary": 2750000,
       "contract": "REG1"
@@ -232,6 +235,7 @@
       "trade": "d6sg7z0mm59sukx3",
       "periods": 3,
       "starts": 3,
+      "gp": 5,
       "points": 184.25,
       "salary": 2750000,
       "contract": "REG1"
@@ -246,6 +250,7 @@
       "trade": "6wp31wt3m5mhwc4q",
       "periods": 10,
       "starts": 10,
+      "gp": 18,
       "points": 509.5,
       "salary": 2750000,
       "contract": "REG1"
@@ -266,6 +271,7 @@
       "bid": 0.0,
       "periods": 28,
       "starts": 21,
+      "gp": 33,
       "points": 534.25,
       "salary": 5000000,
       "contract": "REG1"
@@ -280,6 +286,7 @@
       "trade": "ajis8ve4mkv3b33w",
       "periods": 5,
       "starts": 3,
+      "gp": 5,
       "points": 132.0,
       "salary": 5000000,
       "contract": "REG1"
@@ -300,12 +307,120 @@
       "bid": 0.0,
       "periods": 7,
       "starts": 6,
+      "gp": 9,
       "points": 168.25,
       "salary": 1000000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "d6sg7z0mm59sukx3": {
+      "date": "2024-12-30",
+      "season": "2024-25",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "New Orleans Pelicans",
+          "player_id": "027oo",
+          "player": "Jonas Valanciunas",
+          "label": "Jonas Valanciunas",
+          "result": {
+            "points": 592.75,
+            "starts": 13,
+            "gp": 25,
+            "periods": 13,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "New Orleans Pelicans",
+          "label": "$45 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qqtxc5wbm65k1oug"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis",
+          "result": {
+            "points": 184.25,
+            "starts": 3,
+            "gp": 5,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "6wp31wt3m5mhwc4q"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "06ccw",
+          "player": "Jordan Miller",
+          "label": "Jordan Miller",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-12-30"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06v8a",
+            "player": "Brooks Barnhizer",
+            "certain": true
+          },
+          "next": {
+            "trade": "1jghgk36m5avz9qx"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
+        }
+      ]
+    },
     "ajis8ve4mkv3b33w": {
       "date": "2026-01-26",
       "season": "2025-26",
@@ -317,7 +432,17 @@
           "to": "San Antonio Spurs",
           "player_id": "05qsx",
           "player": "Obi Toppin",
-          "label": "Obi Toppin"
+          "label": "Obi Toppin",
+          "result": {
+            "points": 180.75,
+            "starts": 5,
+            "gp": 7,
+            "periods": 12,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -325,7 +450,17 @@
           "to": "Boston Celtics",
           "player_id": "0623m",
           "player": "Keon Ellis",
-          "label": "Keon Ellis"
+          "label": "Keon Ellis",
+          "result": {
+            "points": 132.0,
+            "starts": 3,
+            "gp": 5,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-04"
+          }
         }
       ]
     },
@@ -340,7 +475,17 @@
           "to": "Miami Heat",
           "player_id": "03r7u",
           "player": "Josh Richardson",
-          "label": "Josh Richardson"
+          "label": "Josh Richardson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "3e8zy5h8m5ppki7t"
+          }
         },
         {
           "kind": "player",
@@ -348,13 +493,39 @@
           "to": "Miami Heat",
           "player_id": "05qym",
           "player": "Kenyon Martin",
-          "label": "Kenyon Martin"
+          "label": "Kenyon Martin",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
         },
         {
           "kind": "pick",
           "from": "Chicago Bulls",
           "to": "Miami Heat",
-          "label": "2026 round 2 pick (Chicago Bulls)"
+          "label": "2026 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "076u2",
+            "player": "Dillon Mitchell",
+            "certain": true
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
         },
         {
           "kind": "player",
@@ -362,683 +533,41 @@
           "to": "Chicago Bulls",
           "player_id": "0623m",
           "player": "Keon Ellis",
-          "label": "Keon Ellis"
-        }
-      ]
-    },
-    "d6sg7z0mm59sukx3": {
-      "date": "2024-12-30",
-      "season": "2024-25",
-      "period": 21,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "New Orleans Pelicans",
-          "player_id": "027oo",
-          "player": "Jonas Valanciunas",
-          "label": "Jonas Valanciunas"
-        },
-        {
-          "kind": "budget",
-          "from": "Miami Heat",
-          "to": "New Orleans Pelicans",
-          "label": "$45 budget"
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Miami Heat",
-          "player_id": "03al1",
-          "player": "Marcus Smart",
-          "label": "Marcus Smart"
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Miami Heat",
-          "player_id": "0623m",
-          "player": "Keon Ellis",
-          "label": "Keon Ellis"
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Miami Heat",
-          "player_id": "06ccw",
-          "player": "Jordan Miller",
-          "label": "Jordan Miller"
-        },
-        {
-          "kind": "pick",
-          "from": "New Orleans Pelicans",
-          "to": "Miami Heat",
-          "label": "2025 round 2 pick (New Orleans Pelicans)"
+          "label": "Keon Ellis",
+          "result": {
+            "points": 509.5,
+            "starts": 10,
+            "gp": 18,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-29"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Denver Nuggets",
-      "Sacramento Kings",
-      "New Orleans Pelicans",
-      "Miami Heat",
-      "Chicago Bulls",
-      "San Antonio Spurs",
-      "Boston Celtics"
-    ],
-    "periods": [
-      [
-        0,
-        16,
-        0,
-        13.25,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        61.75,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        15.75,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        8.75,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        28.25,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        12.25,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        1.0,
-        1
-      ],
-      [
-        0,
-        44,
-        1,
-        37.5,
-        1
-      ],
-      [
-        0,
-        45,
-        1,
-        68.0,
-        1
-      ],
-      [
-        1,
-        1,
-        2,
-        14.0,
-        0
-      ],
-      [
-        1,
-        2,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        2,
-        48.5,
-        0
-      ],
-      [
-        1,
-        4,
-        2,
-        57.0,
-        1
-      ],
-      [
-        1,
-        5,
-        2,
-        56.5,
-        1
-      ],
-      [
-        1,
-        6,
-        2,
-        17.75,
-        1
-      ],
-      [
-        1,
-        7,
-        2,
-        23.0,
-        1
-      ],
-      [
-        1,
-        8,
-        2,
-        13.0,
-        1
-      ],
-      [
-        1,
-        9,
-        2,
-        68.0,
-        0
-      ],
-      [
-        1,
-        10,
-        2,
-        33.75,
-        1
-      ],
-      [
-        1,
-        11,
-        2,
-        52.0,
-        1
-      ],
-      [
-        1,
-        12,
-        2,
-        35.75,
-        1
-      ],
-      [
-        1,
-        13,
-        2,
-        0.0,
-        1
-      ],
-      [
-        1,
-        14,
-        2,
-        67.0,
-        0
-      ],
-      [
-        1,
-        15,
-        2,
-        10.25,
-        1
-      ],
-      [
-        1,
-        16,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        2,
-        69.25,
-        1
-      ],
-      [
-        1,
-        18,
-        2,
-        21.0,
-        1
-      ],
-      [
-        1,
-        19,
-        2,
-        5.0,
-        0
-      ],
-      [
-        1,
-        20,
-        2,
-        30.0,
-        0
-      ],
-      [
-        1,
-        21,
-        3,
-        64.5,
-        1
-      ],
-      [
-        1,
-        22,
-        3,
-        67.75,
-        1
-      ],
-      [
-        1,
-        23,
-        3,
-        52.0,
-        1
-      ],
-      [
-        1,
-        24,
-        4,
-        50.0,
-        1
-      ],
-      [
-        1,
-        25,
-        4,
-        51.0,
-        1
-      ],
-      [
-        1,
-        26,
-        4,
-        37.25,
-        1
-      ],
-      [
-        1,
-        27,
-        4,
-        53.25,
-        1
-      ],
-      [
-        1,
-        28,
-        4,
-        23.0,
-        1
-      ],
-      [
-        1,
-        29,
-        4,
-        57.0,
-        1
-      ],
-      [
-        1,
-        30,
-        4,
-        16.0,
-        1
-      ],
-      [
-        1,
-        31,
-        4,
-        86.0,
-        1
-      ],
-      [
-        1,
-        32,
-        4,
-        38.75,
-        1
-      ],
-      [
-        1,
-        33,
-        4,
-        97.25,
-        1
-      ],
-      [
-        2,
-        1,
-        5,
-        16.75,
-        1
-      ],
-      [
-        2,
-        2,
-        5,
-        37.25,
-        1
-      ],
-      [
-        2,
-        3,
-        5,
-        48.25,
-        1
-      ],
-      [
-        2,
-        4,
-        5,
-        17.5,
-        1
-      ],
-      [
-        2,
-        5,
-        5,
-        41.0,
-        1
-      ],
-      [
-        2,
-        6,
-        5,
-        20.0,
-        1
-      ],
-      [
-        2,
-        7,
-        5,
-        56.25,
-        1
-      ],
-      [
-        2,
-        8,
-        5,
-        37.25,
-        1
-      ],
-      [
-        2,
-        9,
-        5,
-        20.5,
-        1
-      ],
-      [
-        2,
-        10,
-        5,
-        0.0,
-        1
-      ],
-      [
-        2,
-        11,
-        5,
-        36.0,
-        1
-      ],
-      [
-        2,
-        12,
-        5,
-        0.5,
-        1
-      ],
-      [
-        2,
-        13,
-        5,
-        -2.0,
-        1
-      ],
-      [
-        2,
-        14,
-        5,
-        15.0,
-        0
-      ],
-      [
-        2,
-        15,
-        5,
-        43.0,
-        0
-      ],
-      [
-        2,
-        16,
-        5,
-        0.0,
-        0
-      ],
-      [
-        2,
-        17,
-        5,
-        42.75,
-        1
-      ],
-      [
-        2,
-        18,
-        5,
-        6.25,
-        1
-      ],
-      [
-        2,
-        19,
-        5,
-        0.5,
-        0
-      ],
-      [
-        2,
-        20,
-        5,
-        54.5,
-        1
-      ],
-      [
-        2,
-        21,
-        5,
-        33.75,
-        1
-      ],
-      [
-        2,
-        22,
-        5,
-        30.0,
-        1
-      ],
-      [
-        2,
-        23,
-        5,
-        26.0,
-        0
-      ],
-      [
-        2,
-        24,
-        5,
-        23.0,
-        1
-      ],
-      [
-        2,
-        25,
-        5,
-        4.5,
-        0
-      ],
-      [
-        2,
-        26,
-        5,
-        0.0,
-        1
-      ],
-      [
-        2,
-        27,
-        5,
-        0.0,
-        0
-      ],
-      [
-        2,
-        28,
-        5,
-        14.75,
-        1
-      ],
-      [
-        2,
-        29,
-        6,
-        29.0,
-        0
-      ],
-      [
-        2,
-        30,
-        6,
-        27.25,
-        1
-      ],
-      [
-        2,
-        31,
-        6,
-        19.5,
-        0
-      ],
-      [
-        2,
-        32,
-        6,
-        38.5,
-        1
-      ],
-      [
-        2,
-        33,
-        6,
-        66.25,
-        1
-      ],
-      [
-        3,
-        1,
-        6,
-        24.0,
-        1
-      ],
-      [
-        3,
-        2,
-        6,
-        56.5,
-        1
-      ],
-      [
-        3,
-        3,
-        6,
-        21.0,
-        1
-      ],
-      [
-        3,
-        4,
-        6,
-        22.0,
-        1
-      ],
-      [
-        3,
-        5,
-        6,
-        30.25,
-        1
-      ],
-      [
-        3,
-        6,
-        6,
-        14.5,
-        1
-      ],
-      [
-        3,
-        7,
-        6,
-        30.25,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

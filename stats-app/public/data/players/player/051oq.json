@@ -205,11 +205,33 @@
       "team": "Indiana Pacers",
       "round": 1,
       "pick": 10,
+      "overall": 10,
+      "original": "Brooklyn Nets",
+      "certain": true,
       "periods": 88,
       "starts": 68,
+      "gp": 97,
       "points": 2144.25,
       "salary": 2842368,
       "contract": "R13"
+    },
+    {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Brooklyn Nets",
+      "label": "2019 round 1 pick, no. 10",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-10-20",
+      "from": "Brooklyn Nets",
+      "team": "Indiana Pacers",
+      "trade": "0r0z9s1ijx9bmlcn",
+      "label": "2019 round 1 pick, no. 10"
     },
     {
       "kind": "trade",
@@ -221,6 +243,7 @@
       "trade": "u84ukmdukyle5in8",
       "periods": 6,
       "starts": 6,
+      "gp": 6,
       "points": 62.75,
       "salary": 2842368,
       "contract": "R11"
@@ -241,6 +264,7 @@
       "bid": 1.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -259,6 +283,7 @@
       "bid": 38.0,
       "periods": 16,
       "starts": 12,
+      "gp": 18,
       "points": 278.5,
       "salary": 1000000,
       "contract": "FA"
@@ -279,6 +304,7 @@
       "bid": 32.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -299,6 +325,7 @@
       "bid": 0.0,
       "periods": 23,
       "starts": 16,
+      "gp": 23,
       "points": 364.5,
       "salary": 1000000,
       "contract": "REG1"
@@ -319,6 +346,7 @@
       "bid": 2.0,
       "periods": 6,
       "starts": 1,
+      "gp": 1,
       "points": 27.75,
       "salary": 1000000,
       "contract": "FA"
@@ -339,6 +367,7 @@
       "bid": 22.0,
       "periods": 17,
       "starts": 4,
+      "gp": 6,
       "points": 54.75,
       "salary": 1000000,
       "contract": "FA"
@@ -353,6 +382,7 @@
       "trade": "5bxdraq0m5qxtpz8",
       "periods": 10,
       "starts": 8,
+      "gp": 3,
       "points": 19.5,
       "salary": 1000000,
       "contract": "FA"
@@ -377,7 +407,17 @@
           "to": "Indiana Pacers",
           "player_id": "031lu",
           "player": "Ben McLemore",
-          "label": "Ben McLemore"
+          "label": "Ben McLemore",
+          "result": {
+            "points": 147.75,
+            "starts": 5,
+            "gp": 10,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
         },
         {
           "kind": "player",
@@ -385,7 +425,17 @@
           "to": "Indiana Pacers",
           "player_id": "04ewf",
           "player": "Bam Adebayo",
-          "label": "Bam Adebayo"
+          "label": "Bam Adebayo",
+          "result": {
+            "points": 6753.25,
+            "starts": 98,
+            "gp": 154,
+            "periods": 104,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
         },
         {
           "kind": "player",
@@ -393,7 +443,17 @@
           "to": "Indiana Pacers",
           "player_id": "031lp",
           "player": "Victor Oladipo",
-          "label": "Victor Oladipo"
+          "label": "Victor Oladipo",
+          "result": {
+            "points": 684.75,
+            "starts": 17,
+            "gp": 23,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-24"
+          }
         },
         {
           "kind": "player",
@@ -401,7 +461,17 @@
           "to": "Indiana Pacers",
           "player_id": "059ca",
           "player": "Oshae Brissett",
-          "label": "Oshae Brissett"
+          "label": "Oshae Brissett",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9p0kw43okyngjg6r"
+          }
         },
         {
           "kind": "player",
@@ -409,7 +479,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "051oq",
           "player": "Cam Reddish",
-          "label": "Cam Reddish"
+          "label": "Cam Reddish",
+          "result": {
+            "points": 62.75,
+            "starts": 6,
+            "gp": 6,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
         },
         {
           "kind": "player",
@@ -417,7 +497,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "03r7l",
           "player": "Larry Nance",
-          "label": "Larry Nance"
+          "label": "Larry Nance",
+          "result": {
+            "points": 0.0,
+            "starts": 6,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "25j29lacl4n2yx7t"
+          }
         },
         {
           "kind": "player",
@@ -425,7 +515,99 @@
           "to": "Cleveland Cavaliers",
           "player_id": "03ad2",
           "player": "Myles Turner",
-          "label": "Myles Turner"
+          "label": "Myles Turner",
+          "result": {
+            "points": 2042.25,
+            "starts": 37,
+            "gp": 46,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-24"
+          }
+        }
+      ]
+    },
+    "0r0z9s1ijx9bmlcn": {
+      "date": "2019-10-20",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Brooklyn Nets",
+          "to": "Indiana Pacers",
+          "label": "2019 round 1 pick, no. 10",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "051oq",
+            "player": "Cam Reddish",
+            "certain": true
+          },
+          "result": {
+            "points": 2144.25,
+            "starts": 68,
+            "gp": 97,
+            "periods": 88,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "u84ukmdukyle5in8"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Brooklyn Nets",
+          "label": "2019 round 2 pick, no. 8",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "051pc",
+            "player": "KZ Okpala",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 61,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-08-18"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Brooklyn Nets",
+          "label": "2019 round 1 pick, no. 11",
+          "became": {
+            "season": "2019-20",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "051ol",
+            "player": "Darius Garland",
+            "certain": true
+          },
+          "result": {
+            "points": 3651.75,
+            "starts": 82,
+            "gp": 123,
+            "periods": 94,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
         }
       ]
     },
@@ -440,7 +622,17 @@
           "to": "Minnesota Timberwolves",
           "player_id": "05uik",
           "player": "Ziaire Williams",
-          "label": "Ziaire Williams"
+          "label": "Ziaire Williams",
+          "result": {
+            "points": 239.0,
+            "starts": 5,
+            "gp": 9,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
         },
         {
           "kind": "budget",
@@ -454,7 +646,17 @@
           "to": "Milwaukee Bucks",
           "player_id": "051oq",
           "player": "Cam Reddish",
-          "label": "Cam Reddish"
+          "label": "Cam Reddish",
+          "result": {
+            "points": 19.5,
+            "starts": 8,
+            "gp": 3,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-08"
+          }
         },
         {
           "kind": "player",
@@ -462,1303 +664,86 @@
           "to": "Milwaukee Bucks",
           "player_id": "06226",
           "player": "Moussa Diabate",
-          "label": "Moussa Diabate"
+          "label": "Moussa Diabate",
+          "result": {
+            "points": 198.0,
+            "starts": 4,
+            "gp": 7,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-08"
+          }
         },
         {
           "kind": "pick",
           "from": "Minnesota Timberwolves",
           "to": "Milwaukee Bucks",
-          "label": "2025 round 2 pick (Cleveland Cavaliers)"
+          "label": "2025 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "06v59",
+            "player": "Will Riley",
+            "certain": true
+          },
+          "result": {
+            "points": 410.75,
+            "starts": 16,
+            "gp": 26,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Indiana Pacers",
-      "Cleveland Cavaliers",
-      "Golden State Warriors",
-      "Phoenix Suns",
-      "Charlotte Hornets",
-      "Utah Jazz",
-      "Minnesota Timberwolves",
-      "Milwaukee Bucks"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        15.0,
-        1
-      ],
-      [
-        0,
-        2,
-        0,
-        9.25,
-        1
-      ],
-      [
-        0,
-        3,
-        0,
-        60.25,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        19.75,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        25.5,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        22.25,
-        1
-      ],
-      [
-        0,
-        8,
-        0,
-        61.75,
-        1
-      ],
-      [
-        0,
-        9,
-        0,
-        19.75,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        11,
-        0,
-        25.5,
-        1
-      ],
-      [
-        0,
-        12,
-        0,
-        2.5,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        75.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        4.5,
-        1
-      ],
-      [
-        0,
-        15,
-        0,
-        45.5,
-        1
-      ],
-      [
-        0,
-        16,
-        0,
-        35.0,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        47.25,
-        1
-      ],
-      [
-        0,
-        18,
-        0,
-        14.75,
-        1
-      ],
-      [
-        0,
-        19,
-        0,
-        22.0,
-        1
-      ],
-      [
-        0,
-        20,
-        0,
-        51.5,
-        1
-      ],
-      [
-        0,
-        21,
-        0,
-        7.75,
-        1
-      ],
-      [
-        0,
-        22,
-        0,
-        17.0,
-        1
-      ],
-      [
-        0,
-        23,
-        0,
-        33.0,
-        1
-      ],
-      [
-        0,
-        24,
-        0,
-        75.0,
-        1
-      ],
-      [
-        0,
-        25,
-        0,
-        4.5,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        69.25,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        46.5,
-        1
-      ],
-      [
-        0,
-        28,
-        0,
-        64.0,
-        1
-      ],
-      [
-        0,
-        30,
-        0,
-        10.0,
-        1
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        48.25,
-        1
-      ],
-      [
-        1,
-        1,
-        0,
-        31.5,
-        1
-      ],
-      [
-        1,
-        2,
-        0,
-        13.0,
-        1
-      ],
-      [
-        1,
-        3,
-        0,
-        72.75,
-        1
-      ],
-      [
-        1,
-        4,
-        0,
-        33.5,
-        1
-      ],
-      [
-        1,
-        5,
-        0,
-        26.75,
-        1
-      ],
-      [
-        1,
-        6,
-        0,
-        45.75,
-        1
-      ],
-      [
-        1,
-        7,
-        0,
-        24.0,
-        1
-      ],
-      [
-        1,
-        8,
-        0,
-        28.75,
-        1
-      ],
-      [
-        1,
-        9,
-        0,
-        0.0,
-        1
-      ],
-      [
-        1,
-        10,
-        0,
-        54.25,
-        1
-      ],
-      [
-        1,
-        11,
-        0,
-        44.5,
-        1
-      ],
-      [
-        1,
-        12,
-        0,
-        14.0,
-        1
-      ],
-      [
-        1,
-        13,
-        0,
-        26.75,
-        1
-      ],
-      [
-        1,
-        14,
-        0,
-        20.5,
-        1
-      ],
-      [
-        1,
-        15,
-        0,
-        22.75,
-        1
-      ],
-      [
-        1,
-        16,
-        0,
-        41.5,
-        1
-      ],
-      [
-        1,
-        17,
-        0,
-        73.5,
-        1
-      ],
-      [
-        1,
-        18,
-        0,
-        59.5,
-        1
-      ],
-      [
-        1,
-        19,
-        0,
-        0.0,
-        1
-      ],
-      [
-        1,
-        20,
-        0,
-        0.0,
-        1
-      ],
-      [
-        1,
-        21,
-        0,
-        0.0,
-        1
-      ],
-      [
-        1,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        2,
-        1,
-        0,
-        26.5,
-        1
-      ],
-      [
-        2,
-        2,
-        0,
-        30.0,
-        1
-      ],
-      [
-        2,
-        3,
-        0,
-        70.75,
-        1
-      ],
-      [
-        2,
-        4,
-        0,
-        23.25,
-        1
-      ],
-      [
-        2,
-        5,
-        0,
-        55.5,
-        1
-      ],
-      [
-        2,
-        6,
-        0,
-        19.25,
-        1
-      ],
-      [
-        2,
-        7,
-        0,
-        26.75,
-        1
-      ],
-      [
-        2,
-        8,
-        0,
-        29.5,
-        1
-      ],
-      [
-        2,
-        9,
-        0,
-        65.25,
-        1
-      ],
-      [
-        2,
-        10,
-        0,
-        21.0,
-        0
-      ],
-      [
-        2,
-        11,
-        0,
-        41.25,
-        0
-      ],
-      [
-        2,
-        12,
-        0,
-        37.5,
-        1
-      ],
-      [
-        2,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        2,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        2,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        2,
-        16,
-        0,
-        5.0,
-        0
-      ],
-      [
-        2,
-        17,
-        0,
-        62.0,
-        1
-      ],
-      [
-        2,
-        18,
-        0,
-        9.0,
-        1
-      ],
-      [
-        2,
-        19,
-        0,
-        87.25,
-        1
-      ],
-      [
-        2,
-        20,
-        0,
-        25.75,
-        1
-      ],
-      [
-        2,
-        21,
-        0,
-        69.25,
-        1
-      ],
-      [
-        2,
-        22,
-        0,
-        16.25,
-        1
-      ],
-      [
-        2,
-        23,
-        0,
-        33.0,
-        0
-      ],
-      [
-        2,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        2,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        2,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        2,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        2,
-        28,
-        1,
-        4.5,
-        1
-      ],
-      [
-        2,
-        29,
-        1,
-        11.5,
-        1
-      ],
-      [
-        2,
-        30,
-        1,
-        0.0,
-        1
-      ],
-      [
-        2,
-        31,
-        1,
-        10.75,
-        1
-      ],
-      [
-        2,
-        32,
-        1,
-        0.0,
-        1
-      ],
-      [
-        2,
-        33,
-        1,
-        36.0,
-        1
-      ],
-      [
-        3,
-        2,
-        2,
-        3.5,
-        1
-      ],
-      [
-        3,
-        3,
-        2,
-        23.25,
-        1
-      ],
-      [
-        3,
-        4,
-        2,
-        19.25,
-        1
-      ],
-      [
-        3,
-        5,
-        2,
-        8.25,
-        0
-      ],
-      [
-        3,
-        6,
-        2,
-        46.75,
-        1
-      ],
-      [
-        3,
-        7,
-        2,
-        9.5,
-        1
-      ],
-      [
-        3,
-        8,
-        2,
-        67.25,
-        1
-      ],
-      [
-        3,
-        9,
-        2,
-        59.0,
-        1
-      ],
-      [
-        3,
-        10,
-        2,
-        28.0,
-        1
-      ],
-      [
-        3,
-        11,
-        2,
-        0.0,
-        1
-      ],
-      [
-        3,
-        12,
-        2,
-        22.25,
-        1
-      ],
-      [
-        3,
-        13,
-        2,
-        8.75,
-        1
-      ],
-      [
-        3,
-        14,
-        2,
-        -9.0,
-        1
-      ],
-      [
-        3,
-        15,
-        2,
-        0.0,
-        0
-      ],
-      [
-        3,
-        16,
-        2,
-        0.0,
-        0
-      ],
-      [
-        3,
-        17,
-        2,
-        0.0,
-        0
-      ],
-      [
-        3,
-        34,
-        3,
-        21.25,
-        1
-      ],
-      [
-        3,
-        35,
-        3,
-        55.5,
-        1
-      ],
-      [
-        3,
-        37,
-        3,
-        35.25,
-        1
-      ],
-      [
-        3,
-        38,
-        3,
-        31.5,
-        1
-      ],
-      [
-        3,
-        39,
-        3,
-        81.0,
-        1
-      ],
-      [
-        3,
-        40,
-        3,
-        71.5,
-        1
-      ],
-      [
-        3,
-        41,
-        3,
-        32.0,
-        1
-      ],
-      [
-        4,
-        1,
-        4,
-        21.25,
-        0
-      ],
-      [
-        4,
-        2,
-        4,
-        0.5,
-        1
-      ],
-      [
-        4,
-        3,
-        4,
-        50.0,
-        1
-      ],
-      [
-        4,
-        4,
-        4,
-        1.5,
-        1
-      ],
-      [
-        4,
-        5,
-        4,
-        37.0,
-        1
-      ],
-      [
-        4,
-        6,
-        4,
-        96.0,
-        0
-      ],
-      [
-        4,
-        7,
-        4,
-        59.5,
-        1
-      ],
-      [
-        4,
-        8,
-        4,
-        59.0,
-        1
-      ],
-      [
-        4,
-        9,
-        4,
-        0.0,
-        1
-      ],
-      [
-        4,
-        10,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        11,
-        4,
-        4.0,
-        0
-      ],
-      [
-        4,
-        12,
-        4,
-        26.0,
-        0
-      ],
-      [
-        4,
-        13,
-        4,
-        34.25,
-        1
-      ],
-      [
-        4,
-        14,
-        4,
-        0.0,
-        1
-      ],
-      [
-        4,
-        15,
-        4,
-        47.75,
-        0
-      ],
-      [
-        4,
-        16,
-        4,
-        0.0,
-        1
-      ],
-      [
-        4,
-        17,
-        4,
-        65.0,
-        1
-      ],
-      [
-        4,
-        18,
-        4,
-        26.25,
-        0
-      ],
-      [
-        4,
-        19,
-        4,
-        2.0,
-        1
-      ],
-      [
-        4,
-        20,
-        4,
-        14.0,
-        1
-      ],
-      [
-        4,
-        21,
-        4,
-        -10.5,
-        1
-      ],
-      [
-        4,
-        22,
-        4,
-        28.5,
-        1
-      ],
-      [
-        4,
-        23,
-        4,
-        23.75,
-        1
-      ],
-      [
-        4,
-        27,
-        5,
-        27.75,
-        1
-      ],
-      [
-        4,
-        28,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        29,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        30,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        31,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        32,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        33,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        35,
-        5,
-        0.0,
-        1
-      ],
-      [
-        4,
-        36,
-        5,
-        15.25,
-        0
-      ],
-      [
-        5,
-        7,
-        6,
-        18.0,
-        0
-      ],
-      [
-        5,
-        8,
-        6,
-        -1.5,
-        1
-      ],
-      [
-        5,
-        9,
-        6,
-        51.0,
-        0
-      ],
-      [
-        5,
-        10,
-        6,
-        16.0,
-        0
-      ],
-      [
-        5,
-        11,
-        6,
-        13.25,
-        1
-      ],
-      [
-        5,
-        12,
-        6,
-        -0.5,
-        0
-      ],
-      [
-        5,
-        13,
-        6,
-        13.5,
-        0
-      ],
-      [
-        5,
-        14,
-        6,
-        33.75,
-        0
-      ],
-      [
-        5,
-        15,
-        6,
-        0.0,
-        0
-      ],
-      [
-        5,
-        16,
-        6,
-        33.75,
-        1
-      ],
-      [
-        5,
-        17,
-        6,
-        -0.5,
-        0
-      ],
-      [
-        5,
-        18,
-        6,
-        27.25,
-        0
-      ],
-      [
-        5,
-        19,
-        6,
-        38.5,
-        0
-      ],
-      [
-        5,
-        20,
-        6,
-        9.25,
-        1
-      ],
-      [
-        5,
-        21,
-        6,
-        26.25,
-        0
-      ],
-      [
-        5,
-        22,
-        6,
-        8.0,
-        0
-      ],
-      [
-        5,
-        23,
-        6,
-        0.0,
-        0
-      ],
-      [
-        5,
-        24,
-        7,
-        0.0,
-        1
-      ],
-      [
-        5,
-        25,
-        7,
-        8.0,
-        1
-      ],
-      [
-        5,
-        26,
-        7,
-        0.0,
-        1
-      ],
-      [
-        5,
-        27,
-        7,
-        0.0,
-        1
-      ],
-      [
-        5,
-        28,
-        7,
-        0.0,
-        1
-      ],
-      [
-        5,
-        29,
-        7,
-        11.5,
-        1
-      ],
-      [
-        5,
-        30,
-        7,
-        0.0,
-        1
-      ],
-      [
-        5,
-        31,
-        7,
-        0.0,
-        0
-      ],
-      [
-        5,
-        32,
-        7,
-        0.0,
-        1
-      ],
-      [
-        5,
-        33,
-        7,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

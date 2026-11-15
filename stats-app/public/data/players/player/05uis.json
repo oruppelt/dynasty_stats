@@ -184,6 +184,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2021 round 1 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-25",
+      "from": "Boston Celtics",
+      "team": "San Antonio Spurs",
+      "trade": "51fiui4ekhx62qh8",
+      "label": "2021 round 1 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-05-25",
+      "from": "San Antonio Spurs",
+      "team": "Sacramento Kings",
+      "trade": "cqyb06mckp43flz4",
+      "label": "2021 round 1 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
@@ -191,8 +219,12 @@
       "team": "Sacramento Kings",
       "round": 1,
       "pick": 19,
+      "overall": 19,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 33,
       "starts": 17,
+      "gp": 27,
       "points": 464.25,
       "salary": 1800552,
       "contract": "R13"
@@ -207,6 +239,7 @@
       "trade": "jc9wiognl3w1i5wk",
       "periods": 22,
       "starts": 6,
+      "gp": 10,
       "points": 204.0,
       "salary": 1801000,
       "contract": "R12"
@@ -221,6 +254,7 @@
       "trade": "gval9i9vlcer1ktf",
       "periods": 11,
       "starts": 11,
+      "gp": 18,
       "points": 259.25,
       "salary": 1801000,
       "contract": "R12"
@@ -235,6 +269,7 @@
       "trade": "zplnwgpylktqr2i8",
       "periods": 23,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1801000,
       "contract": "R11"
@@ -249,6 +284,7 @@
       "trade": "1bm3d2n1lrb2wp9l",
       "periods": 9,
       "starts": 5,
+      "gp": 1,
       "points": 35.0,
       "salary": 1801000,
       "contract": "R11"
@@ -269,6 +305,7 @@
       "bid": 0.0,
       "periods": 6,
       "starts": 5,
+      "gp": 9,
       "points": 226.0,
       "salary": 1801000,
       "contract": "REG1"
@@ -283,6 +320,7 @@
       "trade": "o9x12180m3dbpz6a",
       "periods": 27,
       "starts": 4,
+      "gp": 1,
       "points": 14.5,
       "salary": 1801000,
       "contract": "REG1"
@@ -303,6 +341,7 @@
       "bid": 0.0,
       "periods": 23,
       "starts": 9,
+      "gp": 12,
       "points": 230.0,
       "salary": 1250000,
       "contract": "REG1"
@@ -317,6 +356,7 @@
       "trade": "xgsw4iopmk6qzj5s",
       "periods": 10,
       "starts": 7,
+      "gp": 8,
       "points": 92.75,
       "salary": 1250000,
       "contract": "REG1"
@@ -330,64 +370,6 @@
     }
   ],
   "trades": {
-    "jc9wiognl3w1i5wk": {
-      "date": "2022-06-01",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Sacramento Kings",
-          "player_id": "05uiw",
-          "player": "Isaiah Jackson",
-          "label": "Isaiah Jackson"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Miami Heat",
-          "player_id": "05uis",
-          "player": "Tre Mann",
-          "label": "Tre Mann"
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Miami Heat",
-          "label": "2024 round 2 pick (Sacramento Kings)"
-        }
-      ]
-    },
-    "gval9i9vlcer1ktf": {
-      "date": "2023-01-02",
-      "season": "2022-23",
-      "period": 23,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Miami Heat",
-          "player_id": "05uj7",
-          "player": "Jason Preston",
-          "label": "Jason Preston"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Miami Heat",
-          "label": "2024 round 2 pick (Golden State Warriors)"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Golden State Warriors",
-          "player_id": "05uis",
-          "player": "Tre Mann",
-          "label": "Tre Mann"
-        }
-      ]
-    },
     "o9x12180m3dbpz6a": {
       "date": "2024-11-11",
       "season": "2024-25",
@@ -399,7 +381,17 @@
           "to": "Sacramento Kings",
           "player_id": "042ne",
           "player": "Malik Beasley",
-          "label": "Malik Beasley"
+          "label": "Malik Beasley",
+          "result": {
+            "points": 1447.25,
+            "starts": 26,
+            "gp": 44,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-02"
+          }
         },
         {
           "kind": "player",
@@ -407,7 +399,17 @@
           "to": "Sacramento Kings",
           "player_id": "05uis",
           "player": "Tre Mann",
-          "label": "Tre Mann"
+          "label": "Tre Mann",
+          "result": {
+            "points": 14.5,
+            "starts": 4,
+            "gp": 1,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-02"
+          }
         },
         {
           "kind": "player",
@@ -415,7 +417,17 @@
           "to": "Miami Heat",
           "player_id": "04qs0",
           "player": "Aaron Holiday",
-          "label": "Aaron Holiday"
+          "label": "Aaron Holiday",
+          "result": {
+            "points": 76.0,
+            "starts": 6,
+            "gp": 8,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-12-13"
+          }
         },
         {
           "kind": "player",
@@ -423,7 +435,17 @@
           "to": "Miami Heat",
           "player_id": "03kqi",
           "player": "Joe Ingles",
-          "label": "Joe Ingles"
+          "label": "Joe Ingles",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-12-13"
+          }
         },
         {
           "kind": "player",
@@ -431,7 +453,17 @@
           "to": "Miami Heat",
           "player_id": "06mm5",
           "player": "PJ Hall",
-          "label": "PJ Hall"
+          "label": "PJ Hall",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fqy5f8aem6akho3q"
+          }
         },
         {
           "kind": "player",
@@ -439,71 +471,39 @@
           "to": "Miami Heat",
           "player_id": "06mmh",
           "player": "Isaac Jones",
-          "label": "Isaac Jones"
+          "label": "Isaac Jones",
+          "result": {
+            "points": 98.75,
+            "starts": 9,
+            "gp": 12,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "u31lz7dpmhn7i0du"
+          }
         },
         {
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Miami Heat",
-          "label": "2025 round 1 pick (Atlanta Hawks)"
-        }
-      ]
-    },
-    "xgsw4iopmk6qzj5s": {
-      "date": "2026-01-09",
-      "season": "2025-26",
-      "period": 24,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "New York Knicks",
-          "player_id": "04qrl",
-          "player": "Wendell Carter",
-          "label": "Wendell Carter"
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Detroit Pistons",
-          "player_id": "05uis",
-          "player": "Tre Mann",
-          "label": "Tre Mann"
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Detroit Pistons",
-          "player_id": "06mk0",
-          "player": "Rob Dillingham",
-          "label": "Rob Dillingham"
-        },
-        {
-          "kind": "pick",
-          "from": "New York Knicks",
-          "to": "Detroit Pistons",
-          "label": "2027 round 2 pick (New York Knicks)"
-        }
-      ]
-    },
-    "zplnwgpylktqr2i8": {
-      "date": "2023-08-02",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Philadelphia 76ers",
-          "player_id": "05uis",
-          "player": "Tre Mann",
-          "label": "Tre Mann"
-        },
-        {
-          "kind": "budget",
-          "from": "Philadelphia 76ers",
-          "to": "Golden State Warriors",
-          "label": "$15 budget"
+          "label": "2025 round 1 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "06v5a",
+            "player": "Collin Murray-Boyles",
+            "certain": true
+          },
+          "next": {
+            "trade": "wf1rqpzzmcoqfrnq"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
         }
       ]
     },
@@ -518,7 +518,17 @@
           "to": "Philadelphia 76ers",
           "player_id": "03avi",
           "player": "Doug McDermott",
-          "label": "Doug McDermott"
+          "label": "Doug McDermott",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
         },
         {
           "kind": "player",
@@ -526,1236 +536,487 @@
           "to": "Miami Heat",
           "player_id": "05uis",
           "player": "Tre Mann",
-          "label": "Tre Mann"
+          "label": "Tre Mann",
+          "result": {
+            "points": 35.0,
+            "starts": 5,
+            "gp": 1,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        }
+      ]
+    },
+    "cqyb06mckp43flz4": {
+      "date": "2021-05-25",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "32nurs6skvuqo2yr"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "0018n",
+          "player": "Lou Williams",
+          "label": "Lou Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qvmkdi0ekt03xqks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "omyajhuakpf4ztuk"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "05uj3",
+            "player": "Day'Ron Sharpe",
+            "certain": false
+          },
+          "result": {
+            "points": 399.75,
+            "starts": 28,
+            "gp": 23,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ir3ij1a2l4ss2b1p"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06211",
+            "player": "Chet Holmgren",
+            "certain": true
+          },
+          "next": {
+            "trade": "4yavjg7dksolg9o9"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "05uis",
+            "player": "Tre Mann",
+            "certain": true
+          },
+          "result": {
+            "points": 464.25,
+            "starts": 17,
+            "gp": 27,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "jc9wiognl3w1i5wk"
+          }
+        }
+      ]
+    },
+    "xgsw4iopmk6qzj5s": {
+      "date": "2026-01-09",
+      "season": "2025-26",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "New York Knicks",
+          "player_id": "04qrl",
+          "player": "Wendell Carter",
+          "label": "Wendell Carter",
+          "result": {
+            "points": 438.5,
+            "starts": 10,
+            "gp": 15,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-21"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Detroit Pistons",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann",
+          "result": {
+            "points": 92.75,
+            "starts": 7,
+            "gp": 8,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Detroit Pistons",
+          "player_id": "06mk0",
+          "player": "Rob Dillingham",
+          "label": "Rob Dillingham",
+          "result": {
+            "points": 90.75,
+            "starts": 8,
+            "gp": 9,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "vogevc0fmvf1khtl"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Detroit Pistons",
+          "label": "2027 round 2 pick (New York Knicks)"
+        }
+      ]
+    },
+    "jc9wiognl3w1i5wk": {
+      "date": "2022-06-01",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Sacramento Kings",
+          "player_id": "05uiw",
+          "player": "Isaiah Jackson",
+          "label": "Isaiah Jackson",
+          "result": {
+            "points": 763.0,
+            "starts": 20,
+            "gp": 35,
+            "periods": 61,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "jem0vnvulrwfwkbi"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann",
+          "result": {
+            "points": 204.0,
+            "starts": 6,
+            "gp": 10,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "gval9i9vlcer1ktf"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06mm8",
+            "player": "Keshad Johnson",
+            "certain": true
+          },
+          "next": {
+            "trade": "0cpp4tktldd5fyqm"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        }
+      ]
+    },
+    "zplnwgpylktqr2i8": {
+      "date": "2023-08-02",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 23,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1bm3d2n1lrb2wp9l"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "label": "$15 budget"
+        }
+      ]
+    },
+    "gval9i9vlcer1ktf": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "player_id": "05uj7",
+          "player": "Jason Preston",
+          "label": "Jason Preston",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-01-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06mkf",
+            "player": "AJ Johnson",
+            "certain": true
+          },
+          "next": {
+            "trade": "tbw260rxldbmy6ec"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Golden State Warriors",
+          "player_id": "05uis",
+          "player": "Tre Mann",
+          "label": "Tre Mann",
+          "result": {
+            "points": 259.25,
+            "starts": 11,
+            "gp": 18,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zplnwgpylktqr2i8"
+          }
+        }
+      ]
+    },
+    "51fiui4ekhx62qh8": {
+      "date": "2020-11-25",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "cqyb06mckp43flz4"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "label": "2021 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "05uis",
+            "player": "Tre Mann",
+            "certain": true
+          },
+          "next": {
+            "trade": "cqyb06mckp43flz4"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood",
+          "result": {
+            "points": 120.0,
+            "starts": 7,
+            "gp": 12,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "cknsztqwklqk49ho"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Sacramento Kings",
-      "Miami Heat",
-      "Golden State Warriors",
-      "Philadelphia 76ers",
-      "New York Knicks",
-      "Detroit Pistons"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        18.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        10.5,
-        1
-      ],
-      [
-        0,
-        3,
-        0,
-        13.5,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        11.75,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        18.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        22.0,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        11.25,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        58.75,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        25.0,
-        1
-      ],
-      [
-        0,
-        16,
-        0,
-        40.0,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        24.75,
-        1
-      ],
-      [
-        0,
-        18,
-        0,
-        23.25,
-        1
-      ],
-      [
-        0,
-        19,
-        0,
-        24.5,
-        1
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        7.5,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        36.0,
-        1
-      ],
-      [
-        0,
-        25,
-        0,
-        61.0,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        8.5,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        17.25,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        23.75,
-        1
-      ],
-      [
-        0,
-        29,
-        0,
-        3.5,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        19.75,
-        1
-      ],
-      [
-        0,
-        31,
-        0,
-        76.5,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        38.75,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        30.0,
-        1
-      ],
-      [
-        1,
-        1,
-        1,
-        25.75,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        38.5,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        80.25,
-        1
-      ],
-      [
-        1,
-        4,
-        1,
-        15.75,
-        1
-      ],
-      [
-        1,
-        5,
-        1,
-        43.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        -4.25,
-        1
-      ],
-      [
-        1,
-        7,
-        1,
-        62.25,
-        1
-      ],
-      [
-        1,
-        8,
-        1,
-        32.0,
-        1
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        11.5,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        18.0,
-        1
-      ],
-      [
-        1,
-        13,
-        1,
-        45.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        10.5,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        35.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        5.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        10.0,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        31.5,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        11.25,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        54.25,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        5.25,
-        0
-      ],
-      [
-        1,
-        23,
-        2,
-        69.25,
-        1
-      ],
-      [
-        1,
-        24,
-        2,
-        37.0,
-        1
-      ],
-      [
-        1,
-        25,
-        2,
-        26.75,
-        1
-      ],
-      [
-        1,
-        26,
-        2,
-        8.75,
-        1
-      ],
-      [
-        1,
-        27,
-        2,
-        11.75,
-        1
-      ],
-      [
-        1,
-        28,
-        2,
-        8.25,
-        1
-      ],
-      [
-        1,
-        29,
-        2,
-        10.75,
-        1
-      ],
-      [
-        1,
-        30,
-        2,
-        3.5,
-        1
-      ],
-      [
-        1,
-        31,
-        2,
-        37.0,
-        1
-      ],
-      [
-        1,
-        32,
-        2,
-        27.25,
-        1
-      ],
-      [
-        1,
-        33,
-        2,
-        19.0,
-        1
-      ],
-      [
-        2,
-        1,
-        3,
-        2.0,
-        0
-      ],
-      [
-        2,
-        2,
-        3,
-        18.75,
-        0
-      ],
-      [
-        2,
-        3,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        4,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        5,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        6,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        7,
-        3,
-        14.75,
-        0
-      ],
-      [
-        2,
-        8,
-        3,
-        9.5,
-        0
-      ],
-      [
-        2,
-        9,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        10,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        11,
-        3,
-        5.5,
-        0
-      ],
-      [
-        2,
-        12,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        13,
-        3,
-        31.0,
-        0
-      ],
-      [
-        2,
-        14,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        15,
-        3,
-        2.0,
-        0
-      ],
-      [
-        2,
-        16,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        17,
-        3,
-        3.0,
-        0
-      ],
-      [
-        2,
-        18,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        19,
-        3,
-        0.5,
-        0
-      ],
-      [
-        2,
-        20,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        21,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        22,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        23,
-        3,
-        32.0,
-        0
-      ],
-      [
-        2,
-        24,
-        1,
-        0.0,
-        1
-      ],
-      [
-        2,
-        25,
-        1,
-        0.0,
-        1
-      ],
-      [
-        2,
-        26,
-        1,
-        0.0,
-        1
-      ],
-      [
-        2,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        28,
-        1,
-        0.0,
-        1
-      ],
-      [
-        2,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        32,
-        1,
-        35.0,
-        1
-      ],
-      [
-        3,
-        1,
-        1,
-        37.75,
-        0
-      ],
-      [
-        3,
-        2,
-        1,
-        58.75,
-        1
-      ],
-      [
-        3,
-        3,
-        1,
-        50.5,
-        1
-      ],
-      [
-        3,
-        4,
-        1,
-        51.5,
-        1
-      ],
-      [
-        3,
-        5,
-        1,
-        41.0,
-        1
-      ],
-      [
-        3,
-        6,
-        1,
-        24.25,
-        1
-      ],
-      [
-        3,
-        7,
-        0,
-        0.0,
-        1
-      ],
-      [
-        3,
-        8,
-        0,
-        14.5,
-        1
-      ],
-      [
-        3,
-        9,
-        0,
-        31.75,
-        0
-      ],
-      [
-        3,
-        10,
-        0,
-        0.0,
-        1
-      ],
-      [
-        3,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        25,
-        0,
-        0.0,
-        1
-      ],
-      [
-        3,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        33,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        34,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        35,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        36,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        39,
-        0,
-        0.0,
-        0
-      ],
-      [
-        3,
-        40,
-        0,
-        0.0,
-        0
-      ],
-      [
-        4,
-        1,
-        4,
-        30.25,
-        1
-      ],
-      [
-        4,
-        2,
-        4,
-        10.75,
-        1
-      ],
-      [
-        4,
-        3,
-        4,
-        26.5,
-        0
-      ],
-      [
-        4,
-        4,
-        4,
-        53.25,
-        0
-      ],
-      [
-        4,
-        5,
-        4,
-        24.0,
-        1
-      ],
-      [
-        4,
-        6,
-        4,
-        38.75,
-        1
-      ],
-      [
-        4,
-        7,
-        4,
-        34.75,
-        1
-      ],
-      [
-        4,
-        8,
-        4,
-        42.25,
-        1
-      ],
-      [
-        4,
-        9,
-        4,
-        19.25,
-        1
-      ],
-      [
-        4,
-        10,
-        4,
-        -3.0,
-        0
-      ],
-      [
-        4,
-        11,
-        4,
-        22.0,
-        1
-      ],
-      [
-        4,
-        12,
-        4,
-        3.5,
-        0
-      ],
-      [
-        4,
-        13,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        14,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        15,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        16,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        17,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        18,
-        4,
-        15.75,
-        0
-      ],
-      [
-        4,
-        19,
-        4,
-        38.25,
-        0
-      ],
-      [
-        4,
-        20,
-        4,
-        8.0,
-        1
-      ],
-      [
-        4,
-        21,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        22,
-        4,
-        0.0,
-        0
-      ],
-      [
-        4,
-        23,
-        4,
-        -0.5,
-        0
-      ],
-      [
-        4,
-        24,
-        5,
-        36.25,
-        0
-      ],
-      [
-        4,
-        25,
-        5,
-        13.5,
-        1
-      ],
-      [
-        4,
-        26,
-        5,
-        12.5,
-        1
-      ],
-      [
-        4,
-        27,
-        5,
-        0.0,
-        1
-      ],
-      [
-        4,
-        28,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        29,
-        5,
-        9.75,
-        0
-      ],
-      [
-        4,
-        30,
-        5,
-        0.0,
-        1
-      ],
-      [
-        4,
-        31,
-        5,
-        11.5,
-        1
-      ],
-      [
-        4,
-        32,
-        5,
-        8.75,
-        1
-      ],
-      [
-        4,
-        33,
-        5,
-        46.5,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

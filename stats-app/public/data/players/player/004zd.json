@@ -122,6 +122,7 @@
       "bid": 0.0,
       "periods": 61,
       "starts": 50,
+      "gp": 70,
       "points": 1812.5,
       "salary": 17000000,
       "contract": "REG2"
@@ -142,6 +143,7 @@
       "bid": 0.0,
       "periods": 9,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "REG1"
@@ -156,6 +158,7 @@
       "trade": "exrf6pckkw4s6iuq",
       "periods": 1,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "REG1"
@@ -180,7 +183,17 @@
           "to": "Washington Wizards",
           "player_id": "02x1k",
           "player": "Justin Holiday",
-          "label": "Justin Holiday"
+          "label": "Justin Holiday",
+          "result": {
+            "points": 558.75,
+            "starts": 12,
+            "gp": 20,
+            "periods": 18,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "6ttsntjokynaaoq3"
+          }
         },
         {
           "kind": "player",
@@ -188,7 +201,17 @@
           "to": "Washington Wizards",
           "player_id": "027pf",
           "player": "Cory Joseph",
-          "label": "Cory Joseph"
+          "label": "Cory Joseph",
+          "result": {
+            "points": 157.75,
+            "starts": 4,
+            "gp": 8,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "mwwyzn4ykwro4f2f"
+          }
         },
         {
           "kind": "player",
@@ -196,7 +219,17 @@
           "to": "Chicago Bulls",
           "player_id": "04qrx",
           "player": "Josh Okogie",
-          "label": "Josh Okogie"
+          "label": "Josh Okogie",
+          "result": {
+            "points": 89.5,
+            "starts": 12,
+            "gp": 12,
+            "periods": 24,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
         },
         {
           "kind": "player",
@@ -204,590 +237,108 @@
           "to": "Chicago Bulls",
           "player_id": "004zd",
           "player": "Marc Gasol",
-          "label": "Marc Gasol"
+          "label": "Marc Gasol",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-11-22"
+          }
         },
         {
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Chicago Bulls",
-          "label": "2022 round 2 pick (Washington Wizards)"
+          "label": "2022 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "0621o",
+            "player": "Blake Wesley",
+            "certain": true
+          },
+          "result": {
+            "points": 72.5,
+            "starts": 11,
+            "gp": 7,
+            "periods": 95,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-02-03"
+          }
         },
         {
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Chicago Bulls",
-          "label": "2023 round 2 pick (Washington Wizards)"
+          "label": "2023 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06cdd",
+            "player": "Andre Jackson",
+            "certain": true
+          },
+          "next": {
+            "trade": "b7rwmvs2l6947f1d"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Houston Rockets",
-      "Washington Wizards",
-      "Chicago Bulls"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        13.25,
-        1
-      ],
-      [
-        0,
-        2,
-        0,
-        37.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        36.75,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        32.75,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        23.0,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        26.0,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        74.25,
-        1
-      ],
-      [
-        0,
-        8,
-        0,
-        26.5,
-        1
-      ],
-      [
-        0,
-        9,
-        0,
-        75.25,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        30.75,
-        1
-      ],
-      [
-        0,
-        11,
-        0,
-        71.25,
-        1
-      ],
-      [
-        0,
-        12,
-        0,
-        60.0,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        74.25,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        9.25,
-        1
-      ],
-      [
-        0,
-        15,
-        0,
-        107.0,
-        1
-      ],
-      [
-        0,
-        16,
-        0,
-        62.75,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        34.25,
-        1
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        40.75,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        77.75,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        56.75,
-        1
-      ],
-      [
-        0,
-        28,
-        0,
-        62.75,
-        1
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        35,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        36,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        37,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        0.5,
-        1
-      ],
-      [
-        1,
-        2,
-        0,
-        68.75,
-        1
-      ],
-      [
-        1,
-        3,
-        0,
-        32.0,
-        1
-      ],
-      [
-        1,
-        4,
-        0,
-        55.0,
-        1
-      ],
-      [
-        1,
-        5,
-        0,
-        28.0,
-        1
-      ],
-      [
-        1,
-        6,
-        0,
-        48.25,
-        1
-      ],
-      [
-        1,
-        7,
-        0,
-        73.5,
-        1
-      ],
-      [
-        1,
-        8,
-        0,
-        15.75,
-        1
-      ],
-      [
-        1,
-        9,
-        0,
-        25.0,
-        1
-      ],
-      [
-        1,
-        10,
-        0,
-        21.25,
-        1
-      ],
-      [
-        1,
-        11,
-        0,
-        43.0,
-        1
-      ],
-      [
-        1,
-        12,
-        0,
-        6.0,
-        1
-      ],
-      [
-        1,
-        13,
-        0,
-        37.5,
-        1
-      ],
-      [
-        1,
-        14,
-        0,
-        17.75,
-        1
-      ],
-      [
-        1,
-        15,
-        0,
-        49.75,
-        1
-      ],
-      [
-        1,
-        16,
-        0,
-        34.0,
-        1
-      ],
-      [
-        1,
-        17,
-        0,
-        61.25,
-        1
-      ],
-      [
-        1,
-        18,
-        0,
-        28.0,
-        1
-      ],
-      [
-        1,
-        19,
-        0,
-        68.0,
-        1
-      ],
-      [
-        1,
-        20,
-        0,
-        48.5,
-        1
-      ],
-      [
-        1,
-        21,
-        0,
-        0.0,
-        1
-      ],
-      [
-        1,
-        23,
-        0,
-        0.0,
-        1
-      ],
-      [
-        1,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        0,
-        7.0,
-        0
-      ],
-      [
-        1,
-        28,
-        0,
-        27.75,
-        1
-      ],
-      [
-        1,
-        29,
-        0,
-        21.75,
-        1
-      ],
-      [
-        1,
-        30,
-        0,
-        42.75,
-        1
-      ],
-      [
-        2,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        10,
-        2,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

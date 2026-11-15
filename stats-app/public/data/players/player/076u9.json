@@ -21,82 +21,305 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Charlotte Hornets",
+      "label": "2026 round 2 pick (Charlotte Hornets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-26",
+      "from": "Charlotte Hornets",
+      "team": "Oklahoma City Thunder",
+      "trade": "0lwk42u9m6dv18yt",
+      "label": "2026 round 2 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 29,
+      "date": "2026-01-26",
+      "from": "Oklahoma City Thunder",
+      "team": "Toronto Raptors",
+      "trade": "lam8ncmimkuwcqpi",
+      "label": "2026 round 2 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2026-27",
+      "period": 1,
+      "date": "2026-06-25",
+      "from": "Toronto Raptors",
+      "team": "Golden State Warriors",
+      "trade": "izdtmzbtmqta0wpg",
+      "label": "2026 round 2 pick, no. 17"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-03",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 47,
+      "pick": 17,
+      "overall": 47,
+      "original": "Charlotte Hornets",
+      "certain": true,
       "periods": 7,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Golden State Warriors"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
+  "trades": {
+    "izdtmzbtmqta0wpg": {
+      "date": "2026-06-25",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "label": "$6 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Golden State Warriors",
+          "label": "2026 round 2 pick, no. 17",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "076u9",
+            "player": "Izaiyah Nelson",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
       ]
-    ]
-  }
+    },
+    "lam8ncmimkuwcqpi": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2026 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "076u9",
+            "player": "Izaiyah Nelson",
+            "certain": true
+          },
+          "next": {
+            "trade": "izdtmzbtmqta0wpg"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06vy3",
+          "player": "Caleb Love",
+          "label": "Caleb Love",
+          "result": {
+            "points": 89.0,
+            "starts": 2,
+            "gp": 4,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-03-23"
+          }
+        }
+      ]
+    },
+    "0lwk42u9m6dv18yt": {
+      "date": "2025-01-26",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "05qtb",
+          "player": "Sam Merrill",
+          "label": "Sam Merrill",
+          "result": {
+            "points": 42.25,
+            "starts": 1,
+            "gp": 2,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson",
+          "result": {
+            "points": 308.0,
+            "starts": 5,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "player_id": "052fs",
+          "player": "Garrison Mathews",
+          "label": "Garrison Mathews",
+          "result": {
+            "points": 36.0,
+            "starts": 1,
+            "gp": 3,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-01-31"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "label": "2026 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "076tb",
+            "player": "Allen Graves",
+            "certain": true
+          },
+          "next": {
+            "trade": "uzng6ajcmck27c8b"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Utah Jazz"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Oklahoma City Thunder",
+          "label": "2026 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "076u9",
+            "player": "Izaiyah Nelson",
+            "certain": true
+          },
+          "next": {
+            "trade": "lam8ncmimkuwcqpi"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "player_id": "051p4",
+          "player": "Ty Jerome",
+          "label": "Ty Jerome",
+          "result": {
+            "points": 231.25,
+            "starts": 5,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-27"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Charlotte Hornets",
+          "player_id": "03nwn",
+          "player": "Bobby Portis",
+          "label": "Bobby Portis",
+          "result": {
+            "points": 151.0,
+            "starts": 2,
+            "gp": 4,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-03-14"
+          }
+        }
+      ]
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

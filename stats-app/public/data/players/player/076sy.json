@@ -52,6 +52,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Utah Jazz",
+      "label": "2026 round 1 pick (Utah Jazz)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 28,
+      "date": "2025-01-26",
+      "from": "Utah Jazz",
+      "team": "Houston Rockets",
+      "trade": "c0yl11uom6dr39pn",
+      "label": "2026 round 1 pick (Utah Jazz)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 1,
+      "date": "2025-08-07",
+      "from": "Houston Rockets",
+      "team": "Boston Celtics",
+      "trade": "yyv5fklbme1qbgi3",
+      "label": "2026 round 1 pick (Utah Jazz)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 12,
+      "date": "2025-11-27",
+      "from": "Boston Celtics",
+      "team": "Utah Jazz",
+      "trade": "yqdm26wgmih99jx3",
+      "label": "2026 round 1 pick (Utah Jazz)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -59,75 +97,313 @@
       "team": "Utah Jazz",
       "round": 1,
       "pick": 11,
+      "overall": 11,
+      "certain": true,
       "periods": 7,
       "starts": 3,
+      "gp": 5,
       "points": 114.0,
       "salary": 2700000,
       "contract": "R13"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Utah Jazz"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        9.5,
-        1
-      ],
-      [
-        0,
-        2,
-        0,
-        15.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        30.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        7.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        42.0,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        62.5,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        -5.0,
-        0
+  "trades": {
+    "yyv5fklbme1qbgi3": {
+      "date": "2025-08-07",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford",
+          "result": {
+            "points": 971.75,
+            "starts": 33,
+            "gp": 38,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-04"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          },
+          "next": {
+            "trade": "yqdm26wgmih99jx3"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Utah Jazz"
+          }
+        }
       ]
-    ]
-  }
+    },
+    "yqdm26wgmih99jx3": {
+      "date": "2025-11-27",
+      "season": "2025-26",
+      "period": 12,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "049kd",
+          "player": "Deandre Ayton",
+          "label": "Deandre Ayton",
+          "result": {
+            "points": 946.25,
+            "starts": 22,
+            "gp": 31,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-20"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall",
+          "result": {
+            "points": 55.25,
+            "starts": 2,
+            "gp": 3,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-28"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mkk",
+          "player": "Ryan Dunn",
+          "label": "Ryan Dunn",
+          "result": {
+            "points": 450.75,
+            "starts": 19,
+            "gp": 31,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-19"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mlx",
+          "player": "Melvin Ajinca",
+          "label": "Melvin Ajinca",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-20"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          },
+          "result": {
+            "points": 114.0,
+            "starts": 3,
+            "gp": 5,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "05qtt",
+          "player": "Onyeka Okongwu",
+          "label": "Onyeka Okongwu",
+          "result": {
+            "points": 1808.0,
+            "starts": 26,
+            "gp": 45,
+            "periods": 29,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter",
+          "result": {
+            "points": 1147.75,
+            "starts": 18,
+            "gp": 25,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "rhyr5c70msr9j4s3"
+          }
+        }
+      ]
+    },
+    "c0yl11uom6dr39pn": {
+      "date": "2025-01-26",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Phoenix Suns",
+          "label": "2025 round 1 pick (Houston Rockets)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06v5x",
+            "player": "Carter Bryant",
+            "certain": true
+          },
+          "next": {
+            "trade": "ljnizeewmcnudnmr"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Utah Jazz",
+          "player_id": "0621g",
+          "player": "Tari Eason",
+          "label": "Tari Eason",
+          "result": {
+            "points": 186.0,
+            "starts": 4,
+            "gp": 6,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Phoenix Suns",
+          "player_id": "0529c",
+          "player": "Dean Wade",
+          "label": "Dean Wade",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Houston Rockets",
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          },
+          "next": {
+            "trade": "yyv5fklbme1qbgi3"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Utah Jazz"
+          }
+        }
+      ]
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -21,82 +21,342 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2026 round 2 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Boston Celtics",
+      "team": "New York Knicks",
+      "trade": "46b3rvz8lxz156yq",
+      "label": "2026 round 2 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 8,
+      "date": "2025-11-14",
+      "from": "New York Knicks",
+      "team": "Boston Celtics",
+      "trade": "rwavofofmhyybw3d",
+      "label": "2026 round 2 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 28,
+      "date": "2026-01-23",
+      "from": "Boston Celtics",
+      "team": "Portland Trail Blazers",
+      "trade": "22yya7camkqj2lli",
+      "label": "2026 round 2 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-03",
       "team": "Portland Trail Blazers",
       "round": 2,
-      "pick": 43,
+      "pick": 13,
+      "overall": 43,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 7,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Portland Trail Blazers"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
+  "trades": {
+    "46b3rvz8lxz156yq": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "label": "2026 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "076tt",
+            "player": "Ugonna Onyenso",
+            "certain": true
+          },
+          "next": {
+            "trade": "rwavofofmhyybw3d"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "label": "2024 round 2 pick, no. 14",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "chb5mtn3m33d71lg"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "label": "2024 round 2 pick, no. 8"
+        }
       ]
-    ]
-  }
+    },
+    "22yya7camkqj2lli": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Portland Trail Blazers",
+          "player_id": "051pa",
+          "player": "Kevin Porter",
+          "label": "Kevin Porter",
+          "result": {
+            "points": 191.0,
+            "starts": 2,
+            "gp": 4,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-04-03"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "076tt",
+            "player": "Ugonna Onyenso",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson",
+          "result": {
+            "points": 111.0,
+            "starts": 6,
+            "gp": 7,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "wemsb0xwmsu8e3ur"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ajis8ve4mkv3b33w"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-04"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Boston Celtics",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          },
+          "next": {
+            "trade": "clvorhzpmkuzzfxs"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        }
+      ]
+    },
+    "rwavofofmhyybw3d": {
+      "date": "2025-11-14",
+      "season": "2025-26",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "player_id": "04qrx",
+          "player": "Josh Okogie",
+          "label": "Josh Okogie",
+          "result": {
+            "points": 363.5,
+            "starts": 13,
+            "gp": 24,
+            "periods": 26,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-03-16"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "player_id": "06cdf",
+          "player": "Julian Phillips",
+          "label": "Julian Phillips",
+          "result": {
+            "points": 84.0,
+            "starts": 6,
+            "gp": 8,
+            "periods": 19,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "e3vz5ltfmkkuep3d"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "label": "2026 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "076tt",
+            "player": "Ugonna Onyenso",
+            "certain": true
+          },
+          "next": {
+            "trade": "22yya7camkqj2lli"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "label": "$2 budget"
+        }
+      ]
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

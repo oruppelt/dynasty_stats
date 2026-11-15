@@ -49,15 +49,86 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Sacramento Kings",
+      "label": "2021 round 2 pick (Sacramento Kings)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 12,
+      "date": "2019-11-28",
+      "from": "Sacramento Kings",
+      "team": "Golden State Warriors",
+      "trade": "8lzeowgvk3ip8kj8",
+      "label": "2021 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-11-24",
+      "from": "Golden State Warriors",
+      "team": "New York Knicks",
+      "trade": "wogha7g7khvzisbh",
+      "label": "2021 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 22,
+      "date": "2021-03-06",
+      "from": "New York Knicks",
+      "team": "Sacramento Kings",
+      "trade": "etfluotfklxsl8yb",
+      "label": "2021 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 24,
+      "date": "2021-03-13",
+      "from": "Sacramento Kings",
+      "team": "Atlanta Hawks",
+      "trade": "gzvk4aj0km80h0pp",
+      "label": "2021 round 2 pick (Sacramento Kings)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-02",
+      "from": "Atlanta Hawks",
+      "team": "Orlando Magic",
+      "trade": "82msv72nkruxx4bm",
+      "label": "2021 round 2 pick, no. 24"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-03",
+      "from": "Orlando Magic",
+      "team": "Sacramento Kings",
+      "trade": "np0m06bzkrvu1hml",
+      "label": "2021 round 2 pick, no. 24"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
       "date": "2021-08-03",
       "team": "Sacramento Kings",
       "round": 2,
-      "pick": 54,
+      "pick": 24,
+      "overall": 54,
+      "certain": true,
       "periods": 12,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -72,6 +143,7 @@
       "trade": "hbk0cwdukwl4dkmr",
       "periods": 54,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -85,6 +157,216 @@
     }
   ],
   "trades": {
+    "wogha7g7khvzisbh": {
+      "date": "2020-11-24",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "New York Knicks",
+          "label": "2021 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          },
+          "next": {
+            "trade": "etfluotfklxsl8yb"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick, no. 23"
+        }
+      ]
+    },
+    "82msv72nkruxx4bm": {
+      "date": "2021-08-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "label": "2021 round 2 pick, no. 24",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          },
+          "next": {
+            "trade": "np0m06bzkrvu1hml"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 13,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "mwwyzn4ykwro4f2f"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2021 round 2 pick, no. 17",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "05ujq",
+            "player": "Luka Garza",
+            "certain": true
+          },
+          "result": {
+            "points": 119.5,
+            "starts": 9,
+            "gp": 12,
+            "periods": 46,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ztms8t1klb56v07z"
+          }
+        }
+      ]
+    },
+    "gzvk4aj0km80h0pp": {
+      "date": "2021-03-13",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "001bo",
+          "player": "Paul Millsap",
+          "label": "Paul Millsap",
+          "result": {
+            "points": 262.25,
+            "starts": 5,
+            "gp": 10,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-04-05"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors",
+          "result": {
+            "points": 242.5,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "label": "2021 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          },
+          "next": {
+            "trade": "82msv72nkruxx4bm"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        }
+      ]
+    },
+    "np0m06bzkrvu1hml": {
+      "date": "2021-08-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick, no. 24",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "hbk0cwdukwl4dkmr"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "label": "$5 budget"
+        }
+      ]
+    },
     "hbk0cwdukwl4dkmr": {
       "date": "2021-11-29",
       "season": "2021-22",
@@ -96,7 +378,17 @@
           "to": "Sacramento Kings",
           "player_id": "05uib",
           "player": "Cade Cunningham",
-          "label": "Cade Cunningham"
+          "label": "Cade Cunningham",
+          "result": {
+            "points": 1393.75,
+            "starts": 23,
+            "gp": 38,
+            "periods": 38,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fnutgtpilbqehm1q"
+          }
         },
         {
           "kind": "player",
@@ -104,7 +396,17 @@
           "to": "Sacramento Kings",
           "player_id": "01sc8",
           "player": "John Wall",
-          "label": "John Wall"
+          "label": "John Wall",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
         },
         {
           "kind": "player",
@@ -112,7 +414,17 @@
           "to": "Phoenix Suns",
           "player_id": "03bxn",
           "player": "T.J. Warren",
-          "label": "T.J. Warren"
+          "label": "T.J. Warren",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
         },
         {
           "kind": "player",
@@ -120,7 +432,17 @@
           "to": "Phoenix Suns",
           "player_id": "042n7",
           "player": "Domantas Sabonis",
-          "label": "Domantas Sabonis"
+          "label": "Domantas Sabonis",
+          "result": {
+            "points": 6464.0,
+            "starts": 80,
+            "gp": 129,
+            "periods": 86,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
         },
         {
           "kind": "player",
@@ -128,552 +450,234 @@
           "to": "Phoenix Suns",
           "player_id": "05uj8",
           "player": "Rokas Jokubaitis",
-          "label": "Rokas Jokubaitis"
+          "label": "Rokas Jokubaitis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 54,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-02-10"
+          }
         },
         {
           "kind": "pick",
           "from": "Sacramento Kings",
           "to": "Phoenix Suns",
-          "label": "2023 round 1 pick (Boston Celtics)"
+          "label": "2023 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06cc2",
+            "player": "Gradey Dick",
+            "certain": true
+          },
+          "next": {
+            "trade": "5w9td9m5kynerwmb"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Orlando Magic"
+          }
+        }
+      ]
+    },
+    "etfluotfklxsl8yb": {
+      "date": "2021-03-06",
+      "season": "2020-21",
+      "period": 22,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Sacramento Kings",
+          "player_id": "03nwq",
+          "player": "Christian Wood",
+          "label": "Christian Wood",
+          "result": {
+            "points": 267.25,
+            "starts": 5,
+            "gp": 7,
+            "periods": 8,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          },
+          "next": {
+            "trade": "hbk0cwdukwl4dkmr"
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 12,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "New York Knicks",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin",
+          "result": {
+            "points": 974.5,
+            "starts": 39,
+            "gp": 64,
+            "periods": 74,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "New York Knicks",
+          "player_id": "0019g",
+          "player": "LaMarcus Aldridge",
+          "label": "LaMarcus Aldridge",
+          "result": {
+            "points": 28.25,
+            "starts": 1,
+            "gp": 1,
+            "periods": 8,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
+        }
+      ]
+    },
+    "8lzeowgvk3ip8kj8": {
+      "date": "2019-11-28",
+      "season": "2019-20",
+      "period": 12,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Sacramento Kings",
+          "player_id": "027ov",
+          "player": "Alec Burks",
+          "label": "Alec Burks",
+          "result": {
+            "points": 938.25,
+            "starts": 16,
+            "gp": 27,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "player_id": "03ad5",
+          "player": "Trey Lyles",
+          "label": "Trey Lyles",
+          "result": {
+            "points": 628.5,
+            "starts": 21,
+            "gp": 33,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "05uj8",
+            "player": "Rokas Jokubaitis",
+            "certain": true
+          },
+          "next": {
+            "trade": "wogha7g7khvzisbh"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Sacramento Kings",
-      "Phoenix Suns"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        34,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        35,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        37,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        38,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        39,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        33,
-        1,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

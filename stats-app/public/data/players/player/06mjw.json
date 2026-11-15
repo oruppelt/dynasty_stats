@@ -100,6 +100,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Memphis Grizzlies",
+      "label": "2024 round 1 pick (Memphis Grizzlies)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 10,
+      "date": "2022-11-20",
+      "from": "Memphis Grizzlies",
+      "team": "Washington Wizards",
+      "trade": "na46l1galanv6p4z",
+      "label": "2024 round 1 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-07-26",
+      "from": "Washington Wizards",
+      "team": "Oklahoma City Thunder",
+      "trade": "lz8mddj1lkk2t9tb",
+      "label": "2024 round 1 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 9,
+      "date": "2023-11-20",
+      "from": "Oklahoma City Thunder",
+      "team": "Los Angeles Lakers",
+      "trade": "t7clusd2lp79luid",
+      "label": "2024 round 1 pick (Memphis Grizzlies)"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -107,8 +145,12 @@
       "team": "Los Angeles Lakers",
       "round": 1,
       "pick": 7,
+      "overall": 7,
+      "original": "Memphis Grizzlies",
+      "certain": true,
       "periods": 66,
       "starts": 60,
+      "gp": 91,
       "points": 2741.75,
       "salary": 3553000,
       "contract": "R13"
@@ -129,12 +171,139 @@
       "trade": "a3b1c6mrmqqjlm1s",
       "periods": 7,
       "starts": 7,
+      "gp": 12,
       "points": 377.75,
       "salary": 3553000,
       "contract": "R11"
     }
   ],
   "trades": {
+    "na46l1galanv6p4z": {
+      "date": "2022-11-20",
+      "season": "2022-23",
+      "period": 11,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Washington Wizards",
+          "player_id": "043ib",
+          "player": "Dorian Finney-Smith",
+          "label": "Dorian Finney-Smith",
+          "result": {
+            "points": 652.75,
+            "starts": 16,
+            "gp": 24,
+            "periods": 23,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "oflw47jqljtoulxm"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Washington Wizards",
+          "player_id": "042nw",
+          "player": "Malcolm Brogdon",
+          "label": "Malcolm Brogdon",
+          "result": {
+            "points": 761.75,
+            "starts": 14,
+            "gp": 24,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "c78464erlcyppe9f"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Washington Wizards",
+          "label": "2024 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06mjw",
+            "player": "Stephon Castle",
+            "certain": true
+          },
+          "next": {
+            "trade": "lz8mddj1lkk2t9tb"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Memphis Grizzlies",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard",
+          "result": {
+            "points": 1359.25,
+            "starts": 20,
+            "gp": 28,
+            "periods": 23,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qsl",
+          "player": "Patrick Williams",
+          "label": "Patrick Williams",
+          "result": {
+            "points": 900.0,
+            "starts": 20,
+            "gp": 37,
+            "periods": 23,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-23"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Memphis Grizzlies",
+          "label": "2023 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06cdf",
+            "player": "Julian Phillips",
+            "certain": true
+          },
+          "result": {
+            "points": 12.5,
+            "starts": 2,
+            "gp": 3,
+            "periods": 60,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "rrz52y71m6ewxnpo"
+          }
+        }
+      ]
+    },
     "a3b1c6mrmqqjlm1s": {
       "date": "2026-06-23",
       "season": "2026-27",
@@ -146,13 +315,42 @@
           "to": "New Orleans Pelicans",
           "player_id": "06mjw",
           "player": "Stephon Castle",
-          "label": "Stephon Castle"
+          "label": "Stephon Castle",
+          "result": {
+            "points": 377.75,
+            "starts": 7,
+            "gp": 12,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Clippers",
           "to": "New Orleans Pelicans",
-          "label": "2026 round 2 pick (New Orleans Pelicans)"
+          "label": "2026 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "076u5",
+            "player": "Jaron Pierre",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "4msmuef6msq8vgv0"
+          }
         },
         {
           "kind": "pick",
@@ -166,546 +364,252 @@
           "to": "Los Angeles Clippers",
           "player_id": "04qsa",
           "player": "Jalen Brunson",
-          "label": "Jalen Brunson"
+          "label": "Jalen Brunson",
+          "result": {
+            "points": 468.25,
+            "starts": 7,
+            "gp": 11,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
+    "t7clusd2lp79luid": {
+      "date": "2023-11-20",
+      "season": "2023-24",
+      "period": 9,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "02xg9",
+          "player": "Rudy Gobert",
+          "label": "Rudy Gobert",
+          "result": {
+            "points": 2651.25,
+            "starts": 41,
+            "gp": 66,
+            "periods": 42,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "f545zgb6m50zzjc9"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic",
+          "result": {
+            "points": 715.5,
+            "starts": 13,
+            "gp": 19,
+            "periods": 13,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0x0h24u3lr0j2d6r"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson",
+          "result": {
+            "points": 449.25,
+            "starts": 10,
+            "gp": 16,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "7nvjxigzlrahc7kt"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George",
+          "result": {
+            "points": 1190.75,
+            "starts": 16,
+            "gp": 26,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "yjhuxq3zlrf24wir"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "06cc2",
+          "player": "Gradey Dick",
+          "label": "Gradey Dick",
+          "result": {
+            "points": 1910.5,
+            "starts": 58,
+            "gp": 93,
+            "periods": 90,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "player_id": "0621m",
+          "player": "David Roddy",
+          "label": "David Roddy",
+          "result": {
+            "points": 577.75,
+            "starts": 18,
+            "gp": 29,
+            "periods": 24,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-30"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "2024 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06mjw",
+            "player": "Stephon Castle",
+            "certain": true
+          },
+          "result": {
+            "points": 2741.75,
+            "starts": 60,
+            "gp": 91,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "a3b1c6mrmqqjlm1s"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Los Angeles Lakers",
+          "label": "2024 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 26,
+            "overall": 26,
+            "player_id": "06mlr",
+            "player": "Jamal Shead",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
+        }
+      ]
+    },
+    "lz8mddj1lkk2t9tb": {
+      "date": "2023-07-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Washington Wizards",
+          "player_id": "06cda",
+          "player": "James Nnaji",
+          "label": "James Nnaji",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 65,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-08"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Oklahoma City Thunder",
+          "label": "2024 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06mjw",
+            "player": "Stephon Castle",
+            "certain": true
+          },
+          "next": {
+            "trade": "t7clusd2lp79luid"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Los Angeles Lakers",
-      "Los Angeles Clippers",
-      "New Orleans Pelicans"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        15.0,
-        1
-      ],
-      [
-        0,
-        2,
-        0,
-        18.75,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        37.0,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        5.5,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        69.75,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        42.5,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        51.0,
-        1
-      ],
-      [
-        0,
-        8,
-        0,
-        65.75,
-        1
-      ],
-      [
-        0,
-        9,
-        0,
-        52.25,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        29.5,
-        1
-      ],
-      [
-        0,
-        11,
-        0,
-        68.25,
-        1
-      ],
-      [
-        0,
-        12,
-        0,
-        5.25,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        58.25,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        70.75,
-        1
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        2.5,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        12.5,
-        1
-      ],
-      [
-        0,
-        18,
-        0,
-        19.75,
-        1
-      ],
-      [
-        0,
-        19,
-        0,
-        36.75,
-        1
-      ],
-      [
-        0,
-        20,
-        0,
-        -3.5,
-        1
-      ],
-      [
-        0,
-        21,
-        0,
-        36.75,
-        1
-      ],
-      [
-        0,
-        22,
-        0,
-        34.0,
-        1
-      ],
-      [
-        0,
-        23,
-        0,
-        28.25,
-        1
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        25,
-        0,
-        70.0,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        40.0,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        0.5,
-        1
-      ],
-      [
-        0,
-        28,
-        0,
-        32.75,
-        1
-      ],
-      [
-        0,
-        29,
-        0,
-        33.0,
-        1
-      ],
-      [
-        0,
-        30,
-        0,
-        83.25,
-        1
-      ],
-      [
-        0,
-        31,
-        0,
-        48.75,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        72.25,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        81.5,
-        1
-      ],
-      [
-        1,
-        1,
-        1,
-        37.75,
-        1
-      ],
-      [
-        1,
-        2,
-        1,
-        29.0,
-        1
-      ],
-      [
-        1,
-        3,
-        1,
-        99.75,
-        1
-      ],
-      [
-        1,
-        4,
-        1,
-        58.75,
-        1
-      ],
-      [
-        1,
-        5,
-        1,
-        38.5,
-        1
-      ],
-      [
-        1,
-        6,
-        1,
-        92.5,
-        1
-      ],
-      [
-        1,
-        7,
-        1,
-        108.5,
-        1
-      ],
-      [
-        1,
-        8,
-        1,
-        45.75,
-        1
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        12,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        80.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        19.0,
-        1
-      ],
-      [
-        1,
-        17,
-        1,
-        29.25,
-        1
-      ],
-      [
-        1,
-        18,
-        1,
-        85.25,
-        1
-      ],
-      [
-        1,
-        19,
-        1,
-        69.25,
-        1
-      ],
-      [
-        1,
-        20,
-        1,
-        33.25,
-        1
-      ],
-      [
-        1,
-        21,
-        1,
-        33.75,
-        1
-      ],
-      [
-        1,
-        22,
-        1,
-        88.25,
-        1
-      ],
-      [
-        1,
-        23,
-        1,
-        69.25,
-        1
-      ],
-      [
-        1,
-        24,
-        1,
-        26.25,
-        1
-      ],
-      [
-        1,
-        25,
-        1,
-        86.0,
-        1
-      ],
-      [
-        1,
-        26,
-        1,
-        41.75,
-        1
-      ],
-      [
-        1,
-        27,
-        1,
-        117.5,
-        1
-      ],
-      [
-        1,
-        28,
-        1,
-        18.5,
-        1
-      ],
-      [
-        1,
-        29,
-        1,
-        37.25,
-        1
-      ],
-      [
-        1,
-        30,
-        1,
-        39.0,
-        1
-      ],
-      [
-        1,
-        31,
-        1,
-        84.75,
-        1
-      ],
-      [
-        1,
-        32,
-        1,
-        89.25,
-        1
-      ],
-      [
-        1,
-        33,
-        1,
-        72.0,
-        1
-      ],
-      [
-        2,
-        1,
-        2,
-        32.25,
-        1
-      ],
-      [
-        2,
-        2,
-        2,
-        84.0,
-        1
-      ],
-      [
-        2,
-        3,
-        2,
-        75.25,
-        1
-      ],
-      [
-        2,
-        4,
-        2,
-        9.0,
-        1
-      ],
-      [
-        2,
-        5,
-        2,
-        65.75,
-        1
-      ],
-      [
-        2,
-        6,
-        2,
-        70.5,
-        1
-      ],
-      [
-        2,
-        7,
-        2,
-        41.0,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

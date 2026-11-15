@@ -63,15 +63,77 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Los Angeles Clippers",
+      "label": "2022 round 2 pick (Los Angeles Clippers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-08-12",
+      "from": "Los Angeles Clippers",
+      "team": "Atlanta Hawks",
+      "trade": "y6t02lq8ks8pna2n",
+      "label": "2022 round 2 pick (Los Angeles Clippers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 1,
+      "date": "2021-09-01",
+      "from": "Atlanta Hawks",
+      "team": "Orlando Magic",
+      "trade": "olra9olekt197as1",
+      "label": "2022 round 2 pick (Los Angeles Clippers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-08",
+      "from": "Orlando Magic",
+      "team": "Chicago Bulls",
+      "trade": "yclg2r1dl45ic5rx",
+      "label": "2022 round 2 pick, no. 27"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-20",
+      "from": "Chicago Bulls",
+      "team": "San Antonio Spurs",
+      "trade": "vdfb3txdl4n5o5bc",
+      "label": "2022 round 2 pick, no. 27"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-06-26",
+      "from": "San Antonio Spurs",
+      "team": "Golden State Warriors",
+      "trade": "uo1sp6usl4v6u44q",
+      "label": "2022 round 2 pick, no. 27"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-29",
       "team": "Golden State Warriors",
       "round": 2,
-      "pick": 57,
+      "pick": 27,
+      "overall": 57,
+      "original": "Los Angeles Clippers",
+      "certain": true,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -84,6 +146,7 @@
       "trade": "4z37uwscl6cbia4r",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -96,6 +159,7 @@
       "trade": "dbubp4f4l6f3gujf",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -108,6 +172,7 @@
       "trade": "9fzowpbal97efy5l",
       "periods": 29,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -122,6 +187,7 @@
       "trade": "1wol7nl2lde7omt5",
       "periods": 27,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -136,6 +202,7 @@
       "trade": "7nvjxigzlrahc7kt",
       "periods": 9,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -149,6 +216,155 @@
     }
   ],
   "trades": {
+    "olra9olekt197as1": {
+      "date": "2021-09-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "04jwd",
+          "player": "Royce O'Neale",
+          "label": "Royce O'Neale",
+          "result": {
+            "points": 1293.25,
+            "starts": 29,
+            "gp": 47,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "kx1kwxiwl4wjgppq"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "label": "2022 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          },
+          "next": {
+            "trade": "yclg2r1dl45ic5rx"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsa",
+          "player": "Jalen Brunson",
+          "label": "Jalen Brunson",
+          "result": {
+            "points": 446.25,
+            "starts": 9,
+            "gp": 14,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "76hzrghukw3fve7v"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06223",
+            "player": "Bryce McGowens",
+            "certain": true
+          },
+          "next": {
+            "trade": "qjr5uydxky8oj5x3"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
+        }
+      ]
+    },
+    "yclg2r1dl45ic5rx": {
+      "date": "2022-06-08",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Orlando Magic",
+          "player_id": "05qth",
+          "player": "Tyrell Terry",
+          "label": "Tyrell Terry",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Orlando Magic",
+          "label": "2022 round 2 pick, no. 19",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "04eww",
+            "player": null,
+            "certain": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Chicago Bulls",
+          "label": "2022 round 2 pick, no. 27",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          },
+          "next": {
+            "trade": "vdfb3txdl4n5o5bc"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        }
+      ]
+    },
     "dbubp4f4l6f3gujf": {
       "date": "2022-08-04",
       "season": "2022-23",
@@ -160,7 +376,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "0623h",
           "player": "Alondes Williams",
-          "label": "Alondes Williams"
+          "label": "Alondes Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9fzowpbal97efy5l"
+          }
         },
         {
           "kind": "player",
@@ -168,7 +394,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "027ou",
           "player": "Klay Thompson",
-          "label": "Klay Thompson"
+          "label": "Klay Thompson",
+          "result": {
+            "points": 1561.5,
+            "starts": 33,
+            "gp": 43,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-22"
+          }
         },
         {
           "kind": "player",
@@ -176,31 +412,114 @@
           "to": "Oklahoma City Thunder",
           "player_id": "048zt",
           "player": "Derrick Jones",
-          "label": "Derrick Jones"
+          "label": "Derrick Jones",
+          "result": {
+            "points": 670.0,
+            "starts": 30,
+            "gp": 44,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-22"
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Lakers",
           "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Golden State Warriors)"
+          "label": "2023 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06caa",
+            "player": "Ben Sheppard",
+            "certain": true
+          },
+          "result": {
+            "points": 544.25,
+            "starts": 20,
+            "gp": 32,
+            "periods": 71,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "b7zez6g3mhsz8kok"
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Lakers",
           "to": "Oklahoma City Thunder",
-          "label": "2023 round 1 pick (Oklahoma City Thunder)"
+          "label": "2023 round 1 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 9,
+            "overall": 9,
+            "player_id": "06cc0",
+            "player": "Taylor Hendricks",
+            "certain": true
+          },
+          "result": {
+            "points": 207.75,
+            "starts": 11,
+            "gp": 12,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9zd79sc2m331fy8y"
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Lakers",
           "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Oklahoma City Thunder)"
+          "label": "2023 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06cda",
+            "player": "James Nnaji",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "lz8mddj1lkk2t9tb"
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Lakers",
           "to": "Oklahoma City Thunder",
-          "label": "2023 round 1 pick (Denver Nuggets)"
+          "label": "2023 round 1 pick (Denver Nuggets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06cac",
+            "player": "Cason Wallace",
+            "certain": true
+          },
+          "next": {
+            "trade": "whpo1bh4lj410r59"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
         },
         {
           "kind": "player",
@@ -208,7 +527,17 @@
           "to": "Los Angeles Lakers",
           "player_id": "02xg9",
           "player": "Rudy Gobert",
-          "label": "Rudy Gobert"
+          "label": "Rudy Gobert",
+          "result": {
+            "points": 2197.25,
+            "starts": 41,
+            "gp": 59,
+            "periods": 41,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "t7clusd2lp79luid"
+          }
         },
         {
           "kind": "player",
@@ -216,7 +545,17 @@
           "to": "Los Angeles Lakers",
           "player_id": "027p4",
           "player": "Tobias Harris",
-          "label": "Tobias Harris"
+          "label": "Tobias Harris",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "xmox8ksrl9e24fip"
+          }
         },
         {
           "kind": "budget",
@@ -237,7 +576,17 @@
           "to": "Utah Jazz",
           "player_id": "0623h",
           "player": "Alondes Williams",
-          "label": "Alondes Williams"
+          "label": "Alondes Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1wol7nl2lde7omt5"
+          }
         },
         {
           "kind": "player",
@@ -245,7 +594,17 @@
           "to": "Utah Jazz",
           "player_id": "051pw",
           "player": "Jalen McDaniels",
-          "label": "Jalen McDaniels"
+          "label": "Jalen McDaniels",
+          "result": {
+            "points": 1199.0,
+            "starts": 24,
+            "gp": 44,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "tbw260rxldbmy6ec"
+          }
         },
         {
           "kind": "player",
@@ -253,7 +612,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "027os",
           "player": "Kemba Walker",
-          "label": "Kemba Walker"
+          "label": "Kemba Walker",
+          "result": {
+            "points": 53.5,
+            "starts": 8,
+            "gp": 6,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-22"
+          }
         },
         {
           "kind": "player",
@@ -261,7 +630,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "05ujg",
           "player": "Isaiah Livers",
-          "label": "Isaiah Livers"
+          "label": "Isaiah Livers",
+          "result": {
+            "points": 287.0,
+            "starts": 10,
+            "gp": 19,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1ikem71elb0p3dff"
+          }
         },
         {
           "kind": "player",
@@ -269,13 +648,42 @@
           "to": "Oklahoma City Thunder",
           "player_id": "0621m",
           "player": "David Roddy",
-          "label": "David Roddy"
+          "label": "David Roddy",
+          "result": {
+            "points": 612.5,
+            "starts": 26,
+            "gp": 42,
+            "periods": 41,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "t7clusd2lp79luid"
+          }
         },
         {
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Oklahoma City Thunder",
-          "label": "2024 round 2 pick (Portland Trail Blazers)"
+          "label": "2024 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "06mlq",
+            "player": "Pelle Larsson",
+            "certain": true
+          },
+          "result": {
+            "points": 97.5,
+            "starts": 6,
+            "gp": 7,
+            "periods": 18,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "f545zgb6m50zzjc9"
+          }
         }
       ]
     },
@@ -290,7 +698,17 @@
           "to": "Utah Jazz",
           "player_id": "04jw4",
           "player": "Maxi Kleber",
-          "label": "Maxi Kleber"
+          "label": "Maxi Kleber",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "b8r8172jldexl7cs"
+          }
         },
         {
           "kind": "player",
@@ -298,7 +716,17 @@
           "to": "Charlotte Hornets",
           "player_id": "06233",
           "player": "Ron Harper",
-          "label": "Ron Harper"
+          "label": "Ron Harper",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "7nvjxigzlrahc7kt"
+          }
         },
         {
           "kind": "player",
@@ -306,40 +734,297 @@
           "to": "Charlotte Hornets",
           "player_id": "0623h",
           "player": "Alondes Williams",
-          "label": "Alondes Williams"
+          "label": "Alondes Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "7nvjxigzlrahc7kt"
+          }
         },
         {
           "kind": "pick",
           "from": "Utah Jazz",
           "to": "Charlotte Hornets",
-          "label": "2023 round 2 pick (Utah Jazz)"
+          "label": "2023 round 2 pick (Utah Jazz)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "06cd3",
+            "player": "Emoni Bates",
+            "certain": true
+          },
+          "next": {
+            "trade": "nu3ujh51ldej0oph"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
         }
       ]
     },
-    "4z37uwscl6cbia4r": {
-      "date": "2022-08-02",
+    "uo1sp6usl4v6u44q": {
+      "date": "2022-06-26",
       "season": "2022-23",
       "period": 1,
       "items": [
         {
-          "kind": "player",
+          "kind": "budget",
           "from": "Golden State Warriors",
-          "to": "Los Angeles Lakers",
-          "player_id": "0623h",
-          "player": "Alondes Williams",
-          "label": "Alondes Williams"
+          "to": "San Antonio Spurs",
+          "label": "$5 budget"
         },
         {
           "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Los Angeles Lakers",
-          "label": "2023 round 2 pick (Golden State Warriors)"
+          "from": "San Antonio Spurs",
+          "to": "Golden State Warriors",
+          "label": "2022 round 2 pick, no. 27",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "4z37uwscl6cbia4r"
+          }
+        }
+      ]
+    },
+    "y6t02lq8ks8pna2n": {
+      "date": "2021-08-12",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon",
+          "result": {
+            "points": 735.75,
+            "starts": 21,
+            "gp": 36,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "04qrk",
+          "player": "Trae Young",
+          "label": "Trae Young",
+          "result": {
+            "points": 2410.25,
+            "starts": 31,
+            "gp": 49,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "051pj",
+          "player": "Alen Smailagic",
+          "label": "Alen Smailagic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "d2jlztcrkt09j3wo"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtv",
+          "player": "Tyrese Haliburton",
+          "label": "Tyrese Haliburton",
+          "result": {
+            "points": 4265.5,
+            "starts": 58,
+            "gp": 93,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-23"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 1 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "0621k",
+            "player": "Christian Braun",
+            "certain": true
+          },
+          "next": {
+            "trade": "d2jlztcrkt09j3wo"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          },
+          "next": {
+            "trade": "olra9olekt197as1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2023 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06ccu",
+            "player": "Tristan Vukcevic",
+            "certain": true
+          },
+          "next": {
+            "trade": "nsziz30xlccebfbg"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
+          }
+        }
+      ]
+    },
+    "vdfb3txdl4n5o5bc": {
+      "date": "2022-06-20",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "San Antonio Spurs",
+          "label": "2022 round 2 pick, no. 27",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          },
+          "next": {
+            "trade": "uo1sp6usl4v6u44q"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
         },
         {
           "kind": "budget",
-          "from": "Los Angeles Lakers",
-          "to": "Golden State Warriors",
+          "from": "Chicago Bulls",
+          "to": "San Antonio Spurs",
           "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "caq0c945l69jh4fc"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "label": "2024 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          },
+          "next": {
+            "trade": "o7egut5nlbsb9x0e"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
         }
       ]
     },
@@ -354,7 +1039,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "06233",
           "player": "Ron Harper",
-          "label": "Ron Harper"
+          "label": "Ron Harper",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-01-12"
+          }
         },
         {
           "kind": "player",
@@ -362,7 +1057,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "0623h",
           "player": "Alondes Williams",
-          "label": "Alondes Williams"
+          "label": "Alondes Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-21"
+          }
         },
         {
           "kind": "player",
@@ -370,19 +1075,61 @@
           "to": "Oklahoma City Thunder",
           "player_id": "0017e",
           "player": "Chris Paul",
-          "label": "Chris Paul"
+          "label": "Chris Paul",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
         },
         {
           "kind": "pick",
           "from": "Charlotte Hornets",
           "to": "Oklahoma City Thunder",
-          "label": "2025 round 2 pick (Charlotte Hornets)"
+          "label": "2025 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06v8j",
+            "player": "John Tonje",
+            "certain": true
+          },
+          "next": {
+            "trade": "0gk8a169mcpx4e4d"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Brooklyn Nets"
+          }
         },
         {
           "kind": "pick",
           "from": "Charlotte Hornets",
           "to": "Oklahoma City Thunder",
-          "label": "2025 round 1 pick (Charlotte Hornets)"
+          "label": "2025 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "06v82",
+            "player": "Adou Thiero",
+            "certain": true
+          },
+          "next": {
+            "trade": "9zd79sc2m331fy8y"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Cleveland Cavaliers"
+          }
         },
         {
           "kind": "player",
@@ -390,7 +1137,17 @@
           "to": "Charlotte Hornets",
           "player_id": "03byk",
           "player": "Jordan Clarkson",
-          "label": "Jordan Clarkson"
+          "label": "Jordan Clarkson",
+          "result": {
+            "points": 855.0,
+            "starts": 23,
+            "gp": 32,
+            "periods": 37,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0lwk42u9m6dv18yt"
+          }
         },
         {
           "kind": "player",
@@ -398,7 +1155,17 @@
           "to": "Charlotte Hornets",
           "player_id": "04ewd",
           "player": "Luke Kennard",
-          "label": "Luke Kennard"
+          "label": "Luke Kennard",
+          "result": {
+            "points": 33.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-01"
+          }
         },
         {
           "kind": "budget",
@@ -407,532 +1174,96 @@
           "label": "$21 budget"
         }
       ]
+    },
+    "4z37uwscl6cbia4r": {
+      "date": "2022-08-02",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "0623h",
+          "player": "Alondes Williams",
+          "label": "Alondes Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "dbubp4f4l6f3gujf"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "label": "2023 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06caa",
+            "player": "Ben Sheppard",
+            "certain": true
+          },
+          "next": {
+            "trade": "dbubp4f4l6f3gujf"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Oklahoma City Thunder"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "label": "$5 budget"
+        }
+      ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Utah Jazz",
-      "Charlotte Hornets",
-      "Oklahoma City Thunder"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        -4.5,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        34,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        35,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        37,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        38,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        39,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        2,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

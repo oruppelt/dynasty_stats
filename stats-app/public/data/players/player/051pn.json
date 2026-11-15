@@ -162,9 +162,12 @@
       "date": "2019-06-24",
       "team": "Chicago Bulls",
       "round": 2,
-      "pick": 47,
+      "pick": 17,
+      "overall": 47,
+      "certain": true,
       "periods": 2,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -185,6 +188,7 @@
       "bid": 4.0,
       "periods": 5,
       "starts": 5,
+      "gp": 9,
       "points": 182.75,
       "salary": 1000000,
       "contract": "REG1"
@@ -205,6 +209,7 @@
       "bid": 0.0,
       "periods": 6,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "REG1"
@@ -225,6 +230,7 @@
       "bid": 21.0,
       "periods": 9,
       "starts": 7,
+      "gp": 12,
       "points": 192.75,
       "salary": 1000000,
       "contract": "FA"
@@ -245,6 +251,7 @@
       "bid": 0.0,
       "periods": 22,
       "starts": 20,
+      "gp": 35,
       "points": 737.0,
       "salary": 1250000,
       "contract": "REG1"
@@ -259,6 +266,7 @@
       "trade": "nsziz30xlccebfbg",
       "periods": 11,
       "starts": 9,
+      "gp": 18,
       "points": 361.75,
       "salary": 1250000,
       "contract": "REG1"
@@ -279,6 +287,7 @@
       "bid": 19.0,
       "periods": 2,
       "starts": 1,
+      "gp": 1,
       "points": 9.0,
       "salary": 1000000,
       "contract": "FA"
@@ -303,19 +312,54 @@
           "to": "Los Angeles Clippers",
           "player_id": "038ia",
           "player": "Seth Curry",
-          "label": "Seth Curry"
+          "label": "Seth Curry",
+          "result": {
+            "points": 380.25,
+            "starts": 10,
+            "gp": 15,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
         },
         {
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Houston Rockets",
-          "label": "2023 round 2 pick (Los Angeles Clippers)"
+          "label": "2023 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06ccu",
+            "player": "Tristan Vukcevic",
+            "certain": true
+          },
+          "next": {
+            "trade": "vspfi0aqldf3aaw5"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
+          }
         },
         {
           "kind": "pick",
           "from": "Atlanta Hawks",
           "to": "Los Angeles Clippers",
-          "label": "2023 round 2 pick (Charlotte Hornets)"
+          "label": "2023 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "033b7",
+            "player": null,
+            "certain": true
+          }
         },
         {
           "kind": "player",
@@ -323,7 +367,17 @@
           "to": "Atlanta Hawks",
           "player_id": "051pn",
           "player": "Jaylen Nowell",
-          "label": "Jaylen Nowell"
+          "label": "Jaylen Nowell",
+          "result": {
+            "points": 361.75,
+            "starts": 9,
+            "gp": 18,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
         },
         {
           "kind": "player",
@@ -331,7 +385,17 @@
           "to": "Los Angeles Clippers",
           "player_id": "027pg",
           "player": "Bojan Bogdanovic",
-          "label": "Bojan Bogdanovic"
+          "label": "Bojan Bogdanovic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1yujdmvplcdgfp1l"
+          }
         },
         {
           "kind": "player",
@@ -339,7 +403,17 @@
           "to": "Los Angeles Clippers",
           "player_id": "03r7r",
           "player": "Richaun Holmes",
-          "label": "Richaun Holmes"
+          "label": "Richaun Holmes",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
         },
         {
           "kind": "player",
@@ -347,7 +421,17 @@
           "to": "Atlanta Hawks",
           "player_id": "056aq",
           "player": "Terence Davis",
-          "label": "Terence Davis"
+          "label": "Terence Davis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-01-06"
+          }
         },
         {
           "kind": "player",
@@ -355,7 +439,17 @@
           "to": "Los Angeles Clippers",
           "player_id": "049kf",
           "player": "Mo Bamba",
-          "label": "Mo Bamba"
+          "label": "Mo Bamba",
+          "result": {
+            "points": 552.0,
+            "starts": 39,
+            "gp": 38,
+            "periods": 43,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
         },
         {
           "kind": "player",
@@ -363,7 +457,17 @@
           "to": "Los Angeles Clippers",
           "player_id": "042n8",
           "player": "Taurean Prince",
-          "label": "Taurean Prince"
+          "label": "Taurean Prince",
+          "result": {
+            "points": 87.25,
+            "starts": 2,
+            "gp": 3,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
         },
         {
           "kind": "pick",
@@ -375,7 +479,26 @@
           "kind": "pick",
           "from": "Houston Rockets",
           "to": "Los Angeles Clippers",
-          "label": "2023 round 1 pick (Houston Rockets)"
+          "label": "2023 round 1 pick (Houston Rockets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "06ccb",
+            "player": "Nick Smith",
+            "certain": true
+          },
+          "result": {
+            "points": 720.0,
+            "starts": 36,
+            "gp": 48,
+            "periods": 78,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-12-04"
+          }
         },
         {
           "kind": "player",
@@ -383,7 +506,17 @@
           "to": "Houston Rockets",
           "player_id": "01uz7",
           "player": "Gordon Hayward",
-          "label": "Gordon Hayward"
+          "label": "Gordon Hayward",
+          "result": {
+            "points": 125.0,
+            "starts": 4,
+            "gp": 7,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "os2ympihlki70543"
+          }
         },
         {
           "kind": "player",
@@ -391,7 +524,17 @@
           "to": "Houston Rockets",
           "player_id": "051pb",
           "player": "Nicolas Claxton",
-          "label": "Nicolas Claxton"
+          "label": "Nicolas Claxton",
+          "result": {
+            "points": 2541.0,
+            "starts": 42,
+            "gp": 60,
+            "periods": 43,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-26"
+          }
         },
         {
           "kind": "player",
@@ -399,7 +542,17 @@
           "to": "Houston Rockets",
           "player_id": "05uir",
           "player": "Trey Murphy",
-          "label": "Trey Murphy"
+          "label": "Trey Murphy",
+          "result": {
+            "points": 1156.5,
+            "starts": 27,
+            "gp": 41,
+            "periods": 43,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
         },
         {
           "kind": "player",
@@ -407,525 +560,61 @@
           "to": "Houston Rockets",
           "player_id": "03bxn",
           "player": "T.J. Warren",
-          "label": "T.J. Warren"
+          "label": "T.J. Warren",
+          "result": {
+            "points": 67.5,
+            "starts": 3,
+            "gp": 4,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "vspfi0aqldf3aaw5"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Chicago Bulls",
-      "Boston Celtics",
-      "Golden State Warriors",
-      "Toronto Raptors",
-      "Houston Rockets",
-      "Atlanta Hawks"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        1,
-        30.25,
-        1
-      ],
-      [
-        1,
-        27,
-        1,
-        48.25,
-        1
-      ],
-      [
-        1,
-        28,
-        1,
-        47.25,
-        1
-      ],
-      [
-        1,
-        29,
-        1,
-        45.0,
-        1
-      ],
-      [
-        1,
-        30,
-        1,
-        12.0,
-        1
-      ],
-      [
-        1,
-        31,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        1,
-        2,
-        3.0,
-        0
-      ],
-      [
-        2,
-        2,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        3,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        4,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        5,
-        2,
-        7.0,
-        0
-      ],
-      [
-        2,
-        6,
-        2,
-        3.25,
-        0
-      ],
-      [
-        2,
-        25,
-        3,
-        0.75,
-        1
-      ],
-      [
-        2,
-        26,
-        3,
-        33.75,
-        0
-      ],
-      [
-        2,
-        27,
-        3,
-        52.25,
-        1
-      ],
-      [
-        2,
-        28,
-        3,
-        24.75,
-        0
-      ],
-      [
-        2,
-        29,
-        3,
-        45.0,
-        1
-      ],
-      [
-        2,
-        30,
-        3,
-        28.5,
-        1
-      ],
-      [
-        2,
-        31,
-        3,
-        34.5,
-        1
-      ],
-      [
-        2,
-        32,
-        3,
-        9.75,
-        1
-      ],
-      [
-        2,
-        33,
-        3,
-        22.0,
-        1
-      ],
-      [
-        2,
-        34,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        35,
-        3,
-        12.5,
-        0
-      ],
-      [
-        2,
-        37,
-        3,
-        9.0,
-        0
-      ],
-      [
-        3,
-        1,
-        4,
-        23.25,
-        0
-      ],
-      [
-        3,
-        2,
-        4,
-        61.0,
-        1
-      ],
-      [
-        3,
-        3,
-        4,
-        70.75,
-        1
-      ],
-      [
-        3,
-        4,
-        4,
-        27.0,
-        1
-      ],
-      [
-        3,
-        5,
-        4,
-        14.0,
-        0
-      ],
-      [
-        3,
-        6,
-        4,
-        35.5,
-        1
-      ],
-      [
-        3,
-        7,
-        4,
-        26.75,
-        1
-      ],
-      [
-        3,
-        8,
-        4,
-        19.25,
-        1
-      ],
-      [
-        3,
-        9,
-        4,
-        3.75,
-        1
-      ],
-      [
-        3,
-        10,
-        4,
-        19.75,
-        1
-      ],
-      [
-        3,
-        11,
-        4,
-        9.0,
-        1
-      ],
-      [
-        3,
-        12,
-        4,
-        45.5,
-        1
-      ],
-      [
-        3,
-        13,
-        4,
-        86.0,
-        1
-      ],
-      [
-        3,
-        14,
-        4,
-        31.25,
-        1
-      ],
-      [
-        3,
-        15,
-        4,
-        28.25,
-        1
-      ],
-      [
-        3,
-        16,
-        4,
-        36.75,
-        1
-      ],
-      [
-        3,
-        17,
-        4,
-        29.25,
-        1
-      ],
-      [
-        3,
-        18,
-        4,
-        58.25,
-        1
-      ],
-      [
-        3,
-        19,
-        4,
-        29.5,
-        1
-      ],
-      [
-        3,
-        20,
-        4,
-        21.0,
-        1
-      ],
-      [
-        3,
-        21,
-        4,
-        43.5,
-        1
-      ],
-      [
-        3,
-        22,
-        4,
-        55.0,
-        1
-      ],
-      [
-        3,
-        23,
-        5,
-        36.5,
-        1
-      ],
-      [
-        3,
-        24,
-        5,
-        31.25,
-        1
-      ],
-      [
-        3,
-        25,
-        5,
-        7.25,
-        0
-      ],
-      [
-        3,
-        26,
-        5,
-        45.75,
-        1
-      ],
-      [
-        3,
-        27,
-        5,
-        69.0,
-        1
-      ],
-      [
-        3,
-        28,
-        5,
-        10.75,
-        1
-      ],
-      [
-        3,
-        29,
-        5,
-        11.0,
-        0
-      ],
-      [
-        3,
-        30,
-        5,
-        26.5,
-        1
-      ],
-      [
-        3,
-        31,
-        5,
-        29.0,
-        1
-      ],
-      [
-        3,
-        32,
-        5,
-        41.5,
-        1
-      ],
-      [
-        3,
-        33,
-        5,
-        71.5,
-        1
-      ],
-      [
-        3,
-        34,
-        5,
-        25.5,
-        1
-      ],
-      [
-        3,
-        35,
-        5,
-        11.5,
-        1
-      ],
-      [
-        3,
-        37,
-        5,
-        3.0,
-        1
-      ],
-      [
-        3,
-        38,
-        5,
-        0.0,
-        0
-      ],
-      [
-        5,
-        9,
-        1,
-        9.0,
-        1
-      ],
-      [
-        5,
-        10,
-        1,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -40,6 +40,7 @@
       "bid": 2.0,
       "periods": 1,
       "starts": 1,
+      "gp": 2,
       "points": 22.0,
       "salary": 1000000,
       "contract": "FA"
@@ -54,6 +55,7 @@
       "trade": "xqnn1uqbk4blgow9",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -76,13 +78,39 @@
           "to": "Sacramento Kings",
           "player_id": "042oh",
           "player": "Abdel Nader",
-          "label": "Abdel Nader"
+          "label": "Abdel Nader",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2019-12-18"
+          }
         },
         {
           "kind": "pick",
           "from": "Chicago Bulls",
           "to": "Sacramento Kings",
-          "label": "2021 round 1 pick (Chicago Bulls)"
+          "label": "2021 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "05uj4",
+            "player": "Santi Aldama",
+            "certain": true
+          },
+          "next": {
+            "trade": "u4u6cj1zk4cjuwah"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
         },
         {
           "kind": "player",
@@ -90,65 +118,61 @@
           "to": "Chicago Bulls",
           "player_id": "048zt",
           "player": "Derrick Jones",
-          "label": "Derrick Jones"
+          "label": "Derrick Jones",
+          "result": {
+            "points": 479.25,
+            "starts": 11,
+            "gp": 19,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Chicago Bulls"
-    ],
-    "periods": [
-      [
-        0,
-        17,
-        0,
-        22.0,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

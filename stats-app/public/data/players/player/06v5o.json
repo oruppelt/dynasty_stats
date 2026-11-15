@@ -56,6 +56,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Orlando Magic",
+      "label": "2025 round 1 pick (Orlando Magic)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 28,
+      "date": "2024-01-27",
+      "from": "Orlando Magic",
+      "team": "San Antonio Spurs",
+      "trade": "zqk1dc26lrw35amu",
+      "label": "2025 round 1 pick (Orlando Magic)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -63,8 +81,12 @@
       "team": "San Antonio Spurs",
       "round": 1,
       "pick": 30,
+      "overall": 30,
+      "original": "Orlando Magic",
+      "certain": true,
       "periods": 33,
       "starts": 2,
+      "gp": 2,
       "points": 39.0,
       "salary": 1296000,
       "contract": "R13"
@@ -79,6 +101,7 @@
       "trade": "zlfnl31gmqt85aw1",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -91,6 +114,7 @@
       "trade": "dy1iwzstmspva1dv",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -103,6 +127,7 @@
       "trade": "wemsb0xwmsu8e3ur",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -115,12 +140,62 @@
       "trade": "i8bys7b8msyptenz",
       "periods": 7,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1296000,
       "contract": "R12"
     }
   ],
   "trades": {
+    "i8bys7b8msyptenz": {
+      "date": "2026-08-18",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "06v5o",
+          "player": "Liam McNeeley",
+          "label": "Liam McNeeley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "06v8i",
+          "player": "Alex Toohey",
+          "label": "Alex Toohey",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
+        }
+      ]
+    },
     "dy1iwzstmspva1dv": {
       "date": "2026-08-12",
       "season": "2026-27",
@@ -138,7 +213,17 @@
           "to": "Orlando Magic",
           "player_id": "06v5o",
           "player": "Liam McNeeley",
-          "label": "Liam McNeeley"
+          "label": "Liam McNeeley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "wemsb0xwmsu8e3ur"
+          }
         },
         {
           "kind": "pick",
@@ -148,32 +233,125 @@
         }
       ]
     },
-    "i8bys7b8msyptenz": {
-      "date": "2026-08-18",
-      "season": "2026-27",
-      "period": 1,
+    "zqk1dc26lrw35amu": {
+      "date": "2024-01-27",
+      "season": "2023-24",
+      "period": 28,
       "items": [
         {
           "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Washington Wizards",
-          "player_id": "06v5o",
-          "player": "Liam McNeeley",
-          "label": "Liam McNeeley"
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart",
+          "result": {
+            "points": 668.75,
+            "starts": 11,
+            "gp": 17,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "kh16sd0mm3d44kz5"
+          }
         },
         {
           "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Boston Celtics",
-          "player_id": "06v8i",
-          "player": "Alex Toohey",
-          "label": "Alex Toohey"
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-08-05"
+          }
         },
         {
-          "kind": "budget",
-          "from": "Washington Wizards",
-          "to": "Boston Celtics",
-          "label": "$5 budget"
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "player_id": "0621x",
+          "player": "Jaylin Williams",
+          "label": "Jaylin Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-08-05"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "06v5o",
+            "player": "Liam McNeeley",
+            "certain": true
+          },
+          "result": {
+            "points": 39.0,
+            "starts": 2,
+            "gp": 2,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zlfnl31gmqt85aw1"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Orlando Magic",
+          "player_id": "051op",
+          "player": "Rui Hachimura",
+          "label": "Rui Hachimura",
+          "result": {
+            "points": 138.5,
+            "starts": 2,
+            "gp": 4,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-27"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Orlando Magic",
+          "player_id": "027pg",
+          "player": "Bojan Bogdanovic",
+          "label": "Bojan Bogdanovic",
+          "result": {
+            "points": 78.75,
+            "starts": 3,
+            "gp": 3,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-27"
+          }
         }
       ]
     },
@@ -188,13 +366,42 @@
           "to": "San Antonio Spurs",
           "player_id": "06v8b",
           "player": "Rocco Zikarsky",
-          "label": "Rocco Zikarsky"
+          "label": "Rocco Zikarsky",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "pick",
           "from": "Portland Trail Blazers",
           "to": "San Antonio Spurs",
-          "label": "2026 round 2 pick, no. 24"
+          "label": "2026 round 2 pick, no. 24",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -202,7 +409,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "06v5j",
           "player": "Jase Richardson",
-          "label": "Jase Richardson"
+          "label": "Jase Richardson",
+          "result": {
+            "points": 147.5,
+            "starts": 5,
+            "gp": 8,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -210,7 +427,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "06v5o",
           "player": "Liam McNeeley",
-          "label": "Liam McNeeley"
+          "label": "Liam McNeeley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "dy1iwzstmspva1dv"
+          }
         },
         {
           "kind": "player",
@@ -218,13 +445,39 @@
           "to": "Portland Trail Blazers",
           "player_id": "06v5e",
           "player": "Yang Hansen",
-          "label": "Yang Hansen"
+          "label": "Yang Hansen",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-22"
+          }
         },
         {
           "kind": "pick",
           "from": "San Antonio Spurs",
           "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick, no. 23"
+          "label": "2026 round 1 pick, no. 23",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "076t4",
+            "player": "Ebuka Okorie",
+            "certain": true
+          },
+          "next": {
+            "trade": "fiw35r4gmr3vp2cv"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
+          }
         }
       ]
     },
@@ -239,7 +492,17 @@
           "to": "Orlando Magic",
           "player_id": "027ou",
           "player": "Klay Thompson",
-          "label": "Klay Thompson"
+          "label": "Klay Thompson",
+          "result": {
+            "points": 196.0,
+            "starts": 4,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "6nant226mw3ba0hy"
+          }
         },
         {
           "kind": "pick",
@@ -253,309 +516,41 @@
           "to": "Boston Celtics",
           "player_id": "06v5o",
           "player": "Liam McNeeley",
-          "label": "Liam McNeeley"
+          "label": "Liam McNeeley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "i8bys7b8msyptenz"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "San Antonio Spurs",
-      "Washington Wizards"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        4.5,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        33.5,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        5.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        24.25,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        26.75,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        19.5,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        5.5,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        14.75,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        39.5,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        39.0,
-        1
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        13.5,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        26.75,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        8.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        22.25,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.5,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        1.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        2.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        3.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.75,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        16.25,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        15.5,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

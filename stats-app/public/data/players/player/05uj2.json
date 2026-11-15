@@ -114,6 +114,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2019-20",
+      "period": 1,
+      "team": "Memphis Grizzlies",
+      "label": "2021 round 1 pick (Memphis Grizzlies)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 1,
+      "date": "2019-09-17",
+      "from": "Memphis Grizzlies",
+      "team": "Los Angeles Lakers",
+      "trade": "z8b967onjzf14ng3",
+      "label": "2021 round 1 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2019-20",
+      "period": 15,
+      "date": "2019-12-09",
+      "from": "Los Angeles Lakers",
+      "team": "Memphis Grizzlies",
+      "trade": "auat5jg8k3ygvkfy",
+      "label": "2021 round 1 pick (Memphis Grizzlies)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 10,
+      "date": "2021-01-23",
+      "from": "Memphis Grizzlies",
+      "team": "Los Angeles Lakers",
+      "trade": "7484ccylkk6rarno",
+      "label": "2021 round 1 pick (Memphis Grizzlies)"
+    },
+    {
       "kind": "draft",
       "season": "2021-22",
       "period": 0,
@@ -121,8 +159,12 @@
       "team": "Los Angeles Lakers",
       "round": 1,
       "pick": 25,
+      "overall": 25,
+      "original": "Memphis Grizzlies",
+      "certain": true,
       "periods": 50,
       "starts": 15,
+      "gp": 1,
       "points": 11.5,
       "salary": 1409664,
       "contract": "R13"
@@ -137,6 +179,7 @@
       "trade": "x216qg6wlbqcxmyd",
       "periods": 25,
       "starts": 5,
+      "gp": 5,
       "points": 69.25,
       "salary": 1410000,
       "contract": "R12"
@@ -150,6 +193,159 @@
     }
   ],
   "trades": {
+    "z8b967onjzf14ng3": {
+      "date": "2019-09-17",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 114.25,
+            "starts": 8,
+            "gp": 10,
+            "periods": 25,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "k4ftr55dk5f685f4"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "042nq",
+          "player": "Dejounte Murray",
+          "label": "Dejounte Murray"
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "label": "2020 round 2 pick (Brooklyn Nets)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05qv8",
+            "player": "Facundo Campazzo",
+            "certain": false
+          },
+          "next": {
+            "trade": "ja9otupwk5130qp9"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "player_id": "031lz",
+          "player": "Steven Adams",
+          "label": "Steven Adams"
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "label": "2021 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "05uj2",
+            "player": "Jaden Springer",
+            "certain": true
+          },
+          "next": {
+            "trade": "x216qg6wlbqcxmyd"
+          },
+          "result": {
+            "points": 11.5,
+            "starts": 15,
+            "gp": 1,
+            "periods": 50,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "auat5jg8k3ygvkfy": {
+      "date": "2019-12-09",
+      "season": "2019-20",
+      "period": 15,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "027p2",
+          "player": "Enes Kanter",
+          "label": "Enes Kanter",
+          "result": {
+            "points": 1852.0,
+            "starts": 31,
+            "gp": 56,
+            "periods": 47,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-08-07"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "label": "2021 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "05uj2",
+            "player": "Jaden Springer",
+            "certain": true
+          },
+          "next": {
+            "trade": "7484ccylkk6rarno"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "player_id": "04849",
+          "player": "Danuel House",
+          "label": "Danuel House",
+          "result": {
+            "points": 100.75,
+            "starts": 3,
+            "gp": 6,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "kcdchu1bk4cjskel"
+          }
+        }
+      ]
+    },
     "x216qg6wlbqcxmyd": {
       "date": "2022-12-16",
       "season": "2022-23",
@@ -161,7 +357,17 @@
           "to": "Los Angeles Lakers",
           "player_id": "05qu0",
           "player": "Jaden McDaniels",
-          "label": "Jaden McDaniels"
+          "label": "Jaden McDaniels",
+          "result": {
+            "points": 848.75,
+            "starts": 16,
+            "gp": 30,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-24"
+          }
         },
         {
           "kind": "player",
@@ -169,7 +375,17 @@
           "to": "Los Angeles Lakers",
           "player_id": "04qse",
           "player": "Gary Trent",
-          "label": "Gary Trent"
+          "label": "Gary Trent",
+          "result": {
+            "points": 960.0,
+            "starts": 16,
+            "gp": 24,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
         },
         {
           "kind": "player",
@@ -177,7 +393,17 @@
           "to": "Golden State Warriors",
           "player_id": "05uj2",
           "player": "Jaden Springer",
-          "label": "Jaden Springer"
+          "label": "Jaden Springer",
+          "result": {
+            "points": 69.25,
+            "starts": 5,
+            "gp": 5,
+            "periods": 25,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-11-24"
+          }
         },
         {
           "kind": "player",
@@ -185,7 +411,17 @@
           "to": "Golden State Warriors",
           "player_id": "0621s",
           "player": "TyTy Washington",
-          "label": "TyTy Washington"
+          "label": "TyTy Washington",
+          "result": {
+            "points": 98.5,
+            "starts": 10,
+            "gp": 12,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "e5lcksjwljtua3d0"
+          }
         },
         {
           "kind": "player",
@@ -193,580 +429,136 @@
           "to": "Golden State Warriors",
           "player_id": "051on",
           "player": "Coby White",
-          "label": "Coby White"
+          "label": "Coby White",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "4ghkugn9lbqnbawd"
+          }
         },
         {
           "kind": "pick",
           "from": "Los Angeles Lakers",
           "to": "Golden State Warriors",
-          "label": "2023 round 1 pick (Golden State Warriors)"
+          "label": "2023 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "06cca",
+            "player": "Brandon Miller",
+            "certain": true
+          },
+          "result": {
+            "points": 3750.5,
+            "starts": 71,
+            "gp": 106,
+            "periods": 98,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
+          }
+        }
+      ]
+    },
+    "7484ccylkk6rarno": {
+      "date": "2021-01-23",
+      "season": "2020-21",
+      "period": 10,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Memphis Grizzlies",
+          "player_id": "04qrs",
+          "player": "Troy Brown",
+          "label": "Troy Brown",
+          "result": {
+            "points": 51.25,
+            "starts": 4,
+            "gp": 5,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-11-15"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Lakers",
+          "label": "2021 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "05uj2",
+            "player": "Jaden Springer",
+            "certain": true
+          },
+          "result": {
+            "points": 11.5,
+            "starts": 15,
+            "gp": 1,
+            "periods": 50,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "x216qg6wlbqcxmyd"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Los Angeles Lakers",
-      "Golden State Warriors"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        20,
-        0,
-        11.5,
-        1
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        8.0,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        4.0,
-        0
-      ],
-      [
-        1,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        0,
-        -3.0,
-        0
-      ],
-      [
-        1,
-        17,
-        0,
-        5.25,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        22,
-        1,
-        4.5,
-        0
-      ],
-      [
-        1,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        25,
-        1,
-        21.25,
-        1
-      ],
-      [
-        1,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        4.25,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        33,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        1,
-        1,
-        9.0,
-        0
-      ],
-      [
-        2,
-        2,
-        1,
-        9.75,
-        0
-      ],
-      [
-        2,
-        3,
-        1,
-        1.5,
-        0
-      ],
-      [
-        2,
-        4,
-        1,
-        10.75,
-        0
-      ],
-      [
-        2,
-        5,
-        1,
-        2.75,
-        0
-      ],
-      [
-        2,
-        6,
-        1,
-        2.0,
-        0
-      ],
-      [
-        2,
-        7,
-        1,
-        17.0,
-        0
-      ],
-      [
-        2,
-        8,
-        1,
-        46.75,
-        1
-      ],
-      [
-        2,
-        9,
-        1,
-        1.25,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

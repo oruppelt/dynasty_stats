@@ -27,9 +27,11 @@
       "date": "2019-06-25",
       "team": "San Antonio Spurs",
       "round": 2,
-      "pick": 56,
+      "pick": 26,
+      "overall": 56,
       "periods": 1,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -42,15 +44,47 @@
       "team": "San Antonio Spurs"
     },
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Charlotte Hornets",
+      "label": "2022 round 2 pick (Charlotte Hornets)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 24,
+      "date": "2021-03-14",
+      "from": "Charlotte Hornets",
+      "team": "Toronto Raptors",
+      "trade": "6dty708wkm9579c4",
+      "label": "2022 round 2 pick (Charlotte Hornets)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 4,
+      "date": "2021-10-29",
+      "from": "Toronto Raptors",
+      "team": "Detroit Pistons",
+      "trade": "xyjia3f5kvcfyhy3",
+      "label": "2022 round 2 pick (Charlotte Hornets)"
+    },
+    {
       "kind": "draft",
       "season": "2022-23",
       "period": 0,
       "date": "2022-06-29",
       "team": "Detroit Pistons",
       "round": 2,
-      "pick": 50,
+      "pick": 20,
+      "overall": 50,
+      "original": "Charlotte Hornets",
+      "certain": true,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -61,61 +95,280 @@
       "team": "Detroit Pistons"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "San Antonio Spurs"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
+  "trades": {
+    "6dty708wkm9579c4": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "04qrt",
+          "player": "Zhaire Smith",
+          "label": "Zhaire Smith",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "xyjia3f5kvcfyhy3"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "player_id": "049s6",
+          "player": "Markelle Fultz",
+          "label": "Markelle Fultz",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2021 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "05ujw",
+            "player": "Jericho Sims",
+            "certain": true
+          },
+          "result": {
+            "points": 206.0,
+            "starts": 10,
+            "gp": 12,
+            "periods": 69,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-11-03"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2021 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "05uja",
+            "player": "Miles McBride",
+            "certain": true
+          },
+          "result": {
+            "points": 174.0,
+            "starts": 11,
+            "gp": 14,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-10-23"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2022 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "051pr",
+            "player": "Ignas Brazdeikis",
+            "certain": true
+          },
+          "next": {
+            "trade": "xyjia3f5kvcfyhy3"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Toronto Raptors",
+          "label": "2022 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "0621h",
+            "player": "Dalen Terry",
+            "certain": true
+          },
+          "result": {
+            "points": 9.75,
+            "starts": 10,
+            "gp": 6,
+            "periods": 55,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "genxz7dolr4tnz5g"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "02nf8",
+          "player": "Terrence Ross",
+          "label": "Terrence Ross",
+          "result": {
+            "points": 719.0,
+            "starts": 20,
+            "gp": 32,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Charlotte Hornets",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith",
+          "result": {
+            "points": 80.5,
+            "starts": 4,
+            "gp": 4,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-07"
+          }
+        }
       ]
-    ]
-  }
+    },
+    "xyjia3f5kvcfyhy3": {
+      "date": "2021-10-29",
+      "season": "2021-22",
+      "period": 4,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Detroit Pistons",
+          "to": "Toronto Raptors",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Detroit Pistons",
+          "player_id": "04qrt",
+          "player": "Zhaire Smith",
+          "label": "Zhaire Smith",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-12-01"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Detroit Pistons",
+          "label": "2022 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "051pr",
+            "player": "Ignas Brazdeikis",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-06-30"
+          }
+        }
+      ]
+    }
+  },
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -50,6 +50,7 @@
       "bid": 0.0,
       "periods": 6,
       "starts": 2,
+      "gp": 4,
       "points": 7.75,
       "salary": 1000000,
       "contract": "REG1"
@@ -64,6 +65,7 @@
       "trade": "v3wccgv0mhsxznc0",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -86,7 +88,17 @@
           "to": "Utah Jazz",
           "player_id": "04qrr",
           "player": "Michael Porter",
-          "label": "Michael Porter"
+          "label": "Michael Porter",
+          "result": {
+            "points": 295.5,
+            "starts": 4,
+            "gp": 6,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "yqdm26wgmih99jx3"
+          }
         },
         {
           "kind": "player",
@@ -94,7 +106,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "027ou",
           "player": "Klay Thompson",
-          "label": "Klay Thompson"
+          "label": "Klay Thompson",
+          "result": {
+            "points": 806.25,
+            "starts": 21,
+            "gp": 33,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "22yya7camkqj2lli"
+          }
         },
         {
           "kind": "player",
@@ -102,7 +124,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "04k0q",
           "player": "Nigel Hayes-Davis",
-          "label": "Nigel Hayes-Davis"
+          "label": "Nigel Hayes-Davis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-10"
+          }
         },
         {
           "kind": "player",
@@ -110,7 +142,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "05qsx",
           "player": "Obi Toppin",
-          "label": "Obi Toppin"
+          "label": "Obi Toppin",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "22yya7camkqj2lli"
+          }
         },
         {
           "kind": "player",
@@ -118,7 +160,17 @@
           "to": "Portland Trail Blazers",
           "player_id": "051p1",
           "player": "Brandon Clarke",
-          "label": "Brandon Clarke"
+          "label": "Brandon Clarke",
+          "result": {
+            "points": 10.75,
+            "starts": 1,
+            "gp": 1,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-04-03"
+          }
         },
         {
           "kind": "pick",
@@ -129,65 +181,16 @@
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Utah Jazz"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        2.5,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        36.25,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        9.25,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        -1.5,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

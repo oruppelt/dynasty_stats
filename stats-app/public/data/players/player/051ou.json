@@ -106,9 +106,12 @@
       "date": "2019-06-24",
       "team": "Sacramento Kings",
       "round": 2,
-      "pick": 33,
+      "pick": 3,
+      "overall": 33,
+      "certain": true,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -121,6 +124,7 @@
       "trade": "9l4igjhejze8yi0p",
       "periods": 61,
       "starts": 2,
+      "gp": 3,
       "points": 44.5,
       "salary": 1000000,
       "contract": "R23"
@@ -135,6 +139,7 @@
       "trade": "qpytx42akt19ylzv",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -153,6 +158,7 @@
       "bid": 11.0,
       "periods": 16,
       "starts": 4,
+      "gp": 6,
       "points": 136.25,
       "salary": 1000000,
       "contract": "FA"
@@ -166,41 +172,6 @@
     }
   ],
   "trades": {
-    "9l4igjhejze8yi0p": {
-      "date": "2019-08-16",
-      "season": "2019-20",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "San Antonio Spurs",
-          "player_id": "051ou",
-          "player": "Romeo Langford",
-          "label": "Romeo Langford"
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "San Antonio Spurs",
-          "label": "2021 round 1 pick (Sacramento Kings)"
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "San Antonio Spurs",
-          "label": "2020 round 2 pick (Golden State Warriors)"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "player_id": "0019g",
-          "player": "LaMarcus Aldridge",
-          "label": "LaMarcus Aldridge"
-        }
-      ]
-    },
     "qpytx42akt19ylzv": {
       "date": "2021-09-01",
       "season": "2021-22",
@@ -218,7 +189,17 @@
           "to": "Sacramento Kings",
           "player_id": "051ou",
           "player": "Romeo Langford",
-          "label": "Romeo Langford"
+          "label": "Romeo Langford",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-10-12"
+          }
         },
         {
           "kind": "player",
@@ -226,7 +207,17 @@
           "to": "Sacramento Kings",
           "player_id": "05qu5",
           "player": "Udoka Azubuike",
-          "label": "Udoka Azubuike"
+          "label": "Udoka Azubuike",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "uzok8m7ikwkzi0g6"
+          }
         },
         {
           "kind": "player",
@@ -234,695 +225,166 @@
           "to": "Sacramento Kings",
           "player_id": "05qss",
           "player": "Tyler Bey",
-          "label": "Tyler Bey"
+          "label": "Tyler Bey",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-10-12"
+          }
         },
         {
           "kind": "pick",
           "from": "San Antonio Spurs",
           "to": "Sacramento Kings",
-          "label": "2023 round 2 pick (San Antonio Spurs)"
+          "label": "2023 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06cen",
+            "player": "Caleb Daniels",
+            "certain": true
+          },
+          "next": {
+            "trade": "9b0henoykwl4z069"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
+          }
+        }
+      ]
+    },
+    "9l4igjhejze8yi0p": {
+      "date": "2019-08-16",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "player_id": "051ou",
+          "player": "Romeo Langford",
+          "label": "Romeo Langford",
+          "result": {
+            "points": 44.5,
+            "starts": 2,
+            "gp": 3,
+            "periods": 61,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qpytx42akt19ylzv"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "label": "2021 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "05uiy",
+            "player": "Josh Christopher",
+            "certain": true
+          },
+          "result": {
+            "points": 4.75,
+            "starts": 1,
+            "gp": 2,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "32nurs6skvuqo2yr"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "label": "2020 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "05qu5",
+            "player": "Udoka Azubuike",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qpytx42akt19ylzv"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "0019g",
+          "player": "LaMarcus Aldridge",
+          "label": "LaMarcus Aldridge"
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "San Antonio Spurs",
-      "Brooklyn Nets"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        2.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        32.75,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        5.25,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        9.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        3.5,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        3.5,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        9.5,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        4.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        4.25,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        10.5,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        44.5,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        1
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        0,
-        13.5,
-        0
-      ],
-      [
-        2,
-        18,
-        1,
-        5.0,
-        0
-      ],
-      [
-        2,
-        19,
-        1,
-        40.0,
-        0
-      ],
-      [
-        2,
-        20,
-        1,
-        23.25,
-        1
-      ],
-      [
-        2,
-        21,
-        1,
-        58.5,
-        1
-      ],
-      [
-        2,
-        22,
-        1,
-        34.5,
-        1
-      ],
-      [
-        2,
-        23,
-        1,
-        6.25,
-        0
-      ],
-      [
-        2,
-        24,
-        1,
-        2.0,
-        0
-      ],
-      [
-        2,
-        25,
-        1,
-        9.75,
-        0
-      ],
-      [
-        2,
-        26,
-        1,
-        10.75,
-        0
-      ],
-      [
-        2,
-        27,
-        1,
-        11.5,
-        0
-      ],
-      [
-        2,
-        28,
-        1,
-        26.5,
-        0
-      ],
-      [
-        2,
-        29,
-        1,
-        7.5,
-        0
-      ],
-      [
-        2,
-        30,
-        1,
-        10.25,
-        0
-      ],
-      [
-        2,
-        31,
-        1,
-        -1.5,
-        0
-      ],
-      [
-        2,
-        32,
-        1,
-        20.0,
-        1
-      ],
-      [
-        2,
-        33,
-        1,
-        -4.0,
-        0
-      ],
-      [
-        2,
-        34,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        35,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        37,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        38,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        39,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        40,
-        1,
-        5.75,
-        0
-      ],
-      [
-        2,
-        41,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        42,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        43,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        44,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        45,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        46,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        47,
-        1,
-        3.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

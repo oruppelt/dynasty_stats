@@ -170,6 +170,44 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2020-21",
+      "period": 1,
+      "team": "Dallas Mavericks",
+      "label": "2022 round 2 pick (Dallas Mavericks)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2020-21",
+      "period": 1,
+      "date": "2020-12-06",
+      "from": "Dallas Mavericks",
+      "team": "Miami Heat",
+      "trade": "ci5v7ywvkid24lwf",
+      "label": "2022 round 2 pick (Dallas Mavericks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 26,
+      "date": "2022-01-14",
+      "from": "Miami Heat",
+      "team": "Philadelphia 76ers",
+      "trade": "yy9p5ocdkye254n4",
+      "label": "2022 round 2 pick (Dallas Mavericks)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2021-22",
+      "period": 28,
+      "date": "2022-01-21",
+      "from": "Philadelphia 76ers",
+      "team": "Cleveland Cavaliers",
+      "trade": "yuxsbccvkynk77x4",
+      "label": "2022 round 2 pick (Dallas Mavericks)"
+    },
+    {
       "kind": "claim",
       "season": "2021-22",
       "period": 31,
@@ -178,6 +216,7 @@
       "bid": 9.0,
       "periods": 3,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "REG1"
@@ -189,9 +228,13 @@
       "date": "2022-06-28",
       "team": "Cleveland Cavaliers",
       "round": 2,
-      "pick": 40,
+      "pick": 10,
+      "overall": 40,
+      "original": "Dallas Mavericks",
+      "certain": true,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -210,6 +253,7 @@
       "bid": 0.0,
       "periods": 33,
       "starts": 22,
+      "gp": 40,
       "points": 946.75,
       "salary": 1250000,
       "contract": "REG1"
@@ -230,6 +274,7 @@
       "bid": 0.0,
       "periods": 32,
       "starts": 24,
+      "gp": 35,
       "points": 667.25,
       "salary": 1250000,
       "contract": "REG1"
@@ -250,6 +295,7 @@
       "bid": 0.0,
       "periods": 6,
       "starts": 6,
+      "gp": 10,
       "points": 325.25,
       "salary": 1000000,
       "contract": "REG1"
@@ -264,6 +310,7 @@
       "trade": "aqapwojpm3cvd21d",
       "periods": 27,
       "starts": 8,
+      "gp": 15,
       "points": 367.5,
       "salary": 1000000,
       "contract": "REG1"
@@ -284,6 +331,7 @@
       "bid": 0.0,
       "periods": 28,
       "starts": 15,
+      "gp": 24,
       "points": 574.5,
       "salary": 2300000,
       "contract": "REG1"
@@ -298,6 +346,7 @@
       "trade": "3ytw64kjmkuq5bqa",
       "periods": 5,
       "starts": 5,
+      "gp": 9,
       "points": 230.5,
       "salary": 2300000,
       "contract": "REG1"
@@ -318,6 +367,7 @@
       "bid": 0.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -336,12 +386,233 @@
       "bid": 0.0,
       "periods": 7,
       "starts": 5,
+      "gp": 4,
       "points": 30.5,
       "salary": 1500000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "yy9p5ocdkye254n4": {
+      "date": "2022-01-14",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "01uz7",
+          "player": "Gordon Hayward",
+          "label": "Gordon Hayward",
+          "result": {
+            "points": 155.25,
+            "starts": 6,
+            "gp": 7,
+            "periods": 8,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          },
+          "next": {
+            "trade": "yuxsbccvkynk77x4"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Cleveland Cavaliers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris",
+          "result": {
+            "points": 291.75,
+            "starts": 7,
+            "gp": 12,
+            "periods": 8,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "04qs9",
+          "player": "Jevon Carter",
+          "label": "Jevon Carter",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 2,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-01-18"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "label": "2023 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06ca7",
+            "player": "Cam Whitmore",
+            "certain": true
+          },
+          "next": {
+            "trade": "1ikem71elb0p3dff"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Oklahoma City Thunder"
+          }
+        }
+      ]
+    },
+    "ci5v7ywvkid24lwf": {
+      "date": "2020-12-06",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          },
+          "next": {
+            "trade": "yy9p5ocdkye254n4"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Cleveland Cavaliers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewl",
+          "player": "Terrance Ferguson",
+          "label": "Terrance Ferguson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-12-22"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewj",
+          "player": "T.J. Leaf",
+          "label": "T.J. Leaf",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "arji78gykidgnybp"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2021 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05ujl",
+            "player": "David Johnson",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-06-21"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2022 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "0622j",
+            "player": "Luke Travers",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-10-21"
+          }
+        }
+      ]
+    },
     "aqapwojpm3cvd21d": {
       "date": "2024-11-11",
       "season": "2024-25",
@@ -353,7 +624,17 @@
           "to": "San Antonio Spurs",
           "player_id": "03r7h",
           "player": "Delon Wright",
-          "label": "Delon Wright"
+          "label": "Delon Wright",
+          "result": {
+            "points": 288.75,
+            "starts": 26,
+            "gp": 20,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
         },
         {
           "kind": "player",
@@ -361,13 +642,42 @@
           "to": "San Antonio Spurs",
           "player_id": "051p0",
           "player": "Matisse Thybulle",
-          "label": "Matisse Thybulle"
+          "label": "Matisse Thybulle",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 23,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-01-31"
+          }
         },
         {
           "kind": "pick",
           "from": "Minnesota Timberwolves",
           "to": "San Antonio Spurs",
-          "label": "2025 round 1 pick (Minnesota Timberwolves)"
+          "label": "2025 round 1 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "06v5j",
+            "player": "Jase Richardson",
+            "certain": true
+          },
+          "result": {
+            "points": 126.5,
+            "starts": 6,
+            "gp": 10,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zlfnl31gmqt85aw1"
+          }
         },
         {
           "kind": "player",
@@ -375,7 +685,17 @@
           "to": "Minnesota Timberwolves",
           "player_id": "05uul",
           "player": "Jose Alvarado",
-          "label": "Jose Alvarado"
+          "label": "Jose Alvarado",
+          "result": {
+            "points": 367.5,
+            "starts": 8,
+            "gp": 15,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
         },
         {
           "kind": "player",
@@ -383,13 +703,39 @@
           "to": "Minnesota Timberwolves",
           "player_id": "059g0",
           "player": "Amir Coffey",
-          "label": "Amir Coffey"
+          "label": "Amir Coffey",
+          "result": {
+            "points": 525.75,
+            "starts": 11,
+            "gp": 24,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
         },
         {
           "kind": "pick",
           "from": "San Antonio Spurs",
           "to": "Minnesota Timberwolves",
-          "label": "2025 round 2 pick (Cleveland Cavaliers)"
+          "label": "2025 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "06v59",
+            "player": "Will Riley",
+            "certain": true
+          },
+          "next": {
+            "trade": "5bxdraq0m5qxtpz8"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
         },
         {
           "kind": "budget",
@@ -410,7 +756,17 @@
           "to": "Washington Wizards",
           "player_id": "04qsd",
           "player": "Mitchell Robinson",
-          "label": "Mitchell Robinson"
+          "label": "Mitchell Robinson",
+          "result": {
+            "points": 89.75,
+            "starts": 3,
+            "gp": 5,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
         },
         {
           "kind": "player",
@@ -418,7 +774,17 @@
           "to": "Milwaukee Bucks",
           "player_id": "05uul",
           "player": "Jose Alvarado",
-          "label": "Jose Alvarado"
+          "label": "Jose Alvarado",
+          "result": {
+            "points": 230.5,
+            "starts": 5,
+            "gp": 9,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
         },
         {
           "kind": "player",
@@ -426,1202 +792,185 @@
           "to": "Milwaukee Bucks",
           "player_id": "005ki",
           "player": "Brook Lopez",
-          "label": "Brook Lopez"
+          "label": "Brook Lopez",
+          "result": {
+            "points": 256.0,
+            "starts": 5,
+            "gp": 10,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
         },
         {
           "kind": "pick",
           "from": "Washington Wizards",
           "to": "Milwaukee Bucks",
-          "label": "2026 round 2 pick (Washington Wizards)"
+          "label": "2026 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 26,
+            "overall": 56,
+            "player_id": "076uq",
+            "player": "Rafael Castro",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
+    "yuxsbccvkynk77x4": {
+      "date": "2022-01-21",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors",
+          "result": {
+            "points": 20.75,
+            "starts": 1,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uur",
+          "player": "Joel Ayayi",
+          "label": "Joel Ayayi",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-08"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uun",
+          "player": "Matthew Hurt",
+          "label": "Matthew Hurt",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-08"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari",
+          "result": {
+            "points": 203.25,
+            "starts": 6,
+            "gp": 8,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "25j29lacl4n2yx7t"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-06-29"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Boston Celtics",
-      "Memphis Grizzlies",
-      "Los Angeles Clippers",
-      "San Antonio Spurs",
-      "Minnesota Timberwolves",
-      "Washington Wizards",
-      "Milwaukee Bucks",
-      "Chicago Bulls"
-    ],
-    "periods": [
-      [
-        0,
-        31,
-        0,
-        40.75,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        25.75,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        46.5,
-        0
-      ],
-      [
-        0,
-        34,
-        0,
-        13.5,
-        1
-      ],
-      [
-        0,
-        35,
-        0,
-        23.75,
-        0
-      ],
-      [
-        0,
-        37,
-        0,
-        14.5,
-        0
-      ],
-      [
-        0,
-        38,
-        0,
-        3.5,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        14.5,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        31.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        28.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        25.75,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        32.75,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        40.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        27.75,
-        1
-      ],
-      [
-        1,
-        8,
-        1,
-        42.75,
-        1
-      ],
-      [
-        1,
-        9,
-        1,
-        48.0,
-        1
-      ],
-      [
-        1,
-        10,
-        1,
-        31.0,
-        1
-      ],
-      [
-        1,
-        11,
-        1,
-        61.5,
-        1
-      ],
-      [
-        1,
-        12,
-        1,
-        19.75,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        48.5,
-        1
-      ],
-      [
-        1,
-        14,
-        1,
-        108.75,
-        1
-      ],
-      [
-        1,
-        15,
-        1,
-        10.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        44.0,
-        1
-      ],
-      [
-        1,
-        17,
-        1,
-        14.25,
-        1
-      ],
-      [
-        1,
-        18,
-        1,
-        12.25,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        44.25,
-        1
-      ],
-      [
-        1,
-        20,
-        1,
-        18.0,
-        1
-      ],
-      [
-        1,
-        21,
-        1,
-        31.0,
-        1
-      ],
-      [
-        1,
-        22,
-        1,
-        38.5,
-        1
-      ],
-      [
-        1,
-        23,
-        1,
-        34.0,
-        1
-      ],
-      [
-        1,
-        24,
-        1,
-        60.0,
-        1
-      ],
-      [
-        1,
-        25,
-        1,
-        46.75,
-        1
-      ],
-      [
-        1,
-        26,
-        1,
-        25.75,
-        1
-      ],
-      [
-        1,
-        27,
-        1,
-        62.25,
-        1
-      ],
-      [
-        1,
-        28,
-        1,
-        33.25,
-        1
-      ],
-      [
-        1,
-        29,
-        1,
-        36.5,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        76.75,
-        1
-      ],
-      [
-        1,
-        31,
-        1,
-        22.0,
-        1
-      ],
-      [
-        1,
-        32,
-        1,
-        27.75,
-        1
-      ],
-      [
-        1,
-        33,
-        1,
-        15.5,
-        0
-      ],
-      [
-        1,
-        34,
-        1,
-        23.5,
-        0
-      ],
-      [
-        1,
-        35,
-        1,
-        29.5,
-        1
-      ],
-      [
-        1,
-        37,
-        1,
-        14.75,
-        0
-      ],
-      [
-        1,
-        38,
-        1,
-        13.25,
-        1
-      ],
-      [
-        1,
-        39,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        40,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        41,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        42,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        43,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        44,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        45,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        1,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        2,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        3,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        4,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        5,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        6,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        7,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        8,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        9,
-        2,
-        29.75,
-        1
-      ],
-      [
-        2,
-        10,
-        2,
-        56.5,
-        1
-      ],
-      [
-        2,
-        11,
-        2,
-        18.25,
-        1
-      ],
-      [
-        2,
-        12,
-        2,
-        12.0,
-        1
-      ],
-      [
-        2,
-        13,
-        2,
-        64.25,
-        1
-      ],
-      [
-        2,
-        14,
-        2,
-        0.0,
-        1
-      ],
-      [
-        2,
-        15,
-        2,
-        31.75,
-        1
-      ],
-      [
-        2,
-        16,
-        2,
-        67.25,
-        1
-      ],
-      [
-        2,
-        17,
-        2,
-        14.5,
-        1
-      ],
-      [
-        2,
-        18,
-        2,
-        7.75,
-        1
-      ],
-      [
-        2,
-        19,
-        2,
-        26.0,
-        1
-      ],
-      [
-        2,
-        20,
-        2,
-        41.5,
-        1
-      ],
-      [
-        2,
-        21,
-        2,
-        53.75,
-        1
-      ],
-      [
-        2,
-        22,
-        2,
-        9.25,
-        1
-      ],
-      [
-        2,
-        23,
-        2,
-        0.0,
-        1
-      ],
-      [
-        2,
-        24,
-        2,
-        50.75,
-        1
-      ],
-      [
-        2,
-        25,
-        2,
-        3.5,
-        1
-      ],
-      [
-        2,
-        26,
-        2,
-        2.5,
-        1
-      ],
-      [
-        2,
-        27,
-        2,
-        14.0,
-        1
-      ],
-      [
-        2,
-        28,
-        2,
-        40.0,
-        1
-      ],
-      [
-        2,
-        29,
-        2,
-        11.75,
-        1
-      ],
-      [
-        2,
-        30,
-        2,
-        28.5,
-        1
-      ],
-      [
-        2,
-        31,
-        2,
-        45.25,
-        1
-      ],
-      [
-        2,
-        32,
-        2,
-        38.5,
-        1
-      ],
-      [
-        3,
-        1,
-        3,
-        14.75,
-        1
-      ],
-      [
-        3,
-        2,
-        3,
-        33.25,
-        1
-      ],
-      [
-        3,
-        3,
-        3,
-        60.5,
-        1
-      ],
-      [
-        3,
-        4,
-        3,
-        73.25,
-        1
-      ],
-      [
-        3,
-        5,
-        3,
-        98.0,
-        1
-      ],
-      [
-        3,
-        6,
-        3,
-        45.5,
-        1
-      ],
-      [
-        3,
-        7,
-        4,
-        4.75,
-        1
-      ],
-      [
-        3,
-        8,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        9,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        10,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        11,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        12,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        13,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        14,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        15,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        16,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        17,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        18,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        19,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        20,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        21,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        22,
-        4,
-        42.5,
-        1
-      ],
-      [
-        3,
-        23,
-        4,
-        45.75,
-        1
-      ],
-      [
-        3,
-        24,
-        4,
-        60.0,
-        1
-      ],
-      [
-        3,
-        25,
-        4,
-        49.5,
-        0
-      ],
-      [
-        3,
-        26,
-        4,
-        48.0,
-        0
-      ],
-      [
-        3,
-        27,
-        4,
-        16.5,
-        0
-      ],
-      [
-        3,
-        28,
-        4,
-        41.75,
-        1
-      ],
-      [
-        3,
-        29,
-        4,
-        35.5,
-        1
-      ],
-      [
-        3,
-        30,
-        4,
-        47.75,
-        0
-      ],
-      [
-        3,
-        31,
-        4,
-        18.0,
-        1
-      ],
-      [
-        3,
-        32,
-        4,
-        35.75,
-        0
-      ],
-      [
-        3,
-        33,
-        4,
-        119.25,
-        1
-      ],
-      [
-        3,
-        34,
-        4,
-        80.0,
-        1
-      ],
-      [
-        3,
-        35,
-        4,
-        64.25,
-        1
-      ],
-      [
-        3,
-        36,
-        4,
-        21.75,
-        1
-      ],
-      [
-        3,
-        37,
-        4,
-        53.75,
-        1
-      ],
-      [
-        3,
-        38,
-        4,
-        82.25,
-        1
-      ],
-      [
-        3,
-        39,
-        4,
-        61.75,
-        1
-      ],
-      [
-        3,
-        40,
-        4,
-        10.5,
-        1
-      ],
-      [
-        4,
-        1,
-        5,
-        0.0,
-        1
-      ],
-      [
-        4,
-        2,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        3,
-        5,
-        29.75,
-        0
-      ],
-      [
-        4,
-        4,
-        5,
-        30.25,
-        0
-      ],
-      [
-        4,
-        5,
-        5,
-        78.5,
-        1
-      ],
-      [
-        4,
-        6,
-        5,
-        26.0,
-        1
-      ],
-      [
-        4,
-        7,
-        5,
-        36.0,
-        1
-      ],
-      [
-        4,
-        8,
-        5,
-        37.0,
-        1
-      ],
-      [
-        4,
-        9,
-        5,
-        28.75,
-        1
-      ],
-      [
-        4,
-        10,
-        5,
-        27.5,
-        1
-      ],
-      [
-        4,
-        11,
-        5,
-        98.0,
-        1
-      ],
-      [
-        4,
-        12,
-        5,
-        35.25,
-        1
-      ],
-      [
-        4,
-        13,
-        5,
-        57.25,
-        1
-      ],
-      [
-        4,
-        14,
-        5,
-        31.0,
-        0
-      ],
-      [
-        4,
-        15,
-        5,
-        60.75,
-        1
-      ],
-      [
-        4,
-        16,
-        5,
-        20.5,
-        1
-      ],
-      [
-        4,
-        17,
-        5,
-        29.25,
-        1
-      ],
-      [
-        4,
-        18,
-        5,
-        5.25,
-        1
-      ],
-      [
-        4,
-        19,
-        5,
-        34.5,
-        1
-      ],
-      [
-        4,
-        20,
-        5,
-        42.5,
-        0
-      ],
-      [
-        4,
-        21,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        22,
-        5,
-        23.25,
-        0
-      ],
-      [
-        4,
-        23,
-        5,
-        24.75,
-        0
-      ],
-      [
-        4,
-        24,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        25,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        26,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        27,
-        5,
-        0.0,
-        0
-      ],
-      [
-        4,
-        28,
-        5,
-        18.0,
-        0
-      ],
-      [
-        4,
-        29,
-        6,
-        16.5,
-        1
-      ],
-      [
-        4,
-        30,
-        6,
-        52.25,
-        1
-      ],
-      [
-        4,
-        31,
-        6,
-        31.5,
-        1
-      ],
-      [
-        4,
-        32,
-        6,
-        30.75,
-        1
-      ],
-      [
-        4,
-        33,
-        6,
-        99.5,
-        1
-      ],
-      [
-        5,
-        1,
-        7,
-        26.5,
-        1
-      ],
-      [
-        5,
-        2,
-        7,
-        4.0,
-        1
-      ],
-      [
-        5,
-        3,
-        7,
-        0.0,
-        1
-      ],
-      [
-        5,
-        4,
-        7,
-        0.0,
-        1
-      ],
-      [
-        5,
-        5,
-        7,
-        0.0,
-        1
-      ],
-      [
-        5,
-        6,
-        7,
-        0.0,
-        0
-      ],
-      [
-        5,
-        7,
-        7,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -150,6 +150,7 @@
       "bid": 0.0,
       "periods": 9,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "REG1"
@@ -170,6 +171,7 @@
       "bid": 9.0,
       "periods": 10,
       "starts": 5,
+      "gp": 8,
       "points": 298.25,
       "salary": 1000000,
       "contract": "FA"
@@ -190,6 +192,7 @@
       "bid": 1.0,
       "periods": 1,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -210,6 +213,7 @@
       "bid": 0.0,
       "periods": 5,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "REG1"
@@ -230,6 +234,7 @@
       "bid": 18.0,
       "periods": 1,
       "starts": 1,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -244,6 +249,7 @@
       "trade": "4z8u6ap8loyoglfb",
       "periods": 26,
       "starts": 21,
+      "gp": 19,
       "points": 149.0,
       "salary": 1000000,
       "contract": "FA"
@@ -268,13 +274,39 @@
           "to": "Dallas Mavericks",
           "player_id": "05qu8",
           "player": "Omer Yurtseven",
-          "label": "Omer Yurtseven"
+          "label": "Omer Yurtseven",
+          "result": {
+            "points": 149.0,
+            "starts": 21,
+            "gp": 19,
+            "periods": 26,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
         },
         {
           "kind": "pick",
           "from": "Chicago Bulls",
           "to": "Dallas Mavericks",
-          "label": "2025 round 2 pick (Chicago Bulls)"
+          "label": "2025 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 11,
+            "overall": 41,
+            "player_id": "06v8d",
+            "player": "Bogoljub Markovic",
+            "certain": true
+          },
+          "next": {
+            "trade": "ll6492qklql9ax74"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Toronto Raptors"
+          }
         },
         {
           "kind": "player",
@@ -282,416 +314,51 @@
           "to": "Chicago Bulls",
           "player_id": "03e79",
           "player": "Dwight Powell",
-          "label": "Dwight Powell"
+          "label": "Dwight Powell",
+          "result": {
+            "points": 66.75,
+            "starts": 5,
+            "gp": 8,
+            "periods": 13,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "wxjv4ixnlqpl8ew2"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Golden State Warriors",
-      "Portland Trail Blazers",
-      "Philadelphia 76ers",
-      "Chicago Bulls",
-      "Dallas Mavericks"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        10.5,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        1.5,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        6.5,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        4.75,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        3.75,
-        0
-      ],
-      [
-        0,
-        21,
-        1,
-        44.75,
-        1
-      ],
-      [
-        0,
-        22,
-        1,
-        90.75,
-        1
-      ],
-      [
-        0,
-        23,
-        1,
-        83.25,
-        1
-      ],
-      [
-        0,
-        24,
-        1,
-        48.75,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        35.0,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        79.5,
-        1
-      ],
-      [
-        0,
-        27,
-        1,
-        0.0,
-        1
-      ],
-      [
-        0,
-        28,
-        1,
-        4.0,
-        0
-      ],
-      [
-        0,
-        29,
-        1,
-        2.0,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        2,
-        15.25,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        2,
-        6,
-        3,
-        0.0,
-        1
-      ],
-      [
-        2,
-        7,
-        4,
-        0.0,
-        1
-      ],
-      [
-        2,
-        8,
-        4,
-        0.0,
-        0
-      ],
-      [
-        2,
-        9,
-        4,
-        37.0,
-        0
-      ],
-      [
-        2,
-        10,
-        4,
-        29.25,
-        0
-      ],
-      [
-        2,
-        11,
-        4,
-        51.0,
-        1
-      ],
-      [
-        2,
-        12,
-        4,
-        44.75,
-        1
-      ],
-      [
-        2,
-        13,
-        4,
-        8.0,
-        1
-      ],
-      [
-        2,
-        14,
-        4,
-        0.0,
-        1
-      ],
-      [
-        2,
-        15,
-        4,
-        26.5,
-        1
-      ],
-      [
-        2,
-        16,
-        4,
-        0.0,
-        1
-      ],
-      [
-        2,
-        17,
-        4,
-        0.0,
-        1
-      ],
-      [
-        2,
-        18,
-        4,
-        0.0,
-        1
-      ],
-      [
-        2,
-        19,
-        4,
-        -0.5,
-        1
-      ],
-      [
-        2,
-        20,
-        4,
-        0.0,
-        1
-      ],
-      [
-        2,
-        21,
-        4,
-        1.5,
-        1
-      ],
-      [
-        2,
-        22,
-        4,
-        3.5,
-        1
-      ],
-      [
-        2,
-        23,
-        4,
-        -1.0,
-        1
-      ],
-      [
-        2,
-        24,
-        4,
-        10.0,
-        1
-      ],
-      [
-        2,
-        25,
-        4,
-        3.0,
-        1
-      ],
-      [
-        2,
-        26,
-        4,
-        0.0,
-        1
-      ],
-      [
-        2,
-        27,
-        4,
-        0.0,
-        1
-      ],
-      [
-        2,
-        28,
-        4,
-        0.0,
-        1
-      ],
-      [
-        2,
-        29,
-        4,
-        -2.0,
-        1
-      ],
-      [
-        2,
-        30,
-        4,
-        0.0,
-        0
-      ],
-      [
-        2,
-        31,
-        4,
-        4.25,
-        1
-      ],
-      [
-        2,
-        32,
-        4,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

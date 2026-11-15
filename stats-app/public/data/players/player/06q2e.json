@@ -108,6 +108,7 @@
       "bid": 5.0,
       "periods": 26,
       "starts": 3,
+      "gp": 5,
       "points": 53.0,
       "salary": 1000000,
       "contract": "REG1"
@@ -122,6 +123,7 @@
       "trade": "fqy5f8aem6akho3q",
       "periods": 6,
       "starts": 2,
+      "gp": 4,
       "points": 58.0,
       "salary": 1000000,
       "contract": "FA"
@@ -142,6 +144,7 @@
       "bid": 6.0,
       "periods": 4,
       "starts": 3,
+      "gp": 6,
       "points": 115.75,
       "salary": 1000000,
       "contract": "FA"
@@ -159,7 +162,17 @@
           "to": "Miami Heat",
           "player_id": "06cdg",
           "player": "Maxwell Lewis",
-          "label": "Maxwell Lewis"
+          "label": "Maxwell Lewis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-20"
+          }
         },
         {
           "kind": "player",
@@ -167,7 +180,17 @@
           "to": "Miami Heat",
           "player_id": "06q2e",
           "player": "Jamison Battle",
-          "label": "Jamison Battle"
+          "label": "Jamison Battle",
+          "result": {
+            "points": 58.0,
+            "starts": 2,
+            "gp": 4,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
         },
         {
           "kind": "player",
@@ -175,7 +198,17 @@
           "to": "Miami Heat",
           "player_id": "062pk",
           "player": "Simone Fontecchio",
-          "label": "Simone Fontecchio"
+          "label": "Simone Fontecchio",
+          "result": {
+            "points": 175.0,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
         },
         {
           "kind": "player",
@@ -183,7 +216,17 @@
           "to": "Miami Heat",
           "player_id": "042n1",
           "player": "Brandon Ingram",
-          "label": "Brandon Ingram"
+          "label": "Brandon Ingram",
+          "result": {
+            "points": 0.0,
+            "starts": 2,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
         },
         {
           "kind": "player",
@@ -191,7 +234,17 @@
           "to": "Boston Celtics",
           "player_id": "06mm5",
           "player": "PJ Hall",
-          "label": "PJ Hall"
+          "label": "PJ Hall",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 17,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "yqdm26wgmih99jx3"
+          }
         },
         {
           "kind": "player",
@@ -199,7 +252,17 @@
           "to": "Boston Celtics",
           "player_id": "049ka",
           "player": "Lonzo Ball",
-          "label": "Lonzo Ball"
+          "label": "Lonzo Ball",
+          "result": {
+            "points": 162.75,
+            "starts": 4,
+            "gp": 6,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-07"
+          }
         },
         {
           "kind": "player",
@@ -207,7 +270,17 @@
           "to": "Boston Celtics",
           "player_id": "06mlx",
           "player": "Melvin Ajinca",
-          "label": "Melvin Ajinca"
+          "label": "Melvin Ajinca",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 17,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "yqdm26wgmih99jx3"
+          }
         },
         {
           "kind": "budget",
@@ -218,282 +291,21 @@
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Boston Celtics",
-      "Miami Heat",
-      "Chicago Bulls"
-    ],
-    "periods": [
-      [
-        0,
-        2,
-        0,
-        45.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        14.25,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        21.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        16.5,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        8.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        6.5,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        23.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        19.25,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        78.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        22.25,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        21.5,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        16.5,
-        1
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        12.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        15.5,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        26.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        13.5,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        18.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        4.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.5,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        7.5,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        24.75,
-        1
-      ],
-      [
-        0,
-        33,
-        1,
-        33.25,
-        1
-      ],
-      [
-        2,
-        4,
-        2,
-        31.5,
-        0
-      ],
-      [
-        2,
-        5,
-        2,
-        29.75,
-        1
-      ],
-      [
-        2,
-        6,
-        2,
-        8.75,
-        1
-      ],
-      [
-        2,
-        7,
-        2,
-        77.25,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -136,6 +136,7 @@
       "bid": 10.0,
       "periods": 12,
       "starts": 9,
+      "gp": 16,
       "points": 331.25,
       "salary": 1000000,
       "contract": "FA"
@@ -150,6 +151,7 @@
       "trade": "hbx5kxxxk4ojflti",
       "periods": 13,
       "starts": 11,
+      "gp": 18,
       "points": 273.0,
       "salary": 1000000,
       "contract": "FA"
@@ -170,6 +172,7 @@
       "bid": 2.0,
       "periods": 1,
       "starts": 1,
+      "gp": 2,
       "points": 41.0,
       "salary": 1000000,
       "contract": "FA"
@@ -190,6 +193,7 @@
       "bid": 0.0,
       "periods": 17,
       "starts": 2,
+      "gp": 3,
       "points": 22.25,
       "salary": 1500000,
       "contract": "REG1"
@@ -204,6 +208,7 @@
       "trade": "4ghkugn9lbqnbawd",
       "periods": 12,
       "starts": 5,
+      "gp": 5,
       "points": 60.0,
       "salary": 1500000,
       "contract": "REG1"
@@ -217,83 +222,6 @@
     }
   ],
   "trades": {
-    "4ghkugn9lbqnbawd": {
-      "date": "2022-12-16",
-      "season": "2022-23",
-      "period": 18,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Minnesota Timberwolves",
-          "player_id": "005ll",
-          "player": "George Hill",
-          "label": "George Hill"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Minnesota Timberwolves",
-          "player_id": "03e6u",
-          "player": "Bogdan Bogdanovic",
-          "label": "Bogdan Bogdanovic"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Minnesota Timberwolves",
-          "player_id": "051on",
-          "player": "Coby White",
-          "label": "Coby White"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Minnesota Timberwolves",
-          "player_id": "000zv",
-          "player": "Al Horford",
-          "label": "Al Horford"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Golden State Warriors",
-          "player_id": "01ens",
-          "player": "Patrick Beverley",
-          "label": "Patrick Beverley"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Golden State Warriors",
-          "player_id": "042nr",
-          "player": "Damian Jones",
-          "label": "Damian Jones"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Golden State Warriors",
-          "player_id": "06220",
-          "player": "Jaden Hardy",
-          "label": "Jaden Hardy"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Golden State Warriors",
-          "player_id": "051p5",
-          "player": "Nassir Little",
-          "label": "Nassir Little"
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Golden State Warriors",
-          "label": "2023 round 1 pick (Cleveland Cavaliers)"
-        }
-      ]
-    },
     "hbx5kxxxk4ojflti": {
       "date": "2019-12-27",
       "season": "2019-20",
@@ -305,7 +233,17 @@
           "to": "Chicago Bulls",
           "player_id": "0018a",
           "player": "Dwight Howard",
-          "label": "Dwight Howard"
+          "label": "Dwight Howard",
+          "result": {
+            "points": 542.25,
+            "starts": 11,
+            "gp": 20,
+            "periods": 13,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         },
         {
           "kind": "player",
@@ -313,7 +251,17 @@
           "to": "Chicago Bulls",
           "player_id": "04qs0",
           "player": "Aaron Holiday",
-          "label": "Aaron Holiday"
+          "label": "Aaron Holiday",
+          "result": {
+            "points": 328.0,
+            "starts": 8,
+            "gp": 16,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-02-10"
+          }
         },
         {
           "kind": "player",
@@ -321,7 +269,17 @@
           "to": "Boston Celtics",
           "player_id": "04qrx",
           "player": "Josh Okogie",
-          "label": "Josh Okogie"
+          "label": "Josh Okogie",
+          "result": {
+            "points": 528.75,
+            "starts": 13,
+            "gp": 22,
+            "periods": 13,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "3pi54sfdkhs5x16c"
+          }
         },
         {
           "kind": "player",
@@ -329,482 +287,237 @@
           "to": "Boston Celtics",
           "player_id": "042nr",
           "player": "Damian Jones",
-          "label": "Damian Jones"
+          "label": "Damian Jones",
+          "result": {
+            "points": 273.0,
+            "starts": 11,
+            "gp": 18,
+            "periods": 13,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
+        }
+      ]
+    },
+    "4ghkugn9lbqnbawd": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "005ll",
+          "player": "George Hill",
+          "label": "George Hill",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "be82rz5ilbs9n0fe"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic",
+          "result": {
+            "points": 742.5,
+            "starts": 15,
+            "gp": 24,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White",
+          "result": {
+            "points": 364.25,
+            "starts": 9,
+            "gp": 17,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "c78464erlcyppe9f"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford",
+          "result": {
+            "points": 565.5,
+            "starts": 12,
+            "gp": 19,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley",
+          "result": {
+            "points": 268.0,
+            "starts": 6,
+            "gp": 10,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "xrkqmnnwlcgjgfnn"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "042nr",
+          "player": "Damian Jones",
+          "label": "Damian Jones",
+          "result": {
+            "points": 60.0,
+            "starts": 5,
+            "gp": 5,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-01-27"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "06220",
+          "player": "Jaden Hardy",
+          "label": "Jaden Hardy",
+          "result": {
+            "points": 197.25,
+            "starts": 9,
+            "gp": 14,
+            "periods": 24,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "gebhqes2lp7bilac"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "player_id": "051p5",
+          "player": "Nassir Little",
+          "label": "Nassir Little",
+          "result": {
+            "points": 184.25,
+            "starts": 8,
+            "gp": 14,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "psa6bq70lomkt3fc"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Golden State Warriors",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06cby",
+            "player": "Keyonte George",
+            "certain": true
+          },
+          "result": {
+            "points": 4384.0,
+            "starts": 81,
+            "gp": 132,
+            "periods": 98,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Chicago Bulls",
-      "Boston Celtics",
-      "San Antonio Spurs",
-      "Minnesota Timberwolves",
-      "Golden State Warriors"
-    ],
-    "periods": [
-      [
-        0,
-        8,
-        0,
-        59.25,
-        1
-      ],
-      [
-        0,
-        9,
-        0,
-        22.0,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        49.5,
-        1
-      ],
-      [
-        0,
-        11,
-        0,
-        42.0,
-        1
-      ],
-      [
-        0,
-        12,
-        0,
-        20.5,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        64.5,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        34.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        23.75,
-        1
-      ],
-      [
-        0,
-        16,
-        0,
-        42.25,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        7.5,
-        1
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        5.75,
-        0
-      ],
-      [
-        0,
-        20,
-        1,
-        32.5,
-        1
-      ],
-      [
-        0,
-        21,
-        1,
-        3.5,
-        1
-      ],
-      [
-        0,
-        22,
-        1,
-        13.0,
-        1
-      ],
-      [
-        0,
-        23,
-        1,
-        14.25,
-        1
-      ],
-      [
-        0,
-        24,
-        1,
-        16.25,
-        1
-      ],
-      [
-        0,
-        25,
-        1,
-        22.5,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        21.75,
-        1
-      ],
-      [
-        0,
-        27,
-        1,
-        7.25,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        22.5,
-        1
-      ],
-      [
-        0,
-        30,
-        1,
-        42.25,
-        1
-      ],
-      [
-        0,
-        31,
-        1,
-        46.75,
-        1
-      ],
-      [
-        0,
-        32,
-        1,
-        28.0,
-        1
-      ],
-      [
-        0,
-        33,
-        1,
-        32.25,
-        1
-      ],
-      [
-        2,
-        33,
-        2,
-        41.0,
-        1
-      ],
-      [
-        2,
-        34,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        35,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        37,
-        2,
-        5.5,
-        0
-      ],
-      [
-        2,
-        38,
-        2,
-        62.0,
-        0
-      ],
-      [
-        2,
-        39,
-        2,
-        0.0,
-        0
-      ],
-      [
-        3,
-        1,
-        3,
-        7.0,
-        1
-      ],
-      [
-        3,
-        2,
-        3,
-        6.0,
-        0
-      ],
-      [
-        3,
-        3,
-        3,
-        13.75,
-        0
-      ],
-      [
-        3,
-        4,
-        3,
-        15.25,
-        1
-      ],
-      [
-        3,
-        5,
-        3,
-        0.0,
-        0
-      ],
-      [
-        3,
-        6,
-        3,
-        0.0,
-        0
-      ],
-      [
-        3,
-        7,
-        3,
-        20.75,
-        0
-      ],
-      [
-        3,
-        8,
-        3,
-        11.75,
-        0
-      ],
-      [
-        3,
-        9,
-        3,
-        0.0,
-        0
-      ],
-      [
-        3,
-        10,
-        3,
-        6.25,
-        0
-      ],
-      [
-        3,
-        11,
-        3,
-        0.0,
-        0
-      ],
-      [
-        3,
-        12,
-        3,
-        0.0,
-        0
-      ],
-      [
-        3,
-        13,
-        3,
-        1.5,
-        0
-      ],
-      [
-        3,
-        14,
-        3,
-        0.0,
-        0
-      ],
-      [
-        3,
-        15,
-        3,
-        41.0,
-        0
-      ],
-      [
-        3,
-        16,
-        3,
-        0.0,
-        0
-      ],
-      [
-        3,
-        17,
-        3,
-        0.0,
-        0
-      ],
-      [
-        3,
-        18,
-        4,
-        16.5,
-        1
-      ],
-      [
-        3,
-        19,
-        4,
-        33.0,
-        1
-      ],
-      [
-        3,
-        20,
-        4,
-        10.5,
-        1
-      ],
-      [
-        3,
-        21,
-        4,
-        0.0,
-        1
-      ],
-      [
-        3,
-        22,
-        4,
-        0.0,
-        1
-      ],
-      [
-        3,
-        23,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        24,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        25,
-        4,
-        1.5,
-        0
-      ],
-      [
-        3,
-        26,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        27,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        28,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        29,
-        4,
-        5.75,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

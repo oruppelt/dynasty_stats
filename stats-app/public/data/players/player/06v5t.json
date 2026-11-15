@@ -80,6 +80,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2023-24",
+      "period": 1,
+      "team": "Memphis Grizzlies",
+      "label": "2025 round 1 pick (Memphis Grizzlies)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 29,
+      "date": "2025-01-27",
+      "from": "Memphis Grizzlies",
+      "team": "New York Knicks",
+      "trade": "rrz52y71m6ewxnpo",
+      "label": "2025 round 1 pick (Memphis Grizzlies)"
+    },
+    {
       "kind": "draft",
       "season": "2025-26",
       "period": 0,
@@ -87,8 +105,12 @@
       "team": "New York Knicks",
       "round": 1,
       "pick": 28,
+      "overall": 28,
+      "original": "Memphis Grizzlies",
+      "certain": true,
       "periods": 37,
       "starts": 3,
+      "gp": 2,
       "points": 8.75,
       "salary": 1315000,
       "contract": "R13"
@@ -103,6 +125,7 @@
       "trade": "ma10od3tmvzbzbvy",
       "periods": 3,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1315000,
       "contract": "R12"
@@ -120,7 +143,17 @@
           "to": "Orlando Magic",
           "player_id": "06v5t",
           "player": "Ben Saraf",
-          "label": "Ben Saraf"
+          "label": "Ben Saraf",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 3,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -128,7 +161,17 @@
           "to": "Orlando Magic",
           "player_id": "076ts",
           "player": "Tyler Nickel",
-          "label": "Tyler Nickel"
+          "label": "Tyler Nickel",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 3,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -136,358 +179,145 @@
           "to": "New York Knicks",
           "player_id": "05uja",
           "player": "Miles McBride",
-          "label": "Miles McBride"
+          "label": "Miles McBride",
+          "result": {
+            "points": 105.25,
+            "starts": 3,
+            "gp": 5,
+            "periods": 3,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
+    "rrz52y71m6ewxnpo": {
+      "date": "2025-01-27",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "06cdf",
+          "player": "Julian Phillips",
+          "label": "Julian Phillips",
+          "result": {
+            "points": 21.0,
+            "starts": 1,
+            "gp": 2,
+            "periods": 12,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "rwavofofmhyybw3d"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "03aq3",
+          "player": "Kyle Anderson",
+          "label": "Kyle Anderson",
+          "result": {
+            "points": 76.25,
+            "starts": 5,
+            "gp": 5,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-27"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "04yk1",
+          "player": "Haywood Highsmith",
+          "label": "Haywood Highsmith",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-27"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2025 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06v5t",
+            "player": "Ben Saraf",
+            "certain": true
+          },
+          "result": {
+            "points": 8.75,
+            "starts": 3,
+            "gp": 2,
+            "periods": 37,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ma10od3tmvzbzbvy"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards",
+          "result": {
+            "points": 95.0,
+            "starts": 2,
+            "gp": 4,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-27"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "New York Knicks",
-      "Orlando Magic"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        25.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        8.75,
-        1
-      ],
-      [
-        0,
-        3,
-        0,
-        12.25,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        6.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        5.5,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        21.75,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        56.5,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        13.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        -2.25,
-        0
-      ],
-      [
-        0,
-        29,
-        0,
-        19.75,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        31.25,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        9.5,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        30.25,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        24.0,
-        0
-      ],
-      [
-        0,
-        34,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        35,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        36,
-        0,
-        17.5,
-        0
-      ],
-      [
-        0,
-        37,
-        0,
-        14.0,
-        0
-      ],
-      [
-        0,
-        39,
-        0,
-        48.5,
-        0
-      ],
-      [
-        0,
-        40,
-        0,
-        30.0,
-        0
-      ],
-      [
-        0,
-        41,
-        0,
-        30.25,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        3.5,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        0.0,
-        1
-      ],
-      [
-        1,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -79,6 +79,7 @@
       "before_logs": true,
       "periods": 32,
       "starts": 19,
+      "gp": 29,
       "points": 363.25,
       "salary": 1695072,
       "contract": "REG2",
@@ -94,6 +95,7 @@
       "trade": "ci5v7ywvkid24lwf",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -114,7 +116,23 @@
           "kind": "pick",
           "from": "Dallas Mavericks",
           "to": "Miami Heat",
-          "label": "2022 round 2 pick (Dallas Mavericks)"
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          },
+          "next": {
+            "trade": "yy9p5ocdkye254n4"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Cleveland Cavaliers"
+          }
         },
         {
           "kind": "player",
@@ -122,7 +140,17 @@
           "to": "Dallas Mavericks",
           "player_id": "04ewl",
           "player": "Terrance Ferguson",
-          "label": "Terrance Ferguson"
+          "label": "Terrance Ferguson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-12-22"
+          }
         },
         {
           "kind": "player",
@@ -130,294 +158,111 @@
           "to": "Dallas Mavericks",
           "player_id": "04ewj",
           "player": "T.J. Leaf",
-          "label": "T.J. Leaf"
+          "label": "T.J. Leaf",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "arji78gykidgnybp"
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Dallas Mavericks",
-          "label": "2021 round 2 pick (Boston Celtics)"
+          "label": "2021 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05ujl",
+            "player": "David Johnson",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-06-21"
+          }
         },
         {
           "kind": "pick",
           "from": "Miami Heat",
           "to": "Dallas Mavericks",
-          "label": "2022 round 2 pick (Golden State Warriors)"
+          "label": "2022 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "0622j",
+            "player": "Luke Travers",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-10-21"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Miami Heat"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        5.5,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        31.75,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        22.5,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        25.0,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        28.75,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        8,
-        0,
-        38.25,
-        1
-      ],
-      [
-        0,
-        9,
-        0,
-        32.75,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        18.5,
-        1
-      ],
-      [
-        0,
-        11,
-        0,
-        35.25,
-        1
-      ],
-      [
-        0,
-        12,
-        0,
-        6.0,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        12.5,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        26.5,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        16.25,
-        1
-      ],
-      [
-        0,
-        19,
-        0,
-        18.25,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        7.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        17.25,
-        1
-      ],
-      [
-        0,
-        22,
-        0,
-        17.0,
-        1
-      ],
-      [
-        0,
-        23,
-        0,
-        39.0,
-        1
-      ],
-      [
-        0,
-        24,
-        0,
-        14.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        43.5,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        0,
-        1.5,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        15.5,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        16.25,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -82,8 +82,11 @@ claims and drops, drafts, picks; committed, fetched by hand with
 `pipeline/analysis/fetch_transactions.py`); `pipeline/analysis/check_transactions.py`
 replays them on the player cache (findings in ROADMAP.md section 3).
 `pipeline/lineage.py` turns them into each player's timeline (`timeline`
-and `trades` on the player page) and `compute_tracks` adds `track` (every period on a roster)
-for the career strip (`components/widgets/PlayerTimeline.tsx`).
+and `trades` on the player page; `axis` gives the seasons' lengths for the career strip in
+`components/widgets/PlayerTimeline.tsx`). `compute_picks` follows every draft pick from its
+original team to the player drafted with it (a drafted player's timeline starts with it); every
+trade item has its `result` (what the team got out of it) and `next` (what it did with it), and
+`data/players/trades.json` has every trade for the trade trees (`TradeTree.tsx`).
 
 ### Metrics (`pipeline/league_data.py`)
 - **All-play strength**: in each scoring period (`Match` column; two per

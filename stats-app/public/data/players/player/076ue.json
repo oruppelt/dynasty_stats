@@ -21,82 +21,170 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Miami Heat",
+      "label": "2026 round 2 pick (Miami Heat)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 20,
+      "date": "2025-12-26",
+      "from": "Miami Heat",
+      "team": "Phoenix Suns",
+      "trade": "h2k3pjs8mjn9v95o",
+      "label": "2026 round 2 pick (Miami Heat)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
       "date": "2026-07-04",
       "team": "Phoenix Suns",
       "round": 2,
-      "pick": 58,
+      "pick": 28,
+      "overall": 58,
+      "original": "Miami Heat",
+      "certain": true,
       "periods": 7,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Phoenix Suns"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
+  "trades": {
+    "h2k3pjs8mjn9v95o": {
+      "date": "2025-12-26",
+      "season": "2025-26",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "player_id": "06mkm",
+          "player": "Baylor Scheierman",
+          "label": "Baylor Scheierman",
+          "result": {
+            "points": 402.5,
+            "starts": 14,
+            "gp": 25,
+            "periods": 21,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "player_id": "03e6s",
+          "player": "Clint Capela",
+          "label": "Clint Capela",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-12-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2026 round 2 pick (Miami Heat)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "076ue",
+            "player": "Trey Kaufman-Renn",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Phoenix Suns",
+          "label": "2026 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "076ua",
+            "player": "Lajae Jones",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Miami Heat",
+          "player_id": "04qrw",
+          "player": "Kevin Huerter",
+          "label": "Kevin Huerter",
+          "result": {
+            "points": 190.25,
+            "starts": 4,
+            "gp": 8,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qtj5h137mklfkucq"
+          }
+        }
       ]
-    ]
-  }
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -49,15 +49,67 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Philadelphia 76ers",
+      "label": "2024 round 2 pick (Philadelphia 76ers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 26,
+      "date": "2024-01-19",
+      "from": "Philadelphia 76ers",
+      "team": "Memphis Grizzlies",
+      "trade": "p0mxkvsnlrkrvpa0",
+      "label": "2024 round 2 pick (Philadelphia 76ers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "from": "Memphis Grizzlies",
+      "team": "Minnesota Timberwolves",
+      "trade": "0ndod7cllrpdvpgn",
+      "label": "2024 round 2 pick (Philadelphia 76ers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 27,
+      "date": "2024-01-22",
+      "from": "Minnesota Timberwolves",
+      "team": "New York Knicks",
+      "trade": "zv7v0wdklrpe6mxo",
+      "label": "2024 round 2 pick (Philadelphia 76ers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "New York Knicks",
+      "team": "Boston Celtics",
+      "trade": "46b3rvz8lxz156yq",
+      "label": "2024 round 2 pick, no. 14"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
       "date": "2024-06-28",
       "team": "Boston Celtics",
       "round": 2,
-      "pick": 44,
+      "pick": 14,
+      "overall": 44,
+      "original": "Philadelphia 76ers",
+      "certain": false,
       "periods": 4,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -72,6 +124,7 @@
       "trade": "chb5mtn3m33d71lg",
       "periods": 29,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -86,6 +139,7 @@
       "trade": "fukufocgmcq7nafm",
       "periods": 33,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -99,46 +153,285 @@
     }
   ],
   "trades": {
-    "fukufocgmcq7nafm": {
-      "date": "2025-07-05",
-      "season": "2025-26",
-      "period": 1,
+    "0ndod7cllrpdvpgn": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
       "items": [
         {
           "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Memphis Grizzlies",
-          "player_id": "06ca9",
-          "player": "Jordan Hawkins",
-          "label": "Jordan Hawkins"
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Memphis Grizzlies",
-          "player_id": "06mma",
-          "player": "Jalen Bridges",
-          "label": "Jalen Bridges"
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Memphis Grizzlies",
-          "player_id": "06mlw",
-          "player": "Enrique Freeman",
-          "label": "Enrique Freeman"
+          "from": "Memphis Grizzlies",
+          "to": "Minnesota Timberwolves",
+          "player_id": "0622c",
+          "player": "Isaiah Mobley",
+          "label": "Isaiah Mobley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-26"
+          }
         },
         {
           "kind": "pick",
           "from": "Memphis Grizzlies",
-          "to": "Detroit Pistons",
-          "label": "2027 round 2 pick (Memphis Grizzlies)"
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          },
+          "next": {
+            "trade": "zv7v0wdklrpe6mxo"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
         },
         {
           "kind": "budget",
           "from": "Memphis Grizzlies",
-          "to": "Detroit Pistons",
-          "label": "$10 budget"
+          "to": "Minnesota Timberwolves",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          },
+          "next": {
+            "trade": "cw0jo5zulxyykp9s"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        }
+      ]
+    },
+    "p0mxkvsnlrkrvpa0": {
+      "date": "2024-01-19",
+      "season": "2023-24",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort",
+          "result": {
+            "points": 248.75,
+            "starts": 7,
+            "gp": 12,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards",
+          "result": {
+            "points": 330.75,
+            "starts": 7,
+            "gp": 11,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "03ad7",
+          "player": "Kevon Looney",
+          "label": "Kevon Looney",
+          "result": {
+            "points": 123.75,
+            "starts": 7,
+            "gp": 10,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "051pq",
+          "player": "Talen Horton-Tucker",
+          "label": "Talen Horton-Tucker",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2025 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 2,
+            "overall": 2,
+            "player_id": "06v5y",
+            "player": "Dylan Harper",
+            "certain": true
+          },
+          "next": {
+            "trade": "79wk2egvlrpcba0l"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          },
+          "next": {
+            "trade": "0ndod7cllrpdvpgn"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        }
+      ]
+    },
+    "46b3rvz8lxz156yq": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "label": "2026 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "076tt",
+            "player": "Ugonna Onyenso",
+            "certain": true
+          },
+          "next": {
+            "trade": "rwavofofmhyybw3d"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "label": "2024 round 2 pick, no. 14",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "chb5mtn3m33d71lg"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "label": "2024 round 2 pick, no. 8"
         }
       ]
     },
@@ -153,7 +446,17 @@
           "to": "Detroit Pistons",
           "player_id": "06mlw",
           "player": "Enrique Freeman",
-          "label": "Enrique Freeman"
+          "label": "Enrique Freeman",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fukufocgmcq7nafm"
+          }
         },
         {
           "kind": "player",
@@ -161,580 +464,199 @@
           "to": "Boston Celtics",
           "player_id": "062pk",
           "player": "Simone Fontecchio",
-          "label": "Simone Fontecchio"
+          "label": "Simone Fontecchio",
+          "result": {
+            "points": 243.75,
+            "starts": 13,
+            "gp": 19,
+            "periods": 23,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fqy5f8aem6akho3q"
+          }
         },
         {
           "kind": "pick",
           "from": "Detroit Pistons",
           "to": "Boston Celtics",
-          "label": "2025 round 2 pick (Orlando Magic)"
+          "label": "2025 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "02oyy",
+            "player": null,
+            "certain": true
+          }
+        }
+      ]
+    },
+    "zv7v0wdklrpe6mxo": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "New York Knicks",
+          "player_id": "04qrx",
+          "player": "Josh Okogie",
+          "label": "Josh Okogie",
+          "result": {
+            "points": 168.25,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-27"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "New York Knicks",
+          "label": "2024 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          },
+          "next": {
+            "trade": "46b3rvz8lxz156yq"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum",
+          "result": {
+            "points": 14.25,
+            "starts": 1,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-22"
+          }
+        }
+      ]
+    },
+    "fukufocgmcq7nafm": {
+      "date": "2025-07-05",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "06ca9",
+          "player": "Jordan Hawkins",
+          "label": "Jordan Hawkins",
+          "result": {
+            "points": 30.5,
+            "starts": 5,
+            "gp": 6,
+            "periods": 24,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-01-12"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "06mma",
+          "player": "Jalen Bridges",
+          "label": "Jalen Bridges",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-05"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Memphis Grizzlies",
+          "player_id": "06mlw",
+          "player": "Enrique Freeman",
+          "label": "Enrique Freeman",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-19"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "2027 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Detroit Pistons",
+          "label": "$10 budget"
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Boston Celtics",
-      "Detroit Pistons",
-      "Memphis Grizzlies"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.5,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        8.25,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        1,
-        9.25,
-        0
-      ],
-      [
-        0,
-        7,
-        1,
-        -0.5,
-        0
-      ],
-      [
-        0,
-        8,
-        1,
-        7.5,
-        0
-      ],
-      [
-        0,
-        9,
-        1,
-        19.75,
-        0
-      ],
-      [
-        0,
-        10,
-        1,
-        -2.5,
-        0
-      ],
-      [
-        0,
-        11,
-        1,
-        3.25,
-        0
-      ],
-      [
-        0,
-        12,
-        1,
-        3.5,
-        0
-      ],
-      [
-        0,
-        13,
-        1,
-        3.25,
-        0
-      ],
-      [
-        0,
-        14,
-        1,
-        3.5,
-        0
-      ],
-      [
-        0,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        1,
-        2.0,
-        0
-      ],
-      [
-        0,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        1,
-        4.0,
-        0
-      ],
-      [
-        0,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        23,
-        1,
-        10.0,
-        0
-      ],
-      [
-        0,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        3.5,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        34,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        35,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        36,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        37,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        22,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        2,
-        3.0,
-        0
-      ],
-      [
-        1,
-        33,
-        2,
-        6.25,
-        0
-      ],
-      [
-        1,
-        34,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        35,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        36,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        39,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        40,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        42,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        43,
-        2,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

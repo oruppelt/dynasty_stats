@@ -62,6 +62,34 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2024-25",
+      "period": 1,
+      "team": "Boston Celtics",
+      "label": "2026 round 1 pick (Boston Celtics)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "Boston Celtics",
+      "team": "Oklahoma City Thunder",
+      "trade": "zws2x9dxlxyaxawu",
+      "label": "2026 round 1 pick (Boston Celtics)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2025-26",
+      "period": 20,
+      "date": "2025-12-26",
+      "from": "Oklahoma City Thunder",
+      "team": "Toronto Raptors",
+      "trade": "h89qz7i7mjn1jv97",
+      "label": "2026 round 1 pick (Boston Celtics)"
+    },
+    {
       "kind": "draft",
       "season": "2026-27",
       "period": 0,
@@ -69,75 +97,197 @@
       "team": "Toronto Raptors",
       "round": 1,
       "pick": 10,
+      "overall": 10,
+      "original": "Boston Celtics",
+      "certain": true,
       "periods": 7,
       "starts": 4,
+      "gp": 8,
       "points": 182.0,
       "salary": 2842000,
       "contract": "R13"
     }
   ],
-  "trades": {},
-  "track": {
-    "seasons": [
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Toronto Raptors"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        21.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        33.75,
-        1
-      ],
-      [
-        0,
-        3,
-        0,
-        29.0,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        28.25,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        35.25,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        86.0,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        33.25,
-        1
+  "trades": {
+    "zws2x9dxlxyaxawu": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2026 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "076tl",
+            "player": "Brayden Burries",
+            "certain": true
+          },
+          "next": {
+            "trade": "h89qz7i7mjn1jv97"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Toronto Raptors"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "label": "2024 round 1 pick, no. 22"
+        }
       ]
-    ]
-  }
+    },
+    "h89qz7i7mjn1jv97": {
+      "date": "2025-12-26",
+      "season": "2025-26",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06v58",
+          "player": "Tre Johnson",
+          "label": "Tre Johnson",
+          "result": {
+            "points": 554.75,
+            "starts": 14,
+            "gp": 22,
+            "periods": 21,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "05uiw",
+          "player": "Isaiah Jackson",
+          "label": "Isaiah Jackson",
+          "result": {
+            "points": 114.25,
+            "starts": 5,
+            "gp": 7,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "0558t",
+          "player": "Max Strus",
+          "label": "Max Strus",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "076tl",
+            "player": "Brayden Burries",
+            "certain": true
+          },
+          "result": {
+            "points": 182.0,
+            "starts": 4,
+            "gp": 8,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2027 round 1 pick (Oklahoma City Thunder)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06mjz",
+          "player": "Donovan Clingan",
+          "label": "Donovan Clingan",
+          "result": {
+            "points": 1395.75,
+            "starts": 19,
+            "gp": 35,
+            "periods": 21,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06212",
+          "player": "Jabari Smith",
+          "label": "Jabari Smith",
+          "result": {
+            "points": 1411.25,
+            "starts": 20,
+            "gp": 37,
+            "periods": 21,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    }
+  },
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

@@ -121,6 +121,7 @@
       "before_logs": true,
       "periods": 5,
       "starts": 5,
+      "gp": 7,
       "points": 121.25,
       "salary": 1102594,
       "contract": "REG1",
@@ -136,6 +137,7 @@
       "trade": "yzpa9lmnk2oo5ui0",
       "periods": 27,
       "starts": 11,
+      "gp": 18,
       "points": 160.5,
       "salary": 1102594,
       "contract": "REG1"
@@ -156,6 +158,7 @@
       "bid": 20.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "REG1"
@@ -176,6 +179,7 @@
       "bid": 5.0,
       "periods": 23,
       "starts": 13,
+      "gp": 23,
       "points": 458.5,
       "salary": 1000000,
       "contract": "FA"
@@ -200,13 +204,39 @@
           "to": "Miami Heat",
           "player_id": "048zs",
           "player": "Shaquille Harrison",
-          "label": "Shaquille Harrison"
+          "label": "Shaquille Harrison",
+          "result": {
+            "points": 256.0,
+            "starts": 22,
+            "gp": 25,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         },
         {
           "kind": "pick",
           "from": "Boston Celtics",
           "to": "Miami Heat",
-          "label": "2021 round 2 pick (Boston Celtics)"
+          "label": "2021 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05ujl",
+            "player": "David Johnson",
+            "certain": true
+          },
+          "next": {
+            "trade": "ci5v7ywvkid24lwf"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
         },
         {
           "kind": "player",
@@ -214,453 +244,61 @@
           "to": "Boston Celtics",
           "player_id": "04ewv",
           "player": "Frank Jackson",
-          "label": "Frank Jackson"
+          "label": "Frank Jackson",
+          "result": {
+            "points": 160.5,
+            "starts": 11,
+            "gp": 18,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Miami Heat",
-      "Boston Celtics",
-      "Charlotte Hornets",
-      "Chicago Bulls"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        10.0,
-        1
-      ],
-      [
-        0,
-        2,
-        0,
-        30.75,
-        1
-      ],
-      [
-        0,
-        3,
-        0,
-        58.75,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        9.5,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        12.25,
-        1
-      ],
-      [
-        0,
-        6,
-        1,
-        26.0,
-        1
-      ],
-      [
-        0,
-        7,
-        1,
-        43.25,
-        1
-      ],
-      [
-        0,
-        8,
-        1,
-        2.0,
-        1
-      ],
-      [
-        0,
-        9,
-        1,
-        18.25,
-        1
-      ],
-      [
-        0,
-        10,
-        1,
-        9.0,
-        1
-      ],
-      [
-        0,
-        11,
-        1,
-        4.5,
-        1
-      ],
-      [
-        0,
-        12,
-        1,
-        0.5,
-        1
-      ],
-      [
-        0,
-        13,
-        1,
-        0.25,
-        1
-      ],
-      [
-        0,
-        14,
-        1,
-        8.0,
-        0
-      ],
-      [
-        0,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        1,
-        -1.5,
-        1
-      ],
-      [
-        0,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        1,
-        -1.0,
-        0
-      ],
-      [
-        0,
-        20,
-        1,
-        6.0,
-        0
-      ],
-      [
-        0,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        1,
-        -2.0,
-        0
-      ],
-      [
-        0,
-        23,
-        1,
-        1.75,
-        0
-      ],
-      [
-        0,
-        24,
-        1,
-        26.25,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        42.25,
-        1
-      ],
-      [
-        0,
-        26,
-        1,
-        14.0,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        16.0,
-        1
-      ],
-      [
-        0,
-        28,
-        1,
-        7.5,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        -2.0,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        3.25,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        15.75,
-        0
-      ],
-      [
-        0,
-        33,
-        1,
-        36.5,
-        0
-      ],
-      [
-        1,
-        40,
-        2,
-        23.75,
-        1
-      ],
-      [
-        2,
-        11,
-        3,
-        26.5,
-        1
-      ],
-      [
-        2,
-        12,
-        3,
-        37.0,
-        1
-      ],
-      [
-        2,
-        13,
-        3,
-        24.75,
-        1
-      ],
-      [
-        2,
-        14,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        15,
-        3,
-        36.25,
-        1
-      ],
-      [
-        2,
-        16,
-        3,
-        47.0,
-        1
-      ],
-      [
-        2,
-        17,
-        3,
-        29.25,
-        1
-      ],
-      [
-        2,
-        18,
-        3,
-        27.75,
-        1
-      ],
-      [
-        2,
-        19,
-        3,
-        47.5,
-        1
-      ],
-      [
-        2,
-        20,
-        3,
-        26.5,
-        1
-      ],
-      [
-        2,
-        21,
-        3,
-        18.0,
-        1
-      ],
-      [
-        2,
-        22,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        23,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        24,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        25,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        26,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        27,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        28,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        29,
-        3,
-        13.0,
-        0
-      ],
-      [
-        2,
-        30,
-        3,
-        37.75,
-        0
-      ],
-      [
-        2,
-        31,
-        3,
-        59.25,
-        1
-      ],
-      [
-        2,
-        32,
-        3,
-        36.75,
-        1
-      ],
-      [
-        2,
-        33,
-        3,
-        42.0,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

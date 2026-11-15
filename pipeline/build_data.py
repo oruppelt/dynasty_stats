@@ -129,7 +129,8 @@ def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame,
 def write_players_alltime(config: dict, out: Path) -> None:
     """data/players/alltime.json, every season's player records together (players.compute_alltime_players),
     and the player pages: data/players/index.json (the search list) and data/players/player/<id>.json
-    (players.compute_player_pages, with the timeline from lineage.compute_timelines). From the cached rows and each season's periods (the season's player
+    (players.compute_player_pages, with the timeline from lineage.compute_timelines), and data/players/trades.json (every
+    trade, with what each item became, for the trade trees). From the cached rows and each season's periods (the season's player
     file, whose meta also has the season's length for the salary paid); each file is written only when it changes."""
     seasons, lengths = [], {}
     for s in config['seasons']:
@@ -146,12 +147,16 @@ def write_players_alltime(config: dict, out: Path) -> None:
     index, pages = players.compute_player_pages(seasons, lengths)
     transactions = lineage.read_transactions()
     if transactions is not None:
-        for pid, timeline in lineage.compute_timelines(seasons, transactions).items():
+        all_trades = {}
+        for pid, timeline in lineage.compute_timelines(seasons, transactions, _standings(config, out), all_trades).items():
             if pid in pages:
                 pages[pid].update(timeline=timeline['events'], trades=timeline['trades'])
-        for pid, track in lineage.compute_tracks(seasons).items():
-            if pid in pages:
-                pages[pid]['track'] = track
+        axis = lineage.compute_axis(seasons)
+        for page in pages.values():
+            # From his first season (a draft is in the season it's for)
+            first = min([s['season'] for s in page['seasons']] + [e['season'] for e in page.get('timeline', []) if e.get('season')])
+            page['axis'] = [a for a in axis if a['season'] >= first]
+        _write_if_changed(out / 'players' / 'trades.json', to_json(all_trades))
     _write_if_changed(out / 'players' / 'index.json', to_json(index))
     page_dir = out / 'players' / 'player'
     page_dir.mkdir(parents=True, exist_ok=True)
@@ -160,6 +165,20 @@ def write_players_alltime(config: dict, out: Path) -> None:
     for stale in page_dir.glob('*.json'):
         if stale.stem not in pages:
             stale.unlink()
+
+
+def _standings(config: dict, out: Path) -> dict[str, list[str]]:
+    """Each season's teams, worst record first (then fewest points), from the season files: the draft order's
+    guess for lineage.compute_picks. Names are today's (lineage.franchise)."""
+    standings = {}
+    for s in config['seasons']:
+        path = season_path(out, s['id'])
+        if path.exists():
+            teams = json.loads(path.read_text())['teams']
+            when = lineage.pd.Timestamp(f'{s["id"][:4]}-12-01')
+            standings[s['id']] = [lineage.franchise(t['team'], when) for t in
+                                  sorted(teams, key=lambda t: (t['wins'] - t['losses'], t['points_for']))]
+    return standings
 
 
 def _write_if_changed(path: Path, text: str) -> None:

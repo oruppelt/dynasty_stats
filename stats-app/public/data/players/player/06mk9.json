@@ -121,8 +121,11 @@
       "team": "Oklahoma City Thunder",
       "round": 1,
       "pick": 13,
+      "overall": 13,
+      "certain": true,
       "periods": 39,
       "starts": 26,
+      "gp": 43,
       "points": 783.0,
       "salary": 2437000,
       "contract": "R13"
@@ -137,6 +140,7 @@
       "trade": "b7zez6g3mhsz8kok",
       "periods": 27,
       "starts": 19,
+      "gp": 26,
       "points": 193.25,
       "salary": 2437000,
       "contract": "R12"
@@ -157,6 +161,7 @@
       "bid": 9.0,
       "periods": 2,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -174,7 +179,17 @@
           "to": "Toronto Raptors",
           "player_id": "06cdh",
           "player": "GG Jackson",
-          "label": "GG Jackson"
+          "label": "GG Jackson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-24"
+          }
         },
         {
           "kind": "player",
@@ -182,7 +197,17 @@
           "to": "Toronto Raptors",
           "player_id": "06caa",
           "player": "Ben Sheppard",
-          "label": "Ben Sheppard"
+          "label": "Ben Sheppard",
+          "result": {
+            "points": 464.0,
+            "starts": 15,
+            "gp": 27,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
         },
         {
           "kind": "player",
@@ -190,7 +215,17 @@
           "to": "Toronto Raptors",
           "player_id": "06mlj",
           "player": "Bobi Klintman",
-          "label": "Bobi Klintman"
+          "label": "Bobi Klintman",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
         },
         {
           "kind": "player",
@@ -198,13 +233,42 @@
           "to": "Toronto Raptors",
           "player_id": "06mk9",
           "player": "Dalton Knecht",
-          "label": "Dalton Knecht"
+          "label": "Dalton Knecht",
+          "result": {
+            "points": 193.25,
+            "starts": 19,
+            "gp": 26,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
         },
         {
           "kind": "pick",
           "from": "Oklahoma City Thunder",
           "to": "Toronto Raptors",
-          "label": "2026 round 1 pick (Oklahoma City Thunder)"
+          "label": "2026 round 1 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "076u1",
+            "player": "Henri Veesaar",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
         },
         {
           "kind": "player",
@@ -212,7 +276,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "048zt",
           "player": "Derrick Jones",
-          "label": "Derrick Jones"
+          "label": "Derrick Jones",
+          "result": {
+            "points": 115.5,
+            "starts": 2,
+            "gp": 4,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
         },
         {
           "kind": "player",
@@ -220,7 +294,17 @@
           "to": "Oklahoma City Thunder",
           "player_id": "0621y",
           "player": "Max Christie",
-          "label": "Max Christie"
+          "label": "Max Christie",
+          "result": {
+            "points": 692.5,
+            "starts": 15,
+            "gp": 25,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
         },
         {
           "kind": "budget",
@@ -231,506 +315,21 @@
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Oklahoma City Thunder",
-      "Toronto Raptors",
-      "Miami Heat"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        13.25,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        33.75,
-        1
-      ],
-      [
-        0,
-        3,
-        0,
-        25.5,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        9.0,
-        1
-      ],
-      [
-        0,
-        5,
-        0,
-        20.75,
-        1
-      ],
-      [
-        0,
-        6,
-        0,
-        16.0,
-        1
-      ],
-      [
-        0,
-        7,
-        0,
-        39.25,
-        1
-      ],
-      [
-        0,
-        8,
-        0,
-        79.0,
-        1
-      ],
-      [
-        0,
-        9,
-        0,
-        94.75,
-        1
-      ],
-      [
-        0,
-        10,
-        0,
-        20.0,
-        1
-      ],
-      [
-        0,
-        11,
-        0,
-        58.0,
-        1
-      ],
-      [
-        0,
-        12,
-        0,
-        65.0,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        13.75,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        39.75,
-        1
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        16,
-        0,
-        18.75,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        2.0,
-        1
-      ],
-      [
-        0,
-        18,
-        0,
-        -1.0,
-        0
-      ],
-      [
-        0,
-        19,
-        0,
-        48.25,
-        0
-      ],
-      [
-        0,
-        20,
-        0,
-        28.0,
-        0
-      ],
-      [
-        0,
-        21,
-        0,
-        11.5,
-        1
-      ],
-      [
-        0,
-        22,
-        0,
-        28.75,
-        0
-      ],
-      [
-        0,
-        23,
-        0,
-        17.0,
-        0
-      ],
-      [
-        0,
-        24,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        25,
-        0,
-        23.0,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        27.0,
-        1
-      ],
-      [
-        0,
-        27,
-        0,
-        30.5,
-        1
-      ],
-      [
-        0,
-        28,
-        0,
-        17.5,
-        1
-      ],
-      [
-        0,
-        29,
-        0,
-        58.0,
-        1
-      ],
-      [
-        0,
-        30,
-        0,
-        -2.0,
-        1
-      ],
-      [
-        0,
-        31,
-        0,
-        24.5,
-        0
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        1
-      ],
-      [
-        0,
-        33,
-        0,
-        18.5,
-        0
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        3.75,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        63.5,
-        1
-      ],
-      [
-        1,
-        4,
-        0,
-        18.75,
-        1
-      ],
-      [
-        1,
-        5,
-        0,
-        15.5,
-        0
-      ],
-      [
-        1,
-        6,
-        0,
-        21.5,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        42.25,
-        1
-      ],
-      [
-        1,
-        8,
-        1,
-        43.0,
-        1
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        12,
-        1,
-        14.5,
-        1
-      ],
-      [
-        1,
-        13,
-        1,
-        31.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        7.75,
-        1
-      ],
-      [
-        1,
-        15,
-        1,
-        5.0,
-        1
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        1
-      ],
-      [
-        1,
-        17,
-        1,
-        -0.5,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        7.0,
-        1
-      ],
-      [
-        1,
-        19,
-        1,
-        10.0,
-        1
-      ],
-      [
-        1,
-        20,
-        1,
-        6.0,
-        1
-      ],
-      [
-        1,
-        21,
-        1,
-        17.0,
-        1
-      ],
-      [
-        1,
-        22,
-        1,
-        0.75,
-        1
-      ],
-      [
-        1,
-        23,
-        1,
-        8.25,
-        1
-      ],
-      [
-        1,
-        24,
-        1,
-        4.5,
-        1
-      ],
-      [
-        1,
-        25,
-        1,
-        7.5,
-        1
-      ],
-      [
-        1,
-        26,
-        1,
-        6.5,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        8.0,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        8.25,
-        0
-      ],
-      [
-        1,
-        31,
-        1,
-        5.0,
-        1
-      ],
-      [
-        1,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        33,
-        1,
-        14.75,
-        1
-      ],
-      [
-        2,
-        6,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        7,
-        2,
-        4.5,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

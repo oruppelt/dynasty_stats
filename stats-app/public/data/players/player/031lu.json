@@ -150,6 +150,7 @@
       "bid": 20.0,
       "periods": 10,
       "starts": 7,
+      "gp": 11,
       "points": 334.5,
       "salary": 1000000,
       "contract": "FA"
@@ -164,6 +165,7 @@
       "trade": "jczv175kk4fvkyxw",
       "periods": 14,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -184,6 +186,7 @@
       "bid": 0.0,
       "periods": 14,
       "starts": 6,
+      "gp": 11,
       "points": 99.5,
       "salary": 2000000,
       "contract": "REG1"
@@ -198,6 +201,7 @@
       "trade": "5iowtk61kky1yo09",
       "periods": 14,
       "starts": 9,
+      "gp": 10,
       "points": 182.25,
       "salary": 2000000,
       "contract": "REG1"
@@ -218,6 +222,7 @@
       "bid": 15.0,
       "periods": 12,
       "starts": 12,
+      "gp": 16,
       "points": 307.25,
       "salary": 1000000,
       "contract": "FA"
@@ -232,6 +237,7 @@
       "trade": "u84ukmdukyle5in8",
       "periods": 6,
       "starts": 5,
+      "gp": 10,
       "points": 147.75,
       "salary": 1000000,
       "contract": "FA"
@@ -256,7 +262,17 @@
           "to": "Milwaukee Bucks",
           "player_id": "01enn",
           "player": "Blake Griffin",
-          "label": "Blake Griffin"
+          "label": "Blake Griffin",
+          "result": {
+            "points": 91.5,
+            "starts": 2,
+            "gp": 3,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
         },
         {
           "kind": "player",
@@ -264,7 +280,17 @@
           "to": "Milwaukee Bucks",
           "player_id": "031lu",
           "player": "Ben McLemore",
-          "label": "Ben McLemore"
+          "label": "Ben McLemore",
+          "result": {
+            "points": 182.25,
+            "starts": 9,
+            "gp": 10,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
         },
         {
           "kind": "player",
@@ -272,7 +298,14 @@
           "to": "Indiana Pacers",
           "player_id": "05qv8",
           "player": "Facundo Campazzo",
-          "label": "Facundo Campazzo"
+          "label": "Facundo Campazzo",
+          "result": {
+            "points": 460.75,
+            "starts": 14,
+            "gp": 22,
+            "periods": 14,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -280,7 +313,17 @@
           "to": "Indiana Pacers",
           "player_id": "03nwj",
           "player": "Stanley Johnson",
-          "label": "Stanley Johnson"
+          "label": "Stanley Johnson",
+          "result": {
+            "points": 13.5,
+            "starts": 4,
+            "gp": 5,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-02-25"
+          }
         },
         {
           "kind": "player",
@@ -288,13 +331,39 @@
           "to": "Indiana Pacers",
           "player_id": "04ex5",
           "player": "Thomas Bryant",
-          "label": "Thomas Bryant"
+          "label": "Thomas Bryant",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
         },
         {
           "kind": "pick",
           "from": "Milwaukee Bucks",
           "to": "Indiana Pacers",
-          "label": "2022 round 2 pick (Milwaukee Bucks)"
+          "label": "2022 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "0621z",
+            "player": "Gabriele Procida",
+            "certain": false
+          },
+          "next": {
+            "trade": "t4n43rlekvqeinkp"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
         }
       ]
     },
@@ -309,7 +378,17 @@
           "to": "Indiana Pacers",
           "player_id": "031lu",
           "player": "Ben McLemore",
-          "label": "Ben McLemore"
+          "label": "Ben McLemore",
+          "result": {
+            "points": 147.75,
+            "starts": 5,
+            "gp": 10,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
         },
         {
           "kind": "player",
@@ -317,7 +396,17 @@
           "to": "Indiana Pacers",
           "player_id": "04ewf",
           "player": "Bam Adebayo",
-          "label": "Bam Adebayo"
+          "label": "Bam Adebayo",
+          "result": {
+            "points": 6753.25,
+            "starts": 98,
+            "gp": 154,
+            "periods": 104,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
         },
         {
           "kind": "player",
@@ -325,7 +414,17 @@
           "to": "Indiana Pacers",
           "player_id": "031lp",
           "player": "Victor Oladipo",
-          "label": "Victor Oladipo"
+          "label": "Victor Oladipo",
+          "result": {
+            "points": 684.75,
+            "starts": 17,
+            "gp": 23,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-24"
+          }
         },
         {
           "kind": "player",
@@ -333,7 +432,17 @@
           "to": "Indiana Pacers",
           "player_id": "059ca",
           "player": "Oshae Brissett",
-          "label": "Oshae Brissett"
+          "label": "Oshae Brissett",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9p0kw43okyngjg6r"
+          }
         },
         {
           "kind": "player",
@@ -341,7 +450,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "051oq",
           "player": "Cam Reddish",
-          "label": "Cam Reddish"
+          "label": "Cam Reddish",
+          "result": {
+            "points": 62.75,
+            "starts": 6,
+            "gp": 6,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
         },
         {
           "kind": "player",
@@ -349,7 +468,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "03r7l",
           "player": "Larry Nance",
-          "label": "Larry Nance"
+          "label": "Larry Nance",
+          "result": {
+            "points": 0.0,
+            "starts": 6,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "25j29lacl4n2yx7t"
+          }
         },
         {
           "kind": "player",
@@ -357,7 +486,17 @@
           "to": "Cleveland Cavaliers",
           "player_id": "03ad2",
           "player": "Myles Turner",
-          "label": "Myles Turner"
+          "label": "Myles Turner",
+          "result": {
+            "points": 2042.25,
+            "starts": 37,
+            "gp": 46,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-24"
+          }
         }
       ]
     },
@@ -372,7 +511,17 @@
           "to": "Indiana Pacers",
           "player_id": "027ou",
           "player": "Klay Thompson",
-          "label": "Klay Thompson"
+          "label": "Klay Thompson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "rxojqv5xkhq68p46"
+          }
         },
         {
           "kind": "pick",
@@ -386,7 +535,17 @@
           "to": "Houston Rockets",
           "player_id": "031lx",
           "player": "CJ McCollum",
-          "label": "CJ McCollum"
+          "label": "CJ McCollum",
+          "result": {
+            "points": 1822.5,
+            "starts": 43,
+            "gp": 45,
+            "periods": 43,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-08-07"
+          }
         },
         {
           "kind": "player",
@@ -394,7 +553,17 @@
           "to": "Houston Rockets",
           "player_id": "0012a",
           "player": "JR Smith",
-          "label": "JR Smith"
+          "label": "JR Smith",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         },
         {
           "kind": "player",
@@ -402,621 +571,61 @@
           "to": "Houston Rockets",
           "player_id": "031lu",
           "player": "Ben McLemore",
-          "label": "Ben McLemore"
+          "label": "Ben McLemore",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
         }
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Indiana Pacers",
-      "Houston Rockets",
-      "Milwaukee Bucks",
-      "Cleveland Cavaliers"
-    ],
-    "periods": [
-      [
-        0,
-        9,
-        0,
-        24.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        48.25,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        16.75,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        56.75,
-        1
-      ],
-      [
-        0,
-        13,
-        0,
-        68.5,
-        1
-      ],
-      [
-        0,
-        14,
-        0,
-        31.75,
-        1
-      ],
-      [
-        0,
-        15,
-        0,
-        57.75,
-        1
-      ],
-      [
-        0,
-        16,
-        0,
-        57.25,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        48.5,
-        1
-      ],
-      [
-        0,
-        18,
-        0,
-        14.0,
-        1
-      ],
-      [
-        0,
-        19,
-        1,
-        31.0,
-        0
-      ],
-      [
-        0,
-        20,
-        1,
-        40.0,
-        0
-      ],
-      [
-        0,
-        21,
-        1,
-        14.5,
-        0
-      ],
-      [
-        0,
-        22,
-        1,
-        2.5,
-        0
-      ],
-      [
-        0,
-        23,
-        1,
-        50.0,
-        0
-      ],
-      [
-        0,
-        24,
-        1,
-        29.25,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        58.5,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        13.75,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        10.5,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        26.5,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        59.75,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        41.75,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        44.5,
-        0
-      ],
-      [
-        0,
-        33,
-        1,
-        6.5,
-        0
-      ],
-      [
-        0,
-        35,
-        1,
-        26.0,
-        0
-      ],
-      [
-        0,
-        36,
-        1,
-        38.25,
-        1
-      ],
-      [
-        0,
-        37,
-        1,
-        7.25,
-        1
-      ],
-      [
-        1,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        0,
-        40.25,
-        0
-      ],
-      [
-        1,
-        7,
-        0,
-        25.75,
-        1
-      ],
-      [
-        1,
-        8,
-        0,
-        39.75,
-        0
-      ],
-      [
-        1,
-        9,
-        0,
-        13.75,
-        1
-      ],
-      [
-        1,
-        10,
-        0,
-        32.5,
-        1
-      ],
-      [
-        1,
-        11,
-        0,
-        4.75,
-        1
-      ],
-      [
-        1,
-        12,
-        0,
-        3.0,
-        1
-      ],
-      [
-        1,
-        13,
-        0,
-        19.75,
-        1
-      ],
-      [
-        1,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        0,
-        26.0,
-        1
-      ],
-      [
-        1,
-        16,
-        2,
-        5.75,
-        0
-      ],
-      [
-        1,
-        17,
-        2,
-        41.75,
-        1
-      ],
-      [
-        1,
-        18,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        2,
-        2.5,
-        1
-      ],
-      [
-        1,
-        20,
-        2,
-        8.5,
-        1
-      ],
-      [
-        1,
-        21,
-        2,
-        35.5,
-        0
-      ],
-      [
-        1,
-        23,
-        2,
-        28.0,
-        1
-      ],
-      [
-        1,
-        24,
-        2,
-        33.0,
-        1
-      ],
-      [
-        1,
-        25,
-        2,
-        0.0,
-        1
-      ],
-      [
-        1,
-        26,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        2,
-        35.5,
-        0
-      ],
-      [
-        1,
-        28,
-        2,
-        59.5,
-        1
-      ],
-      [
-        1,
-        29,
-        2,
-        0.0,
-        1
-      ],
-      [
-        1,
-        30,
-        2,
-        9.0,
-        1
-      ],
-      [
-        2,
-        16,
-        3,
-        33.25,
-        1
-      ],
-      [
-        2,
-        17,
-        3,
-        -5.0,
-        1
-      ],
-      [
-        2,
-        18,
-        3,
-        49.5,
-        1
-      ],
-      [
-        2,
-        19,
-        3,
-        9.0,
-        1
-      ],
-      [
-        2,
-        20,
-        3,
-        0.0,
-        1
-      ],
-      [
-        2,
-        21,
-        3,
-        0.0,
-        1
-      ],
-      [
-        2,
-        22,
-        3,
-        42.5,
-        1
-      ],
-      [
-        2,
-        23,
-        3,
-        18.5,
-        1
-      ],
-      [
-        2,
-        24,
-        3,
-        25.5,
-        1
-      ],
-      [
-        2,
-        25,
-        3,
-        87.75,
-        1
-      ],
-      [
-        2,
-        26,
-        3,
-        12.5,
-        1
-      ],
-      [
-        2,
-        27,
-        3,
-        33.75,
-        1
-      ],
-      [
-        2,
-        28,
-        0,
-        41.0,
-        1
-      ],
-      [
-        2,
-        29,
-        0,
-        35.0,
-        1
-      ],
-      [
-        2,
-        30,
-        0,
-        37.25,
-        1
-      ],
-      [
-        2,
-        31,
-        0,
-        6.75,
-        1
-      ],
-      [
-        2,
-        32,
-        0,
-        27.75,
-        1
-      ],
-      [
-        2,
-        33,
-        0,
-        46.0,
-        0
-      ],
-      [
-        2,
-        34,
-        0,
-        37.75,
-        1
-      ],
-      [
-        2,
-        35,
-        0,
-        37.5,
-        1
-      ],
-      [
-        2,
-        37,
-        0,
-        11.75,
-        0
-      ],
-      [
-        2,
-        38,
-        0,
-        24.5,
-        0
-      ],
-      [
-        2,
-        40,
-        0,
-        7.5,
-        0
-      ],
-      [
-        2,
-        41,
-        0,
-        0.75,
-        1
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }
