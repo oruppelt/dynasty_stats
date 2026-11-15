@@ -88,6 +88,7 @@
       "bid": 15.0,
       "periods": 2,
       "starts": 2,
+      "gp": 3,
       "points": 57.5,
       "salary": 1000000,
       "contract": "FA"
@@ -102,6 +103,7 @@
       "trade": "gebhqes2lp7bilac",
       "periods": 5,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -122,6 +124,7 @@
       "bid": 13.0,
       "periods": 9,
       "starts": 1,
+      "gp": 2,
       "points": 49.0,
       "salary": 1000000,
       "contract": "FA"
@@ -159,161 +162,26 @@
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Los Angeles Lakers",
-      "Golden State Warriors",
-      "Charlotte Hornets"
-    ],
-    "periods": [
-      [
-        0,
-        7,
-        0,
-        27.0,
-        1
-      ],
-      [
-        0,
-        8,
-        0,
-        30.5,
-        1
-      ],
-      [
-        0,
-        9,
-        1,
-        14.5,
-        0
-      ],
-      [
-        0,
-        10,
-        1,
-        12.25,
-        0
-      ],
-      [
-        0,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        2,
-        44.0,
-        0
-      ],
-      [
-        0,
-        25,
-        2,
-        44.75,
-        0
-      ],
-      [
-        0,
-        26,
-        2,
-        9.25,
-        0
-      ],
-      [
-        0,
-        27,
-        2,
-        33.25,
-        0
-      ],
-      [
-        0,
-        28,
-        2,
-        10.75,
-        0
-      ],
-      [
-        0,
-        29,
-        2,
-        49.0,
-        1
-      ],
-      [
-        0,
-        30,
-        2,
-        81.0,
-        0
-      ],
-      [
-        0,
-        31,
-        2,
-        44.0,
-        0
-      ],
-      [
-        0,
-        32,
-        2,
-        22.25,
-        0
-      ],
-      [
-        0,
-        33,
-        2,
-        11.75,
-        0
-      ],
-      [
-        0,
-        35,
-        2,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

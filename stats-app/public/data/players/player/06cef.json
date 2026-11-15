@@ -144,6 +144,7 @@
       "bid": 0.0,
       "periods": 18,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -158,6 +159,7 @@
       "trade": "okjjp9solqjjzh20",
       "periods": 23,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -172,6 +174,7 @@
       "trade": "f6unfq5nm3sz0k4i",
       "periods": 18,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -186,6 +189,7 @@
       "trade": "qqtxc5wbm65k1oug",
       "periods": 6,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -206,6 +210,7 @@
       "bid": 9.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -226,65 +231,13 @@
       "bid": 0.0,
       "periods": 7,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "REG1"
     }
   ],
   "trades": {
-    "okjjp9solqjjzh20": {
-      "date": "2023-12-24",
-      "season": "2023-24",
-      "period": 19,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Portland Trail Blazers",
-          "player_id": "03nwq",
-          "player": "Christian Wood",
-          "label": "Christian Wood"
-        },
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Portland Trail Blazers",
-          "player_id": "04qse",
-          "player": "Gary Trent",
-          "label": "Gary Trent"
-        },
-        {
-          "kind": "pick",
-          "from": "Indiana Pacers",
-          "to": "Portland Trail Blazers",
-          "label": "2025 round 1 pick (Indiana Pacers)"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Indiana Pacers",
-          "player_id": "06cef",
-          "player": "Oscar Tshiebwe",
-          "label": "Oscar Tshiebwe"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Indiana Pacers",
-          "player_id": "027oq",
-          "player": "Bismack Biyombo",
-          "label": "Bismack Biyombo"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Indiana Pacers",
-          "player_id": "027p4",
-          "player": "Tobias Harris",
-          "label": "Tobias Harris"
-        }
-      ]
-    },
     "f6unfq5nm3sz0k4i": {
       "date": "2024-11-22",
       "season": "2024-25",
@@ -386,641 +339,81 @@
           "label": "2025 round 2 pick (Indiana Pacers)"
         }
       ]
+    },
+    "okjjp9solqjjzh20": {
+      "date": "2023-12-24",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "03nwq",
+          "player": "Christian Wood",
+          "label": "Christian Wood"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "04qse",
+          "player": "Gary Trent",
+          "label": "Gary Trent"
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2025 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "06cef",
+          "player": "Oscar Tshiebwe",
+          "label": "Oscar Tshiebwe"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "027oq",
+          "player": "Bismack Biyombo",
+          "label": "Bismack Biyombo"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris"
+        }
+      ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Portland Trail Blazers",
-      "Indiana Pacers",
-      "Miami Heat",
-      "Denver Nuggets",
-      "Boston Celtics"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        1.75,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        20.0,
-        0
-      ],
-      [
-        0,
-        17,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        18,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        22,
-        1,
-        2.0,
-        0
-      ],
-      [
-        0,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        24,
-        1,
-        5.5,
-        0
-      ],
-      [
-        0,
-        25,
-        1,
-        22.0,
-        0
-      ],
-      [
-        0,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        31,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        32,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        1,
-        5.0,
-        0
-      ],
-      [
-        0,
-        35,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        36,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        37,
-        1,
-        9.5,
-        0
-      ],
-      [
-        0,
-        39,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        40,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        41,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        2,
-        24.25,
-        0
-      ],
-      [
-        1,
-        12,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        22,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        2,
-        19.75,
-        0
-      ],
-      [
-        1,
-        25,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        2,
-        17.5,
-        0
-      ],
-      [
-        1,
-        27,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        32,
-        3,
-        14.75,
-        0
-      ],
-      [
-        1,
-        33,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        34,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        35,
-        3,
-        0.0,
-        0
-      ],
-      [
-        1,
-        36,
-        3,
-        41.75,
-        0
-      ],
-      [
-        1,
-        37,
-        3,
-        27.25,
-        0
-      ],
-      [
-        1,
-        38,
-        3,
-        0.0,
-        1
-      ],
-      [
-        2,
-        44,
-        2,
-        52.5,
-        1
-      ],
-      [
-        2,
-        45,
-        2,
-        37.0,
-        1
-      ],
-      [
-        3,
-        1,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        2,
-        4,
-        0.0,
-        0
-      ],
-      [
-        3,
-        3,
-        4,
-        24.25,
-        0
-      ],
-      [
-        3,
-        4,
-        4,
-        10.0,
-        0
-      ],
-      [
-        3,
-        5,
-        4,
-        6.5,
-        0
-      ],
-      [
-        3,
-        6,
-        4,
-        2.0,
-        0
-      ],
-      [
-        3,
-        7,
-        4,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

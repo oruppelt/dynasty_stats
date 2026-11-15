@@ -121,6 +121,7 @@
       "before_logs": true,
       "periods": 32,
       "starts": 12,
+      "gp": 18,
       "points": 185.25,
       "salary": 1315392,
       "contract": "REG3",
@@ -136,6 +137,7 @@
       "trade": "qpkfdisvkic56339",
       "periods": 29,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1315392,
       "contract": "REG2"
@@ -150,6 +152,7 @@
       "trade": "hb86xq3kkpd3h2og",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -162,6 +165,7 @@
       "trade": "3l0w7p04kpgu1kue",
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -174,6 +178,7 @@
       "trade": "82msv72nkruxx4bm",
       "periods": 13,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1315392,
       "contract": "R11"
@@ -188,6 +193,7 @@
       "trade": "mwwyzn4ykwro4f2f",
       "periods": 20,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1315392,
       "contract": "R11"
@@ -201,6 +207,33 @@
     }
   ],
   "trades": {
+    "qpkfdisvkic56339": {
+      "date": "2020-12-06",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "label": "2021 round 2 pick (Chicago Bulls)"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Milwaukee Bucks)"
+        }
+      ]
+    },
     "mwwyzn4ykwro4f2f": {
       "date": "2021-12-04",
       "season": "2021-22",
@@ -287,94 +320,6 @@
           "player_id": "027pf",
           "player": "Cory Joseph",
           "label": "Cory Joseph"
-        }
-      ]
-    },
-    "hb86xq3kkpd3h2og": {
-      "date": "2021-06-01",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
-          "player_id": "051po",
-          "player": "Bol Bol",
-          "label": "Bol Bol"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
-          "player_id": "05qsk",
-          "player": "Isaac Okoro",
-          "label": "Isaac Okoro"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
-          "player_id": "05quc",
-          "player": "CJ Elleby",
-          "label": "CJ Elleby"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
-          "player_id": "051ov",
-          "player": "Sekou Doumbouya",
-          "label": "Sekou Doumbouya"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
-          "player_id": "04qs5",
-          "player": "Jacob Evans",
-          "label": "Jacob Evans"
-        },
-        {
-          "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
-          "label": "2021 round 1 pick, no. 4"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Philadelphia 76ers",
-          "player_id": "03al2",
-          "player": "Joel Embiid",
-          "label": "Joel Embiid"
-        }
-      ]
-    },
-    "qpkfdisvkic56339": {
-      "date": "2020-12-06",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Philadelphia 76ers",
-          "player_id": "04qs5",
-          "player": "Jacob Evans",
-          "label": "Jacob Evans"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Philadelphia 76ers",
-          "label": "2021 round 2 pick (Chicago Bulls)"
-        },
-        {
-          "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Golden State Warriors",
-          "label": "2021 round 2 pick (Milwaukee Bucks)"
         }
       ]
     },
@@ -465,716 +410,109 @@
           "label": "Jacob Evans"
         }
       ]
+    },
+    "hb86xq3kkpd3h2og": {
+      "date": "2021-06-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "051po",
+          "player": "Bol Bol",
+          "label": "Bol Bol"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05qsk",
+          "player": "Isaac Okoro",
+          "label": "Isaac Okoro"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05quc",
+          "player": "CJ Elleby",
+          "label": "CJ Elleby"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "051ov",
+          "player": "Sekou Doumbouya",
+          "label": "Sekou Doumbouya"
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "04qs5",
+          "player": "Jacob Evans",
+          "label": "Jacob Evans"
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick, no. 4"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid"
+        }
+      ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2019-20",
-        "length": 40,
-        "playoffs_from": 35
-      },
-      {
-        "season": "2020-21",
-        "length": 42,
-        "playoffs_from": 31
-      },
-      {
-        "season": "2021-22",
-        "length": 47,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Golden State Warriors",
-      "Philadelphia 76ers",
-      "Atlanta Hawks",
-      "Washington Wizards"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        28.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        4.5,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        1.5,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        11,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        0,
-        45.0,
-        1
-      ],
-      [
-        0,
-        17,
-        0,
-        7.75,
-        1
-      ],
-      [
-        0,
-        18,
-        0,
-        -2.75,
-        1
-      ],
-      [
-        0,
-        19,
-        0,
-        8.0,
-        1
-      ],
-      [
-        0,
-        20,
-        0,
-        1.5,
-        1
-      ],
-      [
-        0,
-        21,
-        0,
-        22.5,
-        0
-      ],
-      [
-        0,
-        22,
-        0,
-        14.0,
-        1
-      ],
-      [
-        0,
-        23,
-        0,
-        16.5,
-        1
-      ],
-      [
-        0,
-        24,
-        0,
-        24.0,
-        1
-      ],
-      [
-        0,
-        25,
-        0,
-        1.0,
-        1
-      ],
-      [
-        0,
-        26,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        27,
-        0,
-        8.0,
-        0
-      ],
-      [
-        0,
-        28,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        30,
-        0,
-        12.25,
-        1
-      ],
-      [
-        0,
-        31,
-        0,
-        56.5,
-        1
-      ],
-      [
-        0,
-        32,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        33,
-        0,
-        0.0,
-        0
-      ],
-      [
-        1,
-        1,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        3,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        10,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        17,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        26,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        27,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        28,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        29,
-        1,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        1,
-        0.0,
-        0
-      ],
-      [
-        2,
-        1,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        2,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        3,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        4,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        5,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        6,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        7,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        8,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        9,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        10,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        11,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        12,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        13,
-        2,
-        0.0,
-        0
-      ],
-      [
-        2,
-        14,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        15,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        16,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        17,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        18,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        19,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        20,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        21,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        22,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        23,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        24,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        25,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        26,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        27,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        28,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        29,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        30,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        31,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        32,
-        3,
-        0.0,
-        0
-      ],
-      [
-        2,
-        33,
-        3,
-        0.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2019-20",
+      "length": 40,
+      "playoffs_from": 35
+    },
+    {
+      "season": "2020-21",
+      "length": 42,
+      "playoffs_from": 31
+    },
+    {
+      "season": "2021-22",
+      "length": 47,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }

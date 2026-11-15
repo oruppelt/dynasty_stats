@@ -165,6 +165,7 @@
       "pick": 55,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0
     },
     {
@@ -177,6 +178,7 @@
       "trade": "hjrmkgmil66e5368",
       "periods": 3,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R23"
@@ -191,6 +193,7 @@
       "trade": "gl4810izl9s7wcsd",
       "periods": 30,
       "starts": 15,
+      "gp": 21,
       "points": 273.5,
       "salary": 1000000,
       "contract": "R23"
@@ -205,6 +208,7 @@
       "trade": "8zyfkpkglo4cnvz0",
       "periods": 10,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -219,6 +223,7 @@
       "trade": "k0n8u96ulph7peqp",
       "periods": 2,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -233,6 +238,7 @@
       "trade": "18v4rya5lpr3wy1m",
       "periods": 15,
       "starts": 2,
+      "gp": 4,
       "points": 55.25,
       "salary": 1000000,
       "contract": "R22"
@@ -247,6 +253,7 @@
       "trade": "zqk1dc26lrw35amu",
       "periods": 5,
       "starts": 1,
+      "gp": 1,
       "points": 0.0,
       "salary": 1000000,
       "contract": "R22"
@@ -267,6 +274,7 @@
       "bid": 11.0,
       "periods": 0,
       "starts": 0,
+      "gp": 0,
       "points": 0.0,
       "salary": 1000000,
       "contract": "FA"
@@ -280,68 +288,6 @@
     }
   ],
   "trades": {
-    "k0n8u96ulph7peqp": {
-      "date": "2023-11-27",
-      "season": "2023-24",
-      "period": 11,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Atlanta Hawks",
-          "to": "Boston Celtics",
-          "label": "$5 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Atlanta Hawks",
-          "player_id": "0622z",
-          "player": "Orlando Robinson",
-          "label": "Orlando Robinson"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Atlanta Hawks",
-          "label": "2024 round 2 pick (Cleveland Cavaliers)"
-        }
-      ]
-    },
-    "8zyfkpkglo4cnvz0": {
-      "date": "2023-10-24",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Boston Celtics",
-          "to": "Detroit Pistons",
-          "label": "$5 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Boston Celtics",
-          "player_id": "0622z",
-          "player": "Orlando Robinson",
-          "label": "Orlando Robinson"
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Boston Celtics",
-          "player_id": "0622g",
-          "player": "JD Davison",
-          "label": "JD Davison"
-        },
-        {
-          "kind": "pick",
-          "from": "Detroit Pistons",
-          "to": "Boston Celtics",
-          "label": "2024 round 2 pick (Cleveland Cavaliers)"
-        }
-      ]
-    },
     "zqk1dc26lrw35amu": {
       "date": "2024-01-27",
       "season": "2023-24",
@@ -392,6 +338,68 @@
           "player_id": "027pg",
           "player": "Bojan Bogdanovic",
           "label": "Bojan Bogdanovic"
+        }
+      ]
+    },
+    "hjrmkgmil66e5368": {
+      "date": "2022-07-29",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03nwn",
+          "player": "Bobby Portis",
+          "label": "Bobby Portis"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson"
+        }
+      ]
+    },
+    "k0n8u96ulph7peqp": {
+      "date": "2023-11-27",
+      "season": "2023-24",
+      "period": 11,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Atlanta Hawks",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Atlanta Hawks",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson"
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
         }
       ]
     },
@@ -448,38 +456,38 @@
         }
       ]
     },
-    "hjrmkgmil66e5368": {
-      "date": "2022-07-29",
-      "season": "2022-23",
+    "8zyfkpkglo4cnvz0": {
+      "date": "2023-10-24",
+      "season": "2023-24",
       "period": 1,
       "items": [
         {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "New York Knicks",
-          "label": "2023 round 2 pick (Cleveland Cavaliers)"
-        },
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "New York Knicks",
-          "label": "2023 round 1 pick (Cleveland Cavaliers)"
+          "kind": "budget",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "$5 budget"
         },
         {
           "kind": "player",
-          "from": "New York Knicks",
-          "to": "Cleveland Cavaliers",
-          "player_id": "03nwn",
-          "player": "Bobby Portis",
-          "label": "Bobby Portis"
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Cleveland Cavaliers",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
           "player_id": "0622z",
           "player": "Orlando Robinson",
           "label": "Orlando Robinson"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "0622g",
+          "player": "JD Davison",
+          "label": "JD Davison"
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
         }
       ]
     },
@@ -519,520 +527,31 @@
       ]
     }
   },
-  "track": {
-    "seasons": [
-      {
-        "season": "2022-23",
-        "length": 48,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2023-24",
-        "length": 45,
-        "playoffs_from": 33
-      },
-      {
-        "season": "2024-25",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2025-26",
-        "length": 45,
-        "playoffs_from": 34
-      },
-      {
-        "season": "2026-27",
-        "length": 7,
-        "playoffs_from": null
-      }
-    ],
-    "teams": [
-      "Cleveland Cavaliers",
-      "Detroit Pistons",
-      "Boston Celtics",
-      "Atlanta Hawks",
-      "Orlando Magic",
-      "San Antonio Spurs",
-      "Charlotte Hornets"
-    ],
-    "periods": [
-      [
-        0,
-        1,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        2,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0.0,
-        0
-      ],
-      [
-        0,
-        4,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        5,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        6,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        7,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        8,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        9,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        10,
-        1,
-        37.75,
-        0
-      ],
-      [
-        0,
-        11,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        12,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        13,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        14,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        15,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        16,
-        1,
-        0.0,
-        0
-      ],
-      [
-        0,
-        17,
-        1,
-        41.0,
-        0
-      ],
-      [
-        0,
-        18,
-        1,
-        5.5,
-        0
-      ],
-      [
-        0,
-        19,
-        1,
-        5.5,
-        1
-      ],
-      [
-        0,
-        20,
-        1,
-        0.5,
-        1
-      ],
-      [
-        0,
-        21,
-        1,
-        46.75,
-        1
-      ],
-      [
-        0,
-        22,
-        1,
-        32.0,
-        1
-      ],
-      [
-        0,
-        23,
-        1,
-        15.75,
-        1
-      ],
-      [
-        0,
-        24,
-        1,
-        20.0,
-        1
-      ],
-      [
-        0,
-        25,
-        1,
-        34.75,
-        1
-      ],
-      [
-        0,
-        26,
-        1,
-        18.75,
-        1
-      ],
-      [
-        0,
-        27,
-        1,
-        30.5,
-        1
-      ],
-      [
-        0,
-        28,
-        1,
-        9.25,
-        1
-      ],
-      [
-        0,
-        29,
-        1,
-        18.5,
-        1
-      ],
-      [
-        0,
-        30,
-        1,
-        16.5,
-        1
-      ],
-      [
-        0,
-        31,
-        1,
-        18.25,
-        1
-      ],
-      [
-        0,
-        32,
-        1,
-        0.0,
-        1
-      ],
-      [
-        0,
-        33,
-        1,
-        6.5,
-        1
-      ],
-      [
-        1,
-        1,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        2,
-        2,
-        5.25,
-        0
-      ],
-      [
-        1,
-        3,
-        2,
-        33.25,
-        0
-      ],
-      [
-        1,
-        4,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        5,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        6,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        7,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        8,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        9,
-        2,
-        40.0,
-        0
-      ],
-      [
-        1,
-        10,
-        2,
-        0.0,
-        0
-      ],
-      [
-        1,
-        11,
-        3,
-        4.5,
-        0
-      ],
-      [
-        1,
-        12,
-        3,
-        28.5,
-        0
-      ],
-      [
-        1,
-        13,
-        4,
-        61.25,
-        0
-      ],
-      [
-        1,
-        14,
-        4,
-        25.0,
-        1
-      ],
-      [
-        1,
-        15,
-        4,
-        30.25,
-        1
-      ],
-      [
-        1,
-        16,
-        4,
-        5.5,
-        0
-      ],
-      [
-        1,
-        17,
-        4,
-        0.0,
-        0
-      ],
-      [
-        1,
-        18,
-        4,
-        0.0,
-        0
-      ],
-      [
-        1,
-        19,
-        4,
-        0.0,
-        0
-      ],
-      [
-        1,
-        20,
-        4,
-        0.0,
-        0
-      ],
-      [
-        1,
-        21,
-        4,
-        4.25,
-        0
-      ],
-      [
-        1,
-        22,
-        4,
-        0.0,
-        0
-      ],
-      [
-        1,
-        23,
-        4,
-        0.0,
-        0
-      ],
-      [
-        1,
-        24,
-        4,
-        0.0,
-        0
-      ],
-      [
-        1,
-        25,
-        4,
-        3.5,
-        0
-      ],
-      [
-        1,
-        26,
-        4,
-        4.0,
-        0
-      ],
-      [
-        1,
-        27,
-        4,
-        6.75,
-        0
-      ],
-      [
-        1,
-        28,
-        5,
-        0.0,
-        1
-      ],
-      [
-        1,
-        29,
-        5,
-        0.0,
-        0
-      ],
-      [
-        1,
-        30,
-        5,
-        0.0,
-        0
-      ],
-      [
-        1,
-        31,
-        5,
-        6.0,
-        0
-      ],
-      [
-        1,
-        32,
-        5,
-        3.5,
-        0
-      ],
-      [
-        2,
-        40,
-        6,
-        47.5,
-        1
-      ],
-      [
-        2,
-        41,
-        6,
-        27.0,
-        1
-      ],
-      [
-        2,
-        42,
-        6,
-        8.0,
-        0
-      ]
-    ]
-  }
+  "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
+    {
+      "season": "2024-25",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2025-26",
+      "length": 45,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2026-27",
+      "length": 7,
+      "playoffs_from": null
+    }
+  ]
 }
