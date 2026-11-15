@@ -222,7 +222,7 @@ export interface SeasonAxis {
 export interface TimelineEvent {
   /** claim: signed as a free agent; re-sign: signed back by the team that dropped him; joined: on a roster
    * with no logged move (the rosters when the records start); renamed: his team's name changed */
-  kind: 'draft' | 'claim' | 're-sign' | 'trade' | 'drop' | 'joined' | 'renamed';
+  kind: 'draft' | 'claim' | 're-sign' | 'trade' | 'drop' | 'joined' | 'renamed' | 'pick' | 'pick-trade';
   /** The league season and period the move took effect in (absent for renamed; period 0 is the draft) */
   season?: string;
   period?: number;
@@ -237,6 +237,13 @@ export interface TimelineEvent {
   /** draft */
   round?: number;
   pick?: number;
+  /** draft: the pick's number overall; the team whose pick it was (absent: the drafting team's own); whether
+   * the pick's path is certain (round-2 orders are partly inferred) */
+  overall?: number;
+  original?: string;
+  certain?: boolean;
+  /** pick (the pick he was drafted with, held by its original team) and pick-trade: the pick */
+  label?: string;
   /** claim, re-sign: the free-agent bid */
   bid?: number;
   /** joined: on a roster in the first period of the records */
@@ -256,7 +263,11 @@ export interface Trade {
   season: string;
   period: number;
   /** Every item, each from one team to another ("(Drop)" for a player released in the trade) */
-  items: { kind: 'player' | 'pick' | 'budget'; from: string; to: string; player_id?: string; player?: string; label: string }[];
+  items: {
+    kind: 'player' | 'pick' | 'budget'; from: string; to: string; player_id?: string; player?: string; label: string;
+    /** A pick: who was drafted with it */
+    became?: { season: string; round: number; pick: number; overall: number; player_id: string; player?: string; certain: boolean };
+  }[];
 }
 
 async function fetchJson<T>(url: string): Promise<T | null> {

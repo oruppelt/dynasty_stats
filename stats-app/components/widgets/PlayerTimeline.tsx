@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTheme } from 'next-themes'
 import {
-  ArrowLeftRight, ChevronDown, ChevronLeft, ChevronRight, ListOrdered, LogIn, LucideIcon, PenLine, RotateCcw, Tag, UserMinus,
+  ArrowLeftRight, ChevronDown, ChevronLeft, ChevronRight, ListOrdered, LogIn, LucideIcon, PenLine, RotateCcw, Tag, Ticket, UserMinus,
 } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { TeamLogo } from './TeamLogo'
@@ -30,6 +30,8 @@ const KINDS: Record<TimelineEvent['kind'], { label: string; icon: LucideIcon }> 
   drop: { label: 'Dropped', icon: UserMinus },
   joined: { label: 'On the roster', icon: LogIn },
   renamed: { label: 'Team renamed', icon: Tag },
+  pick: { label: 'Original pick', icon: Ticket },
+  'pick-trade': { label: 'Pick traded', icon: ArrowLeftRight },
 }
 
 /** "2026-08-15" → "Aug 15, 2026" */
@@ -41,6 +43,7 @@ const ordinal = (n: number) => `${n}${['th', 'st', 'nd', 'rd'][n % 100 >= 11 && 
 
 function when(e: TimelineEvent): string {
   const parts = []
+  if (e.kind === 'pick') return `from ${e.season} (or earlier)`
   if (e.date) parts.push(formatDate(e.date))
   if (e.season && e.kind !== 'draft') parts.push(e.period && e.period > 1 ? `${e.season}, P${e.period}` : `before ${e.season}`)
   if (e.kind === 'draft' && e.season) parts.push(`for ${e.season}`)
@@ -50,7 +53,10 @@ function when(e: TimelineEvent): string {
 /** What the move was, in a line */
 function headline(e: TimelineEvent): string {
   switch (e.kind) {
-    case 'draft': return `Round ${e.round}, ${ordinal(e.pick ?? 0)} pick`
+    case 'draft': return `Round ${e.round}, ${ordinal(e.pick ?? 0)} pick${e.overall && e.round !== 1 ? ` (no. ${e.overall})` : ''}${
+      e.original ? ` with ${teamCode(e.original)}'s pick` : ''}`
+    case 'pick': return `${e.label}, ${e.team}'s own`
+    case 'pick-trade': return `from ${e.from}`
     case 'claim': return e.bid ? `Free agent, $${e.bid} bid` : 'Free agent'
     case 're-sign': return 'Signed back after being dropped'
     case 'trade': return `from ${e.from}`
@@ -63,6 +69,8 @@ function headline(e: TimelineEvent): string {
 // --- Stints: the timeline grouped by team, each from an arrival to the next move away -----------------
 
 interface Stint {
+  /** pick: the pick he was drafted with, before the draft */
+  asset: 'player' | 'pick';
   team: string;
   arrive: TimelineEvent;
   /** The trade or drop that ended it (absent: still there, or the records end) */
@@ -115,8 +123,13 @@ function buildStints(timeline: TimelineEvent[], at: (s?: string, p?: number) => 
       open = undefined
       if (e.kind === 'drop') continue
     }
+    if (e.kind === 'pick-trade' || e.kind === 'draft') {
+      // The pick moves on, or is used
+      if (open?.asset === 'pick') open.leave = e
+    }
     if (open) open.end = at(e.season, e.period) // an arrival without a logged departure
-    open = { team: e.team, arrive: e, renames: [], start: at(e.season, e.period), end: now ?? total }
+    const asset = e.kind === 'pick' || e.kind === 'pick-trade' ? 'pick' : 'player'
+    open = { asset, team: e.team, arrive: e, renames: [], start: at(e.season, e.period), end: now ?? total }
     stints.push(open)
   }
   return stints
@@ -185,22 +198,27 @@ function CareerStrip({ seasons, stints, selected, onSelect, total, offsets, now,
               key={i}
               type="button"
               onClick={() => onSelect(i)}
-              title={`${s.team}${ppg ? `: ${ppg} points per game` : ''}`}
+              title={s.asset === 'pick' ? `${s.arrive.label}, held by ${s.team}` : `${s.team}${ppg ? `: ${ppg} points per game` : ''}`}
               aria-pressed={on}
               className={cn(
                 'absolute inset-y-1 flex min-w-[6px] flex-col items-center justify-center overflow-hidden rounded-[5px] px-1 leading-tight transition',
                 on ? 'z-[2] ring-2 ring-foreground ring-offset-1 ring-offset-card' : 'opacity-70 hover:opacity-100',
                 s.team === selectedTeam && !on && 'ring-1 ring-primary',
               )}
-              style={{ left: pct(s.start), width: `max(6px, ${pct(s.end - s.start)})`, background: c, color: textOn(c) }}
+              style={s.asset === 'pick'
+                ? { left: pct(s.start), width: `max(6px, ${pct(s.end - s.start)})`, border: `2px solid ${c}`,
+                    background: `repeating-linear-gradient(135deg, ${c}55 0 5px, transparent 5px 10px)` }
+                : { left: pct(s.start), width: `max(6px, ${pct(s.end - s.start)})`, background: c, color: textOn(c) }}
             >
               {width >= 30 && (
-                <span className="flex max-w-full items-center gap-1 text-[11px] font-semibold">
+                <span className={cn('flex max-w-full items-center gap-1 text-[11px] font-semibold', s.asset === 'pick' && 'text-foreground')}>
                   {width >= 70 && <TeamLogo teamName={s.team} size={14} className="shrink-0 rounded-full bg-white/90 p-px" />}
                   <span className="truncate">{teamCode(s.team)}</span>
                 </span>
               )}
-              {width >= 44 && ppg && <span className="truncate text-[10px] tabular-nums opacity-90">{ppg}{width >= 80 ? ' ppg' : ''}</span>}
+              {width >= 44 && (s.asset === 'pick'
+                ? <span className="truncate text-[10px] text-foreground">{`R${s.arrive.label?.match(/round (\d)/)?.[1] ?? ''} pick`}</span>
+                : ppg && <span className="truncate text-[10px] tabular-nums opacity-90">{ppg}{width >= 80 ? ' ppg' : ''}</span>)}
             </button>
           )
         })}
@@ -247,6 +265,19 @@ function TradeDetails({ trade, playerId }: { trade: Trade; playerId: string }) {
                     {item.label}
                   </span>
                 )}
+                {item.became && (
+                  <span className="text-muted-foreground">
+                    {' → '}{item.became.round === 1 ? `#${item.became.pick}` : `R${item.became.round} #${item.became.pick}`}{' '}
+                    {item.became.player_id === playerId ? (
+                      <span className="font-bold text-foreground">{item.became.player ?? 'him'}</span>
+                    ) : (
+                      <button type="button" onClick={() => openPlayer(item.became!.player_id)} className="font-medium text-foreground underline-offset-2 hover:underline">
+                        {item.became.player ?? 'a player'}
+                      </button>
+                    )}
+                    {!item.became.certain && <span title="The round-2 order is partly inferred"> (likely)</span>}
+                  </span>
+                )}
               </li>
             ))}
           </ul>
@@ -265,6 +296,8 @@ function Move({ event, page, title, departure = false }: { event: TimelineEvent;
   let line = headline(event)
   if (departure && event.kind === 'trade') line = `to ${event.team}`
   if (departure && event.kind === 'drop') line = 'Released to free agency'
+  if (departure && event.kind === 'pick-trade') line = `to ${event.team}`
+  if (departure && event.kind === 'draft') line = `${event.round === 1 ? `no. ${event.pick}` : `round ${event.round}, no. ${event.pick}`}: ${page.player}`
   return (
     <div className="min-w-0">
       <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">{title}</div>
@@ -307,7 +340,10 @@ function StintCard({ stint, index, count, onStep, page, color, next }: {
       <div className="flex items-center gap-3 border-b px-3 py-2.5" style={{ borderTop: `4px solid ${color}` }}>
         <TeamLogo teamName={stint.team} size={36} className="shrink-0" />
         <div className="min-w-0 flex-1">
-          <div className="truncate text-lg font-semibold leading-tight">{stint.team}</div>
+          <div className="truncate text-lg font-semibold leading-tight">
+            {stint.team}
+            {stint.asset === 'pick' && <span className="ml-2 rounded border px-1.5 py-0.5 align-middle text-xs font-medium text-muted-foreground">the pick</span>}
+          </div>
           <div className="text-xs text-muted-foreground">
             Stint {index + 1} of {count}
             {a.date && ` · ${formatDate(a.date)}`}
@@ -327,8 +363,15 @@ function StintCard({ stint, index, count, onStep, page, color, next }: {
         </div>
       </div>
       <div className="grid gap-4 p-3 md:grid-cols-[1fr_auto_1fr] md:gap-6">
-        <Move event={a} page={page} title="How he got there" />
+        <Move event={a} page={page} title={stint.asset === 'pick' ? 'How it got there' : 'How he got there'} />
         <div className="md:min-w-[220px] md:border-x md:px-6">
+          {stint.asset === 'pick' ? (
+            <>
+              <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">With {teamCode(stint.team)}</div>
+              <div className="mt-1 text-sm">As a draft pick: <span className="font-medium">{a.label}</span></div>
+              <div className="mt-1 text-xs text-muted-foreground">Before he was drafted with it</div>
+            </>
+          ) : (<>
           <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">With {teamCode(stint.team)}</div>
           {a.periods ? (
             <div className="mt-1 grid grid-cols-3 gap-2 tabular-nums md:grid-cols-2">
@@ -345,10 +388,11 @@ function StintCard({ stint, index, count, onStep, page, color, next }: {
               {formatSalary(a.salary)} · {a.contract}
             </div>
           )}
+          </>)}
         </div>
         {stint.leave ? (
           <div>
-            <Move event={stint.leave} page={page} title="How he left" departure />
+            <Move event={stint.leave} page={page} title={stint.asset === 'pick' ? (stint.leave.kind === 'draft' ? 'Used' : 'How it left') : 'How he left'} departure />
             {stint.leave.kind === 'drop' && next && (
               <div className="ml-9 mt-1 text-xs text-muted-foreground">
                 Next: {KINDS[next.arrive.kind].label.toLowerCase()} by {teamCode(next.team)}
@@ -392,7 +436,8 @@ function MoveList({ events, page, selectedTeam }: { events: TimelineEvent[]; pag
             <span className="min-w-0">
               <span className="font-medium">{kind.label}</span>{' '}
               <span className="text-muted-foreground">
-                {e.kind === 'drop' ? `by ${e.team}` : e.kind === 'trade' ? `${e.from} → ${e.team}` : e.kind === 'renamed' ? `${e.from} → ${e.team}` : `${e.team} · ${headline(e)}`}
+                {e.kind === 'drop' ? `by ${e.team}` : e.kind === 'trade' || e.kind === 'renamed' ? `${e.from} → ${e.team}`
+                  : e.kind === 'pick-trade' ? `${e.label}: ${e.from} → ${e.team}` : e.kind === 'pick' ? `${e.label}` : `${e.team} · ${headline(e)}`}
                 {trade && ` (${trade.items.length} items)`}
               </span>
             </span>
@@ -412,19 +457,25 @@ export function PlayerTimeline({ page, selectedTeam }: { page: PlayerPage; selec
   const color = useTeamColor()
   if (!stints.length) return null
   const index = Math.min(Math.max(selected, 0), stints.length - 1)
+  const pickStints = stints.filter(s => s.asset === 'pick').length
+  const playerStints = stints.length - pickStints
   return (
     <Card>
       <CardHeader className="pb-2">
         <CardTitle className="text-lg">Career path</CardTitle>
         <CardDescription>
-          {stints.length} stint{stints.length === 1 ? '' : 's'}, oldest on the left. Pick a
-          stint to see how he got there, what he did and how he left.
+          {playerStints} stint{playerStints === 1 ? '' : 's'} as a player
+          {pickStints > 0 && ` (striped before: the pick he was drafted with, through ${pickStints} owner${pickStints === 1 ? '' : 's'})`}
+          , oldest on the left. Pick one to see how he got there, what he did and how he left.
         </CardDescription>
         <Explainer>
           <p>
             From Fantrax&apos;s transaction logs, checked against the rosters. One block per stint, in the team&apos;s
             colors, as long as he was there; the number is his points per game there (in a lineup, regular
-            season). The grey columns are the seasons, a dashed line is time as a free agent.
+            season). The grey columns are the seasons, a dashed line is time as a free agent. Striped blocks are the
+            draft pick he was drafted with, from its original team (two seasons before its draft, the earliest a
+            pick can be traded) through every trade to the draft. Round 2&apos;s order is partly inferred (from
+            the standings), so a few round-2 picks are marked &quot;likely&quot;.
           </p>
           <p className="mt-2">
             A stint shows the contract he played on there (his first period with the team) and what he did there
