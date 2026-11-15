@@ -267,6 +267,9 @@ export interface Trade {
     kind: 'player' | 'pick' | 'budget'; from: string; to: string; player_id?: string; player?: string; label: string;
     /** A pick: who was drafted with it */
     became?: { season: string; round: number; pick: number; overall: number; player_id: string; player?: string; certain: boolean };
+    /** What the team that got it got out of it: a player's regular season there until he left (a pick: the
+     * player drafted with it, if that team used it); traded_on: the pick went on before the draft */
+    result?: TradeResult;
   }[];
 }
 
@@ -309,3 +312,7 @@ export function describeContract(code: string): string {
   if (code === 'MIN') return 'Minimum contract'
   return code
 }
+
+export type TradeResult =
+  | { points: number; starts: number; gp: number; periods: number; ongoing: boolean; traded_on?: undefined }
+  | { traded_on: true; drafted_by: string; points?: undefined; starts?: undefined; gp?: undefined; periods?: undefined; ongoing?: undefined }
