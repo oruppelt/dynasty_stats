@@ -170,6 +170,32 @@ differences from the sheet; none changes a result.
   toward recent periods (x0.9 per period back), next to the all-play record.
   Who is in form going into the playoffs.
 
+### Players section (started 2026-11-15)
+A top-level **Players** section with the season's player views; the
+player data is in `pipeline/players.py` (see "What Fantrax gives us for
+players" below).
+- Data: `pipeline/data/players/<season>.csv`, one row per player, team and
+  period (status, slot, points, games, minutes, salary, contract), every
+  season from 2019-20, regular season and playoffs. Finished seasons are
+  fetched once; a season in progress fetches its new periods and the
+  latest two again. `data/players/<season>.json` has the site's lists.
+- Done: **Leaders** (season points for a fantasy team, starts, games,
+  per game), **Best periods** (the biggest single-period scores, in the
+  lineup and left on the bench), **Teams** (lineup and bench points, bench
+  share, top scorer and their share).
+- Next:
+  - All-time player records (History → Records, or a Players view): the
+    best periods ever, career points for one franchise, the most points
+    left on a bench.
+  - Points left on the bench as lost games: the best possible lineup
+    (needs each player's eligible positions per period, and the slot
+    rules) against the one used, and the games that would have been won.
+  - My Team: the team's top scorers and its best period this season.
+  - Recap: the period's best players and bench.
+  - Playoff performances (the data has the playoff periods).
+  - A player page (each season: team, points, contract), the start of the
+    lineage (section 3).
+
 ### Needs Fantrax (after M2–M4)
 - **Players: starting lineups and MVP**, from `starting_lineup_analysis.ipynb`
   in the same folder. Needs each team's roster for every period (a new
@@ -287,7 +313,7 @@ gives us for players" above):
 |---|---|---|
 | Pick moves between teams | Trade log: year, round, original team, from, to, date | Yes, every season from 2019-20 |
 | Pick → draft slot (round 1) | `draftOrder` (the lottery result) + the original team | Yes |
-| Pick → draft slot (round 2) | Not `draftOrder` (only 5 of 30 round-2 picks follow it) | Work out from the trades: a pick never traded is made by its original team. To check |
+| Pick → draft slot (round 2) | The previous season's final standings (the lottery only changes round 1) | Yes, from the standings |
 | Slot → player | Draft results | Yes, 2019 to 2026 (two picks in 2020, one in 2022 and 2023 have no player) |
 | Player moves | Trade log (players), claims and drops | Yes, with dates and periods |
 | Player's team, slot, contract, salary per period | Rosters | Yes |
@@ -295,17 +321,19 @@ gives us for players" above):
 | Same player across seasons | Fantrax ID | Yes, the same in every league |
 | Same team across seasons | Team name (IDs change with each league) | Yes, as in History |
 
-### What's missing (could be added by hand)
-- **The lottery itself:** odds, balls, who moved up. Fantrax only has the
-  result (the round-1 order). A small file per year could add it.
-- **Round-2 order** if the trades don't settle it (see above).
-- **Anything before the 2019-20 league:** picks or trades made before
-  that league existed (if any), and what the 2019 draft order came from.
-- **Contract events:** Fantrax shows each player's contract every period,
-  so a change (a rookie deal ending, an extension, a new REG contract) can
-  be seen from one period to the next, but not why or how it was decided.
-- **Off-season trades:** which league's log they land in (the old season
-  or the new one). To check.
+### What's missing, and what the league told us (2026-11-15)
+- **The lottery:** an offline draw; Fantrax has only its result (the
+  round-1 order). The details aren't needed.
+- **Round 2** follows the previous season's final standings (the lottery
+  only changes round 1; to confirm against the drafts).
+- **Before 2019-20:** not needed.
+- **Contracts:** every off-season the league runs free agency in a Google
+  Sheet (a slow auction: a player signs after a day without a new bid, with
+  some house rules). So a change in a player's contract or salary between
+  seasons comes from free agency. The commissioner has the results in a
+  file; they could be added, or the change just labelled "free agency".
+- **Off-season trades** are in the new season's log: trades open close to
+  the draft, and the draft starts the new league season.
 - **Trades that were later undone, or picks that were forfeited**: the log
   has `deleted` and `resultCode`; to check how they show up.
 

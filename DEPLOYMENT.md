@@ -142,6 +142,14 @@ Check a league locally:
 `FANTRAX_COOKIE="$(pbpaste)" .venv/bin/python pipeline/fantrax_fetch.py <league_id> /tmp/fantrax`
 saves the responses and prints what the games table holds.
 
+- **Players** (`pipeline/players.py`): the same run also fetches every
+  team's roster with each player's points, one request per team and period,
+  into `pipeline/data/players/<season>.csv`. Only periods not there yet are
+  fetched (and the latest two again, for stat corrections), so a normal run
+  makes about 60 extra requests. A finished season named with `--season`
+  fetches only what's missing. To rebuild a season's player data from
+  scratch, delete its CSV and build the season.
+
 - **A period counts once its last game day is over**: from 03:00 ET on
   Monday (the Fri–Sun period) or Friday (Mon–Thu), `fantrax.played_from`.
   Fantrax only ends it at 19:00 ET that day, so scores can still move a

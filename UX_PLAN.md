@@ -298,6 +298,16 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-15: Players section (branch `players/stats`)
+- Player data from Fantrax: every team's roster with each player's points
+  per period, all seasons from 2019-20 (`pipeline/players.py`, cached in
+  `pipeline/data/players/`). The lineup's points match the team scores.
+- A new top-level **Players** section: Leaders (season points for a
+  fantasy team, starts, games, per game), Best periods (in the lineup and
+  left on the bench), Teams (lineup and bench points, top scorer).
+- Roadmap: what Fantrax has for trades, claims, drafts and picks, and the
+  player lineage goal (ROADMAP.md, section 3).
+
 ### 2026-10-26: Results the morning after the last game (branch `data/refresh-after-periods`)
 - A period counts as played from 03:00 ET on the day Fantrax ends it
   (Monday or Friday; `fantrax.played_from`), once its last games (Sunday or
