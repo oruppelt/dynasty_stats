@@ -196,14 +196,65 @@ def check_scores(rows: pd.DataFrame, games: pd.DataFrame) -> list[tuple[int, str
 
 
 def _performance(row) -> dict:
-    return {
+    entry = {
         'period': int(row.period), 'team': row.team, 'player_id': row.player_id, 'player': row.player,
         'fpts': float(row.fpts), 'gp': int(row.gp),
     }
+    season = getattr(row, 'season', None)
+    return {'season': season, **entry} if season else entry
 
 
-def compute_players(rows: pd.DataFrame, regular_periods: set[int], top_n: int = TOP_N) -> dict:
-    """The season's player lists (regular season only).
+def _top_periods(df: pd.DataFrame, n: int) -> list[dict]:
+    """The `n` biggest single-period scores; equal points: the earlier period first, then by team and player."""
+    keys = [k for k in ('season', 'period') if k in df.columns]
+    df = df.sort_values(['fpts', *keys, 'team', 'player'], ascending=[False, *[True] * len(keys), True, True], kind='stable')
+    return [_performance(row) for row in df.head(n).itertuples()]
+
+
+def _leaders(active: pd.DataFrame, n: int, by: tuple[str, ...] = ('player_id',)) -> list[dict]:
+    """Points scored in lineups, per player (or per `by`, e.g. season and player): the top `n`, with the
+    teams in the order the player scored for them, starts (periods in a lineup), games played in them, and
+    for several seasons the number of seasons."""
+    if active.empty:
+        return []
+    order = [k for k in ('season', 'period') if k in active.columns]
+    active = active.sort_values(order)
+    groups = active.groupby(list(by), sort=False)
+    table = pd.DataFrame({
+        'player': groups['player'].last(),
+        'points': groups['fpts'].sum(),
+        'starts': groups.size(),
+        'gp': groups['gp'].sum(),
+        'teams': groups['team'].unique(),
+        **({'seasons': groups['season'].nunique()} if 'season' in active.columns and 'season' not in by else {}),
+    }).reset_index().sort_values(['points', 'player'], ascending=[False, True], kind='stable').head(n)
+    leaders = []
+    for row in table.itertuples():
+        entry = {key: getattr(row, key) for key in by}
+        entry.update({'player_id': row.player_id, 'player': row.player, 'teams': list(row.teams),
+                      'points': round(float(row.points), 2), 'starts': int(row.starts), 'gp': int(row.gp)})
+        if hasattr(row, 'seasons'):
+            entry['seasons'] = int(row.seasons)
+        leaders.append(entry)
+    return leaders
+
+
+def _split(rows: pd.DataFrame, periods: set[int]) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """The lineup and bench rows of `periods` (bench: not injured reserve or minors)."""
+    r = rows[rows['period'].astype(int).isin(periods)].copy()
+    r['period'] = r['period'].astype(int)
+    return r[r['status'] == 'active'], r[r['status'] == 'bench']
+
+
+PERIOD_BEST = 5
+PERIOD_BENCH = 3
+TEAM_PLAYERS = 5
+PLAYOFF_TOP_N = 10
+
+
+def compute_players(rows: pd.DataFrame, regular_periods: set[int], playoff_periods: set[int] = frozenset(),
+                    top_n: int = TOP_N) -> dict:
+    """The season's player lists. Regular season, apart from `playoffs`.
 
     - best_periods: the most points by a player in the lineup in one period.
     - best_bench: the most points by a player left on the bench (not injured
@@ -211,47 +262,90 @@ def compute_players(rows: pd.DataFrame, regular_periods: set[int], top_n: int = 
     - leaders: season points scored for a fantasy team (lineup only), with
       starts (periods in a lineup) and games played in them; a player traded
       during the season lists every team they scored for.
-    - teams: per team, its points, the points its bench scored, and its top
-      scorer.
+    - teams: per team, its points, the points its bench scored, its top
+      scorer, its top players and its best player period.
+    - periods: per period, its best players, best bench players and each
+      team's top scorer (for the recap).
+    - playoffs: the best playoff periods and the playoff leaders; null
+      before the playoffs.
     Equal values: the earlier period first, then by team and player.
     """
-    r = rows[rows['period'].astype(int).isin(regular_periods)].copy()
-    r['period'] = r['period'].astype(int)
-    active = r[r['status'] == 'active']
-    bench = r[r['status'] == 'bench']
+    active, bench = _split(rows, regular_periods)
 
-    def top(df: pd.DataFrame) -> list[dict]:
-        df = df.sort_values(['fpts', 'period', 'team', 'player'], ascending=[False, True, True, True], kind='stable')
-        return [_performance(row) for row in df.head(top_n).itertuples()]
-
-    by_player = active.groupby('player_id')
-    leaders = pd.DataFrame({
-        'player': by_player['player'].last(),
-        'points': by_player['fpts'].sum(),
-        'starts': by_player.size(),
-        'gp': by_player['gp'].sum(),
-    }).reset_index().sort_values(['points', 'player'], ascending=[False, True], kind='stable').head(top_n)
-    # Teams in the order the player played for them
-    teams_of = active.sort_values('period').groupby('player_id')['team'].unique()
-
-    by_team_player = active.groupby(['team', 'player_id']).agg(player=('player', 'last'), points=('fpts', 'sum')).reset_index()
-    top_scorer = by_team_player.sort_values(['points', 'player'], ascending=[False, True], kind='stable').groupby('team').head(1).set_index('team')
-    team_points = active.groupby('team')['fpts'].sum()
-    bench_points = bench.groupby('team')['fpts'].sum()
-
-    return {
-        'meta': {'periods': len(set(active['period'])), 'players': int(active['player_id'].nunique())},
-        'best_periods': top(active),
-        'best_bench': top(bench),
-        'leaders': [{
-            'player_id': row.player_id, 'player': row.player, 'teams': list(teams_of[row.player_id]),
-            'points': round(float(row.points), 2), 'starts': int(row.starts), 'gp': int(row.gp),
-        } for row in leaders.itertuples()],
-        'teams': [{
+    teams = []
+    for team, mine in active.groupby('team'):
+        top_players = _leaders(mine, TEAM_PLAYERS)
+        teams.append({
             'team': team,
-            'points': round(float(team_points[team]), 2),
-            'bench_points': round(float(bench_points.get(team, 0.0)), 2),
-            'top_scorer': {'player_id': top_scorer.loc[team, 'player_id'], 'player': top_scorer.loc[team, 'player'],
-                           'points': round(float(top_scorer.loc[team, 'points']), 2)},
-        } for team in sorted(team_points.index)],
+            'points': round(float(mine['fpts'].sum()), 2),
+            'bench_points': round(float(bench.loc[bench['team'] == team, 'fpts'].sum()), 2),
+            'top_scorer': {k: top_players[0][k] for k in ('player_id', 'player', 'points')},
+            'top_players': [{k: p[k] for k in ('player_id', 'player', 'points', 'starts', 'gp')} for p in top_players],
+            'best_period': _top_periods(mine, 1)[0],
+        })
+
+    periods = []
+    for period, played in active.groupby('period'):
+        best_by_team = played.sort_values(['fpts', 'player'], ascending=[False, True], kind='stable').groupby('team').head(1)
+        periods.append({
+            'period': int(period),
+            'best': _top_periods(played, PERIOD_BEST),
+            'bench': _top_periods(bench[bench['period'] == period], PERIOD_BENCH),
+            'team_top': {row.team: {'player_id': row.player_id, 'player': row.player, 'fpts': float(row.fpts), 'gp': int(row.gp)}
+                         for row in best_by_team.sort_values('team').itertuples()},
+        })
+
+    playoff_active, _ = _split(rows, set(playoff_periods))
+    return {
+        'meta': {
+            'periods': len(set(active['period'])), 'players': int(active['player_id'].nunique()),
+            'regular_periods': sorted(int(p) for p in regular_periods),
+            'playoff_periods': sorted(int(p) for p in playoff_periods),
+        },
+        'best_periods': _top_periods(active, top_n),
+        'best_bench': _top_periods(bench, top_n),
+        'leaders': _leaders(active, top_n),
+        'teams': teams,
+        'periods': periods,
+        'playoffs': {
+            'best_periods': _top_periods(playoff_active, PLAYOFF_TOP_N),
+            'leaders': _leaders(playoff_active, PLAYOFF_TOP_N),
+        } if len(playoff_active) else None,
+    }
+
+
+FRANCHISE_TOP_N = 10
+
+
+def compute_alltime_players(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]], top_n: int = TOP_N) -> dict:
+    """Player records over every season: (season, rows, regular periods, playoff periods), oldest first or not.
+
+    - best_periods, best_bench: the biggest single-period scores ever, in a
+      lineup and on a bench (regular season).
+    - best_seasons: a player's points in one regular season (every team).
+    - career: regular-season points over every season, with the seasons
+      and teams.
+    - franchises: per team, its all-time top scorers (points for that team).
+    - playoffs: the best playoff periods and the career playoff leaders.
+    Franchises are matched by team name (team IDs change every season).
+    """
+    regular, benches, playoff = [], [], []
+    for season, rows, regular_periods, playoff_periods in seasons:
+        active, bench = _split(rows, regular_periods)
+        regular.append(active.assign(season=season))
+        benches.append(bench.assign(season=season))
+        playoff.append(_split(rows, playoff_periods)[0].assign(season=season))
+    regular, benches, playoff = (pd.concat(frames, ignore_index=True) for frames in (regular, benches, playoff))
+    return {
+        'meta': {'seasons': sorted({s for s, *_ in seasons})},
+        'best_periods': _top_periods(regular, top_n),
+        'best_bench': _top_periods(benches, top_n),
+        'best_seasons': _leaders(regular, top_n, by=('season', 'player_id')),
+        'career': _leaders(regular, top_n),
+        'franchises': {team: [{k: v for k, v in p.items() if k != 'teams'} for p in _leaders(mine, FRANCHISE_TOP_N)]
+                       for team, mine in sorted(regular.groupby('team'), key=lambda t: t[0])},
+        'playoffs': {
+            'best_periods': _top_periods(playoff, PLAYOFF_TOP_N),
+            'career': _leaders(playoff, PLAYOFF_TOP_N),
+        },
     }

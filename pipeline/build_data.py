@@ -45,8 +45,8 @@ others still build; the run then exits with an error).
 Players (players.py): for each season built from Fantrax, the rosters with
 every player's points per period are kept in pipeline/data/players/<season>.csv
 (only new periods are fetched, plus the latest few again while the season is
-in progress) and the season's player lists go to data/players/<season>.json.
---no-players skips them.
+in progress) and the season's player lists go to data/players/<season>.json;
+data/players/alltime.json has every season together. --no-players skips them.
 """
 import argparse
 import json
@@ -108,7 +108,9 @@ def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame,
     for g in all_games.itertuples():
         played.setdefault(int(g.Match), set()).update((g.Team, g.Opponent))
     rows = players.update_cache(season, league_id, cookie, played, refresh=0 if final else players.REFRESH_RECENT)
-    data = players.compute_players(rows, set(games['Match'].astype(int)) - set(skip_periods or []))
+    skip = set(skip_periods or [])
+    playoff_periods = set(playoff_games['Match'].astype(int)) if not playoff_games.empty else set()
+    data = players.compute_players(rows, set(games['Match'].astype(int)) - skip, playoff_periods - skip)
     data['meta'] = {'season': season, **data['meta']}
     path = out / 'players' / f'{season}.json'
     text = to_json(data)
@@ -119,6 +121,24 @@ def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame,
     off = players.check_scores(rows, all_games)
     note = f'; lineup points differ from the score in {len(off)} games (e.g. {off[0]})' if off else ''
     return f'{season} players: {"updated" if changed else "no changes"}, {len(rows)} roster rows{note}.'
+
+
+def write_players_alltime(config: dict, out: Path) -> None:
+    """data/players/alltime.json, every season's player records together (players.compute_alltime_players),
+    from the cached rows and each season's periods (the season's player file); written when it changes."""
+    seasons = []
+    for s in config['seasons']:
+        path = out / 'players' / f'{s["id"]}.json'
+        if not path.exists() or not players.cache_path(s['id']).exists():
+            continue
+        meta = json.loads(path.read_text())['meta']
+        seasons.append((s['id'], players.read_cache(s['id']), set(meta['regular_periods']), set(meta['playoff_periods'])))
+    if not seasons:
+        return
+    path = out / 'players' / 'alltime.json'
+    data = to_json(players.compute_alltime_players(seasons))
+    if not path.exists() or path.read_text() != data:
+        path.write_text(data)
 
 
 def write_index(config: dict, out: Path) -> None:
@@ -203,6 +223,8 @@ def main() -> None:
                 traceback.print_exc()
     write_index(config, args.out)
     write_alltime(config, args.out)
+    if not args.no_players and not args.source:
+        write_players_alltime(config, args.out)
     if failed:
         sys.exit(f'Failed: {", ".join(failed)}')
 

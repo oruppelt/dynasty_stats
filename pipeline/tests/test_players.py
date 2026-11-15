@@ -16,7 +16,8 @@ import pytest
 
 import fantrax
 import players
-from players import COLUMNS, by_period_code, check_scores, compute_players, parse_roster, update_cache
+from players import (COLUMNS, by_period_code, check_scores, compute_alltime_players, compute_players, parse_roster,
+                     update_cache)
 
 ROSTER = json.loads((Path(__file__).parent / 'fixtures' / 'fantrax_roster.json').read_text())
 
@@ -88,18 +89,54 @@ def rows():
 
 
 def test_compute_players(rows):
-    data = compute_players(rows, {1, 2}, top_n=3)
-    assert data['meta'] == {'periods': 2, 'players': 3}
-    # Playoff period 3 left out; a tie on points (none here) would go to the earlier period
+    data = compute_players(rows, {1, 2}, {3}, top_n=3)
+    assert data['meta'] == {'periods': 2, 'players': 3, 'regular_periods': [1, 2], 'playoff_periods': [3]}
+    # Playoff period 3 left out of the regular-season lists
     assert [(p['player'], p['period'], p['fpts']) for p in data['best_periods']] == [('Bob', 2, 70), ('Dee', 1, 60), ('Ann', 1, 50)]
     # Bench only: injured reserve (Eve) doesn't count; equal points, earlier period first
     assert [(p['player'], p['period']) for p in data['best_bench']] == [('Cy', 1), ('Fay', 2), ('Cy', 2)]
     assert [p['player'] for p in data['leaders']] == ['Bob', 'Ann', 'Dee']
     assert data['leaders'][1] == {'player_id': 'ann', 'player': 'Ann', 'teams': ['Alpha', 'Bravo'], 'points': 95.0, 'starts': 2, 'gp': 2}
-    assert data['teams'] == [
-        {'team': 'Alpha', 'points': 150.0, 'bench_points': 50.0, 'top_scorer': {'player_id': 'bob', 'player': 'Bob', 'points': 100.0}},
-        {'team': 'Bravo', 'points': 125.0, 'bench_points': 40.0, 'top_scorer': {'player_id': 'dee', 'player': 'Dee', 'points': 80.0}},
-    ]
+
+
+def test_teams(rows):
+    alpha, bravo = compute_players(rows, {1, 2})['teams']
+    assert (alpha['team'], alpha['points'], alpha['bench_points']) == ('Alpha', 150.0, 50.0)
+    assert alpha['top_scorer'] == {'player_id': 'bob', 'player': 'Bob', 'points': 100.0}
+    # Points for this team only: Ann's 45 for Bravo don't count for Alpha
+    assert [(p['player'], p['points'], p['starts']) for p in alpha['top_players']] == [('Bob', 100.0, 2), ('Ann', 50.0, 1)]
+    assert (alpha['best_period']['player'], alpha['best_period']['period']) == ('Bob', 2)
+    assert (bravo['points'], bravo['bench_points'], bravo['top_scorer']['player']) == (125.0, 40.0, 'Dee')
+
+
+def test_periods(rows):
+    p1, p2 = compute_players(rows, {1, 2})['periods']
+    assert p1['period'] == 1
+    assert [p['player'] for p in p1['best']] == ['Dee', 'Ann', 'Bob']
+    assert [p['player'] for p in p1['bench']] == ['Cy']
+    assert {t: v['player'] for t, v in p2['team_top'].items()} == {'Alpha': 'Bob', 'Bravo': 'Ann'}
+
+
+def test_playoffs(rows):
+    assert compute_players(rows, {1, 2})['playoffs'] is None
+    playoffs = compute_players(rows, {1, 2}, {3})['playoffs']
+    assert [(p['player'], p['fpts']) for p in playoffs['best_periods']] == [('Bob', 500)]
+    assert [(p['player'], p['points']) for p in playoffs['leaders']] == [('Bob', 500.0)]
+
+
+def test_alltime(rows):
+    # The same season twice: every total doubles, and a period appears once per season
+    data = compute_alltime_players([('2024-25', rows, {1, 2}, {3}), ('2025-26', rows, {1, 2}, {3})], top_n=3)
+    assert data['meta'] == {'seasons': ['2024-25', '2025-26']}
+    assert [(p['season'], p['player'], p['fpts']) for p in data['best_periods']] == [
+        ('2024-25', 'Bob', 70), ('2025-26', 'Bob', 70), ('2024-25', 'Dee', 60)]
+    assert data['career'][0] == {'player_id': 'bob', 'player': 'Bob', 'teams': ['Alpha'], 'points': 200.0,
+                                 'starts': 4, 'gp': 6, 'seasons': 2}
+    assert [(p['season'], p['player'], p['points']) for p in data['best_seasons']] == [
+        ('2024-25', 'Bob', 100.0), ('2025-26', 'Bob', 100.0), ('2024-25', 'Ann', 95.0)]
+    # A franchise counts only the points scored for it
+    assert [(p['player'], p['points'], p['seasons']) for p in data['franchises']['Alpha']] == [('Bob', 200.0, 2), ('Ann', 100.0, 2)]
+    assert [(p['player'], p['points']) for p in data['playoffs']['career']] == [('Bob', 1000.0)]
 
 
 def test_check_scores(rows):
