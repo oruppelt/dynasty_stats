@@ -146,7 +146,7 @@ def write_players_alltime(config: dict, out: Path) -> None:
     index, pages = players.compute_player_pages(seasons, lengths)
     transactions = lineage.read_transactions()
     if transactions is not None:
-        for pid, timeline in lineage.compute_timelines(seasons, transactions).items():
+        for pid, timeline in lineage.compute_timelines(seasons, transactions, _standings(config, out)).items():
             if pid in pages:
                 pages[pid].update(timeline=timeline['events'], trades=timeline['trades'])
         axis = lineage.compute_axis(seasons)
@@ -162,6 +162,20 @@ def write_players_alltime(config: dict, out: Path) -> None:
     for stale in page_dir.glob('*.json'):
         if stale.stem not in pages:
             stale.unlink()
+
+
+def _standings(config: dict, out: Path) -> dict[str, list[str]]:
+    """Each season's teams, worst record first (then fewest points), from the season files: the draft order's
+    guess for lineage.compute_picks. Names are today's (lineage.franchise)."""
+    standings = {}
+    for s in config['seasons']:
+        path = season_path(out, s['id'])
+        if path.exists():
+            teams = json.loads(path.read_text())['teams']
+            when = lineage.pd.Timestamp(f'{s["id"][:4]}-12-01')
+            standings[s['id']] = [lineage.franchise(t['team'], when) for t in
+                                  sorted(teams, key=lambda t: (t['wins'] - t['losses'], t['points_for']))]
+    return standings
 
 
 def _write_if_changed(path: Path, text: str) -> None:

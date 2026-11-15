@@ -58,3 +58,24 @@ def test_axis():
     out = lineage.compute_axis([('2024-25', s1, {1, 2}, set()), ('2023-24', s1, {1, 2}, {3}), ('2025-26', s1, set(), set())])
     assert out == [{'season': '2023-24', 'length': 3, 'playoffs_from': 3},
                    {'season': '2024-25', 'length': 2, 'playoffs_from': None}]
+
+
+def test_pick_path_and_what_it_became():
+    # Two teams; A's 2024 round-1 pick goes to B, who uses it (slot 1) on x; A picks y with B's (slot 2)
+    s1 = rows((1, 'A', 'p', 'active', 10), (1, 'B', 'q', 'active', 10))
+    s2 = rows((1, 'B', 'x', 'active', 30), (1, 'A', 'y', 'active', 5))
+    t = tx(
+        trades=[('2023-24', 't1', 1, 'pick', 'A', 'B', '2023-11-10 10:00', 3, '', '', '2024 Draft Pick Round 1 (A)', ''),
+                ('2023-24', 't1', 0, 'pick', 'B', 'A', '2023-11-10 10:00', 3, '', '', '2024 Draft Pick Round 1 (B)', '')],
+        drafts=[('2024-25', 1, 1, 'B', 'x', '2024-06-25 20:00'), ('2024-25', 1, 2, 'A', 'y', '2024-06-25 20:05')],
+    )
+    t['draft_orders'] = pd.DataFrame({'season': ['2024-25'] * 2, 'pick': [1, 2], 'team': ['A', 'B']})
+    picks, _ = lineage.compute_picks(t)
+    assert {k: (p['slot'], p['player_id'], p['certain']) for k, p in picks.items()} == \
+        {'2024-25/1/A': (1, 'x', True), '2024-25/1/B': (2, 'y', True)}
+    out = lineage.compute_timelines([('2023-24', s1, {1}, set()), ('2024-25', s2, {1}, set())], t)['x']
+    assert [e['kind'] for e in out['events']] == ['pick', 'pick-trade', 'draft']
+    pick, moved, draft = out['events']
+    assert (pick['team'], moved['from'], moved['team'], draft['original'], draft['pick']) == ('A', 'A', 'B', 'A', 1)
+    became = {i['label']: i.get('became', {}).get('player_id') for i in out['trades']['t1']['items']}
+    assert became == {'2024 round 1 pick (A)': 'x', '2024 round 1 pick (B)': 'y'}
