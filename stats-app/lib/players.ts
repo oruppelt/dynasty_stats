@@ -198,6 +198,8 @@ export interface PlayerStint {
 export interface PlayerPage {
   player_id: string;
   player: string;
+  /** Career salary: every season's salary in full, whichever team paid it (the season in progress: so far) */
+  salary: number;
   seasons: PlayerStint[];
   /** The 5 best periods in a lineup, regular season or playoffs */
   best_periods: (SeasonPlayerPeriod & { playoffs: boolean })[];

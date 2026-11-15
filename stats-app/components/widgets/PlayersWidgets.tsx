@@ -140,10 +140,13 @@ export function PlayerLeadersWidget({ selectedTeam }: { selectedTeam: string }) 
               Points count only while the player was in a lineup: a bench period adds nothing. <strong>Starts</strong>:
               periods in a lineup; <strong>GP</strong>: the NBA games played in them; <strong>Per game</strong>:
               points per game played. A player traded during the season shows every team they scored for.
+              <strong> Salary</strong>: the player&apos;s salary this season, in full whichever team paid it (so far:
+              the share of the season played). <strong>Per $1M</strong>: points per $1M of it.
             </p>
           }
         >
           The top {data.leaders.length} scorers for their fantasy teams, regular season through {data.meta.periods} periods.
+          Salary is the season&apos;s salary so far, whichever team paid it.
           {selectedTeam && ' Your team’s players are highlighted.'}
         </Intro>
         <CardContent className="px-0 sm:px-6">
@@ -405,6 +408,7 @@ function ListCard({ title, note, children }: { title: string; note: string; chil
   )
 }
 
+const SALARY_NOTE = "Salary: the player's salary for each season, in full whichever team paid it (for the season in progress, the share played so far)."
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`
 const span = (first: string, last: string) => (first === last ? first : `${first} to ${last}`)
 
@@ -417,7 +421,7 @@ function FranchiseCard({ data, records, franchise, teams, onPick, counted }: {
     <TableCard
       title="Franchise scorers"
       note={by === 'points'
-        ? `A franchise's top scorers: points for that team, over every season (${counted}).`
+        ? `A franchise's top scorers: points for that team, over every season (${counted}). Paid: the salary this team paid, for the periods the player was on its roster.`
         : "A franchise's longest-serving players: most starts for that team (regular season)."}
     >
       <div className="mb-3 flex flex-col gap-2 px-3 sm:flex-row sm:items-center sm:px-0">
@@ -485,13 +489,15 @@ export function PlayerAllTimeWidget({ selectedTeam }: { selectedTeam: string }) 
                 lists are always the regular season.
               </p>
               <p>
-                <strong>Salary</strong>: what was paid. Each period on a roster (any slot) costs a share of
-                that season&apos;s salary, so a full season costs it once, and a player cut, picked up or traded
-                during a season is split between the teams. The season in progress counts what was paid so far.
-                <strong> Per $1M</strong>: points per $1M paid.
+                <strong>Salary</strong> in the player lists (career, best seasons, best value): the
+                player&apos;s salary for each season, in full whichever team paid it. <strong>Paid</strong> in
+                Franchise scorers: what that team paid, a share of the season&apos;s salary for each period the
+                player was on its roster (any slot), so a player cut, picked up or traded during a season counts
+                only the periods with the team. The season in progress counts the share played so far.
+                <strong> Per $1M</strong>: points per $1M of salary.
               </p>
               <p>
-                <strong>Best value</strong>: a season&apos;s points per $1M paid. <strong>Share of team points</strong>: a player&apos;s
+                <strong>Best value</strong>: a season&apos;s points per $1M of salary. <strong>Share of team points</strong>: a player&apos;s
                 points for a team in a season, as a share of the team&apos;s lineup points. Both need at least 12
                 starts that season.
               </p>
@@ -513,11 +519,11 @@ export function PlayerAllTimeWidget({ selectedTeam }: { selectedTeam: string }) 
 
       <FranchiseCard data={data} records={records} franchise={franchise} teams={teams} onPick={setPicked} counted={counted} />
 
-      <TableCard title="Career leaders" note={`Points over every season, for any team (${counted}).`}>
+      <TableCard title="Career leaders" note={`Points over every season, for any team (${counted}). ${SALARY_NOTE}`}>
         <LeadersTable rows={records.career} selectedTeam={selectedTeam} seasons />
       </TableCard>
 
-      <TableCard title="Best seasons" note={`A player's points in one season (${counted}).`}>
+      <TableCard title="Best seasons" note={`A player's points in one season (${counted}). ${SALARY_NOTE}`}>
         <LeadersTable rows={records.best_seasons} selectedTeam={selectedTeam} />
       </TableCard>
 

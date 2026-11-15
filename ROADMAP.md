@@ -195,9 +195,10 @@ players" below).
   roster continuity ("Kept" in Teams).
 - Next:
   - Add trades and draft picks to the player page (lineage, section 3).
-  - Franchise renames: franchises are matched by team name, but in 2025-26
-    the Lakers and Clippers swapped rosters (each kept none of its own
-    players), so their histories may be crossed. To confirm with the league.
+  - Note, not planned: franchises are matched by team name. In 2025-26 the
+    Lakers and Clippers swapped rosters (each kept none of its own players).
+    The commissioner told them beforehand that a mapping wouldn't be a
+    priority, so their stats stay as they are (by name).
   - The Recap's PDF doesn't have the players yet.
   - Lower priority: points left on the bench as lost games (the best
     possible lineup, which needs each player's eligible positions per

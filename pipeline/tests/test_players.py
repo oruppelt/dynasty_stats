@@ -200,6 +200,17 @@ def test_salary_paid(rows):
     assert data['meta']['season_length'] == 4 and data['leaders'][0]['salary'] == 500000
 
 
+def test_season_salary(rows):
+    # The player's own salary, in full: Eve was on a roster for one period of two, Ann with two teams
+    full = players.season_salary(rows, {1, 2}).set_index('player_id')['paid']
+    assert (full['eve'], full['ann'], full['bob']) == (1000000, 1000000, 1000000)
+    # A season in progress: the share of the season played so far
+    assert players.season_salary(rows, {1, 2}, season_length=4).set_index('player_id')['paid']['eve'] == 500000
+    # Player views use it, team views what the team paid
+    index, pages = compute_player_pages([('2024-25', rows, {1, 2}, {3}), ('2025-26', rows, {1, 2}, {3})])
+    assert pages['eve']['salary'] == 2000000 and pages['eve']['seasons'][0]['paid'] == 500000
+
+
 def test_check_scores(rows):
     games = pd.DataFrame({'Match': [1, 2], 'Team': ['Alpha', 'Alpha'], 'Score': [80.0, 70.0],
                           'Opponent': ['Bravo', 'Bravo'], 'OppScore': [60.0, 60.0]})

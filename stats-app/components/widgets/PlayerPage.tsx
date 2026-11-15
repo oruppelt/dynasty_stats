@@ -87,7 +87,8 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
   const latest = seasons[seasons.length - 1]
   const seasonCount = new Set(seasons.map(s => s.season)).size
   const playoffPoints = sum('playoff_points')
-  const paid = seasons.reduce((total, s) => total + s.paid, 0)
+  // Every season's salary in full, whichever team paid it (not the sum of Paid)
+  const paid = page.salary
 
   return (
     <>
@@ -107,7 +108,7 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
             <Stat label="Points" value={formatPoints(points)} sub="Regular season, in a lineup" />
             <Stat label="Starts" value={String(sum('starts'))} sub={`${gp} games · ${perGame(points, gp)} per game`} />
             <Stat label="Playoffs" value={formatPoints(playoffPoints)} sub={`${sum('playoff_starts')} starts`} />
-            <Stat label="Salary paid" value={formatSalary(paid)} sub={paid ? `${Math.round(points / (paid / 1e6)).toLocaleString()} points per $1M` : undefined} />
+            <Stat label="Career salary" value={formatSalary(paid)} sub={paid ? `${Math.round(points / (paid / 1e6)).toLocaleString()} points per $1M` : undefined} />
             <Stat label={latest.season === currentSeason ? 'Contract' : 'Last contract'} value={formatSalary(latest.salary)} sub={describeContract(latest.contract)} />
           </div>
           <Explainer>
@@ -116,7 +117,9 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
               in the regular season; Playoffs is the same for the playoffs; Bench is the points scored on the
               bench (regular season). Periods is the number of periods on the roster, any slot (injured reserve and
               minors too), playoffs included. Salary and contract are from the last period with the team; Paid is the salary
-              times the share of the season&apos;s periods on the roster (so far, for the season in progress).
+              times the share of the season&apos;s periods on that team&apos;s roster. The career salary counts
+              each season&apos;s salary in full, whichever team paid it. For the season in progress, both count
+              the share played so far.
             </p>
             <p className="mt-2">
               Contracts: R1x and R2x are rookie contracts (1st and 2nd round) with x years left, REGx a contract
@@ -129,7 +132,11 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
       <Card className="w-full">
         <CardHeader className="pb-2">
           <CardTitle className="text-lg">Season by season</CardTitle>
-          <CardDescription>Every season and team, oldest first. {selectedTeam && 'Seasons with your team are highlighted.'}</CardDescription>
+          <CardDescription>
+            Every season and team, oldest first. Salary is the annual salary; Paid is what that team paid, for the
+            periods the player was on its roster. The career salary counts each season in full.
+            {selectedTeam && ' Seasons with your team are highlighted.'}
+          </CardDescription>
         </CardHeader>
         <CardContent className="px-0 sm:px-6">
           <div className="w-full overflow-x-auto">

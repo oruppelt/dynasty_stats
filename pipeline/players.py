@@ -214,8 +214,8 @@ def _top_periods(df: pd.DataFrame, n: int) -> list[dict]:
 def _leaders(active: pd.DataFrame, n: int, by: tuple[str, ...] = ('player_id',), pay: pd.DataFrame | None = None) -> list[dict]:
     """Points scored in lineups, per player (or per `by`, e.g. season and player): the top `n`, with the
     teams in the order the player scored for them, starts (periods in a lineup), games played in them, and
-    for several seasons the number of seasons. With `pay` (salary_paid rows), also the salary paid
-    (summed over the same keys: pass rows for the same teams and seasons as `active`)."""
+    for several seasons the number of seasons. With `pay` (season_salary or salary_paid rows), also the
+    salary (summed over the same keys: pass rows for the same teams and seasons as `active`)."""
     if active.empty:
         return []
     order = [k for k in ('season', 'period') if k in active.columns]
@@ -259,6 +259,18 @@ def salary_paid(rows: pd.DataFrame, regular_periods: set[int], season_length: in
     return paid.rename('paid').reset_index()
 
 
+def season_salary(rows: pd.DataFrame, regular_periods: set[int], season_length: int | None = None) -> pd.DataFrame:
+    """A player's salary for a regular season, whoever paid it: the salary in the player's last period on
+    a roster that season, in full (a trade or a cut doesn't lower it). For a season in progress, the share
+    of the season played so far (periods played / `season_length`)."""
+    length = season_length or len(regular_periods)
+    r = rows[rows['period'].astype(int).isin(regular_periods)]
+    if r.empty or not length:
+        return pd.DataFrame(columns=['player_id', 'paid'])
+    last = r.assign(period=r['period'].astype(int)).sort_values('period', kind='stable').groupby('player_id')['salary'].last()
+    return (last.astype(float) * min(1.0, len(regular_periods) / length)).rename('paid').reset_index()
+
+
 def _split(rows: pd.DataFrame, periods: set[int]) -> tuple[pd.DataFrame, pd.DataFrame]:
     """The lineup and bench rows of `periods` (bench: not injured reserve or minors)."""
     r = rows[rows['period'].astype(int).isin(periods)].copy()
@@ -291,7 +303,7 @@ def compute_players(rows: pd.DataFrame, regular_periods: set[int], playoff_perio
     Equal values: the earlier period first, then by team and player.
     """
     active, bench = _split(rows, regular_periods)
-    pay = salary_paid(rows, regular_periods, season_length)
+    pay = season_salary(rows, regular_periods, season_length)
 
     teams = []
     for team, mine in active.groupby('team'):
@@ -342,13 +354,14 @@ ALLTIME_PLAYOFF_TOP_N = 15
 VALUE_MIN_STARTS = 12
 
 
-def _records(active: pd.DataFrame, top_n: int, pay: pd.DataFrame) -> dict:
-    """The lineup records over every season: best periods and seasons, career and franchise leaders,
-    with the salary paid (`pay`: season, team, player_id, paid)."""
+def _records(active: pd.DataFrame, top_n: int, salaries: pd.DataFrame, pay: pd.DataFrame) -> dict:
+    """The lineup records over every season: best periods and seasons, career and franchise leaders.
+    Seasons and careers have the player's salary (`salaries`: season_salary rows with the season), a
+    franchise's scorers what that team paid them (`pay`: salary_paid rows with the season)."""
     return {
         'best_periods': _top_periods(active, top_n),
-        'best_seasons': _leaders(active, top_n, by=('season', 'player_id'), pay=pay),
-        'career': _leaders(active, top_n, pay=pay),
+        'best_seasons': _leaders(active, top_n, by=('season', 'player_id'), pay=salaries),
+        'career': _leaders(active, top_n, pay=salaries),
         'franchises': {team: [{k: v for k, v in p.items() if k != 'teams'}
                               for p in _leaders(mine, FRANCHISE_TOP_N, pay=pay[pay['team'] == team])]
                        for team, mine in sorted(active.groupby('team'), key=lambda t: t[0])},
@@ -367,28 +380,32 @@ def compute_alltime_players(seasons: list[tuple[str, pd.DataFrame, set[int], set
     - franchises: per team, its all-time top scorers (points for that team).
     - with_playoffs: best_periods, best_seasons, career and franchises again,
       counting playoff points too (still lineup only).
-    - Career, best seasons and franchise lists have the salary paid
-      (`salary_paid`; `season_lengths` for seasons in progress).
+    - Career and best seasons have the player's salary (`season_salary`),
+      franchise lists what the team paid (`salary_paid`); `season_lengths`
+      for seasons in progress.
     - playoffs: the best playoff periods and the career playoff leaders.
     Franchises are matched by team name (team IDs change every season).
     """
-    regular, benches, playoff, last_rosters, pays = [], [], [], {}, []
+    regular, benches, playoff, last_rosters, pays, salaries = [], [], [], {}, [], []
     for season, rows, regular_periods, playoff_periods in seasons:
         active, bench = _split(rows, regular_periods)
-        pays.append(salary_paid(rows, regular_periods, (season_lengths or {}).get(season)).assign(season=season))
+        length = (season_lengths or {}).get(season)
+        pays.append(salary_paid(rows, regular_periods, length).assign(season=season))
+        salaries.append(season_salary(rows, regular_periods, length).assign(season=season))
         regular.append(active.assign(season=season))
         benches.append(bench.assign(season=season))
         playoff.append(_split(rows, playoff_periods)[0].assign(season=season))
         if regular_periods:
             last = rows[rows['period'].astype(int) == max(regular_periods)]
             last_rosters[season] = set(zip(last['team'], last['player_id']))
-    regular, benches, playoff, pay = (pd.concat(frames, ignore_index=True) for frames in (regular, benches, playoff, pays))
+    regular, benches, playoff, pay, salary = (pd.concat(frames, ignore_index=True)
+                                              for frames in (regular, benches, playoff, pays, salaries))
     return {
         'meta': {'seasons': sorted({s for s, *_ in seasons})},
-        **_records(regular, top_n, pay),
+        **_records(regular, top_n, salary, pay),
         'best_bench': _top_periods(benches, top_n),
-        'with_playoffs': _records(pd.concat([regular, playoff], ignore_index=True), top_n, pay),
-        **_more_records(regular, top_n, pay),
+        'with_playoffs': _records(pd.concat([regular, playoff], ignore_index=True), top_n, salary, pay),
+        **_more_records(regular, top_n, salary),
         'continuity': _continuity(regular, last_rosters),
         'playoffs': {
             'best_periods': _top_periods(playoff, ALLTIME_PLAYOFF_TOP_N),
@@ -397,14 +414,14 @@ def compute_alltime_players(seasons: list[tuple[str, pd.DataFrame, set[int], set
     }
 
 
-def _more_records(regular: pd.DataFrame, top_n: int, pay: pd.DataFrame) -> dict:
+def _more_records(regular: pd.DataFrame, top_n: int, salaries: pd.DataFrame) -> dict:
     """Regular-season lineup records beyond points:
 
     - longest_serving: most starts for one franchise (player and team).
     - franchise_starts: per team, its 10 players with the most starts.
     - journeymen: most franchises a player started for.
-    - best_value: a season's points per $1M of salary paid that season
-      (`salary_paid`, every team; at least VALUE_MIN_STARTS starts).
+    - best_value: a season's points per $1M of the player's salary
+      (`season_salary`; at least VALUE_MIN_STARTS starts).
     - team_share: a player's share of a team's lineup points in a season (at
       least VALUE_MIN_STARTS starts there).
     """
@@ -431,7 +448,7 @@ def _more_records(regular: pd.DataFrame, top_n: int, pay: pd.DataFrame) -> dict:
     seasons = regular.groupby(['season', 'player_id'], sort=False).agg(
         player=('player', 'last'), teams=('team', 'unique'), points=('fpts', 'sum'), starts=('fpts', 'size'),
         contract=('contract', 'last')).reset_index()
-    seasons = seasons.join(pay.groupby(['season', 'player_id'])['paid'].sum().rename('salary'), on=['season', 'player_id'])
+    seasons = seasons.join(salaries.set_index(['season', 'player_id'])['paid'].rename('salary'), on=['season', 'player_id'])
     seasons = seasons[(seasons['starts'] >= VALUE_MIN_STARTS) & (seasons['salary'] > 0)].copy()
     seasons['per_million'] = seasons['points'] / (seasons['salary'] / 1e6)
     seasons = seasons.sort_values(['per_million', 'points'], ascending=False, kind='stable').head(top_n)
@@ -488,13 +505,14 @@ def compute_player_pages(seasons: list[tuple[str, pd.DataFrame, set[int], set[in
     status): periods there, starts, games and points in the lineup, bench
     points (regular season), playoff starts and points, and the salary and
     contract in the last period there, and the salary paid there
-    (`salary_paid`). Plus the best 5 periods (lineup,
+    (`salary_paid`), and the career salary (`season_salary`, every season). Plus the best 5 periods (lineup,
     regular season or playoffs). The index has each player's name, latest
     team and season, and career regular-season lineup points.
     """
-    frames, pays = [], []
+    frames, pays, salaries = [], [], []
     for season, rows, regular_periods, playoff_periods in seasons:
         pays.append(salary_paid(rows, regular_periods, (season_lengths or {}).get(season)).assign(season=season))
+        salaries.append(season_salary(rows, regular_periods, (season_lengths or {}).get(season)))
         r = rows.copy()
         r['period'] = r['period'].astype(int)
         r = r[r['period'].isin(regular_periods | playoff_periods)]
@@ -527,6 +545,7 @@ def compute_player_pages(seasons: list[tuple[str, pd.DataFrame, set[int], set[in
     best_by_player = {pid: [{**_performance(r), 'playoffs': bool(r.playoffs)} for r in group.itertuples()]
                       for pid, group in best.groupby('player_id', sort=False)}
 
+    career_salary = pd.concat(salaries, ignore_index=True).groupby('player_id')['paid'].sum()
     pages, index = {}, []
     for pid, mine in stints.groupby('player_id', sort=False):
         last = mine.iloc[-1]
@@ -537,7 +556,8 @@ def compute_player_pages(seasons: list[tuple[str, pd.DataFrame, set[int], set[in
             'salary': int(r.salary), 'contract': r.contract, 'paid': int(round(r.paid)),
         } for r in mine.itertuples()]
         points = round(float(mine['points'].sum()), 2)
-        pages[pid] = {'player_id': pid, 'player': last.player, 'seasons': page_seasons,
+        pages[pid] = {'player_id': pid, 'player': last.player, 'salary': int(round(float(career_salary.get(pid, 0.0)))),
+                      'seasons': page_seasons,
                       'best_periods': best_by_player.get(pid, [])}
         index.append({'player_id': pid, 'player': last.player, 'team': last.team, 'season': last.season,
                       'points': points})
