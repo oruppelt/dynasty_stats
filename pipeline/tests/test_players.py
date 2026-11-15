@@ -16,8 +16,8 @@ import pytest
 
 import fantrax
 import players
-from players import (COLUMNS, by_period_code, check_scores, compute_alltime_players, compute_players, parse_roster,
-                     update_cache)
+from players import (COLUMNS, by_period_code, check_scores, compute_alltime_players, compute_player_pages, compute_players,
+                     parse_roster, update_cache)
 
 ROSTER = json.loads((Path(__file__).parent / 'fixtures' / 'fantrax_roster.json').read_text())
 
@@ -90,13 +90,15 @@ def rows():
 
 def test_compute_players(rows):
     data = compute_players(rows, {1, 2}, {3}, top_n=3)
-    assert data['meta'] == {'periods': 2, 'players': 3, 'regular_periods': [1, 2], 'playoff_periods': [3]}
+    assert data['meta'] == {'periods': 2, 'players': 3, 'regular_periods': [1, 2], 'playoff_periods': [3], 'season_length': 2}
     # Playoff period 3 left out of the regular-season lists
     assert [(p['player'], p['period'], p['fpts']) for p in data['best_periods']] == [('Bob', 2, 70), ('Dee', 1, 60), ('Ann', 1, 50)]
     # Bench only: injured reserve (Eve) doesn't count; equal points, earlier period first
     assert [(p['player'], p['period']) for p in data['best_bench']] == [('Cy', 1), ('Fay', 2), ('Cy', 2)]
     assert [p['player'] for p in data['leaders']] == ['Bob', 'Ann', 'Dee']
-    assert data['leaders'][1] == {'player_id': 'ann', 'player': 'Ann', 'teams': ['Alpha', 'Bravo'], 'points': 95.0, 'starts': 2, 'gp': 2}
+    # Salary paid: half a season with each team, $1M a season
+    assert data['leaders'][1] == {'player_id': 'ann', 'player': 'Ann', 'teams': ['Alpha', 'Bravo'], 'points': 95.0, 'starts': 2, 'gp': 2,
+                                  'salary': 1000000}
 
 
 def test_teams(rows):
@@ -131,7 +133,9 @@ def test_alltime(rows):
     assert [(p['season'], p['player'], p['fpts']) for p in data['best_periods']] == [
         ('2024-25', 'Bob', 70), ('2025-26', 'Bob', 70), ('2024-25', 'Dee', 60)]
     assert data['career'][0] == {'player_id': 'bob', 'player': 'Bob', 'teams': ['Alpha'], 'points': 200.0,
-                                 'starts': 4, 'gp': 6, 'seasons': 2}
+                                 'starts': 4, 'gp': 6, 'seasons': 2, 'salary': 2000000}
+    # A franchise's salary is what it paid: Ann was with Alpha for half of each season
+    assert [(p['player'], p['salary']) for p in data['franchises']['Alpha']] == [('Bob', 2000000), ('Ann', 1000000)]
     assert [(p['season'], p['player'], p['points']) for p in data['best_seasons']] == [
         ('2024-25', 'Bob', 100.0), ('2025-26', 'Bob', 100.0), ('2024-25', 'Ann', 95.0)]
     # A franchise counts only the points scored for it
@@ -143,6 +147,68 @@ def test_alltime(rows):
     assert (both['career'][0]['player'], both['career'][0]['points'], both['career'][0]['starts']) == ('Bob', 1200.0, 6)
     assert [(p['player'], p['points']) for p in both['franchises']['Alpha']][0] == ('Bob', 1200.0)
     assert both['best_seasons'][0]['points'] == 600.0
+
+
+def test_alltime_more_records(rows, monkeypatch):
+    monkeypatch.setattr(players, 'VALUE_MIN_STARTS', 1)
+    data = compute_alltime_players([('2024-25', rows, {1, 2}, {3}), ('2025-26', rows, {1, 2}, {3})], top_n=3)
+    # Starts for one franchise, regular season only (Bob's playoff start doesn't count)
+    assert [(p['player'], p['team'], p['starts'], p['points']) for p in data['longest_serving']] == [
+        ('Bob', 'Alpha', 4, 200.0), ('Dee', 'Bravo', 4, 160.0), ('Ann', 'Alpha', 2, 100.0)]
+    assert data['longest_serving'][0]['seasons'] == 2 and data['longest_serving'][0]['first'] == '2024-25'
+    assert [p['player'] for p in data['franchise_starts']['Bravo']] == ['Dee', 'Ann']
+    assert [(p['player'], p['teams']) for p in data['journeymen']] == [('Ann', ['Alpha', 'Bravo'])]
+    # Salary 1,000,000 everywhere: points per $1M are the season's points
+    assert [(p['player'], p['per_million']) for p in data['best_value']] == [('Bob', 100.0), ('Bob', 100.0), ('Ann', 95.0)]
+    assert [(p['player'], p['team'], p['share']) for p in data['team_share']] == [
+        ('Bob', 'Alpha', 0.6667), ('Bob', 'Alpha', 0.6667), ('Dee', 'Bravo', 0.64)]
+    # Alpha kept Bob (100 of 150); Ann's 50 for Alpha don't count, she ended 2024-25 on Bravo
+    assert data['continuity'] == {'2025-26': {'Alpha': 0.6667, 'Bravo': 1.0}}
+
+
+def test_value_and_share_need_starts(rows):
+    data = compute_alltime_players([('2024-25', rows, {1, 2}, {3})])
+    assert data['best_value'] == [] and data['team_share'] == []
+
+
+def test_player_pages(rows):
+    index, pages = compute_player_pages([('2024-25', rows, {1, 2}, {3}), ('2025-26', rows, {1, 2}, {3})])
+    assert [p['player'] for p in index] == ['Bob', 'Ann', 'Dee', 'Cy', 'Eve', 'Fay']
+    assert index[1] == {'player_id': 'ann', 'player': 'Ann', 'team': 'Bravo', 'season': '2025-26', 'points': 190.0}
+    ann = pages['ann']['seasons']
+    assert [(s['season'], s['team'], s['starts'], s['points']) for s in ann] == [
+        ('2024-25', 'Alpha', 1, 50.0), ('2024-25', 'Bravo', 1, 45.0), ('2025-26', 'Alpha', 1, 50.0), ('2025-26', 'Bravo', 1, 45.0)]
+    bob = pages['bob']['seasons'][0]
+    assert (bob['periods'], bob['starts'], bob['gp'], bob['points'], bob['playoff_starts'], bob['playoff_points']) == (3, 2, 3, 100.0, 1, 500.0)
+    assert (bob['salary'], bob['contract'], bob['paid']) == (1000000, 'REG1', 1000000)
+    assert ann[0]['paid'] == 500000
+    assert pages['cy']['seasons'][0]['bench_points'] == 50.0 and pages['cy']['seasons'][0]['starts'] == 0
+    # Best periods include the playoffs, flagged
+    assert [(p['season'], p['period'], p['fpts'], p['playoffs']) for p in pages['bob']['best_periods']][:3] == [
+        ('2024-25', 3, 500, True), ('2025-26', 3, 500, True), ('2024-25', 2, 70, False)]
+    assert pages['eve']['best_periods'] == [] and pages['eve']['seasons'][0]['periods'] == 1
+
+
+def test_salary_paid(rows):
+    paid = {(r.team, r.player_id): r.paid for r in players.salary_paid(rows, {1, 2}).itertuples()}
+    # Every period on a roster counts, bench and injured reserve too
+    assert paid == {('Alpha', 'ann'): 500000, ('Alpha', 'bob'): 1000000, ('Alpha', 'cy'): 1000000,
+                    ('Bravo', 'ann'): 500000, ('Bravo', 'dee'): 1000000, ('Bravo', 'eve'): 500000, ('Bravo', 'fay'): 500000}
+    # A season in progress: 2 periods of 4 played, so half the salary so far
+    assert players.salary_paid(rows, {1, 2}, season_length=4).set_index(['team', 'player_id'])['paid'][('Alpha', 'bob')] == 500000
+    data = compute_players(rows, {1, 2}, season_length=4)
+    assert data['meta']['season_length'] == 4 and data['leaders'][0]['salary'] == 500000
+
+
+def test_season_salary(rows):
+    # The player's own salary, in full: Eve was on a roster for one period of two, Ann with two teams
+    full = players.season_salary(rows, {1, 2}).set_index('player_id')['paid']
+    assert (full['eve'], full['ann'], full['bob']) == (1000000, 1000000, 1000000)
+    # A season in progress: the share of the season played so far
+    assert players.season_salary(rows, {1, 2}, season_length=4).set_index('player_id')['paid']['eve'] == 500000
+    # Player views use it, team views what the team paid
+    index, pages = compute_player_pages([('2024-25', rows, {1, 2}, {3}), ('2025-26', rows, {1, 2}, {3})])
+    assert pages['eve']['salary'] == 2000000 and pages['eve']['seasons'][0]['paid'] == 500000
 
 
 def test_check_scores(rows):

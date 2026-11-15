@@ -1,6 +1,6 @@
 "use client"
 
-import { Fragment, useState } from "react"
+import { Fragment, useEffect, useState } from "react"
 import { MyTeamWidget } from "./widgets/MyTeamWidget"
 import { StandingsWidget } from "./widgets/StandingsWidget"
 import { PointsWidget } from "./widgets/PointsWidget"
@@ -18,10 +18,12 @@ import { FranchisesWidget } from "./widgets/FranchisesWidget"
 import { CareerHeadToHeadWidget } from "./widgets/CareerHeadToHeadWidget"
 import { AllTimeRecordsWidget } from "./widgets/AllTimeRecordsWidget"
 import { PlayerAllTimeWidget, PlayerLeadersWidget, PlayerPeriodsWidget, PlayerTeamsWidget } from "./widgets/PlayersWidgets"
+import { PlayerPageWidget } from "./widgets/PlayerPage"
 import { WidgetSkeleton } from "./widgets/WidgetSkeleton"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useLeagueData, useSeasonInfo } from '@/lib/league-data'
 import { useInitSelectedTeam, useSelectedTeam } from '@/lib/selected-team'
+import { useSelectedPlayer } from '@/lib/selected-player'
 import { getUrlParam, setUrlParam } from '@/lib/url'
 import { cn } from '@/lib/utils'
 import { CalendarDays, Info, Landmark, ListOrdered, Shirt, Swords, TrendingUp, User } from "lucide-react"
@@ -86,6 +88,7 @@ const SECTIONS: Section[] = [
       { value: "periods", label: "Best periods", render: team => <PlayerPeriodsWidget selectedTeam={team} /> },
       { value: "teams", label: "Teams", render: team => <PlayerTeamsWidget selectedTeam={team} /> },
       { value: "alltime", label: "All-time", render: team => <PlayerAllTimeWidget selectedTeam={team} /> },
+      { value: "player", label: "Player", render: team => <PlayerPageWidget selectedTeam={team} /> },
     ],
   },
   {
@@ -135,9 +138,18 @@ export function Dashboard() {
   // Until the viewer picks a tab: their team if they have one, else the league.
   // A shared recap link (?period=) opens on the recap. (Reading the URL here is
   // safe: the tabs only render after the team list loads, well after hydration.)
-  const [tab, setTab] = useState<string | null>(() => getUrlParam("period") ? "recap" : null)
+  // A player link (?player=) opens on the player page.
+  const [tab, setTab] = useState<string | null>(() => getUrlParam("player") ? "players" : getUrlParam("period") ? "recap" : null)
   // The view open in each section (its first one until the viewer picks another)
-  const [views, setViews] = useState<Record<string, string>>({})
+  const [views, setViews] = useState<Record<string, string>>(() => (getUrlParam("player") ? { players: "player" } : {}) as Record<string, string>)
+
+  // A player name clicked anywhere opens the player page
+  useEffect(() => useSelectedPlayer.subscribe((state, before) => {
+    if (state.opened === before.opened) return
+    setTab("players")
+    setViews(current => ({ ...current, players: "player" }))
+    window.scrollTo({ top: 0 })
+  }), [])
 
   // Same as following a ?period= link: the recap reads the period when it opens
   const openRecap = (period: number) => {
@@ -162,8 +174,9 @@ export function Dashboard() {
         value={currentTab}
         onValueChange={value => {
           setTab(value)
-          // The link names a period only while the recap is open
+          // The link names a period only while the recap is open, a player only while the player page is
           if (value !== "recap") setUrlParam("period", "")
+          if (value !== "players") setUrlParam("player", "")
         }}
         className="w-full"
       >
@@ -195,7 +208,11 @@ export function Dashboard() {
                 <ViewPicker
                   views={section.views}
                   value={view.value}
-                  onChange={value => setViews(current => ({ ...current, [section.value]: value }))}
+                  onChange={value => {
+                    setViews(current => ({ ...current, [section.value]: value }))
+                    if (value !== "player") setUrlParam("player", "")
+                    else { const id = useSelectedPlayer.getState().playerId; if (id) setUrlParam("player", id) }
+                  }}
                 />
               )}
               {/* A new season starts each view afresh (picked period, round, ...) */}

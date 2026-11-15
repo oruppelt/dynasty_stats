@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { TeamLogo } from './TeamLogo'
+import { PlayerName } from './PlayerName'
 import { PlayerPeriod, formatFpts, usePlayers } from '@/lib/players'
 import { formatPoints, ordinal } from '@/lib/standings'
 import { cn } from '@/lib/utils'
@@ -32,7 +33,7 @@ export function YourPlayers({ team }: { team: string }) {
             <li key={p.player_id} className="flex items-center gap-3 py-2 text-sm sm:text-base">
               <span className="w-4 shrink-0 text-xs text-muted-foreground tabular-nums">{i + 1}</span>
               <div className="min-w-0 flex-1">
-                <div className="truncate font-medium">{p.player}</div>
+                <PlayerName id={p.player_id} name={p.player} className="font-medium" />
                 <div className="text-xs text-muted-foreground">
                   {p.starts} starts · {p.gp ? (p.points / p.gp).toFixed(1) : '–'} per game
                 </div>
@@ -67,7 +68,7 @@ function PlayerRow({ p, mine }: { p: PlayerPeriod; mine: boolean }) {
     <li className={cn('flex items-center gap-2 rounded-md px-1.5 py-1.5', mine && 'bg-muted')}>
       <TeamLogo teamName={p.team} size={24} className="shrink-0" />
       <div className="min-w-0 flex-1">
-        <div className="truncate text-sm font-medium">{p.player}</div>
+        <PlayerName id={p.player_id} name={p.player} className="text-sm font-medium" />
         <div className="truncate text-xs text-muted-foreground">{p.team} · {games(p.gp)}</div>
       </div>
       <span className="shrink-0 font-bold tabular-nums">{formatFpts(p.fpts)}</span>
