@@ -99,8 +99,9 @@ def build(games: pd.DataFrame, path: Path, season: str, playoff_games: pd.DataFr
 
 
 def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame, playoff_games: pd.DataFrame,
-                  out: Path, final: bool, skip_periods: list[int] | None = None) -> str:
-    """Update the season's player cache and write data/players/<season>.json if it changed. Returns what happened."""
+                  out: Path, final: bool, skip_periods: list[int] | None = None, season_length: int | None = None) -> str:
+    """Update the season's player cache and write data/players/<season>.json if it changed. Returns what happened.
+    `season_length`: the regular season's number of periods, for a season in progress (salary paid so far)."""
     if games.empty:
         return f'{season} players: no played games yet.'
     all_games = pd.concat([g for g in (games, playoff_games) if not g.empty])
@@ -110,7 +111,8 @@ def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame,
     rows = players.update_cache(season, league_id, cookie, played, refresh=0 if final else players.REFRESH_RECENT)
     skip = set(skip_periods or [])
     playoff_periods = set(playoff_games['Match'].astype(int)) if not playoff_games.empty else set()
-    data = players.compute_players(rows, set(games['Match'].astype(int)) - skip, playoff_periods - skip)
+    data = players.compute_players(rows, set(games['Match'].astype(int)) - skip, playoff_periods - skip,
+                                   season_length=None if final else season_length)
     data['meta'] = {'season': season, **data['meta']}
     path = out / 'players' / f'{season}.json'
     text = to_json(data)
@@ -127,18 +129,20 @@ def write_players_alltime(config: dict, out: Path) -> None:
     """data/players/alltime.json, every season's player records together (players.compute_alltime_players),
     and the player pages: data/players/index.json (the search list) and data/players/player/<id>.json
     (players.compute_player_pages). From the cached rows and each season's periods (the season's player
-    file); each file is written only when it changes."""
-    seasons = []
+    file, whose meta also has the season's length for the salary paid); each file is written only when it changes."""
+    seasons, lengths = [], {}
     for s in config['seasons']:
         path = out / 'players' / f'{s["id"]}.json'
         if not path.exists() or not players.cache_path(s['id']).exists():
             continue
         meta = json.loads(path.read_text())['meta']
         seasons.append((s['id'], players.read_cache(s['id']), set(meta['regular_periods']), set(meta['playoff_periods'])))
+        if meta.get('season_length'):
+            lengths[s['id']] = meta['season_length']
     if not seasons:
         return
-    _write_if_changed(out / 'players' / 'alltime.json', to_json(players.compute_alltime_players(seasons)))
-    index, pages = players.compute_player_pages(seasons)
+    _write_if_changed(out / 'players' / 'alltime.json', to_json(players.compute_alltime_players(seasons, season_lengths=lengths)))
+    index, pages = players.compute_player_pages(seasons, lengths)
     _write_if_changed(out / 'players' / 'index.json', to_json(index))
     page_dir = out / 'players' / 'player'
     page_dir.mkdir(parents=True, exist_ok=True)
@@ -229,7 +233,7 @@ def main() -> None:
                 continue
             try:
                 print(build_players(season, league_ids[season], cookie, games, playoff_games, args.out, season in final,
-                                    skip_player_periods[season]))
+                                    skip_player_periods[season], (schedule or {}).get('regular_periods')))
             except Exception:
                 failed.append(f'{season} players')
                 print(f'{season} players: FAILED; player data left as it was.', file=sys.stderr)

@@ -87,6 +87,7 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
   const latest = seasons[seasons.length - 1]
   const seasonCount = new Set(seasons.map(s => s.season)).size
   const playoffPoints = sum('playoff_points')
+  const paid = seasons.reduce((total, s) => total + s.paid, 0)
 
   return (
     <>
@@ -102,18 +103,20 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
               </CardDescription>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
             <Stat label="Points" value={formatPoints(points)} sub="Regular season, in a lineup" />
             <Stat label="Starts" value={String(sum('starts'))} sub={`${gp} games · ${perGame(points, gp)} per game`} />
             <Stat label="Playoffs" value={formatPoints(playoffPoints)} sub={`${sum('playoff_starts')} starts`} />
-            <Stat label="Contract" value={formatSalary(latest.salary)} sub={describeContract(latest.contract)} />
+            <Stat label="Salary paid" value={formatSalary(paid)} sub={paid ? `${Math.round(points / (paid / 1e6)).toLocaleString()} points per $1M` : undefined} />
+            <Stat label={latest.season === currentSeason ? 'Contract' : 'Last contract'} value={formatSalary(latest.salary)} sub={describeContract(latest.contract)} />
           </div>
           <Explainer>
             <p>
               One row per season and team. Points, starts and games count while the player was in the lineup
               in the regular season; Playoffs is the same for the playoffs; Bench is the points scored on the
               bench (regular season). Periods is the number of periods on the roster, any slot (injured reserve and
-              minors too). Salary and contract are from the last period with the team.
+              minors too), playoffs included. Salary and contract are from the last period with the team; Paid is the salary
+              times the share of the season&apos;s periods on the roster (so far, for the season in progress).
             </p>
             <p className="mt-2">
               Contracts: R1x and R2x are rookie contracts (1st and 2nd round) with x years left, REGx a contract
@@ -142,6 +145,7 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
                   <th className="h-10 border-b px-2 text-right font-medium">Bench</th>
                   <th className="h-10 border-b px-2 text-right font-medium">Periods</th>
                   <th className="h-10 border-b px-2 text-right font-medium">Salary</th>
+                  <th className="h-10 border-b px-2 text-right font-medium">Paid</th>
                   <th className="h-10 border-b px-2 text-left font-medium">Contract</th>
                 </tr>
               </thead>
@@ -167,6 +171,7 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
                       <td className="h-11 border-b px-2 text-right">{s.bench_points ? formatPoints(s.bench_points) : '–'}</td>
                       <td className="h-11 border-b px-2 text-right">{s.periods}</td>
                       <td className="h-11 border-b px-2 text-right">{formatSalary(s.salary)}</td>
+                      <td className="h-11 border-b px-2 text-right">{formatSalary(s.paid)}</td>
                       <td className="h-11 border-b px-2 text-left" title={describeContract(s.contract)}>{s.contract}</td>
                     </tr>
                   )

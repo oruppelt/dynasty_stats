@@ -52,6 +52,7 @@ function LeadersTable({ rows, selectedTeam, seasons }: {
   selectedTeam: string;
   seasons?: boolean;
 }) {
+  const salary = rows.some(r => r.salary != null)
   return (
     <div className="w-full overflow-x-auto">
       <table className="w-full text-sm tabular-nums">
@@ -66,6 +67,8 @@ function LeadersTable({ rows, selectedTeam, seasons }: {
             <th className="h-10 border-b px-2 text-right font-medium">Starts</th>
             <th className="h-10 border-b px-2 text-right font-medium">GP</th>
             <th className="h-10 whitespace-nowrap border-b px-2 text-right font-medium">Per game</th>
+            {salary && <th className="h-10 border-b px-2 text-right font-medium">Salary</th>}
+            {salary && <th className="h-10 whitespace-nowrap border-b px-2 text-right font-medium">Per $1M</th>}
           </tr>
         </thead>
         <tbody className="[&_tr:last-child_td]:border-0">
@@ -90,6 +93,8 @@ function LeadersTable({ rows, selectedTeam, seasons }: {
                 <td className="h-11 border-b px-2 text-right">{p.starts}</td>
                 <td className="h-11 border-b px-2 text-right">{p.gp}</td>
                 <td className="h-11 border-b px-2 text-right">{p.gp ? (p.points / p.gp).toFixed(1) : '–'}</td>
+                {salary && <td className="h-11 border-b px-2 text-right">{p.salary ? formatSalary(p.salary) : '–'}</td>}
+                {salary && <td className="h-11 border-b px-2 text-right">{p.salary ? Math.round(p.points / (p.salary / 1e6)).toLocaleString() : '–'}</td>}
               </tr>
             )
           })}
@@ -431,7 +436,7 @@ function FranchiseCard({ data, records, franchise, teams, onPick, counted }: {
           ? records.franchises[franchise].map((p, i) => (
             <RankRow
               key={p.player_id} rank={i + 1} teams={[franchise]} id={p.player_id} name={p.player}
-              detail={`${plural(p.seasons, 'season')} · ${p.starts} starts · ${p.gp ? (p.points / p.gp).toFixed(1) : '–'} per game`}
+              detail={`${plural(p.seasons, 'season')} · ${p.starts} starts · ${p.gp ? (p.points / p.gp).toFixed(1) : '–'} per game${p.salary ? ` · ${formatSalary(p.salary)} paid` : ''}`}
               value={formatPoints(p.points)}
             />
           ))
@@ -480,8 +485,13 @@ export function PlayerAllTimeWidget({ selectedTeam }: { selectedTeam: string }) 
                 lists are always the regular season.
               </p>
               <p>
-                <strong>Best value</strong>: a season&apos;s points per $1M of salary (the salary in the
-                player&apos;s last start that season). <strong>Share of team points</strong>: a player&apos;s
+                <strong>Salary</strong>: what was paid. Each period on a roster (any slot) costs a share of
+                that season&apos;s salary, so a full season costs it once, and a player cut, picked up or traded
+                during a season is split between the teams. The season in progress counts what was paid so far.
+                <strong> Per $1M</strong>: points per $1M paid.
+              </p>
+              <p>
+                <strong>Best value</strong>: a season&apos;s points per $1M paid. <strong>Share of team points</strong>: a player&apos;s
                 points for a team in a season, as a share of the team&apos;s lineup points. Both need at least 12
                 starts that season.
               </p>

@@ -309,6 +309,12 @@ Merged into Phase 2.5 (2026-10-22).
   best value (points per $1M of salary), share of team points.
 - Teams: "Kept", the share of lineup points by players on the roster at
   the end of last regular season.
+- Salary paid: each period on a roster costs a share of that season's
+  salary (`players.salary_paid`; cuts, pickups and trades split it; the
+  season in progress counts what was paid so far). In the season and
+  career leaders, best seasons and franchise scorers (Salary, Per $1M), and
+  on the player page (Paid per season, career total). Best value now uses
+  the salary paid.
 
 ### 2026-11-15: All-time player records with playoffs (branch `players/alltime-playoffs`)
 - Players → All-time: a "Regular season / With playoffs" toggle. With

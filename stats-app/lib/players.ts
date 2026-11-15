@@ -26,6 +26,8 @@ export interface PlayerLeader {
   starts: number;
   /** NBA games played in those periods */
   gp: number;
+  /** Salary paid (prorated by periods on a roster); not in the playoff lists */
+  salary?: number;
 }
 
 /** A player's points for one team in a season (or over several seasons). */
@@ -35,6 +37,8 @@ export interface TeamPlayer {
   points: number;
   starts: number;
   gp: number;
+  /** Salary this team paid (all-time franchise lists) */
+  salary?: number;
 }
 
 export interface TeamPlayers {
@@ -186,6 +190,8 @@ export interface PlayerStint {
   /** Salary and contract in the last period there */
   salary: number;
   contract: string;
+  /** Salary paid there: the salary times the share of the season's periods on the roster (so far, in a season in progress) */
+  paid: number;
 }
 
 /** /data/players/player/<id>.json */
