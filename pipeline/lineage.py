@@ -81,7 +81,7 @@ def compute_timelines(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]
     # Roster observations: (season, period) -> team, with what he did that period
     obs = []
     for season, rows, reg, _ in seasons:
-        r = rows[['period', 'team', 'player_id', 'status', 'fpts', 'salary', 'contract']].copy()
+        r = rows[['period', 'team', 'player_id', 'status', 'fpts', 'gp', 'salary', 'contract']].copy()
         r['period'] = r['period'].astype(int)
         r['season'] = season
         r['regular'] = r['period'].isin(reg)
@@ -135,7 +135,7 @@ def compute_timelines(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]
         def arrive(event, to_team):
             nonlocal team, arrival
             team = franchise(to_team, _when(event))
-            event.update({'periods': 0, 'starts': 0, 'points': 0.0, 'salary': None, 'contract': None})
+            event.update({'periods': 0, 'starts': 0, 'gp': 0, 'points': 0.0, 'salary': None, 'contract': None})
             arrival = event
 
         def leave():
@@ -200,6 +200,7 @@ def compute_timelines(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]
                     arrival['periods'] += 1
                     if row.status == 'active':
                         arrival['starts'] += 1
+                        arrival['gp'] += int(row.gp)
                         arrival['points'] += float(row.fpts)
 
         used = {e['trade'] for e in timeline if e.get('trade')}
@@ -236,32 +237,10 @@ def _clean_trade(trade: dict) -> dict:
             'items': [{k: v for k, v in i.items() if v is not None} for i in trade['items']]}
 
 
-def compute_tracks(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]]) -> dict[str, dict]:
-    """{player_id: track}, the per-period data behind the timeline's career strip.
 
-    track = {'seasons': [{'season', 'length', 'playoffs_from'}] from his first season on the rosters to the
-    newest (length: the periods played so far; playoffs_from: the first playoff period, or null),
-    'teams': [names], 'periods': [[season index, period, team index, fpts, 1 if in the lineup]]}.
-    """
-    axis, frames = [], []
-    for season, rows, reg, playoffs in sorted(seasons, key=lambda s: s[0]):
-        played = reg | playoffs
-        if not played:
-            continue
-        axis.append({'season': season, 'length': int(max(played)), 'playoffs_from': int(min(playoffs)) if playoffs else None})
-        r = rows[['period', 'team', 'player_id', 'status', 'fpts']].copy()
-        r['period'] = r['period'].astype(int)
-        r = r[r['period'].isin(played)]
-        r['season'] = len(axis) - 1
-        frames.append(r)
-    if not frames:
-        return {}
-    rows = pd.concat(frames, ignore_index=True).sort_values(['season', 'period'], kind='stable')
-    out = {}
-    for pid, mine in rows.groupby('player_id', sort=False):
-        start = int(mine['season'].min())
-        teams = list(dict.fromkeys(mine['team']))
-        out[pid] = {'seasons': axis[start:], 'teams': teams,
-                    'periods': [[int(r.season) - start, int(r.period), teams.index(r.team), round(float(r.fpts), 2),
-                                 int(r.status == 'active')] for r in mine.itertuples()]}
-    return out
+def compute_axis(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]]) -> list[dict]:
+    """The league's seasons, oldest first, for the timeline's career strip: [{'season', 'length',
+    'playoffs_from'}] (length: the periods played so far; playoffs_from: the first playoff period, or None)."""
+    return [{'season': season, 'length': int(max(reg | playoffs)),
+             'playoffs_from': int(min(playoffs)) if playoffs else None}
+            for season, _, reg, playoffs in sorted(seasons, key=lambda s: s[0]) if reg | playoffs]

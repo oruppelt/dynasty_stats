@@ -149,9 +149,11 @@ def write_players_alltime(config: dict, out: Path) -> None:
         for pid, timeline in lineage.compute_timelines(seasons, transactions).items():
             if pid in pages:
                 pages[pid].update(timeline=timeline['events'], trades=timeline['trades'])
-        for pid, track in lineage.compute_tracks(seasons).items():
-            if pid in pages:
-                pages[pid]['track'] = track
+        axis = lineage.compute_axis(seasons)
+        for page in pages.values():
+            # From his first season (a draft is in the season it's for)
+            first = min([s['season'] for s in page['seasons']] + [e['season'] for e in page.get('timeline', []) if e.get('season')])
+            page['axis'] = [a for a in axis if a['season'] >= first]
     _write_if_changed(out / 'players' / 'index.json', to_json(index))
     page_dir = out / 'players' / 'player'
     page_dir.mkdir(parents=True, exist_ok=True)
