@@ -6,6 +6,7 @@ import {
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { TeamLogo } from './TeamLogo'
 import { Explainer } from './Explainer'
+import { TradeTree } from './TradeTree'
 import { PlayerPage, SeasonAxis, TimelineEvent, Trade, describeContract, formatSalary } from '@/lib/players'
 import { useSelectedPlayer } from '@/lib/selected-player'
 import { formatPoints } from '@/lib/standings'
@@ -241,7 +242,9 @@ function CareerStrip({ seasons, stints, selected, onSelect, total, offsets, now,
 
 // --- The stint card ------------------------------------------------------------------------------------
 
-function TradeDetails({ trade, playerId }: { trade: Trade; playerId: string }) {
+function TradeDetails({ trade, tradeId, playerId, tree, onTree }: {
+  trade: Trade; tradeId: string; playerId: string; tree: boolean; onTree: (id: string | null) => void;
+}) {
   const { openPlayer } = useSelectedPlayer()
   const color = useTeamColor()
   // Grouped by the team that received them, with what each got out of it
@@ -316,12 +319,19 @@ function TradeDetails({ trade, playerId }: { trade: Trade; playerId: string }) {
           </div>
         ))}
       </div>
+      <button type="button" onClick={() => onTree(tree ? null : tradeId)} aria-expanded={tree}
+              className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline">
+        {tree ? 'Hide the trade tree' : 'Follow the trade tree'}
+        <ChevronDown className={cn('h-3.5 w-3.5 transition-transform', tree && 'rotate-180')} />
+      </button>
     </div>
   )
 }
 
 /** One move: what it was, when, and the trade behind it */
-function Move({ event, page, title, departure = false }: { event: TimelineEvent; page: PlayerPage; title: string; departure?: boolean }) {
+function Move({ event, page, title, departure = false, tree, onTree }: {
+  event: TimelineEvent; page: PlayerPage; title: string; departure?: boolean; tree: string | null; onTree: (id: string | null) => void;
+}) {
   const [open, setOpen] = useState(false)
   const kind = KINDS[event.kind]
   const Icon = kind.icon
@@ -354,7 +364,7 @@ function Move({ event, page, title, departure = false }: { event: TimelineEvent;
             {open ? 'Hide the trade' : `The trade: ${trade.items.length} item${trade.items.length === 1 ? '' : 's'}`}
             <ChevronDown className={cn('h-3.5 w-3.5 transition-transform', open && 'rotate-180')} />
           </button>
-          {open && <TradeDetails trade={trade} playerId={page.player_id} />}
+          {open && <TradeDetails trade={trade} tradeId={event.trade!} playerId={page.player_id} tree={tree === event.trade} onTree={onTree} />}
         </>
       )}
     </div>
@@ -367,6 +377,8 @@ function StintCard({ stint, index, count, onStep, page, color, next }: {
 }) {
   const a = stint.arrive
   const current = !stint.leave && index === count - 1
+  // The trade tree opened from one of the stint's trades, across the card's width
+  const [tree, setTree] = useState<string | null>(null)
   const ppg = perGame(a.points, a.gp)
   return (
     <div className="mt-4 overflow-hidden rounded-lg border">
@@ -396,7 +408,7 @@ function StintCard({ stint, index, count, onStep, page, color, next }: {
         </div>
       </div>
       <div className="grid gap-4 p-3 md:grid-cols-[1fr_auto_1fr] md:gap-6">
-        <Move event={a} page={page} title={stint.asset === 'pick' ? 'How it got there' : 'How he got there'} />
+        <Move event={a} page={page} title={stint.asset === 'pick' ? 'How it got there' : 'How he got there'} tree={tree} onTree={setTree} />
         <div className="md:min-w-[220px] md:border-x md:px-6">
           {stint.asset === 'pick' ? (
             <>
@@ -425,7 +437,8 @@ function StintCard({ stint, index, count, onStep, page, color, next }: {
         </div>
         {stint.leave ? (
           <div>
-            <Move event={stint.leave} page={page} title={stint.asset === 'pick' ? (stint.leave.kind === 'draft' ? 'Used' : 'How it left') : 'How he left'} departure />
+            <Move event={stint.leave} page={page} title={stint.asset === 'pick' ? (stint.leave.kind === 'draft' ? 'Used' : 'How it left') : 'How he left'} departure
+                  tree={tree} onTree={setTree} />
             {stint.leave.kind === 'drop' && next && (
               <div className="ml-9 mt-1 text-xs text-muted-foreground">
                 Next: {KINDS[next.arrive.kind].label.toLowerCase()} by {teamCode(next.team)}
@@ -440,6 +453,17 @@ function StintCard({ stint, index, count, onStep, page, color, next }: {
           </div>
         )}
       </div>
+      {tree && (
+        <div className="border-t p-3">
+          <div className="mb-1 flex items-center justify-between gap-2">
+            <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              Trade tree{page.trades?.[tree]?.date ? `: ${formatDate(page.trades[tree].date!)}` : ''}
+            </div>
+            <button type="button" onClick={() => setTree(null)} className="text-xs font-medium text-primary hover:underline">Close</button>
+          </div>
+          <TradeTree tradeId={tree} />
+        </div>
+      )}
     </div>
   )
 }

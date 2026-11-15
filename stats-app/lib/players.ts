@@ -270,6 +270,9 @@ export interface Trade {
     /** What the team that got it got out of it: a player's regular season there until he left (a pick: the
      * player drafted with it, if that team used it); traded_on: the pick went on before the draft */
     result?: TradeResult;
+    /** What the team that got it did with it after (a pick it used: the drafted player): traded it away in
+     * another trade, dropped it, still has it; absent: it left without a logged move (or a pick not used yet) */
+    next?: { trade: string } | { dropped: string } | { kept: true };
   }[];
 }
 
@@ -285,6 +288,17 @@ export function usePlayerIndex() {
   return useQuery({
     queryKey: ['players', 'index'],
     queryFn: () => fetchJson<PlayerIndexEntry[]>('/data/players/index.json'),
+  })
+}
+
+/** Every trade, by id, with what each item became (/data/players/trades.json), for the trade trees. Loaded
+ * only when one is opened. */
+export function useTrades(enabled: boolean) {
+  return useQuery({
+    queryKey: ['players', 'trades'],
+    enabled,
+    staleTime: Infinity,
+    queryFn: () => fetchJson<Record<string, Trade>>('/data/players/trades.json'),
   })
 }
 
