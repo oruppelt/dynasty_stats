@@ -146,65 +146,6 @@
     }
   ],
   "trades": {
-    "1yujdmvplcdgfp1l": {
-      "date": "2023-01-01",
-      "season": "2022-23",
-      "period": 23,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Los Angeles Clippers",
-          "to": "Memphis Grizzlies",
-          "player_id": "027pg",
-          "player": "Bojan Bogdanovic",
-          "label": "Bojan Bogdanovic",
-          "result": {
-            "points": 464.75,
-            "starts": 9,
-            "gp": 14,
-            "periods": 11,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Los Angeles Clippers",
-          "player_id": "051p3",
-          "player": "Darius Bazley",
-          "label": "Darius Bazley",
-          "result": {
-            "points": 165.25,
-            "starts": 11,
-            "gp": 12,
-            "periods": 11,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "Los Angeles Clippers",
-          "label": "2023 round 1 pick (Phoenix Suns)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 27,
-            "overall": 27,
-            "player_id": "06ccc",
-            "player": "Dariq Whitehead",
-            "certain": true
-          },
-          "result": {
-            "points": 12.0,
-            "starts": 18,
-            "gp": 1,
-            "periods": 65,
-            "ongoing": false
-          }
-        }
-      ]
-    },
     "4nzz9p5al4wb5v7t": {
       "date": "2022-06-27",
       "season": "2022-23",
@@ -230,6 +171,9 @@
             "gp": 11,
             "periods": 38,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-11-10"
           }
         },
         {
@@ -246,9 +190,80 @@
             "player": "Dariq Whitehead",
             "certain": true
           },
+          "next": {
+            "trade": "1yujdmvplcdgfp1l"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Los Angeles Lakers"
+          }
+        }
+      ]
+    },
+    "1yujdmvplcdgfp1l": {
+      "date": "2023-01-01",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Memphis Grizzlies",
+          "player_id": "027pg",
+          "player": "Bojan Bogdanovic",
+          "label": "Bojan Bogdanovic",
+          "result": {
+            "points": 464.75,
+            "starts": 9,
+            "gp": 14,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Clippers",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley",
+          "result": {
+            "points": 165.25,
+            "starts": 11,
+            "gp": 12,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Los Angeles Clippers",
+          "label": "2023 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "06ccc",
+            "player": "Dariq Whitehead",
+            "certain": true
+          },
+          "result": {
+            "points": 12.0,
+            "starts": 18,
+            "gp": 1,
+            "periods": 65,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-10-14"
           }
         }
       ]

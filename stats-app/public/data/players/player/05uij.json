@@ -289,107 +289,6 @@
     }
   ],
   "trades": {
-    "18v4rya5lpr3wy1m": {
-      "date": "2023-12-04",
-      "season": "2023-24",
-      "period": 13,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Orlando Magic",
-          "player_id": "0622z",
-          "player": "Orlando Robinson",
-          "label": "Orlando Robinson",
-          "result": {
-            "points": 55.25,
-            "starts": 2,
-            "gp": 4,
-            "periods": 15,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Orlando Magic",
-          "player_id": "04ewu",
-          "player": "Josh Hart",
-          "label": "Josh Hart",
-          "result": {
-            "points": 547.25,
-            "starts": 15,
-            "gp": 25,
-            "periods": 15,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
-          "player_id": "0621a",
-          "player": "Ousmane Dieng",
-          "label": "Ousmane Dieng",
-          "result": {
-            "points": 20.25,
-            "starts": 2,
-            "gp": 2,
-            "periods": 20,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
-          "player_id": "05uij",
-          "player": "Davion Mitchell",
-          "label": "Davion Mitchell",
-          "result": {
-            "points": 15.25,
-            "starts": 5,
-            "gp": 6,
-            "periods": 5,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
-          "player_id": "02nfk",
-          "player": "Evan Fournier",
-          "label": "Evan Fournier",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 16,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
-          "label": "2024 round 2 pick (Memphis Grizzlies)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 6,
-            "overall": 36,
-            "player_id": "06mlp",
-            "player": "Nikola Djurisic",
-            "certain": false
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "New York Knicks"
-          }
-        }
-      ]
-    },
     "1wv5qknolcj7bxd1": {
       "date": "2023-01-05",
       "season": "2022-23",
@@ -414,6 +313,9 @@
             "gp": 20,
             "periods": 22,
             "ongoing": false
+          },
+          "next": {
+            "trade": "18v4rya5lpr3wy1m"
           }
         },
         {
@@ -429,6 +331,9 @@
             "gp": 2,
             "periods": 10,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
           }
         },
         {
@@ -444,6 +349,9 @@
             "gp": 15,
             "periods": 10,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
           }
         },
         {
@@ -460,9 +368,131 @@
             "player": "Keyontae Johnson",
             "certain": true
           },
+          "next": {
+            "trade": "ioh40tglljepsl6b"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Orlando Magic"
+          }
+        }
+      ]
+    },
+    "18v4rya5lpr3wy1m": {
+      "date": "2023-12-04",
+      "season": "2023-24",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 55.25,
+            "starts": 2,
+            "gp": 4,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zqk1dc26lrw35amu"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart",
+          "result": {
+            "points": 547.25,
+            "starts": 15,
+            "gp": 25,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zqk1dc26lrw35amu"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "0621a",
+          "player": "Ousmane Dieng",
+          "label": "Ousmane Dieng",
+          "result": {
+            "points": 20.25,
+            "starts": 2,
+            "gp": 2,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "j15phqp4lxyaw76t"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "05uij",
+          "player": "Davion Mitchell",
+          "label": "Davion Mitchell",
+          "result": {
+            "points": 15.25,
+            "starts": 5,
+            "gp": 6,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "gf9smt20lqf07q97"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "02nfk",
+          "player": "Evan Fournier",
+          "label": "Evan Fournier",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-01-29"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          },
+          "next": {
+            "trade": "gf9smt20lqf07q97"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
           }
         }
       ]
@@ -485,6 +515,9 @@
             "gp": 11,
             "periods": 8,
             "ongoing": false
+          },
+          "next": {
+            "trade": "zd8dfww5lrfwowq2"
           }
         },
         {
@@ -500,6 +533,9 @@
             "gp": 0,
             "periods": 2,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-12-29"
           }
         },
         {
@@ -515,6 +551,9 @@
             "player_id": "06mlp",
             "player": "Nikola Djurisic",
             "certain": false
+          },
+          "next": {
+            "trade": "79wk2egvlrpcba0l"
           },
           "result": {
             "traded_on": true,
@@ -540,6 +579,9 @@
             "gp": 4,
             "periods": 3,
             "ongoing": false
+          },
+          "next": {
+            "trade": "e7o83rh1lqv2t2sq"
           }
         },
         {
@@ -562,6 +604,9 @@
             "gp": 1,
             "periods": 23,
             "ongoing": false
+          },
+          "next": {
+            "trade": "3e8zy5h8m5ppki7t"
           }
         }
       ]

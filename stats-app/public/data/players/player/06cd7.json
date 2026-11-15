@@ -99,41 +99,6 @@
     }
   ],
   "trades": {
-    "ioh40tglljepsl6b": {
-      "date": "2023-06-28",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Dallas Mavericks",
-          "to": "Orlando Magic",
-          "label": "2023 round 2 pick, no. 20",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 20,
-            "overall": 50,
-            "player_id": "06cd7",
-            "player": "Keyontae Johnson",
-            "certain": true
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 65,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Orlando Magic",
-          "to": "Dallas Mavericks",
-          "label": "$8 budget"
-        }
-      ]
-    },
     "1wv5qknolcj7bxd1": {
       "date": "2023-01-05",
       "season": "2022-23",
@@ -158,6 +123,9 @@
             "gp": 20,
             "periods": 22,
             "ongoing": false
+          },
+          "next": {
+            "trade": "18v4rya5lpr3wy1m"
           }
         },
         {
@@ -173,6 +141,9 @@
             "gp": 2,
             "periods": 10,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
           }
         },
         {
@@ -188,6 +159,9 @@
             "gp": 15,
             "periods": 10,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
           }
         },
         {
@@ -203,6 +177,9 @@
             "player_id": "06cd7",
             "player": "Keyontae Johnson",
             "certain": true
+          },
+          "next": {
+            "trade": "ioh40tglljepsl6b"
           },
           "result": {
             "traded_on": true,
@@ -229,6 +206,9 @@
             "gp": 0,
             "periods": 20,
             "ongoing": false
+          },
+          "next": {
+            "trade": "0jpui8znlc50zbu9"
           }
         },
         {
@@ -244,6 +224,9 @@
             "gp": 12,
             "periods": 20,
             "ongoing": false
+          },
+          "next": {
+            "trade": "0jpui8znlc50zbu9"
           }
         },
         {
@@ -259,6 +242,9 @@
             "gp": 0,
             "periods": 18,
             "ongoing": false
+          },
+          "next": {
+            "trade": "cb1ycqqllbtik1hw"
           }
         },
         {
@@ -274,6 +260,9 @@
             "player_id": "06cdj",
             "player": "Colby Jones",
             "certain": true
+          },
+          "next": {
+            "trade": "umry9n3zlj4p4wo1"
           },
           "result": {
             "traded_on": true,
@@ -299,6 +288,9 @@
             "gp": 88,
             "periods": 69,
             "ongoing": false
+          },
+          "next": {
+            "trade": "9zd79sc2m331fy8y"
           }
         },
         {
@@ -314,6 +306,9 @@
             "gp": 8,
             "periods": 33,
             "ongoing": false
+          },
+          "next": {
+            "trade": "umry9n3zlj4p4wo1"
           }
         },
         {
@@ -329,6 +324,9 @@
             "player_id": "06mkb",
             "player": "Ja'Kobe Walter",
             "certain": true
+          },
+          "next": {
+            "trade": "umry9n3zlj4p4wo1"
           },
           "result": {
             "traded_on": true,
@@ -349,6 +347,9 @@
             "player": "Jorge Garbajosa",
             "certain": false
           },
+          "next": {
+            "trade": "9t7crq6jlxzvbjmo"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Golden State Warriors"
@@ -368,6 +369,9 @@
             "player": "Keyontae Johnson",
             "certain": true
           },
+          "next": {
+            "dropped": "2025-06-25"
+          },
           "result": {
             "points": 0.0,
             "starts": 0,
@@ -375,6 +379,44 @@
             "periods": 65,
             "ongoing": false
           }
+        }
+      ]
+    },
+    "ioh40tglljepsl6b": {
+      "date": "2023-06-28",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Orlando Magic",
+          "label": "2023 round 2 pick, no. 20",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06cd7",
+            "player": "Keyontae Johnson",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 65,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "label": "$8 budget"
         }
       ]
     }

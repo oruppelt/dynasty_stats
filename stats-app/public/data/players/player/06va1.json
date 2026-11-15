@@ -82,92 +82,6 @@
     }
   ],
   "trades": {
-    "ymsmlbyhlo7be62s": {
-      "date": "2023-10-26",
-      "season": "2023-24",
-      "period": 2,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Phoenix Suns",
-          "player_id": "03acy",
-          "player": "Dario Saric",
-          "label": "Dario Saric",
-          "result": {
-            "points": 938.0,
-            "starts": 18,
-            "gp": 35,
-            "periods": 31,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Phoenix Suns",
-          "player_id": "0527l",
-          "player": "Luguentz Dort",
-          "label": "Luguentz Dort",
-          "result": {
-            "points": 880.25,
-            "starts": 18,
-            "gp": 31,
-            "periods": 23,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Phoenix Suns",
-          "label": "2025 round 2 pick (Atlanta Hawks)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 15,
-            "overall": 45,
-            "player_id": "06va1",
-            "player": "Max Shulga",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Houston Rockets"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Atlanta Hawks",
-          "player_id": "031lv",
-          "player": "Kentavious Caldwell-Pope",
-          "label": "Kentavious Caldwell-Pope",
-          "result": {
-            "points": 954.5,
-            "starts": 21,
-            "gp": 36,
-            "periods": 22,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Atlanta Hawks",
-          "player_id": "05qym",
-          "player": "Kenyon Martin",
-          "label": "Kenyon Martin",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 3,
-            "ongoing": false
-          }
-        }
-      ]
-    },
     "ljnizeewmcnudnmr": {
       "date": "2025-07-04",
       "season": "2025-26",
@@ -186,6 +100,9 @@
             "gp": 26,
             "periods": 33,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
           }
         },
         {
@@ -201,6 +118,9 @@
             "gp": 10,
             "periods": 10,
             "ongoing": false
+          },
+          "next": {
+            "trade": "ghzol8yfmidcvjxt"
           }
         },
         {
@@ -223,6 +143,9 @@
             "gp": 0,
             "periods": 40,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -245,6 +168,110 @@
             "gp": 24,
             "periods": 40,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
+    "ymsmlbyhlo7be62s": {
+      "date": "2023-10-26",
+      "season": "2023-24",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "03acy",
+          "player": "Dario Saric",
+          "label": "Dario Saric",
+          "result": {
+            "points": 938.0,
+            "starts": 18,
+            "gp": 35,
+            "periods": 31,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-30"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort",
+          "result": {
+            "points": 880.25,
+            "starts": 18,
+            "gp": 31,
+            "periods": 23,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "oz23ebmblrf7gezg"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "label": "2025 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "06va1",
+            "player": "Max Shulga",
+            "certain": true
+          },
+          "next": {
+            "trade": "ljnizeewmcnudnmr"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope",
+          "result": {
+            "points": 954.5,
+            "starts": 21,
+            "gp": 36,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "w77iv92nlraibgpv"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "psa6bq70lomkt3fc"
           }
         }
       ]

@@ -335,49 +335,6 @@
     }
   ],
   "trades": {
-    "9ki57qcomh3docdw": {
-      "date": "2025-10-23",
-      "season": "2025-26",
-      "period": 2,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Portland Trail Blazers",
-          "player_id": "042nw",
-          "player": "Malcolm Brogdon",
-          "label": "Malcolm Brogdon",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 2,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Indiana Pacers",
-          "to": "Portland Trail Blazers",
-          "label": "2027 round 2 pick (Indiana Pacers)"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Indiana Pacers",
-          "player_id": "0015e",
-          "player": "Mike Conley",
-          "label": "Mike Conley",
-          "result": {
-            "points": 374.25,
-            "starts": 14,
-            "gp": 23,
-            "periods": 32,
-            "ongoing": false
-          }
-        }
-      ]
-    },
     "mh0uxrnhlcug9vty": {
       "date": "2023-01-13",
       "season": "2022-23",
@@ -396,6 +353,9 @@
             "gp": 4,
             "periods": 3,
             "ongoing": false
+          },
+          "next": {
+            "trade": "6dc5xcnfld97nf0g"
           }
         },
         {
@@ -411,6 +371,9 @@
             "gp": 55,
             "periods": 40,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-26"
           }
         },
         {
@@ -433,6 +396,9 @@
             "gp": 78,
             "periods": 67,
             "ongoing": false
+          },
+          "next": {
+            "trade": "ropqfs1wmvhr2o2x"
           }
         }
       ]
@@ -455,6 +421,9 @@
             "gp": 33,
             "periods": 25,
             "ongoing": false
+          },
+          "next": {
+            "trade": "mh0uxrnhlcug9vty"
           }
         },
         {
@@ -470,6 +439,9 @@
             "player_id": "06mkc",
             "player": "Jaylon Tyson",
             "certain": true
+          },
+          "next": {
+            "trade": "mh0uxrnhlcug9vty"
           },
           "result": {
             "traded_on": true,
@@ -489,6 +461,58 @@
             "gp": 6,
             "periods": 29,
             "ongoing": false
+          },
+          "next": {
+            "trade": "o47mrulcldew7u7t"
+          }
+        }
+      ]
+    },
+    "9ki57qcomh3docdw": {
+      "date": "2025-10-23",
+      "season": "2025-26",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "042nw",
+          "player": "Malcolm Brogdon",
+          "label": "Malcolm Brogdon",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 2,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-10-30"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2027 round 2 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "0015e",
+          "player": "Mike Conley",
+          "label": "Mike Conley",
+          "result": {
+            "points": 374.25,
+            "starts": 14,
+            "gp": 23,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
           }
         }
       ]

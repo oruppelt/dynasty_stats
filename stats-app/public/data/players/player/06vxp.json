@@ -93,6 +93,77 @@
     }
   ],
   "trades": {
+    "ihb5ule4lraiqw2b": {
+      "date": "2024-01-12",
+      "season": "2023-24",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "player_id": "06gix",
+          "player": "Duop Reath",
+          "label": "Duop Reath",
+          "result": {
+            "points": 220.25,
+            "starts": 6,
+            "gp": 10,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-22"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Oklahoma City Thunder",
+          "to": "Utah Jazz",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "player_id": "05qtu",
+          "player": "Skylar Mays",
+          "label": "Skylar Mays",
+          "result": {
+            "points": 9.75,
+            "starts": 4,
+            "gp": 2,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Oklahoma City Thunder",
+          "label": "2025 round 2 pick (Utah Jazz)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 26,
+            "overall": 56,
+            "player_id": "06vxp",
+            "player": "Taelon Peter",
+            "certain": true
+          },
+          "next": {
+            "trade": "0mp810u4mcpwoatr"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        }
+      ]
+    },
     "0mp810u4mcpwoatr": {
       "date": "2025-07-05",
       "season": "2025-26",
@@ -124,68 +195,9 @@
             "gp": 0,
             "periods": 40,
             "ongoing": true
-          }
-        }
-      ]
-    },
-    "ihb5ule4lraiqw2b": {
-      "date": "2024-01-12",
-      "season": "2023-24",
-      "period": 24,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Utah Jazz",
-          "player_id": "06gix",
-          "player": "Duop Reath",
-          "label": "Duop Reath",
-          "result": {
-            "points": 220.25,
-            "starts": 6,
-            "gp": 10,
-            "periods": 9,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Oklahoma City Thunder",
-          "to": "Utah Jazz",
-          "label": "$5 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Oklahoma City Thunder",
-          "player_id": "05qtu",
-          "player": "Skylar Mays",
-          "label": "Skylar Mays",
-          "result": {
-            "points": 9.75,
-            "starts": 4,
-            "gp": 2,
-            "periods": 9,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Utah Jazz",
-          "to": "Oklahoma City Thunder",
-          "label": "2025 round 2 pick (Utah Jazz)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 26,
-            "overall": 56,
-            "player_id": "06vxp",
-            "player": "Taelon Peter",
-            "certain": true
           },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Golden State Warriors"
+          "next": {
+            "kept": true
           }
         }
       ]

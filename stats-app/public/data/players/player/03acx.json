@@ -312,62 +312,6 @@
     }
   ],
   "trades": {
-    "zv7v0wdklrpe6mxo": {
-      "date": "2024-01-22",
-      "season": "2023-24",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "New York Knicks",
-          "player_id": "04qrx",
-          "player": "Josh Okogie",
-          "label": "Josh Okogie",
-          "result": {
-            "points": 168.25,
-            "starts": 6,
-            "gp": 11,
-            "periods": 6,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "New York Knicks",
-          "label": "2024 round 2 pick (Philadelphia 76ers)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 14,
-            "overall": 44,
-            "player_id": "06mlw",
-            "player": "Enrique Freeman",
-            "certain": false
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Boston Celtics"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Minnesota Timberwolves",
-          "player_id": "03acx",
-          "player": "Dante Exum",
-          "label": "Dante Exum",
-          "result": {
-            "points": 14.25,
-            "starts": 1,
-            "gp": 1,
-            "periods": 6,
-            "ongoing": false
-          }
-        }
-      ]
-    },
     "0ha362o3kjh7rhss": {
       "date": "2021-01-03",
       "season": "2020-21",
@@ -386,6 +330,9 @@
             "gp": 1,
             "periods": 25,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
           }
         },
         {
@@ -401,6 +348,9 @@
             "gp": 1,
             "periods": 3,
             "ongoing": false
+          },
+          "next": {
+            "trade": "vaxb0ggwkjy4tla7"
           }
         },
         {
@@ -423,6 +373,9 @@
             "gp": 59,
             "periods": 73,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-11-17"
           }
         },
         {
@@ -438,6 +391,9 @@
             "gp": 29,
             "periods": 25,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
           }
         }
       ]
@@ -460,13 +416,19 @@
             "gp": 2,
             "periods": 29,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-08-07"
           }
         },
         {
           "kind": "pick",
           "from": "Memphis Grizzlies",
           "to": "Phoenix Suns",
-          "label": "2022 round 2 pick (Memphis Grizzlies)"
+          "label": "2022 round 2 pick (Memphis Grizzlies)",
+          "next": {
+            "trade": "h3agpstjkylmcv6c"
+          }
         },
         {
           "kind": "player",
@@ -481,6 +443,9 @@
             "gp": 21,
             "periods": 22,
             "ongoing": false
+          },
+          "next": {
+            "trade": "v95yd34bkm6i6xbc"
           }
         },
         {
@@ -496,6 +461,9 @@
             "gp": 0,
             "periods": 0,
             "ongoing": false
+          },
+          "next": {
+            "trade": "7xemuaidkijdb1oy"
           }
         },
         {
@@ -518,6 +486,9 @@
             "gp": 31,
             "periods": 26,
             "ongoing": false
+          },
+          "next": {
+            "trade": "4082kokckyio7f5a"
           }
         }
       ]
@@ -540,6 +511,9 @@
             "gp": 0,
             "periods": 0,
             "ongoing": false
+          },
+          "next": {
+            "trade": "zv7v0wdklrpe6mxo"
           }
         },
         {
@@ -562,6 +536,9 @@
             "gp": 0,
             "periods": 66,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-21"
           }
         },
         {
@@ -584,6 +561,9 @@
             "gp": 54,
             "periods": 40,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -599,6 +579,9 @@
             "gp": 78,
             "periods": 72,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-30"
           }
         }
       ]
@@ -621,6 +604,9 @@
             "gp": 0,
             "periods": 9,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-01-23"
           }
         },
         {
@@ -636,6 +622,9 @@
             "player_id": "06224",
             "player": "E.J. Liddell",
             "certain": true
+          },
+          "next": {
+            "trade": "y7jfydkxkxg1vebv"
           },
           "result": {
             "traded_on": true,
@@ -655,6 +644,9 @@
             "gp": 2,
             "periods": 3,
             "ongoing": false
+          },
+          "next": {
+            "trade": "0ha362o3kjh7rhss"
           }
         },
         {
@@ -671,9 +663,77 @@
             "player": "Usman Garuba",
             "certain": true
           },
+          "next": {
+            "trade": "0ha362o3kjh7rhss"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Detroit Pistons"
+          }
+        }
+      ]
+    },
+    "zv7v0wdklrpe6mxo": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "New York Knicks",
+          "player_id": "04qrx",
+          "player": "Josh Okogie",
+          "label": "Josh Okogie",
+          "result": {
+            "points": 168.25,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-27"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "New York Knicks",
+          "label": "2024 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          },
+          "next": {
+            "trade": "46b3rvz8lxz156yq"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum",
+          "result": {
+            "points": 14.25,
+            "starts": 1,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-22"
           }
         }
       ]

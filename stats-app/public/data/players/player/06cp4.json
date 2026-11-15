@@ -314,31 +314,82 @@
     }
   ],
   "trades": {
-    "kd3xquzzmjx9gnv6": {
-      "date": "2026-01-02",
-      "season": "2025-26",
-      "period": 22,
+    "8x9ec2fzm334p6t0": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
       "items": [
         {
           "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Orlando Magic",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
           "player_id": "06cp4",
           "player": "Craig Porter",
           "label": "Craig Porter",
           "result": {
-            "points": 191.25,
-            "starts": 6,
-            "gp": 12,
-            "periods": 12,
+            "points": 138.75,
+            "starts": 19,
+            "gp": 18,
+            "periods": 24,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-01-26"
           }
         },
         {
-          "kind": "budget",
-          "from": "Orlando Magic",
+          "kind": "player",
+          "from": "Milwaukee Bucks",
           "to": "Minnesota Timberwolves",
-          "label": "$5 budget"
+          "player_id": "05ujt",
+          "player": "Aaron Wiggins",
+          "label": "Aaron Wiggins",
+          "result": {
+            "points": 923.5,
+            "starts": 20,
+            "gp": 38,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Miami Heat",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed",
+          "result": {
+            "points": 141.5,
+            "starts": 12,
+            "gp": 10,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0trs00ixm508eth8"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "076tv",
+            "player": null,
+            "certain": true
+          },
+          "next": {
+            "trade": "nk1jb6yxmhelw0l5"
+          }
         }
       ]
     },
@@ -360,6 +411,9 @@
             "gp": 0,
             "periods": 1,
             "ongoing": false
+          },
+          "next": {
+            "trade": "8x9ec2fzm334p6t0"
           }
         },
         {
@@ -375,6 +429,9 @@
             "gp": 0,
             "periods": 11,
             "ongoing": false
+          },
+          "next": {
+            "trade": "gy7ia1v7m4gxhk6e"
           }
         },
         {
@@ -397,6 +454,9 @@
             "gp": 52,
             "periods": 40,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -419,6 +479,9 @@
             "gp": 59,
             "periods": 40,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -434,6 +497,9 @@
             "gp": 51,
             "periods": 30,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-27"
           }
         },
         {
@@ -449,74 +515,41 @@
             "gp": 107,
             "periods": 70,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         }
       ]
     },
-    "8x9ec2fzm334p6t0": {
-      "date": "2024-11-04",
-      "season": "2024-25",
-      "period": 5,
+    "kd3xquzzmjx9gnv6": {
+      "date": "2026-01-02",
+      "season": "2025-26",
+      "period": 22,
       "items": [
         {
           "kind": "player",
-          "from": "Miami Heat",
-          "to": "Milwaukee Bucks",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
           "player_id": "06cp4",
           "player": "Craig Porter",
           "label": "Craig Porter",
           "result": {
-            "points": 138.75,
-            "starts": 19,
-            "gp": 18,
-            "periods": 24,
+            "points": 191.25,
+            "starts": 6,
+            "gp": 12,
+            "periods": 12,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-02-20"
           }
         },
         {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
+          "kind": "budget",
+          "from": "Orlando Magic",
           "to": "Minnesota Timberwolves",
-          "player_id": "05ujt",
-          "player": "Aaron Wiggins",
-          "label": "Aaron Wiggins",
-          "result": {
-            "points": 923.5,
-            "starts": 20,
-            "gp": 38,
-            "periods": 29,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Miami Heat",
-          "player_id": "05qst",
-          "player": "Paul Reed",
-          "label": "Paul Reed",
-          "result": {
-            "points": 141.5,
-            "starts": 12,
-            "gp": 10,
-            "periods": 14,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Milwaukee Bucks",
-          "label": "2026 round 2 pick (Minnesota Timberwolves)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 18,
-            "overall": 48,
-            "player_id": "076tv",
-            "player": null,
-            "certain": true
-          }
+          "label": "$5 budget"
         }
       ]
     }

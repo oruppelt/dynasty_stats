@@ -119,6 +119,74 @@
     }
   ],
   "trades": {
+    "9txb56t8m32yr95c": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "06cce",
+          "player": "Jalen Hood-Schifino",
+          "label": "Jalen Hood-Schifino",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 19,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-01-10"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06v88",
+            "player": "Maxime Raynaud",
+            "certain": true
+          },
+          "result": {
+            "points": 484.0,
+            "starts": 11,
+            "gp": 19,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "04jwb",
+          "player": "Luke Kornet",
+          "label": "Luke Kornet",
+          "result": {
+            "points": 537.0,
+            "starts": 17,
+            "gp": 26,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        }
+      ]
+    },
     "1yjewi5il4x6wzkp": {
       "date": "2022-06-27",
       "season": "2022-23",
@@ -144,6 +212,9 @@
             "gp": 52,
             "periods": 98,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-02-28"
           }
         },
         {
@@ -166,65 +237,9 @@
             "gp": 0,
             "periods": 36,
             "ongoing": false
-          }
-        }
-      ]
-    },
-    "9txb56t8m32yr95c": {
-      "date": "2024-11-04",
-      "season": "2024-25",
-      "period": 5,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Miami Heat",
-          "player_id": "06cce",
-          "player": "Jalen Hood-Schifino",
-          "label": "Jalen Hood-Schifino",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 19,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Houston Rockets",
-          "to": "Miami Heat",
-          "label": "2025 round 2 pick (Boston Celtics)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 6,
-            "overall": 36,
-            "player_id": "06v88",
-            "player": "Maxime Raynaud",
-            "certain": true
           },
-          "result": {
-            "points": 484.0,
-            "starts": 11,
-            "gp": 19,
-            "periods": 40,
-            "ongoing": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Houston Rockets",
-          "player_id": "04jwb",
-          "player": "Luke Kornet",
-          "label": "Luke Kornet",
-          "result": {
-            "points": 537.0,
-            "starts": 17,
-            "gp": 26,
-            "periods": 29,
-            "ongoing": false
+          "next": {
+            "trade": "9txb56t8m32yr95c"
           }
         }
       ]

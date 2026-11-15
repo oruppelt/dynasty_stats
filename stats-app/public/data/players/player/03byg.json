@@ -200,90 +200,6 @@
     }
   ],
   "trades": {
-    "uev6uhi4ktb9gruz": {
-      "date": "2021-09-08",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Chicago Bulls",
-          "player_id": "000zv",
-          "player": "Al Horford",
-          "label": "Al Horford",
-          "result": {
-            "points": 224.25,
-            "starts": 3,
-            "gp": 4,
-            "periods": 4,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Boston Celtics",
-          "player_id": "03byg",
-          "player": "Montrezl Harrell",
-          "label": "Montrezl Harrell",
-          "result": {
-            "points": 1381.0,
-            "starts": 31,
-            "gp": 46,
-            "periods": 33,
-            "ongoing": false
-          }
-        }
-      ]
-    },
-    "b7rwmvs2l6947f1d": {
-      "date": "2022-07-31",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Washington Wizards",
-          "player_id": "03byg",
-          "player": "Montrezl Harrell",
-          "label": "Montrezl Harrell",
-          "result": {
-            "points": 5.75,
-            "starts": 2,
-            "gp": 3,
-            "periods": 2,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Washington Wizards",
-          "label": "2023 round 2 pick (Washington Wizards)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 4,
-            "overall": 34,
-            "player_id": "06cdd",
-            "player": "Andre Jackson",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Philadelphia 76ers"
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Washington Wizards",
-          "to": "Chicago Bulls",
-          "label": "$5 budget"
-        }
-      ]
-    },
     "jc5usd8pl4u61fxp": {
       "date": "2022-06-25",
       "season": "2022-23",
@@ -302,6 +218,9 @@
             "gp": 0,
             "periods": 0,
             "ongoing": false
+          },
+          "next": {
+            "trade": "b7rwmvs2l6947f1d"
           }
         },
         {
@@ -317,6 +236,9 @@
             "gp": 29,
             "periods": 33,
             "ongoing": false
+          },
+          "next": {
+            "trade": "0x33e8dqljebq4sl"
           }
         },
         {
@@ -339,6 +261,9 @@
             "gp": 9,
             "periods": 33,
             "ongoing": false
+          },
+          "next": {
+            "trade": "0x33e8dqljebq4sl"
           }
         },
         {
@@ -354,6 +279,9 @@
             "player_id": "06mlg",
             "player": "Tyler Kolek",
             "certain": true
+          },
+          "next": {
+            "trade": "w77iv92nlraibgpv"
           },
           "result": {
             "traded_on": true,
@@ -373,7 +301,106 @@
             "gp": 2,
             "periods": 5,
             "ongoing": false
+          },
+          "next": {
+            "trade": "apzneezol9yatn6q"
           }
+        }
+      ]
+    },
+    "uev6uhi4ktb9gruz": {
+      "date": "2021-09-08",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford",
+          "result": {
+            "points": 224.25,
+            "starts": 3,
+            "gp": 4,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "dw0d099pkvgq3dpg"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Boston Celtics",
+          "player_id": "03byg",
+          "player": "Montrezl Harrell",
+          "label": "Montrezl Harrell",
+          "result": {
+            "points": 1381.0,
+            "starts": 31,
+            "gp": 46,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "jc5usd8pl4u61fxp"
+          }
+        }
+      ]
+    },
+    "b7rwmvs2l6947f1d": {
+      "date": "2022-07-31",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Washington Wizards",
+          "player_id": "03byg",
+          "player": "Montrezl Harrell",
+          "label": "Montrezl Harrell",
+          "result": {
+            "points": 5.75,
+            "starts": 2,
+            "gp": 3,
+            "periods": 2,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-10-24"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Washington Wizards",
+          "label": "2023 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06cdd",
+            "player": "Andre Jackson",
+            "certain": true
+          },
+          "next": {
+            "trade": "m9ic3sm9ld0jz28w"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Washington Wizards",
+          "to": "Chicago Bulls",
+          "label": "$5 budget"
         }
       ]
     }

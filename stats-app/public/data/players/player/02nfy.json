@@ -255,53 +255,6 @@
     }
   ],
   "trades": {
-    "k70w55l6l9cpz1by": {
-      "date": "2022-10-17",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Portland Trail Blazers",
-          "player_id": "02nfy",
-          "player": "Jae Crowder",
-          "label": "Jae Crowder",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 33,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "Portland Trail Blazers",
-          "label": "2024 round 2 pick (Memphis Grizzlies)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 6,
-            "overall": 36,
-            "player_id": "06mlp",
-            "player": "Nikola Djurisic",
-            "certain": false
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "New York Knicks"
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Portland Trail Blazers",
-          "to": "Memphis Grizzlies",
-          "label": "$15 budget"
-        }
-      ]
-    },
     "k4ftr55dk5f685f4": {
       "date": "2020-01-16",
       "season": "2019-20",
@@ -320,6 +273,9 @@
             "gp": 9,
             "periods": 7,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
           }
         },
         {
@@ -335,6 +291,9 @@
             "gp": 4,
             "periods": 7,
             "ongoing": false
+          },
+          "next": {
+            "trade": "fut56wjqkhubm0ar"
           }
         },
         {
@@ -357,6 +316,9 @@
             "gp": 0,
             "periods": 62,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
           }
         },
         {
@@ -379,7 +341,63 @@
             "gp": 0,
             "periods": 0,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-08-07"
           }
+        }
+      ]
+    },
+    "k70w55l6l9cpz1by": {
+      "date": "2022-10-17",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Portland Trail Blazers",
+          "player_id": "02nfy",
+          "player": "Jae Crowder",
+          "label": "Jae Crowder",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-24"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Portland Trail Blazers",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          },
+          "next": {
+            "trade": "0jpui8znlc50zbu9"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Portland Trail Blazers",
+          "to": "Memphis Grizzlies",
+          "label": "$15 budget"
         }
       ]
     }

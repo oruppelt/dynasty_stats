@@ -390,43 +390,6 @@
     }
   ],
   "trades": {
-    "yq4658ibky2vrytk": {
-      "date": "2022-01-06",
-      "season": "2021-22",
-      "period": 24,
-      "items": [
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Toronto Raptors",
-          "player_id": "0529c",
-          "player": "Dean Wade",
-          "label": "Dean Wade",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 1,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "San Antonio Spurs",
-          "player_id": "058n6",
-          "player": "Armoni Brooks",
-          "label": "Armoni Brooks",
-          "result": {
-            "points": 10.5,
-            "starts": 3,
-            "gp": 2,
-            "periods": 9,
-            "ongoing": false
-          }
-        }
-      ]
-    },
     "c0yl11uom6dr39pn": {
       "date": "2025-01-26",
       "season": "2024-25",
@@ -446,6 +409,9 @@
             "player": "Carter Bryant",
             "certain": true
           },
+          "next": {
+            "trade": "ljnizeewmcnudnmr"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Houston Rockets"
@@ -464,6 +430,9 @@
             "gp": 6,
             "periods": 5,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
           }
         },
         {
@@ -479,6 +448,9 @@
             "gp": 0,
             "periods": 5,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
           }
         },
         {
@@ -495,9 +467,55 @@
             "player": "Morez Johnson",
             "certain": true
           },
+          "next": {
+            "trade": "yyv5fklbme1qbgi3"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Utah Jazz"
+          }
+        }
+      ]
+    },
+    "yq4658ibky2vrytk": {
+      "date": "2022-01-06",
+      "season": "2021-22",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "player_id": "0529c",
+          "player": "Dean Wade",
+          "label": "Dean Wade",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-01-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "San Antonio Spurs",
+          "player_id": "058n6",
+          "player": "Armoni Brooks",
+          "label": "Armoni Brooks",
+          "result": {
+            "points": 10.5,
+            "starts": 3,
+            "gp": 2,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-02-07"
           }
         }
       ]

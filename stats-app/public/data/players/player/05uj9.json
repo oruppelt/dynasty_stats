@@ -265,90 +265,6 @@
     }
   ],
   "trades": {
-    "m4oh5770m5s364so": {
-      "date": "2025-01-13",
-      "season": "2024-25",
-      "period": 25,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Minnesota Timberwolves",
-          "player_id": "0558t",
-          "player": "Max Strus",
-          "label": "Max Strus",
-          "result": {
-            "points": 325.75,
-            "starts": 6,
-            "gp": 11,
-            "periods": 9,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Cleveland Cavaliers",
-          "player_id": "05uj9",
-          "player": "Herbert Jones",
-          "label": "Herbert Jones",
-          "result": {
-            "points": 640.0,
-            "starts": 17,
-            "gp": 25,
-            "periods": 42,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Minnesota Timberwolves",
-          "to": "Cleveland Cavaliers",
-          "label": "$1 budget"
-        }
-      ]
-    },
-    "umd8exrulj2qxonm": {
-      "date": "2023-06-19",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05uj9",
-          "player": "Herbert Jones",
-          "label": "Herbert Jones",
-          "result": {
-            "points": 1206.0,
-            "starts": 26,
-            "gp": 43,
-            "periods": 32,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Boston Celtics",
-          "label": "2024 round 1 pick (Minnesota Timberwolves)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 24,
-            "overall": 24,
-            "player_id": "06mle",
-            "player": "Kyle Filipowski",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "New York Knicks"
-          }
-        }
-      ]
-    },
     "yhxta0frkkwqqtwa": {
       "date": "2021-02-08",
       "season": "2020-21",
@@ -374,6 +290,9 @@
             "gp": 3,
             "periods": 12,
             "ongoing": false
+          },
+          "next": {
+            "trade": "o80318c5kwkp7gxb"
           }
         },
         {
@@ -396,6 +315,9 @@
             "gp": 0,
             "periods": 0,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-08-07"
           }
         },
         {
@@ -418,7 +340,106 @@
             "gp": 74,
             "periods": 66,
             "ongoing": false
+          },
+          "next": {
+            "trade": "umd8exrulj2qxonm"
           }
+        }
+      ]
+    },
+    "umd8exrulj2qxonm": {
+      "date": "2023-06-19",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uj9",
+          "player": "Herbert Jones",
+          "label": "Herbert Jones",
+          "result": {
+            "points": 1206.0,
+            "starts": 26,
+            "gp": 43,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Boston Celtics",
+          "label": "2024 round 1 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06mle",
+            "player": "Kyle Filipowski",
+            "certain": true
+          },
+          "next": {
+            "trade": "0x0h24u3lr0j2d6r"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
+        }
+      ]
+    },
+    "m4oh5770m5s364so": {
+      "date": "2025-01-13",
+      "season": "2024-25",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "0558t",
+          "player": "Max Strus",
+          "label": "Max Strus",
+          "result": {
+            "points": 325.75,
+            "starts": 6,
+            "gp": 11,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05uj9",
+          "player": "Herbert Jones",
+          "label": "Herbert Jones",
+          "result": {
+            "points": 640.0,
+            "starts": 17,
+            "gp": 25,
+            "periods": 42,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-26"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Minnesota Timberwolves",
+          "to": "Cleveland Cavaliers",
+          "label": "$1 budget"
         }
       ]
     }

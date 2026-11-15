@@ -68,77 +68,6 @@
     }
   ],
   "trades": {
-    "6wp31wt3m5mhwc4q": {
-      "date": "2025-01-08",
-      "season": "2024-25",
-      "period": 24,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Miami Heat",
-          "player_id": "03r7u",
-          "player": "Josh Richardson",
-          "label": "Josh Richardson",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Miami Heat",
-          "player_id": "05qym",
-          "player": "Kenyon Martin",
-          "label": "Kenyon Martin",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 10,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Miami Heat",
-          "label": "2026 round 2 pick (Chicago Bulls)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 15,
-            "overall": 45,
-            "player_id": "076u2",
-            "player": "Dillon Mitchell",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Houston Rockets"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Chicago Bulls",
-          "player_id": "0623m",
-          "player": "Keon Ellis",
-          "label": "Keon Ellis",
-          "result": {
-            "points": 509.5,
-            "starts": 10,
-            "gp": 18,
-            "periods": 10,
-            "ongoing": false
-          }
-        }
-      ]
-    },
     "qv786h5cmhvytj7l": {
       "date": "2025-11-13",
       "season": "2025-26",
@@ -157,6 +86,9 @@
             "gp": 0,
             "periods": 0,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-13"
           }
         },
         {
@@ -172,6 +104,9 @@
             "gp": 40,
             "periods": 33,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -187,6 +122,9 @@
             "gp": 21,
             "periods": 26,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
           }
         },
         {
@@ -202,6 +140,9 @@
             "gp": 4,
             "periods": 33,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -217,6 +158,9 @@
             "gp": 21,
             "periods": 33,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -239,6 +183,9 @@
             "gp": 12,
             "periods": 7,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -261,6 +208,9 @@
             "gp": 0,
             "periods": 7,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -283,6 +233,9 @@
             "gp": 8,
             "periods": 7,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -304,6 +257,92 @@
             "gp": 35,
             "periods": 26,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        }
+      ]
+    },
+    "6wp31wt3m5mhwc4q": {
+      "date": "2025-01-08",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "3e8zy5h8m5ppki7t"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "label": "2026 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "076u2",
+            "player": "Dillon Mitchell",
+            "certain": true
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Chicago Bulls",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis",
+          "result": {
+            "points": 509.5,
+            "starts": 10,
+            "gp": 18,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-29"
           }
         }
       ]

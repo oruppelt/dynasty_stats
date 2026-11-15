@@ -192,81 +192,6 @@
     }
   ],
   "trades": {
-    "hjrmkgmil66e5368": {
-      "date": "2022-07-29",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "New York Knicks",
-          "label": "2023 round 2 pick (Cleveland Cavaliers)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 19,
-            "overall": 49,
-            "player_id": "06cdb",
-            "player": "Amari Bailey",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Brooklyn Nets"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "New York Knicks",
-          "label": "2023 round 1 pick (Cleveland Cavaliers)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 19,
-            "overall": 19,
-            "player_id": "06cby",
-            "player": "Keyonte George",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Golden State Warriors"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Cleveland Cavaliers",
-          "player_id": "03nwn",
-          "player": "Bobby Portis",
-          "label": "Bobby Portis",
-          "result": {
-            "points": 1503.5,
-            "starts": 29,
-            "gp": 46,
-            "periods": 33,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Cleveland Cavaliers",
-          "player_id": "0622z",
-          "player": "Orlando Robinson",
-          "label": "Orlando Robinson",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 3,
-            "ongoing": false
-          }
-        }
-      ]
-    },
     "z5jlvl0yl9df5648": {
       "date": "2022-10-18",
       "season": "2022-23",
@@ -305,6 +230,9 @@
             "player": "Keyonte George",
             "certain": true
           },
+          "next": {
+            "trade": "4ghkugn9lbqnbawd"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Golden State Warriors"
@@ -330,6 +258,9 @@
             "gp": 0,
             "periods": 1,
             "ongoing": false
+          },
+          "next": {
+            "trade": "be82rz5ilbs9n0fe"
           }
         },
         {
@@ -345,6 +276,9 @@
             "gp": 24,
             "periods": 16,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
           }
         },
         {
@@ -360,6 +294,9 @@
             "gp": 17,
             "periods": 9,
             "ongoing": false
+          },
+          "next": {
+            "trade": "c78464erlcyppe9f"
           }
         },
         {
@@ -375,6 +312,9 @@
             "gp": 19,
             "periods": 16,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
           }
         },
         {
@@ -390,6 +330,9 @@
             "gp": 10,
             "periods": 6,
             "ongoing": false
+          },
+          "next": {
+            "trade": "xrkqmnnwlcgjgfnn"
           }
         },
         {
@@ -405,6 +348,9 @@
             "gp": 5,
             "periods": 12,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-01-27"
           }
         },
         {
@@ -420,6 +366,9 @@
             "gp": 14,
             "periods": 24,
             "ongoing": false
+          },
+          "next": {
+            "trade": "gebhqes2lp7bilac"
           }
         },
         {
@@ -435,6 +384,9 @@
             "gp": 14,
             "periods": 20,
             "ongoing": false
+          },
+          "next": {
+            "trade": "psa6bq70lomkt3fc"
           }
         },
         {
@@ -457,6 +409,96 @@
             "gp": 132,
             "periods": 98,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
+          }
+        }
+      ]
+    },
+    "hjrmkgmil66e5368": {
+      "date": "2022-07-29",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          },
+          "next": {
+            "trade": "pm8ukv5nl9ihx8hb"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Brooklyn Nets"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06cby",
+            "player": "Keyonte George",
+            "certain": true
+          },
+          "next": {
+            "trade": "z5jlvl0yl9df5648"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03nwn",
+          "player": "Bobby Portis",
+          "label": "Bobby Portis",
+          "result": {
+            "points": 1503.5,
+            "starts": 29,
+            "gp": 46,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "gl4810izl9s7wcsd"
           }
         }
       ]

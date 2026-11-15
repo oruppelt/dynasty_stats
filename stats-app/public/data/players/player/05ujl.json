@@ -89,62 +89,6 @@
     }
   ],
   "trades": {
-    "yzpa9lmnk2oo5ui0": {
-      "date": "2019-11-07",
-      "season": "2019-20",
-      "period": 6,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Miami Heat",
-          "player_id": "048zs",
-          "player": "Shaquille Harrison",
-          "label": "Shaquille Harrison",
-          "result": {
-            "points": 256.0,
-            "starts": 22,
-            "gp": 25,
-            "periods": 27,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Miami Heat",
-          "label": "2021 round 2 pick (Boston Celtics)",
-          "became": {
-            "season": "2021-22",
-            "round": 2,
-            "pick": 19,
-            "overall": 49,
-            "player_id": "05ujl",
-            "player": "David Johnson",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Dallas Mavericks"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Boston Celtics",
-          "player_id": "04ewv",
-          "player": "Frank Jackson",
-          "label": "Frank Jackson",
-          "result": {
-            "points": 160.5,
-            "starts": 11,
-            "gp": 18,
-            "periods": 27,
-            "ongoing": false
-          }
-        }
-      ]
-    },
     "ci5v7ywvkid24lwf": {
       "date": "2020-12-06",
       "season": "2020-21",
@@ -164,6 +108,9 @@
             "player": "Jose Alvarado",
             "certain": true
           },
+          "next": {
+            "trade": "yy9p5ocdkye254n4"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Cleveland Cavaliers"
@@ -182,6 +129,9 @@
             "gp": 0,
             "periods": 0,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-12-22"
           }
         },
         {
@@ -197,6 +147,9 @@
             "gp": 0,
             "periods": 0,
             "ongoing": false
+          },
+          "next": {
+            "trade": "arji78gykidgnybp"
           }
         },
         {
@@ -219,6 +172,9 @@
             "gp": 0,
             "periods": 66,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-06-21"
           }
         },
         {
@@ -241,6 +197,74 @@
             "gp": 0,
             "periods": 1,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-10-21"
+          }
+        }
+      ]
+    },
+    "yzpa9lmnk2oo5ui0": {
+      "date": "2019-11-07",
+      "season": "2019-20",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "player_id": "048zs",
+          "player": "Shaquille Harrison",
+          "label": "Shaquille Harrison",
+          "result": {
+            "points": 256.0,
+            "starts": 22,
+            "gp": 25,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Miami Heat",
+          "label": "2021 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "05ujl",
+            "player": "David Johnson",
+            "certain": true
+          },
+          "next": {
+            "trade": "ci5v7ywvkid24lwf"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Boston Celtics",
+          "player_id": "04ewv",
+          "player": "Frank Jackson",
+          "label": "Frank Jackson",
+          "result": {
+            "points": 160.5,
+            "starts": 11,
+            "gp": 18,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
           }
         }
       ]

@@ -285,62 +285,6 @@
     }
   ],
   "trades": {
-    "ww5mlxmcmkqs951p": {
-      "date": "2026-01-23",
-      "season": "2025-26",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Portland Trail Blazers",
-          "player_id": "06v8b",
-          "player": "Rocco Zikarsky",
-          "label": "Rocco Zikarsky",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 6,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Portland Trail Blazers",
-          "label": "2026 round 2 pick (Indiana Pacers)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 24,
-            "overall": 54,
-            "player_id": "076ub",
-            "player": "Tobi Lawal",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "San Antonio Spurs"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Miami Heat",
-          "player_id": "05wqo",
-          "player": "Dru Smith",
-          "label": "Dru Smith",
-          "result": {
-            "points": 174.0,
-            "starts": 3,
-            "gp": 6,
-            "periods": 6,
-            "ongoing": false
-          }
-        }
-      ]
-    },
     "kl69rnqzm5tmro6v": {
       "date": "2025-01-13",
       "season": "2024-25",
@@ -359,6 +303,9 @@
             "gp": 8,
             "periods": 9,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-07"
           }
         },
         {
@@ -374,6 +321,9 @@
             "gp": 0,
             "periods": 2,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-01-20"
           }
         },
         {
@@ -396,6 +346,9 @@
             "gp": 47,
             "periods": 40,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -411,6 +364,74 @@
             "gp": 12,
             "periods": 9,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        }
+      ]
+    },
+    "ww5mlxmcmkqs951p": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v8b",
+          "player": "Rocco Zikarsky",
+          "label": "Rocco Zikarsky",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zlfnl31gmqt85aw1"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          },
+          "next": {
+            "trade": "zlfnl31gmqt85aw1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Miami Heat",
+          "player_id": "05wqo",
+          "player": "Dru Smith",
+          "label": "Dru Smith",
+          "result": {
+            "points": 174.0,
+            "starts": 3,
+            "gp": 6,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-02-23"
           }
         }
       ]

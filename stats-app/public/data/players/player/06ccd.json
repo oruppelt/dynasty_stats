@@ -198,87 +198,6 @@
     }
   ],
   "trades": {
-    "caq0c945l69jh4fc": {
-      "date": "2022-07-31",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Chicago Bulls",
-          "player_id": "03ajv",
-          "player": "Julius Randle",
-          "label": "Julius Randle",
-          "result": {
-            "points": 6362.75,
-            "starts": 90,
-            "gp": 150,
-            "periods": 98,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Charlotte Hornets",
-          "to": "Chicago Bulls",
-          "label": "2023 round 1 pick (Charlotte Hornets)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 24,
-            "overall": 24,
-            "player_id": "06ccd",
-            "player": "Noah Clowney",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Los Angeles Clippers"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Charlotte Hornets",
-          "to": "Memphis Grizzlies",
-          "label": "2024 round 1 pick (Charlotte Hornets)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 23,
-            "overall": 23,
-            "player_id": "06mld",
-            "player": "Jonathan Mogbo",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Detroit Pistons"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Memphis Grizzlies",
-          "player_id": "04fj8",
-          "player": "Chris Boucher",
-          "label": "Chris Boucher",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Memphis Grizzlies",
-          "to": "Chicago Bulls",
-          "label": "$1 budget"
-        }
-      ]
-    },
     "o7egut5nlbsb9x0e": {
       "date": "2022-12-18",
       "season": "2022-23",
@@ -297,6 +216,9 @@
             "gp": 21,
             "periods": 15,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-22"
           }
         },
         {
@@ -312,6 +234,9 @@
             "player_id": "06mm5",
             "player": "PJ Hall",
             "certain": true
+          },
+          "next": {
+            "trade": "ll6492qklql9ax74"
           },
           "result": {
             "traded_on": true,
@@ -332,6 +257,9 @@
             "player": "Noah Clowney",
             "certain": true
           },
+          "next": {
+            "trade": "itomme9kljcykmjp"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Los Angeles Clippers"
@@ -351,6 +279,9 @@
             "player": "Devin Carter",
             "certain": true
           },
+          "next": {
+            "trade": "f24ziii5lxyb2o23"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Milwaukee Bucks"
@@ -369,6 +300,9 @@
             "gp": 6,
             "periods": 15,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-23"
           }
         }
       ]
@@ -398,6 +332,9 @@
             "gp": 71,
             "periods": 98,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
           }
         },
         {
@@ -420,6 +357,9 @@
             "gp": 133,
             "periods": 98,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
           }
         },
         {
@@ -442,7 +382,103 @@
             "gp": 62,
             "periods": 98,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
           }
+        }
+      ]
+    },
+    "caq0c945l69jh4fc": {
+      "date": "2022-07-31",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Chicago Bulls",
+          "player_id": "03ajv",
+          "player": "Julius Randle",
+          "label": "Julius Randle",
+          "result": {
+            "points": 6362.75,
+            "starts": 90,
+            "gp": 150,
+            "periods": 98,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Chicago Bulls",
+          "label": "2023 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06ccd",
+            "player": "Noah Clowney",
+            "certain": true
+          },
+          "next": {
+            "trade": "o7egut5nlbsb9x0e"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06mld",
+            "player": "Jonathan Mogbo",
+            "certain": true
+          },
+          "next": {
+            "trade": "1c0sreovl69nay3a"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Memphis Grizzlies",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1c0sreovl69nay3a"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Chicago Bulls",
+          "label": "$1 budget"
         }
       ]
     }

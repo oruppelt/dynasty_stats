@@ -377,117 +377,6 @@
     }
   ],
   "trades": {
-    "eq0s05vklcn7jfg5": {
-      "date": "2023-01-08",
-      "season": "2022-23",
-      "period": 25,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Milwaukee Bucks",
-          "player_id": "04qsd",
-          "player": "Mitchell Robinson",
-          "label": "Mitchell Robinson",
-          "result": {
-            "points": 875.75,
-            "starts": 18,
-            "gp": 27,
-            "periods": 28,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Memphis Grizzlies",
-          "player_id": "005ki",
-          "player": "Brook Lopez",
-          "label": "Brook Lopez",
-          "result": {
-            "points": 553.75,
-            "starts": 9,
-            "gp": 16,
-            "periods": 9,
-            "ongoing": false
-          }
-        }
-      ]
-    },
-    "3ytw64kjmkuq5bqa": {
-      "date": "2026-01-26",
-      "season": "2025-26",
-      "period": 29,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Washington Wizards",
-          "player_id": "04qsd",
-          "player": "Mitchell Robinson",
-          "label": "Mitchell Robinson",
-          "result": {
-            "points": 89.75,
-            "starts": 3,
-            "gp": 5,
-            "periods": 5,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Milwaukee Bucks",
-          "player_id": "05uul",
-          "player": "Jose Alvarado",
-          "label": "Jose Alvarado",
-          "result": {
-            "points": 230.5,
-            "starts": 5,
-            "gp": 9,
-            "periods": 5,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Milwaukee Bucks",
-          "player_id": "005ki",
-          "player": "Brook Lopez",
-          "label": "Brook Lopez",
-          "result": {
-            "points": 256.0,
-            "starts": 5,
-            "gp": 10,
-            "periods": 5,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Washington Wizards",
-          "to": "Milwaukee Bucks",
-          "label": "2026 round 2 pick (Washington Wizards)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 26,
-            "overall": 56,
-            "player_id": "076uq",
-            "player": "Rafael Castro",
-            "certain": true
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          }
-        }
-      ]
-    },
     "lzuchjjolqphb417": {
       "date": "2023-12-28",
       "season": "2023-24",
@@ -506,6 +395,9 @@
             "gp": 19,
             "periods": 13,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
           }
         },
         {
@@ -521,6 +413,9 @@
             "gp": 23,
             "periods": 33,
             "ongoing": false
+          },
+          "next": {
+            "trade": "d6sg7z0mm59sukx3"
           }
         },
         {
@@ -536,6 +431,9 @@
             "gp": 15,
             "periods": 13,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
           }
         },
         {
@@ -551,6 +449,9 @@
             "player_id": "06mls",
             "player": "Cam Christie",
             "certain": true
+          },
+          "next": {
+            "trade": "9f97r5qtlrxnq5ab"
           },
           "result": {
             "traded_on": true,
@@ -570,6 +471,9 @@
             "gp": 20,
             "periods": 13,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-24"
           }
         },
         {
@@ -585,6 +489,9 @@
             "player_id": "06v5h",
             "player": "Derik Queen",
             "certain": true
+          },
+          "next": {
+            "trade": "4lupx17zmclr6wsr"
           },
           "result": {
             "traded_on": true,
@@ -611,6 +518,138 @@
             "gp": 99,
             "periods": 73,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
+    "eq0s05vklcn7jfg5": {
+      "date": "2023-01-08",
+      "season": "2022-23",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Milwaukee Bucks",
+          "player_id": "04qsd",
+          "player": "Mitchell Robinson",
+          "label": "Mitchell Robinson",
+          "result": {
+            "points": 875.75,
+            "starts": 18,
+            "gp": 27,
+            "periods": 28,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "f55b9i8llqovzig1"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Memphis Grizzlies",
+          "player_id": "005ki",
+          "player": "Brook Lopez",
+          "label": "Brook Lopez",
+          "result": {
+            "points": 553.75,
+            "starts": 9,
+            "gp": 16,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        }
+      ]
+    },
+    "3ytw64kjmkuq5bqa": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Washington Wizards",
+          "player_id": "04qsd",
+          "player": "Mitchell Robinson",
+          "label": "Mitchell Robinson",
+          "result": {
+            "points": 89.75,
+            "starts": 3,
+            "gp": 5,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "player_id": "05uul",
+          "player": "Jose Alvarado",
+          "label": "Jose Alvarado",
+          "result": {
+            "points": 230.5,
+            "starts": 5,
+            "gp": 9,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "player_id": "005ki",
+          "player": "Brook Lopez",
+          "label": "Brook Lopez",
+          "result": {
+            "points": 256.0,
+            "starts": 5,
+            "gp": 10,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 26,
+            "overall": 56,
+            "player_id": "076uq",
+            "player": "Rafael Castro",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         }
       ]

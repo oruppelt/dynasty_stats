@@ -140,77 +140,6 @@
     }
   ],
   "trades": {
-    "1wol7nl2lde7omt5": {
-      "date": "2023-01-27",
-      "season": "2022-23",
-      "period": 30,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Utah Jazz",
-          "player_id": "04jw4",
-          "player": "Maxi Kleber",
-          "label": "Maxi Kleber",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Charlotte Hornets",
-          "player_id": "06233",
-          "player": "Ron Harper",
-          "label": "Ron Harper",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 27,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Charlotte Hornets",
-          "player_id": "0623h",
-          "player": "Alondes Williams",
-          "label": "Alondes Williams",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 27,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Utah Jazz",
-          "to": "Charlotte Hornets",
-          "label": "2023 round 2 pick (Utah Jazz)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 18,
-            "overall": 48,
-            "player_id": "06cd3",
-            "player": "Emoni Bates",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "New York Knicks"
-          }
-        }
-      ]
-    },
     "nu3ujh51ldej0oph": {
       "date": "2023-01-27",
       "season": "2022-23",
@@ -229,6 +158,9 @@
             "gp": 6,
             "periods": 4,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
           }
         },
         {
@@ -251,6 +183,9 @@
             "gp": 4,
             "periods": 65,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-19"
           }
         },
         {
@@ -266,6 +201,92 @@
             "gp": 5,
             "periods": 4,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        }
+      ]
+    },
+    "1wol7nl2lde7omt5": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Utah Jazz",
+          "player_id": "04jw4",
+          "player": "Maxi Kleber",
+          "label": "Maxi Kleber",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "b8r8172jldexl7cs"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "player_id": "06233",
+          "player": "Ron Harper",
+          "label": "Ron Harper",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "7nvjxigzlrahc7kt"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "player_id": "0623h",
+          "player": "Alondes Williams",
+          "label": "Alondes Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "7nvjxigzlrahc7kt"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Charlotte Hornets",
+          "label": "2023 round 2 pick (Utah Jazz)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "06cd3",
+            "player": "Emoni Bates",
+            "certain": true
+          },
+          "next": {
+            "trade": "nu3ujh51ldej0oph"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
           }
         }
       ]

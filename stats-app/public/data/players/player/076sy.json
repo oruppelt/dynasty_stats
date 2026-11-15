@@ -108,125 +108,6 @@
     }
   ],
   "trades": {
-    "yqdm26wgmih99jx3": {
-      "date": "2025-11-27",
-      "season": "2025-26",
-      "period": 12,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Utah Jazz",
-          "player_id": "049kd",
-          "player": "Deandre Ayton",
-          "label": "Deandre Ayton",
-          "result": {
-            "points": 946.25,
-            "starts": 22,
-            "gp": 31,
-            "periods": 22,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Utah Jazz",
-          "player_id": "06mm5",
-          "player": "PJ Hall",
-          "label": "PJ Hall",
-          "result": {
-            "points": 55.25,
-            "starts": 2,
-            "gp": 3,
-            "periods": 22,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Utah Jazz",
-          "player_id": "06mkk",
-          "player": "Ryan Dunn",
-          "label": "Ryan Dunn",
-          "result": {
-            "points": 450.75,
-            "starts": 19,
-            "gp": 31,
-            "periods": 22,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Utah Jazz",
-          "player_id": "06mlx",
-          "player": "Melvin Ajinca",
-          "label": "Melvin Ajinca",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 22,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Utah Jazz",
-          "label": "2026 round 1 pick (Utah Jazz)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 11,
-            "overall": 11,
-            "player_id": "076sy",
-            "player": "Morez Johnson",
-            "certain": true
-          },
-          "result": {
-            "points": 114.0,
-            "starts": 3,
-            "gp": 5,
-            "periods": 7,
-            "ongoing": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Boston Celtics",
-          "player_id": "05qtt",
-          "player": "Onyeka Okongwu",
-          "label": "Onyeka Okongwu",
-          "result": {
-            "points": 1808.0,
-            "starts": 26,
-            "gp": 45,
-            "periods": 29,
-            "ongoing": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Boston Celtics",
-          "player_id": "04qrr",
-          "player": "Michael Porter",
-          "label": "Michael Porter",
-          "result": {
-            "points": 1147.75,
-            "starts": 18,
-            "gp": 25,
-            "periods": 22,
-            "ongoing": false
-          }
-        }
-      ]
-    },
     "yyv5fklbme1qbgi3": {
       "date": "2025-08-07",
       "season": "2025-26",
@@ -245,6 +126,9 @@
             "gp": 38,
             "periods": 33,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-04"
           }
         },
         {
@@ -267,9 +151,152 @@
             "player": "Morez Johnson",
             "certain": true
           },
+          "next": {
+            "trade": "yqdm26wgmih99jx3"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Utah Jazz"
+          }
+        }
+      ]
+    },
+    "yqdm26wgmih99jx3": {
+      "date": "2025-11-27",
+      "season": "2025-26",
+      "period": 12,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "049kd",
+          "player": "Deandre Ayton",
+          "label": "Deandre Ayton",
+          "result": {
+            "points": 946.25,
+            "starts": 22,
+            "gp": 31,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-20"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mm5",
+          "player": "PJ Hall",
+          "label": "PJ Hall",
+          "result": {
+            "points": 55.25,
+            "starts": 2,
+            "gp": 3,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-28"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mkk",
+          "player": "Ryan Dunn",
+          "label": "Ryan Dunn",
+          "result": {
+            "points": 450.75,
+            "starts": 19,
+            "gp": 31,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-19"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "player_id": "06mlx",
+          "player": "Melvin Ajinca",
+          "label": "Melvin Ajinca",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-20"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          },
+          "result": {
+            "points": 114.0,
+            "starts": 3,
+            "gp": 5,
+            "periods": 7,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "05qtt",
+          "player": "Onyeka Okongwu",
+          "label": "Onyeka Okongwu",
+          "result": {
+            "points": 1808.0,
+            "starts": 26,
+            "gp": 45,
+            "periods": 29,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Boston Celtics",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter",
+          "result": {
+            "points": 1147.75,
+            "starts": 18,
+            "gp": 25,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "rhyr5c70msr9j4s3"
           }
         }
       ]
@@ -293,6 +320,9 @@
             "player": "Carter Bryant",
             "certain": true
           },
+          "next": {
+            "trade": "ljnizeewmcnudnmr"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Houston Rockets"
@@ -311,6 +341,9 @@
             "gp": 6,
             "periods": 5,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
           }
         },
         {
@@ -326,6 +359,9 @@
             "gp": 0,
             "periods": 5,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
           }
         },
         {
@@ -341,6 +377,9 @@
             "player_id": "076sy",
             "player": "Morez Johnson",
             "certain": true
+          },
+          "next": {
+            "trade": "yyv5fklbme1qbgi3"
           },
           "result": {
             "traded_on": true,

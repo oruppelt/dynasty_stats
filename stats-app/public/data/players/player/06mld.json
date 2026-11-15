@@ -214,87 +214,6 @@
     }
   ],
   "trades": {
-    "caq0c945l69jh4fc": {
-      "date": "2022-07-31",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Chicago Bulls",
-          "player_id": "03ajv",
-          "player": "Julius Randle",
-          "label": "Julius Randle",
-          "result": {
-            "points": 6362.75,
-            "starts": 90,
-            "gp": 150,
-            "periods": 98,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Charlotte Hornets",
-          "to": "Chicago Bulls",
-          "label": "2023 round 1 pick (Charlotte Hornets)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 24,
-            "overall": 24,
-            "player_id": "06ccd",
-            "player": "Noah Clowney",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Los Angeles Clippers"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Charlotte Hornets",
-          "to": "Memphis Grizzlies",
-          "label": "2024 round 1 pick (Charlotte Hornets)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 23,
-            "overall": 23,
-            "player_id": "06mld",
-            "player": "Jonathan Mogbo",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Detroit Pistons"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Memphis Grizzlies",
-          "player_id": "04fj8",
-          "player": "Chris Boucher",
-          "label": "Chris Boucher",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Memphis Grizzlies",
-          "to": "Chicago Bulls",
-          "label": "$1 budget"
-        }
-      ]
-    },
     "1c0sreovl69nay3a": {
       "date": "2022-07-31",
       "season": "2022-23",
@@ -313,6 +232,9 @@
             "gp": 39,
             "periods": 33,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-21"
           }
         },
         {
@@ -328,6 +250,9 @@
             "player_id": "06mld",
             "player": "Jonathan Mogbo",
             "certain": true
+          },
+          "next": {
+            "trade": "z5jlvl0yl9df5648"
           },
           "result": {
             "traded_on": true,
@@ -380,10 +305,106 @@
             "player": "Keyonte George",
             "certain": true
           },
+          "next": {
+            "trade": "4ghkugn9lbqnbawd"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Golden State Warriors"
           }
+        }
+      ]
+    },
+    "caq0c945l69jh4fc": {
+      "date": "2022-07-31",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Chicago Bulls",
+          "player_id": "03ajv",
+          "player": "Julius Randle",
+          "label": "Julius Randle",
+          "result": {
+            "points": 6362.75,
+            "starts": 90,
+            "gp": 150,
+            "periods": 98,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Chicago Bulls",
+          "label": "2023 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06ccd",
+            "player": "Noah Clowney",
+            "certain": true
+          },
+          "next": {
+            "trade": "o7egut5nlbsb9x0e"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "06mld",
+            "player": "Jonathan Mogbo",
+            "certain": true
+          },
+          "next": {
+            "trade": "1c0sreovl69nay3a"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Memphis Grizzlies",
+          "player_id": "04fj8",
+          "player": "Chris Boucher",
+          "label": "Chris Boucher",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1c0sreovl69nay3a"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Chicago Bulls",
+          "label": "$1 budget"
         }
       ]
     },
@@ -405,6 +426,9 @@
             "gp": 49,
             "periods": 29,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
           }
         },
         {
@@ -420,6 +444,9 @@
             "gp": 15,
             "periods": 29,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
           }
         },
         {
@@ -435,6 +462,9 @@
             "gp": 32,
             "periods": 29,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
           }
         },
         {
@@ -450,6 +480,9 @@
             "gp": 0,
             "periods": 0,
             "ongoing": false
+          },
+          "next": {
+            "trade": "chb5mtn3m33d71lg"
           }
         },
         {
@@ -472,6 +505,9 @@
             "gp": 20,
             "periods": 40,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -487,6 +523,9 @@
             "gp": 0,
             "periods": 29,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-28"
           }
         },
         {
@@ -502,6 +541,9 @@
             "gp": 8,
             "periods": 50,
             "ongoing": false
+          },
+          "next": {
+            "trade": "8q5lmlnrmjwl6l7b"
           }
         },
         {
@@ -517,6 +559,9 @@
             "gp": 31,
             "periods": 39,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-24"
           }
         },
         {
@@ -532,6 +577,9 @@
             "gp": 0,
             "periods": 36,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-14"
           }
         },
         {
@@ -547,6 +595,9 @@
             "gp": 28,
             "periods": 29,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-28"
           }
         },
         {
@@ -569,6 +620,9 @@
             "gp": 11,
             "periods": 36,
             "ongoing": false
+          },
+          "next": {
+            "trade": "oj9lawe7mvsdcb33"
           }
         },
         {
@@ -591,6 +645,9 @@
             "gp": 33,
             "periods": 40,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         }
       ]

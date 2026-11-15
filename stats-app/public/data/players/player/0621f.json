@@ -155,99 +155,6 @@
     }
   ],
   "trades": {
-    "jc5usd8pl4u61fxp": {
-      "date": "2022-06-25",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Chicago Bulls",
-          "player_id": "03byg",
-          "player": "Montrezl Harrell",
-          "label": "Montrezl Harrell",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Chicago Bulls",
-          "player_id": "03r7u",
-          "player": "Josh Richardson",
-          "label": "Josh Richardson",
-          "result": {
-            "points": 754.0,
-            "starts": 18,
-            "gp": 29,
-            "periods": 33,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Chicago Bulls",
-          "label": "2022 round 1 pick, no. 14",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 14,
-            "overall": 14,
-            "player_id": "0621f",
-            "player": "AJ Griffin",
-            "certain": true
-          },
-          "result": {
-            "points": 159.5,
-            "starts": 5,
-            "gp": 9,
-            "periods": 33,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Chicago Bulls",
-          "label": "2024 round 1 pick (Boston Celtics)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 20,
-            "overall": 20,
-            "player_id": "06mlg",
-            "player": "Tyler Kolek",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Sacramento Kings"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Boston Celtics",
-          "player_id": "027oz",
-          "player": "Kawhi Leonard",
-          "label": "Kawhi Leonard",
-          "result": {
-            "points": 56.75,
-            "starts": 5,
-            "gp": 2,
-            "periods": 5,
-            "ongoing": false
-          }
-        }
-      ]
-    },
     "0x33e8dqljebq4sl": {
       "date": "2023-06-27",
       "season": "2023-24",
@@ -266,6 +173,9 @@
             "gp": 36,
             "periods": 32,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-22"
           }
         },
         {
@@ -281,6 +191,9 @@
             "gp": 6,
             "periods": 32,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-08-04"
           }
         },
         {
@@ -303,6 +216,9 @@
             "gp": 0,
             "periods": 58,
             "ongoing": false
+          },
+          "next": {
+            "trade": "zwmr8saim64qjsgk"
           }
         },
         {
@@ -318,6 +234,9 @@
             "player_id": "06mkh",
             "player": "Pacome Dadiet",
             "certain": true
+          },
+          "next": {
+            "trade": "wxjv4ixnlqpl8ew2"
           },
           "result": {
             "traded_on": true,
@@ -344,6 +263,117 @@
             "gp": 0,
             "periods": 0,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-05"
+          }
+        }
+      ]
+    },
+    "jc5usd8pl4u61fxp": {
+      "date": "2022-06-25",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "player_id": "03byg",
+          "player": "Montrezl Harrell",
+          "label": "Montrezl Harrell",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "b7rwmvs2l6947f1d"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson",
+          "result": {
+            "points": 754.0,
+            "starts": 18,
+            "gp": 29,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0x33e8dqljebq4sl"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "label": "2022 round 1 pick, no. 14",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "0621f",
+            "player": "AJ Griffin",
+            "certain": true
+          },
+          "result": {
+            "points": 159.5,
+            "starts": 5,
+            "gp": 9,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0x33e8dqljebq4sl"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Chicago Bulls",
+          "label": "2024 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06mlg",
+            "player": "Tyler Kolek",
+            "certain": true
+          },
+          "next": {
+            "trade": "w77iv92nlraibgpv"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Boston Celtics",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard",
+          "result": {
+            "points": 56.75,
+            "starts": 5,
+            "gp": 2,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "apzneezol9yatn6q"
           }
         }
       ]
@@ -366,6 +396,9 @@
             "gp": 90,
             "periods": 61,
             "ongoing": false
+          },
+          "next": {
+            "trade": "jem0vnvulrwfwkbi"
           }
         },
         {
@@ -381,6 +414,9 @@
             "gp": 26,
             "periods": 33,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-24"
           }
         },
         {
@@ -396,6 +432,9 @@
             "gp": 82,
             "periods": 54,
             "ongoing": false
+          },
+          "next": {
+            "trade": "0x0h24u3lr0j2d6r"
           }
         },
         {
@@ -411,6 +450,9 @@
             "gp": 25,
             "periods": 23,
             "ongoing": false
+          },
+          "next": {
+            "trade": "xrkqmnnwlcgjgfnn"
           }
         },
         {
@@ -426,6 +468,9 @@
             "player_id": "0621f",
             "player": "AJ Griffin",
             "certain": true
+          },
+          "next": {
+            "trade": "jc5usd8pl4u61fxp"
           },
           "result": {
             "traded_on": true,
@@ -445,6 +490,9 @@
             "player_id": "06cdh",
             "player": "GG Jackson",
             "certain": true
+          },
+          "next": {
+            "trade": "jg91nnqmlcerb7ao"
           },
           "result": {
             "traded_on": true,

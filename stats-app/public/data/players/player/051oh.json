@@ -301,47 +301,6 @@
     }
   ],
   "trades": {
-    "k259h001kyir0iw1": {
-      "date": "2022-01-17",
-      "season": "2021-22",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Washington Wizards",
-          "player_id": "051oh",
-          "player": "Zion Williamson",
-          "label": "Zion Williamson",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Washington Wizards",
-          "to": "Sacramento Kings",
-          "label": "2022 round 1 pick (Golden State Warriors)",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 28,
-            "overall": 28,
-            "player_id": "06220",
-            "player": "Jaden Hardy",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Minnesota Timberwolves"
-          }
-        }
-      ]
-    },
     "de5pkn4ykyik1gb0": {
       "date": "2022-01-17",
       "season": "2021-22",
@@ -360,6 +319,9 @@
             "gp": 0,
             "periods": 0,
             "ongoing": false
+          },
+          "next": {
+            "trade": "k259h001kyir0iw1"
           }
         },
         {
@@ -375,6 +337,9 @@
             "gp": 11,
             "periods": 63,
             "ongoing": false
+          },
+          "next": {
+            "trade": "w77iv92nlraibgpv"
           }
         },
         {
@@ -390,6 +355,9 @@
             "gp": 0,
             "periods": 25,
             "ongoing": false
+          },
+          "next": {
+            "trade": "o7egut5nlbsb9x0e"
           }
         },
         {
@@ -405,6 +373,9 @@
             "player_id": "06cdg",
             "player": "Maxwell Lewis",
             "certain": true
+          },
+          "next": {
+            "trade": "0x33e8dqljebq4sl"
           },
           "result": {
             "traded_on": true,
@@ -431,6 +402,9 @@
             "gp": 0,
             "periods": 56,
             "ongoing": false
+          },
+          "next": {
+            "trade": "w77iv92nlraibgpv"
           }
         }
       ]
@@ -453,6 +427,9 @@
             "gp": 2,
             "periods": 4,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-05-10"
           }
         },
         {
@@ -468,6 +445,9 @@
             "gp": 6,
             "periods": 4,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-05-10"
           }
         },
         {
@@ -483,6 +463,9 @@
             "gp": 5,
             "periods": 4,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
           }
         },
         {
@@ -498,6 +481,9 @@
             "gp": 19,
             "periods": 37,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
           }
         },
         {
@@ -520,6 +506,56 @@
             "gp": 32,
             "periods": 40,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
+    "k259h001kyir0iw1": {
+      "date": "2022-01-17",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "051oh",
+          "player": "Zion Williamson",
+          "label": "Zion Williamson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          },
+          "next": {
+            "trade": "3svuxfmvl3ps0x1r"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Minnesota Timberwolves"
           }
         }
       ]

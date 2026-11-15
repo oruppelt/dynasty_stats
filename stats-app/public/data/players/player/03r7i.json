@@ -152,6 +152,77 @@
     }
   ],
   "trades": {
+    "u4u6cj1zk4cjuwah": {
+      "date": "2019-12-19",
+      "season": "2019-20",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Sacramento Kings",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari",
+          "result": {
+            "points": 699.0,
+            "starts": 12,
+            "gp": 17,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03r7i",
+          "player": "Rondae Hollis-Jefferson",
+          "label": "Rondae Hollis-Jefferson",
+          "result": {
+            "points": 543.25,
+            "starts": 15,
+            "gp": 24,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "7xemuaidkijdb1oy"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "05uj4",
+            "player": "Santi Aldama",
+            "certain": true
+          },
+          "next": {
+            "trade": "kyiyrs77k4cvyypt"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Charlotte Hornets)"
+        }
+      ]
+    },
     "7xemuaidkijdb1oy": {
       "date": "2020-12-11",
       "season": "2020-21",
@@ -170,6 +241,9 @@
             "gp": 0,
             "periods": 9,
             "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-01-23"
           }
         },
         {
@@ -185,6 +259,9 @@
             "player_id": "06224",
             "player": "E.J. Liddell",
             "certain": true
+          },
+          "next": {
+            "trade": "y7jfydkxkxg1vebv"
           },
           "result": {
             "traded_on": true,
@@ -204,6 +281,9 @@
             "gp": 2,
             "periods": 3,
             "ongoing": false
+          },
+          "next": {
+            "trade": "0ha362o3kjh7rhss"
           }
         },
         {
@@ -220,72 +300,13 @@
             "player": "Usman Garuba",
             "certain": true
           },
+          "next": {
+            "trade": "0ha362o3kjh7rhss"
+          },
           "result": {
             "traded_on": true,
             "drafted_by": "Detroit Pistons"
           }
-        }
-      ]
-    },
-    "u4u6cj1zk4cjuwah": {
-      "date": "2019-12-19",
-      "season": "2019-20",
-      "period": 18,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Sacramento Kings",
-          "player_id": "005ke",
-          "player": "Danilo Gallinari",
-          "label": "Danilo Gallinari",
-          "result": {
-            "points": 699.0,
-            "starts": 12,
-            "gp": 17,
-            "periods": 15,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Cleveland Cavaliers",
-          "player_id": "03r7i",
-          "player": "Rondae Hollis-Jefferson",
-          "label": "Rondae Hollis-Jefferson",
-          "result": {
-            "points": 543.25,
-            "starts": 15,
-            "gp": 24,
-            "periods": 15,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Cleveland Cavaliers",
-          "label": "2021 round 1 pick (Chicago Bulls)",
-          "became": {
-            "season": "2021-22",
-            "round": 1,
-            "pick": 28,
-            "overall": 28,
-            "player_id": "05uj4",
-            "player": "Santi Aldama",
-            "certain": true
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "New York Knicks"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Cleveland Cavaliers",
-          "label": "2020 round 2 pick (Charlotte Hornets)"
         }
       ]
     }

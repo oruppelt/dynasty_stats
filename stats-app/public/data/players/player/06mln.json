@@ -152,109 +152,6 @@
     }
   ],
   "trades": {
-    "rzau113zmeml44da": {
-      "date": "2025-08-22",
-      "season": "2025-26",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Minnesota Timberwolves",
-          "player_id": "06mm2",
-          "player": "Kevin McCullar",
-          "label": "Kevin McCullar",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 33,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Minnesota Timberwolves",
-          "player_id": "03ad3",
-          "player": "Karl-Anthony Towns",
-          "label": "Karl-Anthony Towns",
-          "result": {
-            "points": 2874.25,
-            "starts": 39,
-            "gp": 63,
-            "periods": 40,
-            "ongoing": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Minnesota Timberwolves",
-          "player_id": "06mln",
-          "player": "Adem Bona",
-          "label": "Adem Bona",
-          "result": {
-            "points": 214.5,
-            "starts": 9,
-            "gp": 16,
-            "periods": 40,
-            "ongoing": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Minnesota Timberwolves",
-          "player_id": "03wr4",
-          "player": "T.J. McConnell",
-          "label": "T.J. McConnell",
-          "result": {
-            "points": 560.5,
-            "starts": 14,
-            "gp": 22,
-            "periods": 33,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Houston Rockets",
-          "player_id": "03nwm",
-          "player": "Devin Booker",
-          "label": "Devin Booker",
-          "result": {
-            "points": 592.5,
-            "starts": 7,
-            "gp": 13,
-            "periods": 7,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Houston Rockets",
-          "player_id": "06ccf",
-          "player": "Ausar Thompson",
-          "label": "Ausar Thompson",
-          "result": {
-            "points": 356.5,
-            "starts": 7,
-            "gp": 10,
-            "periods": 7,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Houston Rockets",
-          "label": "2027 round 2 pick (Minnesota Timberwolves)"
-        }
-      ]
-    },
     "n3xruumslxyaxk6d": {
       "date": "2024-06-28",
       "season": "2024-25",
@@ -273,6 +170,9 @@
             "gp": 60,
             "periods": 40,
             "ongoing": false
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
           }
         },
         {
@@ -288,6 +188,9 @@
             "gp": 90,
             "periods": 73,
             "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
@@ -316,7 +219,131 @@
             "gp": 2,
             "periods": 33,
             "ongoing": false
+          },
+          "next": {
+            "trade": "rzau113zmeml44da"
           }
+        }
+      ]
+    },
+    "rzau113zmeml44da": {
+      "date": "2025-08-22",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06mm2",
+          "player": "Kevin McCullar",
+          "label": "Kevin McCullar",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-07"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03ad3",
+          "player": "Karl-Anthony Towns",
+          "label": "Karl-Anthony Towns",
+          "result": {
+            "points": 2874.25,
+            "starts": 39,
+            "gp": 63,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06mln",
+          "player": "Adem Bona",
+          "label": "Adem Bona",
+          "result": {
+            "points": 214.5,
+            "starts": 9,
+            "gp": 16,
+            "periods": 40,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell",
+          "result": {
+            "points": 560.5,
+            "starts": 14,
+            "gp": 22,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-02-20"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "player_id": "03nwm",
+          "player": "Devin Booker",
+          "label": "Devin Booker",
+          "result": {
+            "points": 592.5,
+            "starts": 7,
+            "gp": 13,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "player_id": "06ccf",
+          "player": "Ausar Thompson",
+          "label": "Ausar Thompson",
+          "result": {
+            "points": 356.5,
+            "starts": 7,
+            "gp": 10,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "glz93afsmhx6pjs4"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (Minnesota Timberwolves)"
         }
       ]
     }
