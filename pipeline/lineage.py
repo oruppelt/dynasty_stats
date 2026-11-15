@@ -274,8 +274,12 @@ def compute_timelines(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]
 
     first_season = min(order, key=order.get)
     first_period = int(obs[obs['season'] == first_season]['period'].min())
-    out = {}
+    latest = (int(obs['key_season'].max()), int(obs[obs['key_season'] == obs['key_season'].max()]['period'].max())) \
+        if len(obs) else None
+    timelines, rostered = {}, {}
     for pid, seen in obs.groupby('player_id', sort=False):
+        last = seen.iloc[-1]
+        rostered[pid] = (int(last.key_season), int(last.period)) == latest
         events = sorted(moves.get(pid, []), key=lambda m: (m[0], m[1], m[2] if pd.notna(m[2]) else pd.Timestamp.min,
                                                              m[3], m[4]))
         timeline, team, last_drop = [], None, None
@@ -355,10 +359,46 @@ def compute_timelines(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]
                         arrival['gp'] += int(row.gp)
                         arrival['points'] += float(row.fpts)
 
+        timelines[pid] = timeline
+
+    _trade_results(trades, timelines, rostered)
+    out = {}
+    for pid, timeline in timelines.items():
         used = {e['trade'] for e in timeline if e.get('trade')}
         out[pid] = {'events': [_clean(e) for e in timeline],
                     'trades': {t: _clean_trade(trades[t]) for t in used}}
     return out
+
+
+def _trade_results(trades: dict, timelines: dict[str, list[dict]], rostered: dict[str, bool]) -> None:
+    """What each side of a trade got out of it, on each item as `result`: a player's regular season with the
+    team that got him, until he left it (`ongoing` if he is still there); a pick, the same for the player
+    drafted with it, if that team used it (`traded_on` if it went on before the draft, with the team that
+    `drafted_by` it)."""
+    arrivals, drafted = {}, {}
+    for pid, timeline in timelines.items():
+        moves = [k for k, e in enumerate(timeline) if e['kind'] not in ('renamed', 'pick', 'pick-trade')]
+        for k, e in enumerate(timeline):
+            if 'periods' not in e:
+                continue
+            ongoing = bool(moves) and k == moves[-1] and rostered.get(pid, False)
+            stat = {'points': round(e['points'], 2), 'starts': e['starts'], 'gp': e['gp'], 'periods': e['periods'],
+                    'ongoing': ongoing}
+            if e['kind'] == 'trade':
+                arrivals[(e['trade'], pid)] = stat
+            elif e['kind'] == 'draft':
+                drafted[pid] = (franchise(e['team'], _when(e)), stat)
+    for set_id, trade in trades.items():
+        when = trade['date']
+        for item in trade['items']:
+            if item['kind'] == 'player' and item['player_id']:
+                item['result'] = arrivals.get((set_id, item['player_id']))
+            elif item['kind'] == 'pick' and item.get('became'):
+                team, stat = drafted.get(item['became']['player_id'], (None, None))
+                if team is not None and team == franchise(item['to'], when):
+                    item['result'] = stat
+                elif team is not None:
+                    item['result'] = {'traded_on': True, 'drafted_by': team}
 
 
 def _became(pick: dict | None, names: dict) -> dict | None:
