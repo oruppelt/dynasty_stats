@@ -194,7 +194,8 @@ players" below).
   longest-serving, journeymen, best value, share of team points, and
   roster continuity ("Kept" in Teams).
 - Next:
-  - Add trades and draft picks to the player page (lineage, section 3).
+  - Done: the player page's **timeline** (lineage, section 3). Next: draft
+    picks as assets (whose pick a drafted player was).
   - Note, not planned: franchises are matched by team name. In 2025-26 the
     Lakers and Clippers swapped rosters (each kept none of its own players).
     The commissioner told them beforehand that a mapping wouldn't be a
@@ -407,9 +408,19 @@ rosters:
    per player, and an event table (drafted, traded, claimed, dropped, with
    date, period, from, to). Check it against `getDraftPicks` (current
    owners) and the rosters (a player is on the team the events say).
+   *Done for players (2026-11-15): `pipeline/lineage.py` replays each
+   player's moves on the rosters (the rules of `check_transactions.py`)
+   into a timeline on his page: drafted, signed, re-signed (the team that
+   dropped him), traded (the whole trade attached), dropped, and the
+   Lakers/Clippers name swap as a marker. Every roster is explained
+   except the 184 players already on a roster in 2019-20 period 1
+   ("joined"). Each arrival has the contract he played on and his
+   regular-season periods, starts and points there. Picks are still text
+   in the trades ("2022 round 1 pick (Atlanta Hawks)"); next is tying a
+   pick to the player drafted with it.*
 3. **Player seasons:** per player, season and team: periods on the
    roster, starts, points, contract and salary.
 4. **On the site:** a player page (career by season and team, how he
-   arrived, every move), a pick page (its path), a trade page (the trade
+   arrived, every move: *done*), a pick page (its path), a trade page (the trade
    tree and the points each side got), and links from rosters and the
    record book. The player records above build on the same tables.

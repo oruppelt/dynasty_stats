@@ -298,6 +298,18 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-15: Player timeline (branch `lineage/player-timeline`)
+- Players → Player gets a **Timeline**: every move, newest first (drafted
+  with round and pick, signed with the bid, re-signed, traded, dropped).
+  Each arrival shows the contract he played on and his points, starts and
+  periods with that team; a trade opens to show what each team got, and a
+  player in it opens his page. The 6 latest moves first, then "Show all".
+- The page header: the current team "since <date> (traded/signed/...)", and
+  a "This season" stat.
+- Data: `pipeline/lineage.py` (from `pipeline/data/transactions/` and the
+  player cache), `timeline` and `trades` in `data/players/player/<id>.json`;
+  tests in `pipeline/tests/test_lineage.py`.
+
 ### 2026-11-15: Player page and more player records (branch `players/page`)
 - Players → **Player**: search any player ever on a roster; career totals,
   season by season (team, points, starts, games, playoffs, bench, periods
