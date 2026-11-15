@@ -1,0 +1,351 @@
+"""
+Players: each team's roster and every player's fantasy points, per period.
+
+Source: Fantrax's private `getTeamRosterInfo` (needs FANTRAX_COOKIE, like the
+scores), one request per team per period, with the period's stats only
+(`BY_PERIOD`; without it Fantrax gives season-to-date totals). The stats are
+"NBA" stats (statsType 1): every rostered player's points that period,
+bench and reserve too. A player in the lineup (status `active`) scored those
+points for the team: the active players add up to the team's score (checked
+on 2025-26 and 2023-24; 2023-24 differs where the commissioner adjusted a
+score, see fantrax.SCORE_LAYOUTS).
+
+Fetching every period of every season is about 1,400 requests a season, so
+the rows are kept in pipeline/data/players/<season>.csv (committed) and only
+periods not there yet are fetched, plus the latest few again for stat
+corrections while a season is in progress (`update_cache`). Only the teams
+that played a period are fetched (a team out of the playoffs has no game).
+
+From the rows, `compute_players` makes the season's player lists for the
+site (data/players/<season>.json), regular season only, like the rest of
+the season's records.
+"""
+import json
+import urllib.parse
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+
+import pandas as pd
+
+import fantrax
+
+CACHE_DIR = Path(__file__).resolve().parent / 'data' / 'players'
+COLUMNS = ['period', 'team', 'player_id', 'player', 'status', 'slot', 'fpts', 'gp', 'min', 'salary', 'contract']
+# Fantrax's roster statuses: in the lineup, on the bench, injured reserve, minors
+STATUSES = {'1': 'active', '2': 'bench', '3': 'ir', '9': 'minors'}
+# Lineup slots (an active player's posId)
+SLOTS = {'300': 'PG', '301': 'SG', '302': 'G', '303': 'SF', '304': 'PF', '305': 'C', '306': 'F', '307': 'Flx'}
+# Periods fetched again on every run while a season is in progress (stat corrections)
+REFRESH_RECENT = 2
+WORKERS = 4
+TOP_N = 25
+
+
+def fetch_roster(league_id: str, cookie: str, team_id: str, period: int, season_code: str | None = None) -> dict:
+    """A team's roster with each player's points for one period (`season_code`: see `by_period_code`)."""
+    data = {'leagueId': league_id, 'teamId': team_id, 'period': str(period), 'view': 'STATS',
+            'statsType': '1', 'scoringCategoryType': '5', 'timeframeTypeCode': 'BY_PERIOD'}
+    if season_code:
+        data['seasonOrProjection'] = season_code
+    request = urllib.request.Request(
+        f'{fantrax.PRIVATE_API}?{urllib.parse.urlencode({"leagueId": league_id})}',
+        data=json.dumps({'msgs': [{'method': 'getTeamRosterInfo', 'data': data}]}).encode(),
+        headers={'Content-Type': 'application/json', 'Cookie': cookie},
+    )
+    return fantrax.check_private_response(fantrax._get_json(request))
+
+
+def by_period_code(roster: dict) -> str:
+    """The league season's "by period" stats code (e.g. SEASON_41l_BY_PERIOD), from any roster response.
+
+    The code differs per season; the response shows the season-to-date one
+    (SEASON_41l_YEAR_TO_DATE) and lists the others.
+    """
+    shown = roster['displayedSelections']['displayedSeasonOrProjection']['code']
+    code = shown.rsplit('_', 3)[0] + '_BY_PERIOD' if shown.endswith('_YEAR_TO_DATE') else shown
+    listed = {s['code'] for s in roster['displayedLists']['seasonOrProjections']}
+    if not code.endswith('_BY_PERIOD') or code not in listed:
+        raise fantrax.FantraxError(f'No by-period stats for this season (shown: {shown}); the Fantrax response may have changed.')
+    return code
+
+
+def _number(text) -> float:
+    text = str(text or '').replace(',', '').replace('$', '')
+    return float(text) if text else 0.0
+
+
+def _minutes(text) -> float:
+    """Minutes played: '32:55' (minutes:seconds) or a plain number."""
+    text = str(text or '')
+    if ':' in text:
+        minutes, seconds = text.split(':')
+        return round(int(minutes.replace(',', '')) + int(seconds) / 60, 2)
+    return _number(text)
+
+
+def parse_roster(roster: dict, period: int, team: str) -> list[dict]:
+    """One row per player on the roster (COLUMNS). Empty slots and the totals row are left out."""
+    shown = roster['displayedSelections']
+    if shown.get('displayedPeriod') != period or shown['displayedSeasonOrProjection'].get('timeframeTypeCode') != 'BY_PERIOD':
+        raise fantrax.FantraxError(f'{team}, period {period}: Fantrax sent period {shown.get("displayedPeriod")} '
+                                   f'({shown["displayedSeasonOrProjection"].get("name")}) instead.')
+    rows = []
+    for table in roster['tables']:
+        cells = table['header']['cells']
+        column = {c.get('key'): i for i, c in enumerate(cells)} | {c.get('shortName'): i for i, c in enumerate(cells)}
+        missing = [c for c in ('fpts', 'salary', 'contract', 'GP', 'MIN') if c not in column]
+        if missing:
+            raise fantrax.FantraxError(f'{team}, period {period}: roster columns {missing} missing; the Fantrax response may have changed.')
+        for row in table['rows']:
+            scorer = row.get('scorer') or {}
+            if not scorer.get('scorerId'):
+                continue
+            if row.get('statusId') not in STATUSES:
+                raise fantrax.FantraxError(f'{team}, period {period}: unknown roster status {row.get("statusId")}.')
+            status = STATUSES[row['statusId']]
+            content = [c.get('content') for c in row['cells']]
+            rows.append({
+                'period': period,
+                'team': team,
+                'player_id': scorer['scorerId'],
+                'player': scorer.get('name', ''),
+                'status': status,
+                'slot': SLOTS.get(str(row.get('posId')), '') if status == 'active' else '',
+                'fpts': _number(content[column['fpts']]),
+                'gp': int(_number(content[column['GP']])),
+                'min': _minutes(content[column['MIN']]),
+                'salary': int(_number(content[column['salary']])),
+                'contract': content[column['contract']] or '',
+            })
+    return rows
+
+
+def cache_path(season: str, cache_dir: Path = CACHE_DIR) -> Path:
+    return cache_dir / f'{season}.csv'
+
+
+def read_cache(season: str, cache_dir: Path = CACHE_DIR) -> pd.DataFrame:
+    path = cache_path(season, cache_dir)
+    if not path.exists():
+        return pd.DataFrame(columns=COLUMNS)
+    return pd.read_csv(path, dtype={'player_id': str, 'contract': str, 'slot': str}, keep_default_na=False)
+
+
+def _sorted(rows: pd.DataFrame) -> pd.DataFrame:
+    order = {s: i for i, s in enumerate(STATUSES.values())}
+    return (rows.assign(_status=rows['status'].map(order))
+            .sort_values(['period', 'team', '_status', 'fpts', 'player_id'], ascending=[True, True, True, False, True])
+            .drop(columns='_status').reset_index(drop=True)[COLUMNS])
+
+
+def update_cache(season: str, league_id: str, cookie: str, played: dict[int, set[str]],
+                 refresh: int = REFRESH_RECENT, cache_dir: Path = CACHE_DIR, fetch=fetch_roster,
+                 workers: int = WORKERS, log=print) -> pd.DataFrame:
+    """Fetch the periods missing from the season's cache (and the latest `refresh` again); returns every row.
+
+    `played`: each played period and the teams that played it (regular season
+    and playoffs). The file is only rewritten when the rows change.
+    """
+    cached = read_cache(season, cache_dir)
+    have = set(cached['period'].astype(int))
+    recent = sorted(p for p in played if p in have)[-refresh:] if refresh else []
+    todo = sorted({p for p in played if p not in have} | set(recent))
+    if not todo:
+        return cached
+
+    info = fantrax.fetch_league_info(league_id)
+    team_ids = {team['name'].strip(): team_id for team_id, team in info['teamInfo'].items()}
+    jobs = [(p, t) for p in todo for t in sorted(played[p])]
+    unknown = {t for _, t in jobs if t not in team_ids}
+    if unknown:
+        raise fantrax.FantraxError(f'Teams not in the league: {sorted(unknown)}')
+    first = fetch(league_id, cookie, team_ids[jobs[0][1]], jobs[0][0])
+    code = by_period_code(first)
+
+    def job(pt):
+        period, team = pt
+        return parse_roster(fetch(league_id, cookie, team_ids[team], period, code), period, team)
+
+    log(f'{season}: fetching rosters for {len(todo)} periods ({len(jobs)} requests)...')
+    with ThreadPoolExecutor(workers) as pool:
+        fetched = [row for rows in pool.map(job, jobs) for row in rows]
+
+    new = pd.DataFrame(fetched, columns=COLUMNS)
+    kept = cached[~cached['period'].astype(int).isin(todo)]
+    rows = _sorted(pd.concat([kept, new], ignore_index=True) if len(kept) else new)
+    path = cache_path(season, cache_dir)
+    text = rows.to_csv(index=False)
+    if not path.exists() or path.read_text() != text:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text)
+    return rows
+
+
+def check_scores(rows: pd.DataFrame, games: pd.DataFrame) -> list[tuple[int, str, float, float]]:
+    """(period, team, active players' points, score) wherever they differ: a commissioner's score adjustment,
+    or a sign that the rows are wrong."""
+    scores = pd.concat([
+        games[['Match', 'Team', 'Score']].set_axis(['period', 'team', 'score'], axis=1),
+        games[['Match', 'Opponent', 'OppScore']].set_axis(['period', 'team', 'score'], axis=1),
+    ])
+    active = rows[rows['status'] == 'active'].groupby(['period', 'team'])['fpts'].sum().rename('points').reset_index()
+    both = scores.merge(active, on=['period', 'team'], how='left').fillna({'points': 0.0})
+    off = both[(both['points'] - both['score']).abs() > 0.001]
+    return [(int(r.period), r.team, float(r.points), float(r.score)) for r in off.itertuples()]
+
+
+def _performance(row) -> dict:
+    entry = {
+        'period': int(row.period), 'team': row.team, 'player_id': row.player_id, 'player': row.player,
+        'fpts': float(row.fpts), 'gp': int(row.gp),
+    }
+    season = getattr(row, 'season', None)
+    return {'season': season, **entry} if season else entry
+
+
+def _top_periods(df: pd.DataFrame, n: int) -> list[dict]:
+    """The `n` biggest single-period scores; equal points: the earlier period first, then by team and player."""
+    keys = [k for k in ('season', 'period') if k in df.columns]
+    df = df.sort_values(['fpts', *keys, 'team', 'player'], ascending=[False, *[True] * len(keys), True, True], kind='stable')
+    return [_performance(row) for row in df.head(n).itertuples()]
+
+
+def _leaders(active: pd.DataFrame, n: int, by: tuple[str, ...] = ('player_id',)) -> list[dict]:
+    """Points scored in lineups, per player (or per `by`, e.g. season and player): the top `n`, with the
+    teams in the order the player scored for them, starts (periods in a lineup), games played in them, and
+    for several seasons the number of seasons."""
+    if active.empty:
+        return []
+    order = [k for k in ('season', 'period') if k in active.columns]
+    active = active.sort_values(order)
+    groups = active.groupby(list(by), sort=False)
+    table = pd.DataFrame({
+        'player': groups['player'].last(),
+        'points': groups['fpts'].sum(),
+        'starts': groups.size(),
+        'gp': groups['gp'].sum(),
+        'teams': groups['team'].unique(),
+        **({'seasons': groups['season'].nunique()} if 'season' in active.columns and 'season' not in by else {}),
+    }).reset_index().sort_values(['points', 'player'], ascending=[False, True], kind='stable').head(n)
+    leaders = []
+    for row in table.itertuples():
+        entry = {key: getattr(row, key) for key in by}
+        entry.update({'player_id': row.player_id, 'player': row.player, 'teams': list(row.teams),
+                      'points': round(float(row.points), 2), 'starts': int(row.starts), 'gp': int(row.gp)})
+        if hasattr(row, 'seasons'):
+            entry['seasons'] = int(row.seasons)
+        leaders.append(entry)
+    return leaders
+
+
+def _split(rows: pd.DataFrame, periods: set[int]) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """The lineup and bench rows of `periods` (bench: not injured reserve or minors)."""
+    r = rows[rows['period'].astype(int).isin(periods)].copy()
+    r['period'] = r['period'].astype(int)
+    return r[r['status'] == 'active'], r[r['status'] == 'bench']
+
+
+PERIOD_BEST = 5
+PERIOD_BENCH = 3
+TEAM_PLAYERS = 5
+PLAYOFF_TOP_N = 10
+
+
+def compute_players(rows: pd.DataFrame, regular_periods: set[int], playoff_periods: set[int] = frozenset(),
+                    top_n: int = TOP_N) -> dict:
+    """The season's player lists. Regular season, apart from `playoffs`.
+
+    - best_periods: the most points by a player in the lineup in one period.
+    - best_bench: the most points by a player left on the bench (not injured
+      reserve or minors) in one period.
+    - leaders: season points scored for a fantasy team (lineup only), with
+      starts (periods in a lineup) and games played in them; a player traded
+      during the season lists every team they scored for.
+    - teams: per team, its points, the points its bench scored, its top
+      scorer, its top players and its best player period.
+    - periods: per period, its best players, best bench players and each
+      team's top scorer (for the recap).
+    - playoffs: the best playoff periods and the playoff leaders; null
+      before the playoffs.
+    Equal values: the earlier period first, then by team and player.
+    """
+    active, bench = _split(rows, regular_periods)
+
+    teams = []
+    for team, mine in active.groupby('team'):
+        top_players = _leaders(mine, TEAM_PLAYERS)
+        teams.append({
+            'team': team,
+            'points': round(float(mine['fpts'].sum()), 2),
+            'bench_points': round(float(bench.loc[bench['team'] == team, 'fpts'].sum()), 2),
+            'top_scorer': {k: top_players[0][k] for k in ('player_id', 'player', 'points')},
+            'top_players': [{k: p[k] for k in ('player_id', 'player', 'points', 'starts', 'gp')} for p in top_players],
+            'best_period': _top_periods(mine, 1)[0],
+        })
+
+    periods = []
+    for period, played in active.groupby('period'):
+        best_by_team = played.sort_values(['fpts', 'player'], ascending=[False, True], kind='stable').groupby('team').head(1)
+        periods.append({
+            'period': int(period),
+            'best': _top_periods(played, PERIOD_BEST),
+            'bench': _top_periods(bench[bench['period'] == period], PERIOD_BENCH),
+            'team_top': {row.team: {'player_id': row.player_id, 'player': row.player, 'fpts': float(row.fpts), 'gp': int(row.gp)}
+                         for row in best_by_team.sort_values('team').itertuples()},
+        })
+
+    playoff_active, _ = _split(rows, set(playoff_periods))
+    return {
+        'meta': {
+            'periods': len(set(active['period'])), 'players': int(active['player_id'].nunique()),
+            'regular_periods': sorted(int(p) for p in regular_periods),
+            'playoff_periods': sorted(int(p) for p in playoff_periods),
+        },
+        'best_periods': _top_periods(active, top_n),
+        'best_bench': _top_periods(bench, top_n),
+        'leaders': _leaders(active, top_n),
+        'teams': teams,
+        'periods': periods,
+        'playoffs': {
+            'best_periods': _top_periods(playoff_active, PLAYOFF_TOP_N),
+            'leaders': _leaders(playoff_active, PLAYOFF_TOP_N),
+        } if len(playoff_active) else None,
+    }
+
+
+FRANCHISE_TOP_N = 10
+
+
+def compute_alltime_players(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]], top_n: int = TOP_N) -> dict:
+    """Player records over every season: (season, rows, regular periods, playoff periods), oldest first or not.
+
+    - best_periods, best_bench: the biggest single-period scores ever, in a
+      lineup and on a bench (regular season).
+    - best_seasons: a player's points in one regular season (every team).
+    - career: regular-season points over every season, with the seasons
+      and teams.
+    - franchises: per team, its all-time top scorers (points for that team).
+    - playoffs: the best playoff periods and the career playoff leaders.
+    Franchises are matched by team name (team IDs change every season).
+    """
+    regular, benches, playoff = [], [], []
+    for season, rows, regular_periods, playoff_periods in seasons:
+        active, bench = _split(rows, regular_periods)
+        regular.append(active.assign(season=season))
+        benches.append(bench.assign(season=season))
+        playoff.append(_split(rows, playoff_periods)[0].assign(season=season))
+    regular, benches, playoff = (pd.concat(frames, ignore_index=True) for frames in (regular, benches, playoff))
+    return {
+        'meta': {'seasons': sorted({s for s, *_ in seasons})},
+        'best_periods': _top_periods(regular, top_n),
+        'best_bench': _top_periods(benches, top_n),
+        'best_seasons': _leaders(regular, top_n, by=('season', 'player_id')),
+        'career': _leaders(regular, top_n),
+        'franchises': {team: [{k: v for k, v in p.items() if k != 'teams'} for p in _leaders(mine, FRANCHISE_TOP_N)]
+                       for team, mine in sorted(regular.groupby('team'), key=lambda t: t[0])},
+        'playoffs': {
+            'best_periods': _top_periods(playoff, PLAYOFF_TOP_N),
+            'career': _leaders(playoff, PLAYOFF_TOP_N),
+        },
+    }

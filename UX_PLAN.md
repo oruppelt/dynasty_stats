@@ -298,6 +298,27 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-15: Player records, My Team and Recap players, playoffs (branch `players/stats`)
+- Players → All-time: franchise scorers (a team picker, your team first),
+  career leaders, best seasons, best periods ever (lineup, bench,
+  playoffs), playoff career leaders (`data/players/alltime.json`).
+- Playoff leaders and playoff periods in Leaders and Best periods.
+- My Team: "Your players" (top 5 scorers, best period, the latest
+  period's top scorer, bench points and rank).
+- Recap: "Players of the period" (top 5, the best bench games, your top
+  scorer). Not in the PDF yet.
+- 2019-20 period 29 left out of the player stats (`skip_player_periods`).
+
+### 2026-11-15: Players section (branch `players/stats`)
+- Player data from Fantrax: every team's roster with each player's points
+  per period, all seasons from 2019-20 (`pipeline/players.py`, cached in
+  `pipeline/data/players/`). The lineup's points match the team scores.
+- A new top-level **Players** section: Leaders (season points for a
+  fantasy team, starts, games, per game), Best periods (in the lineup and
+  left on the bench), Teams (lineup and bench points, top scorer).
+- Roadmap: what Fantrax has for trades, claims, drafts and picks, and the
+  player lineage goal (ROADMAP.md, section 3).
+
 ### 2026-10-26: Top-5 periods instead of period highs (branch `ux/top5-periods`)
 - Season → Records and History → Records: "Most period highs" (the single
   best score of 30) becomes **Most top-5 periods**: periods with one of the

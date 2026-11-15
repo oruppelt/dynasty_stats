@@ -8,6 +8,7 @@ import { WidgetSkeleton } from './WidgetSkeleton'
 import { ErrorState } from './ErrorState'
 import { GameList, RecapHighlights } from './RecapParts'
 import { RecapReport } from './RecapReport'
+import { PeriodPlayersCard } from './PlayerParts'
 import { LeagueData, PeriodResult, useLeagueData } from '@/lib/league-data'
 import { Game, Recap, periodRecap, resultsByPeriod } from '@/lib/season'
 import { periodDates } from '@/lib/schedule'
@@ -154,6 +155,8 @@ export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
       </Card>
 
       <RecapHighlights recap={recap} className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" />
+
+      <PeriodPlayersCard period={period} selectedTeam={selectedTeam} />
 
       <Card>
         <CardHeader>

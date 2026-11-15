@@ -62,6 +62,15 @@ the team's luck through that period, from the games played so far), and
 on every run): titles, playoff finishes, career totals by rate, career
 head-to-head and all-time records.
 `playoffs` (`pipeline/playoffs.py`): Swiss stage, knockout, champion.
+Players (`pipeline/players.py`): every team's roster and each player's
+points per period (Fantrax `getTeamRosterInfo`, one request per team and
+period) are kept in `pipeline/data/players/<season>.csv` (committed; only
+new periods are fetched, plus the latest two again while a season is in
+progress); `data/players/<season>.json` has the site's lists (leaders, best
+periods in the lineup and on the bench, per team, per period for the recap,
+playoffs), read by `usePlayers()` in `lib/players.ts`;
+`data/players/alltime.json` (rebuilt from the cache on every run) has the
+all-time records, read by `useAllTimePlayers()`. `--no-players` skips them.
 `schedule` (`fantrax.schedule_from_fantrax`, null for sheet data): period
 dates and the regular-season games still to play (`lib/schedule.ts`).
 The site reads it through `useLeagueData()` in `lib/league-data.ts` (one
@@ -90,10 +99,10 @@ JSON name their team under `Team`; every other key is a team name.
 
 ### Frontend
 - `app/page.tsx` → `components/layout/Header.tsx` (team picker) and
-  `components/Dashboard.tsx` (six sections: My Team, Recap, Standings (Table,
+  `components/Dashboard.tsx` (seven sections: My Team, Recap, Standings (Table,
   Form, Playoffs), Season (Rank & luck, Points, Records), Matchups (Rivalry,
-  All vs All, Luck, What if), History (Champions, Franchises, Head to head,
-  Records)) → `components/widgets/*`, each reading `useLeagueData()`, or
+  All vs All, Luck, What if), Players (Leaders, Best periods, Teams, All-time),
+  History (Champions, Franchises, Head to head, Records)) → `components/widgets/*`, each reading `useLeagueData()`, or
   for History (every season, not the picked one) `useAllTime()` in
   `lib/alltime.ts`. Add a view to a section in `SECTIONS` rather than a new
   top-level tab.

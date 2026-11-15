@@ -59,12 +59,12 @@ jobs:
         # Also after a failed build: the seasons that did build are kept (the run still shows as failed)
         if: ${{ !cancelled() }}
         run: |
-          if [ -z "$(git status --porcelain -- stats-app/public/data)" ]; then
+          if [ -z "$(git status --porcelain -- stats-app/public/data pipeline/data)" ]; then
             echo "Data unchanged; nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add stats-app/public/data
+          git add stats-app/public/data pipeline/data
           git commit -m "Update league data"
           git push
