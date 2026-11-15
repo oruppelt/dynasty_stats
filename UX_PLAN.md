@@ -298,6 +298,13 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-15: All-time player records with playoffs (branch `players/alltime-playoffs`)
+- Players → All-time: a "Regular season / With playoffs" toggle. With
+  playoffs, the franchise scorers, career leaders, best seasons and best
+  periods count playoff lineup points too (`with_playoffs` in
+  `data/players/alltime.json`); the bench list stays regular season.
+- The all-time playoff lists (periods, career leaders) show 15, not 10.
+
 ### 2026-11-15: Player records, My Team and Recap players, playoffs (branch `players/stats`)
 - Players → All-time: franchise scorers (a team picker, your team first),
   career leaders, best seasons, best periods ever (lineup, bench,
