@@ -125,7 +125,9 @@ def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame,
 
 def write_players_alltime(config: dict, out: Path) -> None:
     """data/players/alltime.json, every season's player records together (players.compute_alltime_players),
-    from the cached rows and each season's periods (the season's player file); written when it changes."""
+    and the player pages: data/players/index.json (the search list) and data/players/player/<id>.json
+    (players.compute_player_pages). From the cached rows and each season's periods (the season's player
+    file); each file is written only when it changes."""
     seasons = []
     for s in config['seasons']:
         path = out / 'players' / f'{s["id"]}.json'
@@ -135,10 +137,21 @@ def write_players_alltime(config: dict, out: Path) -> None:
         seasons.append((s['id'], players.read_cache(s['id']), set(meta['regular_periods']), set(meta['playoff_periods'])))
     if not seasons:
         return
-    path = out / 'players' / 'alltime.json'
-    data = to_json(players.compute_alltime_players(seasons))
-    if not path.exists() or path.read_text() != data:
-        path.write_text(data)
+    _write_if_changed(out / 'players' / 'alltime.json', to_json(players.compute_alltime_players(seasons)))
+    index, pages = players.compute_player_pages(seasons)
+    _write_if_changed(out / 'players' / 'index.json', to_json(index))
+    page_dir = out / 'players' / 'player'
+    page_dir.mkdir(parents=True, exist_ok=True)
+    for pid, page in pages.items():
+        _write_if_changed(page_dir / f'{pid}.json', to_json(page))
+    for stale in page_dir.glob('*.json'):
+        if stale.stem not in pages:
+            stale.unlink()
+
+
+def _write_if_changed(path: Path, text: str) -> None:
+    if not path.exists() or path.read_text() != text:
+        path.write_text(text)
 
 
 def write_index(config: dict, out: Path) -> None:

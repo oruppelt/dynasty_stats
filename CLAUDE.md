@@ -70,7 +70,7 @@ progress); `data/players/<season>.json` has the site's lists (leaders, best
 periods in the lineup and on the bench, per team, per period for the recap,
 playoffs), read by `usePlayers()` in `lib/players.ts`;
 `data/players/alltime.json` (rebuilt from the cache on every run) has the
-all-time records (regular season, and again `with_playoffs`), read by `useAllTimePlayers()`. `--no-players` skips them.
+all-time records (regular season, and again `with_playoffs`; plus longest-serving, journeymen, best value, team share and roster continuity), read by `useAllTimePlayers()`; `data/players/index.json` and `data/players/player/<id>.json` (`compute_player_pages`) feed the player page (Players → Player, `?player=<id>`; `lib/selected-player.ts`, and `PlayerName` makes any name a link to it). `--no-players` skips them.
 `schedule` (`fantrax.schedule_from_fantrax`, null for sheet data): period
 dates and the regular-season games still to play (`lib/schedule.ts`).
 The site reads it through `useLeagueData()` in `lib/league-data.ts` (one
@@ -101,7 +101,7 @@ JSON name their team under `Team`; every other key is a team name.
 - `app/page.tsx` → `components/layout/Header.tsx` (team picker) and
   `components/Dashboard.tsx` (seven sections: My Team, Recap, Standings (Table,
   Form, Playoffs), Season (Rank & luck, Points, Records), Matchups (Rivalry,
-  All vs All, Luck, What if), Players (Leaders, Best periods, Teams, All-time),
+  All vs All, Luck, What if), Players (Leaders, Best periods, Teams, All-time, Player),
   History (Champions, Franchises, Head to head, Records)) → `components/widgets/*`, each reading `useLeagueData()`, or
   for History (every season, not the picked one) `useAllTime()` in
   `lib/alltime.ts`. Add a view to a section in `SECTIONS` rather than a new

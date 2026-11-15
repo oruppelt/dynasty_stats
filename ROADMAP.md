@@ -189,9 +189,15 @@ players" below).
   periods in Leaders and Best periods, **Your players** on My Team (top
   scorers, best period, the latest period's top scorer, bench) and
   **Players of the period** in the Recap.
+- Done since: a **player page** (Players → Player: each season's team,
+  points, starts, playoffs, bench, salary and contract; best periods),
+  longest-serving, journeymen, best value, share of team points, and
+  roster continuity ("Kept" in Teams).
 - Next:
-  - A player page (each season: team, points, contract), the start of the
-    lineage (section 3).
+  - Add trades and draft picks to the player page (lineage, section 3).
+  - Franchise renames: franchises are matched by team name, but in 2025-26
+    the Lakers and Clippers swapped rosters (each kept none of its own
+    players), so their histories may be crossed. To confirm with the league.
   - The Recap's PDF doesn't have the players yet.
   - Lower priority: points left on the bench as lost games (the best
     possible lineup, which needs each player's eligible positions per

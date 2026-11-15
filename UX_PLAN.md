@@ -298,6 +298,18 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-15: Player page and more player records (branch `players/page`)
+- Players → **Player**: search any player ever on a roster; career totals,
+  season by season (team, points, starts, games, playoffs, bench, periods
+  on the roster, salary, contract) and the 5 best periods
+  (`data/players/index.json`, `data/players/player/<id>.json`). Any player
+  name on the site opens it; `?player=<id>` links to it.
+- All-time: longest-serving (most starts for a franchise; also a
+  Points/Starts switch on Franchise scorers), journeymen (most franchises),
+  best value (points per $1M of salary), share of team points.
+- Teams: "Kept", the share of lineup points by players on the roster at
+  the end of last regular season.
+
 ### 2026-11-15: All-time player records with playoffs (branch `players/alltime-playoffs`)
 - Players → All-time: a "Regular season / With playoffs" toggle. With
   playoffs, the franchise scorers, career leaders, best seasons and best

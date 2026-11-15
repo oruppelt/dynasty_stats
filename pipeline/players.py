@@ -316,6 +316,8 @@ def compute_players(rows: pd.DataFrame, regular_periods: set[int], playoff_perio
 
 FRANCHISE_TOP_N = 10
 ALLTIME_PLAYOFF_TOP_N = 15
+# Best value and share of team points: a season needs this many starts (about a third of a regular season)
+VALUE_MIN_STARTS = 12
 
 
 def _records(active: pd.DataFrame, top_n: int) -> dict:
@@ -343,20 +345,167 @@ def compute_alltime_players(seasons: list[tuple[str, pd.DataFrame, set[int], set
     - playoffs: the best playoff periods and the career playoff leaders.
     Franchises are matched by team name (team IDs change every season).
     """
-    regular, benches, playoff = [], [], []
+    regular, benches, playoff, last_rosters = [], [], [], {}
     for season, rows, regular_periods, playoff_periods in seasons:
         active, bench = _split(rows, regular_periods)
         regular.append(active.assign(season=season))
         benches.append(bench.assign(season=season))
         playoff.append(_split(rows, playoff_periods)[0].assign(season=season))
+        if regular_periods:
+            last = rows[rows['period'].astype(int) == max(regular_periods)]
+            last_rosters[season] = set(zip(last['team'], last['player_id']))
     regular, benches, playoff = (pd.concat(frames, ignore_index=True) for frames in (regular, benches, playoff))
     return {
         'meta': {'seasons': sorted({s for s, *_ in seasons})},
         **_records(regular, top_n),
         'best_bench': _top_periods(benches, top_n),
         'with_playoffs': _records(pd.concat([regular, playoff], ignore_index=True), top_n),
+        **_more_records(regular, top_n),
+        'continuity': _continuity(regular, last_rosters),
         'playoffs': {
             'best_periods': _top_periods(playoff, ALLTIME_PLAYOFF_TOP_N),
             'career': _leaders(playoff, ALLTIME_PLAYOFF_TOP_N),
         },
     }
+
+
+def _more_records(regular: pd.DataFrame, top_n: int) -> dict:
+    """Regular-season lineup records beyond points:
+
+    - longest_serving: most starts for one franchise (player and team).
+    - franchise_starts: per team, its 10 players with the most starts.
+    - journeymen: most franchises a player started for.
+    - best_value: a season's points per $1M of salary (salary in the
+      player's last start that season; at least VALUE_MIN_STARTS starts).
+    - team_share: a player's share of a team's lineup points in a season (at
+      least VALUE_MIN_STARTS starts there).
+    """
+    if regular.empty:
+        return {'longest_serving': [], 'franchise_starts': {}, 'journeymen': [], 'best_value': [], 'team_share': []}
+    regular = regular.sort_values(['season', 'period'])
+
+    stints = regular.groupby(['team', 'player_id'], sort=False).agg(
+        player=('player', 'last'), starts=('fpts', 'size'), points=('fpts', 'sum'), gp=('gp', 'sum'),
+        seasons=('season', 'nunique'), first=('season', 'first'), last=('season', 'last')).reset_index()
+    stints = stints.sort_values(['starts', 'points'], ascending=False, kind='stable')
+
+    def stint(row) -> dict:
+        return {'player_id': row.player_id, 'player': row.player, 'team': row.team, 'starts': int(row.starts),
+                'points': round(float(row.points), 2), 'gp': int(row.gp), 'seasons': int(row.seasons),
+                'first': row.first, 'last': row.last}
+
+    travel = regular.groupby('player_id', sort=False).agg(
+        player=('player', 'last'), teams=('team', 'unique'), points=('fpts', 'sum'), starts=('fpts', 'size'),
+        seasons=('season', 'nunique')).reset_index()
+    travel['count'] = travel['teams'].map(len)
+    travel = travel[travel['count'] > 1].sort_values(['count', 'points'], ascending=False, kind='stable').head(top_n)
+
+    seasons = regular.groupby(['season', 'player_id'], sort=False).agg(
+        player=('player', 'last'), teams=('team', 'unique'), points=('fpts', 'sum'), starts=('fpts', 'size'),
+        salary=('salary', 'last'), contract=('contract', 'last')).reset_index()
+    seasons = seasons[(seasons['starts'] >= VALUE_MIN_STARTS) & (seasons['salary'] > 0)].copy()
+    seasons['per_million'] = seasons['points'] / (seasons['salary'] / 1e6)
+    seasons = seasons.sort_values(['per_million', 'points'], ascending=False, kind='stable').head(top_n)
+
+    team_points = regular.groupby(['season', 'team'])['fpts'].sum().rename('team_points')
+    shares = regular.groupby(['season', 'team', 'player_id'], sort=False).agg(
+        player=('player', 'last'), points=('fpts', 'sum'), starts=('fpts', 'size')).reset_index()
+    shares = shares.join(team_points, on=['season', 'team'])
+    shares['share'] = shares['points'] / shares['team_points']
+    shares = shares[shares['starts'] >= VALUE_MIN_STARTS]
+    shares = shares.sort_values(['share', 'points'], ascending=False, kind='stable').head(top_n)
+
+    return {
+        'longest_serving': [stint(r) for r in stints.head(top_n).itertuples()],
+        'franchise_starts': {team: [stint(r) for r in mine.head(FRANCHISE_TOP_N).itertuples()]
+                             for team, mine in sorted(stints.groupby('team', sort=False), key=lambda t: t[0])},
+        'journeymen': [{'player_id': r.player_id, 'player': r.player, 'teams': list(r.teams),
+                        'points': round(float(r.points), 2), 'starts': int(r.starts), 'seasons': int(r.seasons)}
+                       for r in travel.itertuples()],
+        'best_value': [{'season': r.season, 'player_id': r.player_id, 'player': r.player, 'teams': list(r.teams),
+                        'points': round(float(r.points), 2), 'starts': int(r.starts), 'salary': int(r.salary),
+                        'contract': r.contract, 'per_million': round(float(r.per_million), 1)}
+                       for r in seasons.itertuples()],
+        'team_share': [{'season': r.season, 'team': r.team, 'player_id': r.player_id, 'player': r.player,
+                        'points': round(float(r.points), 2), 'starts': int(r.starts),
+                        'team_points': round(float(r.team_points), 2), 'share': round(float(r.share), 4)}
+                       for r in shares.itertuples()],
+    }
+
+
+def _continuity(regular: pd.DataFrame, last_rosters: dict[str, set[tuple[str, str]]]) -> dict[str, dict[str, float]]:
+    """Per season (apart from the first) and team: the share of its regular-season lineup points scored by
+    players who were on its roster in the last regular-season period of the season before."""
+    order = sorted(last_rosters)
+    result = {}
+    for before, season in zip(order, order[1:]):
+        mine = regular[regular['season'] == season]
+        if mine.empty:
+            continue
+        kept = pd.Series([(t, p) in last_rosters[before] for t, p in zip(mine['team'], mine['player_id'])],
+                         index=mine.index)
+        totals = mine.groupby('team')['fpts'].sum()
+        kept_points = mine[kept].groupby('team')['fpts'].sum().reindex(totals.index, fill_value=0.0)
+        result[season] = {team: round(float(kept_points[team] / totals[team]), 4) if totals[team] else 0.0
+                          for team in totals.index}
+    return result
+
+
+def compute_player_pages(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]]) -> tuple[list[dict], dict[str, dict]]:
+    """Every player's career, for the player page: (the search index, {player_id: page}).
+
+    A page lists each season and team the player was on a roster (any
+    status): periods there, starts, games and points in the lineup, bench
+    points (regular season), playoff starts and points, and the salary and
+    contract in the last period there. Plus the best 5 periods (lineup,
+    regular season or playoffs). The index has each player's name, latest
+    team and season, and career regular-season lineup points.
+    """
+    frames = []
+    for season, rows, regular_periods, playoff_periods in seasons:
+        r = rows.copy()
+        r['period'] = r['period'].astype(int)
+        r = r[r['period'].isin(regular_periods | playoff_periods)]
+        r['season'] = season
+        r['playoffs'] = r['period'].isin(playoff_periods)
+        frames.append(r)
+    if not frames:
+        return [], {}
+    rows = pd.concat(frames, ignore_index=True).sort_values(['season', 'period'], kind='stable')
+    rows['lineup'] = rows['status'] == 'active'
+    rows['regular_lineup'] = rows['lineup'] & ~rows['playoffs']
+    rows['playoff_lineup'] = rows['lineup'] & rows['playoffs']
+    rows['regular_bench'] = (rows['status'] == 'bench') & ~rows['playoffs']
+    for key in ('regular_lineup', 'playoff_lineup', 'regular_bench'):
+        rows[f'{key}_fpts'] = rows['fpts'].where(rows[key], 0.0)
+        rows[f'{key}_gp'] = rows['gp'].where(rows[key], 0)
+
+    stints = rows.groupby(['player_id', 'season', 'team'], sort=False).agg(
+        player=('player', 'last'), first_period=('period', 'min'), periods=('period', 'nunique'),
+        starts=('regular_lineup', 'sum'), gp=('regular_lineup_gp', 'sum'), points=('regular_lineup_fpts', 'sum'),
+        bench_points=('regular_bench_fpts', 'sum'), playoff_starts=('playoff_lineup', 'sum'),
+        playoff_points=('playoff_lineup_fpts', 'sum'), salary=('salary', 'last'), contract=('contract', 'last'),
+    ).reset_index().sort_values(['season', 'first_period'], kind='stable')
+
+    lineup = rows[rows['lineup']]
+    best = lineup.sort_values(['fpts', 'season', 'period'], ascending=[False, True, True], kind='stable') \
+        .groupby('player_id', sort=False).head(5)
+    best_by_player = {pid: [{**_performance(r), 'playoffs': bool(r.playoffs)} for r in group.itertuples()]
+                      for pid, group in best.groupby('player_id', sort=False)}
+
+    pages, index = {}, []
+    for pid, mine in stints.groupby('player_id', sort=False):
+        last = mine.iloc[-1]
+        page_seasons = [{
+            'season': r.season, 'team': r.team, 'periods': int(r.periods), 'starts': int(r.starts), 'gp': int(r.gp),
+            'points': round(float(r.points), 2), 'bench_points': round(float(r.bench_points), 2),
+            'playoff_starts': int(r.playoff_starts), 'playoff_points': round(float(r.playoff_points), 2),
+            'salary': int(r.salary), 'contract': r.contract,
+        } for r in mine.itertuples()]
+        points = round(float(mine['points'].sum()), 2)
+        pages[pid] = {'player_id': pid, 'player': last.player, 'seasons': page_seasons,
+                      'best_periods': best_by_player.get(pid, [])}
+        index.append({'player_id': pid, 'player': last.player, 'team': last.team, 'season': last.season,
+                      'points': points})
+    index.sort(key=lambda p: (-p['points'], p['player']))
+    return index, pages
