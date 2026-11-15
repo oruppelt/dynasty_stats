@@ -209,59 +209,6 @@
     }
   ],
   "trades": {
-    "ee6xgebckm9jocfk": {
-      "date": "2021-03-14",
-      "season": "2020-21",
-      "period": 25,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Washington Wizards",
-          "player_id": "03nwo",
-          "player": "Frank Kaminsky",
-          "label": "Frank Kaminsky"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Washington Wizards",
-          "label": "2022 round 2 pick (Washington Wizards)",
-          "became": {
-            "season": "2022-23",
-            "round": 2,
-            "pick": 3,
-            "overall": 33,
-            "player_id": "0621o",
-            "player": "Blake Wesley",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Boston Celtics",
-          "player_id": "05qwu",
-          "player": "Killian Tillie",
-          "label": "Killian Tillie"
-        },
-        {
-          "kind": "pick",
-          "from": "Washington Wizards",
-          "to": "Boston Celtics",
-          "label": "2022 round 1 pick (Washington Wizards)",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 3,
-            "overall": 3,
-            "player_id": "06210",
-            "player": "Paolo Banchero",
-            "certain": true
-          }
-        }
-      ]
-    },
     "exrf6pckkw4s6iuq": {
       "date": "2021-11-18",
       "season": "2021-22",
@@ -273,7 +220,14 @@
           "to": "Washington Wizards",
           "player_id": "02x1k",
           "player": "Justin Holiday",
-          "label": "Justin Holiday"
+          "label": "Justin Holiday",
+          "result": {
+            "points": 558.75,
+            "starts": 12,
+            "gp": 20,
+            "periods": 18,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -281,7 +235,14 @@
           "to": "Washington Wizards",
           "player_id": "027pf",
           "player": "Cory Joseph",
-          "label": "Cory Joseph"
+          "label": "Cory Joseph",
+          "result": {
+            "points": 157.75,
+            "starts": 4,
+            "gp": 8,
+            "periods": 4,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -289,7 +250,14 @@
           "to": "Chicago Bulls",
           "player_id": "04qrx",
           "player": "Josh Okogie",
-          "label": "Josh Okogie"
+          "label": "Josh Okogie",
+          "result": {
+            "points": 89.5,
+            "starts": 12,
+            "gp": 12,
+            "periods": 24,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -297,7 +265,14 @@
           "to": "Chicago Bulls",
           "player_id": "004zd",
           "player": "Marc Gasol",
-          "label": "Marc Gasol"
+          "label": "Marc Gasol",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -312,6 +287,13 @@
             "player_id": "0621o",
             "player": "Blake Wesley",
             "certain": true
+          },
+          "result": {
+            "points": 72.5,
+            "starts": 11,
+            "gp": 7,
+            "periods": 95,
+            "ongoing": false
           }
         },
         {
@@ -327,6 +309,85 @@
             "player_id": "06cdd",
             "player": "Andre Jackson",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
+          }
+        }
+      ]
+    },
+    "ee6xgebckm9jocfk": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "03nwo",
+          "player": "Frank Kaminsky",
+          "label": "Frank Kaminsky",
+          "result": {
+            "points": 14.5,
+            "starts": 1,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "0621o",
+            "player": "Blake Wesley",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "05qwu",
+          "player": "Killian Tillie",
+          "label": "Killian Tillie",
+          "result": {
+            "points": 7.75,
+            "starts": 1,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "label": "2022 round 1 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "06210",
+            "player": "Paolo Banchero",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
           }
         }
       ]
@@ -349,6 +410,10 @@
             "player_id": "051p6",
             "player": "Dylan Windler",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Minnesota Timberwolves"
           }
         },
         {
@@ -357,7 +422,14 @@
           "to": "Toronto Raptors",
           "player_id": "049s5",
           "player": "Dennis Smith",
-          "label": "Dennis Smith"
+          "label": "Dennis Smith",
+          "result": {
+            "points": 176.5,
+            "starts": 5,
+            "gp": 6,
+            "periods": 23,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -372,6 +444,10 @@
             "player_id": "0621o",
             "player": "Blake Wesley",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
           }
         },
         {
@@ -387,6 +463,10 @@
             "player_id": "0621r",
             "player": "Patrick Baldwin",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
           }
         }
       ]
@@ -402,7 +482,14 @@
           "to": "Toronto Raptors",
           "player_id": "042o6",
           "player": "Jake Layman",
-          "label": "Jake Layman"
+          "label": "Jake Layman",
+          "result": {
+            "points": 121.0,
+            "starts": 6,
+            "gp": 9,
+            "periods": 9,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -417,6 +504,10 @@
             "player_id": "0621r",
             "player": "Patrick Baldwin",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
           }
         },
         {
@@ -432,6 +523,10 @@
             "player_id": "0621o",
             "player": "Blake Wesley",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
           }
         }
       ]

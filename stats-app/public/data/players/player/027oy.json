@@ -298,35 +298,6 @@
     }
   ],
   "trades": {
-    "9p0kw43okyngjg6r": {
-      "date": "2022-01-20",
-      "season": "2021-22",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Milwaukee Bucks",
-          "player_id": "059ca",
-          "player": "Oshae Brissett",
-          "label": "Oshae Brissett"
-        },
-        {
-          "kind": "pick",
-          "from": "Indiana Pacers",
-          "to": "Milwaukee Bucks",
-          "label": "2023 round 1 pick (Indiana Pacers)"
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Indiana Pacers",
-          "player_id": "027oy",
-          "player": "Marcus Morris",
-          "label": "Marcus Morris"
-        }
-      ]
-    },
     "ztms8t1klb56v07z": {
       "date": "2022-12-01",
       "season": "2022-23",
@@ -338,7 +309,14 @@
           "to": "Indiana Pacers",
           "player_id": "062pk",
           "player": "Simone Fontecchio",
-          "label": "Simone Fontecchio"
+          "label": "Simone Fontecchio",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 5,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -346,7 +324,14 @@
           "to": "Indiana Pacers",
           "player_id": "05uj5",
           "player": "Isaiah Todd",
-          "label": "Isaiah Todd"
+          "label": "Isaiah Todd",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 20,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -354,7 +339,14 @@
           "to": "Indiana Pacers",
           "player_id": "05ujq",
           "player": "Luka Garza",
-          "label": "Luka Garza"
+          "label": "Luka Garza",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 20,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -362,7 +354,14 @@
           "to": "Indiana Pacers",
           "player_id": "059q7",
           "player": "Juan Toscano-Anderson",
-          "label": "Juan Toscano-Anderson"
+          "label": "Juan Toscano-Anderson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -377,6 +376,10 @@
             "player_id": "06mk1",
             "player": "Zach Edey",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
           }
         },
         {
@@ -385,7 +388,14 @@
           "to": "Atlanta Hawks",
           "player_id": "027oy",
           "player": "Marcus Morris",
-          "label": "Marcus Morris"
+          "label": "Marcus Morris",
+          "result": {
+            "points": 648.0,
+            "starts": 17,
+            "gp": 26,
+            "periods": 20,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -400,7 +410,14 @@
           "to": "Los Angeles Lakers",
           "player_id": "03r7e",
           "player": "Cameron Payne",
-          "label": "Cameron Payne"
+          "label": "Cameron Payne",
+          "result": {
+            "points": 92.25,
+            "starts": 4,
+            "gp": 6,
+            "periods": 4,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -408,7 +425,57 @@
           "to": "Atlanta Hawks",
           "player_id": "027oy",
           "player": "Marcus Morris",
-          "label": "Marcus Morris"
+          "label": "Marcus Morris",
+          "result": {
+            "points": 128.0,
+            "starts": 6,
+            "gp": 9,
+            "periods": 12,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "9p0kw43okyngjg6r": {
+      "date": "2022-01-20",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "player_id": "059ca",
+          "player": "Oshae Brissett",
+          "label": "Oshae Brissett",
+          "result": {
+            "points": 135.25,
+            "starts": 5,
+            "gp": 7,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Milwaukee Bucks",
+          "label": "2023 round 1 pick (Indiana Pacers)"
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Indiana Pacers",
+          "player_id": "027oy",
+          "player": "Marcus Morris",
+          "label": "Marcus Morris",
+          "result": {
+            "points": 720.75,
+            "starts": 15,
+            "gp": 25,
+            "periods": 19,
+            "ongoing": false
+          }
         }
       ]
     }

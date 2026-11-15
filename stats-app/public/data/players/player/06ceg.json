@@ -187,99 +187,6 @@
     }
   ],
   "trades": {
-    "qqtxc5wbm65k1oug": {
-      "date": "2025-01-23",
-      "season": "2024-25",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Denver Nuggets",
-          "to": "Miami Heat",
-          "player_id": "05qu1",
-          "player": "James Wiseman",
-          "label": "James Wiseman"
-        },
-        {
-          "kind": "player",
-          "from": "Denver Nuggets",
-          "to": "Miami Heat",
-          "player_id": "04qru",
-          "player": "Donte DiVincenzo",
-          "label": "Donte DiVincenzo"
-        },
-        {
-          "kind": "player",
-          "from": "Denver Nuggets",
-          "to": "Miami Heat",
-          "player_id": "05qtf",
-          "player": "Xavier Tillman",
-          "label": "Xavier Tillman"
-        },
-        {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Miami Heat",
-          "label": "2025 round 2 pick (Denver Nuggets)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 22,
-            "overall": 52,
-            "player_id": "06v8b",
-            "player": "Rocco Zikarsky",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Denver Nuggets",
-          "player_id": "06cef",
-          "player": "Oscar Tshiebwe",
-          "label": "Oscar Tshiebwe"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Denver Nuggets",
-          "player_id": "03al1",
-          "player": "Marcus Smart",
-          "label": "Marcus Smart"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Denver Nuggets",
-          "player_id": "06ceg",
-          "player": "Ricky Council",
-          "label": "Ricky Council"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Denver Nuggets",
-          "player_id": "05ujd",
-          "player": "Neemias Queta",
-          "label": "Neemias Queta"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Denver Nuggets",
-          "label": "2025 round 2 pick (Indiana Pacers)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 29,
-            "overall": 59,
-            "player_id": "06v89",
-            "player": "Jamir Watkins",
-            "certain": true
-          }
-        }
-      ]
-    },
     "twi7bssbm4mj14hn": {
       "date": "2024-12-13",
       "season": "2024-25",
@@ -291,7 +198,14 @@
           "to": "Miami Heat",
           "player_id": "06ceg",
           "player": "Ricky Council",
-          "label": "Ricky Council"
+          "label": "Ricky Council",
+          "result": {
+            "points": 283.25,
+            "starts": 12,
+            "gp": 18,
+            "periods": 12,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -299,7 +213,14 @@
           "to": "Miami Heat",
           "player_id": "05ujd",
           "player": "Neemias Queta",
-          "label": "Neemias Queta"
+          "label": "Neemias Queta",
+          "result": {
+            "points": 172.5,
+            "starts": 9,
+            "gp": 14,
+            "periods": 12,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -314,6 +235,10 @@
             "player_id": "076u0",
             "player": "Bryce Hopkins",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
           }
         },
         {
@@ -321,6 +246,162 @@
           "from": "Miami Heat",
           "to": "Golden State Warriors",
           "label": "$8 budget"
+        }
+      ]
+    },
+    "qqtxc5wbm65k1oug": {
+      "date": "2025-01-23",
+      "season": "2024-25",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "05qu1",
+          "player": "James Wiseman",
+          "label": "James Wiseman",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "04qru",
+          "player": "Donte DiVincenzo",
+          "label": "Donte DiVincenzo",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman",
+          "result": {
+            "points": -4.5,
+            "starts": 4,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (Denver Nuggets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "06v8b",
+            "player": "Rocco Zikarsky",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 27,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "06cef",
+          "player": "Oscar Tshiebwe",
+          "label": "Oscar Tshiebwe",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "06ceg",
+          "player": "Ricky Council",
+          "label": "Ricky Council",
+          "result": {
+            "points": 102.75,
+            "starts": 4,
+            "gp": 7,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Denver Nuggets",
+          "label": "2025 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06v89",
+            "player": "Jamir Watkins",
+            "certain": true
+          },
+          "result": {
+            "points": 362.75,
+            "starts": 9,
+            "gp": 15,
+            "periods": 33,
+            "ongoing": false
+          }
         }
       ]
     }

@@ -239,90 +239,6 @@
     }
   ],
   "trades": {
-    "y6t02lq8ks8pna2n": {
-      "date": "2021-08-12",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Los Angeles Clippers",
-          "player_id": "038xl",
-          "player": "Dewayne Dedmon",
-          "label": "Dewayne Dedmon"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Los Angeles Clippers",
-          "player_id": "04qrk",
-          "player": "Trae Young",
-          "label": "Trae Young"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "player_id": "051pj",
-          "player": "Alen Smailagic",
-          "label": "Alen Smailagic"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "player_id": "05qtv",
-          "player": "Tyrese Haliburton",
-          "label": "Tyrese Haliburton"
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "label": "2022 round 1 pick (Los Angeles Clippers)",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 27,
-            "overall": 27,
-            "player_id": "0621k",
-            "player": "Christian Braun",
-            "certain": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "label": "2022 round 2 pick (Los Angeles Clippers)",
-          "became": {
-            "season": "2022-23",
-            "round": 2,
-            "pick": 27,
-            "overall": 57,
-            "player_id": "0623h",
-            "player": "Alondes Williams",
-            "certain": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "label": "2023 round 2 pick (Los Angeles Clippers)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 14,
-            "overall": 44,
-            "player_id": "06ccu",
-            "player": "Tristan Vukcevic",
-            "certain": true
-          }
-        }
-      ]
-    },
     "qv786h5cmhvytj7l": {
       "date": "2025-11-13",
       "season": "2025-26",
@@ -334,7 +250,14 @@
           "to": "Toronto Raptors",
           "player_id": "03e74",
           "player": "Spencer Dinwiddie",
-          "label": "Spencer Dinwiddie"
+          "label": "Spencer Dinwiddie",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -342,7 +265,14 @@
           "to": "Miami Heat",
           "player_id": "03nwm",
           "player": "Devin Booker",
-          "label": "Devin Booker"
+          "label": "Devin Booker",
+          "result": {
+            "points": 1584.25,
+            "starts": 26,
+            "gp": 40,
+            "periods": 33,
+            "ongoing": true
+          }
         },
         {
           "kind": "player",
@@ -350,7 +280,14 @@
           "to": "Toronto Raptors",
           "player_id": "06218",
           "player": "Jeremy Sochan",
-          "label": "Jeremy Sochan"
+          "label": "Jeremy Sochan",
+          "result": {
+            "points": 213.0,
+            "starts": 18,
+            "gp": 21,
+            "periods": 26,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -358,7 +295,14 @@
           "to": "Houston Rockets",
           "player_id": "05qtv",
           "player": "Tyrese Haliburton",
-          "label": "Tyrese Haliburton"
+          "label": "Tyrese Haliburton",
+          "result": {
+            "points": 211.75,
+            "starts": 3,
+            "gp": 4,
+            "periods": 33,
+            "ongoing": true
+          }
         },
         {
           "kind": "player",
@@ -366,7 +310,14 @@
           "to": "Houston Rockets",
           "player_id": "06v5p",
           "player": "Nolan Traore",
-          "label": "Nolan Traore"
+          "label": "Nolan Traore",
+          "result": {
+            "points": 525.0,
+            "starts": 14,
+            "gp": 21,
+            "periods": 33,
+            "ongoing": true
+          }
         },
         {
           "kind": "pick",
@@ -381,6 +332,13 @@
             "player_id": "076t9",
             "player": "Darryn Peterson",
             "certain": true
+          },
+          "result": {
+            "points": 421.0,
+            "starts": 7,
+            "gp": 12,
+            "periods": 7,
+            "ongoing": true
           }
         },
         {
@@ -396,6 +354,13 @@
             "player_id": "076u2",
             "player": "Dillon Mitchell",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
           }
         },
         {
@@ -411,6 +376,13 @@
             "player_id": "076sv",
             "player": "Bennett Stirtz",
             "certain": true
+          },
+          "result": {
+            "points": 152.5,
+            "starts": 4,
+            "gp": 8,
+            "periods": 7,
+            "ongoing": true
           }
         },
         {
@@ -425,7 +397,138 @@
           "to": "Miami Heat",
           "player_id": "01eo6",
           "player": "James Harden",
-          "label": "James Harden"
+          "label": "James Harden",
+          "result": {
+            "points": 1832.25,
+            "starts": 21,
+            "gp": 35,
+            "periods": 26,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "y6t02lq8ks8pna2n": {
+      "date": "2021-08-12",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon",
+          "result": {
+            "points": 735.75,
+            "starts": 21,
+            "gp": 36,
+            "periods": 33,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "04qrk",
+          "player": "Trae Young",
+          "label": "Trae Young",
+          "result": {
+            "points": 2410.25,
+            "starts": 31,
+            "gp": 49,
+            "periods": 33,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "051pj",
+          "player": "Alen Smailagic",
+          "label": "Alen Smailagic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtv",
+          "player": "Tyrese Haliburton",
+          "label": "Tyrese Haliburton",
+          "result": {
+            "points": 4265.5,
+            "starts": 58,
+            "gp": 93,
+            "periods": 66,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 1 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "0621k",
+            "player": "Christian Braun",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "0623h",
+            "player": "Alondes Williams",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "label": "2023 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06ccu",
+            "player": "Tristan Vukcevic",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
+          }
         }
       ]
     }

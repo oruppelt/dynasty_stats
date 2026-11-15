@@ -132,6 +132,87 @@
     }
   ],
   "trades": {
+    "ljnizeewmcnudnmr": {
+      "date": "2025-07-04",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Phoenix Suns",
+          "player_id": "04ex6",
+          "player": "Isaiah Hartenstein",
+          "label": "Isaiah Hartenstein",
+          "result": {
+            "points": 890.25,
+            "starts": 19,
+            "gp": 26,
+            "periods": 33,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford",
+          "result": {
+            "points": 249.25,
+            "starts": 8,
+            "gp": 10,
+            "periods": 10,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick, no. 15",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "06va1",
+            "player": "Max Shulga",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 40,
+            "ongoing": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Houston Rockets",
+          "label": "2025 round 1 pick, no. 12",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06v5x",
+            "player": "Carter Bryant",
+            "certain": true
+          },
+          "result": {
+            "points": 166.25,
+            "starts": 18,
+            "gp": 24,
+            "periods": 40,
+            "ongoing": true
+          }
+        }
+      ]
+    },
     "c0yl11uom6dr39pn": {
       "date": "2025-01-26",
       "season": "2024-25",
@@ -150,6 +231,10 @@
             "player_id": "06v5x",
             "player": "Carter Bryant",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
           }
         },
         {
@@ -158,7 +243,14 @@
           "to": "Utah Jazz",
           "player_id": "0621g",
           "player": "Tari Eason",
-          "label": "Tari Eason"
+          "label": "Tari Eason",
+          "result": {
+            "points": 186.0,
+            "starts": 4,
+            "gp": 6,
+            "periods": 5,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -166,7 +258,14 @@
           "to": "Phoenix Suns",
           "player_id": "0529c",
           "player": "Dean Wade",
-          "label": "Dean Wade"
+          "label": "Dean Wade",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 5,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -181,59 +280,10 @@
             "player_id": "076sy",
             "player": "Morez Johnson",
             "certain": true
-          }
-        }
-      ]
-    },
-    "ljnizeewmcnudnmr": {
-      "date": "2025-07-04",
-      "season": "2025-26",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Phoenix Suns",
-          "player_id": "04ex6",
-          "player": "Isaiah Hartenstein",
-          "label": "Isaiah Hartenstein"
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Houston Rockets",
-          "player_id": "000zv",
-          "player": "Al Horford",
-          "label": "Al Horford"
-        },
-        {
-          "kind": "pick",
-          "from": "Phoenix Suns",
-          "to": "Houston Rockets",
-          "label": "2025 round 2 pick, no. 15",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 15,
-            "overall": 45,
-            "player_id": "06va1",
-            "player": "Max Shulga",
-            "certain": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Phoenix Suns",
-          "to": "Houston Rockets",
-          "label": "2025 round 1 pick, no. 12",
-          "became": {
-            "season": "2025-26",
-            "round": 1,
-            "pick": 12,
-            "overall": 12,
-            "player_id": "06v5x",
-            "player": "Carter Bryant",
-            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Utah Jazz"
           }
         }
       ]

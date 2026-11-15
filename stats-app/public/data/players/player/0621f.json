@@ -155,75 +155,6 @@
     }
   ],
   "trades": {
-    "4csdps1ul4mqtiiz": {
-      "date": "2022-06-20",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Milwaukee Bucks",
-          "player_id": "03lls",
-          "player": "Jaylen Brown",
-          "label": "Jaylen Brown"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Milwaukee Bucks",
-          "player_id": "01eog",
-          "player": "Patty Mills",
-          "label": "Patty Mills"
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Boston Celtics",
-          "player_id": "031mb",
-          "player": "Tim Hardaway",
-          "label": "Tim Hardaway"
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Boston Celtics",
-          "player_id": "05uip",
-          "player": "Corey Kispert",
-          "label": "Corey Kispert"
-        },
-        {
-          "kind": "pick",
-          "from": "Milwaukee Bucks",
-          "to": "Boston Celtics",
-          "label": "2022 round 1 pick, no. 14",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 14,
-            "overall": 14,
-            "player_id": "0621f",
-            "player": "AJ Griffin",
-            "certain": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Milwaukee Bucks",
-          "to": "Boston Celtics",
-          "label": "2023 round 2 pick (Milwaukee Bucks)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 10,
-            "overall": 40,
-            "player_id": "06cdh",
-            "player": "GG Jackson",
-            "certain": true
-          }
-        }
-      ]
-    },
     "jc5usd8pl4u61fxp": {
       "date": "2022-06-25",
       "season": "2022-23",
@@ -235,7 +166,14 @@
           "to": "Chicago Bulls",
           "player_id": "03byg",
           "player": "Montrezl Harrell",
-          "label": "Montrezl Harrell"
+          "label": "Montrezl Harrell",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -243,7 +181,14 @@
           "to": "Chicago Bulls",
           "player_id": "03r7u",
           "player": "Josh Richardson",
-          "label": "Josh Richardson"
+          "label": "Josh Richardson",
+          "result": {
+            "points": 754.0,
+            "starts": 18,
+            "gp": 29,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -258,6 +203,13 @@
             "player_id": "0621f",
             "player": "AJ Griffin",
             "certain": true
+          },
+          "result": {
+            "points": 159.5,
+            "starts": 5,
+            "gp": 9,
+            "periods": 33,
+            "ongoing": false
           }
         },
         {
@@ -273,6 +225,10 @@
             "player_id": "06mlg",
             "player": "Tyler Kolek",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
           }
         },
         {
@@ -281,7 +237,14 @@
           "to": "Boston Celtics",
           "player_id": "027oz",
           "player": "Kawhi Leonard",
-          "label": "Kawhi Leonard"
+          "label": "Kawhi Leonard",
+          "result": {
+            "points": 56.75,
+            "starts": 5,
+            "gp": 2,
+            "periods": 5,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -296,7 +259,14 @@
           "to": "Utah Jazz",
           "player_id": "03r7u",
           "player": "Josh Richardson",
-          "label": "Josh Richardson"
+          "label": "Josh Richardson",
+          "result": {
+            "points": 833.25,
+            "starts": 24,
+            "gp": 36,
+            "periods": 32,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -304,7 +274,14 @@
           "to": "Utah Jazz",
           "player_id": "0621f",
           "player": "AJ Griffin",
-          "label": "AJ Griffin"
+          "label": "AJ Griffin",
+          "result": {
+            "points": 41.75,
+            "starts": 5,
+            "gp": 6,
+            "periods": 32,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -319,6 +296,13 @@
             "player_id": "06cdg",
             "player": "Maxwell Lewis",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 58,
+            "ongoing": false
           }
         },
         {
@@ -334,6 +318,10 @@
             "player_id": "06mkh",
             "player": "Pacome Dadiet",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
           }
         },
         {
@@ -349,6 +337,118 @@
             "player_id": "05uiq",
             "player": "Alperen Sengun",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "4csdps1ul4mqtiiz": {
+      "date": "2022-06-20",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Milwaukee Bucks",
+          "player_id": "03lls",
+          "player": "Jaylen Brown",
+          "label": "Jaylen Brown",
+          "result": {
+            "points": 3759.5,
+            "starts": 59,
+            "gp": 90,
+            "periods": 61,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Milwaukee Bucks",
+          "player_id": "01eog",
+          "player": "Patty Mills",
+          "label": "Patty Mills",
+          "result": {
+            "points": 277.5,
+            "starts": 17,
+            "gp": 26,
+            "periods": 33,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Boston Celtics",
+          "player_id": "031mb",
+          "player": "Tim Hardaway",
+          "label": "Tim Hardaway",
+          "result": {
+            "points": 2216.25,
+            "starts": 51,
+            "gp": 82,
+            "periods": 54,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Boston Celtics",
+          "player_id": "05uip",
+          "player": "Corey Kispert",
+          "label": "Corey Kispert",
+          "result": {
+            "points": 424.25,
+            "starts": 14,
+            "gp": 25,
+            "periods": 23,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Boston Celtics",
+          "label": "2022 round 1 pick, no. 14",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "0621f",
+            "player": "AJ Griffin",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Boston Celtics",
+          "label": "2023 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06cdh",
+            "player": "GG Jackson",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Oklahoma City Thunder"
           }
         }
       ]

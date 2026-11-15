@@ -306,29 +306,6 @@
     }
   ],
   "trades": {
-    "4euzfrmtk5qqusgf": {
-      "date": "2020-01-23",
-      "season": "2019-20",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "San Antonio Spurs",
-          "player_id": "001bo",
-          "player": "Paul Millsap",
-          "label": "Paul Millsap"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Boston Celtics",
-          "player_id": "027p9",
-          "player": "Reggie Jackson",
-          "label": "Reggie Jackson"
-        }
-      ]
-    },
     "0cpp4tktldd5fyqm": {
       "date": "2023-01-26",
       "season": "2022-23",
@@ -340,7 +317,14 @@
           "to": "Miami Heat",
           "player_id": "027pf",
           "player": "Cory Joseph",
-          "label": "Cory Joseph"
+          "label": "Cory Joseph",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -348,7 +332,14 @@
           "to": "Miami Heat",
           "player_id": "05ujh",
           "player": "Greg Brown",
-          "label": "Greg Brown"
+          "label": "Greg Brown",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -356,7 +347,14 @@
           "to": "Miami Heat",
           "player_id": "04ewc",
           "player": "Zach Collins",
-          "label": "Zach Collins"
+          "label": "Zach Collins",
+          "result": {
+            "points": 28.25,
+            "starts": 1,
+            "gp": 2,
+            "periods": 4,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -364,7 +362,14 @@
           "to": "Detroit Pistons",
           "player_id": "027p9",
           "player": "Reggie Jackson",
-          "label": "Reggie Jackson"
+          "label": "Reggie Jackson",
+          "result": {
+            "points": 87.25,
+            "starts": 3,
+            "gp": 4,
+            "periods": 4,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -379,6 +384,50 @@
             "player_id": "06mm8",
             "player": "Keshad Johnson",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 66,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "4euzfrmtk5qqusgf": {
+      "date": "2020-01-23",
+      "season": "2019-20",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "player_id": "001bo",
+          "player": "Paul Millsap",
+          "label": "Paul Millsap",
+          "result": {
+            "points": 95.5,
+            "starts": 1,
+            "gp": 2,
+            "periods": 5,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "player_id": "027p9",
+          "player": "Reggie Jackson",
+          "label": "Reggie Jackson",
+          "result": {
+            "points": 260.75,
+            "starts": 5,
+            "gp": 9,
+            "periods": 5,
+            "ongoing": false
           }
         }
       ]

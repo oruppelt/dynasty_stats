@@ -312,58 +312,6 @@
     }
   ],
   "trades": {
-    "wyc5aaskkiivratd": {
-      "date": "2020-12-10",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Phoenix Suns",
-          "player_id": "005kd",
-          "player": "Kevin Love",
-          "label": "Kevin Love"
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "Phoenix Suns",
-          "label": "2022 round 2 pick (Memphis Grizzlies)"
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Memphis Grizzlies",
-          "player_id": "000zv",
-          "player": "Al Horford",
-          "label": "Al Horford"
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Memphis Grizzlies",
-          "player_id": "03acx",
-          "player": "Dante Exum",
-          "label": "Dante Exum"
-        },
-        {
-          "kind": "pick",
-          "from": "Phoenix Suns",
-          "to": "Memphis Grizzlies",
-          "label": "2021 round 1 pick (Dallas Mavericks)",
-          "became": {
-            "season": "2021-22",
-            "round": 1,
-            "pick": 12,
-            "overall": 12,
-            "player_id": "05uin",
-            "player": "Chris Duarte",
-            "certain": true
-          }
-        }
-      ]
-    },
     "zv7v0wdklrpe6mxo": {
       "date": "2024-01-22",
       "season": "2023-24",
@@ -375,7 +323,14 @@
           "to": "New York Knicks",
           "player_id": "04qrx",
           "player": "Josh Okogie",
-          "label": "Josh Okogie"
+          "label": "Josh Okogie",
+          "result": {
+            "points": 168.25,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -390,6 +345,10 @@
             "player_id": "06mlw",
             "player": "Enrique Freeman",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
           }
         },
         {
@@ -398,7 +357,14 @@
           "to": "Minnesota Timberwolves",
           "player_id": "03acx",
           "player": "Dante Exum",
-          "label": "Dante Exum"
+          "label": "Dante Exum",
+          "result": {
+            "points": 14.25,
+            "starts": 1,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -413,7 +379,14 @@
           "to": "Detroit Pistons",
           "player_id": "03acx",
           "player": "Dante Exum",
-          "label": "Dante Exum"
+          "label": "Dante Exum",
+          "result": {
+            "points": -3.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 25,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -421,7 +394,14 @@
           "to": "Detroit Pistons",
           "player_id": "04ex3",
           "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 14.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 3,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -436,6 +416,13 @@
             "player_id": "05uix",
             "player": "Usman Garuba",
             "certain": true
+          },
+          "result": {
+            "points": 837.0,
+            "starts": 52,
+            "gp": 59,
+            "periods": 73,
+            "ongoing": false
           }
         },
         {
@@ -444,7 +431,94 @@
           "to": "Cleveland Cavaliers",
           "player_id": "03kqi",
           "player": "Joe Ingles",
-          "label": "Joe Ingles"
+          "label": "Joe Ingles",
+          "result": {
+            "points": 887.25,
+            "starts": 16,
+            "gp": 29,
+            "periods": 25,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "wyc5aaskkiivratd": {
+      "date": "2020-12-10",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Phoenix Suns",
+          "player_id": "005kd",
+          "player": "Kevin Love",
+          "label": "Kevin Love",
+          "result": {
+            "points": 44.75,
+            "starts": 1,
+            "gp": 2,
+            "periods": 29,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Phoenix Suns",
+          "label": "2022 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford",
+          "result": {
+            "points": 754.75,
+            "starts": 16,
+            "gp": 21,
+            "periods": 22,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "label": "2021 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "05uin",
+            "player": "Chris Duarte",
+            "certain": true
+          },
+          "result": {
+            "points": 781.0,
+            "starts": 19,
+            "gp": 31,
+            "periods": 26,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -459,7 +533,14 @@
           "to": "New York Knicks",
           "player_id": "03acx",
           "player": "Dante Exum",
-          "label": "Dante Exum"
+          "label": "Dante Exum",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -474,6 +555,13 @@
             "player_id": "06mlp",
             "player": "Nikola Djurisic",
             "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 66,
+            "ongoing": false
           }
         },
         {
@@ -489,6 +577,13 @@
             "player_id": "06v5y",
             "player": "Dylan Harper",
             "certain": true
+          },
+          "result": {
+            "points": 1460.75,
+            "starts": 32,
+            "gp": 54,
+            "periods": 40,
+            "ongoing": true
           }
         },
         {
@@ -497,7 +592,14 @@
           "to": "Memphis Grizzlies",
           "player_id": "051oj",
           "player": "RJ Barrett",
-          "label": "RJ Barrett"
+          "label": "RJ Barrett",
+          "result": {
+            "points": 2901.0,
+            "starts": 55,
+            "gp": 78,
+            "periods": 72,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -512,7 +614,14 @@
           "to": "Memphis Grizzlies",
           "player_id": "03r7i",
           "player": "Rondae Hollis-Jefferson",
-          "label": "Rondae Hollis-Jefferson"
+          "label": "Rondae Hollis-Jefferson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -527,6 +636,10 @@
             "player_id": "06224",
             "player": "E.J. Liddell",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
           }
         },
         {
@@ -535,7 +648,14 @@
           "to": "Cleveland Cavaliers",
           "player_id": "03acx",
           "player": "Dante Exum",
-          "label": "Dante Exum"
+          "label": "Dante Exum",
+          "result": {
+            "points": 23.5,
+            "starts": 1,
+            "gp": 2,
+            "periods": 3,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -550,6 +670,10 @@
             "player_id": "05uix",
             "player": "Usman Garuba",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
           }
         }
       ]

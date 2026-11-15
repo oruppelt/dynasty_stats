@@ -183,66 +183,6 @@
     }
   ],
   "trades": {
-    "u31lz7dpmhn7i0du": {
-      "date": "2025-11-06",
-      "season": "2025-26",
-      "period": 6,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Portland Trail Blazers",
-          "player_id": "06ccv",
-          "player": "Trayce Jackson-Davis",
-          "label": "Trayce Jackson-Davis"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Portland Trail Blazers",
-          "player_id": "06mkf",
-          "player": "AJ Johnson",
-          "label": "AJ Johnson"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Miami Heat",
-          "label": "2027 round 2 pick (Golden State Warriors)"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Portland Trail Blazers",
-          "player_id": "06mmh",
-          "player": "Isaac Jones",
-          "label": "Isaac Jones"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Portland Trail Blazers",
-          "label": "2026 round 2 pick (Golden State Warriors)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 23,
-            "overall": 53,
-            "player_id": "076u0",
-            "player": "Bryce Hopkins",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Golden State Warriors",
-          "player_id": "05uio",
-          "player": "Moses Moody",
-          "label": "Moses Moody"
-        }
-      ]
-    },
     "0j9wja8ekwrzezvl": {
       "date": "2021-12-05",
       "season": "2021-22",
@@ -254,7 +194,14 @@
           "to": "Orlando Magic",
           "player_id": "04qsu",
           "player": "Shake Milton",
-          "label": "Shake Milton"
+          "label": "Shake Milton",
+          "result": {
+            "points": 180.75,
+            "starts": 4,
+            "gp": 8,
+            "periods": 19,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -269,6 +216,10 @@
             "player_id": "0621z",
             "player": "Gabriele Procida",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
           }
         },
         {
@@ -284,6 +235,10 @@
             "player_id": "06ccv",
             "player": "Trayce Jackson-Davis",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
           }
         }
       ]
@@ -299,7 +254,14 @@
           "to": "Golden State Warriors",
           "player_id": "005ll",
           "player": "George Hill",
-          "label": "George Hill"
+          "label": "George Hill",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -314,6 +276,13 @@
             "player_id": "06ccv",
             "player": "Trayce Jackson-Davis",
             "certain": true
+          },
+          "result": {
+            "points": 1259.25,
+            "starts": 34,
+            "gp": 56,
+            "periods": 70,
+            "ongoing": false
           }
         },
         {
@@ -322,7 +291,106 @@
           "to": "Atlanta Hawks",
           "player_id": "05qzh",
           "player": "Naji Marshall",
-          "label": "Naji Marshall"
+          "label": "Naji Marshall",
+          "result": {
+            "points": 538.25,
+            "starts": 13,
+            "gp": 22,
+            "periods": 16,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "u31lz7dpmhn7i0du": {
+      "date": "2025-11-06",
+      "season": "2025-26",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06ccv",
+          "player": "Trayce Jackson-Davis",
+          "label": "Trayce Jackson-Davis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mkf",
+          "player": "AJ Johnson",
+          "label": "AJ Johnson",
+          "result": {
+            "points": 46.5,
+            "starts": 4,
+            "gp": 2,
+            "periods": 28,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Miami Heat",
+          "label": "2027 round 2 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "player_id": "06mmh",
+          "player": "Isaac Jones",
+          "label": "Isaac Jones",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 22,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Golden State Warriors",
+          "player_id": "05uio",
+          "player": "Moses Moody",
+          "label": "Moses Moody",
+          "result": {
+            "points": 1002.25,
+            "starts": 21,
+            "gp": 38,
+            "periods": 28,
+            "ongoing": false
+          }
         }
       ]
     }

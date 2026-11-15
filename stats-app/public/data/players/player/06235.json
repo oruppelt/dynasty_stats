@@ -177,60 +177,6 @@
     }
   ],
   "trades": {
-    "jg91nnqmlcerb7ao": {
-      "date": "2023-01-02",
-      "season": "2022-23",
-      "period": 23,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "06235",
-          "player": "Kenneth Lofton",
-          "label": "Kenneth Lofton"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "0621p",
-          "player": "Wendell Moore",
-          "label": "Wendell Moore"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "065px",
-          "player": "Trevion Williams",
-          "label": "Trevion Williams"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Milwaukee Bucks)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 10,
-            "overall": 40,
-            "player_id": "06cdh",
-            "player": "GG Jackson",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Boston Celtics",
-          "player_id": "051pi",
-          "player": "Daniel Gafford",
-          "label": "Daniel Gafford"
-        }
-      ]
-    },
     "0x0h24u3lr0j2d6r": {
       "date": "2024-01-05",
       "season": "2023-24",
@@ -242,7 +188,14 @@
           "to": "Oklahoma City Thunder",
           "player_id": "06235",
           "player": "Kenneth Lofton",
-          "label": "Kenneth Lofton"
+          "label": "Kenneth Lofton",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -250,7 +203,14 @@
           "to": "Oklahoma City Thunder",
           "player_id": "031mb",
           "player": "Tim Hardaway",
-          "label": "Tim Hardaway"
+          "label": "Tim Hardaway",
+          "result": {
+            "points": 575.0,
+            "starts": 10,
+            "gp": 18,
+            "periods": 11,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -265,6 +225,13 @@
             "player_id": "06v58",
             "player": "Tre Johnson",
             "certain": true
+          },
+          "result": {
+            "points": 280.75,
+            "starts": 7,
+            "gp": 12,
+            "periods": 19,
+            "ongoing": false
           }
         },
         {
@@ -280,6 +247,10 @@
             "player_id": "06mle",
             "player": "Kyle Filipowski",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
           }
         },
         {
@@ -288,7 +259,14 @@
           "to": "Boston Celtics",
           "player_id": "031m4",
           "player": "Dennis Schroder",
-          "label": "Dennis Schroder"
+          "label": "Dennis Schroder",
+          "result": {
+            "points": 1664.0,
+            "starts": 34,
+            "gp": 57,
+            "periods": 39,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -296,7 +274,103 @@
           "to": "Boston Celtics",
           "player_id": "03e6u",
           "player": "Bogdan Bogdanovic",
-          "label": "Bogdan Bogdanovic"
+          "label": "Bogdan Bogdanovic",
+          "result": {
+            "points": 634.25,
+            "starts": 11,
+            "gp": 20,
+            "periods": 11,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "jg91nnqmlcerb7ao": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06235",
+          "player": "Kenneth Lofton",
+          "label": "Kenneth Lofton",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore",
+          "result": {
+            "points": 28.0,
+            "starts": 9,
+            "gp": 7,
+            "periods": 11,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "065px",
+          "player": "Trevion Williams",
+          "label": "Trevion Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06cdh",
+            "player": "GG Jackson",
+            "certain": true
+          },
+          "result": {
+            "points": 426.75,
+            "starts": 10,
+            "gp": 17,
+            "periods": 71,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford",
+          "result": {
+            "points": 2128.25,
+            "starts": 41,
+            "gp": 59,
+            "periods": 43,
+            "ongoing": false
+          }
         }
       ]
     }

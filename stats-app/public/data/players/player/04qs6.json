@@ -135,51 +135,6 @@
     }
   ],
   "trades": {
-    "ueqn8qnjkibcosr0": {
-      "date": "2020-12-05",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Denver Nuggets",
-          "to": "Houston Rockets",
-          "player_id": "04qs6",
-          "player": "Dzanan Musa",
-          "label": "Dzanan Musa"
-        },
-        {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Houston Rockets",
-          "label": "2021 round 2 pick (Oklahoma City Thunder)",
-          "became": {
-            "season": "2021-22",
-            "round": 2,
-            "pick": 20,
-            "overall": 50,
-            "player_id": "05ujd",
-            "player": "Neemias Queta",
-            "certain": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Houston Rockets",
-          "to": "Denver Nuggets",
-          "label": "2022 round 2 pick (Houston Rockets)",
-          "became": {
-            "season": "2022-23",
-            "round": 2,
-            "pick": 23,
-            "overall": 53,
-            "player_id": "051pm",
-            "player": "Admiral Schofield",
-            "certain": true
-          }
-        }
-      ]
-    },
     "g2f53zxaksheu85c": {
       "date": "2021-08-18",
       "season": "2021-22",
@@ -191,7 +146,14 @@
           "to": "Houston Rockets",
           "player_id": "00129",
           "player": "Carmelo Anthony",
-          "label": "Carmelo Anthony"
+          "label": "Carmelo Anthony",
+          "result": {
+            "points": 1427.25,
+            "starts": 28,
+            "gp": 49,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -199,7 +161,14 @@
           "to": "Houston Rockets",
           "player_id": "000zv",
           "player": "Al Horford",
-          "label": "Al Horford"
+          "label": "Al Horford",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -214,6 +183,13 @@
             "player_id": "0621y",
             "player": "Max Christie",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
           }
         },
         {
@@ -229,6 +205,10 @@
             "player_id": "051pm",
             "player": "Admiral Schofield",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
           }
         },
         {
@@ -244,6 +224,10 @@
             "player_id": "06ccx",
             "player": "Hunter Tyson",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
           }
         },
         {
@@ -252,7 +236,14 @@
           "to": "Boston Celtics",
           "player_id": "04qs6",
           "player": "Dzanan Musa",
-          "label": "Dzanan Musa"
+          "label": "Dzanan Musa",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -260,7 +251,77 @@
           "to": "Boston Celtics",
           "player_id": "03lls",
           "player": "Jaylen Brown",
-          "label": "Jaylen Brown"
+          "label": "Jaylen Brown",
+          "result": {
+            "points": 1684.75,
+            "starts": 25,
+            "gp": 42,
+            "periods": 33,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "ueqn8qnjkibcosr0": {
+      "date": "2020-12-05",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Houston Rockets",
+          "player_id": "04qs6",
+          "player": "Dzanan Musa",
+          "label": "Dzanan Musa",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Houston Rockets",
+          "label": "2021 round 2 pick (Oklahoma City Thunder)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "05ujd",
+            "player": "Neemias Queta",
+            "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Denver Nuggets",
+          "label": "2022 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "051pm",
+            "player": "Admiral Schofield",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
         }
       ]
     },
@@ -281,7 +342,14 @@
           "to": "Denver Nuggets",
           "player_id": "04qs6",
           "player": "Dzanan Musa",
-          "label": "Dzanan Musa"
+          "label": "Dzanan Musa",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -296,6 +364,10 @@
             "player_id": "05qsn",
             "player": "Malachi Flynn",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Indiana Pacers"
           }
         }
       ]
@@ -311,7 +383,14 @@
           "to": "Houston Rockets",
           "player_id": "04qs6",
           "player": "Dzanan Musa",
-          "label": "Dzanan Musa"
+          "label": "Dzanan Musa",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -319,7 +398,14 @@
           "to": "Houston Rockets",
           "player_id": "031m4",
           "player": "Dennis Schroder",
-          "label": "Dennis Schroder"
+          "label": "Dennis Schroder",
+          "result": {
+            "points": 1224.25,
+            "starts": 29,
+            "gp": 46,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -327,7 +413,14 @@
           "to": "Boston Celtics",
           "player_id": "000zv",
           "player": "Al Horford",
-          "label": "Al Horford"
+          "label": "Al Horford",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -342,6 +435,13 @@
             "player_id": "051pm",
             "player": "Admiral Schofield",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
           }
         },
         {
@@ -357,6 +457,10 @@
             "player_id": "06ccx",
             "player": "Hunter Tyson",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
           }
         }
       ]
@@ -372,7 +476,14 @@
           "to": "Los Angeles Lakers",
           "player_id": "04qs6",
           "player": "Dzanan Musa",
-          "label": "Dzanan Musa"
+          "label": "Dzanan Musa",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -380,7 +491,14 @@
           "to": "Los Angeles Lakers",
           "player_id": "05qth",
           "player": "Tyrell Terry",
-          "label": "Tyrell Terry"
+          "label": "Tyrell Terry",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -388,7 +506,14 @@
           "to": "Los Angeles Lakers",
           "player_id": "04qsp",
           "player": "Chimezie Metu",
-          "label": "Chimezie Metu"
+          "label": "Chimezie Metu",
+          "result": {
+            "points": 929.0,
+            "starts": 32,
+            "gp": 38,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -403,6 +528,10 @@
             "player_id": "0622c",
             "player": "Isaiah Mobley",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
           }
         },
         {

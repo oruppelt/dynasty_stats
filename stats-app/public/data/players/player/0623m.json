@@ -314,89 +314,6 @@
     }
   ],
   "trades": {
-    "ajis8ve4mkv3b33w": {
-      "date": "2026-01-26",
-      "season": "2025-26",
-      "period": 29,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "San Antonio Spurs",
-          "player_id": "05qsx",
-          "player": "Obi Toppin",
-          "label": "Obi Toppin"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Boston Celtics",
-          "player_id": "0623m",
-          "player": "Keon Ellis",
-          "label": "Keon Ellis"
-        }
-      ]
-    },
-    "d6sg7z0mm59sukx3": {
-      "date": "2024-12-30",
-      "season": "2024-25",
-      "period": 21,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "New Orleans Pelicans",
-          "player_id": "027oo",
-          "player": "Jonas Valanciunas",
-          "label": "Jonas Valanciunas"
-        },
-        {
-          "kind": "budget",
-          "from": "Miami Heat",
-          "to": "New Orleans Pelicans",
-          "label": "$45 budget"
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Miami Heat",
-          "player_id": "03al1",
-          "player": "Marcus Smart",
-          "label": "Marcus Smart"
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Miami Heat",
-          "player_id": "0623m",
-          "player": "Keon Ellis",
-          "label": "Keon Ellis"
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Miami Heat",
-          "player_id": "06ccw",
-          "player": "Jordan Miller",
-          "label": "Jordan Miller"
-        },
-        {
-          "kind": "pick",
-          "from": "New Orleans Pelicans",
-          "to": "Miami Heat",
-          "label": "2025 round 2 pick (New Orleans Pelicans)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 13,
-            "overall": 43,
-            "player_id": "06v8a",
-            "player": "Brooks Barnhizer",
-            "certain": true
-          }
-        }
-      ]
-    },
     "6wp31wt3m5mhwc4q": {
       "date": "2025-01-08",
       "season": "2024-25",
@@ -408,7 +325,14 @@
           "to": "Miami Heat",
           "player_id": "03r7u",
           "player": "Josh Richardson",
-          "label": "Josh Richardson"
+          "label": "Josh Richardson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -416,7 +340,14 @@
           "to": "Miami Heat",
           "player_id": "05qym",
           "player": "Kenyon Martin",
-          "label": "Kenyon Martin"
+          "label": "Kenyon Martin",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 10,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -431,6 +362,10 @@
             "player_id": "076u2",
             "player": "Dillon Mitchell",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
           }
         },
         {
@@ -439,7 +374,143 @@
           "to": "Chicago Bulls",
           "player_id": "0623m",
           "player": "Keon Ellis",
-          "label": "Keon Ellis"
+          "label": "Keon Ellis",
+          "result": {
+            "points": 509.5,
+            "starts": 10,
+            "gp": 18,
+            "periods": 10,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "ajis8ve4mkv3b33w": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "player_id": "05qsx",
+          "player": "Obi Toppin",
+          "label": "Obi Toppin",
+          "result": {
+            "points": 180.75,
+            "starts": 5,
+            "gp": 7,
+            "periods": 12,
+            "ongoing": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis",
+          "result": {
+            "points": 132.0,
+            "starts": 3,
+            "gp": 5,
+            "periods": 5,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "d6sg7z0mm59sukx3": {
+      "date": "2024-12-30",
+      "season": "2024-25",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "New Orleans Pelicans",
+          "player_id": "027oo",
+          "player": "Jonas Valanciunas",
+          "label": "Jonas Valanciunas",
+          "result": {
+            "points": 592.75,
+            "starts": 13,
+            "gp": 25,
+            "periods": 13,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "New Orleans Pelicans",
+          "label": "$45 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "03al1",
+          "player": "Marcus Smart",
+          "label": "Marcus Smart",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "0623m",
+          "player": "Keon Ellis",
+          "label": "Keon Ellis",
+          "result": {
+            "points": 184.25,
+            "starts": 3,
+            "gp": 5,
+            "periods": 3,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "player_id": "06ccw",
+          "player": "Jordan Miller",
+          "label": "Jordan Miller",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Miami Heat",
+          "label": "2025 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06v8a",
+            "player": "Brooks Barnhizer",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
         }
       ]
     }

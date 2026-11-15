@@ -295,52 +295,6 @@
     }
   ],
   "trades": {
-    "jsw3rc10mkl3o2h1": {
-      "date": "2026-01-19",
-      "season": "2025-26",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Portland Trail Blazers",
-          "player_id": "05qtr",
-          "player": "Devin Vassell",
-          "label": "Devin Vassell"
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick (New Orleans Pelicans)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 25,
-            "overall": 25,
-            "player_id": "076tj",
-            "player": "Joshua Jefferson",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Chicago Bulls",
-          "player_id": "05qty",
-          "player": "Jalen Smith",
-          "label": "Jalen Smith"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Chicago Bulls",
-          "player_id": "0621u",
-          "player": "Andrew Nembhard",
-          "label": "Andrew Nembhard"
-        }
-      ]
-    },
     "68vzx5bemhetwvoq": {
       "date": "2025-10-31",
       "season": "2025-26",
@@ -352,7 +306,14 @@
           "to": "Portland Trail Blazers",
           "player_id": "03byk",
           "player": "Jordan Clarkson",
-          "label": "Jordan Clarkson"
+          "label": "Jordan Clarkson",
+          "result": {
+            "points": 708.25,
+            "starts": 30,
+            "gp": 47,
+            "periods": 30,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -360,7 +321,14 @@
           "to": "Portland Trail Blazers",
           "player_id": "05qty",
           "player": "Jalen Smith",
-          "label": "Jalen Smith"
+          "label": "Jalen Smith",
+          "result": {
+            "points": 881.0,
+            "starts": 19,
+            "gp": 30,
+            "periods": 23,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -375,6 +343,13 @@
             "player_id": "076t0",
             "player": "Caleb Wilson",
             "certain": true
+          },
+          "result": {
+            "points": 371.0,
+            "starts": 7,
+            "gp": 10,
+            "periods": 7,
+            "ongoing": true
           }
         },
         {
@@ -390,6 +365,13 @@
             "player_id": "076sw",
             "player": "Labaron Philon",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
           }
         },
         {
@@ -398,7 +380,14 @@
           "to": "Milwaukee Bucks",
           "player_id": "04ewk",
           "player": "John Collins",
-          "label": "John Collins"
+          "label": "John Collins",
+          "result": {
+            "points": 1413.5,
+            "starts": 30,
+            "gp": 49,
+            "periods": 31,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -413,6 +402,84 @@
             "player_id": "076tj",
             "player": "Joshua Jefferson",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        }
+      ]
+    },
+    "jsw3rc10mkl3o2h1": {
+      "date": "2026-01-19",
+      "season": "2025-26",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Portland Trail Blazers",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell",
+          "result": {
+            "points": 17.5,
+            "starts": 1,
+            "gp": 1,
+            "periods": 2,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Chicago Bulls",
+          "player_id": "05qty",
+          "player": "Jalen Smith",
+          "label": "Jalen Smith",
+          "result": {
+            "points": 281.25,
+            "starts": 7,
+            "gp": 9,
+            "periods": 7,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Chicago Bulls",
+          "player_id": "0621u",
+          "player": "Andrew Nembhard",
+          "label": "Andrew Nembhard",
+          "result": {
+            "points": 375.25,
+            "starts": 7,
+            "gp": 11,
+            "periods": 7,
+            "ongoing": false
           }
         }
       ]

@@ -211,82 +211,6 @@
     }
   ],
   "trades": {
-    "cqyb06mckp43flz4": {
-      "date": "2021-05-25",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "San Antonio Spurs",
-          "player_id": "049ki",
-          "player": "Marvin Bagley",
-          "label": "Marvin Bagley"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "player_id": "0018n",
-          "player": "Lou Williams",
-          "label": "Lou Williams"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "player_id": "038xl",
-          "player": "Dewayne Dedmon",
-          "label": "Dewayne Dedmon"
-        },
-        {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "label": "2021 round 2 pick (San Antonio Spurs)",
-          "became": {
-            "season": "2021-22",
-            "round": 2,
-            "pick": 8,
-            "overall": 38,
-            "player_id": "05uj3",
-            "player": "Day'Ron Sharpe",
-            "certain": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "label": "2022 round 1 pick (Los Angeles Lakers)",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 1,
-            "overall": 1,
-            "player_id": "06211",
-            "player": "Chet Holmgren",
-            "certain": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "label": "2021 round 1 pick (Boston Celtics)",
-          "became": {
-            "season": "2021-22",
-            "round": 1,
-            "pick": 19,
-            "overall": 19,
-            "player_id": "05uis",
-            "player": "Tre Mann",
-            "certain": true
-          }
-        }
-      ]
-    },
     "af99yn18ki8m1j0e": {
       "date": "2020-12-03",
       "season": "2020-21",
@@ -298,7 +222,14 @@
           "to": "San Antonio Spurs",
           "player_id": "031lz",
           "player": "Steven Adams",
-          "label": "Steven Adams"
+          "label": "Steven Adams",
+          "result": {
+            "points": 1208.0,
+            "starts": 29,
+            "gp": 45,
+            "periods": 29,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -313,6 +244,10 @@
             "player_id": "06221",
             "player": "Kennedy Chandler",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
           }
         },
         {
@@ -328,6 +263,10 @@
             "player_id": "06211",
             "player": "Chet Holmgren",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
           }
         },
         {
@@ -343,6 +282,125 @@
             "player_id": "05ujk",
             "player": "Dalano Banton",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
+        }
+      ]
+    },
+    "cqyb06mckp43flz4": {
+      "date": "2021-05-25",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "0018n",
+          "player": "Lou Williams",
+          "label": "Lou Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "038xl",
+          "player": "Dewayne Dedmon",
+          "label": "Dewayne Dedmon",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "05uj3",
+            "player": "Day'Ron Sharpe",
+            "certain": false
+          },
+          "result": {
+            "points": 399.75,
+            "starts": 28,
+            "gp": 23,
+            "periods": 33,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06211",
+            "player": "Chet Holmgren",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "05uis",
+            "player": "Tre Mann",
+            "certain": true
+          },
+          "result": {
+            "points": 464.25,
+            "starts": 17,
+            "gp": 27,
+            "periods": 33,
+            "ongoing": false
           }
         }
       ]
@@ -358,7 +416,14 @@
           "to": "Sacramento Kings",
           "player_id": "05uiq",
           "player": "Alperen Sengun",
-          "label": "Alperen Sengun"
+          "label": "Alperen Sengun",
+          "result": {
+            "points": 5117.25,
+            "starts": 92,
+            "gp": 147,
+            "periods": 98,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -366,7 +431,14 @@
           "to": "Los Angeles Lakers",
           "player_id": "048zt",
           "player": "Derrick Jones",
-          "label": "Derrick Jones"
+          "label": "Derrick Jones",
+          "result": {
+            "points": 543.25,
+            "starts": 25,
+            "gp": 31,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -381,6 +453,13 @@
             "player_id": "06211",
             "player": "Chet Holmgren",
             "certain": true
+          },
+          "result": {
+            "points": 3010.0,
+            "starts": 40,
+            "gp": 66,
+            "periods": 98,
+            "ongoing": false
           }
         },
         {
@@ -396,6 +475,13 @@
             "player_id": "06cc7",
             "player": "Brandin Podziemski",
             "certain": true
+          },
+          "result": {
+            "points": 3835.75,
+            "starts": 84,
+            "gp": 133,
+            "periods": 98,
+            "ongoing": false
           }
         }
       ]

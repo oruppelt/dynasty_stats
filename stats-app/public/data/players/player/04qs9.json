@@ -386,7 +386,14 @@
           "to": "New York Knicks",
           "player_id": "0558t",
           "player": "Max Strus",
-          "label": "Max Strus"
+          "label": "Max Strus",
+          "result": {
+            "points": 609.0,
+            "starts": 16,
+            "gp": 25,
+            "periods": 16,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -394,7 +401,14 @@
           "to": "New York Knicks",
           "player_id": "04qs9",
           "player": "Jevon Carter",
-          "label": "Jevon Carter"
+          "label": "Jevon Carter",
+          "result": {
+            "points": 331.75,
+            "starts": 12,
+            "gp": 20,
+            "periods": 16,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -402,7 +416,14 @@
           "to": "Indiana Pacers",
           "player_id": "005ka",
           "player": "Derrick Rose",
-          "label": "Derrick Rose"
+          "label": "Derrick Rose",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 16,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -417,67 +438,13 @@
             "player_id": "06ca4",
             "player": "Kobe Bufkin",
             "certain": true
-          }
-        }
-      ]
-    },
-    "yy9p5ocdkye254n4": {
-      "date": "2022-01-14",
-      "season": "2021-22",
-      "period": 26,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Philadelphia 76ers",
-          "player_id": "01uz7",
-          "player": "Gordon Hayward",
-          "label": "Gordon Hayward"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Philadelphia 76ers",
-          "label": "2022 round 2 pick (Dallas Mavericks)",
-          "became": {
-            "season": "2022-23",
-            "round": 2,
-            "pick": 10,
-            "overall": 40,
-            "player_id": "05uul",
-            "player": "Jose Alvarado",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Miami Heat",
-          "player_id": "03apx",
-          "player": "Gary Harris",
-          "label": "Gary Harris"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Miami Heat",
-          "player_id": "04qs9",
-          "player": "Jevon Carter",
-          "label": "Jevon Carter"
-        },
-        {
-          "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Miami Heat",
-          "label": "2023 round 1 pick (Philadelphia 76ers)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 10,
-            "overall": 10,
-            "player_id": "06ca7",
-            "player": "Cam Whitmore",
-            "certain": true
+          },
+          "result": {
+            "points": -0.5,
+            "starts": 3,
+            "gp": 1,
+            "periods": 50,
+            "ongoing": false
           }
         }
       ]
@@ -499,7 +466,104 @@
           "to": "Cleveland Cavaliers",
           "player_id": "04qs9",
           "player": "Jevon Carter",
-          "label": "Jevon Carter"
+          "label": "Jevon Carter",
+          "result": {
+            "points": 111.5,
+            "starts": 7,
+            "gp": 11,
+            "periods": 27,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "yy9p5ocdkye254n4": {
+      "date": "2022-01-14",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "player_id": "01uz7",
+          "player": "Gordon Hayward",
+          "label": "Gordon Hayward",
+          "result": {
+            "points": 155.25,
+            "starts": 6,
+            "gp": 7,
+            "periods": 8,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
+          "label": "2022 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "05uul",
+            "player": "Jose Alvarado",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Cleveland Cavaliers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris",
+          "result": {
+            "points": 291.75,
+            "starts": 7,
+            "gp": 12,
+            "periods": 8,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "04qs9",
+          "player": "Jevon Carter",
+          "label": "Jevon Carter",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 2,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "label": "2023 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06ca7",
+            "player": "Cam Whitmore",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Oklahoma City Thunder"
+          }
         }
       ]
     }

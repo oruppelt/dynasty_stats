@@ -264,60 +264,6 @@
     }
   ],
   "trades": {
-    "ssp9l719lqaof5h2": {
-      "date": "2023-12-18",
-      "season": "2023-24",
-      "period": 17,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Milwaukee Bucks",
-          "player_id": "043ib",
-          "player": "Dorian Finney-Smith",
-          "label": "Dorian Finney-Smith"
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Miami Heat",
-          "player_id": "05uin",
-          "player": "Chris Duarte",
-          "label": "Chris Duarte"
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Miami Heat",
-          "player_id": "05uuv",
-          "player": "Trendon Watford",
-          "label": "Trendon Watford"
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Miami Heat",
-          "player_id": "06226",
-          "player": "Moussa Diabate",
-          "label": "Moussa Diabate"
-        },
-        {
-          "kind": "pick",
-          "from": "Milwaukee Bucks",
-          "to": "Miami Heat",
-          "label": "2024 round 2 pick (Milwaukee Bucks)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 13,
-            "overall": 43,
-            "player_id": "06mkj",
-            "player": "Terrence Shannon",
-            "certain": false
-          }
-        }
-      ]
-    },
     "5bxdraq0m5qxtpz8": {
       "date": "2025-01-10",
       "season": "2024-25",
@@ -329,7 +275,14 @@
           "to": "Minnesota Timberwolves",
           "player_id": "05uik",
           "player": "Ziaire Williams",
-          "label": "Ziaire Williams"
+          "label": "Ziaire Williams",
+          "result": {
+            "points": 239.0,
+            "starts": 5,
+            "gp": 9,
+            "periods": 10,
+            "ongoing": false
+          }
         },
         {
           "kind": "budget",
@@ -343,7 +296,14 @@
           "to": "Milwaukee Bucks",
           "player_id": "051oq",
           "player": "Cam Reddish",
-          "label": "Cam Reddish"
+          "label": "Cam Reddish",
+          "result": {
+            "points": 19.5,
+            "starts": 8,
+            "gp": 3,
+            "periods": 10,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -351,7 +311,14 @@
           "to": "Milwaukee Bucks",
           "player_id": "06226",
           "player": "Moussa Diabate",
-          "label": "Moussa Diabate"
+          "label": "Moussa Diabate",
+          "result": {
+            "points": 198.0,
+            "starts": 4,
+            "gp": 7,
+            "periods": 10,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -366,6 +333,99 @@
             "player_id": "06v59",
             "player": "Will Riley",
             "certain": true
+          },
+          "result": {
+            "points": 410.75,
+            "starts": 16,
+            "gp": 26,
+            "periods": 40,
+            "ongoing": true
+          }
+        }
+      ]
+    },
+    "ssp9l719lqaof5h2": {
+      "date": "2023-12-18",
+      "season": "2023-24",
+      "period": 17,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "043ib",
+          "player": "Dorian Finney-Smith",
+          "label": "Dorian Finney-Smith",
+          "result": {
+            "points": 455.75,
+            "starts": 15,
+            "gp": 20,
+            "periods": 16,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "05uin",
+          "player": "Chris Duarte",
+          "label": "Chris Duarte",
+          "result": {
+            "points": 107.5,
+            "starts": 14,
+            "gp": 13,
+            "periods": 16,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "05uuv",
+          "player": "Trendon Watford",
+          "label": "Trendon Watford",
+          "result": {
+            "points": 219.25,
+            "starts": 15,
+            "gp": 19,
+            "periods": 16,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "06226",
+          "player": "Moussa Diabate",
+          "label": "Moussa Diabate",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 3,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06mkj",
+            "player": "Terrence Shannon",
+            "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
           }
         }
       ]

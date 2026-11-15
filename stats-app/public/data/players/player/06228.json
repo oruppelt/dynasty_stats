@@ -239,145 +239,6 @@
     }
   ],
   "trades": {
-    "wg2khwkzkymoxxff": {
-      "date": "2022-01-20",
-      "season": "2021-22",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Detroit Pistons",
-          "player_id": "01uza",
-          "player": "Lance Stephenson",
-          "label": "Lance Stephenson"
-        },
-        {
-          "kind": "pick",
-          "from": "Charlotte Hornets",
-          "to": "Detroit Pistons",
-          "label": "2022 round 1 pick (Memphis Grizzlies)",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 30,
-            "overall": 30,
-            "player_id": "06228",
-            "player": "Josh Minott",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Charlotte Hornets",
-          "player_id": "04qsi",
-          "player": "Jarred Vanderbilt",
-          "label": "Jarred Vanderbilt"
-        }
-      ]
-    },
-    "f55b9i8llqovzig1": {
-      "date": "2023-12-28",
-      "season": "2023-24",
-      "period": 20,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Miami Heat",
-          "player_id": "06228",
-          "player": "Josh Minott",
-          "label": "Josh Minott"
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Miami Heat",
-          "player_id": "06224",
-          "player": "E.J. Liddell",
-          "label": "E.J. Liddell"
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Miami Heat",
-          "player_id": "0626t",
-          "player": "Dominick Barlow",
-          "label": "Dominick Barlow"
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Miami Heat",
-          "player_id": "03avi",
-          "player": "Doug McDermott",
-          "label": "Doug McDermott"
-        },
-        {
-          "kind": "pick",
-          "from": "Detroit Pistons",
-          "to": "Miami Heat",
-          "label": "2024 round 1 pick (Miami Heat)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 4,
-            "overall": 4,
-            "player_id": "06mk3",
-            "player": "Matas Buzelis",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Milwaukee Bucks",
-          "player_id": "0015b",
-          "player": "Kyle Lowry",
-          "label": "Kyle Lowry"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Milwaukee Bucks",
-          "player_id": "042ne",
-          "player": "Malik Beasley",
-          "label": "Malik Beasley"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Detroit Pistons",
-          "label": "2024 round 2 pick (Los Angeles Clippers)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 2,
-            "overall": 32,
-            "player_id": "06mli",
-            "player": "Juan Nunez",
-            "certain": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Detroit Pistons",
-          "player_id": "042nf",
-          "player": "Caris LeVert",
-          "label": "Caris LeVert"
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Miami Heat",
-          "player_id": "04qsd",
-          "player": "Mitchell Robinson",
-          "label": "Mitchell Robinson"
-        }
-      ]
-    },
     "20af3cgxkpeqvvt8": {
       "date": "2021-06-02",
       "season": "2021-22",
@@ -389,7 +250,14 @@
           "to": "Memphis Grizzlies",
           "player_id": "042n1",
           "player": "Brandon Ingram",
-          "label": "Brandon Ingram"
+          "label": "Brandon Ingram",
+          "result": {
+            "points": 1334.25,
+            "starts": 22,
+            "gp": 34,
+            "periods": 27,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -397,7 +265,14 @@
           "to": "Charlotte Hornets",
           "player_id": "051or",
           "player": "Cameron Johnson",
-          "label": "Cameron Johnson"
+          "label": "Cameron Johnson",
+          "result": {
+            "points": 835.25,
+            "starts": 17,
+            "gp": 27,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -412,6 +287,10 @@
             "player_id": "06228",
             "player": "Josh Minott",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
           }
         },
         {
@@ -427,6 +306,237 @@
             "player_id": "05uj0",
             "player": "Bones Hyland",
             "certain": true
+          },
+          "result": {
+            "points": 925.75,
+            "starts": 31,
+            "gp": 48,
+            "periods": 62,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "f55b9i8llqovzig1": {
+      "date": "2023-12-28",
+      "season": "2023-24",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "06228",
+          "player": "Josh Minott",
+          "label": "Josh Minott",
+          "result": {
+            "points": 27.75,
+            "starts": 10,
+            "gp": 3,
+            "periods": 13,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "06224",
+          "player": "E.J. Liddell",
+          "label": "E.J. Liddell",
+          "result": {
+            "points": 15.5,
+            "starts": 4,
+            "gp": 3,
+            "periods": 13,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "0626t",
+          "player": "Dominick Barlow",
+          "label": "Dominick Barlow",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "03avi",
+          "player": "Doug McDermott",
+          "label": "Doug McDermott",
+          "result": {
+            "points": 51.5,
+            "starts": 3,
+            "gp": 4,
+            "periods": 4,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "label": "2024 round 1 pick (Miami Heat)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "06mk3",
+            "player": "Matas Buzelis",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "0015b",
+          "player": "Kyle Lowry",
+          "label": "Kyle Lowry",
+          "result": {
+            "points": 93.25,
+            "starts": 4,
+            "gp": 6,
+            "periods": 13,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "042ne",
+          "player": "Malik Beasley",
+          "label": "Malik Beasley",
+          "result": {
+            "points": 230.75,
+            "starts": 6,
+            "gp": 11,
+            "periods": 9,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06mli",
+            "player": "Juan Nunez",
+            "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Detroit Pistons",
+          "player_id": "042nf",
+          "player": "Caris LeVert",
+          "label": "Caris LeVert",
+          "result": {
+            "points": 523.25,
+            "starts": 11,
+            "gp": 17,
+            "periods": 13,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Miami Heat",
+          "player_id": "04qsd",
+          "player": "Mitchell Robinson",
+          "label": "Mitchell Robinson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 13,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "wg2khwkzkymoxxff": {
+      "date": "2022-01-20",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Detroit Pistons",
+          "player_id": "01uza",
+          "player": "Lance Stephenson",
+          "label": "Lance Stephenson",
+          "result": {
+            "points": 205.5,
+            "starts": 6,
+            "gp": 10,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Charlotte Hornets",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 30,
+            "overall": 30,
+            "player_id": "06228",
+            "player": "Josh Minott",
+            "certain": true
+          },
+          "result": {
+            "points": 15.25,
+            "starts": 11,
+            "gp": 6,
+            "periods": 52,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Charlotte Hornets",
+          "player_id": "04qsi",
+          "player": "Jarred Vanderbilt",
+          "label": "Jarred Vanderbilt",
+          "result": {
+            "points": 237.25,
+            "starts": 4,
+            "gp": 7,
+            "periods": 6,
+            "ongoing": false
           }
         }
       ]

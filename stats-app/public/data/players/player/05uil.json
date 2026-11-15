@@ -168,58 +168,6 @@
     }
   ],
   "trades": {
-    "3p74t99pkrudqaqs": {
-      "date": "2021-08-02",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Sacramento Kings",
-          "label": "2021 round 1 pick, no. 13",
-          "became": {
-            "season": "2021-22",
-            "round": 1,
-            "pick": 13,
-            "overall": 13,
-            "player_id": "05uit",
-            "player": "Kai Jones",
-            "certain": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Sacramento Kings",
-          "label": "2021 round 2 pick, no. 13",
-          "became": {
-            "season": "2021-22",
-            "round": 2,
-            "pick": 13,
-            "overall": 43,
-            "player_id": "05uj5",
-            "player": "Isaiah Todd",
-            "certain": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Minnesota Timberwolves",
-          "label": "2021 round 1 pick, no. 11",
-          "became": {
-            "season": "2021-22",
-            "round": 1,
-            "pick": 11,
-            "overall": 11,
-            "player_id": "05uil",
-            "player": "James Bouknight",
-            "certain": true
-          }
-        }
-      ]
-    },
     "u99m5em4l66hdh7a": {
       "date": "2022-07-29",
       "season": "2022-23",
@@ -238,6 +186,13 @@
             "player_id": "06mmh",
             "player": "Isaac Jones",
             "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
           }
         },
         {
@@ -252,7 +207,14 @@
           "to": "Orlando Magic",
           "player_id": "05uil",
           "player": "James Bouknight",
-          "label": "James Bouknight"
+          "label": "James Bouknight",
+          "result": {
+            "points": 240.25,
+            "starts": 24,
+            "gp": 23,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -260,7 +222,14 @@
           "to": "Orlando Magic",
           "player_id": "06227",
           "player": "Ryan Rollins",
-          "label": "Ryan Rollins"
+          "label": "Ryan Rollins",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -275,7 +244,14 @@
           "to": "Sacramento Kings",
           "player_id": "05qsl",
           "player": "Patrick Williams",
-          "label": "Patrick Williams"
+          "label": "Patrick Williams",
+          "result": {
+            "points": 38.5,
+            "starts": 2,
+            "gp": 3,
+            "periods": 3,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -283,7 +259,14 @@
           "to": "Sacramento Kings",
           "player_id": "05uil",
           "player": "James Bouknight",
-          "label": "James Bouknight"
+          "label": "James Bouknight",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -291,7 +274,14 @@
           "to": "Minnesota Timberwolves",
           "player_id": "05uj3",
           "player": "Day'Ron Sharpe",
-          "label": "Day'Ron Sharpe"
+          "label": "Day'Ron Sharpe",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -306,6 +296,80 @@
             "player_id": "06cc7",
             "player": "Brandin Podziemski",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        }
+      ]
+    },
+    "3p74t99pkrudqaqs": {
+      "date": "2021-08-02",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Sacramento Kings",
+          "label": "2021 round 1 pick, no. 13",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 13,
+            "overall": 13,
+            "player_id": "05uit",
+            "player": "Kai Jones",
+            "certain": true
+          },
+          "result": {
+            "points": 0.25,
+            "starts": 21,
+            "gp": 10,
+            "periods": 26,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Sacramento Kings",
+          "label": "2021 round 2 pick, no. 13",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "05uj5",
+            "player": "Isaiah Todd",
+            "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Minnesota Timberwolves",
+          "label": "2021 round 1 pick, no. 11",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "05uil",
+            "player": "James Bouknight",
+            "certain": true
+          },
+          "result": {
+            "points": 89.75,
+            "starts": 7,
+            "gp": 8,
+            "periods": 33,
+            "ongoing": false
           }
         }
       ]
@@ -321,7 +385,14 @@
           "to": "Sacramento Kings",
           "player_id": "027pe",
           "player": "Jimmy Butler",
-          "label": "Jimmy Butler"
+          "label": "Jimmy Butler",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -336,6 +407,10 @@
             "player_id": "05ujh",
             "player": "Greg Brown",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
           }
         },
         {
@@ -351,6 +426,10 @@
             "player_id": "05uil",
             "player": "James Bouknight",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Minnesota Timberwolves"
           }
         },
         {
@@ -359,7 +438,14 @@
           "to": "Atlanta Hawks",
           "player_id": "038xl",
           "player": "Dewayne Dedmon",
-          "label": "Dewayne Dedmon"
+          "label": "Dewayne Dedmon",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -367,7 +453,14 @@
           "to": "Atlanta Hawks",
           "player_id": "04qru",
           "player": "Donte DiVincenzo",
-          "label": "Donte DiVincenzo"
+          "label": "Donte DiVincenzo",
+          "result": {
+            "points": 152.25,
+            "starts": 7,
+            "gp": 10,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -375,7 +468,14 @@
           "to": "Atlanta Hawks",
           "player_id": "02nfw",
           "player": "Tomas Satoransky",
-          "label": "Tomas Satoransky"
+          "label": "Tomas Satoransky",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         }
       ]
     }

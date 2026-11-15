@@ -181,68 +181,6 @@
     }
   ],
   "trades": {
-    "x216qg6wlbqcxmyd": {
-      "date": "2022-12-16",
-      "season": "2022-23",
-      "period": 18,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Los Angeles Lakers",
-          "player_id": "05qu0",
-          "player": "Jaden McDaniels",
-          "label": "Jaden McDaniels"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Los Angeles Lakers",
-          "player_id": "04qse",
-          "player": "Gary Trent",
-          "label": "Gary Trent"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Golden State Warriors",
-          "player_id": "05uj2",
-          "player": "Jaden Springer",
-          "label": "Jaden Springer"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Golden State Warriors",
-          "player_id": "0621s",
-          "player": "TyTy Washington",
-          "label": "TyTy Washington"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Golden State Warriors",
-          "player_id": "051on",
-          "player": "Coby White",
-          "label": "Coby White"
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Golden State Warriors",
-          "label": "2023 round 1 pick (Golden State Warriors)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 3,
-            "overall": 3,
-            "player_id": "06cca",
-            "player": "Brandon Miller",
-            "certain": true
-          }
-        }
-      ]
-    },
     "78sajgbpksonf12n": {
       "date": "2021-08-23",
       "season": "2021-22",
@@ -254,7 +192,14 @@
           "to": "Los Angeles Lakers",
           "player_id": "03r7l",
           "player": "Larry Nance",
-          "label": "Larry Nance"
+          "label": "Larry Nance",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -262,7 +207,14 @@
           "to": "Los Angeles Lakers",
           "player_id": "05qu3",
           "player": "Nico Mannion",
-          "label": "Nico Mannion"
+          "label": "Nico Mannion",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -277,6 +229,10 @@
             "player_id": "06cca",
             "player": "Brandon Miller",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
           }
         },
         {
@@ -285,7 +241,118 @@
           "to": "Golden State Warriors",
           "player_id": "03e6u",
           "player": "Bogdan Bogdanovic",
-          "label": "Bogdan Bogdanovic"
+          "label": "Bogdan Bogdanovic",
+          "result": {
+            "points": 1079.0,
+            "starts": 24,
+            "gp": 38,
+            "periods": 50,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "x216qg6wlbqcxmyd": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "05qu0",
+          "player": "Jaden McDaniels",
+          "label": "Jaden McDaniels",
+          "result": {
+            "points": 848.75,
+            "starts": 16,
+            "gp": 30,
+            "periods": 16,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Los Angeles Lakers",
+          "player_id": "04qse",
+          "player": "Gary Trent",
+          "label": "Gary Trent",
+          "result": {
+            "points": 960.0,
+            "starts": 16,
+            "gp": 24,
+            "periods": 16,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "05uj2",
+          "player": "Jaden Springer",
+          "label": "Jaden Springer",
+          "result": {
+            "points": 69.25,
+            "starts": 5,
+            "gp": 5,
+            "periods": 25,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "0621s",
+          "player": "TyTy Washington",
+          "label": "TyTy Washington",
+          "result": {
+            "points": 98.5,
+            "starts": 10,
+            "gp": 12,
+            "periods": 16,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Golden State Warriors",
+          "label": "2023 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "06cca",
+            "player": "Brandon Miller",
+            "certain": true
+          },
+          "result": {
+            "points": 3750.5,
+            "starts": 71,
+            "gp": 106,
+            "periods": 98,
+            "ongoing": false
+          }
         }
       ]
     }

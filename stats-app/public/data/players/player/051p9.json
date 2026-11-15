@@ -346,76 +346,6 @@
     }
   ],
   "trades": {
-    "sq7it0uxm6e3ev52": {
-      "date": "2025-01-27",
-      "season": "2024-25",
-      "period": 29,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Milwaukee Bucks",
-          "player_id": "051p9",
-          "player": "Keldon Johnson",
-          "label": "Keldon Johnson"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Los Angeles Clippers",
-          "player_id": "03r7u",
-          "player": "Josh Richardson",
-          "label": "Josh Richardson"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Milwaukee Bucks",
-          "player_id": "03e7f",
-          "player": "Vasilije Micic",
-          "label": "Vasilije Micic"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Milwaukee Bucks",
-          "label": "2026 round 1 pick (Orlando Magic)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 20,
-            "overall": 20,
-            "player_id": "076sw",
-            "player": "Labaron Philon",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "player_id": "03e6u",
-          "player": "Bogdan Bogdanovic",
-          "label": "Bogdan Bogdanovic"
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Clippers",
-          "to": "Atlanta Hawks",
-          "player_id": "051pa",
-          "player": "Kevin Porter",
-          "label": "Kevin Porter"
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Los Angeles Clippers",
-          "player_id": "027oz",
-          "player": "Kawhi Leonard",
-          "label": "Kawhi Leonard"
-        }
-      ]
-    },
     "lot0xakcmhs7b6qj": {
       "date": "2025-11-10",
       "season": "2025-26",
@@ -427,7 +357,14 @@
           "to": "Milwaukee Bucks",
           "player_id": "0621l",
           "player": "Walker Kessler",
-          "label": "Walker Kessler"
+          "label": "Walker Kessler",
+          "result": {
+            "points": 566.75,
+            "starts": 7,
+            "gp": 13,
+            "periods": 34,
+            "ongoing": true
+          }
         },
         {
           "kind": "player",
@@ -435,7 +372,14 @@
           "to": "Chicago Bulls",
           "player_id": "051p9",
           "player": "Keldon Johnson",
-          "label": "Keldon Johnson"
+          "label": "Keldon Johnson",
+          "result": {
+            "points": 1017.5,
+            "starts": 21,
+            "gp": 36,
+            "periods": 21,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -456,140 +400,11 @@
             "player_id": "076tj",
             "player": "Joshua Jefferson",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
           }
-        }
-      ]
-    },
-    "llmo9x2dmklfs52y": {
-      "date": "2026-01-23",
-      "season": "2025-26",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Philadelphia 76ers",
-          "player_id": "04azw",
-          "player": "Lauri Markkanen",
-          "label": "Lauri Markkanen"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Chicago Bulls",
-          "player_id": "031lx",
-          "player": "CJ McCollum",
-          "label": "CJ McCollum"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Philadelphia 76ers",
-          "player_id": "03e6u",
-          "player": "Bogdan Bogdanovic",
-          "label": "Bogdan Bogdanovic"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Utah Jazz",
-          "player_id": "03e6n",
-          "player": "Jusuf Nurkic",
-          "label": "Jusuf Nurkic"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Utah Jazz",
-          "label": "2026 round 1 pick (Dallas Mavericks)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 29,
-            "overall": 29,
-            "player_id": "076t5",
-            "player": "Alex Karaban",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Philadelphia 76ers",
-          "player_id": "051p9",
-          "player": "Keldon Johnson",
-          "label": "Keldon Johnson"
-        },
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Atlanta Hawks",
-          "player_id": "04qsj",
-          "player": "Bruce Brown",
-          "label": "Bruce Brown"
-        },
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Utah Jazz",
-          "player_id": "05qtf",
-          "player": "Xavier Tillman",
-          "label": "Xavier Tillman"
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Philadelphia 76ers",
-          "label": "2026 round 1 pick (Chicago Bulls)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 15,
-            "overall": 15,
-            "player_id": "076t2",
-            "player": "Cameron Carr",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Atlanta Hawks",
-          "player_id": "05qtq",
-          "player": "Tre Jones",
-          "label": "Tre Jones"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Chicago Bulls",
-          "player_id": "02nf7",
-          "player": "Harrison Barnes",
-          "label": "Harrison Barnes"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Atlanta Hawks",
-          "player_id": "03al2",
-          "player": "Joel Embiid",
-          "label": "Joel Embiid"
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Atlanta Hawks",
-          "player_id": "06ca5",
-          "player": "Kris Murray",
-          "label": "Kris Murray"
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Atlanta Hawks",
-          "player_id": "06cbz",
-          "player": "Brice Sensabaugh",
-          "label": "Brice Sensabaugh"
         }
       ]
     },
@@ -604,7 +419,14 @@
           "to": "San Antonio Spurs",
           "player_id": "04ewk",
           "player": "John Collins",
-          "label": "John Collins"
+          "label": "John Collins",
+          "result": {
+            "points": 754.0,
+            "starts": 15,
+            "gp": 24,
+            "periods": 15,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -624,7 +446,355 @@
           "to": "Atlanta Hawks",
           "player_id": "051p9",
           "player": "Keldon Johnson",
-          "label": "Keldon Johnson"
+          "label": "Keldon Johnson",
+          "result": {
+            "points": 1578.75,
+            "starts": 38,
+            "gp": 61,
+            "periods": 43,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "sq7it0uxm6e3ev52": {
+      "date": "2025-01-27",
+      "season": "2024-25",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson",
+          "result": {
+            "points": 377.25,
+            "starts": 11,
+            "gp": 18,
+            "periods": 11,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Los Angeles Clippers",
+          "player_id": "03r7u",
+          "player": "Josh Richardson",
+          "label": "Josh Richardson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 5,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "player_id": "03e7f",
+          "player": "Vasilije Micic",
+          "label": "Vasilije Micic",
+          "result": {
+            "points": 101.0,
+            "starts": 5,
+            "gp": 5,
+            "periods": 5,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 1 pick (Orlando Magic)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "076sw",
+            "player": "Labaron Philon",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic",
+          "result": {
+            "points": 37.5,
+            "starts": 2,
+            "gp": 2,
+            "periods": 5,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Atlanta Hawks",
+          "player_id": "051pa",
+          "player": "Kevin Porter",
+          "label": "Kevin Porter",
+          "result": {
+            "points": 115.75,
+            "starts": 5,
+            "gp": 7,
+            "periods": 5,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Los Angeles Clippers",
+          "player_id": "027oz",
+          "player": "Kawhi Leonard",
+          "label": "Kawhi Leonard",
+          "result": {
+            "points": 270.25,
+            "starts": 5,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "llmo9x2dmklfs52y": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen",
+          "result": {
+            "points": 326.25,
+            "starts": 6,
+            "gp": 8,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Chicago Bulls",
+          "player_id": "031lx",
+          "player": "CJ McCollum",
+          "label": "CJ McCollum",
+          "result": {
+            "points": 399.0,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Philadelphia 76ers",
+          "player_id": "03e6u",
+          "player": "Bogdan Bogdanovic",
+          "label": "Bogdan Bogdanovic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "076t5",
+            "player": "Alex Karaban",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson",
+          "result": {
+            "points": 232.5,
+            "starts": 6,
+            "gp": 10,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Atlanta Hawks",
+          "player_id": "04qsj",
+          "player": "Bruce Brown",
+          "label": "Bruce Brown",
+          "result": {
+            "points": 292.0,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Utah Jazz",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Philadelphia 76ers",
+          "label": "2026 round 1 pick (Chicago Bulls)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "076t2",
+            "player": "Cameron Carr",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "05qtq",
+          "player": "Tre Jones",
+          "label": "Tre Jones",
+          "result": {
+            "points": 30.5,
+            "starts": 3,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Chicago Bulls",
+          "player_id": "02nf7",
+          "player": "Harrison Barnes",
+          "label": "Harrison Barnes",
+          "result": {
+            "points": 103.75,
+            "starts": 2,
+            "gp": 4,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Atlanta Hawks",
+          "player_id": "03al2",
+          "player": "Joel Embiid",
+          "label": "Joel Embiid",
+          "result": {
+            "points": 420.0,
+            "starts": 6,
+            "gp": 7,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06ca5",
+          "player": "Kris Murray",
+          "label": "Kris Murray",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Atlanta Hawks",
+          "player_id": "06cbz",
+          "player": "Brice Sensabaugh",
+          "label": "Brice Sensabaugh",
+          "result": {
+            "points": 292.75,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          }
         }
       ]
     }

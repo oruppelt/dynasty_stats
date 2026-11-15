@@ -255,44 +255,6 @@
     }
   ],
   "trades": {
-    "cqap8u98lxyaxee6": {
-      "date": "2024-06-28",
-      "season": "2024-25",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Sacramento Kings",
-          "player_id": "04qrn",
-          "player": "Mikal Bridges",
-          "label": "Mikal Bridges"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Sacramento Kings",
-          "label": "2024 round 1 pick, no. 20",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 20,
-            "overall": 20,
-            "player_id": "06mlg",
-            "player": "Tyler Kolek",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Atlanta Hawks",
-          "player_id": "049kb",
-          "player": "De'Aaron Fox",
-          "label": "De'Aaron Fox"
-        }
-      ]
-    },
     "xlt1l483lzdzxsfa": {
       "date": "2024-08-03",
       "season": "2024-25",
@@ -304,7 +266,14 @@
           "to": "Sacramento Kings",
           "player_id": "03nwk",
           "player": "Kelly Oubre Jr.",
-          "label": "Kelly Oubre Jr."
+          "label": "Kelly Oubre Jr.",
+          "result": {
+            "points": 1721.75,
+            "starts": 33,
+            "gp": 51,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -319,6 +288,10 @@
             "player_id": "06v5a",
             "player": "Collin Murray-Boyles",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
           }
         },
         {
@@ -327,7 +300,73 @@
           "to": "Atlanta Hawks",
           "player_id": "04qrn",
           "player": "Mikal Bridges",
-          "label": "Mikal Bridges"
+          "label": "Mikal Bridges",
+          "result": {
+            "points": 3964.75,
+            "starts": 66,
+            "gp": 110,
+            "periods": 66,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "cqap8u98lxyaxee6": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "player_id": "04qrn",
+          "player": "Mikal Bridges",
+          "label": "Mikal Bridges",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Sacramento Kings",
+          "label": "2024 round 1 pick, no. 20",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06mlg",
+            "player": "Tyler Kolek",
+            "certain": true
+          },
+          "result": {
+            "points": 566.25,
+            "starts": 31,
+            "gp": 42,
+            "periods": 66,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Atlanta Hawks",
+          "player_id": "049kb",
+          "player": "De'Aaron Fox",
+          "label": "De'Aaron Fox",
+          "result": {
+            "points": 1705.5,
+            "starts": 22,
+            "gp": 36,
+            "periods": 24,
+            "ongoing": false
+          }
         }
       ]
     }

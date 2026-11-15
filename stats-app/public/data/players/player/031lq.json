@@ -344,83 +344,6 @@
     }
   ],
   "trades": {
-    "6kk26nz5k269o7q2": {
-      "date": "2019-10-25",
-      "season": "2019-20",
-      "period": 2,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Orlando Magic",
-          "player_id": "03apy",
-          "player": "Rodney Hood",
-          "label": "Rodney Hood"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Orlando Magic",
-          "player_id": "04jwc",
-          "player": "Alfonzo McKinnie",
-          "label": "Alfonzo McKinnie"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Orlando Magic",
-          "player_id": "02nf8",
-          "player": "Terrence Ross",
-          "label": "Terrence Ross"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Orlando Magic",
-          "label": "2020 round 2 pick (Cleveland Cavaliers)",
-          "became": {
-            "season": "2020-21",
-            "round": 2,
-            "pick": 5,
-            "overall": 35,
-            "player_id": "05qtq",
-            "player": "Tre Jones",
-            "certain": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Golden State Warriors",
-          "player_id": "031lq",
-          "player": "Otto Porter",
-          "label": "Otto Porter"
-        }
-      ]
-    },
-    "uyaan13fk5mmkvl1": {
-      "date": "2020-01-20",
-      "season": "2019-20",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Cleveland Cavaliers",
-          "player_id": "031lq",
-          "player": "Otto Porter",
-          "label": "Otto Porter"
-        },
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Boston Celtics",
-          "player_id": "001bo",
-          "player": "Paul Millsap",
-          "label": "Paul Millsap"
-        }
-      ]
-    },
     "18yvuxoyk2wfh60f": {
       "date": "2019-11-13",
       "season": "2019-20",
@@ -432,7 +355,14 @@
           "to": "Golden State Warriors",
           "player_id": "0017e",
           "player": "Chris Paul",
-          "label": "Chris Paul"
+          "label": "Chris Paul",
+          "result": {
+            "points": 953.75,
+            "starts": 13,
+            "gp": 21,
+            "periods": 13,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -447,6 +377,13 @@
             "player_id": "05qu3",
             "player": "Nico Mannion",
             "certain": false
+          },
+          "result": {
+            "points": 18.75,
+            "starts": 1,
+            "gp": 2,
+            "periods": 29,
+            "ongoing": false
           }
         },
         {
@@ -462,6 +399,10 @@
             "player_id": "05qtt",
             "player": "Onyeka Okongwu",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
           }
         },
         {
@@ -470,30 +411,14 @@
           "to": "Boston Celtics",
           "player_id": "031lq",
           "player": "Otto Porter",
-          "label": "Otto Porter"
-        }
-      ]
-    },
-    "i8f4s5skkyd3ovzf": {
-      "date": "2022-01-13",
-      "season": "2021-22",
-      "period": 26,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Dallas Mavericks",
-          "to": "Houston Rockets",
-          "player_id": "031lq",
-          "player": "Otto Porter",
-          "label": "Otto Porter"
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Dallas Mavericks",
-          "player_id": "051pw",
-          "player": "Jalen McDaniels",
-          "label": "Jalen McDaniels"
+          "label": "Otto Porter",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 19,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -508,7 +433,14 @@
           "to": "Toronto Raptors",
           "player_id": "031lq",
           "player": "Otto Porter",
-          "label": "Otto Porter"
+          "label": "Otto Porter",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 5,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -531,7 +463,174 @@
           "to": "New Orleans Pelicans",
           "player_id": "05qt0",
           "player": "Saddiq Bey",
-          "label": "Saddiq Bey"
+          "label": "Saddiq Bey",
+          "result": {
+            "points": 311.5,
+            "starts": 5,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "6kk26nz5k269o7q2": {
+      "date": "2019-10-25",
+      "season": "2019-20",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood",
+          "result": {
+            "points": 430.75,
+            "starts": 12,
+            "gp": 19,
+            "periods": 31,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "04jwc",
+          "player": "Alfonzo McKinnie",
+          "label": "Alfonzo McKinnie",
+          "result": {
+            "points": 35.25,
+            "starts": 5,
+            "gp": 6,
+            "periods": 31,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "player_id": "02nf8",
+          "player": "Terrence Ross",
+          "label": "Terrence Ross",
+          "result": {
+            "points": 1873.0,
+            "starts": 43,
+            "gp": 72,
+            "periods": 45,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Orlando Magic",
+          "label": "2020 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "05qtq",
+            "player": "Tre Jones",
+            "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Golden State Warriors",
+          "player_id": "031lq",
+          "player": "Otto Porter",
+          "label": "Otto Porter",
+          "result": {
+            "points": 197.0,
+            "starts": 4,
+            "gp": 8,
+            "periods": 6,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "uyaan13fk5mmkvl1": {
+      "date": "2020-01-20",
+      "season": "2019-20",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Cleveland Cavaliers",
+          "player_id": "031lq",
+          "player": "Otto Porter",
+          "label": "Otto Porter",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Boston Celtics",
+          "player_id": "001bo",
+          "player": "Paul Millsap",
+          "label": "Paul Millsap",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "i8f4s5skkyd3ovzf": {
+      "date": "2022-01-13",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Houston Rockets",
+          "player_id": "031lq",
+          "player": "Otto Porter",
+          "label": "Otto Porter",
+          "result": {
+            "points": 324.0,
+            "starts": 6,
+            "gp": 10,
+            "periods": 8,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Dallas Mavericks",
+          "player_id": "051pw",
+          "player": "Jalen McDaniels",
+          "label": "Jalen McDaniels",
+          "result": {
+            "points": 49.5,
+            "starts": 4,
+            "gp": 4,
+            "periods": 8,
+            "ongoing": false
+          }
         }
       ]
     }

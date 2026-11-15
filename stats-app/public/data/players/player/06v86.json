@@ -133,6 +133,53 @@
     }
   ],
   "trades": {
+    "ztwmlc8rlzji9u94": {
+      "date": "2024-08-07",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Milwaukee Bucks",
+          "to": "Toronto Raptors",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Milwaukee Bucks",
+          "player_id": "06cei",
+          "player": "Leonard Miller",
+          "label": "Leonard Miller",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Milwaukee Bucks",
+          "label": "2025 round 2 pick (Toronto Raptors)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "06v86",
+            "player": "Micah Peavy",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
+        }
+      ]
+    },
     "8mocn229mcpvz0fx": {
       "date": "2025-07-05",
       "season": "2025-26",
@@ -157,42 +204,13 @@
             "player_id": "06v86",
             "player": "Micah Peavy",
             "certain": true
-          }
-        }
-      ]
-    },
-    "ztwmlc8rlzji9u94": {
-      "date": "2024-08-07",
-      "season": "2024-25",
-      "period": 1,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Milwaukee Bucks",
-          "to": "Toronto Raptors",
-          "label": "$1 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Milwaukee Bucks",
-          "player_id": "06cei",
-          "player": "Leonard Miller",
-          "label": "Leonard Miller"
-        },
-        {
-          "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "Milwaukee Bucks",
-          "label": "2025 round 2 pick (Toronto Raptors)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 24,
-            "overall": 54,
-            "player_id": "06v86",
-            "player": "Micah Peavy",
-            "certain": true
+          },
+          "result": {
+            "points": 340.25,
+            "starts": 17,
+            "gp": 30,
+            "periods": 40,
+            "ongoing": true
           }
         }
       ]

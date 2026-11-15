@@ -360,74 +360,6 @@
     }
   ],
   "trades": {
-    "6ttsntjokynaaoq3": {
-      "date": "2022-01-20",
-      "season": "2021-22",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Washington Wizards",
-          "player_id": "051pp",
-          "player": "Isaiah Roby",
-          "label": "Isaiah Roby"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Washington Wizards",
-          "player_id": "04849",
-          "player": "Danuel House",
-          "label": "Danuel House"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Washington Wizards",
-          "player_id": "03wr4",
-          "player": "T.J. McConnell",
-          "label": "T.J. McConnell"
-        },
-        {
-          "kind": "pick",
-          "from": "Oklahoma City Thunder",
-          "to": "Washington Wizards",
-          "label": "2023 round 2 pick (Los Angeles Lakers)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 13,
-            "overall": 43,
-            "player_id": "06cdf",
-            "player": "Julian Phillips",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Oklahoma City Thunder",
-          "player_id": "03avi",
-          "player": "Doug McDermott",
-          "label": "Doug McDermott"
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Oklahoma City Thunder",
-          "player_id": "02x1k",
-          "player": "Justin Holiday",
-          "label": "Justin Holiday"
-        },
-        {
-          "kind": "budget",
-          "from": "Washington Wizards",
-          "to": "Oklahoma City Thunder",
-          "label": "$50 budget"
-        }
-      ]
-    },
     "exrf6pckkw4s6iuq": {
       "date": "2021-11-18",
       "season": "2021-22",
@@ -439,7 +371,14 @@
           "to": "Washington Wizards",
           "player_id": "02x1k",
           "player": "Justin Holiday",
-          "label": "Justin Holiday"
+          "label": "Justin Holiday",
+          "result": {
+            "points": 558.75,
+            "starts": 12,
+            "gp": 20,
+            "periods": 18,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -447,7 +386,14 @@
           "to": "Washington Wizards",
           "player_id": "027pf",
           "player": "Cory Joseph",
-          "label": "Cory Joseph"
+          "label": "Cory Joseph",
+          "result": {
+            "points": 157.75,
+            "starts": 4,
+            "gp": 8,
+            "periods": 4,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -455,7 +401,14 @@
           "to": "Chicago Bulls",
           "player_id": "04qrx",
           "player": "Josh Okogie",
-          "label": "Josh Okogie"
+          "label": "Josh Okogie",
+          "result": {
+            "points": 89.5,
+            "starts": 12,
+            "gp": 12,
+            "periods": 24,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -463,7 +416,14 @@
           "to": "Chicago Bulls",
           "player_id": "004zd",
           "player": "Marc Gasol",
-          "label": "Marc Gasol"
+          "label": "Marc Gasol",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -478,6 +438,13 @@
             "player_id": "0621o",
             "player": "Blake Wesley",
             "certain": true
+          },
+          "result": {
+            "points": 72.5,
+            "starts": 11,
+            "gp": 7,
+            "periods": 95,
+            "ongoing": false
           }
         },
         {
@@ -493,7 +460,118 @@
             "player_id": "06cdd",
             "player": "Andre Jackson",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
           }
+        }
+      ]
+    },
+    "6ttsntjokynaaoq3": {
+      "date": "2022-01-20",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Washington Wizards",
+          "player_id": "051pp",
+          "player": "Isaiah Roby",
+          "label": "Isaiah Roby",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Washington Wizards",
+          "player_id": "04849",
+          "player": "Danuel House",
+          "label": "Danuel House",
+          "result": {
+            "points": 91.0,
+            "starts": 4,
+            "gp": 3,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Washington Wizards",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell",
+          "result": {
+            "points": 709.0,
+            "starts": 22,
+            "gp": 37,
+            "periods": 32,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Washington Wizards",
+          "label": "2023 round 2 pick (Los Angeles Lakers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06cdf",
+            "player": "Julian Phillips",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Memphis Grizzlies"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Oklahoma City Thunder",
+          "player_id": "03avi",
+          "player": "Doug McDermott",
+          "label": "Doug McDermott",
+          "result": {
+            "points": 91.75,
+            "starts": 2,
+            "gp": 3,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Oklahoma City Thunder",
+          "player_id": "02x1k",
+          "player": "Justin Holiday",
+          "label": "Justin Holiday",
+          "result": {
+            "points": 231.75,
+            "starts": 5,
+            "gp": 9,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Washington Wizards",
+          "to": "Oklahoma City Thunder",
+          "label": "$50 budget"
         }
       ]
     }

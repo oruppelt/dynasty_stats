@@ -305,59 +305,6 @@
     }
   ],
   "trades": {
-    "wxjv4ixnlqpl8ew2": {
-      "date": "2023-12-28",
-      "season": "2023-24",
-      "period": 20,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Miami Heat",
-          "player_id": "03e79",
-          "player": "Dwight Powell",
-          "label": "Dwight Powell"
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Miami Heat",
-          "label": "2024 round 2 pick (Miami Heat)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 5,
-            "overall": 35,
-            "player_id": "06mkh",
-            "player": "Pacome Dadiet",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Chicago Bulls",
-          "player_id": "005l0",
-          "player": "Nicolas Batum",
-          "label": "Nicolas Batum"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Chicago Bulls",
-          "label": "2024 round 2 pick (Milwaukee Bucks)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 13,
-            "overall": 43,
-            "player_id": "06mkj",
-            "player": "Terrence Shannon",
-            "certain": false
-          }
-        }
-      ]
-    },
     "c8fxouxak016d8je": {
       "date": "2019-09-02",
       "season": "2019-20",
@@ -369,7 +316,14 @@
           "to": "Toronto Raptors",
           "player_id": "03e79",
           "player": "Dwight Powell",
-          "label": "Dwight Powell"
+          "label": "Dwight Powell",
+          "result": {
+            "points": 812.0,
+            "starts": 20,
+            "gp": 33,
+            "periods": 32,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -377,7 +331,14 @@
           "to": "Charlotte Hornets",
           "player_id": "0201u",
           "player": "Ish Smith",
-          "label": "Ish Smith"
+          "label": "Ish Smith",
+          "result": {
+            "points": 73.5,
+            "starts": 2,
+            "gp": 3,
+            "periods": 6,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -392,6 +353,85 @@
             "player_id": "05qu2",
             "player": "Justinian Jessup",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
+        }
+      ]
+    },
+    "wxjv4ixnlqpl8ew2": {
+      "date": "2023-12-28",
+      "season": "2023-24",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "player_id": "03e79",
+          "player": "Dwight Powell",
+          "label": "Dwight Powell",
+          "result": {
+            "points": 277.75,
+            "starts": 10,
+            "gp": 15,
+            "periods": 13,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Miami Heat",
+          "label": "2024 round 2 pick (Miami Heat)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06mkh",
+            "player": "Pacome Dadiet",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Chicago Bulls",
+          "player_id": "005l0",
+          "player": "Nicolas Batum",
+          "label": "Nicolas Batum",
+          "result": {
+            "points": 143.25,
+            "starts": 5,
+            "gp": 7,
+            "periods": 13,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Chicago Bulls",
+          "label": "2024 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06mkj",
+            "player": "Terrence Shannon",
+            "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
           }
         }
       ]
@@ -407,7 +447,14 @@
           "to": "Dallas Mavericks",
           "player_id": "05qu8",
           "player": "Omer Yurtseven",
-          "label": "Omer Yurtseven"
+          "label": "Omer Yurtseven",
+          "result": {
+            "points": 149.0,
+            "starts": 21,
+            "gp": 19,
+            "periods": 26,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -422,6 +469,10 @@
             "player_id": "06v8d",
             "player": "Bogoljub Markovic",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Toronto Raptors"
           }
         },
         {
@@ -430,7 +481,14 @@
           "to": "Chicago Bulls",
           "player_id": "03e79",
           "player": "Dwight Powell",
-          "label": "Dwight Powell"
+          "label": "Dwight Powell",
+          "result": {
+            "points": 66.75,
+            "starts": 5,
+            "gp": 8,
+            "periods": 13,
+            "ongoing": false
+          }
         }
       ]
     }

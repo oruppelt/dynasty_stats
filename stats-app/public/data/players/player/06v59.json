@@ -153,29 +153,97 @@
     }
   ],
   "trades": {
-    "apff3ll8lzjik29h": {
-      "date": "2024-08-07",
+    "aqapwojpm3cvd21d": {
+      "date": "2024-11-11",
       "season": "2024-25",
-      "period": 1,
+      "period": 7,
       "items": [
         {
-          "kind": "budget",
-          "from": "San Antonio Spurs",
-          "to": "Toronto Raptors",
-          "label": "$1 budget"
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "San Antonio Spurs",
+          "player_id": "03r7h",
+          "player": "Delon Wright",
+          "label": "Delon Wright",
+          "result": {
+            "points": 288.75,
+            "starts": 26,
+            "gp": 20,
+            "periods": 27,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
-          "from": "Toronto Raptors",
+          "from": "Minnesota Timberwolves",
           "to": "San Antonio Spurs",
-          "player_id": "06cd9",
-          "player": "Jaylen Clark",
-          "label": "Jaylen Clark"
+          "player_id": "051p0",
+          "player": "Matisse Thybulle",
+          "label": "Matisse Thybulle",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 23,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
-          "from": "Toronto Raptors",
+          "from": "Minnesota Timberwolves",
           "to": "San Antonio Spurs",
+          "label": "2025 round 1 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "06v5j",
+            "player": "Jase Richardson",
+            "certain": true
+          },
+          "result": {
+            "points": 126.5,
+            "starts": 6,
+            "gp": 10,
+            "periods": 33,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uul",
+          "player": "Jose Alvarado",
+          "label": "Jose Alvarado",
+          "result": {
+            "points": 367.5,
+            "starts": 8,
+            "gp": 15,
+            "periods": 27,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "player_id": "059g0",
+          "player": "Amir Coffey",
+          "label": "Amir Coffey",
+          "result": {
+            "points": 525.75,
+            "starts": 11,
+            "gp": 24,
+            "periods": 27,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
           "label": "2025 round 2 pick (Cleveland Cavaliers)",
           "became": {
             "season": "2025-26",
@@ -185,6 +253,96 @@
             "player_id": "06v59",
             "player": "Will Riley",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "San Antonio Spurs",
+          "to": "Minnesota Timberwolves",
+          "label": "$23 budget"
+        }
+      ]
+    },
+    "5bxdraq0m5qxtpz8": {
+      "date": "2025-01-10",
+      "season": "2024-25",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uik",
+          "player": "Ziaire Williams",
+          "label": "Ziaire Williams",
+          "result": {
+            "points": 239.0,
+            "starts": 5,
+            "gp": 9,
+            "periods": 10,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Milwaukee Bucks",
+          "to": "Minnesota Timberwolves",
+          "label": "$4 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "player_id": "051oq",
+          "player": "Cam Reddish",
+          "label": "Cam Reddish",
+          "result": {
+            "points": 19.5,
+            "starts": 8,
+            "gp": 3,
+            "periods": 10,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "player_id": "06226",
+          "player": "Moussa Diabate",
+          "label": "Moussa Diabate",
+          "result": {
+            "points": 198.0,
+            "starts": 4,
+            "gp": 7,
+            "periods": 10,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "06v59",
+            "player": "Will Riley",
+            "certain": true
+          },
+          "result": {
+            "points": 410.75,
+            "starts": 16,
+            "gp": 26,
+            "periods": 40,
+            "ongoing": true
           }
         }
       ]
@@ -207,6 +365,10 @@
             "player_id": "06v59",
             "player": "Will Riley",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
           }
         },
         {
@@ -226,62 +388,36 @@
         }
       ]
     },
-    "aqapwojpm3cvd21d": {
-      "date": "2024-11-11",
+    "apff3ll8lzjik29h": {
+      "date": "2024-08-07",
       "season": "2024-25",
-      "period": 7,
+      "period": 1,
       "items": [
         {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "San Antonio Spurs",
-          "player_id": "03r7h",
-          "player": "Delon Wright",
-          "label": "Delon Wright"
+          "kind": "budget",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "label": "$1 budget"
         },
         {
           "kind": "player",
-          "from": "Minnesota Timberwolves",
+          "from": "Toronto Raptors",
           "to": "San Antonio Spurs",
-          "player_id": "051p0",
-          "player": "Matisse Thybulle",
-          "label": "Matisse Thybulle"
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "San Antonio Spurs",
-          "label": "2025 round 1 pick (Minnesota Timberwolves)",
-          "became": {
-            "season": "2025-26",
-            "round": 1,
-            "pick": 21,
-            "overall": 21,
-            "player_id": "06v5j",
-            "player": "Jase Richardson",
-            "certain": true
+          "player_id": "06cd9",
+          "player": "Jaylen Clark",
+          "label": "Jaylen Clark",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
           }
         },
         {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05uul",
-          "player": "Jose Alvarado",
-          "label": "Jose Alvarado"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Minnesota Timberwolves",
-          "player_id": "059g0",
-          "player": "Amir Coffey",
-          "label": "Amir Coffey"
-        },
-        {
           "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Minnesota Timberwolves",
+          "from": "Toronto Raptors",
+          "to": "San Antonio Spurs",
           "label": "2025 round 2 pick (Cleveland Cavaliers)",
           "became": {
             "season": "2025-26",
@@ -291,64 +427,10 @@
             "player_id": "06v59",
             "player": "Will Riley",
             "certain": true
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "San Antonio Spurs",
-          "to": "Minnesota Timberwolves",
-          "label": "$23 budget"
-        }
-      ]
-    },
-    "5bxdraq0m5qxtpz8": {
-      "date": "2025-01-10",
-      "season": "2024-25",
-      "period": 24,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05uik",
-          "player": "Ziaire Williams",
-          "label": "Ziaire Williams"
-        },
-        {
-          "kind": "budget",
-          "from": "Milwaukee Bucks",
-          "to": "Minnesota Timberwolves",
-          "label": "$4 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Milwaukee Bucks",
-          "player_id": "051oq",
-          "player": "Cam Reddish",
-          "label": "Cam Reddish"
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Milwaukee Bucks",
-          "player_id": "06226",
-          "player": "Moussa Diabate",
-          "label": "Moussa Diabate"
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Milwaukee Bucks",
-          "label": "2025 round 2 pick (Cleveland Cavaliers)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 8,
-            "overall": 38,
-            "player_id": "06v59",
-            "player": "Will Riley",
-            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
           }
         }
       ]

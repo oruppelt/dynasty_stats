@@ -265,112 +265,6 @@
     }
   ],
   "trades": {
-    "vspfi0aqldf3aaw5": {
-      "date": "2023-01-27",
-      "season": "2022-23",
-      "period": 30,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Los Angeles Clippers",
-          "player_id": "03bxn",
-          "player": "T.J. Warren",
-          "label": "T.J. Warren"
-        },
-        {
-          "kind": "pick",
-          "from": "Houston Rockets",
-          "to": "Los Angeles Clippers",
-          "label": "2023 round 2 pick (Los Angeles Clippers)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 14,
-            "overall": 44,
-            "player_id": "06ccu",
-            "player": "Tristan Vukcevic",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Clippers",
-          "to": "Houston Rockets",
-          "player_id": "042o9",
-          "player": "Georges Niang",
-          "label": "Georges Niang"
-        },
-        {
-          "kind": "budget",
-          "from": "Los Angeles Clippers",
-          "to": "Houston Rockets",
-          "label": "$10 budget"
-        }
-      ]
-    },
-    "hbk0cwdukwl4dkmr": {
-      "date": "2021-11-29",
-      "season": "2021-22",
-      "period": 13,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Sacramento Kings",
-          "player_id": "05uib",
-          "player": "Cade Cunningham",
-          "label": "Cade Cunningham"
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Sacramento Kings",
-          "player_id": "01sc8",
-          "player": "John Wall",
-          "label": "John Wall"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Phoenix Suns",
-          "player_id": "03bxn",
-          "player": "T.J. Warren",
-          "label": "T.J. Warren"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Phoenix Suns",
-          "player_id": "042n7",
-          "player": "Domantas Sabonis",
-          "label": "Domantas Sabonis"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Phoenix Suns",
-          "player_id": "05uj8",
-          "player": "Rokas Jokubaitis",
-          "label": "Rokas Jokubaitis"
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Phoenix Suns",
-          "label": "2023 round 1 pick (Boston Celtics)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 14,
-            "overall": 14,
-            "player_id": "06cc2",
-            "player": "Gradey Dick",
-            "certain": true
-          }
-        }
-      ]
-    },
     "nsziz30xlccebfbg": {
       "date": "2023-01-01",
       "season": "2022-23",
@@ -382,7 +276,14 @@
           "to": "Los Angeles Clippers",
           "player_id": "038ia",
           "player": "Seth Curry",
-          "label": "Seth Curry"
+          "label": "Seth Curry",
+          "result": {
+            "points": 380.25,
+            "starts": 10,
+            "gp": 15,
+            "periods": 11,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -397,6 +298,10 @@
             "player_id": "06ccu",
             "player": "Tristan Vukcevic",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
           }
         },
         {
@@ -420,7 +325,14 @@
           "to": "Atlanta Hawks",
           "player_id": "051pn",
           "player": "Jaylen Nowell",
-          "label": "Jaylen Nowell"
+          "label": "Jaylen Nowell",
+          "result": {
+            "points": 361.75,
+            "starts": 9,
+            "gp": 18,
+            "periods": 11,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -428,7 +340,14 @@
           "to": "Los Angeles Clippers",
           "player_id": "027pg",
           "player": "Bojan Bogdanovic",
-          "label": "Bojan Bogdanovic"
+          "label": "Bojan Bogdanovic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -436,7 +355,14 @@
           "to": "Los Angeles Clippers",
           "player_id": "03r7r",
           "player": "Richaun Holmes",
-          "label": "Richaun Holmes"
+          "label": "Richaun Holmes",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 11,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -444,7 +370,14 @@
           "to": "Atlanta Hawks",
           "player_id": "056aq",
           "player": "Terence Davis",
-          "label": "Terence Davis"
+          "label": "Terence Davis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -452,7 +385,14 @@
           "to": "Los Angeles Clippers",
           "player_id": "049kf",
           "player": "Mo Bamba",
-          "label": "Mo Bamba"
+          "label": "Mo Bamba",
+          "result": {
+            "points": 552.0,
+            "starts": 39,
+            "gp": 38,
+            "periods": 43,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -460,7 +400,14 @@
           "to": "Los Angeles Clippers",
           "player_id": "042n8",
           "player": "Taurean Prince",
-          "label": "Taurean Prince"
+          "label": "Taurean Prince",
+          "result": {
+            "points": 87.25,
+            "starts": 2,
+            "gp": 3,
+            "periods": 11,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -481,6 +428,13 @@
             "player_id": "06ccb",
             "player": "Nick Smith",
             "certain": true
+          },
+          "result": {
+            "points": 720.0,
+            "starts": 36,
+            "gp": 48,
+            "periods": 78,
+            "ongoing": false
           }
         },
         {
@@ -489,7 +443,14 @@
           "to": "Houston Rockets",
           "player_id": "01uz7",
           "player": "Gordon Hayward",
-          "label": "Gordon Hayward"
+          "label": "Gordon Hayward",
+          "result": {
+            "points": 125.0,
+            "starts": 4,
+            "gp": 7,
+            "periods": 11,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -497,7 +458,14 @@
           "to": "Houston Rockets",
           "player_id": "051pb",
           "player": "Nicolas Claxton",
-          "label": "Nicolas Claxton"
+          "label": "Nicolas Claxton",
+          "result": {
+            "points": 2541.0,
+            "starts": 42,
+            "gp": 60,
+            "periods": 43,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -505,7 +473,14 @@
           "to": "Houston Rockets",
           "player_id": "05uir",
           "player": "Trey Murphy",
-          "label": "Trey Murphy"
+          "label": "Trey Murphy",
+          "result": {
+            "points": 1156.5,
+            "starts": 27,
+            "gp": 41,
+            "periods": 43,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -513,7 +488,180 @@
           "to": "Houston Rockets",
           "player_id": "03bxn",
           "player": "T.J. Warren",
-          "label": "T.J. Warren"
+          "label": "T.J. Warren",
+          "result": {
+            "points": 67.5,
+            "starts": 3,
+            "gp": 4,
+            "periods": 7,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "vspfi0aqldf3aaw5": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Clippers",
+          "player_id": "03bxn",
+          "player": "T.J. Warren",
+          "label": "T.J. Warren",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Clippers",
+          "label": "2023 round 2 pick (Los Angeles Clippers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06ccu",
+            "player": "Tristan Vukcevic",
+            "certain": true
+          },
+          "result": {
+            "points": 240.25,
+            "starts": 6,
+            "gp": 9,
+            "periods": 98,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Houston Rockets",
+          "player_id": "042o9",
+          "player": "Georges Niang",
+          "label": "Georges Niang",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Los Angeles Clippers",
+          "to": "Houston Rockets",
+          "label": "$10 budget"
+        }
+      ]
+    },
+    "hbk0cwdukwl4dkmr": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "player_id": "05uib",
+          "player": "Cade Cunningham",
+          "label": "Cade Cunningham",
+          "result": {
+            "points": 1393.75,
+            "starts": 23,
+            "gp": 38,
+            "periods": 38,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "player_id": "01sc8",
+          "player": "John Wall",
+          "label": "John Wall",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 21,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "03bxn",
+          "player": "T.J. Warren",
+          "label": "T.J. Warren",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 21,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "042n7",
+          "player": "Domantas Sabonis",
+          "label": "Domantas Sabonis",
+          "result": {
+            "points": 6464.0,
+            "starts": 80,
+            "gp": 129,
+            "periods": 86,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "player_id": "05uj8",
+          "player": "Rokas Jokubaitis",
+          "label": "Rokas Jokubaitis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 54,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "label": "2023 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06cc2",
+            "player": "Gradey Dick",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Orlando Magic"
+          }
         }
       ]
     }

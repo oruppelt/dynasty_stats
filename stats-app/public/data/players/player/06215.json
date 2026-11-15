@@ -230,41 +230,6 @@
     }
   ],
   "trades": {
-    "tcgwfz7bmk11cgpz": {
-      "date": "2026-01-05",
-      "season": "2025-26",
-      "period": 23,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Sacramento Kings",
-          "player_id": "06215",
-          "player": "Bennedict Mathurin",
-          "label": "Bennedict Mathurin"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Sacramento Kings",
-          "label": "2027 round 1 pick (Golden State Warriors)"
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Golden State Warriors",
-          "player_id": "05uj4",
-          "player": "Santi Aldama",
-          "label": "Santi Aldama"
-        },
-        {
-          "kind": "budget",
-          "from": "Sacramento Kings",
-          "to": "Golden State Warriors",
-          "label": "$13 budget"
-        }
-      ]
-    },
     "3svuxfmvl3ps0x1r": {
       "date": "2022-05-28",
       "season": "2022-23",
@@ -276,7 +241,14 @@
           "to": "Sacramento Kings",
           "player_id": "05uii",
           "player": "Franz Wagner",
-          "label": "Franz Wagner"
+          "label": "Franz Wagner",
+          "result": {
+            "points": 3512.0,
+            "starts": 57,
+            "gp": 97,
+            "periods": 65,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -291,6 +263,13 @@
             "player_id": "06215",
             "player": "Bennedict Mathurin",
             "certain": true
+          },
+          "result": {
+            "points": 4040.75,
+            "starts": 93,
+            "gp": 154,
+            "periods": 98,
+            "ongoing": false
           }
         },
         {
@@ -306,7 +285,60 @@
             "player_id": "06220",
             "player": "Jaden Hardy",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Minnesota Timberwolves"
           }
+        }
+      ]
+    },
+    "tcgwfz7bmk11cgpz": {
+      "date": "2026-01-05",
+      "season": "2025-26",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Sacramento Kings",
+          "player_id": "06215",
+          "player": "Bennedict Mathurin",
+          "label": "Bennedict Mathurin",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Sacramento Kings",
+          "label": "2027 round 1 pick (Golden State Warriors)"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "player_id": "05uj4",
+          "player": "Santi Aldama",
+          "label": "Santi Aldama",
+          "result": {
+            "points": 178.75,
+            "starts": 5,
+            "gp": 6,
+            "periods": 11,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Sacramento Kings",
+          "to": "Golden State Warriors",
+          "label": "$13 budget"
         }
       ]
     },
@@ -321,7 +353,14 @@
           "to": "Sacramento Kings",
           "player_id": "03el5",
           "player": "Kristaps Porzingis",
-          "label": "Kristaps Porzingis"
+          "label": "Kristaps Porzingis",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": true
+          }
         },
         {
           "kind": "player",
@@ -329,7 +368,14 @@
           "to": "Golden State Warriors",
           "player_id": "06215",
           "player": "Bennedict Mathurin",
-          "label": "Bennedict Mathurin"
+          "label": "Bennedict Mathurin",
+          "result": {
+            "points": 307.5,
+            "starts": 9,
+            "gp": 15,
+            "periods": 11,
+            "ongoing": true
+          }
         },
         {
           "kind": "player",
@@ -337,7 +383,14 @@
           "to": "Golden State Warriors",
           "player_id": "05uic",
           "player": "Jalen Green",
-          "label": "Jalen Green"
+          "label": "Jalen Green",
+          "result": {
+            "points": 263.5,
+            "starts": 7,
+            "gp": 12,
+            "periods": 11,
+            "ongoing": true
+          }
         }
       ]
     }

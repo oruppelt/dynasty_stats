@@ -99,58 +99,6 @@
     }
   ],
   "trades": {
-    "qpytx42akt19ylzv": {
-      "date": "2021-09-01",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Sacramento Kings",
-          "to": "San Antonio Spurs",
-          "label": "$1 budget"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "player_id": "051ou",
-          "player": "Romeo Langford",
-          "label": "Romeo Langford"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "player_id": "05qu5",
-          "player": "Udoka Azubuike",
-          "label": "Udoka Azubuike"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "player_id": "05qss",
-          "player": "Tyler Bey",
-          "label": "Tyler Bey"
-        },
-        {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Sacramento Kings",
-          "label": "2023 round 2 pick (San Antonio Spurs)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 28,
-            "overall": 58,
-            "player_id": "06cen",
-            "player": "Caleb Daniels",
-            "certain": true
-          }
-        }
-      ]
-    },
     "ejtia2dekyj5hjpw": {
       "date": "2022-01-18",
       "season": "2021-22",
@@ -162,7 +110,14 @@
           "to": "Miami Heat",
           "player_id": "0018r",
           "player": "Thaddeus Young",
-          "label": "Thaddeus Young"
+          "label": "Thaddeus Young",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -170,7 +125,14 @@
           "to": "Miami Heat",
           "player_id": "051oy",
           "player": "Goga Bitadze",
-          "label": "Goga Bitadze"
+          "label": "Goga Bitadze",
+          "result": {
+            "points": 112.5,
+            "starts": 4,
+            "gp": 5,
+            "periods": 6,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -185,6 +147,10 @@
             "player_id": "06ccx",
             "player": "Hunter Tyson",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
           }
         },
         {
@@ -200,6 +166,13 @@
             "player_id": "06cen",
             "player": "Caleb Daniels",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 38,
+            "ongoing": false
           }
         },
         {
@@ -208,7 +181,14 @@
           "to": "Boston Celtics",
           "player_id": "03aq3",
           "player": "Kyle Anderson",
-          "label": "Kyle Anderson"
+          "label": "Kyle Anderson",
+          "result": {
+            "points": 112.25,
+            "starts": 2,
+            "gp": 4,
+            "periods": 6,
+            "ongoing": false
+          }
         },
         {
           "kind": "budget",
@@ -229,7 +209,14 @@
           "to": "Sacramento Kings",
           "player_id": "05qst",
           "player": "Paul Reed",
-          "label": "Paul Reed"
+          "label": "Paul Reed",
+          "result": {
+            "points": 23.75,
+            "starts": 10,
+            "gp": 4,
+            "periods": 14,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -237,7 +224,14 @@
           "to": "Sacramento Kings",
           "player_id": "05uug",
           "player": "Sam Hauser",
-          "label": "Sam Hauser"
+          "label": "Sam Hauser",
+          "result": {
+            "points": 16.75,
+            "starts": 6,
+            "gp": 4,
+            "periods": 14,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -245,7 +239,14 @@
           "to": "Boston Celtics",
           "player_id": "051oy",
           "player": "Goga Bitadze",
-          "label": "Goga Bitadze"
+          "label": "Goga Bitadze",
+          "result": {
+            "points": 3.0,
+            "starts": 3,
+            "gp": 1,
+            "periods": 15,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -260,6 +261,87 @@
             "player_id": "06cen",
             "player": "Caleb Daniels",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
+          }
+        }
+      ]
+    },
+    "qpytx42akt19ylzv": {
+      "date": "2021-09-01",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Sacramento Kings",
+          "to": "San Antonio Spurs",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "051ou",
+          "player": "Romeo Langford",
+          "label": "Romeo Langford",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "05qu5",
+          "player": "Udoka Azubuike",
+          "label": "Udoka Azubuike",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 12,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "player_id": "05qss",
+          "player": "Tyler Bey",
+          "label": "Tyler Bey",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Sacramento Kings",
+          "label": "2023 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06cen",
+            "player": "Caleb Daniels",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
           }
         }
       ]

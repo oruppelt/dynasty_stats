@@ -154,36 +154,6 @@
     }
   ],
   "trades": {
-    "4odq53ngljd9v0pc": {
-      "date": "2023-06-26",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
-          "player_id": "05uiu",
-          "player": "Jalen Johnson",
-          "label": "Jalen Johnson"
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Philadelphia 76ers",
-          "label": "2023 round 2 pick, no. 5",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 5,
-            "overall": 35,
-            "player_id": "06ca3",
-            "player": "Julian Strawther",
-            "certain": true
-          }
-        }
-      ]
-    },
     "pxto19a2ljd8w62x": {
       "date": "2023-06-26",
       "season": "2023-24",
@@ -202,6 +172,10 @@
             "player_id": "06ca3",
             "player": "Julian Strawther",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
           }
         },
         {
@@ -223,6 +197,57 @@
             "player_id": "06vy0",
             "player": "Eli John Ndiaye",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "4odq53ngljd9v0pc": {
+      "date": "2023-06-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05uiu",
+          "player": "Jalen Johnson",
+          "label": "Jalen Johnson",
+          "result": {
+            "points": 1442.25,
+            "starts": 21,
+            "gp": 36,
+            "periods": 32,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "label": "2023 round 2 pick, no. 5",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06ca3",
+            "player": "Julian Strawther",
+            "certain": true
+          },
+          "result": {
+            "points": 1374.5,
+            "starts": 46,
+            "gp": 74,
+            "periods": 98,
+            "ongoing": false
           }
         }
       ]

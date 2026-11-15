@@ -176,44 +176,6 @@
     }
   ],
   "trades": {
-    "4bd21z2dl6cb0vvy": {
-      "date": "2022-08-02",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Philadelphia 76ers",
-          "player_id": "0015e",
-          "player": "Mike Conley",
-          "label": "Mike Conley"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Philadelphia 76ers",
-          "label": "2024 round 1 pick (Golden State Warriors)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 19,
-            "overall": 19,
-            "player_id": "06mkc",
-            "player": "Jaylon Tyson",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Golden State Warriors",
-          "player_id": "01enw",
-          "player": "Ricky Rubio",
-          "label": "Ricky Rubio"
-        }
-      ]
-    },
     "ropqfs1wmvhr2o2x": {
       "date": "2026-10-23",
       "season": "2026-27",
@@ -225,7 +187,14 @@
           "to": "Utah Jazz",
           "player_id": "049kb",
           "player": "De'Aaron Fox",
-          "label": "De'Aaron Fox"
+          "label": "De'Aaron Fox",
+          "result": {
+            "points": 396.25,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": true
+          }
         },
         {
           "kind": "player",
@@ -233,7 +202,14 @@
           "to": "Dallas Mavericks",
           "player_id": "01eo9",
           "player": "Jrue Holiday",
-          "label": "Jrue Holiday"
+          "label": "Jrue Holiday",
+          "result": {
+            "points": 317.75,
+            "starts": 6,
+            "gp": 10,
+            "periods": 6,
+            "ongoing": true
+          }
         },
         {
           "kind": "player",
@@ -241,7 +217,14 @@
           "to": "Utah Jazz",
           "player_id": "06mkc",
           "player": "Jaylon Tyson",
-          "label": "Jaylon Tyson"
+          "label": "Jaylon Tyson",
+          "result": {
+            "points": 49.75,
+            "starts": 1,
+            "gp": 3,
+            "periods": 6,
+            "ongoing": true
+          }
         },
         {
           "kind": "player",
@@ -249,7 +232,14 @@
           "to": "Dallas Mavericks",
           "player_id": "04ewk",
           "player": "John Collins",
-          "label": "John Collins"
+          "label": "John Collins",
+          "result": {
+            "points": 214.0,
+            "starts": 4,
+            "gp": 8,
+            "periods": 6,
+            "ongoing": true
+          }
         },
         {
           "kind": "pick",
@@ -269,7 +259,14 @@
           "to": "Milwaukee Bucks",
           "player_id": "04ewe",
           "player": "Donovan Mitchell",
-          "label": "Donovan Mitchell"
+          "label": "Donovan Mitchell",
+          "result": {
+            "points": 470.0,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": true
+          }
         }
       ]
     },
@@ -284,7 +281,14 @@
           "to": "Philadelphia 76ers",
           "player_id": "04ewr",
           "player": "Kyle Kuzma",
-          "label": "Kyle Kuzma"
+          "label": "Kyle Kuzma",
+          "result": {
+            "points": 210.0,
+            "starts": 3,
+            "gp": 4,
+            "periods": 3,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -292,7 +296,14 @@
           "to": "Milwaukee Bucks",
           "player_id": "0015e",
           "player": "Mike Conley",
-          "label": "Mike Conley"
+          "label": "Mike Conley",
+          "result": {
+            "points": 1910.75,
+            "starts": 36,
+            "gp": 55,
+            "periods": 40,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -307,6 +318,69 @@
             "player_id": "06mkc",
             "player": "Jaylon Tyson",
             "certain": true
+          },
+          "result": {
+            "points": 1724.5,
+            "starts": 61,
+            "gp": 78,
+            "periods": 67,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "4bd21z2dl6cb0vvy": {
+      "date": "2022-08-02",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "0015e",
+          "player": "Mike Conley",
+          "label": "Mike Conley",
+          "result": {
+            "points": 998.75,
+            "starts": 24,
+            "gp": 33,
+            "periods": 25,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "label": "2024 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06mkc",
+            "player": "Jaylon Tyson",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio",
+          "result": {
+            "points": 84.75,
+            "starts": 4,
+            "gp": 6,
+            "periods": 29,
+            "ongoing": false
           }
         }
       ]

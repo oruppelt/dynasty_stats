@@ -93,97 +93,6 @@
     }
   ],
   "trades": {
-    "rl38owphlrxywdov": {
-      "date": "2024-01-29",
-      "season": "2023-24",
-      "period": 29,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Los Angeles Lakers",
-          "player_id": "05uim",
-          "player": "Joshua Primo",
-          "label": "Joshua Primo"
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Portland Trail Blazers",
-          "player_id": "001bb",
-          "player": "Jorge Garbajosa",
-          "label": "Jorge Garbajosa"
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Los Angeles Lakers",
-          "player_id": "03r7r",
-          "player": "Richaun Holmes",
-          "label": "Richaun Holmes"
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Portland Trail Blazers",
-          "player_id": "0623g",
-          "player": "Michael Foster",
-          "label": "Michael Foster"
-        },
-        {
-          "kind": "pick",
-          "from": "Houston Rockets",
-          "to": "Portland Trail Blazers",
-          "label": "2025 round 2 pick (Milwaukee Bucks)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 1,
-            "overall": 31,
-            "player_id": "06v5b",
-            "player": "Yanic Konan Niederhauser",
-            "certain": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Houston Rockets",
-          "to": "Los Angeles Lakers",
-          "label": "2025 round 2 pick (Houston Rockets)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 14,
-            "overall": 44,
-            "player_id": "06v85",
-            "player": "Alijah Martin",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Houston Rockets",
-          "player_id": "031m9",
-          "player": "Mason Plumlee",
-          "label": "Mason Plumlee"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Houston Rockets",
-          "player_id": "05qtf",
-          "player": "Xavier Tillman",
-          "label": "Xavier Tillman"
-        },
-        {
-          "kind": "budget",
-          "from": "Portland Trail Blazers",
-          "to": "Houston Rockets",
-          "label": "$7 budget"
-        }
-      ]
-    },
     "4t0u06zblzjjx6tr": {
       "date": "2024-08-07",
       "season": "2024-25",
@@ -195,7 +104,14 @@
           "to": "Los Angeles Lakers",
           "player_id": "027pe",
           "player": "Jimmy Butler",
-          "label": "Jimmy Butler"
+          "label": "Jimmy Butler",
+          "result": {
+            "points": 2743.0,
+            "starts": 50,
+            "gp": 65,
+            "periods": 66,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -203,7 +119,14 @@
           "to": "Los Angeles Clippers",
           "player_id": "027ou",
           "player": "Klay Thompson",
-          "label": "Klay Thompson"
+          "label": "Klay Thompson",
+          "result": {
+            "points": 1038.75,
+            "starts": 27,
+            "gp": 37,
+            "periods": 28,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -211,7 +134,14 @@
           "to": "Los Angeles Clippers",
           "player_id": "06mke",
           "player": "DaRon Holmes",
-          "label": "DaRon Holmes"
+          "label": "DaRon Holmes",
+          "result": {
+            "points": 93.5,
+            "starts": 5,
+            "gp": 7,
+            "periods": 73,
+            "ongoing": true
+          }
         },
         {
           "kind": "pick",
@@ -226,6 +156,13 @@
             "player_id": "06v85",
             "player": "Alijah Martin",
             "certain": true
+          },
+          "result": {
+            "points": 14.25,
+            "starts": 1,
+            "gp": 2,
+            "periods": 40,
+            "ongoing": true
           }
         },
         {
@@ -241,7 +178,155 @@
             "player_id": "06v87",
             "player": "Koby Brea",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 35,
+            "ongoing": false
           }
+        }
+      ]
+    },
+    "rl38owphlrxywdov": {
+      "date": "2024-01-29",
+      "season": "2023-24",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "05uim",
+          "player": "Joshua Primo",
+          "label": "Joshua Primo",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Portland Trail Blazers",
+          "player_id": "001bb",
+          "player": "Jorge Garbajosa",
+          "label": "Jorge Garbajosa",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "player_id": "03r7r",
+          "player": "Richaun Holmes",
+          "label": "Richaun Holmes",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Portland Trail Blazers",
+          "player_id": "0623g",
+          "player": "Michael Foster",
+          "label": "Michael Foster",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Portland Trail Blazers",
+          "label": "2025 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 1,
+            "overall": 31,
+            "player_id": "06v5b",
+            "player": "Yanic Konan Niederhauser",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Los Angeles Lakers",
+          "label": "2025 round 2 pick (Houston Rockets)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06v85",
+            "player": "Alijah Martin",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Houston Rockets",
+          "player_id": "031m9",
+          "player": "Mason Plumlee",
+          "label": "Mason Plumlee",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Houston Rockets",
+          "player_id": "05qtf",
+          "player": "Xavier Tillman",
+          "label": "Xavier Tillman",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Portland Trail Blazers",
+          "to": "Houston Rockets",
+          "label": "$7 budget"
         }
       ]
     }

@@ -305,60 +305,6 @@
     }
   ],
   "trades": {
-    "ymsmlbyhlo7be62s": {
-      "date": "2023-10-26",
-      "season": "2023-24",
-      "period": 2,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Phoenix Suns",
-          "player_id": "03acy",
-          "player": "Dario Saric",
-          "label": "Dario Saric"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Phoenix Suns",
-          "player_id": "0527l",
-          "player": "Luguentz Dort",
-          "label": "Luguentz Dort"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Phoenix Suns",
-          "label": "2025 round 2 pick (Atlanta Hawks)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 15,
-            "overall": 45,
-            "player_id": "06va1",
-            "player": "Max Shulga",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Atlanta Hawks",
-          "player_id": "031lv",
-          "player": "Kentavious Caldwell-Pope",
-          "label": "Kentavious Caldwell-Pope"
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Atlanta Hawks",
-          "player_id": "05qym",
-          "player": "Kenyon Martin",
-          "label": "Kenyon Martin"
-        }
-      ]
-    },
     "psa6bq70lomkt3fc": {
       "date": "2023-11-06",
       "season": "2023-24",
@@ -370,7 +316,14 @@
           "to": "Golden State Warriors",
           "player_id": "05qym",
           "player": "Kenyon Martin",
-          "label": "Kenyon Martin"
+          "label": "Kenyon Martin",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -378,7 +331,14 @@
           "to": "Golden State Warriors",
           "player_id": "03r7e",
           "player": "Cameron Payne",
-          "label": "Cameron Payne"
+          "label": "Cameron Payne",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -386,7 +346,14 @@
           "to": "Atlanta Hawks",
           "player_id": "051p5",
           "player": "Nassir Little",
-          "label": "Nassir Little"
+          "label": "Nassir Little",
+          "result": {
+            "points": 100.5,
+            "starts": 8,
+            "gp": 10,
+            "periods": 24,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -407,7 +374,14 @@
           "to": "Miami Heat",
           "player_id": "03r7u",
           "player": "Josh Richardson",
-          "label": "Josh Richardson"
+          "label": "Josh Richardson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -415,7 +389,14 @@
           "to": "Miami Heat",
           "player_id": "05qym",
           "player": "Kenyon Martin",
-          "label": "Kenyon Martin"
+          "label": "Kenyon Martin",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 10,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -430,6 +411,10 @@
             "player_id": "076u2",
             "player": "Dillon Mitchell",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
           }
         },
         {
@@ -438,7 +423,100 @@
           "to": "Chicago Bulls",
           "player_id": "0623m",
           "player": "Keon Ellis",
-          "label": "Keon Ellis"
+          "label": "Keon Ellis",
+          "result": {
+            "points": 509.5,
+            "starts": 10,
+            "gp": 18,
+            "periods": 10,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "ymsmlbyhlo7be62s": {
+      "date": "2023-10-26",
+      "season": "2023-24",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "03acy",
+          "player": "Dario Saric",
+          "label": "Dario Saric",
+          "result": {
+            "points": 938.0,
+            "starts": 18,
+            "gp": 35,
+            "periods": 31,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort",
+          "result": {
+            "points": 880.25,
+            "starts": 18,
+            "gp": 31,
+            "periods": 23,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "label": "2025 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "06va1",
+            "player": "Max Shulga",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope",
+          "result": {
+            "points": 954.5,
+            "starts": 21,
+            "gp": 36,
+            "periods": 22,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 3,
+            "ongoing": false
+          }
         }
       ]
     }

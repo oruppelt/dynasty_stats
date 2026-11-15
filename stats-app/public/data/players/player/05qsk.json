@@ -331,52 +331,6 @@
     }
   ],
   "trades": {
-    "wec3x6p4ldeiwcta": {
-      "date": "2023-01-27",
-      "season": "2022-23",
-      "period": 30,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Utah Jazz",
-          "player_id": "05qsk",
-          "player": "Isaac Okoro",
-          "label": "Isaac Okoro"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Utah Jazz",
-          "player_id": "031m0",
-          "player": "Kelly Olynyk",
-          "label": "Kelly Olynyk"
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Philadelphia 76ers",
-          "player_id": "042nt",
-          "player": "Ivica Zubac",
-          "label": "Ivica Zubac"
-        },
-        {
-          "kind": "pick",
-          "from": "Utah Jazz",
-          "to": "Philadelphia 76ers",
-          "label": "2023 round 2 pick (Washington Wizards)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 4,
-            "overall": 34,
-            "player_id": "06cdd",
-            "player": "Andre Jackson",
-            "certain": true
-          }
-        }
-      ]
-    },
     "hb86xq3kkpd3h2og": {
       "date": "2021-06-01",
       "season": "2021-22",
@@ -388,7 +342,14 @@
           "to": "Sacramento Kings",
           "player_id": "051po",
           "player": "Bol Bol",
-          "label": "Bol Bol"
+          "label": "Bol Bol",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -396,7 +357,14 @@
           "to": "Sacramento Kings",
           "player_id": "05qsk",
           "player": "Isaac Okoro",
-          "label": "Isaac Okoro"
+          "label": "Isaac Okoro",
+          "result": {
+            "points": 244.25,
+            "starts": 8,
+            "gp": 12,
+            "periods": 12,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -404,7 +372,14 @@
           "to": "Sacramento Kings",
           "player_id": "05quc",
           "player": "CJ Elleby",
-          "label": "CJ Elleby"
+          "label": "CJ Elleby",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -412,7 +387,14 @@
           "to": "Sacramento Kings",
           "player_id": "051ov",
           "player": "Sekou Doumbouya",
-          "label": "Sekou Doumbouya"
+          "label": "Sekou Doumbouya",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -420,7 +402,14 @@
           "to": "Sacramento Kings",
           "player_id": "04qs5",
           "player": "Jacob Evans",
-          "label": "Jacob Evans"
+          "label": "Jacob Evans",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -435,6 +424,13 @@
             "player_id": "05uif",
             "player": "Jalen Suggs",
             "certain": true
+          },
+          "result": {
+            "points": 1204.25,
+            "starts": 31,
+            "gp": 49,
+            "periods": 62,
+            "ongoing": false
           }
         },
         {
@@ -443,7 +439,14 @@
           "to": "Philadelphia 76ers",
           "player_id": "03al2",
           "player": "Joel Embiid",
-          "label": "Joel Embiid"
+          "label": "Joel Embiid",
+          "result": {
+            "points": 2509.25,
+            "starts": 29,
+            "gp": 42,
+            "periods": 33,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -458,7 +461,14 @@
           "to": "Sacramento Kings",
           "player_id": "05uiz",
           "player": "Quentin Grimes",
-          "label": "Quentin Grimes"
+          "label": "Quentin Grimes",
+          "result": {
+            "points": 1601.75,
+            "starts": 44,
+            "gp": 73,
+            "periods": 86,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -473,6 +483,10 @@
             "player_id": "06217",
             "player": "Dyson Daniels",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
           }
         },
         {
@@ -481,7 +495,14 @@
           "to": "Philadelphia 76ers",
           "player_id": "05qsk",
           "player": "Isaac Okoro",
-          "label": "Isaac Okoro"
+          "label": "Isaac Okoro",
+          "result": {
+            "points": 1301.5,
+            "starts": 45,
+            "gp": 75,
+            "periods": 50,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -489,7 +510,88 @@
           "to": "Philadelphia 76ers",
           "player_id": "051p3",
           "player": "Darius Bazley",
-          "label": "Darius Bazley"
+          "label": "Darius Bazley",
+          "result": {
+            "points": 436.5,
+            "starts": 10,
+            "gp": 17,
+            "periods": 13,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "wec3x6p4ldeiwcta": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Utah Jazz",
+          "player_id": "05qsk",
+          "player": "Isaac Okoro",
+          "label": "Isaac Okoro",
+          "result": {
+            "points": 56.5,
+            "starts": 1,
+            "gp": 2,
+            "periods": 4,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Utah Jazz",
+          "player_id": "031m0",
+          "player": "Kelly Olynyk",
+          "label": "Kelly Olynyk",
+          "result": {
+            "points": 48.25,
+            "starts": 1,
+            "gp": 2,
+            "periods": 4,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Philadelphia 76ers",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac",
+          "result": {
+            "points": 256.5,
+            "starts": 4,
+            "gp": 7,
+            "periods": 4,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Philadelphia 76ers",
+          "label": "2023 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "06cdd",
+            "player": "Andre Jackson",
+            "certain": true
+          },
+          "result": {
+            "points": 179.75,
+            "starts": 10,
+            "gp": 13,
+            "periods": 98,
+            "ongoing": false
+          }
         }
       ]
     }

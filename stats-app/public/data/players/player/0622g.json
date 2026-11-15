@@ -94,44 +94,6 @@
     }
   ],
   "trades": {
-    "vaxb0ggwkjy4tla7": {
-      "date": "2021-01-16",
-      "season": "2020-21",
-      "period": 8,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Detroit Pistons",
-          "player_id": "03e6n",
-          "player": "Jusuf Nurkic",
-          "label": "Jusuf Nurkic"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Detroit Pistons",
-          "label": "2022 round 2 pick (Boston Celtics)",
-          "became": {
-            "season": "2022-23",
-            "round": 2,
-            "pick": 22,
-            "overall": 52,
-            "player_id": "0622g",
-            "player": "JD Davison",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Boston Celtics",
-          "player_id": "04ex3",
-          "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
-        }
-      ]
-    },
     "8zyfkpkglo4cnvz0": {
       "date": "2023-10-24",
       "season": "2023-24",
@@ -149,7 +111,14 @@
           "to": "Boston Celtics",
           "player_id": "0622z",
           "player": "Orlando Robinson",
-          "label": "Orlando Robinson"
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 10,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -157,13 +126,79 @@
           "to": "Boston Celtics",
           "player_id": "0622g",
           "player": "JD Davison",
-          "label": "JD Davison"
+          "label": "JD Davison",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 32,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
           "from": "Detroit Pistons",
           "to": "Boston Celtics",
           "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        }
+      ]
+    },
+    "vaxb0ggwkjy4tla7": {
+      "date": "2021-01-16",
+      "season": "2020-21",
+      "period": 8,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 16,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "2022 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 22,
+            "overall": 52,
+            "player_id": "0622g",
+            "player": "JD Davison",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "04ex3",
+          "player": "Dwayne Bacon",
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 504.0,
+            "starts": 15,
+            "gp": 26,
+            "periods": 15,
+            "ongoing": false
+          }
         }
       ]
     }

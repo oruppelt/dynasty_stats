@@ -321,58 +321,6 @@
     }
   ],
   "trades": {
-    "wyc5aaskkiivratd": {
-      "date": "2020-12-10",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Phoenix Suns",
-          "player_id": "005kd",
-          "player": "Kevin Love",
-          "label": "Kevin Love"
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "Phoenix Suns",
-          "label": "2022 round 2 pick (Memphis Grizzlies)"
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Memphis Grizzlies",
-          "player_id": "000zv",
-          "player": "Al Horford",
-          "label": "Al Horford"
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Memphis Grizzlies",
-          "player_id": "03acx",
-          "player": "Dante Exum",
-          "label": "Dante Exum"
-        },
-        {
-          "kind": "pick",
-          "from": "Phoenix Suns",
-          "to": "Memphis Grizzlies",
-          "label": "2021 round 1 pick (Dallas Mavericks)",
-          "became": {
-            "season": "2021-22",
-            "round": 1,
-            "pick": 12,
-            "overall": 12,
-            "player_id": "05uin",
-            "player": "Chris Duarte",
-            "certain": true
-          }
-        }
-      ]
-    },
     "w77iv92nlraibgpv": {
       "date": "2024-01-12",
       "season": "2023-24",
@@ -384,7 +332,14 @@
           "to": "Chicago Bulls",
           "player_id": "005kd",
           "player": "Kevin Love",
-          "label": "Kevin Love"
+          "label": "Kevin Love",
+          "result": {
+            "points": 122.0,
+            "starts": 4,
+            "gp": 6,
+            "periods": 9,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -392,7 +347,14 @@
           "to": "Chicago Bulls",
           "player_id": "031lv",
           "player": "Kentavious Caldwell-Pope",
-          "label": "Kentavious Caldwell-Pope"
+          "label": "Kentavious Caldwell-Pope",
+          "result": {
+            "points": 151.75,
+            "starts": 4,
+            "gp": 7,
+            "periods": 9,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -400,7 +362,14 @@
           "to": "Atlanta Hawks",
           "player_id": "05uug",
           "player": "Sam Hauser",
-          "label": "Sam Hauser"
+          "label": "Sam Hauser",
+          "result": {
+            "points": 222.25,
+            "starts": 8,
+            "gp": 14,
+            "periods": 9,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -408,7 +377,14 @@
           "to": "Atlanta Hawks",
           "player_id": "0621r",
           "player": "Patrick Baldwin",
-          "label": "Patrick Baldwin"
+          "label": "Patrick Baldwin",
+          "result": {
+            "points": 15.75,
+            "starts": 3,
+            "gp": 4,
+            "periods": 15,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -416,7 +392,14 @@
           "to": "Atlanta Hawks",
           "player_id": "03r7v",
           "player": "Pat Connaughton",
-          "label": "Pat Connaughton"
+          "label": "Pat Connaughton",
+          "result": {
+            "points": 207.25,
+            "starts": 7,
+            "gp": 12,
+            "periods": 9,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -431,6 +414,10 @@
             "player_id": "06mkj",
             "player": "Terrence Shannon",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
           }
         },
         {
@@ -446,6 +433,90 @@
             "player_id": "06mlg",
             "player": "Tyler Kolek",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        }
+      ]
+    },
+    "wyc5aaskkiivratd": {
+      "date": "2020-12-10",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Phoenix Suns",
+          "player_id": "005kd",
+          "player": "Kevin Love",
+          "label": "Kevin Love",
+          "result": {
+            "points": 44.75,
+            "starts": 1,
+            "gp": 2,
+            "periods": 29,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Phoenix Suns",
+          "label": "2022 round 2 pick (Memphis Grizzlies)"
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford",
+          "result": {
+            "points": 754.75,
+            "starts": 16,
+            "gp": 21,
+            "periods": 22,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "label": "2021 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "05uin",
+            "player": "Chris Duarte",
+            "certain": true
+          },
+          "result": {
+            "points": 781.0,
+            "starts": 19,
+            "gp": 31,
+            "periods": 26,
+            "ongoing": false
           }
         }
       ]
@@ -461,7 +532,14 @@
           "to": "Miami Heat",
           "player_id": "06mkm",
           "player": "Baylor Scheierman",
-          "label": "Baylor Scheierman"
+          "label": "Baylor Scheierman",
+          "result": {
+            "points": -0.5,
+            "starts": 6,
+            "gp": 1,
+            "periods": 29,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -469,7 +547,14 @@
           "to": "Miami Heat",
           "player_id": "005kd",
           "player": "Kevin Love",
-          "label": "Kevin Love"
+          "label": "Kevin Love",
+          "result": {
+            "points": 24.75,
+            "starts": 9,
+            "gp": 3,
+            "periods": 10,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -484,6 +569,10 @@
             "player_id": "076ua",
             "player": "Lajae Jones",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
           }
         },
         {
@@ -492,7 +581,14 @@
           "to": "Atlanta Hawks",
           "player_id": "03r7u",
           "player": "Josh Richardson",
-          "label": "Josh Richardson"
+          "label": "Josh Richardson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 5,
+            "ongoing": false
+          }
         }
       ]
     }

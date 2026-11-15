@@ -256,60 +256,6 @@
     }
   ],
   "trades": {
-    "1jghgk36m5avz9qx": {
-      "date": "2024-12-30",
-      "season": "2024-25",
-      "period": 21,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Miami Heat",
-          "player_id": "06cd1",
-          "player": "Jordan Walsh",
-          "label": "Jordan Walsh"
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Miami Heat",
-          "player_id": "049ka",
-          "player": "Lonzo Ball",
-          "label": "Lonzo Ball"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Houston Rockets",
-          "player_id": "03e74",
-          "player": "Spencer Dinwiddie",
-          "label": "Spencer Dinwiddie"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Houston Rockets",
-          "player_id": "05qtl",
-          "player": "Cole Anthony",
-          "label": "Cole Anthony"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Houston Rockets",
-          "label": "2025 round 2 pick (New Orleans Pelicans)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 13,
-            "overall": 43,
-            "player_id": "06v8a",
-            "player": "Brooks Barnhizer",
-            "certain": true
-          }
-        }
-      ]
-    },
     "uq2o1bs8lxyjavfd": {
       "date": "2024-06-28",
       "season": "2024-25",
@@ -321,7 +267,14 @@
           "to": "Phoenix Suns",
           "player_id": "04qs4",
           "player": "Robert Williams",
-          "label": "Robert Williams"
+          "label": "Robert Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -336,6 +289,10 @@
             "player_id": "06mly",
             "player": "Quinten Post",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
           }
         },
         {
@@ -351,6 +308,10 @@
             "player_id": "06mk5",
             "player": "Devin Carter",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
           }
         },
         {
@@ -366,6 +327,13 @@
             "player_id": "06mkh",
             "player": "Pacome Dadiet",
             "certain": true
+          },
+          "result": {
+            "points": -2.0,
+            "starts": 2,
+            "gp": 2,
+            "periods": 73,
+            "ongoing": true
           }
         },
         {
@@ -381,6 +349,13 @@
             "player_id": "06mjy",
             "player": "Tidjane Salaun",
             "certain": true
+          },
+          "result": {
+            "points": 546.25,
+            "starts": 24,
+            "gp": 39,
+            "periods": 73,
+            "ongoing": true
           }
         },
         {
@@ -389,7 +364,14 @@
           "to": "Miami Heat",
           "player_id": "051p8",
           "player": "Jordan Poole",
-          "label": "Jordan Poole"
+          "label": "Jordan Poole",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -397,7 +379,14 @@
           "to": "Miami Heat",
           "player_id": "03e74",
           "player": "Spencer Dinwiddie",
-          "label": "Spencer Dinwiddie"
+          "label": "Spencer Dinwiddie",
+          "result": {
+            "points": 647.5,
+            "starts": 18,
+            "gp": 27,
+            "periods": 20,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -412,6 +401,13 @@
             "player_id": "06mlx",
             "player": "Melvin Ajinca",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 27,
+            "ongoing": false
           }
         },
         {
@@ -427,6 +423,13 @@
             "player_id": "06mlo",
             "player": "KJ Simpson",
             "certain": false
+          },
+          "result": {
+            "points": 24.0,
+            "starts": 1,
+            "gp": 1,
+            "periods": 66,
+            "ongoing": false
           }
         },
         {
@@ -442,6 +445,102 @@
             "player_id": "06mjx",
             "player": "Ron Holland",
             "certain": true
+          },
+          "result": {
+            "points": 1242.25,
+            "starts": 40,
+            "gp": 63,
+            "periods": 73,
+            "ongoing": true
+          }
+        }
+      ]
+    },
+    "1jghgk36m5avz9qx": {
+      "date": "2024-12-30",
+      "season": "2024-25",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "06cd1",
+          "player": "Jordan Walsh",
+          "label": "Jordan Walsh",
+          "result": {
+            "points": 25.25,
+            "starts": 5,
+            "gp": 5,
+            "periods": 7,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Miami Heat",
+          "player_id": "049ka",
+          "player": "Lonzo Ball",
+          "label": "Lonzo Ball",
+          "result": {
+            "points": 346.0,
+            "starts": 7,
+            "gp": 11,
+            "periods": 7,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "03e74",
+          "player": "Spencer Dinwiddie",
+          "label": "Spencer Dinwiddie",
+          "result": {
+            "points": 650.75,
+            "starts": 13,
+            "gp": 24,
+            "periods": 20,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "player_id": "05qtl",
+          "player": "Cole Anthony",
+          "label": "Cole Anthony",
+          "result": {
+            "points": 545.5,
+            "starts": 12,
+            "gp": 18,
+            "periods": 13,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06v8a",
+            "player": "Brooks Barnhizer",
+            "certain": true
+          },
+          "result": {
+            "points": 13.0,
+            "starts": 3,
+            "gp": 5,
+            "periods": 40,
+            "ongoing": true
           }
         }
       ]
@@ -457,7 +556,14 @@
           "to": "Toronto Raptors",
           "player_id": "03e74",
           "player": "Spencer Dinwiddie",
-          "label": "Spencer Dinwiddie"
+          "label": "Spencer Dinwiddie",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -465,7 +571,14 @@
           "to": "Miami Heat",
           "player_id": "03nwm",
           "player": "Devin Booker",
-          "label": "Devin Booker"
+          "label": "Devin Booker",
+          "result": {
+            "points": 1584.25,
+            "starts": 26,
+            "gp": 40,
+            "periods": 33,
+            "ongoing": true
+          }
         },
         {
           "kind": "player",
@@ -473,7 +586,14 @@
           "to": "Toronto Raptors",
           "player_id": "06218",
           "player": "Jeremy Sochan",
-          "label": "Jeremy Sochan"
+          "label": "Jeremy Sochan",
+          "result": {
+            "points": 213.0,
+            "starts": 18,
+            "gp": 21,
+            "periods": 26,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -481,7 +601,14 @@
           "to": "Houston Rockets",
           "player_id": "05qtv",
           "player": "Tyrese Haliburton",
-          "label": "Tyrese Haliburton"
+          "label": "Tyrese Haliburton",
+          "result": {
+            "points": 211.75,
+            "starts": 3,
+            "gp": 4,
+            "periods": 33,
+            "ongoing": true
+          }
         },
         {
           "kind": "player",
@@ -489,7 +616,14 @@
           "to": "Houston Rockets",
           "player_id": "06v5p",
           "player": "Nolan Traore",
-          "label": "Nolan Traore"
+          "label": "Nolan Traore",
+          "result": {
+            "points": 525.0,
+            "starts": 14,
+            "gp": 21,
+            "periods": 33,
+            "ongoing": true
+          }
         },
         {
           "kind": "pick",
@@ -504,6 +638,13 @@
             "player_id": "076t9",
             "player": "Darryn Peterson",
             "certain": true
+          },
+          "result": {
+            "points": 421.0,
+            "starts": 7,
+            "gp": 12,
+            "periods": 7,
+            "ongoing": true
           }
         },
         {
@@ -519,6 +660,13 @@
             "player_id": "076u2",
             "player": "Dillon Mitchell",
             "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": true
           }
         },
         {
@@ -534,6 +682,13 @@
             "player_id": "076sv",
             "player": "Bennett Stirtz",
             "certain": true
+          },
+          "result": {
+            "points": 152.5,
+            "starts": 4,
+            "gp": 8,
+            "periods": 7,
+            "ongoing": true
           }
         },
         {
@@ -548,7 +703,14 @@
           "to": "Miami Heat",
           "player_id": "01eo6",
           "player": "James Harden",
-          "label": "James Harden"
+          "label": "James Harden",
+          "result": {
+            "points": 1832.25,
+            "starts": 21,
+            "gp": 35,
+            "periods": 26,
+            "ongoing": false
+          }
         }
       ]
     }

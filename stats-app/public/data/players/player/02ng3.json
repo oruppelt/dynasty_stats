@@ -327,75 +327,6 @@
     }
   ],
   "trades": {
-    "pfyg2x59m2yetksi": {
-      "date": "2024-11-01",
-      "season": "2024-25",
-      "period": 4,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Miami Heat",
-          "player_id": "06cp4",
-          "player": "Craig Porter",
-          "label": "Craig Porter"
-        },
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Miami Heat",
-          "player_id": "02ng3",
-          "player": "Khris Middleton",
-          "label": "Khris Middleton"
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "Miami Heat",
-          "label": "2025 round 1 pick (Phoenix Suns)",
-          "became": {
-            "season": "2025-26",
-            "round": 1,
-            "pick": 6,
-            "overall": 6,
-            "player_id": "06v5v",
-            "player": "Cedric Coward",
-            "certain": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "Miami Heat",
-          "label": "2025 round 1 pick (Miami Heat)",
-          "became": {
-            "season": "2025-26",
-            "round": 1,
-            "pick": 1,
-            "overall": 1,
-            "player_id": "06v5l",
-            "player": "Cooper Flagg",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Memphis Grizzlies",
-          "player_id": "05qu0",
-          "player": "Jaden McDaniels",
-          "label": "Jaden McDaniels"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Memphis Grizzlies",
-          "player_id": "05qsq",
-          "player": "Tyrese Maxey",
-          "label": "Tyrese Maxey"
-        }
-      ]
-    },
     "gy7ia1v7m4gxhk6e": {
       "date": "2024-12-09",
       "season": "2024-25",
@@ -407,7 +338,14 @@
           "to": "Miami Heat",
           "player_id": "05qt0",
           "player": "Saddiq Bey",
-          "label": "Saddiq Bey"
+          "label": "Saddiq Bey",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -415,7 +353,14 @@
           "to": "Miami Heat",
           "player_id": "05qtl",
           "player": "Cole Anthony",
-          "label": "Cole Anthony"
+          "label": "Cole Anthony",
+          "result": {
+            "points": 120.5,
+            "starts": 6,
+            "gp": 8,
+            "periods": 6,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -430,6 +375,10 @@
             "player_id": "076sv",
             "player": "Bennett Stirtz",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Toronto Raptors"
           }
         },
         {
@@ -445,6 +394,10 @@
             "player_id": "06v89",
             "player": "Jamir Watkins",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
           }
         },
         {
@@ -460,6 +413,10 @@
             "player_id": "076ub",
             "player": "Tobi Lawal",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
           }
         },
         {
@@ -468,7 +425,14 @@
           "to": "Indiana Pacers",
           "player_id": "04s00",
           "player": "Duncan Robinson",
-          "label": "Duncan Robinson"
+          "label": "Duncan Robinson",
+          "result": {
+            "points": 568.25,
+            "starts": 16,
+            "gp": 26,
+            "periods": 19,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -476,7 +440,125 @@
           "to": "Indiana Pacers",
           "player_id": "02ng3",
           "player": "Khris Middleton",
-          "label": "Khris Middleton"
+          "label": "Khris Middleton",
+          "result": {
+            "points": 527.75,
+            "starts": 13,
+            "gp": 19,
+            "periods": 19,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "pfyg2x59m2yetksi": {
+      "date": "2024-11-01",
+      "season": "2024-25",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "player_id": "06cp4",
+          "player": "Craig Porter",
+          "label": "Craig Porter",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "player_id": "02ng3",
+          "player": "Khris Middleton",
+          "label": "Khris Middleton",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 6,
+            "overall": 6,
+            "player_id": "06v5v",
+            "player": "Cedric Coward",
+            "certain": true
+          },
+          "result": {
+            "points": 1568.25,
+            "starts": 33,
+            "gp": 52,
+            "periods": 40,
+            "ongoing": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Miami Heat",
+          "label": "2025 round 1 pick (Miami Heat)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 1,
+            "overall": 1,
+            "player_id": "06v5l",
+            "player": "Cooper Flagg",
+            "certain": true
+          },
+          "result": {
+            "points": 2566.25,
+            "starts": 37,
+            "gp": 59,
+            "periods": 40,
+            "ongoing": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qu0",
+          "player": "Jaden McDaniels",
+          "label": "Jaden McDaniels",
+          "result": {
+            "points": 1636.25,
+            "starts": 28,
+            "gp": 51,
+            "periods": 30,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Memphis Grizzlies",
+          "player_id": "05qsq",
+          "player": "Tyrese Maxey",
+          "label": "Tyrese Maxey",
+          "result": {
+            "points": 5912.0,
+            "starts": 64,
+            "gp": 107,
+            "periods": 70,
+            "ongoing": true
+          }
         }
       ]
     }

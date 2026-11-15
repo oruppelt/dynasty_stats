@@ -206,59 +206,6 @@
     }
   ],
   "trades": {
-    "ee6xgebckm9jocfk": {
-      "date": "2021-03-14",
-      "season": "2020-21",
-      "period": 25,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Washington Wizards",
-          "player_id": "03nwo",
-          "player": "Frank Kaminsky",
-          "label": "Frank Kaminsky"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Washington Wizards",
-          "label": "2022 round 2 pick (Washington Wizards)",
-          "became": {
-            "season": "2022-23",
-            "round": 2,
-            "pick": 3,
-            "overall": 33,
-            "player_id": "0621o",
-            "player": "Blake Wesley",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Boston Celtics",
-          "player_id": "05qwu",
-          "player": "Killian Tillie",
-          "label": "Killian Tillie"
-        },
-        {
-          "kind": "pick",
-          "from": "Washington Wizards",
-          "to": "Boston Celtics",
-          "label": "2022 round 1 pick (Washington Wizards)",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 3,
-            "overall": 3,
-            "player_id": "06210",
-            "player": "Paolo Banchero",
-            "certain": true
-          }
-        }
-      ]
-    },
     "4r1euqwqkm9llhjz": {
       "date": "2021-03-14",
       "season": "2020-21",
@@ -270,7 +217,14 @@
           "to": "New York Knicks",
           "player_id": "051ow",
           "player": "Chuma Okeke",
-          "label": "Chuma Okeke"
+          "label": "Chuma Okeke",
+          "result": {
+            "points": 1200.5,
+            "starts": 22,
+            "gp": 39,
+            "periods": 39,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -278,7 +232,14 @@
           "to": "New York Knicks",
           "player_id": "04ex3",
           "player": "Dwayne Bacon",
-          "label": "Dwayne Bacon"
+          "label": "Dwayne Bacon",
+          "result": {
+            "points": 204.5,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -293,6 +254,10 @@
             "player_id": "06210",
             "player": "Paolo Banchero",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
           }
         },
         {
@@ -301,7 +266,14 @@
           "to": "Boston Celtics",
           "player_id": "0018r",
           "player": "Thaddeus Young",
-          "label": "Thaddeus Young"
+          "label": "Thaddeus Young",
+          "result": {
+            "points": 365.5,
+            "starts": 6,
+            "gp": 11,
+            "periods": 6,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -316,7 +288,14 @@
           "to": "New York Knicks",
           "player_id": "005ka",
           "player": "Derrick Rose",
-          "label": "Derrick Rose"
+          "label": "Derrick Rose",
+          "result": {
+            "points": 458.5,
+            "starts": 17,
+            "gp": 21,
+            "periods": 43,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -324,7 +303,14 @@
           "to": "Chicago Bulls",
           "player_id": "05ujr",
           "player": "Charles Bassey",
-          "label": "Charles Bassey"
+          "label": "Charles Bassey",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 2,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -332,7 +318,14 @@
           "to": "Chicago Bulls",
           "player_id": "05uj4",
           "player": "Santi Aldama",
-          "label": "Santi Aldama"
+          "label": "Santi Aldama",
+          "result": {
+            "points": 3.5,
+            "starts": 1,
+            "gp": 1,
+            "periods": 1,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -347,6 +340,88 @@
             "player_id": "06210",
             "player": "Paolo Banchero",
             "certain": true
+          },
+          "result": {
+            "points": 4887.75,
+            "starts": 75,
+            "gp": 124,
+            "periods": 98,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "ee6xgebckm9jocfk": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 25,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "03nwo",
+          "player": "Frank Kaminsky",
+          "label": "Frank Kaminsky",
+          "result": {
+            "points": 14.5,
+            "starts": 1,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "0621o",
+            "player": "Blake Wesley",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "05qwu",
+          "player": "Killian Tillie",
+          "label": "Killian Tillie",
+          "result": {
+            "points": 7.75,
+            "starts": 1,
+            "gp": 1,
+            "periods": 6,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "label": "2022 round 1 pick (Washington Wizards)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 3,
+            "overall": 3,
+            "player_id": "06210",
+            "player": "Paolo Banchero",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
           }
         }
       ]

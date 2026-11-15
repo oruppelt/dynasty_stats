@@ -340,137 +340,6 @@
     }
   ],
   "trades": {
-    "ymsmlbyhlo7be62s": {
-      "date": "2023-10-26",
-      "season": "2023-24",
-      "period": 2,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Phoenix Suns",
-          "player_id": "03acy",
-          "player": "Dario Saric",
-          "label": "Dario Saric"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Phoenix Suns",
-          "player_id": "0527l",
-          "player": "Luguentz Dort",
-          "label": "Luguentz Dort"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Phoenix Suns",
-          "label": "2025 round 2 pick (Atlanta Hawks)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 15,
-            "overall": 45,
-            "player_id": "06va1",
-            "player": "Max Shulga",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Atlanta Hawks",
-          "player_id": "031lv",
-          "player": "Kentavious Caldwell-Pope",
-          "label": "Kentavious Caldwell-Pope"
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Atlanta Hawks",
-          "player_id": "05qym",
-          "player": "Kenyon Martin",
-          "label": "Kenyon Martin"
-        }
-      ]
-    },
-    "p0mxkvsnlrkrvpa0": {
-      "date": "2024-01-19",
-      "season": "2023-24",
-      "period": 26,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Philadelphia 76ers",
-          "player_id": "0527l",
-          "player": "Luguentz Dort",
-          "label": "Luguentz Dort"
-        },
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Philadelphia 76ers",
-          "player_id": "051p1",
-          "player": "Brandon Clarke",
-          "label": "Brandon Clarke"
-        },
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Philadelphia 76ers",
-          "player_id": "05qtd",
-          "player": "Nick Richards",
-          "label": "Nick Richards"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Memphis Grizzlies",
-          "player_id": "03ad7",
-          "player": "Kevon Looney",
-          "label": "Kevon Looney"
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Memphis Grizzlies",
-          "player_id": "051pq",
-          "player": "Talen Horton-Tucker",
-          "label": "Talen Horton-Tucker"
-        },
-        {
-          "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Memphis Grizzlies",
-          "label": "2025 round 1 pick (Philadelphia 76ers)",
-          "became": {
-            "season": "2025-26",
-            "round": 1,
-            "pick": 2,
-            "overall": 2,
-            "player_id": "06v5y",
-            "player": "Dylan Harper",
-            "certain": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Memphis Grizzlies",
-          "label": "2024 round 2 pick (Philadelphia 76ers)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 14,
-            "overall": 44,
-            "player_id": "06mlw",
-            "player": "Enrique Freeman",
-            "certain": false
-          }
-        }
-      ]
-    },
     "oz23ebmblrf7gezg": {
       "date": "2024-01-15",
       "season": "2023-24",
@@ -482,7 +351,14 @@
           "to": "Phoenix Suns",
           "player_id": "027oz",
           "player": "Kawhi Leonard",
-          "label": "Kawhi Leonard"
+          "label": "Kawhi Leonard",
+          "result": {
+            "points": 654.0,
+            "starts": 8,
+            "gp": 12,
+            "periods": 8,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -490,7 +366,14 @@
           "to": "Memphis Grizzlies",
           "player_id": "0527l",
           "player": "Luguentz Dort",
-          "label": "Luguentz Dort"
+          "label": "Luguentz Dort",
+          "result": {
+            "points": 51.75,
+            "starts": 1,
+            "gp": 2,
+            "periods": 1,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -505,6 +388,10 @@
             "player_id": "06v5v",
             "player": "Cedric Coward",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
           }
         },
         {
@@ -520,6 +407,219 @@
             "player_id": "06mkl",
             "player": "Isaiah Collier",
             "certain": true
+          },
+          "result": {
+            "points": 1890.5,
+            "starts": 40,
+            "gp": 75,
+            "periods": 73,
+            "ongoing": true
+          }
+        }
+      ]
+    },
+    "ymsmlbyhlo7be62s": {
+      "date": "2023-10-26",
+      "season": "2023-24",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "03acy",
+          "player": "Dario Saric",
+          "label": "Dario Saric",
+          "result": {
+            "points": 938.0,
+            "starts": 18,
+            "gp": 35,
+            "periods": 31,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort",
+          "result": {
+            "points": 880.25,
+            "starts": 18,
+            "gp": 31,
+            "periods": 23,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Phoenix Suns",
+          "label": "2025 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 15,
+            "overall": 45,
+            "player_id": "06va1",
+            "player": "Max Shulga",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "031lv",
+          "player": "Kentavious Caldwell-Pope",
+          "label": "Kentavious Caldwell-Pope",
+          "result": {
+            "points": 954.5,
+            "starts": 21,
+            "gp": 36,
+            "periods": 22,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Atlanta Hawks",
+          "player_id": "05qym",
+          "player": "Kenyon Martin",
+          "label": "Kenyon Martin",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 3,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "p0mxkvsnlrkrvpa0": {
+      "date": "2024-01-19",
+      "season": "2023-24",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "0527l",
+          "player": "Luguentz Dort",
+          "label": "Luguentz Dort",
+          "result": {
+            "points": 248.75,
+            "starts": 7,
+            "gp": 12,
+            "periods": 7,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtd",
+          "player": "Nick Richards",
+          "label": "Nick Richards",
+          "result": {
+            "points": 330.75,
+            "starts": 7,
+            "gp": 11,
+            "periods": 7,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "03ad7",
+          "player": "Kevon Looney",
+          "label": "Kevon Looney",
+          "result": {
+            "points": 123.75,
+            "starts": 7,
+            "gp": 10,
+            "periods": 7,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "player_id": "051pq",
+          "player": "Talen Horton-Tucker",
+          "label": "Talen Horton-Tucker",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 7,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2025 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 2,
+            "overall": 2,
+            "player_id": "06v5y",
+            "player": "Dylan Harper",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Memphis Grizzlies",
+          "label": "2024 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
           }
         }
       ]

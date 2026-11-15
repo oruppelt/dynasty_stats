@@ -281,45 +281,6 @@
     }
   ],
   "trades": {
-    "zpkfhqzrldezs5gu": {
-      "date": "2023-01-27",
-      "season": "2022-23",
-      "period": 30,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Golden State Warriors",
-          "player_id": "04ex6",
-          "player": "Isaiah Hartenstein",
-          "label": "Isaiah Hartenstein"
-        },
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Golden State Warriors",
-          "player_id": "051p2",
-          "player": "Grant Williams",
-          "label": "Grant Williams"
-        },
-        {
-          "kind": "player",
-          "from": "Charlotte Hornets",
-          "to": "Golden State Warriors",
-          "player_id": "05uj0",
-          "player": "Bones Hyland",
-          "label": "Bones Hyland"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Charlotte Hornets",
-          "player_id": "04qrl",
-          "player": "Wendell Carter",
-          "label": "Wendell Carter"
-        }
-      ]
-    },
     "20af3cgxkpeqvvt8": {
       "date": "2021-06-02",
       "season": "2021-22",
@@ -331,7 +292,14 @@
           "to": "Memphis Grizzlies",
           "player_id": "042n1",
           "player": "Brandon Ingram",
-          "label": "Brandon Ingram"
+          "label": "Brandon Ingram",
+          "result": {
+            "points": 1334.25,
+            "starts": 22,
+            "gp": 34,
+            "periods": 27,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -339,7 +307,14 @@
           "to": "Charlotte Hornets",
           "player_id": "051or",
           "player": "Cameron Johnson",
-          "label": "Cameron Johnson"
+          "label": "Cameron Johnson",
+          "result": {
+            "points": 835.25,
+            "starts": 17,
+            "gp": 27,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -354,6 +329,10 @@
             "player_id": "06228",
             "player": "Josh Minott",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
           }
         },
         {
@@ -369,6 +348,80 @@
             "player_id": "05uj0",
             "player": "Bones Hyland",
             "certain": true
+          },
+          "result": {
+            "points": 925.75,
+            "starts": 31,
+            "gp": 48,
+            "periods": 62,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "zpkfhqzrldezs5gu": {
+      "date": "2023-01-27",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "player_id": "04ex6",
+          "player": "Isaiah Hartenstein",
+          "label": "Isaiah Hartenstein",
+          "result": {
+            "points": 165.25,
+            "starts": 4,
+            "gp": 6,
+            "periods": 4,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "player_id": "051p2",
+          "player": "Grant Williams",
+          "label": "Grant Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Charlotte Hornets",
+          "to": "Golden State Warriors",
+          "player_id": "05uj0",
+          "player": "Bones Hyland",
+          "label": "Bones Hyland",
+          "result": {
+            "points": 111.75,
+            "starts": 7,
+            "gp": 7,
+            "periods": 22,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Charlotte Hornets",
+          "player_id": "04qrl",
+          "player": "Wendell Carter",
+          "label": "Wendell Carter",
+          "result": {
+            "points": 1859.25,
+            "starts": 43,
+            "gp": 70,
+            "periods": 69,
+            "ongoing": false
           }
         }
       ]
@@ -399,6 +452,10 @@
             "player_id": "05qu0",
             "player": "Jaden McDaniels",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
           }
         },
         {
@@ -422,6 +479,10 @@
             "player_id": "05uj0",
             "player": "Bones Hyland",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Charlotte Hornets"
           }
         }
       ]

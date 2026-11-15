@@ -147,6 +147,75 @@
     }
   ],
   "trades": {
+    "pm8ukv5nl9ihx8hb": {
+      "date": "2022-10-21",
+      "season": "2022-23",
+      "period": 2,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Minnesota Timberwolves",
+          "to": "Toronto Raptors",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Minnesota Timberwolves",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Brooklyn Nets"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujd",
+          "player": "Neemias Queta",
+          "label": "Neemias Queta",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 25,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "New York Knicks",
+          "label": "2024 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 12,
+            "overall": 42,
+            "player_id": "06mlk",
+            "player": "Ajay Mitchell",
+            "certain": false
+          },
+          "result": {
+            "points": 1949.25,
+            "starts": 49,
+            "gp": 79,
+            "periods": 73,
+            "ongoing": true
+          }
+        }
+      ]
+    },
     "0196e5mel63oahs7": {
       "date": "2022-07-27",
       "season": "2022-23",
@@ -180,6 +249,10 @@
             "player_id": "06mlk",
             "player": "Ajay Mitchell",
             "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
           }
         },
         {
@@ -188,57 +261,13 @@
           "to": "Atlanta Hawks",
           "player_id": "038ia",
           "player": "Seth Curry",
-          "label": "Seth Curry"
-        }
-      ]
-    },
-    "pm8ukv5nl9ihx8hb": {
-      "date": "2022-10-21",
-      "season": "2022-23",
-      "period": 2,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Minnesota Timberwolves",
-          "to": "Toronto Raptors",
-          "label": "$10 budget"
-        },
-        {
-          "kind": "pick",
-          "from": "New York Knicks",
-          "to": "Minnesota Timberwolves",
-          "label": "2023 round 2 pick (Cleveland Cavaliers)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 19,
-            "overall": 49,
-            "player_id": "06cdb",
-            "player": "Amari Bailey",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05ujd",
-          "player": "Neemias Queta",
-          "label": "Neemias Queta"
-        },
-        {
-          "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "New York Knicks",
-          "label": "2024 round 2 pick (Atlanta Hawks)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 12,
-            "overall": 42,
-            "player_id": "06mlk",
-            "player": "Ajay Mitchell",
-            "certain": false
+          "label": "Seth Curry",
+          "result": {
+            "points": 285.0,
+            "starts": 10,
+            "gp": 14,
+            "periods": 22,
+            "ongoing": false
           }
         }
       ]

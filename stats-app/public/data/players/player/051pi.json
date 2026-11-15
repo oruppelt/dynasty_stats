@@ -401,56 +401,58 @@
     }
   ],
   "trades": {
-    "76hzrghukw3fve7v": {
-      "date": "2021-11-17",
-      "season": "2021-22",
-      "period": 10,
+    "j0tyig71km80p9oa": {
+      "date": "2021-03-13",
+      "season": "2020-21",
+      "period": 25,
       "items": [
         {
           "kind": "player",
           "from": "Atlanta Hawks",
-          "to": "Indiana Pacers",
-          "player_id": "03r7l",
-          "player": "Larry Nance",
-          "label": "Larry Nance"
+          "to": "Golden State Warriors",
+          "player_id": "03wr4",
+          "player": "T.J. McConnell",
+          "label": "T.J. McConnell",
+          "result": {
+            "points": 309.5,
+            "starts": 5,
+            "gp": 10,
+            "periods": 6,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Indiana Pacers",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
           "player_id": "051pi",
           "player": "Daniel Gafford",
-          "label": "Daniel Gafford"
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Indiana Pacers",
-          "player_id": "04qsa",
-          "player": "Jalen Brunson",
-          "label": "Jalen Brunson"
-        },
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Atlanta Hawks",
-          "player_id": "031lp",
-          "player": "Victor Oladipo",
-          "label": "Victor Oladipo"
+          "label": "Daniel Gafford",
+          "result": {
+            "points": 301.75,
+            "starts": 8,
+            "gp": 11,
+            "periods": 15,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
-          "from": "Indiana Pacers",
+          "from": "Golden State Warriors",
           "to": "Atlanta Hawks",
-          "label": "2022 round 1 pick (Golden State Warriors)",
+          "label": "2021 round 2 pick (Milwaukee Bucks)",
           "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 28,
-            "overall": 28,
-            "player_id": "06220",
-            "player": "Jaden Hardy",
-            "certain": true
+            "season": "2021-22",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "05ujh",
+            "player": "Greg Brown",
+            "certain": false
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Houston Rockets"
           }
         }
       ]
@@ -479,6 +481,13 @@
             "player_id": "051pi",
             "player": "Daniel Gafford",
             "certain": false
+          },
+          "result": {
+            "points": 694.0,
+            "starts": 29,
+            "gp": 44,
+            "periods": 55,
+            "ongoing": false
           }
         },
         {
@@ -494,6 +503,13 @@
             "player_id": "05ujt",
             "player": "Aaron Wiggins",
             "certain": true
+          },
+          "result": {
+            "points": 537.0,
+            "starts": 25,
+            "gp": 35,
+            "periods": 66,
+            "ongoing": false
           }
         },
         {
@@ -509,123 +525,11 @@
             "player_id": "05uj1",
             "player": "Cameron Thomas",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Atlanta Hawks"
           }
-        }
-      ]
-    },
-    "1ikem71elb0p3dff": {
-      "date": "2022-11-28",
-      "season": "2022-23",
-      "period": 13,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Oklahoma City Thunder",
-          "player_id": "051pi",
-          "player": "Daniel Gafford",
-          "label": "Daniel Gafford"
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Oklahoma City Thunder",
-          "player_id": "051pg",
-          "player": "Cody Martin",
-          "label": "Cody Martin"
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Oklahoma City Thunder",
-          "label": "2023 round 1 pick (Philadelphia 76ers)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 10,
-            "overall": 10,
-            "player_id": "06ca7",
-            "player": "Cam Whitmore",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Miami Heat",
-          "player_id": "049ki",
-          "player": "Marvin Bagley",
-          "label": "Marvin Bagley"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Miami Heat",
-          "player_id": "031m0",
-          "player": "Kelly Olynyk",
-          "label": "Kelly Olynyk"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Miami Heat",
-          "player_id": "05ujg",
-          "player": "Isaiah Livers",
-          "label": "Isaiah Livers"
-        }
-      ]
-    },
-    "jg91nnqmlcerb7ao": {
-      "date": "2023-01-02",
-      "season": "2022-23",
-      "period": 23,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "06235",
-          "player": "Kenneth Lofton",
-          "label": "Kenneth Lofton"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "0621p",
-          "player": "Wendell Moore",
-          "label": "Wendell Moore"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "065px",
-          "player": "Trevion Williams",
-          "label": "Trevion Williams"
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Milwaukee Bucks)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 10,
-            "overall": 40,
-            "player_id": "06cdh",
-            "player": "GG Jackson",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Boston Celtics",
-          "player_id": "051pi",
-          "player": "Daniel Gafford",
-          "label": "Daniel Gafford"
         }
       ]
     },
@@ -640,7 +544,14 @@
           "to": "Houston Rockets",
           "player_id": "051pi",
           "player": "Daniel Gafford",
-          "label": "Daniel Gafford"
+          "label": "Daniel Gafford",
+          "result": {
+            "points": 971.75,
+            "starts": 33,
+            "gp": 38,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -661,44 +572,289 @@
             "player_id": "076sy",
             "player": "Morez Johnson",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Utah Jazz"
           }
         }
       ]
     },
-    "j0tyig71km80p9oa": {
-      "date": "2021-03-13",
-      "season": "2020-21",
-      "period": 25,
+    "76hzrghukw3fve7v": {
+      "date": "2021-11-17",
+      "season": "2021-22",
+      "period": 10,
       "items": [
         {
           "kind": "player",
           "from": "Atlanta Hawks",
-          "to": "Golden State Warriors",
-          "player_id": "03wr4",
-          "player": "T.J. McConnell",
-          "label": "T.J. McConnell"
+          "to": "Indiana Pacers",
+          "player_id": "03r7l",
+          "player": "Larry Nance",
+          "label": "Larry Nance",
+          "result": {
+            "points": 226.75,
+            "starts": 5,
+            "gp": 7,
+            "periods": 18,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Atlanta Hawks",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
           "player_id": "051pi",
           "player": "Daniel Gafford",
-          "label": "Daniel Gafford"
+          "label": "Daniel Gafford",
+          "result": {
+            "points": 823.25,
+            "starts": 18,
+            "gp": 31,
+            "periods": 24,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "player_id": "04qsa",
+          "player": "Jalen Brunson",
+          "label": "Jalen Brunson",
+          "result": {
+            "points": 1286.75,
+            "starts": 23,
+            "gp": 40,
+            "periods": 24,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Atlanta Hawks",
+          "player_id": "031lp",
+          "player": "Victor Oladipo",
+          "label": "Victor Oladipo",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
-          "from": "Golden State Warriors",
+          "from": "Indiana Pacers",
           "to": "Atlanta Hawks",
-          "label": "2021 round 2 pick (Milwaukee Bucks)",
+          "label": "2022 round 1 pick (Golden State Warriors)",
           "became": {
-            "season": "2021-22",
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Minnesota Timberwolves"
+          }
+        }
+      ]
+    },
+    "1ikem71elb0p3dff": {
+      "date": "2022-11-28",
+      "season": "2022-23",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Oklahoma City Thunder",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford",
+          "result": {
+            "points": 476.25,
+            "starts": 10,
+            "gp": 18,
+            "periods": 10,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Oklahoma City Thunder",
+          "player_id": "051pg",
+          "player": "Cody Martin",
+          "label": "Cody Martin",
+          "result": {
+            "points": 92.5,
+            "starts": 10,
+            "gp": 5,
+            "periods": 21,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06ca7",
+            "player": "Cam Whitmore",
+            "certain": true
+          },
+          "result": {
+            "points": 477.25,
+            "starts": 15,
+            "gp": 21,
+            "periods": 36,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Miami Heat",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley",
+          "result": {
+            "points": 190.0,
+            "starts": 6,
+            "gp": 9,
+            "periods": 15,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Miami Heat",
+          "player_id": "031m0",
+          "player": "Kelly Olynyk",
+          "label": "Kelly Olynyk",
+          "result": {
+            "points": 458.25,
+            "starts": 9,
+            "gp": 16,
+            "periods": 16,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Miami Heat",
+          "player_id": "05ujg",
+          "player": "Isaiah Livers",
+          "label": "Isaiah Livers",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 17,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "jg91nnqmlcerb7ao": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06235",
+          "player": "Kenneth Lofton",
+          "label": "Kenneth Lofton",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore",
+          "result": {
+            "points": 28.0,
+            "starts": 9,
+            "gp": 7,
+            "periods": 11,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "065px",
+          "player": "Trevion Williams",
+          "label": "Trevion Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2023-24",
             "round": 2,
-            "pick": 14,
-            "overall": 44,
-            "player_id": "05ujh",
-            "player": "Greg Brown",
-            "certain": false
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06cdh",
+            "player": "GG Jackson",
+            "certain": true
+          },
+          "result": {
+            "points": 426.75,
+            "starts": 10,
+            "gp": 17,
+            "periods": 71,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford",
+          "result": {
+            "points": 2128.25,
+            "starts": 41,
+            "gp": 59,
+            "periods": 43,
+            "ongoing": false
           }
         }
       ]

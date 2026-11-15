@@ -198,74 +198,6 @@
     }
   ],
   "trades": {
-    "o7egut5nlbsb9x0e": {
-      "date": "2022-12-18",
-      "season": "2022-23",
-      "period": 19,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Dallas Mavericks",
-          "player_id": "05qsn",
-          "player": "Malachi Flynn",
-          "label": "Malachi Flynn"
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Dallas Mavericks",
-          "label": "2024 round 2 pick (Chicago Bulls)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 27,
-            "overall": 57,
-            "player_id": "06mm5",
-            "player": "PJ Hall",
-            "certain": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Dallas Mavericks",
-          "label": "2023 round 1 pick (Charlotte Hornets)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 24,
-            "overall": 24,
-            "player_id": "06ccd",
-            "player": "Noah Clowney",
-            "certain": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Chicago Bulls",
-          "to": "Dallas Mavericks",
-          "label": "2024 round 1 pick (San Antonio Spurs)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 14,
-            "overall": 14,
-            "player_id": "06mk5",
-            "player": "Devin Carter",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Dallas Mavericks",
-          "to": "Chicago Bulls",
-          "player_id": "05qtr",
-          "player": "Devin Vassell",
-          "label": "Devin Vassell"
-        }
-      ]
-    },
     "caq0c945l69jh4fc": {
       "date": "2022-07-31",
       "season": "2022-23",
@@ -277,7 +209,14 @@
           "to": "Chicago Bulls",
           "player_id": "03ajv",
           "player": "Julius Randle",
-          "label": "Julius Randle"
+          "label": "Julius Randle",
+          "result": {
+            "points": 6362.75,
+            "starts": 90,
+            "gp": 150,
+            "periods": 98,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -292,6 +231,10 @@
             "player_id": "06ccd",
             "player": "Noah Clowney",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
           }
         },
         {
@@ -307,6 +250,10 @@
             "player_id": "06mld",
             "player": "Jonathan Mogbo",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
           }
         },
         {
@@ -315,13 +262,114 @@
           "to": "Memphis Grizzlies",
           "player_id": "04fj8",
           "player": "Chris Boucher",
-          "label": "Chris Boucher"
+          "label": "Chris Boucher",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "budget",
           "from": "Memphis Grizzlies",
           "to": "Chicago Bulls",
           "label": "$1 budget"
+        }
+      ]
+    },
+    "o7egut5nlbsb9x0e": {
+      "date": "2022-12-18",
+      "season": "2022-23",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn",
+          "result": {
+            "points": 217.5,
+            "starts": 15,
+            "gp": 21,
+            "periods": 15,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 2 pick (Chicago Bulls)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "06mm5",
+            "player": "PJ Hall",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 1 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06ccd",
+            "player": "Noah Clowney",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Chicago Bulls",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell",
+          "result": {
+            "points": 237.25,
+            "starts": 5,
+            "gp": 6,
+            "periods": 15,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -343,6 +391,13 @@
             "player_id": "06ccd",
             "player": "Noah Clowney",
             "certain": true
+          },
+          "result": {
+            "points": 1783.0,
+            "starts": 47,
+            "gp": 71,
+            "periods": 98,
+            "ongoing": false
           }
         },
         {
@@ -358,6 +413,13 @@
             "player_id": "06cc7",
             "player": "Brandin Podziemski",
             "certain": true
+          },
+          "result": {
+            "points": 3835.75,
+            "starts": 84,
+            "gp": 133,
+            "periods": 98,
+            "ongoing": false
           }
         },
         {
@@ -373,6 +435,13 @@
             "player_id": "06cc8",
             "player": "Dereck Lively",
             "certain": true
+          },
+          "result": {
+            "points": 1841.75,
+            "starts": 48,
+            "gp": 62,
+            "periods": 98,
+            "ongoing": false
           }
         }
       ]

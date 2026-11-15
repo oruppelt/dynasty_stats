@@ -348,68 +348,6 @@
     }
   ],
   "trades": {
-    "okjjp9solqjjzh20": {
-      "date": "2023-12-24",
-      "season": "2023-24",
-      "period": 19,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Portland Trail Blazers",
-          "player_id": "03nwq",
-          "player": "Christian Wood",
-          "label": "Christian Wood"
-        },
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Portland Trail Blazers",
-          "player_id": "04qse",
-          "player": "Gary Trent",
-          "label": "Gary Trent"
-        },
-        {
-          "kind": "pick",
-          "from": "Indiana Pacers",
-          "to": "Portland Trail Blazers",
-          "label": "2025 round 1 pick (Indiana Pacers)",
-          "became": {
-            "season": "2025-26",
-            "round": 1,
-            "pick": 29,
-            "overall": 29,
-            "player_id": "06v5e",
-            "player": "Yang Hansen",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Indiana Pacers",
-          "player_id": "06cef",
-          "player": "Oscar Tshiebwe",
-          "label": "Oscar Tshiebwe"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Indiana Pacers",
-          "player_id": "027oq",
-          "player": "Bismack Biyombo",
-          "label": "Bismack Biyombo"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Indiana Pacers",
-          "player_id": "027p4",
-          "player": "Tobias Harris",
-          "label": "Tobias Harris"
-        }
-      ]
-    },
     "x216qg6wlbqcxmyd": {
       "date": "2022-12-16",
       "season": "2022-23",
@@ -421,7 +359,14 @@
           "to": "Los Angeles Lakers",
           "player_id": "05qu0",
           "player": "Jaden McDaniels",
-          "label": "Jaden McDaniels"
+          "label": "Jaden McDaniels",
+          "result": {
+            "points": 848.75,
+            "starts": 16,
+            "gp": 30,
+            "periods": 16,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -429,7 +374,14 @@
           "to": "Los Angeles Lakers",
           "player_id": "04qse",
           "player": "Gary Trent",
-          "label": "Gary Trent"
+          "label": "Gary Trent",
+          "result": {
+            "points": 960.0,
+            "starts": 16,
+            "gp": 24,
+            "periods": 16,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -437,7 +389,14 @@
           "to": "Golden State Warriors",
           "player_id": "05uj2",
           "player": "Jaden Springer",
-          "label": "Jaden Springer"
+          "label": "Jaden Springer",
+          "result": {
+            "points": 69.25,
+            "starts": 5,
+            "gp": 5,
+            "periods": 25,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -445,7 +404,14 @@
           "to": "Golden State Warriors",
           "player_id": "0621s",
           "player": "TyTy Washington",
-          "label": "TyTy Washington"
+          "label": "TyTy Washington",
+          "result": {
+            "points": 98.5,
+            "starts": 10,
+            "gp": 12,
+            "periods": 16,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -453,7 +419,14 @@
           "to": "Golden State Warriors",
           "player_id": "051on",
           "player": "Coby White",
-          "label": "Coby White"
+          "label": "Coby White",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -468,6 +441,114 @@
             "player_id": "06cca",
             "player": "Brandon Miller",
             "certain": true
+          },
+          "result": {
+            "points": 3750.5,
+            "starts": 71,
+            "gp": 106,
+            "periods": 98,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "okjjp9solqjjzh20": {
+      "date": "2023-12-24",
+      "season": "2023-24",
+      "period": 19,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "03nwq",
+          "player": "Christian Wood",
+          "label": "Christian Wood",
+          "result": {
+            "points": 377.5,
+            "starts": 11,
+            "gp": 19,
+            "periods": 14,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "player_id": "04qse",
+          "player": "Gary Trent",
+          "label": "Gary Trent",
+          "result": {
+            "points": 558.0,
+            "starts": 13,
+            "gp": 21,
+            "periods": 14,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Portland Trail Blazers",
+          "label": "2025 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "06v5e",
+            "player": "Yang Hansen",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "06cef",
+          "player": "Oscar Tshiebwe",
+          "label": "Oscar Tshiebwe",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 23,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "027oq",
+          "player": "Bismack Biyombo",
+          "label": "Bismack Biyombo",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Indiana Pacers",
+          "player_id": "027p4",
+          "player": "Tobias Harris",
+          "label": "Tobias Harris",
+          "result": {
+            "points": 840.25,
+            "starts": 13,
+            "gp": 20,
+            "periods": 14,
+            "ongoing": false
           }
         }
       ]

@@ -407,44 +407,6 @@
     }
   ],
   "trades": {
-    "j15phqp4lxyaw76t": {
-      "date": "2024-06-28",
-      "season": "2024-25",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Boston Celtics",
-          "player_id": "0621a",
-          "player": "Ousmane Dieng",
-          "label": "Ousmane Dieng"
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Boston Celtics",
-          "label": "2024 round 2 pick, no. 13",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 13,
-            "overall": 43,
-            "player_id": "06mkj",
-            "player": "Terrence Shannon",
-            "certain": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Atlanta Hawks",
-          "player_id": "03nwk",
-          "player": "Kelly Oubre Jr.",
-          "label": "Kelly Oubre Jr."
-        }
-      ]
-    },
     "apzneezol9yatn6q": {
       "date": "2022-11-02",
       "season": "2022-23",
@@ -456,7 +418,14 @@
           "to": "Washington Wizards",
           "player_id": "027oz",
           "player": "Kawhi Leonard",
-          "label": "Kawhi Leonard"
+          "label": "Kawhi Leonard",
+          "result": {
+            "points": 36.0,
+            "starts": 3,
+            "gp": 2,
+            "periods": 5,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -471,6 +440,10 @@
             "player_id": "06mls",
             "player": "Cam Christie",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
           }
         },
         {
@@ -479,7 +452,14 @@
           "to": "Boston Celtics",
           "player_id": "0621p",
           "player": "Wendell Moore",
-          "label": "Wendell Moore"
+          "label": "Wendell Moore",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 17,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -487,7 +467,14 @@
           "to": "Boston Celtics",
           "player_id": "03nwk",
           "player": "Kelly Oubre Jr.",
-          "label": "Kelly Oubre Jr."
+          "label": "Kelly Oubre Jr.",
+          "result": {
+            "points": 986.25,
+            "starts": 16,
+            "gp": 27,
+            "periods": 18,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -495,93 +482,14 @@
           "to": "Boston Celtics",
           "player_id": "05qt4",
           "player": "Aaron Nesmith",
-          "label": "Aaron Nesmith"
-        }
-      ]
-    },
-    "xrkqmnnwlcgjgfnn": {
-      "date": "2023-01-05",
-      "season": "2022-23",
-      "period": 24,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Golden State Warriors",
-          "player_id": "05uip",
-          "player": "Corey Kispert",
-          "label": "Corey Kispert"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Golden State Warriors",
-          "player_id": "03nwk",
-          "player": "Kelly Oubre Jr.",
-          "label": "Kelly Oubre Jr."
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Boston Celtics",
-          "player_id": "01ens",
-          "player": "Patrick Beverley",
-          "label": "Patrick Beverley"
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Boston Celtics",
-          "player_id": "051p1",
-          "player": "Brandon Clarke",
-          "label": "Brandon Clarke"
-        }
-      ]
-    },
-    "1zyt3pfrkycyno26": {
-      "date": "2022-01-13",
-      "season": "2021-22",
-      "period": 26,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Dallas Mavericks",
-          "to": "San Antonio Spurs",
-          "player_id": "03byk",
-          "player": "Jordan Clarkson",
-          "label": "Jordan Clarkson"
-        },
-        {
-          "kind": "player",
-          "from": "Dallas Mavericks",
-          "to": "San Antonio Spurs",
-          "player_id": "03nwk",
-          "player": "Kelly Oubre Jr.",
-          "label": "Kelly Oubre Jr."
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Dallas Mavericks",
-          "player_id": "04ewi",
-          "player": "D.J. Wilson",
-          "label": "D.J. Wilson"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Dallas Mavericks",
-          "player_id": "01uz3",
-          "player": "DeMarcus Cousins",
-          "label": "DeMarcus Cousins"
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Dallas Mavericks",
-          "player_id": "01uyj",
-          "player": "Paul George",
-          "label": "Paul George"
+          "label": "Aaron Nesmith",
+          "result": {
+            "points": 634.5,
+            "starts": 16,
+            "gp": 29,
+            "periods": 28,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -596,7 +504,14 @@
           "to": "Dallas Mavericks",
           "player_id": "03nwk",
           "player": "Kelly Oubre Jr.",
-          "label": "Kelly Oubre Jr."
+          "label": "Kelly Oubre Jr.",
+          "result": {
+            "points": 2672.25,
+            "starts": 50,
+            "gp": 83,
+            "periods": 53,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -604,7 +519,73 @@
           "to": "Chicago Bulls",
           "player_id": "02ym0",
           "player": "Andrew Wiggins",
-          "label": "Andrew Wiggins"
+          "label": "Andrew Wiggins",
+          "result": {
+            "points": 1634.25,
+            "starts": 26,
+            "gp": 48,
+            "periods": 28,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "j15phqp4lxyaw76t": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Boston Celtics",
+          "player_id": "0621a",
+          "player": "Ousmane Dieng",
+          "label": "Ousmane Dieng",
+          "result": {
+            "points": 169.5,
+            "starts": 8,
+            "gp": 14,
+            "periods": 33,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Boston Celtics",
+          "label": "2024 round 2 pick, no. 13",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "06mkj",
+            "player": "Terrence Shannon",
+            "certain": false
+          },
+          "result": {
+            "points": 69.75,
+            "starts": 5,
+            "gp": 7,
+            "periods": 43,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Atlanta Hawks",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr.",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -619,7 +600,14 @@
           "to": "Washington Wizards",
           "player_id": "03nwk",
           "player": "Kelly Oubre Jr.",
-          "label": "Kelly Oubre Jr."
+          "label": "Kelly Oubre Jr.",
+          "result": {
+            "points": 277.75,
+            "starts": 5,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -634,6 +622,10 @@
             "player_id": "06cbz",
             "player": "Brice Sensabaugh",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Utah Jazz"
           }
         },
         {
@@ -641,6 +633,88 @@
           "from": "Washington Wizards",
           "to": "San Antonio Spurs",
           "label": "$5 budget"
+        }
+      ]
+    },
+    "1zyt3pfrkycyno26": {
+      "date": "2022-01-13",
+      "season": "2021-22",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "player_id": "03byk",
+          "player": "Jordan Clarkson",
+          "label": "Jordan Clarkson",
+          "result": {
+            "points": 2018.75,
+            "starts": 36,
+            "gp": 63,
+            "periods": 41,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr.",
+          "result": {
+            "points": 309.75,
+            "starts": 6,
+            "gp": 9,
+            "periods": 8,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "04ewi",
+          "player": "D.J. Wilson",
+          "label": "D.J. Wilson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "01uz3",
+          "player": "DeMarcus Cousins",
+          "label": "DeMarcus Cousins",
+          "result": {
+            "points": 72.0,
+            "starts": 8,
+            "gp": 5,
+            "periods": 8,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George",
+          "result": {
+            "points": 1859.75,
+            "starts": 33,
+            "gp": 41,
+            "periods": 41,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -655,7 +729,14 @@
           "to": "Sacramento Kings",
           "player_id": "03nwk",
           "player": "Kelly Oubre Jr.",
-          "label": "Kelly Oubre Jr."
+          "label": "Kelly Oubre Jr.",
+          "result": {
+            "points": 1721.75,
+            "starts": 33,
+            "gp": 51,
+            "periods": 33,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -670,6 +751,10 @@
             "player_id": "06v5a",
             "player": "Collin Murray-Boyles",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
           }
         },
         {
@@ -678,7 +763,81 @@
           "to": "Atlanta Hawks",
           "player_id": "04qrn",
           "player": "Mikal Bridges",
-          "label": "Mikal Bridges"
+          "label": "Mikal Bridges",
+          "result": {
+            "points": 3964.75,
+            "starts": 66,
+            "gp": 110,
+            "periods": 66,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "xrkqmnnwlcgjgfnn": {
+      "date": "2023-01-05",
+      "season": "2022-23",
+      "period": 24,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Golden State Warriors",
+          "player_id": "05uip",
+          "player": "Corey Kispert",
+          "label": "Corey Kispert",
+          "result": {
+            "points": 1020.75,
+            "starts": 29,
+            "gp": 47,
+            "periods": 42,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Golden State Warriors",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr.",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 10,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Boston Celtics",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley",
+          "result": {
+            "points": 261.0,
+            "starts": 8,
+            "gp": 12,
+            "periods": 10,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Boston Celtics",
+          "player_id": "051p1",
+          "player": "Brandon Clarke",
+          "label": "Brandon Clarke",
+          "result": {
+            "points": 273.0,
+            "starts": 5,
+            "gp": 10,
+            "periods": 10,
+            "ongoing": false
+          }
         }
       ]
     }

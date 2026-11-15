@@ -341,35 +341,6 @@
     }
   ],
   "trades": {
-    "6wp9ofaamj2uxl97": {
-      "date": "2025-12-12",
-      "season": "2025-26",
-      "period": 16,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Toronto Raptors",
-          "player_id": "04qsn",
-          "player": "Svi Mykhailiuk",
-          "label": "Svi Mykhailiuk"
-        },
-        {
-          "kind": "budget",
-          "from": "Golden State Warriors",
-          "to": "Toronto Raptors",
-          "label": "$10 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Golden State Warriors",
-          "player_id": "049ki",
-          "player": "Marvin Bagley",
-          "label": "Marvin Bagley"
-        }
-      ]
-    },
     "aauuyzg4kyix1unc": {
       "date": "2022-01-17",
       "season": "2021-22",
@@ -381,7 +352,14 @@
           "to": "Portland Trail Blazers",
           "player_id": "04qsn",
           "player": "Svi Mykhailiuk",
-          "label": "Svi Mykhailiuk"
+          "label": "Svi Mykhailiuk",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -396,6 +374,10 @@
             "player_id": "06cel",
             "player": "Sidy Cissoko",
             "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Detroit Pistons"
           }
         },
         {
@@ -404,7 +386,57 @@
           "to": "Indiana Pacers",
           "player_id": "051pb",
           "player": "Nicolas Claxton",
-          "label": "Nicolas Claxton"
+          "label": "Nicolas Claxton",
+          "result": {
+            "points": 3.5,
+            "starts": 2,
+            "gp": 1,
+            "periods": 7,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "6wp9ofaamj2uxl97": {
+      "date": "2025-12-12",
+      "season": "2025-26",
+      "period": 16,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "player_id": "04qsn",
+          "player": "Svi Mykhailiuk",
+          "label": "Svi Mykhailiuk",
+          "result": {
+            "points": 408.5,
+            "starts": 18,
+            "gp": 22,
+            "periods": 18,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "label": "$10 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Golden State Warriors",
+          "player_id": "049ki",
+          "player": "Marvin Bagley",
+          "label": "Marvin Bagley",
+          "result": {
+            "points": 430.25,
+            "starts": 12,
+            "gp": 18,
+            "periods": 18,
+            "ongoing": false
+          }
         }
       ]
     }

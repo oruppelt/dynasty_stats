@@ -335,44 +335,6 @@
     }
   ],
   "trades": {
-    "4bd21z2dl6cb0vvy": {
-      "date": "2022-08-02",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Philadelphia 76ers",
-          "player_id": "0015e",
-          "player": "Mike Conley",
-          "label": "Mike Conley"
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Philadelphia 76ers",
-          "label": "2024 round 1 pick (Golden State Warriors)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 19,
-            "overall": 19,
-            "player_id": "06mkc",
-            "player": "Jaylon Tyson",
-            "certain": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Golden State Warriors",
-          "player_id": "01enw",
-          "player": "Ricky Rubio",
-          "label": "Ricky Rubio"
-        }
-      ]
-    },
     "9ki57qcomh3docdw": {
       "date": "2025-10-23",
       "season": "2025-26",
@@ -384,7 +346,14 @@
           "to": "Portland Trail Blazers",
           "player_id": "042nw",
           "player": "Malcolm Brogdon",
-          "label": "Malcolm Brogdon"
+          "label": "Malcolm Brogdon",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 2,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -398,7 +367,14 @@
           "to": "Indiana Pacers",
           "player_id": "0015e",
           "player": "Mike Conley",
-          "label": "Mike Conley"
+          "label": "Mike Conley",
+          "result": {
+            "points": 374.25,
+            "starts": 14,
+            "gp": 23,
+            "periods": 32,
+            "ongoing": false
+          }
         }
       ]
     },
@@ -413,7 +389,14 @@
           "to": "Philadelphia 76ers",
           "player_id": "04ewr",
           "player": "Kyle Kuzma",
-          "label": "Kyle Kuzma"
+          "label": "Kyle Kuzma",
+          "result": {
+            "points": 210.0,
+            "starts": 3,
+            "gp": 4,
+            "periods": 3,
+            "ongoing": false
+          }
         },
         {
           "kind": "player",
@@ -421,7 +404,14 @@
           "to": "Milwaukee Bucks",
           "player_id": "0015e",
           "player": "Mike Conley",
-          "label": "Mike Conley"
+          "label": "Mike Conley",
+          "result": {
+            "points": 1910.75,
+            "starts": 36,
+            "gp": 55,
+            "periods": 40,
+            "ongoing": false
+          }
         },
         {
           "kind": "pick",
@@ -436,6 +426,69 @@
             "player_id": "06mkc",
             "player": "Jaylon Tyson",
             "certain": true
+          },
+          "result": {
+            "points": 1724.5,
+            "starts": 61,
+            "gp": 78,
+            "periods": 67,
+            "ongoing": false
+          }
+        }
+      ]
+    },
+    "4bd21z2dl6cb0vvy": {
+      "date": "2022-08-02",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "0015e",
+          "player": "Mike Conley",
+          "label": "Mike Conley",
+          "result": {
+            "points": 998.75,
+            "starts": 24,
+            "gp": 33,
+            "periods": 25,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "label": "2024 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06mkc",
+            "player": "Jaylon Tyson",
+            "certain": true
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio",
+          "result": {
+            "points": 84.75,
+            "starts": 4,
+            "gp": 6,
+            "periods": 29,
+            "ongoing": false
           }
         }
       ]
