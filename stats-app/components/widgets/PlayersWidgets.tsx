@@ -262,8 +262,8 @@ export function PlayerTeamsWidget({ selectedTeam }: { selectedTeam: string }) {
                     <td className={cn('sticky left-0 z-10 h-11 border-b px-2', mine ? 'bg-muted' : 'bg-card')}>
                       <div className="flex items-center gap-2">
                         <TeamLogo teamName={t.team} size={24} className="shrink-0" />
-                        <span className="sm:hidden">{teamCode(t.team)}</span>
-                        <span className="hidden sm:inline">{t.team}</span>
+                        <span className="md:hidden">{teamCode(t.team)}</span>
+                        <span className="hidden whitespace-nowrap md:inline">{t.team}</span>
                       </div>
                     </td>
                     <td className="h-11 border-b px-2 text-right">{formatPoints(t.points)}</td>

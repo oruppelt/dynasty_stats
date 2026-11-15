@@ -147,7 +147,8 @@ saves the responses and prints what the games table holds.
   into `pipeline/data/players/<season>.csv`. Only periods not there yet are
   fetched (and the latest two again, for stat corrections), so a normal run
   makes about 60 extra requests. A finished season named with `--season`
-  fetches only what's missing. To rebuild a season's player data from
+  fetches only what's missing. The workflow commits the cache with the
+  data. To rebuild a season's player data from
   scratch, delete its CSV and build the season.
 
 - **A period counts once its last game day is over**: from 03:00 ET on
@@ -186,6 +187,9 @@ saves the responses and prints what the games table holds.
   `"regular_periods"` overrides where Fantrax says the regular season ends
   (2023-24), and `"skip_playoff_periods"` leaves out playoff periods that
   didn't count (2022-23, 2023-24: the first half of the All-Star round).
+  `"skip_player_periods"` leaves periods out of the player lists (2019-20:
+  period 29, when every team was given 8 or 24 points); no fetch needed,
+  just build the season.
   Rebuild the season after changing these or `"playoffs"`. A season with
   `"playoffs": "other"` can name its `"champion"` and `"runner_up"` for the
   History section;

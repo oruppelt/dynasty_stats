@@ -172,12 +172,13 @@ export function Dashboard() {
             <span><span className="font-medium text-foreground">{seasonInfo.id}:</span> {seasonInfo.note}</span>
           </p>
         )}
-        <TabsList className="mb-4 grid h-auto w-full grid-cols-7 gap-1">
+        {/* Two rows of four up to tablet width (seven labels don't fit in one), one row above */}
+        <TabsList className="mb-4 grid h-auto w-full grid-cols-4 gap-1 md:grid-cols-7">
           {SECTIONS.map(({ value, label, icon: Icon }) => (
             <TabsTrigger
               key={value}
               value={value}
-              className="flex flex-col gap-1 px-0.5 text-[11px] sm:flex-row sm:gap-2 sm:px-2 sm:text-sm"
+              className="flex gap-1.5 px-1 text-xs sm:text-sm md:gap-2 md:px-2"
             >
               <Icon className="h-4 w-4" />
               <span>{label}</span>

@@ -21,6 +21,9 @@ Optional per season:
   own setting is off (2023-24: 32; its period 33 was the first Swiss round).
 - "skip_playoff_periods": playoff periods that didn't count, e.g. the first
   half of a Swiss round that ran over two periods (fantrax.skip_playoff_periods).
+- "skip_player_periods": periods left out of the player lists (players.py),
+  e.g. 2019-20 period 29, when every team was given 8 or 24 points but
+  the players' points still show in Fantrax. The rows stay in the cache.
 - "playoffs": "other" for a season before today's playoff format (LEAGUE.md).
   It gets no playoffs block; its playoff games are listed as played
   (playoff_games), and the site shows them as a plain list instead of a
@@ -96,7 +99,7 @@ def build(games: pd.DataFrame, path: Path, season: str, playoff_games: pd.DataFr
 
 
 def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame, playoff_games: pd.DataFrame,
-                  out: Path, final: bool) -> str:
+                  out: Path, final: bool, skip_periods: list[int] | None = None) -> str:
     """Update the season's player cache and write data/players/<season>.json if it changed. Returns what happened."""
     if games.empty:
         return f'{season} players: no played games yet.'
@@ -105,7 +108,7 @@ def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame,
     for g in all_games.itertuples():
         played.setdefault(int(g.Match), set()).update((g.Team, g.Opponent))
     rows = players.update_cache(season, league_id, cookie, played, refresh=0 if final else players.REFRESH_RECENT)
-    data = players.compute_players(rows, set(games['Match'].astype(int)))
+    data = players.compute_players(rows, set(games['Match'].astype(int)) - set(skip_periods or []))
     data['meta'] = {'season': season, **data['meta']}
     path = out / 'players' / f'{season}.json'
     text = to_json(data)
@@ -161,6 +164,7 @@ def main() -> None:
     regular_periods = {s['id']: s.get('regular_periods') for s in config['seasons']}
     skip_periods = {s['id']: s.get('skip_playoff_periods') for s in config['seasons']}
     final = {s['id'] for s in config['seasons'] if s.get('final')}
+    skip_player_periods = {s['id']: s.get('skip_player_periods') for s in config['seasons']}
     failed = []
     if args.source:
         if not args.season:
@@ -191,7 +195,8 @@ def main() -> None:
             if args.no_players:
                 continue
             try:
-                print(build_players(season, league_ids[season], cookie, games, playoff_games, args.out, season in final))
+                print(build_players(season, league_ids[season], cookie, games, playoff_games, args.out, season in final,
+                                    skip_player_periods[season]))
             except Exception:
                 failed.append(f'{season} players')
                 print(f'{season} players: FAILED; player data left as it was.', file=sys.stderr)
