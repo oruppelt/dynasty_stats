@@ -38,6 +38,12 @@ is only rewritten when the data changes, and its `updated_at` (the "Updated
 Action from committing when nothing is new. A source without any played games
 leaves the existing data in place, and so does a season that fails (the
 others still build; the run then exits with an error).
+
+Players (players.py): for each season built from Fantrax, the rosters with
+every player's points per period are kept in pipeline/data/players/<season>.csv
+(only new periods are fetched, plus the latest few again while the season is
+in progress) and the season's player lists go to data/players/<season>.json.
+--no-players skips them.
 """
 import argparse
 import json
@@ -50,6 +56,7 @@ from pathlib import Path
 import pandas as pd
 
 import fantrax
+import players
 from alltime import compute_alltime
 from league_data import compute_league, load_games, sheet_csv_url
 
@@ -88,6 +95,29 @@ def build(games: pd.DataFrame, path: Path, season: str, playoff_games: pd.DataFr
             f'through period {league["meta"]["latest_period"]}.')
 
 
+def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame, playoff_games: pd.DataFrame,
+                  out: Path, final: bool) -> str:
+    """Update the season's player cache and write data/players/<season>.json if it changed. Returns what happened."""
+    if games.empty:
+        return f'{season} players: no played games yet.'
+    all_games = pd.concat([g for g in (games, playoff_games) if not g.empty])
+    played: dict[int, set[str]] = {}
+    for g in all_games.itertuples():
+        played.setdefault(int(g.Match), set()).update((g.Team, g.Opponent))
+    rows = players.update_cache(season, league_id, cookie, played, refresh=0 if final else players.REFRESH_RECENT)
+    data = players.compute_players(rows, set(games['Match'].astype(int)))
+    data['meta'] = {'season': season, **data['meta']}
+    path = out / 'players' / f'{season}.json'
+    text = to_json(data)
+    changed = not path.exists() or path.read_text() != text
+    if changed:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text)
+    off = players.check_scores(rows, all_games)
+    note = f'; lineup points differ from the score in {len(off)} games (e.g. {off[0]})' if off else ''
+    return f'{season} players: {"updated" if changed else "no changes"}, {len(rows)} roster rows{note}.'
+
+
 def write_index(config: dict, out: Path) -> None:
     """The site's season list: the seasons that have data, in seasons.json order, and the one it opens on
     (the newest with DEFAULT_MIN_PERIODS periods played, else the newest)."""
@@ -121,6 +151,7 @@ def main() -> None:
                                          '(default: every season not marked final)')
     parser.add_argument('--source', help='read the games from this sheet link, sheet ID, CSV URL or CSV file '
                                          'instead of Fantrax (needs --season)')
+    parser.add_argument('--no-players', action='store_true', help='skip the players (rosters and points)')
     parser.add_argument('--out', type=Path, default=DEFAULT_OUT, help=f'output directory (default: {DEFAULT_OUT})')
     args = parser.parse_args()
 
@@ -129,6 +160,7 @@ def main() -> None:
     other_playoffs = {s['id'] for s in config['seasons'] if s.get('playoffs') == 'other'}
     regular_periods = {s['id']: s.get('regular_periods') for s in config['seasons']}
     skip_periods = {s['id']: s.get('skip_playoff_periods') for s in config['seasons']}
+    final = {s['id'] for s in config['seasons'] if s.get('final')}
     failed = []
     if args.source:
         if not args.season:
@@ -154,6 +186,15 @@ def main() -> None:
             except Exception:
                 failed.append(season)
                 print(f'{season}: FAILED; data left as it was.', file=sys.stderr)
+                traceback.print_exc()
+                continue
+            if args.no_players:
+                continue
+            try:
+                print(build_players(season, league_ids[season], cookie, games, playoff_games, args.out, season in final))
+            except Exception:
+                failed.append(f'{season} players')
+                print(f'{season} players: FAILED; player data left as it was.', file=sys.stderr)
                 traceback.print_exc()
     write_index(config, args.out)
     write_alltime(config, args.out)
