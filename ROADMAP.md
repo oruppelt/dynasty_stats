@@ -183,18 +183,19 @@ players" below).
   per game), **Best periods** (the biggest single-period scores, in the
   lineup and left on the bench), **Teams** (lineup and bench points, bench
   share, top scorer and their share).
+- Done: **All-time** (franchise scorers, career leaders, best seasons,
+  best periods ever in the lineup, on the bench and in the playoffs, playoff
+  career leaders; `data/players/alltime.json`), **playoff** leaders and
+  periods in Leaders and Best periods, **Your players** on My Team (top
+  scorers, best period, the latest period's top scorer, bench) and
+  **Players of the period** in the Recap.
 - Next:
-  - All-time player records (History → Records, or a Players view): the
-    best periods ever, career points for one franchise, the most points
-    left on a bench.
-  - Points left on the bench as lost games: the best possible lineup
-    (needs each player's eligible positions per period, and the slot
-    rules) against the one used, and the games that would have been won.
-  - My Team: the team's top scorers and its best period this season.
-  - Recap: the period's best players and bench.
-  - Playoff performances (the data has the playoff periods).
   - A player page (each season: team, points, contract), the start of the
     lineage (section 3).
+  - The Recap's PDF doesn't have the players yet.
+  - Lower priority: points left on the bench as lost games (the best
+    possible lineup, which needs each player's eligible positions per
+    period and the slot rules, against the one used).
 
 ### Needs Fantrax (after M2–M4)
 - **Players: starting lineups and MVP**, from `starting_lineup_analysis.ipynb`
