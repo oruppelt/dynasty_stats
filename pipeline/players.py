@@ -315,6 +315,18 @@ def compute_players(rows: pd.DataFrame, regular_periods: set[int], playoff_perio
 
 
 FRANCHISE_TOP_N = 10
+ALLTIME_PLAYOFF_TOP_N = 15
+
+
+def _records(active: pd.DataFrame, top_n: int) -> dict:
+    """The lineup records over every season: best periods and seasons, career and franchise leaders."""
+    return {
+        'best_periods': _top_periods(active, top_n),
+        'best_seasons': _leaders(active, top_n, by=('season', 'player_id')),
+        'career': _leaders(active, top_n),
+        'franchises': {team: [{k: v for k, v in p.items() if k != 'teams'} for p in _leaders(mine, FRANCHISE_TOP_N)]
+                       for team, mine in sorted(active.groupby('team'), key=lambda t: t[0])},
+    }
 
 
 def compute_alltime_players(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]], top_n: int = TOP_N) -> dict:
@@ -326,6 +338,8 @@ def compute_alltime_players(seasons: list[tuple[str, pd.DataFrame, set[int], set
     - career: regular-season points over every season, with the seasons
       and teams.
     - franchises: per team, its all-time top scorers (points for that team).
+    - with_playoffs: best_periods, best_seasons, career and franchises again,
+      counting playoff points too (still lineup only).
     - playoffs: the best playoff periods and the career playoff leaders.
     Franchises are matched by team name (team IDs change every season).
     """
@@ -338,14 +352,11 @@ def compute_alltime_players(seasons: list[tuple[str, pd.DataFrame, set[int], set
     regular, benches, playoff = (pd.concat(frames, ignore_index=True) for frames in (regular, benches, playoff))
     return {
         'meta': {'seasons': sorted({s for s, *_ in seasons})},
-        'best_periods': _top_periods(regular, top_n),
+        **_records(regular, top_n),
         'best_bench': _top_periods(benches, top_n),
-        'best_seasons': _leaders(regular, top_n, by=('season', 'player_id')),
-        'career': _leaders(regular, top_n),
-        'franchises': {team: [{k: v for k, v in p.items() if k != 'teams'} for p in _leaders(mine, FRANCHISE_TOP_N)]
-                       for team, mine in sorted(regular.groupby('team'), key=lambda t: t[0])},
+        'with_playoffs': _records(pd.concat([regular, playoff], ignore_index=True), top_n),
         'playoffs': {
-            'best_periods': _top_periods(playoff, PLAYOFF_TOP_N),
-            'career': _leaders(playoff, PLAYOFF_TOP_N),
+            'best_periods': _top_periods(playoff, ALLTIME_PLAYOFF_TOP_N),
+            'career': _leaders(playoff, ALLTIME_PLAYOFF_TOP_N),
         },
     }
