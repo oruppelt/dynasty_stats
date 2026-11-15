@@ -194,8 +194,10 @@ players" below).
   longest-serving, journeymen, best value, share of team points, and
   roster continuity ("Kept" in Teams).
 - Next:
-  - Done: the player page's **timeline** (lineage, section 3). Next: draft
-    picks as assets (whose pick a drafted player was).
+  - Done: the player page's **career path** (lineage, section 3), with
+    draft picks as assets, trade results and trade trees. Next: a pick
+    page and a trade page of their own, and the lineage of a team's
+    current roster ("how this team was built").
   - Note, not planned: franchises are matched by team name. In 2025-26 the
     Lakers and Clippers swapped rosters (each kept none of its own players).
     The commissioner told them beforehand that a mapping wouldn't be a
@@ -415,12 +417,19 @@ rosters:
    Lakers/Clippers name swap as a marker. Every roster is explained
    except the 184 players already on a roster in 2019-20 period 1
    ("joined"). Each arrival has the contract he played on and his
-   regular-season periods, starts and points there. Picks are still text
-   in the trades ("2022 round 1 pick (Atlanta Hawks)"); next is tying a
-   pick to the player drafted with it.*
+   regular-season periods, starts and points there.*
+   *Done for picks (2026-11-15): `lineage.compute_picks` replays every
+   pick trade to draft day and matches each team's picks to the slots it
+   drafted in (round 1 by `draftOrder` when the picks follow it, else the
+   previous season's standings; round 2 by the standings with the lottery
+   teams worst first). 456 of 480 drafted picks are placed; a round-2 pick
+   that the order only infers is "likely". 2020-21's `draftOrder` is wrong
+   (no slot fits), so its picks rely on the standings.*
 3. **Player seasons:** per player, season and team: periods on the
    roster, starts, points, contract and salary.
 4. **On the site:** a player page (career by season and team, how he
-   arrived, every move: *done*), a pick page (its path), a trade page (the trade
-   tree and the points each side got), and links from rosters and the
+   arrived, every move: *done*; the pick he was drafted with: *done*), the
+   points each side got out of a trade and its trade tree (*done*, in the
+   trade panel; `data/players/trades.json`), a pick page and a trade page of
+   their own (not yet), and links from rosters and the
    record book. The player records above build on the same tables.
