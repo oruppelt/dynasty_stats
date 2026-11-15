@@ -50,3 +50,13 @@ def test_unlogged_arrival_and_rename():
     assert [e['kind'] for e in out] == ['joined', 'renamed']
     assert out[0]['before_logs'] and out[0]['periods'] == 2
     assert (out[1]['from'], out[1]['team']) == ('Los Angeles Lakers', 'Los Angeles Clippers')
+
+
+def test_tracks():
+    s1 = rows((1, 'A', 'p', 'active', 10), (2, 'A', 'p', 'bench', 20), (3, 'B', 'q', 'active', 5))
+    s2 = rows((1, 'B', 'p', 'active', 30), (2, 'B', 'q', 'active', 1))
+    out = lineage.compute_tracks([('2024-25', s2, {1, 2}, set()), ('2023-24', s1, {1, 2}, {3})])
+    assert out['p'] == {'seasons': [{'season': '2023-24', 'length': 3, 'playoffs_from': 3},
+                                     {'season': '2024-25', 'length': 2, 'playoffs_from': None}],
+                        'teams': ['A', 'B'], 'periods': [[0, 1, 0, 10.0, 1], [0, 2, 0, 20.0, 0], [1, 1, 1, 30.0, 1]]}
+    assert out['q']['periods'][0] == [0, 3, 0, 5.0, 1]
