@@ -7,6 +7,8 @@ are in `LEAGUE.md`.
    big project and the next one.
 2. **New features.** Some work with today's data; others need the Fantrax
    data (schedule, playoffs, past seasons, rosters).
+3. **Player lineage.** The long-term goal: every pick and player followed
+   through the league's history (section 3).
 
 ---
 
@@ -197,17 +199,49 @@ differences from the sheet; none changes a result.
   rated by the opponents' all-play strength.
 - **Swiss stage board and knockout bracket.** Done 2026-10-23 (Playoffs tab).
 - **Past seasons.** Done 2026-10-23: the History section.
-- **What Fantrax gives us for players** (checked 2026-10-23):
-  - Public, no login: every team's roster for any period
-    (`fxea/general/getTeamRosters?leagueId=&period=`): each player's
-    status that period (active = in the lineup, reserve, minors),
-    contract (e.g. R23, REG1) and salary; and every NBA player's name,
-    team and position (`getPlayerIds?sport=NBA`). So lineups, roster moves
-    between periods (trades and pickups, without their dates) and
-    contracts need no cookie.
-  - With the login: transactions (`getTransactionDetailsHistory`: trades,
-    claims, drops with dates) and the players' fantasy points per period.
-    To check with a cookie.
+- **What Fantrax gives us for players** (checked 2026-10-23, with the
+  cookie 2026-11-15, every season from 2019-20 on):
+  - **Public, no login:**
+    - `fxea/general/getTeamRosters?leagueId=&period=`: every team's roster
+      for any period, with each player's slot (active, reserve, minors),
+      contract (e.g. R23, REG1) and salary.
+    - `getPlayerIds?sport=NBA`: every current NBA player by Fantrax ID
+      (name, team, position). The ID (`scorerId`, e.g. Zion `051oh`) is the
+      same in every league and season, so players need no matching by name.
+      Retired players are missing from this list, but trade, draft and
+      roster rows carry their names.
+    - `getDraftResults?leagueId=`: that league's draft (held on Fantrax
+      every year, 2019 to 2026, 60 picks): round, pick, the team that made
+      it, the player, the time, and `draftOrder` (the round-1 order, i.e. the
+      result of the offline lottery).
+    - `getDraftPicks?leagueId=`: the next two years' picks (120), each
+      with its original and current owner.
+  - **Private (`fxpa/req`, with the cookie):**
+    - **Points per player per period:** `getTeamRosterInfo` (teamId,
+      period, `view: STATS`, `statsType: 2`, `scoringCategoryType: 5`,
+      `seasonOrProjection: SEASON_<code>_BY_PERIOD`). Checked: Boston,
+      2025-26 period 5, active players add up to 325.0, the team's score;
+      OKC, 2023-24 period 10, 399.5, also exact. Without `BY_PERIOD` it
+      gives season-to-date totals; `statsType 1` counts everyone on the
+      roster (bench too), `2` only what counted for the team. Each response
+      lists the season's codes (`displayedLists.seasonOrProjections`;
+      2025-26 is `41l`, 2023-24 `41h`). Also: GP, minutes and the box score,
+      age, salary, contract.
+    - **Trades:** `getTransactionDetailsHistory` (`view: TRADE`,
+      `maxResultsPerPage`). One row per item, grouped into a trade by
+      `txSetId`: from team, to team, date, period. An item is a player
+      (`scorer.scorerId`), a draft pick (`draftPickDisplayParts`: year,
+      round and original team, e.g. "2026 Round 2 (Minnesota
+      Timberwolves)") or budget money (`budgetAmountTradeObj`). Trades per
+      season: 70, 55, 96, 109, 77, 69, 60 (2019-20 to 2025-26), 23 so far
+      in 2026-27.
+    - **Claims and drops:** the same call with `view: CLAIM_DROP`: player,
+      team, claim or drop, bid, date, period. About 500 a season; more than
+      one page, so it needs paging.
+    - The `LINEUP_CHANGE` view exists too (not needed).
+  - Cost: points need one request per team per period, about 1,400 a
+    season and 11,000 for all eight. Fetch finished periods once and keep
+    them (finished seasons never change).
 - **Player records, once we have players and their points:**
   - Most points ever by one player in a period, in a season, and for one
     franchise (career); the best single-period lineup.
@@ -226,3 +260,67 @@ differences from the sheet; none changes a result.
   - Each player's share of a team's points.
   - Season MVPs.
   - Trades and other transactions.
+
+---
+
+## 3. The long-term goal: player lineage
+
+Follow every asset through the league's whole history: a pick from the
+moment it exists, through every trade, to the player it became, and then
+that player's seasons (team, contract, salary, points, slot) and every
+trade, claim and drop until he leaves the league. For example:
+
+> Philadelphia's 2025 1st → Memphis (2023-24, period 26) → New York
+> (period 27) → pick 1.02 in the 2025 draft → Dylan Harper → his
+> seasons and points for New York, and where he went next.
+
+Both directions: "what became of this pick" and "how did this team get
+this player". The "trade tree" of a deal: everything each side got, and
+what that was later turned into. Points each side got after the trade.
+
+### Is it possible? Mostly yes (checked 2026-11-15)
+The example above is real: it came from the trade logs of 2023-24 and
+2024-25 and the 2025 draft results. What Fantrax has (see "What Fantrax
+gives us for players" above):
+
+| Link in the chain | Source | Status |
+|---|---|---|
+| Pick moves between teams | Trade log: year, round, original team, from, to, date | Yes, every season from 2019-20 |
+| Pick → draft slot (round 1) | `draftOrder` (the lottery result) + the original team | Yes |
+| Pick → draft slot (round 2) | Not `draftOrder` (only 5 of 30 round-2 picks follow it) | Work out from the trades: a pick never traded is made by its original team. To check |
+| Slot → player | Draft results | Yes, 2019 to 2026 (two picks in 2020, one in 2022 and 2023 have no player) |
+| Player moves | Trade log (players), claims and drops | Yes, with dates and periods |
+| Player's team, slot, contract, salary per period | Rosters | Yes |
+| Player's points per period, per team | Roster stats (`BY_PERIOD`) | Yes, matches the scores |
+| Same player across seasons | Fantrax ID | Yes, the same in every league |
+| Same team across seasons | Team name (IDs change with each league) | Yes, as in History |
+
+### What's missing (could be added by hand)
+- **The lottery itself:** odds, balls, who moved up. Fantrax only has the
+  result (the round-1 order). A small file per year could add it.
+- **Round-2 order** if the trades don't settle it (see above).
+- **Anything before the 2019-20 league:** picks or trades made before
+  that league existed (if any), and what the 2019 draft order came from.
+- **Contract events:** Fantrax shows each player's contract every period,
+  so a change (a rookie deal ending, an extension, a new REG contract) can
+  be seen from one period to the next, but not why or how it was decided.
+- **Off-season trades:** which league's log they land in (the old season
+  or the new one). To check.
+- **Trades that were later undone, or picks that were forfeited**: the log
+  has `deleted` and `resultCode`; to check how they show up.
+
+### Steps
+1. **Raw data, cached:** for each season, the draft, the trade and
+   claim/drop logs (paged), and the rosters with points per team and
+   period. Finished seasons are fetched once and kept in the repo or a
+   cache, not re-read on every run.
+2. **An asset table:** one row per pick (year, round, original team) and
+   per player, and an event table (drafted, traded, claimed, dropped, with
+   date, period, from, to). Check it against `getDraftPicks` (current
+   owners) and the rosters (a player is on the team the events say).
+3. **Player seasons:** per player, season and team: periods on the
+   roster, starts, points, contract and salary.
+4. **On the site:** a player page (career by season and team, how he
+   arrived, every move), a pick page (its path), a trade page (the trade
+   tree and the points each side got), and links from rosters and the
+   record book. The player records above build on the same tables.
