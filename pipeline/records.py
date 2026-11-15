@@ -10,6 +10,17 @@ team's all-play count, so the site can show either.
 import pandas as pd
 
 TOP_N = 5
+TOP_PLACES = 5  # a "top-5 period": one of the period's 5 best scores
+
+
+def top_period_counts(results: pd.DataFrame, by: list[str], top_n: int, places: int = TOP_PLACES) -> list[dict]:
+    """The teams with the most periods (grouped by `by`) among the best `places` scores.
+
+    A tie for the last place counts for every team in it. Equal counts: by team name.
+    """
+    rank = results.groupby(by)['Score'].rank(method='min', ascending=False)
+    counts = results[rank <= places].groupby('Team').size().sort_values(ascending=False, kind='stable')
+    return [{'team': team, 'count': int(n)} for team, n in counts.head(top_n).items()]
 
 
 def _game(row, period_avg: dict) -> dict:
@@ -68,9 +79,6 @@ def compute_records(results: pd.DataFrame, top_n: int = TOP_N) -> dict:
         rows = df.sort_values(column, ascending=ascending, kind='stable').head(top_n)
         return [_game(row, period_avg) for row in rows.itertuples()]
 
-    period_highs = r[r['Score'] == r['Match'].map(r.groupby('Match')['Score'].max())]
-    counts = period_highs.groupby('Team').size().sort_values(ascending=False, kind='stable')
-
     return {
         'highest_scores': top(r, 'Score'),
         'best_vs_average': top(r, 'VsAvg'),
@@ -82,6 +90,5 @@ def compute_records(results: pd.DataFrame, top_n: int = TOP_N) -> dict:
         'luckiest_wins': top(wins, 'AllPlayWins', ascending=True),
         'win_streaks': _top_streaks(_streaks(r, 1), top_n),
         'losing_streaks': _top_streaks(_streaks(r, 0), top_n),
-        # A shared period high counts for each team
-        'period_highs': [{'team': team, 'count': int(n)} for team, n in counts.head(top_n).items()],
+        'top5_periods': top_period_counts(r, ['Match'], top_n),
     }

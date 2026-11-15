@@ -157,7 +157,8 @@ export interface Records {
   win_streaks: Streak[];
   losing_streaks: Streak[];
   /** Periods with the league's top score */
-  period_highs: { team: string; count: number }[];
+  /** Periods with one of the 5 best scores */
+  top5_periods: { team: string; count: number }[];
 }
 
 /** The season's calendar and the games still to play (from Fantrax; null for data from the sheet). */
