@@ -207,16 +207,15 @@ export interface PlayerPage {
   timeline?: TimelineEvent[];
   /** The trades on the timeline, by id */
   trades?: Record<string, Trade>;
-  /** Every period on a roster, for the timeline's career strip */
-  track?: PlayerTrack;
+  /** The league's seasons from his first on, for the timeline's career strip */
+  axis?: SeasonAxis[];
 }
 
-export interface PlayerTrack {
-  /** From his first season on a roster to the newest. length: periods played so far; playoffs_from: the first playoff period */
-  seasons: { season: string; length: number; playoffs_from: number | null }[];
-  teams: string[];
-  /** [season index, period, team index, fpts, 1 if in the lineup] */
-  periods: [number, number, number, number, number][];
+/** A season on the career strip. length: the periods played so far; playoffs_from: the first playoff period */
+export interface SeasonAxis {
+  season: string;
+  length: number;
+  playoffs_from: number | null;
 }
 
 /** A move on a player's timeline. Team names are as they were at the time. */
@@ -247,6 +246,8 @@ export interface TimelineEvent {
   contract?: string;
   periods?: number;
   starts?: number;
+  /** Games in the lineup */
+  gp?: number;
   points?: number;
 }
 

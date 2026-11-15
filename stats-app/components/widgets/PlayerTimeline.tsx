@@ -6,7 +6,7 @@ import {
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { TeamLogo } from './TeamLogo'
 import { Explainer } from './Explainer'
-import { PlayerPage, PlayerTrack, TimelineEvent, Trade, describeContract, formatSalary } from '@/lib/players'
+import { PlayerPage, SeasonAxis, TimelineEvent, Trade, describeContract, formatSalary } from '@/lib/players'
 import { useSelectedPlayer } from '@/lib/selected-player'
 import { formatPoints } from '@/lib/standings'
 import { teamCode } from '@/lib/teams'
@@ -17,7 +17,7 @@ import { cn } from '@/lib/utils'
 // Players → Player: the timeline, how a player moved between teams (the player lineage, ROADMAP.md
 // section 3). Built by pipeline/lineage.py from the transaction logs and the rosters.
 // - The career strip reads left to right, oldest to newest: one bar per stint with a team, in its colors,
-//   over his points in every period (`track`). Click a stint (or a period) to open it.
+//   labelled with his points per game there (`axis` gives the seasons' lengths). Click a stint to open it.
 // - The stint card under it: how he got there (a trade opens to show what went each way), what he did
 //   there, and how he left. Arrows step through the stints; it opens on the latest.
 // - Every move, as a list (oldest first), for the full log.
@@ -75,10 +75,10 @@ interface Stint {
 
 const OFFSEASON = 3 // the gap between seasons on the strip, in periods
 
-function useAxis(track: PlayerTrack | undefined) {
+function useAxis(axis: SeasonAxis[] | undefined) {
   return useMemo(() => {
     const offsets: Record<string, number> = {}
-    const seasons = track?.seasons ?? []
+    const seasons = axis ?? []
     let x = 0, now: number | null = null
     seasons.forEach((s, i) => {
       offsets[s.season] = x
@@ -88,7 +88,7 @@ function useAxis(track: PlayerTrack | undefined) {
       x += (inProgress ? Math.max(s.length, seasons[i - 1].length) : s.length) + OFFSEASON
     })
     const total = Math.max(1, x - OFFSEASON)
-    const first = track?.seasons[0]?.season
+    const first = axis?.[0]?.season
     /** A move's place: the start of its period; before the season for the off-season and the draft */
     const at = (season?: string, period?: number) => {
       if (!season) return 0
@@ -96,7 +96,7 @@ function useAxis(track: PlayerTrack | undefined) {
       return period && period > 1 ? offsets[season] + period - 1 : Math.max(0, offsets[season] - 1)
     }
     return { offsets, total, at, now }
-  }, [track])
+  }, [axis])
 }
 
 function buildStints(timeline: TimelineEvent[], at: (s?: string, p?: number) => number, total: number, now: number | null): Stint[] {
@@ -138,11 +138,12 @@ function useTeamColor() {
 
 // --- The career strip --------------------------------------------------------------------------------
 
-function CareerStrip({ track, stints, selected, onSelect, total, offsets, now, selectedTeam, color }: {
-  track: PlayerTrack; stints: Stint[]; selected: number; onSelect: (i: number) => void; total: number;
+const perGame = (points = 0, gp = 0) => (gp ? (points / gp).toFixed(1) : null)
+
+function CareerStrip({ seasons, stints, selected, onSelect, total, offsets, now, selectedTeam, color }: {
+  seasons: SeasonAxis[]; stints: Stint[]; selected: number; onSelect: (i: number) => void; total: number;
   offsets: Record<string, number>; now: number | null; selectedTeam: string; color: (team: string) => string;
 }) {
-  const [hover, setHover] = useState<number | null>(null)
   // The strip's width in pixels, so a stint shows a label only when it fits
   const ref = useRef<HTMLDivElement>(null)
   const [px, setPx] = useState(800)
@@ -154,111 +155,64 @@ function CareerStrip({ track, stints, selected, onSelect, total, offsets, now, s
     return () => observer.disconnect()
   }, [])
   const pct = (x: number) => `${(x / total) * 100}%`
-  const max = Math.max(1, ...track.periods.map(p => p[3]))
-  const stintAt = (x: number) => {
-    let found = -1
-    stints.forEach((s, i) => { if (s.start <= x + 0.5 && x + 0.5 < Math.max(s.end, s.start + 1)) found = i })
-    return found
-  }
-  const periods = track.periods.map(([s, period, t, fpts, lineup]) => {
-    const season = track.seasons[s]
-    const x = offsets[season.season] + period - 1
-    return { x, season: season.season, period, team: track.teams[t], fpts, lineup: lineup === 1, stint: stintAt(x),
-             playoffs: season.playoffs_from !== null && period >= season.playoffs_from }
-  })
-  const shown = hover !== null ? periods[hover] : null
   // Free agency: the gaps between a stint and the next
   const gaps = stints.slice(0, -1).map((s, i) => ({ from: s.end, to: stints[i + 1].start })).filter(g => g.to - g.from > 0.5)
 
   return (
     <div ref={ref} className="select-none">
-      {/* Readout: the hovered period, else the selected stint */}
-      <div className="mb-1 h-5 truncate text-xs text-muted-foreground tabular-nums">
-        {shown ? (
-          <>
-            <span className="font-medium text-foreground">{shown.season}, P{shown.period}{shown.playoffs && ' (playoffs)'}</span>
-            {' · '}{teamCode(shown.team)} · {formatPoints(shown.fpts)} pts {shown.lineup ? 'in the lineup' : 'on the bench'}
-          </>
-        ) : px < 500 ? 'Points per period. Tap a block to open a stint.'
-          : 'Points every period: in the lineup (solid) and on the bench (faded). Hover for a period, click to open its stint.'}
-      </div>
-
-      {/* Points per period */}
-      <div className="relative h-20 sm:h-28" onMouseLeave={() => setHover(null)}>
-        {track.seasons.map(s => s.playoffs_from !== null && (
-          <div key={s.season} aria-hidden className="absolute inset-y-0 bg-muted/70"
-               style={{ left: pct(offsets[s.season] + s.playoffs_from - 1), width: pct(s.length - s.playoffs_from + 1) }} />
+      <div className="relative h-12 sm:h-14">
+        {/* Seasons: a faint column each, so a block's length reads as time */}
+        {seasons.map((s, i) => (
+          <div key={s.season} aria-hidden className="absolute inset-y-0 rounded-sm bg-muted/50"
+               style={{ left: pct(offsets[s.season]), width: pct(i === seasons.length - 1 && now !== null ? now - offsets[s.season] : s.length) }} />
         ))}
         {now !== null && (
-          <div aria-hidden className="absolute inset-y-0 border-l border-dashed border-foreground/50" style={{ left: pct(now) }}>
+          <div aria-hidden className="absolute -bottom-1 -top-2 border-l-2 border-dashed border-foreground/50" style={{ left: `calc(${pct(now)} + 3px)` }}>
             <span className="absolute -top-0.5 left-1 text-[10px] font-medium uppercase text-muted-foreground">now</span>
           </div>
         )}
-        {periods.map((p, i) => {
-          const on = p.stint === selected
-          return (
-            <button
-              key={i}
-              type="button"
-              aria-label={`${p.season} period ${p.period}: ${p.fpts} points`}
-              onMouseEnter={() => setHover(i)}
-              onClick={() => p.stint >= 0 && onSelect(p.stint)}
-              className="absolute bottom-0 top-0 flex items-end"
-              style={{ left: pct(p.x), width: pct(1) }}
-            >
-              <span
-                className="block w-full rounded-t-[1px] transition-opacity"
-                style={{
-                  height: `${Math.max(2, (p.fpts / max) * 100)}%`,
-                  background: color(p.team),
-                  opacity: (on ? 1 : 0.35) * (p.lineup ? 1 : 0.35) * (hover === i ? 1.4 : 1),
-                }}
-              />
-            </button>
-          )
-        })}
-      </div>
-
-      {/* Stints */}
-      <div className="relative mt-1.5 h-7 sm:h-8">
         {gaps.map((g, i) => (
-          <div key={i} aria-hidden title="Free agent" className="absolute top-1/2 border-t border-dashed border-muted-foreground/60"
+          <div key={i} aria-hidden title="Free agent" className="absolute top-1/2 border-t-2 border-dashed border-muted-foreground/50"
                style={{ left: pct(g.from), width: pct(g.to - g.from) }} />
         ))}
         {stints.map((s, i) => {
           const c = color(s.team)
           const on = i === selected
-          const width = Math.max(s.end - s.start, 0)
+          const width = (Math.max(s.end - s.start, 0) / total) * px
+          const ppg = perGame(s.arrive.points, s.arrive.gp)
           return (
             <button
               key={i}
               type="button"
               onClick={() => onSelect(i)}
-              title={`${s.team}${s.arrive.date ? `, from ${formatDate(s.arrive.date)}` : ''}`}
+              title={`${s.team}${ppg ? `: ${ppg} points per game` : ''}`}
               aria-pressed={on}
               className={cn(
-                'absolute inset-y-0 flex min-w-[6px] items-center justify-center gap-1 overflow-hidden rounded-[4px] px-1 text-[11px] font-semibold transition',
-                on ? 'z-[2] ring-2 ring-foreground ring-offset-1 ring-offset-card' : 'opacity-60 hover:opacity-100',
+                'absolute inset-y-1 flex min-w-[6px] flex-col items-center justify-center overflow-hidden rounded-[5px] px-1 leading-tight transition',
+                on ? 'z-[2] ring-2 ring-foreground ring-offset-1 ring-offset-card' : 'opacity-70 hover:opacity-100',
                 s.team === selectedTeam && !on && 'ring-1 ring-primary',
               )}
-              style={{ left: pct(s.start), width: `max(6px, ${pct(width)})`, background: c, color: textOn(c) }}
+              style={{ left: pct(s.start), width: `max(6px, ${pct(s.end - s.start)})`, background: c, color: textOn(c) }}
             >
-              {(width / total) * px >= 64 && <TeamLogo teamName={s.team} size={16} className="shrink-0 rounded-full bg-white/90 p-px" />}
-              {(width / total) * px >= 30 && <span className="truncate">{teamCode(s.team)}</span>}
+              {width >= 30 && (
+                <span className="flex max-w-full items-center gap-1 text-[11px] font-semibold">
+                  {width >= 70 && <TeamLogo teamName={s.team} size={14} className="shrink-0 rounded-full bg-white/90 p-px" />}
+                  <span className="truncate">{teamCode(s.team)}</span>
+                </span>
+              )}
+              {width >= 44 && ppg && <span className="truncate text-[10px] tabular-nums opacity-90">{ppg}{width >= 80 ? ' ppg' : ''}</span>}
             </button>
           )
         })}
       </div>
 
-      {/* Seasons */}
+      {/* Season labels */}
       <div className="relative mt-1 h-4 text-[10px] text-muted-foreground sm:text-xs">
-        {track.seasons.map((s, i) => {
-          const room = i === track.seasons.length - 1 ? total - offsets[s.season] : s.length
-          const narrow = (room / total) * px < 34
+        {seasons.map((s, i) => {
+          const room = i === seasons.length - 1 ? total - offsets[s.season] : s.length
           return (
-            <span key={s.season} className="absolute truncate border-l border-border pl-1"
-                  style={{ left: pct(offsets[s.season]), width: pct(room) }}>
-              {narrow ? '' : s.season.slice(2)}
+            <span key={s.season} className="absolute truncate pl-1" style={{ left: pct(offsets[s.season]), width: pct(room) }}>
+              {(room / total) * px < 34 ? '' : s.season.slice(2)}
             </span>
           )
         })}
@@ -341,19 +295,13 @@ function Move({ event, page, title, departure = false }: { event: TimelineEvent;
   )
 }
 
-function StintCard({ stint, index, count, onStep, page, track, color, next }: {
+function StintCard({ stint, index, count, onStep, page, color, next }: {
   stint: Stint; index: number; count: number; onStep: (i: number) => void; page: PlayerPage;
-  track?: PlayerTrack; color: string; next?: Stint;
+  color: string; next?: Stint;
 }) {
   const a = stint.arrive
   const current = !stint.leave && index === count - 1
-  // The best period there, from the strip's data
-  const best = useMemo(() => {
-    if (!track) return null
-    const name = track.teams.indexOf(stint.team)
-    return track.periods.filter(p => p[2] === name && p[4] === 1)
-      .reduce<PlayerTrack['periods'][number] | null>((b, p) => (!b || p[3] > b[3] ? p : b), null)
-  }, [track, stint.team])
+  const ppg = perGame(a.points, a.gp)
   return (
     <div className="mt-4 overflow-hidden rounded-lg border">
       <div className="flex items-center gap-3 border-b px-3 py-2.5" style={{ borderTop: `4px solid ${color}` }}>
@@ -387,7 +335,7 @@ function StintCard({ stint, index, count, onStep, page, track, color, next }: {
               <Figure value={formatPoints(a.points ?? 0)} label="points" />
               <Figure value={String(a.starts ?? 0)} label={`start${a.starts === 1 ? '' : 's'}`} />
               <Figure value={String(a.periods)} label={`period${a.periods === 1 ? '' : 's'}`} />
-              {best && <Figure value={formatPoints(best[3])} label={`best, ${track!.seasons[best[0]].season.slice(2)} P${best[1]}`} />}
+              <Figure value={ppg ?? '–'} label="per game" />
             </div>
           ) : (
             <div className="mt-1 text-sm text-muted-foreground">No regular-season period there</div>
@@ -457,31 +405,30 @@ function MoveList({ events, page, selectedTeam }: { events: TimelineEvent[]; pag
 
 export function PlayerTimeline({ page, selectedTeam }: { page: PlayerPage; selectedTeam: string }) {
   const timeline = page.timeline
-  const { offsets, total, at, now } = useAxis(page.track)
+  const { offsets, total, at, now } = useAxis(page.axis)
   const stints = useMemo(() => buildStints(timeline ?? [], at, total, now), [timeline, at, total, now])
   const [selected, setSelected] = useState(stints.length - 1)
   const [list, setList] = useState(false)
   const color = useTeamColor()
   if (!stints.length) return null
   const index = Math.min(Math.max(selected, 0), stints.length - 1)
-  const teams = new Set(stints.map(s => s.team)).size
   return (
     <Card>
       <CardHeader className="pb-2">
         <CardTitle className="text-lg">Career path</CardTitle>
         <CardDescription>
-          {stints.length} stint{stints.length === 1 ? '' : 's'} with {teams} team{teams === 1 ? '' : 's'}, oldest on the left. Pick a
+          {stints.length} stint{stints.length === 1 ? '' : 's'}, oldest on the left. Pick a
           stint to see how he got there, what he did and how he left.
         </CardDescription>
         <Explainer>
           <p>
-            From Fantrax&apos;s transaction logs, checked against the rosters. The bars are his fantasy points in each
-            period he was on a roster, in the team&apos;s colors (faded: on the bench); the shaded bands are the
-            playoffs. Under them, one block per stint; a dashed line is time as a free agent.
+            From Fantrax&apos;s transaction logs, checked against the rosters. One block per stint, in the team&apos;s
+            colors, as long as he was there; the number is his points per game there (in a lineup, regular
+            season). The grey columns are the seasons, a dashed line is time as a free agent.
           </p>
           <p className="mt-2">
             A stint shows the contract he played on there (his first period with the team) and what he did there
-            until he left: lineup points and starts in the regular season, and the periods on the roster. Dates are
+            until he left: lineup points, starts and points per game in the regular season, and the periods on the roster. Dates are
             US Eastern; &quot;P12&quot; is the period a move took effect in, &quot;before&quot; a season means the
             off-season. Team names are the names at the time. The records start in 2019-20; &quot;On the
             roster&quot; is a player who was already there.
@@ -489,12 +436,12 @@ export function PlayerTimeline({ page, selectedTeam }: { page: PlayerPage; selec
         </Explainer>
       </CardHeader>
       <CardContent className="px-3 sm:px-6">
-        {page.track && (
-          <CareerStrip track={page.track} stints={stints} selected={index} onSelect={setSelected} total={total}
+        {page.axis && (
+          <CareerStrip seasons={page.axis} stints={stints} selected={index} onSelect={setSelected} total={total}
                        offsets={offsets} now={now} selectedTeam={selectedTeam} color={color} />
         )}
         <StintCard key={index} stint={stints[index]} index={index} count={stints.length} onStep={setSelected}
-                   page={page} track={page.track} color={color(stints[index].team)} next={stints[index + 1]} />
+                   page={page} color={color(stints[index].team)} next={stints[index + 1]} />
         <button type="button" onClick={() => setList(l => !l)} aria-expanded={list}
                 className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
           {list ? 'Hide the moves' : `Every move (${timeline?.length ?? 0}), oldest first`}
