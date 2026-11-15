@@ -94,8 +94,13 @@ def test_trade_results():
         drafts=[('2024-25', 1, 1, 'B', 'x', '2024-06-25 20:00'), ('2024-25', 1, 2, 'C', 'y', '2024-06-25 20:05')],
     )
     t['draft_orders'] = pd.DataFrame({'season': ['2024-25'] * 3, 'pick': [1, 2, 3], 'team': ['A', 'B', 'C']})
-    out = lineage.compute_timelines([('2023-24', s1, {1, 2}, set()), ('2024-25', s2, {1}, set())], t)
+    every = {}
+    out = lineage.compute_timelines([('2023-24', s1, {1, 2}, set()), ('2024-25', s2, {1}, set())], t, all_trades=every)
     items = {i['label']: i.get('result') for i in out['p']['trades']['t1']['items']}
+    # What each team did with what it got: p dropped, the pick used on x (kept), B's pick traded on in t2
+    assert {i['label']: i.get('next') for i in every['t1']['items']} == {
+        'P': {'dropped': '2024-06-01'}, '2024 round 1 pick (A)': {'kept': True}, '2024 round 1 pick (B)': {'trade': 't2'}}
+    assert set(every) == {'t1', 't2'}
     assert items['P'] == {'points': 12.0, 'starts': 1, 'gp': 1, 'periods': 1, 'ongoing': False}
     assert items['2024 round 1 pick (A)'] == {'points': 30.0, 'starts': 1, 'gp': 1, 'periods': 1, 'ongoing': True}
     assert items['2024 round 1 pick (B)'] == {'traded_on': True, 'drafted_by': 'C'}

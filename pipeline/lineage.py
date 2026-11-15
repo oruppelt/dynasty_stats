@@ -189,11 +189,14 @@ def _money(text: str) -> float | None:
 
 
 def compute_timelines(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]],
-                      tx: dict[str, pd.DataFrame], standings: dict[str, list[str]] | None = None) -> dict[str, dict]:
+                      tx: dict[str, pd.DataFrame], standings: dict[str, list[str]] | None = None,
+                      all_trades: dict | None = None) -> dict[str, dict]:
     """{player_id: {'events': [...], 'trades': {set: trade}}}, events oldest first.
 
     A drafted player's timeline starts with the pick he was drafted with, when it was traded (`compute_picks`):
     'pick' (its original team) and 'pick-trade' events; a traded pick in a trade says who it became.
+    `all_trades`, if given, gets every trade, each item with its `result` and `next` (`_trade_results`), for
+    the trade trees.
 
     `seasons` is as for players.compute_player_pages (season, cached rows, regular periods, playoff periods),
     oldest or newest first.
@@ -241,7 +244,8 @@ def compute_timelines(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]
                        'player': i.player or None,
                        'label': (i.player if i.kind == 'player' else pick_label(i.pick) if i.kind == 'pick'
                                  else f'${_money(i.budget):g} budget' if _money(i.budget) is not None else i.kind),
-                       'became': _became(picks.get(pick_items.get((set_id, i['order']), '')), names)}
+                       'became': _became(picks.get(pick_items.get((set_id, i['order']), '')), names),
+                       'pick_key': pick_items.get((set_id, i['order']))}
                       for _, i in items.iterrows()]}
     for r in tr[tr['kind'] == 'player'].rename(columns={'from': 'src'}).itertuples():
         add(r.player_id, r.season, int(r.period), r.date, 0, -r.order,
@@ -361,7 +365,9 @@ def compute_timelines(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]
 
         timelines[pid] = timeline
 
-    _trade_results(trades, timelines, rostered)
+    _trade_results(trades, timelines, rostered, picks)
+    if all_trades is not None:
+        all_trades.update({t: _clean_trade(trade) for t, trade in trades.items()})
     out = {}
     for pid, timeline in timelines.items():
         used = {e['trade'] for e in timeline if e.get('trade')}
@@ -370,11 +376,26 @@ def compute_timelines(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]
     return out
 
 
-def _trade_results(trades: dict, timelines: dict[str, list[dict]], rostered: dict[str, bool]) -> None:
+def _trade_results(trades: dict, timelines: dict[str, list[dict]], rostered: dict[str, bool], picks: dict) -> None:
     """What each side of a trade got out of it, on each item as `result`: a player's regular season with the
     team that got him, until he left it (`ongoing` if he is still there); a pick, the same for the player
     drafted with it, if that team used it (`traded_on` if it went on before the draft, with the team that
-    `drafted_by` it)."""
+    `drafted_by` it). And `next`, what that team did with it after: {'trade': id} (traded it away),
+    {'dropped': date}, {'kept': True} (still there), or absent (it left without a logged move). For a pick the
+    team used, that is the drafted player's next move."""
+    moves_after = {}  # (pid, index of an arrival) -> next
+
+    def player_next(pid, k):
+        timeline = timelines.get(pid, [])
+        for e in timeline[k + 1:]:
+            if e['kind'] == 'trade':
+                return {'trade': e['trade']}
+            if e['kind'] == 'drop':
+                return {'dropped': _date(e['date'])}
+            if e['kind'] in ('claim', 're-sign', 'joined', 'draft'):
+                return None
+        return {'kept': True} if rostered.get(pid) else None
+
     arrivals, drafted = {}, {}
     for pid, timeline in timelines.items():
         moves = [k for k, e in enumerate(timeline) if e['kind'] not in ('renamed', 'pick', 'pick-trade')]
@@ -386,17 +407,28 @@ def _trade_results(trades: dict, timelines: dict[str, list[dict]], rostered: dic
                     'ongoing': ongoing}
             if e['kind'] == 'trade':
                 arrivals[(e['trade'], pid)] = stat
+                moves_after[(e['trade'], pid)] = player_next(pid, k)
             elif e['kind'] == 'draft':
                 drafted[pid] = (franchise(e['team'], _when(e)), stat)
+                moves_after[('draft', pid)] = player_next(pid, k)
     for set_id, trade in trades.items():
         when = trade['date']
         for item in trade['items']:
             if item['kind'] == 'player' and item['player_id']:
                 item['result'] = arrivals.get((set_id, item['player_id']))
-            elif item['kind'] == 'pick' and item.get('became'):
+                item['next'] = moves_after.get((set_id, item['player_id']))
+            elif item['kind'] == 'pick':
+                pick = picks.get(item.get('pick_key') or '')
+                chain = pick['chain'] if pick else []
+                at = next((k for k, m in enumerate(chain) if m['trade'] == set_id), None)
+                if at is not None and at + 1 < len(chain):
+                    item['next'] = {'trade': chain[at + 1]['trade']}
+                if not item.get('became'):
+                    continue
                 team, stat = drafted.get(item['became']['player_id'], (None, None))
                 if team is not None and team == franchise(item['to'], when):
                     item['result'] = stat
+                    item['next'] = moves_after.get(('draft', item['became']['player_id']))
                 elif team is not None:
                     item['result'] = {'traded_on': True, 'drafted_by': team}
 
@@ -434,7 +466,7 @@ def _clean(event: dict) -> dict:
 
 def _clean_trade(trade: dict) -> dict:
     return {'date': _date(trade['date']), 'season': trade['season'], 'period': trade['period'],
-            'items': [{k: v for k, v in i.items() if v is not None} for i in trade['items']]}
+            'items': [{k: v for k, v in i.items() if v is not None and k != 'pick_key'} for i in trade['items']]}
 
 
 

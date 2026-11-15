@@ -129,7 +129,8 @@ def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame,
 def write_players_alltime(config: dict, out: Path) -> None:
     """data/players/alltime.json, every season's player records together (players.compute_alltime_players),
     and the player pages: data/players/index.json (the search list) and data/players/player/<id>.json
-    (players.compute_player_pages, with the timeline from lineage.compute_timelines). From the cached rows and each season's periods (the season's player
+    (players.compute_player_pages, with the timeline from lineage.compute_timelines), and data/players/trades.json (every
+    trade, with what each item became, for the trade trees). From the cached rows and each season's periods (the season's player
     file, whose meta also has the season's length for the salary paid); each file is written only when it changes."""
     seasons, lengths = [], {}
     for s in config['seasons']:
@@ -146,7 +147,8 @@ def write_players_alltime(config: dict, out: Path) -> None:
     index, pages = players.compute_player_pages(seasons, lengths)
     transactions = lineage.read_transactions()
     if transactions is not None:
-        for pid, timeline in lineage.compute_timelines(seasons, transactions, _standings(config, out)).items():
+        all_trades = {}
+        for pid, timeline in lineage.compute_timelines(seasons, transactions, _standings(config, out), all_trades).items():
             if pid in pages:
                 pages[pid].update(timeline=timeline['events'], trades=timeline['trades'])
         axis = lineage.compute_axis(seasons)
@@ -154,6 +156,7 @@ def write_players_alltime(config: dict, out: Path) -> None:
             # From his first season (a draft is in the season it's for)
             first = min([s['season'] for s in page['seasons']] + [e['season'] for e in page.get('timeline', []) if e.get('season')])
             page['axis'] = [a for a in axis if a['season'] >= first]
+        _write_if_changed(out / 'players' / 'trades.json', to_json(all_trades))
     _write_if_changed(out / 'players' / 'index.json', to_json(index))
     page_dir = out / 'players' / 'player'
     page_dir.mkdir(parents=True, exist_ok=True)
