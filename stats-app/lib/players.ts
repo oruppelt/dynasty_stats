@@ -207,6 +207,16 @@ export interface PlayerPage {
   timeline?: TimelineEvent[];
   /** The trades on the timeline, by id */
   trades?: Record<string, Trade>;
+  /** Every period on a roster, for the timeline's career strip */
+  track?: PlayerTrack;
+}
+
+export interface PlayerTrack {
+  /** From his first season on a roster to the newest. length: periods played so far; playoffs_from: the first playoff period */
+  seasons: { season: string; length: number; playoffs_from: number | null }[];
+  teams: string[];
+  /** [season index, period, team index, fpts, 1 if in the lineup] */
+  periods: [number, number, number, number, number][];
 }
 
 /** A move on a player's timeline. Team names are as they were at the time. */

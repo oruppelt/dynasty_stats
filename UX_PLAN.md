@@ -299,11 +299,17 @@ Merged into Phase 2.5 (2026-10-22).
 ## Changelog
 
 ### 2026-11-15: Player timeline (branch `lineage/player-timeline`)
-- Players → Player gets a **Timeline**: every move, newest first (drafted
-  with round and pick, signed with the bid, re-signed, traded, dropped).
-  Each arrival shows the contract he played on and his points, starts and
-  periods with that team; a trade opens to show what each team got, and a
-  player in it opens his page. The 6 latest moves first, then "Show all".
+- Players → Player gets a **Career path**: a strip read left to right,
+  oldest to newest, with one block per stint in the team's colors (dashed:
+  free agency) over his points in every period (faded: bench; shaded: the
+  playoffs; a "now" line in a season in progress). Click a block or a bar
+  to open the stint; the card under it (arrows step through the stints, it
+  opens on the latest) shows how he got there (drafted with round and pick,
+  signed with the bid, re-signed, traded), what he did there (points,
+  starts, periods, best period, contract) and how he left. A trade opens to
+  show what each team got, and a player in it opens his page. Every move
+  is also a list, oldest first. Labels show only where they fit, so the
+  same strip works at phone width.
 - The page header: the current team "since <date> (traded/signed/...)", and
   a "This season" stat.
 - Data: `pipeline/lineage.py` (from `pipeline/data/transactions/` and the

@@ -234,3 +234,34 @@ def _clean(event: dict) -> dict:
 def _clean_trade(trade: dict) -> dict:
     return {'date': _date(trade['date']), 'season': trade['season'], 'period': trade['period'],
             'items': [{k: v for k, v in i.items() if v is not None} for i in trade['items']]}
+
+
+def compute_tracks(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]]) -> dict[str, dict]:
+    """{player_id: track}, the per-period data behind the timeline's career strip.
+
+    track = {'seasons': [{'season', 'length', 'playoffs_from'}] from his first season on the rosters to the
+    newest (length: the periods played so far; playoffs_from: the first playoff period, or null),
+    'teams': [names], 'periods': [[season index, period, team index, fpts, 1 if in the lineup]]}.
+    """
+    axis, frames = [], []
+    for season, rows, reg, playoffs in sorted(seasons, key=lambda s: s[0]):
+        played = reg | playoffs
+        if not played:
+            continue
+        axis.append({'season': season, 'length': int(max(played)), 'playoffs_from': int(min(playoffs)) if playoffs else None})
+        r = rows[['period', 'team', 'player_id', 'status', 'fpts']].copy()
+        r['period'] = r['period'].astype(int)
+        r = r[r['period'].isin(played)]
+        r['season'] = len(axis) - 1
+        frames.append(r)
+    if not frames:
+        return {}
+    rows = pd.concat(frames, ignore_index=True).sort_values(['season', 'period'], kind='stable')
+    out = {}
+    for pid, mine in rows.groupby('player_id', sort=False):
+        start = int(mine['season'].min())
+        teams = list(dict.fromkeys(mine['team']))
+        out[pid] = {'seasons': axis[start:], 'teams': teams,
+                    'periods': [[int(r.season) - start, int(r.period), teams.index(r.team), round(float(r.fpts), 2),
+                                 int(r.status == 'active')] for r in mine.itertuples()]}
+    return out

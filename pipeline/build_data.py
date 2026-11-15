@@ -149,6 +149,9 @@ def write_players_alltime(config: dict, out: Path) -> None:
         for pid, timeline in lineage.compute_timelines(seasons, transactions).items():
             if pid in pages:
                 pages[pid].update(timeline=timeline['events'], trades=timeline['trades'])
+        for pid, track in lineage.compute_tracks(seasons).items():
+            if pid in pages:
+                pages[pid]['track'] = track
     _write_if_changed(out / 'players' / 'index.json', to_json(index))
     page_dir = out / 'players' / 'player'
     page_dir.mkdir(parents=True, exist_ok=True)
