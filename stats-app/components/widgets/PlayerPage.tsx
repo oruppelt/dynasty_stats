@@ -143,7 +143,7 @@ function Career({ page, selectedTeam, currentSeason }: { page: PlayerPage; selec
         </CardHeader>
       </Card>
 
-      <PlayerTimeline page={page} selectedTeam={selectedTeam} />
+      <PlayerTimeline key={page.player_id} page={page} selectedTeam={selectedTeam} />
 
       <Card className="w-full">
         <CardHeader className="pb-2">
