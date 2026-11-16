@@ -70,7 +70,7 @@ progress); `data/players/<season>.json` has the site's lists (leaders, best
 periods in the lineup and on the bench, per team, per period for the recap,
 playoffs), read by `usePlayers()` in `lib/players.ts`;
 `data/players/alltime.json` (rebuilt from the cache on every run) has the
-all-time records (regular season, and again `with_playoffs`; plus longest-serving, journeymen, best value, team share and roster continuity), read by `useAllTimePlayers()`; `data/players/index.json` and `data/players/player/<id>.json` (`compute_player_pages`) feed the player page (Players → Player, `?player=<id>`; `lib/selected-player.ts`, and `PlayerName` makes any name a link to it). `--no-players` skips them.
+all-time records (regular season, and again `with_playoffs`; `career` has every player with a start, sorted and filtered on the site; plus longest-serving, journeymen, best value, team share and roster continuity), read by `useAllTimePlayers()`; `data/players/index.json` and `data/players/player/<id>.json` (`compute_player_pages`) feed the player page (Players → Player, `?player=<id>`; `lib/selected-player.ts`, and `PlayerName` makes any name a link to it). `--no-players` skips them.
 `schedule` (`fantrax.schedule_from_fantrax`, null for sheet data): period
 dates and the regular-season games still to play (`lib/schedule.ts`).
 The site reads it through `useLeagueData()` in `lib/league-data.ts` (one

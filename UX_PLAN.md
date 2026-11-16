@@ -298,6 +298,18 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-16: Career leaders: sort and filter (branch `players/career-sort`)
+- Players → All-time → Career leaders gets **Sort by** (points, points per
+  game, points per $1M, career salary, games played, seasons) and **At
+  least** (any, 25, 50, 100 or 200 starts). Picking a rate (per game, per
+  $1M) sets the minimum to 50 starts, which can be changed. 25 rows, then
+  "Show 25 more"; the count of players that qualify is shown.
+- The sorted column has the arrow and is bold. On a phone, sorted by
+  anything but points, the sorted stat comes right after the player (the
+  team logos make room), since its own column is off to the right.
+- `alltime.json`'s `career` (and `with_playoffs.career`) now has every player
+  with a start, not the top 25 (752 KB, 95 KB compressed, from 288 KB).
+
 ### 2026-11-15: Career path: points per game, picks, trade results, trade trees (branch `lineage/ppg-strip`)
 - The career strip drops the per-period points bars (they can't cover a
   pick, and doubled the player pages): each stint block shows his points
