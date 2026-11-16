@@ -287,13 +287,15 @@ function Jersey({ name, sub, team, big, image, caption }: {
   const { primary, secondary, fg } = teamColors(team)
   const surname = name.split(' ').slice(1).join(' ') || name
   return (
-    <figure className={cn('flex shrink-0 flex-col items-center', big ? 'w-48' : 'w-32')}>
+    // A picture gets more room than the drawn jersey
+    <figure className={cn('flex shrink-0 flex-col items-center', image ? (big ? 'w-72' : 'w-44 sm:w-48') : big ? 'w-48' : 'w-32')}>
       {/* The string it hangs from */}
       <span className="h-4 w-px bg-white/40" aria-hidden />
       {image ? (
         <div className="w-full overflow-hidden rounded-md shadow-xl ring-1 ring-white/20">
           <Picture src={image} alt={`${name}, retired`} className="aspect-[3/4] w-full object-cover" />
-          <div className="px-2 py-1 text-center text-xs font-black uppercase tracking-wider" style={{ background: primary, color: fg }}>{surname}</div>
+          <div className={cn('truncate px-2 py-1 text-center font-black uppercase', surname.length > 10 ? 'text-[11px] tracking-normal' : 'text-xs tracking-wider')}
+               style={{ background: primary, color: fg }}>{surname}</div>
         </div>
       ) : (
         <svg viewBox="0 0 100 110" className="w-full drop-shadow-[0_8px_16px_rgba(0,0,0,0.5)]" role="img" aria-label={`${name}, retired`}>
