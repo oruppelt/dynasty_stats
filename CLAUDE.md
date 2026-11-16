@@ -91,7 +91,7 @@ trade item has its `result` (what the team got out of it) and `next` (what it di
 (`lineage._compute_built`) has how each team's current roster was built, for Players → Teams (`TeamBuilt.tsx`).
 `data/honor.json` (`pipeline/honor.py`, after the all-time files): each franchise's honor (achievements per season,
 values in `ACHIEVEMENTS`), rewards from `pipeline/data/honor_rewards.json` (checked; rows that fail are reported and left out; pictures in `stats-app/public/honor/`),
-legends, highlights and rivals, for History → Franchise (`?franchise=`; `lib/selected-franchise.ts`, `FranchisePage.tsx`).
+legends, title banners, declared highlights and rivals (with ideas worked out from the games), for History → Franchise (tabs: Trophy room, Honor, Legends) (`?franchise=`; `lib/selected-franchise.ts`, `FranchisePage.tsx`).
 
 ### Metrics (`pipeline/league_data.py`)
 - **All-play strength**: in each scoring period (`Match` column; two per
