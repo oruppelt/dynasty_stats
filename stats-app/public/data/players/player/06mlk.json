@@ -147,6 +147,71 @@
     }
   ],
   "trades": {
+    "0196e5mel63oahs7": {
+      "date": "2022-07-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Toronto Raptors",
+          "label": "2023 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "02oyy",
+            "player": null,
+            "certain": true
+          },
+          "next": {
+            "trade": "iluy2ydxljfiprw3"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Toronto Raptors",
+          "label": "2024 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 12,
+            "overall": 42,
+            "player_id": "06mlk",
+            "player": "Ajay Mitchell",
+            "certain": false
+          },
+          "next": {
+            "trade": "pm8ukv5nl9ihx8hb"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Atlanta Hawks",
+          "player_id": "038ia",
+          "player": "Seth Curry",
+          "label": "Seth Curry",
+          "result": {
+            "points": 285.0,
+            "starts": 10,
+            "gp": 14,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "nsziz30xlccebfbg"
+          }
+        }
+      ]
+    },
     "pm8ukv5nl9ihx8hb": {
       "date": "2022-10-21",
       "season": "2022-23",
@@ -221,71 +286,6 @@
           },
           "next": {
             "kept": true
-          }
-        }
-      ]
-    },
-    "0196e5mel63oahs7": {
-      "date": "2022-07-27",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Toronto Raptors",
-          "label": "2023 round 2 pick (Atlanta Hawks)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 23,
-            "overall": 53,
-            "player_id": "02oyy",
-            "player": null,
-            "certain": true
-          },
-          "next": {
-            "trade": "iluy2ydxljfiprw3"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Toronto Raptors",
-          "label": "2024 round 2 pick (Atlanta Hawks)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 12,
-            "overall": 42,
-            "player_id": "06mlk",
-            "player": "Ajay Mitchell",
-            "certain": false
-          },
-          "next": {
-            "trade": "pm8ukv5nl9ihx8hb"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "New York Knicks"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Atlanta Hawks",
-          "player_id": "038ia",
-          "player": "Seth Curry",
-          "label": "Seth Curry",
-          "result": {
-            "points": 285.0,
-            "starts": 10,
-            "gp": 14,
-            "periods": 22,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "nsziz30xlccebfbg"
           }
         }
       ]

@@ -306,34 +306,88 @@
     }
   ],
   "trades": {
-    "kx1kwxiwl4wjgppq": {
-      "date": "2022-06-27",
-      "season": "2022-23",
-      "period": 1,
+    "lpvb9p0kkm9ltz87": {
+      "date": "2021-03-14",
+      "season": "2020-21",
+      "period": 25,
       "items": [
         {
           "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Orlando Magic",
-          "player_id": "042nt",
-          "player": "Ivica Zubac",
-          "label": "Ivica Zubac",
+          "from": "Detroit Pistons",
+          "to": "Portland Trail Blazers",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic",
+          "result": {
+            "points": 68.0,
+            "starts": 1,
+            "gp": 2,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Portland Trail Blazers",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard",
           "result": {
             "points": 0.0,
             "starts": 0,
             "gp": 0,
-            "periods": 0,
+            "periods": 3,
             "ongoing": false
           },
           "next": {
-            "trade": "zzfkpw4ol95t0sup"
+            "dropped": "2021-03-22"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "player_id": "05qu4",
+          "player": "Saben Lee",
+          "label": "Saben Lee",
+          "result": {
+            "points": 50.0,
+            "starts": 3,
+            "gp": 3,
+            "periods": 24,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "y7jfydkxkxg1vebv"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "player_id": "02nfc",
+          "player": "Jeremy Lamb",
+          "label": "Jeremy Lamb",
+          "result": {
+            "points": 792.0,
+            "starts": 34,
+            "gp": 42,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
           }
         },
         {
           "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Orlando Magic",
-          "label": "2022 round 1 pick, no. 17",
+          "from": "Portland Trail Blazers",
+          "to": "Detroit Pistons",
+          "label": "2022 round 1 pick (Portland Trail Blazers)",
           "became": {
             "season": "2022-23",
             "round": 1,
@@ -343,58 +397,12 @@
             "player": "Ousmane Dieng",
             "certain": true
           },
-          "result": {
-            "points": 221.75,
-            "starts": 21,
-            "gp": 21,
-            "periods": 45,
-            "ongoing": false
-          },
           "next": {
-            "trade": "18v4rya5lpr3wy1m"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Minnesota Timberwolves",
-          "player_id": "04jwd",
-          "player": "Royce O'Neale",
-          "label": "Royce O'Neale",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "pyux092fl67exc19"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Orlando Magic",
-          "to": "Minnesota Timberwolves",
-          "label": "2022 round 1 pick, no. 28",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 28,
-            "overall": 28,
-            "player_id": "06220",
-            "player": "Jaden Hardy",
-            "certain": true
+            "trade": "qcrl769ol4sqe48g"
           },
           "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 17,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "4ghkugn9lbqnbawd"
+            "traded_on": true,
+            "drafted_by": "Orlando Magic"
           }
         }
       ]
@@ -485,6 +493,99 @@
           },
           "next": {
             "trade": "fukufocgmcq7nafm"
+          }
+        }
+      ]
+    },
+    "kx1kwxiwl4wjgppq": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "player_id": "042nt",
+          "player": "Ivica Zubac",
+          "label": "Ivica Zubac",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zzfkpw4ol95t0sup"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "label": "2022 round 1 pick, no. 17",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "0621a",
+            "player": "Ousmane Dieng",
+            "certain": true
+          },
+          "result": {
+            "points": 221.75,
+            "starts": 21,
+            "gp": 21,
+            "periods": 45,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "18v4rya5lpr3wy1m"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Minnesota Timberwolves",
+          "player_id": "04jwd",
+          "player": "Royce O'Neale",
+          "label": "Royce O'Neale",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "pyux092fl67exc19"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 1 pick, no. 28",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 28,
+            "overall": 28,
+            "player_id": "06220",
+            "player": "Jaden Hardy",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 17,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "4ghkugn9lbqnbawd"
           }
         }
       ]
@@ -604,107 +705,6 @@
           "result": {
             "traded_on": true,
             "drafted_by": "New York Knicks"
-          }
-        }
-      ]
-    },
-    "lpvb9p0kkm9ltz87": {
-      "date": "2021-03-14",
-      "season": "2020-21",
-      "period": 25,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Portland Trail Blazers",
-          "player_id": "03e6n",
-          "player": "Jusuf Nurkic",
-          "label": "Jusuf Nurkic",
-          "result": {
-            "points": 68.0,
-            "starts": 1,
-            "gp": 2,
-            "periods": 6,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2021-05-31"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Portland Trail Blazers",
-          "player_id": "04ewd",
-          "player": "Luke Kennard",
-          "label": "Luke Kennard",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 3,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2021-03-22"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Detroit Pistons",
-          "player_id": "05qu4",
-          "player": "Saben Lee",
-          "label": "Saben Lee",
-          "result": {
-            "points": 50.0,
-            "starts": 3,
-            "gp": 3,
-            "periods": 24,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "y7jfydkxkxg1vebv"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Detroit Pistons",
-          "player_id": "02nfc",
-          "player": "Jeremy Lamb",
-          "label": "Jeremy Lamb",
-          "result": {
-            "points": 792.0,
-            "starts": 34,
-            "gp": 42,
-            "periods": 39,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2022-07-23"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Portland Trail Blazers",
-          "to": "Detroit Pistons",
-          "label": "2022 round 1 pick (Portland Trail Blazers)",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 17,
-            "overall": 17,
-            "player_id": "0621a",
-            "player": "Ousmane Dieng",
-            "certain": true
-          },
-          "next": {
-            "trade": "qcrl769ol4sqe48g"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Orlando Magic"
           }
         }
       ]

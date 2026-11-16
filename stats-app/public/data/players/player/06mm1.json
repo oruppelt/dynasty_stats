@@ -153,36 +153,18 @@
     }
   ],
   "trades": {
-    "rhyr5c70msr9j4s3": {
-      "date": "2026-08-13",
-      "season": "2026-27",
+    "k8wsy8nslklm9aqo": {
+      "date": "2023-07-27",
+      "season": "2023-24",
       "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Toronto Raptors",
-          "player_id": "04qrr",
-          "player": "Michael Porter",
-          "label": "Michael Porter",
-          "result": {
-            "points": 451.5,
-            "starts": 8,
-            "gp": 11,
-            "periods": 8,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Toronto Raptors",
-          "player_id": "06mm1",
-          "player": "Bronny James",
-          "label": "Bronny James",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujq",
+          "player": "Luka Garza",
+          "label": "Luka Garza",
           "result": {
             "points": 0.0,
             "starts": 0,
@@ -191,20 +173,48 @@
             "ongoing": false
           },
           "next": {
-            "dropped": "2026-08-15"
+            "dropped": "2023-10-23"
           }
         },
         {
           "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "Boston Celtics",
-          "label": "2027 round 2 pick (Toronto Raptors)"
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06mm1",
+            "player": "Bronny James",
+            "certain": true
+          },
+          "next": {
+            "trade": "ll6492qklql9ax74"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
         },
         {
-          "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "Boston Celtics",
-          "label": "2027 round 1 pick (Toronto Raptors)"
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Indiana Pacers",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter",
+          "result": {
+            "points": 3706.75,
+            "starts": 64,
+            "gp": 104,
+            "periods": 65,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
         }
       ]
     },
@@ -353,18 +363,36 @@
         }
       ]
     },
-    "k8wsy8nslklm9aqo": {
-      "date": "2023-07-27",
-      "season": "2023-24",
+    "rhyr5c70msr9j4s3": {
+      "date": "2026-08-13",
+      "season": "2026-27",
       "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05ujq",
-          "player": "Luka Garza",
-          "label": "Luka Garza",
+          "from": "Boston Celtics",
+          "to": "Toronto Raptors",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter",
+          "result": {
+            "points": 451.5,
+            "starts": 8,
+            "gp": 11,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Toronto Raptors",
+          "player_id": "06mm1",
+          "player": "Bronny James",
+          "label": "Bronny James",
           "result": {
             "points": 0.0,
             "starts": 0,
@@ -373,48 +401,20 @@
             "ongoing": false
           },
           "next": {
-            "dropped": "2023-10-23"
+            "dropped": "2026-08-15"
           }
         },
         {
           "kind": "pick",
-          "from": "Indiana Pacers",
-          "to": "Minnesota Timberwolves",
-          "label": "2024 round 1 pick (Indiana Pacers)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 22,
-            "overall": 22,
-            "player_id": "06mm1",
-            "player": "Bronny James",
-            "certain": true
-          },
-          "next": {
-            "trade": "ll6492qklql9ax74"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Boston Celtics"
-          }
+          "from": "Toronto Raptors",
+          "to": "Boston Celtics",
+          "label": "2027 round 2 pick (Toronto Raptors)"
         },
         {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Indiana Pacers",
-          "player_id": "04qrr",
-          "player": "Michael Porter",
-          "label": "Michael Porter",
-          "result": {
-            "points": 3706.75,
-            "starts": 64,
-            "gp": 104,
-            "periods": 65,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2025-08-10"
-          }
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Boston Celtics",
+          "label": "2027 round 1 pick (Toronto Raptors)"
         }
       ]
     }
