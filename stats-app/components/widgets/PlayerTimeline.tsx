@@ -1,14 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTheme } from 'next-themes'
 import {
-  ArrowLeftRight, ChevronDown, ChevronLeft, ChevronRight, ListOrdered, LogIn, LucideIcon, PenLine, RotateCcw, Tag, Ticket, UserMinus,
+  ArrowLeftRight, ArrowRight, ChevronDown, ChevronLeft, ChevronRight, ListOrdered, LogIn, LucideIcon, PenLine, RotateCcw, Tag, Ticket, UserMinus,
 } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { TeamLogo } from './TeamLogo'
 import { Explainer } from './Explainer'
-import { TradeTree } from './TradeTree'
+import { TradeSides, TradeTree } from './TradeTree'
 import { PlayerPage, SeasonAxis, TimelineEvent, Trade, describeContract, formatSalary } from '@/lib/players'
 import { useSelectedPlayer } from '@/lib/selected-player'
+import { useSelectedTrade } from '@/lib/selected-trade'
 import { formatPoints } from '@/lib/standings'
 import { teamCode } from '@/lib/teams'
 import { getTeamColor } from '@/lib/nba-team-colors'
@@ -137,7 +138,7 @@ function buildStints(timeline: TimelineEvent[], at: (s?: string, p?: number) => 
 }
 
 /** A team color that shows on the card: the secondary one when the primary is too close to the background */
-function useTeamColor() {
+export function useTeamColor() {
   const { resolvedTheme } = useTheme()
   const dark = resolvedTheme === 'dark'
   return (team: string) => {
@@ -245,85 +246,21 @@ function CareerStrip({ seasons, stints, selected, onSelect, total, offsets, now,
 function TradeDetails({ trade, tradeId, playerId, tree, onTree }: {
   trade: Trade; tradeId: string; playerId: string; tree: boolean; onTree: (id: string | null) => void;
 }) {
-  const { openPlayer } = useSelectedPlayer()
-  const color = useTeamColor()
-  // Grouped by the team that received them, with what each got out of it
-  const teams = [...new Set(trade.items.map(i => i.to))]
-  const got = (team: string) => trade.items.filter(i => i.to === team)
-  const total = (team: string) => got(team).reduce((t, i) => t + (i.result?.points ?? 0), 0)
-  const starts = (team: string) => got(team).reduce((t, i) => t + (i.result?.starts ?? 0), 0)
-  const sides = teams.filter(t => t !== '(Drop)')
-  const sum = sides.reduce((t, team) => t + total(team), 0)
-  const ongoing = trade.items.some(i => i.result?.ongoing)
+  const { openTrade } = useSelectedTrade()
   return (
     <div className="mt-2 rounded-md border bg-muted/40 p-2">
-      {sides.length > 1 && sum > 0 && (
-        <div className="mb-2">
-          <div className="flex h-2 overflow-hidden rounded-full">
-            {sides.map(team => (
-              <div key={team} style={{ width: `${(total(team) / sum) * 100}%`, background: color(team) }} title={`${team}: ${formatPoints(total(team))}`} />
-            ))}
-          </div>
-          <div className="mt-1 text-[11px] text-muted-foreground">
-            Points each side got out of it{ongoing ? ', so far' : ''} (lineup, regular season)
-          </div>
-        </div>
-      )}
-      <div className="grid gap-2">
-        {teams.map(team => (
-          <div key={team} className="min-w-0">
-            <div className="mb-1 flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
-              {team !== '(Drop)' && <TeamLogo teamName={team} size={16} className="shrink-0" />}
-              <span className="truncate">{team === '(Drop)' ? 'Released' : `${team} got`}</span>
-              {team !== '(Drop)' && (
-                <span className="ml-auto shrink-0 tabular-nums text-foreground">
-                  {formatPoints(total(team))} pts · {starts(team)} starts
-                </span>
-              )}
-            </div>
-            <ul className="space-y-0.5 text-sm">
-              {got(team).map((item, k) => (
-                <li key={k} className="flex items-baseline gap-2">
-                  <span className="min-w-0 flex-1">
-                    {item.kind === 'player' && item.player_id && item.player_id !== playerId ? (
-                      <button type="button" onClick={() => openPlayer(item.player_id!)} className="font-medium underline-offset-2 hover:underline">
-                        {item.label}
-                      </button>
-                    ) : (
-                      <span className={cn(item.kind === 'player' ? 'font-medium' : 'text-muted-foreground', item.player_id === playerId && 'font-bold')}>
-                        {item.label}
-                      </span>
-                    )}
-                    {item.became && (
-                      <span className="text-muted-foreground">
-                        {' → '}{item.became.round === 1 ? `#${item.became.pick}` : `R${item.became.round} #${item.became.pick}`}{' '}
-                        {item.became.player_id === playerId ? (
-                          <span className="font-bold text-foreground">{item.became.player ?? 'him'}</span>
-                        ) : (
-                          <button type="button" onClick={() => openPlayer(item.became!.player_id)} className="font-medium text-foreground underline-offset-2 hover:underline">
-                            {item.became.player ?? 'a player'}
-                          </button>
-                        )}
-                        {!item.became.certain && <span title="The round-2 order is partly inferred"> (likely)</span>}
-                      </span>
-                    )}
-                  </span>
-                  {item.result && (
-                    <span className="shrink-0 text-xs tabular-nums text-muted-foreground">
-                      {item.result.traded_on ? `traded on (${teamCode(item.result.drafted_by)} used it)` : `${formatPoints(item.result.points)} pts${item.result.ongoing ? ' +' : ''}`}
-                    </span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <TradeSides trade={trade} playerId={playerId} />
+      <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+        <button type="button" onClick={() => onTree(tree ? null : tradeId)} aria-expanded={tree}
+                className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline">
+          {tree ? 'Hide the trade tree' : 'Follow the trade tree'}
+          <ChevronDown className={cn('h-3.5 w-3.5 transition-transform', tree && 'rotate-180')} />
+        </button>
+        <button type="button" onClick={() => openTrade(tradeId)}
+                className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline">
+          Open the trade <ArrowRight className="h-3.5 w-3.5" />
+        </button>
       </div>
-      <button type="button" onClick={() => onTree(tree ? null : tradeId)} aria-expanded={tree}
-              className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline">
-        {tree ? 'Hide the trade tree' : 'Follow the trade tree'}
-        <ChevronDown className={cn('h-3.5 w-3.5 transition-transform', tree && 'rotate-180')} />
-      </button>
     </div>
   )
 }

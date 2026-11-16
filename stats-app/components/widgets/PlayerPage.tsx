@@ -17,7 +17,7 @@ import { cn } from '@/lib/utils'
 // season. Part of the player lineage (ROADMAP.md, section 3).
 
 /** Lowercase without accents, so "jokic" finds "Jokić". */
-const fold = (text: string) => text.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+export const fold = (text: string) => text.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
 const perGame = (points: number, gp: number) => (gp ? (points / gp).toFixed(1) : '–')
 
