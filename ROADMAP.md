@@ -432,12 +432,13 @@ rosters:
 4. **On the site:** a player page (career by season and team, how he
    arrived, every move: *done*; the pick he was drafted with: *done*), the
    points each side got out of a trade and its trade tree (*done*, in the
-   trade panel; `data/players/trades.json`), a pick page and a trade page of
-   their own (not yet), and links from rosters and the
+   trade panel; `data/players/trades.json`), a trade page of its own (*done*,
+   Players → Trade), a pick page (not yet), and links from rosters and the
    record book. The player records above build on the same tables.
 
 ### Next steps
-1. **A page for each trade.** Players → Trade, `?trade=<id>` (like
+1. **A page for each trade** (*done*, 2026-11-16; the record book links
+   are still to come). Players → Trade, `?trade=<id>` (like
    `?player=`), so a trade can be shared by link. It shows the date and the
    season and period; each side's items, with what each got out of it (the
    split bar and per-item points from the trade panel); and the trade tree

@@ -86,7 +86,8 @@ and `trades` on the player page; `axis` gives the seasons' lengths for the caree
 `components/widgets/PlayerTimeline.tsx`). `compute_picks` follows every draft pick from its
 original team to the player drafted with it (a drafted player's timeline starts with it); every
 trade item has its `result` (what the team got out of it) and `next` (what it did with it), and
-`data/players/trades.json` has every trade for the trade trees (`TradeTree.tsx`).
+`data/players/trades.json` has every trade for the trade trees (`TradeTree.tsx`) and the trade page
+(Players → Trade, `?trade=<id>`; `lib/selected-trade.ts`, `TradePage.tsx`).
 
 ### Metrics (`pipeline/league_data.py`)
 - **All-play strength**: in each scoring period (`Match` column; two per

@@ -170,7 +170,7 @@ function TableCard({ title, note, children }: { title: string; note: ReactNode; 
   )
 }
 
-function Select({ label, value, onChange, options }: {
+export function Select({ label, value, onChange, options }: {
   label: string; value: string; onChange: (v: string) => void; options: [string, string][];
 }) {
   return (

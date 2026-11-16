@@ -17,6 +17,7 @@ import { ChampionsWidget } from "./widgets/ChampionsWidget"
 import { FranchisesWidget } from "./widgets/FranchisesWidget"
 import { CareerHeadToHeadWidget } from "./widgets/CareerHeadToHeadWidget"
 import { AllTimeRecordsWidget } from "./widgets/AllTimeRecordsWidget"
+import { TradePageWidget } from "./widgets/TradePage"
 import { PlayerAllTimeWidget, PlayerLeadersWidget, PlayerPeriodsWidget, PlayerTeamsWidget } from "./widgets/PlayersWidgets"
 import { PlayerPageWidget } from "./widgets/PlayerPage"
 import { WidgetSkeleton } from "./widgets/WidgetSkeleton"
@@ -24,6 +25,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useLeagueData, useSeasonInfo } from '@/lib/league-data'
 import { useInitSelectedTeam, useSelectedTeam } from '@/lib/selected-team'
 import { useSelectedPlayer } from '@/lib/selected-player'
+import { useSelectedTrade } from '@/lib/selected-trade'
 import { getUrlParam, setUrlParam } from '@/lib/url'
 import { cn } from '@/lib/utils'
 import { CalendarDays, Info, Landmark, ListOrdered, Shirt, Swords, TrendingUp, User } from "lucide-react"
@@ -89,6 +91,7 @@ const SECTIONS: Section[] = [
       { value: "teams", label: "Teams", render: team => <PlayerTeamsWidget selectedTeam={team} /> },
       { value: "alltime", label: "All-time", render: team => <PlayerAllTimeWidget selectedTeam={team} /> },
       { value: "player", label: "Player", render: team => <PlayerPageWidget selectedTeam={team} /> },
+      { value: "trade", label: "Trade", render: team => <TradePageWidget selectedTeam={team} /> },
     ],
   },
   {
@@ -104,10 +107,11 @@ const SECTIONS: Section[] = [
 
 function ViewPicker({ views, value, onChange }: { views: View[]; value: string; onChange: (view: string) => void }) {
   return (
-    // A segmented control: full width on phones (every view in sight, no sideways scroll), sized to fit above
+    // A segmented control: full width on phones (every view in sight, wrapping to a second row, no sideways
+    // scroll), sized to fit above
     <div
       role="tablist"
-      className="mb-4 flex w-full gap-1 rounded-lg border bg-muted p-1 sm:inline-flex sm:w-auto"
+      className="mb-4 flex w-full flex-wrap gap-1 rounded-lg border bg-muted p-1 sm:inline-flex sm:w-auto"
     >
       {views.map(v => (
         <button
@@ -130,6 +134,12 @@ function ViewPicker({ views, value, onChange }: { views: View[]; value: string; 
   )
 }
 
+/** The link names a player only while the player page is open, a trade only while the trade page is */
+function syncViewParams(view: string | null) {
+  setUrlParam("player", view === "player" ? useSelectedPlayer.getState().playerId ?? "" : "")
+  setUrlParam("trade", view === "trade" ? useSelectedTrade.getState().tradeId ?? "" : "")
+}
+
 export function Dashboard() {
   const { data: league, error } = useLeagueData()
   useInitSelectedTeam(league?.matchups.teams)
@@ -139,17 +149,25 @@ export function Dashboard() {
   // A shared recap link (?period=) opens on the recap. (Reading the URL here is
   // safe: the tabs only render after the team list loads, well after hydration.)
   // A player link (?player=) opens on the player page.
-  const [tab, setTab] = useState<string | null>(() => getUrlParam("player") ? "players" : getUrlParam("period") ? "recap" : null)
+  // A trade link (?trade=) on the trade page.
+  const [tab, setTab] = useState<string | null>(() =>
+    getUrlParam("trade") || getUrlParam("player") ? "players" : getUrlParam("period") ? "recap" : null)
   // The view open in each section (its first one until the viewer picks another)
-  const [views, setViews] = useState<Record<string, string>>(() => (getUrlParam("player") ? { players: "player" } : {}) as Record<string, string>)
+  const [views, setViews] = useState<Record<string, string>>(() =>
+    (getUrlParam("trade") ? { players: "trade" } : getUrlParam("player") ? { players: "player" } : {}) as Record<string, string>)
 
-  // A player name clicked anywhere opens the player page
-  useEffect(() => useSelectedPlayer.subscribe((state, before) => {
-    if (state.opened === before.opened) return
-    setTab("players")
-    setViews(current => ({ ...current, players: "player" }))
-    window.scrollTo({ top: 0 })
-  }), [])
+  // A player name clicked anywhere opens the player page; a trade link, the trade page
+  useEffect(() => {
+    const open = (view: string) => {
+      setTab("players")
+      setViews(current => ({ ...current, players: view }))
+      syncViewParams(view)
+      window.scrollTo({ top: 0 })
+    }
+    const offPlayer = useSelectedPlayer.subscribe((state, before) => { if (state.opened !== before.opened) open("player") })
+    const offTrade = useSelectedTrade.subscribe((state, before) => { if (state.opened !== before.opened) open("trade") })
+    return () => { offPlayer(); offTrade() }
+  }, [])
 
   // Same as following a ?period= link: the recap reads the period when it opens
   const openRecap = (period: number) => {
@@ -176,7 +194,7 @@ export function Dashboard() {
           setTab(value)
           // The link names a period only while the recap is open, a player only while the player page is
           if (value !== "recap") setUrlParam("period", "")
-          if (value !== "players") setUrlParam("player", "")
+          syncViewParams(value === "players" ? views.players ?? null : null)
         }}
         className="w-full"
       >
@@ -210,8 +228,7 @@ export function Dashboard() {
                   value={view.value}
                   onChange={value => {
                     setViews(current => ({ ...current, [section.value]: value }))
-                    if (value !== "player") setUrlParam("player", "")
-                    else { const id = useSelectedPlayer.getState().playerId; if (id) setUrlParam("player", id) }
+                    if (section.value === "players") syncViewParams(value)
                   }}
                 />
               )}
