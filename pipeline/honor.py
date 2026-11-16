@@ -1,20 +1,22 @@
 """
-Prestige: a franchise's standing in the league, earned season by season from rare honors (a title, not a
-win), and spent on rewards (retiring a jersey, a motto, ...). Shown on the franchise page (History →
-Franchise); data/prestige.json.
+Honor: earned season by season from rare achievements (a title, not a win), and spent on rewards (retiring
+a jersey, a motto, ...). It is just honor: kept by franchise name, with the date of every achievement, so
+whether it belongs to the franchise or to whoever ran it at the time is left to the reader. Shown on the
+franchise page (History → Franchise); data/honor.json.
 
-Honors are worked out from the data for every season, past ones too, so nobody enters them. Only a
-finished season earns its standings honors (title, final, regular-season winner, season-high score,
+Achievements are worked out from the data for every season, past ones too, so nobody enters them. Only a
+finished season earns its standings achievements (title, final, regular-season winner, season-high score,
 bottom three); a player milestone counts in the season it happens, the one in progress too. Nothing earned
 is taken away.
 
-Rewards are asked for through the commissioner, who adds a row to pipeline/data/prestige_rewards.json (and
-a picture, if any, to stats-app/public/prestige/: a jersey's, a moment's); this
-module checks each one (enough prestige by then, an eligible player) and keeps the ledger. A row that
+Rewards are asked for through the commissioner, who adds a row to pipeline/data/honor_rewards.json (and
+a picture, if any, to stats-app/public/honor/: a jersey's, a moment's); this
+module checks each one (enough honor by then, an eligible player) and keeps the ledger. A row that
 doesn't pass is left out and reported.
 
-Player points are regular-season lineup points for the franchise (by team name, like the rest of the
-site), every season added up.
+Player points are lineup points for the franchise, regular season and playoffs (by team name, like the
+rest of the site), every season added up; a milestone has the period (and its date) it was passed in. Every
+achievement has a date, so the achievement of each season can be put next to who ran the team then.
 """
 import json
 import re
@@ -22,8 +24,8 @@ from pathlib import Path
 
 import pandas as pd
 
-# kind: (prestige, label)
-HONORS = {
+# kind: (honor, label)
+ACHIEVEMENTS = {
     'title': (100, 'Champion'),
     'final': (40, 'Runner-up'),
     'first_seed': (15, 'Regular-season winner'),
@@ -45,9 +47,9 @@ JERSEY_POINTS = 6000
 MOTTO_LENGTH = 80
 LEGENDS = 25
 RIVAL_GAMES = 6
-REWARDS_PATH = Path(__file__).parent / 'data' / 'prestige_rewards.json'
-# A reward's picture (a jersey's, a moment's): a file in stats-app/public/prestige/, added in the same PR as its row
-IMAGE_DIR = Path(__file__).parent.parent / 'stats-app' / 'public' / 'prestige'
+REWARDS_PATH = Path(__file__).parent / 'data' / 'honor_rewards.json'
+# A reward's picture (a jersey's, a moment's): a file in stats-app/public/honor/, added in the same PR as its row
+IMAGE_DIR = Path(__file__).parent.parent / 'stats-app' / 'public' / 'honor'
 IMAGE_NAME = re.compile(r'^[A-Za-z0-9._-]+\.(jpe?g|png|webp|gif)$', re.IGNORECASE)
 IMAGE_BYTES = 1_500_000
 
@@ -57,7 +59,7 @@ def read_rewards(path: Path = REWARDS_PATH) -> list[dict]:
 
 
 def _event(kind: str, season: str, **extra) -> dict:
-    points, label = HONORS[kind]
+    points, label = ACHIEVEMENTS[kind]
     return {'kind': kind, 'season': season, 'points': points, 'label': label, **extra}
 
 
@@ -79,6 +81,12 @@ def _streak(games: list[dict]) -> tuple[int, int | None, int | None]:
     return best
 
 
+def _date(data: dict, period: int | None) -> str | None:
+    """The last day of a period (the season file's schedule), or None."""
+    periods = (data.get('schedule') or {}).get('periods') or []
+    return next((p['end'] for p in periods if p['period'] == period), None)
+
+
 def _final(data: dict) -> dict | None:
     """The final series of a season file's knockout: the teams and the wins of each."""
     knockout = (data.get('playoffs') or {}).get('knockout') or []
@@ -86,8 +94,8 @@ def _final(data: dict) -> dict | None:
     return final['series'][0] if final and final.get('series') else None
 
 
-def _honors(alltime: dict, season_files: dict[str, dict], points: pd.DataFrame) -> list[dict]:
-    """Every honor, oldest season first, each with its team."""
+def _achievements(alltime: dict, season_files: dict[str, dict], points: pd.DataFrame) -> list[dict]:
+    """Every achievement, oldest season first, each with its team."""
     events = []
     order = [s['season'] for s in reversed(alltime['seasons'])]
     finished = {s['season'] for s in alltime['seasons'] if not s['in_progress']}
@@ -95,45 +103,55 @@ def _honors(alltime: dict, season_files: dict[str, dict], points: pd.DataFrame) 
         season = summary['season']
         if season not in finished:
             continue
-        final = _final(season_files.get(season, {}))
+        data = season_files.get(season, {})
+        final = _final(data)
+        # The final's last game; an earlier format without the bracket: the season's last period
+        final_period = (max((g['period'] for g in final.get('games', [])), default=None) if final
+                        else max((p['period'] for p in (data.get('schedule') or {}).get('periods', [])), default=None))
+        regular_end = (data.get('schedule') or {}).get('regular_periods')
         for kind, team, other in (('title', summary['champion'], summary['runner_up']),
                                   ('final', summary['runner_up'], summary['champion'])):
             if team:
-                extra = {'opponent': other}
+                extra = {'opponent': other, 'date': _date(data, final_period)}
                 if final and team in final['teams']:
                     i = final['teams'].index(team)
                     extra['series'] = f'{final["wins"][i]}-{final["wins"][1 - i]}'
                 events.append({'team': team, **_event(kind, season, **extra)})
         if summary.get('first_seed'):
-            events.append({'team': summary['first_seed'], **_event('first_seed', season)})
+            events.append({'team': summary['first_seed'], **_event('first_seed', season, date=_date(data, regular_end))})
         ranks = [t for t in alltime['team_seasons'] if t['season'] == season]
         for t in ranks:
             if t['rank'] > len(ranks) - 3:
-                events.append({'team': t['team'], **_event('bottom_three', season, rank=t['rank'], of=len(ranks))})
-        games = _season_games(season_files.get(season, {'results': []}))
+                events.append({'team': t['team'], **_event('bottom_three', season, rank=t['rank'], of=len(ranks),
+                                                                    date=_date(data, regular_end))})
+        games = _season_games(data) if data else []
         if games:
             high = max(g['score'] for g in games)
             for g in games:
                 if g['score'] == high:
                     events.append({'team': g['team'], **_event('season_high', season, score=g['score'],
-                                                                period=g['period'], opponent=g['opponent'])})
-    # Player milestones: the season a player's points for the franchise pass each mark
+                                                                period=g['period'], opponent=g['opponent'],
+                                                                date=_date(data, g['period']))})
+    # Player milestones: the period a player's points for the franchise (regular season and playoffs) pass
+    # each mark, in the season in progress too
     if len(points):
         rank = {s: i for i, s in enumerate(order)}
-        df = points.assign(_order=points['season'].map(rank)).sort_values('_order')
+        df = points.assign(_order=points['season'].map(rank)).sort_values(['_order', 'period'])
         for (pid, team), rows in df.groupby(['player_id', 'team'], sort=False):
             total = 0.0
             for row in rows.itertuples():
                 before, total = total, total + row.points
                 for mark, kind in MILESTONES:
                     if before < mark <= total:
-                        events.append({'team': team, **_event(kind, row.season, player_id=pid, player=rows['player'].iloc[-1])})
+                        events.append({'team': team, **_event(kind, row.season, player_id=pid, player=rows['player'].iloc[-1],
+                                                              period=int(row.period),
+                                                              date=_date(season_files.get(row.season, {}), int(row.period)))})
     order_of = {s: i for i, s in enumerate(order)}
-    return sorted(events, key=lambda e: (order_of.get(e['season'], 99), -e['points']))
+    return sorted(events, key=lambda e: (order_of.get(e['season'], 99), e.get('date') or '9999', -e['points']))
 
 
 def _legends(points: pd.DataFrame) -> dict[str, list[dict]]:
-    """Each franchise's top scorers: regular-season lineup points and starts, every season added up."""
+    """Each franchise's top scorers: lineup points and starts (regular season and playoffs), every season added up."""
     if not len(points):
         return {}
     by = (points.groupby(['team', 'player_id'])
@@ -174,6 +192,8 @@ def _highlights(team: str, alltime: dict, season_files: dict[str, dict], points:
         out['longest_streak'] = streak
     mine = points[points['team'] == team] if len(points) else points
     if len(mine):
+        mine = (mine.groupby(['season', 'player_id'])
+                .agg(player=('player', 'last'), points=('points', 'sum'), starts=('starts', 'sum')).reset_index())
         top = mine.sort_values('points', ascending=False).iloc[0]
         out['best_player_season'] = {'season': top['season'], 'player_id': top['player_id'], 'player': top['player'],
                                      'points': round(float(top['points']), 2), 'starts': int(top['starts'])}
@@ -205,7 +225,7 @@ def _rivals(team: str, alltime: dict) -> dict:
 
 def _spend(rewards: list[dict], teams: set[str], earned_by: dict[str, list[tuple[str, int]]], order: list[str],
            legends: dict[str, list[dict]], image_dir: Path = IMAGE_DIR) -> tuple[dict[str, list[dict]], list[str]]:
-    """Checks the rewards in the file's order: a known kind and franchise, a season, enough prestige earned
+    """Checks the rewards in the file's order: a known kind and franchise, a season, enough honor earned
     through that season less what's spent before, for a jersey an eligible player not already retired, and
     an image (optional, any reward) that is in image_dir, a picture, and at most IMAGE_BYTES."""
     spent: dict[str, list[dict]] = {t: [] for t in teams}
@@ -227,12 +247,12 @@ def _spend(rewards: list[dict], teams: set[str], earned_by: dict[str, list[tuple
         if r.get('image'):
             name, path = r['image'], image_dir / str(r['image'])
             if not IMAGE_NAME.match(str(name)) or not path.is_file():
-                problems.append(f'{where}: no image {name} in stats-app/public/prestige/ (jpg, png, webp or gif)')
+                problems.append(f'{where}: no image {name} in stats-app/public/honor/ (jpg, png, webp or gif)')
                 continue
             if path.stat().st_size > IMAGE_BYTES:
                 problems.append(f'{where}: {name} is over {IMAGE_BYTES // 1_000_000:.1f} MB; make it smaller')
                 continue
-            item['image'] = f'/prestige/{name}'
+            item['image'] = f'/honor/{name}'
         if kind == 'jersey':
             player = next((p for p in legends.get(team, []) if p['player_id'] == r.get('player_id')), None)
             if not player or player['points'] < JERSEY_POINTS:
@@ -264,15 +284,15 @@ def _spend(rewards: list[dict], teams: set[str], earned_by: dict[str, list[tuple
     return spent, problems
 
 
-def compute_prestige(alltime: dict, season_files: dict[str, dict], points: pd.DataFrame,
+def compute_honor(alltime: dict, season_files: dict[str, dict], points: pd.DataFrame,
                      rewards: list[dict], image_dir: Path = IMAGE_DIR) -> tuple[dict, list[str]]:
-    """data/prestige.json, and the reward rows that didn't pass.
+    """data/honor.json, and the reward rows that didn't pass.
 
-    `points`: one row per season, team and player (season, team, player_id, player, points, starts), regular-season
-    lineup points; may be empty (no player data)."""
+    `points`: one row per season, period, team and player in a lineup (season, period, team, player_id, player,
+    points, starts = 1), regular season and playoffs; may be empty (no player data)."""
     order = [s['season'] for s in reversed(alltime['seasons'])]
     teams = sorted({t['team'] for t in alltime['team_seasons']})
-    events = _honors(alltime, season_files, points)
+    events = _achievements(alltime, season_files, points)
     legends = _legends(points)
     earned_by: dict[str, list[tuple[str, int]]] = {}
     for e in events:
@@ -296,7 +316,7 @@ def compute_prestige(alltime: dict, season_files: dict[str, dict], points: pd.Da
         mottos = [x for x in spent[team] if x['kind'] == 'motto']
         rivals = [x for x in spent[team] if x['kind'] == 'rival']
         franchises[team] = {
-            'prestige': total, 'spent': cost, 'balance': total - cost,
+            'honor': total, 'spent': cost, 'balance': total - cost,
             'seasons': by_season,
             'cups': [e for e in mine if e['kind'] in ('title', 'final')],
             'motto': mottos[-1]['text'] if mottos else None,
@@ -309,11 +329,11 @@ def compute_prestige(alltime: dict, season_files: dict[str, dict], points: pd.Da
             'highlights': _highlights(team, alltime, season_files, points),
             'rivals': _rivals(team, alltime),
         }
-    ranked = sorted(teams, key=lambda t: (-franchises[t]['prestige'], t))
+    ranked = sorted(teams, key=lambda t: (-franchises[t]['honor'], t))
     for i, team in enumerate(ranked):
-        franchises[team]['rank'] = 1 + sum(franchises[t]['prestige'] > franchises[team]['prestige'] for t in ranked[:i])
+        franchises[team]['rank'] = 1 + sum(franchises[t]['honor'] > franchises[team]['honor'] for t in ranked[:i])
     return {
-        'honors': [{'kind': k, 'points': p, 'label': label} for k, (p, label) in HONORS.items()],
+        'achievements': [{'kind': k, 'points': p, 'label': label} for k, (p, label) in ACHIEVEMENTS.items()],
         'rewards': [{'kind': k, 'cost': c, 'label': label} for k, (c, label) in REWARDS.items()],
         'jersey_points': JERSEY_POINTS,
         'seasons': order,

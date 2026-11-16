@@ -1,17 +1,20 @@
 import { useQuery } from '@tanstack/react-query'
 import type { Finish } from './alltime'
 
-// Shape of /data/prestige.json (pipeline/prestige.py): each franchise's prestige, earned season by season
-// from rare honors and spent on rewards, with its banners, retired jerseys, legends, highlights and rivals.
+// Shape of /data/honor.json (pipeline/honor.py): each franchise's honor, earned season by season
+// from rare achievements and spent on rewards, with its banners, retired jerseys, legends, highlights and rivals.
 
-export type HonorKind = 'title' | 'final' | 'first_seed' | 'season_high' | 'bottom_three' | 'player_6000' | 'player_16000'
+export type AchievementKind = 'title' | 'final' | 'first_seed' | 'season_high' | 'bottom_three' | 'player_6000' | 'player_16000'
 export type RewardKind = 'jersey' | 'rival' | 'moment' | 'motto'
 
-export interface Honor {
-  kind: HonorKind
+export interface Achievement {
+  kind: AchievementKind
   season: string
   points: number
   label: string
+  /** The day it happened: the final's last period, the regular season's last, the season high's period, the
+   * period a milestone was passed in */
+  date?: string | null
   /** title / final: the other finalist, and the series ("2-1") when the bracket has it */
   opponent?: string
   series?: string
@@ -21,17 +24,17 @@ export interface Honor {
   /** bottom_three */
   rank?: number
   of?: number
-  /** player milestones */
+  /** player milestones (with `period`) */
   player_id?: string
   player?: string
 }
 
-export interface PrestigeSeason {
+export interface HonorSeason {
   season: string
   points: number
-  /** Prestige through this season */
+  /** Honor through this season */
   total: number
-  events: Honor[]
+  events: Achievement[]
   rank?: number
   wins?: number
   losses?: number
@@ -57,7 +60,7 @@ export interface Reward {
   // moment
   title?: string
   trade?: string
-  /** Any reward: its picture (/prestige/<file>) and a line under it */
+  /** Any reward: its picture (/honor/<file>) and a line under it */
   image?: string
   caption?: string
 }
@@ -79,14 +82,14 @@ export interface Opponent { team: string; games: number; wins: number; losses: n
 
 type Game = { season: string; period: number; score: number; opponent: string; opp_score: number }
 
-export interface FranchisePrestige {
-  prestige: number
+export interface FranchiseHonor {
+  honor: number
   spent: number
   balance: number
-  /** 1 = the most prestige (ties share a rank) */
+  /** 1 = the most honor (ties share a rank) */
   rank: number
-  seasons: PrestigeSeason[]
-  cups: Honor[]
+  seasons: HonorSeason[]
+  cups: Achievement[]
   motto: string | null
   jerseys: Reward[]
   moments: Reward[]
@@ -103,22 +106,22 @@ export interface FranchisePrestige {
   rivals: { most_played?: Opponent; nemesis?: Opponent; favorite?: Opponent }
 }
 
-export interface Prestige {
-  honors: { kind: HonorKind; points: number; label: string }[]
+export interface Honor {
+  achievements: { kind: AchievementKind; points: number; label: string }[]
   rewards: { kind: RewardKind; cost: number; label: string }[]
   jersey_points: number
   /** Oldest first */
   seasons: string[]
-  franchises: Record<string, FranchisePrestige>
+  franchises: Record<string, FranchiseHonor>
 }
 
-export function usePrestige() {
+export function useHonor() {
   return useQuery({
-    queryKey: ['prestige'],
+    queryKey: ['honor'],
     queryFn: async () => {
-      const response = await fetch('/data/prestige.json')
+      const response = await fetch('/data/honor.json')
       if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`)
-      return response.json() as Promise<Prestige>
+      return response.json() as Promise<Honor>
     },
   })
 }
