@@ -90,7 +90,7 @@ trade item has its `result` (what the team got out of it) and `next` (what it di
 (Players → Trade, `?trade=<id>`; `lib/selected-trade.ts`, `TradePage.tsx`). `data/players/built.json`
 (`lineage._compute_built`) has how each team's current roster was built, for Players → Teams (`TeamBuilt.tsx`).
 `data/prestige.json` (`pipeline/prestige.py`, after the all-time files): each franchise's prestige (honors per season,
-values in `HONORS`), rewards from `pipeline/data/prestige_rewards.json` (checked; rows that fail are reported and left out),
+values in `HONORS`), rewards from `pipeline/data/prestige_rewards.json` (checked; rows that fail are reported and left out; pictures in `stats-app/public/prestige/`),
 legends, highlights and rivals, for History → Franchise (`?franchise=`; `lib/selected-franchise.ts`, `FranchisePage.tsx`).
 
 ### Metrics (`pipeline/league_data.py`)

@@ -504,24 +504,39 @@ the competition on Fantrax.
   | Regular-season winner | +15 |
   | Season's highest score | +15 |
   | Bottom three of the regular season | −10 |
-  | A player passes 5,000 points for the franchise | +10 |
+  | A player passes 6,000 points for the franchise | +10 |
   | A player passes 16,000 points for the franchise | +70 |
 
   A finished season earns its standings honors; a milestone counts in the
   season it happens (regular-season lineup points for the franchise). With
-  the data on 2026-11-16 the totals run from 155 (New York) to −10 (Dallas);
-  81 player stints have passed 5,000, 2 have passed 16,000 (Jokić for Denver,
+  the data on 2026-11-16 the totals run from 155 (New York) to −20 (Dallas);
+  55 player stints have passed 6,000, 2 have passed 16,000 (Jokić for Denver,
   LeBron for Boston).
-- Rewards (`prestige.REWARDS`): retire a jersey 100 (a player with 5,000+
+- Rewards (`prestige.REWARDS`): retire a jersey 100 (a player with 6,000+
   points for the franchise), declare a rival 50, feature a moment 40, a motto
   25. The commissioner adds a row to `pipeline/data/prestige_rewards.json`
-  (team, kind, season, and the player, text, opponent or title); the build
-  checks it (enough prestige through that season, an eligible player) and
-  reports the rows it leaves out.
+  in a PR, with the picture if there is one in `stats-app/public/prestige/`
+  (jpg, png, webp or gif, at most 1.5 MB):
+
+  ```json
+  {"rewards": [
+    {"team": "Denver Nuggets", "kind": "jersey", "season": "2026-27", "player_id": "03e75",
+     "image": "denver-jokic.jpg", "caption": "Three MVPs in a Nuggets jersey"},
+    {"team": "Miami Heat", "kind": "moment", "season": "2026-27", "title": "The 2025-26 title",
+     "text": "Beat the #1 seed 2-0 in the final.", "image": "miami-2026.jpg"},
+    {"team": "Utah Jazz", "kind": "motto", "season": "2026-27", "text": "..."},
+    {"team": "Utah Jazz", "kind": "rival", "season": "2026-27", "opponent": "Toronto Raptors"}
+  ]}
+  ```
+
+  Any reward can have an `image` and a `caption`; a retired jersey with a
+  picture shows it in place of the drawn jersey, a moment above its text.
+  The build checks each row (enough prestige through that season, an
+  eligible player, the picture there) and reports the rows it leaves out.
 
 ### Next
-- Tune the values and costs with the league (the milestones add up: 81 x 10
-  is more than every title together).
+- Tune the values and costs with the league (at 6,000 the milestones still
+  add up: 55 x 10 is more than every title together; agreed for now).
 - Splits: win rate by month and before/after the All-Star break (period dates
   are in `schedule.periods`).
 - Records held by the franchise, trade partners and its best trade (link to
