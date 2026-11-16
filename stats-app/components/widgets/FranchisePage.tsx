@@ -81,7 +81,7 @@ function honorText(e: Honor) {
     case 'first_seed': return 'Regular-season winner'
     case 'season_high': return `Season-high ${formatPoints(e.score ?? 0)}`
     case 'bottom_three': return `${e.rank === e.of ? 'Last' : `${ordinal(e.rank ?? 0)} of ${e.of}`}`
-    case 'player_5000': return `${e.player}: 5,000 points`
+    case 'player_6000': return `${e.player}: 6,000 points`
     case 'player_16000': return `${e.player}: 16,000 points`
   }
 }
@@ -253,10 +253,35 @@ function BannersPanel({ team, f }: { team: string; f: FranchisePrestige }) {
 
 // ---------------------------------------------------------------------------------------------------- Jerseys
 
-function Jersey({ name, sub, team, big }: { name: string; sub: string; team: string; big?: boolean }) {
+/** A reward's picture (stats-app/public/prestige/, from the reward's row) */
+function Picture({ src, alt, className }: { src: string; alt: string; className?: string }) {
+  // A plain img: the export serves the file as it is (no image optimization)
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img src={src} alt={alt} loading="lazy" className={cn('block bg-muted', className)} />
+}
+
+function Jersey({ name, sub, team, big, image, caption }: {
+  name: string; sub: string; team: string; big?: boolean; image?: string; caption?: string
+}) {
   const color = useTeamColor()(team)
   const fg = textOn(color)
   const surname = name.split(' ').slice(1).join(' ') || name
+  if (image) {
+    // The franchise's own picture, framed like a banner in the team's color
+    return (
+      <figure className={cn('flex shrink-0 flex-col', big ? 'w-64' : 'w-32')}>
+        <div className="overflow-hidden rounded-md border shadow-sm">
+          <Picture src={image} alt={`${name}, retired`} className="aspect-[3/4] w-full object-cover" />
+          <div className="px-2 py-1 text-center text-xs font-black uppercase tracking-wider" style={{ background: color, color: fg }}>
+            {surname}
+          </div>
+        </div>
+        <figcaption className="mt-1 text-center text-xs text-muted-foreground">
+          {caption && <span className="block italic text-foreground">{caption}</span>}{sub}
+        </figcaption>
+      </figure>
+    )
+  }
   return (
     <figure className={cn('flex shrink-0 flex-col items-center', big ? 'w-36' : 'w-24')}>
       <svg viewBox="0 0 100 110" className="w-full drop-shadow-sm" role="img" aria-label={`${name}, retired`}>
@@ -279,7 +304,7 @@ function JerseysPanel({ data, team, f }: { data: Prestige; team: string; f: Fran
       {f.jerseys.length ? (
         <div className="flex flex-wrap gap-4">
           {f.jerseys.map(j => (
-            <Jersey key={j.player_id} name={j.player ?? ''} team={team} big={big}
+            <Jersey key={j.player_id} name={j.player ?? ''} team={team} big={big} image={j.image} caption={j.caption}
                     sub={`${j.first?.slice(0, 4)}–${j.last?.slice(5)} · ${formatPoints(j.points ?? 0)} pts · retired ${j.season}`} />
           ))}
         </div>
@@ -334,20 +359,25 @@ function HighlightsPanel({ f }: { f: FranchisePrestige }) {
                                      sub={`${formatPoints(h.best_player_season.points)} pts in ${h.best_player_season.starts} starts, ${h.best_player_season.season}`} />}
     </div>
   )
-  const moments = f.moments.length ? (
-    <ul className="mb-3 space-y-2">
+  const moments = (big?: boolean) => f.moments.length ? (
+    <ul className={cn('mb-3', big ? 'space-y-6' : 'space-y-2')}>
       {f.moments.map((m, i) => (
-        <li key={i} className="rounded-md border-l-4 border-primary bg-muted/40 px-3 py-2">
-          <div className="font-medium">{m.title}</div>
-          {m.text && <p className="text-sm text-muted-foreground">{m.text}</p>}
+        <li key={i} className="overflow-hidden rounded-md border-l-4 border-primary bg-muted/40">
+          {m.image && <Picture src={m.image} alt={m.title ?? ''}
+                               className={big ? 'max-h-[75vh] w-full object-contain' : 'aspect-video w-full object-cover'} />}
+          <div className="px-3 py-2">
+            <div className="font-medium">{m.title}<span className="ml-2 text-xs font-normal text-muted-foreground">{m.season}</span></div>
+            {m.text && <p className="text-sm text-muted-foreground">{m.text}</p>}
+            {m.caption && <p className="text-xs italic text-muted-foreground">{m.caption}</p>}
+          </div>
         </li>
       ))}
     </ul>
   ) : null
   return (
-    <Panel title="Highlights" icon={Sparkles} note={moments ? undefined : 'Worked out from the games. A featured moment, picked by the franchise, goes on top.'}
-           full={<>{moments}{tiles}</>}>
-      {moments}{tiles}
+    <Panel title="Highlights" icon={Sparkles} note={f.moments.length ? undefined : 'Worked out from the games. A featured moment, picked by the franchise, goes on top.'}
+           full={<>{moments(true)}{tiles}</>}>
+      {moments()}{tiles}
     </Panel>
   )
 }

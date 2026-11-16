@@ -4,7 +4,7 @@ import type { Finish } from './alltime'
 // Shape of /data/prestige.json (pipeline/prestige.py): each franchise's prestige, earned season by season
 // from rare honors and spent on rewards, with its banners, retired jerseys, legends, highlights and rivals.
 
-export type HonorKind = 'title' | 'final' | 'first_seed' | 'season_high' | 'bottom_three' | 'player_5000' | 'player_16000'
+export type HonorKind = 'title' | 'final' | 'first_seed' | 'season_high' | 'bottom_three' | 'player_6000' | 'player_16000'
 export type RewardKind = 'jersey' | 'rival' | 'moment' | 'motto'
 
 export interface Honor {
@@ -57,6 +57,9 @@ export interface Reward {
   // moment
   title?: string
   trade?: string
+  /** Any reward: its picture (/prestige/<file>) and a line under it */
+  image?: string
+  caption?: string
 }
 
 export interface Legend {
