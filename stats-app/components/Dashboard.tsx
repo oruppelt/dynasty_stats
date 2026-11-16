@@ -15,6 +15,7 @@ import { RivalryWidget } from "./widgets/RivalryWidget"
 import { ScheduleSwapWidget } from "./widgets/ScheduleSwapWidget"
 import { ChampionsWidget } from "./widgets/ChampionsWidget"
 import { FranchisesWidget } from "./widgets/FranchisesWidget"
+import { FranchisePageWidget } from "./widgets/FranchisePage"
 import { CareerHeadToHeadWidget } from "./widgets/CareerHeadToHeadWidget"
 import { AllTimeRecordsWidget } from "./widgets/AllTimeRecordsWidget"
 import { TradePageWidget } from "./widgets/TradePage"
@@ -26,6 +27,7 @@ import { useLeagueData, useSeasonInfo } from '@/lib/league-data'
 import { useInitSelectedTeam, useSelectedTeam } from '@/lib/selected-team'
 import { useSelectedPlayer } from '@/lib/selected-player'
 import { useSelectedTrade } from '@/lib/selected-trade'
+import { useSelectedFranchise } from '@/lib/selected-franchise'
 import { getUrlParam, setUrlParam } from '@/lib/url'
 import { cn } from '@/lib/utils'
 import { CalendarDays, Info, Landmark, ListOrdered, Shirt, Swords, TrendingUp, User } from "lucide-react"
@@ -97,6 +99,7 @@ const SECTIONS: Section[] = [
   {
     value: "history", label: "History", icon: Landmark, allSeasons: true,
     views: [
+      { value: "franchise", label: "Franchise", render: team => <FranchisePageWidget selectedTeam={team} /> },
       { value: "champions", label: "Champions", render: team => <ChampionsWidget selectedTeam={team} /> },
       { value: "franchises", label: "Franchises", render: team => <FranchisesWidget selectedTeam={team} /> },
       { value: "h2h", label: "Head to head", render: team => <CareerHeadToHeadWidget selectedTeam={team} /> },
@@ -134,11 +137,16 @@ function ViewPicker({ views, value, onChange }: { views: View[]; value: string; 
   )
 }
 
-/** The link names a player only while the player page is open, a trade only while the trade page is */
+/** The link names a player only while the player page is open, a trade only while the trade page is, a
+ * franchise only while the franchise page is */
 function syncViewParams(view: string | null) {
   setUrlParam("player", view === "player" ? useSelectedPlayer.getState().playerId ?? "" : "")
   setUrlParam("trade", view === "trade" ? useSelectedTrade.getState().tradeId ?? "" : "")
+  setUrlParam("franchise", view === "franchise" ? useSelectedFranchise.getState().franchise ?? "" : "")
 }
+
+/** The section a view is in */
+const sectionOf = (view: string) => SECTIONS.find(s => s.views.some(v => v.value === view))?.value ?? "players"
 
 export function Dashboard() {
   const { data: league, error } = useLeagueData()
@@ -150,23 +158,28 @@ export function Dashboard() {
   // safe: the tabs only render after the team list loads, well after hydration.)
   // A player link (?player=) opens on the player page.
   // A trade link (?trade=) on the trade page.
+  // A franchise link (?franchise=) on the franchise page.
   const [tab, setTab] = useState<string | null>(() =>
-    getUrlParam("trade") || getUrlParam("player") ? "players" : getUrlParam("period") ? "recap" : null)
+    getUrlParam("trade") || getUrlParam("player") ? "players" : getUrlParam("franchise") ? "history"
+      : getUrlParam("period") ? "recap" : null)
   // The view open in each section (its first one until the viewer picks another)
   const [views, setViews] = useState<Record<string, string>>(() =>
-    (getUrlParam("trade") ? { players: "trade" } : getUrlParam("player") ? { players: "player" } : {}) as Record<string, string>)
+    (getUrlParam("trade") ? { players: "trade" } : getUrlParam("player") ? { players: "player" }
+      : getUrlParam("franchise") ? { history: "franchise" } : {}) as Record<string, string>)
 
   // A player name clicked anywhere opens the player page; a trade link, the trade page
   useEffect(() => {
     const open = (view: string) => {
-      setTab("players")
-      setViews(current => ({ ...current, players: view }))
+      const section = sectionOf(view)
+      setTab(section)
+      setViews(current => ({ ...current, [section]: view }))
       syncViewParams(view)
       window.scrollTo({ top: 0 })
     }
     const offPlayer = useSelectedPlayer.subscribe((state, before) => { if (state.opened !== before.opened) open("player") })
     const offTrade = useSelectedTrade.subscribe((state, before) => { if (state.opened !== before.opened) open("trade") })
-    return () => { offPlayer(); offTrade() }
+    const offFranchise = useSelectedFranchise.subscribe((state, before) => { if (state.opened !== before.opened) open("franchise") })
+    return () => { offPlayer(); offTrade(); offFranchise() }
   }, [])
 
   // Same as following a ?period= link: the recap reads the period when it opens
@@ -194,7 +207,7 @@ export function Dashboard() {
           setTab(value)
           // The link names a period only while the recap is open, a player only while the player page is
           if (value !== "recap") setUrlParam("period", "")
-          syncViewParams(value === "players" ? views.players ?? null : null)
+          syncViewParams(value === "players" || value === "history" ? views[value] ?? null : null)
         }}
         className="w-full"
       >
@@ -228,7 +241,7 @@ export function Dashboard() {
                   value={view.value}
                   onChange={value => {
                     setViews(current => ({ ...current, [section.value]: value }))
-                    if (section.value === "players") syncViewParams(value)
+                    if (section.value === "players" || section.value === "history") syncViewParams(value)
                   }}
                 />
               )}

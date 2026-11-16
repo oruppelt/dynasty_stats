@@ -17,6 +17,19 @@ import { AllTime, FINISH_LABEL, FINISH_SHORT, Finish, Franchise, TeamSeason, all
 import { formatLuck, formatPct, formatRecord, luckColor } from '@/lib/standings'
 import { teamCode } from '@/lib/teams'
 import { cn } from '@/lib/utils'
+import { useSelectedFranchise } from '@/lib/selected-franchise'
+
+/** A team name that opens its franchise page */
+function FranchiseLink({ team }: { team: string }) {
+  const { openFranchise } = useSelectedFranchise()
+  return (
+    <button type="button" onClick={() => openFranchise(team)} title="Open the franchise page"
+            className="flex items-center gap-2 text-left hover:underline">
+      <TeamLogo teamName={team} size={24} className="shrink-0" />
+      <span className="max-w-34 truncate sm:max-w-none">{team}</span>
+    </button>
+  )
+}
 
 // Team stays in view while the other columns scroll sideways on phones
 const STICKY: Record<string, string> = { team: 'sticky left-0 z-10 text-left' }
@@ -32,10 +45,7 @@ const columns: ColumnDef<Row>[] = [
     accessorKey: 'team',
     header: 'Team',
     cell: ({ row }) => (
-      <div className="flex items-center gap-2">
-        <TeamLogo teamName={row.original.team} size={24} className="shrink-0" />
-        <span className="max-w-34 truncate sm:max-w-none">{row.original.team}</span>
-      </div>
+      <FranchiseLink team={row.original.team} />
     ),
   },
   {
