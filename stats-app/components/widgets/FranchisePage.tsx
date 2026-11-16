@@ -7,9 +7,9 @@ import { ErrorState } from './ErrorState'
 import { TeamLogo } from './TeamLogo'
 import { PlayerName } from './PlayerName'
 import { Select } from './PlayersWidgets'
-import { useTeamColor } from './PlayerTimeline'
+import { formatDate, useTeamColor } from './PlayerTimeline'
 import { FINISH_LABEL, useAllTime } from '@/lib/alltime'
-import { FranchisePrestige, Honor, Prestige, signed, usePrestige } from '@/lib/prestige'
+import { FranchiseHonor, Achievement, Honor, signed, useHonor } from '@/lib/honor'
 import { useSelectedFranchise } from '@/lib/selected-franchise'
 import { textOn } from '@/lib/chart-theme'
 import { formatPoints } from '@/lib/standings'
@@ -17,8 +17,8 @@ import { teamCode } from '@/lib/teams'
 import { cn } from '@/lib/utils'
 
 // History → Franchise: one franchise's page, shareable as ?franchise=<team> (lib/selected-franchise.ts).
-// Prestige by season is the main show; then the banners (titles and finals), retired jerseys, highlights,
-// legends and rivals. Every panel opens full screen. From data/prestige.json (pipeline/prestige.py) and
+// Honor by season is the main show; then the banners (titles and finals), retired jerseys, highlights,
+// legends and rivals. Every panel opens full screen. From data/honor.json (pipeline/honor.py) and
 // data/alltime.json.
 
 const ordinal = (n: number) => `${n}${['th', 'st', 'nd', 'rd'][n % 100 >= 11 && n % 100 <= 13 ? 0 : n % 10] ?? 'th'}`
@@ -73,8 +73,8 @@ function Empty({ children }: { children: ReactNode }) {
   return <p className="rounded-md border border-dashed px-3 py-6 text-center text-sm text-muted-foreground">{children}</p>
 }
 
-/** An honor in a few words */
-function honorText(e: Honor) {
+/** An achievement in a few words */
+function achievementText(e: Achievement) {
   switch (e.kind) {
     case 'title': return `Champion${e.opponent ? `, beat ${teamCode(e.opponent)}` : ''}${e.series ? ` ${e.series}` : ''}`
     case 'final': return `Runner-up${e.opponent ? ` to ${teamCode(e.opponent)}` : ''}${e.series ? ` ${e.series}` : ''}`
@@ -86,21 +86,23 @@ function honorText(e: Honor) {
   }
 }
 
-function HonorChip({ e }: { e: Honor }) {
+function AchievementChip({ e }: { e: Achievement }) {
   const tone = e.points < 0 ? 'border-destructive/40 text-destructive'
     : e.kind === 'title' ? 'border-amber-500/60 bg-amber-500/10 text-amber-700 dark:text-amber-300'
     : 'text-foreground'
   return (
-    <span className={cn('inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs', tone)} title={e.label}>
+    <span className={cn('inline-flex max-w-full items-center gap-1 rounded-full border px-2 py-0.5 text-xs', tone)}
+          title={`${e.label}${e.date ? `, ${formatDate(e.date)}` : ''}${e.period ? ` (period ${e.period})` : ''}`}>
       <span className="font-semibold tabular-nums">{signed(e.points)}</span>
-      <span className="truncate">{honorText(e)}</span>
+      <span className="truncate">{achievementText(e)}</span>
+      {e.date && <span className="shrink-0 opacity-70">· {formatDate(e.date)}</span>}
     </span>
   )
 }
 
-// ---------------------------------------------------------------------------------------------------- Prestige
+// ---------------------------------------------------------------------------------------------------- Honor
 
-function SeasonRows({ f, max }: { f: FranchisePrestige; max: number }) {
+function SeasonRows({ f, max }: { f: FranchiseHonor; max: number }) {
   return (
     <ul className="divide-y">
       {[...f.seasons].reverse().map(s => (
@@ -111,7 +113,7 @@ function SeasonRows({ f, max }: { f: FranchisePrestige; max: number }) {
             {s.finish ? ` · ${FINISH_LABEL[s.finish]}` : s.wins !== undefined ? ' · in progress' : ''}
           </span>
           <span className="col-span-3 col-start-1 row-start-2 flex flex-wrap gap-1 empty:hidden sm:col-span-1 sm:col-start-3 sm:row-start-1">
-            {s.events.map((e, i) => <HonorChip key={i} e={e} />)}
+            {s.events.map((e, i) => <AchievementChip key={i} e={e} />)}
           </span>
           {/* A bar either side of zero */}
           <span className="hidden h-2.5 self-center sm:col-start-4 sm:row-start-1 sm:flex" aria-hidden>
@@ -132,10 +134,10 @@ function SeasonRows({ f, max }: { f: FranchisePrestige; max: number }) {
   )
 }
 
-function Leaderboard({ data, team }: { data: Prestige; team: string }) {
+function Leaderboard({ data, team }: { data: Honor; team: string }) {
   const { setFranchise } = useSelectedFranchise()
   const rows = Object.entries(data.franchises).sort((a, b) => a[1].rank - b[1].rank || a[0].localeCompare(b[0]))
-  const top = Math.max(...rows.map(([, f]) => f.prestige), 1)
+  const top = Math.max(...rows.map(([, f]) => f.honor), 1)
   return (
     <ol className="space-y-1">
       {rows.map(([t, f]) => (
@@ -145,8 +147,8 @@ function Leaderboard({ data, team }: { data: Prestige; team: string }) {
             <span className="w-6 text-right tabular-nums text-muted-foreground">{f.rank}</span>
             <TeamLogo teamName={t} size={18} className="shrink-0" />
             <span className="w-36 truncate sm:w-48">{t}</span>
-            <span className="hidden h-2 flex-1 sm:block"><span className="block h-full rounded bg-primary/70" style={{ width: `${Math.max(0, f.prestige) / top * 100}%` }} /></span>
-            <span className="ml-auto w-10 text-right tabular-nums">{f.prestige}</span>
+            <span className="hidden h-2 flex-1 sm:block"><span className="block h-full rounded bg-primary/70" style={{ width: `${Math.max(0, f.honor) / top * 100}%` }} /></span>
+            <span className="ml-auto w-10 text-right tabular-nums">{f.honor}</span>
           </button>
         </li>
       ))}
@@ -154,22 +156,22 @@ function Leaderboard({ data, team }: { data: Prestige; team: string }) {
   )
 }
 
-function Rules({ data }: { data: Prestige }) {
+function Rules({ data }: { data: Honor }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       <div>
-        <h3 className="mb-2 text-sm font-semibold">How prestige is earned</h3>
+        <h3 className="mb-2 text-sm font-semibold">How honor is earned</h3>
         <ul className="space-y-1 text-sm">
-          {data.honors.map(h => (
+          {data.achievements.map(h => (
             <li key={h.kind} className="flex justify-between gap-3">
               <span>{h.label}</span><span className={cn('tabular-nums font-medium', h.points < 0 && 'text-destructive')}>{signed(h.points)}</span>
             </li>
           ))}
         </ul>
         <p className="mt-2 text-xs text-muted-foreground">
-          A finished season earns its honors; a player milestone counts in the season it happens (regular-season
-          lineup points for the franchise, every season added up). Nothing earned is taken away. Every season since
-          2019-20 counts.
+          A finished season earns its achievements; a player milestone counts on the day it happens (lineup points
+          for the franchise, playoffs included, every season added up). Each achievement has its date, so it can be
+          put next to whoever ran the team then. Nothing earned is taken away. Every season since 2019-20 counts.
         </p>
       </div>
       <div>
@@ -188,11 +190,11 @@ function Rules({ data }: { data: Prestige }) {
   )
 }
 
-function PrestigePanel({ data, team, f }: { data: Prestige; team: string; f: FranchisePrestige }) {
+function HonorPanel({ data, team, f }: { data: Honor; team: string; f: FranchiseHonor }) {
   const max = Math.max(...Object.values(data.franchises).flatMap(x => x.seasons.map(s => Math.abs(s.points))), 1)
   return (
-    <Panel title="Prestige by season" icon={Crown} className="md:col-span-2"
-           note="Earned from rare honors: titles, finals, the regular season's best record, the season's highest score and franchise milestones by its players. A bottom-three finish costs some."
+    <Panel title="Honor by season" icon={Crown} className="md:col-span-2"
+           note="Earned from rare achievements: titles, finals, the regular season's best record, the season's highest score and franchise milestones by its players. A bottom-three finish costs some."
            full={
              <div className="space-y-8">
                <SeasonRows f={f} max={max} />
@@ -210,7 +212,7 @@ function PrestigePanel({ data, team, f }: { data: Prestige; team: string; f: Fra
 
 // ---------------------------------------------------------------------------------------------------- Banners
 
-function Banner({ e, team, big }: { e: Honor; team: string; big?: boolean }) {
+function Banner({ e, team, big }: { e: Achievement; team: string; big?: boolean }) {
   const color = useTeamColor()(team)
   const title = e.kind === 'title'
   const fg = title ? textOn(color) : undefined
@@ -219,7 +221,7 @@ function Banner({ e, team, big }: { e: Honor; team: string; big?: boolean }) {
       className={cn('flex shrink-0 flex-col items-center justify-start gap-1 px-2 pb-6 pt-3 text-center shadow-sm',
         big ? 'w-32' : 'w-24', !title && 'border bg-muted text-foreground')}
       style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% 86%, 0 100%)', ...(title ? { background: color, color: fg } : {}) }}
-      title={honorText(e)}
+      title={achievementText(e)}
     >
       {title ? <Trophy className={big ? 'h-7 w-7' : 'h-5 w-5'} /> : <Medal className={big ? 'h-6 w-6' : 'h-4 w-4'} />}
       <span className={cn('font-black uppercase leading-tight tracking-wider', big ? 'text-sm' : 'text-[10px]')}>
@@ -233,7 +235,7 @@ function Banner({ e, team, big }: { e: Honor; team: string; big?: boolean }) {
   )
 }
 
-function BannersPanel({ team, f }: { team: string; f: FranchisePrestige }) {
+function BannersPanel({ team, f }: { team: string; f: FranchiseHonor }) {
   const titles = f.cups.filter(c => c.kind === 'title')
   const finals = f.cups.filter(c => c.kind === 'final')
   const row = (big?: boolean) => (
@@ -253,7 +255,7 @@ function BannersPanel({ team, f }: { team: string; f: FranchisePrestige }) {
 
 // ---------------------------------------------------------------------------------------------------- Jerseys
 
-/** A reward's picture (stats-app/public/prestige/, from the reward's row) */
+/** A reward's picture (stats-app/public/honor/, from the reward's row) */
 function Picture({ src, alt, className }: { src: string; alt: string; className?: string }) {
   // A plain img: the export serves the file as it is (no image optimization)
   // eslint-disable-next-line @next/next/no-img-element
@@ -296,7 +298,7 @@ function Jersey({ name, sub, team, big, image, caption }: {
   )
 }
 
-function JerseysPanel({ data, team, f }: { data: Prestige; team: string; f: FranchisePrestige }) {
+function JerseysPanel({ data, team, f }: { data: Honor; team: string; f: FranchiseHonor }) {
   const eligible = f.legends.filter(l => l.eligible && !l.retired)
   const cost = data.rewards.find(r => r.kind === 'jersey')?.cost ?? 0
   const body = (big?: boolean) => (
@@ -308,7 +310,7 @@ function JerseysPanel({ data, team, f }: { data: Prestige; team: string; f: Fran
                     sub={`${j.first?.slice(0, 4)}–${j.last?.slice(5)} · ${formatPoints(j.points ?? 0)} pts · retired ${j.season}`} />
           ))}
         </div>
-      ) : <Empty>No jerseys retired yet. Retiring one costs {cost} prestige.</Empty>}
+      ) : <Empty>No jerseys retired yet. Retiring one costs {cost} honor.</Empty>}
       {eligible.length > 0 && (
         <div className="text-sm">
           <div className="mb-1 text-xs font-medium text-muted-foreground">
@@ -342,7 +344,7 @@ function Tile({ label, value, sub }: { label: string; value: ReactNode; sub?: Re
   )
 }
 
-function HighlightsPanel({ f }: { f: FranchisePrestige }) {
+function HighlightsPanel({ f }: { f: FranchiseHonor }) {
   const h = f.highlights
   const tiles = (
     <div className="grid gap-2 sm:grid-cols-2">
@@ -384,7 +386,7 @@ function HighlightsPanel({ f }: { f: FranchisePrestige }) {
 
 // ---------------------------------------------------------------------------------------------------- Legends
 
-function LegendRows({ f, n }: { f: FranchisePrestige; n?: number }) {
+function LegendRows({ f, n }: { f: FranchiseHonor; n?: number }) {
   return (
     <ol className="divide-y text-sm">
       {f.legends.slice(0, n).map((l, i) => (
@@ -403,9 +405,9 @@ function LegendRows({ f, n }: { f: FranchisePrestige; n?: number }) {
   )
 }
 
-function LegendsPanel({ f }: { f: FranchisePrestige }) {
+function LegendsPanel({ f }: { f: FranchiseHonor }) {
   return (
-    <Panel title="Legends" icon={Flame} note="Regular-season lineup points for the franchise."
+    <Panel title="Legends" icon={Flame} note="Lineup points for the franchise, playoffs included."
            full={<LegendRows f={f} />}>
       {f.legends.length ? <LegendRows f={f} n={6} /> : <Empty>No player data.</Empty>}
     </Panel>
@@ -414,7 +416,7 @@ function LegendsPanel({ f }: { f: FranchisePrestige }) {
 
 // ---------------------------------------------------------------------------------------------------- Rivals
 
-function RivalsPanel({ f }: { f: FranchisePrestige }) {
+function RivalsPanel({ f }: { f: FranchiseHonor }) {
   const { setFranchise } = useSelectedFranchise()
   const rows: [string, string | undefined, string?][] = [
     ['Declared rival', f.declared_rival ?? undefined],
@@ -443,7 +445,7 @@ function RivalsPanel({ f }: { f: FranchisePrestige }) {
 // ---------------------------------------------------------------------------------------------------- The page
 
 export function FranchisePageWidget({ selectedTeam }: { selectedTeam: string }) {
-  const { data, isLoading, error } = usePrestige()
+  const { data, isLoading, error } = useHonor()
   const { data: alltime } = useAllTime()
   const { franchise, setFranchise } = useSelectedFranchise()
   const color = useTeamColor()
@@ -467,7 +469,7 @@ export function FranchisePageWidget({ selectedTeam }: { selectedTeam: string }) 
             <p className="flex items-center justify-center gap-1.5 text-sm sm:justify-start">
               <Quote className="h-4 w-4 shrink-0 text-muted-foreground" />
               {f.motto ? <span className="italic">{f.motto}</span>
-                : <span className="text-muted-foreground">No motto yet ({data.rewards.find(r => r.kind === 'motto')?.cost} prestige).</span>}
+                : <span className="text-muted-foreground">No motto yet ({data.rewards.find(r => r.kind === 'motto')?.cost} honor).</span>}
             </p>
             {career && (
               <p className="text-sm text-muted-foreground">
@@ -480,8 +482,8 @@ export function FranchisePageWidget({ selectedTeam }: { selectedTeam: string }) 
           </div>
           <div className="flex shrink-0 items-center justify-center gap-6 rounded-lg border px-5 py-3 sm:flex-col sm:gap-1 sm:text-center">
             <div>
-              <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Prestige</div>
-              <div className="text-4xl font-black tabular-nums" style={{ color: accent }}>{f.prestige}</div>
+              <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Honor</div>
+              <div className="text-4xl font-black tabular-nums" style={{ color: accent }}>{f.honor}</div>
             </div>
             <div className="text-sm text-muted-foreground">
               <div><span className="font-semibold text-foreground">#{f.rank}</span> of {teams.length}</div>
@@ -492,7 +494,7 @@ export function FranchisePageWidget({ selectedTeam }: { selectedTeam: string }) 
       </Card>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <PrestigePanel data={data} team={team} f={f} />
+        <HonorPanel data={data} team={team} f={f} />
         <BannersPanel team={team} f={f} />
         <JerseysPanel data={data} team={team} f={f} />
         <HighlightsPanel f={f} />
