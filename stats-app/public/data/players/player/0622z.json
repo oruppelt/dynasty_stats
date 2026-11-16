@@ -290,21 +290,77 @@
     }
   ],
   "trades": {
-    "8zyfkpkglo4cnvz0": {
-      "date": "2023-10-24",
-      "season": "2023-24",
+    "hjrmkgmil66e5368": {
+      "date": "2022-07-29",
+      "season": "2022-23",
       "period": 1,
       "items": [
         {
-          "kind": "budget",
-          "from": "Boston Celtics",
-          "to": "Detroit Pistons",
-          "label": "$5 budget"
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          },
+          "next": {
+            "trade": "pm8ukv5nl9ihx8hb"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Brooklyn Nets"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06cby",
+            "player": "Keyonte George",
+            "certain": true
+          },
+          "next": {
+            "trade": "z5jlvl0yl9df5648"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
         },
         {
           "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Boston Celtics",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03nwn",
+          "player": "Bobby Portis",
+          "label": "Bobby Portis",
+          "result": {
+            "points": 1503.5,
+            "starts": 29,
+            "gp": 46,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
           "player_id": "0622z",
           "player": "Orlando Robinson",
           "label": "Orlando Robinson",
@@ -312,36 +368,12 @@
             "points": 0.0,
             "starts": 0,
             "gp": 0,
-            "periods": 10,
+            "periods": 3,
             "ongoing": false
           },
           "next": {
-            "trade": "k0n8u96ulph7peqp"
+            "trade": "gl4810izl9s7wcsd"
           }
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Boston Celtics",
-          "player_id": "0622g",
-          "player": "JD Davison",
-          "label": "JD Davison",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 32,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-06-26"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Detroit Pistons",
-          "to": "Boston Celtics",
-          "label": "2024 round 2 pick (Cleveland Cavaliers)"
         }
       ]
     },
@@ -397,6 +429,217 @@
           "from": "Detroit Pistons",
           "to": "Cleveland Cavaliers",
           "label": "$15 budget"
+        }
+      ]
+    },
+    "8zyfkpkglo4cnvz0": {
+      "date": "2023-10-24",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "k0n8u96ulph7peqp"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "0622g",
+          "player": "JD Davison",
+          "label": "JD Davison",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        }
+      ]
+    },
+    "k0n8u96ulph7peqp": {
+      "date": "2023-11-27",
+      "season": "2023-24",
+      "period": 11,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Atlanta Hawks",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Atlanta Hawks",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 2,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "18v4rya5lpr3wy1m"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)"
+        }
+      ]
+    },
+    "18v4rya5lpr3wy1m": {
+      "date": "2023-12-04",
+      "season": "2023-24",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 55.25,
+            "starts": 2,
+            "gp": 4,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zqk1dc26lrw35amu"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart",
+          "result": {
+            "points": 547.25,
+            "starts": 15,
+            "gp": 25,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zqk1dc26lrw35amu"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "0621a",
+          "player": "Ousmane Dieng",
+          "label": "Ousmane Dieng",
+          "result": {
+            "points": 20.25,
+            "starts": 2,
+            "gp": 2,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "j15phqp4lxyaw76t"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "05uij",
+          "player": "Davion Mitchell",
+          "label": "Davion Mitchell",
+          "result": {
+            "points": 15.25,
+            "starts": 5,
+            "gp": 6,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "gf9smt20lqf07q97"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "02nfk",
+          "player": "Evan Fournier",
+          "label": "Evan Fournier",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-01-29"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          },
+          "next": {
+            "trade": "gf9smt20lqf07q97"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
         }
       ]
     },
@@ -518,249 +761,6 @@
           },
           "next": {
             "dropped": "2024-06-27"
-          }
-        }
-      ]
-    },
-    "k0n8u96ulph7peqp": {
-      "date": "2023-11-27",
-      "season": "2023-24",
-      "period": 11,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Atlanta Hawks",
-          "to": "Boston Celtics",
-          "label": "$5 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Atlanta Hawks",
-          "player_id": "0622z",
-          "player": "Orlando Robinson",
-          "label": "Orlando Robinson",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 2,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "18v4rya5lpr3wy1m"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Atlanta Hawks",
-          "label": "2024 round 2 pick (Cleveland Cavaliers)"
-        }
-      ]
-    },
-    "hjrmkgmil66e5368": {
-      "date": "2022-07-29",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "New York Knicks",
-          "label": "2023 round 2 pick (Cleveland Cavaliers)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 19,
-            "overall": 49,
-            "player_id": "06cdb",
-            "player": "Amari Bailey",
-            "certain": true
-          },
-          "next": {
-            "trade": "pm8ukv5nl9ihx8hb"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Brooklyn Nets"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "New York Knicks",
-          "label": "2023 round 1 pick (Cleveland Cavaliers)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 19,
-            "overall": 19,
-            "player_id": "06cby",
-            "player": "Keyonte George",
-            "certain": true
-          },
-          "next": {
-            "trade": "z5jlvl0yl9df5648"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Golden State Warriors"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Cleveland Cavaliers",
-          "player_id": "03nwn",
-          "player": "Bobby Portis",
-          "label": "Bobby Portis",
-          "result": {
-            "points": 1503.5,
-            "starts": 29,
-            "gp": 46,
-            "periods": 33,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-07-24"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Cleveland Cavaliers",
-          "player_id": "0622z",
-          "player": "Orlando Robinson",
-          "label": "Orlando Robinson",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 3,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "gl4810izl9s7wcsd"
-          }
-        }
-      ]
-    },
-    "18v4rya5lpr3wy1m": {
-      "date": "2023-12-04",
-      "season": "2023-24",
-      "period": 13,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Orlando Magic",
-          "player_id": "0622z",
-          "player": "Orlando Robinson",
-          "label": "Orlando Robinson",
-          "result": {
-            "points": 55.25,
-            "starts": 2,
-            "gp": 4,
-            "periods": 15,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "zqk1dc26lrw35amu"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Orlando Magic",
-          "player_id": "04ewu",
-          "player": "Josh Hart",
-          "label": "Josh Hart",
-          "result": {
-            "points": 547.25,
-            "starts": 15,
-            "gp": 25,
-            "periods": 15,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "zqk1dc26lrw35amu"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
-          "player_id": "0621a",
-          "player": "Ousmane Dieng",
-          "label": "Ousmane Dieng",
-          "result": {
-            "points": 20.25,
-            "starts": 2,
-            "gp": 2,
-            "periods": 20,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "j15phqp4lxyaw76t"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
-          "player_id": "05uij",
-          "player": "Davion Mitchell",
-          "label": "Davion Mitchell",
-          "result": {
-            "points": 15.25,
-            "starts": 5,
-            "gp": 6,
-            "periods": 5,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "gf9smt20lqf07q97"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
-          "player_id": "02nfk",
-          "player": "Evan Fournier",
-          "label": "Evan Fournier",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 16,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-01-29"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
-          "label": "2024 round 2 pick (Memphis Grizzlies)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 6,
-            "overall": 36,
-            "player_id": "06mlp",
-            "player": "Nikola Djurisic",
-            "certain": false
-          },
-          "next": {
-            "trade": "gf9smt20lqf07q97"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "New York Knicks"
           }
         }
       ]

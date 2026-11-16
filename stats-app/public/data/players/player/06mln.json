@@ -152,6 +152,80 @@
     }
   ],
   "trades": {
+    "n3xruumslxyaxk6d": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Toronto Raptors",
+          "player_id": "01eo6",
+          "player": "James Harden",
+          "label": "James Harden",
+          "result": {
+            "points": 2933.0,
+            "starts": 39,
+            "gp": 60,
+            "periods": 40,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "qv786h5cmhvytj7l"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Houston Rockets",
+          "player_id": "05qto",
+          "player": "LaMelo Ball",
+          "label": "LaMelo Ball",
+          "result": {
+            "points": 4032.0,
+            "starts": 64,
+            "gp": 91,
+            "periods": 74,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Houston Rockets",
+          "label": "2024 round 2 pick, no. 22"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Houston Rockets",
+          "label": "2024 round 2 pick, no. 3",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 3,
+            "overall": 33,
+            "player_id": "06mln",
+            "player": "Adem Bona",
+            "certain": false
+          },
+          "result": {
+            "points": 5.25,
+            "starts": 2,
+            "gp": 2,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "rzau113zmeml44da"
+          }
+        }
+      ]
+    },
     "rzau113zmeml44da": {
       "date": "2025-08-22",
       "season": "2025-26",
@@ -270,80 +344,6 @@
           "from": "Minnesota Timberwolves",
           "to": "Houston Rockets",
           "label": "2027 round 2 pick (Minnesota Timberwolves)"
-        }
-      ]
-    },
-    "n3xruumslxyaxk6d": {
-      "date": "2024-06-28",
-      "season": "2024-25",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Toronto Raptors",
-          "player_id": "01eo6",
-          "player": "James Harden",
-          "label": "James Harden",
-          "result": {
-            "points": 2933.0,
-            "starts": 39,
-            "gp": 60,
-            "periods": 40,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "qv786h5cmhvytj7l"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Houston Rockets",
-          "player_id": "05qto",
-          "player": "LaMelo Ball",
-          "label": "LaMelo Ball",
-          "result": {
-            "points": 4032.0,
-            "starts": 64,
-            "gp": 91,
-            "periods": 74,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "Houston Rockets",
-          "label": "2024 round 2 pick, no. 22"
-        },
-        {
-          "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "Houston Rockets",
-          "label": "2024 round 2 pick, no. 3",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 3,
-            "overall": 33,
-            "player_id": "06mln",
-            "player": "Adem Bona",
-            "certain": false
-          },
-          "result": {
-            "points": 5.25,
-            "starts": 2,
-            "gp": 2,
-            "periods": 33,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "rzau113zmeml44da"
-          }
         }
       ]
     }

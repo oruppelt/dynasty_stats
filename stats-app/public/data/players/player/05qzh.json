@@ -418,6 +418,78 @@
     }
   ],
   "trades": {
+    "kc1p17v7k28rq4km": {
+      "date": "2019-10-27",
+      "season": "2019-20",
+      "period": 2,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Portland Trail Blazers",
+          "label": "2020 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "05qu4",
+            "player": "Saben Lee",
+            "certain": false
+          },
+          "result": {
+            "points": 131.25,
+            "starts": 5,
+            "gp": 7,
+            "periods": 23,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "lpvb9p0kkm9ltz87"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Miami Heat",
+          "player_id": "001ax",
+          "player": "Jeff Green",
+          "label": "Jeff Green",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2019-10-27"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Miami Heat",
+          "label": "2021 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 27,
+            "overall": 57,
+            "player_id": "05qzh",
+            "player": "Naji Marshall",
+            "certain": true
+          },
+          "next": {
+            "trade": "vy03dh0ckrvx26zj"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        }
+      ]
+    },
     "vy03dh0ckrvx26zj": {
       "date": "2021-08-03",
       "season": "2021-22",
@@ -556,78 +628,6 @@
           },
           "next": {
             "dropped": "2022-02-04"
-          }
-        }
-      ]
-    },
-    "kc1p17v7k28rq4km": {
-      "date": "2019-10-27",
-      "season": "2019-20",
-      "period": 2,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Portland Trail Blazers",
-          "label": "2020 round 2 pick (Sacramento Kings)",
-          "became": {
-            "season": "2020-21",
-            "round": 2,
-            "pick": 25,
-            "overall": 55,
-            "player_id": "05qu4",
-            "player": "Saben Lee",
-            "certain": false
-          },
-          "result": {
-            "points": 131.25,
-            "starts": 5,
-            "gp": 7,
-            "periods": 23,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "lpvb9p0kkm9ltz87"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Miami Heat",
-          "player_id": "001ax",
-          "player": "Jeff Green",
-          "label": "Jeff Green",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2019-10-27"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Portland Trail Blazers",
-          "to": "Miami Heat",
-          "label": "2021 round 2 pick (Portland Trail Blazers)",
-          "became": {
-            "season": "2021-22",
-            "round": 2,
-            "pick": 27,
-            "overall": 57,
-            "player_id": "05qzh",
-            "player": "Naji Marshall",
-            "certain": true
-          },
-          "next": {
-            "trade": "vy03dh0ckrvx26zj"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Boston Celtics"
           }
         }
       ]

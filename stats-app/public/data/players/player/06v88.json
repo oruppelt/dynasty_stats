@@ -133,6 +133,53 @@
     }
   ],
   "trades": {
+    "efe0iawnlxyrz99m": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2025 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06v88",
+            "player": "Maxime Raynaud",
+            "certain": true
+          },
+          "next": {
+            "trade": "9txb56t8m32yr95c"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "player_id": "06mlr",
+          "player": "Jamal Shead",
+          "label": "Jamal Shead",
+          "result": {
+            "points": 1958.0,
+            "starts": 58,
+            "gp": 98,
+            "periods": 74,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
     "9txb56t8m32yr95c": {
       "date": "2024-11-04",
       "season": "2024-25",
@@ -197,53 +244,6 @@
           },
           "next": {
             "dropped": "2025-06-25"
-          }
-        }
-      ]
-    },
-    "efe0iawnlxyrz99m": {
-      "date": "2024-06-28",
-      "season": "2024-25",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Houston Rockets",
-          "label": "2025 round 2 pick (Boston Celtics)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 6,
-            "overall": 36,
-            "player_id": "06v88",
-            "player": "Maxime Raynaud",
-            "certain": true
-          },
-          "next": {
-            "trade": "9txb56t8m32yr95c"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Miami Heat"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Boston Celtics",
-          "player_id": "06mlr",
-          "player": "Jamal Shead",
-          "label": "Jamal Shead",
-          "result": {
-            "points": 1958.0,
-            "starts": 58,
-            "gp": 98,
-            "periods": 74,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
           }
         }
       ]

@@ -215,77 +215,6 @@
     }
   ],
   "trades": {
-    "lot0xakcmhs7b6qj": {
-      "date": "2025-11-10",
-      "season": "2025-26",
-      "period": 7,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Milwaukee Bucks",
-          "player_id": "0621l",
-          "player": "Walker Kessler",
-          "label": "Walker Kessler",
-          "result": {
-            "points": 616.25,
-            "starts": 8,
-            "gp": 14,
-            "periods": 35,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Chicago Bulls",
-          "player_id": "051p9",
-          "player": "Keldon Johnson",
-          "label": "Keldon Johnson",
-          "result": {
-            "points": 1017.5,
-            "starts": 21,
-            "gp": 36,
-            "periods": 21,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "llmo9x2dmklfs52y"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Milwaukee Bucks",
-          "to": "Chicago Bulls",
-          "label": "2027 round 1 pick (Milwaukee Bucks)"
-        },
-        {
-          "kind": "pick",
-          "from": "Milwaukee Bucks",
-          "to": "Chicago Bulls",
-          "label": "2026 round 1 pick (New Orleans Pelicans)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 25,
-            "overall": 25,
-            "player_id": "076tj",
-            "player": "Joshua Jefferson",
-            "certain": true
-          },
-          "next": {
-            "trade": "jsw3rc10mkl3o2h1"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Portland Trail Blazers"
-          }
-        }
-      ]
-    },
     "mkq4pvzjl4wmiyta": {
       "date": "2022-06-27",
       "season": "2022-23",
@@ -354,6 +283,77 @@
           },
           "next": {
             "dropped": "2025-08-10"
+          }
+        }
+      ]
+    },
+    "lot0xakcmhs7b6qj": {
+      "date": "2025-11-10",
+      "season": "2025-26",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Milwaukee Bucks",
+          "player_id": "0621l",
+          "player": "Walker Kessler",
+          "label": "Walker Kessler",
+          "result": {
+            "points": 616.25,
+            "starts": 8,
+            "gp": 14,
+            "periods": 35,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson",
+          "result": {
+            "points": 1017.5,
+            "starts": 21,
+            "gp": 36,
+            "periods": 21,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "llmo9x2dmklfs52y"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "label": "2027 round 1 pick (Milwaukee Bucks)"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Chicago Bulls",
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          },
+          "next": {
+            "trade": "jsw3rc10mkl3o2h1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
           }
         }
       ]
