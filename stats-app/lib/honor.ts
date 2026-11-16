@@ -5,7 +5,7 @@ import type { Finish } from './alltime'
 // from rare achievements and spent on rewards, with its banners, retired jerseys, legends, highlights and rivals.
 
 export type AchievementKind = 'title' | 'final' | 'first_seed' | 'season_high' | 'bottom_three' | 'player_6000' | 'player_16000'
-export type RewardKind = 'jersey' | 'rival' | 'moment' | 'motto'
+export type RewardKind = 'jersey' | 'rival' | 'highlight' | 'motto'
 
 export interface Achievement {
   kind: AchievementKind
@@ -57,9 +57,13 @@ export interface Reward {
   text?: string
   // rival
   opponent?: string
-  // moment
+  // rival: the career record against them
+  record?: { games: number; wins: number; losses: number; playoff_games: number }
+  // highlight: its title and text, or one of the worked-out ideas (`of`, with its numbers in `detail`)
   title?: string
   trade?: string
+  of?: HighlightIdea
+  detail?: Record<string, string | number>
   /** Any reward: its picture (/honor/<file>) and a line under it */
   image?: string
   caption?: string
@@ -82,6 +86,8 @@ export interface Opponent { team: string; games: number; wins: number; losses: n
 
 type Game = { season: string; period: number; score: number; opponent: string; opp_score: number }
 
+export type HighlightIdea = 'best_season' | 'highest_score' | 'biggest_win' | 'longest_streak' | 'best_player_season'
+
 export interface FranchiseHonor {
   honor: number
   spent: number
@@ -89,21 +95,24 @@ export interface FranchiseHonor {
   /** 1 = the most honor (ties share a rank) */
   rank: number
   seasons: HonorSeason[]
-  cups: Achievement[]
+  /** Free: a banner for each title */
+  banners: Achievement[]
+  /** Bought: the motto, retired jerseys, declared highlights and rivals (every reward in `rewards`) */
   motto: string | null
   jerseys: Reward[]
-  moments: Reward[]
-  declared_rival: string | null
+  highlights: Reward[]
+  rivals: Reward[]
   rewards: Reward[]
   legends: Legend[]
-  highlights: {
+  /** Ideas for what to declare, worked out from the games */
+  highlight_ideas: {
     best_season?: { season: string; rank: number; wins: number; losses: number; finish: Finish }
     highest_score?: Game
     biggest_win?: Game & { margin: number }
     longest_streak?: { season: string; length: number; start: number; end: number }
     best_player_season?: { season: string; player_id: string; player: string; points: number; starts: number }
   }
-  rivals: { most_played?: Opponent; nemesis?: Opponent; favorite?: Opponent }
+  rival_ideas: { most_played?: Opponent; nemesis?: Opponent; favorite?: Opponent }
 }
 
 export interface Honor {

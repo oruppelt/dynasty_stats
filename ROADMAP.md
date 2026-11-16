@@ -488,15 +488,24 @@ changed GMs). No reward touches the competition on Fantrax.
   defaulting to the viewer's team; names in the Franchises table open it.
   `components/widgets/FranchisePage.tsx`, from `data/honor.json`
   (`pipeline/honor.py`) and `data/alltime.json`.
-- Header: big logo, motto (empty until bought), all-time record, honor,
-  its rank in the league and what's left to spend.
-- Panels, each opening full screen: **Honor by season** (each season's
-  achievements and points; full screen adds the rules, the costs and every
-  franchise's honor), **Banners** (titles and finals), **Retired jerseys**
-  (and who is eligible), **Highlights** (best season, highest score, biggest
-  win, longest streak, best player season; featured moments on top),
-  **Legends** (top scorers for the franchise), **Rivals** (most played,
-  nemesis, favorite, a declared rival).
+- Header in the team's colors: logo, the motto as a big quote (or a dashed
+  "no motto yet · 25 honor"), all-time record, honor, its rank and what's
+  left to spend. Title banners (free) hang small from its top edge; finals
+  get none.
+- Three tabs. What's free stays small; what's bought is the show:
+  - **Trophy room** (first): what honor buys (four tiles with the price,
+    gold when the franchise can afford it now, and how many it owns);
+    **Retired jerseys** hanging in dark rafters, with an empty dashed jersey
+    for the next one and its price, and the players who can be retired;
+    **Highlights** and **Rivals**, empty until declared (a highlight card;
+    a VS card with the all-time record), each with a priced empty slot and,
+    muted below, ideas worked out from the games (best season, highest
+    score, biggest win, longest streak, best player season; most played,
+    nemesis, favorite opponent).
+  - **Honor**: each season's achievements and points, the rules, what was
+    spent (the ledger) and every franchise's honor.
+  - **Legends**: top scorers for the franchise (bold: 6,000+, eligible).
+  Sections open full screen.
 - Achievements and honor (`honor.ACHIEVEMENTS`), every season since 2019-20:
 
   | Achievement | Honor |
@@ -517,8 +526,10 @@ changed GMs). No reward touches the competition on Fantrax.
   passed 6,000, and 5 have passed 16,000 (Jokić for Denver, LeBron for
   Boston, Davis for New Orleans, Mitchell for Utah, Lillard for Portland).
 - Rewards (`honor.REWARDS`): retire a jersey 100 (a player with 6,000+
-  points for the franchise), declare a rival 50, feature a moment 40, a motto
-  25. The commissioner adds a row to `pipeline/data/honor_rewards.json`
+  points for the franchise), declare a rival 50 (several allowed, not the
+  same one twice), declare a highlight 40 (a title and text, or `of` one of
+  the worked-out ideas, whose numbers come along), a motto 25 (the latest
+  counts). The commissioner adds a row to `pipeline/data/honor_rewards.json`
   in a PR, with the picture if there is one in `stats-app/public/honor/`
   (jpg, png, webp or gif, at most 1.5 MB):
 
@@ -526,15 +537,16 @@ changed GMs). No reward touches the competition on Fantrax.
   {"rewards": [
     {"team": "Denver Nuggets", "kind": "jersey", "season": "2026-27", "player_id": "03e75",
      "image": "denver-jokic.jpg", "caption": "Three MVPs in a Nuggets jersey"},
-    {"team": "Miami Heat", "kind": "moment", "season": "2026-27", "title": "The 2025-26 title",
+    {"team": "Miami Heat", "kind": "highlight", "season": "2026-27", "title": "The 2025-26 title",
      "text": "Beat the #1 seed 2-0 in the final.", "image": "miami-2026.jpg"},
+    {"team": "Utah Jazz", "kind": "highlight", "season": "2026-27", "of": "longest_streak"},
     {"team": "Utah Jazz", "kind": "motto", "season": "2026-27", "text": "..."},
     {"team": "Utah Jazz", "kind": "rival", "season": "2026-27", "opponent": "Toronto Raptors"}
   ]}
   ```
 
   Any reward can have an `image` and a `caption`; a retired jersey with a
-  picture shows it in place of the drawn jersey, a moment above its text.
+  picture shows it in place of the drawn jersey, a highlight above its text.
   The build checks each row (enough honor through that season, an
   eligible player, the picture there) and reports the rows it leaves out.
 
