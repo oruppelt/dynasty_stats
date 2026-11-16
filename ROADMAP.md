@@ -447,7 +447,8 @@ rosters:
    trade panel ("Open the trade"), each trade in the tree, and later the
    record book (the biggest trades, the most lopsided ones). The
    existing tree component is reused rather than copied.
-2. **How this team was built.** On Players → Teams: for the picked team,
+2. **How this team was built** (*done*, 2026-11-16, `data/players/built.json`
+   from `lineage.py`). On Players → Teams: for the picked team,
    one row per player on the current roster with how he got there
    (drafted, with whose pick; signed; traded for, and in which trade), the
    chain of trades behind him back to a draft or a signing (the tree run
