@@ -298,6 +298,18 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-16: A page for each trade (branch `players/trade-page`)
+- Players → Trade: one trade, shareable as `?trade=<id>` (like `?player=`):
+  the teams, date, season and period; each side's items with what each got
+  out of it (the split bar and per-item points, `TradeSides`, now shared with
+  the trade panel on the player page); and the trade tree for every side.
+- Before a trade is picked: every trade, newest first, filtered by team (the
+  viewer's by default) and by a player or pick, 25 at a time.
+- Links to it: "Open the trade" in the player page's trade panel, and each
+  "traded <date>" in a trade tree opens that trade.
+- The view picker wraps to a second row on phones (six views no longer fit
+  in one).
+
 ### 2026-11-16: Career leaders: sort and filter (branch `players/career-sort`)
 - Players → All-time → Career leaders gets **Sort by** (points, points per
   game, points per $1M, career salary, games played, seasons) and **At
