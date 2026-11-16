@@ -319,64 +319,6 @@
     }
   ],
   "trades": {
-    "nuuo5uvwmkv30gos": {
-      "date": "2026-01-26",
-      "season": "2025-26",
-      "period": 29,
-      "items": [
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "San Antonio Spurs",
-          "player_id": "03aq2",
-          "player": "Jerami Grant",
-          "label": "Jerami Grant",
-          "result": {
-            "points": 265.75,
-            "starts": 5,
-            "gp": 10,
-            "periods": 5,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-06-20"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "New Orleans Pelicans",
-          "player_id": "02ym0",
-          "player": "Andrew Wiggins",
-          "label": "Andrew Wiggins",
-          "result": {
-            "points": 506.75,
-            "starts": 12,
-            "gp": 20,
-            "periods": 13,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "New Orleans Pelicans",
-          "label": "2026 round 2 pick (Minnesota Timberwolves)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 18,
-            "overall": 48,
-            "player_id": "076tv",
-            "player": null,
-            "certain": true
-          }
-        }
-      ]
-    },
     "wcivp5rxksa4q78n": {
       "date": "2021-08-13",
       "season": "2021-22",
@@ -429,49 +371,6 @@
           },
           "next": {
             "dropped": "2026-08-06"
-          }
-        }
-      ]
-    },
-    "xheannvgkj1iymrq": {
-      "date": "2020-12-23",
-      "season": "2020-21",
-      "period": 2,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Dallas Mavericks",
-          "player_id": "03nwk",
-          "player": "Kelly Oubre Jr.",
-          "label": "Kelly Oubre Jr.",
-          "result": {
-            "points": 2672.25,
-            "starts": 50,
-            "gp": 83,
-            "periods": 53,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "1zyt3pfrkycyno26"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Dallas Mavericks",
-          "to": "Chicago Bulls",
-          "player_id": "02ym0",
-          "player": "Andrew Wiggins",
-          "label": "Andrew Wiggins",
-          "result": {
-            "points": 1634.25,
-            "starts": 26,
-            "gp": 48,
-            "periods": 28,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "wcivp5rxksa4q78n"
           }
         }
       ]
@@ -609,6 +508,107 @@
           "result": {
             "traded_on": true,
             "drafted_by": "Toronto Raptors"
+          }
+        }
+      ]
+    },
+    "nuuo5uvwmkv30gos": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "San Antonio Spurs",
+          "player_id": "03aq2",
+          "player": "Jerami Grant",
+          "label": "Jerami Grant",
+          "result": {
+            "points": 265.75,
+            "starts": 5,
+            "gp": 10,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-20"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "New Orleans Pelicans",
+          "player_id": "02ym0",
+          "player": "Andrew Wiggins",
+          "label": "Andrew Wiggins",
+          "result": {
+            "points": 506.75,
+            "starts": 12,
+            "gp": 20,
+            "periods": 13,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "New Orleans Pelicans",
+          "label": "2026 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "076tv",
+            "player": null,
+            "certain": true
+          }
+        }
+      ]
+    },
+    "xheannvgkj1iymrq": {
+      "date": "2020-12-23",
+      "season": "2020-21",
+      "period": 2,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Dallas Mavericks",
+          "player_id": "03nwk",
+          "player": "Kelly Oubre Jr.",
+          "label": "Kelly Oubre Jr.",
+          "result": {
+            "points": 2672.25,
+            "starts": 50,
+            "gp": 83,
+            "periods": 53,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1zyt3pfrkycyno26"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "Chicago Bulls",
+          "player_id": "02ym0",
+          "player": "Andrew Wiggins",
+          "label": "Andrew Wiggins",
+          "result": {
+            "points": 1634.25,
+            "starts": 26,
+            "gp": 48,
+            "periods": 28,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "wcivp5rxksa4q78n"
           }
         }
       ]

@@ -279,6 +279,59 @@
     }
   ],
   "trades": {
+    "it8bg42zlzh2r88j": {
+      "date": "2024-08-05",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Milwaukee Bucks",
+          "to": "New Orleans Pelicans",
+          "label": "$15 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Milwaukee Bucks",
+          "player_id": "049s6",
+          "player": "Markelle Fultz",
+          "label": "Markelle Fultz",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-10-31"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 1 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "076tj",
+            "player": "Joshua Jefferson",
+            "certain": true
+          },
+          "next": {
+            "trade": "khktmunilzjipzs2"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        }
+      ]
+    },
     "6dty708wkm9579c4": {
       "date": "2021-03-14",
       "season": "2020-21",
@@ -516,59 +569,6 @@
           },
           "next": {
             "dropped": "2023-07-24"
-          }
-        }
-      ]
-    },
-    "it8bg42zlzh2r88j": {
-      "date": "2024-08-05",
-      "season": "2024-25",
-      "period": 1,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Milwaukee Bucks",
-          "to": "New Orleans Pelicans",
-          "label": "$15 budget"
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Milwaukee Bucks",
-          "player_id": "049s6",
-          "player": "Markelle Fultz",
-          "label": "Markelle Fultz",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 36,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2025-10-31"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "New Orleans Pelicans",
-          "to": "Milwaukee Bucks",
-          "label": "2026 round 1 pick (New Orleans Pelicans)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 25,
-            "overall": 25,
-            "player_id": "076tj",
-            "player": "Joshua Jefferson",
-            "certain": true
-          },
-          "next": {
-            "trade": "khktmunilzjipzs2"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Portland Trail Blazers"
           }
         }
       ]

@@ -265,53 +265,6 @@
     }
   ],
   "trades": {
-    "umd8exrulj2qxonm": {
-      "date": "2023-06-19",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05uj9",
-          "player": "Herbert Jones",
-          "label": "Herbert Jones",
-          "result": {
-            "points": 1206.0,
-            "starts": 26,
-            "gp": 43,
-            "periods": 32,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-07-26"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Boston Celtics",
-          "label": "2024 round 1 pick (Minnesota Timberwolves)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 24,
-            "overall": 24,
-            "player_id": "06mle",
-            "player": "Kyle Filipowski",
-            "certain": true
-          },
-          "next": {
-            "trade": "0x0h24u3lr0j2d6r"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "New York Knicks"
-          }
-        }
-      ]
-    },
     "m4oh5770m5s364so": {
       "date": "2025-01-13",
       "season": "2024-25",
@@ -358,6 +311,53 @@
           "from": "Minnesota Timberwolves",
           "to": "Cleveland Cavaliers",
           "label": "$1 budget"
+        }
+      ]
+    },
+    "umd8exrulj2qxonm": {
+      "date": "2023-06-19",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05uj9",
+          "player": "Herbert Jones",
+          "label": "Herbert Jones",
+          "result": {
+            "points": 1206.0,
+            "starts": 26,
+            "gp": 43,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Boston Celtics",
+          "label": "2024 round 1 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 24,
+            "overall": 24,
+            "player_id": "06mle",
+            "player": "Kyle Filipowski",
+            "certain": true
+          },
+          "next": {
+            "trade": "0x0h24u3lr0j2d6r"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
         }
       ]
     },

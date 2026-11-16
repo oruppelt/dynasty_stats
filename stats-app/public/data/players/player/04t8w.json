@@ -444,6 +444,95 @@
     }
   ],
   "trades": {
+    "1wv5qknolcj7bxd1": {
+      "date": "2023-01-05",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Dallas Mavericks",
+          "to": "Orlando Magic",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Orlando Magic",
+          "player_id": "05uij",
+          "player": "Davion Mitchell",
+          "label": "Davion Mitchell",
+          "result": {
+            "points": 270.25,
+            "starts": 13,
+            "gp": 20,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "18v4rya5lpr3wy1m"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio",
+          "result": {
+            "points": 2.0,
+            "starts": 6,
+            "gp": 2,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "New York Knicks",
+          "player_id": "04t8w",
+          "player": "Kenrich Williams",
+          "label": "Kenrich Williams",
+          "result": {
+            "points": 387.0,
+            "starts": 9,
+            "gp": 15,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 2 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06cd7",
+            "player": "Keyontae Johnson",
+            "certain": true
+          },
+          "next": {
+            "trade": "ioh40tglljepsl6b"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Orlando Magic"
+          }
+        }
+      ]
+    },
     "0jpui8znlc50zbu9": {
       "date": "2022-12-26",
       "season": "2022-23",
@@ -663,95 +752,6 @@
           "result": {
             "traded_on": true,
             "drafted_by": "Detroit Pistons"
-          }
-        }
-      ]
-    },
-    "1wv5qknolcj7bxd1": {
-      "date": "2023-01-05",
-      "season": "2022-23",
-      "period": 23,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Dallas Mavericks",
-          "to": "Orlando Magic",
-          "label": "$1 budget"
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Orlando Magic",
-          "player_id": "05uij",
-          "player": "Davion Mitchell",
-          "label": "Davion Mitchell",
-          "result": {
-            "points": 270.25,
-            "starts": 13,
-            "gp": 20,
-            "periods": 22,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "18v4rya5lpr3wy1m"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Dallas Mavericks",
-          "player_id": "062pk",
-          "player": "Simone Fontecchio",
-          "label": "Simone Fontecchio",
-          "result": {
-            "points": 2.0,
-            "starts": 6,
-            "gp": 2,
-            "periods": 10,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-05-06"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "New York Knicks",
-          "player_id": "04t8w",
-          "player": "Kenrich Williams",
-          "label": "Kenrich Williams",
-          "result": {
-            "points": 387.0,
-            "starts": 9,
-            "gp": 15,
-            "periods": 10,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-05-06"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Orlando Magic",
-          "to": "Dallas Mavericks",
-          "label": "2023 round 2 pick (Portland Trail Blazers)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 20,
-            "overall": 50,
-            "player_id": "06cd7",
-            "player": "Keyontae Johnson",
-            "certain": true
-          },
-          "next": {
-            "trade": "ioh40tglljepsl6b"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Orlando Magic"
           }
         }
       ]
