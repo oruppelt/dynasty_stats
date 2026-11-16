@@ -142,7 +142,8 @@ function achievementText(e: Achievement) {
     case 'final': return `Runner-up${e.opponent ? ` to ${teamCode(e.opponent)}` : ''}${e.series ? ` ${e.series}` : ''}`
     case 'first_seed': return 'Regular-season winner'
     case 'season_high': return `Season-high ${formatPoints(e.score ?? 0)}`
-    case 'bottom_three': return `${e.rank === e.of ? 'Last' : `${ordinal(e.rank ?? 0)} of ${e.of}`}`
+    case 'season_low': return `Fewest points, ${formatPoints(e.score ?? 0)}`
+    case 'bottom_five': return `${e.rank === e.of ? 'Last' : `${ordinal(e.rank ?? 0)} of ${e.of}`}`
     case 'player_6000': return `${e.player}: 6,000 points`
     case 'player_17000': return `${e.player}: 17,000 points`
   }
@@ -598,7 +599,7 @@ function HonorTab({ data, team, f }: { data: Honor; team: string; f: FranchiseHo
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
       <Panel title="Honor by season" icon={Crown} className="md:col-span-2"
-             note="Earned from rare achievements: titles, finals, the regular season's best record, the season's highest score and franchise milestones by its players. A bottom-three finish costs some."
+             note="Earned from rare achievements: titles, finals, the regular season's best record, the season's highest score and franchise milestones by its players. A bottom-five finish, and the fewest points of a season, cost some."
              full={<div className="space-y-8"><SeasonRows f={f} max={max} /><Rules data={data} /></div>}>
         <SeasonRows f={f} max={max} />
       </Panel>

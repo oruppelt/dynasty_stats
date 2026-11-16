@@ -21,9 +21,14 @@
       "label": "Season's highest score"
     },
     {
-      "kind": "bottom_three",
+      "kind": "bottom_five",
       "points": -10,
-      "label": "Bottom three of the regular season"
+      "label": "Bottom five of the regular season"
+    },
+    {
+      "kind": "season_low",
+      "points": -10,
+      "label": "Fewest points of the regular season"
     },
     {
       "kind": "player_6000",
@@ -503,7 +508,7 @@
           "starts": 36
         }
       },
-      "rank": 16
+      "rank": 14
     },
     "Boston Celtics": {
       "honor": 80,
@@ -1401,7 +1406,7 @@
           "starts": 36
         }
       },
-      "rank": 10
+      "rank": 9
     },
     "Charlotte Hornets": {
       "honor": 125,
@@ -1913,9 +1918,9 @@
       "rank": 5
     },
     "Chicago Bulls": {
-      "honor": 120,
+      "honor": 110,
       "spent": 0,
-      "balance": 120,
+      "balance": 110,
       "seasons": [
         {
           "season": "2019-20",
@@ -1948,16 +1953,24 @@
         },
         {
           "season": "2021-22",
-          "points": -10,
-          "total": 90,
+          "points": -20,
+          "total": 80,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2021-22",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
+              "date": "2022-02-11"
+            },
+            {
+              "kind": "season_low",
+              "season": "2021-22",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 6205.0,
               "date": "2022-02-11"
             }
           ],
@@ -1969,7 +1982,7 @@
         {
           "season": "2022-23",
           "points": 10,
-          "total": 100,
+          "total": 90,
           "events": [
             {
               "kind": "player_6000",
@@ -1990,7 +2003,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 100,
+          "total": 90,
           "events": [],
           "rank": 4,
           "wins": 24.0,
@@ -2000,7 +2013,7 @@
         {
           "season": "2024-25",
           "points": 10,
-          "total": 110,
+          "total": 100,
           "events": [
             {
               "kind": "player_6000",
@@ -2021,7 +2034,7 @@
         {
           "season": "2025-26",
           "points": 10,
-          "total": 120,
+          "total": 110,
           "events": [
             {
               "kind": "player_6000",
@@ -2042,7 +2055,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 120,
+          "total": 110,
           "events": [],
           "rank": 24,
           "wins": 3.0,
@@ -2381,15 +2394,25 @@
       "rank": 6
     },
     "Cleveland Cavaliers": {
-      "honor": 20,
+      "honor": 0,
       "spent": 0,
-      "balance": 20,
+      "balance": 0,
       "seasons": [
         {
           "season": "2019-20",
-          "points": 0,
-          "total": 0,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2019-20",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2020-02-21"
+            }
+          ],
           "rank": 26,
           "wins": 7.5,
           "losses": 25.5,
@@ -2398,7 +2421,7 @@
         {
           "season": "2020-21",
           "points": 0,
-          "total": 0,
+          "total": -10,
           "events": [],
           "rank": 16,
           "wins": 16.0,
@@ -2407,9 +2430,19 @@
         },
         {
           "season": "2021-22",
-          "points": 0,
-          "total": 0,
-          "events": [],
+          "points": -10,
+          "total": -20,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2021-22",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2022-02-11"
+            }
+          ],
           "rank": 26,
           "wins": 8.0,
           "losses": 25.0,
@@ -2418,7 +2451,7 @@
         {
           "season": "2022-23",
           "points": 0,
-          "total": 0,
+          "total": -20,
           "events": [],
           "rank": 12,
           "wins": 20.0,
@@ -2428,7 +2461,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 0,
+          "total": -20,
           "events": [],
           "rank": 21,
           "wins": 14.0,
@@ -2438,7 +2471,7 @@
         {
           "season": "2024-25",
           "points": 20,
-          "total": 20,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -2469,7 +2502,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": 20,
+          "total": 0,
           "events": [],
           "rank": 10,
           "wins": 20.0,
@@ -2479,7 +2512,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 20,
+          "total": 0,
           "events": [],
           "rank": 20,
           "wins": 3.0,
@@ -2806,12 +2839,12 @@
           "starts": 39
         }
       },
-      "rank": 21
+      "rank": 25
     },
     "Dallas Mavericks": {
-      "honor": -20,
+      "honor": -30,
       "spent": 0,
-      "balance": -20,
+      "balance": -30,
       "seasons": [
         {
           "season": "2019-20",
@@ -2849,10 +2882,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2022-23",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2023-02-10"
@@ -2865,16 +2898,24 @@
         },
         {
           "season": "2023-24",
-          "points": -10,
-          "total": -20,
+          "points": -20,
+          "total": -30,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2023-24",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
+              "date": "2024-02-12"
+            },
+            {
+              "kind": "season_low",
+              "season": "2023-24",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 5774.75,
               "date": "2024-02-12"
             }
           ],
@@ -2886,7 +2927,7 @@
         {
           "season": "2024-25",
           "points": 0,
-          "total": -20,
+          "total": -30,
           "events": [],
           "rank": 8,
           "wins": 21.0,
@@ -2896,7 +2937,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": -20,
+          "total": -30,
           "events": [],
           "rank": 2,
           "wins": 27.0,
@@ -2906,7 +2947,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": -20,
+          "total": -30,
           "events": [],
           "rank": 8,
           "wins": 5.0,
@@ -3676,9 +3717,9 @@
       "rank": 7
     },
     "Detroit Pistons": {
-      "honor": 10,
+      "honor": -10,
       "spent": 0,
-      "balance": 10,
+      "balance": -10,
       "seasons": [
         {
           "season": "2019-20",
@@ -3712,8 +3753,8 @@
         },
         {
           "season": "2022-23",
-          "points": 10,
-          "total": 10,
+          "points": 0,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -3724,6 +3765,15 @@
               "player": "Pascal Siakam",
               "period": 6,
               "date": "2022-11-07"
+            },
+            {
+              "kind": "bottom_five",
+              "season": "2022-23",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2023-02-10"
             }
           ],
           "rank": 26,
@@ -3734,7 +3784,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 10,
+          "total": 0,
           "events": [],
           "rank": 8,
           "wins": 21.0,
@@ -3744,7 +3794,7 @@
         {
           "season": "2024-25",
           "points": 0,
-          "total": 10,
+          "total": 0,
           "events": [],
           "rank": 12,
           "wins": 20.0,
@@ -3753,9 +3803,19 @@
         },
         {
           "season": "2025-26",
-          "points": 0,
-          "total": 10,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2025-26",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2026-02-20"
+            }
+          ],
           "rank": 26,
           "wins": 11.0,
           "losses": 22.0,
@@ -3764,7 +3824,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 10,
+          "total": -10,
           "events": [],
           "rank": 21,
           "wins": 3.0,
@@ -4091,7 +4151,7 @@
           "starts": 37
         }
       },
-      "rank": 24
+      "rank": 26
     },
     "Golden State Warriors": {
       "honor": 25,
@@ -4519,12 +4579,12 @@
           "starts": 38
         }
       },
-      "rank": 18
+      "rank": 16
     },
     "Houston Rockets": {
-      "honor": 150,
+      "honor": 140,
       "spent": 0,
-      "balance": 150,
+      "balance": 140,
       "seasons": [
         {
           "season": "2019-20",
@@ -4637,9 +4697,19 @@
         },
         {
           "season": "2025-26",
-          "points": 0,
-          "total": 150,
-          "events": [],
+          "points": -10,
+          "total": 140,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2025-26",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2026-02-20"
+            }
+          ],
           "rank": 27,
           "wins": 8.0,
           "losses": 25.0,
@@ -4648,7 +4718,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 150,
+          "total": 140,
           "events": [],
           "rank": 28,
           "wins": 2.0,
@@ -4985,12 +5055,12 @@
           "starts": 35
         }
       },
-      "rank": 3
+      "rank": 2
     },
     "Indiana Pacers": {
-      "honor": 20,
+      "honor": 10,
       "spent": 0,
-      "balance": 20,
+      "balance": 10,
       "seasons": [
         {
           "season": "2019-20",
@@ -4998,10 +5068,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2019-20",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2020-02-21"
@@ -5014,9 +5084,19 @@
         },
         {
           "season": "2020-21",
-          "points": 0,
-          "total": -10,
-          "events": [],
+          "points": -10,
+          "total": -20,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2020-21",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2021-04-05"
+            }
+          ],
           "rank": 27,
           "wins": 5.0,
           "losses": 24.0,
@@ -5025,7 +5105,7 @@
         {
           "season": "2021-22",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 13,
           "wins": 19.0,
@@ -5035,7 +5115,7 @@
         {
           "season": "2022-23",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 24,
           "wins": 12.0,
@@ -5045,7 +5125,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 10,
           "wins": 20.0,
@@ -5055,7 +5135,7 @@
         {
           "season": "2024-25",
           "points": 20,
-          "total": 10,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -5086,7 +5166,7 @@
         {
           "season": "2025-26",
           "points": 10,
-          "total": 20,
+          "total": 10,
           "events": [
             {
               "kind": "player_6000",
@@ -5107,7 +5187,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 20,
+          "total": 10,
           "events": [],
           "rank": 5,
           "wins": 6.0,
@@ -5434,18 +5514,27 @@
           "starts": 40
         }
       },
-      "rank": 21
+      "rank": 22
     },
     "Los Angeles Clippers": {
-      "honor": 10,
+      "honor": -10,
       "spent": 0,
-      "balance": 10,
+      "balance": -10,
       "seasons": [
         {
           "season": "2019-20",
-          "points": 0,
-          "total": 0,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "season_low",
+              "season": "2019-20",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 7427.25,
+              "date": "2020-02-21"
+            }
+          ],
           "rank": 25,
           "wins": 8.5,
           "losses": 24.5,
@@ -5454,7 +5543,7 @@
         {
           "season": "2020-21",
           "points": 0,
-          "total": 0,
+          "total": -10,
           "events": [],
           "rank": 9,
           "wins": 19.0,
@@ -5464,7 +5553,7 @@
         {
           "season": "2021-22",
           "points": 0,
-          "total": 0,
+          "total": -10,
           "events": [],
           "rank": 4,
           "wins": 23.0,
@@ -5474,7 +5563,7 @@
         {
           "season": "2022-23",
           "points": 10,
-          "total": 10,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -5495,7 +5584,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 10,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -5508,10 +5597,10 @@
               "date": "2023-11-10"
             },
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2023-24",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2024-02-12"
@@ -5524,9 +5613,19 @@
         },
         {
           "season": "2024-25",
-          "points": 0,
-          "total": 10,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2024-25",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2025-02-14"
+            }
+          ],
           "rank": 27,
           "wins": 10.0,
           "losses": 23.0,
@@ -5535,7 +5634,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": 10,
+          "total": -10,
           "events": [],
           "rank": 23,
           "wins": 13.0,
@@ -5545,7 +5644,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 10,
+          "total": -10,
           "events": [],
           "rank": 29,
           "wins": 1.0,
@@ -5872,12 +5971,12 @@
           "starts": 40
         }
       },
-      "rank": 24
+      "rank": 26
     },
     "Los Angeles Lakers": {
-      "honor": 5,
+      "honor": -15,
       "spent": 0,
-      "balance": 5,
+      "balance": -15,
       "seasons": [
         {
           "season": "2019-20",
@@ -5902,9 +6001,19 @@
         },
         {
           "season": "2020-21",
-          "points": 0,
-          "total": 15,
-          "events": [],
+          "points": -10,
+          "total": 5,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2020-21",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2021-04-05"
+            }
+          ],
           "rank": 26,
           "wins": 7.0,
           "losses": 22.0,
@@ -5913,13 +6022,13 @@
         {
           "season": "2021-22",
           "points": -10,
-          "total": 5,
+          "total": -5,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2021-22",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2022-02-11"
@@ -5933,7 +6042,7 @@
         {
           "season": "2022-23",
           "points": 0,
-          "total": 5,
+          "total": -5,
           "events": [],
           "rank": 18,
           "wins": 17.0,
@@ -5942,9 +6051,19 @@
         },
         {
           "season": "2023-24",
-          "points": 0,
-          "total": 5,
-          "events": [],
+          "points": -10,
+          "total": -15,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2023-24",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2024-02-12"
+            }
+          ],
           "rank": 27,
           "wins": 6.0,
           "losses": 26.0,
@@ -5953,7 +6072,7 @@
         {
           "season": "2024-25",
           "points": 0,
-          "total": 5,
+          "total": -15,
           "events": [],
           "rank": 22,
           "wins": 12.0,
@@ -5963,7 +6082,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": 5,
+          "total": -15,
           "events": [],
           "rank": 19,
           "wins": 15.0,
@@ -5973,7 +6092,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 5,
+          "total": -15,
           "events": [],
           "rank": 10,
           "wins": 5.0,
@@ -6749,9 +6868,9 @@
       "rank": 11
     },
     "Miami Heat": {
-      "honor": 80,
+      "honor": 70,
       "spent": 0,
-      "balance": 80,
+      "balance": 70,
       "seasons": [
         {
           "season": "2019-20",
@@ -6759,10 +6878,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2019-20",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
               "date": "2020-02-21"
@@ -6805,9 +6924,19 @@
         },
         {
           "season": "2023-24",
-          "points": 0,
-          "total": -10,
-          "events": [],
+          "points": -10,
+          "total": -20,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2023-24",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2024-02-12"
+            }
+          ],
           "rank": 26,
           "wins": 11.0,
           "losses": 21.0,
@@ -6816,13 +6945,13 @@
         {
           "season": "2024-25",
           "points": -10,
-          "total": -20,
+          "total": -30,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2024-25",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2025-02-14"
@@ -6836,7 +6965,7 @@
         {
           "season": "2025-26",
           "points": 100,
-          "total": 80,
+          "total": 70,
           "events": [
             {
               "kind": "title",
@@ -6856,7 +6985,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 80,
+          "total": 70,
           "events": [],
           "rank": 3,
           "wins": 6.0,
@@ -7193,12 +7322,12 @@
           "starts": 39
         }
       },
-      "rank": 8
+      "rank": 10
     },
     "Milwaukee Bucks": {
-      "honor": -10,
+      "honor": -20,
       "spent": 0,
-      "balance": -10,
+      "balance": -20,
       "seasons": [
         {
           "season": "2019-20",
@@ -7252,16 +7381,24 @@
         },
         {
           "season": "2024-25",
-          "points": -10,
-          "total": -10,
+          "points": -20,
+          "total": -20,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2024-25",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
+              "date": "2025-02-14"
+            },
+            {
+              "kind": "season_low",
+              "season": "2024-25",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 5267.0,
               "date": "2025-02-14"
             }
           ],
@@ -7273,7 +7410,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 25,
           "wins": 11.0,
@@ -7283,7 +7420,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 7,
           "wins": 5.0,
@@ -8084,10 +8221,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2020-21",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2021-04-05"
@@ -8521,18 +8658,28 @@
           "starts": 39
         }
       },
-      "rank": 16
+      "rank": 14
     },
     "New York Knicks": {
-      "honor": 155,
+      "honor": 135,
       "spent": 0,
-      "balance": 155,
+      "balance": 135,
       "seasons": [
         {
           "season": "2019-20",
-          "points": 0,
-          "total": 0,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2019-20",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2020-02-21"
+            }
+          ],
           "rank": 27,
           "wins": 7.5,
           "losses": 25.5,
@@ -8541,7 +8688,7 @@
         {
           "season": "2020-21",
           "points": 0,
-          "total": 0,
+          "total": -10,
           "events": [],
           "rank": 21,
           "wins": 9.0,
@@ -8551,7 +8698,7 @@
         {
           "season": "2021-22",
           "points": 100,
-          "total": 100,
+          "total": 90,
           "events": [
             {
               "kind": "title",
@@ -8571,7 +8718,7 @@
         {
           "season": "2022-23",
           "points": 40,
-          "total": 140,
+          "total": 130,
           "events": [
             {
               "kind": "player_6000",
@@ -8622,7 +8769,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 140,
+          "total": 130,
           "events": [],
           "rank": 22,
           "wins": 14.0,
@@ -8631,9 +8778,19 @@
         },
         {
           "season": "2024-25",
-          "points": 0,
-          "total": 140,
-          "events": [],
+          "points": -10,
+          "total": 120,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2024-25",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2025-02-14"
+            }
+          ],
           "rank": 26,
           "wins": 10.0,
           "losses": 23.0,
@@ -8642,7 +8799,7 @@
         {
           "season": "2025-26",
           "points": 15,
-          "total": 155,
+          "total": 135,
           "events": [
             {
               "kind": "season_high",
@@ -8663,7 +8820,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 155,
+          "total": 135,
           "events": [],
           "rank": 13,
           "wins": 4.0,
@@ -9000,7 +9157,7 @@
           "starts": 42
         }
       },
-      "rank": 2
+      "rank": 3
     },
     "Oklahoma City Thunder": {
       "honor": 40,
@@ -9054,10 +9211,10 @@
           "total": 0,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2022-23",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
               "date": "2023-02-10"
@@ -9448,9 +9605,9 @@
       "rank": 13
     },
     "Orlando Magic": {
-      "honor": 25,
+      "honor": 15,
       "spent": 0,
-      "balance": 25,
+      "balance": 15,
       "seasons": [
         {
           "season": "2019-20",
@@ -9484,16 +9641,24 @@
         },
         {
           "season": "2022-23",
-          "points": -10,
-          "total": -10,
+          "points": -20,
+          "total": -20,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2022-23",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
+              "date": "2023-02-10"
+            },
+            {
+              "kind": "season_low",
+              "season": "2022-23",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 6673.25,
               "date": "2023-02-10"
             }
           ],
@@ -9505,7 +9670,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 6,
           "wins": 21.0,
@@ -9515,7 +9680,7 @@
         {
           "season": "2024-25",
           "points": 15,
-          "total": 5,
+          "total": -5,
           "events": [
             {
               "kind": "first_seed",
@@ -9533,7 +9698,7 @@
         {
           "season": "2025-26",
           "points": 20,
-          "total": 25,
+          "total": 15,
           "events": [
             {
               "kind": "player_6000",
@@ -9564,7 +9729,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 25,
+          "total": 15,
           "events": [],
           "rank": 27,
           "wins": 2.0,
@@ -9891,7 +10056,7 @@
           "starts": 36
         }
       },
-      "rank": 18
+      "rank": 20
     },
     "Philadelphia 76ers": {
       "honor": 10,
@@ -9914,10 +10079,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2020-21",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2021-04-05"
@@ -10329,12 +10494,12 @@
           "starts": 31
         }
       },
-      "rank": 24
+      "rank": 22
     },
     "Phoenix Suns": {
-      "honor": 40,
+      "honor": 20,
       "spent": 0,
-      "balance": 40,
+      "balance": 20,
       "seasons": [
         {
           "season": "2019-20",
@@ -10348,16 +10513,24 @@
         },
         {
           "season": "2020-21",
-          "points": -10,
-          "total": -10,
+          "points": -20,
+          "total": -20,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2020-21",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
+              "date": "2021-04-05"
+            },
+            {
+              "kind": "season_low",
+              "season": "2020-21",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 6733.25,
               "date": "2021-04-05"
             }
           ],
@@ -10369,7 +10542,7 @@
         {
           "season": "2021-22",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 15,
           "wins": 18.0,
@@ -10379,7 +10552,7 @@
         {
           "season": "2022-23",
           "points": 10,
-          "total": 0,
+          "total": -10,
           "events": [
             {
               "kind": "player_6000",
@@ -10400,7 +10573,7 @@
         {
           "season": "2023-24",
           "points": 50,
-          "total": 50,
+          "total": 40,
           "events": [
             {
               "kind": "player_6000",
@@ -10437,7 +10610,7 @@
         {
           "season": "2024-25",
           "points": 0,
-          "total": 50,
+          "total": 40,
           "events": [],
           "rank": 19,
           "wins": 15.0,
@@ -10446,16 +10619,24 @@
         },
         {
           "season": "2025-26",
-          "points": -10,
-          "total": 40,
+          "points": -20,
+          "total": 20,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2025-26",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
+              "date": "2026-02-20"
+            },
+            {
+              "kind": "season_low",
+              "season": "2025-26",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 8001.25,
               "date": "2026-02-20"
             }
           ],
@@ -10467,7 +10648,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 40,
+          "total": 20,
           "events": [],
           "rank": 16,
           "wins": 4.0,
@@ -10794,7 +10975,7 @@
           "starts": 43
         }
       },
-      "rank": 13
+      "rank": 19
     },
     "Portland Trail Blazers": {
       "honor": 10,
@@ -10878,10 +11059,10 @@
           "total": 0,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2025-26",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2026-02-20"
@@ -11233,12 +11414,12 @@
           "starts": 36
         }
       },
-      "rank": 24
+      "rank": 22
     },
     "Sacramento Kings": {
-      "honor": 140,
+      "honor": 130,
       "spent": 0,
-      "balance": 140,
+      "balance": 130,
       "seasons": [
         {
           "season": "2019-20",
@@ -11262,9 +11443,19 @@
         },
         {
           "season": "2021-22",
-          "points": 0,
-          "total": 0,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2021-22",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2022-02-11"
+            }
+          ],
           "rank": 27,
           "wins": 6.0,
           "losses": 27.0,
@@ -11273,7 +11464,7 @@
         {
           "season": "2022-23",
           "points": 10,
-          "total": 10,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -11294,7 +11485,7 @@
         {
           "season": "2023-24",
           "points": 100,
-          "total": 110,
+          "total": 100,
           "events": [
             {
               "kind": "title",
@@ -11314,7 +11505,7 @@
         {
           "season": "2024-25",
           "points": 20,
-          "total": 130,
+          "total": 120,
           "events": [
             {
               "kind": "player_6000",
@@ -11345,7 +11536,7 @@
         {
           "season": "2025-26",
           "points": 10,
-          "total": 140,
+          "total": 130,
           "events": [
             {
               "kind": "player_6000",
@@ -11366,7 +11557,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 140,
+          "total": 130,
           "events": [],
           "rank": 17,
           "wins": 4.0,
@@ -11716,10 +11907,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2019-20",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2020-02-21"
@@ -11807,10 +11998,10 @@
           "total": 15,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2024-25",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2025-02-14"
@@ -12161,7 +12352,7 @@
           "starts": 40
         }
       },
-      "rank": 23
+      "rank": 20
     },
     "Toronto Raptors": {
       "honor": 25,
@@ -12235,10 +12426,10 @@
               "date": "2023-11-03"
             },
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2023-24",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2024-02-12"
@@ -12275,10 +12466,10 @@
           "total": 25,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2025-26",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2026-02-20"
@@ -12619,7 +12810,7 @@
           "starts": 43
         }
       },
-      "rank": 18
+      "rank": 16
     },
     "Utah Jazz": {
       "honor": 190,
@@ -13081,9 +13272,9 @@
       "rank": 1
     },
     "Washington Wizards": {
-      "honor": 35,
+      "honor": 25,
       "spent": 0,
-      "balance": 35,
+      "balance": 25,
       "seasons": [
         {
           "season": "2019-20",
@@ -13129,10 +13320,10 @@
               "date": "2022-01-21"
             },
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2021-22",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2022-02-11"
@@ -13145,9 +13336,19 @@
         },
         {
           "season": "2022-23",
-          "points": 0,
-          "total": 15,
-          "events": [],
+          "points": -10,
+          "total": 5,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2022-23",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2023-02-10"
+            }
+          ],
           "rank": 27,
           "wins": 5.0,
           "losses": 28.0,
@@ -13156,7 +13357,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 15,
+          "total": 5,
           "events": [],
           "rank": 20,
           "wins": 15.0,
@@ -13166,7 +13367,7 @@
         {
           "season": "2024-25",
           "points": 10,
-          "total": 25,
+          "total": 15,
           "events": [
             {
               "kind": "player_6000",
@@ -13187,7 +13388,7 @@
         {
           "season": "2025-26",
           "points": 10,
-          "total": 35,
+          "total": 25,
           "events": [
             {
               "kind": "player_6000",
@@ -13208,7 +13409,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 35,
+          "total": 25,
           "events": [],
           "rank": 30,
           "wins": 1.0,
@@ -13535,7 +13736,7 @@
           "starts": 31
         }
       },
-      "rank": 15
+      "rank": 16
     }
   }
 }

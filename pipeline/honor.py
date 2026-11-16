@@ -6,7 +6,7 @@ franchise page (History → Franchise); data/honor.json.
 
 Achievements are worked out from the data for every season, past ones too, so nobody enters them. Only a
 finished season earns its standings achievements (title, final, regular-season winner, season-high score,
-bottom three); a player milestone counts in the season it happens, the one in progress too. Nothing earned
+bottom five, fewest points); a player milestone counts in the season it happens, the one in progress too. Nothing earned
 is taken away.
 
 Rewards are asked for through the commissioner, who adds a row to pipeline/data/honor_rewards.json (and
@@ -30,10 +30,13 @@ ACHIEVEMENTS = {
     'final': (25, 'Runner-up'),
     'first_seed': (15, 'Regular-season winner'),
     'season_high': (15, "Season's highest score"),
-    'bottom_three': (-10, 'Bottom three of the regular season'),
+    'bottom_five': (-10, 'Bottom five of the regular season'),
+    'season_low': (-10, 'Fewest points of the regular season'),
     'player_6000': (10, '6,000 points for the franchise'),
     'player_17000': (70, '17,000 points for the franchise'),
 }
+# The last this many in the regular season lose honor
+BOTTOM = 5
 MILESTONES = [(6000, 'player_6000'), (17000, 'player_17000')]
 # kind: (cost, label)
 REWARDS = {
@@ -119,9 +122,17 @@ def _achievements(alltime: dict, season_files: dict[str, dict], points: pd.DataF
             events.append({'team': summary['first_seed'], **_event('first_seed', season, date=_date(data, regular_end))})
         ranks = [t for t in alltime['team_seasons'] if t['season'] == season]
         for t in ranks:
-            if t['rank'] > len(ranks) - 3:
-                events.append({'team': t['team'], **_event('bottom_three', season, rank=t['rank'], of=len(ranks),
+            if t['rank'] > len(ranks) - BOTTOM:
+                events.append({'team': t['team'], **_event('bottom_five', season, rank=t['rank'], of=len(ranks),
                                                                     date=_date(data, regular_end))})
+        # The fewest points over the regular season (the season's total, not one game)
+        totals = {t['team']: t['points_for'] for t in data.get('teams', []) if t.get('points_for')}
+        if totals:
+            low = min(totals.values())
+            for team, pf in totals.items():
+                if pf == low:
+                    events.append({'team': team, **_event('season_low', season, score=round(pf, 2),
+                                                          date=_date(data, regular_end))})
         games = _season_games(data) if data else []
         if games:
             high = max(g['score'] for g in games)

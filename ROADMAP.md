@@ -512,7 +512,8 @@ changed GMs). No reward touches the competition on Fantrax.
   | Runner-up | +25 |
   | Regular-season winner | +15 |
   | Season's highest score | +15 |
-  | Bottom three of the regular season | −10 |
+  | Bottom five of the regular season | −10 |
+  | Fewest points of the regular season (the season's total, not one game) | −10 |
   | A player passes 6,000 points for the franchise | +10 |
   | A player passes 17,000 points for the franchise | +70 |
 

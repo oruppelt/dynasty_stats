@@ -4,7 +4,7 @@ import type { Finish } from './alltime'
 // Shape of /data/honor.json (pipeline/honor.py): each franchise's honor, earned season by season
 // from rare achievements and spent on rewards, with its banners, retired jerseys, legends and highlights.
 
-export type AchievementKind = 'title' | 'final' | 'first_seed' | 'season_high' | 'bottom_three' | 'player_6000' | 'player_17000'
+export type AchievementKind = 'title' | 'final' | 'first_seed' | 'season_high' | 'bottom_five' | 'season_low' | 'player_6000' | 'player_17000'
 export type RewardKind = 'jersey' | 'highlight' | 'motto'
 
 export interface Achievement {
@@ -18,10 +18,10 @@ export interface Achievement {
   /** title / final: the other finalist, and the series ("2-1") when the bracket has it */
   opponent?: string
   series?: string
-  /** season_high */
+  /** season_high (one game), season_low (the season's total) */
   score?: number
   period?: number
-  /** bottom_three */
+  /** bottom_five */
   rank?: number
   of?: number
   /** player milestones (with `period`) */

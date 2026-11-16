@@ -2,7 +2,8 @@
 Tests for honor.py on a small league of four teams and two seasons:
 
     2024-25 (finished): Alpha champion over Bravo (2-1), Charlie the regular-season winner, Delta last
-        (with 4 teams, the bottom three are ranks 2-4); Bravo has the season's highest score (120).
+        (with 4 teams, all four are in the bottom five); Bravo has the season's highest score (120), Delta the
+        fewest points over the season (130).
     2025-26 (in progress): no standings achievements yet.
     Player p1 scores 3,500 for Alpha in 2024-25, then 2,000 and 500 in 2025-26: passes 6,000 in period 2.
 """
@@ -45,6 +46,8 @@ FILES = {
         'results': [game(1, 'Bravo', 120, 'Alpha', 90), game(1, 'Alpha', 90, 'Bravo', 120),
                     game(2, 'Alpha', 110, 'Delta', 60), game(2, 'Delta', 60, 'Alpha', 110),
                     game(3, 'Alpha', 100, 'Delta', 70), game(3, 'Delta', 70, 'Alpha', 100)],
+        'teams': [{'team': 'Alpha', 'points_for': 300}, {'team': 'Bravo', 'points_for': 200},
+                  {'team': 'Charlie', 'points_for': 0}, {'team': 'Delta', 'points_for': 130}],
         'playoffs': {'knockout': [{'round': 1, 'name': 'Final', 'series': [
             {'teams': ['Bravo', 'Alpha'], 'seeds': [3, 2], 'wins': [1, 2], 'winner': 'Alpha', 'games': []}]}]},
     },
@@ -73,12 +76,13 @@ def test_achievements_by_season():
     data, problems = run()
     assert not problems
     assert data['seasons'] == ['2024-25', '2025-26']
-    assert kinds(data, 'Alpha', '2024-25') == ['bottom_three', 'title']   # rank 2 of 4 is in the bottom three
+    assert kinds(data, 'Alpha', '2024-25') == ['bottom_five', 'title']   # 4 teams: all in the bottom five
+    assert kinds(data, 'Delta', '2024-25') == ['bottom_five', 'season_low']
     assert kinds(data, 'Alpha', '2025-26') == ['player_6000']             # 3,500 + 2,000 + 500
     milestone = data['franchises']['Alpha']['seasons'][1]['events'][0]
     assert (milestone['period'], milestone['date']) == (2, '2025-10-26')
-    assert kinds(data, 'Bravo', '2024-25') == ['bottom_three', 'final', 'season_high']
-    assert kinds(data, 'Charlie', '2024-25') == ['first_seed']
+    assert kinds(data, 'Bravo', '2024-25') == ['bottom_five', 'final', 'season_high']
+    assert kinds(data, 'Charlie', '2024-25') == ['bottom_five', 'first_seed']
     # The season in progress: no standings achievements (Delta's 200 and its #1 rank don't count yet)
     assert kinds(data, 'Delta', '2025-26') == []
     alpha = data['franchises']['Alpha']
