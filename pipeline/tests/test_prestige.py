@@ -4,7 +4,7 @@ Tests for prestige.py on a small league of four teams and two seasons:
     2024-25 (finished): Alpha champion over Bravo (2-1), Charlie the regular-season winner, Delta last
         (with 4 teams, the bottom three are ranks 2-4); Bravo has the season's highest score (120).
     2025-26 (in progress): no standings honors yet.
-    Player p1 scores 3,000 then 2,500 for Alpha: passes 5,000 in 2025-26.
+    Player p1 scores 3,500 then 2,500 for Alpha: passes 6,000 in 2025-26.
 """
 import pandas as pd
 
@@ -52,14 +52,14 @@ FILES = {
 }
 
 POINTS = pd.DataFrame([
-    {'season': '2024-25', 'team': 'Alpha', 'player_id': 'p1', 'player': 'One', 'points': 3000.0, 'starts': 30},
+    {'season': '2024-25', 'team': 'Alpha', 'player_id': 'p1', 'player': 'One', 'points': 3500.0, 'starts': 30},
     {'season': '2025-26', 'team': 'Alpha', 'player_id': 'p1', 'player': 'One', 'points': 2500.0, 'starts': 20},
     {'season': '2024-25', 'team': 'Bravo', 'player_id': 'p2', 'player': 'Two', 'points': 900.0, 'starts': 10},
 ])
 
 
-def run(rewards=()):
-    return compute_prestige(ALLTIME, FILES, POINTS, list(rewards))
+def run(rewards=(), image_dir=None):
+    return compute_prestige(ALLTIME, FILES, POINTS, list(rewards), *([image_dir] if image_dir else []))
 
 
 def kinds(data, team, season):
@@ -71,7 +71,7 @@ def test_honors_by_season():
     assert not problems
     assert data['seasons'] == ['2024-25', '2025-26']
     assert kinds(data, 'Alpha', '2024-25') == ['bottom_three', 'title']   # rank 2 of 4 is in the bottom three
-    assert kinds(data, 'Alpha', '2025-26') == ['player_5000']             # 3,000 + 2,500
+    assert kinds(data, 'Alpha', '2025-26') == ['player_6000']             # 3,500 + 2,500
     assert kinds(data, 'Bravo', '2024-25') == ['bottom_three', 'final', 'season_high']
     assert kinds(data, 'Charlie', '2024-25') == ['first_seed']
     # The season in progress: no standings honors (Delta's 200 and its #1 rank don't count yet)
@@ -93,7 +93,7 @@ def test_highlights_and_rivals():
     assert alpha['rivals']['most_played']['team'] == 'Bravo'           # 6 + 3 playoff games
     assert alpha['rivals']['nemesis']['team'] == 'Bravo'               # 3-6
     assert alpha['rivals']['favorite']['team'] == 'Charlie'            # 7-1
-    assert alpha['legends'][0] == {'player_id': 'p1', 'player': 'One', 'points': 5500.0, 'starts': 50,
+    assert alpha['legends'][0] == {'player_id': 'p1', 'player': 'One', 'points': 6000.0, 'starts': 50,
                                    'first': '2024-25', 'last': '2025-26', 'seasons': 2, 'eligible': True, 'retired': False}
 
 
@@ -111,3 +111,18 @@ def test_rewards_are_checked():
     assert alpha['legends'][0]['retired'] and (alpha['spent'], alpha['balance']) == (100, 0)
     assert bravo['motto'] == 'Always the bridesmaid' and bravo['balance'] == 45 - 25
     assert data['franchises']['Charlie']['declared_rival'] is None
+
+
+def test_reward_images(tmp_path):
+    (tmp_path / 'one.jpg').write_bytes(b'x' * 100)
+    (tmp_path / 'huge.png').write_bytes(b'x' * 2_000_000)
+    data, problems = run([
+        {'team': 'Alpha', 'kind': 'jersey', 'season': '2025-26', 'player_id': 'p1', 'image': 'one.jpg', 'caption': 'Night of 60'},
+        {'team': 'Bravo', 'kind': 'moment', 'season': '2025-26', 'title': 'Missing', 'image': 'none.jpg'},
+        {'team': 'Bravo', 'kind': 'moment', 'season': '2025-26', 'title': 'Too big', 'image': 'huge.png'},
+        {'team': 'Bravo', 'kind': 'moment', 'season': '2025-26', 'title': 'Escapes', 'image': '../one.jpg'},
+    ], tmp_path)
+    assert len(problems) == 3
+    assert data['franchises']['Alpha']['jerseys'][0]['image'] == '/prestige/one.jpg'
+    assert data['franchises']['Alpha']['jerseys'][0]['caption'] == 'Night of 60'
+    assert data['franchises']['Bravo']['moments'] == []

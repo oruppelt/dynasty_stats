@@ -8,7 +8,8 @@ finished season earns its standings honors (title, final, regular-season winner,
 bottom three); a player milestone counts in the season it happens, the one in progress too. Nothing earned
 is taken away.
 
-Rewards are asked for through the commissioner, who adds a row to pipeline/data/prestige_rewards.json; this
+Rewards are asked for through the commissioner, who adds a row to pipeline/data/prestige_rewards.json (and
+a picture, if any, to stats-app/public/prestige/: a jersey's, a moment's); this
 module checks each one (enough prestige by then, an eligible player) and keeps the ledger. A row that
 doesn't pass is left out and reported.
 
@@ -16,6 +17,7 @@ Player points are regular-season lineup points for the franchise (by team name, 
 site), every season added up.
 """
 import json
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -27,10 +29,10 @@ HONORS = {
     'first_seed': (15, 'Regular-season winner'),
     'season_high': (15, "Season's highest score"),
     'bottom_three': (-10, 'Bottom three of the regular season'),
-    'player_5000': (10, '5,000 points for the franchise'),
+    'player_6000': (10, '6,000 points for the franchise'),
     'player_16000': (70, '16,000 points for the franchise'),
 }
-MILESTONES = [(5000, 'player_5000'), (16000, 'player_16000')]
+MILESTONES = [(6000, 'player_6000'), (16000, 'player_16000')]
 # kind: (cost, label)
 REWARDS = {
     'jersey': (100, 'Retire a jersey'),
@@ -39,11 +41,15 @@ REWARDS = {
     'motto': (25, 'Franchise motto'),
 }
 # A jersey can be retired for a player with this many points for the franchise
-JERSEY_POINTS = 5000
+JERSEY_POINTS = 6000
 MOTTO_LENGTH = 80
 LEGENDS = 25
 RIVAL_GAMES = 6
 REWARDS_PATH = Path(__file__).parent / 'data' / 'prestige_rewards.json'
+# A reward's picture (a jersey's, a moment's): a file in stats-app/public/prestige/, added in the same PR as its row
+IMAGE_DIR = Path(__file__).parent.parent / 'stats-app' / 'public' / 'prestige'
+IMAGE_NAME = re.compile(r'^[A-Za-z0-9._-]+\.(jpe?g|png|webp|gif)$', re.IGNORECASE)
+IMAGE_BYTES = 1_500_000
 
 
 def read_rewards(path: Path = REWARDS_PATH) -> list[dict]:
@@ -198,9 +204,10 @@ def _rivals(team: str, alltime: dict) -> dict:
 
 
 def _spend(rewards: list[dict], teams: set[str], earned_by: dict[str, list[tuple[str, int]]], order: list[str],
-           legends: dict[str, list[dict]]) -> tuple[dict[str, list[dict]], list[str]]:
+           legends: dict[str, list[dict]], image_dir: Path = IMAGE_DIR) -> tuple[dict[str, list[dict]], list[str]]:
     """Checks the rewards in the file's order: a known kind and franchise, a season, enough prestige earned
-    through that season less what's spent before, and for a jersey an eligible player not already retired."""
+    through that season less what's spent before, for a jersey an eligible player not already retired, and
+    an image (optional, any reward) that is in image_dir, a picture, and at most IMAGE_BYTES."""
     spent: dict[str, list[dict]] = {t: [] for t in teams}
     problems = []
     rank = {s: i for i, s in enumerate(order)}
@@ -217,6 +224,15 @@ def _spend(rewards: list[dict], teams: set[str], earned_by: dict[str, list[tuple
             problems.append(f'{where}: costs {cost}, {team} has {balance} through {season}')
             continue
         item = {'kind': kind, 'season': season, 'cost': cost, 'label': REWARDS[kind][1]}
+        if r.get('image'):
+            name, path = r['image'], image_dir / str(r['image'])
+            if not IMAGE_NAME.match(str(name)) or not path.is_file():
+                problems.append(f'{where}: no image {name} in stats-app/public/prestige/ (jpg, png, webp or gif)')
+                continue
+            if path.stat().st_size > IMAGE_BYTES:
+                problems.append(f'{where}: {name} is over {IMAGE_BYTES // 1_000_000:.1f} MB; make it smaller')
+                continue
+            item['image'] = f'/prestige/{name}'
         if kind == 'jersey':
             player = next((p for p in legends.get(team, []) if p['player_id'] == r.get('player_id')), None)
             if not player or player['points'] < JERSEY_POINTS:
@@ -242,12 +258,14 @@ def _spend(rewards: list[dict], teams: set[str], earned_by: dict[str, list[tuple
                 problems.append(f'{where}: a moment needs a title')
                 continue
             item.update({k: r[k] for k in ('title', 'text', 'trade', 'player_id') if r.get(k)})
+        if r.get('caption'):
+            item['caption'] = str(r['caption'])
         spent[team].append(item)
     return spent, problems
 
 
 def compute_prestige(alltime: dict, season_files: dict[str, dict], points: pd.DataFrame,
-                     rewards: list[dict]) -> tuple[dict, list[str]]:
+                     rewards: list[dict], image_dir: Path = IMAGE_DIR) -> tuple[dict, list[str]]:
     """data/prestige.json, and the reward rows that didn't pass.
 
     `points`: one row per season, team and player (season, team, player_id, player, points, starts), regular-season
@@ -259,7 +277,7 @@ def compute_prestige(alltime: dict, season_files: dict[str, dict], points: pd.Da
     earned_by: dict[str, list[tuple[str, int]]] = {}
     for e in events:
         earned_by.setdefault(e['team'], []).append((e['season'], e['points']))
-    spent, problems = _spend(rewards, set(teams), earned_by, order, legends)
+    spent, problems = _spend(rewards, set(teams), earned_by, order, legends, image_dir)
 
     franchises = {}
     for team in teams:
