@@ -62,6 +62,7 @@ import fantrax
 import lineage
 import players
 from alltime import compute_alltime
+import honor
 from league_data import compute_league, load_games, sheet_csv_url
 
 SEASONS_CONFIG = Path(__file__).resolve().parent / 'seasons.json'
@@ -216,6 +217,35 @@ def write_alltime(config: dict, out: Path) -> None:
         path.write_text(data)
 
 
+def write_honor(config: dict, out: Path) -> None:
+    """data/honor.json (honor.py): each franchise's achievements and honor by season, its rewards, legends,
+    highlights and rivals; from the season files, data/alltime.json, the player cache (lineup points by
+    period, regular season and playoffs) and pipeline/data/honor_rewards.json. Reward rows that don't pass are reported, not written."""
+    path = out / 'alltime.json'
+    if not path.exists():
+        return
+    alltime = json.loads(path.read_text())
+    files = {s['id']: json.loads(season_path(out, s['id']).read_text())
+             for s in config['seasons'] if season_path(out, s['id']).exists()}
+    frames = []
+    for s in config['seasons']:
+        meta_path = out / 'players' / f'{s["id"]}.json'
+        if not meta_path.exists() or not players.cache_path(s['id']).exists():
+            continue
+        meta = json.loads(meta_path.read_text())['meta']
+        periods = set(meta['regular_periods']) | set(meta['playoff_periods'])
+        rows = players.read_cache(s['id'])
+        rows = rows[(rows['status'] == 'active') & rows['period'].isin(periods)]
+        frames.append(rows[['period', 'team', 'player_id', 'player']]
+                      .assign(points=rows['fpts'], starts=1, season=s['id']))
+    points = (pd.concat(frames, ignore_index=True) if frames
+              else pd.DataFrame(columns=['season', 'period', 'team', 'player_id', 'player', 'points', 'starts']))
+    data, problems = honor.compute_honor(alltime, files, points, honor.read_rewards())
+    for problem in problems:
+        print(f'Honor: {problem}; left out.', file=sys.stderr)
+    _write_if_changed(out / 'honor.json', to_json(data))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--season', help='build only this season, or several comma-separated '
@@ -273,6 +303,7 @@ def main() -> None:
     write_alltime(config, args.out)
     if not args.no_players and not args.source:
         write_players_alltime(config, args.out)
+    write_honor(config, args.out)
     if failed:
         sys.exit(f'Failed: {", ".join(failed)}')
 

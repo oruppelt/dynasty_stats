@@ -9,9 +9,9 @@ are in `LEAGUE.md`.
    data (schedule, playoffs, past seasons, rosters).
 3. **Player lineage.** The long-term goal: every pick and player followed
    through the league's history (section 3).
-4. **Franchise pages, honors and XP.** A page per franchise (banners, legends,
-   rivals, splits), then achievements that earn XP, spent on retiring a
-   player's jersey and other small perks (section 4).
+4. **Franchise pages and honor.** A page per franchise (banners, retired
+   jerseys, legends, rivals), and honor: earned from rare achievements, spent on
+   retiring a jersey and other small rewards (section 4).
 
 ---
 
@@ -473,142 +473,86 @@ rosters:
 
 ---
 
-## 4. Franchise pages, honors and XP (proposed 2026-11-16)
+## 4. Franchise pages and honor (started 2026-11-16)
 
-The site shows a lot about each team, but it's spread over many views. A
-franchise page brings it together, and becomes the place where a
-franchise's history is kept: title banners, legends, retired jerseys. On
-top of it, an honors and XP system rewards the rare things (a title, not a
-win) and lets owners spend XP on small perks. None of the perks touch the
-competition on Fantrax.
+A page per franchise brings together what the site knows about it, and keeps
+its history: title banners, retired jerseys, legends. **Honor** is the main
+show: points earned season by season from rare achievements (a title, not a
+win), spent through the commissioner on rewards. It is just honor, kept by
+franchise name: every achievement has its date, so whether it belongs to the
+franchise or to whoever ran it then is for the league to judge (franchises
+changed GMs). No reward touches the competition on Fantrax.
 
-### Where it fits
-- **History → Franchise**, next to the Franchises table, as
-  `?franchise=<team>` (like `?player=` and `?trade=`), defaulting to the
-  viewer's team. Every row of the Franchises table, the Champions list and
-  the head-to-head opens it, and a `TeamName` link (like `PlayerName`)
-  makes team names elsewhere open it too. My Team stays about the season
-  now; the franchise page is about all seasons.
-- Build it after the trade work (section 3, steps 1–2). The transaction
-  fetch in the daily job (section 3, step 3) can come before or after.
-  The franchise page needs no Fantrax work; it reads
-  `alltime.json`, `players/alltime.json`, `players/built.json` and the
-  season files.
+### Done: the first iteration (2026-11-16)
+- **History → Franchise**, `?franchise=<team>` (`lib/selected-franchise.ts`),
+  defaulting to the viewer's team; names in the Franchises table open it.
+  `components/widgets/FranchisePage.tsx`, from `data/honor.json`
+  (`pipeline/honor.py`) and `data/alltime.json`.
+- Header: big logo, motto (empty until bought), all-time record, honor,
+  its rank in the league and what's left to spend.
+- Panels, each opening full screen: **Honor by season** (each season's
+  achievements and points; full screen adds the rules, the costs and every
+  franchise's honor), **Banners** (titles and finals), **Retired jerseys**
+  (and who is eligible), **Highlights** (best season, highest score, biggest
+  win, longest streak, best player season; featured moments on top),
+  **Legends** (top scorers for the franchise), **Rivals** (most played,
+  nemesis, favorite, a declared rival).
+- Achievements and honor (`honor.ACHIEVEMENTS`), every season since 2019-20:
 
-### F1. The franchise page (today's data)
-- **Header:** a big logo in the team's colors, the all-time W-L and
-  all-play W-L, seasons, playoff appearances, best finish.
-- **Banners:** one per title (season, the final's opponent and score), and
-  smaller ones for finals, #1 seeds and other honors (F2). A franchise
-  with no title shows its best finish instead.
-- **Season by season:** a strip of each season's rank and finish (title,
-  final, knockout, Swiss stage, missed), with the season's W-L. Click to
-  open that season.
-- **Legends:** the franchise's top scorers, most starts and best seasons
-  (from `players/alltime.json`, `franchises` and `franchise_starts`), with
-  retired jerseys first once there are any (F3). Link: **How this team was
-  built** (Players → Teams).
-- **Rivals:** worked out, not picked. A rivalry score per opponent from
-  games played, how even the series is, playoff meetings (weighted
-  higher), and close games. Shows the top rival, the **nemesis** (worst
-  record, with enough games), the **favorite opponent**, and the longest
-  streak either way. This is the "More from the career head-to-head" item in
-  section 2, done per franchise.
-- **Splits:** win rate and all-play rate by month (Oct–Apr, from the
-  period dates in `schedule.periods`, about 50 games a month over seven
-  seasons), early season vs after the All-Star break, regular season vs
-  playoffs. Show the number of games next to each rate, since some months
-  have few.
-- **Records held:** every all-time and season record-book entry by the
-  franchise (highest score, streaks, blowouts), and its best and worst
-  periods.
-- **Trading:** number of trades, most frequent trade partner, the best
-  trade by points gained (links to the trade page).
-- Pipeline: `alltime.py` writes `franchises/<team>.json` (or one
-  `franchise.json`) with the splits, rivals and records held, so the page
-  doesn't have to work them out on the phone.
+  | Achievement | Honor |
+  |---|---|
+  | Champion | +100 |
+  | Runner-up | +40 |
+  | Regular-season winner | +15 |
+  | Season's highest score | +15 |
+  | Bottom three of the regular season | −10 |
+  | A player passes 6,000 points for the franchise | +10 |
+  | A player passes 16,000 points for the franchise | +70 |
 
-### F2. Honors (achievements), computed from the data
-Every honor is worked out by the pipeline from the data, every season
-including past ones, so nobody has to enter or approve them. Each one has
-an XP value. On the page they form a trophy case; on the Recap, "new
-honor" lines.
+  A finished season earns its standings achievements (dated by the final, or
+  the regular season's last period); a milestone counts in the period it is
+  passed, with that period's date (lineup points for the franchise, regular
+  season and playoffs, every season added up). With the data on 2026-11-16
+  the totals run from 190 (Utah) to −20 (Dallas); 67 player stints have
+  passed 6,000, and 5 have passed 16,000 (Jokić for Denver, LeBron for
+  Boston, Davis for New Orleans, Mitchell for Utah, Lillard for Portland).
+- Rewards (`honor.REWARDS`): retire a jersey 100 (a player with 6,000+
+  points for the franchise), declare a rival 50, feature a moment 40, a motto
+  25. The commissioner adds a row to `pipeline/data/honor_rewards.json`
+  in a PR, with the picture if there is one in `stats-app/public/honor/`
+  (jpg, png, webp or gif, at most 1.5 MB):
 
-Proposed honors and XP (only rare things; one regular-season win is worth
-nothing):
+  ```json
+  {"rewards": [
+    {"team": "Denver Nuggets", "kind": "jersey", "season": "2026-27", "player_id": "03e75",
+     "image": "denver-jokic.jpg", "caption": "Three MVPs in a Nuggets jersey"},
+    {"team": "Miami Heat", "kind": "moment", "season": "2026-27", "title": "The 2025-26 title",
+     "text": "Beat the #1 seed 2-0 in the final.", "image": "miami-2026.jpg"},
+    {"team": "Utah Jazz", "kind": "motto", "season": "2026-27", "text": "..."},
+    {"team": "Utah Jazz", "kind": "rival", "season": "2026-27", "opponent": "Toronto Raptors"}
+  ]}
+  ```
 
-| Honor | XP | How often (7 finished seasons) |
-|---|---|---|
-| Champion | 100 | 5 (no champion in 2019-20) |
-| Back-to-back champion (extra) | 50 | not yet |
-| Runner-up | 40 | 5 |
-| #1 seed (best regular season) | 30 | 7 |
-| Best all-play record of the season | 20 | 7 |
-| Season's highest score | 15 | 7 |
-| All-time record score (beats the record book's top entry) | 50 | rare |
-| Win streak of 10+ games | 15 | 16 |
-| Worst to first: bottom 10 to the top 4 the next season | 25 | to check |
-| Knockout upset: beat a team seeded 8+ places higher | 10 | to check |
-| Hard luck: most schedule luck lost in a season | 10 | 7 |
-| Trade of the year: the season's trade that gained the most points | 20 | 7 |
-| Draft steal: a round-2 pick who becomes a top-50 scorer for the team | 15 | to check |
-| Franchise player: a player passes 5,000 points with the team | 10 | to check |
+  Any reward can have an `image` and a `caption`; a retired jersey with a
+  picture shows it in place of the drawn jersey, a moment above its text.
+  The build checks each row (enough honor through that season, an
+  eligible player, the picture there) and reports the rows it leaves out.
 
-Notes:
-- Calibrated on the data (2026-11-16): with the first six honors and the
-  streaks, past seasons give between 0 and 180 XP per franchise (Houston
-  180; Sacramento, Charlotte 120; New York, Chicago 115). Eight franchises
-  get nothing, which is why the list includes honors that a rebuilding or
-  unlucky team can earn: worst to first, upsets, hard luck, trades and
-  draft steals.
-- "Top score of a period" is not an honor: it happens every period.
-- The values live in one table in the pipeline (`pipeline/honors.py`), so
-  they can be tuned and the totals recomputed for every season.
-- An honor is earned once a season is final (or, for a streak or record
-  score, when it happens), and never taken away.
-
-### F3. XP and perks
-XP is the sum of a franchise's honors, minus what it has spent. The site
-is static (no logins, no server), so spending goes through the
-commissioner: an owner asks (chat or a Google Form), the commissioner
-adds a row to a **Perks** tab in the Google Sheet (or `pipeline/perks.json`
-in the repo), and the next build shows it. The pipeline checks each row
-(enough XP, the player is eligible) and keeps a ledger of what was earned
-and spent, shown on the franchise page.
-
-Perks (cheap to build, no effect on the competition):
-- **Retire a jersey** (Hall of Fame): the player's name and number on a
-  banner on the franchise page, and a mark on his player page. Rules: a
-  player who started at least 100 matchups or scored 5,000 points for the
-  franchise; one per season per franchise; no undoing. Cost: 100 XP, or
-  less for a player who has retired from the NBA, so legends go first.
-- **Franchise motto:** a line under the logo (moderated by the
-  commissioner). 20 XP.
-- **Declare a rival:** an official rivalry, shown on both pages and called
-  out in the Recap when they meet, alongside the worked-out rival. 30 XP.
-- **Feature a moment:** pin a game, trade or player season as "the
-  greatest moment" on the franchise page. 20 XP.
-- **Name a record:** the holder of an all-time record names it ("the
-  Houston 791"), shown in the record book. 40 XP.
-- **Recap shout-out:** a short message from the owner in the next Recap.
-  10 XP.
-- Not perks: anything that changes Fantrax (picks, budget, roster spots),
-  unless the league votes for it.
+### Next
+- Tune the values and costs with the league (at 6,000 the milestones still
+  add up: 67 x 10 is more than every title together; agreed for now).
+- Splits: win rate by month and before/after the All-Star break (period dates
+  are in `schedule.periods`).
+- Records held by the franchise, trade partners and its best trade (link to
+  the trade page), its season-by-season finishes.
+- `TeamName` links elsewhere (standings, Champions, head-to-head), like
+  `PlayerName`.
+- Retired jerseys marked on the player page; named records in the record
+  book (a possible reward).
+- Maybe: the rewards from a tab in the Google Sheet instead of the repo file,
+  so the commissioner doesn't need a PR.
 
 ### To decide (commissioner and league)
-- Does XP belong to the franchise or to its owner? Owners can change, and
-  the Lakers and Clippers swapped rosters in 2025-26. The site has no
-  owner names; a franchise → owner list (with dates) would be needed if XP
-  belongs to the owner.
-- Count past seasons? Proposed yes: everyone starts with their history,
-  and the first jerseys can be retired right away.
-- The values and costs above, the Hall of Fame rules, and who approves
-  spending (the commissioner alone, or a vote for jerseys).
-
-### Order
-1. **F1** (the page, today's data).
-2. **F2** (honors, with the trophy case and Recap lines). Useful on its
-   own, and it shows the league what XP would look like before anyone can
-   spend it.
-3. **F3** (XP and perks), once the questions above are settled. Retired
-   jerseys first.
+- Honor belongs to the franchise (as built). If it should follow the
+  owner, the site needs a franchise → owner list with dates.
+- Whether retiring a jersey needs a league vote.

@@ -89,6 +89,9 @@ trade item has its `result` (what the team got out of it) and `next` (what it di
 `data/players/trades.json` has every trade for the trade trees (`TradeTree.tsx`) and the trade page
 (Players → Trade, `?trade=<id>`; `lib/selected-trade.ts`, `TradePage.tsx`). `data/players/built.json`
 (`lineage._compute_built`) has how each team's current roster was built, for Players → Teams (`TeamBuilt.tsx`).
+`data/honor.json` (`pipeline/honor.py`, after the all-time files): each franchise's honor (achievements per season,
+values in `ACHIEVEMENTS`), rewards from `pipeline/data/honor_rewards.json` (checked; rows that fail are reported and left out; pictures in `stats-app/public/honor/`),
+legends, highlights and rivals, for History → Franchise (`?franchise=`; `lib/selected-franchise.ts`, `FranchisePage.tsx`).
 
 ### Metrics (`pipeline/league_data.py`)
 - **All-play strength**: in each scoring period (`Match` column; two per
@@ -115,7 +118,7 @@ JSON name their team under `Team`; every other key is a team name.
   `components/Dashboard.tsx` (seven sections: My Team, Recap, Standings (Table,
   Form, Playoffs), Season (Rank & luck, Points, Records), Matchups (Rivalry,
   All vs All, Luck, What if), Players (Leaders, Best periods, Teams, All-time, Player),
-  History (Champions, Franchises, Head to head, Records)) → `components/widgets/*`, each reading `useLeagueData()`, or
+  History (Franchise, Champions, Franchises, Head to head, Records)) → `components/widgets/*`, each reading `useLeagueData()`, or
   for History (every season, not the picked one) `useAllTime()` in
   `lib/alltime.ts`. Add a view to a section in `SECTIONS` rather than a new
   top-level tab.
