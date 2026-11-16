@@ -195,9 +195,11 @@ players" below).
   roster continuity ("Kept" in Teams).
 - Next:
   - Done: the player page's **career path** (lineage, section 3), with
-    draft picks as assets, trade results and trade trees. Next: a pick
-    page and a trade page of their own, and the lineage of a team's
-    current roster ("how this team was built").
+    draft picks as assets, trade results and trade trees.
+  - Next, in this order (details in section 3, "Next steps"):
+    1. **A page for each trade** (shareable by link).
+    2. **How this team was built** (Players → Teams).
+    3. Later: **fetch the transaction logs in the daily job**.
   - Note, not planned: franchises are matched by team name. In 2025-26 the
     Lakers and Clippers swapped rosters (each kept none of its own players).
     The commissioner told them beforehand that a mapping wouldn't be a
@@ -433,3 +435,33 @@ rosters:
    trade panel; `data/players/trades.json`), a pick page and a trade page of
    their own (not yet), and links from rosters and the
    record book. The player records above build on the same tables.
+
+### Next steps
+1. **A page for each trade.** Players → Trade, `?trade=<id>` (like
+   `?player=`), so a trade can be shared by link. It shows the date and the
+   season and period; each side's items, with what each got out of it (the
+   split bar and per-item points from the trade panel); and the trade tree
+   for every side. It is built from `data/players/trades.json`, which has
+   everything needed, so it needs no new pipeline work. Links to it: the
+   trade panel ("Open the trade"), each trade in the tree, and later the
+   record book (the biggest trades, the most lopsided ones). The
+   existing tree component is reused rather than copied.
+2. **How this team was built.** On Players → Teams: for the picked team,
+   one row per player on the current roster with how he got there
+   (drafted, with whose pick; signed; traded for, and in which trade), the
+   chain of trades behind him back to a draft or a signing (the tree run
+   backwards), and his points with the team. Plus a summary line, e.g.
+   "8 drafted, 5 traded for, 4 signed", and the trades that built the most
+   of today's points. This needs a reverse index (for each team and
+   player, the trade or move that brought him, and what the team gave up
+   for it). It can be computed on the site from `trades.json` and the
+   player pages, or written by `lineage.py` per team (smaller; preferred).
+3. **Fetch the transaction logs in the daily job (later).**
+   `analysis/fetch_transactions.py` is run by hand today, so moves since
+   the last run are missing, and a player traded since then shows as
+   "Not in the transaction log" once the rosters update. Move the fetch
+   into the pipeline (`refresh-data.yml`, with the `FANTRAX_COOKIE`
+   secret). Fetch only the current season's logs and draft (finished
+   seasons don't change), and commit the CSVs only when they change, like
+   the player cache. It takes about 2 minutes for every season; the
+   current one alone takes seconds.
