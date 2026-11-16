@@ -211,11 +211,11 @@ def _top_periods(df: pd.DataFrame, n: int) -> list[dict]:
     return [_performance(row) for row in df.head(n).itertuples()]
 
 
-def _leaders(active: pd.DataFrame, n: int, by: tuple[str, ...] = ('player_id',), pay: pd.DataFrame | None = None) -> list[dict]:
+def _leaders(active: pd.DataFrame, n: int | None, by: tuple[str, ...] = ('player_id',), pay: pd.DataFrame | None = None) -> list[dict]:
     """Points scored in lineups, per player (or per `by`, e.g. season and player): the top `n`, with the
     teams in the order the player scored for them, starts (periods in a lineup), games played in them, and
     for several seasons the number of seasons. With `pay` (season_salary or salary_paid rows), also the
-    salary (summed over the same keys: pass rows for the same teams and seasons as `active`)."""
+    salary (summed over the same keys: pass rows for the same teams and seasons as `active`). `n` None: all."""
     if active.empty:
         return []
     order = [k for k in ('season', 'period') if k in active.columns]
@@ -231,7 +231,9 @@ def _leaders(active: pd.DataFrame, n: int, by: tuple[str, ...] = ('player_id',),
     })
     if pay is not None:
         table['salary'] = pay.groupby(list(by))['paid'].sum().reindex(table.index).fillna(0.0)
-    table = table.reset_index().sort_values(['points', 'player'], ascending=[False, True], kind='stable').head(n)
+    table = table.reset_index().sort_values(['points', 'player'], ascending=[False, True], kind='stable')
+    if n is not None:
+        table = table.head(n)
     leaders = []
     for row in table.itertuples():
         entry = {key: getattr(row, key) for key in by}
@@ -361,7 +363,8 @@ def _records(active: pd.DataFrame, top_n: int, salaries: pd.DataFrame, pay: pd.D
     return {
         'best_periods': _top_periods(active, top_n),
         'best_seasons': _leaders(active, top_n, by=('season', 'player_id'), pay=salaries),
-        'career': _leaders(active, top_n, pay=salaries),
+        # Every player with a start: the site sorts and filters it (Career leaders)
+        'career': _leaders(active, None, pay=salaries),
         'franchises': {team: [{k: v for k, v in p.items() if k != 'teams'}
                               for p in _leaders(mine, FRANCHISE_TOP_N, pay=pay[pay['team'] == team])]
                        for team, mine in sorted(active.groupby('team'), key=lambda t: t[0])},
@@ -375,7 +378,7 @@ def compute_alltime_players(seasons: list[tuple[str, pd.DataFrame, set[int], set
     - best_periods, best_bench: the biggest single-period scores ever, in a
       lineup and on a bench (regular season).
     - best_seasons: a player's points in one regular season (every team).
-    - career: regular-season points over every season, with the seasons
+    - career: regular-season points over every season, for every player with a start (the site sorts it), with the seasons
       and teams.
     - franchises: per team, its all-time top scorers (points for that team).
     - with_playoffs: best_periods, best_seasons, career and franchises again,
