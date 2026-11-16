@@ -62,6 +62,7 @@ import fantrax
 import lineage
 import players
 from alltime import compute_alltime
+import prestige
 from league_data import compute_league, load_games, sheet_csv_url
 
 SEASONS_CONFIG = Path(__file__).resolve().parent / 'seasons.json'
@@ -216,6 +217,35 @@ def write_alltime(config: dict, out: Path) -> None:
         path.write_text(data)
 
 
+def write_prestige(config: dict, out: Path) -> None:
+    """data/prestige.json (prestige.py): each franchise's honors and prestige by season, its rewards, legends,
+    highlights and rivals; from the season files, data/alltime.json, the player cache (regular-season lineup
+    points) and pipeline/data/prestige_rewards.json. Reward rows that don't pass are reported, not written."""
+    path = out / 'alltime.json'
+    if not path.exists():
+        return
+    alltime = json.loads(path.read_text())
+    files = {s['id']: json.loads(season_path(out, s['id']).read_text())
+             for s in config['seasons'] if season_path(out, s['id']).exists()}
+    frames = []
+    for s in config['seasons']:
+        meta_path = out / 'players' / f'{s["id"]}.json'
+        if not meta_path.exists() or not players.cache_path(s['id']).exists():
+            continue
+        regular = set(json.loads(meta_path.read_text())['meta']['regular_periods'])
+        rows = players.read_cache(s['id'])
+        rows = rows[(rows['status'] == 'active') & rows['period'].isin(regular)]
+        frames.append(rows.groupby(['team', 'player_id'])
+                      .agg(player=('player', 'last'), points=('fpts', 'sum'), starts=('fpts', 'size'))
+                      .reset_index().assign(season=s['id']))
+    points = (pd.concat(frames, ignore_index=True) if frames
+              else pd.DataFrame(columns=['season', 'team', 'player_id', 'player', 'points', 'starts']))
+    data, problems = prestige.compute_prestige(alltime, files, points, prestige.read_rewards())
+    for problem in problems:
+        print(f'Prestige: {problem}; left out.', file=sys.stderr)
+    _write_if_changed(out / 'prestige.json', to_json(data))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--season', help='build only this season, or several comma-separated '
@@ -273,6 +303,7 @@ def main() -> None:
     write_alltime(config, args.out)
     if not args.no_players and not args.source:
         write_players_alltime(config, args.out)
+    write_prestige(config, args.out)
     if failed:
         sys.exit(f'Failed: {", ".join(failed)}')
 
