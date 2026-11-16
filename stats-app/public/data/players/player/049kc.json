@@ -1,7 +1,7 @@
 {
   "player_id": "049kc",
   "player": "Malik Monk",
-  "salary": 34811423,
+  "salary": 34925059,
   "seasons": [
     {
       "season": "2019-20",
@@ -174,16 +174,16 @@
     {
       "season": "2026-27",
       "team": "Orlando Magic",
-      "periods": 4,
-      "starts": 4,
-      "gp": 6,
-      "points": 121.25,
+      "periods": 5,
+      "starts": 5,
+      "gp": 8,
+      "points": 174.75,
       "bench_points": 0.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 3750000,
       "contract": "REG1",
-      "paid": 454545
+      "paid": 568182
     }
   ],
   "best_periods": [
@@ -439,15 +439,88 @@
       "from": "New Orleans Pelicans",
       "team": "Orlando Magic",
       "trade": "cg5cj2c3mvrtprrr",
-      "periods": 4,
-      "starts": 4,
-      "gp": 6,
-      "points": 121.25,
+      "periods": 5,
+      "starts": 5,
+      "gp": 8,
+      "points": 174.75,
       "salary": 3750000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "cg5cj2c3mvrtprrr": {
+      "date": "2026-10-29",
+      "season": "2026-27",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Orlando Magic",
+          "player_id": "049kc",
+          "player": "Malik Monk",
+          "label": "Malik Monk",
+          "result": {
+            "points": 174.75,
+            "starts": 5,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Orlando Magic",
+          "player_id": "06218",
+          "player": "Jeremy Sochan",
+          "label": "Jeremy Sochan",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 2,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "6nant226mw3ba0hy"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Orlando Magic",
+          "label": "2027 round 1 pick (Los Angeles Clippers)"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "New Orleans Pelicans",
+          "player_id": "06mll",
+          "player": "Jaylen Wells",
+          "label": "Jaylen Wells",
+          "result": {
+            "points": 160.75,
+            "starts": 5,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "New Orleans Pelicans",
+          "label": "2028 round 2 pick (Orlando Magic)"
+        }
+      ]
+    },
     "54y895i8km7uoi1b": {
       "date": "2021-03-13",
       "season": "2020-21",
@@ -581,49 +654,70 @@
         }
       ]
     },
-    "8m8gf5vokvw10rar": {
-      "date": "2021-11-12",
-      "season": "2021-22",
+    "r48yvwa7m3ijl7dc": {
+      "date": "2024-11-15",
+      "season": "2024-25",
       "period": 8,
       "items": [
         {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Orlando Magic",
-          "label": "2022 round 2 pick (Milwaukee Bucks)",
-          "became": {
-            "season": "2022-23",
-            "round": 2,
-            "pick": 8,
-            "overall": 38,
-            "player_id": "0621z",
-            "player": "Gabriele Procida",
-            "certain": false
+          "kind": "player",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "player_id": "04qsm",
+          "player": "De'Anthony Melton",
+          "label": "De'Anthony Melton",
+          "result": {
+            "points": 555.25,
+            "starts": 19,
+            "gp": 23,
+            "periods": 59,
+            "ongoing": false
           },
           "next": {
-            "trade": "0j9wja8ekwrzezvl"
+            "dropped": "2026-04-03"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 2 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "06v7z",
+            "player": "Sion James",
+            "certain": true
           },
           "result": {
-            "traded_on": true,
-            "drafted_by": "Dallas Mavericks"
+            "points": 64.5,
+            "starts": 3,
+            "gp": 5,
+            "periods": 41,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
           }
         },
         {
           "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
+          "from": "San Antonio Spurs",
+          "to": "Dallas Mavericks",
           "player_id": "049kc",
           "player": "Malik Monk",
           "label": "Malik Monk",
           "result": {
-            "points": 956.5,
-            "starts": 20,
-            "gp": 35,
-            "periods": 26,
+            "points": 2003.5,
+            "starts": 36,
+            "gp": 61,
+            "periods": 59,
             "ongoing": false
           },
           "next": {
-            "dropped": "2022-05-24"
+            "dropped": "2026-07-16"
           }
         }
       ]
@@ -707,147 +801,6 @@
           },
           "next": {
             "dropped": "2026-07-27"
-          }
-        }
-      ]
-    },
-    "cg5cj2c3mvrtprrr": {
-      "date": "2026-10-29",
-      "season": "2026-27",
-      "period": 4,
-      "items": [
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Orlando Magic",
-          "player_id": "049kc",
-          "player": "Malik Monk",
-          "label": "Malik Monk",
-          "result": {
-            "points": 121.25,
-            "starts": 4,
-            "gp": 6,
-            "periods": 4,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Orlando Magic",
-          "player_id": "06218",
-          "player": "Jeremy Sochan",
-          "label": "Jeremy Sochan",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 2,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "6nant226mw3ba0hy"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "New Orleans Pelicans",
-          "to": "Orlando Magic",
-          "label": "2027 round 1 pick (Los Angeles Clippers)"
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "New Orleans Pelicans",
-          "player_id": "06mll",
-          "player": "Jaylen Wells",
-          "label": "Jaylen Wells",
-          "result": {
-            "points": 117.5,
-            "starts": 4,
-            "gp": 6,
-            "periods": 4,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Orlando Magic",
-          "to": "New Orleans Pelicans",
-          "label": "2028 round 2 pick (Orlando Magic)"
-        }
-      ]
-    },
-    "r48yvwa7m3ijl7dc": {
-      "date": "2024-11-15",
-      "season": "2024-25",
-      "period": 8,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Dallas Mavericks",
-          "to": "San Antonio Spurs",
-          "player_id": "04qsm",
-          "player": "De'Anthony Melton",
-          "label": "De'Anthony Melton",
-          "result": {
-            "points": 555.25,
-            "starts": 19,
-            "gp": 23,
-            "periods": 59,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-04-03"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Dallas Mavericks",
-          "to": "San Antonio Spurs",
-          "label": "2025 round 2 pick (Dallas Mavericks)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 23,
-            "overall": 53,
-            "player_id": "06v7z",
-            "player": "Sion James",
-            "certain": true
-          },
-          "result": {
-            "points": 64.5,
-            "starts": 3,
-            "gp": 5,
-            "periods": 40,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Dallas Mavericks",
-          "player_id": "049kc",
-          "player": "Malik Monk",
-          "label": "Malik Monk",
-          "result": {
-            "points": 2003.5,
-            "starts": 36,
-            "gp": 61,
-            "periods": 59,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-07-16"
           }
         }
       ]
@@ -988,6 +941,53 @@
           }
         }
       ]
+    },
+    "8m8gf5vokvw10rar": {
+      "date": "2021-11-12",
+      "season": "2021-22",
+      "period": 8,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "label": "2022 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "0621z",
+            "player": "Gabriele Procida",
+            "certain": false
+          },
+          "next": {
+            "trade": "0j9wja8ekwrzezvl"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "049kc",
+          "player": "Malik Monk",
+          "label": "Malik Monk",
+          "result": {
+            "points": 956.5,
+            "starts": 20,
+            "gp": 35,
+            "periods": 26,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        }
+      ]
     }
   },
   "axis": [
@@ -1028,7 +1028,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

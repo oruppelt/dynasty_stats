@@ -1,7 +1,7 @@
 {
   "player_id": "05uj1",
   "player": "Cameron Thomas",
-  "salary": 29356244,
+  "salary": 29553214,
   "seasons": [
     {
       "season": "2021-22",
@@ -90,7 +90,7 @@
     {
       "season": "2026-27",
       "team": "Chicago Bulls",
-      "periods": 7,
+      "periods": 8,
       "starts": 0,
       "gp": 0,
       "points": 0.0,
@@ -99,7 +99,7 @@
       "playoff_points": 0.0,
       "salary": 6500000,
       "contract": "REG1",
-      "paid": 1378788
+      "paid": 1575758
     }
   ],
   "best_periods": [
@@ -261,7 +261,7 @@
       "date": "2025-08-17",
       "team": "Chicago Bulls",
       "bid": 0.0,
-      "periods": 40,
+      "periods": 41,
       "starts": 15,
       "gp": 22,
       "points": 443.0,
@@ -270,45 +270,87 @@
     }
   ],
   "trades": {
-    "mw0a5mbolcni2s2m": {
-      "date": "2023-01-08",
-      "season": "2022-23",
-      "period": 25,
+    "fiikeg54jxapkyle": {
+      "date": "2019-06-24",
+      "season": "2019-20",
+      "period": 1,
       "items": [
         {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Boston Celtics",
-          "player_id": "05uj1",
-          "player": "Cameron Thomas",
-          "label": "Cameron Thomas",
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2019 round 2 pick, no. 24"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2019 round 2 pick, no. 19",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "051pi",
+            "player": "Daniel Gafford",
+            "certain": false
+          },
           "result": {
-            "points": 1433.5,
-            "starts": 27,
+            "points": 694.0,
+            "starts": 29,
             "gp": 44,
-            "periods": 41,
+            "periods": 55,
             "ongoing": false
           },
           "next": {
-            "dropped": "2024-07-26"
+            "trade": "j0tyig71km80p9oa"
           }
         },
         {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Atlanta Hawks",
-          "player_id": "03r7e",
-          "player": "Cameron Payne",
-          "label": "Cameron Payne",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 9,
-            "ongoing": false
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Denver Nuggets)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "05ujt",
+            "player": "Aaron Wiggins",
+            "certain": true
           },
           "next": {
-            "dropped": "2023-05-06"
+            "dropped": "2023-10-24"
+          },
+          "result": {
+            "points": 537.0,
+            "starts": 25,
+            "gp": 35,
+            "periods": 66,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2021 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "05uj1",
+            "player": "Cameron Thomas",
+            "certain": true
+          },
+          "next": {
+            "trade": "mrggfdnik2gldpms"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Atlanta Hawks"
           }
         }
       ]
@@ -476,87 +518,45 @@
         }
       ]
     },
-    "fiikeg54jxapkyle": {
-      "date": "2019-06-24",
-      "season": "2019-20",
-      "period": 1,
+    "mw0a5mbolcni2s2m": {
+      "date": "2023-01-08",
+      "season": "2022-23",
+      "period": 25,
       "items": [
         {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Golden State Warriors",
-          "label": "2019 round 2 pick, no. 24"
-        },
-        {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Golden State Warriors",
-          "label": "2019 round 2 pick, no. 19",
-          "became": {
-            "season": "2019-20",
-            "round": 2,
-            "pick": 19,
-            "overall": 49,
-            "player_id": "051pi",
-            "player": "Daniel Gafford",
-            "certain": false
-          },
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Boston Celtics",
+          "player_id": "05uj1",
+          "player": "Cameron Thomas",
+          "label": "Cameron Thomas",
           "result": {
-            "points": 694.0,
-            "starts": 29,
+            "points": 1433.5,
+            "starts": 27,
             "gp": 44,
-            "periods": 55,
+            "periods": 41,
             "ongoing": false
           },
           "next": {
-            "trade": "j0tyig71km80p9oa"
+            "dropped": "2024-07-26"
           }
         },
         {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Golden State Warriors",
-          "label": "2021 round 2 pick (Denver Nuggets)",
-          "became": {
-            "season": "2021-22",
-            "round": 2,
-            "pick": 23,
-            "overall": 53,
-            "player_id": "05ujt",
-            "player": "Aaron Wiggins",
-            "certain": true
-          },
-          "next": {
-            "dropped": "2023-10-24"
-          },
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Atlanta Hawks",
+          "player_id": "03r7e",
+          "player": "Cameron Payne",
+          "label": "Cameron Payne",
           "result": {
-            "points": 537.0,
-            "starts": 25,
-            "gp": 35,
-            "periods": 66,
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 9,
             "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Denver Nuggets",
-          "label": "2021 round 1 pick (Golden State Warriors)",
-          "became": {
-            "season": "2021-22",
-            "round": 1,
-            "pick": 21,
-            "overall": 21,
-            "player_id": "05uj1",
-            "player": "Cameron Thomas",
-            "certain": true
           },
           "next": {
-            "trade": "mrggfdnik2gldpms"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Atlanta Hawks"
+            "dropped": "2023-05-06"
           }
         }
       ]
@@ -781,7 +781,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

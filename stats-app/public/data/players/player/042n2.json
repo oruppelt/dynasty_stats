@@ -1,7 +1,7 @@
 {
   "player_id": "042n2",
   "player": "Kris Dunn",
-  "salary": 14085921,
+  "salary": 14116224,
   "seasons": [
     {
       "season": "2019-20",
@@ -132,16 +132,16 @@
     {
       "season": "2026-27",
       "team": "Memphis Grizzlies",
-      "periods": 7,
-      "starts": 5,
-      "gp": 8,
-      "points": 264.5,
+      "periods": 8,
+      "starts": 6,
+      "gp": 10,
+      "points": 296.75,
       "bench_points": 53.75,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 1000000,
       "contract": "REG1",
-      "paid": 212121
+      "paid": 242424
     }
   ],
   "best_periods": [
@@ -407,15 +407,86 @@
       "date": "2026-08-13",
       "team": "Memphis Grizzlies",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 5,
-      "gp": 8,
-      "points": 264.5,
+      "periods": 8,
+      "starts": 6,
+      "gp": 10,
+      "points": 296.75,
       "salary": 1000000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "nbjmzd7vkph0fax8": {
+      "date": "2021-06-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "fb2os3htkt2umczx"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "label": "2023 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06cc2",
+            "player": "Gradey Dick",
+            "certain": true
+          },
+          "next": {
+            "trade": "hbk0cwdukwl4dkmr"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Orlando Magic"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "player_id": "042n2",
+          "player": "Kris Dunn",
+          "label": "Kris Dunn",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-08-18"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick, no. 4"
+        }
+      ]
+    },
     "e3vz5ltfmkkuep3d": {
       "date": "2026-01-19",
       "season": "2025-26",
@@ -461,6 +532,49 @@
           },
           "next": {
             "dropped": "2026-07-04"
+          }
+        }
+      ]
+    },
+    "fo7scs77kpgwrgb1": {
+      "date": "2021-06-03",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Sacramento Kings",
+          "player_id": "042n2",
+          "player": "Kris Dunn",
+          "label": "Kris Dunn",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "nbjmzd7vkph0fax8"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Denver Nuggets",
+          "player_id": "027pg",
+          "player": "Bojan Bogdanovic",
+          "label": "Bojan Bogdanovic",
+          "result": {
+            "points": 1511.5,
+            "starts": 32,
+            "gp": 52,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
           }
         }
       ]
@@ -560,7 +674,7 @@
             "points": 232.0,
             "starts": 17,
             "gp": 20,
-            "periods": 40,
+            "periods": 41,
             "ongoing": true
           },
           "next": {
@@ -697,128 +811,14 @@
             "certain": true
           },
           "result": {
-            "points": 510.0,
-            "starts": 19,
-            "gp": 33,
-            "periods": 40,
+            "points": 566.75,
+            "starts": 20,
+            "gp": 34,
+            "periods": 41,
             "ongoing": true
           },
           "next": {
             "kept": true
-          }
-        }
-      ]
-    },
-    "nbjmzd7vkph0fax8": {
-      "date": "2021-06-03",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Sacramento Kings",
-          "player_id": "03apx",
-          "player": "Gary Harris",
-          "label": "Gary Harris",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "fb2os3htkt2umczx"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Sacramento Kings",
-          "label": "2023 round 1 pick (Boston Celtics)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 14,
-            "overall": 14,
-            "player_id": "06cc2",
-            "player": "Gradey Dick",
-            "certain": true
-          },
-          "next": {
-            "trade": "hbk0cwdukwl4dkmr"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Orlando Magic"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Boston Celtics",
-          "player_id": "042n2",
-          "player": "Kris Dunn",
-          "label": "Kris Dunn",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2021-08-18"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Boston Celtics",
-          "label": "2021 round 2 pick, no. 4"
-        }
-      ]
-    },
-    "fo7scs77kpgwrgb1": {
-      "date": "2021-06-03",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Denver Nuggets",
-          "to": "Sacramento Kings",
-          "player_id": "042n2",
-          "player": "Kris Dunn",
-          "label": "Kris Dunn",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "nbjmzd7vkph0fax8"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Denver Nuggets",
-          "player_id": "027pg",
-          "player": "Bojan Bogdanovic",
-          "label": "Bojan Bogdanovic",
-          "result": {
-            "points": 1511.5,
-            "starts": 32,
-            "gp": 52,
-            "periods": 33,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2022-07-23"
           }
         }
       ]
@@ -862,7 +862,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "player_id": "042n6",
   "player": "Jakob Poeltl",
-  "salary": 68524523,
+  "salary": 68691189,
   "seasons": [
     {
       "season": "2019-20",
@@ -132,16 +132,16 @@
     {
       "season": "2026-27",
       "team": "Utah Jazz",
-      "periods": 7,
+      "periods": 8,
       "starts": 3,
       "gp": 6,
       "points": 134.5,
-      "bench_points": 104.75,
+      "bench_points": 127.5,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 5500000,
       "contract": "REG1",
-      "paid": 1166667
+      "paid": 1333333
     }
   ],
   "best_periods": [
@@ -346,7 +346,7 @@
       "date": "2026-08-16",
       "team": "Utah Jazz",
       "bid": 0.0,
-      "periods": 7,
+      "periods": 8,
       "starts": 3,
       "gp": 6,
       "points": 134.5,
@@ -355,6 +355,49 @@
     }
   ],
   "trades": {
+    "9tqg23wsloqss3ux": {
+      "date": "2023-11-09",
+      "season": "2023-24",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Memphis Grizzlies",
+          "player_id": "042n6",
+          "player": "Jakob Poeltl",
+          "label": "Jakob Poeltl",
+          "result": {
+            "points": 1150.25,
+            "starts": 22,
+            "gp": 34,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-04-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03e6s",
+          "player": "Clint Capela",
+          "label": "Clint Capela",
+          "result": {
+            "points": 2170.75,
+            "starts": 42,
+            "gp": 66,
+            "periods": 45,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "f545zgb6m50zzjc9"
+          }
+        }
+      ]
+    },
     "yxvp53afloof4sef": {
       "date": "2023-11-07",
       "season": "2023-24",
@@ -603,49 +646,6 @@
           }
         }
       ]
-    },
-    "9tqg23wsloqss3ux": {
-      "date": "2023-11-09",
-      "season": "2023-24",
-      "period": 6,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Memphis Grizzlies",
-          "player_id": "042n6",
-          "player": "Jakob Poeltl",
-          "label": "Jakob Poeltl",
-          "result": {
-            "points": 1150.25,
-            "starts": 22,
-            "gp": 34,
-            "periods": 27,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-04-25"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Cleveland Cavaliers",
-          "player_id": "03e6s",
-          "player": "Clint Capela",
-          "label": "Clint Capela",
-          "result": {
-            "points": 2170.75,
-            "starts": 42,
-            "gp": 66,
-            "periods": 45,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "f545zgb6m50zzjc9"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -686,7 +686,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

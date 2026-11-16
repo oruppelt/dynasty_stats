@@ -1,7 +1,7 @@
 {
   "player_id": "06mk7",
   "player": "Kel'el Ware",
-  "salary": 5674091,
+  "salary": 5751818,
   "seasons": [
     {
       "season": "2024-25",
@@ -34,16 +34,16 @@
     {
       "season": "2026-27",
       "team": "San Antonio Spurs",
-      "periods": 7,
-      "starts": 7,
-      "gp": 12,
-      "points": 261.0,
+      "periods": 8,
+      "starts": 8,
+      "gp": 14,
+      "points": 330.75,
       "bench_points": 0.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 2565000,
       "contract": "R11",
-      "paid": 544091
+      "paid": 621818
     }
   ],
   "best_periods": [
@@ -148,15 +148,101 @@
       "overall": 12,
       "original": "Philadelphia 76ers",
       "certain": true,
-      "periods": 73,
-      "starts": 57,
-      "gp": 82,
-      "points": 2429.0,
+      "periods": 74,
+      "starts": 58,
+      "gp": 84,
+      "points": 2498.75,
       "salary": 2565000,
       "contract": "R13"
     }
   ],
   "trades": {
+    "xqm77aorlrs4fy0j": {
+      "date": "2024-01-24",
+      "season": "2023-24",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Washington Wizards",
+          "player_id": "01uyj",
+          "player": "Paul George",
+          "label": "Paul George",
+          "result": {
+            "points": 1577.75,
+            "starts": 29,
+            "gp": 41,
+            "periods": 38,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-08"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "San Antonio Spurs",
+          "player_id": "02nf3",
+          "player": "Bradley Beal",
+          "label": "Bradley Beal",
+          "result": {
+            "points": 1551.25,
+            "starts": 37,
+            "gp": 46,
+            "periods": 38,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "San Antonio Spurs",
+          "player_id": "06cd4",
+          "player": "Toumani Camara",
+          "label": "Toumani Camara",
+          "result": {
+            "points": 3342.5,
+            "starts": 70,
+            "gp": 115,
+            "periods": 71,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "06mk7",
+            "player": "Kel'el Ware",
+            "certain": true
+          },
+          "result": {
+            "points": 2498.75,
+            "starts": 58,
+            "gp": 84,
+            "periods": 74,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
     "zkwyiotnl656dftt": {
       "date": "2022-07-28",
       "season": "2022-23",
@@ -236,92 +322,6 @@
           "result": {
             "traded_on": true,
             "drafted_by": "San Antonio Spurs"
-          }
-        }
-      ]
-    },
-    "xqm77aorlrs4fy0j": {
-      "date": "2024-01-24",
-      "season": "2023-24",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Washington Wizards",
-          "player_id": "01uyj",
-          "player": "Paul George",
-          "label": "Paul George",
-          "result": {
-            "points": 1577.75,
-            "starts": 29,
-            "gp": 41,
-            "periods": 38,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2025-08-08"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "San Antonio Spurs",
-          "player_id": "02nf3",
-          "player": "Bradley Beal",
-          "label": "Bradley Beal",
-          "result": {
-            "points": 1551.25,
-            "starts": 37,
-            "gp": 46,
-            "periods": 38,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2025-06-25"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "San Antonio Spurs",
-          "player_id": "06cd4",
-          "player": "Toumani Camara",
-          "label": "Toumani Camara",
-          "result": {
-            "points": 3342.5,
-            "starts": 70,
-            "gp": 115,
-            "periods": 71,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-08-06"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Washington Wizards",
-          "to": "San Antonio Spurs",
-          "label": "2024 round 1 pick (Philadelphia 76ers)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 12,
-            "overall": 12,
-            "player_id": "06mk7",
-            "player": "Kel'el Ware",
-            "certain": true
-          },
-          "result": {
-            "points": 2429.0,
-            "starts": 57,
-            "gp": 82,
-            "periods": 73,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
           }
         }
       ]
@@ -571,7 +571,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

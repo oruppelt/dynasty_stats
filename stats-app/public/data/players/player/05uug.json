@@ -1,7 +1,7 @@
 {
   "player_id": "05uug",
   "player": "Sam Hauser",
-  "salary": 7222394,
+  "salary": 7289879,
   "seasons": [
     {
       "season": "2021-22",
@@ -146,16 +146,16 @@
     {
       "season": "2026-27",
       "team": "Los Angeles Clippers",
-      "periods": 7,
-      "starts": 5,
-      "gp": 10,
-      "points": 199.0,
+      "periods": 8,
+      "starts": 6,
+      "gp": 11,
+      "points": 221.0,
       "bench_points": 39.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 2227000,
       "contract": "REG1",
-      "paid": 472394
+      "paid": 539879
     }
   ],
   "best_periods": [
@@ -356,15 +356,123 @@
       "date": "2026-08-16",
       "team": "Los Angeles Clippers",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 5,
-      "gp": 10,
-      "points": 199.0,
+      "periods": 8,
+      "starts": 6,
+      "gp": 11,
+      "points": 221.0,
       "salary": 2227000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "de5pkn4ykyik1gb0": {
+      "date": "2022-01-17",
+      "season": "2021-22",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "Sacramento Kings",
+          "player_id": "051oh",
+          "player": "Zion Williamson",
+          "label": "Zion Williamson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "k259h001kyir0iw1"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser",
+          "result": {
+            "points": 209.75,
+            "starts": 6,
+            "gp": 11,
+            "periods": 63,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "w77iv92nlraibgpv"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "player_id": "05qsn",
+          "player": "Malachi Flynn",
+          "label": "Malachi Flynn",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 25,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "o7egut5nlbsb9x0e"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "label": "2023 round 2 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06cdg",
+            "player": "Maxwell Lewis",
+            "certain": true
+          },
+          "next": {
+            "trade": "0x33e8dqljebq4sl"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Utah Jazz"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Chicago Bulls",
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 56,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "w77iv92nlraibgpv"
+          }
+        }
+      ]
+    },
     "9colormomhexsfi3": {
       "date": "2025-10-31",
       "season": "2025-26",
@@ -493,197 +601,6 @@
           "result": {
             "traded_on": true,
             "drafted_by": "Portland Trail Blazers"
-          }
-        }
-      ]
-    },
-    "de5pkn4ykyik1gb0": {
-      "date": "2022-01-17",
-      "season": "2021-22",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "Sacramento Kings",
-          "player_id": "051oh",
-          "player": "Zion Williamson",
-          "label": "Zion Williamson",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "k259h001kyir0iw1"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Chicago Bulls",
-          "player_id": "05uug",
-          "player": "Sam Hauser",
-          "label": "Sam Hauser",
-          "result": {
-            "points": 209.75,
-            "starts": 6,
-            "gp": 11,
-            "periods": 63,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "w77iv92nlraibgpv"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Chicago Bulls",
-          "player_id": "05qsn",
-          "player": "Malachi Flynn",
-          "label": "Malachi Flynn",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 25,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "o7egut5nlbsb9x0e"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Chicago Bulls",
-          "label": "2023 round 2 pick (Philadelphia 76ers)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 9,
-            "overall": 39,
-            "player_id": "06cdg",
-            "player": "Maxwell Lewis",
-            "certain": true
-          },
-          "next": {
-            "trade": "0x33e8dqljebq4sl"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Utah Jazz"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Chicago Bulls",
-          "label": "2022 round 2 pick (Sacramento Kings)",
-          "became": {
-            "season": "2022-23",
-            "round": 2,
-            "pick": 5,
-            "overall": 35,
-            "player_id": "0621r",
-            "player": "Patrick Baldwin",
-            "certain": false
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 56,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "w77iv92nlraibgpv"
-          }
-        }
-      ]
-    },
-    "9b0henoykwl4z069": {
-      "date": "2021-11-29",
-      "season": "2021-22",
-      "period": 13,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Sacramento Kings",
-          "player_id": "05qst",
-          "player": "Paul Reed",
-          "label": "Paul Reed",
-          "result": {
-            "points": 23.75,
-            "starts": 10,
-            "gp": 4,
-            "periods": 14,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "dnueejgokyiqqlz5"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Sacramento Kings",
-          "player_id": "05uug",
-          "player": "Sam Hauser",
-          "label": "Sam Hauser",
-          "result": {
-            "points": 16.75,
-            "starts": 6,
-            "gp": 4,
-            "periods": 14,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "de5pkn4ykyik1gb0"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Boston Celtics",
-          "player_id": "051oy",
-          "player": "Goga Bitadze",
-          "label": "Goga Bitadze",
-          "result": {
-            "points": 3.0,
-            "starts": 3,
-            "gp": 1,
-            "periods": 15,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "ejtia2dekyj5hjpw"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Boston Celtics",
-          "label": "2023 round 2 pick (San Antonio Spurs)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 28,
-            "overall": 58,
-            "player_id": "06cen",
-            "player": "Caleb Daniels",
-            "certain": true
-          },
-          "next": {
-            "trade": "ejtia2dekyj5hjpw"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Miami Heat"
           }
         }
       ]
@@ -828,6 +745,89 @@
           }
         }
       ]
+    },
+    "9b0henoykwl4z069": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed",
+          "result": {
+            "points": 23.75,
+            "starts": 10,
+            "gp": 4,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "dnueejgokyiqqlz5"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser",
+          "result": {
+            "points": 16.75,
+            "starts": 6,
+            "gp": 4,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "de5pkn4ykyik1gb0"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "player_id": "051oy",
+          "player": "Goga Bitadze",
+          "label": "Goga Bitadze",
+          "result": {
+            "points": 3.0,
+            "starts": 3,
+            "gp": 1,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ejtia2dekyj5hjpw"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "label": "2023 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06cen",
+            "player": "Caleb Daniels",
+            "certain": true
+          },
+          "next": {
+            "trade": "ejtia2dekyj5hjpw"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
+          }
+        }
+      ]
     }
   },
   "axis": [
@@ -858,7 +858,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

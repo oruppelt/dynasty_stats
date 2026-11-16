@@ -1,13 +1,13 @@
 {
   "player_id": "076t4",
   "player": "Ebuka Okorie",
-  "salary": 324545,
+  "salary": 370909,
   "seasons": [
     {
       "season": "2026-27",
       "team": "Orlando Magic",
-      "periods": 7,
-      "starts": 1,
+      "periods": 8,
+      "starts": 2,
       "gp": 1,
       "points": 5.25,
       "bench_points": 11.5,
@@ -15,7 +15,7 @@
       "playoff_points": 0.0,
       "salary": 1530000,
       "contract": "R13",
-      "paid": 324545
+      "paid": 370909
     }
   ],
   "best_periods": [
@@ -27,6 +27,16 @@
       "player": "Ebuka Okorie",
       "fpts": 5.25,
       "gp": 1,
+      "playoffs": false
+    },
+    {
+      "season": "2026-27",
+      "period": 8,
+      "team": "Orlando Magic",
+      "player_id": "076t4",
+      "player": "Ebuka Okorie",
+      "fpts": 0.0,
+      "gp": 0,
       "playoffs": false
     }
   ],
@@ -93,8 +103,8 @@
       "from": "Philadelphia 76ers",
       "team": "Orlando Magic",
       "trade": "eah3rh8omsuevyv0",
-      "periods": 7,
-      "starts": 1,
+      "periods": 8,
+      "starts": 2,
       "gp": 1,
       "points": 5.25,
       "salary": 1530000,
@@ -102,77 +112,23 @@
     }
   ],
   "trades": {
-    "eah3rh8omsuevyv0": {
-      "date": "2026-08-15",
+    "zlfnl31gmqt85aw1": {
+      "date": "2026-06-25",
       "season": "2026-27",
       "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Philadelphia 76ers",
-          "player_id": "06216",
-          "player": "Shaedon Sharpe",
-          "label": "Shaedon Sharpe",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "player_id": "06v8b",
+          "player": "Rocco Zikarsky",
+          "label": "Rocco Zikarsky",
           "result": {
             "points": 0.0,
             "starts": 0,
             "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Philadelphia 76ers",
-          "player_id": "05qtr",
-          "player": "Devin Vassell",
-          "label": "Devin Vassell",
-          "result": {
-            "points": 319.25,
-            "starts": 7,
-            "gp": 10,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Orlando Magic",
-          "player_id": "04azw",
-          "player": "Lauri Markkanen",
-          "label": "Lauri Markkanen",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "d3urdettmsz0jqra"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Orlando Magic",
-          "player_id": "076t4",
-          "player": "Ebuka Okorie",
-          "label": "Ebuka Okorie",
-          "result": {
-            "points": 5.25,
-            "starts": 1,
-            "gp": 1,
-            "periods": 7,
+            "periods": 8,
             "ongoing": true
           },
           "next": {
@@ -181,9 +137,104 @@
         },
         {
           "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Orlando Magic",
-          "label": "2027 round 1 pick (New Orleans Pelicans)"
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "label": "2026 round 2 pick, no. 24",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5j",
+          "player": "Jase Richardson",
+          "label": "Jase Richardson",
+          "result": {
+            "points": 147.5,
+            "starts": 6,
+            "gp": 8,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5o",
+          "player": "Liam McNeeley",
+          "label": "Liam McNeeley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "dy1iwzstmspva1dv"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5e",
+          "player": "Yang Hansen",
+          "label": "Yang Hansen",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-22"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick, no. 23",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "076t4",
+            "player": "Ebuka Okorie",
+            "certain": true
+          },
+          "next": {
+            "trade": "fiw35r4gmr3vp2cv"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
+          }
         }
       ]
     },
@@ -270,132 +321,6 @@
         }
       ]
     },
-    "zlfnl31gmqt85aw1": {
-      "date": "2026-06-25",
-      "season": "2026-27",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "San Antonio Spurs",
-          "player_id": "06v8b",
-          "player": "Rocco Zikarsky",
-          "label": "Rocco Zikarsky",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Portland Trail Blazers",
-          "to": "San Antonio Spurs",
-          "label": "2026 round 2 pick, no. 24",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 24,
-            "overall": 54,
-            "player_id": "076ub",
-            "player": "Tobi Lawal",
-            "certain": true
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Portland Trail Blazers",
-          "player_id": "06v5j",
-          "player": "Jase Richardson",
-          "label": "Jase Richardson",
-          "result": {
-            "points": 147.5,
-            "starts": 5,
-            "gp": 8,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Portland Trail Blazers",
-          "player_id": "06v5o",
-          "player": "Liam McNeeley",
-          "label": "Liam McNeeley",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "dy1iwzstmspva1dv"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Portland Trail Blazers",
-          "player_id": "06v5e",
-          "player": "Yang Hansen",
-          "label": "Yang Hansen",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 1,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-10-22"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick, no. 23",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 23,
-            "overall": 23,
-            "player_id": "076t4",
-            "player": "Ebuka Okorie",
-            "certain": true
-          },
-          "next": {
-            "trade": "fiw35r4gmr3vp2cv"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Philadelphia 76ers"
-          }
-        }
-      ]
-    },
     "fiw35r4gmr3vp2cv": {
       "date": "2026-07-02",
       "season": "2026-27",
@@ -419,7 +344,7 @@
             "points": 0.0,
             "starts": 0,
             "gp": 0,
-            "periods": 7,
+            "periods": 8,
             "ongoing": true
           },
           "next": {
@@ -458,6 +383,91 @@
           }
         }
       ]
+    },
+    "eah3rh8omsuevyv0": {
+      "date": "2026-08-15",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Philadelphia 76ers",
+          "player_id": "06216",
+          "player": "Shaedon Sharpe",
+          "label": "Shaedon Sharpe",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qtr",
+          "player": "Devin Vassell",
+          "label": "Devin Vassell",
+          "result": {
+            "points": 355.0,
+            "starts": 8,
+            "gp": 12,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Orlando Magic",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "d3urdettmsz0jqra"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Orlando Magic",
+          "player_id": "076t4",
+          "player": "Ebuka Okorie",
+          "label": "Ebuka Okorie",
+          "result": {
+            "points": 5.25,
+            "starts": 2,
+            "gp": 1,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Orlando Magic",
+          "label": "2027 round 1 pick (New Orleans Pelicans)"
+        }
+      ]
     }
   },
   "axis": [
@@ -473,7 +483,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

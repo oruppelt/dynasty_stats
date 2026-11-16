@@ -1,7 +1,7 @@
 {
   "player_id": "06cac",
   "player": "Cason Wallace",
-  "salary": 10221212,
+  "salary": 10524242,
   "seasons": [
     {
       "season": "2023-24",
@@ -48,7 +48,7 @@
     {
       "season": "2026-27",
       "team": "Portland Trail Blazers",
-      "periods": 7,
+      "periods": 8,
       "starts": 1,
       "gp": 2,
       "points": 47.5,
@@ -57,7 +57,7 @@
       "playoff_points": 0.0,
       "salary": 10000000,
       "contract": "REG3",
-      "paid": 2121212
+      "paid": 2424242
     }
   ],
   "best_periods": [
@@ -183,7 +183,7 @@
       "date": "2026-08-12",
       "team": "Portland Trail Blazers",
       "bid": 0.0,
-      "periods": 7,
+      "periods": 8,
       "starts": 1,
       "gp": 2,
       "points": 47.5,
@@ -192,6 +192,82 @@
     }
   ],
   "trades": {
+    "o1q5l498l4xttj0r": {
+      "date": "2022-06-28",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Los Angeles Lakers",
+          "label": "2023 round 1 pick (Denver Nuggets)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06cac",
+            "player": "Cason Wallace",
+            "certain": true
+          },
+          "next": {
+            "trade": "dbubp4f4l6f3gujf"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Denver Nuggets",
+          "label": "2022 round 1 pick, no. 27",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "0621k",
+            "player": "Christian Braun",
+            "certain": true
+          },
+          "result": {
+            "points": 3033.0,
+            "starts": 88,
+            "gp": 143,
+            "periods": 98,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Denver Nuggets",
+          "label": "2022 round 2 pick, no. 16",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 16,
+            "overall": 46,
+            "player_id": "0622c",
+            "player": "Isaiah Mobley",
+            "certain": false
+          },
+          "next": {
+            "trade": "2fs72a7yl4xvwan6"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
+          }
+        }
+      ]
+    },
     "dbubp4f4l6f3gujf": {
       "date": "2022-08-04",
       "season": "2022-23",
@@ -487,82 +563,6 @@
           }
         }
       ]
-    },
-    "o1q5l498l4xttj0r": {
-      "date": "2022-06-28",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Los Angeles Lakers",
-          "label": "2023 round 1 pick (Denver Nuggets)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 11,
-            "overall": 11,
-            "player_id": "06cac",
-            "player": "Cason Wallace",
-            "certain": true
-          },
-          "next": {
-            "trade": "dbubp4f4l6f3gujf"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Dallas Mavericks"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Denver Nuggets",
-          "label": "2022 round 1 pick, no. 27",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 27,
-            "overall": 27,
-            "player_id": "0621k",
-            "player": "Christian Braun",
-            "certain": true
-          },
-          "result": {
-            "points": 3033.0,
-            "starts": 88,
-            "gp": 143,
-            "periods": 98,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2025-08-10"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Denver Nuggets",
-          "label": "2022 round 2 pick, no. 16",
-          "became": {
-            "season": "2022-23",
-            "round": 2,
-            "pick": 16,
-            "overall": 46,
-            "player_id": "0622c",
-            "player": "Isaiah Mobley",
-            "certain": false
-          },
-          "next": {
-            "trade": "2fs72a7yl4xvwan6"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Miami Heat"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -593,7 +593,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

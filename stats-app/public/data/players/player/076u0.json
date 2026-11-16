@@ -1,13 +1,13 @@
 {
   "player_id": "076u0",
   "player": "Bryce Hopkins",
-  "salary": 212121,
+  "salary": 242424,
   "seasons": [
     {
       "season": "2026-27",
       "team": "Detroit Pistons",
-      "periods": 7,
-      "starts": 1,
+      "periods": 8,
+      "starts": 2,
       "gp": 1,
       "points": 4.75,
       "bench_points": 55.75,
@@ -15,7 +15,7 @@
       "playoff_points": 0.0,
       "salary": 1000000,
       "contract": "R23",
-      "paid": 212121
+      "paid": 242424
     }
   ],
   "best_periods": [
@@ -27,6 +27,16 @@
       "player": "Bryce Hopkins",
       "fpts": 4.75,
       "gp": 1,
+      "playoffs": false
+    },
+    {
+      "season": "2026-27",
+      "period": 8,
+      "team": "Detroit Pistons",
+      "player_id": "076u0",
+      "player": "Bryce Hopkins",
+      "fpts": 0.0,
+      "gp": 0,
       "playoffs": false
     }
   ],
@@ -90,8 +100,8 @@
       "overall": 53,
       "original": "Golden State Warriors",
       "certain": true,
-      "periods": 7,
-      "starts": 1,
+      "periods": 8,
+      "starts": 2,
       "gp": 1,
       "points": 4.75,
       "salary": 1000000,
@@ -99,74 +109,6 @@
     }
   ],
   "trades": {
-    "clvorhzpmkuzzfxs": {
-      "date": "2026-01-26",
-      "season": "2025-26",
-      "period": 29,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Detroit Pistons",
-          "player_id": "06mly",
-          "player": "Quinten Post",
-          "label": "Quinten Post",
-          "result": {
-            "points": 201.25,
-            "starts": 12,
-            "gp": 16,
-            "periods": 12,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Detroit Pistons",
-          "label": "2026 round 2 pick (Golden State Warriors)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 23,
-            "overall": 53,
-            "player_id": "076u0",
-            "player": "Bryce Hopkins",
-            "certain": true
-          },
-          "result": {
-            "points": 4.75,
-            "starts": 1,
-            "gp": 1,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Boston Celtics",
-          "player_id": "04ewd",
-          "player": "Luke Kennard",
-          "label": "Luke Kennard",
-          "result": {
-            "points": 102.25,
-            "starts": 3,
-            "gp": 5,
-            "periods": 5,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-07-04"
-          }
-        }
-      ]
-    },
     "twi7bssbm4mj14hn": {
       "date": "2024-12-13",
       "season": "2024-25",
@@ -279,7 +221,7 @@
             "points": 0.0,
             "starts": 0,
             "gp": 0,
-            "periods": 7,
+            "periods": 8,
             "ongoing": true
           },
           "next": {
@@ -360,6 +302,74 @@
           "result": {
             "traded_on": true,
             "drafted_by": "Detroit Pistons"
+          }
+        }
+      ]
+    },
+    "clvorhzpmkuzzfxs": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "player_id": "06mly",
+          "player": "Quinten Post",
+          "label": "Quinten Post",
+          "result": {
+            "points": 201.25,
+            "starts": 12,
+            "gp": 16,
+            "periods": 13,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          },
+          "result": {
+            "points": 4.75,
+            "starts": 2,
+            "gp": 1,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard",
+          "result": {
+            "points": 102.25,
+            "starts": 3,
+            "gp": 5,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-04"
           }
         }
       ]
@@ -485,7 +495,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

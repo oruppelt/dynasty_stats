@@ -1,7 +1,7 @@
 {
   "player_id": "06217",
   "player": "Dyson Daniels",
-  "salary": 34736135,
+  "salary": 35338063,
   "seasons": [
     {
       "season": "2022-23",
@@ -62,16 +62,16 @@
     {
       "season": "2026-27",
       "team": "Washington Wizards",
-      "periods": 7,
-      "starts": 7,
-      "gp": 12,
-      "points": 494.5,
+      "periods": 8,
+      "starts": 8,
+      "gp": 14,
+      "points": 561.25,
       "bench_points": 0.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 19863636,
       "contract": "REG2",
-      "paid": 4213499
+      "paid": 4815427
     }
   ],
   "best_periods": [
@@ -187,15 +187,98 @@
       "date": "2025-08-17",
       "team": "Washington Wizards",
       "bid": 0.0,
-      "periods": 40,
-      "starts": 39,
-      "gp": 66,
-      "points": 2442.25,
+      "periods": 41,
+      "starts": 40,
+      "gp": 68,
+      "points": 2509.0,
       "salary": 19863636,
       "contract": "REG3"
     }
   ],
   "trades": {
+    "o80318c5kwkp7gxb": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "player_id": "05uiz",
+          "player": "Quentin Grimes",
+          "label": "Quentin Grimes",
+          "result": {
+            "points": 1601.75,
+            "starts": 44,
+            "gp": 73,
+            "periods": 86,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-03-11"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Sacramento Kings",
+          "label": "2022 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "06217",
+            "player": "Dyson Daniels",
+            "certain": true
+          },
+          "next": {
+            "trade": "uzok8m7ikwkzi0g6"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "05qsk",
+          "player": "Isaac Okoro",
+          "label": "Isaac Okoro",
+          "result": {
+            "points": 1301.5,
+            "starts": 45,
+            "gp": 75,
+            "periods": 50,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "wec3x6p4ldeiwcta"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Philadelphia 76ers",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley",
+          "result": {
+            "points": 436.5,
+            "starts": 10,
+            "gp": 17,
+            "periods": 13,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9j43e33xkyd0spki"
+          }
+        }
+      ]
+    },
     "uzok8m7ikwkzi0g6": {
       "date": "2021-11-29",
       "season": "2021-22",
@@ -306,89 +389,6 @@
           }
         }
       ]
-    },
-    "o80318c5kwkp7gxb": {
-      "date": "2021-11-29",
-      "season": "2021-22",
-      "period": 13,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
-          "player_id": "05uiz",
-          "player": "Quentin Grimes",
-          "label": "Quentin Grimes",
-          "result": {
-            "points": 1601.75,
-            "starts": 44,
-            "gp": 73,
-            "periods": 86,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-03-11"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Sacramento Kings",
-          "label": "2022 round 1 pick (Philadelphia 76ers)",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 7,
-            "overall": 7,
-            "player_id": "06217",
-            "player": "Dyson Daniels",
-            "certain": true
-          },
-          "next": {
-            "trade": "uzok8m7ikwkzi0g6"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Washington Wizards"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Philadelphia 76ers",
-          "player_id": "05qsk",
-          "player": "Isaac Okoro",
-          "label": "Isaac Okoro",
-          "result": {
-            "points": 1301.5,
-            "starts": 45,
-            "gp": 75,
-            "periods": 50,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "wec3x6p4ldeiwcta"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Philadelphia 76ers",
-          "player_id": "051p3",
-          "player": "Darius Bazley",
-          "label": "Darius Bazley",
-          "result": {
-            "points": 436.5,
-            "starts": 10,
-            "gp": 17,
-            "periods": 13,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "9j43e33xkyd0spki"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -424,7 +424,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

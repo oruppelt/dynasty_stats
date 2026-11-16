@@ -1,7 +1,7 @@
 {
   "player_id": "049kd",
   "player": "Deandre Ayton",
-  "salary": 115126687,
+  "salary": 115202445,
   "seasons": [
     {
       "season": "2019-20",
@@ -132,16 +132,16 @@
     {
       "season": "2026-27",
       "team": "Orlando Magic",
-      "periods": 2,
+      "periods": 3,
       "starts": 2,
       "gp": 5,
       "points": 61.5,
-      "bench_points": 0.0,
+      "bench_points": 0.5,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 2500000,
       "contract": "REG1",
-      "paid": 151515
+      "paid": 227273
     }
   ],
   "best_periods": [
@@ -276,7 +276,7 @@
       "from": "Atlanta Hawks",
       "team": "Orlando Magic",
       "trade": "6nant226mw3ba0hy",
-      "periods": 2,
+      "periods": 3,
       "starts": 2,
       "gp": 5,
       "points": 61.5,
@@ -285,6 +285,97 @@
     }
   ],
   "trades": {
+    "6nant226mw3ba0hy": {
+      "date": "2026-11-05",
+      "season": "2026-27",
+      "period": 6,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "03ad0",
+          "player": "Tyus Jones",
+          "label": "Tyus Jones",
+          "result": {
+            "points": 42.0,
+            "starts": 3,
+            "gp": 4,
+            "periods": 3,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "player_id": "049kd",
+          "player": "Deandre Ayton",
+          "label": "Deandre Ayton",
+          "result": {
+            "points": 61.5,
+            "starts": 2,
+            "gp": 5,
+            "periods": 3,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Orlando Magic",
+          "label": "2028 round 2 pick (Atlanta Hawks)"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson",
+          "result": {
+            "points": 102.0,
+            "starts": 2,
+            "gp": 2,
+            "periods": 3,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "player_id": "06218",
+          "player": "Jeremy Sochan",
+          "label": "Jeremy Sochan",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-11-06"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Orlando Magic",
+          "to": "Atlanta Hawks",
+          "label": "$15 budget"
+        }
+      ]
+    },
     "yqdm26wgmih99jx3": {
       "date": "2025-11-27",
       "season": "2025-26",
@@ -380,7 +471,7 @@
             "points": 114.0,
             "starts": 3,
             "gp": 5,
-            "periods": 7,
+            "periods": 8,
             "ongoing": true
           },
           "next": {
@@ -395,10 +486,10 @@
           "player": "Onyeka Okongwu",
           "label": "Onyeka Okongwu",
           "result": {
-            "points": 1808.0,
-            "starts": 26,
-            "gp": 45,
-            "periods": 29,
+            "points": 1891.5,
+            "starts": 27,
+            "gp": 47,
+            "periods": 30,
             "ongoing": true
           },
           "next": {
@@ -422,97 +513,6 @@
           "next": {
             "trade": "rhyr5c70msr9j4s3"
           }
-        }
-      ]
-    },
-    "6nant226mw3ba0hy": {
-      "date": "2026-11-05",
-      "season": "2026-27",
-      "period": 6,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Orlando Magic",
-          "player_id": "03ad0",
-          "player": "Tyus Jones",
-          "label": "Tyus Jones",
-          "result": {
-            "points": 37.5,
-            "starts": 2,
-            "gp": 3,
-            "periods": 2,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Orlando Magic",
-          "player_id": "049kd",
-          "player": "Deandre Ayton",
-          "label": "Deandre Ayton",
-          "result": {
-            "points": 61.5,
-            "starts": 2,
-            "gp": 5,
-            "periods": 2,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Orlando Magic",
-          "label": "2028 round 2 pick (Atlanta Hawks)"
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
-          "player_id": "027ou",
-          "player": "Klay Thompson",
-          "label": "Klay Thompson",
-          "result": {
-            "points": 53.5,
-            "starts": 1,
-            "gp": 1,
-            "periods": 2,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
-          "player_id": "06218",
-          "player": "Jeremy Sochan",
-          "label": "Jeremy Sochan",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-11-06"
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Orlando Magic",
-          "to": "Atlanta Hawks",
-          "label": "$15 budget"
         }
       ]
     }
@@ -555,7 +555,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

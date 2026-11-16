@@ -1,7 +1,7 @@
 {
   "player_id": "06cby",
   "player": "Keyonte George",
-  "salary": 10308303,
+  "salary": 11009061,
   "seasons": [
     {
       "season": "2023-24",
@@ -48,16 +48,16 @@
     {
       "season": "2026-27",
       "team": "Cleveland Cavaliers",
-      "periods": 7,
-      "starts": 7,
-      "gp": 11,
-      "points": 396.5,
+      "periods": 8,
+      "starts": 8,
+      "gp": 13,
+      "points": 466.75,
       "bench_points": 0.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 23125000,
       "contract": "REG4",
-      "paid": 4905303
+      "paid": 5606061
     }
   ],
   "best_periods": [
@@ -183,10 +183,10 @@
       "date": "2026-08-16",
       "team": "Cleveland Cavaliers",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 7,
-      "gp": 11,
-      "points": 396.5,
+      "periods": 8,
+      "starts": 8,
+      "gp": 13,
+      "points": 466.75,
       "salary": 23125000,
       "contract": "REG4"
     }
@@ -236,6 +236,93 @@
           "result": {
             "traded_on": true,
             "drafted_by": "Golden State Warriors"
+          }
+        }
+      ]
+    },
+    "hjrmkgmil66e5368": {
+      "date": "2022-07-29",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "06cdb",
+            "player": "Amari Bailey",
+            "certain": true
+          },
+          "next": {
+            "trade": "pm8ukv5nl9ihx8hb"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Brooklyn Nets"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "New York Knicks",
+          "label": "2023 round 1 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06cby",
+            "player": "Keyonte George",
+            "certain": true
+          },
+          "next": {
+            "trade": "z5jlvl0yl9df5648"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03nwn",
+          "player": "Bobby Portis",
+          "label": "Bobby Portis",
+          "result": {
+            "points": 1503.5,
+            "starts": 29,
+            "gp": 46,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Cleveland Cavaliers",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "gl4810izl9s7wcsd"
           }
         }
       ]
@@ -415,93 +502,6 @@
           }
         }
       ]
-    },
-    "hjrmkgmil66e5368": {
-      "date": "2022-07-29",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "New York Knicks",
-          "label": "2023 round 2 pick (Cleveland Cavaliers)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 19,
-            "overall": 49,
-            "player_id": "06cdb",
-            "player": "Amari Bailey",
-            "certain": true
-          },
-          "next": {
-            "trade": "pm8ukv5nl9ihx8hb"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Brooklyn Nets"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "New York Knicks",
-          "label": "2023 round 1 pick (Cleveland Cavaliers)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 19,
-            "overall": 19,
-            "player_id": "06cby",
-            "player": "Keyonte George",
-            "certain": true
-          },
-          "next": {
-            "trade": "z5jlvl0yl9df5648"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Golden State Warriors"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Cleveland Cavaliers",
-          "player_id": "03nwn",
-          "player": "Bobby Portis",
-          "label": "Bobby Portis",
-          "result": {
-            "points": 1503.5,
-            "starts": 29,
-            "gp": 46,
-            "periods": 33,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-07-24"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Cleveland Cavaliers",
-          "player_id": "0622z",
-          "player": "Orlando Robinson",
-          "label": "Orlando Robinson",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 3,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "gl4810izl9s7wcsd"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -532,7 +532,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

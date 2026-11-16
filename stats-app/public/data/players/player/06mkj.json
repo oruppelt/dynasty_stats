@@ -1,7 +1,7 @@
 {
   "player_id": "06mkj",
   "player": "Terrence Shannon",
-  "salary": 2212121,
+  "salary": 2242424,
   "seasons": [
     {
       "season": "2024-25",
@@ -48,16 +48,16 @@
     {
       "season": "2026-27",
       "team": "Minnesota Timberwolves",
-      "periods": 7,
+      "periods": 8,
       "starts": 2,
       "gp": 4,
       "points": 99.0,
-      "bench_points": 40.75,
+      "bench_points": 50.75,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 1000000,
       "contract": "R21",
-      "paid": 212121
+      "paid": 242424
     }
   ],
   "best_periods": [
@@ -202,7 +202,7 @@
       "from": "Houston Rockets",
       "team": "Minnesota Timberwolves",
       "trade": "vrjztxeimssj9gyv",
-      "periods": 7,
+      "periods": 8,
       "starts": 2,
       "gp": 4,
       "points": 99.0,
@@ -211,6 +211,79 @@
     }
   ],
   "trades": {
+    "vrjztxeimssj9gyv": {
+      "date": "2026-08-14",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06mkj",
+          "player": "Terrence Shannon",
+          "label": "Terrence Shannon",
+          "result": {
+            "points": 99.0,
+            "starts": 2,
+            "gp": 4,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Houston Rockets",
+          "to": "Minnesota Timberwolves",
+          "player_id": "06mkb",
+          "player": "Ja'Kobe Walter",
+          "label": "Ja'Kobe Walter",
+          "result": {
+            "points": 340.5,
+            "starts": 8,
+            "gp": 13,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "player_id": "051p8",
+          "player": "Jordan Poole",
+          "label": "Jordan Poole",
+          "result": {
+            "points": 184.0,
+            "starts": 8,
+            "gp": 8,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "label": "2028 round 2 pick (Minnesota Timberwolves)"
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Houston Rockets",
+          "label": "2027 round 1 pick (Minnesota Timberwolves)"
+        }
+      ]
+    },
     "j15phqp4lxyaw76t": {
       "date": "2024-06-28",
       "season": "2024-25",
@@ -363,79 +436,6 @@
             "traded_on": true,
             "drafted_by": "Boston Celtics"
           }
-        }
-      ]
-    },
-    "vrjztxeimssj9gyv": {
-      "date": "2026-08-14",
-      "season": "2026-27",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Minnesota Timberwolves",
-          "player_id": "06mkj",
-          "player": "Terrence Shannon",
-          "label": "Terrence Shannon",
-          "result": {
-            "points": 99.0,
-            "starts": 2,
-            "gp": 4,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Houston Rockets",
-          "to": "Minnesota Timberwolves",
-          "player_id": "06mkb",
-          "player": "Ja'Kobe Walter",
-          "label": "Ja'Kobe Walter",
-          "result": {
-            "points": 331.0,
-            "starts": 7,
-            "gp": 12,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Houston Rockets",
-          "player_id": "051p8",
-          "player": "Jordan Poole",
-          "label": "Jordan Poole",
-          "result": {
-            "points": 122.25,
-            "starts": 7,
-            "gp": 6,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Houston Rockets",
-          "label": "2028 round 2 pick (Minnesota Timberwolves)"
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Houston Rockets",
-          "label": "2027 round 1 pick (Minnesota Timberwolves)"
         }
       ]
     },
@@ -754,7 +754,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

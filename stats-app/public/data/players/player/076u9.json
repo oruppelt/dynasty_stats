@@ -1,12 +1,12 @@
 {
   "player_id": "076u9",
   "player": "Izaiyah Nelson",
-  "salary": 212121,
+  "salary": 242424,
   "seasons": [
     {
       "season": "2026-27",
       "team": "Golden State Warriors",
-      "periods": 7,
+      "periods": 8,
       "starts": 0,
       "gp": 0,
       "points": 0.0,
@@ -15,7 +15,7 @@
       "playoff_points": 0.0,
       "salary": 1000000,
       "contract": "R23",
-      "paid": 212121
+      "paid": 242424
     }
   ],
   "best_periods": [],
@@ -69,7 +69,7 @@
       "overall": 47,
       "original": "Charlotte Hornets",
       "certain": true,
-      "periods": 7,
+      "periods": 8,
       "starts": 0,
       "gp": 0,
       "points": 0.0,
@@ -78,91 +78,6 @@
     }
   ],
   "trades": {
-    "izdtmzbtmqta0wpg": {
-      "date": "2026-06-25",
-      "season": "2026-27",
-      "period": 1,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Golden State Warriors",
-          "to": "Toronto Raptors",
-          "label": "$6 budget"
-        },
-        {
-          "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "Golden State Warriors",
-          "label": "2026 round 2 pick, no. 17",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 17,
-            "overall": 47,
-            "player_id": "076u9",
-            "player": "Izaiyah Nelson",
-            "certain": true
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        }
-      ]
-    },
-    "lam8ncmimkuwcqpi": {
-      "date": "2026-01-26",
-      "season": "2025-26",
-      "period": 29,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Oklahoma City Thunder",
-          "to": "Toronto Raptors",
-          "label": "2026 round 2 pick (Charlotte Hornets)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 17,
-            "overall": 47,
-            "player_id": "076u9",
-            "player": "Izaiyah Nelson",
-            "certain": true
-          },
-          "next": {
-            "trade": "izdtmzbtmqta0wpg"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Golden State Warriors"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Oklahoma City Thunder",
-          "player_id": "06vy3",
-          "player": "Caleb Love",
-          "label": "Caleb Love",
-          "result": {
-            "points": 89.0,
-            "starts": 2,
-            "gp": 4,
-            "periods": 5,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-03-23"
-          }
-        }
-      ]
-    },
     "0lwk42u9m6dv18yt": {
       "date": "2025-01-26",
       "season": "2024-25",
@@ -303,6 +218,91 @@
           }
         }
       ]
+    },
+    "lam8ncmimkuwcqpi": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2026 round 2 pick (Charlotte Hornets)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "076u9",
+            "player": "Izaiyah Nelson",
+            "certain": true
+          },
+          "next": {
+            "trade": "izdtmzbtmqta0wpg"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Golden State Warriors"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06vy3",
+          "player": "Caleb Love",
+          "label": "Caleb Love",
+          "result": {
+            "points": 89.0,
+            "starts": 2,
+            "gp": 4,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-03-23"
+          }
+        }
+      ]
+    },
+    "izdtmzbtmqta0wpg": {
+      "date": "2026-06-25",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Golden State Warriors",
+          "to": "Toronto Raptors",
+          "label": "$6 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Golden State Warriors",
+          "label": "2026 round 2 pick, no. 17",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 17,
+            "overall": 47,
+            "player_id": "076u9",
+            "player": "Izaiyah Nelson",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
     }
   },
   "axis": [
@@ -318,7 +318,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

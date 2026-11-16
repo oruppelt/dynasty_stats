@@ -1,7 +1,7 @@
 {
   "player_id": "04ewr",
   "player": "Kyle Kuzma",
-  "salary": 64500714,
+  "salary": 64743138,
   "seasons": [
     {
       "season": "2019-20",
@@ -174,16 +174,16 @@
     {
       "season": "2026-27",
       "team": "Cleveland Cavaliers",
-      "periods": 4,
-      "starts": 4,
-      "gp": 7,
-      "points": 169.0,
+      "periods": 5,
+      "starts": 5,
+      "gp": 9,
+      "points": 217.5,
       "bench_points": 0.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 8000000,
       "contract": "REG1",
-      "paid": 969697
+      "paid": 1212121
     }
   ],
   "best_periods": [
@@ -399,15 +399,83 @@
       "from": "Portland Trail Blazers",
       "team": "Cleveland Cavaliers",
       "trade": "oj9lawe7mvsdcb33",
-      "periods": 4,
-      "starts": 4,
-      "gp": 7,
-      "points": 169.0,
+      "periods": 5,
+      "starts": 5,
+      "gp": 9,
+      "points": 217.5,
       "salary": 8000000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "mh0uxrnhlcug9vty": {
+      "date": "2023-01-13",
+      "season": "2022-23",
+      "period": 26,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Philadelphia 76ers",
+          "player_id": "04ewr",
+          "player": "Kyle Kuzma",
+          "label": "Kyle Kuzma",
+          "result": {
+            "points": 210.0,
+            "starts": 3,
+            "gp": 4,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "6dc5xcnfld97nf0g"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Milwaukee Bucks",
+          "player_id": "0015e",
+          "player": "Mike Conley",
+          "label": "Mike Conley",
+          "result": {
+            "points": 1910.75,
+            "starts": 36,
+            "gp": 55,
+            "periods": 40,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Milwaukee Bucks",
+          "label": "2024 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06mkc",
+            "player": "Jaylon Tyson",
+            "certain": true
+          },
+          "result": {
+            "points": 1724.5,
+            "starts": 61,
+            "gp": 78,
+            "periods": 67,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ropqfs1wmvhr2o2x"
+          }
+        }
+      ]
+    },
     "0lrdw7cml691wyhk": {
       "date": "2022-07-31",
       "season": "2022-23",
@@ -541,7 +609,7 @@
             "points": 0.0,
             "starts": 0,
             "gp": 0,
-            "periods": 4,
+            "periods": 5,
             "ongoing": true
           },
           "next": {
@@ -577,7 +645,7 @@
             "points": 148.0,
             "starts": 4,
             "gp": 8,
-            "periods": 4,
+            "periods": 5,
             "ongoing": true
           },
           "next": {
@@ -598,149 +666,14 @@
           "player": "Kyle Kuzma",
           "label": "Kyle Kuzma",
           "result": {
-            "points": 169.0,
-            "starts": 4,
-            "gp": 7,
-            "periods": 4,
+            "points": 217.5,
+            "starts": 5,
+            "gp": 9,
+            "periods": 5,
             "ongoing": true
           },
           "next": {
             "kept": true
-          }
-        }
-      ]
-    },
-    "mh0uxrnhlcug9vty": {
-      "date": "2023-01-13",
-      "season": "2022-23",
-      "period": 26,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Philadelphia 76ers",
-          "player_id": "04ewr",
-          "player": "Kyle Kuzma",
-          "label": "Kyle Kuzma",
-          "result": {
-            "points": 210.0,
-            "starts": 3,
-            "gp": 4,
-            "periods": 3,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "6dc5xcnfld97nf0g"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Milwaukee Bucks",
-          "player_id": "0015e",
-          "player": "Mike Conley",
-          "label": "Mike Conley",
-          "result": {
-            "points": 1910.75,
-            "starts": 36,
-            "gp": 55,
-            "periods": 40,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-06-26"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Milwaukee Bucks",
-          "label": "2024 round 1 pick (Golden State Warriors)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 19,
-            "overall": 19,
-            "player_id": "06mkc",
-            "player": "Jaylon Tyson",
-            "certain": true
-          },
-          "result": {
-            "points": 1724.5,
-            "starts": 61,
-            "gp": 78,
-            "periods": 67,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "ropqfs1wmvhr2o2x"
-          }
-        }
-      ]
-    },
-    "i76e7lmhmheud55d": {
-      "date": "2025-10-31",
-      "season": "2025-26",
-      "period": 4,
-      "items": [
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Portland Trail Blazers",
-          "player_id": "04ewr",
-          "player": "Kyle Kuzma",
-          "label": "Kyle Kuzma",
-          "result": {
-            "points": 1307.5,
-            "starts": 31,
-            "gp": 50,
-            "periods": 33,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "oj9lawe7mvsdcb33"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "New Orleans Pelicans",
-          "to": "Portland Trail Blazers",
-          "player_id": "0623a",
-          "player": "Scotty Pippen",
-          "label": "Scotty Pippen",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 3,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2025-11-10"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "New Orleans Pelicans",
-          "to": "Portland Trail Blazers",
-          "label": "2027 round 1 pick (New Orleans Pelicans)"
-        },
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "New Orleans Pelicans",
-          "player_id": "01eo9",
-          "player": "Jrue Holiday",
-          "label": "Jrue Holiday",
-          "result": {
-            "points": 626.5,
-            "starts": 15,
-            "gp": 18,
-            "periods": 30,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-06-22"
           }
         }
       ]
@@ -837,6 +770,73 @@
           }
         }
       ]
+    },
+    "i76e7lmhmheud55d": {
+      "date": "2025-10-31",
+      "season": "2025-26",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Portland Trail Blazers",
+          "player_id": "04ewr",
+          "player": "Kyle Kuzma",
+          "label": "Kyle Kuzma",
+          "result": {
+            "points": 1307.5,
+            "starts": 31,
+            "gp": 50,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "oj9lawe7mvsdcb33"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New Orleans Pelicans",
+          "to": "Portland Trail Blazers",
+          "player_id": "0623a",
+          "player": "Scotty Pippen",
+          "label": "Scotty Pippen",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 3,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-11-10"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New Orleans Pelicans",
+          "to": "Portland Trail Blazers",
+          "label": "2027 round 1 pick (New Orleans Pelicans)"
+        },
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "New Orleans Pelicans",
+          "player_id": "01eo9",
+          "player": "Jrue Holiday",
+          "label": "Jrue Holiday",
+          "result": {
+            "points": 626.5,
+            "starts": 15,
+            "gp": 18,
+            "periods": 30,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-22"
+          }
+        }
+      ]
     }
   },
   "axis": [
@@ -877,7 +877,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

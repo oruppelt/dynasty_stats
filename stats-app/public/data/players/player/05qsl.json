@@ -1,7 +1,7 @@
 {
   "player_id": "05qsl",
   "player": "Patrick Williams",
-  "salary": 21495883,
+  "salary": 21375580,
   "seasons": [
     {
       "season": "2020-21",
@@ -142,6 +142,20 @@
       "salary": 1710000,
       "contract": "REG1",
       "paid": 103636
+    },
+    {
+      "season": "2026-27",
+      "team": "Golden State Warriors",
+      "periods": 1,
+      "starts": 1,
+      "gp": 2,
+      "points": 69.75,
+      "bench_points": 0.0,
+      "playoff_starts": 0,
+      "playoff_points": 0.0,
+      "salary": 1000000,
+      "contract": "FA",
+      "paid": 30303
     }
   ],
   "best_periods": [
@@ -403,13 +417,289 @@
       "date": "2026-11-13",
       "team": "Golden State Warriors",
       "bid": 17.0,
-      "periods": 0,
-      "starts": 0,
-      "gp": 0,
-      "points": 0.0
+      "periods": 1,
+      "starts": 1,
+      "gp": 2,
+      "points": 69.75,
+      "salary": 1000000,
+      "contract": "FA"
     }
   ],
   "trades": {
+    "1qnolhv6kih8mff8": {
+      "date": "2020-12-09",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "049s5",
+          "player": "Dennis Smith",
+          "label": "Dennis Smith",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "41f9k727kihb18pa"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "05qsl",
+          "player": "Patrick Williams",
+          "label": "Patrick Williams",
+          "result": {
+            "points": 569.5,
+            "starts": 13,
+            "gp": 24,
+            "periods": 23,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "54y895i8km7uoi1b"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2022 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "0621r",
+            "player": "Patrick Baldwin",
+            "certain": false
+          },
+          "next": {
+            "trade": "41f9k727kihb18pa"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Sacramento Kings",
+          "player_id": "04qru",
+          "player": "Donte DiVincenzo",
+          "label": "Donte DiVincenzo",
+          "result": {
+            "points": 1233.25,
+            "starts": 24,
+            "gp": 43,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "omyajhuakpf4ztuk"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Sacramento Kings",
+          "player_id": "02nfw",
+          "player": "Tomas Satoransky",
+          "label": "Tomas Satoransky",
+          "result": {
+            "points": 618.0,
+            "starts": 13,
+            "gp": 23,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "omyajhuakpf4ztuk"
+          }
+        }
+      ]
+    },
+    "qjkmf20bl9priwd9": {
+      "date": "2022-10-26",
+      "season": "2022-23",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "player_id": "05qsl",
+          "player": "Patrick Williams",
+          "label": "Patrick Williams",
+          "result": {
+            "points": 282.5,
+            "starts": 7,
+            "gp": 11,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "na46l1galanv6p4z"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2023 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06cdk",
+            "player": "Jalen Slawson",
+            "certain": true
+          },
+          "next": {
+            "trade": "m9ic3sm9ld0jz28w"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Washington Wizards",
+          "label": "2024 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06mmh",
+            "player": "Isaac Jones",
+            "certain": false
+          },
+          "next": {
+            "trade": "qrn7gyzjljtrsvqe"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Sacramento Kings"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Sacramento Kings",
+          "player_id": "05uj4",
+          "player": "Santi Aldama",
+          "label": "Santi Aldama",
+          "result": {
+            "points": 1379.0,
+            "starts": 33,
+            "gp": 53,
+            "periods": 62,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        }
+      ]
+    },
+    "5vp2vr5zkg9lvu4i": {
+      "date": "2020-10-16",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "051p3",
+          "player": "Darius Bazley",
+          "label": "Darius Bazley",
+          "result": {
+            "points": 1333.75,
+            "starts": 30,
+            "gp": 51,
+            "periods": 41,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "o80318c5kwkp7gxb"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "player_id": "051om",
+          "player": "Jarrett Culver",
+          "label": "Jarrett Culver",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "owpx1qgikhpa8mc1"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Sacramento Kings",
+          "label": "2020 round 1 pick, no. 14",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "05qsl",
+            "player": "Patrick Williams",
+            "certain": false
+          },
+          "next": {
+            "trade": "1qnolhv6kih8mff8"
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Orlando Magic",
+          "player_id": "03nwl",
+          "player": "Terry Rozier",
+          "label": "Terry Rozier",
+          "result": {
+            "points": 3611.25,
+            "starts": 57,
+            "gp": 93,
+            "periods": 62,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-23"
+          }
+        }
+      ]
+    },
     "54y895i8km7uoi1b": {
       "date": "2021-03-13",
       "season": "2020-21",
@@ -543,89 +833,128 @@
         }
       ]
     },
-    "qjkmf20bl9priwd9": {
-      "date": "2022-10-26",
-      "season": "2022-23",
-      "period": 4,
+    "owpx1qgikhpa8mc1": {
+      "date": "2020-11-19",
+      "season": "2020-21",
+      "period": 1,
       "items": [
         {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Washington Wizards",
-          "player_id": "05qsl",
-          "player": "Patrick Williams",
-          "label": "Patrick Williams",
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Sacramento Kings",
+          "label": "2020 round 1 pick, no. 7",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 7,
+            "overall": 7,
+            "player_id": "05qsx",
+            "player": "Obi Toppin",
+            "certain": false
+          },
           "result": {
-            "points": 282.5,
-            "starts": 7,
-            "gp": 11,
-            "periods": 7,
+            "points": 57.75,
+            "starts": 3,
+            "gp": 6,
+            "periods": 21,
             "ongoing": false
           },
           "next": {
-            "trade": "na46l1galanv6p4z"
+            "trade": "etfluotfklxsl8yb"
           }
         },
         {
-          "kind": "pick",
+          "kind": "player",
           "from": "Sacramento Kings",
-          "to": "Washington Wizards",
-          "label": "2023 round 2 pick (Sacramento Kings)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 25,
-            "overall": 55,
-            "player_id": "06cdk",
-            "player": "Jalen Slawson",
-            "certain": true
+          "to": "Phoenix Suns",
+          "player_id": "051om",
+          "player": "Jarrett Culver",
+          "label": "Jarrett Culver",
+          "result": {
+            "points": 358.25,
+            "starts": 29,
+            "gp": 27,
+            "periods": 29,
+            "ongoing": false
           },
           "next": {
-            "trade": "m9ic3sm9ld0jz28w"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Miami Heat"
+            "trade": "1wpat29ikrqxuzxp"
           }
         },
         {
           "kind": "pick",
           "from": "Sacramento Kings",
-          "to": "Washington Wizards",
-          "label": "2024 round 2 pick (Orlando Magic)",
+          "to": "Phoenix Suns",
+          "label": "2020 round 1 pick, no. 14",
           "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 25,
-            "overall": 55,
-            "player_id": "06mmh",
-            "player": "Isaac Jones",
+            "season": "2020-21",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "05qsl",
+            "player": "Patrick Williams",
             "certain": false
           },
           "next": {
-            "trade": "qrn7gyzjljtrsvqe"
+            "trade": "s0ez32kpkhun7lyw"
           },
           "result": {
             "traded_on": true,
             "drafted_by": "Sacramento Kings"
           }
-        },
+        }
+      ]
+    },
+    "s0ez32kpkhun7lyw": {
+      "date": "2020-11-23",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
         {
-          "kind": "player",
-          "from": "Washington Wizards",
+          "kind": "pick",
+          "from": "Phoenix Suns",
           "to": "Sacramento Kings",
-          "player_id": "05uj4",
-          "player": "Santi Aldama",
-          "label": "Santi Aldama",
+          "label": "2020 round 1 pick, no. 14",
+          "became": {
+            "season": "2020-21",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "05qsl",
+            "player": "Patrick Williams",
+            "certain": false
+          },
           "result": {
-            "points": 1379.0,
-            "starts": 33,
-            "gp": 53,
-            "periods": 62,
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
             "ongoing": false
           },
           "next": {
-            "dropped": "2024-07-26"
+            "trade": "1qnolhv6kih8mff8"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Phoenix Suns",
+          "label": "2021 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 12,
+            "overall": 12,
+            "player_id": "05uin",
+            "player": "Chris Duarte",
+            "certain": true
+          },
+          "next": {
+            "trade": "wyc5aaskkiivratd"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Memphis Grizzlies"
           }
         }
       ]
@@ -756,146 +1085,6 @@
         }
       ]
     },
-    "s0ez32kpkhun7lyw": {
-      "date": "2020-11-23",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Phoenix Suns",
-          "to": "Sacramento Kings",
-          "label": "2020 round 1 pick, no. 14",
-          "became": {
-            "season": "2020-21",
-            "round": 1,
-            "pick": 14,
-            "overall": 14,
-            "player_id": "05qsl",
-            "player": "Patrick Williams",
-            "certain": false
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "1qnolhv6kih8mff8"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Phoenix Suns",
-          "label": "2021 round 1 pick (Dallas Mavericks)",
-          "became": {
-            "season": "2021-22",
-            "round": 1,
-            "pick": 12,
-            "overall": 12,
-            "player_id": "05uin",
-            "player": "Chris Duarte",
-            "certain": true
-          },
-          "next": {
-            "trade": "wyc5aaskkiivratd"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Memphis Grizzlies"
-          }
-        }
-      ]
-    },
-    "5vp2vr5zkg9lvu4i": {
-      "date": "2020-10-16",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Sacramento Kings",
-          "player_id": "051p3",
-          "player": "Darius Bazley",
-          "label": "Darius Bazley",
-          "result": {
-            "points": 1333.75,
-            "starts": 30,
-            "gp": 51,
-            "periods": 41,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "o80318c5kwkp7gxb"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Sacramento Kings",
-          "player_id": "051om",
-          "player": "Jarrett Culver",
-          "label": "Jarrett Culver",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "owpx1qgikhpa8mc1"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Orlando Magic",
-          "to": "Sacramento Kings",
-          "label": "2020 round 1 pick, no. 14",
-          "became": {
-            "season": "2020-21",
-            "round": 1,
-            "pick": 14,
-            "overall": 14,
-            "player_id": "05qsl",
-            "player": "Patrick Williams",
-            "certain": false
-          },
-          "next": {
-            "trade": "1qnolhv6kih8mff8"
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Orlando Magic",
-          "player_id": "03nwl",
-          "player": "Terry Rozier",
-          "label": "Terry Rozier",
-          "result": {
-            "points": 3611.25,
-            "starts": 57,
-            "gp": 93,
-            "periods": 62,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2022-07-23"
-          }
-        }
-      ]
-    },
     "ir3ij1a2l4ss2b1p": {
       "date": "2022-06-24",
       "season": "2022-23",
@@ -978,179 +1167,6 @@
           }
         }
       ]
-    },
-    "owpx1qgikhpa8mc1": {
-      "date": "2020-11-19",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Phoenix Suns",
-          "to": "Sacramento Kings",
-          "label": "2020 round 1 pick, no. 7",
-          "became": {
-            "season": "2020-21",
-            "round": 1,
-            "pick": 7,
-            "overall": 7,
-            "player_id": "05qsx",
-            "player": "Obi Toppin",
-            "certain": false
-          },
-          "result": {
-            "points": 57.75,
-            "starts": 3,
-            "gp": 6,
-            "periods": 21,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "etfluotfklxsl8yb"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Phoenix Suns",
-          "player_id": "051om",
-          "player": "Jarrett Culver",
-          "label": "Jarrett Culver",
-          "result": {
-            "points": 358.25,
-            "starts": 29,
-            "gp": 27,
-            "periods": 29,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "1wpat29ikrqxuzxp"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Phoenix Suns",
-          "label": "2020 round 1 pick, no. 14",
-          "became": {
-            "season": "2020-21",
-            "round": 1,
-            "pick": 14,
-            "overall": 14,
-            "player_id": "05qsl",
-            "player": "Patrick Williams",
-            "certain": false
-          },
-          "next": {
-            "trade": "s0ez32kpkhun7lyw"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Sacramento Kings"
-          }
-        }
-      ]
-    },
-    "1qnolhv6kih8mff8": {
-      "date": "2020-12-09",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Washington Wizards",
-          "player_id": "049s5",
-          "player": "Dennis Smith",
-          "label": "Dennis Smith",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "41f9k727kihb18pa"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Washington Wizards",
-          "player_id": "05qsl",
-          "player": "Patrick Williams",
-          "label": "Patrick Williams",
-          "result": {
-            "points": 569.5,
-            "starts": 13,
-            "gp": 24,
-            "periods": 23,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "54y895i8km7uoi1b"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Washington Wizards",
-          "label": "2022 round 2 pick (Sacramento Kings)",
-          "became": {
-            "season": "2022-23",
-            "round": 2,
-            "pick": 5,
-            "overall": 35,
-            "player_id": "0621r",
-            "player": "Patrick Baldwin",
-            "certain": false
-          },
-          "next": {
-            "trade": "41f9k727kihb18pa"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Chicago Bulls"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Sacramento Kings",
-          "player_id": "04qru",
-          "player": "Donte DiVincenzo",
-          "label": "Donte DiVincenzo",
-          "result": {
-            "points": 1233.25,
-            "starts": 24,
-            "gp": 43,
-            "periods": 29,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "omyajhuakpf4ztuk"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Sacramento Kings",
-          "player_id": "02nfw",
-          "player": "Tomas Satoransky",
-          "label": "Tomas Satoransky",
-          "result": {
-            "points": 618.0,
-            "starts": 13,
-            "gp": 23,
-            "periods": 29,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "omyajhuakpf4ztuk"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -1191,7 +1207,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "player_id": "06v86",
   "player": "Micah Peavy",
-  "salary": 1212121,
+  "salary": 1242424,
   "seasons": [
     {
       "season": "2025-26",
@@ -20,16 +20,16 @@
     {
       "season": "2026-27",
       "team": "Denver Nuggets",
-      "periods": 7,
+      "periods": 8,
       "starts": 1,
       "gp": 2,
       "points": 7.0,
-      "bench_points": 42.5,
+      "bench_points": 62.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 1000000,
       "contract": "R22",
-      "paid": 212121
+      "paid": 242424
     }
   ],
   "best_periods": [
@@ -124,7 +124,7 @@
       "overall": 54,
       "original": "Toronto Raptors",
       "certain": true,
-      "periods": 40,
+      "periods": 41,
       "starts": 17,
       "gp": 30,
       "points": 340.25,
@@ -133,6 +133,44 @@
     }
   ],
   "trades": {
+    "8mocn229mcpvz0fx": {
+      "date": "2025-07-05",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Denver Nuggets",
+          "to": "Milwaukee Bucks",
+          "label": "$7 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "Milwaukee Bucks",
+          "to": "Denver Nuggets",
+          "label": "2025 round 2 pick, no. 24",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "06v86",
+            "player": "Micah Peavy",
+            "certain": true
+          },
+          "result": {
+            "points": 340.25,
+            "starts": 17,
+            "gp": 30,
+            "periods": 41,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
     "ztwmlc8rlzji9u94": {
       "date": "2024-08-07",
       "season": "2024-25",
@@ -185,44 +223,6 @@
           }
         }
       ]
-    },
-    "8mocn229mcpvz0fx": {
-      "date": "2025-07-05",
-      "season": "2025-26",
-      "period": 1,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Denver Nuggets",
-          "to": "Milwaukee Bucks",
-          "label": "$7 budget"
-        },
-        {
-          "kind": "pick",
-          "from": "Milwaukee Bucks",
-          "to": "Denver Nuggets",
-          "label": "2025 round 2 pick, no. 24",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 24,
-            "overall": 54,
-            "player_id": "06v86",
-            "player": "Micah Peavy",
-            "certain": true
-          },
-          "result": {
-            "points": 340.25,
-            "starts": 17,
-            "gp": 30,
-            "periods": 40,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -243,7 +243,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

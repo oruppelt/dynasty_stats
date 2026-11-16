@@ -1,7 +1,7 @@
 {
   "player_id": "05uul",
   "player": "Jose Alvarado",
-  "salary": 7118182,
+  "salary": 7163636,
   "seasons": [
     {
       "season": "2021-22",
@@ -104,16 +104,16 @@
     {
       "season": "2026-27",
       "team": "Chicago Bulls",
-      "periods": 7,
+      "periods": 8,
       "starts": 5,
       "gp": 4,
       "points": 30.5,
-      "bench_points": 0.0,
+      "bench_points": 1.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 1500000,
       "contract": "REG1",
-      "paid": 318182
+      "paid": 363636
     }
   ],
   "best_periods": [
@@ -384,7 +384,7 @@
       "date": "2026-08-17",
       "team": "Chicago Bulls",
       "bid": 0.0,
-      "periods": 7,
+      "periods": 8,
       "starts": 5,
       "gp": 4,
       "points": 30.5,
@@ -393,23 +393,109 @@
     }
   ],
   "trades": {
-    "yy9p5ocdkye254n4": {
-      "date": "2022-01-14",
-      "season": "2021-22",
-      "period": 26,
+    "3ytw64kjmkuq5bqa": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
       "items": [
         {
           "kind": "player",
-          "from": "Miami Heat",
-          "to": "Philadelphia 76ers",
-          "player_id": "01uz7",
-          "player": "Gordon Hayward",
-          "label": "Gordon Hayward",
+          "from": "Milwaukee Bucks",
+          "to": "Washington Wizards",
+          "player_id": "04qsd",
+          "player": "Mitchell Robinson",
+          "label": "Mitchell Robinson",
           "result": {
-            "points": 155.25,
-            "starts": 6,
-            "gp": 7,
+            "points": 89.75,
+            "starts": 3,
+            "gp": 5,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "player_id": "05uul",
+          "player": "Jose Alvarado",
+          "label": "Jose Alvarado",
+          "result": {
+            "points": 230.5,
+            "starts": 5,
+            "gp": 9,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "player_id": "005ki",
+          "player": "Brook Lopez",
+          "label": "Brook Lopez",
+          "result": {
+            "points": 256.0,
+            "starts": 5,
+            "gp": 10,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 26,
+            "overall": 56,
+            "player_id": "076uq",
+            "player": "Rafael Castro",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
             "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
+    "yuxsbccvkynk77x4": {
+      "date": "2022-01-21",
+      "season": "2021-22",
+      "period": 28,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "01uyt",
+          "player": "Derrick Favors",
+          "label": "Derrick Favors",
+          "result": {
+            "points": 20.75,
+            "starts": 1,
+            "gp": 1,
+            "periods": 6,
             "ongoing": false
           },
           "next": {
@@ -417,9 +503,63 @@
           }
         },
         {
-          "kind": "pick",
-          "from": "Miami Heat",
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
           "to": "Philadelphia 76ers",
+          "player_id": "05uur",
+          "player": "Joel Ayayi",
+          "label": "Joel Ayayi",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-08"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Philadelphia 76ers",
+          "player_id": "05uun",
+          "player": "Matthew Hurt",
+          "label": "Matthew Hurt",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 39,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-08"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari",
+          "result": {
+            "points": 203.25,
+            "starts": 6,
+            "gp": 8,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "25j29lacl4n2yx7t"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Cleveland Cavaliers",
           "label": "2022 round 2 pick (Dallas Mavericks)",
           "became": {
             "season": "2022-23",
@@ -430,70 +570,15 @@
             "player": "Jose Alvarado",
             "certain": true
           },
-          "next": {
-            "trade": "yuxsbccvkynk77x4"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Cleveland Cavaliers"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Miami Heat",
-          "player_id": "03apx",
-          "player": "Gary Harris",
-          "label": "Gary Harris",
-          "result": {
-            "points": 291.75,
-            "starts": 7,
-            "gp": 12,
-            "periods": 8,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2022-05-24"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Miami Heat",
-          "player_id": "04qs9",
-          "player": "Jevon Carter",
-          "label": "Jevon Carter",
           "result": {
             "points": 0.0,
             "starts": 0,
             "gp": 0,
-            "periods": 2,
+            "periods": 0,
             "ongoing": false
           },
           "next": {
-            "dropped": "2022-01-18"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Miami Heat",
-          "label": "2023 round 1 pick (Philadelphia 76ers)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 10,
-            "overall": 10,
-            "player_id": "06ca7",
-            "player": "Cam Whitmore",
-            "certain": true
-          },
-          "next": {
-            "trade": "1ikem71elb0p3dff"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Oklahoma City Thunder"
+            "dropped": "2022-06-29"
           }
         }
       ]
@@ -745,109 +830,23 @@
         }
       ]
     },
-    "3ytw64kjmkuq5bqa": {
-      "date": "2026-01-26",
-      "season": "2025-26",
-      "period": 29,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Washington Wizards",
-          "player_id": "04qsd",
-          "player": "Mitchell Robinson",
-          "label": "Mitchell Robinson",
-          "result": {
-            "points": 89.75,
-            "starts": 3,
-            "gp": 5,
-            "periods": 5,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-07-10"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Milwaukee Bucks",
-          "player_id": "05uul",
-          "player": "Jose Alvarado",
-          "label": "Jose Alvarado",
-          "result": {
-            "points": 230.5,
-            "starts": 5,
-            "gp": 9,
-            "periods": 5,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-06-18"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Milwaukee Bucks",
-          "player_id": "005ki",
-          "player": "Brook Lopez",
-          "label": "Brook Lopez",
-          "result": {
-            "points": 256.0,
-            "starts": 5,
-            "gp": 10,
-            "periods": 5,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-06-18"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Washington Wizards",
-          "to": "Milwaukee Bucks",
-          "label": "2026 round 2 pick (Washington Wizards)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 26,
-            "overall": 56,
-            "player_id": "076uq",
-            "player": "Rafael Castro",
-            "certain": true
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        }
-      ]
-    },
-    "yuxsbccvkynk77x4": {
-      "date": "2022-01-21",
+    "yy9p5ocdkye254n4": {
+      "date": "2022-01-14",
       "season": "2021-22",
-      "period": 28,
+      "period": 26,
       "items": [
         {
           "kind": "player",
-          "from": "Cleveland Cavaliers",
+          "from": "Miami Heat",
           "to": "Philadelphia 76ers",
-          "player_id": "01uyt",
-          "player": "Derrick Favors",
-          "label": "Derrick Favors",
+          "player_id": "01uz7",
+          "player": "Gordon Hayward",
+          "label": "Gordon Hayward",
           "result": {
-            "points": 20.75,
-            "starts": 1,
-            "gp": 1,
-            "periods": 6,
+            "points": 155.25,
+            "starts": 6,
+            "gp": 7,
+            "periods": 8,
             "ongoing": false
           },
           "next": {
@@ -855,63 +854,9 @@
           }
         },
         {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Philadelphia 76ers",
-          "player_id": "05uur",
-          "player": "Joel Ayayi",
-          "label": "Joel Ayayi",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 39,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-07-08"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Philadelphia 76ers",
-          "player_id": "05uun",
-          "player": "Matthew Hurt",
-          "label": "Matthew Hurt",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 39,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-07-08"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Cleveland Cavaliers",
-          "player_id": "005ke",
-          "player": "Danilo Gallinari",
-          "label": "Danilo Gallinari",
-          "result": {
-            "points": 203.25,
-            "starts": 6,
-            "gp": 8,
-            "periods": 6,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "25j29lacl4n2yx7t"
-          }
-        },
-        {
           "kind": "pick",
-          "from": "Philadelphia 76ers",
-          "to": "Cleveland Cavaliers",
+          "from": "Miami Heat",
+          "to": "Philadelphia 76ers",
           "label": "2022 round 2 pick (Dallas Mavericks)",
           "became": {
             "season": "2022-23",
@@ -922,15 +867,70 @@
             "player": "Jose Alvarado",
             "certain": true
           },
+          "next": {
+            "trade": "yuxsbccvkynk77x4"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Cleveland Cavaliers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "03apx",
+          "player": "Gary Harris",
+          "label": "Gary Harris",
+          "result": {
+            "points": 291.75,
+            "starts": 7,
+            "gp": 12,
+            "periods": 8,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "player_id": "04qs9",
+          "player": "Jevon Carter",
+          "label": "Jevon Carter",
           "result": {
             "points": 0.0,
             "starts": 0,
             "gp": 0,
-            "periods": 0,
+            "periods": 2,
             "ongoing": false
           },
           "next": {
-            "dropped": "2022-06-29"
+            "dropped": "2022-01-18"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Philadelphia 76ers",
+          "to": "Miami Heat",
+          "label": "2023 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "06ca7",
+            "player": "Cam Whitmore",
+            "certain": true
+          },
+          "next": {
+            "trade": "1ikem71elb0p3dff"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Oklahoma City Thunder"
           }
         }
       ]
@@ -969,7 +969,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

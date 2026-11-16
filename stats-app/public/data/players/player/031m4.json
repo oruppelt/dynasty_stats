@@ -1,7 +1,7 @@
 {
   "player_id": "031m4",
   "player": "Dennis Schroder",
-  "salary": 60595515,
+  "salary": 60872303,
   "seasons": [
     {
       "season": "2019-20",
@@ -146,7 +146,7 @@
     {
       "season": "2026-27",
       "team": "Oklahoma City Thunder",
-      "periods": 7,
+      "periods": 8,
       "starts": 5,
       "gp": 9,
       "points": 175.75,
@@ -155,7 +155,7 @@
       "playoff_points": 0.0,
       "salary": 9134000,
       "contract": "REG1",
-      "paid": 1937515
+      "paid": 2214303
     }
   ],
   "best_periods": [
@@ -394,7 +394,7 @@
       "date": "2026-08-19",
       "team": "Oklahoma City Thunder",
       "bid": 0.0,
-      "periods": 7,
+      "periods": 8,
       "starts": 5,
       "gp": 9,
       "points": 175.75,
@@ -507,6 +507,96 @@
           "result": {
             "traded_on": true,
             "drafted_by": "Washington Wizards"
+          }
+        }
+      ]
+    },
+    "vonp1d50ldamgv6o": {
+      "date": "2023-01-24",
+      "season": "2022-23",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Los Angeles Clippers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "031m4",
+          "player": "Dennis Schroder",
+          "label": "Dennis Schroder",
+          "result": {
+            "points": 231.75,
+            "starts": 4,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "player_id": "04xhy",
+          "player": "Yuta Watanabe",
+          "label": "Yuta Watanabe",
+          "result": {
+            "points": 157.75,
+            "starts": 5,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "label": "2023 round 2 pick (New Orleans Pelicans)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "06cei",
+            "player": "Leonard Miller",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "6ayc5q7eljo18azn"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Los Angeles Clippers",
+          "label": "2024 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06mls",
+            "player": "Cam Christie",
+            "certain": true
+          },
+          "next": {
+            "trade": "lzuchjjolqphb417"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
           }
         }
       ]
@@ -683,96 +773,6 @@
         }
       ]
     },
-    "vonp1d50ldamgv6o": {
-      "date": "2023-01-24",
-      "season": "2022-23",
-      "period": 29,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Los Angeles Clippers",
-          "to": "Minnesota Timberwolves",
-          "player_id": "031m4",
-          "player": "Dennis Schroder",
-          "label": "Dennis Schroder",
-          "result": {
-            "points": 231.75,
-            "starts": 4,
-            "gp": 8,
-            "periods": 5,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-05-06"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Los Angeles Clippers",
-          "player_id": "04xhy",
-          "player": "Yuta Watanabe",
-          "label": "Yuta Watanabe",
-          "result": {
-            "points": 157.75,
-            "starts": 5,
-            "gp": 8,
-            "periods": 5,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-05-06"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Los Angeles Clippers",
-          "label": "2023 round 2 pick (New Orleans Pelicans)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 21,
-            "overall": 51,
-            "player_id": "06cei",
-            "player": "Leonard Miller",
-            "certain": true
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "6ayc5q7eljo18azn"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Los Angeles Clippers",
-          "label": "2024 round 2 pick (Boston Celtics)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 20,
-            "overall": 50,
-            "player_id": "06mls",
-            "player": "Cam Christie",
-            "certain": true
-          },
-          "next": {
-            "trade": "lzuchjjolqphb417"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Los Angeles Clippers"
-          }
-        }
-      ]
-    },
     "c48p6vdll986ikws": {
       "date": "2022-10-14",
       "season": "2022-23",
@@ -861,7 +861,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

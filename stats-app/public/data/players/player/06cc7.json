@@ -1,7 +1,7 @@
 {
   "player_id": "06cc7",
   "player": "Brandin Podziemski",
-  "salary": 8290333,
+  "salary": 8733667,
   "seasons": [
     {
       "season": "2023-24",
@@ -48,16 +48,16 @@
     {
       "season": "2026-27",
       "team": "Los Angeles Clippers",
-      "periods": 7,
-      "starts": 6,
-      "gp": 10,
-      "points": 406.0,
+      "periods": 8,
+      "starts": 7,
+      "gp": 11,
+      "points": 424.5,
       "bench_points": 0.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 14630000,
       "contract": "REG1",
-      "paid": 3103333
+      "paid": 3546667
     }
   ],
   "best_periods": [
@@ -229,60 +229,138 @@
       "date": "2026-08-17",
       "team": "Los Angeles Clippers",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 6,
-      "gp": 10,
-      "points": 406.0,
+      "periods": 8,
+      "starts": 7,
+      "gp": 11,
+      "points": 424.5,
       "salary": 14630000,
       "contract": "REG1"
     }
   ],
   "trades": {
-    "dnueejgokyiqqlz5": {
-      "date": "2022-01-17",
-      "season": "2021-22",
-      "period": 27,
+    "whpo1bh4lj410r59": {
+      "date": "2023-06-20",
+      "season": "2023-24",
+      "period": 1,
       "items": [
         {
           "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Sacramento Kings",
-          "player_id": "02qe4",
-          "player": "Kent Bazemore",
-          "label": "Kent Bazemore",
+          "from": "Dallas Mavericks",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06219",
+          "player": "Johnny Davis",
+          "label": "Johnny Davis",
           "result": {
-            "points": 1.5,
-            "starts": 5,
-            "gp": 2,
-            "periods": 7,
+            "points": 31.5,
+            "starts": 3,
+            "gp": 3,
+            "periods": 32,
             "ongoing": false
           },
           "next": {
-            "dropped": "2022-05-24"
+            "dropped": "2024-07-21"
           }
         },
         {
+          "kind": "budget",
+          "from": "Dallas Mavericks",
+          "to": "Oklahoma City Thunder",
+          "label": "$15 budget"
+        },
+        {
           "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "Sacramento Kings",
-          "player_id": "03927",
-          "player": "JaMychal Green",
-          "label": "JaMychal Green",
+          "from": "Oklahoma City Thunder",
+          "to": "Dallas Mavericks",
+          "player_id": "04qsb",
+          "player": "Devonte' Graham",
+          "label": "Devonte' Graham",
           "result": {
-            "points": 123.5,
-            "starts": 4,
-            "gp": 6,
-            "periods": 7,
+            "points": 27.25,
+            "starts": 5,
+            "gp": 2,
+            "periods": 32,
             "ongoing": false
           },
           "next": {
-            "dropped": "2022-05-24"
+            "dropped": "2024-04-24"
           }
         },
         {
           "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Sacramento Kings",
+          "from": "Oklahoma City Thunder",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 1 pick, no. 11",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06cac",
+            "player": "Cason Wallace",
+            "certain": true
+          },
+          "result": {
+            "points": 3033.5,
+            "starts": 78,
+            "gp": 134,
+            "periods": 98,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-08-06"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Dallas Mavericks",
+          "label": "2023 round 1 pick, no. 20",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06cc7",
+            "player": "Brandin Podziemski",
+            "certain": true
+          },
+          "next": {
+            "trade": "itomme9kljcykmjp"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        }
+      ]
+    },
+    "orlj6u33l4wo4rie": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Oklahoma City Thunder",
+          "player_id": "04qsb",
+          "player": "Devonte' Graham",
+          "label": "Devonte' Graham",
+          "result": {
+            "points": 806.0,
+            "starts": 33,
+            "gp": 53,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "whpo1bh4lj410r59"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Oklahoma City Thunder",
           "label": "2023 round 1 pick (Portland Trail Blazers)",
           "became": {
             "season": "2023-24",
@@ -294,7 +372,7 @@
             "certain": true
           },
           "next": {
-            "trade": "ir3ij1a2l4ss2b1p"
+            "trade": "whpo1bh4lj410r59"
           },
           "result": {
             "traded_on": true,
@@ -302,57 +380,50 @@
           }
         },
         {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Los Angeles Lakers",
-          "player_id": "05uje",
-          "player": "Jared Butler",
-          "label": "Jared Butler",
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Oklahoma City Thunder",
+          "label": "2022 round 1 pick, no. 19",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "0621n",
+            "player": "MarJon Beauchamp",
+            "certain": true
+          },
           "result": {
-            "points": 4.75,
-            "starts": 1,
-            "gp": 2,
-            "periods": 40,
+            "points": 589.75,
+            "starts": 46,
+            "gp": 58,
+            "periods": 65,
             "ongoing": false
           },
           "next": {
-            "dropped": "2023-07-07"
+            "dropped": "2024-07-21"
           }
         },
         {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Los Angeles Lakers",
-          "player_id": "05qst",
-          "player": "Paul Reed",
-          "label": "Paul Reed",
-          "result": {
-            "points": -1.0,
-            "starts": 6,
-            "gp": 1,
-            "periods": 7,
-            "ongoing": false
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Minnesota Timberwolves",
+          "label": "2022 round 1 pick, no. 15",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 15,
+            "overall": 15,
+            "player_id": "0621p",
+            "player": "Wendell Moore",
+            "certain": true
           },
           "next": {
-            "dropped": "2022-07-24"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Los Angeles Lakers",
-          "player_id": "05uit",
-          "player": "Kai Jones",
-          "label": "Kai Jones",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": false
+            "trade": "bwkyx3vyl4womqe3"
           },
-          "next": {
-            "trade": "xmox8ksrl9e24fip"
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Cleveland Cavaliers"
           }
         }
       ]
@@ -436,6 +507,81 @@
           "next": {
             "dropped": "2026-08-06"
           }
+        }
+      ]
+    },
+    "stdvva8dksdft1fl": {
+      "date": "2021-08-15",
+      "season": "2021-22",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "Sacramento Kings",
+          "player_id": "04849",
+          "player": "Danuel House",
+          "label": "Danuel House",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "i17hfilyksswy1kr"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "Sacramento Kings",
+          "label": "2023 round 1 pick (Portland Trail Blazers)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06cc7",
+            "player": "Brandin Podziemski",
+            "certain": true
+          },
+          "next": {
+            "trade": "4yavjg7dksolg9o9"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Clippers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Portland Trail Blazers",
+          "label": "2023 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 25,
+            "overall": 55,
+            "player_id": "06cdk",
+            "player": "Jalen Slawson",
+            "certain": true
+          },
+          "next": {
+            "trade": "qcplt94xl6aub8kb"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Sacramento Kings",
+          "to": "Portland Trail Blazers",
+          "label": "$6 budget"
         }
       ]
     },
@@ -615,33 +761,51 @@
         }
       ]
     },
-    "orlj6u33l4wo4rie": {
-      "date": "2022-06-27",
-      "season": "2022-23",
-      "period": 1,
+    "dnueejgokyiqqlz5": {
+      "date": "2022-01-17",
+      "season": "2021-22",
+      "period": 27,
       "items": [
         {
           "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Oklahoma City Thunder",
-          "player_id": "04qsb",
-          "player": "Devonte' Graham",
-          "label": "Devonte' Graham",
+          "from": "Los Angeles Lakers",
+          "to": "Sacramento Kings",
+          "player_id": "02qe4",
+          "player": "Kent Bazemore",
+          "label": "Kent Bazemore",
           "result": {
-            "points": 806.0,
-            "starts": 33,
-            "gp": 53,
-            "periods": 33,
+            "points": 1.5,
+            "starts": 5,
+            "gp": 2,
+            "periods": 7,
             "ongoing": false
           },
           "next": {
-            "trade": "whpo1bh4lj410r59"
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "Sacramento Kings",
+          "player_id": "03927",
+          "player": "JaMychal Green",
+          "label": "JaMychal Green",
+          "result": {
+            "points": 123.5,
+            "starts": 4,
+            "gp": 6,
+            "periods": 7,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
           }
         },
         {
           "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Oklahoma City Thunder",
+          "from": "Los Angeles Lakers",
+          "to": "Sacramento Kings",
           "label": "2023 round 1 pick (Portland Trail Blazers)",
           "became": {
             "season": "2023-24",
@@ -653,7 +817,7 @@
             "certain": true
           },
           "next": {
-            "trade": "whpo1bh4lj410r59"
+            "trade": "ir3ij1a2l4ss2b1p"
           },
           "result": {
             "traded_on": true,
@@ -661,221 +825,57 @@
           }
         },
         {
-          "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Oklahoma City Thunder",
-          "label": "2022 round 1 pick, no. 19",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 19,
-            "overall": 19,
-            "player_id": "0621n",
-            "player": "MarJon Beauchamp",
-            "certain": true
-          },
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "player_id": "05uje",
+          "player": "Jared Butler",
+          "label": "Jared Butler",
           "result": {
-            "points": 589.75,
-            "starts": 46,
-            "gp": 58,
-            "periods": 65,
+            "points": 4.75,
+            "starts": 1,
+            "gp": 2,
+            "periods": 40,
             "ongoing": false
           },
           "next": {
-            "dropped": "2024-07-21"
+            "dropped": "2023-07-07"
           }
         },
         {
-          "kind": "pick",
-          "from": "Oklahoma City Thunder",
-          "to": "Minnesota Timberwolves",
-          "label": "2022 round 1 pick, no. 15",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 15,
-            "overall": 15,
-            "player_id": "0621p",
-            "player": "Wendell Moore",
-            "certain": true
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed",
+          "result": {
+            "points": -1.0,
+            "starts": 6,
+            "gp": 1,
+            "periods": 7,
+            "ongoing": false
           },
           "next": {
-            "trade": "bwkyx3vyl4womqe3"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Cleveland Cavaliers"
+            "dropped": "2022-07-24"
           }
-        }
-      ]
-    },
-    "stdvva8dksdft1fl": {
-      "date": "2021-08-15",
-      "season": "2021-22",
-      "period": 1,
-      "items": [
+        },
         {
           "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "Sacramento Kings",
-          "player_id": "04849",
-          "player": "Danuel House",
-          "label": "Danuel House",
+          "from": "Sacramento Kings",
+          "to": "Los Angeles Lakers",
+          "player_id": "05uit",
+          "player": "Kai Jones",
+          "label": "Kai Jones",
           "result": {
             "points": 0.0,
             "starts": 0,
             "gp": 0,
-            "periods": 0,
+            "periods": 7,
             "ongoing": false
           },
           "next": {
-            "trade": "i17hfilyksswy1kr"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Portland Trail Blazers",
-          "to": "Sacramento Kings",
-          "label": "2023 round 1 pick (Portland Trail Blazers)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 20,
-            "overall": 20,
-            "player_id": "06cc7",
-            "player": "Brandin Podziemski",
-            "certain": true
-          },
-          "next": {
-            "trade": "4yavjg7dksolg9o9"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Los Angeles Clippers"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Portland Trail Blazers",
-          "label": "2023 round 2 pick (Sacramento Kings)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 25,
-            "overall": 55,
-            "player_id": "06cdk",
-            "player": "Jalen Slawson",
-            "certain": true
-          },
-          "next": {
-            "trade": "qcplt94xl6aub8kb"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Miami Heat"
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Sacramento Kings",
-          "to": "Portland Trail Blazers",
-          "label": "$6 budget"
-        }
-      ]
-    },
-    "whpo1bh4lj410r59": {
-      "date": "2023-06-20",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Dallas Mavericks",
-          "to": "Oklahoma City Thunder",
-          "player_id": "06219",
-          "player": "Johnny Davis",
-          "label": "Johnny Davis",
-          "result": {
-            "points": 31.5,
-            "starts": 3,
-            "gp": 3,
-            "periods": 32,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-07-21"
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Dallas Mavericks",
-          "to": "Oklahoma City Thunder",
-          "label": "$15 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Dallas Mavericks",
-          "player_id": "04qsb",
-          "player": "Devonte' Graham",
-          "label": "Devonte' Graham",
-          "result": {
-            "points": 27.25,
-            "starts": 5,
-            "gp": 2,
-            "periods": 32,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-04-24"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Oklahoma City Thunder",
-          "to": "Dallas Mavericks",
-          "label": "2023 round 1 pick, no. 11",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 11,
-            "overall": 11,
-            "player_id": "06cac",
-            "player": "Cason Wallace",
-            "certain": true
-          },
-          "result": {
-            "points": 3033.5,
-            "starts": 78,
-            "gp": 134,
-            "periods": 98,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-08-06"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Oklahoma City Thunder",
-          "to": "Dallas Mavericks",
-          "label": "2023 round 1 pick, no. 20",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 20,
-            "overall": 20,
-            "player_id": "06cc7",
-            "player": "Brandin Podziemski",
-            "certain": true
-          },
-          "next": {
-            "trade": "itomme9kljcykmjp"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Los Angeles Clippers"
+            "trade": "xmox8ksrl9e24fip"
           }
         }
       ]
@@ -909,7 +909,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

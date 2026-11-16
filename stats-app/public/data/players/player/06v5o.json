@@ -1,7 +1,7 @@
 {
   "player_id": "06v5o",
   "player": "Liam McNeeley",
-  "salary": 1570909,
+  "salary": 1610182,
   "seasons": [
     {
       "season": "2025-26",
@@ -20,7 +20,7 @@
     {
       "season": "2026-27",
       "team": "Washington Wizards",
-      "periods": 7,
+      "periods": 8,
       "starts": 0,
       "gp": 0,
       "points": 0.0,
@@ -29,7 +29,7 @@
       "playoff_points": 0.0,
       "salary": 1296000,
       "contract": "R12",
-      "paid": 274909
+      "paid": 314182
     }
   ],
   "best_periods": [
@@ -138,7 +138,7 @@
       "from": "Boston Celtics",
       "team": "Washington Wizards",
       "trade": "i8bys7b8msyptenz",
-      "periods": 7,
+      "periods": 8,
       "starts": 0,
       "gp": 0,
       "points": 0.0,
@@ -147,55 +147,6 @@
     }
   ],
   "trades": {
-    "i8bys7b8msyptenz": {
-      "date": "2026-08-18",
-      "season": "2026-27",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Washington Wizards",
-          "player_id": "06v5o",
-          "player": "Liam McNeeley",
-          "label": "Liam McNeeley",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Washington Wizards",
-          "to": "Boston Celtics",
-          "player_id": "06v8i",
-          "player": "Alex Toohey",
-          "label": "Alex Toohey",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Washington Wizards",
-          "to": "Boston Celtics",
-          "label": "$5 budget"
-        }
-      ]
-    },
     "dy1iwzstmspva1dv": {
       "date": "2026-08-12",
       "season": "2026-27",
@@ -230,6 +181,230 @@
           "from": "Portland Trail Blazers",
           "to": "Orlando Magic",
           "label": "2027 round 2 pick (Atlanta Hawks)"
+        }
+      ]
+    },
+    "zlfnl31gmqt85aw1": {
+      "date": "2026-06-25",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "player_id": "06v8b",
+          "player": "Rocco Zikarsky",
+          "label": "Rocco Zikarsky",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Portland Trail Blazers",
+          "to": "San Antonio Spurs",
+          "label": "2026 round 2 pick, no. 24",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 24,
+            "overall": 54,
+            "player_id": "076ub",
+            "player": "Tobi Lawal",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5j",
+          "player": "Jase Richardson",
+          "label": "Jase Richardson",
+          "result": {
+            "points": 147.5,
+            "starts": 6,
+            "gp": 8,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5o",
+          "player": "Liam McNeeley",
+          "label": "Liam McNeeley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "dy1iwzstmspva1dv"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "player_id": "06v5e",
+          "player": "Yang Hansen",
+          "label": "Yang Hansen",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-22"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Portland Trail Blazers",
+          "label": "2026 round 1 pick, no. 23",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "076t4",
+            "player": "Ebuka Okorie",
+            "certain": true
+          },
+          "next": {
+            "trade": "fiw35r4gmr3vp2cv"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
+          }
+        }
+      ]
+    },
+    "wemsb0xwmsu8e3ur": {
+      "date": "2026-08-15",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Orlando Magic",
+          "player_id": "027ou",
+          "player": "Klay Thompson",
+          "label": "Klay Thompson",
+          "result": {
+            "points": 196.0,
+            "starts": 4,
+            "gp": 8,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "6nant226mw3ba0hy"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Orlando Magic",
+          "label": "2028 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Boston Celtics",
+          "player_id": "06v5o",
+          "player": "Liam McNeeley",
+          "label": "Liam McNeeley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "i8bys7b8msyptenz"
+          }
+        }
+      ]
+    },
+    "i8bys7b8msyptenz": {
+      "date": "2026-08-18",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Washington Wizards",
+          "player_id": "06v5o",
+          "player": "Liam McNeeley",
+          "label": "Liam McNeeley",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "player_id": "06v8i",
+          "player": "Alex Toohey",
+          "label": "Alex Toohey",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Washington Wizards",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
         }
       ]
     },
@@ -354,181 +529,6 @@
           }
         }
       ]
-    },
-    "zlfnl31gmqt85aw1": {
-      "date": "2026-06-25",
-      "season": "2026-27",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Portland Trail Blazers",
-          "to": "San Antonio Spurs",
-          "player_id": "06v8b",
-          "player": "Rocco Zikarsky",
-          "label": "Rocco Zikarsky",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Portland Trail Blazers",
-          "to": "San Antonio Spurs",
-          "label": "2026 round 2 pick, no. 24",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 24,
-            "overall": 54,
-            "player_id": "076ub",
-            "player": "Tobi Lawal",
-            "certain": true
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Portland Trail Blazers",
-          "player_id": "06v5j",
-          "player": "Jase Richardson",
-          "label": "Jase Richardson",
-          "result": {
-            "points": 147.5,
-            "starts": 5,
-            "gp": 8,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Portland Trail Blazers",
-          "player_id": "06v5o",
-          "player": "Liam McNeeley",
-          "label": "Liam McNeeley",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "dy1iwzstmspva1dv"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Portland Trail Blazers",
-          "player_id": "06v5e",
-          "player": "Yang Hansen",
-          "label": "Yang Hansen",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 1,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-10-22"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Portland Trail Blazers",
-          "label": "2026 round 1 pick, no. 23",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 23,
-            "overall": 23,
-            "player_id": "076t4",
-            "player": "Ebuka Okorie",
-            "certain": true
-          },
-          "next": {
-            "trade": "fiw35r4gmr3vp2cv"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Philadelphia 76ers"
-          }
-        }
-      ]
-    },
-    "wemsb0xwmsu8e3ur": {
-      "date": "2026-08-15",
-      "season": "2026-27",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Orlando Magic",
-          "player_id": "027ou",
-          "player": "Klay Thompson",
-          "label": "Klay Thompson",
-          "result": {
-            "points": 196.0,
-            "starts": 4,
-            "gp": 8,
-            "periods": 5,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "6nant226mw3ba0hy"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Orlando Magic",
-          "label": "2028 round 2 pick (Boston Celtics)"
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Boston Celtics",
-          "player_id": "06v5o",
-          "player": "Liam McNeeley",
-          "label": "Liam McNeeley",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "i8bys7b8msyptenz"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -549,7 +549,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

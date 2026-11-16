@@ -1,7 +1,7 @@
 {
   "player_id": "04ewc",
   "player": "Zach Collins",
-  "salary": 32816878,
+  "salary": 32968393,
   "seasons": [
     {
       "season": "2019-20",
@@ -146,16 +146,16 @@
     {
       "season": "2026-27",
       "team": "Orlando Magic",
-      "periods": 7,
-      "starts": 3,
-      "gp": 3,
-      "points": 29.25,
+      "periods": 8,
+      "starts": 4,
+      "gp": 4,
+      "points": 44.75,
       "bench_points": 6.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 5000000,
       "contract": "REG1",
-      "paid": 1060606
+      "paid": 1212121
     }
   ],
   "best_periods": [
@@ -377,15 +377,367 @@
       "from": "Phoenix Suns",
       "team": "Orlando Magic",
       "trade": "d3urdettmsz0jqra",
-      "periods": 7,
-      "starts": 3,
-      "gp": 3,
-      "points": 29.25,
+      "periods": 8,
+      "starts": 4,
+      "gp": 4,
+      "points": 44.75,
       "salary": 5000000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "d3urdettmsz0jqra": {
+      "date": "2026-08-18",
+      "season": "2026-27",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Phoenix Suns",
+          "player_id": "04azw",
+          "player": "Lauri Markkanen",
+          "label": "Lauri Markkanen",
+          "result": {
+            "points": 304.75,
+            "starts": 7,
+            "gp": 8,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "player_id": "06v5a",
+          "player": "Collin Murray-Boyles",
+          "label": "Collin Murray-Boyles",
+          "result": {
+            "points": 308.0,
+            "starts": 8,
+            "gp": 12,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "player_id": "03ad4",
+          "player": "D'Angelo Russell",
+          "label": "D'Angelo Russell",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins",
+          "result": {
+            "points": 44.75,
+            "starts": 4,
+            "gp": 4,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Orlando Magic",
+          "label": "2028 round 1 pick (Phoenix Suns)"
+        }
+      ]
+    },
+    "0cpp4tktldd5fyqm": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-01-26"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "05ujh",
+          "player": "Greg Brown",
+          "label": "Greg Brown",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-01-26"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Miami Heat",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins",
+          "result": {
+            "points": 28.25,
+            "starts": 1,
+            "gp": 2,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "player_id": "027p9",
+          "player": "Reggie Jackson",
+          "label": "Reggie Jackson",
+          "result": {
+            "points": 87.25,
+            "starts": 3,
+            "gp": 4,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Miami Heat",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 29,
+            "overall": 59,
+            "player_id": "06mm8",
+            "player": "Keshad Johnson",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-10-20"
+          }
+        }
+      ]
+    },
+    "mrggfdnik2gldpms": {
+      "date": "2019-11-01",
+      "season": "2019-20",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Denver Nuggets",
+          "player_id": "027oj",
+          "player": "Kyrie Irving",
+          "label": "Kyrie Irving",
+          "result": {
+            "points": 4942.25,
+            "starts": 71,
+            "gp": 98,
+            "periods": 124,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-07-22"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Denver Nuggets",
+          "player_id": "042n6",
+          "player": "Jakob Poeltl",
+          "label": "Jakob Poeltl",
+          "result": {
+            "points": 1114.0,
+            "starts": 29,
+            "gp": 48,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "03ad0",
+          "player": "Tyus Jones",
+          "label": "Tyus Jones",
+          "result": {
+            "points": 979.0,
+            "starts": 29,
+            "gp": 48,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "005ke",
+          "player": "Danilo Gallinari",
+          "label": "Danilo Gallinari",
+          "result": {
+            "points": 709.75,
+            "starts": 12,
+            "gp": 19,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "u4u6cj1zk4cjuwah"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04ewc",
+          "player": "Zach Collins",
+          "label": "Zach Collins",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9kgilzvrki9xyzut"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "05uj1",
+            "player": "Cameron Thomas",
+            "certain": true
+          },
+          "next": {
+            "trade": "9kgilzvrki9xyzut"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Atlanta Hawks"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2020 round 2 pick (Indiana Pacers)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 4,
+            "overall": 34,
+            "player_id": "05qta",
+            "player": "Elijah Hughes",
+            "certain": true
+          },
+          "next": {
+            "trade": "4uomns6fk51ipc8r"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Memphis Grizzlies"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Cleveland Cavaliers",
+          "label": "2021 round 1 pick (Denver Nuggets)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "05uiu",
+            "player": "Jalen Johnson",
+            "certain": true
+          },
+          "next": {
+            "trade": "kyiyrs77k4cvyypt"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "New York Knicks"
+          }
+        }
+      ]
+    },
     "9kgilzvrki9xyzut": {
       "date": "2020-12-04",
       "season": "2020-21",
@@ -632,363 +984,11 @@
             "points": 0.0,
             "starts": 0,
             "gp": 0,
-            "periods": 40,
+            "periods": 41,
             "ongoing": true
           },
           "next": {
             "kept": true
-          }
-        }
-      ]
-    },
-    "d3urdettmsz0jqra": {
-      "date": "2026-08-18",
-      "season": "2026-27",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Phoenix Suns",
-          "player_id": "04azw",
-          "player": "Lauri Markkanen",
-          "label": "Lauri Markkanen",
-          "result": {
-            "points": 304.75,
-            "starts": 7,
-            "gp": 8,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Orlando Magic",
-          "player_id": "06v5a",
-          "player": "Collin Murray-Boyles",
-          "label": "Collin Murray-Boyles",
-          "result": {
-            "points": 277.5,
-            "starts": 7,
-            "gp": 11,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Orlando Magic",
-          "player_id": "03ad4",
-          "player": "D'Angelo Russell",
-          "label": "D'Angelo Russell",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Phoenix Suns",
-          "to": "Orlando Magic",
-          "player_id": "04ewc",
-          "player": "Zach Collins",
-          "label": "Zach Collins",
-          "result": {
-            "points": 29.25,
-            "starts": 3,
-            "gp": 3,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Phoenix Suns",
-          "to": "Orlando Magic",
-          "label": "2028 round 1 pick (Phoenix Suns)"
-        }
-      ]
-    },
-    "mrggfdnik2gldpms": {
-      "date": "2019-11-01",
-      "season": "2019-20",
-      "period": 4,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Denver Nuggets",
-          "player_id": "027oj",
-          "player": "Kyrie Irving",
-          "label": "Kyrie Irving",
-          "result": {
-            "points": 4942.25,
-            "starts": 71,
-            "gp": 98,
-            "periods": 124,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-07-22"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Cleveland Cavaliers",
-          "to": "Denver Nuggets",
-          "player_id": "042n6",
-          "player": "Jakob Poeltl",
-          "label": "Jakob Poeltl",
-          "result": {
-            "points": 1114.0,
-            "starts": 29,
-            "gp": 48,
-            "periods": 29,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2020-10-08"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Denver Nuggets",
-          "to": "Cleveland Cavaliers",
-          "player_id": "03ad0",
-          "player": "Tyus Jones",
-          "label": "Tyus Jones",
-          "result": {
-            "points": 979.0,
-            "starts": 29,
-            "gp": 48,
-            "periods": 29,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2020-10-08"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Denver Nuggets",
-          "to": "Cleveland Cavaliers",
-          "player_id": "005ke",
-          "player": "Danilo Gallinari",
-          "label": "Danilo Gallinari",
-          "result": {
-            "points": 709.75,
-            "starts": 12,
-            "gp": 19,
-            "periods": 14,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "u4u6cj1zk4cjuwah"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Denver Nuggets",
-          "to": "Cleveland Cavaliers",
-          "player_id": "04ewc",
-          "player": "Zach Collins",
-          "label": "Zach Collins",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 29,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "9kgilzvrki9xyzut"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Cleveland Cavaliers",
-          "label": "2021 round 1 pick (Golden State Warriors)",
-          "became": {
-            "season": "2021-22",
-            "round": 1,
-            "pick": 21,
-            "overall": 21,
-            "player_id": "05uj1",
-            "player": "Cameron Thomas",
-            "certain": true
-          },
-          "next": {
-            "trade": "9kgilzvrki9xyzut"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Atlanta Hawks"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Cleveland Cavaliers",
-          "label": "2020 round 2 pick (Indiana Pacers)",
-          "became": {
-            "season": "2020-21",
-            "round": 2,
-            "pick": 4,
-            "overall": 34,
-            "player_id": "05qta",
-            "player": "Elijah Hughes",
-            "certain": true
-          },
-          "next": {
-            "trade": "4uomns6fk51ipc8r"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Memphis Grizzlies"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Cleveland Cavaliers",
-          "label": "2021 round 1 pick (Denver Nuggets)",
-          "became": {
-            "season": "2021-22",
-            "round": 1,
-            "pick": 23,
-            "overall": 23,
-            "player_id": "05uiu",
-            "player": "Jalen Johnson",
-            "certain": true
-          },
-          "next": {
-            "trade": "kyiyrs77k4cvyypt"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "New York Knicks"
-          }
-        }
-      ]
-    },
-    "0cpp4tktldd5fyqm": {
-      "date": "2023-01-26",
-      "season": "2022-23",
-      "period": 30,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Miami Heat",
-          "player_id": "027pf",
-          "player": "Cory Joseph",
-          "label": "Cory Joseph",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-01-26"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Miami Heat",
-          "player_id": "05ujh",
-          "player": "Greg Brown",
-          "label": "Greg Brown",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-01-26"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Miami Heat",
-          "player_id": "04ewc",
-          "player": "Zach Collins",
-          "label": "Zach Collins",
-          "result": {
-            "points": 28.25,
-            "starts": 1,
-            "gp": 2,
-            "periods": 4,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-05-06"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Miami Heat",
-          "to": "Detroit Pistons",
-          "player_id": "027p9",
-          "player": "Reggie Jackson",
-          "label": "Reggie Jackson",
-          "result": {
-            "points": 87.25,
-            "starts": 3,
-            "gp": 4,
-            "periods": 4,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-05-06"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Detroit Pistons",
-          "label": "2024 round 2 pick (Sacramento Kings)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 29,
-            "overall": 59,
-            "player_id": "06mm8",
-            "player": "Keshad Johnson",
-            "certain": true
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 66,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-10-20"
           }
         }
       ]
@@ -1032,7 +1032,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

@@ -183,74 +183,6 @@
     }
   ],
   "trades": {
-    "uuh2rleylbqddl2p": {
-      "date": "2022-12-16",
-      "season": "2022-23",
-      "period": 18,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Golden State Warriors",
-          "player_id": "005ll",
-          "player": "George Hill",
-          "label": "George Hill",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "4ghkugn9lbqnbawd"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Golden State Warriors",
-          "label": "2023 round 2 pick (Orlando Magic)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 2,
-            "overall": 32,
-            "player_id": "06ccv",
-            "player": "Trayce Jackson-Davis",
-            "certain": true
-          },
-          "result": {
-            "points": 1259.25,
-            "starts": 34,
-            "gp": 56,
-            "periods": 70,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "u31lz7dpmhn7i0du"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Atlanta Hawks",
-          "player_id": "05qzh",
-          "player": "Naji Marshall",
-          "label": "Naji Marshall",
-          "result": {
-            "points": 538.25,
-            "starts": 13,
-            "gp": 22,
-            "periods": 16,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-05-06"
-          }
-        }
-      ]
-    },
     "0j9wja8ekwrzezvl": {
       "date": "2021-12-05",
       "season": "2021-22",
@@ -316,6 +248,74 @@
           "result": {
             "traded_on": true,
             "drafted_by": "Golden State Warriors"
+          }
+        }
+      ]
+    },
+    "uuh2rleylbqddl2p": {
+      "date": "2022-12-16",
+      "season": "2022-23",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "005ll",
+          "player": "George Hill",
+          "label": "George Hill",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "4ghkugn9lbqnbawd"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "label": "2023 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "06ccv",
+            "player": "Trayce Jackson-Davis",
+            "certain": true
+          },
+          "result": {
+            "points": 1259.25,
+            "starts": 34,
+            "gp": 56,
+            "periods": 70,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "u31lz7dpmhn7i0du"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "player_id": "05qzh",
+          "player": "Naji Marshall",
+          "label": "Naji Marshall",
+          "result": {
+            "points": 538.25,
+            "starts": 13,
+            "gp": 22,
+            "periods": 16,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
           }
         }
       ]
@@ -456,7 +456,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

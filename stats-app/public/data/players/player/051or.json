@@ -1,7 +1,7 @@
 {
   "player_id": "051or",
   "player": "Cameron Johnson",
-  "salary": 28005909,
+  "salary": 28153182,
   "seasons": [
     {
       "season": "2019-20",
@@ -104,16 +104,16 @@
     {
       "season": "2026-27",
       "team": "Oklahoma City Thunder",
-      "periods": 7,
-      "starts": 4,
-      "gp": 6,
-      "points": 149.25,
+      "periods": 8,
+      "starts": 5,
+      "gp": 7,
+      "points": 178.0,
       "bench_points": 28.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 4860000,
       "contract": "REG1",
-      "paid": 1030909
+      "paid": 1178182
     }
   ],
   "best_periods": [
@@ -295,15 +295,55 @@
       "date": "2026-08-12",
       "team": "Oklahoma City Thunder",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 4,
-      "gp": 6,
-      "points": 149.25,
+      "periods": 8,
+      "starts": 5,
+      "gp": 7,
+      "points": 178.0,
       "salary": 4860000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "evsc49z6jxaiikub": {
+      "date": "2019-06-24",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "Toronto Raptors",
+          "player_id": "04847",
+          "player": "Bryn Forbes",
+          "label": "Bryn Forbes"
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Memphis Grizzlies",
+          "label": "2019 round 2 pick, no. 2",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 2,
+            "overall": 32,
+            "player_id": "051or",
+            "player": "Cameron Johnson",
+            "certain": false
+          },
+          "result": {
+            "points": 1028.25,
+            "starts": 27,
+            "gp": 49,
+            "periods": 61,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "20af3cgxkpeqvvt8"
+          }
+        }
+      ]
+    },
     "20af3cgxkpeqvvt8": {
       "date": "2021-06-02",
       "season": "2021-22",
@@ -393,46 +433,6 @@
           }
         }
       ]
-    },
-    "evsc49z6jxaiikub": {
-      "date": "2019-06-24",
-      "season": "2019-20",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Toronto Raptors",
-          "player_id": "04847",
-          "player": "Bryn Forbes",
-          "label": "Bryn Forbes"
-        },
-        {
-          "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "Memphis Grizzlies",
-          "label": "2019 round 2 pick, no. 2",
-          "became": {
-            "season": "2019-20",
-            "round": 2,
-            "pick": 2,
-            "overall": 32,
-            "player_id": "051or",
-            "player": "Cameron Johnson",
-            "certain": false
-          },
-          "result": {
-            "points": 1028.25,
-            "starts": 27,
-            "gp": 49,
-            "periods": 61,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "20af3cgxkpeqvvt8"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -473,7 +473,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "player_id": "05qst",
   "player": "Paul Reed",
-  "salary": 8886364,
+  "salary": 8977273,
   "seasons": [
     {
       "season": "2020-21",
@@ -188,16 +188,16 @@
     {
       "season": "2026-27",
       "team": "Utah Jazz",
-      "periods": 7,
-      "starts": 6,
-      "gp": 10,
-      "points": 303.5,
+      "periods": 8,
+      "starts": 7,
+      "gp": 11,
+      "points": 328.75,
       "bench_points": 18.5,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 3000000,
       "contract": "REG1",
-      "paid": 636364
+      "paid": 727273
     }
   ],
   "best_periods": [
@@ -514,90 +514,190 @@
       "date": "2026-08-16",
       "team": "Utah Jazz",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 6,
-      "gp": 10,
-      "points": 303.5,
+      "periods": 8,
+      "starts": 7,
+      "gp": 11,
+      "points": 328.75,
       "salary": 3000000,
       "contract": "REG1"
     }
   ],
   "trades": {
-    "8x9ec2fzm334p6t0": {
-      "date": "2024-11-04",
-      "season": "2024-25",
-      "period": 5,
+    "v5ras31lmkqs89nd": {
+      "date": "2026-01-23",
+      "season": "2025-26",
+      "period": 28,
       "items": [
         {
           "kind": "player",
-          "from": "Miami Heat",
-          "to": "Milwaukee Bucks",
-          "player_id": "06cp4",
-          "player": "Craig Porter",
-          "label": "Craig Porter",
+          "from": "Dallas Mavericks",
+          "to": "Utah Jazz",
+          "player_id": "06mk8",
+          "player": "Jared McCain",
+          "label": "Jared McCain",
           "result": {
-            "points": 138.75,
-            "starts": 19,
-            "gp": 18,
-            "periods": 24,
-            "ongoing": false
+            "points": 497.5,
+            "starts": 13,
+            "gp": 23,
+            "periods": 14,
+            "ongoing": true
           },
           "next": {
-            "dropped": "2025-01-26"
+            "kept": true
           }
         },
         {
           "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05ujt",
-          "player": "Aaron Wiggins",
-          "label": "Aaron Wiggins",
-          "result": {
-            "points": 923.5,
-            "starts": 20,
-            "gp": 38,
-            "periods": 29,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2025-06-25"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Miami Heat",
+          "from": "Dallas Mavericks",
+          "to": "Utah Jazz",
           "player_id": "05qst",
           "player": "Paul Reed",
           "label": "Paul Reed",
           "result": {
-            "points": 141.5,
-            "starts": 12,
-            "gp": 10,
-            "periods": 14,
+            "points": 186.75,
+            "starts": 2,
+            "gp": 4,
+            "periods": 6,
             "ongoing": false
           },
           "next": {
-            "trade": "0trs00ixm508eth8"
+            "dropped": "2026-06-20"
           }
         },
         {
           "kind": "pick",
-          "from": "Minnesota Timberwolves",
-          "to": "Milwaukee Bucks",
-          "label": "2026 round 2 pick (Minnesota Timberwolves)",
+          "from": "Dallas Mavericks",
+          "to": "Utah Jazz",
+          "label": "2026 round 1 pick (Charlotte Hornets)",
           "became": {
             "season": "2026-27",
-            "round": 2,
-            "pick": 18,
-            "overall": 48,
-            "player_id": "076tv",
-            "player": null,
+            "round": 1,
+            "pick": 17,
+            "overall": 17,
+            "player_id": "076tb",
+            "player": "Allen Graves",
             "certain": true
           },
+          "result": {
+            "points": 105.25,
+            "starts": 3,
+            "gp": 7,
+            "periods": 8,
+            "ongoing": true
+          },
           "next": {
-            "trade": "nk1jb6yxmhelw0l5"
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Dallas Mavericks",
+          "player_id": "062pk",
+          "player": "Simone Fontecchio",
+          "label": "Simone Fontecchio",
+          "result": {
+            "points": 133.25,
+            "starts": 3,
+            "gp": 6,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Utah Jazz",
+          "to": "Dallas Mavericks",
+          "player_id": "03e6n",
+          "player": "Jusuf Nurkic",
+          "label": "Jusuf Nurkic",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-02-27"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Utah Jazz",
+          "to": "Dallas Mavericks",
+          "label": "2026 round 1 pick (Dallas Mavericks)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "076t5",
+            "player": "Alex Karaban",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
+    "7zkxt54tkgi6yan4": {
+      "date": "2020-10-20",
+      "season": "2020-21",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Golden State Warriors",
+          "player_id": "051p8",
+          "player": "Jordan Poole",
+          "label": "Jordan Poole",
+          "result": {
+            "points": 31.0,
+            "starts": 1,
+            "gp": 2,
+            "periods": 6,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-01-11"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Boston Celtics",
+          "label": "2020 round 2 pick, no. 20",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "05qst",
+            "player": "Paul Reed",
+            "certain": false
+          },
+          "result": {
+            "points": 100.0,
+            "starts": 4,
+            "gp": 5,
+            "periods": 41,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "9b0henoykwl4z069"
           }
         }
       ]
@@ -683,6 +783,255 @@
           },
           "next": {
             "dropped": "2025-01-20"
+          }
+        }
+      ]
+    },
+    "9b0henoykwl4z069": {
+      "date": "2021-11-29",
+      "season": "2021-22",
+      "period": 13,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed",
+          "result": {
+            "points": 23.75,
+            "starts": 10,
+            "gp": 4,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "dnueejgokyiqqlz5"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Sacramento Kings",
+          "player_id": "05uug",
+          "player": "Sam Hauser",
+          "label": "Sam Hauser",
+          "result": {
+            "points": 16.75,
+            "starts": 6,
+            "gp": 4,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "de5pkn4ykyik1gb0"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "player_id": "051oy",
+          "player": "Goga Bitadze",
+          "label": "Goga Bitadze",
+          "result": {
+            "points": 3.0,
+            "starts": 3,
+            "gp": 1,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "ejtia2dekyj5hjpw"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Boston Celtics",
+          "label": "2023 round 2 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 28,
+            "overall": 58,
+            "player_id": "06cen",
+            "player": "Caleb Daniels",
+            "certain": true
+          },
+          "next": {
+            "trade": "ejtia2dekyj5hjpw"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Miami Heat"
+          }
+        }
+      ]
+    },
+    "8x9ec2fzm334p6t0": {
+      "date": "2024-11-04",
+      "season": "2024-25",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Miami Heat",
+          "to": "Milwaukee Bucks",
+          "player_id": "06cp4",
+          "player": "Craig Porter",
+          "label": "Craig Porter",
+          "result": {
+            "points": 138.75,
+            "starts": 19,
+            "gp": 18,
+            "periods": 24,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-01-26"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujt",
+          "player": "Aaron Wiggins",
+          "label": "Aaron Wiggins",
+          "result": {
+            "points": 923.5,
+            "starts": 20,
+            "gp": 38,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Miami Heat",
+          "player_id": "05qst",
+          "player": "Paul Reed",
+          "label": "Paul Reed",
+          "result": {
+            "points": 141.5,
+            "starts": 12,
+            "gp": 10,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0trs00ixm508eth8"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Minnesota Timberwolves",
+          "to": "Milwaukee Bucks",
+          "label": "2026 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "076tv",
+            "player": null,
+            "certain": true
+          },
+          "next": {
+            "trade": "nk1jb6yxmhelw0l5"
+          }
+        }
+      ]
+    },
+    "00p5towuk3e4pdt1": {
+      "date": "2019-11-25",
+      "season": "2019-20",
+      "period": 11,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "player_id": "051pz",
+          "player": "Kyle Guy",
+          "label": "Kyle Guy",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-12-22"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "label": "2020 round 2 pick (Atlanta Hawks)",
+          "became": {
+            "season": "2020-21",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "05qst",
+            "player": "Paul Reed",
+            "certain": false
+          },
+          "next": {
+            "trade": "7zkxt54tkgi6yan4"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 21,
+            "overall": 51,
+            "player_id": "05ujs",
+            "player": "Sandro Mamukelashvili",
+            "certain": true
+          },
+          "next": {
+            "trade": "b9ymh23skhtdejcr"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Chicago Bulls"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Atlanta Hawks",
+          "player_id": "03acy",
+          "player": "Dario Saric",
+          "label": "Dario Saric",
+          "result": {
+            "points": 503.75,
+            "starts": 14,
+            "gp": 20,
+            "periods": 22,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2020-10-08"
           }
         }
       ]
@@ -805,355 +1154,6 @@
           }
         }
       ]
-    },
-    "00p5towuk3e4pdt1": {
-      "date": "2019-11-25",
-      "season": "2019-20",
-      "period": 11,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Atlanta Hawks",
-          "to": "Golden State Warriors",
-          "player_id": "051pz",
-          "player": "Kyle Guy",
-          "label": "Kyle Guy",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 22,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2020-12-22"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Golden State Warriors",
-          "label": "2020 round 2 pick (Atlanta Hawks)",
-          "became": {
-            "season": "2020-21",
-            "round": 2,
-            "pick": 20,
-            "overall": 50,
-            "player_id": "05qst",
-            "player": "Paul Reed",
-            "certain": false
-          },
-          "next": {
-            "trade": "7zkxt54tkgi6yan4"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Boston Celtics"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Atlanta Hawks",
-          "to": "Golden State Warriors",
-          "label": "2021 round 2 pick (Golden State Warriors)",
-          "became": {
-            "season": "2021-22",
-            "round": 2,
-            "pick": 21,
-            "overall": 51,
-            "player_id": "05ujs",
-            "player": "Sandro Mamukelashvili",
-            "certain": true
-          },
-          "next": {
-            "trade": "b9ymh23skhtdejcr"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Chicago Bulls"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Atlanta Hawks",
-          "player_id": "03acy",
-          "player": "Dario Saric",
-          "label": "Dario Saric",
-          "result": {
-            "points": 503.75,
-            "starts": 14,
-            "gp": 20,
-            "periods": 22,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2020-10-08"
-          }
-        }
-      ]
-    },
-    "7zkxt54tkgi6yan4": {
-      "date": "2020-10-20",
-      "season": "2020-21",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Golden State Warriors",
-          "player_id": "051p8",
-          "player": "Jordan Poole",
-          "label": "Jordan Poole",
-          "result": {
-            "points": 31.0,
-            "starts": 1,
-            "gp": 2,
-            "periods": 6,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2021-01-11"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Boston Celtics",
-          "label": "2020 round 2 pick, no. 20",
-          "became": {
-            "season": "2020-21",
-            "round": 2,
-            "pick": 20,
-            "overall": 50,
-            "player_id": "05qst",
-            "player": "Paul Reed",
-            "certain": false
-          },
-          "result": {
-            "points": 100.0,
-            "starts": 4,
-            "gp": 5,
-            "periods": 41,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "9b0henoykwl4z069"
-          }
-        }
-      ]
-    },
-    "v5ras31lmkqs89nd": {
-      "date": "2026-01-23",
-      "season": "2025-26",
-      "period": 28,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Dallas Mavericks",
-          "to": "Utah Jazz",
-          "player_id": "06mk8",
-          "player": "Jared McCain",
-          "label": "Jared McCain",
-          "result": {
-            "points": 439.25,
-            "starts": 12,
-            "gp": 21,
-            "periods": 13,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Dallas Mavericks",
-          "to": "Utah Jazz",
-          "player_id": "05qst",
-          "player": "Paul Reed",
-          "label": "Paul Reed",
-          "result": {
-            "points": 186.75,
-            "starts": 2,
-            "gp": 4,
-            "periods": 6,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-06-20"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Dallas Mavericks",
-          "to": "Utah Jazz",
-          "label": "2026 round 1 pick (Charlotte Hornets)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 17,
-            "overall": 17,
-            "player_id": "076tb",
-            "player": "Allen Graves",
-            "certain": true
-          },
-          "result": {
-            "points": 105.25,
-            "starts": 3,
-            "gp": 7,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Dallas Mavericks",
-          "player_id": "062pk",
-          "player": "Simone Fontecchio",
-          "label": "Simone Fontecchio",
-          "result": {
-            "points": 133.25,
-            "starts": 3,
-            "gp": 6,
-            "periods": 6,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-07-10"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Utah Jazz",
-          "to": "Dallas Mavericks",
-          "player_id": "03e6n",
-          "player": "Jusuf Nurkic",
-          "label": "Jusuf Nurkic",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 6,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-02-27"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Utah Jazz",
-          "to": "Dallas Mavericks",
-          "label": "2026 round 1 pick (Dallas Mavericks)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 29,
-            "overall": 29,
-            "player_id": "076t5",
-            "player": "Alex Karaban",
-            "certain": true
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        }
-      ]
-    },
-    "9b0henoykwl4z069": {
-      "date": "2021-11-29",
-      "season": "2021-22",
-      "period": 13,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Sacramento Kings",
-          "player_id": "05qst",
-          "player": "Paul Reed",
-          "label": "Paul Reed",
-          "result": {
-            "points": 23.75,
-            "starts": 10,
-            "gp": 4,
-            "periods": 14,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "dnueejgokyiqqlz5"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Sacramento Kings",
-          "player_id": "05uug",
-          "player": "Sam Hauser",
-          "label": "Sam Hauser",
-          "result": {
-            "points": 16.75,
-            "starts": 6,
-            "gp": 4,
-            "periods": 14,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "de5pkn4ykyik1gb0"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Boston Celtics",
-          "player_id": "051oy",
-          "player": "Goga Bitadze",
-          "label": "Goga Bitadze",
-          "result": {
-            "points": 3.0,
-            "starts": 3,
-            "gp": 1,
-            "periods": 15,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "ejtia2dekyj5hjpw"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Boston Celtics",
-          "label": "2023 round 2 pick (San Antonio Spurs)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 28,
-            "overall": 58,
-            "player_id": "06cen",
-            "player": "Caleb Daniels",
-            "certain": true
-          },
-          "next": {
-            "trade": "ejtia2dekyj5hjpw"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Miami Heat"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -1194,7 +1194,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

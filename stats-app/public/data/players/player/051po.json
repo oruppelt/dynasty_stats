@@ -338,55 +338,6 @@
     }
   ],
   "trades": {
-    "m3wugi8glonblh1e": {
-      "date": "2023-11-06",
-      "season": "2023-24",
-      "period": 5,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Memphis Grizzlies",
-          "player_id": "03r7e",
-          "player": "Cameron Payne",
-          "label": "Cameron Payne",
-          "result": {
-            "points": 262.5,
-            "starts": 8,
-            "gp": 16,
-            "periods": 13,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "gf9smt20lqf07q97"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "Golden State Warriors",
-          "player_id": "051po",
-          "player": "Bol Bol",
-          "label": "Bol Bol",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-11-06"
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Memphis Grizzlies",
-          "to": "Golden State Warriors",
-          "label": "$2 budget"
-        }
-      ]
-    },
     "hb86xq3kkpd3h2og": {
       "date": "2021-06-01",
       "season": "2021-22",
@@ -527,62 +478,52 @@
         }
       ]
     },
-    "3quaryn1k040gus8": {
-      "date": "2019-09-05",
-      "season": "2019-20",
-      "period": 1,
+    "m3wugi8glonblh1e": {
+      "date": "2023-11-06",
+      "season": "2023-24",
+      "period": 5,
       "items": [
         {
           "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Philadelphia 76ers",
-          "player_id": "031lr",
-          "player": "Cody Zeller",
-          "label": "Cody Zeller"
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Philadelphia 76ers",
-          "player_id": "01ens",
-          "player": "Patrick Beverley",
-          "label": "Patrick Beverley",
+          "from": "Golden State Warriors",
+          "to": "Memphis Grizzlies",
+          "player_id": "03r7e",
+          "player": "Cameron Payne",
+          "label": "Cameron Payne",
           "result": {
-            "points": 1832.0,
-            "starts": 50,
-            "gp": 64,
-            "periods": 52,
+            "points": 262.5,
+            "starts": 8,
+            "gp": 16,
+            "periods": 13,
             "ongoing": false
           },
           "next": {
-            "trade": "1dficb49klqifkr2"
+            "trade": "gf9smt20lqf07q97"
           }
         },
         {
           "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Philadelphia 76ers",
+          "from": "Memphis Grizzlies",
+          "to": "Golden State Warriors",
           "player_id": "051po",
           "player": "Bol Bol",
           "label": "Bol Bol",
           "result": {
-            "points": 88.25,
-            "starts": 24,
-            "gp": 16,
-            "periods": 61,
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
             "ongoing": false
           },
           "next": {
-            "trade": "hb86xq3kkpd3h2og"
+            "dropped": "2023-11-06"
           }
         },
         {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Boston Celtics",
-          "player_id": "0017e",
-          "player": "Chris Paul",
-          "label": "Chris Paul"
+          "kind": "budget",
+          "from": "Memphis Grizzlies",
+          "to": "Golden State Warriors",
+          "label": "$2 budget"
         }
       ]
     },
@@ -687,6 +628,65 @@
           "next": {
             "trade": "7zkxt54tkgi6yan4"
           }
+        }
+      ]
+    },
+    "3quaryn1k040gus8": {
+      "date": "2019-09-05",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Philadelphia 76ers",
+          "player_id": "031lr",
+          "player": "Cody Zeller",
+          "label": "Cody Zeller"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Philadelphia 76ers",
+          "player_id": "01ens",
+          "player": "Patrick Beverley",
+          "label": "Patrick Beverley",
+          "result": {
+            "points": 1832.0,
+            "starts": 50,
+            "gp": 64,
+            "periods": 52,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "1dficb49klqifkr2"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Philadelphia 76ers",
+          "player_id": "051po",
+          "player": "Bol Bol",
+          "label": "Bol Bol",
+          "result": {
+            "points": 88.25,
+            "starts": 24,
+            "gp": 16,
+            "periods": 61,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "hb86xq3kkpd3h2og"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Boston Celtics",
+          "player_id": "0017e",
+          "player": "Chris Paul",
+          "label": "Chris Paul"
         }
       ]
     },
@@ -866,7 +866,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "player_id": "06v5y",
   "player": "Dylan Harper",
-  "salary": 7083636,
+  "salary": 7260727,
   "seasons": [
     {
       "season": "2025-26",
@@ -20,16 +20,16 @@
     {
       "season": "2026-27",
       "team": "New York Knicks",
-      "periods": 7,
-      "starts": 7,
-      "gp": 12,
-      "points": 451.5,
+      "periods": 8,
+      "starts": 8,
+      "gp": 14,
+      "points": 527.75,
       "bench_points": 0.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 5844000,
       "contract": "R12",
-      "paid": 1239636
+      "paid": 1416727
     }
   ],
   "best_periods": [
@@ -124,15 +124,108 @@
       "overall": 2,
       "original": "Philadelphia 76ers",
       "certain": true,
-      "periods": 40,
-      "starts": 32,
-      "gp": 54,
-      "points": 1460.75,
+      "periods": 41,
+      "starts": 33,
+      "gp": 56,
+      "points": 1537.0,
       "salary": 5844000,
       "contract": "R13"
     }
   ],
   "trades": {
+    "79wk2egvlrpcba0l": {
+      "date": "2024-01-22",
+      "season": "2023-24",
+      "period": 27,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "player_id": "03acx",
+          "player": "Dante Exum",
+          "label": "Dante Exum",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "zv7v0wdklrpe6mxo"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2024 round 2 pick (Memphis Grizzlies)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 6,
+            "overall": 36,
+            "player_id": "06mlp",
+            "player": "Nikola Djurisic",
+            "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-21"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "New York Knicks",
+          "label": "2025 round 1 pick (Philadelphia 76ers)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 2,
+            "overall": 2,
+            "player_id": "06v5y",
+            "player": "Dylan Harper",
+            "certain": true
+          },
+          "result": {
+            "points": 1537.0,
+            "starts": 33,
+            "gp": 56,
+            "periods": 41,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "New York Knicks",
+          "to": "Memphis Grizzlies",
+          "player_id": "051oj",
+          "player": "RJ Barrett",
+          "label": "RJ Barrett",
+          "result": {
+            "points": 2901.0,
+            "starts": 55,
+            "gp": 78,
+            "periods": 72,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-30"
+          }
+        }
+      ]
+    },
     "p0mxkvsnlrkrvpa0": {
       "date": "2024-01-19",
       "season": "2023-24",
@@ -273,99 +366,6 @@
           }
         }
       ]
-    },
-    "79wk2egvlrpcba0l": {
-      "date": "2024-01-22",
-      "season": "2023-24",
-      "period": 27,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Memphis Grizzlies",
-          "to": "New York Knicks",
-          "player_id": "03acx",
-          "player": "Dante Exum",
-          "label": "Dante Exum",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "zv7v0wdklrpe6mxo"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "New York Knicks",
-          "label": "2024 round 2 pick (Memphis Grizzlies)",
-          "became": {
-            "season": "2024-25",
-            "round": 2,
-            "pick": 6,
-            "overall": 36,
-            "player_id": "06mlp",
-            "player": "Nikola Djurisic",
-            "certain": false
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 66,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-06-21"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "New York Knicks",
-          "label": "2025 round 1 pick (Philadelphia 76ers)",
-          "became": {
-            "season": "2025-26",
-            "round": 1,
-            "pick": 2,
-            "overall": 2,
-            "player_id": "06v5y",
-            "player": "Dylan Harper",
-            "certain": true
-          },
-          "result": {
-            "points": 1460.75,
-            "starts": 32,
-            "gp": 54,
-            "periods": 40,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "New York Knicks",
-          "to": "Memphis Grizzlies",
-          "player_id": "051oj",
-          "player": "RJ Barrett",
-          "label": "RJ Barrett",
-          "result": {
-            "points": 2901.0,
-            "starts": 55,
-            "gp": 78,
-            "periods": 72,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-07-30"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -386,7 +386,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

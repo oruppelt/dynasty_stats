@@ -1,7 +1,7 @@
 {
   "player_id": "05uiw",
   "player": "Isaiah Jackson",
-  "salary": 11226764,
+  "salary": 11279794,
   "seasons": [
     {
       "season": "2021-22",
@@ -104,16 +104,16 @@
     {
       "season": "2026-27",
       "team": "Boston Celtics",
-      "periods": 7,
-      "starts": 5,
-      "gp": 8,
-      "points": 198.0,
+      "periods": 8,
+      "starts": 6,
+      "gp": 10,
+      "points": 252.25,
       "bench_points": 14.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 1750000,
       "contract": "REG1",
-      "paid": 371212
+      "paid": 424242
     }
   ],
   "best_periods": [
@@ -306,15 +306,119 @@
       "date": "2026-08-17",
       "team": "Boston Celtics",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 5,
-      "gp": 8,
-      "points": 198.0,
+      "periods": 8,
+      "starts": 6,
+      "gp": 10,
+      "points": 252.25,
       "salary": 1750000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "jem0vnvulrwfwkbi": {
+      "date": "2024-01-28",
+      "season": "2023-24",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Sacramento Kings",
+          "player_id": "042ne",
+          "player": "Malik Beasley",
+          "label": "Malik Beasley",
+          "result": {
+            "points": 42.0,
+            "starts": 1,
+            "gp": 2,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-05-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Milwaukee Bucks",
+          "to": "Sacramento Kings",
+          "player_id": "03lls",
+          "player": "Jaylen Brown",
+          "label": "Jaylen Brown",
+          "result": {
+            "points": 212.0,
+            "starts": 3,
+            "gp": 6,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-05-10"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Milwaukee Bucks",
+          "player_id": "05uiw",
+          "player": "Isaiah Jackson",
+          "label": "Isaiah Jackson",
+          "result": {
+            "points": 82.0,
+            "starts": 4,
+            "gp": 5,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Milwaukee Bucks",
+          "player_id": "051oh",
+          "player": "Zion Williamson",
+          "label": "Zion Williamson",
+          "result": {
+            "points": 851.0,
+            "starts": 25,
+            "gp": 19,
+            "periods": 37,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Milwaukee Bucks",
+          "label": "2025 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2025-26",
+            "round": 1,
+            "pick": 20,
+            "overall": 20,
+            "player_id": "06v5s",
+            "player": "Drake Powell",
+            "certain": true
+          },
+          "result": {
+            "points": 406.5,
+            "starts": 22,
+            "gp": 32,
+            "periods": 41,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
     "vmxqspcek02crfyr": {
       "date": "2019-09-05",
       "season": "2019-20",
@@ -494,110 +598,6 @@
         }
       ]
     },
-    "jem0vnvulrwfwkbi": {
-      "date": "2024-01-28",
-      "season": "2023-24",
-      "period": 29,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Sacramento Kings",
-          "player_id": "042ne",
-          "player": "Malik Beasley",
-          "label": "Malik Beasley",
-          "result": {
-            "points": 42.0,
-            "starts": 1,
-            "gp": 2,
-            "periods": 4,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-05-10"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Milwaukee Bucks",
-          "to": "Sacramento Kings",
-          "player_id": "03lls",
-          "player": "Jaylen Brown",
-          "label": "Jaylen Brown",
-          "result": {
-            "points": 212.0,
-            "starts": 3,
-            "gp": 6,
-            "periods": 4,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-05-10"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Milwaukee Bucks",
-          "player_id": "05uiw",
-          "player": "Isaiah Jackson",
-          "label": "Isaiah Jackson",
-          "result": {
-            "points": 82.0,
-            "starts": 4,
-            "gp": 5,
-            "periods": 4,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-07-26"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Sacramento Kings",
-          "to": "Milwaukee Bucks",
-          "player_id": "051oh",
-          "player": "Zion Williamson",
-          "label": "Zion Williamson",
-          "result": {
-            "points": 851.0,
-            "starts": 25,
-            "gp": 19,
-            "periods": 37,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2025-08-10"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Sacramento Kings",
-          "to": "Milwaukee Bucks",
-          "label": "2025 round 1 pick (Sacramento Kings)",
-          "became": {
-            "season": "2025-26",
-            "round": 1,
-            "pick": 20,
-            "overall": 20,
-            "player_id": "06v5s",
-            "player": "Drake Powell",
-            "certain": true
-          },
-          "result": {
-            "points": 406.5,
-            "starts": 22,
-            "gp": 32,
-            "periods": 40,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        }
-      ]
-    },
     "h89qz7i7mjn1jv97": {
       "date": "2025-12-26",
       "season": "2025-26",
@@ -614,7 +614,7 @@
             "points": 554.75,
             "starts": 14,
             "gp": 22,
-            "periods": 21,
+            "periods": 22,
             "ongoing": true
           },
           "next": {
@@ -672,10 +672,10 @@
             "certain": true
           },
           "result": {
-            "points": 182.0,
-            "starts": 4,
-            "gp": 8,
-            "periods": 7,
+            "points": 237.25,
+            "starts": 5,
+            "gp": 10,
+            "periods": 8,
             "ongoing": true
           },
           "next": {
@@ -696,10 +696,10 @@
           "player": "Donovan Clingan",
           "label": "Donovan Clingan",
           "result": {
-            "points": 1395.75,
-            "starts": 19,
-            "gp": 35,
-            "periods": 21,
+            "points": 1445.75,
+            "starts": 20,
+            "gp": 36,
+            "periods": 22,
             "ongoing": true
           },
           "next": {
@@ -714,10 +714,10 @@
           "player": "Jabari Smith",
           "label": "Jabari Smith",
           "result": {
-            "points": 1411.25,
-            "starts": 20,
-            "gp": 37,
-            "periods": 21,
+            "points": 1451.5,
+            "starts": 21,
+            "gp": 39,
+            "periods": 22,
             "ongoing": true
           },
           "next": {
@@ -765,7 +765,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "player_id": "06v58",
   "player": "Tre Johnson",
-  "salary": 4306667,
+  "salary": 4414333,
   "seasons": [
     {
       "season": "2025-26",
@@ -34,7 +34,7 @@
     {
       "season": "2026-27",
       "team": "Toronto Raptors",
-      "periods": 7,
+      "periods": 8,
       "starts": 3,
       "gp": 4,
       "points": 70.75,
@@ -43,7 +43,7 @@
       "playoff_points": 0.0,
       "salary": 3553000,
       "contract": "R12",
-      "paid": 753667
+      "paid": 861333
     }
   ],
   "best_periods": [
@@ -143,7 +143,7 @@
       "from": "Oklahoma City Thunder",
       "team": "Toronto Raptors",
       "trade": "h89qz7i7mjn1jv97",
-      "periods": 21,
+      "periods": 22,
       "starts": 14,
       "gp": 22,
       "points": 554.75,
@@ -152,6 +152,134 @@
     }
   ],
   "trades": {
+    "h89qz7i7mjn1jv97": {
+      "date": "2025-12-26",
+      "season": "2025-26",
+      "period": 20,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "06v58",
+          "player": "Tre Johnson",
+          "label": "Tre Johnson",
+          "result": {
+            "points": 554.75,
+            "starts": 14,
+            "gp": 22,
+            "periods": 22,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "05uiw",
+          "player": "Isaiah Jackson",
+          "label": "Isaiah Jackson",
+          "result": {
+            "points": 114.25,
+            "starts": 5,
+            "gp": 7,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "player_id": "0558t",
+          "player": "Max Strus",
+          "label": "Max Strus",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 14,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-18"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2026 round 1 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 10,
+            "overall": 10,
+            "player_id": "076tl",
+            "player": "Brayden Burries",
+            "certain": true
+          },
+          "result": {
+            "points": 237.25,
+            "starts": 5,
+            "gp": 10,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Oklahoma City Thunder",
+          "to": "Toronto Raptors",
+          "label": "2027 round 1 pick (Oklahoma City Thunder)"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06mjz",
+          "player": "Donovan Clingan",
+          "label": "Donovan Clingan",
+          "result": {
+            "points": 1445.75,
+            "starts": 20,
+            "gp": 36,
+            "periods": 22,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06212",
+          "player": "Jabari Smith",
+          "label": "Jabari Smith",
+          "result": {
+            "points": 1451.5,
+            "starts": 21,
+            "gp": 39,
+            "periods": 22,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
+    },
     "0x0h24u3lr0j2d6r": {
       "date": "2024-01-05",
       "season": "2023-24",
@@ -274,134 +402,6 @@
           }
         }
       ]
-    },
-    "h89qz7i7mjn1jv97": {
-      "date": "2025-12-26",
-      "season": "2025-26",
-      "period": 20,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Toronto Raptors",
-          "player_id": "06v58",
-          "player": "Tre Johnson",
-          "label": "Tre Johnson",
-          "result": {
-            "points": 554.75,
-            "starts": 14,
-            "gp": 22,
-            "periods": 21,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Toronto Raptors",
-          "player_id": "05uiw",
-          "player": "Isaiah Jackson",
-          "label": "Isaiah Jackson",
-          "result": {
-            "points": 114.25,
-            "starts": 5,
-            "gp": 7,
-            "periods": 14,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-06-18"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Toronto Raptors",
-          "player_id": "0558t",
-          "player": "Max Strus",
-          "label": "Max Strus",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 14,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-06-18"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Oklahoma City Thunder",
-          "to": "Toronto Raptors",
-          "label": "2026 round 1 pick (Boston Celtics)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 10,
-            "overall": 10,
-            "player_id": "076tl",
-            "player": "Brayden Burries",
-            "certain": true
-          },
-          "result": {
-            "points": 182.0,
-            "starts": 4,
-            "gp": 8,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Oklahoma City Thunder",
-          "to": "Toronto Raptors",
-          "label": "2027 round 1 pick (Oklahoma City Thunder)"
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Oklahoma City Thunder",
-          "player_id": "06mjz",
-          "player": "Donovan Clingan",
-          "label": "Donovan Clingan",
-          "result": {
-            "points": 1395.75,
-            "starts": 19,
-            "gp": 35,
-            "periods": 21,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "Oklahoma City Thunder",
-          "player_id": "06212",
-          "player": "Jabari Smith",
-          "label": "Jabari Smith",
-          "result": {
-            "points": 1411.25,
-            "starts": 20,
-            "gp": 37,
-            "periods": 21,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -422,7 +422,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

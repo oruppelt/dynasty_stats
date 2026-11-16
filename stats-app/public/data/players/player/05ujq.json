@@ -1,7 +1,7 @@
 {
   "player_id": "05ujq",
   "player": "Luka Garza",
-  "salary": 3212121,
+  "salary": 3242424,
   "seasons": [
     {
       "season": "2021-22",
@@ -62,16 +62,16 @@
     {
       "season": "2026-27",
       "team": "Houston Rockets",
-      "periods": 7,
-      "starts": 3,
-      "gp": 6,
-      "points": 116.5,
+      "periods": 8,
+      "starts": 4,
+      "gp": 7,
+      "points": 135.5,
       "bench_points": 80.25,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 1000000,
       "contract": "REG1",
-      "paid": 212121
+      "paid": 242424
     }
   ],
   "best_periods": [
@@ -226,10 +226,10 @@
       "date": "2026-08-17",
       "team": "Houston Rockets",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 3,
-      "gp": 6,
-      "points": 116.5,
+      "periods": 8,
+      "starts": 4,
+      "gp": 7,
+      "points": 135.5,
       "salary": 1000000,
       "contract": "REG1"
     }
@@ -303,6 +303,71 @@
           },
           "next": {
             "trade": "ztms8t1klb56v07z"
+          }
+        }
+      ]
+    },
+    "k8wsy8nslklm9aqo": {
+      "date": "2023-07-27",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "player_id": "05ujq",
+          "player": "Luka Garza",
+          "label": "Luka Garza",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-10-23"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Minnesota Timberwolves",
+          "label": "2024 round 1 pick (Indiana Pacers)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 22,
+            "overall": 22,
+            "player_id": "06mm1",
+            "player": "Bronny James",
+            "certain": true
+          },
+          "next": {
+            "trade": "ll6492qklql9ax74"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Boston Celtics"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Indiana Pacers",
+          "player_id": "04qrr",
+          "player": "Michael Porter",
+          "label": "Michael Porter",
+          "result": {
+            "points": 3706.75,
+            "starts": 64,
+            "gp": 104,
+            "periods": 65,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-08-10"
           }
         }
       ]
@@ -425,71 +490,6 @@
           }
         }
       ]
-    },
-    "k8wsy8nslklm9aqo": {
-      "date": "2023-07-27",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Minnesota Timberwolves",
-          "player_id": "05ujq",
-          "player": "Luka Garza",
-          "label": "Luka Garza",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-10-23"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Indiana Pacers",
-          "to": "Minnesota Timberwolves",
-          "label": "2024 round 1 pick (Indiana Pacers)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 22,
-            "overall": 22,
-            "player_id": "06mm1",
-            "player": "Bronny James",
-            "certain": true
-          },
-          "next": {
-            "trade": "ll6492qklql9ax74"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Boston Celtics"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Indiana Pacers",
-          "player_id": "04qrr",
-          "player": "Michael Porter",
-          "label": "Michael Porter",
-          "result": {
-            "points": 3706.75,
-            "starts": 64,
-            "gp": 104,
-            "periods": 65,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2025-08-10"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -530,7 +530,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

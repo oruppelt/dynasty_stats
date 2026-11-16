@@ -362,74 +362,6 @@
     }
   ],
   "trades": {
-    "de1p940kmipu5om6": {
-      "date": "2025-12-03",
-      "season": "2025-26",
-      "period": 14,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Brooklyn Nets",
-          "to": "Orlando Magic",
-          "player_id": "005l0",
-          "player": "Nicolas Batum",
-          "label": "Nicolas Batum",
-          "result": {
-            "points": 190.5,
-            "starts": 7,
-            "gp": 13,
-            "periods": 20,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-06-25"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Brooklyn Nets",
-          "player_id": "04ews",
-          "player": "Tony Bradley",
-          "label": "Tony Bradley",
-          "result": {
-            "points": 18.25,
-            "starts": 3,
-            "gp": 2,
-            "periods": 20,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-07-10"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Orlando Magic",
-          "to": "Brooklyn Nets",
-          "label": "2026 round 2 pick (Orlando Magic)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 20,
-            "overall": 50,
-            "player_id": "076u6",
-            "player": "Braden Smith",
-            "certain": true
-          },
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 7,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        }
-      ]
-    },
     "wxjv4ixnlqpl8ew2": {
       "date": "2023-12-28",
       "season": "2023-24",
@@ -516,6 +448,74 @@
           }
         }
       ]
+    },
+    "de1p940kmipu5om6": {
+      "date": "2025-12-03",
+      "season": "2025-26",
+      "period": 14,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Brooklyn Nets",
+          "to": "Orlando Magic",
+          "player_id": "005l0",
+          "player": "Nicolas Batum",
+          "label": "Nicolas Batum",
+          "result": {
+            "points": 190.5,
+            "starts": 7,
+            "gp": 13,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-06-25"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Brooklyn Nets",
+          "player_id": "04ews",
+          "player": "Tony Bradley",
+          "label": "Tony Bradley",
+          "result": {
+            "points": 18.25,
+            "starts": 3,
+            "gp": 2,
+            "periods": 20,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-10"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Orlando Magic",
+          "to": "Brooklyn Nets",
+          "label": "2026 round 2 pick (Orlando Magic)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "076u6",
+            "player": "Braden Smith",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        }
+      ]
     }
   },
   "axis": [
@@ -556,7 +556,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

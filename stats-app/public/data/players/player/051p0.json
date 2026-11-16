@@ -1,7 +1,7 @@
 {
   "player_id": "051p0",
   "player": "Matisse Thybulle",
-  "salary": 18364425,
+  "salary": 18394728,
   "seasons": [
     {
       "season": "2019-20",
@@ -118,16 +118,16 @@
     {
       "season": "2026-27",
       "team": "Denver Nuggets",
-      "periods": 7,
-      "starts": 7,
-      "gp": 13,
-      "points": 318.5,
+      "periods": 8,
+      "starts": 8,
+      "gp": 14,
+      "points": 356.0,
       "bench_points": 0.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 1000000,
       "contract": "REG1",
-      "paid": 212121
+      "paid": 242424
     }
   ],
   "best_periods": [
@@ -320,15 +320,58 @@
       "date": "2026-08-12",
       "team": "Denver Nuggets",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 7,
-      "gp": 13,
-      "points": 318.5,
+      "periods": 8,
+      "starts": 8,
+      "gp": 14,
+      "points": 356.0,
       "salary": 1000000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "jjplryjqlkp9u3lj": {
+      "date": "2023-07-30",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Minnesota Timberwolves",
+          "to": "Orlando Magic",
+          "player_id": "051on",
+          "player": "Coby White",
+          "label": "Coby White",
+          "result": {
+            "points": 1999.25,
+            "starts": 32,
+            "gp": 53,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Orlando Magic",
+          "to": "Minnesota Timberwolves",
+          "player_id": "051p0",
+          "player": "Matisse Thybulle",
+          "label": "Matisse Thybulle",
+          "result": {
+            "points": 743.75,
+            "starts": 21,
+            "gp": 34,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-26"
+          }
+        }
+      ]
+    },
     "avs2o92elkp8zjwf": {
       "date": "2023-07-30",
       "season": "2023-24",
@@ -386,49 +429,6 @@
           },
           "next": {
             "dropped": "2024-07-28"
-          }
-        }
-      ]
-    },
-    "jjplryjqlkp9u3lj": {
-      "date": "2023-07-30",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Minnesota Timberwolves",
-          "to": "Orlando Magic",
-          "player_id": "051on",
-          "player": "Coby White",
-          "label": "Coby White",
-          "result": {
-            "points": 1999.25,
-            "starts": 32,
-            "gp": 53,
-            "periods": 32,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-07-26"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Orlando Magic",
-          "to": "Minnesota Timberwolves",
-          "player_id": "051p0",
-          "player": "Matisse Thybulle",
-          "label": "Matisse Thybulle",
-          "result": {
-            "points": 743.75,
-            "starts": 21,
-            "gp": 34,
-            "periods": 32,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-06-26"
           }
         }
       ]
@@ -604,7 +604,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

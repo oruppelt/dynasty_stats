@@ -185,6 +185,77 @@
     }
   ],
   "trades": {
+    "t4n43rlekvqeinkp": {
+      "date": "2021-11-08",
+      "season": "2021-22",
+      "period": 7,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Atlanta Hawks",
+          "to": "Indiana Pacers",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Atlanta Hawks",
+          "player_id": "051oo",
+          "player": "Jaxson Hayes",
+          "label": "Jaxson Hayes",
+          "result": {
+            "points": 46.25,
+            "starts": 5,
+            "gp": 4,
+            "periods": 8,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "mwwyzn4ykwro4f2f"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Indiana Pacers",
+          "to": "Atlanta Hawks",
+          "player_id": "042nb",
+          "player": "Juancho Hernangomez",
+          "label": "Juancho Hernangomez",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-11-08"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Indiana Pacers",
+          "to": "Atlanta Hawks",
+          "label": "2022 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2022-23",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "0621z",
+            "player": "Gabriele Procida",
+            "certain": false
+          },
+          "next": {
+            "trade": "8m8gf5vokvw10rar"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Dallas Mavericks"
+          }
+        }
+      ]
+    },
     "w8j96he1kkwppr2d": {
       "date": "2021-02-08",
       "season": "2020-21",
@@ -292,77 +363,6 @@
           }
         }
       ]
-    },
-    "t4n43rlekvqeinkp": {
-      "date": "2021-11-08",
-      "season": "2021-22",
-      "period": 7,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "Atlanta Hawks",
-          "to": "Indiana Pacers",
-          "label": "$1 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Atlanta Hawks",
-          "player_id": "051oo",
-          "player": "Jaxson Hayes",
-          "label": "Jaxson Hayes",
-          "result": {
-            "points": 46.25,
-            "starts": 5,
-            "gp": 4,
-            "periods": 8,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "mwwyzn4ykwro4f2f"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Indiana Pacers",
-          "to": "Atlanta Hawks",
-          "player_id": "042nb",
-          "player": "Juancho Hernangomez",
-          "label": "Juancho Hernangomez",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 0,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2021-11-08"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Indiana Pacers",
-          "to": "Atlanta Hawks",
-          "label": "2022 round 2 pick (Milwaukee Bucks)",
-          "became": {
-            "season": "2022-23",
-            "round": 2,
-            "pick": 8,
-            "overall": 38,
-            "player_id": "0621z",
-            "player": "Gabriele Procida",
-            "certain": false
-          },
-          "next": {
-            "trade": "8m8gf5vokvw10rar"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Dallas Mavericks"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -403,7 +403,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

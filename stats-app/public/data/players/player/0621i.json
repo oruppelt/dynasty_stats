@@ -1,7 +1,7 @@
 {
   "player_id": "0621i",
   "player": "Jake LaRavia",
-  "salary": 7666485,
+  "salary": 7787697,
   "seasons": [
     {
       "season": "2022-23",
@@ -76,16 +76,16 @@
     {
       "season": "2026-27",
       "team": "Indiana Pacers",
-      "periods": 7,
-      "starts": 7,
-      "gp": 12,
-      "points": 249.75,
+      "periods": 8,
+      "starts": 8,
+      "gp": 13,
+      "points": 292.75,
       "bench_points": 0.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 4000000,
       "contract": "REG1",
-      "paid": 848485
+      "paid": 969697
     }
   ],
   "best_periods": [
@@ -264,15 +264,69 @@
       "date": "2026-08-17",
       "team": "Indiana Pacers",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 7,
-      "gp": 12,
-      "points": 249.75,
+      "periods": 8,
+      "starts": 8,
+      "gp": 13,
+      "points": 292.75,
       "salary": 4000000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "4nzz9p5al4wb5v7t": {
+      "date": "2022-06-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Memphis Grizzlies",
+          "to": "Phoenix Suns",
+          "label": "2022 round 1 pick, no. 21",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "0621i",
+            "player": "Jake LaRavia",
+            "certain": true
+          },
+          "result": {
+            "points": 125.5,
+            "starts": 8,
+            "gp": 11,
+            "periods": 38,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-11-10"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "Memphis Grizzlies",
+          "label": "2023 round 1 pick (Phoenix Suns)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 27,
+            "overall": 27,
+            "player_id": "06ccc",
+            "player": "Dariq Whitehead",
+            "certain": true
+          },
+          "next": {
+            "trade": "1yujdmvplcdgfp1l"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Los Angeles Lakers"
+          }
+        }
+      ]
+    },
     "e6tqf9qll4d4dis2": {
       "date": "2022-06-13",
       "season": "2022-23",
@@ -373,60 +427,6 @@
           }
         }
       ]
-    },
-    "4nzz9p5al4wb5v7t": {
-      "date": "2022-06-27",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Memphis Grizzlies",
-          "to": "Phoenix Suns",
-          "label": "2022 round 1 pick, no. 21",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 21,
-            "overall": 21,
-            "player_id": "0621i",
-            "player": "Jake LaRavia",
-            "certain": true
-          },
-          "result": {
-            "points": 125.5,
-            "starts": 8,
-            "gp": 11,
-            "periods": 38,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-11-10"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Phoenix Suns",
-          "to": "Memphis Grizzlies",
-          "label": "2023 round 1 pick (Phoenix Suns)",
-          "became": {
-            "season": "2023-24",
-            "round": 1,
-            "pick": 27,
-            "overall": 27,
-            "player_id": "06ccc",
-            "player": "Dariq Whitehead",
-            "certain": true
-          },
-          "next": {
-            "trade": "1yujdmvplcdgfp1l"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Los Angeles Lakers"
-          }
-        }
-      ]
     }
   },
   "axis": [
@@ -462,7 +462,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

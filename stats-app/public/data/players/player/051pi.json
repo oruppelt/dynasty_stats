@@ -1,7 +1,7 @@
 {
   "player_id": "051pi",
   "player": "Daniel Gafford",
-  "salary": 29530303,
+  "salary": 29606061,
   "seasons": [
     {
       "season": "2019-20",
@@ -160,16 +160,16 @@
     {
       "season": "2026-27",
       "team": "Atlanta Hawks",
-      "periods": 7,
-      "starts": 7,
-      "gp": 12,
-      "points": 337.5,
+      "periods": 8,
+      "starts": 8,
+      "gp": 14,
+      "points": 373.0,
       "bench_points": 0.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 2500000,
       "contract": "REG1",
-      "paid": 530303
+      "paid": 606061
     }
   ],
   "best_periods": [
@@ -392,15 +392,100 @@
       "date": "2026-08-13",
       "team": "Atlanta Hawks",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 7,
-      "gp": 12,
-      "points": 337.5,
+      "periods": 8,
+      "starts": 8,
+      "gp": 14,
+      "points": 373.0,
       "salary": 2500000,
       "contract": "REG1"
     }
   ],
   "trades": {
+    "fiikeg54jxapkyle": {
+      "date": "2019-06-24",
+      "season": "2019-20",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2019 round 2 pick, no. 24"
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2019 round 2 pick, no. 19",
+          "became": {
+            "season": "2019-20",
+            "round": 2,
+            "pick": 19,
+            "overall": 49,
+            "player_id": "051pi",
+            "player": "Daniel Gafford",
+            "certain": false
+          },
+          "result": {
+            "points": 694.0,
+            "starts": 29,
+            "gp": 44,
+            "periods": 55,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "j0tyig71km80p9oa"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Denver Nuggets",
+          "to": "Golden State Warriors",
+          "label": "2021 round 2 pick (Denver Nuggets)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "05ujt",
+            "player": "Aaron Wiggins",
+            "certain": true
+          },
+          "next": {
+            "dropped": "2023-10-24"
+          },
+          "result": {
+            "points": 537.0,
+            "starts": 25,
+            "gp": 35,
+            "periods": 66,
+            "ongoing": false
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Denver Nuggets",
+          "label": "2021 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2021-22",
+            "round": 1,
+            "pick": 21,
+            "overall": 21,
+            "player_id": "05uj1",
+            "player": "Cameron Thomas",
+            "certain": true
+          },
+          "next": {
+            "trade": "mrggfdnik2gldpms"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Atlanta Hawks"
+          }
+        }
+      ]
+    },
     "76hzrghukw3fve7v": {
       "date": "2021-11-17",
       "season": "2021-22",
@@ -498,6 +583,110 @@
           "result": {
             "traded_on": true,
             "drafted_by": "Minnesota Timberwolves"
+          }
+        }
+      ]
+    },
+    "jg91nnqmlcerb7ao": {
+      "date": "2023-01-02",
+      "season": "2022-23",
+      "period": 23,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "06235",
+          "player": "Kenneth Lofton",
+          "label": "Kenneth Lofton",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore",
+          "result": {
+            "points": 28.0,
+            "starts": 9,
+            "gp": 7,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "iwz7ckzclkns1xkv"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "player_id": "065px",
+          "player": "Trevion Williams",
+          "label": "Trevion Williams",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 11,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "iwz7ckzclkns1xkv"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Oklahoma City Thunder",
+          "label": "2023 round 2 pick (Milwaukee Bucks)",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 10,
+            "overall": 40,
+            "player_id": "06cdh",
+            "player": "GG Jackson",
+            "certain": true
+          },
+          "result": {
+            "points": 426.75,
+            "starts": 10,
+            "gp": 17,
+            "periods": 71,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "b7zez6g3mhsz8kok"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Oklahoma City Thunder",
+          "to": "Boston Celtics",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford",
+          "result": {
+            "points": 2128.25,
+            "starts": 41,
+            "gp": 59,
+            "periods": 43,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
           }
         }
       ]
@@ -624,248 +813,6 @@
         }
       ]
     },
-    "jg91nnqmlcerb7ao": {
-      "date": "2023-01-02",
-      "season": "2022-23",
-      "period": 23,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "06235",
-          "player": "Kenneth Lofton",
-          "label": "Kenneth Lofton",
-          "result": {
-            "points": 0.0,
-            "starts": 1,
-            "gp": 0,
-            "periods": 11,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2023-05-06"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "0621p",
-          "player": "Wendell Moore",
-          "label": "Wendell Moore",
-          "result": {
-            "points": 28.0,
-            "starts": 9,
-            "gp": 7,
-            "periods": 11,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "iwz7ckzclkns1xkv"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "player_id": "065px",
-          "player": "Trevion Williams",
-          "label": "Trevion Williams",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 11,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "iwz7ckzclkns1xkv"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Oklahoma City Thunder",
-          "label": "2023 round 2 pick (Milwaukee Bucks)",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 10,
-            "overall": 40,
-            "player_id": "06cdh",
-            "player": "GG Jackson",
-            "certain": true
-          },
-          "result": {
-            "points": 426.75,
-            "starts": 10,
-            "gp": 17,
-            "periods": 71,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "b7zez6g3mhsz8kok"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Oklahoma City Thunder",
-          "to": "Boston Celtics",
-          "player_id": "051pi",
-          "player": "Daniel Gafford",
-          "label": "Daniel Gafford",
-          "result": {
-            "points": 2128.25,
-            "starts": 41,
-            "gp": 59,
-            "periods": 43,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2024-07-26"
-          }
-        }
-      ]
-    },
-    "yyv5fklbme1qbgi3": {
-      "date": "2025-08-07",
-      "season": "2025-26",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Houston Rockets",
-          "player_id": "051pi",
-          "player": "Daniel Gafford",
-          "label": "Daniel Gafford",
-          "result": {
-            "points": 971.75,
-            "starts": 33,
-            "gp": 38,
-            "periods": 33,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-07-04"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Houston Rockets",
-          "label": "2027 round 2 pick (Boston Celtics)"
-        },
-        {
-          "kind": "pick",
-          "from": "Houston Rockets",
-          "to": "Boston Celtics",
-          "label": "2026 round 1 pick (Utah Jazz)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 11,
-            "overall": 11,
-            "player_id": "076sy",
-            "player": "Morez Johnson",
-            "certain": true
-          },
-          "next": {
-            "trade": "yqdm26wgmih99jx3"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Utah Jazz"
-          }
-        }
-      ]
-    },
-    "fiikeg54jxapkyle": {
-      "date": "2019-06-24",
-      "season": "2019-20",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Golden State Warriors",
-          "label": "2019 round 2 pick, no. 24"
-        },
-        {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Golden State Warriors",
-          "label": "2019 round 2 pick, no. 19",
-          "became": {
-            "season": "2019-20",
-            "round": 2,
-            "pick": 19,
-            "overall": 49,
-            "player_id": "051pi",
-            "player": "Daniel Gafford",
-            "certain": false
-          },
-          "result": {
-            "points": 694.0,
-            "starts": 29,
-            "gp": 44,
-            "periods": 55,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "j0tyig71km80p9oa"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Denver Nuggets",
-          "to": "Golden State Warriors",
-          "label": "2021 round 2 pick (Denver Nuggets)",
-          "became": {
-            "season": "2021-22",
-            "round": 2,
-            "pick": 23,
-            "overall": 53,
-            "player_id": "05ujt",
-            "player": "Aaron Wiggins",
-            "certain": true
-          },
-          "next": {
-            "dropped": "2023-10-24"
-          },
-          "result": {
-            "points": 537.0,
-            "starts": 25,
-            "gp": 35,
-            "periods": 66,
-            "ongoing": false
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Denver Nuggets",
-          "label": "2021 round 1 pick (Golden State Warriors)",
-          "became": {
-            "season": "2021-22",
-            "round": 1,
-            "pick": 21,
-            "overall": 21,
-            "player_id": "05uj1",
-            "player": "Cameron Thomas",
-            "certain": true
-          },
-          "next": {
-            "trade": "mrggfdnik2gldpms"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Atlanta Hawks"
-          }
-        }
-      ]
-    },
     "j0tyig71km80p9oa": {
       "date": "2021-03-13",
       "season": "2020-21",
@@ -930,6 +877,59 @@
           }
         }
       ]
+    },
+    "yyv5fklbme1qbgi3": {
+      "date": "2025-08-07",
+      "season": "2025-26",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "player_id": "051pi",
+          "player": "Daniel Gafford",
+          "label": "Daniel Gafford",
+          "result": {
+            "points": 971.75,
+            "starts": 33,
+            "gp": 38,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-04"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Houston Rockets",
+          "label": "2027 round 2 pick (Boston Celtics)"
+        },
+        {
+          "kind": "pick",
+          "from": "Houston Rockets",
+          "to": "Boston Celtics",
+          "label": "2026 round 1 pick (Utah Jazz)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "076sy",
+            "player": "Morez Johnson",
+            "certain": true
+          },
+          "next": {
+            "trade": "yqdm26wgmih99jx3"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Utah Jazz"
+          }
+        }
+      ]
     }
   },
   "axis": [
@@ -970,7 +970,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

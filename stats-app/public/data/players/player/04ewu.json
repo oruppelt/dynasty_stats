@@ -1,7 +1,7 @@
 {
   "player_id": "04ewu",
   "player": "Josh Hart",
-  "salary": 50437650,
+  "salary": 50836135,
   "seasons": [
     {
       "season": "2019-20",
@@ -160,16 +160,16 @@
     {
       "season": "2026-27",
       "team": "Portland Trail Blazers",
-      "periods": 7,
-      "starts": 7,
-      "gp": 8,
-      "points": 249.25,
+      "periods": 8,
+      "starts": 8,
+      "gp": 10,
+      "points": 280.75,
       "bench_points": 0.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 13150000,
       "contract": "REG3",
-      "paid": 2789394
+      "paid": 3187879
     }
   ],
   "best_periods": [
@@ -355,15 +355,98 @@
       "date": "2026-08-16",
       "team": "Portland Trail Blazers",
       "bid": 0.0,
-      "periods": 7,
-      "starts": 7,
-      "gp": 8,
-      "points": 249.25,
+      "periods": 8,
+      "starts": 8,
+      "gp": 10,
+      "points": 280.75,
       "salary": 13150000,
       "contract": "REG3"
     }
   ],
   "trades": {
+    "kh16sd0mm3d44kz5": {
+      "date": "2024-11-11",
+      "season": "2024-25",
+      "period": 7,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "player_id": "049kc",
+          "player": "Malik Monk",
+          "label": "Malik Monk",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "r48yvwa7m3ijl7dc"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "player_id": "05uj3",
+          "player": "Day'Ron Sharpe",
+          "label": "Day'Ron Sharpe",
+          "result": {
+            "points": 519.25,
+            "starts": 15,
+            "gp": 24,
+            "periods": 27,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-06-25"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "San Antonio Spurs",
+          "label": "2026 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 1,
+            "pick": 23,
+            "overall": 23,
+            "player_id": "076t4",
+            "player": "Ebuka Okorie",
+            "certain": true
+          },
+          "next": {
+            "trade": "zlfnl31gmqt85aw1"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Golden State Warriors",
+          "player_id": "04ewu",
+          "player": "Josh Hart",
+          "label": "Josh Hart",
+          "result": {
+            "points": 3520.5,
+            "starts": 50,
+            "gp": 84,
+            "periods": 60,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-27"
+          }
+        }
+      ]
+    },
     "zfobl4hpk4z88ws8": {
       "date": "2020-01-05",
       "season": "2019-20",
@@ -522,89 +605,6 @@
           "result": {
             "traded_on": true,
             "drafted_by": "New York Knicks"
-          }
-        }
-      ]
-    },
-    "kh16sd0mm3d44kz5": {
-      "date": "2024-11-11",
-      "season": "2024-25",
-      "period": 7,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "San Antonio Spurs",
-          "player_id": "049kc",
-          "player": "Malik Monk",
-          "label": "Malik Monk",
-          "result": {
-            "points": 0.0,
-            "starts": 1,
-            "gp": 0,
-            "periods": 1,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "r48yvwa7m3ijl7dc"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "San Antonio Spurs",
-          "player_id": "05uj3",
-          "player": "Day'Ron Sharpe",
-          "label": "Day'Ron Sharpe",
-          "result": {
-            "points": 519.25,
-            "starts": 15,
-            "gp": 24,
-            "periods": 27,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2025-06-25"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "San Antonio Spurs",
-          "label": "2026 round 1 pick (Golden State Warriors)",
-          "became": {
-            "season": "2026-27",
-            "round": 1,
-            "pick": 23,
-            "overall": 23,
-            "player_id": "076t4",
-            "player": "Ebuka Okorie",
-            "certain": true
-          },
-          "next": {
-            "trade": "zlfnl31gmqt85aw1"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Philadelphia 76ers"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Golden State Warriors",
-          "player_id": "04ewu",
-          "player": "Josh Hart",
-          "label": "Josh Hart",
-          "result": {
-            "points": 3520.5,
-            "starts": 50,
-            "gp": 84,
-            "periods": 60,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-07-27"
           }
         }
       ]
@@ -770,7 +770,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

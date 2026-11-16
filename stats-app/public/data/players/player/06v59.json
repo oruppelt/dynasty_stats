@@ -1,7 +1,7 @@
 {
   "player_id": "06v59",
   "player": "Will Riley",
-  "salary": 1212121,
+  "salary": 1242424,
   "seasons": [
     {
       "season": "2025-26",
@@ -20,16 +20,16 @@
     {
       "season": "2026-27",
       "team": "Milwaukee Bucks",
-      "periods": 7,
+      "periods": 8,
       "starts": 1,
       "gp": 2,
       "points": 3.0,
-      "bench_points": 24.25,
+      "bench_points": 52.25,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 1000000,
       "contract": "R22",
-      "paid": 212121
+      "paid": 242424
     }
   ],
   "best_periods": [
@@ -144,7 +144,7 @@
       "overall": 38,
       "original": "Cleveland Cavaliers",
       "certain": true,
-      "periods": 40,
+      "periods": 41,
       "starts": 16,
       "gp": 26,
       "points": 410.75,
@@ -153,6 +153,50 @@
     }
   ],
   "trades": {
+    "iluy2ydxljfiprw3": {
+      "date": "2023-06-28",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Toronto Raptors",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "06v59",
+            "player": "Will Riley",
+            "certain": true
+          },
+          "next": {
+            "trade": "apff3ll8lzjik29h"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "Cleveland Cavaliers",
+          "label": "2023 round 2 pick, no. 23",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "02oyy",
+            "player": null,
+            "certain": true
+          }
+        }
+      ]
+    },
     "5bxdraq0m5qxtpz8": {
       "date": "2025-01-10",
       "season": "2024-25",
@@ -236,108 +280,11 @@
             "points": 410.75,
             "starts": 16,
             "gp": 26,
-            "periods": 40,
+            "periods": 41,
             "ongoing": true
           },
           "next": {
             "kept": true
-          }
-        }
-      ]
-    },
-    "apff3ll8lzjik29h": {
-      "date": "2024-08-07",
-      "season": "2024-25",
-      "period": 1,
-      "items": [
-        {
-          "kind": "budget",
-          "from": "San Antonio Spurs",
-          "to": "Toronto Raptors",
-          "label": "$1 budget"
-        },
-        {
-          "kind": "player",
-          "from": "Toronto Raptors",
-          "to": "San Antonio Spurs",
-          "player_id": "06cd9",
-          "player": "Jaylen Clark",
-          "label": "Jaylen Clark",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 33,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2025-07-05"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "San Antonio Spurs",
-          "label": "2025 round 2 pick (Cleveland Cavaliers)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 8,
-            "overall": 38,
-            "player_id": "06v59",
-            "player": "Will Riley",
-            "certain": true
-          },
-          "next": {
-            "trade": "aqapwojpm3cvd21d"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Milwaukee Bucks"
-          }
-        }
-      ]
-    },
-    "iluy2ydxljfiprw3": {
-      "date": "2023-06-28",
-      "season": "2023-24",
-      "period": 1,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Cleveland Cavaliers",
-          "to": "Toronto Raptors",
-          "label": "2025 round 2 pick (Cleveland Cavaliers)",
-          "became": {
-            "season": "2025-26",
-            "round": 2,
-            "pick": 8,
-            "overall": 38,
-            "player_id": "06v59",
-            "player": "Will Riley",
-            "certain": true
-          },
-          "next": {
-            "trade": "apff3ll8lzjik29h"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Milwaukee Bucks"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Toronto Raptors",
-          "to": "Cleveland Cavaliers",
-          "label": "2023 round 2 pick, no. 23",
-          "became": {
-            "season": "2023-24",
-            "round": 2,
-            "pick": 23,
-            "overall": 53,
-            "player_id": "02oyy",
-            "player": null,
-            "certain": true
           }
         }
       ]
@@ -473,6 +420,59 @@
           "label": "$23 budget"
         }
       ]
+    },
+    "apff3ll8lzjik29h": {
+      "date": "2024-08-07",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "San Antonio Spurs",
+          "to": "Toronto Raptors",
+          "label": "$1 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Toronto Raptors",
+          "to": "San Antonio Spurs",
+          "player_id": "06cd9",
+          "player": "Jaylen Clark",
+          "label": "Jaylen Clark",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2025-07-05"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Toronto Raptors",
+          "to": "San Antonio Spurs",
+          "label": "2025 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "06v59",
+            "player": "Will Riley",
+            "certain": true
+          },
+          "next": {
+            "trade": "aqapwojpm3cvd21d"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
+        }
+      ]
     }
   },
   "axis": [
@@ -493,7 +493,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]

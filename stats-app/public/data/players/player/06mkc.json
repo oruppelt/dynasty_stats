@@ -1,7 +1,7 @@
 {
   "player_id": "06mkc",
   "player": "Jaylon Tyson",
-  "salary": 3984030,
+  "salary": 4038606,
   "seasons": [
     {
       "season": "2024-25",
@@ -48,16 +48,16 @@
     {
       "season": "2026-27",
       "team": "Utah Jazz",
-      "periods": 6,
-      "starts": 1,
-      "gp": 3,
-      "points": 49.75,
+      "periods": 7,
+      "starts": 2,
+      "gp": 5,
+      "points": 114.0,
       "bench_points": 26.0,
       "playoff_starts": 0,
       "playoff_points": 0.0,
       "salary": 1801000,
       "contract": "R11",
-      "paid": 327455
+      "paid": 382030
     }
   ],
   "best_periods": [
@@ -167,15 +167,80 @@
       "from": "Milwaukee Bucks",
       "team": "Utah Jazz",
       "trade": "ropqfs1wmvhr2o2x",
-      "periods": 6,
-      "starts": 1,
-      "gp": 3,
-      "points": 49.75,
+      "periods": 7,
+      "starts": 2,
+      "gp": 5,
+      "points": 114.0,
       "salary": 1801000,
       "contract": "R11"
     }
   ],
   "trades": {
+    "4bd21z2dl6cb0vvy": {
+      "date": "2022-08-02",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "player_id": "0015e",
+          "player": "Mike Conley",
+          "label": "Mike Conley",
+          "result": {
+            "points": 998.75,
+            "starts": 24,
+            "gp": 33,
+            "periods": 25,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "mh0uxrnhlcug9vty"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Golden State Warriors",
+          "to": "Philadelphia 76ers",
+          "label": "2024 round 1 pick (Golden State Warriors)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "06mkc",
+            "player": "Jaylon Tyson",
+            "certain": true
+          },
+          "next": {
+            "trade": "mh0uxrnhlcug9vty"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Philadelphia 76ers",
+          "to": "Golden State Warriors",
+          "player_id": "01enw",
+          "player": "Ricky Rubio",
+          "label": "Ricky Rubio",
+          "result": {
+            "points": 84.75,
+            "starts": 4,
+            "gp": 6,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "o47mrulcldew7u7t"
+          }
+        }
+      ]
+    },
     "mh0uxrnhlcug9vty": {
       "date": "2023-01-13",
       "season": "2022-23",
@@ -244,71 +309,6 @@
         }
       ]
     },
-    "4bd21z2dl6cb0vvy": {
-      "date": "2022-08-02",
-      "season": "2022-23",
-      "period": 1,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Golden State Warriors",
-          "to": "Philadelphia 76ers",
-          "player_id": "0015e",
-          "player": "Mike Conley",
-          "label": "Mike Conley",
-          "result": {
-            "points": 998.75,
-            "starts": 24,
-            "gp": 33,
-            "periods": 25,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "mh0uxrnhlcug9vty"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Golden State Warriors",
-          "to": "Philadelphia 76ers",
-          "label": "2024 round 1 pick (Golden State Warriors)",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 19,
-            "overall": 19,
-            "player_id": "06mkc",
-            "player": "Jaylon Tyson",
-            "certain": true
-          },
-          "next": {
-            "trade": "mh0uxrnhlcug9vty"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Milwaukee Bucks"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Philadelphia 76ers",
-          "to": "Golden State Warriors",
-          "player_id": "01enw",
-          "player": "Ricky Rubio",
-          "label": "Ricky Rubio",
-          "result": {
-            "points": 84.75,
-            "starts": 4,
-            "gp": 6,
-            "periods": 29,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "o47mrulcldew7u7t"
-          }
-        }
-      ]
-    },
     "ropqfs1wmvhr2o2x": {
       "date": "2026-10-23",
       "season": "2026-27",
@@ -322,10 +322,10 @@
           "player": "De'Aaron Fox",
           "label": "De'Aaron Fox",
           "result": {
-            "points": 396.25,
-            "starts": 6,
-            "gp": 11,
-            "periods": 6,
+            "points": 412.5,
+            "starts": 7,
+            "gp": 12,
+            "periods": 7,
             "ongoing": true
           },
           "next": {
@@ -340,10 +340,10 @@
           "player": "Jrue Holiday",
           "label": "Jrue Holiday",
           "result": {
-            "points": 317.75,
-            "starts": 6,
-            "gp": 10,
-            "periods": 6,
+            "points": 326.75,
+            "starts": 7,
+            "gp": 11,
+            "periods": 7,
             "ongoing": true
           },
           "next": {
@@ -358,10 +358,10 @@
           "player": "Jaylon Tyson",
           "label": "Jaylon Tyson",
           "result": {
-            "points": 49.75,
-            "starts": 1,
-            "gp": 3,
-            "periods": 6,
+            "points": 114.0,
+            "starts": 2,
+            "gp": 5,
+            "periods": 7,
             "ongoing": true
           },
           "next": {
@@ -376,10 +376,10 @@
           "player": "John Collins",
           "label": "John Collins",
           "result": {
-            "points": 214.0,
-            "starts": 4,
-            "gp": 8,
-            "periods": 6,
+            "points": 225.5,
+            "starts": 5,
+            "gp": 9,
+            "periods": 7,
             "ongoing": true
           },
           "next": {
@@ -406,10 +406,10 @@
           "player": "Donovan Mitchell",
           "label": "Donovan Mitchell",
           "result": {
-            "points": 470.0,
-            "starts": 6,
-            "gp": 11,
-            "periods": 6,
+            "points": 509.5,
+            "starts": 7,
+            "gp": 12,
+            "periods": 7,
             "ongoing": true
           },
           "next": {
@@ -442,7 +442,7 @@
     },
     {
       "season": "2026-27",
-      "length": 7,
+      "length": 8,
       "playoffs_from": null
     }
   ]
