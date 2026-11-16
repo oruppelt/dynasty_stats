@@ -190,13 +190,13 @@ def _money(text: str) -> float | None:
 
 def compute_timelines(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]],
                       tx: dict[str, pd.DataFrame], standings: dict[str, list[str]] | None = None,
-                      all_trades: dict | None = None) -> dict[str, dict]:
+                      all_trades: dict | None = None, built: dict | None = None) -> dict[str, dict]:
     """{player_id: {'events': [...], 'trades': {set: trade}}}, events oldest first.
 
     A drafted player's timeline starts with the pick he was drafted with, when it was traded (`compute_picks`):
     'pick' (its original team) and 'pick-trade' events; a traded pick in a trade says who it became.
     `all_trades`, if given, gets every trade, each item with its `result` and `next` (`_trade_results`), for
-    the trade trees.
+    the trade trees. `built`, if given, gets how each team's current roster was built (`_compute_built`).
 
     `seasons` is as for players.compute_player_pages (season, cached rows, regular periods, playoff periods),
     oldest or newest first.
@@ -366,11 +366,15 @@ def compute_timelines(seasons: list[tuple[str, pd.DataFrame, set[int], set[int]]
         timelines[pid] = timeline
 
     _trade_results(trades, timelines, rostered, picks)
+    if built is not None and latest is not None:
+        last_season = min(order, key=lambda k: -order[k])
+        now = obs[(obs['key_season'] == latest[0]) & (obs['period'] == latest[1])]
+        built.update(_compute_built(now, last_season, latest[1], timelines, trades, picks, names))
     if all_trades is not None:
         all_trades.update({t: _clean_trade(trade) for t, trade in trades.items()})
     out = {}
     for pid, timeline in timelines.items():
-        used = {e['trade'] for e in timeline if e.get('trade')}
+        used = dict.fromkeys(e['trade'] for e in timeline if e.get('trade'))  # in timeline order: stable output
         out[pid] = {'events': [_clean(e) for e in timeline],
                     'trades': {t: _clean_trade(trades[t]) for t in used}}
     return out
@@ -431,6 +435,103 @@ def _trade_results(trades: dict, timelines: dict[str, list[dict]], rostered: dic
                     item['next'] = moves_after.get(('draft', item['became']['player_id']))
                 elif team is not None:
                     item['result'] = {'traded_on': True, 'drafted_by': team}
+
+
+ARRIVALS = ('draft', 'claim', 're-sign', 'trade', 'joined')
+BUILT_DEPTH = 6
+
+
+def _compute_built(now: pd.DataFrame, season: str, period: int, timelines: dict[str, list[dict]], trades: dict,
+                   picks: dict, names: dict) -> dict[str, dict]:
+    """How each team's current roster was built: {team: {season, period, players: [row]}}, a row per player
+    on the latest roster (most lineup points with the team first) with how he got there (`how`, a node).
+
+    A node is an asset and the move that brought it to the team: 'draft' (with `round`, `pick`, and when it
+    was another team's pick, `original` and `via`, the node for how the team got that pick), 'claim',
+    're-sign', 'joined' (no logged move), 'own' (the team's own pick) or 'trade' (`trade`, `from`, and
+    `gave`: a node for everything the team sent in that trade, traced back the same way). The trade tree
+    run backwards, down to drafts and signings; a player's node has what he did with the team in that
+    stint (`points`, `starts`). Team names are as at the time; teams are followed by owner (`franchise`).
+    """
+    pick_keys = {(p['season'], p['round'], p['slot']): k for k, p in picks.items()}
+
+    def arrival(pid: str, team: str, before: pd.Timestamp | None, not_trade: str | None = None) -> dict | None:
+        best = None
+        for e in timelines.get(pid, []):
+            if e['kind'] not in ARRIVALS:
+                continue
+            # On the team when the logs start: there from the beginning
+            when = pd.Timestamp.min if e.get('before_logs') else _when(e)
+            if before is not None and (when > before or (when == before and (e.get('trade') == not_trade or not_trade is None))):
+                continue
+            if franchise(e['team'], when) == team:
+                best = e
+        return best
+
+    def player_node(pid: str, label: str, team: str, before, not_trade, depth: int) -> dict:
+        e = arrival(pid, team, before, not_trade)
+        node = {'kind': 'player', 'player_id': pid, 'label': names.get(pid, label)}
+        if e is None:
+            return {**node, 'how': 'unknown'}
+        node.update(how=e['kind'], date=_date(e['date']), season=e['season'], points=round(e['points'], 2),
+                    starts=e['starts'], gp=e['gp'], periods=e['periods'])
+        if e['kind'] == 'draft':
+            node.update(round=e['round'], pick=e['pick'])
+            if e.get('original'):
+                node['original'] = e['original']
+                key = pick_keys.get((e['season'], e['round'], e['pick']))
+                if key and depth < BUILT_DEPTH:
+                    node['via'] = pick_node(key, picks[key]['chain'][0]['label'] if picks[key]['chain'] else '', team,
+                                            _when(e), None, depth + 1)
+        elif e['kind'] == 'trade':
+            node.update(trade=e['trade'], **{'from': e['from']})
+            if depth < BUILT_DEPTH:
+                node['gave'] = gave(e['trade'], team, depth + 1)
+        elif e['kind'] in ('claim', 're-sign') and e.get('bid') is not None:
+            node['bid'] = e['bid']
+        return node
+
+    def pick_node(key: str, label: str, team: str, before, not_trade, depth: int) -> dict:
+        pick = picks[key]
+        node = {'kind': 'pick', 'label': label}
+        moves = [m for m in pick['chain'] if franchise(m['to'], m['date']) == team and
+                 (before is None or m['date'] < before or (m['date'] == before and m['trade'] != not_trade))]
+        if not moves:
+            return {**node, 'how': 'own' if pick['original'] == team else 'unknown'}
+        m = moves[-1]
+        node.update(how='trade', trade=m['trade'], date=_date(m['date']), season=m['season'], **{'from': m['from']})
+        if depth < BUILT_DEPTH:
+            node['gave'] = gave(m['trade'], team, depth + 1)
+        return node
+
+    def gave(set_id: str, team: str, depth: int) -> list[dict]:
+        trade = trades[set_id]
+        when = trade['date']
+        out = []
+        for item in trade['items']:
+            if franchise(item['from'], when) != team:
+                continue
+            if item['kind'] == 'player' and item['player_id']:
+                out.append(player_node(item['player_id'], item['label'], team, when, set_id, depth))
+            elif item['kind'] == 'pick' and item.get('pick_key') in picks:
+                out.append(pick_node(item['pick_key'], item['label'], team, when, set_id, depth))
+            else:
+                # Budget, or a pick the logs can't follow (still to come, or before the logs)
+                owner = re.search(r'\(([^()]+)\)$', item['label']) if item['kind'] == 'pick' else None
+                how = 'budget' if item['kind'] != 'pick' else \
+                    'own' if owner and franchise(owner.group(1), when) == team else 'unknown'
+                out.append({'kind': item['kind'], 'label': item['label'], 'how': how})
+        return out
+
+    built = {}
+    for team, rows in now.groupby('team'):
+        players = []
+        for row in rows.itertuples():
+            node = player_node(row.player_id, names.get(row.player_id, row.player_id), team, None, None, 0)
+            players.append(node)
+        players.sort(key=lambda n: (-n.get('points', 0), n['label']))
+        built[team] = {'season': season, 'period': int(period), 'players': players}
+    return built
 
 
 def _became(pick: dict | None, names: dict) -> dict | None:

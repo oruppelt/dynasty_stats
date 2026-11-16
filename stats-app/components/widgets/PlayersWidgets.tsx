@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
 import { ErrorState } from './ErrorState'
+import { TeamBuilt } from './TeamBuilt'
 import { Explainer } from './Explainer'
 import { PlayerName } from './PlayerName'
 import { AllTimePlayers, PlayerLeader, PlayerPeriod, PlayersData, SeasonPlayerPeriod, describeContract, formatFpts, formatSalary, useAllTimePlayers, usePlayers } from '@/lib/players'
@@ -32,7 +33,7 @@ function usePlayersView(): { view?: ReactNode; data?: PlayersData } {
   return { data }
 }
 
-function Intro({ title, children, explainer }: { title: string; children: ReactNode; explainer?: ReactNode }) {
+export function Intro({ title, children, explainer }: { title: string; children: ReactNode; explainer?: ReactNode }) {
   return (
     <CardHeader className="space-y-2">
       <CardTitle>{title}</CardTitle>
@@ -390,6 +391,7 @@ export function PlayerTeamsWidget({ selectedTeam }: { selectedTeam: string }) {
   })).sort((a, b) => b[sort] - a[sort])
 
   return (
+    <div className="w-full space-y-4">
     <Card className="w-full">
       <Intro
         title="Teams"
@@ -458,6 +460,8 @@ export function PlayerTeamsWidget({ selectedTeam }: { selectedTeam: string }) {
         </div>
       </CardContent>
     </Card>
+    <TeamBuilt selectedTeam={selectedTeam} />
+    </div>
   )
 }
 

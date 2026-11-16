@@ -150,6 +150,71 @@
     }
   ],
   "trades": {
+    "dw0d099pkvgq3dpg": {
+      "date": "2021-11-01",
+      "season": "2021-22",
+      "period": 5,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Chicago Bulls",
+          "to": "San Antonio Spurs",
+          "player_id": "000zv",
+          "player": "Al Horford",
+          "label": "Al Horford",
+          "result": {
+            "points": 1405.25,
+            "starts": 26,
+            "gp": 43,
+            "periods": 29,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-05-24"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "player_id": "0598b",
+          "player": "Moses Brown",
+          "label": "Moses Brown",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 1,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-11-05"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Chicago Bulls",
+          "label": "2022 round 1 pick (San Antonio Spurs)",
+          "became": {
+            "season": "2022-23",
+            "round": 1,
+            "pick": 19,
+            "overall": 19,
+            "player_id": "0621n",
+            "player": "MarJon Beauchamp",
+            "certain": true
+          },
+          "next": {
+            "trade": "mkq4pvzjl4wmiyta"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Oklahoma City Thunder"
+          }
+        }
+      ]
+    },
     "mkq4pvzjl4wmiyta": {
       "date": "2022-06-27",
       "season": "2022-23",
@@ -312,71 +377,6 @@
           "result": {
             "traded_on": true,
             "drafted_by": "Cleveland Cavaliers"
-          }
-        }
-      ]
-    },
-    "dw0d099pkvgq3dpg": {
-      "date": "2021-11-01",
-      "season": "2021-22",
-      "period": 5,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Chicago Bulls",
-          "to": "San Antonio Spurs",
-          "player_id": "000zv",
-          "player": "Al Horford",
-          "label": "Al Horford",
-          "result": {
-            "points": 1405.25,
-            "starts": 26,
-            "gp": 43,
-            "periods": 29,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2022-05-24"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Chicago Bulls",
-          "player_id": "0598b",
-          "player": "Moses Brown",
-          "label": "Moses Brown",
-          "result": {
-            "points": 0.0,
-            "starts": 0,
-            "gp": 0,
-            "periods": 1,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2021-11-05"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Chicago Bulls",
-          "label": "2022 round 1 pick (San Antonio Spurs)",
-          "became": {
-            "season": "2022-23",
-            "round": 1,
-            "pick": 19,
-            "overall": 19,
-            "player_id": "0621n",
-            "player": "MarJon Beauchamp",
-            "certain": true
-          },
-          "next": {
-            "trade": "mkq4pvzjl4wmiyta"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Oklahoma City Thunder"
           }
         }
       ]

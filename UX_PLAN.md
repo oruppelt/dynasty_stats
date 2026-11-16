@@ -298,6 +298,20 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-16: How this team was built (branch `players/team-built`)
+- Players → Teams gets a second card, **How this team was built**: for a
+  team (the viewer's by default), every player on today's roster with how he
+  got there (drafted, with whose pick and the trade that brought it; signed,
+  with the bid; traded for, from whom and when) and his lineup points and
+  starts with the team since. A summary line ("5 drafted, 2 traded for, 5
+  signed") and the trades behind the most of today's points.
+- A row from a trade opens to what the team gave for him, and how it had got
+  each of those, back to drafts and signings (the trade tree run
+  backwards). Every trade date links to the trade page.
+- Pipeline: `lineage._compute_built` writes `data/players/built.json` (40 KB
+  compressed). A player page's trades are now in timeline order, so the
+  pages don't change on every run.
+
 ### 2026-11-16: A page for each trade (branch `players/trade-page`)
 - Players → Trade: one trade, shareable as `?trade=<id>` (like `?player=`):
   the teams, date, season and period; each side's items with what each got

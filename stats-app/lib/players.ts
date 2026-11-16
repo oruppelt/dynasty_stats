@@ -302,6 +302,34 @@ export function useTrades(enabled: boolean) {
   })
 }
 
+/** An asset and the move that brought it to a team (data/players/built.json, pipeline/lineage.py
+ * `_compute_built`): a trade lists what the team gave in it (`gave`), traced back the same way; a draft with
+ * another team's pick has `via`, how the team got that pick. Team names are as at the time. */
+export interface BuiltNode {
+  kind: 'player' | 'pick' | 'budget';
+  label: string;
+  player_id?: string;
+  how: 'draft' | 'claim' | 're-sign' | 'trade' | 'joined' | 'own' | 'unknown' | 'budget';
+  date?: string | null;
+  season?: string;
+  /** A player: what he did with the team in that stint (lineup, regular season) */
+  points?: number; starts?: number; gp?: number; periods?: number;
+  round?: number; pick?: number; original?: string; via?: BuiltNode;
+  trade?: string; from?: string; gave?: BuiltNode[];
+  bid?: number;
+}
+
+/** How each team's current roster was built: {team: {season, period, players}}, most points first */
+export type Built = Record<string, { season: string; period: number; players: BuiltNode[] }>
+
+export function useBuilt() {
+  return useQuery({
+    queryKey: ['players', 'built'],
+    staleTime: Infinity,
+    queryFn: () => fetchJson<Built>('/data/players/built.json'),
+  })
+}
+
 /** One player's career; null for an unknown player. */
 export function usePlayerPage(playerId: string | null) {
   return useQuery({

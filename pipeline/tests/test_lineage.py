@@ -104,3 +104,30 @@ def test_trade_results():
     assert items['P'] == {'points': 12.0, 'starts': 1, 'gp': 1, 'periods': 1, 'ongoing': False}
     assert items['2024 round 1 pick (A)'] == {'points': 30.0, 'starts': 1, 'gp': 1, 'periods': 1, 'ongoing': True}
     assert items['2024 round 1 pick (B)'] == {'traded_on': True, 'drafted_by': 'C'}
+
+
+def test_how_the_roster_was_built():
+    # B drafts x with A's pick, got for its own pick; then trades q (a claim) to A for p, who A had from the start
+    s1 = rows((1, 'A', 'p', 'active', 10), (1, 'B', 'q', 'active', 10))
+    s2 = rows((1, 'B', 'x', 'active', 30), (1, 'A', 'y', 'active', 5), (1, 'B', 'p', 'active', 7),
+              (1, 'A', 'q', 'active', 4))
+    t = tx(
+        claims=[('2023-24', 'c1', 0, 'CLAIM', 'B', '2023-10-01 10:00', 1, 'q', 'Q', '1.00')],
+        trades=[('2023-24', 't1', 1, 'pick', 'A', 'B', '2023-11-10 10:00', 3, '', '', '2024 Draft Pick Round 1 (A)', ''),
+                ('2023-24', 't1', 0, 'pick', 'B', 'A', '2023-11-10 10:00', 3, '', '', '2024 Draft Pick Round 1 (B)', ''),
+                ('2024-25', 't2', 1, 'player', 'A', 'B', '2024-07-10 10:00', 1, 'p', 'P', '', ''),
+                ('2024-25', 't2', 0, 'player', 'B', 'A', '2024-07-10 10:00', 1, 'q', 'Q', '', '')],
+        drafts=[('2024-25', 1, 1, 'B', 'x', '2024-06-25 20:00'), ('2024-25', 1, 2, 'A', 'y', '2024-06-25 20:05')],
+    )
+    t['draft_orders'] = pd.DataFrame({'season': ['2024-25'] * 2, 'pick': [1, 2], 'team': ['A', 'B']})
+    built = {}
+    lineage.compute_timelines([('2023-24', s1, {1}, set()), ('2024-25', s2, {1}, set())], t, built=built)
+    assert set(built) == {'A', 'B'} and built['B']['season'] == '2024-25'
+    x, p = built['B']['players']  # most points first
+    assert (x['label'], x['how'], x['original'], x['points']) == ('x', 'draft', 'A', 30.0)
+    assert (x['via']['how'], x['via']['trade']) == ('trade', 't1')
+    assert [(g['label'], g['how']) for g in x['via']['gave']] == [('2024 round 1 pick (B)', 'own')]
+    assert (p['how'], p['trade'], p['from']) == ('trade', 't2', 'A')
+    assert [(g['player_id'], g['how'], g['points']) for g in p['gave']] == [('q', 'claim', 10.0)]
+    q = next(n for n in built['A']['players'] if n['player_id'] == 'q')
+    assert [(g['player_id'], g['how']) for g in q['gave']] == [('p', 'joined')]
