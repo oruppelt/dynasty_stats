@@ -224,117 +224,6 @@
     }
   ],
   "trades": {
-    "clvorhzpmkuzzfxs": {
-      "date": "2026-01-26",
-      "season": "2025-26",
-      "period": 29,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Detroit Pistons",
-          "player_id": "06mly",
-          "player": "Quinten Post",
-          "label": "Quinten Post",
-          "result": {
-            "points": 201.25,
-            "starts": 12,
-            "gp": 16,
-            "periods": 13,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "Detroit Pistons",
-          "label": "2026 round 2 pick (Golden State Warriors)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 23,
-            "overall": 53,
-            "player_id": "076u0",
-            "player": "Bryce Hopkins",
-            "certain": true
-          },
-          "result": {
-            "points": 4.75,
-            "starts": 2,
-            "gp": 1,
-            "periods": 8,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Detroit Pistons",
-          "to": "Boston Celtics",
-          "player_id": "04ewd",
-          "player": "Luke Kennard",
-          "label": "Luke Kennard",
-          "result": {
-            "points": 102.25,
-            "starts": 3,
-            "gp": 5,
-            "periods": 5,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2026-07-04"
-          }
-        }
-      ]
-    },
-    "rynj81s7midkgo4r": {
-      "date": "2025-11-24",
-      "season": "2025-26",
-      "period": 11,
-      "items": [
-        {
-          "kind": "pick",
-          "from": "Boston Celtics",
-          "to": "San Antonio Spurs",
-          "label": "2026 round 2 pick (Minnesota Timberwolves)",
-          "became": {
-            "season": "2026-27",
-            "round": 2,
-            "pick": 18,
-            "overall": 48,
-            "player_id": "076tv",
-            "player": null,
-            "certain": true
-          },
-          "next": {
-            "trade": "nuuo5uvwmkv30gos"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "San Antonio Spurs",
-          "to": "Boston Celtics",
-          "player_id": "06mly",
-          "player": "Quinten Post",
-          "label": "Quinten Post",
-          "result": {
-            "points": 461.25,
-            "starts": 12,
-            "gp": 22,
-            "periods": 18,
-            "ongoing": false
-          },
-          "next": {
-            "trade": "clvorhzpmkuzzfxs"
-          }
-        }
-      ]
-    },
     "sz7kgafmlbsani0i": {
       "date": "2022-12-18",
       "season": "2022-23",
@@ -400,15 +289,80 @@
         }
       ]
     },
-    "k1m6hr4jlxywuc01": {
+    "rynj81s7midkgo4r": {
+      "date": "2025-11-24",
+      "season": "2025-26",
+      "period": 11,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "San Antonio Spurs",
+          "label": "2026 round 2 pick (Minnesota Timberwolves)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 18,
+            "overall": 48,
+            "player_id": "076tv",
+            "player": null,
+            "certain": true
+          },
+          "next": {
+            "trade": "nuuo5uvwmkv30gos"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Boston Celtics",
+          "player_id": "06mly",
+          "player": "Quinten Post",
+          "label": "Quinten Post",
+          "result": {
+            "points": 461.25,
+            "starts": 12,
+            "gp": 22,
+            "periods": 18,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "clvorhzpmkuzzfxs"
+          }
+        }
+      ]
+    },
+    "f24ziii5lxyb2o23": {
       "date": "2024-06-28",
       "season": "2024-25",
       "period": 1,
       "items": [
         {
           "kind": "pick",
-          "from": "Phoenix Suns",
-          "to": "San Antonio Spurs",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2024 round 1 pick, no. 11",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 11,
+            "overall": 11,
+            "player_id": "06mjy",
+            "player": "Tidjane Salaun",
+            "certain": true
+          },
+          "next": {
+            "trade": "uq2o1bs8lxyjavfd"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Washington Wizards"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
           "label": "2024 round 2 pick, no. 7",
           "became": {
             "season": "2024-25",
@@ -419,28 +373,134 @@
             "player": "Quinten Post",
             "certain": false
           },
-          "result": {
-            "points": 179.0,
-            "starts": 4,
-            "gp": 8,
-            "periods": 43,
-            "ongoing": false
-          },
           "next": {
-            "trade": "rynj81s7midkgo4r"
+            "trade": "uq2o1bs8lxyjavfd"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "San Antonio Spurs"
           }
         },
         {
           "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Phoenix Suns",
-          "label": "2024 round 2 pick, no. 26"
+          "from": "Dallas Mavericks",
+          "to": "Miami Heat",
+          "label": "2024 round 1 pick, no. 14",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 14,
+            "overall": 14,
+            "player_id": "06mk5",
+            "player": "Devin Carter",
+            "certain": true
+          },
+          "next": {
+            "trade": "uq2o1bs8lxyjavfd"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Milwaukee Bucks"
+          }
         },
         {
           "kind": "pick",
-          "from": "San Antonio Spurs",
-          "to": "Phoenix Suns",
-          "label": "2024 round 2 pick, no. 9"
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "2024 round 1 pick, no. 4",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 4,
+            "overall": 4,
+            "player_id": "06mk3",
+            "player": "Matas Buzelis",
+            "certain": true
+          },
+          "result": {
+            "points": 2269.25,
+            "starts": 44,
+            "gp": 77,
+            "periods": 74,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Miami Heat",
+          "to": "Dallas Mavericks",
+          "label": "$15 budget"
+        }
+      ]
+    },
+    "clvorhzpmkuzzfxs": {
+      "date": "2026-01-26",
+      "season": "2025-26",
+      "period": 29,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "player_id": "06mly",
+          "player": "Quinten Post",
+          "label": "Quinten Post",
+          "result": {
+            "points": 201.25,
+            "starts": 12,
+            "gp": 16,
+            "periods": 13,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "2026 round 2 pick (Golden State Warriors)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 23,
+            "overall": 53,
+            "player_id": "076u0",
+            "player": "Bryce Hopkins",
+            "certain": true
+          },
+          "result": {
+            "points": 4.75,
+            "starts": 2,
+            "gp": 1,
+            "periods": 8,
+            "ongoing": true
+          },
+          "next": {
+            "kept": true
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "04ewd",
+          "player": "Luke Kennard",
+          "label": "Luke Kennard",
+          "result": {
+            "points": 102.25,
+            "starts": 3,
+            "gp": 5,
+            "periods": 5,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-04"
+          }
         }
       ]
     },
@@ -674,37 +734,15 @@
         }
       ]
     },
-    "f24ziii5lxyb2o23": {
+    "k1m6hr4jlxywuc01": {
       "date": "2024-06-28",
       "season": "2024-25",
       "period": 1,
       "items": [
         {
           "kind": "pick",
-          "from": "Dallas Mavericks",
-          "to": "Miami Heat",
-          "label": "2024 round 1 pick, no. 11",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 11,
-            "overall": 11,
-            "player_id": "06mjy",
-            "player": "Tidjane Salaun",
-            "certain": true
-          },
-          "next": {
-            "trade": "uq2o1bs8lxyjavfd"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Washington Wizards"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Dallas Mavericks",
-          "to": "Miami Heat",
+          "from": "Phoenix Suns",
+          "to": "San Antonio Spurs",
           "label": "2024 round 2 pick, no. 7",
           "became": {
             "season": "2024-25",
@@ -715,66 +753,28 @@
             "player": "Quinten Post",
             "certain": false
           },
-          "next": {
-            "trade": "uq2o1bs8lxyjavfd"
-          },
           "result": {
-            "traded_on": true,
-            "drafted_by": "San Antonio Spurs"
+            "points": 179.0,
+            "starts": 4,
+            "gp": 8,
+            "periods": 43,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "rynj81s7midkgo4r"
           }
         },
         {
           "kind": "pick",
-          "from": "Dallas Mavericks",
-          "to": "Miami Heat",
-          "label": "2024 round 1 pick, no. 14",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 14,
-            "overall": 14,
-            "player_id": "06mk5",
-            "player": "Devin Carter",
-            "certain": true
-          },
-          "next": {
-            "trade": "uq2o1bs8lxyjavfd"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Milwaukee Bucks"
-          }
+          "from": "San Antonio Spurs",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 26"
         },
         {
           "kind": "pick",
-          "from": "Miami Heat",
-          "to": "Dallas Mavericks",
-          "label": "2024 round 1 pick, no. 4",
-          "became": {
-            "season": "2024-25",
-            "round": 1,
-            "pick": 4,
-            "overall": 4,
-            "player_id": "06mk3",
-            "player": "Matas Buzelis",
-            "certain": true
-          },
-          "result": {
-            "points": 2269.25,
-            "starts": 44,
-            "gp": 77,
-            "periods": 74,
-            "ongoing": true
-          },
-          "next": {
-            "kept": true
-          }
-        },
-        {
-          "kind": "budget",
-          "from": "Miami Heat",
-          "to": "Dallas Mavericks",
-          "label": "$15 budget"
+          "from": "San Antonio Spurs",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 9"
         }
       ]
     }

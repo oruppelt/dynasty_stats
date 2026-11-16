@@ -194,6 +194,61 @@
     }
   ],
   "trades": {
+    "cknsztqwklqk49ho": {
+      "date": "2021-03-01",
+      "season": "2020-21",
+      "period": 21,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Los Angeles Lakers",
+          "player_id": "03apy",
+          "player": "Rodney Hood",
+          "label": "Rodney Hood",
+          "result": {
+            "points": 89.0,
+            "starts": 6,
+            "gp": 9,
+            "periods": 9,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2021-05-31"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Los Angeles Lakers",
+          "to": "Boston Celtics",
+          "label": "2021 round 2 pick (Washington Wizards)",
+          "became": {
+            "season": "2021-22",
+            "round": 2,
+            "pick": 30,
+            "overall": 60,
+            "player_id": "05ujk",
+            "player": "Dalano Banton",
+            "certain": false
+          },
+          "next": {
+            "trade": "5ckrl4m9kpjpedur"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Denver Nuggets"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Los Angeles Lakers",
+          "to": "(Drop)",
+          "player_id": "04qsg",
+          "player": "Isaac Bonga",
+          "label": "Isaac Bonga"
+        }
+      ]
+    },
     "51fiui4ekhx62qh8": {
       "date": "2020-11-25",
       "season": "2020-21",
@@ -422,61 +477,6 @@
           "next": {
             "trade": "18yvuxoyk2wfh60f"
           }
-        }
-      ]
-    },
-    "cknsztqwklqk49ho": {
-      "date": "2021-03-01",
-      "season": "2020-21",
-      "period": 21,
-      "items": [
-        {
-          "kind": "player",
-          "from": "Boston Celtics",
-          "to": "Los Angeles Lakers",
-          "player_id": "03apy",
-          "player": "Rodney Hood",
-          "label": "Rodney Hood",
-          "result": {
-            "points": 89.0,
-            "starts": 6,
-            "gp": 9,
-            "periods": 9,
-            "ongoing": false
-          },
-          "next": {
-            "dropped": "2021-05-31"
-          }
-        },
-        {
-          "kind": "pick",
-          "from": "Los Angeles Lakers",
-          "to": "Boston Celtics",
-          "label": "2021 round 2 pick (Washington Wizards)",
-          "became": {
-            "season": "2021-22",
-            "round": 2,
-            "pick": 30,
-            "overall": 60,
-            "player_id": "05ujk",
-            "player": "Dalano Banton",
-            "certain": false
-          },
-          "next": {
-            "trade": "5ckrl4m9kpjpedur"
-          },
-          "result": {
-            "traded_on": true,
-            "drafted_by": "Denver Nuggets"
-          }
-        },
-        {
-          "kind": "player",
-          "from": "Los Angeles Lakers",
-          "to": "(Drop)",
-          "player_id": "04qsg",
-          "player": "Isaac Bonga",
-          "label": "Isaac Bonga"
         }
       ]
     }

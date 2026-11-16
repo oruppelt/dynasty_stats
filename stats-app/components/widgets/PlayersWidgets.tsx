@@ -47,12 +47,52 @@ const games = (n: number) => `${n} game${n === 1 ? '' : 's'}`
 // ---------------------------------------------------------------- Leaders
 
 /** Players by points: the season leaders, playoff leaders, career leaders. `seasons` adds that column. */
-function LeadersTable({ rows, selectedTeam, seasons }: {
-  rows: (PlayerLeader & { seasons?: number; season?: string })[];
+type LeaderRow = PlayerLeader & { seasons?: number; season?: string }
+
+/** The ways the career leaders can be sorted (Career leaders' "Sort by") */
+const CAREER_SORTS = {
+  points: { label: 'Points', value: (p: LeaderRow) => p.points, minStarts: 0 },
+  per_game: { label: 'Points per game', value: (p: LeaderRow) => (p.gp ? p.points / p.gp : null), minStarts: 50 },
+  per_million: { label: 'Points per $1M', value: (p: LeaderRow) => (p.salary ? p.points / (p.salary / 1e6) : null), minStarts: 50 },
+  salary: { label: 'Career salary', value: (p: LeaderRow) => p.salary ?? null, minStarts: 0 },
+  gp: { label: 'Games played', value: (p: LeaderRow) => p.gp, minStarts: 0 },
+  seasons: { label: 'Seasons', value: (p: LeaderRow) => p.seasons ?? null, minStarts: 0 },
+} as const
+type CareerSort = keyof typeof CAREER_SORTS
+const SORT_SHORT: Record<CareerSort, string> = {
+  points: 'Points', per_game: 'Per game', per_million: 'Per $1M', salary: 'Salary', gp: 'GP', seasons: 'Seasons',
+}
+
+function formatSorted(sort: CareerSort, p: LeaderRow): string {
+  const v = CAREER_SORTS[sort].value(p)
+  if (v == null) return '–'
+  if (sort === 'per_game') return v.toFixed(1)
+  if (sort === 'salary') return formatSalary(v)
+  if (sort === 'per_million') return Math.round(v).toLocaleString()
+  return String(v)
+}
+
+const MIN_STARTS = [0, 25, 50, 100, 200]
+const PAGE = 25
+
+function SortHead({ label, active, className }: { label: string; active: boolean; className?: string }) {
+  return (
+    <th className={cn('h-10 whitespace-nowrap border-b px-2 text-right font-medium', active && 'text-foreground', className)}>
+      {active ? <span className="inline-flex items-center gap-1">{label}<ArrowDown className="h-3 w-3" /></span> : label}
+    </th>
+  )
+}
+
+function LeadersTable({ rows, selectedTeam, seasons, sort = 'points', offset = 0 }: {
+  rows: LeaderRow[];
   selectedTeam: string;
   seasons?: boolean;
+  /** The column the rows are sorted by (bold, with an arrow) */
+  sort?: CareerSort;
+  offset?: number;
 }) {
   const salary = rows.some(r => r.salary != null)
+  const bold = (key: CareerSort) => (sort === key ? 'font-semibold' : '')
   return (
     <div className="w-full overflow-x-auto">
       <table className="w-full text-sm tabular-nums">
@@ -60,15 +100,15 @@ function LeadersTable({ rows, selectedTeam, seasons }: {
           <tr className="text-muted-foreground">
             <th className="h-10 w-8 border-b px-2 text-right font-medium">#</th>
             <th className="sticky left-0 z-10 h-10 border-b bg-card px-2 text-left font-medium">Player</th>
-            <th className="h-10 border-b px-2 text-right font-medium text-foreground">
-              <span className="inline-flex items-center gap-1">Points<ArrowDown className="h-3 w-3" /></span>
-            </th>
-            {seasons && <th className="h-10 border-b px-2 text-right font-medium">Seasons</th>}
+            {/* On a phone, the stat it's sorted by comes first (its own column is off to the right) */}
+            {sort !== 'points' && <SortHead label={SORT_SHORT[sort]} active className="sm:hidden" />}
+            <SortHead label="Points" active={sort === 'points'} />
+            {seasons && <SortHead label="Seasons" active={sort === 'seasons'} />}
             <th className="h-10 border-b px-2 text-right font-medium">Starts</th>
-            <th className="h-10 border-b px-2 text-right font-medium">GP</th>
-            <th className="h-10 whitespace-nowrap border-b px-2 text-right font-medium">Per game</th>
-            {salary && <th className="h-10 border-b px-2 text-right font-medium">Salary</th>}
-            {salary && <th className="h-10 whitespace-nowrap border-b px-2 text-right font-medium">Per $1M</th>}
+            <SortHead label="GP" active={sort === 'gp'} />
+            <SortHead label="Per game" active={sort === 'per_game'} />
+            {salary && <SortHead label="Salary" active={sort === 'salary'} />}
+            {salary && <SortHead label="Per $1M" active={sort === 'per_million'} />}
           </tr>
         </thead>
         <tbody className="[&_tr:last-child_td]:border-0">
@@ -76,10 +116,11 @@ function LeadersTable({ rows, selectedTeam, seasons }: {
             const mine = p.teams.includes(selectedTeam)
             return (
               <tr key={`${p.season ?? ''}-${p.player_id}`} className={cn(mine && 'bg-muted font-semibold')}>
-                <td className="h-11 border-b px-2 text-right text-xs text-muted-foreground">{i + 1}</td>
+                <td className="h-11 border-b px-2 text-right text-xs text-muted-foreground">{offset + i + 1}</td>
                 <td className={cn('sticky left-0 z-10 h-11 border-b px-2', mine ? 'bg-muted' : 'bg-card')}>
                   <div className="flex items-center gap-2">
-                    <TeamLogos teams={p.teams} />
+                    {/* On a phone sorted by another stat, its column comes first: the logos make room */}
+                    <span className={cn(sort !== 'points' && 'hidden sm:block')}><TeamLogos teams={p.teams} /></span>
                     <div className="min-w-0">
                       <PlayerName id={p.player_id} name={p.player} className="max-w-36 sm:max-w-none" />
                       <div className="max-w-36 truncate text-xs font-normal text-muted-foreground sm:max-w-none">
@@ -88,13 +129,16 @@ function LeadersTable({ rows, selectedTeam, seasons }: {
                     </div>
                   </div>
                 </td>
-                <td className="h-11 border-b px-2 text-right font-semibold">{formatPoints(p.points)}</td>
-                {seasons && <td className="h-11 border-b px-2 text-right">{p.seasons}</td>}
+                {sort !== 'points' && (
+                  <td className="h-11 border-b px-2 text-right font-semibold sm:hidden">{formatSorted(sort, p)}</td>
+                )}
+                <td className={cn('h-11 border-b px-2 text-right', bold('points'))}>{formatPoints(p.points)}</td>
+                {seasons && <td className={cn('h-11 border-b px-2 text-right', bold('seasons'))}>{p.seasons}</td>}
                 <td className="h-11 border-b px-2 text-right">{p.starts}</td>
-                <td className="h-11 border-b px-2 text-right">{p.gp}</td>
-                <td className="h-11 border-b px-2 text-right">{p.gp ? (p.points / p.gp).toFixed(1) : '–'}</td>
-                {salary && <td className="h-11 border-b px-2 text-right">{p.salary ? formatSalary(p.salary) : '–'}</td>}
-                {salary && <td className="h-11 border-b px-2 text-right">{p.salary ? Math.round(p.points / (p.salary / 1e6)).toLocaleString() : '–'}</td>}
+                <td className={cn('h-11 border-b px-2 text-right', bold('gp'))}>{p.gp}</td>
+                <td className={cn('h-11 border-b px-2 text-right', bold('per_game'))}>{p.gp ? (p.points / p.gp).toFixed(1) : '–'}</td>
+                {salary && <td className={cn('h-11 border-b px-2 text-right', bold('salary'))}>{p.salary ? formatSalary(p.salary) : '–'}</td>}
+                {salary && <td className={cn('h-11 border-b px-2 text-right', bold('per_million'))}>{p.salary ? Math.round(p.points / (p.salary / 1e6)).toLocaleString() : '–'}</td>}
               </tr>
             )
           })}
@@ -123,6 +167,69 @@ function TableCard({ title, note, children }: { title: string; note: ReactNode; 
       </CardHeader>
       <CardContent className="px-0 sm:px-6">{children}</CardContent>
     </Card>
+  )
+}
+
+function Select({ label, value, onChange, options }: {
+  label: string; value: string; onChange: (v: string) => void; options: [string, string][];
+}) {
+  return (
+    <label className="flex items-center gap-2 text-sm">
+      <span className="text-muted-foreground">{label}</span>
+      <select
+        value={value}
+        onChange={e => onChange(e.target.value)}
+        className="h-9 rounded-md border bg-background px-2 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+      >
+        {options.map(([v, text]) => <option key={v} value={v}>{text}</option>)}
+      </select>
+    </label>
+  )
+}
+
+/** Career leaders: every player with a start, sorted by a stat, with a minimum of starts (a rate needs a
+ * sample: picking points per game or per $1M sets it to 50, and it can be changed). 25 at a time. */
+function CareerLeaders({ rows, selectedTeam, note }: { rows: LeaderRow[]; selectedTeam: string; note: ReactNode }) {
+  const [sort, setSort] = useState<CareerSort>('points')
+  const [minStarts, setMinStarts] = useState(0)
+  const [shown, setShown] = useState(PAGE)
+  const { value } = CAREER_SORTS[sort]
+  const sorted = rows
+    .filter(p => p.starts >= minStarts && value(p) != null)
+    .map(p => ({ p, v: value(p)! }))
+    .sort((a, b) => b.v - a.v || b.p.points - a.p.points)
+    .map(({ p }) => p)
+  return (
+    <TableCard title="Career leaders" note={note}>
+      <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-2 px-4 sm:px-0">
+        <Select
+          label="Sort by"
+          value={sort}
+          onChange={v => {
+            const next = v as CareerSort
+            setSort(next)
+            setMinStarts(CAREER_SORTS[next].minStarts)
+            setShown(PAGE)
+          }}
+          options={Object.entries(CAREER_SORTS).map(([k, s]) => [k, s.label])}
+        />
+        <Select
+          label="At least"
+          value={String(minStarts)}
+          onChange={v => { setMinStarts(Number(v)); setShown(PAGE) }}
+          options={MIN_STARTS.map(n => [String(n), n ? `${n} starts` : 'any starts'])}
+        />
+        <span className="text-xs text-muted-foreground">{sorted.length} players</span>
+      </div>
+      <LeadersTable rows={sorted.slice(0, shown)} selectedTeam={selectedTeam} seasons sort={sort} />
+      {sorted.length > shown && (
+        <div className="px-4 pt-3 sm:px-0">
+          <button type="button" onClick={() => setShown(n => n + PAGE)} className="text-sm font-medium text-primary hover:underline">
+            Show {Math.min(PAGE, sorted.length - shown)} more
+          </button>
+        </div>
+      )}
+    </TableCard>
   )
 }
 
@@ -519,9 +626,12 @@ export function PlayerAllTimeWidget({ selectedTeam }: { selectedTeam: string }) 
 
       <FranchiseCard data={data} records={records} franchise={franchise} teams={teams} onPick={setPicked} counted={counted} />
 
-      <TableCard title="Career leaders" note={`Points over every season, for any team (${counted}). ${SALARY_NOTE}`}>
-        <LeadersTable rows={records.career} selectedTeam={selectedTeam} seasons />
-      </TableCard>
+      <CareerLeaders
+        rows={records.career}
+        selectedTeam={selectedTeam}
+        note={`Every player's career, for any team (${counted}). Sort by a stat; a rate (per game, per $1M) counts players with at least 50 starts, which you can change. ${SALARY_NOTE}`}
+      />
+
 
       <TableCard title="Best seasons" note={`A player's points in one season (${counted}). ${SALARY_NOTE}`}>
         <LeadersTable rows={records.best_seasons} selectedTeam={selectedTeam} />

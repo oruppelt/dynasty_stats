@@ -134,6 +134,9 @@ def test_alltime(rows):
         ('2024-25', 'Bob', 70), ('2025-26', 'Bob', 70), ('2024-25', 'Dee', 60)]
     assert data['career'][0] == {'player_id': 'bob', 'player': 'Bob', 'teams': ['Alpha'], 'points': 200.0,
                                  'starts': 4, 'gp': 6, 'seasons': 2, 'salary': 2000000}
+    # The career list has every player with a start, not just the top_n (the site sorts and filters it)
+    one = compute_alltime_players([('2024-25', rows, {1, 2}, {3})], top_n=1)
+    assert len(one['career']) > 1 and len(one['best_seasons']) == 1
     # A franchise's salary is what it paid: Ann was with Alpha for half of each season
     assert [(p['player'], p['salary']) for p in data['franchises']['Alpha']] == [('Bob', 2000000), ('Ann', 1000000)]
     assert [(p['season'], p['player'], p['points']) for p in data['best_seasons']] == [
