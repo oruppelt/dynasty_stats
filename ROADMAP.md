@@ -9,8 +9,8 @@ are in `LEAGUE.md`.
    data (schedule, playoffs, past seasons, rosters).
 3. **Player lineage.** The long-term goal: every pick and player followed
    through the league's history (section 3).
-4. **Franchise pages and prestige.** A page per franchise (banners, retired
-   jerseys, legends, rivals), and prestige: earned from rare honors, spent on
+4. **Franchise pages and honor.** A page per franchise (banners, retired
+   jerseys, legends, rivals), and honor: earned from rare achievements, spent on
    retiring a jersey and other small rewards (section 4).
 
 ---
@@ -473,31 +473,33 @@ rosters:
 
 ---
 
-## 4. Franchise pages and prestige (started 2026-11-16)
+## 4. Franchise pages and honor (started 2026-11-16)
 
 A page per franchise brings together what the site knows about it, and keeps
-its history: title banners, retired jerseys, legends. **Prestige** is the main
-show: points a franchise earns season by season from rare honors (a title,
-not a win), spent through the commissioner on rewards. No reward touches
-the competition on Fantrax.
+its history: title banners, retired jerseys, legends. **Honor** is the main
+show: points earned season by season from rare achievements (a title, not a
+win), spent through the commissioner on rewards. It is just honor, kept by
+franchise name: every achievement has its date, so whether it belongs to the
+franchise or to whoever ran it then is for the league to judge (franchises
+changed GMs). No reward touches the competition on Fantrax.
 
 ### Done: the first iteration (2026-11-16)
 - **History → Franchise**, `?franchise=<team>` (`lib/selected-franchise.ts`),
   defaulting to the viewer's team; names in the Franchises table open it.
-  `components/widgets/FranchisePage.tsx`, from `data/prestige.json`
-  (`pipeline/prestige.py`) and `data/alltime.json`.
-- Header: big logo, motto (empty until bought), all-time record, prestige,
+  `components/widgets/FranchisePage.tsx`, from `data/honor.json`
+  (`pipeline/honor.py`) and `data/alltime.json`.
+- Header: big logo, motto (empty until bought), all-time record, honor,
   its rank in the league and what's left to spend.
-- Panels, each opening full screen: **Prestige by season** (each season's
-  honors and points; full screen adds the rules, the costs and every
-  franchise's prestige), **Banners** (titles and finals), **Retired jerseys**
+- Panels, each opening full screen: **Honor by season** (each season's
+  achievements and points; full screen adds the rules, the costs and every
+  franchise's honor), **Banners** (titles and finals), **Retired jerseys**
   (and who is eligible), **Highlights** (best season, highest score, biggest
   win, longest streak, best player season; featured moments on top),
   **Legends** (top scorers for the franchise), **Rivals** (most played,
   nemesis, favorite, a declared rival).
-- Honors and prestige (`prestige.HONORS`), every season since 2019-20:
+- Achievements and honor (`honor.ACHIEVEMENTS`), every season since 2019-20:
 
-  | Honor | Prestige |
+  | Achievement | Honor |
   |---|---|
   | Champion | +100 |
   | Runner-up | +40 |
@@ -507,15 +509,17 @@ the competition on Fantrax.
   | A player passes 6,000 points for the franchise | +10 |
   | A player passes 16,000 points for the franchise | +70 |
 
-  A finished season earns its standings honors; a milestone counts in the
-  season it happens (regular-season lineup points for the franchise). With
-  the data on 2026-11-16 the totals run from 155 (New York) to −20 (Dallas);
-  55 player stints have passed 6,000, 2 have passed 16,000 (Jokić for Denver,
-  LeBron for Boston).
-- Rewards (`prestige.REWARDS`): retire a jersey 100 (a player with 6,000+
+  A finished season earns its standings achievements (dated by the final, or
+  the regular season's last period); a milestone counts in the period it is
+  passed, with that period's date (lineup points for the franchise, regular
+  season and playoffs, every season added up). With the data on 2026-11-16
+  the totals run from 190 (Utah) to −20 (Dallas); 67 player stints have
+  passed 6,000, and 5 have passed 16,000 (Jokić for Denver, LeBron for
+  Boston, Davis for New Orleans, Mitchell for Utah, Lillard for Portland).
+- Rewards (`honor.REWARDS`): retire a jersey 100 (a player with 6,000+
   points for the franchise), declare a rival 50, feature a moment 40, a motto
-  25. The commissioner adds a row to `pipeline/data/prestige_rewards.json`
-  in a PR, with the picture if there is one in `stats-app/public/prestige/`
+  25. The commissioner adds a row to `pipeline/data/honor_rewards.json`
+  in a PR, with the picture if there is one in `stats-app/public/honor/`
   (jpg, png, webp or gif, at most 1.5 MB):
 
   ```json
@@ -531,12 +535,12 @@ the competition on Fantrax.
 
   Any reward can have an `image` and a `caption`; a retired jersey with a
   picture shows it in place of the drawn jersey, a moment above its text.
-  The build checks each row (enough prestige through that season, an
+  The build checks each row (enough honor through that season, an
   eligible player, the picture there) and reports the rows it leaves out.
 
 ### Next
 - Tune the values and costs with the league (at 6,000 the milestones still
-  add up: 55 x 10 is more than every title together; agreed for now).
+  add up: 67 x 10 is more than every title together; agreed for now).
 - Splits: win rate by month and before/after the All-Star break (period dates
   are in `schedule.periods`).
 - Records held by the franchise, trade partners and its best trade (link to
@@ -549,6 +553,6 @@ the competition on Fantrax.
   so the commissioner doesn't need a PR.
 
 ### To decide (commissioner and league)
-- Prestige belongs to the franchise (as built). If it should follow the
+- Honor belongs to the franchise (as built). If it should follow the
   owner, the site needs a franchise → owner list with dates.
 - Whether retiring a jersey needs a league vote.

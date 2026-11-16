@@ -298,13 +298,13 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
-### 2026-11-16: Franchise page and prestige (branch `franchise/prestige`)
-- History → Franchise (`?franchise=`): logo, motto, record, prestige and its rank; panels for prestige by
+### 2026-11-16: Franchise page and honor (branch `franchise/prestige`)
+- History → Franchise (`?franchise=`): logo, motto, record, honor and its rank; panels for honor by
   season, banners, retired jerseys, highlights, legends and rivals, each opening full screen.
-- `pipeline/prestige.py` writes `data/prestige.json`: honors from every season (title +100, runner-up +40,
+- `pipeline/honor.py` writes `data/honor.json`: achievements from every season (title +100, runner-up +40,
   regular-season winner +15, season high +15, bottom three −10, a player passing 6,000 / 16,000 points for the
-  franchise +10 / +70), and the rewards in `pipeline/data/prestige_rewards.json`, checked against each franchise's
-  prestige. A reward can bring a picture (`stats-app/public/prestige/`): a retired jersey's, a moment's.
+  franchise +10 / +70, playoffs included; every achievement dated, a milestone by the period it was passed in), and the rewards in `pipeline/data/honor_rewards.json`, checked against each franchise's
+  honor. A reward can bring a picture (`stats-app/public/honor/`): a retired jersey's, a moment's.
 - The Franchises table's team names open the page.
 
 ### 2026-11-16: How this team was built (branch `players/team-built`)
