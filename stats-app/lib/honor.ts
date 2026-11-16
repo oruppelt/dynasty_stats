@@ -2,10 +2,10 @@ import { useQuery } from '@tanstack/react-query'
 import type { Finish } from './alltime'
 
 // Shape of /data/honor.json (pipeline/honor.py): each franchise's honor, earned season by season
-// from rare achievements and spent on rewards, with its banners, retired jerseys, legends, highlights and rivals.
+// from rare achievements and spent on rewards, with its banners, retired jerseys, legends and highlights.
 
-export type AchievementKind = 'title' | 'final' | 'first_seed' | 'season_high' | 'bottom_three' | 'player_6000' | 'player_16000'
-export type RewardKind = 'jersey' | 'rival' | 'moment' | 'motto'
+export type AchievementKind = 'title' | 'final' | 'first_seed' | 'season_high' | 'bottom_five' | 'season_low' | 'player_6000' | 'player_17000'
+export type RewardKind = 'jersey' | 'highlight' | 'motto'
 
 export interface Achievement {
   kind: AchievementKind
@@ -18,10 +18,10 @@ export interface Achievement {
   /** title / final: the other finalist, and the series ("2-1") when the bracket has it */
   opponent?: string
   series?: string
-  /** season_high */
+  /** season_high (one game), season_low (the season's total) */
   score?: number
   period?: number
-  /** bottom_three */
+  /** bottom_five */
   rank?: number
   of?: number
   /** player milestones (with `period`) */
@@ -55,11 +55,11 @@ export interface Reward {
   last?: string
   // motto
   text?: string
-  // rival
-  opponent?: string
-  // moment
+  // highlight: its title and text, or one of the worked-out ideas (`of`, with its numbers in `detail`)
   title?: string
   trade?: string
+  of?: HighlightIdea
+  detail?: Record<string, string | number>
   /** Any reward: its picture (/honor/<file>) and a line under it */
   image?: string
   caption?: string
@@ -78,9 +78,9 @@ export interface Legend {
   retired: boolean
 }
 
-export interface Opponent { team: string; games: number; wins: number; losses: number; playoff_games: number }
-
 type Game = { season: string; period: number; score: number; opponent: string; opp_score: number }
+
+export type HighlightIdea = 'best_season' | 'highest_score' | 'biggest_win' | 'longest_streak' | 'best_player_season'
 
 export interface FranchiseHonor {
   honor: number
@@ -89,21 +89,22 @@ export interface FranchiseHonor {
   /** 1 = the most honor (ties share a rank) */
   rank: number
   seasons: HonorSeason[]
-  cups: Achievement[]
+  /** Free: a banner for each title */
+  banners: Achievement[]
+  /** Bought: the motto, retired jerseys, declared highlights (every reward in `rewards`) */
   motto: string | null
   jerseys: Reward[]
-  moments: Reward[]
-  declared_rival: string | null
+  highlights: Reward[]
   rewards: Reward[]
   legends: Legend[]
-  highlights: {
+  /** Ideas for what to declare, worked out from the games */
+  highlight_ideas: {
     best_season?: { season: string; rank: number; wins: number; losses: number; finish: Finish }
     highest_score?: Game
     biggest_win?: Game & { margin: number }
     longest_streak?: { season: string; length: number; start: number; end: number }
     best_player_season?: { season: string; player_id: string; player: string; points: number; starts: number }
   }
-  rivals: { most_played?: Opponent; nemesis?: Opponent; favorite?: Opponent }
 }
 
 export interface Honor {

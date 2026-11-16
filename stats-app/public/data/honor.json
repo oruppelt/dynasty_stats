@@ -7,7 +7,7 @@
     },
     {
       "kind": "final",
-      "points": 40,
+      "points": 25,
       "label": "Runner-up"
     },
     {
@@ -21,9 +21,14 @@
       "label": "Season's highest score"
     },
     {
-      "kind": "bottom_three",
+      "kind": "bottom_five",
       "points": -10,
-      "label": "Bottom three of the regular season"
+      "label": "Bottom five of the regular season"
+    },
+    {
+      "kind": "season_low",
+      "points": -10,
+      "label": "Fewest points of the regular season"
     },
     {
       "kind": "player_6000",
@@ -31,9 +36,9 @@
       "label": "6,000 points for the franchise"
     },
     {
-      "kind": "player_16000",
+      "kind": "player_17000",
       "points": 70,
-      "label": "16,000 points for the franchise"
+      "label": "17,000 points for the franchise"
     }
   ],
   "rewards": [
@@ -43,14 +48,9 @@
       "label": "Retire a jersey"
     },
     {
-      "kind": "rival",
-      "cost": 50,
-      "label": "Declare a rival"
-    },
-    {
-      "kind": "moment",
+      "kind": "highlight",
       "cost": 40,
-      "label": "Feature a moment"
+      "label": "Declare a highlight"
     },
     {
       "kind": "motto",
@@ -189,11 +189,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -472,7 +471,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2021-22",
           "rank": 5,
@@ -509,30 +508,7 @@
           "starts": 36
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Miami Heat",
-          "games": 14.0,
-          "wins": 9.0,
-          "losses": 5.0,
-          "playoff_games": 1.0
-        },
-        "nemesis": {
-          "team": "New York Knicks",
-          "games": 8.0,
-          "wins": 1.0,
-          "losses": 7.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "Los Angeles Lakers",
-          "games": 7.0,
-          "wins": 7.0,
-          "losses": 0.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 19
+      "rank": 14
     },
     "Boston Celtics": {
       "honor": 80,
@@ -612,20 +588,9 @@
         },
         {
           "season": "2025-26",
-          "points": 70,
-          "total": 80,
-          "events": [
-            {
-              "kind": "player_16000",
-              "season": "2025-26",
-              "points": 70,
-              "label": "16,000 points for the franchise",
-              "player_id": "0011e",
-              "player": "LeBron James",
-              "period": 25,
-              "date": "2026-01-16"
-            }
-          ],
+          "points": 0,
+          "total": 10,
+          "events": [],
           "rank": 18,
           "wins": 16.0,
           "losses": 17.0,
@@ -633,20 +598,30 @@
         },
         {
           "season": "2026-27",
-          "points": 0,
+          "points": 70,
           "total": 80,
-          "events": [],
+          "events": [
+            {
+              "kind": "player_17000",
+              "season": "2026-27",
+              "points": 70,
+              "label": "17,000 points for the franchise",
+              "player_id": "0011e",
+              "player": "LeBron James",
+              "period": 6,
+              "date": "2026-11-09"
+            }
+          ],
           "rank": 2,
           "wins": 7.0,
           "losses": 1.0,
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -925,7 +900,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2021-22",
           "rank": 9,
@@ -962,35 +937,12 @@
           "starts": 32
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Philadelphia 76ers",
-          "games": 13.0,
-          "wins": 10.0,
-          "losses": 3.0,
-          "playoff_games": 0
-        },
-        "nemesis": {
-          "team": "Golden State Warriors",
-          "games": 8.0,
-          "wins": 1.0,
-          "losses": 7.0,
-          "playoff_games": 1.0
-        },
-        "favorite": {
-          "team": "Los Angeles Lakers",
-          "games": 7.0,
-          "wins": 6.0,
-          "losses": 1.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 10
+      "rank": 8
     },
     "Brooklyn Nets": {
-      "honor": 90,
+      "honor": 75,
       "spent": 0,
-      "balance": 90,
+      "balance": 75,
       "seasons": [
         {
           "season": "2019-20",
@@ -1014,8 +966,8 @@
         },
         {
           "season": "2021-22",
-          "points": 50,
-          "total": 50,
+          "points": 35,
+          "total": 35,
           "events": [
             {
               "kind": "player_6000",
@@ -1030,7 +982,7 @@
             {
               "kind": "final",
               "season": "2021-22",
-              "points": 40,
+              "points": 25,
               "label": "Runner-up",
               "opponent": "New York Knicks",
               "date": "2022-04-04",
@@ -1045,7 +997,7 @@
         {
           "season": "2022-23",
           "points": 30,
-          "total": 80,
+          "total": 65,
           "events": [
             {
               "kind": "player_6000",
@@ -1086,7 +1038,7 @@
         {
           "season": "2023-24",
           "points": 10,
-          "total": 90,
+          "total": 75,
           "events": [
             {
               "kind": "player_6000",
@@ -1107,7 +1059,7 @@
         {
           "season": "2024-25",
           "points": 0,
-          "total": 90,
+          "total": 75,
           "events": [],
           "rank": 14,
           "wins": 19.0,
@@ -1117,7 +1069,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": 90,
+          "total": 75,
           "events": [],
           "rank": 21,
           "wins": 14.0,
@@ -1127,7 +1079,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 90,
+          "total": 75,
           "events": [],
           "rank": 15,
           "wins": 4.0,
@@ -1135,21 +1087,10 @@
           "finish": null
         }
       ],
-      "cups": [
-        {
-          "kind": "final",
-          "season": "2021-22",
-          "points": 40,
-          "label": "Runner-up",
-          "opponent": "New York Knicks",
-          "date": "2022-04-04",
-          "series": "0-3"
-        }
-      ],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -1428,7 +1369,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2021-22",
           "rank": 2,
@@ -1465,35 +1406,12 @@
           "starts": 36
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "New York Knicks",
-          "games": 14.0,
-          "wins": 6.5,
-          "losses": 7.5,
-          "playoff_games": 3.0
-        },
-        "nemesis": {
-          "team": "Charlotte Hornets",
-          "games": 10.0,
-          "wins": 1.0,
-          "losses": 9.0,
-          "playoff_games": 3.0
-        },
-        "favorite": {
-          "team": "Dallas Mavericks",
-          "games": 7.0,
-          "wins": 6.0,
-          "losses": 1.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 8
+      "rank": 9
     },
     "Charlotte Hornets": {
-      "honor": 140,
+      "honor": 125,
       "spent": 0,
-      "balance": 140,
+      "balance": 125,
       "seasons": [
         {
           "season": "2019-20",
@@ -1515,8 +1433,8 @@
         },
         {
           "season": "2020-21",
-          "points": 55,
-          "total": 70,
+          "points": 40,
+          "total": 55,
           "events": [
             {
               "kind": "season_high",
@@ -1531,7 +1449,7 @@
             {
               "kind": "final",
               "season": "2020-21",
-              "points": 40,
+              "points": 25,
               "label": "Runner-up",
               "opponent": "Chicago Bulls",
               "date": "2021-05-17"
@@ -1545,7 +1463,7 @@
         {
           "season": "2021-22",
           "points": 20,
-          "total": 90,
+          "total": 75,
           "events": [
             {
               "kind": "player_6000",
@@ -1576,7 +1494,7 @@
         {
           "season": "2022-23",
           "points": 10,
-          "total": 100,
+          "total": 85,
           "events": [
             {
               "kind": "player_6000",
@@ -1597,7 +1515,7 @@
         {
           "season": "2023-24",
           "points": 10,
-          "total": 110,
+          "total": 95,
           "events": [
             {
               "kind": "player_6000",
@@ -1618,7 +1536,7 @@
         {
           "season": "2024-25",
           "points": 10,
-          "total": 120,
+          "total": 105,
           "events": [
             {
               "kind": "player_6000",
@@ -1639,7 +1557,7 @@
         {
           "season": "2025-26",
           "points": 20,
-          "total": 140,
+          "total": 125,
           "events": [
             {
               "kind": "player_6000",
@@ -1670,7 +1588,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 140,
+          "total": 125,
           "events": [],
           "rank": 14,
           "wins": 4.0,
@@ -1678,20 +1596,10 @@
           "finish": null
         }
       ],
-      "cups": [
-        {
-          "kind": "final",
-          "season": "2020-21",
-          "points": 40,
-          "label": "Runner-up",
-          "opponent": "Chicago Bulls",
-          "date": "2021-05-17"
-        }
-      ],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -1970,7 +1878,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2019-20",
           "rank": 1,
@@ -2007,35 +1915,12 @@
           "starts": 40
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Utah Jazz",
-          "games": 15.0,
-          "wins": 12.0,
-          "losses": 3.0,
-          "playoff_games": 6.0
-        },
-        "nemesis": {
-          "team": "Denver Nuggets",
-          "games": 9.0,
-          "wins": 3.0,
-          "losses": 6.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "Toronto Raptors",
-          "games": 8.0,
-          "wins": 8.0,
-          "losses": 0.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 4
+      "rank": 5
     },
     "Chicago Bulls": {
-      "honor": 120,
+      "honor": 110,
       "spent": 0,
-      "balance": 120,
+      "balance": 110,
       "seasons": [
         {
           "season": "2019-20",
@@ -2068,16 +1953,24 @@
         },
         {
           "season": "2021-22",
-          "points": -10,
-          "total": 90,
+          "points": -20,
+          "total": 80,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2021-22",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
+              "date": "2022-02-11"
+            },
+            {
+              "kind": "season_low",
+              "season": "2021-22",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 6205.0,
               "date": "2022-02-11"
             }
           ],
@@ -2089,7 +1982,7 @@
         {
           "season": "2022-23",
           "points": 10,
-          "total": 100,
+          "total": 90,
           "events": [
             {
               "kind": "player_6000",
@@ -2110,7 +2003,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 100,
+          "total": 90,
           "events": [],
           "rank": 4,
           "wins": 24.0,
@@ -2120,7 +2013,7 @@
         {
           "season": "2024-25",
           "points": 10,
-          "total": 110,
+          "total": 100,
           "events": [
             {
               "kind": "player_6000",
@@ -2141,7 +2034,7 @@
         {
           "season": "2025-26",
           "points": 10,
-          "total": 120,
+          "total": 110,
           "events": [
             {
               "kind": "player_6000",
@@ -2162,7 +2055,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 120,
+          "total": 110,
           "events": [],
           "rank": 24,
           "wins": 3.0,
@@ -2170,7 +2063,7 @@
           "finish": null
         }
       ],
-      "cups": [
+      "banners": [
         {
           "kind": "title",
           "season": "2020-21",
@@ -2182,8 +2075,7 @@
       ],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -2462,7 +2354,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2022-23",
           "rank": 2,
@@ -2499,41 +2391,28 @@
           "starts": 36
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Orlando Magic",
-          "games": 14.0,
-          "wins": 10.0,
-          "losses": 4.0,
-          "playoff_games": 6.0
-        },
-        "nemesis": {
-          "team": "Denver Nuggets",
-          "games": 8.0,
-          "wins": 3.0,
-          "losses": 5.0,
-          "playoff_games": 1.0
-        },
-        "favorite": {
-          "team": "Dallas Mavericks",
-          "games": 8.0,
-          "wins": 7.0,
-          "losses": 1.0,
-          "playoff_games": 1.0
-        }
-      },
       "rank": 6
     },
     "Cleveland Cavaliers": {
-      "honor": 20,
+      "honor": 0,
       "spent": 0,
-      "balance": 20,
+      "balance": 0,
       "seasons": [
         {
           "season": "2019-20",
-          "points": 0,
-          "total": 0,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2019-20",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2020-02-21"
+            }
+          ],
           "rank": 26,
           "wins": 7.5,
           "losses": 25.5,
@@ -2542,7 +2421,7 @@
         {
           "season": "2020-21",
           "points": 0,
-          "total": 0,
+          "total": -10,
           "events": [],
           "rank": 16,
           "wins": 16.0,
@@ -2551,9 +2430,19 @@
         },
         {
           "season": "2021-22",
-          "points": 0,
-          "total": 0,
-          "events": [],
+          "points": -10,
+          "total": -20,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2021-22",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2022-02-11"
+            }
+          ],
           "rank": 26,
           "wins": 8.0,
           "losses": 25.0,
@@ -2562,7 +2451,7 @@
         {
           "season": "2022-23",
           "points": 0,
-          "total": 0,
+          "total": -20,
           "events": [],
           "rank": 12,
           "wins": 20.0,
@@ -2572,7 +2461,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 0,
+          "total": -20,
           "events": [],
           "rank": 21,
           "wins": 14.0,
@@ -2582,7 +2471,7 @@
         {
           "season": "2024-25",
           "points": 20,
-          "total": 20,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -2613,7 +2502,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": 20,
+          "total": 0,
           "events": [],
           "rank": 10,
           "wins": 20.0,
@@ -2623,7 +2512,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 20,
+          "total": 0,
           "events": [],
           "rank": 20,
           "wins": 3.0,
@@ -2631,11 +2520,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -2914,7 +2802,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2025-26",
           "rank": 10,
@@ -2951,35 +2839,12 @@
           "starts": 39
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Indiana Pacers",
-          "games": 13.0,
-          "wins": 6.5,
-          "losses": 6.5,
-          "playoff_games": 1.0
-        },
-        "nemesis": {
-          "team": "Toronto Raptors",
-          "games": 7.0,
-          "wins": 0,
-          "losses": 7.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "San Antonio Spurs",
-          "games": 9.0,
-          "wins": 7.0,
-          "losses": 2.0,
-          "playoff_games": 2.0
-        }
-      },
-      "rank": 22
+      "rank": 25
     },
     "Dallas Mavericks": {
-      "honor": -20,
+      "honor": -30,
       "spent": 0,
-      "balance": -20,
+      "balance": -30,
       "seasons": [
         {
           "season": "2019-20",
@@ -3017,10 +2882,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2022-23",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2023-02-10"
@@ -3033,16 +2898,24 @@
         },
         {
           "season": "2023-24",
-          "points": -10,
-          "total": -20,
+          "points": -20,
+          "total": -30,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2023-24",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
+              "date": "2024-02-12"
+            },
+            {
+              "kind": "season_low",
+              "season": "2023-24",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 5774.75,
               "date": "2024-02-12"
             }
           ],
@@ -3054,7 +2927,7 @@
         {
           "season": "2024-25",
           "points": 0,
-          "total": -20,
+          "total": -30,
           "events": [],
           "rank": 8,
           "wins": 21.0,
@@ -3064,7 +2937,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": -20,
+          "total": -30,
           "events": [],
           "rank": 2,
           "wins": 27.0,
@@ -3074,7 +2947,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": -20,
+          "total": -30,
           "events": [],
           "rank": 8,
           "wins": 5.0,
@@ -3082,11 +2955,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -3365,7 +3237,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2025-26",
           "rank": 2,
@@ -3400,29 +3272,6 @@
           "player": "Luka Doncic",
           "points": 2393.25,
           "starts": 29
-        }
-      },
-      "rivals": {
-        "most_played": {
-          "team": "Memphis Grizzlies",
-          "games": 14.0,
-          "wins": 2.0,
-          "losses": 12.0,
-          "playoff_games": 0
-        },
-        "nemesis": {
-          "team": "Chicago Bulls",
-          "games": 8.0,
-          "wins": 1.0,
-          "losses": 7.0,
-          "playoff_games": 1.0
-        },
-        "favorite": {
-          "team": "Utah Jazz",
-          "games": 8.0,
-          "wins": 6.0,
-          "losses": 2.0,
-          "playoff_games": 1.0
         }
       },
       "rank": 30
@@ -3485,8 +3334,8 @@
         },
         {
           "season": "2023-24",
-          "points": 80,
-          "total": 90,
+          "points": 10,
+          "total": 20,
           "events": [
             {
               "kind": "player_6000",
@@ -3497,16 +3346,6 @@
               "player": "Jamal Murray",
               "period": 18,
               "date": "2023-12-25"
-            },
-            {
-              "kind": "player_16000",
-              "season": "2023-24",
-              "points": 70,
-              "label": "16,000 points for the franchise",
-              "player_id": "03e75",
-              "player": "Nikola Jokic",
-              "period": 36,
-              "date": "2024-03-01"
             }
           ],
           "rank": 16,
@@ -3516,9 +3355,20 @@
         },
         {
           "season": "2024-25",
-          "points": 0,
+          "points": 70,
           "total": 90,
-          "events": [],
+          "events": [
+            {
+              "kind": "player_17000",
+              "season": "2024-25",
+              "points": 70,
+              "label": "17,000 points for the franchise",
+              "player_id": "03e75",
+              "player": "Nikola Jokic",
+              "period": 6,
+              "date": "2024-11-11"
+            }
+          ],
           "rank": 9,
           "wins": 21.0,
           "losses": 12.0,
@@ -3545,11 +3395,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -3828,7 +3677,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2020-21",
           "rank": 8,
@@ -3865,35 +3714,12 @@
           "starts": 36
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Portland Trail Blazers",
-          "games": 16.0,
-          "wins": 8.0,
-          "losses": 8.0,
-          "playoff_games": 3.0
-        },
-        "nemesis": {
-          "team": "Memphis Grizzlies",
-          "games": 8.0,
-          "wins": 1.0,
-          "losses": 7.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "Detroit Pistons",
-          "games": 10.0,
-          "wins": 9.0,
-          "losses": 1.0,
-          "playoff_games": 1.0
-        }
-      },
-      "rank": 8
+      "rank": 7
     },
     "Detroit Pistons": {
-      "honor": 10,
+      "honor": -10,
       "spent": 0,
-      "balance": 10,
+      "balance": -10,
       "seasons": [
         {
           "season": "2019-20",
@@ -3927,8 +3753,8 @@
         },
         {
           "season": "2022-23",
-          "points": 10,
-          "total": 10,
+          "points": 0,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -3939,6 +3765,15 @@
               "player": "Pascal Siakam",
               "period": 6,
               "date": "2022-11-07"
+            },
+            {
+              "kind": "bottom_five",
+              "season": "2022-23",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2023-02-10"
             }
           ],
           "rank": 26,
@@ -3949,7 +3784,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 10,
+          "total": 0,
           "events": [],
           "rank": 8,
           "wins": 21.0,
@@ -3959,7 +3794,7 @@
         {
           "season": "2024-25",
           "points": 0,
-          "total": 10,
+          "total": 0,
           "events": [],
           "rank": 12,
           "wins": 20.0,
@@ -3968,9 +3803,19 @@
         },
         {
           "season": "2025-26",
-          "points": 0,
-          "total": 10,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2025-26",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2026-02-20"
+            }
+          ],
           "rank": 26,
           "wins": 11.0,
           "losses": 22.0,
@@ -3979,7 +3824,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 10,
+          "total": -10,
           "events": [],
           "rank": 21,
           "wins": 3.0,
@@ -3987,11 +3832,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -4270,7 +4114,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2023-24",
           "rank": 8,
@@ -4307,30 +4151,7 @@
           "starts": 37
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Indiana Pacers",
-          "games": 13.0,
-          "wins": 5.0,
-          "losses": 8.0,
-          "playoff_games": 1.0
-        },
-        "nemesis": {
-          "team": "Denver Nuggets",
-          "games": 10.0,
-          "wins": 1.0,
-          "losses": 9.0,
-          "playoff_games": 1.0
-        },
-        "favorite": {
-          "team": "Boston Celtics",
-          "games": 7.0,
-          "wins": 6.0,
-          "losses": 1.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 25
+      "rank": 26
     },
     "Golden State Warriors": {
       "honor": 25,
@@ -4439,11 +4260,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -4722,7 +4542,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2021-22",
           "rank": 3,
@@ -4759,35 +4579,12 @@
           "starts": 38
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Sacramento Kings",
-          "games": 16.0,
-          "wins": 7.0,
-          "losses": 9.0,
-          "playoff_games": 3.0
-        },
-        "nemesis": {
-          "team": "Charlotte Hornets",
-          "games": 8.0,
-          "wins": 2.0,
-          "losses": 6.0,
-          "playoff_games": 1.0
-        },
-        "favorite": {
-          "team": "Boston Celtics",
-          "games": 8.0,
-          "wins": 7.0,
-          "losses": 1.0,
-          "playoff_games": 1.0
-        }
-      },
-      "rank": 20
+      "rank": 16
     },
     "Houston Rockets": {
-      "honor": 150,
+      "honor": 140,
       "spent": 0,
-      "balance": 150,
+      "balance": 140,
       "seasons": [
         {
           "season": "2019-20",
@@ -4900,9 +4697,19 @@
         },
         {
           "season": "2025-26",
-          "points": 0,
-          "total": 150,
-          "events": [],
+          "points": -10,
+          "total": 140,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2025-26",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2026-02-20"
+            }
+          ],
           "rank": 27,
           "wins": 8.0,
           "losses": 25.0,
@@ -4911,7 +4718,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 150,
+          "total": 140,
           "events": [],
           "rank": 28,
           "wins": 2.0,
@@ -4919,7 +4726,7 @@
           "finish": null
         }
       ],
-      "cups": [
+      "banners": [
         {
           "kind": "title",
           "season": "2022-23",
@@ -4932,8 +4739,7 @@
       ],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -5212,7 +5018,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2022-23",
           "rank": 1,
@@ -5249,35 +5055,12 @@
           "starts": 35
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "New Orleans Pelicans",
-          "games": 15.0,
-          "wins": 6.0,
-          "losses": 9.0,
-          "playoff_games": 3.0
-        },
-        "nemesis": {
-          "team": "Brooklyn Nets",
-          "games": 11.0,
-          "wins": 2.0,
-          "losses": 9.0,
-          "playoff_games": 3.0
-        },
-        "favorite": {
-          "team": "Phoenix Suns",
-          "games": 9.0,
-          "wins": 7.0,
-          "losses": 2.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 3
+      "rank": 2
     },
     "Indiana Pacers": {
-      "honor": 20,
+      "honor": 10,
       "spent": 0,
-      "balance": 20,
+      "balance": 10,
       "seasons": [
         {
           "season": "2019-20",
@@ -5285,10 +5068,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2019-20",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2020-02-21"
@@ -5301,9 +5084,19 @@
         },
         {
           "season": "2020-21",
-          "points": 0,
-          "total": -10,
-          "events": [],
+          "points": -10,
+          "total": -20,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2020-21",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2021-04-05"
+            }
+          ],
           "rank": 27,
           "wins": 5.0,
           "losses": 24.0,
@@ -5312,7 +5105,7 @@
         {
           "season": "2021-22",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 13,
           "wins": 19.0,
@@ -5322,7 +5115,7 @@
         {
           "season": "2022-23",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 24,
           "wins": 12.0,
@@ -5332,7 +5125,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 10,
           "wins": 20.0,
@@ -5342,7 +5135,7 @@
         {
           "season": "2024-25",
           "points": 20,
-          "total": 10,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -5373,7 +5166,7 @@
         {
           "season": "2025-26",
           "points": 10,
-          "total": 20,
+          "total": 10,
           "events": [
             {
               "kind": "player_6000",
@@ -5394,7 +5187,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 20,
+          "total": 10,
           "events": [],
           "rank": 5,
           "wins": 6.0,
@@ -5402,11 +5195,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -5685,7 +5477,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2024-25",
           "rank": 2,
@@ -5722,41 +5514,27 @@
           "starts": 40
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Cleveland Cavaliers",
-          "games": 13.0,
-          "wins": 6.5,
-          "losses": 6.5,
-          "playoff_games": 1.0
-        },
-        "nemesis": {
-          "team": "Chicago Bulls",
-          "games": 11.0,
-          "wins": 3.0,
-          "losses": 8.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "Denver Nuggets",
-          "games": 8.0,
-          "wins": 6.0,
-          "losses": 2.0,
-          "playoff_games": 0
-        }
-      },
       "rank": 22
     },
     "Los Angeles Clippers": {
-      "honor": 10,
+      "honor": -10,
       "spent": 0,
-      "balance": 10,
+      "balance": -10,
       "seasons": [
         {
           "season": "2019-20",
-          "points": 0,
-          "total": 0,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "season_low",
+              "season": "2019-20",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 7427.25,
+              "date": "2020-02-21"
+            }
+          ],
           "rank": 25,
           "wins": 8.5,
           "losses": 24.5,
@@ -5765,7 +5543,7 @@
         {
           "season": "2020-21",
           "points": 0,
-          "total": 0,
+          "total": -10,
           "events": [],
           "rank": 9,
           "wins": 19.0,
@@ -5775,7 +5553,7 @@
         {
           "season": "2021-22",
           "points": 0,
-          "total": 0,
+          "total": -10,
           "events": [],
           "rank": 4,
           "wins": 23.0,
@@ -5785,7 +5563,7 @@
         {
           "season": "2022-23",
           "points": 10,
-          "total": 10,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -5806,7 +5584,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 10,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -5819,10 +5597,10 @@
               "date": "2023-11-10"
             },
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2023-24",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2024-02-12"
@@ -5835,9 +5613,19 @@
         },
         {
           "season": "2024-25",
-          "points": 0,
-          "total": 10,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2024-25",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2025-02-14"
+            }
+          ],
           "rank": 27,
           "wins": 10.0,
           "losses": 23.0,
@@ -5846,7 +5634,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": 10,
+          "total": -10,
           "events": [],
           "rank": 23,
           "wins": 13.0,
@@ -5856,7 +5644,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 10,
+          "total": -10,
           "events": [],
           "rank": 29,
           "wins": 1.0,
@@ -5864,11 +5652,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -6147,7 +5934,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2021-22",
           "rank": 4,
@@ -6184,35 +5971,12 @@
           "starts": 40
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Golden State Warriors",
-          "games": 13.0,
-          "wins": 4.0,
-          "losses": 9.0,
-          "playoff_games": 1.0
-        },
-        "nemesis": {
-          "team": "Chicago Bulls",
-          "games": 7.0,
-          "wins": 1.0,
-          "losses": 6.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "San Antonio Spurs",
-          "games": 8.0,
-          "wins": 6.0,
-          "losses": 2.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 25
+      "rank": 26
     },
     "Los Angeles Lakers": {
-      "honor": 5,
+      "honor": -15,
       "spent": 0,
-      "balance": 5,
+      "balance": -15,
       "seasons": [
         {
           "season": "2019-20",
@@ -6237,9 +6001,19 @@
         },
         {
           "season": "2020-21",
-          "points": 0,
-          "total": 15,
-          "events": [],
+          "points": -10,
+          "total": 5,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2020-21",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2021-04-05"
+            }
+          ],
           "rank": 26,
           "wins": 7.0,
           "losses": 22.0,
@@ -6248,13 +6022,13 @@
         {
           "season": "2021-22",
           "points": -10,
-          "total": 5,
+          "total": -5,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2021-22",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2022-02-11"
@@ -6268,7 +6042,7 @@
         {
           "season": "2022-23",
           "points": 0,
-          "total": 5,
+          "total": -5,
           "events": [],
           "rank": 18,
           "wins": 17.0,
@@ -6277,9 +6051,19 @@
         },
         {
           "season": "2023-24",
-          "points": 0,
-          "total": 5,
-          "events": [],
+          "points": -10,
+          "total": -15,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2023-24",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2024-02-12"
+            }
+          ],
           "rank": 27,
           "wins": 6.0,
           "losses": 26.0,
@@ -6288,7 +6072,7 @@
         {
           "season": "2024-25",
           "points": 0,
-          "total": 5,
+          "total": -15,
           "events": [],
           "rank": 22,
           "wins": 12.0,
@@ -6298,7 +6082,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": 5,
+          "total": -15,
           "events": [],
           "rank": 19,
           "wins": 15.0,
@@ -6308,7 +6092,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 5,
+          "total": -15,
           "events": [],
           "rank": 10,
           "wins": 5.0,
@@ -6316,11 +6100,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -6599,7 +6382,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2019-20",
           "rank": 8,
@@ -6636,35 +6419,12 @@
           "starts": 34
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Los Angeles Clippers",
-          "games": 13.0,
-          "wins": 8.0,
-          "losses": 5.0,
-          "playoff_games": 0
-        },
-        "nemesis": {
-          "team": "Atlanta Hawks",
-          "games": 7.0,
-          "wins": 0,
-          "losses": 7.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "New York Knicks",
-          "games": 7.0,
-          "wins": 5.0,
-          "losses": 2.0,
-          "playoff_games": 0
-        }
-      },
       "rank": 28
     },
     "Memphis Grizzlies": {
-      "honor": 75,
+      "honor": 60,
       "spent": 0,
-      "balance": 75,
+      "balance": 60,
       "seasons": [
         {
           "season": "2019-20",
@@ -6716,13 +6476,13 @@
         },
         {
           "season": "2022-23",
-          "points": 40,
-          "total": 65,
+          "points": 25,
+          "total": 50,
           "events": [
             {
               "kind": "final",
               "season": "2022-23",
-              "points": 40,
+              "points": 25,
               "label": "Runner-up",
               "opponent": "Houston Rockets",
               "date": "2023-04-07",
@@ -6737,7 +6497,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 65,
+          "total": 50,
           "events": [],
           "rank": 25,
           "wins": 11.0,
@@ -6747,7 +6507,7 @@
         {
           "season": "2024-25",
           "points": 0,
-          "total": 65,
+          "total": 50,
           "events": [],
           "rank": 3,
           "wins": 24.0,
@@ -6757,7 +6517,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": 65,
+          "total": 50,
           "events": [],
           "rank": 4,
           "wins": 21.5,
@@ -6767,7 +6527,7 @@
         {
           "season": "2026-27",
           "points": 10,
-          "total": 75,
+          "total": 60,
           "events": [
             {
               "kind": "player_6000",
@@ -6786,21 +6546,10 @@
           "finish": null
         }
       ],
-      "cups": [
-        {
-          "kind": "final",
-          "season": "2022-23",
-          "points": 40,
-          "label": "Runner-up",
-          "opponent": "Houston Rockets",
-          "date": "2023-04-07",
-          "series": "1-2"
-        }
-      ],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -7079,7 +6828,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2021-22",
           "rank": 1,
@@ -7116,35 +6865,12 @@
           "starts": 34
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "New Orleans Pelicans",
-          "games": 15.0,
-          "wins": 7.0,
-          "losses": 8.0,
-          "playoff_games": 3.0
-        },
-        "nemesis": {
-          "team": "Chicago Bulls",
-          "games": 9.0,
-          "wins": 4.0,
-          "losses": 5.0,
-          "playoff_games": 1.0
-        },
-        "favorite": {
-          "team": "Denver Nuggets",
-          "games": 8.0,
-          "wins": 7.0,
-          "losses": 1.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 13
+      "rank": 11
     },
     "Miami Heat": {
-      "honor": 80,
+      "honor": 70,
       "spent": 0,
-      "balance": 80,
+      "balance": 70,
       "seasons": [
         {
           "season": "2019-20",
@@ -7152,10 +6878,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2019-20",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
               "date": "2020-02-21"
@@ -7198,9 +6924,19 @@
         },
         {
           "season": "2023-24",
-          "points": 0,
-          "total": -10,
-          "events": [],
+          "points": -10,
+          "total": -20,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2023-24",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2024-02-12"
+            }
+          ],
           "rank": 26,
           "wins": 11.0,
           "losses": 21.0,
@@ -7209,13 +6945,13 @@
         {
           "season": "2024-25",
           "points": -10,
-          "total": -20,
+          "total": -30,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2024-25",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2025-02-14"
@@ -7229,7 +6965,7 @@
         {
           "season": "2025-26",
           "points": 100,
-          "total": 80,
+          "total": 70,
           "events": [
             {
               "kind": "title",
@@ -7249,7 +6985,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 80,
+          "total": 70,
           "events": [],
           "rank": 3,
           "wins": 6.0,
@@ -7257,7 +6993,7 @@
           "finish": null
         }
       ],
-      "cups": [
+      "banners": [
         {
           "kind": "title",
           "season": "2025-26",
@@ -7270,8 +7006,7 @@
       ],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -7550,7 +7285,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2025-26",
           "rank": 3,
@@ -7587,35 +7322,12 @@
           "starts": 39
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Atlanta Hawks",
-          "games": 14.0,
-          "wins": 5.0,
-          "losses": 9.0,
-          "playoff_games": 1.0
-        },
-        "nemesis": {
-          "team": "Denver Nuggets",
-          "games": 8.0,
-          "wins": 2.0,
-          "losses": 6.0,
-          "playoff_games": 1.0
-        },
-        "favorite": {
-          "team": "Los Angeles Lakers",
-          "games": 7.0,
-          "wins": 5.0,
-          "losses": 2.0,
-          "playoff_games": 0
-        }
-      },
       "rank": 10
     },
     "Milwaukee Bucks": {
-      "honor": -10,
+      "honor": -20,
       "spent": 0,
-      "balance": -10,
+      "balance": -20,
       "seasons": [
         {
           "season": "2019-20",
@@ -7669,16 +7381,24 @@
         },
         {
           "season": "2024-25",
-          "points": -10,
-          "total": -10,
+          "points": -20,
+          "total": -20,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2024-25",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
+              "date": "2025-02-14"
+            },
+            {
+              "kind": "season_low",
+              "season": "2024-25",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 5267.0,
               "date": "2025-02-14"
             }
           ],
@@ -7690,7 +7410,7 @@
         {
           "season": "2025-26",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 25,
           "wins": 11.0,
@@ -7700,7 +7420,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 7,
           "wins": 5.0,
@@ -7708,11 +7428,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -7991,7 +7710,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2019-20",
           "rank": 16,
@@ -8026,29 +7745,6 @@
           "player": "Giannis Antetokounmpo",
           "points": 3195.5,
           "starts": 35
-        }
-      },
-      "rivals": {
-        "most_played": {
-          "team": "Chicago Bulls",
-          "games": 11.0,
-          "wins": 3.0,
-          "losses": 8.0,
-          "playoff_games": 0
-        },
-        "nemesis": {
-          "team": "Utah Jazz",
-          "games": 9.0,
-          "wins": 1.0,
-          "losses": 8.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "Detroit Pistons",
-          "games": 11.0,
-          "wins": 8.0,
-          "losses": 3.0,
-          "playoff_games": 0
         }
       },
       "rank": 29
@@ -8183,11 +7879,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -8466,7 +8161,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2021-22",
           "rank": 7,
@@ -8503,35 +8198,12 @@
           "starts": 40
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Sacramento Kings",
-          "games": 13.0,
-          "wins": 8.0,
-          "losses": 5.0,
-          "playoff_games": 5.0
-        },
-        "nemesis": {
-          "team": "New Orleans Pelicans",
-          "games": 8.0,
-          "wins": 2.0,
-          "losses": 6.0,
-          "playoff_games": 1.0
-        },
-        "favorite": {
-          "team": "Denver Nuggets",
-          "games": 13.0,
-          "wins": 10.0,
-          "losses": 3.0,
-          "playoff_games": 2.0
-        }
-      },
-      "rank": 16
+      "rank": 12
     },
     "New Orleans Pelicans": {
-      "honor": 100,
+      "honor": 30,
       "spent": 0,
-      "balance": 100,
+      "balance": 30,
       "seasons": [
         {
           "season": "2019-20",
@@ -8549,10 +8221,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2020-21",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2021-04-05"
@@ -8648,20 +8320,9 @@
         },
         {
           "season": "2025-26",
-          "points": 70,
-          "total": 100,
-          "events": [
-            {
-              "kind": "player_16000",
-              "season": "2025-26",
-              "points": 70,
-              "label": "16,000 points for the franchise",
-              "player_id": "02nf1",
-              "player": "Anthony Davis",
-              "period": 22,
-              "date": "2026-01-05"
-            }
-          ],
+          "points": 0,
+          "total": 30,
+          "events": [],
           "rank": 6,
           "wins": 21.0,
           "losses": 12.0,
@@ -8670,7 +8331,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 100,
+          "total": 30,
           "events": [],
           "rank": 22,
           "wins": 3.0,
@@ -8678,11 +8339,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -8961,7 +8621,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2023-24",
           "rank": 3,
@@ -8998,41 +8658,28 @@
           "starts": 39
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Houston Rockets",
-          "games": 15.0,
-          "wins": 9.0,
-          "losses": 6.0,
-          "playoff_games": 3.0
-        },
-        "nemesis": {
-          "team": "Utah Jazz",
-          "games": 8.0,
-          "wins": 2.0,
-          "losses": 6.0,
-          "playoff_games": 1.0
-        },
-        "favorite": {
-          "team": "Boston Celtics",
-          "games": 7.0,
-          "wins": 6.0,
-          "losses": 1.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 7
+      "rank": 14
     },
     "New York Knicks": {
-      "honor": 155,
+      "honor": 135,
       "spent": 0,
-      "balance": 155,
+      "balance": 135,
       "seasons": [
         {
           "season": "2019-20",
-          "points": 0,
-          "total": 0,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2019-20",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2020-02-21"
+            }
+          ],
           "rank": 27,
           "wins": 7.5,
           "losses": 25.5,
@@ -9041,7 +8688,7 @@
         {
           "season": "2020-21",
           "points": 0,
-          "total": 0,
+          "total": -10,
           "events": [],
           "rank": 21,
           "wins": 9.0,
@@ -9051,7 +8698,7 @@
         {
           "season": "2021-22",
           "points": 100,
-          "total": 100,
+          "total": 90,
           "events": [
             {
               "kind": "title",
@@ -9071,7 +8718,7 @@
         {
           "season": "2022-23",
           "points": 40,
-          "total": 140,
+          "total": 130,
           "events": [
             {
               "kind": "player_6000",
@@ -9122,7 +8769,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 140,
+          "total": 130,
           "events": [],
           "rank": 22,
           "wins": 14.0,
@@ -9131,9 +8778,19 @@
         },
         {
           "season": "2024-25",
-          "points": 0,
-          "total": 140,
-          "events": [],
+          "points": -10,
+          "total": 120,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2024-25",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 26,
+              "of": 30,
+              "date": "2025-02-14"
+            }
+          ],
           "rank": 26,
           "wins": 10.0,
           "losses": 23.0,
@@ -9142,7 +8799,7 @@
         {
           "season": "2025-26",
           "points": 15,
-          "total": 155,
+          "total": 135,
           "events": [
             {
               "kind": "season_high",
@@ -9163,7 +8820,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 155,
+          "total": 135,
           "events": [],
           "rank": 13,
           "wins": 4.0,
@@ -9171,7 +8828,7 @@
           "finish": null
         }
       ],
-      "cups": [
+      "banners": [
         {
           "kind": "title",
           "season": "2021-22",
@@ -9184,8 +8841,7 @@
       ],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -9464,7 +9120,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2021-22",
           "rank": 6,
@@ -9501,35 +9157,12 @@
           "starts": 42
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Brooklyn Nets",
-          "games": 14.0,
-          "wins": 7.5,
-          "losses": 6.5,
-          "playoff_games": 3.0
-        },
-        "nemesis": {
-          "team": "Boston Celtics",
-          "games": 12.0,
-          "wins": 2.0,
-          "losses": 10.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "Atlanta Hawks",
-          "games": 8.0,
-          "wins": 7.0,
-          "losses": 1.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 2
+      "rank": 3
     },
     "Oklahoma City Thunder": {
-      "honor": 55,
+      "honor": 40,
       "spent": 0,
-      "balance": 55,
+      "balance": 40,
       "seasons": [
         {
           "season": "2019-20",
@@ -9578,10 +9211,10 @@
           "total": 0,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2022-23",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
               "date": "2023-02-10"
@@ -9614,8 +9247,8 @@
         },
         {
           "season": "2025-26",
-          "points": 55,
-          "total": 55,
+          "points": 40,
+          "total": 40,
           "events": [
             {
               "kind": "first_seed",
@@ -9627,7 +9260,7 @@
             {
               "kind": "final",
               "season": "2025-26",
-              "points": 40,
+              "points": 25,
               "label": "Runner-up",
               "opponent": "Miami Heat",
               "date": "2026-04-03",
@@ -9642,7 +9275,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 55,
+          "total": 40,
           "events": [],
           "rank": 1,
           "wins": 7.0,
@@ -9650,21 +9283,10 @@
           "finish": null
         }
       ],
-      "cups": [
-        {
-          "kind": "final",
-          "season": "2025-26",
-          "points": 40,
-          "label": "Runner-up",
-          "opponent": "Miami Heat",
-          "date": "2026-04-03",
-          "series": "0-2"
-        }
-      ],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -9943,7 +9565,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2025-26",
           "rank": 1,
@@ -9980,35 +9602,12 @@
           "starts": 40
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Memphis Grizzlies",
-          "games": 13.0,
-          "wins": 6.0,
-          "losses": 7.0,
-          "playoff_games": 4.0
-        },
-        "nemesis": {
-          "team": "Utah Jazz",
-          "games": 11.0,
-          "wins": 2.0,
-          "losses": 9.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "Dallas Mavericks",
-          "games": 8.0,
-          "wins": 6.0,
-          "losses": 2.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 14
+      "rank": 13
     },
     "Orlando Magic": {
-      "honor": 25,
+      "honor": 15,
       "spent": 0,
-      "balance": 25,
+      "balance": 15,
       "seasons": [
         {
           "season": "2019-20",
@@ -10042,16 +9641,24 @@
         },
         {
           "season": "2022-23",
-          "points": -10,
-          "total": -10,
+          "points": -20,
+          "total": -20,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2022-23",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
+              "date": "2023-02-10"
+            },
+            {
+              "kind": "season_low",
+              "season": "2022-23",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 6673.25,
               "date": "2023-02-10"
             }
           ],
@@ -10063,7 +9670,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 6,
           "wins": 21.0,
@@ -10073,7 +9680,7 @@
         {
           "season": "2024-25",
           "points": 15,
-          "total": 5,
+          "total": -5,
           "events": [
             {
               "kind": "first_seed",
@@ -10091,7 +9698,7 @@
         {
           "season": "2025-26",
           "points": 20,
-          "total": 25,
+          "total": 15,
           "events": [
             {
               "kind": "player_6000",
@@ -10122,7 +9729,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 25,
+          "total": 15,
           "events": [],
           "rank": 27,
           "wins": 2.0,
@@ -10130,11 +9737,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -10413,7 +10019,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2024-25",
           "rank": 1,
@@ -10450,29 +10056,6 @@
           "starts": 36
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Chicago Bulls",
-          "games": 14.0,
-          "wins": 4.0,
-          "losses": 10.0,
-          "playoff_games": 6.0
-        },
-        "nemesis": {
-          "team": "Denver Nuggets",
-          "games": 10.0,
-          "wins": 1.0,
-          "losses": 9.0,
-          "playoff_games": 2.0
-        },
-        "favorite": {
-          "team": "San Antonio Spurs",
-          "games": 8.0,
-          "wins": 6.0,
-          "losses": 2.0,
-          "playoff_games": 0
-        }
-      },
       "rank": 20
     },
     "Philadelphia 76ers": {
@@ -10496,10 +10079,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2020-21",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2021-04-05"
@@ -10592,11 +10175,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -10875,7 +10457,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2023-24",
           "rank": 17,
@@ -10912,35 +10494,12 @@
           "starts": 31
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Boston Celtics",
-          "games": 13.0,
-          "wins": 3.0,
-          "losses": 10.0,
-          "playoff_games": 0
-        },
-        "nemesis": {
-          "team": "Atlanta Hawks",
-          "games": 7.0,
-          "wins": 0,
-          "losses": 7.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "Washington Wizards",
-          "games": 7.0,
-          "wins": 6.0,
-          "losses": 1.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 25
+      "rank": 22
     },
     "Phoenix Suns": {
-      "honor": 55,
+      "honor": 20,
       "spent": 0,
-      "balance": 55,
+      "balance": 20,
       "seasons": [
         {
           "season": "2019-20",
@@ -10954,16 +10513,24 @@
         },
         {
           "season": "2020-21",
-          "points": -10,
-          "total": -10,
+          "points": -20,
+          "total": -20,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2020-21",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
+              "date": "2021-04-05"
+            },
+            {
+              "kind": "season_low",
+              "season": "2020-21",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 6733.25,
               "date": "2021-04-05"
             }
           ],
@@ -10975,7 +10542,7 @@
         {
           "season": "2021-22",
           "points": 0,
-          "total": -10,
+          "total": -20,
           "events": [],
           "rank": 15,
           "wins": 18.0,
@@ -10985,7 +10552,7 @@
         {
           "season": "2022-23",
           "points": 10,
-          "total": 0,
+          "total": -10,
           "events": [
             {
               "kind": "player_6000",
@@ -11005,8 +10572,8 @@
         },
         {
           "season": "2023-24",
-          "points": 65,
-          "total": 65,
+          "points": 50,
+          "total": 40,
           "events": [
             {
               "kind": "player_6000",
@@ -11028,7 +10595,7 @@
             {
               "kind": "final",
               "season": "2023-24",
-              "points": 40,
+              "points": 25,
               "label": "Runner-up",
               "opponent": "Sacramento Kings",
               "date": "2024-04-01",
@@ -11043,7 +10610,7 @@
         {
           "season": "2024-25",
           "points": 0,
-          "total": 65,
+          "total": 40,
           "events": [],
           "rank": 19,
           "wins": 15.0,
@@ -11052,16 +10619,24 @@
         },
         {
           "season": "2025-26",
-          "points": -10,
-          "total": 55,
+          "points": -20,
+          "total": 20,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2025-26",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 30,
               "of": 30,
+              "date": "2026-02-20"
+            },
+            {
+              "kind": "season_low",
+              "season": "2025-26",
+              "points": -10,
+              "label": "Fewest points of the regular season",
+              "score": 8001.25,
               "date": "2026-02-20"
             }
           ],
@@ -11073,7 +10648,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 55,
+          "total": 20,
           "events": [],
           "rank": 16,
           "wins": 4.0,
@@ -11081,21 +10656,10 @@
           "finish": null
         }
       ],
-      "cups": [
-        {
-          "kind": "final",
-          "season": "2023-24",
-          "points": 40,
-          "label": "Runner-up",
-          "opponent": "Sacramento Kings",
-          "date": "2024-04-01",
-          "series": "0-2"
-        }
-      ],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -11374,7 +10938,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2023-24",
           "rank": 1,
@@ -11411,35 +10975,12 @@
           "starts": 43
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Sacramento Kings",
-          "games": 14.0,
-          "wins": 1.0,
-          "losses": 13.0,
-          "playoff_games": 2.0
-        },
-        "nemesis": {
-          "team": "Sacramento Kings",
-          "games": 14.0,
-          "wins": 1.0,
-          "losses": 13.0,
-          "playoff_games": 2.0
-        },
-        "favorite": {
-          "team": "Oklahoma City Thunder",
-          "games": 8.0,
-          "wins": 6.0,
-          "losses": 2.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 14
+      "rank": 19
     },
     "Portland Trail Blazers": {
-      "honor": 80,
+      "honor": 10,
       "spent": 0,
-      "balance": 80,
+      "balance": 10,
       "seasons": [
         {
           "season": "2019-20",
@@ -11518,10 +11059,10 @@
           "total": 0,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2025-26",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2026-02-20"
@@ -11534,8 +11075,8 @@
         },
         {
           "season": "2026-27",
-          "points": 80,
-          "total": 80,
+          "points": 10,
+          "total": 10,
           "events": [
             {
               "kind": "player_6000",
@@ -11546,16 +11087,6 @@
               "player": "Jalen Williams",
               "period": 1,
               "date": "2026-10-23"
-            },
-            {
-              "kind": "player_16000",
-              "season": "2026-27",
-              "points": 70,
-              "label": "16,000 points for the franchise",
-              "player_id": "02nf6",
-              "player": "Damian Lillard",
-              "period": 8,
-              "date": "2026-11-16"
             }
           ],
           "rank": 23,
@@ -11564,11 +11095,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -11847,7 +11377,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2019-20",
           "rank": 4,
@@ -11884,35 +11414,12 @@
           "starts": 36
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Denver Nuggets",
-          "games": 16.0,
-          "wins": 8.0,
-          "losses": 8.0,
-          "playoff_games": 3.0
-        },
-        "nemesis": {
-          "team": "Sacramento Kings",
-          "games": 11.0,
-          "wins": 1.0,
-          "losses": 10.0,
-          "playoff_games": 3.0
-        },
-        "favorite": {
-          "team": "Detroit Pistons",
-          "games": 7.0,
-          "wins": 6.0,
-          "losses": 1.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 10
+      "rank": 22
     },
     "Sacramento Kings": {
-      "honor": 140,
+      "honor": 130,
       "spent": 0,
-      "balance": 140,
+      "balance": 130,
       "seasons": [
         {
           "season": "2019-20",
@@ -11936,9 +11443,19 @@
         },
         {
           "season": "2021-22",
-          "points": 0,
-          "total": 0,
-          "events": [],
+          "points": -10,
+          "total": -10,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2021-22",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2022-02-11"
+            }
+          ],
           "rank": 27,
           "wins": 6.0,
           "losses": 27.0,
@@ -11947,7 +11464,7 @@
         {
           "season": "2022-23",
           "points": 10,
-          "total": 10,
+          "total": 0,
           "events": [
             {
               "kind": "player_6000",
@@ -11968,7 +11485,7 @@
         {
           "season": "2023-24",
           "points": 100,
-          "total": 110,
+          "total": 100,
           "events": [
             {
               "kind": "title",
@@ -11988,7 +11505,7 @@
         {
           "season": "2024-25",
           "points": 20,
-          "total": 130,
+          "total": 120,
           "events": [
             {
               "kind": "player_6000",
@@ -12019,7 +11536,7 @@
         {
           "season": "2025-26",
           "points": 10,
-          "total": 140,
+          "total": 130,
           "events": [
             {
               "kind": "player_6000",
@@ -12040,7 +11557,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 140,
+          "total": 130,
           "events": [],
           "rank": 17,
           "wins": 4.0,
@@ -12048,7 +11565,7 @@
           "finish": null
         }
       ],
-      "cups": [
+      "banners": [
         {
           "kind": "title",
           "season": "2023-24",
@@ -12061,8 +11578,7 @@
       ],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -12341,7 +11857,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2023-24",
           "rank": 2,
@@ -12378,29 +11894,6 @@
           "starts": 37
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Golden State Warriors",
-          "games": 16.0,
-          "wins": 9.0,
-          "losses": 7.0,
-          "playoff_games": 3.0
-        },
-        "nemesis": {
-          "team": "Utah Jazz",
-          "games": 11.0,
-          "wins": 2.0,
-          "losses": 9.0,
-          "playoff_games": 2.0
-        },
-        "favorite": {
-          "team": "Phoenix Suns",
-          "games": 14.0,
-          "wins": 13.0,
-          "losses": 1.0,
-          "playoff_games": 2.0
-        }
-      },
       "rank": 4
     },
     "San Antonio Spurs": {
@@ -12414,10 +11907,10 @@
           "total": -10,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2019-20",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2020-02-21"
@@ -12505,10 +11998,10 @@
           "total": 15,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2024-25",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2025-02-14"
@@ -12540,11 +12033,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -12823,7 +12315,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2022-23",
           "rank": 3,
@@ -12860,35 +12352,12 @@
           "starts": 40
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Memphis Grizzlies",
-          "games": 12.0,
-          "wins": 5.0,
-          "losses": 7.0,
-          "playoff_games": 1.0
-        },
-        "nemesis": {
-          "team": "Golden State Warriors",
-          "games": 7.0,
-          "wins": 1.0,
-          "losses": 6.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "Dallas Mavericks",
-          "games": 11.0,
-          "wins": 7.0,
-          "losses": 4.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 24
+      "rank": 20
     },
     "Toronto Raptors": {
-      "honor": 40,
+      "honor": 25,
       "spent": 0,
-      "balance": 40,
+      "balance": 25,
       "seasons": [
         {
           "season": "2019-20",
@@ -12957,10 +12426,10 @@
               "date": "2023-11-03"
             },
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2023-24",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2024-02-12"
@@ -12973,13 +12442,13 @@
         },
         {
           "season": "2024-25",
-          "points": 40,
-          "total": 50,
+          "points": 25,
+          "total": 35,
           "events": [
             {
               "kind": "final",
               "season": "2024-25",
-              "points": 40,
+              "points": 25,
               "label": "Runner-up",
               "opponent": "Utah Jazz",
               "date": "2025-04-04",
@@ -12994,13 +12463,13 @@
         {
           "season": "2025-26",
           "points": -10,
-          "total": 40,
+          "total": 25,
           "events": [
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2025-26",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 29,
               "of": 30,
               "date": "2026-02-20"
@@ -13014,7 +12483,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 40,
+          "total": 25,
           "events": [],
           "rank": 9,
           "wins": 5.0,
@@ -13022,21 +12491,10 @@
           "finish": null
         }
       ],
-      "cups": [
-        {
-          "kind": "final",
-          "season": "2024-25",
-          "points": 40,
-          "label": "Runner-up",
-          "opponent": "Utah Jazz",
-          "date": "2025-04-04",
-          "series": "1-2"
-        }
-      ],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -13315,7 +12773,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2024-25",
           "rank": 7,
@@ -13352,30 +12810,7 @@
           "starts": 43
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Portland Trail Blazers",
-          "games": 13.0,
-          "wins": 8.0,
-          "losses": 5.0,
-          "playoff_games": 4.0
-        },
-        "nemesis": {
-          "team": "Charlotte Hornets",
-          "games": 8.0,
-          "wins": 0,
-          "losses": 8.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "Cleveland Cavaliers",
-          "games": 7.0,
-          "wins": 7.0,
-          "losses": 0.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 17
+      "rank": 16
     },
     "Utah Jazz": {
       "honor": 190,
@@ -13479,14 +12914,14 @@
               "date": "2025-12-05"
             },
             {
-              "kind": "player_16000",
+              "kind": "player_17000",
               "season": "2025-26",
               "points": 70,
-              "label": "16,000 points for the franchise",
+              "label": "17,000 points for the franchise",
               "player_id": "04ewe",
               "player": "Donovan Mitchell",
-              "period": 17,
-              "date": "2025-12-19"
+              "period": 29,
+              "date": "2026-01-30"
             }
           ],
           "rank": 22,
@@ -13505,7 +12940,7 @@
           "finish": null
         }
       ],
-      "cups": [
+      "banners": [
         {
           "kind": "title",
           "season": "2024-25",
@@ -13518,8 +12953,7 @@
       ],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -13798,7 +13232,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2019-20",
           "rank": 2,
@@ -13835,35 +13269,12 @@
           "starts": 44
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Charlotte Hornets",
-          "games": 15.0,
-          "wins": 3.0,
-          "losses": 12.0,
-          "playoff_games": 6.0
-        },
-        "nemesis": {
-          "team": "Charlotte Hornets",
-          "games": 15.0,
-          "wins": 3.0,
-          "losses": 12.0,
-          "playoff_games": 6.0
-        },
-        "favorite": {
-          "team": "Milwaukee Bucks",
-          "games": 9.0,
-          "wins": 8.0,
-          "losses": 1.0,
-          "playoff_games": 0
-        }
-      },
       "rank": 1
     },
     "Washington Wizards": {
-      "honor": 35,
+      "honor": 25,
       "spent": 0,
-      "balance": 35,
+      "balance": 25,
       "seasons": [
         {
           "season": "2019-20",
@@ -13909,10 +13320,10 @@
               "date": "2022-01-21"
             },
             {
-              "kind": "bottom_three",
+              "kind": "bottom_five",
               "season": "2021-22",
               "points": -10,
-              "label": "Bottom three of the regular season",
+              "label": "Bottom five of the regular season",
               "rank": 28,
               "of": 30,
               "date": "2022-02-11"
@@ -13925,9 +13336,19 @@
         },
         {
           "season": "2022-23",
-          "points": 0,
-          "total": 15,
-          "events": [],
+          "points": -10,
+          "total": 5,
+          "events": [
+            {
+              "kind": "bottom_five",
+              "season": "2022-23",
+              "points": -10,
+              "label": "Bottom five of the regular season",
+              "rank": 27,
+              "of": 30,
+              "date": "2023-02-10"
+            }
+          ],
           "rank": 27,
           "wins": 5.0,
           "losses": 28.0,
@@ -13936,7 +13357,7 @@
         {
           "season": "2023-24",
           "points": 0,
-          "total": 15,
+          "total": 5,
           "events": [],
           "rank": 20,
           "wins": 15.0,
@@ -13946,7 +13367,7 @@
         {
           "season": "2024-25",
           "points": 10,
-          "total": 25,
+          "total": 15,
           "events": [
             {
               "kind": "player_6000",
@@ -13967,7 +13388,7 @@
         {
           "season": "2025-26",
           "points": 10,
-          "total": 35,
+          "total": 25,
           "events": [
             {
               "kind": "player_6000",
@@ -13988,7 +13409,7 @@
         {
           "season": "2026-27",
           "points": 0,
-          "total": 35,
+          "total": 25,
           "events": [],
           "rank": 30,
           "wins": 1.0,
@@ -13996,11 +13417,10 @@
           "finish": null
         }
       ],
-      "cups": [],
+      "banners": [],
       "motto": null,
       "jerseys": [],
-      "moments": [],
-      "declared_rival": null,
+      "highlights": [],
       "rewards": [],
       "legends": [
         {
@@ -14279,7 +13699,7 @@
           "retired": false
         }
       ],
-      "highlights": {
+      "highlight_ideas": {
         "best_season": {
           "season": "2020-21",
           "rank": 1,
@@ -14316,30 +13736,7 @@
           "starts": 31
         }
       },
-      "rivals": {
-        "most_played": {
-          "team": "Charlotte Hornets",
-          "games": 13.0,
-          "wins": 3.0,
-          "losses": 10.0,
-          "playoff_games": 2.0
-        },
-        "nemesis": {
-          "team": "Philadelphia 76ers",
-          "games": 7.0,
-          "wins": 1.0,
-          "losses": 6.0,
-          "playoff_games": 0
-        },
-        "favorite": {
-          "team": "Boston Celtics",
-          "games": 7.0,
-          "wins": 6.0,
-          "losses": 1.0,
-          "playoff_games": 0
-        }
-      },
-      "rank": 18
+      "rank": 16
     }
   }
 }

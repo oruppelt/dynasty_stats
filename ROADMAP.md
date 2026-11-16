@@ -9,8 +9,8 @@ are in `LEAGUE.md`.
    data (schedule, playoffs, past seasons, rosters).
 3. **Player lineage.** The long-term goal: every pick and player followed
    through the league's history (section 3).
-4. **Franchise pages and honor.** A page per franchise (banners, retired
-   jerseys, legends, rivals), and honor: earned from rare achievements, spent on
+4. **Franchise pages and honor.** A page per franchise (title banners, retired
+   jerseys, highlights, legends), and honor: earned from rare achievements, spent on
    retiring a jersey and other small rewards (section 4).
 
 ---
@@ -488,37 +488,46 @@ changed GMs). No reward touches the competition on Fantrax.
   defaulting to the viewer's team; names in the Franchises table open it.
   `components/widgets/FranchisePage.tsx`, from `data/honor.json`
   (`pipeline/honor.py`) and `data/alltime.json`.
-- Header: big logo, motto (empty until bought), all-time record, honor,
-  its rank in the league and what's left to spend.
-- Panels, each opening full screen: **Honor by season** (each season's
-  achievements and points; full screen adds the rules, the costs and every
-  franchise's honor), **Banners** (titles and finals), **Retired jerseys**
-  (and who is eligible), **Highlights** (best season, highest score, biggest
-  win, longest streak, best player season; featured moments on top),
-  **Legends** (top scorers for the franchise), **Rivals** (most played,
-  nemesis, favorite, a declared rival).
+- Header in the team's colors: logo, the motto as a big quote (or a dashed
+  "no motto yet · 25 honor"), all-time record, honor, its rank and what's
+  left to spend. Title banners (free) hang small from its top edge; finals
+  get none.
+- Three tabs. What's free stays small; what's bought is the show:
+  - **Trophy room** (first): what honor buys (three tiles with the price,
+    gold when the franchise can afford it now, and how many it owns);
+    **Retired jerseys** hanging in dark rafters, with an empty dashed jersey
+    for the next one and its price, and the players who can be retired;
+    **Highlights**, empty until declared (a card each), with a priced empty
+    slot and, muted below, ideas worked out from the games (best season,
+    highest score, biggest win, longest streak, best player season).
+  - **Honor**: each season's achievements and points, the rules, what was
+    spent (the ledger) and every franchise's honor.
+  - **Legends**: top scorers for the franchise (bold: 6,000+, eligible).
+  Sections open full screen.
 - Achievements and honor (`honor.ACHIEVEMENTS`), every season since 2019-20:
 
   | Achievement | Honor |
   |---|---|
   | Champion | +100 |
-  | Runner-up | +40 |
+  | Runner-up | +25 |
   | Regular-season winner | +15 |
   | Season's highest score | +15 |
-  | Bottom three of the regular season | −10 |
+  | Bottom five of the regular season | −10 |
+  | Fewest points of the regular season (the season's total, not one game) | −10 |
   | A player passes 6,000 points for the franchise | +10 |
-  | A player passes 16,000 points for the franchise | +70 |
+  | A player passes 17,000 points for the franchise | +70 |
 
   A finished season earns its standings achievements (dated by the final, or
   the regular season's last period); a milestone counts in the period it is
   passed, with that period's date (lineup points for the franchise, regular
   season and playoffs, every season added up). With the data on 2026-11-16
   the totals run from 190 (Utah) to −20 (Dallas); 67 player stints have
-  passed 6,000, and 5 have passed 16,000 (Jokić for Denver, LeBron for
-  Boston, Davis for New Orleans, Mitchell for Utah, Lillard for Portland).
+  passed 6,000, and 3 have passed 17,000 (Jokić for Denver in Nov 2024,
+  Mitchell for Utah in Jan 2026, LeBron for Boston in Nov 2026).
 - Rewards (`honor.REWARDS`): retire a jersey 100 (a player with 6,000+
-  points for the franchise), declare a rival 50, feature a moment 40, a motto
-  25. The commissioner adds a row to `pipeline/data/honor_rewards.json`
+  points for the franchise), declare a highlight 40 (a title and text, or `of` one of
+  the worked-out ideas, whose numbers come along), a motto 25 (the latest
+  counts). The commissioner adds a row to `pipeline/data/honor_rewards.json`
   in a PR, with the picture if there is one in `stats-app/public/honor/`
   (jpg, png, webp or gif, at most 1.5 MB):
 
@@ -526,15 +535,15 @@ changed GMs). No reward touches the competition on Fantrax.
   {"rewards": [
     {"team": "Denver Nuggets", "kind": "jersey", "season": "2026-27", "player_id": "03e75",
      "image": "denver-jokic.jpg", "caption": "Three MVPs in a Nuggets jersey"},
-    {"team": "Miami Heat", "kind": "moment", "season": "2026-27", "title": "The 2025-26 title",
+    {"team": "Miami Heat", "kind": "highlight", "season": "2026-27", "title": "The 2025-26 title",
      "text": "Beat the #1 seed 2-0 in the final.", "image": "miami-2026.jpg"},
-    {"team": "Utah Jazz", "kind": "motto", "season": "2026-27", "text": "..."},
-    {"team": "Utah Jazz", "kind": "rival", "season": "2026-27", "opponent": "Toronto Raptors"}
+    {"team": "Utah Jazz", "kind": "highlight", "season": "2026-27", "of": "longest_streak"},
+    {"team": "Utah Jazz", "kind": "motto", "season": "2026-27", "text": "..."}
   ]}
   ```
 
   Any reward can have an `image` and a `caption`; a retired jersey with a
-  picture shows it in place of the drawn jersey, a moment above its text.
+  picture shows it in place of the drawn jersey, a highlight above its text.
   The build checks each row (enough honor through that season, an
   eligible player, the picture there) and reports the rows it leaves out.
 
@@ -556,3 +565,8 @@ changed GMs). No reward touches the competition on Fantrax.
 - Honor belongs to the franchise (as built). If it should follow the
   owner, the site needs a franchise → owner list with dates.
 - Whether retiring a jersey needs a league vote.
+- Rivals (dropped 2026-11-16): declaring a rival for 50 bought nothing but a
+  card, so it is out until it gains something. One rival per franchise if it
+  comes back. Ideas: a rivalry bonus (beat your declared rival in a season's
+  series: +5), or stakes (the loser of the season series pays the winner a
+  few honor), shown on both teams' pages.

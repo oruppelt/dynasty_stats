@@ -6,11 +6,11 @@ franchise page (History → Franchise); data/honor.json.
 
 Achievements are worked out from the data for every season, past ones too, so nobody enters them. Only a
 finished season earns its standings achievements (title, final, regular-season winner, season-high score,
-bottom three); a player milestone counts in the season it happens, the one in progress too. Nothing earned
+bottom five, fewest points); a player milestone counts in the season it happens, the one in progress too. Nothing earned
 is taken away.
 
 Rewards are asked for through the commissioner, who adds a row to pipeline/data/honor_rewards.json (and
-a picture, if any, to stats-app/public/honor/: a jersey's, a moment's); this
+a picture, if any, to stats-app/public/honor/: a jersey's, a highlight's); this
 module checks each one (enough honor by then, an eligible player) and keeps the ledger. A row that
 doesn't pass is left out and reported.
 
@@ -27,28 +27,29 @@ import pandas as pd
 # kind: (honor, label)
 ACHIEVEMENTS = {
     'title': (100, 'Champion'),
-    'final': (40, 'Runner-up'),
+    'final': (25, 'Runner-up'),
     'first_seed': (15, 'Regular-season winner'),
     'season_high': (15, "Season's highest score"),
-    'bottom_three': (-10, 'Bottom three of the regular season'),
+    'bottom_five': (-10, 'Bottom five of the regular season'),
+    'season_low': (-10, 'Fewest points of the regular season'),
     'player_6000': (10, '6,000 points for the franchise'),
-    'player_16000': (70, '16,000 points for the franchise'),
+    'player_17000': (70, '17,000 points for the franchise'),
 }
-MILESTONES = [(6000, 'player_6000'), (16000, 'player_16000')]
+# The last this many in the regular season lose honor
+BOTTOM = 5
+MILESTONES = [(6000, 'player_6000'), (17000, 'player_17000')]
 # kind: (cost, label)
 REWARDS = {
     'jersey': (100, 'Retire a jersey'),
-    'rival': (50, 'Declare a rival'),
-    'moment': (40, 'Feature a moment'),
+    'highlight': (40, 'Declare a highlight'),
     'motto': (25, 'Franchise motto'),
 }
 # A jersey can be retired for a player with this many points for the franchise
 JERSEY_POINTS = 6000
 MOTTO_LENGTH = 80
 LEGENDS = 25
-RIVAL_GAMES = 6
 REWARDS_PATH = Path(__file__).parent / 'data' / 'honor_rewards.json'
-# A reward's picture (a jersey's, a moment's): a file in stats-app/public/honor/, added in the same PR as its row
+# A reward's picture (a jersey's, a highlight's): a file in stats-app/public/honor/, added in the same PR as its row
 IMAGE_DIR = Path(__file__).parent.parent / 'stats-app' / 'public' / 'honor'
 IMAGE_NAME = re.compile(r'^[A-Za-z0-9._-]+\.(jpe?g|png|webp|gif)$', re.IGNORECASE)
 IMAGE_BYTES = 1_500_000
@@ -121,9 +122,17 @@ def _achievements(alltime: dict, season_files: dict[str, dict], points: pd.DataF
             events.append({'team': summary['first_seed'], **_event('first_seed', season, date=_date(data, regular_end))})
         ranks = [t for t in alltime['team_seasons'] if t['season'] == season]
         for t in ranks:
-            if t['rank'] > len(ranks) - 3:
-                events.append({'team': t['team'], **_event('bottom_three', season, rank=t['rank'], of=len(ranks),
+            if t['rank'] > len(ranks) - BOTTOM:
+                events.append({'team': t['team'], **_event('bottom_five', season, rank=t['rank'], of=len(ranks),
                                                                     date=_date(data, regular_end))})
+        # The fewest points over the regular season (the season's total, not one game)
+        totals = {t['team']: t['points_for'] for t in data.get('teams', []) if t.get('points_for')}
+        if totals:
+            low = min(totals.values())
+            for team, pf in totals.items():
+                if pf == low:
+                    events.append({'team': team, **_event('season_low', season, score=round(pf, 2),
+                                                          date=_date(data, regular_end))})
         games = _season_games(data) if data else []
         if games:
             high = max(g['score'] for g in games)
@@ -165,8 +174,8 @@ def _legends(points: pd.DataFrame) -> dict[str, list[dict]]:
 
 
 def _highlights(team: str, alltime: dict, season_files: dict[str, dict], points: pd.DataFrame) -> dict:
-    """The franchise's best moments, worked out: best season, highest score, biggest win, longest streak,
-    best player season."""
+    """Ideas for a highlight, worked out from the games: best season, highest score, biggest win, longest
+    streak, best player season. Shown only as ideas: a franchise declares its highlights (a reward)."""
     out = {}
     seasons = [t for t in alltime['team_seasons'] if t['team'] == team and t['finish'] is not None]
     if seasons:
@@ -200,34 +209,12 @@ def _highlights(team: str, alltime: dict, season_files: dict[str, dict], points:
     return out
 
 
-def _rivals(team: str, alltime: dict) -> dict:
-    """From the career head-to-head (regular season and playoffs): the most-played opponent, and with
-    RIVAL_GAMES or more games, the worst record (nemesis) and the best (favorite)."""
-    h2h = alltime['head_to_head']
-    row = lambda matrix: next((r for r in h2h[matrix] if r['Team'] == team), {})
-    wins, games, pwins, pgames = row('wins'), row('games'), row('playoff_wins'), row('playoff_games')
-    opponents = []
-    for other in h2h['teams']:
-        g = (games.get(other) or 0) + (pgames.get(other) or 0)
-        if other == team or not g:
-            continue
-        w = (wins.get(other) or 0) + (pwins.get(other) or 0)
-        opponents.append({'team': other, 'games': g, 'wins': w, 'losses': g - w, 'playoff_games': pgames.get(other) or 0})
-    if not opponents:
-        return {}
-    out = {'most_played': max(opponents, key=lambda o: (o['games'], o['playoff_games']))}
-    enough = [o for o in opponents if o['games'] >= RIVAL_GAMES]
-    if enough:
-        out['nemesis'] = min(enough, key=lambda o: (o['wins'] / o['games'], -o['games']))
-        out['favorite'] = max(enough, key=lambda o: (o['wins'] / o['games'], o['games']))
-    return out
-
-
 def _spend(rewards: list[dict], teams: set[str], earned_by: dict[str, list[tuple[str, int]]], order: list[str],
-           legends: dict[str, list[dict]], image_dir: Path = IMAGE_DIR) -> tuple[dict[str, list[dict]], list[str]]:
+           legends: dict[str, list[dict]], ideas: dict[str, dict], image_dir: Path = IMAGE_DIR
+           ) -> tuple[dict[str, list[dict]], list[str]]:
     """Checks the rewards in the file's order: a known kind and franchise, a season, enough honor earned
-    through that season less what's spent before, for a jersey an eligible player not already retired, and
-    an image (optional, any reward) that is in image_dir, a picture, and at most IMAGE_BYTES."""
+    through that season less what's spent before, for a jersey an eligible player not already retired, for a
+    highlight a title or one of the worked-out ideas (`of`), and an image (optional, any reward) that is in image_dir, a picture, and at most IMAGE_BYTES."""
     spent: dict[str, list[dict]] = {t: [] for t in teams}
     problems = []
     rank = {s: i for i, s in enumerate(order)}
@@ -268,15 +255,16 @@ def _spend(rewards: list[dict], teams: set[str], earned_by: dict[str, list[tuple
                 problems.append(f'{where}: a motto has 1 to {MOTTO_LENGTH} characters')
                 continue
             item['text'] = text
-        elif kind == 'rival':
-            if r.get('opponent') not in teams or r.get('opponent') == team:
-                problems.append(f'{where}: unknown opponent')
+        elif kind == 'highlight':
+            idea = r.get('of')
+            if idea and idea not in ideas.get(team, {}):
+                problems.append(f'{where}: no highlight idea {idea} (one of {", ".join(ideas.get(team, {}))})')
                 continue
-            item['opponent'] = r['opponent']
-        elif kind == 'moment':
-            if not (r.get('title') or '').strip():
-                problems.append(f'{where}: a moment needs a title')
+            if not idea and not (r.get('title') or '').strip():
+                problems.append(f'{where}: a highlight needs a title, or `of` (a worked-out idea)')
                 continue
+            if idea:
+                item.update({'of': idea, 'detail': ideas[team][idea]})
             item.update({k: r[k] for k in ('title', 'text', 'trade', 'player_id') if r.get(k)})
         if r.get('caption'):
             item['caption'] = str(r['caption'])
@@ -294,10 +282,11 @@ def compute_honor(alltime: dict, season_files: dict[str, dict], points: pd.DataF
     teams = sorted({t['team'] for t in alltime['team_seasons']})
     events = _achievements(alltime, season_files, points)
     legends = _legends(points)
+    ideas = {team: _highlights(team, alltime, season_files, points) for team in teams}
     earned_by: dict[str, list[tuple[str, int]]] = {}
     for e in events:
         earned_by.setdefault(e['team'], []).append((e['season'], e['points']))
-    spent, problems = _spend(rewards, set(teams), earned_by, order, legends, image_dir)
+    spent, problems = _spend(rewards, set(teams), earned_by, order, legends, ideas, image_dir)
 
     franchises = {}
     for team in teams:
@@ -314,20 +303,20 @@ def compute_honor(alltime: dict, season_files: dict[str, dict], points: pd.DataF
         cost = sum(x['cost'] for x in spent[team])
         retired = {x['player_id'] for x in spent[team] if x['kind'] == 'jersey'}
         mottos = [x for x in spent[team] if x['kind'] == 'motto']
-        rivals = [x for x in spent[team] if x['kind'] == 'rival']
         franchises[team] = {
             'honor': total, 'spent': cost, 'balance': total - cost,
             'seasons': by_season,
-            'cups': [e for e in mine if e['kind'] in ('title', 'final')],
+            # Free, worked out: a banner for each title
+            'banners': [e for e in mine if e['kind'] == 'title'],
+            # Bought (rewards): the motto (the latest), retired jerseys and highlights
             'motto': mottos[-1]['text'] if mottos else None,
             'jerseys': [x for x in spent[team] if x['kind'] == 'jersey'],
-            'moments': [x for x in spent[team] if x['kind'] == 'moment'],
-            'declared_rival': rivals[-1]['opponent'] if rivals else None,
+            'highlights': [x for x in spent[team] if x['kind'] == 'highlight'],
             'rewards': spent[team],
             'legends': [{**p, 'eligible': p['points'] >= JERSEY_POINTS, 'retired': p['player_id'] in retired}
                         for p in legends.get(team, [])],
-            'highlights': _highlights(team, alltime, season_files, points),
-            'rivals': _rivals(team, alltime),
+            # Ideas for what to declare
+            'highlight_ideas': ideas[team],
         }
     ranked = sorted(teams, key=lambda t: (-franchises[t]['honor'], t))
     for i, team in enumerate(ranked):
