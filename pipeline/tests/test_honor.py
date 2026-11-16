@@ -85,19 +85,16 @@ def test_achievements_by_season():
     assert alpha['honor'] == 100 - 10 + 10
     assert [s['total'] for s in alpha['seasons']] == [90, 100]
     assert alpha['banners'][0]['opponent'] == 'Bravo' and alpha['banners'][0]['series'] == '2-1'
-    assert data['franchises']['Bravo']['honor'] == 40 - 10 + 15
+    assert data['franchises']['Bravo']['honor'] == 25 - 10 + 15
     assert [data['franchises'][t]['rank'] for t in TEAMS] == [1, 2, 3, 4]
 
 
-def test_highlights_and_rivals():
+def test_highlight_ideas_and_legends():
     alpha = run()[0]['franchises']['Alpha']
     assert alpha['highlight_ideas']['highest_score']['score'] == 110
     assert alpha['highlight_ideas']['biggest_win']['margin'] == 50
     assert alpha['highlight_ideas']['longest_streak'] == {'season': '2024-25', 'length': 2, 'start': 2, 'end': 3}
     assert alpha['highlight_ideas']['best_season']['rank'] == 2
-    assert alpha['rival_ideas']['most_played']['team'] == 'Bravo'           # 6 + 3 playoff games
-    assert alpha['rival_ideas']['nemesis']['team'] == 'Bravo'               # 3-6
-    assert alpha['rival_ideas']['favorite']['team'] == 'Charlie'            # 7-1
     assert alpha['legends'][0] == {'player_id': 'p1', 'player': 'One', 'points': 6000.0, 'starts': 3,
                                    'first': '2024-25', 'last': '2025-26', 'seasons': 2, 'eligible': True, 'retired': False}
 
@@ -108,14 +105,15 @@ def test_rewards_are_checked():
         {'team': 'Alpha', 'kind': 'jersey', 'season': '2025-26', 'player_id': 'p1'},   # 100: retired
         {'team': 'Bravo', 'kind': 'jersey', 'season': '2025-26', 'player_id': 'p2'},   # 900 points: not eligible
         {'team': 'Bravo', 'kind': 'motto', 'season': '2025-26', 'text': 'Always the bridesmaid'},
-        {'team': 'Charlie', 'kind': 'rival', 'season': '2025-26', 'opponent': 'Alpha'},  # 15 < 50
+        {'team': 'Charlie', 'kind': 'motto', 'season': '2025-26', 'text': 'x' * 81},       # too long
+        {'team': 'Charlie', 'kind': 'rival', 'season': '2025-26', 'opponent': 'Alpha'},  # no such reward
     ])
-    assert len(problems) == 3
+    assert len(problems) == 4
     alpha, bravo = data['franchises']['Alpha'], data['franchises']['Bravo']
     assert [j['player'] for j in alpha['jerseys']] == ['One']
     assert alpha['legends'][0]['retired'] and (alpha['spent'], alpha['balance']) == (100, 0)
-    assert bravo['motto'] == 'Always the bridesmaid' and bravo['balance'] == 45 - 25
-    assert data['franchises']['Charlie']['rivals'] == []
+    assert bravo['motto'] == 'Always the bridesmaid' and bravo['balance'] == 30 - 25
+    assert data['franchises']['Charlie']['motto'] is None
 
 
 def test_reward_images(tmp_path):
@@ -133,7 +131,7 @@ def test_reward_images(tmp_path):
     assert data['franchises']['Bravo']['highlights'] == []
 
 
-def test_declared_highlights_and_rivals():
+def test_declared_highlights():
     data, problems = run([
         {'team': 'Alpha', 'kind': 'highlight', 'season': '2025-26', 'of': 'highest_score'},
         {'team': 'Bravo', 'kind': 'highlight', 'season': '2025-26', 'of': 'no_such_thing'},
@@ -143,13 +141,3 @@ def test_declared_highlights_and_rivals():
     alpha = data['franchises']['Alpha']
     assert alpha['highlights'][0]['of'] == 'highest_score' and alpha['highlights'][0]['detail']['score'] == 110
     assert alpha['banners'] and all(b['kind'] == 'title' for b in alpha['banners'])
-
-
-def test_declared_rival_has_its_record():
-    data, problems = run([
-        {'team': 'Alpha', 'kind': 'rival', 'season': '2025-26', 'opponent': 'Bravo'},
-        {'team': 'Alpha', 'kind': 'rival', 'season': '2025-26', 'opponent': 'Bravo'},        # already a rival
-    ])
-    assert len(problems) == 1
-    rival = data['franchises']['Alpha']['rivals'][0]
-    assert rival['opponent'] == 'Bravo' and rival['record']['games'] == 9 and rival['record']['wins'] == 3

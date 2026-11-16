@@ -1,6 +1,6 @@
 import { ReactNode, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { Crown, Flame, Maximize2, Plus, Quote, Shirt, Sparkles, Swords, Trophy, X } from 'lucide-react'
+import { Crown, Flame, Maximize2, Plus, Quote, Shirt, Sparkles, Trophy, X } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { ErrorState } from './ErrorState'
@@ -19,15 +19,14 @@ import { cn } from '@/lib/utils'
 
 // History → Franchise: one franchise's page, shareable as ?franchise=<team> (lib/selected-franchise.ts).
 // The header carries what comes free (the title banners, small) and the motto. Three tabs:
-// - Trophy room: what the franchise spends its honor on (retired jerseys in the rafters, declared highlights
-//   and rivals), each with an empty slot showing its price, and ideas worked out from the games;
+// - Trophy room: what the franchise spends its honor on (retired jerseys in the rafters, declared highlights),
+//   each with an empty slot showing its price, and ideas worked out from the games;
 // - Honor: earned season by season, the rules, what was spent, every franchise;
 // - Legends: the top scorers for the franchise.
 // From data/honor.json (pipeline/honor.py) and data/alltime.json.
 
 const ordinal = (n: number) => `${n}${['th', 'st', 'nd', 'rd'][n % 100 >= 11 && n % 100 <= 13 ? 0 : n % 10] ?? 'th'}`
 const SHORT = (season: string) => season.slice(2) // 2024-25 → 24-25
-const record = (o: { wins: number; losses: number }) => `${Math.round(o.wins)}-${Math.round(o.losses)}`
 
 /** The team's two colors and the text on the first */
 function teamColors(team: string) {
@@ -145,7 +144,7 @@ function achievementText(e: Achievement) {
     case 'season_high': return `Season-high ${formatPoints(e.score ?? 0)}`
     case 'bottom_three': return `${e.rank === e.of ? 'Last' : `${ordinal(e.rank ?? 0)} of ${e.of}`}`
     case 'player_6000': return `${e.player}: 6,000 points`
-    case 'player_16000': return `${e.player}: 16,000 points`
+    case 'player_17000': return `${e.player}: 17,000 points`
   }
 }
 
@@ -248,15 +247,15 @@ function Hero({ data, team, f, teams, onPick }: {
 
 // ---------------------------------------------------------------------------------------------------- Shop
 
-const REWARD_ICON: Record<RewardKind, typeof Trophy> = { jersey: Shirt, rival: Swords, highlight: Sparkles, motto: Quote }
+const REWARD_ICON: Record<RewardKind, typeof Trophy> = { jersey: Shirt, highlight: Sparkles, motto: Quote }
 
 /** What honor buys, what the franchise has of each and whether it can buy one now */
 function Shop({ data, f }: { data: Honor; f: FranchiseHonor }) {
   const owned: Record<RewardKind, number> = {
-    jersey: f.jerseys.length, rival: f.rivals.length, highlight: f.highlights.length, motto: f.motto ? 1 : 0,
+    jersey: f.jerseys.length, highlight: f.highlights.length, motto: f.motto ? 1 : 0,
   }
   return (
-    <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+    <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
       {data.rewards.map(r => {
         const Icon = REWARD_ICON[r.kind]
         const can = f.balance >= r.cost
@@ -437,10 +436,12 @@ function Highlights({ data, team, f }: { data: Honor; team: string; f: Franchise
   const ideas = (Object.entries(f.highlight_ideas) as [HighlightIdea, Record<string, string | number>][]).filter(([k]) => !declared.has(k))
   const body = (big?: boolean) => (
     <div className="space-y-3">
+      <div className={cn('grid grid-cols-1 gap-3', !big && 'md:grid-cols-2')}>
       {f.highlights.map((h, i) => <HighlightCard key={i} h={h} team={team} big={big} />)}
       <Slot icon={Sparkles} title={f.highlights.length ? 'Declare another highlight' : 'Declare a highlight'} cost={cost} balance={f.balance}>
         <p className="max-w-sm text-xs leading-snug text-muted-foreground">A season, a game, a player, a trade: the moment the franchise wants remembered, with a picture if it likes.</p>
       </Slot>
+      </div>
       {ideas.length > 0 && (
         <div>
           <div className="mb-1.5 text-xs font-medium text-muted-foreground">Ideas, from the games</div>
@@ -471,85 +472,6 @@ function Highlights({ data, team, f }: { data: Honor; team: string; f: Franchise
   )
 }
 
-// ---------------------------------------------------------------------------------------------------- Rivals
-
-function RivalCard({ r, team }: { r: Reward; team: string }) {
-  const { setFranchise } = useSelectedFranchise()
-  const me = teamColors(team)
-  const them = teamColors(r.opponent ?? '')
-  const rec = r.record
-  return (
-    <article className="overflow-hidden rounded-xl border shadow-sm">
-      <div className="relative grid grid-cols-[1fr_auto_1fr] items-center"
-           style={{ background: `linear-gradient(100deg, ${me.primary} 0%, ${me.primary} 46%, ${them.primary} 54%, ${them.primary} 100%)` }}>
-        <div className="flex flex-col items-center gap-1 p-4" style={{ color: me.fg }}>
-          <span className="rounded-full bg-white/90 p-1.5"><TeamLogo teamName={team} size={52} /></span>
-          <span className="text-xs font-bold">{teamCode(team)}</span>
-        </div>
-        <span className="z-10 rounded-full bg-black px-2.5 py-1.5 text-sm font-black italic text-white shadow-lg ring-2 ring-white/70">VS</span>
-        <button type="button" onClick={() => r.opponent && setFranchise(r.opponent)} className="flex flex-col items-center gap-1 p-4 hover:opacity-90"
-                style={{ color: them.fg }} title={`Open ${r.opponent}`}>
-          <span className="rounded-full bg-white/90 p-1.5"><TeamLogo teamName={r.opponent ?? ''} size={52} /></span>
-          <span className="text-xs font-bold">{teamCode(r.opponent ?? '')}</span>
-        </button>
-      </div>
-      <div className="flex items-center justify-between gap-2 bg-card px-4 py-2.5">
-        <div>
-          <div className="text-2xl font-black tabular-nums leading-none">{rec ? record(rec) : '0-0'}</div>
-          <div className="text-xs text-muted-foreground">
-            all-time{rec?.playoff_games ? `, ${rec.playoff_games} in the playoffs` : ''}
-          </div>
-        </div>
-        <span className="text-xs text-muted-foreground">declared {r.season}</span>
-      </div>
-    </article>
-  )
-}
-
-function Rivals({ data, team, f }: { data: Honor; team: string; f: FranchiseHonor }) {
-  const { setFranchise } = useSelectedFranchise()
-  const cost = data.rewards.find(r => r.kind === 'rival')?.cost ?? 0
-  const declared = new Set(f.rivals.map(r => r.opponent))
-  const ideas = ([
-    ['Played most', f.rival_ideas.most_played],
-    ['Nemesis', f.rival_ideas.nemesis],
-    ['Favorite opponent', f.rival_ideas.favorite],
-  ] as const).filter(([, o]) => o && !declared.has(o.team))
-  const body = (
-    <div className="space-y-3">
-      {f.rivals.map(r => <RivalCard key={r.opponent} r={r} team={team} />)}
-      <Slot icon={Swords} title={f.rivals.length ? 'Declare another rival' : 'Declare a rival'} cost={cost} balance={f.balance}>
-        <p className="max-w-sm text-xs leading-snug text-muted-foreground">Name the team you most want to beat. Its record against you goes up here.</p>
-      </Slot>
-      {ideas.length > 0 && (
-        <div>
-          <div className="mb-1.5 text-xs font-medium text-muted-foreground">Ideas, from every game (playoffs included)</div>
-          <ul className="divide-y rounded-lg border text-sm text-muted-foreground">
-            {ideas.map(([label, o]) => o && (
-              <li key={label} className="flex items-center gap-2 px-3 py-1.5">
-                <span className="w-32 shrink-0 text-xs">{label}</span>
-                <button type="button" onClick={() => setFranchise(o.team)} className="flex min-w-0 items-center gap-1.5 text-foreground/80 hover:underline">
-                  <TeamLogo teamName={o.team} size={16} className="shrink-0" /><span className="truncate">{o.team}</span>
-                </button>
-                <span className="ml-auto shrink-0 text-xs tabular-nums">{record(o)}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
-  )
-  const { button, overlay } = useFullScreen('Rivals', Swords, body)
-  return (
-    <section className="min-w-0">
-      <SectionTitle icon={Swords} title="Rivals" right={button}
-                    note={f.rivals.length ? 'Declared by the franchise.' : 'None declared yet.'} />
-      {body}
-      {overlay}
-    </section>
-  )
-}
-
 function TrophyRoom({ data, team, f }: { data: Honor; team: string; f: FranchiseHonor }) {
   return (
     <div className="space-y-8">
@@ -559,10 +481,7 @@ function TrophyRoom({ data, team, f }: { data: Honor; team: string; f: Franchise
         <Shop data={data} f={f} />
       </section>
       <Rafters data={data} team={team} f={f} />
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <Highlights data={data} team={team} f={f} />
-        <Rivals data={data} team={team} f={f} />
-      </div>
+      <Highlights data={data} team={team} f={f} />
     </div>
   )
 }
@@ -659,7 +578,7 @@ function Rules({ data }: { data: Honor }) {
 
 function Ledger({ f }: { f: FranchiseHonor }) {
   if (!f.rewards.length) return <p className="text-sm text-muted-foreground">Nothing spent yet.</p>
-  const what = (r: Reward) => r.kind === 'jersey' ? r.player : r.kind === 'rival' ? r.opponent
+  const what = (r: Reward) => r.kind === 'jersey' ? r.player
     : r.kind === 'motto' ? `“${r.text}”` : r.title ?? (r.of && r.detail ? ideaText(r.of, r.detail).label : '')
   return (
     <ul className="divide-y text-sm">

@@ -2,10 +2,10 @@ import { useQuery } from '@tanstack/react-query'
 import type { Finish } from './alltime'
 
 // Shape of /data/honor.json (pipeline/honor.py): each franchise's honor, earned season by season
-// from rare achievements and spent on rewards, with its banners, retired jerseys, legends, highlights and rivals.
+// from rare achievements and spent on rewards, with its banners, retired jerseys, legends and highlights.
 
-export type AchievementKind = 'title' | 'final' | 'first_seed' | 'season_high' | 'bottom_three' | 'player_6000' | 'player_16000'
-export type RewardKind = 'jersey' | 'rival' | 'highlight' | 'motto'
+export type AchievementKind = 'title' | 'final' | 'first_seed' | 'season_high' | 'bottom_three' | 'player_6000' | 'player_17000'
+export type RewardKind = 'jersey' | 'highlight' | 'motto'
 
 export interface Achievement {
   kind: AchievementKind
@@ -55,10 +55,6 @@ export interface Reward {
   last?: string
   // motto
   text?: string
-  // rival
-  opponent?: string
-  // rival: the career record against them
-  record?: { games: number; wins: number; losses: number; playoff_games: number }
   // highlight: its title and text, or one of the worked-out ideas (`of`, with its numbers in `detail`)
   title?: string
   trade?: string
@@ -82,8 +78,6 @@ export interface Legend {
   retired: boolean
 }
 
-export interface Opponent { team: string; games: number; wins: number; losses: number; playoff_games: number }
-
 type Game = { season: string; period: number; score: number; opponent: string; opp_score: number }
 
 export type HighlightIdea = 'best_season' | 'highest_score' | 'biggest_win' | 'longest_streak' | 'best_player_season'
@@ -97,11 +91,10 @@ export interface FranchiseHonor {
   seasons: HonorSeason[]
   /** Free: a banner for each title */
   banners: Achievement[]
-  /** Bought: the motto, retired jerseys, declared highlights and rivals (every reward in `rewards`) */
+  /** Bought: the motto, retired jerseys, declared highlights (every reward in `rewards`) */
   motto: string | null
   jerseys: Reward[]
   highlights: Reward[]
-  rivals: Reward[]
   rewards: Reward[]
   legends: Legend[]
   /** Ideas for what to declare, worked out from the games */
@@ -112,7 +105,6 @@ export interface FranchiseHonor {
     longest_streak?: { season: string; length: number; start: number; end: number }
     best_player_season?: { season: string; player_id: string; player: string; points: number; starts: number }
   }
-  rival_ideas: { most_played?: Opponent; nemesis?: Opponent; favorite?: Opponent }
 }
 
 export interface Honor {

@@ -301,11 +301,12 @@ Merged into Phase 2.5 (2026-10-22).
 ### 2026-11-16: Franchise page and honor (branch `franchise/prestige`)
 - History → Franchise (`?franchise=`): a header in the team's colors (logo, the motto as a big quote, record,
   honor and its rank, small title banners), then three tabs: **Trophy room** (what honor buys and its prices;
-  retired jerseys in the rafters; declared highlights and rivals, each with a priced empty slot and muted ideas
+  retired jerseys in the rafters; declared highlights, with a priced empty slot and muted ideas
   from the games), **Honor** (by season, rules, what was spent, every franchise) and **Legends**. Free things
-  (title banners) stay small; bought ones are the show. Runner-up banners dropped.
-- `pipeline/honor.py` writes `data/honor.json`: achievements from every season (title +100, runner-up +40,
-  regular-season winner +15, season high +15, bottom three −10, a player passing 6,000 / 16,000 points for the
+  (title banners) stay small; bought ones are the show. Runner-up banners dropped; the rival reward dropped
+  (it bought nothing).
+- `pipeline/honor.py` writes `data/honor.json`: achievements from every season (title +100, runner-up +25,
+  regular-season winner +15, season high +15, bottom three −10, a player passing 6,000 / 17,000 points for the
   franchise +10 / +70, playoffs included; every achievement dated, a milestone by the period it was passed in), and the rewards in `pipeline/data/honor_rewards.json`, checked against each franchise's
   honor. A reward can bring a picture (`stats-app/public/honor/`): a retired jersey's, a highlight's.
 - The Franchises table's team names open the page.
