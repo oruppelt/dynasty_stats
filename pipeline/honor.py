@@ -17,6 +17,8 @@ doesn't pass is left out and reported.
 Player points are lineup points for the franchise, regular season and playoffs (by team name, like the
 rest of the site), every season added up; a milestone has the period (and its date) it was passed in. Every
 achievement has a date, so the achievement of each season can be put next to who ran the team then.
+Each also has the period recap it shows up in (`recap_period`): a milestone its own period, the rest the
+regular season's last (Recap and My Team on the site).
 """
 import json
 import re
@@ -88,6 +90,15 @@ def _date(data: dict, period: int | None) -> str | None:
     return next((p['end'] for p in periods if p['period'] == period), None)
 
 
+def _recap_period(data: dict, period: int | None) -> int | None:
+    """The period recap an achievement shows up in: its own period (a milestone's) while that's in the regular
+    season, else (decided by the season's end, or in the playoffs) the last regular-season period with results."""
+    regular = (data.get('schedule') or {}).get('regular_periods')
+    if period and (not regular or period <= regular):
+        return period
+    return max((r['period'] for r in data.get('results', []) if not regular or r['period'] <= regular), default=None)
+
+
 def _final(data: dict) -> dict | None:
     """The final series of a season file's knockout: the teams and the wins of each."""
     knockout = (data.get('playoffs') or {}).get('knockout') or []
@@ -155,6 +166,12 @@ def _achievements(alltime: dict, season_files: dict[str, dict], points: pd.DataF
                         events.append({'team': team, **_event(kind, row.season, player_id=pid, player=rows['player'].iloc[-1],
                                                               period=int(row.period),
                                                               date=_date(season_files.get(row.season, {}), int(row.period)))})
+    # The period recap that shows each one: a milestone in its own period (one passed in the playoffs, in the
+    # regular season's last), everything decided by the season's end in the regular season's last
+    milestones = {kind for _, kind in MILESTONES}
+    for e in events:
+        e['recap_period'] = _recap_period(season_files.get(e['season'], {}),
+                                          e.get('period') if e['kind'] in milestones else None)
     order_of = {s: i for i, s in enumerate(order)}
     return sorted(events, key=lambda e: (order_of.get(e['season'], 99), e.get('date') or '9999', -e['points']))
 
