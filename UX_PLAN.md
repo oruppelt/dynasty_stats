@@ -298,6 +298,15 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-23: Honor in the Recap and on My Team (branch `honor/recap`)
+- Recap: an **Honor this period** card under the highlights, only when honor was earned that period
+  (players passing 6,000 / 17,000 for their franchise). The regular season's last period also carries what the
+  season's end decided (title, final, first seed, season high and low, bottom five) and milestones passed in
+  the playoffs. The viewer's team first; team names open the franchise page; in the PDF too.
+- My Team: **Honor this season**: every achievement of the team this season, the season's total, and the
+  franchise's honor, rank and balance, with a link to its page.
+- `honor.json`: every achievement has its `recap_period`.
+
 ### 2026-11-16: Franchise page and honor (branch `franchise/prestige`)
 - History → Franchise (`?franchise=`): a header in the team's colors (logo, the motto as a big quote, record,
   honor and its rank, small title banners), then three tabs: **Trophy room** (what honor buys and its prices;

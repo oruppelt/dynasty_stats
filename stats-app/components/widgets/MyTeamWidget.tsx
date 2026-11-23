@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
 import { YourPlayers } from './PlayerParts'
+import { SeasonHonorCard } from './HonorParts'
 import { ErrorState } from './ErrorState'
 import { LeagueData, useLeagueData } from '@/lib/league-data'
 import { formatScore, periodRecap, recapHighlights } from '@/lib/season'
@@ -303,6 +304,8 @@ export function MyTeamWidget({ selectedTeam, onOpenRecap }: {
           detail={`Scored against you: ${ordinal(standing.points_against_rank)} most in the league`}
         />
       </div>
+
+      <SeasonHonorCard team={selectedTeam} season={league.meta.season} />
 
       <YourPlayers team={selectedTeam} />
 

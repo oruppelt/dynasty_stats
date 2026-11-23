@@ -81,6 +81,10 @@ def test_achievements_by_season():
     assert kinds(data, 'Alpha', '2025-26') == ['player_6000']             # 3,500 + 2,000 + 500
     milestone = data['franchises']['Alpha']['seasons'][1]['events'][0]
     assert (milestone['period'], milestone['date']) == (2, '2025-10-26')
+    # The recap that shows it: a milestone its own period; the season's end the last regular period (no
+    # schedule in 2024-25: the last period with results)
+    assert milestone['recap_period'] == 2
+    assert {e['recap_period'] for s in data['franchises']['Bravo']['seasons'] for e in s['events']} == {3}
     assert kinds(data, 'Bravo', '2024-25') == ['bottom_five', 'final', 'season_high']
     assert kinds(data, 'Charlie', '2024-25') == ['bottom_five', 'first_seed']
     # The season in progress: no standings achievements (Delta's 200 and its #1 rank don't count yet)

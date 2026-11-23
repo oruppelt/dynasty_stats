@@ -1,6 +1,8 @@
 import { forwardRef } from 'react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { GameList, RecapHighlights } from './RecapParts'
+import { PeriodHonorCard } from './HonorParts'
+import type { TeamAchievement } from '@/lib/honor'
 import type { LeagueData } from '@/lib/league-data'
 import type { Recap } from '@/lib/season'
 import { periodDates } from '@/lib/schedule'
@@ -11,8 +13,8 @@ export const REPORT_WIDTH = 800
  * A period's recap laid out for the PDF: a fixed width and the light theme, so the file looks the same
  * from a phone or in dark mode. Fixed columns, not breakpoints (those follow the screen, not this box).
  */
-export const RecapReport = forwardRef<HTMLDivElement, { league: LeagueData; period: number; recap: Recap }>(
-  function RecapReport({ league, period, recap }, ref) {
+export const RecapReport = forwardRef<HTMLDivElement, { league: LeagueData; period: number; recap: Recap; honor: TeamAchievement[] }>(
+  function RecapReport({ league, period, recap, honor }, ref) {
     const dates = periodDates(league, period)
     const teams = league.matchups.teams.length
     return (
@@ -24,6 +26,8 @@ export const RecapReport = forwardRef<HTMLDivElement, { league: LeagueData; peri
         </div>
 
         <RecapHighlights recap={recap} className="grid-cols-3" eager />
+
+        <PeriodHonorCard events={honor} plain />
 
         <Card>
           <CardHeader className="pb-3">

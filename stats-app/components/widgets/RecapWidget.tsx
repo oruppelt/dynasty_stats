@@ -9,11 +9,13 @@ import { ErrorState } from './ErrorState'
 import { GameList, RecapHighlights } from './RecapParts'
 import { RecapReport } from './RecapReport'
 import { PeriodPlayersCard } from './PlayerParts'
+import { PeriodHonorCard } from './HonorParts'
 import { LeagueData, PeriodResult, useLeagueData } from '@/lib/league-data'
 import { Game, Recap, periodRecap, resultsByPeriod } from '@/lib/season'
 import { periodDates } from '@/lib/schedule'
 import { savePdf } from '@/lib/pdf'
 import { getUrlParam, setUrlParam } from '@/lib/url'
+import { TeamAchievement, seasonAchievements, useHonor } from '@/lib/honor'
 
 function PeriodPicker({ period, periods, onChange }: {
   period: number;
@@ -83,7 +85,7 @@ function ShareButton({ period }: { period: number }) {
 }
 
 /** The recap as a PDF to download or share. The report is drawn off screen only while the file is made. */
-function PdfButton({ league, period, recap }: { league: LeagueData; period: number; recap: Recap }) {
+function PdfButton({ league, period, recap, honor }: { league: LeagueData; period: number; recap: Recap; honor: TeamAchievement[] }) {
   const [busy, setBusy] = useState(false)
   const report = useRef<HTMLDivElement>(null)
 
@@ -102,7 +104,7 @@ function PdfButton({ league, period, recap }: { league: LeagueData; period: numb
       </Button>
       {busy && createPortal(
         <div aria-hidden className="pointer-events-none fixed top-0 -left-[10000px]">
-          <RecapReport ref={report} league={league} period={period} recap={recap} />
+          <RecapReport ref={report} league={league} period={period} recap={recap} honor={honor} />
         </div>,
         document.body,
       )}
@@ -112,6 +114,8 @@ function PdfButton({ league, period, recap }: { league: LeagueData; period: numb
 
 export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
   const { data: league, isLoading, error } = useLeagueData()
+  const { data: honorData } = useHonor()
+  const seasonHonor = useMemo(() => league ? seasonAchievements(honorData, league.meta.season) : [], [honorData, league])
   const byPeriod = useMemo(() => league ? resultsByPeriod(league.results) : new Map<number, PeriodResult[]>(), [league])
   // null: follow the latest period, also after the data refreshes. A ?period= link picks one.
   const [picked, setPicked] = useState<number | null>(() => Number(getUrlParam('period')) || null)
@@ -130,6 +134,9 @@ export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
   if (!rows) return <ErrorState />
 
   const recap = periodRecap(rows)
+  // Honor earned this period (none: no card); the viewer's own first
+  const honor = seasonHonor.filter(e => e.recap_period === period)
+  honor.sort((a, b) => Number(b.team === selectedTeam) - Number(a.team === selectedTeam))
   const isMine = (g: Game) => g.winner.team === selectedTeam || g.loser.team === selectedTeam
   // The viewer's own game goes first
   const games = [...recap.games.filter(isMine), ...recap.games.filter(g => !isMine(g))]
@@ -149,12 +156,14 @@ export function RecapWidget({ selectedTeam }: { selectedTeam: string }) {
           <div className="flex flex-wrap items-center gap-2">
             <PeriodPicker period={period} periods={periods} onChange={pick} />
             <ShareButton period={period} />
-            <PdfButton league={league} period={period} recap={recap} />
+            <PdfButton league={league} period={period} recap={recap} honor={honor} />
           </div>
         </CardHeader>
       </Card>
 
       <RecapHighlights recap={recap} className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" />
+
+      <PeriodHonorCard events={honor} />
 
       <PeriodPlayersCard period={period} selectedTeam={selectedTeam} />
 

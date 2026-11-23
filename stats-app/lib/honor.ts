@@ -27,6 +27,8 @@ export interface Achievement {
   /** player milestones (with `period`) */
   player_id?: string
   player?: string
+  /** The period recap it shows up in: a milestone its own period, the rest the regular season's last */
+  recap_period?: number | null
 }
 
 export interface HonorSeason {
@@ -129,3 +131,28 @@ export function useHonor() {
 
 /** +15, −10 */
 export const signed = (n: number) => (n > 0 ? `+${n}` : n < 0 ? `−${-n}` : '0')
+
+/** One achievement with its franchise */
+export type TeamAchievement = Achievement & { team: string }
+
+/** A season's achievements, every franchise, biggest first (empty while honor.json is loading) */
+export function seasonAchievements(data: Honor | undefined, season: string): TeamAchievement[] {
+  if (!data) return []
+  return Object.entries(data.franchises)
+    .flatMap(([team, f]) => (f.seasons.find(s => s.season === season)?.events ?? []).map(e => ({ ...e, team })))
+    .sort((a, b) => b.points - a.points || a.team.localeCompare(b.team))
+}
+
+/** An achievement as a line under the team's name */
+export function achievementLine(e: Achievement): string {
+  switch (e.kind) {
+    case 'title': return `Won the title${e.opponent ? `, beating the ${e.opponent}` : ''}${e.series ? ` ${e.series}` : ''}`
+    case 'final': return `Reached the final${e.opponent ? `, lost to the ${e.opponent}` : ''}${e.series ? ` ${e.series}` : ''}`
+    case 'first_seed': return 'Finished the regular season first'
+    case 'season_high': return `The season's highest score: ${e.score?.toFixed(2)}${e.period ? ` in period ${e.period}` : ''}`
+    case 'season_low': return `The fewest points of the regular season: ${Math.round(e.score ?? 0).toLocaleString('en-US')}`
+    case 'bottom_five': return `Finished ${e.rank === e.of ? 'last' : `${e.rank} of ${e.of}`} in the regular season`
+    case 'player_6000': return 'passed 6,000 points for the franchise'
+    case 'player_17000': return 'passed 17,000 points for the franchise'
+  }
+}
