@@ -298,6 +298,18 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-24: Rivalry page (branch `rivalry/history`)
+- History → **Rivalry** (`?rivals=<team>,<team>`), replacing Matchups → Rivalry: two franchises over every season.
+  A header in both teams' colors (all-time record, playoffs, streak, last meeting, team pickers), storylines
+  worked out from the data (one-way traffic, a streak, playoff series, the rivalry's top scorer, who won their
+  trades, players who played for both), a timeline of every meeting (playoffs in gold, record games tagged) and
+  trade (with links to the trade page), the rivalry's records, its players (top scorers in their games, best
+  game, played for both), the trades' balance, and this season's comparison and score chart.
+- My Team: a **Next: <opponent>** card under the latest period (record over every season, last meeting, two
+  storylines, a Rivalry button); the opponents in Up next open the rivalry too.
+- History → Franchises renamed **All-time table** (next to Franchise, the one team's page).
+- `pipeline/rivalry.py` writes `data/rivalries/<team>.json`.
+
 ### 2026-11-23: Honor in the Recap and on My Team (branch `honor/recap`)
 - Recap: an **Honor this period** card under the highlights, only when honor was earned that period
   (players passing 6,000 / 17,000 for their franchise). The regular season's last period also carries what the
