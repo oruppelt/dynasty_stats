@@ -29,7 +29,7 @@ const ordinal = (n: number) => `${n}${['th', 'st', 'nd', 'rd'][n % 100 >= 11 && 
 const SHORT = (season: string) => season.slice(2) // 2024-25 → 24-25
 
 /** The team's two colors and the text on the first */
-function teamColors(team: string) {
+export function teamColors(team: string) {
   const { primary, secondary } = getTeamColor(team)
   const second = /^#[0-9a-f]{6}$/i.test(secondary) && secondary.toLowerCase() !== primary.toLowerCase() ? secondary : primary
   return { primary, secondary: second, fg: textOn(primary) }

@@ -63,6 +63,7 @@ import lineage
 import players
 from alltime import compute_alltime
 import honor
+import rivalry
 from league_data import compute_league, load_games, sheet_csv_url
 
 SEASONS_CONFIG = Path(__file__).resolve().parent / 'seasons.json'
@@ -217,16 +218,15 @@ def write_alltime(config: dict, out: Path) -> None:
         path.write_text(data)
 
 
-def write_honor(config: dict, out: Path) -> None:
-    """data/honor.json (honor.py): each franchise's achievements and honor by season, its rewards, legends,
-    highlights and rivals; from the season files, data/alltime.json, the player cache (lineup points by
-    period, regular season and playoffs) and pipeline/data/honor_rewards.json. Reward rows that don't pass are reported, not written."""
-    path = out / 'alltime.json'
-    if not path.exists():
-        return
-    alltime = json.loads(path.read_text())
-    files = {s['id']: json.loads(season_path(out, s['id']).read_text())
-             for s in config['seasons'] if season_path(out, s['id']).exists()}
+def _season_files(config: dict, out: Path) -> dict[str, dict]:
+    """Every season file there is, by season."""
+    return {s['id']: json.loads(season_path(out, s['id']).read_text())
+            for s in config['seasons'] if season_path(out, s['id']).exists()}
+
+
+def _lineups(config: dict, out: Path) -> pd.DataFrame:
+    """Lineup points from the player cache: one row per season, period, team and player in a lineup (season,
+    period, team, player_id, player, points, starts = 1), regular season and playoffs; empty without player data."""
     frames = []
     for s in config['seasons']:
         meta_path = out / 'players' / f'{s["id"]}.json'
@@ -238,8 +238,40 @@ def write_honor(config: dict, out: Path) -> None:
         rows = rows[(rows['status'] == 'active') & rows['period'].isin(periods)]
         frames.append(rows[['period', 'team', 'player_id', 'player']]
                       .assign(points=rows['fpts'], starts=1, season=s['id']))
-    points = (pd.concat(frames, ignore_index=True) if frames
-              else pd.DataFrame(columns=['season', 'period', 'team', 'player_id', 'player', 'points', 'starts']))
+    return (pd.concat(frames, ignore_index=True) if frames
+            else pd.DataFrame(columns=['season', 'period', 'team', 'player_id', 'player', 'points', 'starts']))
+
+
+def write_rivalries(config: dict, out: Path) -> None:
+    """data/rivalries/<slug>.json (rivalry.py): each team's rivalry with every other, over every season; from the
+    season files, data/players/trades.json and the player cache. Files of teams no longer in the data are removed."""
+    files = _season_files(config, out)
+    if not files:
+        return
+    trades_path = out / 'players' / 'trades.json'
+    trades = json.loads(trades_path.read_text()) if trades_path.exists() else {}
+    folder = out / 'rivalries'
+    folder.mkdir(parents=True, exist_ok=True)
+    written = set()
+    for team, data in rivalry.compute_rivalries(files, trades, _lineups(config, out)).items():
+        path = folder / f'{rivalry.slug(team)}.json'
+        _write_if_changed(path, to_json(data))
+        written.add(path.name)
+    for stale in folder.glob('*.json'):
+        if stale.name not in written:
+            stale.unlink()
+
+
+def write_honor(config: dict, out: Path) -> None:
+    """data/honor.json (honor.py): each franchise's achievements and honor by season, its rewards, legends,
+    highlights and rivals; from the season files, data/alltime.json, the player cache (lineup points by
+    period, regular season and playoffs) and pipeline/data/honor_rewards.json. Reward rows that don't pass are reported, not written."""
+    path = out / 'alltime.json'
+    if not path.exists():
+        return
+    alltime = json.loads(path.read_text())
+    files = _season_files(config, out)
+    points = _lineups(config, out)
     data, problems = honor.compute_honor(alltime, files, points, honor.read_rewards())
     for problem in problems:
         print(f'Honor: {problem}; left out.', file=sys.stderr)
@@ -304,6 +336,7 @@ def main() -> None:
     if not args.no_players and not args.source:
         write_players_alltime(config, args.out)
     write_honor(config, args.out)
+    write_rivalries(config, args.out)
     if failed:
         sys.exit(f'Failed: {", ".join(failed)}')
 

@@ -6,6 +6,8 @@ import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
 import { YourPlayers } from './PlayerParts'
 import { SeasonHonorCard } from './HonorParts'
+import { NextRivalCard } from './RivalryPage'
+import { useSelectedRivalry } from '@/lib/selected-rivalry'
 import { ErrorState } from './ErrorState'
 import { LeagueData, useLeagueData } from '@/lib/league-data'
 import { formatScore, periodRecap, recapHighlights } from '@/lib/season'
@@ -130,6 +132,7 @@ function UpNext({ league, team, games, standings }: {
   standings: Standing[];
 }) {
   const allPlay = league.matchups.all_play.find(r => r.Team === team)
+  const openRivalry = useSelectedRivalry(state => state.openRivalry)
 
   return (
     <Card>
@@ -155,7 +158,10 @@ function UpNext({ league, team, games, standings }: {
                   <>
                     <TeamLogo teamName={g.opponent} size={28} className="shrink-0" />
                     <div className="min-w-0 flex-1">
-                      <div className="truncate font-semibold">{g.opponent}</div>
+                      <button type="button" onClick={() => openRivalry(team, g.opponent as string)} title="The rivalry"
+                              className="block max-w-full truncate text-left font-semibold underline-offset-2 hover:underline focus:outline-hidden focus-visible:underline">
+                        {g.opponent}
+                      </button>
                       {opponent && (
                         <div className="truncate text-sm text-muted-foreground">
                           {formatRecord(opponent.wins, opponent.losses)} · {ordinal(opponent.rank)}
@@ -256,6 +262,7 @@ export function MyTeamWidget({ selectedTeam, onOpenRecap }: {
   const easiest = opponents.slice(0, OPPONENTS_SHOWN)
   const toughest = opponents.slice(-OPPONENTS_SHOWN).reverse()
   const upcoming = upcomingGames(league, selectedTeam, UPCOMING_SHOWN)
+  const nextRival = upcoming.find(g => g.opponent)
 
   return (
     <div className="w-full space-y-4">
@@ -276,7 +283,16 @@ export function MyTeamWidget({ selectedTeam, onOpenRecap }: {
       </Card>
 
       <div className={cn('grid grid-cols-1 items-start gap-4', upcoming.length > 0 && 'lg:grid-cols-2')}>
-        <LatestPeriod league={league} team={selectedTeam} onOpenRecap={onOpenRecap} />
+        <div className="space-y-4">
+          <LatestPeriod league={league} team={selectedTeam} onOpenRecap={onOpenRecap} />
+          {nextRival?.opponent && (
+            <NextRivalCard
+              team={selectedTeam}
+              opponent={nextRival.opponent}
+              when={`Period ${nextRival.period}${periodDates(league, nextRival.period) ? ` · ${periodDates(league, nextRival.period)}` : ''}${nextRival.now ? ' · playing now' : ''}`}
+            />
+          )}
+        </div>
         {upcoming.length > 0 && <UpNext league={league} team={selectedTeam} games={upcoming} standings={standings} />}
       </div>
 
