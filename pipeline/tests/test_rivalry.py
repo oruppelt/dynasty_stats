@@ -105,6 +105,7 @@ def test_players():
     assert p['best_game'] == {'side': 'opponent', 'player_id': 'p2', 'player': 'P2', 'points': 60.0,
                               'season': '2024-25', 'period': 1}
     assert p['both'] == [{'player_id': 'p2', 'player': 'P2', 'team_points': 20.0, 'opponent_points': 60.0}]
+    assert p['both_count'] == 1
 
 
 def test_slug():

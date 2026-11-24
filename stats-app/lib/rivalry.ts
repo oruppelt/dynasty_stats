@@ -86,6 +86,8 @@ export interface Rivalry {
     best_game: { side: Side; player_id: string; player: string; points: number; season: string; period: number } | null
     /** Scored for both franchises (any time) */
     both: { player_id: string; player: string; team_points: number; opponent_points: number }[]
+    /** How many scored for both (`both` has the top 10) */
+    both_count?: number
   }
 }
 
