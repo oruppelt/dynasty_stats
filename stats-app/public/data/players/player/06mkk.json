@@ -114,6 +114,24 @@
   ],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "New York Knicks",
+      "label": "2024 round 2 pick, no. 8",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "New York Knicks",
+      "team": "Boston Celtics",
+      "trade": "46b3rvz8lxz156yq",
+      "label": "2024 round 2 pick, no. 8"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -122,6 +140,8 @@
       "round": 2,
       "pick": 8,
       "overall": 38,
+      "original": "New York Knicks",
+      "certain": true,
       "periods": 44,
       "starts": 35,
       "gp": 58,
@@ -167,6 +187,91 @@
     }
   ],
   "trades": {
+    "46b3rvz8lxz156yq": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "label": "2026 round 2 pick (Boston Celtics)",
+          "became": {
+            "season": "2026-27",
+            "round": 2,
+            "pick": 13,
+            "overall": 43,
+            "player_id": "076tt",
+            "player": "Ugonna Onyenso",
+            "certain": true
+          },
+          "next": {
+            "trade": "rwavofofmhyybw3d"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Portland Trail Blazers"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Boston Celtics",
+          "to": "New York Knicks",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "label": "2024 round 2 pick, no. 14",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 14,
+            "overall": 44,
+            "player_id": "06mlw",
+            "player": "Enrique Freeman",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 4,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "chb5mtn3m33d71lg"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "New York Knicks",
+          "to": "Boston Celtics",
+          "label": "2024 round 2 pick, no. 8",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 8,
+            "overall": 38,
+            "player_id": "06mkk",
+            "player": "Ryan Dunn",
+            "certain": true
+          },
+          "result": {
+            "points": 1128.75,
+            "starts": 35,
+            "gp": 58,
+            "periods": 44,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "yqdm26wgmih99jx3"
+          }
+        }
+      ]
+    },
     "yqdm26wgmih99jx3": {
       "date": "2025-11-27",
       "season": "2025-26",
@@ -309,6 +414,16 @@
     }
   },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,

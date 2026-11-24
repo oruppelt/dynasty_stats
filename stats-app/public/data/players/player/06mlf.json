@@ -35,6 +35,104 @@
   "best_periods": [],
   "timeline": [
     {
+      "kind": "pick",
+      "season": "2022-23",
+      "period": 1,
+      "team": "Cleveland Cavaliers",
+      "label": "2024 round 2 pick (Cleveland Cavaliers)",
+      "date": null
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 1,
+      "date": "2022-07-27",
+      "from": "Cleveland Cavaliers",
+      "team": "Washington Wizards",
+      "trade": "duakokx5l63zce1u",
+      "label": "2024 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 3,
+      "date": "2022-10-27",
+      "from": "Washington Wizards",
+      "team": "Cleveland Cavaliers",
+      "trade": "otcznyo1l9qx8rg5",
+      "label": "2024 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 4,
+      "date": "2022-10-28",
+      "from": "Cleveland Cavaliers",
+      "team": "Detroit Pistons",
+      "trade": "gl4810izl9s7wcsd",
+      "label": "2024 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2022-23",
+      "period": 29,
+      "date": "2023-01-26",
+      "from": "Detroit Pistons",
+      "team": "Sacramento Kings",
+      "trade": "jvet5461ldd2yw41",
+      "label": "2024 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-06-26",
+      "from": "Sacramento Kings",
+      "team": "Detroit Pistons",
+      "trade": "pxto19a2ljd8w62x",
+      "label": "2024 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 1,
+      "date": "2023-10-24",
+      "from": "Detroit Pistons",
+      "team": "Boston Celtics",
+      "trade": "8zyfkpkglo4cnvz0",
+      "label": "2024 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 11,
+      "date": "2023-11-27",
+      "from": "Boston Celtics",
+      "team": "Atlanta Hawks",
+      "trade": "k0n8u96ulph7peqp",
+      "label": "2024 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2023-24",
+      "period": 17,
+      "date": "2023-12-21",
+      "from": "Atlanta Hawks",
+      "team": "San Antonio Spurs",
+      "trade": "scg1j8dflqf7huhq",
+      "label": "2024 round 2 pick (Cleveland Cavaliers)"
+    },
+    {
+      "kind": "pick-trade",
+      "season": "2024-25",
+      "period": 1,
+      "date": "2024-06-28",
+      "from": "San Antonio Spurs",
+      "team": "Phoenix Suns",
+      "trade": "k1m6hr4jlxywuc01",
+      "label": "2024 round 2 pick, no. 9"
+    },
+    {
       "kind": "draft",
       "season": "2024-25",
       "period": 0,
@@ -43,6 +141,8 @@
       "round": 2,
       "pick": 9,
       "overall": 39,
+      "original": "Cleveland Cavaliers",
+      "certain": false,
       "periods": 66,
       "starts": 0,
       "gp": 0,
@@ -58,8 +158,753 @@
       "team": "Phoenix Suns"
     }
   ],
-  "trades": {},
+  "trades": {
+    "duakokx5l63zce1u": {
+      "date": "2022-07-27",
+      "season": "2022-23",
+      "period": 1,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "04xgj",
+          "player": "Kendrick Nunn",
+          "label": "Kendrick Nunn",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-07-31"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06mlf",
+            "player": "Tyler Smith",
+            "certain": false
+          },
+          "next": {
+            "trade": "otcznyo1l9qx8rg5"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "label": "$5 budget"
+        }
+      ]
+    },
+    "otcznyo1l9qx8rg5": {
+      "date": "2022-10-27",
+      "season": "2022-23",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "0621j",
+          "player": "Malaki Branham",
+          "label": "Malaki Branham",
+          "result": {
+            "points": 369.25,
+            "starts": 17,
+            "gp": 23,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "q6vs663flobpq0e5"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "0621p",
+          "player": "Wendell Moore",
+          "label": "Wendell Moore",
+          "result": {
+            "points": 0.0,
+            "starts": 1,
+            "gp": 0,
+            "periods": 2,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "apzneezol9yatn6q"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Washington Wizards",
+          "player_id": "059ca",
+          "player": "Oshae Brissett",
+          "label": "Oshae Brissett",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2022-10-27"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "05ujh",
+          "player": "Greg Brown",
+          "label": "Greg Brown",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "gl4810izl9s7wcsd"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "051oo",
+          "player": "Jaxson Hayes",
+          "label": "Jaxson Hayes",
+          "result": {
+            "points": 30.25,
+            "starts": 3,
+            "gp": 2,
+            "periods": 30,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "player_id": "04jwd",
+          "player": "Royce O'Neale",
+          "label": "Royce O'Neale",
+          "result": {
+            "points": 1331.5,
+            "starts": 28,
+            "gp": 46,
+            "periods": 30,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2023-05-06"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Washington Wizards",
+          "to": "Cleveland Cavaliers",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06mlf",
+            "player": "Tyler Smith",
+            "certain": false
+          },
+          "next": {
+            "trade": "gl4810izl9s7wcsd"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
+        }
+      ]
+    },
+    "gl4810izl9s7wcsd": {
+      "date": "2022-10-28",
+      "season": "2022-23",
+      "period": 4,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "05ujh",
+          "player": "Greg Brown",
+          "label": "Greg Brown",
+          "result": {
+            "points": 10.0,
+            "starts": 7,
+            "gp": 2,
+            "periods": 26,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0cpp4tktldd5fyqm"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 273.5,
+            "starts": 15,
+            "gp": 21,
+            "periods": 30,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "8zyfkpkglo4cnvz0"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Cleveland Cavaliers",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06mlf",
+            "player": "Tyler Smith",
+            "certain": false
+          },
+          "next": {
+            "trade": "jvet5461ldd2yw41"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Detroit Pistons",
+          "to": "Cleveland Cavaliers",
+          "label": "$15 budget"
+        }
+      ]
+    },
+    "jvet5461ldd2yw41": {
+      "date": "2023-01-26",
+      "season": "2022-23",
+      "period": 30,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "player_id": "05uig",
+          "player": "Josh Giddey",
+          "label": "Josh Giddey",
+          "result": {
+            "points": 1683.25,
+            "starts": 33,
+            "gp": 56,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06mlf",
+            "player": "Tyler Smith",
+            "certain": false
+          },
+          "next": {
+            "trade": "pxto19a2ljd8w62x"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
+        },
+        {
+          "kind": "budget",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "label": "$20 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "player_id": "027pf",
+          "player": "Cory Joseph",
+          "label": "Cory Joseph",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 0,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "0cpp4tktldd5fyqm"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "player_id": "05uif",
+          "player": "Jalen Suggs",
+          "label": "Jalen Suggs",
+          "result": {
+            "points": 1277.0,
+            "starts": 29,
+            "gp": 47,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-07-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2024 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2024-25",
+            "round": 1,
+            "pick": 29,
+            "overall": 29,
+            "player_id": "06mlm",
+            "player": "Oso Ighodaro",
+            "certain": true
+          },
+          "result": {
+            "points": 910.75,
+            "starts": 28,
+            "gp": 47,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "vogevc0fmvf1khtl"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2023 round 1 pick (Sacramento Kings)",
+          "became": {
+            "season": "2023-24",
+            "round": 1,
+            "pick": 25,
+            "overall": 25,
+            "player_id": "06cc9",
+            "player": "Olivier-Maxence Prosper",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 2,
+            "gp": 1,
+            "periods": 36,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "e3rmgazym32x5n22"
+          }
+        }
+      ]
+    },
+    "pxto19a2ljd8w62x": {
+      "date": "2023-06-26",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Sacramento Kings",
+          "label": "2023 round 2 pick, no. 5",
+          "became": {
+            "season": "2023-24",
+            "round": 2,
+            "pick": 5,
+            "overall": 35,
+            "player_id": "06ca3",
+            "player": "Julian Strawther",
+            "certain": true
+          },
+          "next": {
+            "trade": "4odq53ngljd9v0pc"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Philadelphia 76ers"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06mlf",
+            "player": "Tyler Smith",
+            "certain": false
+          },
+          "next": {
+            "trade": "8zyfkpkglo4cnvz0"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Sacramento Kings",
+          "to": "Detroit Pistons",
+          "label": "2025 round 2 pick (Sacramento Kings)",
+          "became": {
+            "season": "2025-26",
+            "round": 2,
+            "pick": 20,
+            "overall": 50,
+            "player_id": "06vy0",
+            "player": "Eli John Ndiaye",
+            "certain": true
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 33,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "vogevc0fmvf1khtl"
+          }
+        }
+      ]
+    },
+    "8zyfkpkglo4cnvz0": {
+      "date": "2023-10-24",
+      "season": "2023-24",
+      "period": 1,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Boston Celtics",
+          "to": "Detroit Pistons",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 10,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "k0n8u96ulph7peqp"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "player_id": "0622g",
+          "player": "JD Davison",
+          "label": "JD Davison",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 32,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2024-06-26"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Detroit Pistons",
+          "to": "Boston Celtics",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06mlf",
+            "player": "Tyler Smith",
+            "certain": false
+          },
+          "next": {
+            "trade": "k0n8u96ulph7peqp"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
+        }
+      ]
+    },
+    "k0n8u96ulph7peqp": {
+      "date": "2023-11-27",
+      "season": "2023-24",
+      "period": 11,
+      "items": [
+        {
+          "kind": "budget",
+          "from": "Atlanta Hawks",
+          "to": "Boston Celtics",
+          "label": "$5 budget"
+        },
+        {
+          "kind": "player",
+          "from": "Boston Celtics",
+          "to": "Atlanta Hawks",
+          "player_id": "0622z",
+          "player": "Orlando Robinson",
+          "label": "Orlando Robinson",
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 2,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "18v4rya5lpr3wy1m"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Boston Celtics",
+          "to": "Atlanta Hawks",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06mlf",
+            "player": "Tyler Smith",
+            "certain": false
+          },
+          "next": {
+            "trade": "scg1j8dflqf7huhq"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
+        }
+      ]
+    },
+    "scg1j8dflqf7huhq": {
+      "date": "2023-12-21",
+      "season": "2023-24",
+      "period": 18,
+      "items": [
+        {
+          "kind": "player",
+          "from": "Atlanta Hawks",
+          "to": "San Antonio Spurs",
+          "player_id": "04ewk",
+          "player": "John Collins",
+          "label": "John Collins",
+          "result": {
+            "points": 754.0,
+            "starts": 15,
+            "gp": 24,
+            "periods": 15,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "gxuld3d3lzh814pk"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 2 pick (Houston Rockets)"
+        },
+        {
+          "kind": "pick",
+          "from": "Atlanta Hawks",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 2 pick (Cleveland Cavaliers)",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06mlf",
+            "player": "Tyler Smith",
+            "certain": false
+          },
+          "next": {
+            "trade": "k1m6hr4jlxywuc01"
+          },
+          "result": {
+            "traded_on": true,
+            "drafted_by": "Phoenix Suns"
+          }
+        },
+        {
+          "kind": "player",
+          "from": "San Antonio Spurs",
+          "to": "Atlanta Hawks",
+          "player_id": "051p9",
+          "player": "Keldon Johnson",
+          "label": "Keldon Johnson",
+          "result": {
+            "points": 1578.75,
+            "starts": 38,
+            "gp": 61,
+            "periods": 43,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "sq7it0uxm6e3ev52"
+          }
+        }
+      ]
+    },
+    "k1m6hr4jlxywuc01": {
+      "date": "2024-06-28",
+      "season": "2024-25",
+      "period": 1,
+      "items": [
+        {
+          "kind": "pick",
+          "from": "Phoenix Suns",
+          "to": "San Antonio Spurs",
+          "label": "2024 round 2 pick, no. 7",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 7,
+            "overall": 37,
+            "player_id": "06mly",
+            "player": "Quinten Post",
+            "certain": false
+          },
+          "result": {
+            "points": 179.0,
+            "starts": 4,
+            "gp": 8,
+            "periods": 43,
+            "ongoing": false
+          },
+          "next": {
+            "trade": "rynj81s7midkgo4r"
+          }
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 26"
+        },
+        {
+          "kind": "pick",
+          "from": "San Antonio Spurs",
+          "to": "Phoenix Suns",
+          "label": "2024 round 2 pick, no. 9",
+          "became": {
+            "season": "2024-25",
+            "round": 2,
+            "pick": 9,
+            "overall": 39,
+            "player_id": "06mlf",
+            "player": "Tyler Smith",
+            "certain": false
+          },
+          "result": {
+            "points": 0.0,
+            "starts": 0,
+            "gp": 0,
+            "periods": 66,
+            "ongoing": false
+          },
+          "next": {
+            "dropped": "2026-07-03"
+          }
+        }
+      ]
+    }
+  },
   "axis": [
+    {
+      "season": "2022-23",
+      "length": 48,
+      "playoffs_from": 34
+    },
+    {
+      "season": "2023-24",
+      "length": 45,
+      "playoffs_from": 33
+    },
     {
       "season": "2024-25",
       "length": 45,
