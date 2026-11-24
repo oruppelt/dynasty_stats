@@ -181,7 +181,7 @@ export function stories(a: string, b: string, r: Rivalry): Story[] {
   }
   if (r.players.both[0]) {
     const p = r.players.both[0]
-    const n = r.players.both.length
+    const n = r.players.both_count ?? r.players.both.length
     out.push({ icon: Repeat, title: n > 1 ? `${n} played for both` : 'Played for both', text: <><PlayerName id={p.player_id} name={p.player} className="inline font-semibold" /> scored {formatPoints(p.team_points)} for {a} and {formatPoints(p.opponent_points)} for {b}{n > 1 ? `, the most of the ${n}` : ''}.</> })
   }
   if (!total) out.push({ icon: Swords, title: 'Never met', text: <>{a} and {b} haven&apos;t played each other yet.</> })
@@ -418,7 +418,12 @@ function Players({ a, b, r }: { a: string; b: string; r: Rivalry }) {
         )}
         {both.length > 0 && (
           <div>
-            <div className="mb-1 text-sm font-semibold">Played for both</div>
+            <div className="mb-1 text-sm font-semibold">
+              Played for both
+              {(r.players.both_count ?? 0) > both.length && (
+                <span className="font-normal text-muted-foreground"> · top {both.length} of {r.players.both_count}</span>
+              )}
+            </div>
             <ul className="space-y-1">
               {both.map(p => (
                 <li key={p.player_id} className="flex items-baseline gap-2 text-sm">

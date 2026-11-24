@@ -9,7 +9,7 @@ data/rivalries/<slug>.json, with its rivalry against every other team, from that
 - the trades between the two (`trades.json`, items that went from one to the other), with the points the
   players each side got went on to score for it, so who came out ahead;
 - players: who scored the most in their games for each side (lineup points in the periods they met), the best
-  game by a player, and the players who scored for both franchises.
+  game by a player, and the players who scored for both franchises (the top 10, and how many in all).
 
 Like the rest of the site, a franchise is its team name.
 """
@@ -130,7 +130,7 @@ def _trades(trades: dict[str, dict], a: str, b: str) -> list[dict]:
 def _players(meetings: list[dict], lineups: pd.DataFrame, a: str, b: str) -> dict:
     """Who scored in their games (lineup points in the periods they met, each side), the best game by a player,
     and the players who scored for both franchises (any time)."""
-    out = {'team': [], 'opponent': [], 'best_game': None, 'both': []}
+    out = {'team': [], 'opponent': [], 'best_game': None, 'both': [], 'both_count': 0}
     if not len(lineups):
         return out
     met = pd.DataFrame([{'season': m['season'], 'period': m['period']} for m in meetings]).drop_duplicates() \
@@ -156,6 +156,7 @@ def _players(meetings: list[dict], lineups: pd.DataFrame, a: str, b: str) -> dic
     by = by.reset_index().pivot_table(index='player_id', columns='team', values='points', aggfunc='sum')
     if a in by and b in by:
         both = by.dropna(subset=[a, b])
+        out['both_count'] = len(both)                # `both` lists the top BOTH_PLAYERS only
         names = lineups.drop_duplicates('player_id', keep='last').set_index('player_id')['player']
         rows = sorted(((pid, r[a], r[b]) for pid, r in both.iterrows()), key=lambda x: -(x[1] + x[2]))[:BOTH_PLAYERS]
         out['both'] = [{'player_id': pid, 'player': names[pid], 'team_points': round(float(pa), 2),
