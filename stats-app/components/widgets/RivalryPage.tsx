@@ -58,12 +58,18 @@ function TeamSide({ team, align }: { team: string; align: 'left' | 'right' }) {
   )
 }
 
+/** The record over every meeting, regular season and playoffs together */
+export function allTime(r: Rivalry) {
+  return { wins: r.wins + r.playoff_wins, losses: r.losses + r.playoff_losses, games: r.games + r.playoff_games }
+}
+
 function Hero({ a, b, r, teams, onPick }: {
   a: string; b: string; r: Rivalry; teams: string[]; onPick: (a: string, b: string) => void
 }) {
   const ca = teamColors(a)
   const cb = teamColors(b)
-  const leader = r.wins > r.losses ? a : r.losses > r.wins ? b : null
+  const total = allTime(r)
+  const leader = total.wins > total.losses ? a : total.losses > total.wins ? b : null
   const streakTeam = r.streak ? who(r.streak.side, a, b) : null
   const last = r.meetings[r.meetings.length - 1]
   const pick = (side: 'a' | 'b', team: string) => {
@@ -82,11 +88,9 @@ function Hero({ a, b, r, teams, onPick }: {
         <div className="rounded-xl bg-black/35 px-3 py-3 text-center backdrop-blur-sm sm:px-6">
           <div className="text-[10px] font-semibold uppercase tracking-widest opacity-80 sm:text-xs">All-time</div>
           <div className="text-4xl font-black tabular-nums leading-none sm:text-6xl">
-            {formatCount(r.wins)}<span className="mx-1 opacity-60">–</span>{formatCount(r.losses)}
+            {formatCount(total.wins)}<span className="mx-1 opacity-60">–</span>{formatCount(total.losses)}
           </div>
-          <div className="mt-1 text-xs opacity-90 sm:text-sm">
-            {r.games ? 'regular season' : 'never met'}
-          </div>
+          {!total.games && <div className="mt-1 text-xs opacity-90 sm:text-sm">never met</div>}
           {r.playoff_games > 0 && (
             <div className="mt-1.5 rounded-md bg-amber-400/20 px-2 py-0.5 text-xs font-semibold text-amber-200 sm:text-sm">
               Playoffs {formatRecord(r.playoff_wins, r.playoff_losses)}
@@ -97,7 +101,7 @@ function Hero({ a, b, r, teams, onPick }: {
       </div>
       <div className="relative flex flex-wrap items-center justify-center gap-x-4 gap-y-1 bg-black/40 px-4 py-2 text-center text-xs sm:text-sm">
         {leader && <span><span className="font-semibold">{teamCode(leader)}</span> leads the series</span>}
-        {!leader && r.games > 0 && <span>Dead even</span>}
+        {!leader && total.games > 0 && <span>Dead even</span>}
         {r.streak && streakTeam && (
           <span className="inline-flex items-center gap-1">
             <Flame className="h-3.5 w-3.5 text-amber-300" />
@@ -134,15 +138,16 @@ interface Story { icon: typeof Flame; title: string; text: ReactNode; tone?: 'go
 export function stories(a: string, b: string, r: Rivalry): Story[] {
   const out: Story[] = []
   const name = (side: Side | null | undefined) => who(side, a, b) ?? ''
-  const total = r.games + r.playoff_games
-  // One side's dominance
-  if (r.games >= 4) {
-    const share = r.wins / r.games
+  const all = allTime(r)
+  const total = all.games
+  // One side's dominance, over every meeting (playoffs too)
+  if (total >= 4) {
+    const share = all.wins / total
     if (share >= 0.7 || share <= 0.3) {
       const top = share >= 0.7 ? a : b
-      out.push({ icon: Swords, title: 'One-way traffic', text: <>{top} has won {Math.round(Math.max(share, 1 - share) * 100)}% of their regular-season games.</> })
-    } else if (Math.abs(r.wins - r.losses) <= 1) {
-      out.push({ icon: Swords, title: 'Neck and neck', text: <>{formatRecord(r.wins, r.losses)} after {r.games} regular-season games.</> })
+      out.push({ icon: Swords, title: 'One-way traffic', text: <>{top} has won {Math.round(Math.max(share, 1 - share) * 100)}% of their {total} meetings.</> })
+    } else if (Math.abs(all.wins - all.losses) <= 1) {
+      out.push({ icon: Swords, title: 'Neck and neck', text: <>{formatRecord(all.wins, all.losses)} after {total} meetings.</> })
     }
   }
   if (r.streak && r.streak.length >= 3) {
@@ -526,7 +531,8 @@ export function NextRivalCard({ team, opponent, when }: { team: string; opponent
   const r = data?.opponents[opponent]
   if (!r) return null
   const last = r.meetings[r.meetings.length - 1]
-  const lead = r.wins > r.losses ? 'You lead' : r.wins < r.losses ? 'You trail' : 'Even'
+  const total = allTime(r)
+  const lead = total.wins > total.losses ? 'You lead' : total.wins < total.losses ? 'You trail' : 'Even'
   const shown = stories(team, opponent, r).filter(s => s.title !== 'Never met').slice(0, 2)
   return (
     <Card>
@@ -544,10 +550,10 @@ export function NextRivalCard({ team, opponent, when }: { team: string; opponent
           <TeamLogo teamName={opponent} size={40} className="shrink-0" />
           <div className="min-w-0">
             <div className="text-2xl font-bold tabular-nums">
-              {r.games + r.playoff_games ? formatRecord(r.wins + r.playoff_wins, r.losses + r.playoff_losses) : 'First meeting'}
+              {total.games ? formatRecord(total.wins, total.losses) : 'First meeting'}
             </div>
             <div className="text-sm text-muted-foreground">
-              {r.games + r.playoff_games ? <>{lead} all-time{r.playoff_games ? ` (${formatRecord(r.playoff_wins, r.playoff_losses)} in the playoffs)` : ''}</> : 'They have never played each other'}
+              {total.games ? <>{lead} all-time{r.playoff_games ? ` (${formatRecord(r.playoff_wins, r.playoff_losses)} in the playoffs)` : ''}</> : 'They have never played each other'}
               {last && <>. Last met {at(last)}: {last.win === 1 ? 'won' : last.win === 0 ? 'lost' : 'tied'} {formatScore(last.score)}–{formatScore(last.opp_score)}</>}
             </div>
           </div>
