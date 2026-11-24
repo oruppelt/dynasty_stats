@@ -1,13 +1,12 @@
-import { useMemo, useState } from 'react'
-import { ArrowLeftRight } from 'lucide-react'
+import { useMemo } from 'react'
 import { Line, LineCustomSvgLayerProps } from '@nivo/line'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { TeamLogo } from './TeamLogo'
 import { ErrorState } from './ErrorState'
 import { LeagueData, useLeagueData } from '@/lib/league-data'
 import { formatScore } from '@/lib/season'
+import { periodDates, upcomingGames } from '@/lib/schedule'
 import { Standing, computeStandings, formatLuck, formatPct, formatRecord, ordinal } from '@/lib/standings'
 import { useChartTheme } from '@/lib/chart-theme'
 import { teamLineColor } from '@/lib/nba-team-colors'
@@ -20,7 +19,7 @@ const cell = (league: LeagueData, key: 'all_play' | 'wins' | 'games' | 'luck', t
   return typeof value === 'number' ? value : null
 }
 
-function TeamSelect({ value, teams, onChange, label }: {
+export function TeamSelect({ value, teams, onChange, label }: {
   value: string;
   teams: string[];
   onChange: (team: string) => void;
@@ -129,28 +128,20 @@ function ScoresChart({ league, a, b, met }: { league: LeagueData; a: string; b: 
   )
 }
 
-export function RivalryWidget({ selectedTeam }: { selectedTeam: string }) {
+/** Two teams in the season on screen (the header's): the comparison, their games and both teams' scores
+ * period by period, with their next game if it's on the schedule. History → Rivalry's "This season". */
+export function SeasonRivalry({ a, b }: { a: string; b: string }) {
   const { data: league, isLoading, error } = useLeagueData()
   const standings = useMemo(() => league ? computeStandings(league.teams) : [], [league])
-  const [picked, setPicked] = useState<{ a: string; b: string } | null>(null)
   const { isDark } = useChartTheme()
 
   if (isLoading) return <WidgetSkeleton variant="list" />
   if (error || !league) return <ErrorState />
 
-  const teams = league.matchups.teams
-  // Until two teams are picked: the viewer's team and its latest opponent (else the top two)
-  const defaultA = selectedTeam || standings[0]?.team || teams[0]
-  const latest = league.results.filter(r => r.team === defaultA).sort((x, y) => y.period - x.period)[0]
-  const { a, b } = picked ?? { a: defaultA, b: selectedTeam && latest ? latest.opponent : standings[1]?.team ?? teams[1] }
-  const set = (side: 'a' | 'b', team: string) => {
-    // Picking the other side's team swaps the two
-    if (team === (side === 'a' ? b : a)) setPicked({ a: b, b: a })
-    else setPicked({ a, b, [side]: team })
-  }
+  const sa = standings.find(s => s.team === a)
+  const sb = standings.find(s => s.team === b)
+  if (!sa || !sb) return null
 
-  const sa = standings.find(s => s.team === a) as Standing
-  const sb = standings.find(s => s.team === b) as Standing
   const games = league.results.filter(r => r.team === a && r.opponent === b).sort((x, y) => x.period - y.period)
   const wins = cell(league, 'wins', a, b) ?? 0
   const played = cell(league, 'games', a, b) ?? 0
@@ -158,31 +149,10 @@ export function RivalryWidget({ selectedTeam }: { selectedTeam: string }) {
   const rateB = cell(league, 'all_play', b, a) ?? 0
   const luck = cell(league, 'luck', a, b)
   const avg = (s: Standing) => s.points_for / s.games
+  const next = upcomingGames(league, a, 99).find(g => g.opponent === b)
 
   return (
     <div className="w-full space-y-4">
-      <Card>
-        <CardHeader className="space-y-3">
-          <div className="space-y-1.5">
-            <CardTitle>Rivalry</CardTitle>
-            <CardDescription>Any two teams: their games against each other, and who scores more week to week.</CardDescription>
-          </div>
-          <div className="flex items-center gap-2">
-            <TeamSelect value={a} teams={teams} onChange={t => set('a', t)} label="First team" />
-            <Button
-              variant="outline"
-              size="icon"
-              className="h-9 w-9 shrink-0"
-              onClick={() => setPicked({ a: b, b: a })}
-              aria-label="Swap the teams"
-            >
-              <ArrowLeftRight className="h-4 w-4" />
-            </Button>
-            <TeamSelect value={b} teams={teams} onChange={t => set('b', t)} label="Second team" />
-          </div>
-        </CardHeader>
-      </Card>
-
       <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-2">
         <Card>
           <CardContent className="space-y-4 p-4 sm:p-6">
@@ -223,7 +193,10 @@ export function RivalryWidget({ selectedTeam }: { selectedTeam: string }) {
         <Card>
           <CardHeader className="pb-2">
             <CardTitle className="text-lg">Their games</CardTitle>
-            <CardDescription>{played ? 'Every time they met this season.' : 'They haven’t played each other this season.'}</CardDescription>
+            <CardDescription>
+              {played ? 'Every time they met this season.' : 'They haven’t played each other this season.'}
+              {next && <> Next: <span className="font-medium text-foreground">period {next.period}</span>{periodDates(league, next.period) ? ` (${periodDates(league, next.period)})` : ''}.</>}
+            </CardDescription>
           </CardHeader>
           {games.length > 0 && (
             <CardContent>

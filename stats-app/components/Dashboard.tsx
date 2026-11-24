@@ -11,7 +11,7 @@ import { SeasonWidget } from "./widgets/SeasonWidget"
 import { PlayoffsWidget } from "./widgets/PlayoffsWidget"
 import { FormWidget } from "./widgets/FormWidget"
 import { RecordsWidget } from "./widgets/RecordsWidget"
-import { RivalryWidget } from "./widgets/RivalryWidget"
+import { RivalryPageWidget } from "./widgets/RivalryPage"
 import { ScheduleSwapWidget } from "./widgets/ScheduleSwapWidget"
 import { ChampionsWidget } from "./widgets/ChampionsWidget"
 import { FranchisesWidget } from "./widgets/FranchisesWidget"
@@ -28,6 +28,7 @@ import { useInitSelectedTeam, useSelectedTeam } from '@/lib/selected-team'
 import { useSelectedPlayer } from '@/lib/selected-player'
 import { useSelectedTrade } from '@/lib/selected-trade'
 import { useSelectedFranchise } from '@/lib/selected-franchise'
+import { useSelectedRivalry } from '@/lib/selected-rivalry'
 import { getUrlParam, setUrlParam } from '@/lib/url'
 import { cn } from '@/lib/utils'
 import { CalendarDays, Info, Landmark, ListOrdered, Shirt, Swords, TrendingUp, User } from "lucide-react"
@@ -79,7 +80,6 @@ const SECTIONS: Section[] = [
   {
     value: "matchups", label: "Matchups", icon: Swords,
     views: [
-      { value: "rivalry", label: "Rivalry", render: team => <RivalryWidget selectedTeam={team} /> },
       { value: "allvsall", label: "All vs All", render: team => <AllVsAllWidget selectedTeam={team} /> },
       { value: "luck", label: "Luck", render: team => <LuckWidget selectedTeam={team} /> },
       { value: "whatif", label: "What if", render: team => <ScheduleSwapWidget selectedTeam={team} /> },
@@ -100,8 +100,9 @@ const SECTIONS: Section[] = [
     value: "history", label: "History", icon: Landmark, allSeasons: true,
     views: [
       { value: "franchise", label: "Franchise", render: team => <FranchisePageWidget selectedTeam={team} /> },
+      { value: "rivalry", label: "Rivalry", render: team => <RivalryPageWidget selectedTeam={team} /> },
       { value: "champions", label: "Champions", render: team => <ChampionsWidget selectedTeam={team} /> },
-      { value: "franchises", label: "Franchises", render: team => <FranchisesWidget selectedTeam={team} /> },
+      { value: "franchises", label: "All-time table", render: team => <FranchisesWidget selectedTeam={team} /> },
       { value: "h2h", label: "Head to head", render: team => <CareerHeadToHeadWidget selectedTeam={team} /> },
       { value: "records", label: "Records", render: team => <AllTimeRecordsWidget selectedTeam={team} /> },
     ],
@@ -138,11 +139,12 @@ function ViewPicker({ views, value, onChange }: { views: View[]; value: string; 
 }
 
 /** The link names a player only while the player page is open, a trade only while the trade page is, a
- * franchise only while the franchise page is */
+ * franchise only while the franchise page is, two teams only while the rivalry page is */
 function syncViewParams(view: string | null) {
   setUrlParam("player", view === "player" ? useSelectedPlayer.getState().playerId ?? "" : "")
   setUrlParam("trade", view === "trade" ? useSelectedTrade.getState().tradeId ?? "" : "")
   setUrlParam("franchise", view === "franchise" ? useSelectedFranchise.getState().franchise ?? "" : "")
+  setUrlParam("rivals", view === "rivalry" ? useSelectedRivalry.getState().pair?.join(",") ?? "" : "")
 }
 
 /** The section a view is in */
@@ -158,14 +160,14 @@ export function Dashboard() {
   // safe: the tabs only render after the team list loads, well after hydration.)
   // A player link (?player=) opens on the player page.
   // A trade link (?trade=) on the trade page.
-  // A franchise link (?franchise=) on the franchise page.
+  // A franchise link (?franchise=) on the franchise page, a rivalry link (?rivals=) on the rivalry page.
   const [tab, setTab] = useState<string | null>(() =>
-    getUrlParam("trade") || getUrlParam("player") ? "players" : getUrlParam("franchise") ? "history"
+    getUrlParam("trade") || getUrlParam("player") ? "players" : getUrlParam("franchise") || getUrlParam("rivals") ? "history"
       : getUrlParam("period") ? "recap" : null)
   // The view open in each section (its first one until the viewer picks another)
   const [views, setViews] = useState<Record<string, string>>(() =>
     (getUrlParam("trade") ? { players: "trade" } : getUrlParam("player") ? { players: "player" }
-      : getUrlParam("franchise") ? { history: "franchise" } : {}) as Record<string, string>)
+      : getUrlParam("franchise") ? { history: "franchise" } : getUrlParam("rivals") ? { history: "rivalry" } : {}) as Record<string, string>)
 
   // A player name clicked anywhere opens the player page; a trade link, the trade page
   useEffect(() => {
@@ -179,7 +181,8 @@ export function Dashboard() {
     const offPlayer = useSelectedPlayer.subscribe((state, before) => { if (state.opened !== before.opened) open("player") })
     const offTrade = useSelectedTrade.subscribe((state, before) => { if (state.opened !== before.opened) open("trade") })
     const offFranchise = useSelectedFranchise.subscribe((state, before) => { if (state.opened !== before.opened) open("franchise") })
-    return () => { offPlayer(); offTrade(); offFranchise() }
+    const offRivalry = useSelectedRivalry.subscribe((state, before) => { if (state.opened !== before.opened) open("rivalry") })
+    return () => { offPlayer(); offTrade(); offFranchise(); offRivalry() }
   }, [])
 
   // Same as following a ?period= link: the recap reads the period when it opens
