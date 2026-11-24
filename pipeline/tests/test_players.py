@@ -257,3 +257,28 @@ def test_update_cache(tmp_path, monkeypatch):
     assert sorted((t, p) for t, p, _ in fake.requests[1:]) == [('b1', 2), ('o1', 3)]
     assert sorted(rows['period'].unique()) == [1, 2, 3]
     assert len(rows) == 60
+
+
+def test_restore_zeroed_scores():
+    # Fantrax voided Alpha's period-1 game (0) though its lineup scored 50; Bravo's 0 in period 2 is real (no
+    # points in the lineup); Charlie's 70 differs from its lineup's 75 (an adjustment) and stays
+    rows = pd.DataFrame([
+        {'period': 1, 'team': 'Alpha', 'status': 'active', 'fpts': 30.0},
+        {'period': 1, 'team': 'Alpha', 'status': 'active', 'fpts': 20.0},
+        {'period': 1, 'team': 'Alpha', 'status': 'reserve', 'fpts': 99.0},
+        {'period': 1, 'team': 'Bravo', 'status': 'active', 'fpts': 40.0},
+        {'period': 2, 'team': 'Bravo', 'status': 'active', 'fpts': 0.0},
+        {'period': 2, 'team': 'Charlie', 'status': 'active', 'fpts': 75.0},
+    ])
+    games = pd.DataFrame([
+        {'Team': 'Alpha', 'Score': 0.0, 'Opponent': 'Bravo', 'OppScore': 40.0, 'Match': 1,
+         'Result': 'L', 'Winner': 'Bravo', 'Loser': 'Alpha'},
+        {'Team': 'Charlie', 'Score': 70.0, 'Opponent': 'Bravo', 'OppScore': 0.0, 'Match': 2,
+         'Result': 'W', 'Winner': 'Charlie', 'Loser': 'Bravo'},
+    ])
+    fixed, fixes = players.restore_zeroed_scores(games, rows)
+    assert fixes == [(1, 'Alpha', 50.0)]
+    assert fixed[['Score', 'OppScore', 'Result', 'Winner', 'Loser']].values.tolist() == [
+        [50.0, 40.0, 'W', 'Alpha', 'Bravo'], [70.0, 0.0, 'W', 'Charlie', 'Bravo']]
+    assert games.loc[0, 'Score'] == 0.0                                     # the input is left alone
+    assert players.restore_zeroed_scores(games, rows.iloc[0:0]) == (games, [])

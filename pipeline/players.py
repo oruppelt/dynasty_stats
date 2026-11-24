@@ -195,6 +195,30 @@ def check_scores(rows: pd.DataFrame, games: pd.DataFrame) -> list[tuple[int, str
     return [(int(r.period), r.team, float(r.points), float(r.score)) for r in off.itertuples()]
 
 
+def restore_zeroed_scores(games: pd.DataFrame, rows: pd.DataFrame) -> tuple[pd.DataFrame, list[tuple[int, str, float]]]:
+    """Fantrax can void a game years later (a player then on IL no longer counts as injured, so the lineup is
+    illegal) and shows the team's score as 0. Wherever a score is 0 but the team's active players scored, the
+    score becomes their points (and the result follows). Any other score, however different, stays Fantrax's.
+    Returns the games and the fixes: (period, team, points)."""
+    if games.empty or rows is None or rows.empty:
+        return games, []
+    active = rows[rows['status'] == 'active'].groupby(['period', 'team'])['fpts'].sum()
+    points = lambda period, team: round(float(active.get((int(period), team), 0.0)), 2)
+    games = games.copy()
+    fixes = []
+    for i, g in games.iterrows():
+        for team, col in ((g['Team'], 'Score'), (g['Opponent'], 'OppScore')):
+            if g[col] == 0 and points(g['Match'], team) > 0:
+                games.at[i, col] = points(g['Match'], team)
+                fixes.append((int(g['Match']), team, points(g['Match'], team)))
+    if fixes and 'Result' in games:
+        won, tied = games['Score'] > games['OppScore'], games['Score'] == games['OppScore']
+        games['Result'] = won.map({True: 'W', False: 'L'}).where(~tied, 'T')
+        games['Winner'] = games['Team'].where(won, games['Opponent']).where(~tied, None)
+        games['Loser'] = games['Opponent'].where(won, games['Team']).where(~tied, None)
+    return games, fixes
+
+
 def _performance(row) -> dict:
     entry = {
         'period': int(row.period), 'team': row.team, 'player_id': row.player_id, 'player': row.player,

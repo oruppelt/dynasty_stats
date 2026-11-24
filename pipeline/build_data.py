@@ -47,6 +47,9 @@ every player's points per period are kept in pipeline/data/players/<season>.csv
 (only new periods are fetched, plus the latest few again while the season is
 in progress) and the season's player lists go to data/players/<season>.json;
 data/players/alltime.json has every season together. --no-players skips them.
+The cache is updated before the season is built: Fantrax can void a game years later (a player then on IL
+no longer counts as injured) and show the team's score as 0; wherever a score is 0 but the lineup scored,
+the lineup's points are used (players.restore_zeroed_scores). Every other score stays Fantrax's.
 """
 import argparse
 import json
@@ -101,17 +104,33 @@ def build(games: pd.DataFrame, path: Path, season: str, playoff_games: pd.DataFr
             f'through period {league["meta"]["latest_period"]}.')
 
 
-def build_players(season: str, league_id: str, cookie: str, games: pd.DataFrame, playoff_games: pd.DataFrame,
+def update_player_cache(season: str, league_id: str, cookie: str, games: pd.DataFrame, playoff_games: pd.DataFrame,
+                        final: bool) -> pd.DataFrame:
+    """Fetch the season's new periods into the player cache (players.update_cache); returns every row."""
+    played: dict[int, set[str]] = {}
+    for g in pd.concat([g for g in (games, playoff_games) if not g.empty]).itertuples():
+        played.setdefault(int(g.Match), set()).update((g.Team, g.Opponent))
+    return players.update_cache(season, league_id, cookie, played, refresh=0 if final else players.REFRESH_RECENT)
+
+
+def restore_zeroed(season: str, rows: pd.DataFrame, games: pd.DataFrame, playoff_games: pd.DataFrame
+                   ) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Games Fantrax voided after the fact (a 0 where the lineup scored) get the lineup's points back
+    (players.restore_zeroed_scores); each fix is logged."""
+    games, fixes = players.restore_zeroed_scores(games, rows)
+    playoff_games, playoff_fixes = players.restore_zeroed_scores(playoff_games, rows)
+    for period, team, points in fixes + playoff_fixes:
+        print(f'{season}: period {period}, {team} scored 0 in Fantrax but {points} in its lineup; using {points}.')
+    return games, playoff_games
+
+
+def build_players(season: str, rows: pd.DataFrame, games: pd.DataFrame, playoff_games: pd.DataFrame,
                   out: Path, final: bool, skip_periods: list[int] | None = None, season_length: int | None = None) -> str:
-    """Update the season's player cache and write data/players/<season>.json if it changed. Returns what happened.
+    """Write data/players/<season>.json from the player cache's rows if it changed. Returns what happened.
     `season_length`: the regular season's number of periods, for a season in progress (salary paid so far)."""
     if games.empty:
         return f'{season} players: no played games yet.'
     all_games = pd.concat([g for g in (games, playoff_games) if not g.empty])
-    played: dict[int, set[str]] = {}
-    for g in all_games.itertuples():
-        played.setdefault(int(g.Match), set()).update((g.Team, g.Opponent))
-    rows = players.update_cache(season, league_id, cookie, played, refresh=0 if final else players.REFRESH_RECENT)
     skip = set(skip_periods or [])
     playoff_periods = set(playoff_games['Match'].astype(int)) if not playoff_games.empty else set()
     data = players.compute_players(rows, set(games['Match'].astype(int)) - skip, playoff_periods - skip,
@@ -315,6 +334,25 @@ def main() -> None:
             try:
                 games, playoff_games, schedule = fantrax.load_season(
                     league_ids[season], cookie, regular_periods[season], skip_periods[season])
+            except Exception:
+                failed.append(season)
+                print(f'{season}: FAILED; data left as it was.', file=sys.stderr)
+                traceback.print_exc()
+                continue
+            # The player cache first: its lineup points restore the games Fantrax voided after the fact
+            rows = None
+            if not args.no_players and not games.empty:
+                try:
+                    rows = update_player_cache(season, league_ids[season], cookie, games, playoff_games, season in final)
+                except Exception:
+                    failed.append(f'{season} players')
+                    print(f'{season} players: FAILED; player data left as it was.', file=sys.stderr)
+                    traceback.print_exc()
+            cached = rows if rows is not None else (
+                players.read_cache(season) if players.cache_path(season).exists() else None)
+            if cached is not None:
+                games, playoff_games = restore_zeroed(season, cached, games, playoff_games)
+            try:
                 playoff_format = 'other' if season in other_playoffs else 'swiss'
                 print(build(games, season_path(args.out, season), season, playoff_games, schedule, playoff_format))
             except Exception:
@@ -322,10 +360,10 @@ def main() -> None:
                 print(f'{season}: FAILED; data left as it was.', file=sys.stderr)
                 traceback.print_exc()
                 continue
-            if args.no_players:
+            if rows is None:
                 continue
             try:
-                print(build_players(season, league_ids[season], cookie, games, playoff_games, args.out, season in final,
+                print(build_players(season, rows, games, playoff_games, args.out, season in final,
                                     skip_player_periods[season], (schedule or {}).get('regular_periods')))
             except Exception:
                 failed.append(f'{season} players')
