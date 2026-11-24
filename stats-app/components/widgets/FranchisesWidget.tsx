@@ -117,7 +117,7 @@ function CareerTable({ data, selectedTeam }: { data: AllTime; selectedTeam: stri
   return (
     <Card className="w-full">
       <CardHeader className="space-y-2">
-        <CardTitle>Franchises</CardTitle>
+        <CardTitle>All-time table</CardTitle>
         <CardDescription>
           Every team&apos;s regular seasons added up, {data.seasons.length} seasons. Sort by any column heading.
         </CardDescription>
