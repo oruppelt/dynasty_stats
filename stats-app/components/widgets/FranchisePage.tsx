@@ -1,11 +1,12 @@
 import { ReactNode, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { Crown, Flame, Maximize2, Plus, Quote, Shirt, Sparkles, Trophy, X } from 'lucide-react'
+import { Crown, Flame, ListOrdered, Maximize2, Plus, Quote, Shirt, Sparkles, Trophy, X } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { WidgetSkeleton } from './WidgetSkeleton'
 import { ErrorState } from './ErrorState'
 import { TeamLogo } from './TeamLogo'
 import { PlayerName } from './PlayerName'
+import { FranchiseDraft } from './FranchiseDraft'
 import { Select } from './PlayersWidgets'
 import { formatDate } from './PlayerTimeline'
 import { FINISH_LABEL, Finish, useAllTime } from '@/lib/alltime'
@@ -18,11 +19,12 @@ import { teamCode } from '@/lib/teams'
 import { cn } from '@/lib/utils'
 
 // History → Franchise: one franchise's page, shareable as ?franchise=<team> (lib/selected-franchise.ts).
-// The header carries what comes free (the title banners, small) and the motto. Three tabs:
+// The header carries what comes free (the title banners, small) and the motto. Four tabs:
 // - Trophy room: what the franchise spends its honor on (retired jerseys in the rafters, declared highlights),
 //   each with an empty slot showing its price, and ideas worked out from the games;
 // - Honor: earned season by season, the rules, what was spent, every franchise;
-// - Legends: the top scorers for the franchise.
+// - Legends: the top scorers for the franchise;
+// - Draft: its picks, what each player scored for it and elsewhere, its rank among the drafters (FranchiseDraft.tsx).
 // From data/honor.json (pipeline/honor.py) and data/alltime.json.
 
 const ordinal = (n: number) => `${n}${['th', 'st', 'nd', 'rd'][n % 100 >= 11 && n % 100 <= 13 ? 0 : n % 10] ?? 'th'}`
@@ -654,6 +656,7 @@ const TABS = [
   { value: 'trophies', label: 'Trophy room', icon: Trophy },
   { value: 'honor', label: 'Honor', icon: Crown },
   { value: 'legends', label: 'Legends', icon: Flame },
+  { value: 'draft', label: 'Draft', icon: ListOrdered },
 ] as const
 type Tab = typeof TABS[number]['value']
 
@@ -683,6 +686,7 @@ export function FranchisePageWidget({ selectedTeam }: { selectedTeam: string }) 
       {tab === 'trophies' && <TrophyRoom data={data} team={team} f={f} />}
       {tab === 'honor' && <HonorTab data={data} team={team} f={f} />}
       {tab === 'legends' && <LegendsTab data={data} f={f} />}
+      {tab === 'draft' && <FranchiseDraft team={team} />}
     </div>
   )
 }
