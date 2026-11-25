@@ -298,6 +298,16 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-25: Draft (branch `draft/history`)
+- History → Draft: every pick of every draft (season picker, or all drafts; round filter), sortable by any column:
+  value, vs slot, rookie points (first 3 seasons), regular-season and total points, starts, salary earned, points for
+  the team that drafted him. A player opens to his seasons since (teams, contract, salary, points).
+- Value: the average salary after the rookie deal for drafts whose 4th season has started; regular-season points on
+  any roster (lineup or bench) for the newer ones. vs slot: compared with the picks two either side in every draft.
+- Drafters: each team's draft score (vs slot in average first-round picks, so salary and points drafts add up), per
+  pick, hits, best and worst pick, points for itself and the share it kept. This season's draft and re-drafted
+  players aren't counted.
+
 ### 2026-11-25: Rings table, take two (branch `champions/rings-v2`)
 - A lost final: on the runner-up's roster (lineup or bench) in any game of the final, so a pickup between games counts.
 - Columns: rings, lost finals, finals points (every final, won or lost), career playoff points and starts (any

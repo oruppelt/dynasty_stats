@@ -94,6 +94,9 @@ values in `ACHIEVEMENTS`), rewards from `pipeline/data/honor_rewards.json` (chec
 legends, title banners, declared highlights (with ideas worked out from the games), for History → Franchise (tabs: Trophy room, Honor, Legends) (`?franchise=`; `lib/selected-franchise.ts`, `FranchisePage.tsx`).
 `data/champions.json` (`pipeline/champions.py`, after the all-time files): each champion's players (a ring: scored for the
 champion that season) and every ring holder (a lost final: on the runner-up's roster in the final; career playoff points and starts), for History → Champions (`lib/champions.ts`).
+`data/draft/index.json` and `data/draft/<season>.json` (`pipeline/draft.py`, from the draft log and the player cache): every pick and what
+the player became (value: salary after the rookie deal, or regular-season points for newer drafts; compared with the slot), and each team's
+drafting, for History → Draft (`lib/draft.ts`, `DraftWidget.tsx`).
 `data/rivalries/<slug>.json` (`pipeline/rivalry.py`, after honor): one per team, its rivalry with every other over every
 season (meetings incl. playoffs, record, series, streaks, records, trades between the two with the points each side got,
 top scorers in their games, players who scored for both), for History → Rivalry (`?rivals=<team>,<team>`;
@@ -125,7 +128,7 @@ JSON name their team under `Team`; every other key is a team name.
   `components/Dashboard.tsx` (seven sections: My Team, Recap, Standings (Table,
   Form, Playoffs), Season (Rank & luck, Points, Records), Matchups (All vs All,
   Luck, What if), Players (Leaders, Best periods, Teams, All-time, Player),
-  History (Franchise, Rivalry, Champions, All-time table, Head to head, Records)) → `components/widgets/*`, each reading `useLeagueData()`, or
+  History (Franchise, Rivalry, Champions, Draft, All-time table, Head to head, Records)) → `components/widgets/*`, each reading `useLeagueData()`, or
   for History (every season, not the picked one) `useAllTime()` in
   `lib/alltime.ts`. Add a view to a section in `SECTIONS` rather than a new
   top-level tab.
