@@ -65,6 +65,7 @@ import fantrax
 import lineage
 import players
 import champions
+import draft
 from alltime import compute_alltime
 import honor
 import rivalry
@@ -284,6 +285,32 @@ def write_champions(config: dict, out: Path) -> None:
     _write_if_changed(out / 'champions.json', to_json(champions.compute_champions(seasons, champions.career_playoffs(playoffs))))
 
 
+def write_draft(config: dict, out: Path) -> None:
+    """data/draft/<season>.json (draft.py): every pick of the draft and what the player became; data/draft/index.json:
+    the drafts and each team's drafting;
+    from the draft log (pipeline/data/transactions), the player cache and each season's periods."""
+    tx = lineage.read_transactions()
+    if tx is None:
+        return
+    seasons = []
+    for s in sorted(config['seasons'], key=lambda s: s['id']):
+        path = out / 'players' / f'{s["id"]}.json'
+        if not path.exists() or not players.cache_path(s['id']).exists():
+            continue
+        meta = json.loads(path.read_text())['meta']
+        seasons.append({'season': s['id'], 'rows': players.read_cache(s['id']), 'regular_periods': meta['regular_periods'],
+                        'playoff_periods': meta['playoff_periods'], 'season_length': meta.get('season_length')})
+    known = {r.player_id: r.player for log in ('claims_drops', 'trades') for r in tx[log].itertuples()
+             if r.player_id and r.player}
+    data = draft.compute_draft(tx['drafts'], seasons, known)
+    folder = out / 'draft'
+    folder.mkdir(parents=True, exist_ok=True)
+    _write_if_changed(folder / 'index.json', to_json({'drafts': [{k: d[k] for k in ('season', 'metric', 'in_progress', 'rookie_deal_over')}
+                                                                for d in data['drafts']], 'teams': data['teams']}))
+    for d in data['drafts']:
+        _write_if_changed(folder / f'{d["season"]}.json', to_json(d))
+
+
 def write_rivalries(config: dict, out: Path) -> None:
     """data/rivalries/<slug>.json (rivalry.py): each team's rivalry with every other, over every season; from the
     season files, data/players/trades.json and the player cache. Files of teams no longer in the data are removed."""
@@ -397,6 +424,7 @@ def main() -> None:
     if not args.no_players and not args.source:
         write_players_alltime(config, args.out)
     write_champions(config, args.out)
+    write_draft(config, args.out)
     write_honor(config, args.out)
     write_rivalries(config, args.out)
     if failed:
