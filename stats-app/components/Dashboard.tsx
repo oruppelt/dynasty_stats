@@ -14,6 +14,7 @@ import { RecordsWidget } from "./widgets/RecordsWidget"
 import { RivalryPageWidget } from "./widgets/RivalryPage"
 import { ScheduleSwapWidget } from "./widgets/ScheduleSwapWidget"
 import { ChampionsWidget } from "./widgets/ChampionsWidget"
+import { DraftWidget } from "./widgets/DraftWidget"
 import { FranchisesWidget } from "./widgets/FranchisesWidget"
 import { FranchisePageWidget } from "./widgets/FranchisePage"
 import { CareerHeadToHeadWidget } from "./widgets/CareerHeadToHeadWidget"
@@ -102,6 +103,7 @@ const SECTIONS: Section[] = [
       { value: "franchise", label: "Franchise", render: team => <FranchisePageWidget selectedTeam={team} /> },
       { value: "rivalry", label: "Rivalry", render: team => <RivalryPageWidget selectedTeam={team} /> },
       { value: "champions", label: "Champions", render: team => <ChampionsWidget selectedTeam={team} /> },
+      { value: "draft", label: "Draft", render: team => <DraftWidget selectedTeam={team} /> },
       { value: "franchises", label: "All-time table", render: team => <FranchisesWidget selectedTeam={team} /> },
       { value: "h2h", label: "Head to head", render: team => <CareerHeadToHeadWidget selectedTeam={team} /> },
       { value: "records", label: "Records", render: team => <AllTimeRecordsWidget selectedTeam={team} /> },
