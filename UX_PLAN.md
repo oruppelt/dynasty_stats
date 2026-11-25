@@ -298,6 +298,11 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-25: Rings table, take two (branch `champions/rings-v2`)
+- A lost final: on the runner-up's roster (lineup or bench) in any game of the final, so a pickup between games counts.
+- Columns: rings, lost finals, finals points (every final, won or lost), career playoff points and starts (any
+  team). Points and salary are gone. Every ring holder is listed, 30 at a time ("Show 30 more").
+
 ### 2026-11-25: Champions' players and rings (branch `champions/rings`)
 - History → Champions: every title opens to the champion's players (a player gets a ring for scoring for the
   champion that season, playoffs included): regular-season, playoff and final points, starts (+ playoff starts)

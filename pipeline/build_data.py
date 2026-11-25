@@ -269,9 +269,11 @@ def write_champions(config: dict, out: Path) -> None:
     if not path.exists():
         return
     files = _season_files(config, out)
-    seasons = []
+    seasons, playoffs = [], []
     for s in json.loads(path.read_text())['seasons']:
         meta_path = out / 'players' / f'{s["season"]}.json'
+        if meta_path.exists() and players.cache_path(s['season']).exists():
+            playoffs.append((players.read_cache(s['season']), set(json.loads(meta_path.read_text())['meta']['playoff_periods'])))
         if not s['champion'] or s['season'] not in files or not meta_path.exists() or not players.cache_path(s['season']).exists():
             continue
         meta = json.loads(meta_path.read_text())['meta']
@@ -279,7 +281,7 @@ def write_champions(config: dict, out: Path) -> None:
                         'rows': players.read_cache(s['season']),
                         'regular_periods': meta['regular_periods'], 'playoff_periods': meta['playoff_periods'],
                         'final_periods': champions.final_periods(files[s['season']], s['champion'], s['runner_up'])})
-    _write_if_changed(out / 'champions.json', to_json(champions.compute_champions(seasons)))
+    _write_if_changed(out / 'champions.json', to_json(champions.compute_champions(seasons, champions.career_playoffs(playoffs))))
 
 
 def write_rivalries(config: dict, out: Path) -> None:

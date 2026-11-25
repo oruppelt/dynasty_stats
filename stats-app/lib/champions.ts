@@ -1,7 +1,8 @@
 import { useQuery } from '@tanstack/react-query'
 
 // Shape of /data/champions.json (pipeline/champions.py). A player has a ring for a season when they scored
-// (lineup points above 0, regular season or playoffs) for that season's champion.
+// (lineup points above 0, regular season or playoffs) for that season's champion, and lost a final when they were
+// on the runner-up's roster (lineup or bench) in a period of the final.
 
 /** A player on a champion's roster: what they did for it that season */
 export interface TitlePlayer {
@@ -34,20 +35,17 @@ export interface RingLeader {
   finals_lost: number;
   titles: { season: string; team: string }[];
   lost: { season: string; team: string }[];
-  /** For the champions, in their title seasons */
-  points: number;
-  playoff_points: number;
-  starts: number;
-  gp: number;
-  salary: number;
-  /** Every final, won or lost */
+  /** Lineup points in every final, won or lost */
   finals_points: number;
+  /** Career playoffs, any team */
+  playoff_points: number;
+  playoff_starts: number;
 }
 
 export interface Champions {
   /** Newest first */
   seasons: Title[];
-  /** By rings, then finals reached, then finals points */
+  /** Every ring holder: by rings, then finals reached, then finals points */
   players: RingLeader[];
   /** Every player with a ring */
   ring_holders: number;
