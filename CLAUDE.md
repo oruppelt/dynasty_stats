@@ -91,12 +91,12 @@ trade item has its `result` (what the team got out of it) and `next` (what it di
 (`lineage._compute_built`) has how each team's current roster was built, for Players → Teams (`TeamBuilt.tsx`).
 `data/honor.json` (`pipeline/honor.py`, after the all-time files): each franchise's honor (achievements per season,
 values in `ACHIEVEMENTS`), rewards from `pipeline/data/honor_rewards.json` (checked; rows that fail are reported and left out; pictures in `stats-app/public/honor/`),
-legends, title banners, declared highlights (with ideas worked out from the games), for History → Franchise (tabs: Trophy room, Honor, Legends) (`?franchise=`; `lib/selected-franchise.ts`, `FranchisePage.tsx`).
+legends, title banners, declared highlights (with ideas worked out from the games), for History → Franchise (tabs: Trophy room, Honor, Legends, Draft) (`?franchise=`; `lib/selected-franchise.ts`, `FranchisePage.tsx`).
 `data/champions.json` (`pipeline/champions.py`, after the all-time files): each champion's players (a ring: scored for the
 champion that season) and every ring holder (a lost final: on the runner-up's roster in the final; career playoff points and starts), for History → Champions (`lib/champions.ts`).
 `data/draft/index.json` and `data/draft/<season>.json` (`pipeline/draft.py`, from the draft log and the player cache): every pick and what
 the player became (value: salary after the rookie deal, or regular-season points for newer drafts; compared with the slot), and each team's
-drafting, for History → Draft (`lib/draft.ts`, `DraftWidget.tsx`).
+drafting, for History → Draft (`lib/draft.ts`, `DraftWidget.tsx`) and the franchise page's Draft tab (`FranchiseDraft.tsx`).
 `data/rivalries/<slug>.json` (`pipeline/rivalry.py`, after honor): one per team, its rivalry with every other over every
 season (meetings incl. playoffs, record, series, streaks, records, trades between the two with the points each side got,
 top scorers in their games, players who scored for both), for History → Rivalry (`?rivals=<team>,<team>`;
