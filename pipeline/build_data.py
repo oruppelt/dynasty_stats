@@ -64,6 +64,7 @@ import pandas as pd
 import fantrax
 import lineage
 import players
+import champions
 from alltime import compute_alltime
 import honor
 import rivalry
@@ -261,6 +262,26 @@ def _lineups(config: dict, out: Path) -> pd.DataFrame:
             else pd.DataFrame(columns=['season', 'period', 'team', 'player_id', 'player', 'points', 'starts']))
 
 
+def write_champions(config: dict, out: Path) -> None:
+    """data/champions.json (champions.py): every champion's players (a ring: scored for the champion that season)
+    and the players with the most rings; from data/alltime.json, the season files and the player cache."""
+    path = out / 'alltime.json'
+    if not path.exists():
+        return
+    files = _season_files(config, out)
+    seasons = []
+    for s in json.loads(path.read_text())['seasons']:
+        meta_path = out / 'players' / f'{s["season"]}.json'
+        if not s['champion'] or s['season'] not in files or not meta_path.exists() or not players.cache_path(s['season']).exists():
+            continue
+        meta = json.loads(meta_path.read_text())['meta']
+        seasons.append({**{k: s[k] for k in ('season', 'champion', 'runner_up')},
+                        'rows': players.read_cache(s['season']),
+                        'regular_periods': meta['regular_periods'], 'playoff_periods': meta['playoff_periods'],
+                        'final_periods': champions.final_periods(files[s['season']], s['champion'], s['runner_up'])})
+    _write_if_changed(out / 'champions.json', to_json(champions.compute_champions(seasons)))
+
+
 def write_rivalries(config: dict, out: Path) -> None:
     """data/rivalries/<slug>.json (rivalry.py): each team's rivalry with every other, over every season; from the
     season files, data/players/trades.json and the player cache. Files of teams no longer in the data are removed."""
@@ -373,6 +394,7 @@ def main() -> None:
     write_alltime(config, args.out)
     if not args.no_players and not args.source:
         write_players_alltime(config, args.out)
+    write_champions(config, args.out)
     write_honor(config, args.out)
     write_rivalries(config, args.out)
     if failed:

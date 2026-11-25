@@ -298,6 +298,13 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-25: Champions' players and rings (branch `champions/rings`)
+- History → Champions: every title opens to the champion's players (a player gets a ring for scoring for the
+  champion that season, playoffs included): regular-season, playoff and final points, starts (+ playoff starts)
+  and the salary the champion paid, with the final's top scorer.
+- A **Rings** table: the top 30 ring holders by rings, then finals reached, then points in finals, with lost
+  finals, points for the champions and salary. `pipeline/champions.py` → `data/champions.json`.
+
 ### 2026-11-24: Rivalry page (branch `rivalry/history`)
 - History → **Rivalry** (`?rivals=<team>,<team>`), replacing Matchups → Rivalry: two franchises over every season.
   A header in both teams' colors (all-time record, playoffs, streak, last meeting, team pickers), storylines
