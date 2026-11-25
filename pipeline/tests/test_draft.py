@@ -97,15 +97,18 @@ def test_points_value():
     # and S1 (period 1): 120 and 60. Slots 1-2: (30 + 90 + 120 + 60) / 4 = 75, the first round's average too
     assert (s3[1]['value'], s3[1]['expected']) == (30.0, 75.0)
     assert s3[2]['score'] == round((90 - 75) / 75, 3)
-    # x3 was drafted in S0: no value, not counted
-    assert (s3[31]['redraft'], s3[31]['value']) == ('2020-21', None)
+    # x3 was drafted in S0: a placeholder, a miss (value 0, none of his points)
+    assert (s3[31]['redraft'], s3[31]['value'], s3[31]['points'], s3[31]['history']) == ('2020-21', 0.0, 0.0, [])
+    # Slot 31: x3's S0 pick (bench, 10 in S0) and the placeholder (0)
+    assert (s3[31]['expected'], s3[31]['vs_slot']) == (5.0, -5.0)
     assert draft('2024-25')[1]['player'] == 'Zed'                     # never on a roster: the name from the logs
 
 
 def test_teams():
     teams = {t['team']: t for t in run()['teams']}
-    # S4's draft and the re-drafted x3 are left out; the unused pick too
-    assert (teams['Alpha']['picks'], teams['Bravo']['picks']) == (3, 2)
+    # S4's draft and the unused pick are left out; the re-drafted x3 counts (a miss)
+    assert (teams['Alpha']['picks'], teams['Bravo']['picks']) == (3, 3)
+    assert teams['Bravo']['worst']['player_id'] == 'x2'
     alpha = teams['Alpha']
     assert alpha['score'] == round(1.0 + 0.0 + (90 - 75) / 75, 2)
     assert alpha['hits'] == 2 and alpha['best']['player_id'] == 'x1'
