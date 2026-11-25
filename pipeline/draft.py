@@ -15,7 +15,7 @@ A pick's value:
 draft compared (for points, every draft over the same span: as many seasons, the last one up to the same period).
 `vs_slot` is value minus expected, and `score` puts it in average first-rounders (vs_slot / the first round's
 average value), so the drafts measured by salary and by points add up for `teams`: each team's draft score (the
-picks it made; the draft in progress and picks of players drafted before are left out), hit rate (picks above their slot) and points for itself.
+picks it made; the draft in progress and unused picks are left out), hit rate (picks above their slot) and points for itself.
 
 Teams are today's names (lineage.franchise).
 """
@@ -48,11 +48,12 @@ def compute_draft(drafts: pd.DataFrame, seasons: list[dict], known: dict[str, st
         i = order.index(d.season)
         team = lineage.franchise(d.team, pd.Timestamp(d.time) if d.time else None)
         pid = d.player_id or None
-        mine = stats[(stats['player_id'] == pid) & (stats['idx'] >= i)] if pid else stats.iloc[0:0]
-        # Drafted before (a player released, or a pick spent on someone taken already): the season
+        # Drafted before: a placeholder for a rookie not in Fantrax yet (who came in by hand). A miss: what the
+        # player did belongs to his earlier pick
         redraft = drafted.get(pid)
         if pid:
             drafted.setdefault(pid, d.season)
+        mine = stats[(stats['player_id'] == pid) & (stats['idx'] >= i)] if pid and not redraft else stats.iloc[0:0]
         after = mine[mine['idx'] >= i + ROOKIE_SEASONS]
         picks.append({
             'season': d.season, 'round': int(d.round), 'pick': int(d.pick), 'slot': int(d.pick) - 30 * (int(d.round) - 1),
@@ -63,8 +64,8 @@ def compute_draft(drafts: pd.DataFrame, seasons: list[dict], known: dict[str, st
             'earned': float(mine['paid'].sum()),
             'salary_after': float(after['salary'].mean()) if len(after) else 0.0,
             'seasons_after': len(after),
-            'team_points': float(rows.loc[(rows['player_id'] == pid) & (rows['franchise'] == team)
-                                          & (rows['status'] == 'active'), 'fpts'].sum()) if pid else 0.0,
+            'team_points': float(rows.loc[(rows['player_id'] == pid) & (rows['franchise'] == team) & (rows['idx'] >= i)
+                                          & (rows['status'] == 'active'), 'fpts'].sum()) if pid and not redraft else 0.0,
             'history': [_season(r) for r in mine.itertuples()],
         })
 
@@ -84,7 +85,7 @@ def compute_draft(drafts: pd.DataFrame, seasons: list[dict], known: dict[str, st
             span, upto = len(order) - i, played[current]
             pool = [p for p in picks if p['idx'] + span <= len(order) and _rookie(p)]
             window = _window(rows, span, upto)
-            value = {id(p): window.get((p['player_id'], p['idx']), 0.0) for p in pool}
+            value = {id(p): 0.0 if p['redraft'] else window.get((p['player_id'], p['idx']), 0.0) for p in pool}
         first = [value[id(p)] for p in pool if p['round'] == 1]
         unit = sum(first) / len(first) if first else 0.0
         for p in ps:
@@ -103,8 +104,8 @@ def compute_draft(drafts: pd.DataFrame, seasons: list[dict], known: dict[str, st
 
 
 def _rookie(p: dict) -> bool:
-    """A pick that brought a player in (not an unused pick, nor a player drafted before)."""
-    return bool(p['player_id']) and not p['redraft']
+    """A pick that was used (a re-drafted player too: a miss, value 0)."""
+    return bool(p['player_id'])
 
 
 def _rows(seasons: list[dict]) -> pd.DataFrame:

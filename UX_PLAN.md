@@ -298,6 +298,13 @@ Merged into Phase 2.5 (2026-10-22).
 
 ## Changelog
 
+### 2026-11-25: Franchise → Draft (branch `draft/franchise`)
+- History → Franchise has a Draft tab (after Legends): the franchise's draft score and rank among the drafters, per
+  pick, hits, kept, best and worst pick; every pick it made, sortable, with vs slot, lineup points for it and
+  elsewhere (a bar each) and seasons on its roster; a player opens to his seasons since.
+- A re-drafted player (a placeholder for a rookie not in Fantrax yet) now counts as a miss: value 0, none of his
+  points, like a retired player taken.
+
 ### 2026-11-25: Draft (branch `draft/history`)
 - History → Draft: every pick of every draft (season picker, or all drafts; round filter), sortable by any column:
   value, vs slot, rookie points (first 3 seasons), regular-season and total points, starts, salary earned, points for

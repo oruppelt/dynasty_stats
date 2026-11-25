@@ -13,15 +13,15 @@ import { formatPoints } from '@/lib/standings'
 import { teamCode } from '@/lib/teams'
 import { cn } from '@/lib/utils'
 
-const TH = 'h-10 whitespace-nowrap border-b px-2 text-right font-medium'
-const TD = 'h-11 whitespace-nowrap border-b px-2 text-right'
+export const TH = 'h-10 whitespace-nowrap border-b px-2 text-right font-medium'
+export const TD = 'h-11 whitespace-nowrap border-b px-2 text-right'
 const PAGE = 30
 const ALL = 'all'
 
-type Sort<K extends string> = { key: K; desc: boolean }
+export type Sort<K extends string> = { key: K; desc: boolean }
 
 /** A column heading that sorts by its key; a second click flips the order */
-function SortHead<K extends string>({ k, sort, setSort, children, className, ascFirst }: {
+export function SortHead<K extends string>({ k, sort, setSort, children, className, ascFirst }: {
   k: K; sort: Sort<K>; setSort: (s: Sort<K>) => void; children: ReactNode; className?: string; ascFirst?: boolean;
 }) {
   const on = sort.key === k
@@ -36,15 +36,15 @@ function SortHead<K extends string>({ k, sort, setSort, children, className, asc
   )
 }
 
-function formatValue(v: number, metric: DraftMetric): string {
+export function formatValue(v: number, metric: DraftMetric): string {
   return metric === 'salary' ? formatSalary(v) : formatPoints(v)
 }
 
-function formatVs(v: number, metric: DraftMetric): string {
+export function formatVs(v: number, metric: DraftMetric): string {
   return `${v > 0 ? '+' : v < 0 ? '−' : ''}${formatValue(Math.abs(v), metric)}`
 }
 
-const vsColor = (v: number | null) => v == null || Math.abs(v) < 1e-9 ? '' : v > 0 ? 'text-lucky' : 'text-very-unlucky'
+export const vsColor = (v: number | null) => v == null || Math.abs(v) < 1e-9 ? '' : v > 0 ? 'text-lucky' : 'text-very-unlucky'
 
 // --- The picks ---
 
@@ -63,7 +63,7 @@ const PICK_VALUE: Record<PickKey, (p: DraftPick) => number | null> = {
 }
 
 /** A drafted player's seasons since the draft */
-function PickHistory({ p }: { p: DraftPick }) {
+export function PickHistory({ p }: { p: DraftPick }) {
   if (!p.history.length) return <p className="px-2 pb-3 text-xs text-muted-foreground">Never on a roster.</p>
   return (
     <div className="w-full overflow-x-auto pb-3">
@@ -124,10 +124,10 @@ function PickRow({ p, all, selectedTeam, cols }: { p: DraftPick; all: boolean; s
                 : <span className="text-muted-foreground">{p.player ?? 'Pick not used'}</span>}
               <div className="max-w-32 truncate text-xs font-normal text-muted-foreground sm:max-w-none">
                 {teamCode(p.team)}
-                {p.redraft && <> · drafted before ({p.redraft}), not counted</>}
+                {p.redraft && <> · placeholder, drafted in {p.redraft}: a miss</>}
               </div>
             </div>
-            {p.player_id && (
+            {p.player_id && !p.redraft && (
               <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} title="Seasons since the draft"
                       className="ml-auto shrink-0 rounded p-1 text-muted-foreground hover:bg-muted">
                 <ChevronDown className={cn('h-4 w-4 transition-transform', open && 'rotate-180')} />
@@ -196,7 +196,8 @@ function Picks({ seasons, selectedTeam }: { seasons: { season: string; metric: D
           <p>
             <strong>vs slot</strong>: the value minus what the slot usually gives (the picks two either side of it in
             every draft; for points, over the same number of seasons played). A #50 pick who became a starter beats his
-            slot by far more than a #3 who became one. Players drafted before are not counted.
+            slot by far more than a #3 who became one. A pick spent on a player drafted before (a placeholder for a rookie
+            not in Fantrax yet) or on a retired one counts as a miss.
           </p>
           <p>
             <strong>Rookie pts</strong>: lineup points in the regular season, first 3 seasons; <strong>Reg. pts</strong>:
