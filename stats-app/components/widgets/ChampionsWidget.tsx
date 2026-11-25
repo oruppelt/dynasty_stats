@@ -94,15 +94,19 @@ function SeasonRow({ s, title, selectedTeam }: { s: SeasonSummary; title?: Title
 }
 
 /** Players with a ring: rings, finals reached, then points in finals. */
-function RingLeaders({ players, holders, selectedTeam }: { players: RingLeader[]; holders: number; selectedTeam: string }) {
+const RING_PAGE = 30
+
+function RingLeaders({ players, selectedTeam }: { players: RingLeader[]; selectedTeam: string }) {
+  const [shown, setShown] = useState(RING_PAGE)
   return (
     <Card className="lg:col-span-2">
       <CardHeader className="pb-2">
         <CardTitle className="text-lg">Rings</CardTitle>
         <CardDescription>
-          A player gets a ring for scoring for the champion that season (any start with points, playoffs included).
-          The top {players.length} of {holders} by rings, then finals reached, then points in finals. Points, playoffs,
-          starts and salary are for the champions in their title seasons; finals points count every final, won or lost.
+          A player gets a ring for scoring for the champion that season (any start with points, playoffs included),
+          and a lost final for being on the runner-up&apos;s roster (lineup or bench) in a game of the final. All{' '}
+          {players.length} ring holders, by rings, then finals reached, then finals points: lineup points in every
+          final, won or lost. Career playoffs: points and starts in the playoffs for any team.
         </CardDescription>
       </CardHeader>
       <CardContent className="px-0 sm:px-6">
@@ -115,14 +119,12 @@ function RingLeaders({ players, holders, selectedTeam }: { players: RingLeader[]
                 <th className={TH}>Rings</th>
                 <th className={TH}>Lost finals</th>
                 <th className={TH}>Finals pts</th>
-                <th className={TH}>Points</th>
-                <th className={TH}>Playoffs</th>
-                <th className={TH}>Starts</th>
-                <th className={TH}>Salary</th>
+                <th className={TH}>Career playoff pts</th>
+                <th className={TH}>Career playoff starts</th>
               </tr>
             </thead>
             <tbody className="[&_tr:last-child_td]:border-0">
-              {players.map((p, i) => {
+              {players.slice(0, shown).map((p, i) => {
                 const mine = [...p.titles, ...p.lost].some(t => t.team === selectedTeam)
                 const teams = [...new Set(p.titles.map(t => t.team))]
                 return (
@@ -149,16 +151,21 @@ function RingLeaders({ players, holders, selectedTeam }: { players: RingLeader[]
                     </td>
                     <td className={TD}>{p.finals_lost || '–'}</td>
                     <td className={TD}>{p.finals_points ? formatPoints(p.finals_points) : '–'}</td>
-                    <td className={TD}>{formatPoints(p.points)}</td>
                     <td className={TD}>{p.playoff_points ? formatPoints(p.playoff_points) : '–'}</td>
-                    <td className={TD}>{p.starts}</td>
-                    <td className={TD}>{p.salary ? formatSalary(p.salary) : '–'}</td>
+                    <td className={TD}>{p.playoff_starts || '–'}</td>
                   </tr>
                 )
               })}
             </tbody>
           </table>
         </div>
+        {players.length > shown && (
+          <div className="px-4 pt-3 sm:px-0">
+            <button type="button" onClick={() => setShown(n => n + RING_PAGE)} className="text-sm font-medium text-primary hover:underline">
+              Show {Math.min(RING_PAGE, players.length - shown)} more
+            </button>
+          </div>
+        )}
       </CardContent>
     </Card>
   )
@@ -226,7 +233,7 @@ export function ChampionsWidget({ selectedTeam }: { selectedTeam: string }) {
       </Card>
 
       {champions && champions.players.length > 0 && (
-        <RingLeaders players={champions.players} holders={champions.ring_holders} selectedTeam={selectedTeam} />
+        <RingLeaders players={champions.players} selectedTeam={selectedTeam} />
       )}
     </div>
   )

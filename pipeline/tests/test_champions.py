@@ -7,7 +7,7 @@ Tests for champions.py on two seasons, regular season periods 1-2, playoffs 3-4,
 """
 import pandas as pd
 
-from champions import compute_champions, final_periods
+from champions import career_playoffs, compute_champions, final_periods
 
 
 def r(period, team, pid, fpts, status='active', salary=2_000_000):
@@ -43,24 +43,35 @@ def test_title_rosters():
 
 
 def test_ring_leaders():
-    data = run()
+    data = compute_champions([season('2024-25', Y1, 'Alpha', 'Bravo'), season('2025-26', Y2, 'Bravo', 'Alpha')],
+                             career_playoffs([(Y1, {3, 4}), (Y2, {3, 4})]))
     # b1 lost both finals (Bravo, then Alpha) and has no ring: not listed
     assert data['ring_holders'] == 1
     [a1] = data['players']
-    # 2025-26: a1 scored for Alpha (the runner-up) before the trade, so a lost final too
-    assert (a1['player_id'], a1['rings'], a1['finals_lost']) == ('a1', 2, 1)
-    assert a1['lost'] == [{'season': '2025-26', 'team': 'Alpha'}]
+    # 2025-26: a1 scored for Alpha (the runner-up), but was traded before the final: not a lost final
+    assert (a1['player_id'], a1['rings'], a1['finals_lost']) == ('a1', 2, 0)
     assert [t['team'] for t in a1['titles']] == ['Alpha', 'Bravo']
-    assert a1['points'] == 30.0 + 7.0 and a1['playoff_points'] == 70.0 + 14.0 and a1['finals_points'] == 47.0
-    assert a1['starts'] == 4 + 3
+    assert a1['finals_points'] == 40.0 + 7.0
+    # Career playoffs, any team
+    assert (a1['playoff_points'], a1['playoff_starts']) == (30.0 + 40.0 + 7.0 + 7.0, 4)
+    assert set(a1) == {'player_id', 'player', 'rings', 'finals_lost', 'titles', 'lost', 'finals_points',
+                       'playoff_points', 'playoff_starts'}
+
+
+# Alpha beat Bravo, the final in period 4: c1 won with Alpha, then sat on Bravo's bench in the final; c2 was on
+# Bravo's roster before the final only; c3 on Bravo's injured reserve in the final; c4 started for Bravo in it
+Y3 = pd.DataFrame([r(1, 'Alpha', c, 10.0) for c in ('c1', 'c2', 'c3', 'c4')]
+                  + [r(4, 'Bravo', 'c1', 30.0, status='bench'), r(3, 'Bravo', 'c2', 5.0),
+                     r(4, 'Bravo', 'c3', 0.0, status='ir'), r(4, 'Bravo', 'c4', 25.0)])
 
 
 def test_finals_lost():
-    data = compute_champions([season('2024-25', Y1, 'Bravo', 'Alpha')])
-    assert [(p['player_id'], p['rings'], p['finals_lost']) for p in data['players']] == [('b1', 1, 0)]
-    data = compute_champions([season('2024-25', Y1, 'Alpha', 'Bravo'), season('2025-26', Y2, 'Alpha', 'Bravo')])
-    b1 = next(p for p in data['players'] if p['player_id'] == 'b1')
-    assert (b1['rings'], b1['finals_lost'], b1['finals_points']) == (1, 1, 20.0 + 3.0)
+    data = compute_champions([season('2024-25', Y3, 'Alpha', 'Bravo')])
+    lost = {p['player_id']: (p['finals_lost'], p['finals_points']) for p in data['players']}
+    # On the bench: a lost final, but no points (only lineup points count)
+    assert lost == {'c1': (1, 0.0), 'c2': (0, 0.0), 'c3': (0, 0.0), 'c4': (1, 25.0)}
+    assert data['players'][0]['player_id'] == 'c4'                  # finals reached, then finals points
+    assert [p['player_id'] for p in data['players']][1] == 'c1'
 
 
 def test_final_periods():

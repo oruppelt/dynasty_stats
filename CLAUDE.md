@@ -93,7 +93,7 @@ trade item has its `result` (what the team got out of it) and `next` (what it di
 values in `ACHIEVEMENTS`), rewards from `pipeline/data/honor_rewards.json` (checked; rows that fail are reported and left out; pictures in `stats-app/public/honor/`),
 legends, title banners, declared highlights (with ideas worked out from the games), for History → Franchise (tabs: Trophy room, Honor, Legends) (`?franchise=`; `lib/selected-franchise.ts`, `FranchisePage.tsx`).
 `data/champions.json` (`pipeline/champions.py`, after the all-time files): each champion's players (a ring: scored for the
-champion that season) and the ring leaders (finals lost: scored for the runner-up), for History → Champions (`lib/champions.ts`).
+champion that season) and every ring holder (a lost final: on the runner-up's roster in the final; career playoff points and starts), for History → Champions (`lib/champions.ts`).
 `data/rivalries/<slug>.json` (`pipeline/rivalry.py`, after honor): one per team, its rivalry with every other over every
 season (meetings incl. playoffs, record, series, streaks, records, trades between the two with the points each side got,
 top scorers in their games, players who scored for both), for History → Rivalry (`?rivals=<team>,<team>`;
