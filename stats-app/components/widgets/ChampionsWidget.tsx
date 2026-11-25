@@ -101,8 +101,8 @@ function RingLeaders({ players, holders, selectedTeam }: { players: RingLeader[]
         <CardTitle className="text-lg">Rings</CardTitle>
         <CardDescription>
           A player gets a ring for scoring for the champion that season (any start with points, playoffs included).
-          The top {players.length} of {holders} by rings, then finals reached, then points in finals. Points, playoffs,
-          starts and salary are for the champions in their title seasons; finals points count every final, won or lost.
+          The top {players.length} of {holders} by rings, then finals reached, then points in finals. Every stat is for the
+          champions in their title seasons; a lost final (scored for the runner-up) is only counted.
         </CardDescription>
       </CardHeader>
       <CardContent className="px-0 sm:px-6">

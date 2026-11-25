@@ -7,7 +7,7 @@ season or playoffs), and lost a final when they scored for the runner-up. For ea
 - `seasons`: the champion's players (newest season first), with their regular-season and playoff points for it, the
   points in the final, starts, games and the salary the champion paid (players.salary_paid);
 - `players`: the top RING_TOP_N players by rings, then finals reached, then points in finals; with what they
-  scored for the champions in their title seasons, and their points in every final (won or lost).
+  scored for the champions in their title seasons (points, playoffs, finals, starts, salary).
 
 Franchises are matched by team name, like the rest of the site.
 """
@@ -94,12 +94,11 @@ def compute_champions(seasons: list[dict], top_n: int = RING_TOP_N) -> dict:
             'rings': len(w), 'finals_lost': len(lo),
             'titles': [{'season': x.season, 'team': x.team} for x in w.sort_values('season').itertuples()],
             'lost': [{'season': x.season, 'team': x.team} for x in lo.sort_values('season').itertuples()],
-            # In the title seasons, for the champion
+            # Everything for the champion, in the title seasons (a lost final is only counted)
             'points': round(float(w['points'].sum()), 2), 'playoff_points': round(float(w['playoff_points'].sum()), 2),
+            'finals_points': round(float(w['finals_points'].sum()), 2),
             'starts': int(w['starts'].sum() + w['playoff_starts'].sum()), 'gp': int(w['gp'].sum()),
             'salary': int(round(float(w['salary'].sum()))),
-            # Every final, won or lost
-            'finals_points': round(float(w['finals_points'].sum() + lo['finals_points'].sum()), 2),
         })
     out = [p for p in out if p['rings']]
     out.sort(key=lambda p: (-p['rings'], -(p['rings'] + p['finals_lost']), -p['finals_points'], -p['playoff_points'], p['player']))

@@ -60,7 +60,7 @@ def test_finals_lost():
     assert [(p['player_id'], p['rings'], p['finals_lost']) for p in data['players']] == [('b1', 1, 0)]
     data = compute_champions([season('2024-25', Y1, 'Alpha', 'Bravo'), season('2025-26', Y2, 'Alpha', 'Bravo')])
     b1 = next(p for p in data['players'] if p['player_id'] == 'b1')
-    assert (b1['rings'], b1['finals_lost'], b1['finals_points']) == (1, 1, 20.0 + 3.0)
+    assert (b1['rings'], b1['finals_lost'], b1['finals_points']) == (1, 1, 3.0)    # the lost final isn't in the points
 
 
 def test_final_periods():

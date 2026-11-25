@@ -34,20 +34,19 @@ export interface RingLeader {
   finals_lost: number;
   titles: { season: string; team: string }[];
   lost: { season: string; team: string }[];
-  /** For the champions, in their title seasons */
+  /** All for the champions, in their title seasons */
   points: number;
   playoff_points: number;
   starts: number;
   gp: number;
   salary: number;
-  /** Every final, won or lost */
   finals_points: number;
 }
 
 export interface Champions {
   /** Newest first */
   seasons: Title[];
-  /** By rings, then finals reached, then finals points */
+  /** By rings, then finals reached, then points in won finals */
   players: RingLeader[];
   /** Every player with a ring */
   ring_holders: number;
