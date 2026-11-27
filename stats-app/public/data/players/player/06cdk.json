@@ -1,7 +1,7 @@
 {
   "player_id": "06cdk",
   "player": "Jalen Slawson",
-  "salary": 2000000,
+  "salary": 2333333,
   "seasons": [
     {
       "season": "2023-24",
@@ -30,9 +30,34 @@
       "salary": 1000000,
       "contract": "R22",
       "paid": 272727
+    },
+    {
+      "season": "2026-27",
+      "team": "Toronto Raptors",
+      "periods": 1,
+      "starts": 1,
+      "gp": 1,
+      "points": 59.75,
+      "bench_points": 0.0,
+      "playoff_starts": 0,
+      "playoff_points": 0.0,
+      "salary": 1000000,
+      "contract": "FA",
+      "paid": 30303
     }
   ],
-  "best_periods": [],
+  "best_periods": [
+    {
+      "season": "2026-27",
+      "period": 11,
+      "team": "Toronto Raptors",
+      "player_id": "06cdk",
+      "player": "Jalen Slawson",
+      "fpts": 59.75,
+      "gp": 1,
+      "playoffs": false
+    }
+  ],
   "timeline": [
     {
       "kind": "pick",
@@ -106,6 +131,20 @@
       "period": 10,
       "date": "2024-11-22",
       "team": "Miami Heat"
+    },
+    {
+      "kind": "joined",
+      "season": "2026-27",
+      "period": 11,
+      "team": "Toronto Raptors",
+      "before_logs": false,
+      "periods": 1,
+      "starts": 1,
+      "gp": 1,
+      "points": 59.75,
+      "salary": 1000000,
+      "contract": "FA",
+      "date": null
     }
   ],
   "trades": {
@@ -528,7 +567,7 @@
     },
     {
       "season": "2026-27",
-      "length": 10,
+      "length": 11,
       "playoffs_from": null
     }
   ]
